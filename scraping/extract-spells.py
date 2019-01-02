@@ -119,6 +119,14 @@ for l in list:
                 text += s.string
 
         if key in PROPERTIES:
+            # merge properties with almost the same name
+            if key == "Zone" or key == "Effet":
+                key = "Zone d'effet"
+            elif key == "Cibles":
+                key = "Cible"
+            elif key == "Temps d’incantation":
+                key = "Temps d'incantation"
+                
             sort[key]=text.strip()
             descr = s.next_siblings
             text = ""
