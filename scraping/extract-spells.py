@@ -99,7 +99,7 @@ for l in list:
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     sort['Nom']=title
-    sort['Reference']=pageURL
+    sort['Référence']=pageURL
     
     if MOCK_SORT:
         content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
