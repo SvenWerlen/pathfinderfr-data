@@ -19,7 +19,7 @@ MOCK_COMP = None
 
 URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20comp%c3%a9tences.ashx"]
 
-PROPERTIES = [ u"Caractéristique associée", u"Formation nécessaire", u"Formation nécesssaire", u"Malus d’armure"]
+PROPERTIES = [ u"Caractéristique associée", u"caractéristique associée", u"Formation nécessaire", u"Formation nécesssaire", u"Malus d’armure"]
 
 # vérification des paramètres
 if len(sys.argv) < 2:
@@ -77,6 +77,10 @@ def extractText(list):
             break
         elif el.string:
             text += ' ' + el.string.strip()
+        elif el.name in ('div','ul','li','i','a'):
+            if el.name == 'li':
+                text += '\n *'
+            text += ' ' + extractText(el.contents)
         elif el.name in ('img'):
             # do nothing
             text
@@ -135,6 +139,8 @@ for l in list:
             # merge properties with almost the same name
             if key == u"Formation nécesssaire":
                 key = u"Formation nécessaire"
+            elif key == u"caractéristique associée":
+                key = u"Caractéristique associée"
             
             sort[key]=text
             descr = s.next_siblings
