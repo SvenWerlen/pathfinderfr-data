@@ -31,9 +31,9 @@ if len(sys.argv) < 2:
 # message d'accueil
 html = sys.argv[1].lower() == "html"
 if html:
-    print "Génération du fichier YAML pour les sorts en mode HTML"
+    print "Génération du fichier YAML pour les dons en mode HTML"
 else:
-    print "Génération du fichier YAML pour les sorts en mode TEXT"
+    print "Génération du fichier YAML pour les dons en mode TEXT"
 
 
 

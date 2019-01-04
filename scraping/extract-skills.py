@@ -12,14 +12,14 @@ except ImportError:
     from bs4 import NavigableString
 
 ## Configurations pour le lancement
-MOCK_LIST = "mocks/sortsListeA.html" # décommenter pour tester avec une liste pré-téléchargée
-MOCK_SORT = "mocks/sort1.html"       # décommenter pour tester avec un sort pré-téléchargé
+MOCK_LIST = None
+MOCK_COMP = None
+#MOCK_LIST = "mocks/compsListe.html" # décommenter pour tester avec une liste pré-téléchargée
+#MOCK_COMP = "mocks/comp2.html"       # décommenter pour tester avec un sort pré-téléchargé
 
-URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts.ashx",
-       "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx",
-       "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx"]
+URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20comp%c3%a9tences.ashx"]
 
-PROPERTIES = [ u"Nom", u"École", u"Niveau", u"Portée", u"Cibles", u"Zone", u"Zone d'effet", u"Effet", u"Temps d’incantation", u"Temps d'incantation", u"Composantes", u"Cible", u"Durée", u"Jet de sauvegarde", u"Résistance à la magie", u"Description"]
+PROPERTIES = [ u"Caractéristique associée", u"Formation nécessaire", u"Formation nécesssaire", u"Malus d’armure"]
 
 # vérification des paramètres
 if len(sys.argv) < 2:
@@ -31,9 +31,9 @@ if len(sys.argv) < 2:
 # message d'accueil
 html = sys.argv[1].lower() == "html"
 if html:
-    print "Génération du fichier YAML pour les sorts en mode HTML"
+    print "Génération du fichier YAML pour les compétences en mode HTML"
 else:
-    print "Génération du fichier YAML pour les sorts en mode TEXT"
+    print "Génération du fichier YAML pour les compétences en mode TEXT"
 
 
 
@@ -43,12 +43,12 @@ liste = []
 list = []
 if MOCK_LIST:
     parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml")
-    list = parsed_html.body.find(id='PageContentDiv').find_all('li')
+    list = parsed_html.body.find(id='PageContentDiv').find_next('table',class_="tablo").find_all('tr')
 else:
     list = []
     for u in URLs:
         parsed_html = BeautifulSoup(urllib.urlopen(u).read(),features="lxml")
-        list += parsed_html.body.find(id='PageContentDiv').find_all('li')
+        list += parsed_html.body.find(id='PageContentDiv').find_next('table',class_="tablo").find_all('tr')
 
 #
 # cette fonction se charge d'extraire le texte de la partie HTML
@@ -59,7 +59,6 @@ def extractText(list):
     text = ""
     
     for el in list:
-        
         if html:
             text += repr(el)
             continue
@@ -67,17 +66,17 @@ def extractText(list):
         if el.name == 'br':
             if text[-2:] != '\n\n':
                 text += '\n'
-        elif el.name in ('b','h2','h3'):
+        elif el.name == 'i':
+            text += el.text
+        elif el.name == 'b':
             if el.string:
                 text += ' ' + el.string.strip().upper()
             else:
                 text += ' ' + extractText(el.contents).upper()
+        elif el.name in ('h2','h3'):
+            break
         elif el.string:
             text += ' ' + el.string.strip()
-        elif el.name in ('div','ul','li','i','a'):
-            if el.name == 'li':
-                text += '\n *'
-            text += ' ' + extractText(el.contents)
         elif el.name in ('img'):
             # do nothing
             text
@@ -90,10 +89,18 @@ def extractText(list):
 # itération sur chaque page
 for l in list:
     sort = {}
-    
+        
     element = l.find_next('a')
-    title = element.get('title')
+    title = element.text
     link  = element.get('href')
+    
+    if element.next_sibling != None:
+        title += element.next_sibling
+    
+    # ugly fix to ignore "headers"
+    if title == "Barb":
+        continue
+
     
     print "Processing %s" % title
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
@@ -101,13 +108,14 @@ for l in list:
     sort['Nom']=title
     sort['Référence']=pageURL
     
-    if MOCK_SORT:
-        content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
+    if MOCK_COMP:
+        content = BeautifulSoup(open(MOCK_COMP),features="lxml").body.find(id='PageContentDiv')
     else:
         content = BeautifulSoup(urllib.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
     
     # lire les attributs
     text = ""
+    descr = ""
     for attr in content.find_all('b'):
         key = attr.text.strip()
         
@@ -118,20 +126,21 @@ for l in list:
             elif s.string:
                 text += s.string
 
+        # clean text
+        text = text.strip()
+        if text.startswith(": "):
+            text = text[2:]
+
         if key in PROPERTIES:
             # merge properties with almost the same name
-            if key == u"Zone" or key == u"Effet":
-                key = u"Zone d'effet"
-            elif key == u"Cibles":
-                key = u"Cible"
-            elif key == u"Temps d’incantation":
-                key = u"Temps d'incantation"
-                
-            sort[key]=text.strip()
+            if key == u"Formation nécesssaire":
+                key = u"Formation nécessaire"
+            
+            sort[key]=text
             descr = s.next_siblings
             text = ""
-        else:
-            print "- Skipping unknown property %s" % key
+        #else:
+        #    print "- Skipping unknown property %s" % key
 
     # lire la description
     text = extractText(descr)
@@ -141,12 +150,12 @@ for l in list:
     # ajouter sort
     liste.append(sort)
     
-    if MOCK_SORT:
+    if MOCK_COMP:
         break
 
-if MOCK_SORT:
+if MOCK_COMP:
     print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
     exit(1)
 
-with open("sorts.yml", "w") as f:
+with open("competences.yml", "w") as f:
     yaml.safe_dump(liste, f, default_flow_style=False, allow_unicode=True)
