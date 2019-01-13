@@ -4,7 +4,9 @@
 import urllib
 import yaml
 import sys
+import re
 from lxml import html
+
 try:
     from BeautifulSoup import BeautifulSoup
 except ImportError:
@@ -12,14 +14,16 @@ except ImportError:
     from bs4 import NavigableString
 
 ## Configurations pour le lancement
-MOCK_LIST = "mocks/sortsListeA.html" # décommenter pour tester avec une liste pré-téléchargée
-MOCK_SORT = "mocks/sort1.html"       # décommenter pour tester avec un sort pré-téléchargé
+MOCK_LIST = None
+MOCK_SORT = None
+#MOCK_LIST = "mocks/sortsListeA.html" # décommenter pour tester avec une liste pré-téléchargée
+#MOCK_SORT = "mocks/sort1.html"       # décommenter pour tester avec un sort pré-téléchargé
 
 URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts.ashx",
        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx",
        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx"]
 
-PROPERTIES = [ u"Nom", u"École", u"Niveau", u"Portée", u"Cibles", u"Zone", u"Zone d'effet", u"Effet", u"Temps d’incantation", u"Temps d'incantation", u"Composantes", u"Cible", u"Durée", u"Jet de sauvegarde", u"Résistance à la magie", u"Description"]
+PROPERTIES = [ u"Nom", u"École", u"Niveau", u"Portée", u"Cible ou zone d'effet", u"Temps d'incantation", u"Composantes", u"Durée", u"Jet de sauvegarde", u"Résistance à la magie", u"Description"]
 
 # vérification des paramètres
 if len(sys.argv) < 2:
@@ -86,7 +90,6 @@ def extractText(list):
 
     return text.strip(' ').replace(u'¶','')
 
-
 # itération sur chaque page
 for l in list:
     sort = {}
@@ -95,11 +98,29 @@ for l in list:
     title = element.get('title')
     link  = element.get('href')
     
-    print "Processing %s" % title
+    source = None
+    sourceEl = element.find_next('i')
+    if sourceEl.string:
+        source_search = re.search('\((.*)\)', sourceEl.string, re.IGNORECASE)
+        if source_search:
+            source = source_search.group(1)
+            
+            # special cases
+            if source == u"partagé":
+                source = None
+            elif source == u"Blog Paizo":
+                source = u"Paizo"
+            elif source.startswith(u"MR"):
+                source = u"MR"
+    if not source:
+        source = "MJ"
+    
+    print "Processing %s (%s)" % (title, source)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
-    sort['Nom']=title
-    sort['Référence']=pageURL
+    sort[u'Nom']=title
+    sort[u'Référence']=pageURL
+    sort[u'Source']=source
     
     if MOCK_SORT:
         content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
@@ -118,15 +139,12 @@ for l in list:
             elif s.string:
                 text += s.string
 
+        # convertir les propriétés qui sont similaires
+        if "cible" in key.lower() or "effet" in key.lower() or "cible" in key.lower() or "zone" in key.lower():
+            key = u"Cible ou zone d'effet"
+        key = key.replace(u"’",u"'")
+
         if key in PROPERTIES:
-            # merge properties with almost the same name
-            if key == u"Zone" or key == u"Effet":
-                key = u"Zone d'effet"
-            elif key == u"Cibles":
-                key = u"Cible"
-            elif key == u"Temps d’incantation":
-                key = u"Temps d'incantation"
-                
             sort[key]=text.strip()
             descr = s.next_siblings
             text = ""
@@ -143,6 +161,7 @@ for l in list:
     
     if MOCK_SORT:
         break
+
 
 if MOCK_SORT:
     print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)

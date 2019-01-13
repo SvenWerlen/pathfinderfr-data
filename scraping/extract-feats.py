@@ -59,12 +59,17 @@ for l in list:
     title = element.text
     link  = element.get('href')
     source  = l.find_next('sup').text
+    if source == "MJ-UC":
+        source = "MJ"
+    elif source == "MA": # doit être une erreur
+        source = "AO"
     
     print "Processing %s" % title
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     don[u'Nom']=title
     don[u'Référence']=pageURL
+    don[u'Source']=source
         
     if MOCK_DON:
         content = BeautifulSoup(open(MOCK_DON),features="lxml").body.find(id='PageContentDiv')
@@ -112,7 +117,6 @@ for l in list:
     
     if MOCK_DON:
         break
-
 
 if MOCK_DON:
     print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
