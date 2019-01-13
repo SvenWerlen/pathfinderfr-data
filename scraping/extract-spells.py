@@ -112,6 +112,8 @@ for l in list:
                 source = u"Paizo"
             elif source.startswith(u"MR"):
                 source = u"MR"
+            elif source == u"AdM":
+                source = u"AM"
     if not source:
         source = "MJ"
     
