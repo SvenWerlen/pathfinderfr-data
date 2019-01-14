@@ -114,6 +114,9 @@ for l in list:
                 source = u"MR"
             elif source == u"AdM":
                 source = u"AM"
+            elif source == u"APG":
+                source = u"MJRA"
+    
     if not source:
         source = "MJ"
     
