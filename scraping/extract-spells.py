@@ -109,7 +109,7 @@ for l in list:
             if source == u"partagé":
                 source = None
             elif source == u"Blog Paizo":
-                source = u"Paizo"
+                source = u"PAIZO"
             elif source.startswith(u"MR"):
                 source = u"MR"
             elif source == u"AdM":
