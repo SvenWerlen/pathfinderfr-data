@@ -117,7 +117,7 @@
     Vigueur: +12
     Volonté: +6
     
-    - Nom: Barde
+  - Nom: Barde
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx
   Description: Les bardes excellent dans l’art de troubler et de déstabiliser leurs ennemis tout en encourageant leurs amis à toujours se dépasser. Ils savent manier à la fois les armes et la magie, mais leur véritable force réside en-dehors de la mêlée, où ils peuvent aider leurs compagnons et nuire à leurs ennemis sans craindre de voir leurs performances interrompues.
@@ -244,7 +244,7 @@
     Vigueur: +6
     Volonté: +12
 
-    - Nom: Druide
+  - Nom: Druide
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx
   Description: Certains druides préfèrent rester à l’écart des batailles et laisser leurs compagnons et créatures invoquées combattre pendant qu’ils affaiblissent leurs ennemis grâce aux pouvoirs de la nature. D’autres se transforment en terribles bêtes et se lancent brutalement dans la mêlée. Les druides vénèrent les forces élémentaires, les puissances de la nature ou la nature elle-même. Cela se traduit généralement par une dévotion envers une divinité de la nature, mais les druides peuvent tout aussi bien révérer de vagues esprits, des demi-dieux de forme animale ou même des merveilles naturelles particulièrement impressionnantes.
@@ -366,7 +366,7 @@
     Vigueur: +12
     Volonté: +12
 
-    - Nom: Ensorceleur
+  - Nom: Ensorceleur
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx
   Description: Les ensorceleurs se démarquent par leur capacité à lancer fréquemment un certain nombre de sorts choisis, ce qui en fait de puissants mages de combat. En se familiarisant avec un répertoire de sorts limité mais sans cesse croissant, les ensorceleurs découvrent souvent de nouvelles méthodes permettant d’utiliser de manière versatile certains effets auxquels les autres lanceurs de sorts pourraient ne pas prêter attention. Leur lignage leur octroie également des capacités additionnelles, ce qui les différencient les uns des autres.
@@ -484,3 +484,857 @@
     Vigueur: +6
     Volonté: +12
 
+- Nom: Guerrier
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx
+  Description: Les guerriers excellent au combat, qu’il s’agisse de vaincre des ennemis, de contrôler le déroulement d’une bataille ou de survivre à des affrontements. Les armes et les méthodes qu’ils emploient leur donnent accès à des tactiques variées. Rares sont ceux qui peuvent rivaliser d’adresse au combat avec eux.
+  Alignement: Au choix
+  DésDeVie: d10
+  CompétencesDeClasse:
+  - Compétence: Artisanat
+  - Compétence: Connaissances (exploration souterraine)
+  - Compétence: Connaissances (ingénierie)
+  - Compétence: Dressage
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Intimidation
+  - Compétence: Natation
+  - Compétence: Profession
+  - Compétence: Survie
+  Progression:
+  - Niveau: 1
+    BBA: +1
+    Réflexes: +0
+    Vigueur: +2
+    Volonté: +0
+  - Niveau: 2
+    BBA: +2
+    Réflexes: +0
+    Vigueur: +3
+    Volonté: +0
+  - Niveau: 3
+    BBA: +3
+    Réflexes: +1
+    Vigueur: +3
+    Volonté: +1
+  - Niveau: 4
+    BBA: +4
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 5
+    BBA: +5
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 6
+    BBA: +6/+1
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 7
+    BBA: +7/+2
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 8
+    BBA: +8/+3
+    Réflexes: +2
+    Vigueur: +6
+    Volonté: +2
+  - Niveau: 9
+    BBA: +9/+4
+    Réflexes: +3
+    Vigueur: +6
+    Volonté: +3
+  - Niveau: 10
+    BBA: +10/+5
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 11
+    BBA: +11/+6/+1
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 12
+    BBA: +12/+7/+2
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 13
+    BBA: +13/+8/+3
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 14
+    BBA: +14/+9/+4
+    Réflexes: +4
+    Vigueur: +9
+    Volonté: +4
+  - Niveau: 15
+    BBA: +15/+10/+5
+    Réflexes: +5
+    Vigueur: +9
+    Volonté: +5
+  - Niveau: 16
+    BBA: +16/+11/+6/+1
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 17
+    BBA: +17/+12/+7/+2
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 18
+    BBA: +18/+13/+8/+3
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 19
+    BBA: +19/+14/+9/+4
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 20
+    BBA: +20/+15/+10/+5
+    Réflexes: +6
+    Vigueur: +12
+    Volonté: +6
+    
+  - Nom: Magicien
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx
+  Description: Les ensorceleurs se démarquent par leur capacité à lancer fréquemment un certain nombre de sorts choisis, ce qui en fait de puissants mages de combat. En se familiarisant avec un répertoire de sorts limité mais sans cesse croissant, les ensorceleurs découvrent souvent de nouvelles méthodes permettant d’utiliser de manière versatile certains effets auxquels les autres lanceurs de sorts pourraient ne pas prêter attention. Leur lignage leur octroie également des capacités additionnelles, ce qui les différencient les uns des autres.
+  Alignement: Au choix.
+  DésDeVie: d8
+  CompétencesDeClasse:
+  - Compétence: Art de la Magie
+  - Compétence: Artisanat
+  - Compétence: Connaissance (tous les domaines)
+  - Compétence: Estimation
+  - Compétence: Linguistique
+  - Compétence: Profession
+  - Compétence: Vol
+  Progression:
+  - Niveau: 1
+    BBA: +0
+    Réflexes: +0
+    Vigueur: +0
+    Volonté: +2
+  - Niveau: 2
+    BBA: +1
+    Réflexes: +0
+    Vigueur: +0
+    Volonté: +3
+  - Niveau: 3
+    BBA: +1
+    Réflexes: +1
+    Vigueur: +1
+    Volonté: +3
+  - Niveau: 4
+    BBA: +2
+    Réflexes: +1
+    Vigueur: +1
+    Volonté: +4
+  - Niveau: 5
+    BBA: +2
+    Réflexes: +1
+    Vigueur: +1
+    Volonté: +4
+  - Niveau: 6
+    BBA: +3
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +5
+  - Niveau: 7
+    BBA: +3
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +5
+  - Niveau: 8
+    BBA: +4
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +6
+  - Niveau: 9
+    BBA: +4
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +6
+  - Niveau: 10
+    BBA: +5
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +7
+  - Niveau: 11
+    BBA: +5
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +7
+  - Niveau: 12
+    BBA: +6/+1
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +8
+  - Niveau: 13
+    BBA: +6/+1
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +8
+  - Niveau: 14
+    BBA: +7/+2
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +9
+  - Niveau: 15
+    BBA: +7/+2
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +9
+  - Niveau: 16
+    BBA: +8/+3
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +10
+  - Niveau: 17
+    BBA: +8/+3
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +10
+  - Niveau: 18
+    BBA: +9/+4
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +11
+  - Niveau: 19
+    BBA: +9/+4
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +11
+  - Niveau: 20
+    BBA: +10/+5
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +12
+
+- Nom: Moine
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx
+  Description:  Les moines excellent lorsqu’il s’agit de surmonter les dangers les plus périlleux. Ils frappent où on s’y attend le moins et profitent de tous les points faibles de l’ennemi. Rapides et doués au combat, ils peuvent se déplacer facilement sur le champ de bataille pour prêter main-forte à leurs alliés là où on a le plus besoin d’eux.
+  Alignement: N'importe quel alignement loyal
+  DésDeVie: d8
+  CompétencesDeClasse:
+  - Compétence: Acrobaties
+  - Compétence: Artisanat
+  - Compétence: Connaissances (histoire)
+  - Compétence: Connaissances (religion)
+  - Compétence: Discrétion
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Evasion
+  - Compétence: Intimidation
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Profession
+  - Compétence: Psychologie
+  - Compétence: Représentation
+  Progression:
+  - Niveau: 1
+    BBA: +0
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 2
+    BBA: +1
+    Réflexes: +2
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 3
+    BBA: +2
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 4
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 5
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 6
+    BBA: +4
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 7
+    BBA: +5
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 8
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 9
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 10
+    BBA: +7/+2
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 11
+    BBA: +8/+3
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 12
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 13
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 14
+    BBA: +10/+5
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 15
+    BBA: +11/+6/+1
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 16
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 17
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 18
+    BBA: +13/+8/+3
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 19
+    BBA: +14/+9/+4
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 20
+    BBA: +15/+10/+5
+    Réflexes: +12
+    Vigueur: +12
+    Volonté: +12
+    
+  - Nom: Paladin
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx
+  Description: Les paladins sont pour leurs alliés comme des phares au milieu du chaos de la bataille. Ils sont redoutables quand ils combattent le mal, mais ils peuvent également fortifier les combattants du bien et les aider dans leurs croisades. Leurs capacités magiques et martiales en font également de bons protecteurs et des alliés capables de redonner à ceux qui ont été vaincus la force de continuer à se battre.
+  Alignement: Loyal Bon
+  DésDeVie: d10
+  CompétencesDeClasse:
+  - Compétence: Art de la Magie
+  - Compétence: Artisanat
+  - Compétence: Connaissances (noblesse)
+  - Compétence: Connaissances (religion)
+  - Compétence: Diplomatie
+  - Compétence: Dressage
+  - Compétence: Équitation
+  - Compétence: Premiers secours
+  - Compétence: Profession
+  - Compétence: Psychologie
+  Progression:
+  - Niveau: 1
+    BBA: +1
+    Réflexes: +0
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 2
+    BBA: +2
+    Réflexes: +0
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 3
+    BBA: +3
+    Réflexes: +1
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 4
+    BBA: +4
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 5
+    BBA: +5
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 6
+    BBA: +6/+1
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 7
+    BBA: +7/+2
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 8
+    BBA: +8/+3
+    Réflexes: +2
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 9
+    BBA: +9/+4
+    Réflexes: +3
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 10
+    BBA: +10/+5
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 11
+    BBA: +11/+6/+1
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 12
+    BBA: +12/+7/+2
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 13
+    BBA: +13/+8/+3
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 14
+    BBA: +14/+9/+4
+    Réflexes: +4
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 15
+    BBA: +15/+10/+5
+    Réflexes: +5
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 16
+    BBA: +16/+11/+6/+1
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 17
+    BBA: +17/+12/+7/+2
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 18
+    BBA: +18/+13/+8/+3
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 19
+    BBA: +19/+14/+9/+4
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 20
+    BBA: +20/+15/+10/+5
+    Réflexes: +6
+    Vigueur: +12
+    Volonté: +12
+    
+  - Nom: Prêtre
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%C3%AAtre.ashx
+  Description: Les prêtres sont plus que capables de défendre l’honneur de leur dieu au combat, ce sont généralement des combattants vaillants et compétents. Mais leur véritable force réside dans leur capacité à faire appel au pouvoir de leur dieu, que ce soit pour améliorer leur habileté au combat et celle de leurs alliés, pour affaiblir leurs ennemis ou encore pour guérir les blessures de leurs compagnons blessés. Comme toutes ces capacités dépendent de leur foi, les prêtres doivent se vouer au culte d’une source divine. La grande majorité des prêtres vénèrent un dieu mais certains d’entre eux se tournent vers un concept divin qui n’est pas associé à une divinité spécifique, comme le combat, la mort, la justice ou la connaissance (discutez-en avec votre MJ si vous préférez opter pour ce choix plutôt que de choisir un dieu.)
+  Alignement: L’alignement du prêtre peut différer d’au plus une catégorie par rapport à celui de son dieu, soit selon l’axe Loi-Chaos soit selon l’axe Bien-Mal.
+  DésDeVie: d8
+  CompétencesDeClasse:
+  - Compétence: Art de la Magie
+  - Compétence: Artisanat
+  - Compétence: Connaissance (histoire)
+  - Compétence: Connaissance (mystères)
+  - Compétence: Connaissance (noblesse)
+  - Compétence: Connaissance (plans)
+  - Compétence: Connaissance (religion)
+  - Compétence: Diplomatie
+  - Compétence: Estimation
+  - Compétence: Linguistique
+  - Compétence: Premiers secours
+  - Compétence: Profession
+  - Compétence: Psychologie
+  Progression:
+  - Niveau: 1
+    BBA: +0
+    Réflexes: +0
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 2
+    BBA: +1
+    Réflexes: +0
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 3
+    BBA: +2
+    Réflexes: +1
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 4
+    BBA: +3
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 5
+    BBA: +3
+    Réflexes: +1
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 6
+    BBA: +4
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 7
+    BBA: +5
+    Réflexes: +2
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 8
+    BBA: +6/+1
+    Réflexes: +2
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 9
+    BBA: +6/+1
+    Réflexes: +3
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 10
+    BBA: +7/+2
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 11
+    BBA: +8/+3
+    Réflexes: +3
+    Vigueur: +7
+    Volonté: +7
+  - Niveau: 12
+    BBA: +9/+4
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 13
+    BBA: +9/+4
+    Réflexes: +4
+    Vigueur: +8
+    Volonté: +8
+  - Niveau: 14
+    BBA: +10/+5
+    Réflexes: +4
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 15
+    BBA: +11/+6/+1
+    Réflexes: +5
+    Vigueur: +9
+    Volonté: +9
+  - Niveau: 16
+    BBA: +12/+7/+2
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 17
+    BBA: +12/+7/+2
+    Réflexes: +5
+    Vigueur: +10
+    Volonté: +10
+  - Niveau: 18
+    BBA: +13/+8/+3
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 19
+    BBA: +14/+9/+4
+    Réflexes: +6
+    Vigueur: +11
+    Volonté: +11
+  - Niveau: 20
+    BBA: +15/+10/+5
+    Réflexes: +6
+    Vigueur: +12
+    Volonté: +12 
+    
+    - Nom: Rôdeur
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%C3%B4deur.ashx
+  Description: Les rôdeurs sont des guérilleros adroits tant au corps à corps qu’à distance et doués pour les attaques éclair. Leurs capacités leur permettent d’infliger de très importantes blessures à certains types d’ennemis, mais elles restent également utiles dans les autres cas.
+  Alignement: Au choix
+  DésDeVie: d10
+  CompétencesDeClasse:
+  - Compétence: Art de la Magie
+  - Compétence: Artisanat
+  - Compétence: Connaissances (exploration souterraine)
+  - Compétence: Connaissances (géographie)
+  - Compétence: Connaissance (nature)
+  - Compétence: Discrétion
+  - Compétence: Dressage
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Intimidation
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Profession
+  - Compétence: Survie
+  Progression:
+  - Niveau: 1
+    BBA: +1
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +0
+  - Niveau: 2
+    BBA: +2
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +0
+  - Niveau: 3
+    BBA: +3
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +1
+  - Niveau: 4
+    BBA: +4
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 5
+    BBA: +5
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 6
+    BBA: +6/+1
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 7
+    BBA: +7/+2
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 8
+    BBA: +8/+3
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +2
+  - Niveau: 9
+    BBA: +9/+4
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +3
+  - Niveau: 10
+    BBA: +10/+5
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 11
+    BBA: +11/+6/+1
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 12
+    BBA: +12/+7/+2
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 13
+    BBA: +13/+8/+3
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 14
+    BBA: +14/+9/+4
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +4
+  - Niveau: 15
+    BBA: +15/+10/+5
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +5
+  - Niveau: 16
+    BBA: +16/+11/+6/+1
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 17
+    BBA: +17/+12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 18
+    BBA: +18/+13/+8/+3
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 19
+    BBA: +19/+14/+9/+4
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 20
+    BBA: +20/+15/+10/+5
+    Réflexes: +12
+    Vigueur: +12
+    Volonté: +6
+    
+  - Nom: Roublard
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx
+  Description: La spécialité des roublards consiste à se déplacer sans être vus et à surprendre leurs ennemis tout en évitant généralement d’attaquer de front. Leurs capacités et connaissances variées les rendent très versatiles, chaque roublard possédant des domaines de prédilection bien différents. La majorité des roublards se distinguent particulièrement lorsqu’il s’agit de surmonter des obstacles de tout type : déverrouiller des portes, désamorcer des pièges, éviter des périls magiques ou encore rouler dans la farine des adversaires à l’esprit lent.
+  Alignement:  Au choix
+  DésDeVie: d8
+  CompétencesDeClasse:
+  - Compétence: Acrobatie
+  - Compétence: Artisanat
+  - Compétence: Bluff
+  - Compétence: Connaissance (exploration souterraine)
+  - Compétence: Connaissance (folklore local)
+  - Compétence: Déguisement
+  - Compétence: Diplomatie
+  - Compétence: Discrétion
+  - Compétence: Escalade
+  - Compétence: Escamotage
+  - Compétence: Estimation
+  - Compétence: Evasion
+  - Compétence: Intimidation
+  - Compétence: Linguistique
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Profession
+  - Compétence: Psychologie
+  - Compétence: Représentation
+  - Compétence: Sabotage
+  - Compétence: Utilisation d'objets magiques
+  Progression:
+  - Niveau: 1
+    BBA: +0
+    Réflexes: +2
+    Vigueur: +0
+    Volonté: +0
+  - Niveau: 2
+    BBA: +1
+    Réflexes: +3
+    Vigueur: +0
+    Volonté: +0
+  - Niveau: 3
+    BBA: +2
+    Réflexes: +3
+    Vigueur: +1
+    Volonté: +1
+  - Niveau: 4
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +1
+    Volonté: +1
+  - Niveau: 5
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +1
+    Volonté: +1
+  - Niveau: 6
+    BBA: +4
+    Réflexes: +5
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 7
+    BBA: +5
+    Réflexes: +5
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 8
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +2
+    Volonté: +2
+  - Niveau: 9
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 10
+    BBA: +7/+2
+    Réflexes: +7
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 11
+    BBA: +8/+3
+    Réflexes: +7
+    Vigueur: +3
+    Volonté: +3
+  - Niveau: 12
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 13
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 14
+    BBA: +10/+5
+    Réflexes: +9
+    Vigueur: +4
+    Volonté: +4
+  - Niveau: 15
+    BBA: +11/+6/+1
+    Réflexes: +9
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 16
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 17
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +5
+    Volonté: +5
+  - Niveau: 18
+    BBA: +13/+8/+3
+    Réflexes: +11
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 19
+    BBA: +14/+9/+4
+    Réflexes: +11
+    Vigueur: +6
+    Volonté: +6
+  - Niveau: 20
+    BBA: +15/+10/+5
+    Réflexes: +12
+    Vigueur: +6
+    Volonté: +6 
+    
+    
+    
