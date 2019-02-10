@@ -157,101 +157,121 @@
     Réflexes: +2
     Vigueur: +0
     Volonté: +2
+    SortNivMax: 1
   - Niveau: 2
     BBA: +1
     Réflexes: +3
     Vigueur: +0
     Volonté: +3
+    SortNivMax: 1
   - Niveau: 3
     BBA: +2
     Réflexes: +3
     Vigueur: +1
     Volonté: +3
+    SortNivMax: 1
   - Niveau: 4
     BBA: +3
     Réflexes: +4
     Vigueur: +1
     Volonté: +4
+    SortNivMax: 2
   - Niveau: 5
     BBA: +3
     Réflexes: +4
     Vigueur: +1
     Volonté: +4
+    SortNivMax: 2
   - Niveau: 6
     BBA: +4
     Réflexes: +5
     Vigueur: +2
     Volonté: +5
+    SortNivMax: 2
   - Niveau: 7
     BBA: +5
     Réflexes: +5
     Vigueur: +2
     Volonté: +5
+    SortNivMax: 3
   - Niveau: 8
     BBA: +6/+1
     Réflexes: +6
     Vigueur: +3
     Volonté: +6
+    SortNivMax: 3
   - Niveau: 9
     BBA: +6/+1
     Réflexes: +6
     Vigueur: +3
     Volonté: +6
+    SortNivMax: 3
   - Niveau: 10
     BBA: +7/+2
     Réflexes: +7
     Vigueur: +3
     Volonté: +7
+    SortNivMax: 4
   - Niveau: 11
     BBA: +8/+3
     Réflexes: +7
     Vigueur: +3
     Volonté: +7
+    SortNivMax: 4
   - Niveau: 12
     BBA: +9/+4
     Réflexes: +8
     Vigueur: +4
     Volonté: +8
+    SortNivMax: 4
   - Niveau: 13
     BBA: +9/+4
     Réflexes: +8
     Vigueur: +4
     Volonté: +8
+    SortNivMax: 5
   - Niveau: 14
     BBA: +10/+5
     Réflexes: +9
     Vigueur: +4
     Volonté: +9
+    SortNivMax: 5
   - Niveau: 15
     BBA: +11/+6/+1
     Réflexes: +9
     Vigueur: +5
     Volonté: +9
+    SortNivMax: 5
   - Niveau: 16
     BBA: +12/+7/+2
     Réflexes: +10
     Vigueur: +5
     Volonté: +10
+    SortNivMax: 6
   - Niveau: 17
     BBA: +12/+7/+2
     Réflexes: +10
     Vigueur: +5
     Volonté: +10
+    SortNivMax: 6
   - Niveau: 18
     BBA: +13/+8/+3
     Réflexes: +11
     Vigueur: +6
     Volonté: +11
+    SortNivMax: 6
   - Niveau: 19
     BBA: +14/+9/+4
     Réflexes: +11
     Vigueur: +6
     Volonté: +11
+    SortNivMax: 6
   - Niveau: 20
     BBA: +15/+10/+5
     Réflexes: +12
     Vigueur: +6
     Volonté: +12
+    SortNivMax: 6
 
 - Nom: Druide
   Source: MJ
@@ -1354,3 +1374,129 @@
     Vigueur: +6
     Volonté: +6 
     
+- Nom: Alchimiste
+  Source: MJRA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx
+  Description: "Qu’il se terre dans un laboratoire souterrain secret ou qu’il mène gaiement ses expériences dans une école de magie respectable, on considère souvent l’alchimiste comme aussi instable, imprévisible et dangereux que les potions qu’il concocte. Certains créateurs d’objets alchimiques se contentent d’une vie sédentaire en tant que marchands d’allume-feu et de bâtons fumigènes, mais les véritables alchimistes répondent à un appel bien plus puissant. Au lieu de lancer des sorts comme les autres mages, l’alchimiste capture son propre potentiel magique dans les extraits et les liquides qu’il fabrique, les imprégnant de pouvoirs virulents qui lui permettent de devenir particulièrement efficace avec les poisons, les explosifs et toutes sortes de magies de métamorphose."
+  Alignement:  Au choix
+  DésDeVie: d8
+  CompétencesDeClasse:
+  - Compétence: Artisanat
+  - Compétence: Art de la magie
+  - Compétence: Connaissances (mystères)
+  - Compétence: Connaissances (nature)
+  - Compétence: Escamotage
+  - Compétence: Estimation
+  - Compétence: Perception
+  - Compétence: Premiers secours
+  - Compétence: Profession
+  - Compétence: Sabotage
+  - Compétence: Survie
+  - Compétence: Utilisation d’objets magiques
+  - Compétence: Vol
+  Progression:
+  - Niveau: 1
+    BBA: +0
+    Réflexes: +2
+    Vigueur: +2
+    Volonté: +0
+  - Niveau: 2
+    BBA: +1
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +0
+  - Niveau: 3
+    BBA: +2
+    Réflexes: +3
+    Vigueur: +3
+    Volonté: +1
+  - Niveau: 4
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 5
+    BBA: +3
+    Réflexes: +4
+    Vigueur: +4
+    Volonté: +1
+  - Niveau: 6
+    BBA: +4
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 7
+    BBA: +5
+    Réflexes: +5
+    Vigueur: +5
+    Volonté: +2
+  - Niveau: 8
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +2
+  - Niveau: 9
+    BBA: +6/+1
+    Réflexes: +6
+    Vigueur: +6
+    Volonté: +3
+  - Niveau: 10
+    BBA: +7/+2
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 11
+    BBA: +8/+3
+    Réflexes: +7
+    Vigueur: +7
+    Volonté: +3
+  - Niveau: 12
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 13
+    BBA: +9/+4
+    Réflexes: +8
+    Vigueur: +8
+    Volonté: +4
+  - Niveau: 14
+    BBA: +10/+5
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +4
+  - Niveau: 15
+    BBA: +11/+6/+1
+    Réflexes: +9
+    Vigueur: +9
+    Volonté: +5
+  - Niveau: 16
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 16
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 17
+    BBA: +12/+7/+2
+    Réflexes: +10
+    Vigueur: +10
+    Volonté: +5
+  - Niveau: 18
+    BBA: +13/+8/+3
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 19
+    BBA: +14/+9/+4
+    Réflexes: +11
+    Vigueur: +11
+    Volonté: +6
+  - Niveau: 20
+    BBA: +15/+10/+5
+    Réflexes: +12
+    Vigueur: +12
+    Volonté: +6
