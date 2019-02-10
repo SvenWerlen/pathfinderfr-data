@@ -1,0 +1,820 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	L&#39;alchimiste - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="alchimiste, classe" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Alchimiste&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwvrPQ6RKdJSaHoEDyOFuG4pqyYZg=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636091085625980305" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJQkXrxQbIskotLzfyIXQlS+B72oi3QcwxQT+thNGyuura2V78EN0WDxEZ7cecZLz/b7OTz" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Alchimiste">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Alchimiste">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Alchimiste">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Alchimiste.ashx?Discuss=1">Discuter (6)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Alchimiste.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Alchimiste">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			L&#39;alchimiste
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Alchimiste" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<table><tr style="vertical-align: top">
+<td width="12%"><center><img ID="menuclasseIMG" src="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg" WIDTH="80%" style="border: 1px solid #4b3124" /></center></td>
+<td width="80%">
+<h2 class="separator">Les classes de personnage<a class="headeranchor" id="Les_classes_de_personnage_0" href="#Les_classes_de_personnage_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barbare.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Le barbare</a> (<i><a class="pagelink" href="Pathfinder-RPG.pouvoirs%20de%20rage.ashx" title="Les pouvoirs de rage">pouvoirs de rage</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Le barde</a> (<i><a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentations.ashx" title="Les représentations de barde">représentations</a>, <a class="pagelink" href="Pathfinder-RPG.Chefs%20doeuvre.ashx" title="Chefs d&#39;oeuvre">chefs d'oeuvre</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Druide.jpg';"><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Le druide</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Domaines%20animaux%20et%20environnementaux.ashx" title="Domaines animaux et environnementaux">Domaines animaux et environnementaux</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Ensorceleur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">L'ensorceleur</a> (<i><a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">lignages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Guerrier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Le guerrier</a> (<i><a class="pagelink" href="Pathfinder-RPG.groupe%20darmes.ashx" title="Les groupes d&#39;armes">groupes d'armes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Magicien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Le magicien</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%a9coles%20de%20magie.ashx" title="Les écoles de magie">écoles de magie</a>, <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes%20arcaniques.ashx" title="Découvertes arcaniques">découvertes arcaniques</a></i>)</li><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Moine.jpg';"><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Le moine</a> (<i><a class="pagelink" href="Pathfinder-RPG.voeux.ashx" title="Les vœux du moine">voeux</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Paladin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Le paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Prêtre.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Le prêtre</a> (<i><a class="pagelink" href="Pathfinder-RPG.variantes%20de%20canalisation.ashx" title="Variantes de canalisation">variantes de canalisation</a></i>) (<i><a class="pagelink" href="Pathfinder-RPG.domaines.ashx" title="Les domaines de prêtres">domaines</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rôdeur.jpg';"><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Le rôdeur</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a8ges%20de%20r%c3%b4deur.ashx" title="Pièges de rôdeur">Pièges de rôdeur</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Roublard.jpg';"><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Le roublard</a> (<i><a class="pagelink" href="Pathfinder-RPG.talents.ashx" title="Les talents de roublard">talents</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Alchimiste.jpg';"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">L'alchimiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Cavalier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Le chevalier</a> (<i><a class="pagelink" href="Pathfinder-RPG.Ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Conjurateur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Le conjurateur</a> (<i><a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;éidolon du conjurateur">eidolon</a>, <a class="pagelink" href="Pathfinder-RPG.mod%c3%a8les%20deidolon.ashx" title="Modèles d&#39;eidolon">modèles d'eidolon</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Inquisiteur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">L'inquisiteur</a> (<i><a class="pagelink" href="Pathfinder-RPG.jugements.ashx" title="Les jugements d&#39;inquisiteur">jugements</a>, <a class="pagelink" href="Pathfinder-RPG.inquisitions.ashx" title="Inquisitions">inquisitions</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Oracle.jpg';"><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">L'oracle</a> (<i><a class="pagelink" href="Pathfinder-RPG.myst%c3%a8res.ashx" title="Les mystères d&#39;oracle">mystères</a>, <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9dictions%20doracle.ashx" title="Malédictions d&#39;oracle">malédictions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Sorcière.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">La sorcière</a> (<i><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx" title="Les maléfices de sorcières">maléfices</a>, <a class="pagelink" href="Pathfinder-RPG.protecteurs.ashx" title="Les protecteurs de sorcières">protecteurs</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Urgraz.jpg';"><a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx" title="Antipaladin">L'anti-paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Seltyiel.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Le magus</a> (<i><a class="pagelink" href="Pathfinder-RPG.arcanes.ashx" title="Les arcanes de magus">arcanes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Reiko.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ninja.ashx" title="Ninja">Le ninja</a> (<i><a class="pagelink" href="Pathfinder-RPG.astuces.ashx" title="Astuces de ninja">astuces</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Lirianne.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Pistolier">Le pistolier</a> (<i><a class="pagelink" href="Pathfinder-RPG.exploits.ashx" title="Les exploits de pistolier">exploits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Hayato.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samoura%c3%af.ashx" title="Samouraï">Le samouraï</a> (<i><a class="pagelink" href="Pathfinder-RPG.ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Yoon.jpg';"><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le Cinétiste">Le cinétiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Talents%20sauvages.ashx" title="Éléments et Talents sauvages">Talents sauvages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Meligaster.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="Hypnotiseur">L'hypnotiseur</a> (<i><a class="pagelink" href="Pathfinder-RPG.Inductions.ashx" title="Induction (redirection)">Inductions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Erasmus.jpg';"><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Médium">Le médium</a> (<i><a class="pagelink" href="Pathfinder-RPG.Esprits%20(M%c3%a9dium).ashx" title="Esprits (Médium)">Esprits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Mavaro1.jpg';"><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="Occultiste">L'occultiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%89coles%20instrumentales.ashx" title="Écoles instrumentales">Écoles instrumentales</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rivani.jpg';"><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Psychiste">Le psychiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Disciplines%20psychiques.ashx" title="Disciplines psychiques">Disciplines psychiques</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Estra.jpg';"><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Spirite">Le spirite</a> (<i><a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Fantômes (Spirite)">Fantômes</a></i>) </li>
+</ul><br /><ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20PNJ.ashx" title="Classes de PNJ">Classes de PNJ</a></i></b></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20prestige.ashx" title="Les classes de prestige">Classes de prestige</a></i></b></li></ul>
+</td></tr></table>
+</td></tr></table>
+</div><div class="description"></div><br /><div style="float:right"><b><i>Voir aussi les <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a> d'alchimiste.</i></b><br/>
+<b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste des formules d'alchimiste</a>.</i></b><br/>
+<div style="float: right; padding: 0;">
+<IMG id="boutonalchimiste" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black;" onclick="expandMenu('alchimiste');" />
+</div><b>Voir les archétypes de l'alchimiste</b>&emsp;
+<ul ID="alchimiste" CLASS="listecachée cadrebas">
+  <li><a class="pagelink" href="Pathfinder-RPG.Alchimiste%20des%20marais%20(alchimiste).ashx" title="Alchimiste des marais">Alchimiste des marais</a> (<a class="pagelink" href="Pathfinder-RPG.grippli%20(race).ashx" title="Les gripplis">Grippli</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Alchimiste%20interne%20(alchimiste).ashx" title="Alchimiste interne">Alchimiste interne</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Animorphe%20(alchimiste).ashx" title="Animorphe">Animorphe</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Artificier%20des%20profondeurs%20(alchimiste).ashx" title="Artificier des profondeurs">Artificier des profondeurs</a> (<a class="pagelink" href="Pathfinder-RPG.svirfneblin%20(race).ashx" title="Les svirfneblins">Svirfneblin</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Brasseur%20d%c3%a9pines%20(alchimiste).ashx" title="Brasseur d&#39;épines">Brasseur d'épines</a> (<a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20enrag%c3%a9%20(alchimiste).ashx" title="Chimiste enragé">Chimiste enragé</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20inspir%c3%a9%20(Alchimiste).ashx" title="Chimiste inspiré">Chimiste inspiré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20spirituel%20(alchimiste).ashx" title="Chimiste spirituel">Chimiste spirituel</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chirurgien%20(alchimiste).ashx" title="Chirurgien">Chirurgien</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Collectionneur%20(alchimiste).ashx" title="Collectionneur">Collectionneur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Homonculiste%20(alchimiste).ashx" title="Homonculiste ">Homonculiste</a> (FF)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20clones%20(alchimiste).ashx" title="Maître des clones">Maître des clones</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Maraudeur%20ail%c3%a9%20(alchimiste).ashx" title="Maraudeur ailé">Maraudeur ailé</a> (<a class="pagelink" href="Pathfinder-RPG.gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>) (CM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Porte-peste%20(alchimiste).ashx" title="Porte-peste">Porte-peste</a> (<a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les Hommes-rats">Homme-rat</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Psychonaute%20(alchimiste).ashx" title="Psychonaute">Psychonaute</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pyrobombardier%20(alchimiste).ashx" title="Pyrobombardier">Pyrobombardier</a> (<a class="pagelink" href="Pathfinder-RPG.gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.R%c3%a9animateur%20(alchimiste).ashx" title="Réanimateur">Réanimateur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saboteur%20(alchimiste).ashx" title="Saboteur">Saboteur</a> (<a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">Gnome</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Vivisectioniste%20(alchimiste).ashx" title="Vivisectioniste">Vivisectioniste</a> (AM)</li>
+</ul></div><br /><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><i>Qu’il se terre dans un laboratoire souterrain secret ou qu’il mène gaiement ses expériences dans une école de magie respectable, on considère souvent l’alchimiste comme aussi instable, imprévisible et dangereux que les potions qu’il concocte. Certains créateurs d’objets alchimiques se contentent d’une vie sédentaire en tant que marchands d’allume-feu et de bâtons fumigènes, mais les véritables alchimistes répondent à un appel bien plus puissant. Au lieu de lancer des sorts comme les autres mages, l’alchimiste capture son propre potentiel magique dans les extraits et les liquides qu’il fabrique, les imprégnant de pouvoirs virulents qui lui permettent de devenir particulièrement efficace avec les poisons, les explosifs et toutes sortes de magies de métamorphose.</i><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABLEALCHIMISTE" href="#TABLEALCHIMISTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo"><caption>L'alchimiste</caption><tr CLASS="titre"><td ROWSPAN="2">Niveau</td><td ROWSPAN="2">BBA</td><td ROWSPAN="2">Réflexes</td><td ROWSPAN="2">Vigueur</td><td ROWSPAN="2">Volonté</td><td ROWSPAN="2">Spécial</td><td COLSPAN="6" CLASS="avecsoustitre"><a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">Extraits</a> par jour</td></tr><tr CLASS="soustitre"><td>1er</td><td>2e</td><td>3e</td><td>4e</td><td>5e</td><td>6e</td></tr><tr CLASS="premier"><td>1</td><td>+0</td><td>+2</td><td>+2</td><td>+0</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#ALCHIMIE" title="L&#39;alchimiste">alchimie</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 1d6, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#LANCERIMPROVISE" title="L&#39;alchimiste">lancer improvisé</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#MUTAGENES" title="L&#39;alchimiste">mutagène</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#PREPARATIONDEPOTIONS" title="L&#39;alchimiste">préparation de potions</a></td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>2</td><td>+1</td><td>+3</td><td>+3</td><td>+0</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#RESISTPOISON" title="L&#39;alchimiste">résistance au poison</a> +2, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#UTILISATIONDUPOISON" title="L&#39;alchimiste">utilisation du poison</a></td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3</td><td>+2</td><td>+3</td><td>+3</td><td>+1</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#ALCHIMIERAPIDE" title="L&#39;alchimiste">alchimie rapide</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 2d6</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>4</td><td>+3</td><td>+4</td><td>+4</td><td>+1</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a></td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5</td><td>+3</td><td>+4</td><td>+4</td><td>+1</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 3d6, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#RESISTPOISON" title="L&#39;alchimiste">résistance au poison</a> +4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>6</td><td>+4</td><td>+5</td><td>+5</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#EMPOISONNEMENTRAPIDE" title="L&#39;alchimiste">poison rapide</a></td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7</td><td>+5</td><td>+5</td><td>+5</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 4d6</td><td>4</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>8</td><td>+6/+1</td><td>+6</td><td>+6</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#RESISTPOISON" title="L&#39;alchimiste">résistance au poison</a> +6</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9</td><td>+6/+1</td><td>+6</td><td>+6</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 5d6</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>10</td><td>+7/+2</td><td>+7</td><td>+7</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#RESISTPOISON" title="L&#39;alchimiste">immunité au poison</a></td><td>5</td><td>4</td><td>3</td><td>1</td><td>-</td><td>-</td></tr><tr><td>11</td><td>+8/+3</td><td>+7</td><td>+7</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 6d6</td><td>5</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>12</td><td>+9/+4</td><td>+8</td><td>+8</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a></td><td>5</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td></tr><tr><td>13</td><td>+9/+4</td><td>+8</td><td>+8</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 7d6</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td><td>-</td></tr><tr CLASS="alt"><td>14</td><td>+10/+5</td><td>+9</td><td>+9</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#MUTAGENEPERSISTANT" title="L&#39;alchimiste">mutagène persistant</a></td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td><td>-</td></tr><tr><td>15</td><td>+11/+6/+1</td><td>+9</td><td>+9</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 8d6</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>-</td></tr><tr CLASS="alt"><td>16</td><td>+12/+7/+2</td><td>+10</td><td>+10</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a></td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td></tr><tr><td>17</td><td>+12/+7/+2</td><td>+10</td><td>+10</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 9d6</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td></tr><tr CLASS="alt"><td>18</td><td>+13/+8/+3</td><td>+11</td><td>+11</td><td>+6</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#ALCHIMIEINSTANTANEE" title="L&#39;alchimiste">alchimie instantanée</a>, <a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découverte</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td></tr><tr><td>19</td><td>+14/+9/+4</td><td>+11</td><td>+11</td><td>+6</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> 10d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td></tr><tr CLASS="alt"><td>20</td><td>+15/+10/+5</td><td>+12</td><td>+12</td><td>+6</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx#GRANDESDECOUVERTES" title="L&#39;alchimiste">grande découverte</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr></table>
+</center><br /><br /><b>Rôle.</b> L’exubérance (ou, d’après certains, la dangereuse témérité) de l’alchimiste n’adoucit en rien sa réputation de perfectionniste en matière de fabrication d’extraits et de potions magiques. Il les imprègne de la magie qu’il puise dans sa propre aura et utilise son corps comme sujet d’expérimentation. Et sa passion enjouée pour la création de bombes et la découverte de nouveaux poisons et méthodes d’application n’arrange rien. Si ces caractéristiques représentent un handicap et un risque pour la plupart des organisations civilisées et des institutions d’études supérieures, elles conviennent plutôt bien à la majorité des groupes d’aventuriers.<br /><br /><b>Alignement.</b> Tous.<br /><br /><b>Dés de vie.</b> d8<br /><br /><h2 class="separator"> Compétences de classe <a class="headeranchor" id="Compétences_de_classe_15" href="#Compétences_de_classe_15" title="Lien vers cette section">&#0182;</a></h2>Voici les compétences de classe de l’alchimiste : <a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (tous) (Int), <a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) (Int), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) (Int), <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> (Dex), <a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> (Dex), <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Vol.ashx" title="Vol">Vol</a> (Dex).<br /><br /><b>Rangs de compétence par niveau.</b> 4 + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>.<br /><br /><IMG SRC="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Damiel.jpg" WIDTH="30%" STYLE="float: right; background-color: white; padding: 0 0 5px 5px;"/><br /><br /><h2 class="separator"> Descriptif de la classe <a class="headeranchor" id="Descriptif_de_la_classe_16" href="#Descriptif_de_la_classe_16" title="Lien vers cette section">&#0182;</a></h2>Voici les caractéristiques de la classe d’alchimiste.<br /><br /><h3 class="separator"> Armes et armures <a class="headeranchor" id="Armes_et_armures_0" href="#Armes_et_armures_0" title="Lien vers cette section">&#0182;</a></h3>L’alchimiste est capable de manier toutes les <a class="pagelink" href="Pathfinder-RPG.armes%20courantes.ashx" title="armes courantes">armes courantes</a> et des <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a>. Il est formé au port des armures légères mais pas à celui des boucliers.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ALCHIMIE" href="#ALCHIMIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Alchimie (Sur) <a class="headeranchor" id="Alchimie_Sur_1" href="#Alchimie_Sur_1" title="Lien vers cette section">&#0182;</a></h3>Non seulement les alchimistes sont passés maîtres dans l’art de créer des <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">substances alchimiques ordinaires</a> comme le <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx#Feugrégeois" title="Substances et objets spéciaux">feu grégeois</a> ou les <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx#Bâtonfumigène" title="Substances et objets spéciaux">bâtons fumigènes</a>, mais ils savent également fabriquer des <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a>, des sortes de <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potions</a> dans lesquelles ils stockent des effets de sort. En pratique, l’alchimiste prépare son sort en mélangeant des ingrédients pour fabriquer un certain nombre d’<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a> et le «  lance » en buvant l’<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extrait</a> approprié. Quand il prépare un <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extrait</a> ou une <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe</a>, il l’imprègne d’une petite part de sa propre puissance magique, ce qui lui permet de créer de redoutables effets, mais lie ses créations à sa personne.<br /><br />Quand l’alchimiste effectue un test d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie) pour créer un <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">objet alchimique</a>, il bénéficie d’un bonus de compétence égal à son niveau de classe. De plus, il peut utiliser <a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie) pour identifier les <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potions</a> 
+comme s’il utilisait <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20de%20la%20magie.ashx" title="Détection de la magie">détection de la magie</a></i>. Pour faire ce genre de test, il doit tenir la <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potion</a> en main pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>.<br /><br />Un alchimiste peut créer trois types d’objets magiques  : les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a>, les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> et les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#MUTAGENES" title="L&#39;alchimiste">mutagènes</a>. Les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> sont des <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20aspersion.ashx" title="arme à aspersion">armes explosives à aspersion</a> et les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#MUTAGENES" title="L&#39;alchimiste">mutagènes</a> des élixirs de transformation que l’alchimiste boit pour améliorer ses aptitudes physiques. Ils sont tous deux décrits dans leur propre section, plus bas.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EXTRAITS" href="#EXTRAITS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Extraits <a class="headeranchor" id="Extraits_2" href="#Extraits_2" title="Lien vers cette section">&#0182;</a></h3>Les extraits représentent la catégorie la plus variée des trois. De bien des manières, ils se comportent comme des sorts sous forme de <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potions</a> et, en tant que tels, on peut dissiper leurs effets avec une <i><a class="pagelink" href="Pathfinder-RPG.dissipation%20de%20la%20magie.ashx" title="Dissipation de la magie">dissipation de la magie</a></i> par exemple, en utilisant le niveau de l’alchimiste comme <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a>. Contrairement aux <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potions</a>, les extraits ont de puissants pouvoirs et peuvent imiter des sorts qu’une <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potion</a> serait incapable de reproduire.<br /><br />Un alchimiste ne peut créer qu’un certain nombre d’extraits par jour et par niveau. Le nombre d’extraits limite quotidien est donné dans la table "<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#TABLEALCHIMISTE" title="L&#39;alchimiste">L'alchimiste</a>". De plus, il reçoit des extraits quotidiens supplémentaires s’il a une valeur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> élevée, tout comme un <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> reçoit des sorts supplémentaires par jour (voir la Table "<a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">Modificateurs de caractéristique et sorts en bonus</a>").<br /><br />Quand l’alchimiste prépare un extrait, il imprègne les produits chimiques et les réactifs utilisés d’une magie qu’il puise dans sa propre aura. L’extrait devient inerte dès qu’il ne se trouve plus en possession de l’alchimiste et se réactive dès qu’il revient entre ses mains. Normalement, un alchimiste ne peut pas transmettre ses extraits à ses alliés, mais voyez la <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découverte</a> de « l’infusion ». Une fois créé, l’extrait conserve sa puissance pendant une journée avant de devenir inerte. L’alchimiste doit donc en préparer chaque jour. Il faut 1 minute de travail pour concocter un extrait. Beaucoup d’alchimistes préparent tous leurs extraits en début de journée ou juste avant de se lancer dans une aventure. Il n’est pas rare cependant de voir un alchimiste garder quelques utilisations d’extraits (voire toutes) afin de préparer celui dont il a besoin sur le terrain.<br /><br />L’alchimiste ne lance pas vraiment de sorts, mais il possède une <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste de formules</a> qui détermine les extraits qu’il peut créer. Il peut utiliser des <a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAPOTENTIELMAGIQUE" title="Règles relatives aux objets magiques">objets à potentiel magique</a> si le sort apparaît dans sa <a class="pagelink" href="Pathfinder-RPG.liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">liste de formules</a>, mais pas d’<a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAFINDINCANTATION" title="Règles relatives aux objets magiques">objets à fin d’incantation</a> (à moins qu’il n’utilise pour cela la compétence <a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a>). Il « lance » son extrait en le buvant, comme une <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potion</a> (les effets de l’extrait reproduisent fidèlement ceux du sort sur lequel leur formule se base, mais ils affectent uniquement l’alchimiste). L'alchimiste peut saisir l'extrait et le boire en une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. L’alchimiste utilise son niveau de classe pour déterminer les effets basés sur le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a>.<br /><br />La création d’extrait nécessite des matières premières mais leur coût est négligeable, comme les <a class="pagelink" href="Pathfinder-RPG.composantes.ashx" title="composantes">composantes</a> sans valeur de la plupart des sorts. Si le sort exige une <a class="pagelink" href="Pathfinder-RPG.composantes.ashx" title="composantes">composante matérielle</a> onéreuse, l’alchimiste doit dépenser cette <a class="pagelink" href="Pathfinder-RPG.composantes.ashx" title="composantes">composante</a> au moment où il boit l’extrait. Il ne peut pas fabriquer un extrait basé sur un sort qui demande un <a class="pagelink" href="Pathfinder-RPG.focalisateur.ashx" title="focalisateur">focalisateur</a> (les extraits alchimiques imitant des sorts divins n’ont jamais besoin de <a class="pagelink" href="Pathfinder-RPG.focalisateur%20divin.ashx" title="focalisateur divin">focalisateur divin</a>). <br /><br />L’alchimiste peut préparer un extrait à partir de n’importe quelle formule de sa connaissance. Pour apprendre ou utiliser un extrait, l’alchimiste doit avoir une <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> au moins égale à 10 + niveau de l’extrait. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des extraits d’alchimiste est de 10 + <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau de l’extrait</a> + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de l’alchimiste.<br /><br />Un alchimiste peut apprendre autant de formules qu’il le désire. Il les conserve dans un livre spécial intitulé <i>livre des formules</i>. Il doit s’y référer à chaque fois qu’il prépare un extrait mais pas quand il en consomme. Un alchimiste commence le jeu avec deux formules de niveau 1 de son choix plus un nombre de formules supplémentaires égal à son modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. À chaque fois qu’il prend un niveau d’alchimiste, il gagne une nouvelle formule de n’importe quel <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau</a> accessible. L’alchimiste peut également ajouter des formules à son livre comme un <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> ajoute des sorts dans son <a class="pagelink" href="Pathfinder-RPG.magicien.ashx#GRIMOIRE" title="Le magicien">grimoire</a>, en payant le même prix et en y passant le même temps. L’alchimiste peut étudier le <a class="pagelink" href="Pathfinder-RPG.magicien.ashx#GRIMOIRE" title="Le magicien">grimoire</a> d’un <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> pour apprendre n’importe quelle formule équivalente aux sorts qu’il renferme. En revanche, un <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> ne peut pas apprendre de sort à partir d’un <i>livre des formules</i>. L’alchimiste n’a pas besoin de déchiffrer les écrits magiques avant de les recopier.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BOMBES" href="#BOMBES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Bombes (Sur) <a class="headeranchor" id="Bombes_Sur_3" href="#Bombes_Sur_3" title="Lien vers cette section">&#0182;</a></h3>En plus des <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits magiques</a>, les alchimistes sont capables de mélanger rapidement diverses composantes chimiques volatiles et de les imprégner de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau de classe</a> + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Les bombes sont instables, et s’il ne les utilise pas dans le <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> qui suit leur création, elles se dégradent et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier à partir de quelques produits chimiques en travaillant dans un laboratoire et il peut se réapprovisionner aussi facilement que les <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magiciens</a> et leur <a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Sacocheàcomposantes" title="Matériel de classes et de compétences">sacoche à composantes</a>. En début de journée, la plupart des alchimistes créent un nombre de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.<br /><br />Saisir les composantes d'une bombe, la créer et lancer la bombe est une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> qui provoque une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>. Les bombes lancées ont une portée de 6 mètres (4 cases) et utilisent l’attaque spéciale <a class="pagelink" href="Pathfinder-RPG.Actions%20sp%c3%a9ciales.ashx#ARMEIMPACT" title="Actions spéciales">lancer une arme à impact</a>. Les bombes sont assimilées à des armes et s’utilisent avec des dons comme <a class="pagelink" href="Pathfinder-RPG.Tir%20%c3%a0%20bout%20portant.ashx" title="Tir à bout portant">Tir à bout portant</a> et <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a>. Si la bombe touche directement, elle inflige 1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points de dégâts à chaque <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> impair d’alchimiste (ces dégâts supplémentaires ne sont pas doublés en cas de coup critique ni à l’aide d’un don comme <a class="pagelink" href="Pathfinder-RPG.Frappe%20d%c3%a9cisive.ashx" title="Frappe décisive">Frappe décisive</a>). Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans la zone d’aspersion peut effectuer un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> pour réduire ces dégâts de moitié. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de ce jet est égal à 10 + la moitié du <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de l’alchimiste + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de l’alchimiste.<br /><br />Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de « <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#DECOUVERTES" title="L&#39;alchimiste">découvertes</a> » quand ils passent des niveaux. Comme les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a>, les bombes deviennent inertes si elles ne se trouvent plus en possession de l’alchimiste.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PREPARATIONDEPOTIONS" href="#PREPARATIONDEPOTIONS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Préparation de potions (Ext) <a class="headeranchor" id="Préparation_de_potions_Ext_4" href="#Préparation_de_potions_Ext_4" title="Lien vers cette section">&#0182;</a></h3>Au niveau 1, l’alchimiste reçoit <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9paration%20de%20potions.ashx" title="Préparation de potions">Préparation de potions</a> comme don supplémentaire. Il peut préparer les <a class="pagelink" href="Pathfinder-RPG.potions%20magiques.ashx" title="Les potions magiques">potions</a> correspondant à n’importe quelle formule de sa connaissance (jusqu’au niveau 3) en utilisant son niveau d’alchimiste comme <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a>. Le sort doit être susceptible de se transformer en potion. L’alchimiste n’a pas besoin de remplir les conditions requises par ce don.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MUTAGENES" href="#MUTAGENES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Mutagènes (Sur) <a class="headeranchor" id="Mutagènes_Sur_5" href="#Mutagènes_Sur_5" title="Lien vers cette section">&#0182;</a></h3>Au niveau 1, l’alchimiste découvre comment créer un mutagène qu’il peut boire afin d’améliorer ses prouesses physiques, au prix de sa personnalité. Il lui faut une heure pour préparer une dose de mutagène qui, une fois prête, reste active jusqu’à ce qu’il l’utilise. L’alchimiste ne peut avoir qu’une dose de mutagène de prête à la fois. S’il en prépare une seconde, la première devient inerte. Comme pour les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a> et les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a>, le mutagène devient inerte quand il ne se trouve plus en possession de l’alchimiste et se réactive quand il revient entre ses mains.<br /><br />Quand un alchimiste prépare un mutagène, il choisit une valeur de caractéristique physique (<a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>, <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> ou <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>). Boire le mutagène nécessite une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Une fois avalé, le mutagène rend l’alchimiste plus imposant et plus bestial, ce qui lui donne un bonus d’armure naturelle de +2 et un bonus alchimique de +4 à la caractéristique choisie pendant 10 minutes par niveau d’alchimiste. De plus, tant que le mutagène fait effet, l’alchimiste subit un malus de -2 à une valeur de caractéristique mentale. Si le mutagène s’applique à la <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>, c’est un malus d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>, s’il s’applique à la <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> c’est un malus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> et pour la <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>, c’est un malus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>.<br /><br />Si quelqu’un boit le mutagène alors qu’il n’est pas alchimiste, il doit réussir un jet de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> (DD 10 +1/2 niveau de l’alchimiste + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de l’alchimiste) ou être <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a> pendant 1 heure. Un non-alchimiste  ne peut jamais bénéficier des avantages d’un mutagène, mais si un alchimiste boit le mutagène d’un confrère, il profite de ses effets (bien que, si l’autre alchimiste crée un second mutagène, les effets de celui qui a été « volé » disparaissent immédiatement). Les effets des mutagènes ne se cumulent pas et ceux précédemment avalés disparaissent si l’alchimiste en absorbe un autre.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="LANCERIMPROVISE" href="#LANCERIMPROVISE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Lancer improvisé (Ext) <a class="headeranchor" id="Lancer_improvisé_Ext_6" href="#Lancer_improvisé_Ext_6" title="Lien vers cette section">&#0182;</a></h3>Tous les alchimistes reçoivent le don <a class="pagelink" href="Pathfinder-RPG.Lancer%20improvis%c3%a9.ashx" title="Lancer improvisé">Lancer improvisé</a> comme don supplémentaire au niveau 1. L’alchimiste ajoute son modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> aux dégâts des <a class="pagelink" href="Pathfinder-RPG.Actions%20sp%c3%a9ciales.ashx#ARMEIMPACT" title="Actions spéciales">armes à impact</a> et aux dégâts d’aspersion le cas échéant. Ce bonus aux dégâts est déjà inclus dans le pouvoir de classe de <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DECOUVERTES" href="#DECOUVERTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Découvertes (Sur) <a class="headeranchor" id="Découvertes_Sur_7" href="#Découvertes_Sur_7" title="Lien vers cette section">&#0182;</a></h3>Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau 18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire, il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes qui améliorent les <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombes</a> et sont marquées d’un astérisque (*) ne se cumulent pas. Seule une de ces découvertes s’applique à chaque <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#BOMBES" title="L&#39;alchimiste">bombe</a> créée. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de l’alchimiste.<br /><br />Voir la liste des <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a> d'alchimiste.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RESISTPOISON" href="#RESISTPOISON"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Résistance au poison (Ext) <a class="headeranchor" id="Résistance_au_poison_Ext_8" href="#Résistance_au_poison_Ext_8" title="Lien vers cette section">&#0182;</a></h3>Au niveau 2, l’alchimiste gagne un bonus de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre le <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a>. Ce bonus passe à +4 au niveau 5 et à +6 au niveau 8. Au niveau 10, l’alchimiste est complètement immunisé contre les <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="UTILISATIONDUPOISON" href="#UTILISATIONDUPOISON"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Utilisation des poisons (Ext) <a class="headeranchor" id="Utilisation_des_poisons_Ext_9" href="#Utilisation_des_poisons_Ext_9" title="Lien vers cette section">&#0182;</a></h3>Les alchimistes sont formés à la manipulation des <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a> et, à partir du niveau 2, ils ne peuvent pas s’empoisonner accidentellement en enduisant une arme.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ALCHIMIERAPIDE" href="#ALCHIMIERAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Alchimie rapide (Ext) <a class="headeranchor" id="Alchimie_rapide_Ext_10" href="#Alchimie_rapide_Ext_10" title="Lien vers cette section">&#0182;</a></h3>Au niveau 3, l’alchimiste peut créer des <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">objets alchimiques</a> à une vitesse prodigieuse. Il met deux fois moins de temps que la normale pour fabriquer un <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">objet alchimique</a> et peut appliquer du <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a> sur une arme par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EMPOISONNEMENTRAPIDE" href="#EMPOISONNEMENTRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Empoisonnement rapide <a class="headeranchor" id="Empoisonnement_rapide_11" href="#Empoisonnement_rapide_11" title="Lien vers cette section">&#0182;</a></h3>Au niveau 6, l’alchimiste peut appliquer une dose de <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a> sur une arme par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MUTAGENEPERSISTANT" href="#MUTAGENEPERSISTANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Mutagène persistant (Sur) <a class="headeranchor" id="Mutagène_persistant_Sur_12" href="#Mutagène_persistant_Sur_12" title="Lien vers cette section">&#0182;</a></h3>Au niveau 14, les effets d’un <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#MUTAGENES" title="L&#39;alchimiste">mutagène</a> durent 1 heure par niveau.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ALCHIMIEINSTANTANEE" href="#ALCHIMIEINSTANTANEE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Alchimie instantanée (Ext) <a class="headeranchor" id="Alchimie_instantanée_Ext_13" href="#Alchimie_instantanée_Ext_13" title="Lien vers cette section">&#0182;</a></h3>Au niveau 18, l’alchimiste crée des <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">objets alchimiques</a> à une vitesse surnaturelle. Il peut les fabriquer par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a> à condition de réussir un test d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie) et de disposer des ressources appropriées pour alimenter sa création. Il peut appliquer du <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a> sur une arme par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRANDESDECOUVERTES" href="#GRANDESDECOUVERTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Grande découverte (Sur) <a class="headeranchor" id="Grande_découverte_Sur_14" href="#Grande_découverte_Sur_14" title="Lien vers cette section">&#0182;</a></h3>Au niveau 20, l’alchimiste fait une <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDESDECOUVERTES" title="Les découvertes d&#39;alchimiste">grande découverte</a>. Il apprend immédiatement deux <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a> normales ainsi qu’une troisième issue de la liste des <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDESDECOUVERTES" title="Les découvertes d&#39;alchimiste">grandes découvertes</a>, qui représente un véritable bond en avant dans le domaine des connaissances alchimiques. La promesse de l’une de ces <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDESDECOUVERTES" title="Les découvertes d&#39;alchimiste">grandes découvertes</a> est le but premier de toutes les expériences et de tout le travail de bon nombre d’alchimistes.<br /><br />Voir la liste des <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDEDECOUVERTE" title="Les découvertes d&#39;alchimiste">grandes découvertes</a> d'alchimiste.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FORMULES" href="#FORMULES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Les formules des alchimistes <a class="headeranchor" id="Les_formules_des_alchimistes_17" href="#Les_formules_des_alchimistes_17" title="Lien vers cette section">&#0182;</a></h2>Les alchimistes ont accès à toutes sortes de formules qui leur permettent de fabriquer des <a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx#EXTRAITS" title="L&#39;alchimiste">extraits</a> à partir des sorts de la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20formules%20dalchimiste.ashx" title="Liste des formules d&#39;alchimiste">Liste des formules d'alchimiste</a>.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>

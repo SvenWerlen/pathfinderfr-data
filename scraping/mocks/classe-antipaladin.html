@@ -1,0 +1,822 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Antipaladin - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="anti-paladin" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antipaladin.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Antipaladin&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwA7EB8+7FJW73ZgZvKhIZZd7iEOM=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636091085625980305" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJXfZk60/mihQcfQNFTDZQu+B72oi3QcwxQT+thNGyuup8+PUBv1eqXTlmmEdyV9RNwnZmY" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Antipaladin">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Antipaladin">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Antipaladin">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Antipaladin.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Antipaladin.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Antipaladin">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Antipaladin
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Antipaladin" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<table><tr style="vertical-align: top">
+<td width="12%"><center><img ID="menuclasseIMG" src="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg" WIDTH="80%" style="border: 1px solid #4b3124" /></center></td>
+<td width="80%">
+<h2 class="separator">Les classes de personnage<a class="headeranchor" id="Les_classes_de_personnage_0" href="#Les_classes_de_personnage_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barbare.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Le barbare</a> (<i><a class="pagelink" href="Pathfinder-RPG.pouvoirs%20de%20rage.ashx" title="Les pouvoirs de rage">pouvoirs de rage</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Le barde</a> (<i><a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentations.ashx" title="Les représentations de barde">représentations</a>, <a class="pagelink" href="Pathfinder-RPG.Chefs%20doeuvre.ashx" title="Chefs d&#39;oeuvre">chefs d'oeuvre</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Druide.jpg';"><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Le druide</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Domaines%20animaux%20et%20environnementaux.ashx" title="Domaines animaux et environnementaux">Domaines animaux et environnementaux</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Ensorceleur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">L'ensorceleur</a> (<i><a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">lignages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Guerrier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Le guerrier</a> (<i><a class="pagelink" href="Pathfinder-RPG.groupe%20darmes.ashx" title="Les groupes d&#39;armes">groupes d'armes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Magicien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Le magicien</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%a9coles%20de%20magie.ashx" title="Les écoles de magie">écoles de magie</a>, <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes%20arcaniques.ashx" title="Découvertes arcaniques">découvertes arcaniques</a></i>)</li><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Moine.jpg';"><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Le moine</a> (<i><a class="pagelink" href="Pathfinder-RPG.voeux.ashx" title="Les vœux du moine">voeux</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Paladin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Le paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Prêtre.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Le prêtre</a> (<i><a class="pagelink" href="Pathfinder-RPG.variantes%20de%20canalisation.ashx" title="Variantes de canalisation">variantes de canalisation</a></i>) (<i><a class="pagelink" href="Pathfinder-RPG.domaines.ashx" title="Les domaines de prêtres">domaines</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rôdeur.jpg';"><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Le rôdeur</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a8ges%20de%20r%c3%b4deur.ashx" title="Pièges de rôdeur">Pièges de rôdeur</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Roublard.jpg';"><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Le roublard</a> (<i><a class="pagelink" href="Pathfinder-RPG.talents.ashx" title="Les talents de roublard">talents</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Alchimiste.jpg';"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">L'alchimiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Cavalier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Le chevalier</a> (<i><a class="pagelink" href="Pathfinder-RPG.Ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Conjurateur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Le conjurateur</a> (<i><a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;éidolon du conjurateur">eidolon</a>, <a class="pagelink" href="Pathfinder-RPG.mod%c3%a8les%20deidolon.ashx" title="Modèles d&#39;eidolon">modèles d'eidolon</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Inquisiteur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">L'inquisiteur</a> (<i><a class="pagelink" href="Pathfinder-RPG.jugements.ashx" title="Les jugements d&#39;inquisiteur">jugements</a>, <a class="pagelink" href="Pathfinder-RPG.inquisitions.ashx" title="Inquisitions">inquisitions</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Oracle.jpg';"><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">L'oracle</a> (<i><a class="pagelink" href="Pathfinder-RPG.myst%c3%a8res.ashx" title="Les mystères d&#39;oracle">mystères</a>, <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9dictions%20doracle.ashx" title="Malédictions d&#39;oracle">malédictions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Sorcière.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">La sorcière</a> (<i><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx" title="Les maléfices de sorcières">maléfices</a>, <a class="pagelink" href="Pathfinder-RPG.protecteurs.ashx" title="Les protecteurs de sorcières">protecteurs</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Urgraz.jpg';"><a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx" title="Antipaladin">L'anti-paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Seltyiel.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Le magus</a> (<i><a class="pagelink" href="Pathfinder-RPG.arcanes.ashx" title="Les arcanes de magus">arcanes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Reiko.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ninja.ashx" title="Ninja">Le ninja</a> (<i><a class="pagelink" href="Pathfinder-RPG.astuces.ashx" title="Astuces de ninja">astuces</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Lirianne.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Pistolier">Le pistolier</a> (<i><a class="pagelink" href="Pathfinder-RPG.exploits.ashx" title="Les exploits de pistolier">exploits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Hayato.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samoura%c3%af.ashx" title="Samouraï">Le samouraï</a> (<i><a class="pagelink" href="Pathfinder-RPG.ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Yoon.jpg';"><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le Cinétiste">Le cinétiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Talents%20sauvages.ashx" title="Éléments et Talents sauvages">Talents sauvages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Meligaster.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="Hypnotiseur">L'hypnotiseur</a> (<i><a class="pagelink" href="Pathfinder-RPG.Inductions.ashx" title="Induction (redirection)">Inductions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Erasmus.jpg';"><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Médium">Le médium</a> (<i><a class="pagelink" href="Pathfinder-RPG.Esprits%20(M%c3%a9dium).ashx" title="Esprits (Médium)">Esprits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Mavaro1.jpg';"><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="Occultiste">L'occultiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%89coles%20instrumentales.ashx" title="Écoles instrumentales">Écoles instrumentales</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rivani.jpg';"><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Psychiste">Le psychiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Disciplines%20psychiques.ashx" title="Disciplines psychiques">Disciplines psychiques</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Estra.jpg';"><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Spirite">Le spirite</a> (<i><a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Fantômes (Spirite)">Fantômes</a></i>) </li>
+</ul><br /><ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20PNJ.ashx" title="Classes de PNJ">Classes de PNJ</a></i></b></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20prestige.ashx" title="Les classes de prestige">Classes de prestige</a></i></b></li></ul>
+</td></tr></table>
+</td></tr></table>
+</div>
+<div class="fright"><b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20dantipaladin.ashx" title="Liste des sorts d&#39;antipaladin">liste des sorts des antipaladins</a>.</i></b><br/>
+<b><i>Voir aussi le <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a>.</i></b><br/>
+<div style="float: right; padding: 0;">
+<IMG id="boutonantipaladin" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black;" onclick="expandMenu('antipaladin');" />
+</div><b><i>Voir aussi ses archétypes.</i></b>&emsp;
+<ul ID="antipaladin" CLASS="listecachée cadrebas">
+  <li><a class="pagelink" href="Pathfinder-RPG.Chevalier%20du%20s%c3%a9pulcre%20(paladin).ashx" title="Chevalier du sépulcre">Chevalier du sépulcre</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Insinuateur%20(paladin).ashx" title="Insinuateur">Insinuateur</a> </li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saccageur%20(paladin).ashx" title="Saccageur">Saccageur</a> </li>
+</ul></div><br/>
+<br />
+<br /><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div>
+<i>Cela ne se produit que rarement, mais certains paladins s’éloignent du chemin de la vertu. La plupart de ces guerriers saints égarés cherchent la rédemption et le pardon pour leurs mauvaises actions et récupèrent ensuite leurs pouvoirs en usant de piété, de charité et de puissants sortilèges. Mais ce n’est pas le cas de tous : afin d’assouvir leur désir de vengeance envers leurs anciens frères, de rares individus suffisamment sombres et dérangés s’adonnent activement au Mal et se tournent vers les puissances maléfiques qu’ils avaient autrefois combattues. Une maxime dit que, plus on s’élève et plus sévère sera la chute. Les antipaladins sont la preuve vivante que c’est bien la vérité : leur fierté et leur haine les rendent aveugles à la gloire des puissances qu’ils ont reniées.<br /><br />Les antipaladins deviennent l’exact opposé de ce qu’ils étaient. Ils établissent des pactes avec des fiélons, prennent des vies innocentes et n’accordent d’importance qu’à leur quête personnelle de pouvoir et de richesse. Ces champions du Mal dirigent souvent des armées de créatures maléfiques et s’allient avec d’autres individus sombres afin de détruire tout ce qui est sacré et de tyranniser les faibles. Ce n’est donc pas étonnant que les paladins n’économisent aucun effort pour débarrasser le monde de ces individus malfaisants.<br /><br />L’antipaladin est une classe modifiée qui utilise et altère de nombreuses facettes de la classe de base de paladin et qui ne peut pas vraiment être considérée comme une nouvelle classe à part entière. Les changements effectués renversent complètement les traits et le ton de la classe de paladin et permettent de représenter un tout autre archétype de l’imaginaire fantastique sans devoir construire une nouvelle classe à partir de zéro. Même s’il s’agit en quelque sorte d’une nouvelle version du paladin, cette classe modifiée peut être utilisée comme n’importe laquelle des classes de base présentées dans la première partie de ce chapitre.</i><br /><br />En tant que classe de paladin modifiée, l’antipaladin utilise la Table 2–11 pour déterminer son bonus de base à l’attaque, ses bonus de jets de sauvegarde et ses sorts par jour. Tous ces détails, ainsi que les nouvelles capacités de la classe, se trouvent sur cette table.<br /><br />
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABLEANTIPALADIN" href="#TABLEANTIPALADIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo"><caption>L'antipaladin</caption><tr CLASS="titre"><td ROWSPAN="2">Niveau</td><td ROWSPAN="2">BBA</td><td ROWSPAN="2">Réflexes</td><td ROWSPAN="2">Vigueur</td><td ROWSPAN="2">Volonté</td><td CLASS="gauche" ROWSPAN="2">Spécial</td><td CLASS="avecsoustitre" COLSPAN="4">Sorts par jour</td></tr><tr CLASS="soustitre"><td>1e</td><td>2e</td><td>3e</td><td>4e</td></tr><tr CLASS="premier"><td>1</td><td>+1</td><td>+0</td><td>+2</td><td>+2</td><td CLASS="gauche"><a class="internallink" href="#AURADUMAL" title="aura du mal">aura du mal</a>, <a class="internallink" href="#DETECTIONDUBIEN" title="détection du bien">détection du bien</a>, <br/><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 1/jour</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>2</td><td>+2</td><td>+0</td><td>+3</td><td>+3</td><td CLASS="gauche"><a class="internallink" href="#RESISTANCEMAUDITE" title="résistance maudite">résistance maudite</a>, <a class="internallink" href="#TOUCHERDELACORRUPTION" title="toucher de la corruption">toucher de la corruption</a></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3</td><td>+3</td><td>+1</td><td>+3</td><td>+3</td><td CLASS="gauche"><a class="internallink" href="#AURADELACHETE" title="aura de lâcheté">aura de lâcheté</a>, <a class="internallink" href="#VECTEURDEMALADIE" title="vecteur de maladie">vecteur de maladie</a>, <a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>4</td><td>+4</td><td>+1</td><td>+4</td><td>+4</td><td CLASS="gauche"><a class="internallink" href="#CANALISATIONDENERGIENEGATIVE" title="canalisation d'énergie negative">canalisation d'énergie negative</a>, <br/><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 2/jour</td><td>0</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5</td><td>+5</td><td>+1</td><td>+4</td><td>+4</td><td CLASS="gauche"><a class="internallink" href="#FAVEURDESFIELONS" title="faveur des fiélons">faveur des fiélons</a></td><td>1</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>6</td><td>+6/+1</td><td>+2</td><td>+5</td><td>+5</td><td CLASS="gauche"><a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>1</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7</td><td>+7/+2</td><td>+2</td><td>+5</td><td>+5</td><td CLASS="gauche"><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 3/jour</td><td>1</td><td>0</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>8</td><td>+8/+3</td><td>+2</td><td>+6</td><td>+6</td><td CLASS="gauche"><a class="internallink" href="#AURADEDESESPOIR" title="aura de désespoir">aura de désespoir</a></td><td>1</td><td>1</td><td>-</td><td>-</td></tr><tr><td>9</td><td>+9/+4</td><td>+3</td><td>+6</td><td>+6</td><td CLASS="gauche"><a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>2</td><td>1</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>10</td><td>+10/+5</td><td>+3</td><td>+7</td><td>+7</td><td CLASS="gauche"><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 4/jour</td><td>2</td><td>1</td><td>0</td><td>-</td></tr><tr><td>11</td><td>+11/+6/+1</td><td>+3</td><td>+7</td><td>+7</td><td CLASS="gauche"><a class="internallink" href="#AURADEVENGEANCE" title="aura de vengeance">aura de vengeance</a></td><td>2</td><td>1</td><td>1</td><td>-</td></tr><tr CLASS="alt"><td>12</td><td>+12/+7/+2</td><td>+4</td><td>+8</td><td>+8</td><td CLASS="gauche"><a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>2</td><td>2</td><td>1</td><td>-</td></tr><tr><td>13</td><td>+13/+8/+3</td><td>+4</td><td>+8</td><td>+8</td><td CLASS="gauche"><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 5/jour</td><td>3</td><td>2</td><td>1</td><td>0</td></tr><tr CLASS="alt"><td>14</td><td>+14/+9/+4</td><td>+4</td><td>+9</td><td>+9</td><td CLASS="gauche"><a class="internallink" href="#AURADEPECHE" title="aura de péché">aura de péché</a></td><td>3</td><td>2</td><td>1</td><td>1</td></tr><tr><td>15</td><td>+15/+10/+5</td><td>+5</td><td>+9</td><td>+9</td><td CLASS="gauche"><a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>3</td><td>2</td><td>2</td><td>1</td></tr><tr CLASS="alt"><td>16</td><td>+16/+11/+6/+1</td><td>+5</td><td>+10</td><td>+10</td><td CLASS="gauche"><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 6/jour</td><td>3</td><td>3</td><td>2</td><td>1</td></tr><tr><td>17</td><td>+17/+12/+7/+2</td><td>+5</td><td>+10</td><td>+10</td><td CLASS="gauche"><a class="internallink" href="#AURADEDEPRAVATION" title="aura de dépravation">aura de dépravation</a></td><td>4</td><td>3</td><td>2</td><td>1</td></tr><tr CLASS="alt"><td>18</td><td>+18/+13/+8/+3</td><td>+6</td><td>+11</td><td>+11</td><td CLASS="gauche"><a class="internallink" href="#CRUAUTE" title="cruauté">cruauté</a></td><td>4</td><td>3</td><td>2</td><td>2</td></tr><tr><td>19</td><td>+19/+14/+9/+4</td><td>+6</td><td>+11</td><td>+11</td><td CLASS="gauche"><a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du bien">châtiment du bien</a> 7/jour</td><td>4</td><td>3</td><td>3</td><td>2</td></tr><tr CLASS="alt"><td>20</td><td>+20/+15/+10/+5</td><td>+6</td><td>+12</td><td>+12</td><td CLASS="gauche"><a class="internallink" href="#CHAMPIONMAUDIT" title="champion maudit">champion maudit</a></td><td>4</td><td>4</td><td>3</td><td>3</td></tr></table>
+</center><br /><br />
+<b>Rôle.</b> Les antipaladins sont les plus dangereux des héros maléfiques. Ils n’accordent aucune importance à la vie des autres et recherchent activement à semer la mort et la destruction au sein des sociétés organisées. Ils ne voyagent généralement qu’en compagnie d’individus qui leur sont soumis, sauf lorsqu’ils s’infiltrent parmi leurs ennemis pour les détruire de l’intérieur.<br /><br /><b>Alignement.</b> Chaotique Mauvais.<br /><br /><b>Dés de vie.</b> d10.<br /><br /><h2 class="separator"> Compétences de classe <a class="headeranchor" id="Compétences_de_classe_17" href="#Compétences_de_classe_17" title="Lien vers cette section">&#0182;</a></h2>Les compétences de classe de l’antipaladin sont les suivantes  : <a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> (<a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a>), <a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (<a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a>), <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> (<a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a>), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) (<a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a>), <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> (<a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a>), <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> (<a class="pagelink" href="Pathfinder-RPG.Dex.ashx" title="Dex">Dex</a>), <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a> (<a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a>), <a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a> (<a class="pagelink" href="Pathfinder-RPG.Dex.ashx" title="Dex">Dex</a>), <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> (<a class="pagelink" href="Pathfinder-RPG.Cha.ashx" title="Cha">Cha</a>), <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (<a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a>) et <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> (<a class="pagelink" href="Pathfinder-RPG.Sag.ashx" title="Sag">Sag</a>).<br /><br /><b>Points de compétence par niveau</b> : 2 + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Int.ashx" title="Int">Int</a>.<br /><br /><IMG SRC="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Urgraz.jpg" WIDTH="35%" STYLE="float: right; background-color: white; padding: 0 0 5px 5px;"/><br /><br /><h2 class="separator"> Descriptif de la classe <a class="headeranchor" id="Descriptif_de_la_classe_18" href="#Descriptif_de_la_classe_18" title="Lien vers cette section">&#0182;</a></h2>Les aptitudes de l’antipaladin sont décrites ci-dessous.<br /><br /><h3 class="separator"> Armes et armures <a class="headeranchor" id="Armes_et_armures_0" href="#Armes_et_armures_0" title="Lien vers cette section">&#0182;</a></h3>Les antipaladins sont formés à l’utilisation de toutes les <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMECOURANTE" title="Caractéristiques des armes">armes courantes</a> et <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDEGUERRE" title="Caractéristiques des armes">armes de guerre</a> ainsi qu’au port de tous les types d’armures (<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx#armures lourdes" title="Tableau récapitulatif des armures">lourdes</a>, <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx#armures intermédiaires" title="Tableau récapitulatif des armures">intermédiaires</a> et <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx#armures légères" title="Tableau récapitulatif des armures">légères</a>) et des <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx#armures boucliers" title="Tableau récapitulatif des armures">boucliers</a> (à l’exception des <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#pavois" title="Descriptions individuelles des armures">pavois</a>).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADUMAL" href="#AURADUMAL"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura du Mal (Ext) <a class="headeranchor" id="Aura_du_Mal_Ext_1" href="#Aura_du_Mal_Ext_1" title="Lien vers cette section">&#0182;</a></h3>La puissance de l’aura de Mal (voir <a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20du%20Mal.ashx" title="Détection du Mal"><i>détection du Mal</i></a>) qui entoure un antipaladin est égale à son niveau. Lorsqu’un <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a> utilise sa capacité de <a class="pagelink" href="Pathfinder-RPG.paladin.ashx#Châtiment du Mal" title="Le paladin">Châtiment du Mal</a> sur un antipaladin, il inflige 2 points de dégâts par niveau de paladin lors de la première attaque réussie.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DETECTIONDUBIEN" href="#DETECTIONDUBIEN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Détection du Bien (Mag) <a class="headeranchor" id="Détection_du_Bien_Mag_2" href="#Détection_du_Bien_Mag_2" title="Lien vers cette section">&#0182;</a></h3>Un antipaladin peut détecter le <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">Bien</a> à volonté, comme par le sort de <a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20du%20Bien.ashx" title="Détection du Bien"><i>détection du Bien</i></a>. Par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a>, l’antipaladin peut se concentrer sur un objet ou un individu unique distant d’au plus 18 m pour déterminer s’il est d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">Bon</a> et pour connaître la puissance de son aura comme s’il l’avait étudié pendant 3  rounds. Lorsqu’il se concentre sur un objet ou un individu, l’antipaladin ne détecte pas le <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">Bien</a> sur les autres objets ou individus.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHATIMENTDUBIEN" href="#CHATIMENTDUBIEN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Châtiment du Bien (Sur) <a class="headeranchor" id="Châtiment_du_Bien_Sur_3" href="#Châtiment_du_Bien_Sur_3" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un antipaladin peut faire appel aux puissances du mal pour écraser les forces du <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bien</a>. Par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>, l’antipaladin désigne un ennemi situé dans son champ de vision et le prend pour cible de son châtiment du <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bien</a>. Si la cible est d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bon</a>, l’antipaladin ajoute son bonus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> (s’il en a un) à ses jets d’attaques et son niveau d’antipaladin à tous les jets de dégâts contre elle. Si la cible est un <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">Extérieur</a> du sous-type <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bien</a>, un <a class="pagelink" href="Pathfinder-RPG.dragon.ashx" title="Dragon">dragon</a> d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bon</a> ou un individu d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bon</a> possédant des niveaux de <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a> ou de <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a>, le bonus aux dégâts passe à 2 points de dégâts par niveau de l’antipaladin pour la première attaque réussie. Dans tous les cas, les attaques du châtiment du Bien ignorent toutes les <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réductions de dégâts</a> dont la cible pourrait bénéficier.<br /><br />De plus, lorsqu’un châtiment du Bien est en cours, l’antipaladin gagne un bonus de parade à sa <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> égal à son bonus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> (s’il en a un) contre les attaques portées par la cible du châtiment du Bien. Si l’antipaladin désigne une créature qui n’est pas d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bon</a>, le châtiment est dépensé, mais il n’a aucun effet.<br /><br />L’effet du châtiment du Bien persiste jusqu’à ce que la cible soit morte ou jusqu’à ce que l’antipaladin se repose et récupère son quota quotidien d’utilisations de cette capacité. Au niveau 4 et tous les trois niveaux par la suite, l’antipaladin obtient une utilisation quotidienne supplémentaire de ce pouvoir, comme indiqué sur la Table 2-13, avec un maximum de sept utilisations quotidiennes au niveau 19.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RESISTANCEMAUDITE" href="#RESISTANCEMAUDITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Résistance maudite (Sur) <a class="headeranchor" id="Résistance_maudite_Sur_4" href="#Résistance_maudite_Sur_4" title="Lien vers cette section">&#0182;</a></h3>Au niveau 2, l’antipaladin gagne un bonus à tous ses <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> égal à son bonus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> (s’il en a un).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TOUCHERDECORRUPTION" href="#TOUCHERDECORRUPTION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Toucher de corruption (Sur) <a class="headeranchor" id="Toucher_de_corruption_Sur_5" href="#Toucher_de_corruption_Sur_5" title="Lien vers cette section">&#0182;</a></h3>À partir du niveau  2, un antipaladin peut faire apparaître des flammes maudites autour de ses mains et ainsi causer de terribles blessures à ceux qu’il touche. Chaque jour, il peut utiliser cette capacité un nombre de fois égal à la moitié de son niveau d’antipaladin  +  son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>. Par une attaque de contact, il peut infliger 1d6  points de dégâts par tranche de deux niveaux d’antipaladin. Ce pouvoir nécessite une action simple qui ne provoque pas d’attaque d’opportunité.<br /><br />L’antipaladin peut également utiliser cette capacité pour guérir les <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">morts-vivants</a> et ainsi soigner 1d6 <a class="pagelink" href="Pathfinder-RPG.point%20de%20vie.ashx" title="point de vie">points de vie</a> par tranche de deux niveaux d’antipaladin.<br /><br />Cette capacité peut être modifiée par tous les dons, sorts ou autres effets qui influencent la capacité d’<a class="pagelink" href="Pathfinder-RPG.paladin.ashx#imposition des mains" title="Le paladin">imposition des mains</a> des <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a>. Par exemple, le don <a class="pagelink" href="Pathfinder-RPG.Imposition%20des%20mains%20suppl%c3%a9mentaire.ashx" title="Imposition des mains supplémentaire">Imposition des mains supplémentaire</a> donne à un antipaladin deux utilisations quotidiennes supplémentaires de sa capacité de toucher de corruption.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADELACHETE" href="#AURADELACHETE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura de lâcheté (Sur) <a class="headeranchor" id="Aura_de_lâcheté_Sur_6" href="#Aura_de_lâcheté_Sur_6" title="Lien vers cette section">&#0182;</a></h3>Il émane d’un antipaladin de niveau  3 une aura intimidante qui impose à tous les ennemis situés dans un rayon de 3 m un malus de –4 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre la <a class="pagelink" href="Pathfinder-RPG.Terreur%20(capacit%c3%a9).ashx" title="Terreur (Mag ou Sur)">terreur</a>. Les créatures qui sont normalement immunisées contre la <a class="pagelink" href="Pathfinder-RPG.Terreur%20(capacit%c3%a9).ashx" title="Terreur (Mag ou Sur)">terreur</a> perdent cette immunité lorsqu’ils se trouvent dans cette aura. Cette capacité fonctionne seulement lorsque l’antipaladin est conscient, mais pas s’il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> ou <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">mort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="VECTEURDEMALADIE" href="#VECTEURDEMALADIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Vecteur de maladie (Ext) <a class="headeranchor" id="Vecteur_de_maladie_Ext_7" href="#Vecteur_de_maladie_Ext_7" title="Lien vers cette section">&#0182;</a></h3>Au niveau  3,  les puissances des ténèbres transforment l’antipaladin en symbole de corruption et de <a class="pagelink" href="Pathfinder-RPG.maladie.ashx" title="maladie">maladie</a>. Il ne subit plus aucun <a class="pagelink" href="Pathfinder-RPG.affaiblissement%20temporaire.ashx" title="affaiblissement temporaire">affaiblissement temporaire</a> ni autre pénalité à cause des maladies. Il peut encore les contracter et contaminer les autres mais il est immunisé contre leurs effets.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CRUAUTE" href="#CRUAUTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Cruauté (Sur) <a class="headeranchor" id="Cruauté_Sur_8" href="#Cruauté_Sur_8" title="Lien vers cette section">&#0182;</a></h3>Au niveau  3 et tous les trois niveaux par la suite, un antipaladin peut choisir une cruauté. Chaque cruauté ajoute un effet supplémentaire à sa capacité de <a class="internallink" href="#TOUCHERDECORRUPTION" title="toucher de corruption">toucher de corruption</a>. Chaque fois que l’antipaladin inflige des dégâts par un <a class="internallink" href="#TOUCHERDECORRUPTION" title="toucher de corruption">toucher de corruption</a>, la cible subit également les effets d’une des cruautés de l’antipaladin (le choix est fait lors de l’utilisation du <a class="internallink" href="#TOUCHERDECORRUPTION" title="toucher de corruption">toucher de corruption</a>). La cible bénéficie d’un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Vigueur</a> pour éviter cette cruauté. Si le jet est réussi, la cible subit les dégâts normaux mais pas les effets de la cruauté. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau de l’antipaladin + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>.<br /><br />Au niveau 3, l'antipaladin peut sélectionner une des cruautés suivantes :
+<ul><li><b>Fatigué</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatiguée</a>.</li><li><b>Fiévreux</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreuse</a> pendant 1 round par niveau d’antipaladin.</li><li><b>Secoué</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secouée</a> pendant 1 round par niveau d’antipaladin.</li></ul>
+Au niveau 6, les choix suivants s’ajoutent à la liste des cruautés disponibles :
+<ul><li><b>Chancelant</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a>, pendant 1 round par deux niveaux d’antipaladin.</li><li><b>Hébété</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.h%c3%a9b%c3%a9t%c3%a9.ashx" title="Hébété">hébétée</a> pendant un round.</li><li><b>Malade</b> : la cible contracte une <a class="pagelink" href="Pathfinder-RPG.maladie.ashx" title="maladie">maladie</a> comme si l’antipaladin avait lancé un sort de <i><a class="pagelink" href="Pathfinder-RPG.contagion.ashx" title="Contagion">contagion</a></i> avec un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal à son niveau d’antipaladin.<br /></li></ul>
+Au niveau 9,  les choix suivants s’ajoutent à la liste des cruautés disponibles :
+<ul><li><b>Effrayé</b> : la cible est plus <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayée</a> pendant 1 round par deux niveaux d’antipaladin (L'antipaladin doit posséder la cruauté <i>Secoué</i> avant de pouvoir choisir cette option).</li><li><b>Épuisé</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisée</a> (l’antipaladin doit posséder la cruauté Fatigué avant de pouvoir choisir cette option).</li><li><b>Empoisonné</b> : la cible est empoisonnée, comme si l’antipaladin avait lancé un sort d’<i><a class="pagelink" href="Pathfinder-RPG.empoisonnement.ashx" title="Empoisonnement">empoisonnement</a></i> avec un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal à son niveau d’antipaladin.</li><li><b>Maudit</b> : la cible est maudite, comme si l’antipaladin avait lancé un sort de <i><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9diction.ashx" title="malédiction">malédiction</a></i> avec un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal à son niveau d’antipaladin.</li><li><b>Nauséeux</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeuse</a> pendant 1  round par trois niveaux d’antipaladin (l’antipaladin doit posséder la cruauté Fiévreux avant de pouvoir choisir cette option).</li></ul>
+Au niveau 12,  les choix suivants s’ajoutent à la liste des cruautés disponibles :
+<ul><li><b>Aveugle</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.aveugl%c3%a9.ashx" title="Aveuglé">aveugle</a> pendant 1  round par niveau d’antipaladin.</li><li><b>Assourdi</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.sourd.ashx" title="sourd">assourdie</a> pendant 1  round par niveau d’antipaladin.</li><li><b>Étourdi</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.%c3%a9tourdi.ashx" title="Étourdi">étourdie</a> pendant 1  round par quatre niveaux d’antipaladin.</li><li><b>Paralysé</b> : la cible est <a class="pagelink" href="Pathfinder-RPG.paralys%c3%a9.ashx" title="Paralysé">paralysée</a> pendant 1  round.</li></ul>
+Ces effets ne se cumulent pas. Par exemple, lorsqu’un antipaladin de niveau 12 utilise son <a class="internallink" href="#TOUCHERDECORRUPTION" title="toucher de corruption">toucher de corruption</a>, il inflige 6d6 points de dégâts et peut également rendre la cible fatiguée, hébétée, empoisonnée ou malade. Une fois qu’une cruauté a été sélectionnée, ce choix ne peut plus être modifié.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CANALISATIONDENERGIE" href="#CANALISATIONDENERGIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Canalisation d’énergie négative (Sur) <a class="headeranchor" id="Canalisation_d’énergie_négative_Sur_9" href="#Canalisation_d’énergie_négative_Sur_9" title="Lien vers cette section">&#0182;</a></h3>Lorsque l’antipaladin atteint le niveau  4, il acquiert la capacité surnaturelle de <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canaliser de l’énergie négative</a> avec un niveau effectif de <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a> égal à son niveau d’antipaladin. Chaque canalisation d’énergie consomme deux utilisations de sa capacité de <a class="internallink" href="#toucher de corruption" title="toucher de corruption">toucher de corruption</a>. Il s’agit d’une capacité basée sur le <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SORTS" href="#SORTS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Sorts <a class="headeranchor" id="Sorts_10" href="#Sorts_10" title="Lien vers cette section">&#0182;</a></h3>Dès le niveau  4, un antipaladin peut lancer un petit nombre de sorts divins appartenant à la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20dantipaladin.ashx" title="Liste des sorts d&#39;antipaladin">liste de sorts d’antipaladin</a>. Un antipaladin doit choisir et préparer ses sorts à l’avance. Pour préparer ou lancer un sort, un antipaladin doit avoir une valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> au moins égale à 10  +  le niveau du sort. Le DD des jets de sauvegarde contre les sorts de l’antipaladin est égal à 10 +  le niveau du sort + le modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de l’antipaladin.<br /><br />Comme les autres lanceurs de sorts, l’antipaladin ne peut lancer qu’un nombre de sorts donné de chaque niveau chaque jour. Son quota de sorts quotidiens est indiqué sur la Table 2-11. En plus de cela, il reçoit des sorts supplémentaires si sa valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> est <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">suffisamment élevée</a>. Quand la Table 2-11 indique que l’antipaladin peut lancer quotidiennement 0  sort d’un niveau donné, il ne dispose, pour ce niveau de sorts, que des sorts supplémentaires que lui accorde un <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> élevé.<br /><br />Chaque jour, l’antipaladin doit passer 1  heure à  prier et à méditer afin de renouveler son quota journalier de sorts. L’antipaladin peut préparer et lancer n’importe quel sort de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20dantipaladin.ashx" title="Liste des sorts d&#39;antipaladin">liste de sorts d’antipaladin</a> pour autant qu’il puisse lancer des sorts de ce niveau. Il doit cependant choisir quels sorts préparer au cours de sa méditation quotidienne.<br /><br />Jusqu’au niveau 3, l’antipaladin n’a pas de <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a>. À partir du niveau 4, son <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> est égal son niveau d’antipaladin –3.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FAVEURDESFIELONS" href="#FAVEURDESFIELONS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Faveur des fiélons (Mag) <a class="headeranchor" id="Faveur_des_fiélons_Mag_11" href="#Faveur_des_fiélons_Mag_11" title="Lien vers cette section">&#0182;</a></h3>Lorsque l’antipaladin atteint le niveau 5, les puissances qu’il vénère lui accordent une faveur. Celle-ci peut prendre une des deux formes suivantes. Une fois qu’une forme a été choisie, ce choix ne peut plus être modifié.<br /><br />La première forme de faveur permet à un antipaladin d’enchanter son arme par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> en faisant appel à un esprit fiélon qui accorde son aide pendant 1 minute par niveau d’antipaladin. Lorsqu’il est appelé, l’esprit enveloppe l’arme d’une lueur maléfique semblable à celle d’une <a class="pagelink" href="Pathfinder-RPG.mat%c3%a9riel%20daventurier.ashx#torche" title="Matériel d&#39;aventurier">torche</a>. Au niveau  5, cet esprit donne à l’arme un <a class="pagelink" href="Pathfinder-RPG.bonus%20dalt%c3%a9ration.ashx" title="bonus d&#39;altération">bonus d’altération</a> de +1. Tous les trois niveaux après le niveau  5, l’arme gagne un bonus d’altération supplémentaire de  +1, jusqu’à un maximum de +6 au niveau 20. Ces bonus peuvent être ajoutés directement à l’arme et cumulés avec les bonus qu’elle possède déjà et ce, jusqu’à un maximum de  +5. Ces bonus peuvent également être utilisés pour ajouter une ou plusieurs des propriétés suivantes à l’arme  : <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Acérée" title="Les armes magiques">acérée</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Anarchique" title="Les armes magiques">anarchique</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Feu" title="Les armes magiques">de feu</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Feuintense" title="Les armes magiques">de feu intense</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Vitesse" title="Les armes magiques">de vitesse</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Impie" title="Les armes magiques">impie</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Sanglante" title="Les armes magiques">sanglante</a>, <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Vicieuse" title="Les armes magiques">vicieuse</a> ou <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#Vorpale" title="Les armes magiques">vorpale</a>. Ajouter une de ces propriétés coûte une quantité de bonus équivalente au coût de la propriété (voir la Table 15-9 du Manuel des joueurs). Ces propriétés s’ajoutent à celles que l’arme possède déjà, mais les propriétés en double ne se cumulent pas. Si l’arme n’est pas magique, il faut lui ajouter un bonus d’altération d’au moins +1 avant de pouvoir lui conférer des propriétés spéciales. Les bonus et les propriétés conférés par l’esprit sont déterminés lorsqu’il est appelé et ne peuvent donc être modifiés que lorsque l’esprit est appelé à nouveau. L’esprit fiélon n’accorde aucun bonus si quelqu’un d’autre que l’antipaladin tient l’arme, mais les bonus reprennent effet si l’arme revient dans la main de l’antipaladin. Ces bonus ne s’appliquent qu’à une seule tête si l’arme est une <a class="pagelink" href="Pathfinder-RPG.arme%20double.ashx" title="arme double">arme double</a>. Un antipaladin peut utiliser cette capacité une fois par jour au niveau 5 et une fois de plus par jour tous les quatre niveaux au-delà du niveau 5, pour un total de quatre utilisations quotidiennes au niveau 17.<br /><br />Si une arme est détruite alors qu’elle est liée à un esprit fiélon, l’antipaladin doit attendre de gagner un niveau ou que 30 jours se soient écoulés avant de pouvoir utiliser cette capacité à nouveau. Pendant cette période d’attente, il subit un malus de –1 à tous les jets d’attaque et de dégâts lorsqu’il combat avec une arme.<br /><br />La seconde forme de faveur permet à un antipaladin d’acquérir les services d’un serviteur fiélon. Cela fonctionne comme un sort de <a class="pagelink" href="Pathfinder-RPG.convocation%20de%20monstres%20III.ashx" title="Convocation de monstres III">convocation de monstres III</a> à ceci près que la <a class="pagelink" href="Pathfinder-RPG.dur%c3%a9e.ashx" title="durée">durée</a> est permanente, que l’antipaladin ne peut recevoir qu’un seul serviteur et que celui-ci doit remplir l’une des deux conditions suivantes  : appartenir  aux sous-types Chaos et Mal ou être un animal fiélon. Une fois la créature choisie, l’antipaladin ne peut plus modifier sa décision. Il peut toutefois modifier son choix chaque fois qu’il gagne un niveau. Lorsque l’antipaladin atteint le niveau  7 et tous les deux niveaux par la suite, le niveau du sort de convocation de monstres augmente de un, pour devenir finalement <a class="pagelink" href="Pathfinder-RPG.convocation%20de%20monstres%20IX.ashx" title="Convocation de monstres IX">convocation de monstres IX</a> au niveau 17.<br /><br />Une fois par jour, l’antipaladin peut appeler son serviteur auprès de lui en utilisant une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>. Cette capacité est équivalente à un sort de niveau égal au tiers du niveau de l’antipaladin. Le serviteur apparaît immédiatement à côté de l’antipaladin. Un antipaladin peut utiliser ce pouvoir une fois par jour au niveau 5 et une fois de plus chaque jour tous les 4 niveaux par la suite, pour un total de quatre fois par jour au niveau 17.<br /><br />Au niveau 11, le serviteur acquiert l’archétype <a class="pagelink" href="Pathfinder-RPG.arch%c3%a9types.ashx#CREATUREEVOLUEE" title="Les archétypes">évolué</a>. Au niveau  15,  il gagne une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">résistance à la magie</a> égale au niveau de l’antipaladin + 11.<br /><br />Si le serviteur vient à mourir ou à être banni, l’antipaladin doit attendre de gagner un niveau ou que 30 jours se soient écoulés avant de pouvoir le remplacer. Pendant cette période d’attente, l’antipaladin subit un malus de –1 à  tous les jets d’attaque et de dégâts lorsqu’il combat avec une arme.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADEDESESPOIR" href="#AURADEDESESPOIR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura de désespoir (Sur) <a class="headeranchor" id="Aura_de_désespoir_Sur_12" href="#Aura_de_désespoir_Sur_12" title="Lien vers cette section">&#0182;</a></h3>Au niveau  8,  tous les ennemis situés dans un rayon de 3 m autour de l’antipaladin subissent un malus de –2 sur tous leurs <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a>. Ce malus ne se cumule pas avec les pénalités imposées par l’<a class="internallink" href="#AURADELACHETE" title="aura de lâcheté">aura de lâcheté</a>. Cette aptitude fonctionne tant que l’antipaladin est conscient, mais pas s’il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> ou <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">mort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADEVENGEANCE" href="#AURADEVENGEANCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura de vengeance (Sur) <a class="headeranchor" id="Aura_de_vengeance_Sur_13" href="#Aura_de_vengeance_Sur_13" title="Lien vers cette section">&#0182;</a></h3>Au niveau 11, un antipaladin peut sacrifier deux utilisations de sa <a class="internallink" href="#châtiment du Bien" title="capacité de châtiment du Bien">capacité de châtiment du Bien</a> pour permettre à tous ses alliés situés à 3 m ou moins d’utiliser un <a class="internallink" href="#châtiment du Bien" title="châtiment du Bien">châtiment du Bien</a> avec ses propres bonus. Les alliés doivent utiliser ce <a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du Bien">châtiment du Bien</a> avant que le début du prochain tour de l’antipaladin et les bonus persistent pendant 1 minute. Ce pouvoir s’utilise par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. Les créatures d’alignement <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">Bon</a> ne tirent aucun avantage de l’aura de vengeance.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADUPECHE" href="#AURADUPECHE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura du péché (Sur) <a class="headeranchor" id="Aura_du_péché_Sur_14" href="#Aura_du_péché_Sur_14" title="Lien vers cette section">&#0182;</a></h3>Au niveau  14, les armes d’un antipaladin sont considérées comme dotées de l’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a> lorsqu’il s’agit de déterminer si elles ignorent les <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réductions de dégâts</a>. De plus, toutes les attaques faites contre un ennemi situé dans un rayon de 3 m autour de l’antipaladin sont également considérées comme dotées de l’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a> lorsqu’il s’agit de déterminer si elles ignorent les <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réductions de dégâts</a>. Cette capacité fonctionne tant que l’antipaladin est conscient, mais pas s’il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> ou <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">mort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURADEDEPRAVATION" href="#AURADEDEPRAVATION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura de dépravation (Sur) <a class="headeranchor" id="Aura_de_dépravation_Sur_15" href="#Aura_de_dépravation_Sur_15" title="Lien vers cette section">&#0182;</a></h3>Au niveau  17, un antipaladin gagne une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 5/Bien. De plus, tous ses ennemis situés à 3 m ou moins subissent un malus de –4 aux  <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre tous les effets de <a class="pagelink" href="Pathfinder-RPG.coercition.ashx" title="coercition">coercition</a>. Cette aptitude fonctionne tant que l’antipaladin est conscient, mais pas s’il est <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> ou <a class="pagelink" href="Pathfinder-RPG.mort.ashx" title="Mort">mort</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHAMPIONMAUDIT" href="#CHAMPIONMAUDIT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Champion maudit (Sur) <a class="headeranchor" id="Champion_maudit_Sur_16" href="#Champion_maudit_Sur_16" title="Lien vers cette section">&#0182;</a></h3>Au niveau 20,  l’antipaladin incarne vraiment la puissance des entités maléfiques qu’il vénère. Sa <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> augmente jusqu’à 10/Bien. Chaque fois qu’il utilise un <a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du Bien">châtiment du Bien</a> et frappe un <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">Extérieur</a> d’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">Bon</a>, celui-ci est également soumis à un  <a class="pagelink" href="Pathfinder-RPG.bannissement.ashx" title="Bannissement">bannissement</a> de <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal au niveau de l’antipaladin (l’arme et le symbole maudit de l’antipaladin comptent automatiquement comme objets que la cible haït). Le <a class="internallink" href="#CHATIMENTDUBIEN" title="châtiment du Bien">châtiment du Bien</a> se termine immédiatement après que l’effet de bannissement et les dégâts de l’attaque aient été appliqués. De plus, chaque fois que l’antipaladin <a class="internallink" href="#CANALISATIONDENERGIE" title="canalise de l’énergie négative">canalise de l’énergie négative</a> ou utilise un <a class="internallink" href="#TOUCHERDECORRUPTION" title="toucher de corruption">toucher de corruption</a> pour blesser une créature, il inflige toujours le maximum de dégâts possible.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CODEDECONDUITE" href="#CODEDECONDUITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Code de conduite <a class="headeranchor" id="Code_de_conduite_19" href="#Code_de_conduite_19" title="Lien vers cette section">&#0182;</a></h2>L’antipaladin est obligatoirement <a class="pagelink" href="Pathfinder-RPG.Chaotique.ashx" title="Chaotique">Chaotique</a> <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a>. S’il commet sciemment un acte <a class="pagelink" href="Pathfinder-RPG.bon.ashx" title="Bon">bon</a> ou altruiste, il perd aussitôt toutes ses capacités de classe à l’exception des armes et des armures. Cela ne signifie pas qu’il ne peut entreprendre aucune action jugée comme bonne, mais seulement que ces actions doivent servir ses propres buts. Le code de conduite de l’antipaladin impose qu’il place ses propres intérêts et désirs au-dessus de toute autre considération, qu’il impose la tyrannie, qu’il profite de tous les avantages à sa disposition et qu’il punissent les bons et les justes, pour autant que ces actions n’interfèrent pas avec ses buts.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COMPAGNONS" href="#COMPAGNONS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Compagnons <a class="headeranchor" id="Compagnons_20" href="#Compagnons_20" title="Lien vers cette section">&#0182;</a></h2>L’antipaladin peut partir à l’aventure avec des alliés d’alignement <a class="pagelink" href="Pathfinder-RPG.Neutre.ashx" title="Neutre">Neutre</a> ou <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a>, mais il évitera de collaborer avec des individus d’alignement <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">Bon</a> ou avec ceux qui tentent sans cesse de faire le <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">bien</a>. Dans des circonstances exceptionnelles,  un antipaladin pourra s’associer avec des créatures d’alignement <a class="pagelink" href="Pathfinder-RPG.Bon.ashx" title="Bon">Bon</a> mais seulement dans le but de leur nuire en les détruisant depuis l’intérieur. Dans ce genre de situation, l’antipaladin n’a pas besoin de faire appel à un sort de <a class="pagelink" href="Pathfinder-RPG.p%c3%a9nitence.ashx" title="Pénitence">pénitence</a> pour autant qu’il atteigne ses propres buts maléfiques en fin de comptes (le <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mal</a> ne se préoccupe que des résultats). Enfin, l’antipaladin ne peut louer les services d’hommes d’armes et accepter des suivants que s’ils sont d’alignement <a class="pagelink" href="Pathfinder-RPG.Chaotique.ashx" title="Chaotique">Chaotique</a> <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PALADINSDECHUS" href="#PALADINSDECHUS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Les paladins déchus <a class="headeranchor" id="Les_paladins_déchus_21" href="#Les_paladins_déchus_21" title="Lien vers cette section">&#0182;</a></h2>Tous les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> déchus ne deviennent pas forcément des antipaladins. En fait, cette transformation est même assez rare. La plupart des paladins consacrent des mois ou même des années à regagner leur statut de paladin sans jamais s’éloigner du droit chemin au point d’être irrécupérables. En de très rares occasions, un paladin renie la lumière et cherche plutôt à conclure un pacte avec de sombres puissances. C’est bien souvent à cause d’une ruse ou d’une tentation que le paladin agit de la sorte mais, une fois le pacte conclu, il se retrouve généralement sur le chemin qui mène à la damnation.<br /><br />La transformation qui accompagne ce genre de déchéance peut être très rapide. Le paladin remplace chacun de ses niveaux de paladins par un niveau d’antipaladin. Il s’agit bien souvent d’une expérience traumatisante, avec un rituel consistant à sacrifier un être vivant et à formuler de sombres promesses envers des puissances maléfiques (celles-ci envoient parfois des serviteurs pour assister à la scène en tant que témoins). Au terme de la cérémonie, l’antipaladin est né, prêt à semer la destruction au sein du monde.<br /><br />Il faut aussi noter que tous les antipaladins ne sont pas des héros déchus. Dès leur plus jeune âge, certains guerriers reçoivent un entraînement qui les préparent à devenir des antipaladins, des bastions du Mal forgés par la douleur et les expériences traumatiques. Ces combattants cruels ne connaissent pas la compassion ni la loyauté mais ils savent tout ce qu’il y a à savoir au sujet de la douleur et de la souffrance.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ANCIENSANTIPALADINS" href="#ANCIENSANTIPALADINS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Anciens antipaladins <a class="headeranchor" id="Anciens_antipaladins_22" href="#Anciens_antipaladins_22" title="Lien vers cette section">&#0182;</a></h2>Lorsqu’un antipaladin cesse d’être <a class="pagelink" href="Pathfinder-RPG.Chaotique.ashx" title="Chaotique">Chaotique</a> <a class="pagelink" href="Pathfinder-RPG.Mauvais.ashx" title="Mauvais">Mauvais</a>, lorsqu’il accomplit sciemment un acte bienveillant ou qu’il viole le code de conduite, il perd tous ses sorts et toutes ses capacités d’antipaladin (y compris la faveur des fiélons mais pas la formation aux armes, armures et boucliers). Il ne peut plus gagner de niveaux d’antipaladin. Il récupère ses capacités et peut à nouveau progresser en tant qu’antipaladin s’il fait pénitence pour ses erreurs (voir le sort de <a class="pagelink" href="Pathfinder-RPG.p%c3%a9nitence.ashx" title="Pénitence">pénitence</a>).
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
