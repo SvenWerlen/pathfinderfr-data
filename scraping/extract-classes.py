@@ -93,7 +93,7 @@ if len(sys.argv) < 1:
 # cette fonction convertit le nom 'Le barbare' => 'Barbare'
 #
 def cleanName(name):
-    if name.lower().startswith(u"le "):
+    if name.lower().startswith(u"le ") or name.lower().startswith(u"la "):
         name = name[3:]
     elif name.lower().startswith(u"l'"):
         name = name[2:]
