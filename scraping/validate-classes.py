@@ -52,6 +52,7 @@ for d in data:
     vig = 0
     vol = 0
     ref = 0
+    sortMax = 0
     for niv in d[u'Progression']:
         # vérifier niveaux
         if int(niv[u'Niveau']) != niveau + 1:
@@ -69,10 +70,18 @@ for d in data:
         if(int(niv[u'Réflexes'])<ref):
             print(u"Réflexes invalide %s pour %s au niveau %s" % (niv[u'Réflexes'],d[u'Nom'],niv[u'Niveau']))
         ref = int(niv[u'Réflexes'])
-    
-    if d[u'Prestige'] is None and niveau != 20 :
+        # sortMax
+        if(int(niv[u'SortMax'])<sortMax):
+            print(u"SortMax invalide %s pour %s au niveau %s" % (niv[u'SortMax'],d[u'Nom'],niv[u'Niveau']))
+        sortMax = int(niv[u'SortMax'])
+
+    prestige = False
+    if 'Prestige' in d.keys():
+        prestige = d[u'Prestige']
+
+    if not prestige and niveau != 20 :
         print(u"Niveau s'arrête à %s pour %s" % (niveau,d[u'Nom']))
-    elif d[u'Prestige'] and niveau != 10 :
+    elif prestige and niveau != 10 :
         print(u"Niveau s'arrête à %s pour %s" % (niveau,d[u'Nom']))
     
     #print("Processing %s" % d['Nom'])

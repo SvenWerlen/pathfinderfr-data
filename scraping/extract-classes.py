@@ -17,47 +17,47 @@ MOCK_CLASS = None
 #MOCK_CLASS = "mocks/classe-arpenteur.html"       # décommenter pour tester avec une classe pré-téléchargée
 
 URLs = [
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx", 'source': 'MJ'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx", 'source': 'MJ'},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx", 'source': 'MJ', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx", 'source': 'MJ', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx", 'source': 'MJ', 'spellLvl': 9, 'spellLvl0': True},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx", 'source': 'MJ', 'spellLvl': 9},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx", 'source': 'MJ', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx", 'source': 'MJ', 'spellLvl': 9, 'spellLvl0': True},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx", 'source': 'MJ', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx", 'source': 'MJ', 'spellLvl': 4},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx", 'source': 'MJ', 'spellLvl': 9, 'spellLvl0': True},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx", 'source': 'MJ', 'spellLvl': 4},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx", 'source': 'MJ', 'spellLvl': 0},
 
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antipaladin.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inquisiteur.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re.ashx", 'source': 'MJRA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magus.ashx", 'source': 'AM'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx", 'source': 'AG'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx", 'source': 'AG'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx", 'source': 'AG'},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx", 'source': 'MJRA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antipaladin.ashx", 'source': 'MJRA', 'spellLvl': 4},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx", 'source': 'MJRA', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx", 'source': 'MJRA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inquisiteur.ashx", 'source': 'MJRA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx", 'source': 'MJRA', 'spellLvl': 9},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re.ashx", 'source': 'MJRA', 'spellLvl': 9, 'spellLvl0': True},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magus.ashx", 'source': 'AM', 'spellLvl': 6, 'spellLvl0': True},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx", 'source': 'AG', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx", 'source': 'AG', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx", 'source': 'AG', 'spellLvl': 0},
     
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arcaniste.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx", 'source': 'MCA'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx", 'source': 'MCA'},    
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arcaniste.ashx", 'source': 'MCA', 'spellLvl': 9},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur.ashx", 'source': 'MCA', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx", 'source': 'MCA', 'spellLvl': 9},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur.ashx", 'source': 'MCA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx", 'source': 'MCA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx", 'source': 'MCA', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx", 'source': 'MCA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx", 'source': 'MCA', 'spellLvl': 4},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx", 'source': 'MCA', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx", 'source': 'MCA', 'spellLvl': 0},
     
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cin%c3%a9tiste.ashx", 'source': 'AO'},    
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx", 'source': 'AO'},    
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9dium.ashx", 'source': 'AO'},    
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx", 'source': 'AO'},    
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx", 'source': 'AO'},    
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx", 'source': 'AO'},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cin%c3%a9tiste.ashx", 'source': 'AO', 'spellLvl': 0},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx", 'source': 'AO', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9dium.ashx", 'source': 'AO', 'spellLvl': 4},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx", 'source': 'AO', 'spellLvl': 6},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx", 'source': 'AO', 'spellLvl': 9},
+    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx", 'source': 'AO', 'spellLvl': 6},
     
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Archer-mage.ashx", 'source': 'MJ', 'prestige': True},
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arpenteur%20dhorizon.ashx", 'source': 'MJRA', 'prestige': True},
@@ -207,8 +207,16 @@ for data in URLs:
         elif s.name == 'br':
             break;
 
-    # tableau
+    # tableau (progression)
     rows = content.find_next('table',{"class": "tablo"}).find_all('tr')
+
+    maxSpellLvl = 0;
+    minSpellLvl = 1;
+    if 'spellLvl' in data.keys():
+        maxSpellLvl = data['spellLvl']
+    if 'spellLvl0' in data.keys() and  data['spellLvl0']:
+        minSpellLvl = 0
+
     cl[u'Progression'] = []
     for r in rows:
         # ignorer les en-têtes
@@ -219,17 +227,27 @@ for data in URLs:
         for val in r.find_all('td'):
             values[idx] = val.text.strip()
             idx+=1
-            if idx==5:
-                break
 
-        if len(values) == 5:
+        spellLvl = 0
+        if len(values) >= 6 + maxSpellLvl:
+            spellLvl = maxSpellLvl
+            for idx in range(minSpellLvl,maxSpellLvl+1):
+                if(values[6+idx-minSpellLvl]=='-'):
+                    spellLvl = idx - 1;
+                    break;
+
+        if len(values) >= 5:
             cl[u'Progression'].append({
                 u'Niveau': int(values[0]),
                 u'BBA': values[1],
                 u'Réflexes': values[2],
                 u'Vigueur': values[3],
-                u'Volonté': values[4]
+                u'Volonté': values[4],
+                u'SortMax': spellLvl,
             });
+
+
+
 
     # ajouter classe
     liste.append(cl)
