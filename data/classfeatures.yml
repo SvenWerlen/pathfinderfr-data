@@ -1866,6 +1866,7 @@
   Classe: Ensorceleur
   Source: MJ
   Niveau: 1
+  Auto: True
   Description: "Les aptitudes de l’ensorceleur sont décrites ci-dessous.\n\nL’ensorceleur
     est formé au maniement de toutes les armes courantes mais pas au port des armures
     ni à l’utilisation des boucliers. En effet, une armure restreint ses gestes, ce
@@ -1877,6 +1878,7 @@
   Classe: Ensorceleur
   Source: MJ
   Niveau: 1
+  Auto: True
   Description: 'Un ensorceleur peut lancer des sorts profanes appartenant à la liste
     des sorts d’ensorceleur et de magicien. Il les lance sans avoir à les préparer
     à l’avance. Pour apprendre ou lancer un sort, un ensorceleur doit avoir une valeur
@@ -1911,6 +1913,7 @@
   Classe: Ensorceleur
   Source: MJ
   Niveau: 1
+  Auto: True
   Description: "Chaque ensorceleur tire ses pouvoirs magiques d’une source liée à
     son héritage. Elle lui donne accès à des sorts, des dons supplémentaires, une
     compétence de classe additionnelle et d’autres capacités spéciales. Cette source
@@ -1944,8 +1947,1704 @@
   Classe: Ensorceleur
   Source: MJ
   Niveau: 1
+  Auto: True
   Description: "Les ensorceleurs apprennent un certain nombre de tours de magie (ou
     sorts de niveau 0) comme indiqué dans la Table \"Sorts connus par l'ensorceleur\".
     Ces sorts sont lancés de la même manière que les autres mais ils ne réduisent
     pas le quota quotidien de l’ensorceleur et peuvent être utilisés indéfiniment."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Tours_de_magie_3
+
+- Nom: Dispense de composantes
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un ensorceleur reçoit le don Dispense de composantes matérielles comme
+    don supplémentaire au niveau 1."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dispense_de_composantes_4
+
+##
+## Aptitudes du guerrier
+##
+  
+- Nom: Armes et armures
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le guerrier
+    est formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au
+    port de tous les types d’armures (légères, intermédiaires et lourdes) et à l’utilisation
+    des boucliers (y compris les pavois)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  
+- Nom: Dons supplémentaires
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Au niveau 1 et tous les niveaux pairs suivants, le guerrier peut choisir
+    un don supplémentaire qui vient s’ajouter à ceux auxquels tous les personnages
+    ont droit en montant de niveau (le guerrier gagne donc un don à chaque niveau).
+    Ces dons supplémentaires doivent être choisis parmi ceux qui sont indiqués comme
+    étant des « dons de combat ».\n\nLorsqu’il atteint le niveau 4 et tous les quatre
+    niveaux par la suite (aux niveaux 8, 12, et ainsi de suite), le guerrier peut
+    choisir de remplacer un des dons supplémentaires qu’il a appris par un autre.
+    Concrètement, le guerrier perd le don supplémentaire en question et en gagne un
+    nouveau. Le don perdu ne peut avoir été utilisé comme condition permettant d’avoir
+    accès à un autre don, à une classe de prestige ou à un autre avantage. Le guerrier
+    ne peut remplacer qu’un seul don à chacun de ces niveaux et doit choisir de le
+    faire ou non au moment où il sélectionne le nouveau don pour ce niveau."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_1
+  
+- Nom: Courage (Ext)
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "À partir du niveau 2, le guerrier gagne un bonus de +1 aux jets de
+    sauvegarde contre la terreur. Ce bonus augmente de +1 tous les quatre niveaux
+    après le niveau 2."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Courage_Ext_2
+  
+- Nom: Entraînement aux armures (Ext)
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Dès le niveau 3, le guerrier apprend à rester mobile même en armure.
+    Lorsqu’il porte une armure, il réduit de 1 le malus d’armure aux tests de compétence
+    (jusqu’à un minimum de 0) et augmente de 1 le bonus de Dextérité maximal autorisé
+    par cette armure. Tous les quatre niveaux par la suite (aux niveaux 7, 11 et 15),
+    ces modificateurs augmentent de 1, jusqu’à une réduction de -4 au malus d’armure
+    et une augmentation de +4 au bonus de Dextérité maximal.\n\nDe plus, un guerrier
+    peut se déplacer à sa vitesse normale même lorsqu’il porte une armure intermédiaire.
+    Au niveau 7, cela est valable également lorsqu’il porte une armure lourde."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_armures_Ext_3
+  
+- Nom: Entraînement aux armes (Ext)
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 5
+  Auto: True
+  Description: 'Dès le niveau 5, le guerrier peut choisir un groupe d’armes et obtenir
+    un bonus de +1 à tous les jets d’attaque et de dégâts relatifs aux attaques avec
+    ces armes.\n\nTous les quatre niveaux de guerrier par la suite (aux niveaux 9,
+    13 et 17), son entraînement s’étend pour inclure un nouveau groupe d’armes. Il
+    obtient un bonus de +1 aux jets d’attaque et de dégâts pour les attaques effectuées
+    avec les armes de ce nouveau groupe et chacun des bonus associés aux groupes d’armes
+    qu’il a choisis précédemment augmente de +1. Par exemple, un guerrier de niveau
+    9 dispose d’un bonus de +1 aux jets d’attaque et de dégâts avec un groupe d’armes
+    et d’un bonus de +2 aux jets d’attaque et de dégâts avec le groupe d’armes qu’il
+    a choisi au niveau 5. Si le guerrier utilise une arme qui appartient à plusieurs
+    groupes, les bonus ne se cumulent pas : seul le bonus le plus élevé s’applique.\n\nLe
+    bonus s’applique également aux tests des manœuvres offensives réalisées à l’aide
+    d’une arme appartenant à un de ces groupes. Il s''applique aussi à la défense
+    contre les manœuvres offensives contre une tentative de désarmement ou de destruction
+    effectuée par un adversaire avec l''une de ces armes.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_armes_Ext_4
+  
+- Nom: Maîtrise des armures (Ext)
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 19
+  Auto: True
+  Description: "Au niveau 19, le guerrier gagne une réduction aux dégâts de 5/— lorsqu’il
+    porte une armure ou utilise un bouclier."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maîtrise_des_armures_Ext_5
+
+- Nom: Maîtrise des armes (Ext)
+  Classe: Guerrier
+  Source: MJ
+  Niveau: 20
+  Auto: True
+  Description: "Au niveau 20, le guerrier choisit un type d’arme (comme les épées
+    longues, les grandes haches ou les arcs longs). Les possibilités de critique lorsqu’il
+    attaque avec ce type d’arme sont automatiquement confirmées et le multiplicateur
+    de dégâts de l’arme augmente de 1 (×2 devient ×3 par exemple). De plus, le guerrier
+    ne peut plus être désarmé lorsqu’il tient une arme de ce type."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maîtrise_des_armes_Ext_6
+
+##
+## Aptitudes du magicien
+##
+
+- Nom: Armes et armures
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le magicien
+    est formé au maniement des arbalètes légères, des arbalètes lourdes, des bâtons,
+    des dagues et des gourdins mais pas au port des armures ni à l’utilisation des
+    boucliers. En effet, une armure restreint ses gestes, ce qui risque de faire échouer
+    ses sorts à composante gestuelle."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Sorts
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un magicien peut lancer des sorts profanes appartenant à la liste
+    des sorts d’ensorceleur et de magicien. Un magicien doit choisir et préparer ses
+    sorts à l’avance.\n\nPour apprendre ou lancer un sort, un magicien doit avoir
+    une valeur d’Intelligence au moins égale à 10 + le niveau du sort. Le DD des jets
+    de sauvegarde contre les sorts du magicien est égal à 10 + le niveau du sort +
+    le modificateur d’Intelligence du magicien.\n\nLe magicien ne peut lancer qu’un
+    nombre de sorts donné de chaque niveau chaque jour. Son quota de sorts quotidien
+    est indiqué dans la Table \"Le Magicien\". En plus de cela, il reçoit des sorts
+    en bonus si sa valeur d’Intelligence est suffisamment élevée (voir la Table \"Modificateurs
+    de caractéristique et sorts en bonus\").\n\nLe magicien n’est pas limité quant
+    au nombre de sorts qu’il peut connaître. Il doit cependant choisir et préparer
+    ses sorts à l’avance en étudiant son grimoire pendant une heure, après huit heures
+    de sommeil. Pendant qu’il étudie, le magicien choisit quels sorts il va préparer
+    pour la journée."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_1
+
+- Nom: Langues supplémentaires
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le magicien peut apprendre le draconien à la place d’une des langues
+    supplémentaires autorisées par sa race."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_supplémentaires_2
+
+- Nom: Pacte magique (Ext ou Mag)
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Au niveau 1, un puissant lien se crée entre le magicien et un objet
+    ou une créature. Ce lien peut prendre l’une des deux formes suivantes : un familier
+    ou un objet fétiche. Un familier est un animal de compagnie magique qui améliore
+    les compétences et rehausse les sens du magicien alors qu’un objet fétiche est
+    un objet que le magicien utilise pour lancer des sorts supplémentaires ou en tant
+    qu’objet magique. Une fois qu’un magicien a choisi une de ces deux options, il
+    ne peut plus modifier son choix. Pour les règles concernant les familiers, voir
+    la page correspondante, pour celles qui traitent des objets fétiches, voir ci-dessous.\n\nLes
+    magiciens qui choisissent un objet fétiche le possèdent automatiquement (sans
+    devoir le payer) lorsqu’ils entrent en jeu. L’objet en question doit appartenir
+    à une des catégories suivantes : amulette, anneau, arme, baguette ou bâton. Il
+    s’agit toujours d’un objet de maître. Les armes que le personnage reçoit au niveau
+    1 ne sont jamais composées d’un matériel spécial. Si l’objet est une amulette
+    ou un anneau, il doit être porté pour pouvoir être utilisé. Les armes, les baguettes
+    et les bâtons, quant à eux, doivent être tenus dans une main. Si un magicien tente
+    de lancer un sort sans porter ou tenir son objet fétiche, il doit réussir un test
+    de concentration pour éviter de perdre le sort. Le DD de ce test vaut 20 + le
+    niveau du sort. Si l’objet est un anneau ou une amulette, il occupe l’emplacement
+    d’un objet magique (cou ou anneau).\n\nUn magicien peut utiliser son objet fétiche
+    une fois par jour pour lancer n’importe quel sort qui se trouve dans son grimoire
+    et qu’il est capable de lancer et ce, même s’il ne l’a pas préparé. Ce sort fonctionne
+    comme n’importe quel autre sort lancé par le magicien : même temps d’incantation,
+    même durée et les effets dépendant du niveau du magicien sont déterminés normalement.
+    Le sort ne peut être modifié par aucun don de métamagie ni aucune capacité spéciale.
+    Le magicien ne peut pas utiliser son objet fétiche pour lancer des sorts appartenant
+    à ses écoles opposées (voir « École de magie »).\n\nUn magicien peut ajouter de
+    nouvelles capacités magiques à son objet fétiche comme s’il possédait les dons
+    de création d’objets magiques nécessaires, mais seulement si son niveau est suffisant
+    pour remplir les conditions requises par ces dons. Par exemple, un magicien ayant
+    une dague comme objet fétiche doit être de niveau supérieur ou égal à 5 pour ajouter
+    des propriétés magiques à la dague (voir le don de Création d’armes et d’armures
+    magiques). Si l’objet fétiche est une baguette et qu’on dépense sa dernière charge,
+    il ne peut plus être utilisé comme baguette magique mais il n’est pas détruit
+    pour autant : il conserve ses capacités d’objet fétiche et peut être utilisé pour
+    créer une nouvelle baguette. Les propriétés magiques d’un objet fétiche, y compris
+    les capacités magiques ajoutées à l’objet, ne fonctionnent que pour le magicien
+    qui le possède. Si le propriétaire d’un objet fétiche meurt ou si l’objet est
+    remplacé, il redevient un objet de maître ordinaire.\n\nSi un objet fétiche est
+    endommagé, il revient à son maximum de points de vie la prochaine fois que le
+    magicien prépare ses sorts. Si l’objet fétiche est détruit ou perdu, le magicien
+    peut le remplacer une semaine plus tard en réalisant un rituel qui dure huit heures
+    et coûte 200 po par niveau de magicien (en plus du coût de l’objet de maître).
+    Le nouvel objet fétiche ne possède aucune des propriétés magiques qui avaient
+    pu être ajoutées à l’ancien objet. Un magicien peut également désigner un nouvel
+    objet magique comme objet fétiche de remplacement. Cela fonctionne comme ci-dessus,
+    si ce n’est que l’objet magique conserve ses propriétés et acquiert en plus les
+    avantages et les désavantages des objets fétiches.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_magique_Ext_ou_Mag_3
+
+- Nom: École de magie
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un magicien peut choisir de se spécialiser dans une école de magie
+    afin d’acquérir des sorts et des pouvoirs supplémentaires associés à cette école.
+    Ce choix doit être fait au niveau 1 et ne peut être modifié par la suite. Si le
+    magicien ne choisit aucune école, il reçoit les avantages liés à l’école universelle.\n\nUn
+    magicien qui choisit de se spécialiser dans une des huit écoles de magie standard
+    doit sélectionner deux autres écoles qui deviennent ses écoles opposées et représentent
+    les domaines de connaissances qu’il décide de sacrifier pour se concentrer sur
+    son domaine de prédilection. Un magicien peut préparer un sort appartenant à une
+    de ses écoles opposées mais il doit alors utiliser deux emplacements de sort du
+    même niveau.\n\nPar exemple, un magicien dont une des écoles d’opposition est
+    l’Évocation doit utiliser deux emplacements de sort de 3e niveau pour préparer
+    une boule de feu. De plus, le spécialiste subit un malus de -4 à tous les tests
+    de compétence pour fabriquer un objet magique dont la création nécessite un sort
+    appartenant à une de ses écoles d’opposition.\n\nUn magicien généraliste peut
+    préparer des sorts de n’importe quelle école sans aucune restriction.\n\nLes magiciens
+    spécialistes reçoivent un certain nombre de pouvoirs d’école dépendant de leur
+    spécialité. Ils obtiennent également un emplacement de sort supplémentaire pour
+    chacun des niveaux de sorts auxquels ils ont accès (sauf le niveau 0). Chaque
+    jour, le magicien peut utiliser cet emplacement supplémentaire pour préparer un
+    sort appartenant à son école de spécialisation et figurant sur son grimoire. Le
+    magicien peut choisir de préparer un sort modifié par un don de métamagie dans
+    un de ces emplacements supplémentaires mais il devra alors utiliser un emplacement
+    de niveau plus élevé. Les magiciens généralistes ne reçoivent pas d’emplacements
+    de sort supplémentaires.\n\nAu lieu de se spécialiser dans l’une des huit écoles
+    de magie standard, un magicien peut se focaliser sur l’étude d’une des quatre
+    écoles de magie élémentaires. Comme les écoles ordinaires, ces quatre nouvelles
+    options octroient un certain nombre de pouvoirs d’école et un emplacement de sort
+    en bonus pour chaque niveau de sorts auquel le magicien a accès (à partir du 1
+    niveau). Contrairement aux écoles ordinaires, une école élémentaire impose au
+    magicien de choisir son élément opposé comme école d’opposition (l’Air contre
+    la Terre, l’Eau contre le Feu). Le magicien ne doit pas choisir de seconde école
+    d’opposition. Pour pouvoir préparer un sort appartenant à son école d’opposition,
+    il doit utiliser deux emplacements de sort, conformément aux règles normales.\n\nVoir
+    la liste des écoles de magie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#École_de_magie_4
+
+- Nom: Tours de magie
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le magicien peut préparer un certain nombre de tours de magie (ou
+    sorts de niveau 0) chaque jour, comme indiqué dans la Table ci-dessus sous la
+    mention « Sorts par jour ». Il jette ces sorts comme les autres mais ils ne sont
+    pas dépensés lorsqu’ils sont lancés et peuvent être utilisés à nouveau."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Tours_de_magie_5
+
+- Nom: Écriture de parchemins
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un magicien de niveau 1 acquiert automatiquement le don Écriture de
+    parchemins comme don supplémentaire."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Écriture_de_parchemins_6
+
+- Nom: Dons supplémentaires et découvertes arcaniques
+  Classe: Magicien
+  Source: MJ
+  Niveau: 5
+  Auto: True
+  Description: "Aux niveaux 5, 10, 15 et 20, le magicien gagne un don supplémentaire.
+    Ce don doit obligatoirement être un don de métamagie, un don de création d’objets
+    ou encore le don Maîtrise des sorts. Le magicien doit satisfaire à toutes les
+    conditions requises pour le don choisi, y compris le niveau de lanceur de sorts
+    minimum. Ces dons viennent s’ajouter à ceux que tous les personnages gagnent en
+    montant de niveau (et pour lesquels le magicien n’est pas limité aux catégories
+    de dons citées plus haut).\n\nLes magiciens passent une grande partie de leur
+    existence à chercher de grandes vérités et à traquer les connaissances comme si
+    leur vie en dépendait. Le pouvoir du magicien ne réside pas forcément dans ses
+    sorts, ce ne sont que des manifestations extérieures visibles de ce pouvoir. La
+    véritable puissance du magicien réside dans son intelligence indomptable, dans
+    sa dévotion à son art et dans ses capacités à dépasser les vérités superficielles
+    pour comprendre les fondements cachés de l’existence. Un magicien passe une grande
+    partie de son temps à faire des recherches sur les sorts et préfère découvrir
+    une bibliothèque inconnue plutôt qu’une salle pleine de pièces d’or. Les magiciens
+    ne sont pas forcément des rats de bibliothèque reclus mais ils brûlent de curiosité
+    face à l’inconnu. Les découvertes arcaniques résultent de cette obsession pour
+    la magie. Le magicien peut apprendre une découverte magique au lieu de choisir
+    un don normal ou un don de magicien supplémentaire."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_et_découvertes_arcaniques_7
+
+- Nom: Grimoire
+  Classe: Magicien
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le magicien doit étudier son grimoire chaque jour afin de préparer
+    les sorts qu’il souhaite utiliser. Il est incapable de préparer un sort qui ne
+    se trouve pas dans son grimoire, exception faite de lecture de la magie, que tout
+    magicien peut préparer de tête.\n\nLe personnage commence sa carrière avec un
+    grimoire contenant tous les sorts de niveau 0 (sauf ceux appartenant à une école
+    opposée, s’il est spécialisé, voir « École de magie ») plus trois sorts du 1er
+    niveau choisis par le joueur. On y ajoute un nouveau sort du 1er niveau pour chaque
+    point de bonus du modificateur d’Intelligence du personnage. Chaque fois que le
+    personnage gagne un niveau de magicien, il ajoute deux nouveaux sorts dans son
+    grimoire. Ces sorts doivent appartenir à des niveaux de sorts auxquels il a accès
+    (en considérant son niveau de magicien nouvellement augmenté). À n’importe quel
+    moment, le personnage peut également recopier des sorts trouvés dans le grimoire
+    d’un autre magicien (voir la section Ecrits de magie profane).\n\nLes armures
+    gênent les mouvements complexes nécessaires pour lancer des sorts possédant une
+    composante gestuelle. Les descriptions des armures et des boucliers indiquent
+    le risque d’échec des sorts profanes pour chaque type de protection (voir le tableau
+    récapitulatif des armures).\n\nUn lanceur de sorts profane n’encourt aucun risque
+    d’échec lorsqu’il lance un sort sans composante gestuelle, même s’il porte une
+    armure. Ces sorts peuvent également être lancés lorsque le personnage a les mains
+    liées ou lorsqu’il participe à une lutte (mais un test de concentration peut être
+    nécessaire). Le don de métamagie Incantation statique permet au lanceur de sorts
+    de préparer ou de lancer un sort sans sa composante gestuelle en le considérant
+    comme un sort appartenant au niveau directement supérieur à son niveau normal.
+    Cette option permet aussi de lancer un sort en armure sans subir de risque d’échec
+    des sorts."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grimoire_8
+
+##
+## Aptitudes du moine
+##
+
+- Nom: Armes et armures
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Le moine est formé au maniement des armes suivantes : arbalète (légère ou lourde), bâton, ceste,
+    coup de poing américain, dague, épée courte, épée du temple, épieu, fronde, gourdin,
+    hachette, javeline, kama, lance, nunchaku, sai, shuriken et siangham.\n\nLe moine
+    n’est formé ni au port d’armures ni à l’utilisation de boucliers.\n\nLorsqu’il
+    porte une armure ou utilise un bouclier, ou encore lorsqu’il transporte une charge
+    lourde ou intermédiaire, un moine perd son bonus à la CA ainsi que ses aptitudes
+    de déplacement accéléré et de déluge de coups.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Bonus à la CA (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Tant qu’il ne porte pas d’armure et qu’il n’est pas encombré, un moine
+    ajoute son bonus de Sagesse (s’il en a un) à sa CA et à son DMD. De plus, il obtient
+    un bonus de +1 à la CA et au DMD au niveau 4. Ce bonus augmente de +1 tous les
+    quatre niveaux de moine par la suite, jusqu’à un maximum de +5 au niveau 20.\n\nCes
+    bonus à la CA s’appliquent aussi contre les attaques de contact ou lorsque le
+    moine est pris au dépourvu. Il les perd s’il est immobilisé, s’il est sans défense
+    ou s’il porte une armure ou un bouclier ou transporte une charge intermédiaire
+    ou lourde."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bonus_à_la_CA_Ext_1
+
+- Nom: Déluge de coups (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Dès le niveau 1, un moine peut faire pleuvoir un déluge de coups lors
+    d’une attaque à outrance. Dans ce cas, il peut porter une attaque supplémentaire
+    à condition d'accepter une pénalité de -2 sur tous ses jets d'attaque, comme s'il
+    utilisait le don Combat à deux armes. Les attaques en question peuvent être n'importe
+    quelle combinaison d'attaques à mains nues et d'attaques utilisant des armes de
+    moine (il n'est pas nécessaire d'utiliser deux armes différentes pour tirer parti
+    de cette capacité). Pour déterminer les bonus de ces attaques, on considère que
+    le bonus de base à l’attaque du moine est égal à son niveau de moine. Pour toutes
+    les autres considérations (comme pour déterminer si le moine remplit les conditions
+    d’un don ou d’une classe de prestige), le moine utilise son bonus de base à l’attaque
+    normal.\n\nAu niveau 8, le moine peut porter deux attaques supplémentaires lorsqu’il
+    fait pleuvoir un déluge de coups, comme s’il utilisait le don Science du combat
+    à deux armes (même s’il ne remplit pas les conditions de ce don).\n\nAu niveau
+    15, il peut porter trois attaques supplémentaires lorsqu’il fait pleuvoir un déluge
+    de coups, comme s’il utilisait le don Combat à deux armes supérieur (même s’il
+    ne remplit pas les conditions de ce don).\n\nLe moine ajoute son bonus de Force
+    entier aux jets de dégâts pour toutes les attaques du déluge de coups qui touchent,
+    même celles qu’il porte avec une arme tenue à deux mains ou avec une arme secondaire.
+    Il peut remplacer une des attaques à mains nues d’un déluge de coups par une manœuvre
+    offensive de désarmement, de destruction ou de croc-en-jambe. Lors d’un déluge
+    de coups, le moine ne peut utiliser que des attaques à mains nues ou des armes
+    spéciales de moines, aucune autre arme. Si le moine dispose d’attaques naturelles,
+    il ne peut les utiliser ni dans un déluge de coups ni en plus d’un déluge de coups."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déluge_de_coups_Ext_2
+
+- Nom: Combat à mains nues
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un moine de niveau 1 reçoit le don Science du combat à mains nues
+    comme don supplémentaire. Ses attaques peuvent venir de ses poings, mais aussi
+    de ses pieds, de ses coudes ou de ses genoux. Cela signifie qu’un moine peut même
+    porter des attaques « à mains nues » alors que ses deux mains sont occupées à
+    porter quelque chose. De plus, la notion d’attaque secondaire n’a pas de sens
+    quand il se bat à mains nues. Un moine bénéficie donc toujours de son bonus de
+    Force entier sur les jets de dégâts à mains nues.\n\nEn règle générale, les attaques
+    à mains nues du moine infligent des dégâts létaux, mais le moine peut choisir
+    d’infliger des dégâts non létaux sans devoir subir un malus au jet d’attaque.
+    Ce même choix lui est offert en situation de lutte.\n\nL’attaque à mains nues
+    du moine est considérée à la fois comme une arme manufacturée et une arme naturelle
+    pour les sorts et effets qui altèrent ou améliorent l’un ou l’autre de ces deux
+    types d’armes.\n\nLes attaques à mains nues d’un moine infligent plus de dégâts
+    que la normale, comme indiqué dans la Table Le Moine. Les dégâts de cette table
+    concernent uniquement les moines de taille M. Les moines de taille P infligent
+    des dégâts moins importants, tandis que ceux de taille G infligent des dégâts
+    plus élevés, comme indiqué dans la table suivante."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Combat_à_mains_nues_3
+
+- Nom: Dons supplémentaires
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Aux niveaux 1 et 2 et tous les quatre niveaux suivants, un moine
+    peut choisir un don supplémentaire.\n\nCes dons doivent être choisis dans la liste
+    suivante : Attaques réflexes, École du scorpion, Esquive, Lancer improvisé, Parade
+    de projectiles, Science de la lutte et Surprise.\n\nAu niveau 6, les dons suivants
+    s’ajoutent à la liste : Poing de la gorgone, Science de la bousculade, Science
+    de la feinte, Science du croc-en-jambe, Science du désarmement et Souplesse du
+    serpent. \n\nAu niveau 10, les dons suivants s’ajoutent à la liste : Attaque éclair,
+    Fureur de la méduse, Capture de projectiles, Lancer ki et Science du critique.
+    \n\nAu niveau 14, le don suivant s''ajoute à cette liste : Science du lancer ki,
+    Entrave à distance\n\nLe moine peut choisir un de ces dons comme don supplémentaire
+    même s’il ne remplit pas les conditions requises.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_4
+
+- Nom: Coup étourdissant (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Au niveau 1, le moine obtient le don Coup étourdissant comme don supplémentaire,
+    même s’il n’en remplit pas les conditions. Au niveau 4 et tous les quatre niveaux
+    suivant, le moine acquiert la capacité d’appliquer un nouvel état préjudiciable
+    à la cible de son coup étourdissant. La cible subit l’état choisi pendant un round
+    (au lieu d’être étourdie) si son jet de sauvegarde échoue. Au niveau 4, le moine
+    peut choisir de rendre la cible fatiguée. Au niveau 8, il peut la rendre fiévreuse
+    pendant une minute. Au niveau 12, il peut la rendre chancelante pour 1d6+1 rounds.
+    Au niveau 16, il peut l’aveugler ou la rendre sourde de manière permanente. Au
+    niveau 20, il peut la paralyser pour 1d6+1 rounds. Le moine choisit l’état préjudiciable
+    qu’il désire infliger avant de faire son jet d’attaque. Ces effets ne se cumulent
+    pas (une créature rendue fiévreuse par cette capacité ne deviendra ainsi pas nauséeuse
+    si elle est affectée par un nouveau Coup étourdissant), mais les coups supplémentaires
+    augmentent la durée de l'état préjudiciable initial."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_étourdissant_Ext_5
+
+- Nom: Esquive totale (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "À partir du niveau 2, le moine peut esquiver de nombreuses attaques
+    de zone. S’il réussit son jet de Réflexes contre une attaque dont les dégâts sont
+    normalement réduits de moitié, il ne subit pas le moindre dégât. Un moine portant
+    une armure ou une charge intermédiaire ou lourde ou qui se trouve sans défense
+    perd les avantages de l’esquive totale."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_6
+
+- Nom: Déplacement accéléré (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "À partir du niveau 3, un moine obtient un bonus d’altération à sa
+    vitesse de déplacement au sol, comme indiqué dans la Table \"Le Moine\". Il perd
+    ce bonus s’il porte une armure ou une charge intermédiaire ou lourde."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déplacement_accéléré_Ext_7
+
+- Nom: Entraînement aux manœuvres offensives (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Au niveau 3, le moine utilise son niveau de moine au lieu de son bonus
+    de base à l’attaque lorsqu’il calcule son bonus de manœuvre offensive. Les bonus
+    de base à l’attaque provenant d’autres classes ne sont pas modifiés et se cumulent
+    normalement."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_manœuvres_offensives_Ext_8
+
+- Nom: Sérénité (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Un moine de niveau 3 bénéficie d’un bonus de +2 aux jets de sauvegarde
+    contre les sorts et effets de type enchantement."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sérénité_Ext_9
+
+- Nom: Réserve de ki (Sur) et Voeux
+  Classe: Moine
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "À partir du niveau 4, le moine dispose d’une réserve de points ki,
+    une énergie surnaturelle qu’il peut utiliser pour accomplir des exploits étonnants.
+    Cette réserve contient un nombre de points égal à la moitié du niveau du moine
+    + son modificateur de Sagesse. Tant qu’il reste au moins 1 point ki dans la réserve
+    du moine, celui-ci peut effectuer une frappe ki. Au niveau 4, les attaques à mains
+    nues lors d’une frappe ki sont considérées comme des armes magiques pour ce qui
+    est d’ignorer la réduction de dégâts des créatures.Au niveau 7, les attaques à
+    mains nues du moine sont considérées comme des armes en fer froid et en argent
+    pour ce qui est d'ignorer la réduction de dégâts des créatures.Au niveau 10, ses
+    attaques à mains nues sont également considérées comme des armes Loyales pour
+    déterminer si elles ignorent les réductions de dégâts. Au niveau 16, elles sont
+    considérées comme des armes en adamantium pour déterminer si elles ignorent les
+    réductions de dégâts ou la solidité des objets.\n\nEn dépensant 1 point de sa
+    réserve de ki, le moine peut ajouter une attaque supplémentaire à un déluge de
+    coups (cette attaque supplémentaire utilise son bonus d’attaque le plus élevé).
+    Il peut également dépenser 1 point pour augmenter sa vitesse de déplacement de
+    6 m pendant 1 round. Finalement, le moine peut dépenser 1 point de sa réserve
+    de ki pour gagner un bonus d’esquive de +4 à sa CA pendant 1 round. Chacune de
+    ces options requiert une action rapide. D’autres manières d’utiliser les points
+    ki s’offrent au moine lorsqu’il progresse en niveau.\n\nLa réserve de ki du moine
+    se renouvelle chaque matin après huit heures de repos ou de méditation (qui ne
+    doivent pas forcément être consécutives).\n\n Un moine peut discipliner son corps
+    pour stocker plus de ki en respectant scrupuleusement un vœu. Tant qu’il s’y tient,
+    sa réserve de ki augmente du montant indiqué dans la description du vœu. Tous
+    les vœux comportent un inconvénient ou une limite pour contrebalancer cette hausse.
+    Un moine peut prononcer un vœu à n’importe quel niveau mais il ne peut pas l’appliquer
+    à sa réserve de ki tant qu’il n’a pas gagné une réserve de ki comme pouvoir de
+    classe. Un moine qui prononce un vœu ne peut plus jamais bénéficier du pouvoir
+    de classe sérénité, même s’il brise son vœu.\n\nSi un moine brise volontairement
+    et sciemment un vœu, sa réserve de ki tombe à 0 (comme s’il avait dépensé tous
+    ses points) et il ne peut plus la remplir ni utiliser de pouvoirs qui exigent
+    du ki tant qu’il ne s’est pas racheté. Cette rédemption exige qu’il reprenne ses
+    vœux et subisse un sort de pénitence. Une fois que le moine s’est racheté, sa
+    réserve de ki revient à la normale (sans le bonus du vœu). S’il respecte le vœu
+    brisé pendant un mois complet, il récupère aussi les points de ki supplémentaires
+    dus au vœu et peut alors choisir de vivre à nouveau en accord avec ce vœu ou d’y
+    renoncer sans malus. Quand un moine renonce ainsi à un vœu, il ne peut plus jamais
+    bénéficier de points de ki supplémentaires grâce à ce vœu précis.\n\nUn moine
+    peut prononcer plusieurs vœux. Leurs effets et leur augmentation de réserve de
+    ki se cumulent. Si un moine viole un vœu, la rédemption lui permet de se servir
+    à nouveau de l’amélioration due aux autres vœux mais le ki supplémentaire issu
+    du vœu brisé ne reviendra pas avant un mois de dévotion (en effet, une fois que
+    le moine s’est racheté, la violation du vœu n’a plus aucun effet sur les autres)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Réserve_de_ki_Sur_et_Voeux_10
+
+- Nom: Chute ralentie (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "À partir du niveau 4, lorsque le moine se trouve assez près d’une
+    paroi pour pouvoir la toucher, il peut l’utiliser pour freiner sa chute. Au début,
+    cette aptitude permet de réduire les dégâts résultant de la chute en considérant
+    que celle-ci s’effectuait sur une hauteur de 6 m de moins que sa hauteur réelle.
+    La capacité du moine à ralentir sa chute (c’est-à-dire à en réduire les dégâts
+    en ignorant une partie de la distance parcourue) s’améliore lorsque son niveau
+    augmente et, finalement, au niveau 20, le moine ne subit plus aucun dégât en cas
+    de chute à proximité d’une paroi."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Chute_ralentie_Ext_11
+
+- Nom: Sauts puissants (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 5
+  Auto: True
+  Description: "Au niveau 5, le moine ajoute son niveau à tous les tests d’Acrobaties
+    relatifs à des sauts (verticaux ou horizontaux). De plus, on considère qu’il dispose
+    toujours d’un élan (même si ce n’est pas le cas en pratique). En dépensant 1 point
+    de sa réserve de ki (ce qui nécessite une action rapide) le moine gagne pendant
+    1 round un bonus de +20 à tous les tests d’Acrobaties relatifs à des sauts."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sauts_puissants_Ext_12
+
+- Nom: Pureté physique (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 5
+  Auto: True
+  Description: "Au niveau 5, le moine développe une immunité à toutes les maladies,
+    même celles qui sont d’origine surnaturelle ou magique."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pureté_physique_Ext_13
+
+- Nom: Plénitude physique (Sur)
+  Classe: Moine
+  Source: MJ
+  Niveau: 7
+  Auto: True
+  Description: "Dès le niveau 7, le moine est capable de se soigner par une action
+    simple. Il peut récupérer un nombre de points de vie égal à son niveau de moine
+    en utilisant 2 points de sa réserve de ki."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Plénitude_physique_Sur_14
+
+- Nom: Esquive surnaturelle (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 9
+  Auto: True
+  Description: "Au niveau 9, l’esquive totale du moine s’améliore. Face aux attaques
+    permettant un jet de Réflexes pour réduire les dégâts de moitié, il continue à
+    ne subir aucun dégât en cas de jet de sauvegarde réussi mais, en plus, il ne subit
+    que la moitié des dégâts en cas d’échec du jet de sauvegarde. Le moine ne bénéficie
+    pas de cette capacité s’il est sans défense."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_surnaturelle_Ext_15
+
+- Nom: Corps de diamant (Sur)
+  Classe: Moine
+  Source: MJ
+  Niveau: 11
+  Auto: True
+  Description: "Au niveau 11, le moine développe une immunité à tous les types de
+    poisons."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Corps_de_diamant_Sur_16
+
+- Nom: Pas chassé (Sur)
+  Classe: Moine
+  Source: MJ
+  Niveau: 12
+  Auto: True
+  Description: 'À partir du niveau 12, le moine peut se déplacer instantanément d’un
+    endroit à un autre comme à l’aide du sort porte dimensionnelle. Chaque utilisation
+    de cette capacité nécessite une action de mouvement et coûte 2 points de ki. Le
+    niveau de lanceur de sorts du moine pour cet effet est égal à son niveau de moine.
+    Seul le moine peut se déplacer ainsi : il ne peut amener personne avec lui.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pas_chassé_Sur_17
+
+- Nom: Âme de diamant (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 13
+  Auto: True
+  Description: "Au niveau 13, le moine acquiert une résistance à la magie égale à
+    son niveau de moine actuel + 10. Pour pouvoir l’affecter à l’aide d’un sort, son
+    adversaire doit effectuer un test de niveau de lanceur de sorts (1d20 + son niveau
+    de lanceur de sorts) et obtenir un résultat égal ou supérieur à la RM du moine."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Âme_de_diamant_Ext_18
+
+- Nom: Paume vibratoire (Sur)
+  Classe: Moine
+  Source: MJ
+  Niveau: 15
+  Auto: True
+  Description: 'Dès le niveau 15, le moine peut utiliser cette redoutable attaque
+    lui permettant de transmettre des vibrations dangereuses à sa cible, qui peuvent
+    devenir fatales quand il le désire. Le personnage peut se servir de la paume vibratoire
+    une fois par jour et doit l’annoncer avant d’effectuer son jet d’attaque. Les
+    créatures immunisées aux coups critiques ne sont pas affectées par ce pouvoir.
+    Si le coup porte et si l’adversaire est blessé, les vibrations sont transmises
+    avec succès au corps de la victime. À partir de ce moment, le moine peut décider
+    de la tuer à tout instant (les vibrations persistent pendant un jour par niveau
+    du moine). Dès qu’il prend cette décision (ce qui lui demande une action libre),
+    la cible doit effectuer un jet de Vigueur (DD 10 + la moitié du niveau du moine
+    + le modificateur de Sagesse du moine). En cas d’échec, elle meurt. Si elle réussit,
+    les vibrations cessent et elle ne risque plus rien (mais elle peut subir une nouvelle
+    attaque de paume vibratoire). Le moine ne peut activer plus d’un effet de paume
+    vibratoire à la fois : si une victime est encore affectée par la paume vibratoire
+    du moine et que celui-ci utilise cette capacité à nouveau, l’effet le plus ancien
+    prend fin immédiatement.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Paume_vibratoire_Sur_19
+
+- Nom: Éternelle jeunesse (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 17
+  Auto: True
+  Description: "À partir du niveau 17, les affaiblissements de caractéristiques dus
+    au vieillissement n’affectent plus le moine, pas plus que les attaques provoquant
+    un vieillissement accéléré. Les affaiblissements qu’il aurait pu subir avant d’atteindre
+    ce niveau ne sont pas annulés pour autant. Le moine continue de vieillir et bénéficie
+    des bonus qui en découlent. Il meurt toujours de vieillesse lorsque son heure
+    est venue."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Éternelle_jeunesse_Ext_20
+
+- Nom: Langues du soleil et de la lune (Ext)
+  Classe: Moine
+  Source: MJ
+  Niveau: 17
+  Auto: True
+  Description: "À partir du niveau 17, le moine peut communiquer avec toutes les créatures
+    vivantes."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_du_soleil_et_de_la_lune_Ext_21
+
+- Nom: Désertion de l’âme (Sur)
+  Classe: Moine
+  Source: MJ
+  Niveau: 19
+  Auto: True
+  Description: 'Au niveau 19, le personnage peut devenir éthéré pendant une minute
+    comme s’il utilisait le sort passage dans l’éther. Cette capacité s’active par
+    une action de mouvement et coûte 3 points de ki. Seul le moine est affecté : il
+    ne peut pas utiliser désertion de l’âme pour appliquer le même effet à d’autres
+    créatures.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Désertion_de_l’âme_Sur_22
+
+- Nom: Perfection de l’être
+  Classe: Moine
+  Source: MJ
+  Niveau: 20
+  Auto: True
+  Description: "Au niveau 20, le moine devient une entité magique. À partir de cet
+    instant, il n’est plus considéré comme un humanoïde mais comme un Extérieur pour
+    ce qui est des sorts et des effets magiques. De plus, le moine acquiert une réduction
+    de dégâts de 10/chaotique, ce qui signifie qu’il ignore les 10 premiers points
+    de dégâts infligés par chaque attaque portée avec une arme non-chaotique ou avec
+    une arme naturelle d’une créature qui ne dispose pas d’une réduction de dégâts
+    similaire. Contrairement aux autres Extérieurs, le moine peut être ramené à la
+    vie, comme si son type de créature n’avait pas changé.\n\nUn moine cessant d’être
+    Loyal ne peut plus gagner de niveau de moine mais conserve les pouvoirs acquis
+    jusque-là."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Perfection_de_l’être_23
+
+
+##
+## Aptitudes du paladin
+##
+
+- Nom: Armes et armures
+  Classe: Paladin
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le paladin est
+    formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au port
+    de toutes les armures (légères, intermédiaires et lourdes) et à l’utilisation
+    des boucliers (à l’exception des pavois)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Aura de Bien (Ext)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un paladin génère une aura de Bien (voir le sort détection du Mal),
+    dont la puissance correspond à son niveau de paladin."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_Bien_Ext_1
+
+- Nom: Détection du Mal (Mag)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un paladin peut détecter le Mal à volonté, comme par le sort de détection
+    du Mal. Par une action de mouvement, le paladin peut se concentrer sur un objet
+    ou un individu unique distant de 18 m (12 cases) ou moins pour déterminer s’il
+    est d’alignement Mauvais et pour connaître la puissance de son aura comme s’il
+    l’avait étudié pendant trois rounds. Lorsqu’il se concentre sur un objet ou un
+    individu, le paladin ne détecte pas le Mal sur les autres objets ou individus
+    à proximité."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Détection_du_Mal_Mag_2
+
+- Nom: Châtiment du Mal (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Une fois par jour, un paladin peut faire appel aux pouvoirs du bien
+    dans son combat contre le mal. Par une action rapide, le paladin désigne comme
+    cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est d’alignement
+    Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à ses jets d’attaque
+    et son niveau de paladin à tous les jets de dégâts à l’encontre de sa cible. Si
+    la cible est un Extérieur du sous-type Mal, un dragon d’alignement Mauvais ou
+    un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par niveau du paladin
+    pour la première attaque qui touche l'adversaire. Dans tous les cas, le châtiment
+    du mal ignore toutes les réductions de dégâts de la cible.\n\nDe plus, lorsqu’un
+    châtiment du Mal est en cours, le paladin gagne un bonus de parade à sa CA égal
+    à son bonus de Charisme (s’il en a un) contre les attaques portées par la cible
+    du châtiment du Mal. Si le paladin désigne une créature qui n’est pas d’alignement
+    Mauvais, le châtiment est dépensé mais n’a aucun effet.\n\nL’effet du châtiment
+    du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à ce que le paladin
+    se repose et récupère son quota d’utilisations de cette capacité. Au niveau 4
+    et tous les trois niveaux par la suite, le paladin obtient une utilisation quotidienne
+    supplémentaire de ce pouvoir, comme indiqué dans la Table \"Le Paladin\", avec un
+    maximum de sept utilisations quotidiennes au niveau 19."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Châtiment_du_Mal_Sur_3
+
+- Nom: Grâce divine (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "Un paladin de niveau 2 ou plus bénéficie d’un bonus à tous ses jets
+    de sauvegarde égal à son bonus de Charisme (s’il en a un)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grâce_divine_Sur_4
+
+- Nom: Imposition des mains (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "À partir du niveau 2, un paladin peut soigner ses blessures ou celles
+    de ses camarades d’un simple toucher. Il peut utiliser ce pouvoir un nombre de
+    fois par jour égal à la moitié de son niveau de paladin + son modificateur de
+    Charisme. Chaque utilisation permet de soigner 1d6 points de vie par tranche de
+    deux niveaux de paladin et nécessite une action simple (sauf si le paladin soigne
+    ses propres blessures, auquel cas une action rapide suffit). Contrairement à ce
+    que son nom pourrait laisser penser, cette capacité ne nécessite qu’une seule
+    main de libre pour être utilisée.\n\nLe paladin peut également utiliser ce pouvoir
+    de guérison pour infliger des blessures aux morts-vivants, à hauteur de 1d6 points
+    de dégâts par tranche de deux niveaux de paladin. Cette utilisation du pouvoir
+    nécessite un jet d’attaque de contact au corps à corps et ne provoque pas d’attaque
+    d’opportunité. Les morts-vivants ne bénéficient d’aucun jet de sauvegarde contre
+    ces dégâts."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Imposition_des_mains_Sur_5
+
+- Nom: Aura de bravoure (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Un paladin de niveau 3 est immunisé contre la terreur (magique ou
+    non). De plus, tous ses alliés situés à 3 m (2 cases) ou moins bénéficient d’un
+    bonus de moral de +4 aux jets de sauvegarde contre tous les effets de terreur.
+    Cette aptitude fonctionne tant que le paladin est conscient, mais pas s’il est
+    inconscient ou mort."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_bravoure_Sur_6
+
+- Nom: Santé divine (Ext)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Un paladin de niveau 3 est immunisé contre toutes les maladies, y
+    compris celles qui sont d’origine magique ou surnaturelle."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Santé_divine_Ext_7
+
+- Nom: Grâce (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Au niveau 3 et tous les trois niveaux par la suite, un paladin peut
+    choisir une grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.\n\nAu niveau 3, le paladin peut sélectionner une des grâces suivantes
+    :Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles
+    :Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles
+    :Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.Ces
+    effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les mains,
+    il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grâce_Sur_8
+
+- Nom: Canalisation d’énergie positive (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "Lorsque le paladin atteint le niveau 4, il acquiert la capacité surnaturelle
+    de canaliser de l’énergie positive avec un niveau effectif de prêtre égal à son
+    niveau de paladin (voir la description de cette capacité chez le prêtre). Chaque
+    canalisation d’énergie consomme deux utilisations de sa capacité d’imposition
+    des mains. Il s’agit d’une capacité basée sur le Charisme.\n\nVoir aussi les variantes
+    de canalisation."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Canalisation_d’énergie_positive_Sur_9
+
+- Nom: Sorts
+  Classe: Paladin
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "Dès le niveau 4, un paladin peut lancer un petit nombre de sorts divins
+    appartenant à la liste des sorts de paladins. Un paladin doit choisir et préparer
+    ses sorts à l’avance.\n\nPour préparer ou lancer un sort, un paladin doit avoir
+    une valeur de Charisme au moins égale à 10 + le niveau du sort. Le DD des jets
+    de sauvegarde contre les sorts du paladin est égal à 10 + le niveau du sort +
+    le modificateur de Charisme du paladin.\n\nComme les autres lanceurs de sorts,
+    le paladin ne peut lancer qu’un nombre de sorts donné de chaque niveau chaque
+    jour. Son quota de sorts quotidiens est indiqué dans la Table \"Le Paladin\". En
+    plus de cela, il reçoit des sorts en bonus si sa valeur de Charisme est suffisamment
+    élevée. Quand la Table \"Le Paladin\" indique que le paladin peut lancer quotidiennement
+    0 sort d’un niveau donné, il ne dispose, pour ce niveau de sorts, que des sorts
+    en bonus que peut lui accorder un Charisme élevé (voir la Table \"Modificateurs
+    de caractéristique et sorts en bonus\").\n\nChaque jour, le paladin doit passer
+    une heure à prier et à méditer afin de renouveler son quota journalier de sorts.
+    Le paladin peut préparer et lancer n’importe quel sort de la liste des paladins,
+    pour autant qu’il puisse lancer des sorts de ce niveau. Il doit cependant choisir
+    quels sorts préparer au cours de sa méditation quotidienne.\n\nJusqu’au niveau
+    3, le paladin n’a pas de niveau de lanceur de sorts. À partir du niveau 4, son
+    niveau de lanceur de sorts est égal son niveau de paladin -3."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_10
+
+- Nom: Pacte divin (Mag)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 5
+  Auto: True
+  Description: 'Lorsque le paladin atteint le niveau 5, un lien divin se tisse entre
+    lui et son dieu. Celui-ci peut prendre une des deux formes suivantes. Une fois
+    qu’une forme a été choisie, ce choix ne peut plus être modifié.\n\nArme sacrée.
+    La première forme de lien permet à un paladin d’enchanter son arme par une action
+    simple en faisant appel à un esprit céleste qui lui accorde son aide pendant une
+    minute par niveau de paladin. Lorsqu’il est appelé, l’esprit fait briller l’arme
+    comme une torche. Au niveau 5, cet esprit donne à l’arme un bonus d’altération
+    de +1. Tous les trois niveaux suivants, l’arme gagne un bonus d’altération de
+    +1 supplémentaire, jusqu’à un maximum de +6 au niveau 20. Ces bonus peuvent être
+    ajoutés directement à l’arme et cumulés avec les bonus qu’elle possède déjà et
+    ce jusqu’à un maximum de +5. Ces bonus peuvent également être utilisés pour ajouter
+    l’une des propriétés suivantes à l’arme : acérée, axiomatique, de destruction,
+    de feu, de feu intense, de lumière, de rapidité, gardienne, miséricordieuse ou
+    sainte. Ajouter une de ces propriétés coûte une quantité de bonus équivalente
+    au coût de la propriété (voir ici). Ces propriétés s’ajoutent à celles que l’arme
+    possède déjà mais les propriétés en double ne se cumulent pas. Si l’arme n’est
+    pas magique, il faut lui ajouter un bonus d’altération d’au moins +1 avant de
+    pouvoir lui conférer des propriétés. Les bonus et les propriétés donnés par l’esprit
+    sont déterminés lorsqu’il est appelé et ne peuvent donc être modifiés que lorsque
+    l’esprit est appelé à nouveau. L’esprit céleste n’accorde aucun bonus si quelqu’un
+    d’autre que le paladin tient l’arme, mais les bonus réapparaissent si l’arme revient
+    dans la main du paladin. Ces bonus ne s’appliquent qu’à une seule tête si l’arme
+    est une arme double. Un paladin peut utiliser cette capacité une fois par jour
+    au niveau 5 et une fois de plus par jour tous les quatre niveaux suivants, pour
+    un total de quatre utilisations quotidiennes au niveau 17.\nSi une arme est détruite
+    alors qu’elle est liée à un esprit céleste, le paladin doit attendre de gagner
+    un niveau ou que trente jours se soient écoulés avant de pouvoir utiliser cette
+    capacité à nouveau. Pendant cette période d’attente, le paladin subit un malus
+    de -1 à tous les jets d’attaque et de dégâts lorsqu’il combat avec une arme.\nDestrier.
+    La seconde forme de lien permet à un paladin d’acquérir les services d’un destrier
+    plus intelligent, fort et loyal que la moyenne, qui viendra l’aider dans sa croisade
+    contre le mal. Il s’agit généralement d’un cheval lourd (pour un paladin de taille
+    M) ou d’un poney (pour un paladin de taille P), mais des montures plus exotiques
+    comme un sanglier, un chameau ou un chien sont également possibles. Le destrier
+    suit les mêmes règles que les compagnons animaux des druides, avec un niveau de
+    druide effectif égal au niveau du paladin. Les montures ainsi liées au paladin
+    possèdent une Intelligence d’au moins 6.\nUne fois par jour, le paladin peut appeler
+    son destrier auprès de lui en utilisant une action complexe. Cette capacité est
+    équivalente à un sort d’un niveau égal au tiers du niveau du paladin. Le destrier
+    apparaît immédiatement à côté du paladin. Un paladin peut utiliser ce pouvoir
+    une fois par jour au niveau 5 et une fois de plus chaque jour tous les quatre
+    niveaux par la suite, pour un total de quatre fois par jour au niveau 17.\nAu
+    niveau 11, le destrier acquiert l’archétype céleste (voir le Bestiaire Pathfinder)
+    et est désormais considéré comme une créature magique lorsqu’il s’agit de déterminer
+    les effets des sorts. Au niveau 15, le destrier gagne une résistance à la magie
+    égale au niveau du paladin + 11.\nSi le destrier vient à mourir, le paladin doit
+    attendre de gagner un niveau ou que trente jours se soient écoulés avant de pouvoir
+    utiliser cette capacité à nouveau. Pendant cette période d’attente, le paladin
+    subit un malus de -1 à tous les jets d’attaque et de dégâts lorsqu’il combat avec
+    une arme.\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_divin_Mag_11
+
+- Nom: Aura de fermeté (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 8
+  Auto: True
+  Description: "Un paladin de niveau 8 est immunisé contre les sorts et les pouvoirs
+    magiques de charme. De plus, tous ses alliés situés à 3 m ou moins bénéficient
+    d’un bonus de moral de +4 aux jets de sauvegarde contre tous les effets de charme.\n\nCette
+    aptitude fonctionne tant que le paladin est conscient, mais pas s’il est inconscient
+    ou mort."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_fermeté_Sur_12
+
+- Nom: Aura de justice (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 11
+  Auto: True
+  Description: "Au niveau 11, un paladin peut sacrifier deux utilisations de sa capacité
+    du châtiment du Mal pour permettre à tous ses alliés situés à 3 m ou moins d’utiliser
+    un châtiment du Mal avec ses propres bonus. Les alliés doivent utiliser ce châtiment
+    du Mal avant que le prochain tour du paladin commence et les bonus persistent
+    pendant une minute. Ce pouvoir s’utilise par une action libre. Les créatures d’alignement
+    Mauvais ne tirent aucun avantage de l’aura de justice."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_justice_Sur_13
+
+- Nom: Aura de foi (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 14
+  Auto: True
+  Description: "Au niveau 14, les armes d’un paladin sont considérées comme dotées
+    de l’alignement Bon lorsqu’il s’agit de déterminer si elles ignorent les réductions
+    de dégâts. De plus, toutes les attaques faites contre un ennemi dans un rayon
+    de 3 m autour du paladin sont également considérées comme dotées de l’alignement
+    Bon lorsqu’il s’agit de déterminer si elles ignorent les réductions de dégâts.\n\nCette
+    capacité fonctionne tant que le paladin est conscient, mais pas s’il est inconscient
+    ou mort."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_foi_Sur_14
+
+- Nom: Aura de droiture (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 17
+  Auto: True
+  Description: "Au niveau 17, un paladin gagne une RD 5/Mal et est immunisé aux sorts
+    et aux pouvoirs magiques de coercition. De plus, tous ses alliés situés à 3 m
+    ou moins bénéficient d’un bonus de moral de +4 aux jets de sauvegarde contre tous
+    les effets de coercition.\n\nCette aptitude fonctionne tant que le paladin est
+    conscient, mais pas s’il est inconscient ou mort."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_droiture_Sur_15
+
+- Nom: Champion sacré (Sur)
+  Classe: Paladin
+  Source: MJ
+  Niveau: 20
+  Auto: True
+  Description: "Au niveau 20, un paladin devient un véritable réceptacle de la puissance
+    de son dieu. Sa RD augmente jusqu’à 10/Mal. Chaque fois qu’il utilise un châtiment
+    du Mal et frappe un Extérieur d’alignement Mauvais, celui-ci est également soumis
+    à un bannissement dont le NLS est égal au niveau du paladin (l’arme et le symbole
+    sacré du paladin comptent automatiquement comme objets que la cible hait). Le
+    châtiment du Mal se termine immédiatement après que l’effet de bannissement et
+    les dégâts de l’attaque ont été appliqués. De plus, chaque fois que le paladin
+    canalise de l’énergie positive ou utilise une imposition des mains pour guérir
+    une créature, il soigne toujours le maximum de points de vie.\n\nLe paladin est
+    obligatoirement Loyal Bon. S’il commet sciemment un acte maléfique, il perd aussitôt
+    son statut et ses pouvoirs, en dehors des compétences de maniement d’armes, de
+    port d’armures et d’utilisation de boucliers.\n\nDe plus, son code de conduite
+    l’oblige à respecter l’autorité légitime, à se comporter de façon honorable (c’est-à-dire
+    à ne pas mentir, tricher, utiliser le poison, etc.), à aider les gens dans le
+    besoin (à condition qu’ils ne cherchent pas à utiliser le paladin dans un but
+    chaotique ou maléfique), et à châtier ceux qui menacent ou maltraitent les innocents.\n\nLe
+    paladin peut partir à l’aventure avec des alliés d’alignement Bon ou Neutre mais
+    il évitera de collaborer avec des personnes d’alignement Mauvais ou avec ceux
+    qui bafouent sans cesse son code de conduite. Dans des circonstances exceptionnelles,
+    un paladin pourra s’associer avec des créatures d’alignement Mauvais mais seulement
+    avec comme but de venir à bout d’un plus grand mal. Le paladin devrait chercher
+    à recevoir régulièrement un sort de pénitence pendant ce genre d’alliance inhabituelle
+    et il devrait immédiatement mettre un terme à celle-ci s’il a l’impression de
+    faire plus de mal que de bien. Enfin, le paladin ne peut louer les services d’hommes
+    d’armes et accepter les suivants que s’ils sont Bons et Loyaux.\n\nUn paladin
+    changeant d’alignement, commettant sciemment un acte maléfique ou bafouant son
+    code de conduite perd ses sorts et ses aptitudes (y compris la collaboration de
+    son destrier, mais pas sa formation en matière d’armes, d’armures et de boucliers).
+    Il ne peut plus gagner de niveaux de paladin. Il récupère son statut et ses capacités
+    et peut à nouveau progresser en tant que paladin s’il fait acte de contrition
+    (voir le sort pénitence)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Champion_sacré_Sur_16
+
+##
+## Aptitudes du prêtre
+##
+
+- Nom: Armes et armures
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le prêtre est
+    formé au maniement de toutes les armes courantes, ainsi qu’au port des armures
+    légères et intermédiaires et à l’utilisation des boucliers (à l’exception des
+    pavois). Il est également formé au maniement de l’arme de prédilection de son
+    dieu."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Aura (Ext)
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le prêtre d’un dieu Chaotique, Mauvais, Bon ou Loyal possède une aura
+    particulièrement puissante correspondant à l’alignement de la divinité (voir le
+    sort de détection du Mal pour plus de détails)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_Ext_1
+
+- Nom: Sorts
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Le prêtre peut lancer des sorts divins figurant sur la liste des
+    sorts de prêtres. Son alignement peut cependant l’empêcher de lancer certains
+    sorts opposés à sa morale ou à son éthique (voir « Sorts du Bien, du Chaos, de
+    la Loi et du Mal », plus bas). Le prêtre doit choisir et préparer ses sorts à
+    l’avance.\n\nPour préparer ou lancer un sort, un prêtre doit avoir une valeur
+    de Sagesse supérieure ou égale à 10 + le niveau du sort. Le degré de difficulté
+    des jets de sauvegarde contre un sort de prêtre vaut 10 + le niveau du sort +
+    le modificateur de Sagesse du prêtre.\n\nComme les autres lanceurs de sorts, le
+    prêtre ne peut jeter qu’un certain nombre de sorts de chaque niveau chaque jour.
+    Son quota quotidien de sorts est indiqué sur la Table "Le Prêtre". En plus de
+    cela, il reçoit des sorts en bonus chaque jour s’il possède une valeur de Sagesse
+    élevée (voir la Table "Modificateurs de caractéristique et sorts en bonus").\n\nLe
+    prêtre reçoit ses sorts grâce à la prière ou à la méditation : chaque prêtre doit
+    choisir un moment de la journée où il passera quotidiennement une heure à se recueillir
+    ou à prier afin de renouveler son quota journalier de sorts. Le prêtre peut préparer
+    et lancer n’importe quel sort figurant sur la liste des sorts de prêtres et appartenant
+    à un niveau de sorts auquel il a accès. Il doit cependant choisir quels sorts
+    préparer au cours de sa méditation quotidienne.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_2
+
+- Nom: Canalisation d’énergie (Sur) et ses variantes
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent
+    la magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.\n\nQuel que soit son alignement, le prêtre peut libérer
+    une vague d’énergie en canalisant la puissance de sa foi à travers son symbole
+    sacré (ou maudit). Selon le type d’énergie canalisée et les créatures affectées,
+    il peut utiliser cette capacité pour blesser ou pour soigner.\n\nUn prêtre d’alignement
+    Bon (ou qui vénère une divinité Bonne) canalise de l’énergie positive et peut
+    blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement Mauvais
+    (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et peut blesser
+    les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère une divinité
+    Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive et énergie
+    négative. Ce choix, une fois fait, ne peut plus être modifié. Cette décision détermine
+    également le type de sorts que le prêtre peut lancer spontanément (voir « Incantation
+    spontanée »).\n\nL’énergie canalisée crée un rayonnement qui affecte toutes les
+    créatures d’un type donné (soit vivants, soit morts-vivants) dans un rayon de
+    9 m (6 cases) autour du prêtre. La quantité de dégâts infligés ou de points de
+    vie soignés est égale à 1d6 points plus 1d6 points par tranche de deux niveaux
+    de prêtre au-delà du premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite).
+    Les créatures qui sont blessées par l’énergie canalisée bénéficient d’un jet de
+    Volonté pour diminuer les dégâts de moitié. Le DD de ce jet de sauvegarde vaut
+    10 + la moitié du niveau du prêtre + le modificateur de Charisme du prêtre. Les
+    créatures qui sont soignées par l’énergie canalisée ne peuvent dépasser leur nombre
+    maximal de points de vie : les points de vie excédentaires sont perdus. Chaque
+    jour, le prêtre peut canaliser l’énergie un nombre de fois égal à 3 + son modificateur
+    de Charisme. Cela requiert une action simple qui ne provoque pas d’attaque d’opportunité.
+    Le prêtre peut choisir que cet effet l’affecte également ou pas. Il doit être
+    capable de brandir son symbole sacré pour utiliser ce pouvoir.\n\nLa canalisation
+    d’énergie positive ou négative est un pouvoir iconique des prêtres, qu’ils s’en
+    servent pour soigner, pour blesser, pour intimider les morts-vivants ou pour les
+    renvoyer. Pourtant, étant donné l’immense variété des divinités et des thèmes
+    qui leur sont associés, il semble normal que certaines dotent leurs serviteurs
+    mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt. Les
+    catégories suivantes fournissent des exemples de pouvoirs de canalisation alternatifs
+    basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera des
+    pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de feu
+    à la place d’une partie des dégâts de canalisation classique ou de leur totalité.\n\nQuand
+    un joueur crée un personnage prêtre, il doit décider s’il utilise la forme standard
+    de canalisation d’énergie ou une variante présentée ici et basée sur un des thèmes
+    associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut plus revenir
+    dessus. Les canalisations alternatives possèdent la même zone d’effet, les mêmes
+    DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.\n\nVoir les variantes de canalisation.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+
+- Nom: Domaines
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "L’alignement du prêtre, ses capacités magiques, ses valeurs et la
+    manière dont les autres le perçoivent dépendent de son dieu. Le prêtre peut choisir
+    deux domaines parmi ceux qui sont associés à sa divinité. Il ne peut sélectionner
+    un domaine lié à un alignement (Bien, Chaos, Loi ou Mal) que s’il correspond à
+    son propre alignement. Si le prêtre ne sert pas un dieu, il peut quand même choisir
+    deux domaines représentant ses penchants spirituels et ses capacités (sous réserve
+    d’accord du MJ), la restriction sur les alignements reste d’application.\n\nChaque
+    domaine offre un certain nombre de pouvoirs de domaine dépendant du niveau du
+    prêtre ainsi que plusieurs sorts en bonus. Le prêtre gagne un emplacement de sort
+    de domaine pour chaque niveau de sort auquel il a accès (sauf le niveau 0). Chaque
+    jour, le prêtre peut utiliser cet emplacement pour préparer un sort provenant
+    de ses domaines. Si ce sort de domaine ne figure pas sur la liste des sorts de
+    prêtres, le prêtre ne peut le préparer que dans un emplacement de sort de domaine.
+    Les sorts de domaine ne peuvent pas être utilisés pour les incantations spontanées.\n\nLe
+    prêtre reçoit également les pouvoirs indiqués dans chacun de ses domaines s’il
+    a atteint un niveau suffisant. Sauf indication contraire, il suffit d’une action
+    simple pour activer un pouvoir de domaine.\n\nVoir la liste des domaines de prêtres."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Domaines_4
+
+- Nom: Oraisons
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Les prêtres peuvent préparer un certain nombre d’oraisons (ou sorts
+    de niveau 0) chaque jour, comme indiqué sur la Table \"Le Prêtre\" sous la mention
+    « Sorts par jour ». Il jette ces sorts comme les autres mais ils ne sont pas dépensés
+    lorsqu’ils sont lancés et peuvent être utilisés à nouveau."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Oraisons_5
+
+- Nom: Incantation spontanée
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un prêtre Bon (ou un prêtre Neutre vénérant un dieu Bon) peut canaliser
+    l’énergie réservée pour un sort afin de la transformer spontanément en un sort
+    de soin. Le prêtre peut sacrifier n’importe quel sort préparé (à l’exception des
+    oraisons et des sorts de domaine) pour pouvoir lancer un sort de soins de niveau
+    égal ou inférieur (un sort de soins est un sort dont le nom comporte le mot «
+    soins »).\n\nUn prêtre Mauvais (ou un prêtre Neutre vénérant un dieu Mauvais)
+    ne peut pas convertir les sorts qu’il a préparés en sorts de soins mais il peut
+    les transformer en sorts de blessure (un sort de blessure est un sort dont le
+    nom comporte le mot « blessure »).\n\nUn prêtre Neutre dont la divinité est Neutre
+    peut convertir les sorts qu’il a préparés en sorts de soins ou de blessure (selon
+    le choix du joueur). Une fois que ce choix a été effectué, il ne peut plus être
+    modifié. Cette décision indique également si l’énergie canalisée par le prêtre
+    est positive ou négative (voir « Canalisation d’énergie » plus haut)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Incantation_spontanée_6
+
+- Nom: Sorts du Bien, du Chaos, de la Loi et du Mal
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un prêtre ne peut pas lancer de sorts dont l’alignement est opposé
+    au sien ou à celui de son dieu (s’il en sert un). L’alignement d’un sort est indiqué
+    dans sa description par les registres Bien, Chaos, Loi et Mal."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_du_Bien_du_Chaos_de_la_Loi_et_du_Mal_7
+
+- Nom: Langues supplémentaires
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Les options suivantes viennent s’ajouter à la liste des langues que
+    la race du personnage lui permet d’apprendre : céleste, abyssal, infernal (respectivement,
+    les langages des Extérieurs d’alignement Bon, Chaotique-Mauvais et Loyal-Mauvais).\n\nUn
+    prêtre qui bafoue ouvertement le code de conduite imposé par son dieu perd tous
+    ses sorts et toutes ses capacités de classe, à l’exception de la formation au
+    maniement des armes courantes, à l’utilisation des boucliers et au port d’armures.
+    Il ne peut plus gagner de niveau de prêtre de ce dieu tant qu’il n’a pas fait
+    acte de contrition (voir le sort pénitence).'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_supplémentaires_8
+
+
+##
+## Aptitudes du rôdeur
+##
+- Nom: Armes et armures
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le rôdeur est
+    formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au port
+    des armures légères et intermédiaires et à l’utilisation des boucliers (à l’exception
+    des pavois)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Ennemis jurés (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: 'Au niveau 1, le rôdeur choisit un type de créatures sur la table
+    des ennemis jurés du rôdeur. Il bénéficie d’un bonus de +2 aux tests de Bluff,
+    Connaissances, Perception, Psychologie et Survie lorsqu’il les utilise contre
+    des créatures de ce type. Il bénéficie également d’un bonus de +2 aux jets d’attaque
+    et de dégâts lorsqu’il utilise une arme contre elles. Enfin, il peut tenter d’utiliser
+    la compétence de Connaissances pour identifier ces créatures et ce, même s’il
+    ne possède aucun rang dans celle-ci.\n\nAu niveau 5 et tous les cinq niveaux par
+    la suite (aux niveaux 10, 15 et 20), le rôdeur peut choisir un nouvel ennemi juré.
+    En même temps, il peut augmenter de +2 le bonus dont il bénéficie contre l’un
+    de ses ennemis jurés (y compris celui qu’il vient de choisir, s’il le désire).\n\nLorsqu’un
+    rôdeur choisit les Extérieurs ou les humanoïdes comme ennemis jurés, il doit aussi
+    sélectionner un sous-type associé, comme l’indique la table (notez que les sous-types
+    d’humanoïdes cités dans la table ne sont que les plus communs, d’autres sous-types,
+    que le rôdeur peut également choisir, sont présentés dans le Bestiaire Pathfinder).
+    Si une créature appartient à deux familles d’ennemis jurés, les bonus ne se cumulent
+    pas : le rôdeur ne profite que du plus élevé des deux.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Ennemis_jurés_Ext_1
+
+- Nom: Pistage (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le rôdeur ajoute la moitié de son niveau (au minimum +1) aux tests
+    de Survie pour suivre des traces."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pistage_Ext_2
+
+- Nom: Empathie sauvage (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un rôdeur peut améliorer l’attitude d’un animal. Cette aptitude suit
+    les mêmes règles que les tests de Diplomatie visant à modifier l’attitude d’une
+    personne. Le résultat d’un test d’empathie sauvage est déterminé par 1d20 + le
+    niveau du rôdeur + son modificateur de Charisme. L’attitude initiale des animaux
+    domestiques est l’indifférence, tandis que les animaux sauvages sont généralement
+    inamicaux.\n\nPour utiliser empathie sauvage, le rôdeur et l’animal doivent être
+    à moins de 9 m (6 cases) de distance dans des conditions de visibilité normales.
+    Il faut en moyenne une minute pour influencer un animal de cette façon, mais,
+    comme pour la diplomatie, cela peut parfois prendre plus longtemps ou être plus
+    rapide.\n\nUn rôdeur peut également utiliser cette aptitude pour influencer une
+    créature magique dont la valeur d’Intelligence est de 1 ou 2, mais avec un malus
+    de -4 sur son test."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Empathie_sauvage_Ext_3
+
+- Nom: Style de combat (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: 'Au niveau 2, un rôdeur choisit de se spécialiser dans un des deux
+    styles de combat suivants : combat à deux armes ou combat à distance. \n\nIl peut
+    également choisir de se spécialiser dans un des styles de combat suivants : arbalète,
+    arme à deux mains, arme et bouclier, arme naturelle ou combat monté.\n\nCette
+    spécialisation se traduit par des dons supplémentaires gagnés aux niveaux 2, 6,
+    10, 14 et 18. Le rôdeur choisit ces dons supplémentaires dans la liste appropriée.
+    Il peut sélectionner un don même s’il ne remplit pas les conditions qui lui sont
+    associées.\n\nSi le rôdeur choisit le style de combat à distance, il peut choisir
+    un des dons suivants chaque fois qu’il gagne un don de style de combat : Tir à
+    bout portant, Tir de loin, Tir de précision et Tir rapide. Au niveau 6, les dons
+    Feu nourri et Science du tir de précision s’ajoutent à la liste. Au niveau 10,
+    les dons Tir en mouvement et Viser juste s’ajoutent à la liste.\n\nSi le rôdeur
+    choisit le style de combat à deux armes, il peut choisir un des dons suivants
+    chaque fois qu’il gagne un don de style de combat : Arme en main, Combat à deux
+    armes, Double frappe et Science du coup de bouclier. Au niveau 6, les dons Défense
+    à deux armes et Science du combat à deux armes s’ajoutent à la liste. Au niveau
+    10, les dons Éventration à deux armes et Combat à deux armes supérieur viennent
+    s’ajouter à la liste.\n\n Si le rôdeur choisit le style de combat arbalète, il
+    peut choisir un des dons suivants chaque fois qu’il gagne un don de style de combat
+    : Rechargement rapide, Tir avec concentration, Tir de précision ou Viser. Au niveau
+    6, les dons Maîtrise des arbalètes et Science du tir de précision s''ajoutent
+    à la liste. Au niveau 10, les dons Tir en mouvement et Viser juste viennent s''ajouter
+    à la liste.\n\nSi le rôdeur choisit le style de combat arme à deux mains, il peut
+    choisir un des dons suivants chaque fois qu’il gagne un don de style de combat
+    : Assaut repoussant, Attaque en puissance, Coups protecteurs ou Enchaînement.
+    Au niveau 6, les dons Concentration malgré la fureur et Succession d’enchaînements
+    s''ajoutent à la liste. Au niveau 10, les dons Carnage effroyable et Science de
+    la destruction viennent s''ajouter à la liste.\n\nSi le rôdeur choisit le style
+    de combat arme et bouclier, il peut choisir un des dons suivants chaque fois qu’il
+    gagne un don de style de combat : Art du bouclier, Frappe du bouclier, Combat
+    à deux armes ou Science du coup de bouclier. Au niveau 6, les dons Bouclier salvateur
+    et Maîtrise du bouclier s''ajoutent à la liste. Au niveau 10, les dons Art du
+    bouclier supérieur et Coup de bouclier opportuniste viennent s''ajouter à la liste.\n\nSi
+    le rôdeur choisit le style de combat arme naturelle, il peut choisir un des dons
+    suivants chaque fois qu’il gagne un don de style de combat : Arme de prédilection,
+    Arme naturelle supérieure, Aspect bestial ou Griffes coupantes. Au niveau 6, les
+    dons Frappe décisive et Griffes magiques s''ajoutent à la liste. Au niveau 10,
+    les dons Attaques multiples et Science de la frappe décisive viennent s''ajouter
+    à la liste. \n\nSi le rôdeur choisit le style de combat combat monté, il peut
+    choisir un des dons suivants chaque fois qu’il gagne un don de style de combat
+    : Astuce d’équitation, Attaque au galop, Combat monté ou Tir monté. Au niveau
+    6, les dons Bouclier pour la monture et Charge dévastatrice s''ajoutent à la liste.
+    Au niveau 10, les dons Désarçonner et Tirailleur monté viennent s''ajouter à la
+    liste.\n\nLe rôdeur ne bénéficie de ses dons de style de combat que s’il porte
+    une armure légère, une armure intermédiaire ou s’il ne porte aucune armure. Il
+    perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur a opté
+    pour un style de combat, ce choix ne peut plus être modifié.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Style_de_combat_Ext_4
+
+- Nom: Endurance
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Un rôdeur de niveau 3 reçoit gratuitement le don Endurance en tant
+    que don supplémentaire."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Endurance_5
+
+- Nom: Environnements de prédilection (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: 'Au niveau 3, un rôdeur choisit un type d’environnement sur la table
+    des environnements de prédilection du rôdeur. Il bénéficie d’un bonus de +2 aux
+    jets d’initiative et aux tests de Connaissances (géographie), Discrétion, Perception
+    et Survie lorsqu’il se trouve dans cet environnement. De plus, lorsqu’il voyage
+    dans son environnement de prédilection, le rôdeur ne laisse aucune trace et ne
+    peut être suivi (il peut cependant laisser des traces s’il le désire).\n\nAu niveau
+    8 et tous les cinq niveaux par la suite, le rôdeur peut choisir un nouvel environnement
+    de prédilection. En même temps, il peut augmenter de +2 le bonus dont il bénéficie
+    dans l’un de ses environnements de prédilection (y compris celui qu’il vient de
+    choisir, s’il le désire).\n\nSi l’endroit où le rôdeur se trouve entre dans plusieurs
+    catégories d’environnements de prédilection, les bonus ne se cumulent pas : le
+    rôdeur ne bénéficie que du bonus le plus élevé.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Environnements_de_prédilection_Ext_6
+
+- Nom: Pacte du chasseur (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: 'Au niveau 4, un lien se tisse entre le rôdeur et ses compagnons de
+    chasse. Ce lien peut prendre l’une des deux formes suivantes. Une fois qu’une
+    forme a été choisie, cette décision ne peut plus être modifiée. \n\nLa première
+    forme est un lien entre le rôdeur et ses compagnons qui lui permet, en utilisant
+    une action de mouvement, de faire bénéficier tous ses alliés distants de 9 m (6
+    cases) ou moins et qui peuvent le voir ou l’entendre de la moitié de son bonus
+    d’ennemi juré contre une cible unique (appartenant au type adéquat). Ce bonus
+    persiste pendant un nombre de rounds égal au modificateur de Sagesse du rôdeur
+    (au minimum 1 round) et ne se cumule pas avec les bonus d’ennemis jurés que ses
+    alliés pourraient posséder (ils ne bénéficient que du bonus le plus élevé).\n\nSous
+    sa seconde forme, le pacte permet au le rôdeur de tisser un lien étroit avec un
+    compagnon animal. Un rôdeur qui opte pour cette forme doit choisir un animal dans
+    la liste suivante : blaireau, chameau, cheval (lourd ou léger), chien, loup, oiseau,
+    petit félin, poney, rat sanguinaire ou serpent (vipère ou serpent constricteur).
+    Si la campagne se déroule en grande partie ou entièrement en milieu aquatique,
+    le rôdeur peut également choisir un requin. Cet animal est un compagnon loyal
+    qui accompagne le rôdeur au cours de ses aventures et l’aide au mieux de ses possibilités.
+    Le compagnon animal partage les bonus d’ennemis jurés et d’environnements de prédilection
+    du rôdeur.\n\nLe compagnon suit les mêmes règles que les compagnons animaux des
+    druides (voir la capacité de druide de pacte avec la nature), avec un niveau de
+    druide effectif égal au niveau du rôdeur -3.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_du_chasseur_Ext_7
+
+- Nom: Sorts
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "Dès le niveau 4, un rôdeur peut lancer un petit nombre de sorts divins
+   appartenant à la liste des sorts de rôdeurs. Un rôdeur doit choisir et préparer
+   ses sorts à l’avance.\n\nPour préparer ou lancer un sort, un rôdeur doit avoir
+   une valeur de Sagesse au moins égale à 10 + le niveau du sort. Le DD des jets
+   de sauvegarde contre les sorts du rôdeur est égal à 10 + le niveau du sort + le
+   modificateur de Sagesse du rôdeur.\n\nComme les autres lanceurs de sorts, le rôdeur
+   ne peut lancer qu’un nombre de sorts donné de chaque niveau chaque jour. Son quota
+   de sorts quotidiens est indiqué dans la Table \"Le Rôdeur\". En plus de cela, il
+   reçoit des sorts en bonus si sa valeur de Sagesse est suffisamment élevée (voir
+   la Table \"Modificateurs de caractéristique et sorts en bonus\"). Quand la Table
+   \"Le Rôdeur\" indique que le rôdeur peut lancer 0 sort d’un niveau de sort par jour,
+   il ne dispose, pour ce niveau de sorts, que des sorts en bonus que peut lui accorder
+   une Sagesse élevée.\n\nChaque jour, le rôdeur doit passer une heure à méditer
+   afin de renouveler son quota journalier de sorts. Le rôdeur peut préparer et lancer
+   n’importe quel sort de la liste des sorts de rôdeurs, pour autant qu’il puisse
+   lancer des sorts de ce niveau. Il doit cependant choisir quels sorts préparer
+   au cours de sa méditation quotidienne.\n\nJusqu’au niveau 3, le rôdeur n’a pas
+   de niveau de lanceur de sorts. À partir du niveau 4, son niveau de lanceur de
+   sorts est égal son niveau de rôdeur -3."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_8
+
+- Nom: Déplacement facilité (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 7
+  Auto: True
+  Description: "Un rôdeur de niveau 7 se déplace sans la moindre gêne dans toutes
+    sortes de taillis, y compris les fourrés, les buissons (même épineux) et les autres
+    zones de végétation dense. Il progresse normalement et ne subit aucun dégât.\n\nLa
+    végétation enchantée de manière à restreindre les mouvements continue toutefois
+    à l’affecter."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déplacement_facilité_Ext_9
+
+- Nom: Pistage accéléré (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 8
+  Auto: True
+  Description: "Lorsqu’un rôdeur de niveau 8 suit une piste, il peut se déplacer à
+    vitesse normale sans subir le malus de -5 sur ses tests de Survie. De plus, il
+    ne subit qu’un malus de -10 (au lieu de -20) sur ses tests de Survie lorsqu’il
+    suit une piste en se déplaçant au double de sa vitesse."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pistage_accéléré_Ext_10
+
+- Nom: Esquive totale (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 9
+  Auto: True
+  Description: "L’agilité phénoménale d’un rôdeur de niveau 9 lui permet d’esquiver
+    les attaques magiques ou inhabituelles. S’il réussit un jet de Réflexes contre
+    une attaque dont les dégâts devraient être réduits de moitié en cas de jet de
+    Réflexes réussi, il évite l’attaque et ne subit pas le moindre dégât. Le rôdeur
+    bénéficie de cet avantage uniquement s’il porte une armure légère, intermédiaire
+    ou aucune armure. Un rôdeur sans défense ne bénéficie pas des avantages de l’esquive
+    totale."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_11
+
+- Nom: Proie du chasseur (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 11
+  Auto: True
+  Description: "Au niveau 11, un rôdeur peut choisir une cible dans sa ligne de mire
+    et la désigner comme proie en utilisant une action simple. Chaque fois qu’il suit
+    les traces de sa proie, le rôdeur peut faire 10 sur ses tests de Survie tout en
+    se déplaçant à vitesse normale sans pour autant subir de pénalité. De plus, il
+    reçoit un bonus d’intuition de +2 aux jets d’attaque contre sa cible et toutes
+    les possibilités de critique sont automatiquement confirmées. Le rôdeur ne peut
+    avoir qu’une seule cible à la fois et celle-ci doit appartenir à une de ses catégories
+    d’ennemis jurés. Il peut mettre fin à cet effet à n’importe quel moment (par action
+    libre) mais il doit alors attendre vingt-quatre heures avant de désigner une nouvelle
+    proie. Si le rôdeur a la preuve que sa cible est morte, ce délai d’attente est
+    réduit à une heure."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Proie_du_chasseur_Ext_12
+
+- Nom: Camouflage (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 12
+  Auto: True
+  Description: "Un rôdeur de niveau 12 ou plus peut utiliser la compétence Discrétion
+    même s’il ne bénéficie pas d’un abri ou de camouflage, à condition de se trouver
+    dans un de ses environnements de prédilection."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Camouflage_Ext_13
+
+- Nom: Esquive surnaturelle (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 16
+  Auto: True
+  Description: "Au niveau 16, l’esquive totale du rôdeur s’améliore. Quand il est
+    victime d’un attaque qui autorise un jet de Réflexes pour réduire les dégâts de
+    moitié, il ne subit aucun dégât en cas de jet de sauvegarde réussi mais, en plus,
+    il ne subit que la moitié des dégâts en cas d’échec du jet de sauvegarde. Un rôdeur
+    sans défense perd les avantages de l’esquive surnaturelle."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_surnaturelle_Ext_14
+
+- Nom: Discrétion totale (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 17
+  Auto: True
+  Description: "Un rôdeur de niveau 17 ou plus se trouvant dans un de ses environnements
+    de prédilection peut utiliser la compétence Discrétion même s’il est observé."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Discrétion_totale_Ext_15
+
+- Nom: Proie du maître chasseur (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 19
+  Auto: True
+  Description: "Au niveau 19, le rôdeur améliore sa capacité à chasser sa proie. Une
+    action libre lui suffit désormais pour désigner une proie et il peut faire 20
+    aux tests de Survie pour la pister tout en se déplacement à sa vitesse normale
+    sans pour autant subir de pénalité. De plus, son bonus d’intuition aux jets d’attaque
+    passe à +4. Si la cible est tuée ou si le rôdeur décide d’en changer, il ne doit
+    plus attendre que dix minutes avant de pouvoir sélectionner une nouvelle cible."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Proie_du_maître_chasseur_Ext_16
+
+- Nom: Maître chasseur (Ext)
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 20
+  Auto: True
+  Description: "Un rôdeur de niveau 20 devient un maître chasseur. Lorsqu’il suit
+    une piste, il peut toujours se déplacer à pleine vitesse sans subir de pénalité
+    aux tests de Survie. En utilisant une action simple, il peut porter une attaque
+    unique contre un ennemi juré en utilisant son bonus d’attaque maximal. Si cette
+    attaque touche, elle inflige des dégâts normaux et la cible doit réussir un jet
+    de Vigueur pour éviter de mourir. Le DD de ce jet de sauvegarde est de 10 + la
+    moitié du niveau du rôdeur + le modificateur de Sagesse du rôdeur. Plutôt que
+    de tuer la cible en cas d’échec du jet de sauvegarde, le rôdeur peut choisir de
+    lui infliger autant de points de dégâts non létaux que celle-ci possède de points
+    de vie. Un jet de sauvegarde réussi annule ces dégâts. Le rôdeur peut utiliser
+    cette capacité une fois par jour par catégorie d’ennemis jurés qu’il possède,
+    mais jamais deux fois contre la même créature au cours d’une période de vingt-quatre
+    heures."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maître_chasseur_Ext_17
+
+##
+## Aptitudes du roublard
+##
+
+- Nom: Armes et armures
+  Classe: Roublard
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le roublard
+    est formé au maniement de toutes les armes courantes, des arbalètes de poing,
+    des arcs courts, des épées courtes, des matraques et des rapières. Il est également
+    formé au port des armures légères mais pas à l’utilisation des boucliers."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+
+- Nom: Attaque sournoise
+  Classe: Roublard
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Lorsqu’un roublard attaque son adversaire dans une situation où ce
+    dernier est incapable de se défendre efficacement, il peut lui infliger des dégâts
+    supplémentaires en touchant un point sensible.\n\nL’attaque du roublard inflige
+    des dégâts supplémentaires lorsque sa cible se trouve dans un cas de figure lui
+    ôtant son bonus de Dextérité à la CA (qu’elle en ait un ou pas) ou qu’elle est
+    prise en tenaille par le roublard et un compagnon de celui-ci. Les dégâts supplémentaires
+    s’élèvent à 1d6 points au niveau 1, et ils augmentent de 1d6 points tous les deux
+    niveaux de roublard suivants. Si le roublard obtient un coup critique sur une
+    attaque sournoise, ces dégâts supplémentaires ne sont pas multipliés. Une attaque
+    à distance ne peut être une attaque sournoise que si la cible se trouve à 9 m
+    (6 cases) ou moins.\n\nS’il utilise une arme qui inflige des dégâts non létaux
+    (comme une matraque, un fouet ou une attaque à mains nues), le personnage peut
+    porter une attaque sournoise infligeant elle aussi des dégâts non létaux. Il ne
+    peut pas choisir cette option avec une arme occasionnant normalement des dégâts
+    létaux (même en acceptant une pénalité de -4 au jet d’attaque).\n\nLe roublard
+    ne peut tenter une attaque sournoise que contre un adversaire qu’il peut observer
+    suffisamment pour en repérer les points faibles et dont il peut toucher les organes
+    vitaux. Les attaques sournoises sont impossibles lorsque la cible bénéficie d’un
+    camouflage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Attaque_sournoise_1
+
+- Nom: Recherche des pièges
+  Classe: Roublard
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Les roublards ajoutent la moitié de leur niveau (au minimum +1) aux
+    tests de Perception destinés à repérer des pièges ainsi qu’aux tests de Sabotage.
+    Seul un roublard peut utiliser la compétence Sabotage pour désarmer les pièges
+    magiques."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Recherche_des_pièges_2
+
+- Nom: Esquive totale (Ext)
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "L’agilité phénoménale d’un roublard de niveau 2 lui permet d’esquiver
+    les attaques magiques ou inhabituelles. S’il réussit un jet de Réflexes contre
+    une attaque dont les dégâts devraient être réduits de moitié en cas de jet de
+    Réflexes réussi, il évite l’attaque et ne subit pas le moindre dégât. Le roublard
+    bénéficie de cet avantage uniquement s’il porte une armure légère ou aucune armure.
+    Un roublard sans défense ne bénéficie pas des avantages de l’esquive totale."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_3
+
+- Nom: Talents de roublard
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "En gagnant de l’expérience, un roublard acquiert divers talents qui
+    l’avantagent ou désavantagent ses ennemis. Il obtient un premier talent de roublard
+    au niveau 2, puis il gagne un talent de roublard supplémentaire tous les deux
+    niveaux de roublard par la suite. Aucun talent ne peut être choisi plus d’une
+    fois.\n\nLes talents marqués d’un astérisque ajoutent un effet aux attaques sournoises
+    du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque,
+    et son choix doit être fait avant le jet d’attaque."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Talents_de_roublard_4
+
+- Nom: Sens des pièges (Ext)
+  Classe: Roublard
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant
+    d’éviter les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets
+    de Réflexes effectués pour éviter les pièges et par un bonus d’esquive de +1 à
+    la CA contre les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque
+    le roublard atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il
+    atteint le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il
+    atteint le niveau 18.\n\nLes bonus de sens des pièges provenant de classes différentes
+    se cumulent entre eux."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sens_des_pièges_Ext_5
+
+- Nom: Esquive instinctive (Ext)
+  Classe: Roublard
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: 'Au niveau 4, le roublard gagne la capacité de réagir aux dangers
+    avant même que ses sens les perçoivent. Il ne peut pas être pris au dépourvu.
+    De plus, il conserve son bonus de Dextérité à la classe d’armure lorsqu’il est
+    attaqué par un adversaire invisible. La règle normale s’applique cependant lorsqu’il
+    est immobilisé : dans ce cas, il perd son bonus de Dextérité à la classe d’armure.
+    Un roublard disposant de cette capacité perd également son bonus de Dextérité
+    à la classe d’armure si un adversaire parvient à réaliser une feinte en combat
+    à son encontre.\n\nSi un roublard possède déjà la capacité d’esquive instinctive
+    (grâce à une autre classe par exemple), il gagne à la place la capacité d’esquive
+    instinctive supérieure.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_instinctive_Ext_6
+
+- Nom: Esquive instinctive supérieure (Ext)
+  Classe: Roublard
+  Source: MJ
+  Niveau: 8
+  Auto: True
+  Description: "À partir du niveau 8, un roublard ne peut plus être pris en tenaille.\n\nUn
+    autre roublard ne peut donc pas utiliser ses capacités pour lui porter une attaque
+    sournoise en le prenant en tenaille, à moins de posséder au moins quatre niveaux
+    de roublard de plus que lui.\n\nSi le personnage dispose déjà de la capacité d’esquive
+    instinctive (voir plus haut) grâce à une autre classe, les niveaux de toutes les
+    classes qui lui donnent cette capacité se cumulent pour déterminer le nombre de
+    niveaux de roublard qu’un attaquant doit posséder pour pouvoir le prendre en tenaille."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_instinctive_supérieure_Ext_7
+
+- Nom: Talents de maître roublard
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Auto: True
+  Description: "Au niveau 10 et tous les deux niveaux par la suite, le roublard peut
+    choisir l’un des talents de maître roublard suivants au lieu d’un talent de roublard."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Talents_de_maître_roublard_8
+
+- Nom: Coup de maître (Ext)
+  Classe: Roublard
+  Source: MJ
+  Niveau: 20
+  Auto: True
+  Description: 'Lorsque le roublard atteint le niveau 20, ses attaques sournoises
+    deviennent incroyablement létales. Chaque fois qu’il inflige des dégâts d’attaque
+    sournoise, il peut choisir un des trois effets suivants : la cible peut être endormie
+    pendant 1d4 heures, paralysée pendant 2d6 rounds ou tuée. Quel que soit l’effet
+    choisi, la cible bénéficie d’un jet de Vigueur pour annuler l’effet additionnel.
+    Le DD de ce jet de sauvegarde est égal à 10 + la moitié du niveau du roublard
+    + le modificateur d’Intelligence du roublard. Une créature prise pour cible par
+    un coup de maître ne peut plus être affectée par un autre coup de maître du même
+    roublard au cours des vingt-quatre heures qui suivent, et ceci qu’elle ait réussi
+    son jet de sauvegarde ou non. Les créatures qui sont immunisées aux attaques sournoises
+    le sont également aux coups de maître.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_de_maître_Ext_9

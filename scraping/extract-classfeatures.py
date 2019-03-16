@@ -19,7 +19,7 @@ if len(sys.argv) < 3:
 
 ## Configurations pour le lancement
 MOCK_CF = None
-MOCK_CF = "mocks/classe-ensorceleur.html"       # décommenter pour tester avec les rages pré-téléchargées
+#MOCK_CF = "mocks/classe-ensorceleur.html"       # décommenter pour tester avec les rages pré-téléchargées
 
 
 #
@@ -72,39 +72,56 @@ else:
 
 section = jumpTo(html, 'h2',{'class':'separator'}, u"Descriptif de la classe")
 
-rage = {'4Source':'MJ','5Niveau':1}
+classfeature = {'4Source':'MJ','5Niveau':1,'6Auto':'TRUE'}
 newObj = False
 descr = ""
 
 for s in section:
     if s.name == 'h3':
         if newObj:
-            rage['2Classe'] = sys.argv[2]
-            rage['6Description'] = descr.replace('\n','').strip()
-            rage['EMPTY'] = ""
-            liste.append(rage)
-            rage = {'4Source':'MJ','5Niveau':1}
+            classfeature['2Classe'] = sys.argv[2]
+            classfeature['7Description'] = descr.replace('\n','').strip()
+            classfeature['EMPTY'] = ""
+            liste.append(classfeature)
+            classfeature = {'4Source':'MJ','5Niveau':1,'6Auto':'TRUE'}
             brCount = 0
             descr = ""
-        rage['1Nom'] = s.text.replace('¶','').strip()
+        classfeature['1Nom'] = s.text.replace('¶','').strip()
         newObj = True
         
         for e in s.children:
             if e.name == 'a':
-                rage[u'7Référence']="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx" + e['href']
+                classfeature[u'8Référence']="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx" + e['href']
     elif s.name == 'br':
         descr += '\\n'
-    elif s.name is None or s.name == 'a' or s.name == 'i':
-        descr += s.string
-            
+    elif s.name is None or s.name == 'a' or s.name == 'i' or s.name == 'b':
+        if s.string is None:
+            for s2 in s.children:
+                if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
+                    descr += s2.string
+        else:
+            descr += s.string
+    elif s.name == 'div':
+        for s2 in s.children:
+            if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
+                if not s2.string is None:
+                    descr += s2.string
 
+## last element
+classfeature['2Classe'] = sys.argv[2]
+classfeature['7Description'] = descr.replace('\n','').strip()
+classfeature['EMPTY'] = ""
+liste.append(classfeature)
+            
 yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
 yml = yml.replace('1Nom','Nom')
 yml = yml.replace('2Classe','Classe')
 yml = yml.replace(u'3Prérequis',u'Prérequis')
 yml = yml.replace('4Source','Source')
 yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace('6Description','Description')
-yml = yml.replace(u'7Référence',u'Référence')
+yml = yml.replace('6Auto','Auto')
+yml = yml.replace('\'TRUE\'','True')
+yml = yml.replace('7Description','Description')
+yml = yml.replace(u'8Référence',u'Référence')
 yml = yml.replace("EMPTY: ''",'')
 print(yml)
