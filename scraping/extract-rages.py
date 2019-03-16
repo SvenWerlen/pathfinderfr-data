@@ -80,7 +80,7 @@ for s in section:
                     rage = {'4Source':'MJ','5Niveau':1}
                     brCount = 0
                     descr = ""
-                rage['1Nom'] = e.text.replace('¶','').strip()
+                rage['1Nom'] = "Rage: " + e.text.replace('¶','').strip()
                 newObj = True
             elif e.name == 'b' and e.text == u'Prérequis':
                 prerequis = str(e.next_sibling)
