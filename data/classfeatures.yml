@@ -1724,3 +1724,136 @@
   Auto: True
   Description: "Un barde de niveau 20 ou plus peut utiliser sa capacité de représentation bardique pour faire mourir un ennemi de joie ou de tristesse. La cible doit être capable de voir et d’entendre le spectacle du barde pendant un round entier et se situer dans un rayon de 9 m (6 cases). Elle bénéficie d’un jet de Volonté (DD 10 + la moitié du niveau du barde + le modificateur de Charisme du barde) pour annuler l’effet. En cas de réussite du jet de sauvegarde, la cible chancelle pendant 1d4 rounds et le barde ne peut plus utiliser de représentation mortelle à son encontre au cours des vingt-quatre heures qui suivent. En cas d’échec du jet de sauvegarde, la cible meurt. Une représentation mortelle est un effet mental de mort qui utilise des composantes sonores et visuelles."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Repr%C3%A9sentation_mortelle_Sur_12
+
+
+##
+## Aptitudes du druide
+##
+  
+- Nom: Armes et armures
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le druide est formé au maniement des armes suivantes : bâton, cimeterre, dague, épieu, faux, fléchette, fronde, gourdin, lance et serpe. Il sait également utiliser toutes les attaques naturelles (griffes, morsure et ainsi de suite) des formes qu’il est capable de revêtir (voir l’aptitude forme animale, ci-dessous).\n\nLe druide est formé au port des armures légères et intermédiaires, mais sa foi lui interdit les armures métalliques (il est donc limité aux armures de cuir, de peau ou matelassées). Un druide peut librement utiliser des armures en bois ayant acquis la dureté de l’acier grâce au sort bois de fer. Le druide est également formé au maniement des boucliers (à l’exception des pavois) mais ne peut utiliser que ceux en bois.\n\nSi un druide porte une armure ou un bouclier qui lui est interdit, il perd l’accès à ses sorts de druide et à toutes ses aptitudes de classe surnaturelles ou magiques tant qu’il porte l’objet en question et pendant les vingt-quatre heures suivantes."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Armes_et_armures_2
+
+- Nom: Sorts
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un druide peut lancer des sorts divins appartenant à la liste des sorts de druides. Son alignement peut cependant l’empêcher de lancer certains sorts opposés à sa morale ou à son éthique (voir la section « Sorts du Bien, du Chaos, de la Loi et du Mal », ci-dessous). Un druide doit choisir et préparer ses sorts à l’avance.\n\nPour préparer ou lancer un sort, un druide doit avoir une valeur de Sagesse supérieure ou égale à 10 + le niveau du sort. Le DD des jets de sauvegarde contre les sorts du druide est égal à 10 + le niveau du sort + le modificateur de Sagesse du druide.\n\nComme les autres lanceurs de sorts, le druide ne peut lancer qu’un nombre de sorts donné de chaque niveau chaque jour. Son quota de sorts quotidiens est indiqué sur la Table \"Le Druide\". En plus de cela, il reçoit des sorts en bonus chaque jour si sa valeur de Sagesse est suffisamment élevée (voir la Table \"Modificateurs de caractéristique et sorts en bonus\").\n\nChaque jour, le druide doit passer une heure à méditer sur les mystères de la nature afin de renouveler son quota journalier de sorts. Le druide peut préparer et lancer n’importe quel sort de la liste des sorts de druide pour autant qu’il puisse lancer des sorts de ce niveau. Il doit cependant choisir quels sorts préparer au cours de sa méditation quotidienne."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Sorts_3
+
+- Nom: Incantation spontanée
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un druide peut canaliser l’énergie réservée à un sort pour la transformer spontanément en un sort de convocation qu’il n’avait pas préparé à l’avance. Il peut sacrifier un sort préparé pour lancer un sort de convocation d’alliés naturels de niveau égal ou inférieur au niveau du sort transformé."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Incantation_spontan%C3%A9e_4
+
+- Nom: Sorts du Bien, du Chaos, de la Loi et du Mal
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un druide ne peut pas lancer de sorts dont l’alignement est opposé au sien ou à celui de son dieu (s’il en sert un). L’alignement d’un sort est indiqué dans sa description par les registres Bien, Chaos, Loi et Mal."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Sorts_du_Bien_du_Chaos_de_la_Loi_et_du_Mal_5
+
+- Nom: Oraisons
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Les druides peuvent préparer un certain nombre d’oraisons (ou sorts de niveau 0) chaque jour, comme indiqué sur la Table \"Le Druide\" sous la mention « Sorts par jour ». Il jette ces sorts comme les autres mais ils ne sont pas perdus lorsqu’ils sont lancés et peuvent être utilisés à volonté."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Oraisons_6
+
+- Nom: Langues supplémentaires
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le sylvestre, le langage des créatures des bois, vient s’ajouter à la liste des langues que le druide peut choisir comme langues supplémentaires au niveau 1.\n\nEn devenant un druide de niveau 1, le personnage apprend également le druidique, le langage secret des druides. Cet apprentissage est gratuit. Le druidique vient s’ajouter à la liste des langues que le personnage connaît sans qu’il doive le choisir à la place d’une autre langue. Il est interdit d’enseigner le druidique aux non-druides.\n\nLe druidique possède son propre alphabet."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Oraisons_6
+
+- Nom: Pacte avec la nature (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Au niveau 1, un lien se crée entre le druide et la nature, lien qui peut prendre une des deux formes suivantes.\n\nDOMAIN DU DRUIDE\nDans la première forme, le druide devient si intime avec la nature qu’il acquiert l’un des domaines de prêtre suivants : Air, Climat, Eau, Faune, Feu, Flore ou Terre. Pour toutes les capacités et les sorts en bonus donnés par ce domaine, on considère que le niveau de prêtre du personnage est égal à son niveau de druide. Comme les prêtres, les druides qui choisissent cette option reçoivent des emplacements de sorts de domaine qu’ils ne peuvent utiliser que pour préparer les sorts de leur domaine et qu’ils ne peuvent pas employer pour une incantation spontanée.\n\nEn plus de ces domaines communs avec les prêtres, un druide peut choisir un domaine animal ou environnemental au lieu de l’un des domaines précité (Source: Arts de la magie).\n\nTout comme les domaines de prêtre, ceux du druide lui donnent des pouvoirs et des sorts de domaine. Un druide qui choisit un domaine animal ou environnemental gagne un emplacement de sort de domaine par niveau.\n\nUn druide qui vénère un dieu (et non la nature en général) ne peut pas choisir un domaine animal ou environnemental qui entre en contradiction avec les thèmes associés à sa divinité ou qui sort de sa juridiction.\n\nSi un pouvoir de domaine animal ou environnement autorise un jet de sauvegarde, le DD du jet est égal à 10 + 1/2 du niveau du druide + modificateur de Sagesse.\n\nLes autres classes basées sur la nature qui donnent accès à des domaines peuvent choisir un domaine animal ou environnemental au lieu d’un domaine ordinaire.\n\nCOMPAGNON ANIMAL\nLa seconde forme consiste en un lien étroit entre le druide et un compagnon animal ou vermine. Le druide peut commencer sa carrière en étant accompagné d’un des animaux ou une des vermines cités dans la liste des compagnons animaux et vermines. Le compagnon est loyal et accompagne le druide lors de ses aventures.\n\nContrairement aux animaux normaux, le compagnon animal ou vermine évolue (en dés de vie, en caractéristiques, en compétences et en dons) lorsque le druide gagne des niveaux. Si le personnage possède plusieurs classes offrant un compagnon animal, ses niveaux dans ces différentes classes se cumulent pour déterminer les caractéristiques de son compagnon. La taille de la plupart des compagnons animaux s’accroît lorsque le druide atteint le niveau 4 ou 7 (selon le compagnon). Si le druide décide de se séparer de son compagnon, il peut en obtenir un autre en accomplissant un rituel qui nécessite vingt-quatre heures de prières ininterrompues au sein d’un environnement de vie typique pour le nouveau compagnon animal. Cette cérémonie peut également être utilisée pour remplacer un compagnon animal qui est mort."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Pacte_avec_la_nature_Ext_8
+
+- Nom: Instinct naturel (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Le druide bénéficie d’un bonus de +2 aux tests de Connaissances (nature) et de Survie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Instinct_naturel_Ext_9
+
+- Nom: Empathie sauvage (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 1
+  Auto: True
+  Description: "Un druide peut améliorer l’attitude d’un animal. Cette aptitude suit les mêmes règles que les tests de Diplomatie destinés à modifier l’attitude d’une personne. Le druide lance 1d20 et ajoute son niveau de druide et son modificateur de Charisme pour déterminer le résultat de son test. L’attitude initiale des animaux domestiques est l’indifférence, tandis que les animaux sauvages sont généralement inamicaux.\n\nPour utiliser l’empathie sauvage, le druide et l’animal doivent être à moins de neuf mètres l’un de l’autre (dans des conditions de visibilité normales). Il faut en moyenne une minute pour influencer un animal de cette façon, mais, comme dans le cas de personnes, cela peut parfois prendre plus longtemps ou être plus rapide.\n\nUn druide peut également utiliser cette aptitude pour influencer une créature magique dont la valeur d’Intelligence est de 1 ou 2 mais son test subit alors un malus de -4."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Empathie_sauvage_Ext_10
+
+- Nom: Déplacement facilité (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 2
+  Auto: True
+  Description: "Dès le niveau 2, le druide se déplace sans la moindre gêne dans toutes sortes de taillis, y compris les fourrés, les buissons (même épineux) et les autres zones de végétation dense. Il progresse à sa vitesse de déplacement normale et ne subit aucun dégât. La végétation enchantée de manière à restreindre les mouvements continue toutefois de l’affecter."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#D%C3%A9placement_facilit%C3%A9_Ext_11
+
+- Nom: Absence de traces (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 3
+  Auto: True
+  Description: "Au niveau 3, le druide ne laisse plus la moindre trace en milieu naturel et il est impossible de le pister. Il peut néanmoins laisser des traces s’il le souhaite."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Absence_de_traces_Ext_12
+
+- Nom: Résistance à l’appel de la nature (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "À partir du niveau 4, le druide bénéficie d’un bonus de +4 aux jets de sauvegarde contre les capacités surnaturelles ou magiques des fées. Ce bonus s’applique également aux sorts et aux effets qui utilisent ou ciblent des plantes, comme par exemple croissance d’épines, distorsion du bois, enchevêtrement ou flétrissement végétal."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#R%C3%A9sistance_%C3%A0_l%E2%80%99appel_de_la_nature_Ext_13
+
+- Nom: Forme animale (Sur)
+  Classe: Druide
+  Source: MJ
+  Niveau: 4
+  Auto: True
+  Description: "Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet dure au maximum une heure par niveau de druide mais le druide peut y mettre fin avant. La transformation (vers ou depuis la forme animale) est une action simple qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle d’un animal que le druide connaît bien.\n\nTant qu’il est transformé, un druide est incapable de parler. Il doit se contenter des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il peut néanmoins communiquer normalement avec les autres animaux de la même espèce, ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets poussent des cris, ils ne sont pas capables de parler).\n\nLe personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté. En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme choisie, la transformation consomme une utilisation de ce pouvoir.\n\nAu niveau 6, un druide peut également utiliser ce pouvoir pour se transformer en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps élémentaire I.\n\nAu niveau 8, le druide peut également utiliser ce pouvoir pour se transformer en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une créature de type plante, elle fonctionne comme le sort forme végétale I.\n\nAu niveau 10, le druide peut également utiliser ce pouvoir pour se transformer en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante, elle fonctionne comme le sort forme végétale II.\n\nAu niveau 12, le druide peut également utiliser ce pouvoir pour se transformer en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante, elle fonctionne comme le sort de forme végétale III."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+
+- Nom: Immunité contre le venin (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 9
+  Auto: True
+  Description: "À partir du niveau 9, le druide est immunisé à toutes les formes de poison."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Immunit%C3%A9_contre_le_venin_Ext_15
+
+- Nom: Mille visages (Sur)
+  Classe: Druide
+  Source: MJ
+  Niveau: 13
+  Auto: True
+  Description: "Au niveau 13, le druide acquiert le pouvoir surnaturel de se transformer à volonté, comme s’il utilisait le sort modification d’apparence, mais uniquement lorsqu’il est sous sa forme normale."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Mille_visages_Sur_16
+
+- Nom: Éternelle jeunesse (Ext)
+  Classe: Druide
+  Source: MJ
+  Niveau: 15
+  Auto: True
+  Description: "À partir du niveau 15, le druide ne subit plus les effets du vieillissement et est immunisé aux attaques provoquant un vieillissement accéléré. Les malus de vieillesse qu’il aurait pu subir avant d’atteindre ce niveau ne sont pas effacés pour autant. Le druide continue de vieillir et bénéficie des bonus qui en découlent. Il meurt toujours de vieillesse lorsque son heure est venue."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#%C3%89ternelle_jeunesse_Ext_17
