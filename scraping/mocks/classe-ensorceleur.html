@@ -1,0 +1,805 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	L&#39;ensorceleur - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Ensorceleur&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwFj5QwRwF3CdXDAyWpmYOsMpU/Yk=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636091085625980305" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALqPzedzKb3UJ0HX6KPMYad+B72oi3QcwxQT+thNGyuurJ53bHJwRDGGlmb7nB0jZrzRF0I" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Ensorceleur">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Ensorceleur">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Ensorceleur">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Ensorceleur.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Ensorceleur.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Ensorceleur">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			L&#39;ensorceleur
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Ensorceleur" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<table><tr style="vertical-align: top">
+<td width="12%"><center><img ID="menuclasseIMG" src="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg" WIDTH="80%" style="border: 1px solid #4b3124" /></center></td>
+<td width="80%">
+<h2 class="separator">Les classes de personnage<a class="headeranchor" id="Les_classes_de_personnage_0" href="#Les_classes_de_personnage_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top"><td width="25%">
+<ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barbare.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Le barbare</a> (<i><a class="pagelink" href="Pathfinder-RPG.pouvoirs%20de%20rage.ashx" title="Les pouvoirs de rage">pouvoirs de rage</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Barde.jpg';"><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Le barde</a> (<i><a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentations.ashx" title="Les représentations de barde">représentations</a>, <a class="pagelink" href="Pathfinder-RPG.Chefs%20doeuvre.ashx" title="Chefs d&#39;oeuvre">chefs d'oeuvre</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Druide.jpg';"><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Le druide</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Domaines%20animaux%20et%20environnementaux.ashx" title="Domaines animaux et environnementaux">Domaines animaux et environnementaux</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Ensorceleur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">L'ensorceleur</a> (<i><a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">lignages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Guerrier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Le guerrier</a> (<i><a class="pagelink" href="Pathfinder-RPG.groupe%20darmes.ashx" title="Les groupes d&#39;armes">groupes d'armes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Magicien.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Le magicien</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%a9coles%20de%20magie.ashx" title="Les écoles de magie">écoles de magie</a>, <a class="pagelink" href="Pathfinder-RPG.d%c3%a9couvertes%20arcaniques.ashx" title="Découvertes arcaniques">découvertes arcaniques</a></i>)</li><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Moine.jpg';"><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Le moine</a> (<i><a class="pagelink" href="Pathfinder-RPG.voeux.ashx" title="Les vœux du moine">voeux</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Paladin.jpg';"><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Le paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Prêtre.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Le prêtre</a> (<i><a class="pagelink" href="Pathfinder-RPG.variantes%20de%20canalisation.ashx" title="Variantes de canalisation">variantes de canalisation</a></i>) (<i><a class="pagelink" href="Pathfinder-RPG.domaines.ashx" title="Les domaines de prêtres">domaines</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rôdeur.jpg';"><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Le rôdeur</a> (<i><a class="pagelink" href="Pathfinder-RPG.compagnons%20animaux.ashx" title="Les compagnons animaux">compagnons animaux</a>, <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a8ges%20de%20r%c3%b4deur.ashx" title="Pièges de rôdeur">Pièges de rôdeur</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Roublard.jpg';"><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Le roublard</a> (<i><a class="pagelink" href="Pathfinder-RPG.talents.ashx" title="Les talents de roublard">talents</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Alchimiste.jpg';"><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">L'alchimiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.D%c3%a9couvertes.ashx" title="Les découvertes d&#39;alchimiste">découvertes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Cavalier.jpg';"><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Le chevalier</a> (<i><a class="pagelink" href="Pathfinder-RPG.Ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Conjurateur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Le conjurateur</a> (<i><a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;éidolon du conjurateur">eidolon</a>, <a class="pagelink" href="Pathfinder-RPG.mod%c3%a8les%20deidolon.ashx" title="Modèles d&#39;eidolon">modèles d'eidolon</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Inquisiteur.jpg';"><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">L'inquisiteur</a> (<i><a class="pagelink" href="Pathfinder-RPG.jugements.ashx" title="Les jugements d&#39;inquisiteur">jugements</a>, <a class="pagelink" href="Pathfinder-RPG.inquisitions.ashx" title="Inquisitions">inquisitions</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Oracle.jpg';"><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">L'oracle</a> (<i><a class="pagelink" href="Pathfinder-RPG.myst%c3%a8res.ashx" title="Les mystères d&#39;oracle">mystères</a>, <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9dictions%20doracle.ashx" title="Malédictions d&#39;oracle">malédictions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Sorcière.jpg';"><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">La sorcière</a> (<i><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx" title="Les maléfices de sorcières">maléfices</a>, <a class="pagelink" href="Pathfinder-RPG.protecteurs.ashx" title="Les protecteurs de sorcières">protecteurs</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Urgraz.jpg';"><a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx" title="Antipaladin">L'anti-paladin</a></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Seltyiel.jpg';"><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Le magus</a> (<i><a class="pagelink" href="Pathfinder-RPG.arcanes.ashx" title="Les arcanes de magus">arcanes</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Reiko.jpg';"><a class="pagelink" href="Pathfinder-RPG.Ninja.ashx" title="Ninja">Le ninja</a> (<i><a class="pagelink" href="Pathfinder-RPG.astuces.ashx" title="Astuces de ninja">astuces</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Lirianne.jpg';"><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Pistolier">Le pistolier</a> (<i><a class="pagelink" href="Pathfinder-RPG.exploits.ashx" title="Les exploits de pistolier">exploits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Hayato.jpg';"><a class="pagelink" href="Pathfinder-RPG.Samoura%c3%af.ashx" title="Samouraï">Le samouraï</a> (<i><a class="pagelink" href="Pathfinder-RPG.ordres.ashx" title="Les ordres de chevalerie">ordres</a></i>)</li>
+</ul>
+</td><td width="25%">
+<ul>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Yoon.jpg';"><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le Cinétiste">Le cinétiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Talents%20sauvages.ashx" title="Éléments et Talents sauvages">Talents sauvages</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Meligaster.jpg';"><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="Hypnotiseur">L'hypnotiseur</a> (<i><a class="pagelink" href="Pathfinder-RPG.Inductions.ashx" title="Induction (redirection)">Inductions</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Erasmus.jpg';"><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Médium">Le médium</a> (<i><a class="pagelink" href="Pathfinder-RPG.Esprits%20(M%c3%a9dium).ashx" title="Esprits (Médium)">Esprits</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Mavaro1.jpg';"><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="Occultiste">L'occultiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.%c3%89coles%20instrumentales.ashx" title="Écoles instrumentales">Écoles instrumentales</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Rivani.jpg';"><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Psychiste">Le psychiste</a> (<i><a class="pagelink" href="Pathfinder-RPG.Disciplines%20psychiques.ashx" title="Disciplines psychiques">Disciplines psychiques</a></i>)</li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Estra.jpg';"><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Spirite">Le spirite</a> (<i><a class="pagelink" href="Pathfinder-RPG.Fant%c3%b4mes%20(Spirite).ashx" title="Fantômes (Spirite)">Fantômes</a></i>) </li>
+</ul><br /><ul><li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20PNJ.ashx" title="Classes de PNJ">Classes de PNJ</a></i></b></li>
+<li onmouseover="
+document.getElementById('menuclasseIMG').src='http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/Autres/Head.jpg';"><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20prestige.ashx" title="Les classes de prestige">Classes de prestige</a></i></b></li></ul>
+</td></tr></table>
+</td></tr></table>
+</div>
+<div class="fright"><b><i>Voir aussi les <a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">lignages</a> d'ensorceleurs.</i></b><br/>
+<b><i>Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcanistes/ensorceleurs/magiciens">liste des sorts des ensorceleurs</a>.</i></b><br/>
+<div style="float: right; padding: 0;">
+<IMG id="boutonensorceleur" src="/images/pathfinder/wiki/BoutonP.jpg" style="float:right; width: 10px; border: 1px solid black;" onclick="expandMenu('ensorceleur');" />
+</div><b>Voir les archétypes de l'ensorceleur</b>&emsp;
+<ul ID="ensorceleur" CLASS="listecachée cadrebas">
+  <li><a class="pagelink" href="Pathfinder-RPG.Bagarreur%20%c3%a9trange%20(ensorceleur).ashx" title="Bagarreur étrange">Bagarreur étrange</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Faux%20pr%c3%aatre%20(ensorceleur).ashx" title="Faux prêtre (ensorceleur)">Faux prêtre</a> (MMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Forgeur%20de%20souhaits%20(ensorceleur).ashx" title="Forgeur de souhaits">Forgeur de souhaits</a> (<a class="pagelink" href="Pathfinder-RPG.ifrit%20(race).ashx" title="Les Ifrits">Ifrit</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20b%c3%a2tard%20(ensorceleur).ashx" title="Mage bâtard">Mage bâtard</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sang%20m%c3%aal%c3%a9%20(ensorceleur).ashx" title="Sang mêlé">Sang mélé</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sang%20sauvage%20(ensorceleur).ashx" title="Sang sauvage">Sang sauvage</a>(AM)</li></ul>
+</ul></div><br/><br /><br /><br /><br /><i>Un ensorceleur peut être l’héritier d’une lignée où le contrôle de la magie vient naturellement, l’élu d’une divinité, le rejeton d’une créature monstrueuse, un pion du destin ou simplement le récipiendaire d’un pouvoir magique capricieux mais, dans tous les cas, c’est au plus profond de lui-même qu’il puise les talents magiques qui lui accordent une puissance que bien peu de mortels parviennent à concevoir. Les ensorceleurs sont des êtres touchés par la magie, dont les pouvoirs innés menacent à tout moment de consumer leur vie. Ils font sans cesse appel à leurs mystérieuses capacités et les affinent en apprenant peu à peu comment contrôler leur héritage et accomplir des exploits magiques toujours plus puissants. Les capacités et les origines de ces puissants lanceurs de sorts sont tout aussi variées que les manières dont ils choisissent d’utiliser leurs dons innés. Certains cherchent à dompter leurs pouvoirs grâce à la méditation et à la discipline et parviennent peu à peu à maîtriser leur fantastique héritage alors que d’autres s’abandonnent à la magie et la laissent contrôler leur vie, avec des résultats souvent explosifs. Dans tous les cas, les ensorceleurs appréhendent de manière instinctive ce que d’autres lanceurs de sorts ne parviennent à maîtriser qu’au bout de toute une vie de travail ; pour eux, la magie est plus qu’un simple don ou qu’un domaine d’études : c’est leur vie.</i><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABLEENSORCELEUR" href="#TABLEENSORCELEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo"><caption>L'ensorceleur</caption><tr CLASS="titre"><td ROWSPAN="2">Niveau</td><td ROWSPAN="2">BBA</td><td ROWSPAN="2">Réflexes</td><td ROWSPAN="2">Vigueur</td><td ROWSPAN="2">Volonté</td><td ROWSPAN="2" CLASS="gauche">Spécial</td><td COLSPAN="9" CLASS="avecsoustitre">Sorts par jour</td></tr><tr CLASS="soustitre"><td>1er</td><td>2e</td><td>3e</td><td>4e</td><td>5e</td><td>6e</td><td>7e</td><td>8e</td><td>9e</td></tr><tr CLASS="premier"><td>1</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#TOURSDEMAGIE" title="L&#39;ensorceleur">tours de magie</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#DISPENSEDECOMPOSANTES" title="L&#39;ensorceleur">dispense de composantes</a></td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>2</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td CLASS="gauche">&nbsp;</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>4</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>6</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">don de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>8</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>10</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>11</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>12</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr><td>13</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">don de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>4</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>14</td><td>+7/+2</td><td>+4</td><td>+4</td><td>+9</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td><td>-</td><td>-</td></tr><tr><td>15</td><td>+7/+2</td><td>+5</td><td>+5</td><td>+9</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>4</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>16</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td><td>-</td></tr><tr><td>17</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>4</td><td>-</td></tr><tr CLASS="alt"><td>18</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td CLASS="gauche">&nbsp;</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>5</td><td>3</td></tr><tr><td>19</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">don de lignage</a>, <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">sort de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>4</td></tr><tr CLASS="alt"><td>20</td><td>+10/+5</td><td>+6</td><td>+6</td><td>+12</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#LIGNAGE" title="L&#39;ensorceleur">pouvoir de lignage</a></td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr></table>
+</center><br /><br /><div style="float:right; background-color: #fff; padding: 0 0 16px 16px">
+<div style="border: 1px solid #4b3124; padding: 4px">
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="SORTSCONNUSDELENSORCELEUR" href="#SORTSCONNUSDELENSORCELEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo"><caption>Sorts connus par l'ensorceleur</caption><tr CLASS="titre"><td ROWSPAN="2">Niveau</td><td COLSPAN="10" CLASS="avecsoustitre gauche">Sorts connus</td></tr><tr CLASS="soustitre"><td>0</td><td>1er</td><td>2e</td><td>3e</td><td>4e</td><td>5e</td><td>6e</td><td>7e</td><td>8e</td><td>9e</td></tr><tr CLASS="premier"><td>1</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>2</td><td>5</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>4</td><td>6</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5</td><td>6</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>6</td><td>7</td><td>4</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7</td><td>7</td><td>5</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>8</td><td>8</td><td>5</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9</td><td>8</td><td>5</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>10</td><td>9</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>11</td><td>9</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>12</td><td>9</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr><tr><td>13</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>14</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td></tr><tr><td>15</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr><tr CLASS="alt"><td>16</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>-</td></tr><tr><td>17</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr><tr CLASS="alt"><td>18</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr><tr><td>19</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr CLASS="alt"><td>20</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td></tr></table>
+</center></div></div>
+<b>Rôle.</b> Les ensorceleurs se démarquent par leur capacité à lancer fréquemment un certain nombre de sorts choisis, ce qui en fait de puissants mages de combat. En se familiarisant avec un répertoire de sorts limité mais sans cesse croissant, les ensorceleurs découvrent souvent de nouvelles méthodes permettant d’utiliser de manière versatile certains effets auxquels les autres lanceurs de sorts pourraient ne pas prêter attention. Leur lignage leur octroie également des capacités additionnelles, ce qui les différencient les uns des autres.<br /><br /><b>Alignement.</b> Au choix.<br /><br /><b>Dés de vie.</b> d6.<br /><br /><h2 class="separator"> Compétences de classe <a class="headeranchor" id="Compétences_de_classe_5" href="#Compétences_de_classe_5" title="Lien vers cette section">&#0182;</a></h2>Les compétences de classe de l’ensorceleur sont les suivantes : <a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) (Int), <a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d’objets magiques</a> (Cha) et <a class="pagelink" href="Pathfinder-RPG.Vol.ashx" title="Vol">Vol</a> (Dex).<br /><br /><b>Points de compétence par niveau.</b> 2 + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>.<br /><br /><h2 class="separator"> Descriptif de la classe <a class="headeranchor" id="Descriptif_de_la_classe_6" href="#Descriptif_de_la_classe_6" title="Lien vers cette section">&#0182;</a></h2>Les aptitudes de l’ensorceleur sont décrites ci-dessous.<br /><br /><h3 class="separator">Armes et armures<a class="headeranchor" id="Armes_et_armures_0" href="#Armes_et_armures_0" title="Lien vers cette section">&#0182;</a></h3>
+L’ensorceleur est formé au maniement de toutes les armes courantes mais pas au port des armures ni à l’utilisation des boucliers. En effet, une armure restreint ses gestes, ce qui risque de faire échouer ses sorts à composante gestuelle (voir « <a class="pagelink" href="Pathfinder-RPG.Magicien.ashx#SORTSPROFANESETARMURE" title="Le magicien">Sorts profanes et armure</a> »).<br /><br /><h3 class="separator">Sorts<a class="headeranchor" id="Sorts_1" href="#Sorts_1" title="Lien vers cette section">&#0182;</a></h3>
+Un ensorceleur peut lancer des sorts profanes appartenant à la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcanistes/ensorceleurs/magiciens">liste des sorts d’ensorceleur et de magicien</a>. Il les lance sans avoir à les préparer à l’avance. Pour apprendre ou lancer un sort, un ensorceleur doit avoir une valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> au moins égale à 10 + le niveau du sort. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des jets de sauvegarde contre ses sorts est égal à 10 + le niveau du sort + le modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> de l’ensorceleur.<br /><br />Comme les autres lanceurs de sorts, l’ensorceleur ne peut lancer qu’un nombre de sorts donné de chaque niveau chaque jour. Son quota de sorts quotidiens est indiqué dans la Table "<a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#TABLEENSORCELEUR" title="L&#39;ensorceleur">L'Ensorceleur</a>". En plus de cela, il reçoit des sorts en bonus si sa valeur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> est suffisamment élevée (voir la Table "<a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">Modificateurs de caractéristique et sorts en bonus</a>").<br /><br />Le répertoire de sorts d’un ensorceleur est très limité. Il commence sa carrière en connaissant seulement quatre sorts du niveau 0 et deux sorts de 1er niveau, tous choisis par le joueur. Lors de chaque passage de niveau, un ensorceleur apprend un ou plusieurs sorts supplémentaires, comme indiqué dans la Table "<a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#SORTSCONNUSDELENSORCELEUR" title="L&#39;ensorceleur">Sorts connus par l'ensorceleur</a>" (contrairement au quota de sorts quotidiens, le nombre de sorts connus par un ensorceleur n’est pas modifié par son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> : les nombres de cette table sont fixes). Ces sorts peuvent être choisis parmi la <a class="pagelink" href="Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcanistes/ensorceleurs/magiciens">liste des sorts courants d’ensorceleur et de magicien</a>, mais il peut également s’agir de sorts moins courants, que l’ensorceleur s’est entraîné à maîtriser.<br /><br /><IMG SRC="http://www.pathfinder-fr.org/wiki/public/upload/Illustrations/PNJ/Seoni.jpg" WIDTH="35%" STYLE="float: right; background-color: white; padding: 0 0 5px 5px;"/>
+Lorsqu’il atteint le niveau 4, et tous les deux niveaux suivants, un ensorceleur peut choisir d’apprendre un nouveau sort à la place de l’un de ceux qu’il connaît déjà. Il oublie alors un sort au profit d’un autre. Le niveau du nouveau sort doit être identique à celui du sort oublié. Un ensorceleur ne peut remplacer qu’un seul sort à chaque fois, et doit choisir de le faire ou non au moment où il apprend de nouveaux sorts lors du passage de niveau.<br /><br />Contrairement à un <a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">magicien</a> ou à un <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a>, un ensorceleur n’a pas besoin de préparer ses sorts à l’avance. Il peut lancer n’importe quel sort de son répertoire à n’importe quel moment, à condition de ne pas avoir épuisé son quota de sorts de ce niveau pour la journée.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="LIGNAGE" href="#LIGNAGE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Lignage<a class="headeranchor" id="Lignage_2" href="#Lignage_2" title="Lien vers cette section">&#0182;</a></h3>
+Chaque ensorceleur tire ses pouvoirs magiques d’une source liée à son héritage. Elle lui donne accès à des sorts, des dons supplémentaires, une compétence de classe additionnelle et d’autres capacités spéciales. Cette source peut être un lien de sang ou un événement extrême vécu par un de ses ancêtres. Ainsi, un ensorceleur peut avoir un dragon comme parent éloigné, ou son grand-père peut avoir conclu un contrat infernal avec un diable. Quelle que soit la nature de cette source, son influence se manifeste de diverses manières au cours de l’évolution du personnage. Un ensorceleur doit choisir un <a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">lignage</a> dès qu’il reçoit son premier niveau d’ensorceleur. Ce choix ne peut plus être modifié par la suite. Voir la <a class="pagelink" href="Pathfinder-RPG.lignages.ashx" title="Les lignages d&#39;ensorceleurs">liste des lignages pour ensorceleurs</a>.<br /><br />Au niveau 3 et tous les deux niveaux suivants, l’ensorceleur apprend un sort supplémentaire associé à son lignage. Ces sorts viennent s’ajouter au nombre de sorts indiqué dans la Table "<a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#SORTSCONNUSDELENSORCELEUR" title="L&#39;ensorceleur">Sorts connus par l'ensorceleur</a>". L’ensorceleur ne peut pas les remplacer par d’autres sorts par la suite.<br /><br />Au niveau 7 et tous les six niveaux suivants, l’ensorceleur reçoit un don supplémentaire qu’il peut choisir dans une liste dépendant de son lignage. L’ensorceleur doit remplir les conditions du don qu’il choisit.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div>Un ensorceleur de sang sauvage possède une mutation d’un lignage plus ordinaire, avec un arcane et au moins un pouvoir de lignage différents par rapport à la version classique. Pour créer un ensorceleur au sang sauvage, il faut choisir un lignage existant puis choisir l’une des mutations de lignage associées à ce lignage. L’ensorceleur utilise les compétences de classe, les sorts supplémentaires et les dons supplémentaires associés au lignage et l’arcane de lignage muté. Il utilise les pouvoirs habituels de son lignage, sauf quand ils sont remplacés par ceux de lignage muté. A noter qu'un ensorceleur sang sauvage est considéré comme un archétype et qu'il est donc soumis aux règles de gestion des archétypes (p.72 du <i>Manuel des Joueurs - Règles Avancées</i>). Par exemple il ne peut s'additionner avec un autre archétype modifiant une même aptitude de classe (comme un arcane de lignage).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TOURSDEMAGIE" href="#TOURSDEMAGIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Tours de magie<a class="headeranchor" id="Tours_de_magie_3" href="#Tours_de_magie_3" title="Lien vers cette section">&#0182;</a></h3>
+Les ensorceleurs apprennent un certain nombre de tours de magie (ou sorts de niveau 0) comme indiqué dans la Table "<a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx#SORTSCONNUSDELENSORCELEUR" title="L&#39;ensorceleur">Sorts connus par l'ensorceleur</a>". Ces sorts sont lancés de la même manière que les autres mais ils ne réduisent pas le quota quotidien de l’ensorceleur et peuvent être utilisés indéfiniment.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DISPENSEDECOMPOSANTES" href="#DISPENSEDECOMPOSANTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Dispense de composantes<a class="headeranchor" id="Dispense_de_composantes_4" href="#Dispense_de_composantes_4" title="Lien vers cette section">&#0182;</a></h3>
+Un ensorceleur reçoit le don <a class="pagelink" href="Pathfinder-RPG.Dispense%20de%20composantes%20mat%c3%a9rielles.ashx" title="Dispense de composantes matérielles">Dispense de composantes matérielles</a> comme don supplémentaire au niveau 1.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
