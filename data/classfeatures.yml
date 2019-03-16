@@ -1857,3 +1857,95 @@
   Auto: True
   Description: "À partir du niveau 15, le druide ne subit plus les effets du vieillissement et est immunisé aux attaques provoquant un vieillissement accéléré. Les malus de vieillesse qu’il aurait pu subir avant d’atteindre ce niveau ne sont pas effacés pour autant. Le druide continue de vieillir et bénéficie des bonus qui en découlent. Il meurt toujours de vieillesse lorsque son heure est venue."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#%C3%89ternelle_jeunesse_Ext_17
+
+##
+## Aptitudes de l'ensorceleur
+##
+  
+- Nom: Armes et armures
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Les aptitudes de l’ensorceleur sont décrites ci-dessous.\n\nL’ensorceleur
+    est formé au maniement de toutes les armes courantes mais pas au port des armures
+    ni à l’utilisation des boucliers. En effet, une armure restreint ses gestes, ce
+    qui risque de faire échouer ses sorts à composante gestuelle (voir « Sorts profanes
+    et armure »)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  
+- Nom: Sorts
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: 'Un ensorceleur peut lancer des sorts profanes appartenant à la liste
+    des sorts d’ensorceleur et de magicien. Il les lance sans avoir à les préparer
+    à l’avance. Pour apprendre ou lancer un sort, un ensorceleur doit avoir une valeur
+    de Charisme au moins égale à 10 + le niveau du sort. Le DD des jets de sauvegarde
+    contre ses sorts est égal à 10 + le niveau du sort + le modificateur de Charisme
+    de l’ensorceleur.\n\nComme les autres lanceurs de sorts, l’ensorceleur ne peut
+    lancer qu’un nombre de sorts donné de chaque niveau chaque jour. Son quota de
+    sorts quotidiens est indiqué dans la Table "L''Ensorceleur". En plus de cela,
+    il reçoit des sorts en bonus si sa valeur de Charisme est suffisamment élevée
+    (voir la Table "Modificateurs de caractéristique et sorts en bonus").\n\nLe répertoire
+    de sorts d’un ensorceleur est très limité. Il commence sa carrière en connaissant
+    seulement quatre sorts du niveau 0 et deux sorts de 1er niveau, tous choisis par
+    le joueur. Lors de chaque passage de niveau, un ensorceleur apprend un ou plusieurs
+    sorts supplémentaires, comme indiqué dans la Table "Sorts connus par l''ensorceleur"
+    (contrairement au quota de sorts quotidiens, le nombre de sorts connus par un
+    ensorceleur n’est pas modifié par son éventuel bonus de Charisme : les nombres
+    de cette table sont fixes). Ces sorts peuvent être choisis parmi la liste des
+    sorts courants d’ensorceleur et de magicien, mais il peut également s’agir de
+    sorts moins courants, que l’ensorceleur s’est entraîné à maîtriser.\n\nLorsqu’il
+    atteint le niveau 4, et tous les deux niveaux suivants, un ensorceleur peut choisir
+    d’apprendre un nouveau sort à la place de l’un de ceux qu’il connaît déjà. Il
+    oublie alors un sort au profit d’un autre. Le niveau du nouveau sort doit être
+    identique à celui du sort oublié. Un ensorceleur ne peut remplacer qu’un seul
+    sort à chaque fois, et doit choisir de le faire ou non au moment où il apprend
+    de nouveaux sorts lors du passage de niveau.\n\nContrairement à un magicien ou
+    à un prêtre, un ensorceleur n’a pas besoin de préparer ses sorts à l’avance. Il
+    peut lancer n’importe quel sort de son répertoire à n’importe quel moment, à condition
+    de ne pas avoir épuisé son quota de sorts de ce niveau pour la journée.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_1
+  
+- Nom: Lignage
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Chaque ensorceleur tire ses pouvoirs magiques d’une source liée à
+    son héritage. Elle lui donne accès à des sorts, des dons supplémentaires, une
+    compétence de classe additionnelle et d’autres capacités spéciales. Cette source
+    peut être un lien de sang ou un événement extrême vécu par un de ses ancêtres.
+    Ainsi, un ensorceleur peut avoir un dragon comme parent éloigné, ou son grand-père
+    peut avoir conclu un contrat infernal avec un diable. Quelle que soit la nature
+    de cette source, son influence se manifeste de diverses manières au cours de l’évolution
+    du personnage. Un ensorceleur doit choisir un lignage dès qu’il reçoit son premier
+    niveau d’ensorceleur. Ce choix ne peut plus être modifié par la suite. Voir la
+    liste des lignages pour ensorceleurs.\n\nAu niveau 3 et tous les deux niveaux
+    suivants, l’ensorceleur apprend un sort supplémentaire associé à son lignage.
+    Ces sorts viennent s’ajouter au nombre de sorts indiqué dans la Table \"Sorts connus
+    par l'ensorceleur\". L’ensorceleur ne peut pas les remplacer par d’autres sorts
+    par la suite.\n\nAu niveau 7 et tous les six niveaux suivants, l’ensorceleur reçoit
+    un don supplémentaire qu’il peut choisir dans une liste dépendant de son lignage.
+    L’ensorceleur doit remplir les conditions du don qu’il choisit.\n\nUn ensorceleur
+    de sang sauvage possède une mutation d’un lignage plus ordinaire, avec un arcane
+    et au moins un pouvoir de lignage différents par rapport à la version classique.
+    Pour créer un ensorceleur au sang sauvage, il faut choisir un lignage existant
+    puis choisir l’une des mutations de lignage associées à ce lignage. L’ensorceleur
+    utilise les compétences de classe, les sorts supplémentaires et les dons supplémentaires
+    associés au lignage et l’arcane de lignage muté. Il utilise les pouvoirs habituels
+    de son lignage, sauf quand ils sont remplacés par ceux de lignage muté. A noter
+    qu'un ensorceleur sang sauvage est considéré comme un archétype et qu'il est donc
+    soumis aux règles de gestion des archétypes (p.72 du Manuel des Joueurs - Règles
+    Avancées). Par exemple il ne peut s'additionner avec un autre archétype modifiant
+    une même aptitude de classe (comme un arcane de lignage)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Lignage_2
+  
+- Nom: Tours de magie
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Les ensorceleurs apprennent un certain nombre de tours de magie (ou
+    sorts de niveau 0) comme indiqué dans la Table \"Sorts connus par l'ensorceleur\".
+    Ces sorts sont lancés de la même manière que les autres mais ils ne réduisent
+    pas le quota quotidien de l’ensorceleur et peuvent être utilisés indéfiniment."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Tours_de_magie_3
