@@ -3317,7 +3317,6 @@
   Description: 'Le moine n’a pas le droit de mentir délibérément ni de bluffer ni de dire des demi-vérités dans l’intention de tromper, ni d’exagérer, ni de dire de pieux mensonges, etc. Ceci s’applique à tous ses modes de communication. Si le moine se retrouve dans une situation où il arrivera malheur à autrui s’il dit la vérité, il peut garder le silence. De nombreux moines qui prononcent ce vœu font également vœu de silence pour montrer leur dévotion. Un moine qui prononce ce vœu voit sa réserve de ki augmenter de 1 point par tranche de 5 niveaux de moine (+1 au minimum).'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.voeux.ashx#V%C5%93u_de_v%C3%A9rit%C3%A9_7
 
-
 ##
 ## Aptitudes du paladin
 ##
@@ -4301,4 +4300,992 @@
     le sont également aux coups de maître.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Coup_de_maître_Ext_9
 
+##
+## Talents du roublard
+##
 
+- Nom: 'Talent: Acrobate inégalable (Ext)'
+  Classe: Roublard
+  Source: MR
+  Niveau: 2
+  Description: Une fois par jour, un roublard disposant de ce talent peut lancer
+    deux dés lors d’un test d’Acrobaties et choisir le résultat le plus avantageux.
+    Il doit décider d’utiliser cette capacité avant le test. Il peut utiliser cette
+    capacité une fois de plus par jour par tranche de 5 niveaux de roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#APPROPRIATIONDHISTOIRE
+
+- Nom: 'Talent: Appropriation d’histoire (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Après avoir troublé le récit d’un autre au moyen de Brouiller les
+    pistes, le roublard peut faire un autre test de Diplomatie pour altérer un peu
+    plus les détails de l’histoire et ainsi discréditer, insulter ou humilier la cible.
+    Si le test réussit, la cible reçoit un malus à ses tests de Diplomatie et d’Intimidation
+    contre quiconque a entendu l’histoire altérée. Ce malus est égal au bonus d’Intelligence,
+    de Sagesse ou de Charisme du roublard (le score le plus haut) et dure jusqu’à
+    ce que la cible puisse laver sa réputation ou discréditer le roublard. Le roublard
+    doit avoir le talent Brouiller les pistes pour prendre ce talent.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ASTUCEDENINJA
+
+- Nom: 'Talent: Astuce de ninja (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard qui prend ce talent peut choisir une astuce de ninja.Le
+    roublard ne peut pas choisir une astuce de ninja qui porte le même nom qu’un talent
+    de roublard. Il peut choisir une astuce qui demande des points de ki mais ne pourra
+    pas l’utiliser à moins de posséder le talent réserve de ki. Un roublard peut choisir
+    ce talent à plusieurs reprises.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUEDISTRAYANTE
+
+- Nom: 'Talent: Attaque distrayante* (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard possédant ce talent peut accompagner ses attaques sournoises
+    de mouvements subtils qui désorientent et distraient son adversaire. Lorsqu’il
+    touche une créature avec une attaque de corps à corps qui inflige des dégâts d’attaque
+    sournoise, il peut choisir de ne pas compter les dégâts supplémentaires pour faire
+    en sorte que la cible soit prise au dépourvue par les attaques portées par un
+    allié (choisi par le roublard) jusqu’au début du prochain tour de la cible. Le
+    roublard ne peut pas se désigner lui-même comme l’allié en question. Les créatures
+    qui possèdent la capacité Esquive instinctive sont immunisées contre les attaques
+    distrayantes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUEETCHANGEMENTDEPOSITION
+
+- Nom: 'Talent: Attaque et changement de position (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Une fois par jour, lorsqu’un roublard possédant ce talent porte une
+    attaque de corps à corps réussie contre une créature, il peut se déplacer sur
+    une distance totale de 9 mètres (6 ) sans provoquer d’attaques d’opportunité.
+    Ce déplacement doit se terminer dans un espace adjacent à la créature touchée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUESANGLANTE
+
+- Nom: 'Talent: Attaque sanglante* (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet au roublard de faire saigner la victime de son attaque
+    sournoise. Chaque round, la cible subit un nombre de points de dégâts égal au
+    nombre de dés d’attaque sournoise du roublard (par exemple 4 points de saignement
+    dans le cas d’une attaque sournoise à +4d6). Ces dégâts se produisent chaque round
+    au début du tour de la cible. Le saignement peut être arrêté par un test de Premiers
+    secours (DD 15) ou par n’importe quel effet qui permet de récupérer des points
+    de vie perdus. Les dégâts de saignement infligés par ce talent ne sont pas cumulatifs.
+    Ils ignorent toutes les réductions de dégâts.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUESOURNOISEPUISSANTE
+
+- Nom: 'Talent: Attaque sournoise puissante* (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Chaque fois qu’un roublard disposant de ce talent effectue une attaque
+    à outrance, il peut choisir de subir une pénalité de –2 sur tous ses jets d’attaque
+    jusqu’au début de son prochain tour. Dans ce cas, si une des attaques effectuées
+    au cours de cette période est une attaque sournoise, tous les 1 affichés par les
+    dés de dégâts d’attaque sournoise sont considérés comme des 2.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUESURPRISE
+
+- Nom: 'Talent: Attaque surprise (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard possédant ce talent peut toujours considérer ses ennemis
+    comme pris au dépourvu au cours du round de surprise et ce même s’ils ont déjà
+    agi.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#AUDACE
+
+- Nom: 'Talent: Audace (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard qui possède ce talent gagne Pistolier amateur ainsi qu’un
+    don d’audace de son choix comme dons supplémentaires. Il doit remplir les conditions
+    requises du don d’audace. Le roublard doit connaître le talent entraînement aux
+    armes à feu avant de prendre celui-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#BEAUPARLEUR
+
+- Nom: 'Talent: Beau parleur (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Une fois par jour, le roublard peut lancer deux dés au cours d’un
+    test de Bluff et choisir le meilleur résultat des deux. Il doit décider d’utiliser
+    ce talent avant le test de Bluff . Le roublard gagne une utilisation quotidienne
+    supplémentaire de ce talent par tranche de 5 niveaux de roublard qu’il possède.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#BOTTESECRETE
+
+- Nom: 'Talent: Botte secrète'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Ce talent permet au roublard de gagner un don de combat supplémentaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#BRASSEVIGOUREUSE
+
+- Nom: 'Talent: Brasse vigoureuse (Ext)'
+  Classe: Roublard
+  Source: MR
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent lance deux fois les dés quand
+    il fait un test de Natation et conserve le meilleur résultat. S’il a déjà fait
+    deux jets grâce à un autre pouvoir, il gagne un bonus d’intuition de +2.S’il est
+    sous l’effet d’un sort ou d’un pouvoir qui l’oblige à lancer deux dés et à choisir
+    le pire, il lance juste 1d20 lors de ses tests de Natation.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#BROUILLERLESPISTES
+
+- Nom: 'Talent: Brouiller les pistes (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Quand un individu raconte un évènement, le roublard fait un test opposé
+    de Diplomatie pour habilement ponctuer le cours de l’histoire de commentaires
+    ou d’affirmations, troublant ainsi la capacité du conteur à se rappeler des détails
+    spécifiques ou exacts. Si le roublard réussit, la cible ne réalise pas que les
+    interjections du roublard l’ont embrouillée. Néanmoins, si le roublard échoue,
+    la cible a droit à un test de Psychologie (DD égal au test de Diplomatie raté
+    du roublard) pour s’apercevoir que celui-ci a délibérément tenté d’embrouiller
+    son récit.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CAMOUFLAGE
+
+- Nom: 'Talent: Camouflage (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Une fois par jour, un roublard possédant ce talent peut créer un camouflage
+    simple mais efficace à partir de la végétation qui pousse sur place. Le roublard
+    a besoin d’une minute pour préparer ce camouflage, mais une fois prêt, le camouflage
+    peut être utilisé pendant tout le reste de la journée, à moins que le roublard
+    ne rate un jet de sauvegarde contre un effet de zone infligeant des dégâts de
+    feu, de froid ou d’acide, auquel cas son camouflage perd son efficacité. Le roublard
+    gagne un bonus de +4 aux tests de Discrétion au sein de l’environnement dans lequel
+    il a prélevé la végétation. Cette capacité ne peut pas être utilisée dans les
+    zones qui ne comportent pas de végétation naturelle.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CHARMEUR
+
+- Nom: 'Talent: Charmeur (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Une fois par jour, le roublard peut lancer deux fois le dé lors d’un
+    test de Diplomatie et choisir le résultat le plus avantageux. Il doit décider
+    d’utiliser ce talent avant le test. Le roublard peut utiliser cette capacité une
+    fois de plus par jour par tranche de 5 niveaux de roublard qu’il possède.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CONNAISSANCESESOTERIQUES
+
+- Nom: 'Talent: Connaissances ésotériques (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent peut faire un test de Connaissances,
+    une fois par jour, même sans entraînement.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CONTACTSAUMARCHENOIR
+
+- Nom: 'Talent: Contacts au marché noir (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Grâce à ce talent, le roublard peut obtenir de meilleurs objets magiques
+    grâce à ses contacts au marché noir.Il considère toutes les villes comme d’une
+    taille de plus qu’elles ne le sont réellement quand il s’agit de déterminer la
+    valeur de base maximale (en pièces d’or) des objets à vendre, ainsi que le nombre
+    d’objets magiques mineurs, moyens et majeurs à disposition. Si la ville est déjà
+    une capitale, il a accès à tous les objets mineurs et moyens et à 3d8 objets majeurs.Un
+    test de Diplomatie réussi lui permet de faire comme si la ville était de deux
+    tailles de plus qu’elle ne l’est.Si la ville est déjà une capitale et que le roublard
+    réussit son test, il a accès à la totalité des objets magiques.Si la ville est
+    déjà une grande cité et qu’il réussit son test, il a accès à tous les objets mineurs
+    et moyens et à 3d8 objets majeurs.Un test réussi lui permet aussi de vendre des
+    objets volés sur le marché noir. S’il rate le test de 5 ou plus, il fait peur
+    aux acteurs du marché et traite la ville normalement pendant 1 semaine. De plus,
+    les chefs du marché noir risquent d’avertir les autorités de sa présence, en guise
+    de représailles pour avoir perturbé le marché ou pour détourner l’attention de
+    leurs activités illicites.Le DD du test dépend de la taille de l’agglomération
+    et figure dans la table ci-contre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#COUPBOULEVERSANT
+
+- Nom: 'Talent: Coup bouleversant* (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Lorsque le roublard inflige des dégâts d’attaque sournoise à un adversaire,
+    celui-ci subit un malus de –2 aux jets d’attaque contre le roublard pendant 1d4
+    rounds.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CROCHETAGERAPIDE
+
+- Nom: 'Talent: Crochetage rapide (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut utiliser la compétence de
+    Sabotage pour crocheter une serrure par une action simple au lieu d’une action
+    complexe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DECLENCHEMENTEXTRAORDINAIRE
+
+- Nom: 'Talent: Déclenchement extraordinaire (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut utiliser une action rapide
+    pour déclencher n’importe quelle piège de sa fabrication situé dans un rayon de
+    9 mètres (6 ) autour de lui.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DEFENSEOFFENSIVE
+
+- Nom: 'Talent: Défense offensive* (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Lorsqu’un roublard disposant de ce talent porte contre une créature
+    une attaque de corps à corps qui inflige des dégâts d’attaque sournoise, il gagne
+    un bonus d’esquive de +1 à la CA pour chaque dé d’attaque sournoise utilisé contre
+    cette créature pendant 1 round.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DEBOUT
+
+- Nom: 'Talent: Debout (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet à un roublard de se relever en une action libre lorsqu’il
+    est à terre. Se relever continue à provoquer des attaques d’opportunité si le
+    roublard est dans un espace contrôlé par un ennemi.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DEGUISEMENTRAPIDE
+
+- Nom: 'Talent: Déguisement rapide (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut utiliser les objets qu’il
+    a à portée de main et quelques objets apparemment banals qu’il cache sur lui pour
+    créer des déguisements étonnamment efficaces tout en réduisant le temps nécessaire
+    à leur fabrication. Le temps nécessaire au roublard pour modifier son apparence
+    de cette manière dépend de la complexité du déguisement, comme indiqué sur la
+    table ci-contre. Les temps sont cumulatifs, de sorte que si une roublarde veut
+    se déguiser en un homme d’une race différente, cela lui demande 2 minutes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DENICHEURDEPIEGES
+
+- Nom: 'Talent: Dénicheur de pièges (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Chaque fois qu’un roublard possédant ce talent passe à 3 mètres (2
+    cases) ou moins d’un piège, il bénéficie d’un test de Perception automatique pour
+    le repérer. Ce test devrait être réalisé en secret par le MJ.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DESAMORCAGERAPIDE
+
+- Nom: 'Talent: Désamorçage rapide (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard possédant ce talent n’a besoin que de la moitié du temps
+    normal (mais au minimum 1 round) pour désamorcer un piège grâce à la compétence
+    Sabotage.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DIFFICILEABERNER
+
+- Nom: 'Talent: Difficile à berner (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Une fois par jour, un roublard disposant de ce talent peut lancer
+    deux dés lors d’un test de Psychologie et choisir le résultat le plus avantageux.
+    Il doit décider d’utiliser cette capacité avant le test. Il peut utiliser cette
+    capacité une fois de plus par jour par tranche de 5 niveaux de roublard qu’il
+    possède.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DISCRETETRAPIDE
+
+- Nom: 'Talent: Discret et rapide (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet au roublard d’utiliser la compétence de Discrétion
+    en se déplaçant à sa vitesse normale (non réduite) sans pénalité.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DOIGTSRAPIDES
+
+- Nom: 'Talent: Doigts rapides (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Une fois par jour, un roublard disposant de ce talent peut lancer
+    deux dés lors d’un test d’Escamotage et choisir le résultat le plus avantageux.
+    Il doit décider d’utiliser ce talent avant le test. Il peut utiliser cette capacité
+    une fois de plus par jour par tranche de 5 niveaux de roublard qu’il possède.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#EMPOISONNEMENTRAPIDE
+
+- Nom: 'Talent: Empoisonnement rapide (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut appliquer du poison sur une
+    arme par une action de mouvement au lieu d’une action simple.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ENTRAINEMENTAUXARMESAFEU
+
+- Nom: 'Talent: Entraînement aux armes à feu (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent obtient Maniement des armes exotiques
+    (armes à feu).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#EQUILIBRISTE
+
+- Nom: 'Talent: Équilibriste (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet au roublard d’utiliser la compétence d’Acrobaties
+    pour se mouvoir sur des surfaces étroites à sa vitesse normale (non réduite) sans
+    pénalité. De plus, le roublard n’est pas pris au dépourvu s’il est attaqué alors
+    qu’il se déplace sur une surface étroite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#EXPERTENSURVIE
+
+- Nom: 'Talent: Expert en survie (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent ajoute Premiers secours et Survie
+    à la liste de ses compétences de classe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#EXTRAIREDESINFORMATIONS
+
+- Nom: 'Talent: Extraire des informations (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut utiliser Bluff ou Diplomatie
+    au lieu d’Intimidation pour forcer un adversaire à agir de manière amicale envers
+    lui.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FAIRELEMUR
+
+- Nom: 'Talent: Faire le mur (Ext)'
+  Classe: Roublard
+  Source: MR
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent lance deux fois les dés quand
+    il fait un test d’Escalade et conserve le meilleur résultat. S’il a déjà fait
+    deux jets grâce à un autre pouvoir, il gagne un bonus d’intuition de +2.S’il est
+    sous l’effet d’un sort ou d’un pouvoir qui l’oblige à lancer deux dés et à choisir
+    le pire, il lance juste 1d20 lors de ses tests d’Escalade.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FAUXAMI
+
+- Nom: 'Talent: Faux ami (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard qui possède ce talent reçoit un bonus de +4 à ses tests
+    de Bluff pour convaincre quelqu’un qu’il n’a jamais rencontré ou connaît mal qu’ils
+    se sont déjà rencontrés ou se connaissent bien.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FINOBSERVATEUR
+
+- Nom: 'Talent: Fin observateur (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Lorsqu’un roublard disposant de ce talent réalise un test de Perception
+    pour percevoir les détails d’une conversation ou pour trouver un objet caché ou
+    secret (il peut s’agir d’une porte ou d’un piège par exemple), il gagne un bonus
+    de +4.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FORMATIONMARTIALE
+
+- Nom: 'Talent: Formation martiale'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard possédant ce talent gagne le don Arme de prédilection
+    comme don supplémentaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FORTEIMPRESSION
+
+- Nom: 'Talent: Forte impression (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent gagne le don Force intimidante
+    comme don supplémentaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FUITERAPIDE
+
+- Nom: 'Talent: Fuite rapide (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Après une attaque sournoise réussie ou un test d’Escamotage réussi,
+    un roublard disposant de ce talent peut effectuer une action de retraite par une
+    action de mouvement. Il ne peut pas se déplacer de plus de sa vitesse de déplacement
+    de base au cours de cette retraite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#GRIMPEURAGILE
+
+- Nom: 'Talent: Grimpeur agile (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Lorsqu’un roublard disposant de ce talent rate un test d’Escalade
+    de 5 points ou plus, il peut immédiatement effectuer un nouveau test d’Escalade
+    contre le DD de base de la surface escaladée + 10. En cas de réussite, il parvient
+    à arrêter sa chute en s’agrippant à la surface et ne subit aucun dégât de chute.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#INSTALLATIONDEPIEGESRAPIDE
+
+- Nom: 'Talent: Installation de pièges rapide (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Par une action complexe, un roublard disposant de ce talent peut installer
+    un piège simple avec un FP ne dépassant pas la moitié de son niveau de roublard.
+    Pour ce faire, il doit avoir acheté les composantes, avoir consacré le temps nécessaire
+    à la construction du piège et avoir les composantes nécessaires sous la main.
+    C’est au MD qu’il revient de décider quels types de pièges peuvent être construits
+    de la sorte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAGIEMAJEURE
+
+- Nom: 'Talent: Magie majeure (Mag)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Un roublard possédant ce talent gagne la capacité de lancer deux fois
+    par jour un sort de 1 niveau de la liste des sorts de magicien. Il s’agit d’un
+    pouvoir magique dont le niveau de lanceur de sorts est égal au niveau du roublard.
+    Le DD du jet de sauvegarde contre ce sort est égal à 11 + le modificateur d’Intelligence
+    du roublard. Le roublard doit posséder une valeur d’Intelligence égale ou supérieure
+    à 11 pour pouvoir choisir ce talent et il doit également posséder le talent de
+    magie mineure.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAGIEMINEURE
+
+- Nom: 'Talent: Magie mineure (Mag)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard possédant ce talent gagne la capacité de lancer trois
+    fois par jour un sort de niveau 0 de la liste des sorts de magicien. Il s’agit
+    d’un pouvoir magique dont le niveau de lanceur de sorts est égal au niveau du
+    roublard. Le DD du jet de sauvegarde contre ce sort est égal à 10 + le modificateur
+    d’Intelligence du roublard. Le roublard doit posséder une valeur d’Intelligence
+    égale ou supérieure à 10 pour pouvoir choisir ce talent.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAINAGILE
+
+- Nom: 'Talent: Main agile (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent peut faire un test d’Escamotage
+    pour cacher une arme alors qu’il la tient à la vue de tous, même si quelqu’un
+    l’observe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAITREDESCORDES
+
+- Nom: 'Talent: Maître des cordes (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard qui possède ce pouvoir peut se déplacer à sa vitesse de
+    base quand il utilise une corde pour faire un test d’Escalade. Il peut aussi faire
+    10 quand il utilise Acrobaties pour se déplacer sur une surface étroite, même
+    s’il est distrait ou en danger et gagne un bonus de +4 pour déterminer le DD à
+    battre quand une créature veut s’échapper alors qu’il l’a attachée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAITRISEDUTERRAIN
+
+- Nom: 'Talent: Maîtrise du terrain (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard qui possède ce talent gagne un environnement de prédilection,
+    comme le pouvoir de rôdeur, mais il ne s’améliore pas au fil des niveaux. Le roublard
+    peut choisir ce pouvoir à plusieurs reprises. Il s’applique alors chaque fois
+    à un nouvel environnement et augmente le bonus de ceux précédemment choisis de
+    +2.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MENSONGECONVAINCANT
+
+- Nom: 'Talent: Mensonge convaincant (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Quand un roublard qui possède ce pouvoir ment, il invente quelque
+    chose de tellement crédible que les autres pensent qu’il dit la vérité. Quand
+    il utilise avec succès le Bluff pour convaincre quelqu’un que ce qu’il dit est
+    vrai et que, plus tard, quelqu’un demande à cette personne ce qu’il a dit, la
+    personne interrogée utilise le modificateur de Bluff du roublard (et non le sien)
+    pour convaincre celui qui l’interroge. Si elle possède un modificateur de Bluff
+    supérieur à celui du roublard, elle utilise le sien et lui ajoute un bonus de
+    +2. L’effet dure un nombre de jours égal à 1/2 niveau du roublard + modificateur
+    de Charisme du roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MOUVEMENTAQUATREPATTES
+
+- Nom: 'Talent: Mouvement à quatre pattes (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet à un roublard de se déplacer à la moitié de sa vitesse
+    de base lorsqu’il est par terre. Ce mouvement provoque des attaques d’opportunité
+    comme un mouvement normal. De plus, un roublard possédant ce talent peut réaliser
+    un pas de placement lorsqu’il est à terre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#OEILDELARCHER
+
+- Nom: 'Talent: Oeil de l’archer (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut appliquer ses dégâts d’attaque
+    sournoise aux attaques à distance visant des cibles situées dans un rayon de 9
+    mètres (6 ) et bénéficiant d’un camouflage simple. Les cibles qui bénéficient
+    d’un camouflage total restent immunisées aux attaques sournoises.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ORGANISERLATTAQUE
+
+- Nom: 'Talent: Organiser l’attaque (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Une fois par jour, après une attaque ratée contre un adversaire pris
+    en tenaille, le roublard peut désigner un allié qui prend également en tenaille
+    la cible de l’attaque qui a échoué. Par une action immédiate, cet allié peut porter
+    une unique attaque de corps à corps contre cette cible.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#POISONPERSISTANT
+
+- Nom: 'Talent: Poison persistant (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut appliquer du poison sur une
+    arme de telle sorte que celui-ci reste efficace pour deux attaques réussies au
+    lieu d’une seule. L’effet du poison est réduit, cependant, et les jets de sauvegarde
+    pour y résister reçoivent un bonus de circonstances de +2. Il faut une action
+    complexe pour appliquer le poison de cette manière, ou une action rapide si le
+    roublard possède le talent empoisonnement rapide.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#POLYGLOTTEDOUE
+
+- Nom: 'Talent: Polyglotte doué (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Un roublard disposant de ce talent et possédant au moins un rang en
+    Linguistique gagne quatre langues supplémentaires. Un roublard disposant de ce
+    talent mais ne possédant aucun rang en Linguistique gagne deux langues supplémentaires.
+    S’il gagne des rangs en Linguistique par la suite, il acquiert alors deux langues
+    supplémentaires (pour un total de quatre langues supplémentaires) en plus de celles
+    octroyées par la compétence de Linguistique elle-même.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#REACTIONSLENTES
+
+- Nom: 'Talent: Réactions lentes* (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Les adversaires blessés par l’attaque sournoise du roublard ne peuvent
+    pas porter d’attaques d’opportunité pendant 1 round.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#RESERVEDEKI
+
+- Nom: 'Talent: Réserve de ki (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Un roublard qui dispose de ce talent obtient une petite réserve de
+    ki. Elle ressemble à celle du ninja mais ne donne pas d’attaque supplémentaire.
+    Elle contient un nombre de points de ki égal au modificateur de Sagesse du roublard
+    (1 au minimum). Cette réserve se remplit chaque matin. Si le roublard possède
+    déjà une réserve de ki ou qu’il en obtient une plus tard, il rajoute un montant
+    de points de ki supplémentaires égal à 1/2 bonus de Sagesse (1 au minimum). Il
+    peut dépenser 1 point de sa réserve de ki pour gagner un bonus de déplacement
+    de +3 mètres (2 ) jusqu’à la fin de son tour.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#RESILIENCE
+
+- Nom: 'Talent: Résilience (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Une fois par jour, un roublard possédant ce talent peut gagner un
+    nombre de points de vie temporaires égal à son niveau de roublard. Cette capacité
+    s’active par une action immédiate qui ne peut se produire que lorsque le roublard
+    est amené sous 0 point de vie. Ces points de vie temporaires, qui peuvent empêcher
+    le roublard de mourir, persistent pendant une minute. Si les points de vie du
+    roublard passent sous 0 lorsque ces points de vie temporaires disparaissent, celui-ci
+    tombe inconscient et devient mourant (conformément à la règle normale).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#RETENIRSONSOUFFLE
+
+- Nom: 'Talent: Retenir son souffle (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Le roublard qui dispose de ce talent peut retenir son souffle 2 rounds
+    de plus. Il peut choisir ce talent à plusieurs reprises.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ROUBLARDENFINESSE
+
+- Nom: 'Talent: Roublard en finesse'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Ce talent permet au roublard de gagner le don Attaque en finesse en
+    tant que don supplémentaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SAUTDELEXPERT
+
+- Nom: 'Talent: Saut de l’expert (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Lorsque le roublard effectue un test de saut, on considère toujours
+    qu’il a pris de l’élan (même si ce n’est pas le cas). De plus, en cas de chute
+    délibérée, un test d’Acrobaties contre un DD de 15 permet au roublard d’ignorer
+    les 6 premiers mètres de la chute (au lieu des 3 premiers mètres).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SOURNOIS
+
+- Nom: 'Talent: Sournois* (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: 'Un roublard qui dispose de ce talent gagne un bonus de circonstances
+    de +4 aux tests d’Escamotage quand il essaie de dissimuler une arme. De plus,
+    s’il fait une attaque sournoise pendant le round de surprise à l’aide d’une arme
+    cachée dont son adversaire ignore l’existence, il n’a pas besoin de lancer les
+    dés de dégâts supplémentaires : l’attaque sournoise inflige automatiquement le
+    maximum. Chaque jour, il peut utiliser ce talent un nombre de fois égal à son
+    modificateur de Charisme (0 au minimum).'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SPECIALISTEDELAFUITE
+
+- Nom: 'Talent: Spécialiste de la fuite (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard qui possède ce talent ajoute Dressage, Équitation et Vol
+    à ses compétences de classe et gagne un bonus de +2 aux tests pour conduire un
+    véhicule.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SUBTILISATIONAUCOMBAT
+
+- Nom: 'Talent: Subtilisation au combat'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent gagne Science de la subtilisation
+    comme don supplémentaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SUIVRELESINDICES
+
+- Nom: 'Talent: Suivre les indices (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut utiliser la compétence de
+    Perception au lieu de celle de Survie pour suivre une piste.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#TIRSOUDAIN
+
+- Nom: 'Talent: Tir soudain (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 2
+  Description: Un roublard disposant de ce talent peut agir comme s’il avait obtenu
+    20 sur son dé d’initiative pendant le round de surprise et ce, quelle que soit
+    sa valeur d’initiative réelle, mais il est contraint d’effectuer une action d’attaque
+    avec une arme à distance. La valeur réelle du jet d’initiative est utilisée pour
+    tous les rounds qui suivent. Si plusieurs roublards possédant ce talent participent
+    au même combat, leurs initiatives réelles déterminent l’ordre dans lequel ils
+    agissent mais leurs tours viennent en début de round, avant toutes les autres
+    créatures. Si le roublard ne peut pas agir au cours du round de surprise, ce talent
+    n’a aucun effet.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#TRIPESDACIER
+
+- Nom: 'Talent: Tripes d’acier (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 2
+  Description: Le roublard qui dispose de ce talent a un estomac en acier ou s’est
+    entraîné à supporter les poisons, surtout ceux qui s’ingèrent. Il gagne un bonus
+    de +1 aux jets de sauvegarde contre les poisons ingérés et un bonus de +4 aux
+    jets de sauvegarde contre les sorts et effets qui rendent nauséeux  ou fiévreux.
+
+- Nom: 'Talent: Acrobaties rapides (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Lorsqu’un roublard disposant de ce talent utilise la compétence d’Acrobaties
+    pour se déplacer à sa pleine vitesse à travers l’espace contrôlé par un ennemi
+    sans provoquer d'attaques d’opportunité, le DD du test d’Acrobaties n’augmente
+    pas de 10.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ALLIEINVOLONTAIRE
+
+- Nom: 'Talent: Allié involontaire (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Un roublard qui possède ce talent utilise une action rapide pour pousser
+    un adversaire à agir comme un allié en ce qui concerne la prise en tenaille, et
+    ce jusqu’au début du prochain tour du roublard.L’adversaire doit entendre et voir
+    le roublard qui doit réussir un test de Bluff opposé au test de Psychologie de
+    sa victime. Si le roublard réussit, son adversaire est considéré comme un allié
+    en ce qui concerne la prise en tenaille. Qu’il réussisse ou non, il ne peut plus
+    utiliser ce tour contre le même adversaire pendant 24 heures.Si le roublard rate
+    son test de 5 ou plus, il ne peut plus utiliser ce pouvoir contre tous les adversaires
+    qui le voient lors de son échec pendant 24 heures.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUEHANDICAPANTE
+
+- Nom: 'Talent: Attaque handicapante* (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Un roublard possédant ce talent peut porter des attaques sournoises
+    tellement précises que ses coups handicapent ses adversaires. Un adversaire blessé
+    par une attaque sournoise portée par le roublard subit un affaiblissement temporaire
+    de 2 points de Force.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUEDISSIPANTE
+
+- Nom: 'Talent: Attaque dissipante* (Sur)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Lorsqu’un roublard possédant ce talent inflige des dégâts d’attaque
+    sournoise à un ennemi, celui-ci est affecté par une  ciblée qui vise l’effet magique
+    de plus bas niveau dont il bénéficie pour l’instant. Le niveau de lanceur de sorts
+    de cette capacité est égal au niveau du roublard. Le roublard doit posséder le
+    talent de magie majeure pour pouvoir choisir ce talent.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUEREDIRIGÉE
+
+- Nom: 'Talent: Attaque redirigée (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Une fois par jour, lorsque le roublard disposant de ce talent est
+    touché par une attaque au corps à corps, il peut la rediriger vers une créature
+    adjacente par une action libre. La créature choisie doit pouvoir être atteinte
+    par l’attaque qui était initialement dirigée vers le roublard et l’attaquant qui
+    a porté cette attaque doit effectuer un nouveau jet d’attaque contre la cible
+    désignée par le roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ATTAQUESOURNOISEMORTELLE
+
+- Nom: 'Talent: Attaque sournoise mortelle* (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Chaque fois que le roublard disposant de ce talent utilise le talent
+    Attaque sournoise puissante, tous les 1 et les 2 qui apparaissent sur les dés
+    de dégâts d’attaques sournoises sont considérés comme des 3. Le roublard doit
+    posséder le talent Attaque sournoise puissante avant de pouvoir gagner ce pouvoir.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#CACHEENPLEINELUMIERE
+
+- Nom: 'Talent: Caché en pleine lumière (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Un roublard qui dispose de ce talent peut choisir un environnement
+    dans la liste des environnements de prédilection du rôdeur. Il passe maître dans
+    l’art de se dissimuler dans cet environnement et peut utiliser Discrétion pour
+    se cacher, même si quelqu’un l’observe. Un roublard peut choisir ce talent de
+    maître à plusieurs reprises mais il s’applique à chaque fois à un nouvel environnement.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#COCKTAILMORTEL
+
+- Nom: 'Talent: Cocktail mortel (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Un roublard disposant de ce talent peut appliquer deux doses de poison
+    en même temps sur une arme. Il peut s’agir de poisons différents, auquel cas ils
+    affectent tous les deux (et individuellement) la cible, ou de deux doses d’un
+    même poison, auquel cas la fréquence du poison est augmentée de 50% et le DD du
+    jet de sauvegarde, de +2. Ce talent est une exception à la règle indiquant que
+    plusieurs poisons par blessure ne peuvent pas être administrés en même temps.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#COLPORTEURDERUMEURS
+
+- Nom: 'Talent: Colporteur de rumeurs (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Un roublard doté de ce talent peut tenter de répandre une rumeur dans
+    une petite ville ou dans une agglomération plus importante grâce à un test de
+    Bluff. Chaque semaine, il peut faire cela un nombre de fois égal à son modificateur
+    de Charisme (0 au minimum).Le DD est basé sur la taille de la ville et il faut
+    une semaine pour que la rumeur se propage. En cas de réussite, la communauté accepte
+    la rumeur comme un fait avéré. Si le roublard bat le DD de 5 ou plus, il réduit
+    le temps que la nouvelle met pour se répandre de 1d4 jours. En cas d’échec, la
+    rumeur n’a aucun poids mais si le roublard rate son test de 5 ou plus, c’est la
+    rumeur inverse ou une théorie opposée qui se répand sur le sujet.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#COUPASSOMMANT
+
+- Nom: 'Talent: Coup assommant (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Une fois par jour, le roublard peut choisir de ne pas compter ses
+    dégâts d’attaques sournoise pour tenter d’assommer un adversaire. Il doit décider
+    d’utiliser ce talent avant le jet d’attaque. Si l’attaque touche, elle inflige
+    des dégâts normaux, mais au lieu des dégâts d’attaques sournoise (ou des autres
+    effets déclenchés par les attaques sournoises) qui y seraient normalement ajoutés,
+    la cible tombe inconsciente pendant 1d4 rounds. Si la cible réussit un jet de
+    Vigueur, elle n’est pas inconsciente mais seulement chancelante pendant 1 round.
+    Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau du roublard + le modificateur
+    d’Intelligence du roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DIFFICILEAENVOUTER
+
+- Nom: 'Talent: Difficile à envoûter (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Un roublard doté de ce talent se laisse difficilement tromper par
+    les illusions. Au début de son tour il peut faire un jet de Volonté pour révéler
+    tout illusion qu'il peut voir, même s'il n'interagit pas avec. S'il échoue, il
+    peut refaire le jet de sauvegarde au tour suivant contre le même DD. S'il échoue
+    de nouveau, il ne dispose pas de nouvelle chance.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#DONROUBLARD
+
+- Nom: 'Talent: Don'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Un roublard peut choisir un don supplémentaire plutôt qu’un talent.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ESPRITFUYANT
+
+- Nom: 'Talent: Esprit fuyant (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Ce talent représente l’aisance avec laquelle de nombreux roublards
+    parviennent à échapper aux effets magiques visant à les contrôler. Chaque fois
+    que le personnage est pris pour cible par un sort ou effet de type enchantement
+    et qu’il rate son jet de sauvegarde, il peut tenter un second jet de sauvegarde
+    un round plus tard (avec le même DD). Il n’a droit qu’à une seule seconde chance
+    par attaque.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ESQUIVEEXTRAORDINAIRE
+
+- Nom: 'Talent: Esquive extraordinaire (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Ce talent a un effet similaire à la capacité d’esquive totale mais
+    lorsque le roublard qui le possède est soumis à une attaque qui autorise un jet
+    de Réflexes pour réduire les dégâts de moitié, il ne subit aucun dégât s’il réussit
+    son jet de sauvegarde et seulement la moitié des dégâts dans le cas contraire.
+    Le roublard perd les avantages de ce talent s’il est sans défense.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FABRICANTDEPIEGESECONOME
+
+- Nom: 'Talent: Fabricant de pièges économe (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Lorsqu’un roublard disposant de ce talent construit un piège mécanique,
+    il ne paie que 75% du coût normal.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#FAMILIER
+
+- Nom: 'Talent: Familier (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Un roublard qui dispose de ce talent gagne un familier, comme le permet
+    le pacte magique du magicien. Ce pouvoir fonctionne de la même manière mais le
+    niveau de magicien effectif du roublard est égal à son niveau de classe -4. Le
+    roublard doit avoir les talents magie mineure et magie majeure avant de choisir
+    celui-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#LAMESDECONFUSION
+
+- Nom: 'Talent: Lames de confusion* (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Quand un roublard qui dispose de ce talent réussit une attaque avec
+    une arme de corps à corps, sa cible ne peut plus faire d’attaques d’opportunité
+    avant le début du prochain tour du roublard. Le roublard doit connaître réactions
+    lentes avant de choisir ce pouvoir.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#LAMESENTREMELEES
+
+- Nom: 'Talent: Lames entremêlées* (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Lorsqu’un roublard disposant de ce talent touche une créature avec
+    une attaque de corps à corps qui inflige des dégâts d’attaques sournoises, la
+    cible ne peut pas effectuer de pas de placement de 1,50 m avant le début du tour
+    suivant du roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAINTENANTQUEJYREPENSE
+
+- Nom: 'Talent: Maintenant que j’y repense (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Une fois par jour, un roublard disposant de ce talent peut relancer
+    un test de Connaissances, de Perception ou de Psychologie pour tenter d’obtenir
+    de nouvelles ou de meilleures informations. Ce nouveau jet doit être fait le même
+    jour que le jet initial.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAITREDELAFUITE
+
+- Nom: 'Talent: Maître de la fuite (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Un roublard qui possède ce talent gagne un bonus de +10 aux tests
+    de conduite de véhicule. Il doit connaître le talent spécialiste de la fuite avant
+    de prendre celui-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAITREDUDEGUISEMENT
+
+- Nom: 'Talent: Maître du déguisement (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Une fois par jour, un roublard disposant de ce talent peut gagner
+    un bonus de +10 à un unique test de Déguisement.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#MAITRISECOMPETENCES
+
+- Nom: 'Talent: Maîtrise des compétences'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Le roublard est tellement sûr de lui qu’il peut utiliser certaines
+    de ses compétences en toute confiance même dans les cas extrêmes.Lorsqu’il gagne
+    ce talent, le roublard sélectionne un nombre de compétences égal à 3 + son modificateur
+    d’Intelligence. Chaque fois qu’il se sert de l’une d’elles, il peut faire 10 même
+    en situation de stress ou lorsqu’il est distrait. Le roublard peut choisir ce
+    talent plusieurs fois, mais il doit alors l’associer à de nouvelles compétences
+    à chaque fois.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#OPPORTUNISME
+
+- Nom: 'Talent: Opportunisme (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Une fois par round, un roublard possédant ce talent peut tenter une
+    attaque d’opportunité contre une créature venant juste d’être blessée au corps
+    à corps par un autre personnage. Cette attaque est déduite du nombre d’attaques
+    d’opportunité que le personnage peut effectuer au cours de ce round. Cette capacité
+    ne peut pas être utilisée plus d’une fois par round et ce, même si le roublard
+    possède le don Attaques réflexes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#ROULEBOULE
+
+- Nom: 'Talent: Roulé-boulé (Ext)'
+  Classe: Roublard
+  Source: AG
+  Niveau: 10
+  Description: Un roublard possédant ce talent peut accompagner les coups mortels
+    et ainsi encaisser moins de dégâts. Une fois par jour, alors qu’il vient d’être
+    touché par une attaque qui le ferait tomber à 0 point de vie ou moins (mais pas
+    s’il est victime d’un sort ou d’un pouvoir spécial), il peut tenter d’exécuter
+    un roulé-boulé afin de réduire la violence du coup. Il effectue un jet de Réflexes
+    (DD = points de dégâts encaissés) et, en cas de succès, les dégâts qu’il devait
+    encaisser sont réduits de moitié. En cas d’échec, il reçoit les dégâts normaux.
+    Pour tenter cette manœuvre désespérée, il doit voir venir l’attaque et pouvoir
+    y réagir (c’est impossible s’il se trouve dans une situation où il perd son bonus
+    de Dextérité à la CA). Comme ce type d’attaque n’autorise normalement pas un jet
+    de Réflexes pour réduire les dégâts de moitié, le pouvoir d’esquive totale du
+    roublard ne lui est d’aucune utilité dans un tel cas de figure.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SUBTILISATIONDARME
+
+- Nom: 'Talent: Subtilisation d’arme (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Un roublard qui possède ce talent peut faire un test d’Escamotage
+    au lieu d’un test de manoeuvre offensive quand il tente de désarmer un adversaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#SURPRISEDUCHASSEUR
+
+- Nom: 'Talent: Surprise du chasseur (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Une fois par jour, un roublard disposant de ce talent peut désigner
+    comme proie un unique ennemi qui lui est adjacent. Jusqu’à la fin du prochain
+    tour du roublard, celui-ci peut ajouter ses dégâts d'attaques sournoises à toutes
+    les attaques effectuées contre sa proie, même si celle-ci n’est ni prise en tenaille
+    ni prise au dépourvu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#TIREURDISCRET
+
+- Nom: 'Talent: Tireur discret (Ext)'
+  Classe: Roublard
+  Source: MJRA
+  Niveau: 10
+  Description: Lorsqu’un roublard disposant de ce talent utilise sa compétence de
+    Discrétion pour un tir embusqué, son test de Discrétion ne subit qu’un malus de
+    –10 (au lieu de –20).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx#UNJOURDEPLUS
+
+- Nom: 'Talent: Un jour de plus (Ext)'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 10
+  Description: Une fois par jour, lorsque le roublard devrait être réduit à 0 point
+    de vie ou moins par une attaque au corps à corps, il peut effectuer un pas de
+    placement de 1,50 m par une action immédiate. Si ce mouvement lui permet de sortir
+    de la zone contrôlée par l’attaquant, il ne subit aucun dégât pour cette attaque.
+    Le roublard est chancelant pendant 1 round au cours de son prochain tour.
