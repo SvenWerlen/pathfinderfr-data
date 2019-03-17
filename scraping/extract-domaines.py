@@ -92,13 +92,14 @@ for d in domaines:
         print("NOT FOUND!!")
         continue
     for p in pouvoirs:
-        if p.name is None or p.name == 'a' or p.name == 'b':
+        if p.name is None or p.name == 'a' or p.name == 'b' or p.name == 'i':
             domain['6Description'] += p.string
         elif(p.name == 'br'):
             domain['6Description'] += '\\n'
         elif(p.name == 'h2'):
             break
     
+    domain['6Description'] += ":"
     domain['6Description'] = domain['6Description'].replace('\n','').strip()
     liste.append(domain)
 
@@ -110,6 +111,7 @@ yml = yml.replace('2Classe','Classe')
 yml = yml.replace('4Source','Source')
 yml = yml.replace('5Niveau','Niveau')
 yml = yml.replace('6Description','Description')
+yml = yml.replace('\\n\\n:','')
 yml = yml.replace(u'7Référence',u'Référence')
 yml = yml.replace("EMPTY: ''",'')
 print(yml)
