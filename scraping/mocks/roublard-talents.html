@@ -1,0 +1,958 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les talents de roublard - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="talents de roublard" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Talents.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=talents&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwQRQ3zLUaJ8V9Y17UWSJ6Z6v+3gQ=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636091085625980305" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAK7zfy5A4JS2DMF8MKfUSKG+B72oi3QcwxQT+thNGyuum4XY9QZlc6srx3hjMjB3JJjGeFA" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Talents">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Talents">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Talents">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Talents.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Talents.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Talents">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les talents de roublard
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Talents" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<i>Grâce à ses talents et ses compétences diversifiées, le roublard est le soutien indispensable des combattants de première ligne. Il ne dispose pas de la puissance martiale brute de certaines classes mais il compense largement cela par ses tactiques retorses, son astuce, ses poisons et, évidemment, sa capacité à prendre un ennemi en tenaille et à lancer des attaques sournoises dévastatrices aussi souvent que possible.</i><br /><br />Les talents listés ici conjugués aux différents archétypes de roublard permettent de donner des orientations plus martiales ou au contraire de renforcer leur subtilité et leur capacité à créer des subterfuges.<br /><br />En gagnant de l’expérience, un <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublard</a> acquiert divers talents qui l’avantagent ou désavantagent ses ennemis. Il obtient un premier talent de roublard au niveau 2, puis il gagne un talent de roublard supplémentaire tous les deux niveaux de roublard par la suite. Aucun talent ne peut être choisi plus d’une fois.<br /><br />Les talents marqués d’un astérisque ajoutent un effet aux <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoises</a> du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque, et son choix doit être fait avant le jet d’attaque.<br /><br /><center>
+<table CLASS="tablo toutgauche autoalt" ID="tabtalroub"><caption>Talents de roublard</caption><tr CLASS="titre"><td COLSPAN="2">Talents</td><td>Talents de maître roublard</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ACROBATEINEGALABLE" title="Les talents de roublard">Acrobate inégalable</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FAIRELEMUR" title="Les talents de roublard">Faire le mur</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ACROBATIESRAPIDES" title="Les talents de roublard">Acrobaties rapides</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#APPROPRIATIONDHISTOIRE" title="Les talents de roublard">Appropriation d'histoire</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FAUXAMI" title="Les talents de roublard">Faux ami</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ALLIEINVOLONTAIRE" title="Les talents de roublard">Allié involontaire</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ASTUCEDENINJA" title="Les talents de roublard">Astuce de ninja</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#EXTRAIREDESINFORMATIONS" title="Les talents de roublard">Extraire des informations</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUEHANDICAPANTE" title="Les talents de roublard">Attaque handicapante</a>*</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUEDISTRAYANTE" title="Les talents de roublard">Attaque distrayante</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FINOBSERVATEUR" title="Les talents de roublard">Fin observateur</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUEDISSIPANTE" title="Les talents de roublard">Attaque dissipante</a>*</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUEETCHANGEMENTDEPOSITION" title="Les talents de roublard">Attaque et changement de position</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FORMATIONMARTIALE" title="Les talents de roublard">Formation martiale</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUEREDIRIGÉE" title="Les talents de roublard">Attaque redirigée</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUESANGLANTE" title="Les talents de roublard">Attaque sanglante</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FORTEIMPRESSION" title="Les talents de roublard">Forte impression</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUESOURNOISEMORTELLE" title="Les talents de roublard">Attaque sournoise mortelle</a>*</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUESOURNOISEPUISSANTE" title="Les talents de roublard">Attaque sournoise puissante</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FUITERAPIDE" title="Les talents de roublard">Fuite rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#CACHEENPLEINELUMIERE" title="Les talents de roublard">Caché en pleine lumière</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ATTAQUESURPRISE" title="Les talents de roublard">Attaque surprise</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#GRIMPEURAGILE" title="Les talents de roublard">Grimpeur agile</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#COCKTAILMORTEL" title="Les talents de roublard">Cocktail mortel</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#AUDACE" title="Les talents de roublard">Audace</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#INSTALLATIONDEPIEGESRAPIDE" title="Les talents de roublard">Installation de pièges rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#COLPORTEURDERUMEURS" title="Les talents de roublard">Colporteur de rumeurs</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#BEAUPARLEUR" title="Les talents de roublard">Beau parleur</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAGIEMAJEURE" title="Les talents de roublard">Magie majeure</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#COUPASSOMMANT" title="Les talents de roublard">Coup assommant</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#BOTTESECRETE" title="Les talents de roublard">Botte secrète</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAGIEMINEURE" title="Les talents de roublard">Magie mineure</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DIFFICILEAENVOUTER" title="Les talents de roublard">Difficile à envoûter</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#BRASSEVIGOUREUSE" title="Les talents de roublard">Brasse vigoureuse</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAINAGILE" title="Les talents de roublard">Main agile</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DONROUBLARD" title="Les talents de roublard">Don</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#BROUILLERLESPISTES" title="Les talents de roublard">Brouiller les pistes</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAITREDESCORDES" title="Les talents de roublard">Maître des cordes</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ESPRITFUYANT" title="Les talents de roublard">Esprit fuyant</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#CAMOUFLAGE" title="Les talents de roublard">Camouflage</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAITRISEDUTERRAIN" title="Les talents de roublard">Maîtrise du terrain</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ESQUIVEEXTRAORDINAIRE" title="Les talents de roublard">Esquive extraordinaire</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#CHARMEUR" title="Les talents de roublard">Charmeur</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MENSONGECONVAINCANT" title="Les talents de roublard">Mensonge convaincant</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FABRICANTDEPIEGESECONOME" title="Les talents de roublard">Fabricant de pièges économe</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#CONNAISSANCESESOTERIQUES" title="Les talents de roublard">Connaissances ésotériques</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MOUVEMENTAQUATREPATTES" title="Les talents de roublard">Mouvement à quatre pattes</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#FAMILIER" title="Les talents de roublard">Familier</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#CONTACTSAUMARCHENOIR" title="Les talents de roublard">Contacts au marché noir</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#OEILDELARCHER" title="Les talents de roublard">Oeil de l’archer</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#LAMESDECONFUSION" title="Les talents de roublard">Lames de confusion</a>*</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#COUPBOULEVERSANT" title="Les talents de roublard">Coup bouleversant</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ORGANISERLATTAQUE" title="Les talents de roublard">Organiser l’attaque</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#LAMESENTREMELEES" title="Les talents de roublard">Lames entremêlées</a>*</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DECLENCHEMENTEXTRAORDINAIRE" title="Les talents de roublard">Déclenchement extraordinaire</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#POLYGLOTTEDOUE" title="Les talents de roublard">Polyglotte doué</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAITREDELAFUITE" title="Les talents de roublard">Maître de la fuite</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DEFENSEOFFENSIVE" title="Les talents de roublard">Défense offensive</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#REACTIONSLENTES" title="Les talents de roublard">Réactions lentes</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAITREDUDEGUISEMENT" title="Les talents de roublard">Maître du déguisement</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DEBOUT" title="Les talents de roublard">Debout</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#RESERVEDEKI" title="Les talents de roublard">Réserve de ki</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#MAITRISECOMPETENCES" title="Les talents de roublard">Maîtrise des compétences</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DEGUISEMENTRAPIDE" title="Les talents de roublard">Déguisement rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#RESILIENCE" title="Les talents de roublard">Résilience</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#OPPORTUNISME" title="Les talents de roublard">Opportunisme</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DENICHEURDEPIEGES" title="Les talents de roublard">Dénicheur de pièges</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#RETENIRSONSOUFFLE" title="Les talents de roublard">Retenir son souffle</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ROULEBOULE" title="Les talents de roublard">Roulé-boulé</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DESAMORCAGERAPIDE" title="Les talents de roublard">Désamorçage rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ROUBLARDENFINESSE" title="Les talents de roublard">Roublard en finesse</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SUBTILISATIONDARME" title="Les talents de roublard">Subtilisation d’arme</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DIFFICILEABERNER" title="Les talents de roublard">Difficile à berner</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SAUTDELEXPERT" title="Les talents de roublard">Saut de l’expert</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SURPRISEDUCHASSEUR" title="Les talents de roublard">Surprise du chasseur</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DISCRETETRAPIDE" title="Les talents de roublard">Discret et rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SOURNOIS" title="Les talents de roublard">Sournois</a>*</td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#TIREURDISCRET" title="Les talents de roublard">Tireur discret</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#DOIGTSRAPIDES" title="Les talents de roublard">Doigts rapides</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SPECIALISTEDELAFUITE" title="Les talents de roublard">Spécialiste de la fuite</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#UNJOURDEPLUS" title="Les talents de roublard">Un jour de plus</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#EMPOISONNEMENTRAPIDE" title="Les talents de roublard">Empoisonnement rapide</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SUIVRELESINDICES" title="Les talents de roublard">Suivre les indices</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#ENTRAINEMENTAUXARMESAFEU" title="Les talents de roublard">Entraînement aux armes à feu</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#SUBTILISATIONAUCOMBAT" title="Les talents de roublard">Subtilisation au combat</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#EQUILIBRISTE" title="Les talents de roublard">Équilibriste</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#TIRSOUDAIN" title="Les talents de roublard">Tir soudain</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#EXPERTENSURVIE" title="Les talents de roublard">Expert en survie</a></td><td><a class="pagelink" href="Pathfinder-RPG.Talents.ashx#TRIPESDACIER" title="Les talents de roublard">Tripes d’acier</a></td></tr></table>
+</center><br /><br /><b>PAGE EN TRAVAUX -> Intégration des talents de roublard des hommes-félins</b><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHANCEDESARMANTE" href="#CHANCEDESARMANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chance désarmante (Ext)<a class="headeranchor" id="Chance_désarmante_Ext_0" href="#Chance_désarmante_Ext_0" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b> Une fois par jour, lorsqu’un homme-félin roublard tente de désamorcer un appareil et échoue de 5 ou plus, il peut refaire son test par une action libre. Il doit prendre le résultat du deuxième jet, même s’il est pire que le premier. <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHUTEGRACIEUSE" href="#CHUTEGRACIEUSE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chute gracieuse (Ext)<a class="headeranchor" id="Chute_gracieuse_Ext_1" href="#Chute_gracieuse_Ext_1" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b> L’homme-félin roublard ayant ce talent retombe toujours sur ses pattes, même quand il reçoit des dégâts létaux des suites d’une chute. S’il possède également le trait racial chute agile, tous les dégâts de chute qu’il reçoit comptent comme si sa distance de chute était plus courte de 6 mètres qu’elle ne l’est en réalité. <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EVALUATEURACHARNE" href="#EVALUATEURACHARNE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Évaluateur acharné (Ext)<a class="headeranchor" id="Évaluateur_acharné_Ext_2" href="#Évaluateur_acharné_Ext_2" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b> L’homme-félin roublard ayant ce talent est doué pour déterminer la valeur des objets qui brillent. Il peut toujours décider de faire 10 quand il estime des gemmes et des bijoux. <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRIFFESVICIEUSES" href="#GRIFFESVICIEUSES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Griffes vicieuses (Ext)<a class="headeranchor" id="Griffes_vicieuses_Ext_3" href="#Griffes_vicieuses_Ext_3" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b> L’homme-félin ayant ce talent utilise des d8, non des d6, pour ses jets de dégâts d’attaque sournoise, mais uniquement quand il se sert de ses griffes pour porter son attaque sournoise. Il doit avoir le trait racial griffes du félin pour prendre ce talent.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRIFFUREMORTELLE" href="#GRIFFUREMORTELLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Griffure mortelle (Ext)<a class="headeranchor" id="Griffure_mortelle_Ext_4" href="#Griffure_mortelle_Ext_4" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b> L’homme-félin roublard ayant ce talent peut appliquer du poison sur ses griffes sans risquer de s’empoisonner par accident. Il doit avoir le trait racial griffes du félin et l’aptitude de classe utilisation des poisons pour prendre ce talent.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRIMPEURAGILE" href="#GRIMPEURAGILE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Grimpeur agile (Ext)<a class="headeranchor" id="Grimpeur_agile_Ext_5" href="#Grimpeur_agile_Ext_5" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><b>(talent réservé aux hommes-félins)</b>L’homme-félin roublard ayant ce talent gagne un bonus de +4 à ses tests d’Escalade. S’il possède le trait racial grimpeur, il peut faire 10 à ses tests d’Escalade, même lorsqu’il est en danger immédiat ou distrait.<br /><br /><h2 class="separator"> Description des talents de roublard <a class="headeranchor" id="Description_des_talents_de_roublard_98" href="#Description_des_talents_de_roublard_98" title="Lien vers cette section">&#0182;</a></h2>
+<div class="article_2col"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ACROBATEINEGALABLE" href="#ACROBATEINEGALABLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Acrobate inégalable (Ext)<a class="headeranchor" id="Acrobate_inégalable_Ext_6" href="#Acrobate_inégalable_Ext_6" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut lancer deux dés lors d’un test d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> et choisir le résultat le plus avantageux. Il doit décider d’utiliser cette capacité avant le test. Il peut utiliser cette capacité une fois de plus par jour par tranche de 5 niveaux de roublard.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="APPROPRIATIONDHISTOIRE" href="#APPROPRIATIONDHISTOIRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Appropriation d’histoire (Ext)<a class="headeranchor" id="Appropriation_d’histoire_Ext_7" href="#Appropriation_d’histoire_Ext_7" title="Lien vers cette section">&#0182;</a></h3>Après avoir troublé le récit d’un autre au moyen de <a class="pagelink" href="Pathfinder-RPG.Talents.ashx#BROUILLERLESPISTES" title="Les talents de roublard">Brouiller les pistes</a>, le roublard peut faire un autre test de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> pour altérer un peu plus les détails de l’histoire et ainsi discréditer, insulter ou humilier la cible. Si le test réussit, la cible reçoit un malus à ses tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> contre quiconque a entendu l’histoire altérée. Ce malus est égal au bonus d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>, de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> ou de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> du roublard (le score le plus haut) et dure jusqu’à ce que la cible puisse laver sa réputation ou discréditer le roublard. Le roublard doit avoir le talent Brouiller les pistes pour prendre ce talent.<br/>
+<i>Tous les roublards qui répondent aux conditions requises indiquées peuvent prendre ce nouveau talent de roublard, mais ils sont plus courants chez les kitsune.</i><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ASTUCEDENINJA" href="#ASTUCEDENINJA"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Astuce de ninja (Ext)<a class="headeranchor" id="Astuce_de_ninja_Ext_8" href="#Astuce_de_ninja_Ext_8" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui prend ce talent peut choisir une astuce de <a class="pagelink" href="Pathfinder-RPG.ninja.ashx" title="Ninja">ninja</a>.
+Le roublard ne peut pas choisir une <a class="pagelink" href="Pathfinder-RPG.ninja.ashx#ASTUCEDENINJA" title="Ninja">astuce de ninja</a> qui porte le même nom qu’un talent de roublard. Il peut choisir une astuce qui demande des <a class="pagelink" href="Pathfinder-RPG.ninja.ashx#RÉSERVEDEKI" title="Ninja">points de ki</a> mais ne pourra pas l’utiliser à moins de posséder le talent réserve de ki. Un roublard peut choisir ce talent à plusieurs reprises.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEDISTRAYANTE" href="#ATTAQUEDISTRAYANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque distrayante* (Ext)<a class="headeranchor" id="Attaque_distrayante_Ext_9" href="#Attaque_distrayante_Ext_9" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent peut accompagner ses <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoises</a> de mouvements subtils qui désorientent et distraient son adversaire. Lorsqu’il touche une créature avec une attaque de corps à corps qui inflige des dégâts d’attaque sournoise, il peut choisir de ne pas compter les dégâts supplémentaires pour faire en sorte que la cible soit prise au dépourvue par les attaques portées par un allié (choisi par le roublard) jusqu’au début du prochain tour de la cible. Le roublard ne peut pas se désigner lui-même comme l’allié en question. Les créatures qui possèdent la capacité <a class="pagelink" href="Pathfinder-RPG.Esquive%20instinctive.ashx" title="esquive instinctive">Esquive instinctive</a> sont immunisées contre les attaques distrayantes.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEETCHANGEMENTDEPOSITION" href="#ATTAQUEETCHANGEMENTDEPOSITION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Attaque et changement de position (Ext)<a class="headeranchor" id="Attaque_et_changement_de_position_Ext_10" href="#Attaque_et_changement_de_position_Ext_10" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, lorsqu’un roublard possédant ce talent porte une attaque de corps à corps réussie contre une créature, il peut se déplacer sur une distance totale de 9 mètres (6 <abbr title="cases">c</abbr>) sans provoquer d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a>. Ce déplacement doit se terminer dans un espace adjacent à la créature touchée.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUESANGLANTE" href="#ATTAQUESANGLANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque sanglante* (Ext)<a class="headeranchor" id="Attaque_sanglante_Ext_11" href="#Attaque_sanglante_Ext_11" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet au roublard de faire saigner la victime de son <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a>. Chaque round, la cible subit un nombre de points de dégâts égal au nombre de dés d’attaque sournoise du roublard (par exemple 4 points de <a class="pagelink" href="Pathfinder-RPG.saignement.ashx" title="Saignement">saignement</a> dans le cas d’une attaque sournoise à +4d6). Ces dégâts se produisent chaque round au début du tour de la cible. Le saignement peut être arrêté par un test de <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> (DD 15) ou par n’importe quel effet qui permet de récupérer des <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> perdus. Les dégâts de saignement infligés par ce talent ne sont pas cumulatifs. Ils ignorent toutes les <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réductions de dégâts</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUESOURNOISEPUISSANTE" href="#ATTAQUESOURNOISEPUISSANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Attaque sournoise puissante* (Ext)<a class="headeranchor" id="Attaque_sournoise_puissante_Ext_12" href="#Attaque_sournoise_puissante_Ext_12" title="Lien vers cette section">&#0182;</a></h3>Chaque fois qu’un roublard disposant de ce talent effectue une <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20outrance.ashx" title="attaque à outrance">attaque à outrance</a>, il peut choisir de subir une pénalité de –2 sur tous ses jets d’attaque jusqu’au début de son prochain tour. Dans ce cas, si une des attaques effectuées au cours de cette période est une <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a>, tous les 1 affichés par les dés de dégâts d’attaque sournoise sont considérés comme des 2.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUESURPRISE" href="#ATTAQUESURPRISE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque surprise (Ext)<a class="headeranchor" id="Attaque_surprise_Ext_13" href="#Attaque_surprise_Ext_13" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent peut toujours considérer ses ennemis comme <a class="pagelink" href="Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx" title="Pris au dépourvu">pris au dépourvu</a> au cours du round de surprise et ce même s’ils ont déjà agi.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AUDACE" href="#AUDACE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Audace (Ext)<a class="headeranchor" id="Audace_Ext_14" href="#Audace_Ext_14" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent gagne <a class="pagelink" href="Pathfinder-RPG.Pistolier%20amateur.ashx" title="Pistolier amateur">Pistolier amateur</a> ainsi qu’un <a class="pagelink" href="Pathfinder-RPG.dons.ashx#AUDACE" title="Les dons">don d’audace</a> de son choix comme dons supplémentaires. Il doit remplir les conditions requises du don d’audace. Le roublard doit connaître le talent <a class="pagelink" href="Pathfinder-RPG.entra%c3%aenement%20aux%20armes%20%c3%a0%20feu%20(talent).ashx" title="entraînement aux armes à feu">entraînement aux armes à feu</a> avant de prendre celui-ci.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BEAUPARLEUR" href="#BEAUPARLEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Beau parleur (Ext)<a class="headeranchor" id="Beau_parleur_Ext_15" href="#Beau_parleur_Ext_15" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, le roublard peut lancer deux dés au cours d’un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et choisir le meilleur résultat des deux. Il doit décider d’utiliser ce talent avant le test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> . Le roublard gagne une utilisation quotidienne supplémentaire de ce talent par tranche de 5 niveaux de roublard qu’il possède. <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BOTTESECRETE" href="#BOTTESECRETE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Botte secrète<a class="headeranchor" id="Botte_secrète_16" href="#Botte_secrète_16" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet au roublard de gagner un <a class="pagelink" href="Pathfinder-RPG.don%20de%20combat.ashx" title="don de combat">don de combat</a> supplémentaire.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BRASSEVIGOUREUSE" href="#BRASSEVIGOUREUSE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Brasse vigoureuse (Ext)<a class="headeranchor" id="Brasse_vigoureuse_Ext_17" href="#Brasse_vigoureuse_Ext_17" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent lance deux fois les dés quand il fait un test de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a> et conserve le meilleur résultat. S’il a déjà fait deux jets grâce à un autre pouvoir, il gagne un bonus d’intuition de +2.
+S’il est sous l’effet d’un sort ou d’un pouvoir qui l’oblige à lancer deux dés et à choisir le pire, il lance juste 1d20 lors de ses tests de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BROUILLERLESPISTES" href="#BROUILLERLESPISTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Brouiller les pistes (Ext)<a class="headeranchor" id="Brouiller_les_pistes_Ext_18" href="#Brouiller_les_pistes_Ext_18" title="Lien vers cette section">&#0182;</a></h3>Quand un individu raconte un évènement, le roublard fait un test opposé de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> pour habilement ponctuer le cours de l’histoire de commentaires ou d’affirmations, troublant ainsi la capacité du conteur à se rappeler des détails spécifiques ou exacts. Si le roublard réussit, la cible ne réalise pas que les interjections du roublard l’ont embrouillée. Néanmoins, si le roublard échoue, la cible a droit à un test de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> (DD égal au test de Diplomatie raté du roublard) pour s’apercevoir que celui-ci a délibérément tenté d’embrouiller son récit.<br/>
+<i>Tous les roublards qui répondent aux conditions requises indiquées peuvent prendre ce nouveau talent de roublard, mais ils sont plus courants chez les kitsune.</i><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CAMOUFLAGE" href="#CAMOUFLAGE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Camouflage (Ext)<a class="headeranchor" id="Camouflage_Ext_19" href="#Camouflage_Ext_19" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard possédant ce talent peut créer un <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a> simple mais efficace à partir de la végétation qui pousse sur place. Le roublard a besoin d’une minute pour préparer ce camouflage, mais une fois prêt, le camouflage peut être utilisé pendant tout le reste de la journée, à moins que le roublard ne rate un jet de sauvegarde contre un <a class="pagelink" href="Pathfinder-RPG.Zone%20deffet.ashx" title="zone deffet">effet de zone</a> infligeant des dégâts de feu, de froid ou d’acide, auquel cas son camouflage perd son efficacité. Le roublard gagne un bonus de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> au sein de l’environnement dans lequel il a prélevé la végétation. Cette capacité ne peut pas être utilisée dans les zones qui ne comportent pas de végétation naturelle.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHARMEUR" href="#CHARMEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Charmeur (Ext)<a class="headeranchor" id="Charmeur_Ext_20" href="#Charmeur_Ext_20" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, le roublard peut lancer deux fois le dé lors d’un test de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et choisir le résultat le plus avantageux. Il doit décider d’utiliser ce talent avant le test. Le roublard peut utiliser cette capacité une fois de plus par jour par tranche de 5 niveaux de roublard qu’il possède.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CONNAISSANCESESOTERIQUES" href="#CONNAISSANCESESOTERIQUES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Connaissances ésotériques (Ext)<a class="headeranchor" id="Connaissances_ésotériques_Ext_21" href="#Connaissances_ésotériques_Ext_21" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent peut faire un test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>, une fois par jour, même sans entraînement.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CONTACTSAUMARCHENOIR" href="#CONTACTSAUMARCHENOIR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Contacts au marché noir (Ext)<a class="headeranchor" id="Contacts_au_marché_noir_Ext_22" href="#Contacts_au_marché_noir_Ext_22" title="Lien vers cette section">&#0182;</a></h3><div style="float: right; margin-left: 10px; margin-right: -5px; max-width: 300px;" class="presentation recentre"><table class="tablo toutgauche autoalt" id="marcheNoirTableau" ><caption>Marché noir</caption><tr><td><b>Taille de la communauté</b></td><td><b>DD</b></td></tr><tr Class="premier"><td>Lieu-dit</td><td>10</td></tr><tr><td>Hameau</td><td>12</td></tr><tr><td>Village</td><td>15</td></tr><tr><td>Petite ville</td><td>18</td></tr><tr><td>Grande ville</td><td>20</td></tr><tr><td>Petite cité</td><td>25</td></tr><tr><td>Grande cité</td><td>30</td></tr><tr><td>Capitale</td><td>35</td></tr></table></div>Grâce à ce talent, le roublard peut obtenir de meilleurs objets magiques grâce à ses contacts au marché noir.
+Il considère toutes les villes comme d’une taille de plus qu’elles ne le sont réellement quand il s’agit de déterminer la valeur de base maximale (en pièces d’or) des objets à vendre, ainsi que le nombre d’objets magiques mineurs, moyens et majeurs à disposition. Si la ville est déjà une capitale, il a accès à tous les objets mineurs et moyens et à 3d8 objets majeurs.<br /><br />Un test de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> réussi lui permet de faire comme si la ville était de deux tailles de plus qu’elle ne l’est.
+Si la ville est déjà une capitale et que le roublard réussit son test, il a accès à la totalité des objets magiques.
+Si la ville est déjà une grande cité et qu’il réussit son test, il a accès à tous les objets mineurs et moyens et à 3d8 objets majeurs.<br /><br />Un test réussi lui permet aussi de vendre des objets volés sur le marché noir. S’il rate le test de 5 ou plus, il fait peur aux acteurs du marché et traite la ville normalement pendant 1 semaine. De plus, les chefs du marché noir risquent d’avertir les autorités de sa présence, en guise de représailles pour avoir perturbé le marché ou pour détourner l’attention de leurs activités illicites.<br /><br />Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du test dépend de la taille de l’agglomération et figure dans la table ci-contre.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COUPBOULEVERSANT" href="#COUPBOULEVERSANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Coup bouleversant* (Ext)<a class="headeranchor" id="Coup_bouleversant_Ext_23" href="#Coup_bouleversant_Ext_23" title="Lien vers cette section">&#0182;</a></h3>Lorsque le roublard inflige des dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> à un adversaire, celui-ci subit un malus de –2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre le roublard pendant 1d4 rounds.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CROCHETAGERAPIDE" href="#CROCHETAGERAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Crochetage rapide (Ext)<a class="headeranchor" id="Crochetage_rapide_Ext_24" href="#Crochetage_rapide_Ext_24" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut utiliser la compétence de <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> pour crocheter une serrure par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> au lieu d’une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DECLENCHEMENTEXTRAORDINAIRE" href="#DECLENCHEMENTEXTRAORDINAIRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Déclenchement extraordinaire (Ext)<a class="headeranchor" id="Déclenchement_extraordinaire_Ext_25" href="#Déclenchement_extraordinaire_Ext_25" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut utiliser une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a> pour déclencher n’importe quelle piège de sa fabrication situé dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>) autour de lui.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DEFENSEOFFENSIVE" href="#DEFENSEOFFENSIVE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Défense offensive* (Ext)<a class="headeranchor" id="Défense_offensive_Ext_26" href="#Défense_offensive_Ext_26" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent porte contre une créature une attaque de corps à corps qui inflige des dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a>, il gagne un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> pour chaque dé d’attaque sournoise utilisé contre cette créature pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DEBOUT" href="#DEBOUT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Debout (Ext)<a class="headeranchor" id="Debout_Ext_27" href="#Debout_Ext_27" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet à un roublard de se relever en une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a> lorsqu’il est à terre. Se relever continue à provoquer des <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a> si le roublard est dans un <a class="pagelink" href="Pathfinder-RPG.espace%20contr%c3%b4l%c3%a9.ashx" title="espace contrôlé">espace contrôlé</a> par un ennemi.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DEGUISEMENTRAPIDE" href="#DEGUISEMENTRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Déguisement rapide (Ext)<a class="headeranchor" id="Déguisement_rapide_Ext_28" href="#Déguisement_rapide_Ext_28" title="Lien vers cette section">&#0182;</a></h3><div style="float: right; margin-left: 10px; margin-right: -5px; max-width: 300px;" class="presentation recentre"><table class="tablo toutgauche autoalt" id="déguisementrapideTableau" ><caption>déguisement</caption><tr><td><b>Déguisement</b></td><td><b>temps</b></td></tr><tr Class="premier"><td>Catégorie d’âge différente</td><td>1 minute</td></tr><tr><td>Catégorie de taille différente<br /></td><td>1 minute</td></tr><tr><td>Petits détails seulement</td><td>1 action complexe</td></tr><tr><td>Race différente<br /></td><td>1 minute</td></tr><tr><td>Sexe différent</td><td>1 minute</td></tr></table></div>Un roublard disposant de ce talent peut utiliser les objets qu’il a à portée de main et quelques objets apparemment banals qu’il cache sur lui pour créer des déguisements étonnamment efficaces tout en réduisant le temps nécessaire à leur fabrication. Le temps nécessaire au roublard pour modifier son apparence de cette manière dépend de la complexité du déguisement, comme indiqué sur la table ci-contre. Les temps sont cumulatifs, de sorte que si une roublarde veut se déguiser en un homme d’une race différente, cela lui demande 2 minutes.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DENICHEURDEPIEGES" href="#DENICHEURDEPIEGES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Dénicheur de pièges (Ext)<a class="headeranchor" id="Dénicheur_de_pièges_Ext_29" href="#Dénicheur_de_pièges_Ext_29" title="Lien vers cette section">&#0182;</a></h3>Chaque fois qu’un roublard possédant ce talent passe à 3 mètres (2 cases) ou moins d’un piège, il bénéficie d’un test de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> automatique pour le repérer. Ce test devrait être réalisé en secret par le <a class="pagelink" href="Pathfinder-RPG.MJ.ashx" title="MJ">MJ</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DESAMORCAGERAPIDE" href="#DESAMORCAGERAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Désamorçage rapide (Ext)<a class="headeranchor" id="Désamorçage_rapide_Ext_30" href="#Désamorçage_rapide_Ext_30" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent n’a besoin que de la moitié du temps normal (mais au minimum 1 round) pour désamorcer un piège grâce à la compétence <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DIFFICILEABERNER" href="#DIFFICILEABERNER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Difficile à berner (Ext)<a class="headeranchor" id="Difficile_à_berner_Ext_31" href="#Difficile_à_berner_Ext_31" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut lancer deux dés lors d’un test de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> et choisir le résultat le plus avantageux. Il doit décider d’utiliser cette capacité avant le test. Il peut utiliser cette capacité une fois de plus par jour par tranche de 5 niveaux de roublard qu’il possède.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DISCRETETRAPIDE" href="#DISCRETETRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Discret et rapide (Ext)<a class="headeranchor" id="Discret_et_rapide_Ext_32" href="#Discret_et_rapide_Ext_32" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet au roublard d’utiliser la compétence de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> en se déplaçant à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse normale</a> (non réduite) sans pénalité.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DOIGTSRAPIDES" href="#DOIGTSRAPIDES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Doigts rapides (Ext)<a class="headeranchor" id="Doigts_rapides_Ext_33" href="#Doigts_rapides_Ext_33" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut lancer deux dés lors d’un test d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> et choisir le résultat le plus avantageux. Il doit décider d’utiliser ce talent avant le test. Il peut utiliser cette capacité une fois de plus par jour par tranche de 5 niveaux de roublard qu’il possède.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EMPOISONNEMENTRAPIDE" href="#EMPOISONNEMENTRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Empoisonnement rapide (Ext)<a class="headeranchor" id="Empoisonnement_rapide_Ext_34" href="#Empoisonnement_rapide_Ext_34" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut appliquer du poison sur une arme par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> au lieu d’une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ENTRAINEMENTAUXARMESAFEU" href="#ENTRAINEMENTAUXARMESAFEU"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Entraînement aux armes à feu (Ext)<a class="headeranchor" id="Entraînement_aux_armes_à_feu_Ext_35" href="#Entraînement_aux_armes_à_feu_Ext_35" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent obtient <a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20exotique.ashx" title="Maniement d&#39;une arme exotique">Maniement des armes exotiques</a> (armes à feu).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EQUILIBRISTE" href="#EQUILIBRISTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Équilibriste (Ext)<a class="headeranchor" id="Équilibriste_Ext_36" href="#Équilibriste_Ext_36" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet au roublard d’utiliser la compétence d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> pour se mouvoir sur des surfaces étroites à sa vitesse normale (non réduite) sans pénalité. De plus, le roublard n’est pas <a class="pagelink" href="Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx" title="Pris au dépourvu">pris au dépourvu</a> s’il est attaqué alors qu’il se déplace sur une surface étroite.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EXPERTENSURVIE" href="#EXPERTENSURVIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Expert en survie (Ext)<a class="headeranchor" id="Expert_en_survie_Ext_37" href="#Expert_en_survie_Ext_37" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent ajoute <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> et <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> à la liste de ses compétences de classe.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="EXTRAIREDESINFORMATIONS" href="#EXTRAIREDESINFORMATIONS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Extraire des informations (Ext)<a class="headeranchor" id="Extraire_des_informations_Ext_38" href="#Extraire_des_informations_Ext_38" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut utiliser <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> ou <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> au lieu d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> pour forcer un adversaire à agir de manière amicale envers lui.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FAIRELEMUR" href="#FAIRELEMUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Faire le mur (Ext)<a class="headeranchor" id="Faire_le_mur_Ext_39" href="#Faire_le_mur_Ext_39" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent lance deux fois les dés quand il fait un test d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> et conserve le meilleur résultat. S’il a déjà fait deux jets grâce à un autre pouvoir, il gagne un bonus d’intuition de +2.
+S’il est sous l’effet d’un sort ou d’un pouvoir qui l’oblige à lancer deux dés et à choisir le pire, il lance juste 1d20 lors de ses tests d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FAUXAMI" href="#FAUXAMI"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Faux ami (Ext)<a class="headeranchor" id="Faux_ami_Ext_40" href="#Faux_ami_Ext_40" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent reçoit un <a class="pagelink" href="Pathfinder-RPG.bonus.ashx" title="bonus">bonus</a> de +4 à ses tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour convaincre quelqu’un qu’il n’a jamais rencontré ou connaît mal qu’ils se sont déjà rencontrés ou se connaissent bien.<br/>
+<i>Tous les roublards qui répondent aux conditions requises indiquées peuvent prendre ce nouveau talent de roublard, mais ils sont plus courants chez les kitsune.</i><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FINOBSERVATEUR" href="#FINOBSERVATEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fin observateur (Ext)<a class="headeranchor" id="Fin_observateur_Ext_41" href="#Fin_observateur_Ext_41" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent réalise un test de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> pour percevoir les détails d’une conversation ou pour trouver un objet caché ou secret (il peut s’agir d’une porte ou d’un piège par exemple), il gagne un bonus de +4. <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FORMATIONMARTIALE" href="#FORMATIONMARTIALE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Formation martiale<a class="headeranchor" id="Formation_martiale_42" href="#Formation_martiale_42" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent gagne le don <a class="pagelink" href="Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx" title="Arme de prédilection">Arme de prédilection</a> comme don supplémentaire.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FORTEIMPRESSION" href="#FORTEIMPRESSION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Forte impression (Ext)<a class="headeranchor" id="Forte_impression_Ext_43" href="#Forte_impression_Ext_43" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent gagne le don <a class="pagelink" href="Pathfinder-RPG.Force%20intimidante.ashx" title="Force intimidante">Force intimidante</a> comme don supplémentaire.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FUITERAPIDE" href="#FUITERAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fuite rapide (Ext)<a class="headeranchor" id="Fuite_rapide_Ext_44" href="#Fuite_rapide_Ext_44" title="Lien vers cette section">&#0182;</a></h3>Après une attaque sournoise réussie ou un test d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> réussi, un roublard disposant de ce talent peut effectuer une action de <a class="pagelink" href="Pathfinder-RPG.retraite.ashx" title="retraite">retraite</a> par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a>. Il ne peut pas se déplacer de plus de sa vitesse de déplacement de base au cours de cette <a class="pagelink" href="Pathfinder-RPG.retraite.ashx" title="retraite">retraite</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRIMPEURAGILE" href="#GRIMPEURAGILE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Grimpeur agile (Ext)<a class="headeranchor" id="Grimpeur_agile_Ext_45" href="#Grimpeur_agile_Ext_45" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent rate un test d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> de 5 points ou plus, il peut immédiatement effectuer un nouveau test d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a> contre le DD de base de la surface escaladée + 10. En cas de réussite, il parvient à arrêter sa chute en s’agrippant à la surface et ne subit aucun dégât de chute.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="INSTALLATIONDEPIEGESRAPIDE" href="#INSTALLATIONDEPIEGESRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Installation de pièges rapide (Ext)<a class="headeranchor" id="Installation_de_pièges_rapide_Ext_46" href="#Installation_de_pièges_rapide_Ext_46" title="Lien vers cette section">&#0182;</a></h3>Par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, un roublard disposant de ce talent peut installer un piège simple avec un FP ne dépassant pas la moitié de son niveau de roublard. Pour ce faire, il doit avoir acheté les composantes, avoir consacré le temps nécessaire à la construction du piège et avoir les composantes nécessaires sous la main. C’est au MD qu’il revient de décider quels types de pièges peuvent être construits de la sorte.<br /><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAGIEMAJEURE" href="#MAGIEMAJEURE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Magie majeure (Mag)<a class="headeranchor" id="Magie_majeure_Mag_47" href="#Magie_majeure_Mag_47" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent gagne la capacité de lancer deux fois par jour un sort de 1<sup>er</sup> niveau de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcanistes/ensorceleurs/magiciens">liste des sorts de magicien</a>. Il s’agit d’un pouvoir magique dont le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> est égal au niveau du roublard. Le DD du <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre ce sort est égal à 11 + le modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> du roublard. Le roublard doit posséder une valeur d’Intelligence égale ou supérieure à 11 pour pouvoir choisir ce talent et il doit également posséder le talent de magie mineure.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAGIEMINEURE" href="#MAGIEMINEURE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Magie mineure (Mag)<a class="headeranchor" id="Magie_mineure_Mag_48" href="#Magie_mineure_Mag_48" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent gagne la capacité de lancer trois fois par jour un sort de niveau 0 de la <a class="pagelink" href="Pathfinder-RPG.liste%20des%20sorts%20densorceleursmagiciens.ashx" title="Liste des sorts d&#39;arcanistes/ensorceleurs/magiciens">liste des sorts de magicien</a>. Il s’agit d’un pouvoir magique dont le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> est égal au niveau du roublard. Le DD du <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre ce sort est égal à 10 + le modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> du roublard. Le roublard doit posséder une valeur d’Intelligence égale ou supérieure à 10 pour pouvoir choisir ce talent.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAINAGILE" href="#MAINAGILE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Main agile (Ext)<a class="headeranchor" id="Main_agile_Ext_49" href="#Main_agile_Ext_49" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent peut faire un test d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> pour cacher une arme alors qu’il la tient à la vue de tous, même si quelqu’un l’observe.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITREDESCORDES" href="#MAITREDESCORDES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maître des cordes (Ext)<a class="headeranchor" id="Maître_des_cordes_Ext_50" href="#Maître_des_cordes_Ext_50" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce pouvoir peut se déplacer à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> quand il utilise une corde pour faire un test d’<a class="pagelink" href="Pathfinder-RPG.Escalade.ashx" title="Escalade">Escalade</a>. Il peut aussi <a class="pagelink" href="Pathfinder-RPG.faire%2010.ashx" title="faire 10">faire 10</a> quand il utilise <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> pour se déplacer sur une surface étroite, même s’il est distrait ou en danger et gagne un bonus de +4 pour déterminer le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> à battre quand une créature veut s’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">échapper</a> alors qu’il l’a attachée.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITRISEDUTERRAIN" href="#MAITRISEDUTERRAIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maîtrise du terrain (Ext)<a class="headeranchor" id="Maîtrise_du_terrain_Ext_51" href="#Maîtrise_du_terrain_Ext_51" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent gagne un <a class="pagelink" href="Pathfinder-RPG.environnement%20de%20pr%c3%a9dilection.ashx" title="environnement de prédilection">environnement de prédilection</a>, comme le pouvoir de <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeur</a>, mais il ne s’améliore pas au fil des niveaux. Le roublard peut choisir ce pouvoir à plusieurs reprises. Il s’applique alors chaque fois à un nouvel environnement et augmente le bonus de ceux précédemment choisis de +2.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MENSONGECONVAINCANT" href="#MENSONGECONVAINCANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Mensonge convaincant (Ext)<a class="headeranchor" id="Mensonge_convaincant_Ext_52" href="#Mensonge_convaincant_Ext_52" title="Lien vers cette section">&#0182;</a></h3>Quand un roublard qui possède ce pouvoir ment, il invente quelque chose de tellement crédible que les autres pensent qu’il dit la vérité. Quand il utilise avec succès le <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour convaincre quelqu’un que ce qu’il dit est vrai et que, plus tard, quelqu’un demande à cette personne ce qu’il a dit, la personne interrogée utilise le modificateur de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> du roublard (et non le sien) pour convaincre celui qui l’interroge. Si elle possède un modificateur de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> supérieur à celui du roublard, elle utilise le sien et lui ajoute un bonus de +2. L’effet dure un nombre de jours égal à 1/2 niveau du roublard + modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> du roublard.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MOUVEMENTAQUATREPATTES" href="#MOUVEMENTAQUATREPATTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Mouvement à quatre pattes (Ext)<a class="headeranchor" id="Mouvement_à_quatre_pattes_Ext_53" href="#Mouvement_à_quatre_pattes_Ext_53" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet à un roublard de se déplacer à la moitié de sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> lorsqu’il est par terre. Ce mouvement provoque des <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a> comme un mouvement normal. De plus, un roublard possédant ce talent peut réaliser un <a class="pagelink" href="Pathfinder-RPG.pas%20de%20placement.ashx" title="Pas de placement">pas de placement</a> lorsqu’il est à terre.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="OEILDELARCHER" href="#OEILDELARCHER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Oeil de l’archer (Ext)<a class="headeranchor" id="Oeil_de_l’archer_Ext_54" href="#Oeil_de_l’archer_Ext_54" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut appliquer ses dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> aux <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADISTANCE" title="Caractéristiques des armes">attaques à distance</a> visant des cibles situées dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>) et bénéficiant d’un <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a> simple. Les cibles qui bénéficient d’un <a class="pagelink" href="Pathfinder-RPG.camouflage%20total.ashx" title="camouflage total">camouflage total</a> restent immunisées aux attaques sournoises.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ORGANISERLATTAQUE" href="#ORGANISERLATTAQUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Organiser l’attaque (Ext)<a class="headeranchor" id="Organiser_l’attaque_Ext_55" href="#Organiser_l’attaque_Ext_55" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, après une attaque ratée contre un adversaire <a class="pagelink" href="Pathfinder-RPG.pris%20en%20tenaille.ashx" title="Pris en tenaille">pris en tenaille</a>, le roublard peut désigner un allié qui prend également en tenaille la cible de l’attaque qui a échoué. Par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, cet allié peut porter une unique attaque de corps à corps contre cette cible.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="POISONPERSISTANT" href="#POISONPERSISTANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Poison persistant (Ext)<a class="headeranchor" id="Poison_persistant_Ext_56" href="#Poison_persistant_Ext_56" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut appliquer du <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a> sur une arme de telle sorte que celui-ci reste efficace pour deux attaques réussies au lieu d’une seule. L’effet du poison est réduit, cependant, et les <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> pour y résister reçoivent un bonus de circonstances de +2. Il faut une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a> pour appliquer le poison de cette manière, ou une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a> si le roublard possède le talent <a class="pagelink" href="Pathfinder-RPG.empoisonnement%20rapide%20(talent).ashx" title="Empoisonnement rapide (talent)">empoisonnement rapide</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="POLYGLOTTEDOUE" href="#POLYGLOTTEDOUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Polyglotte doué (Ext)<a class="headeranchor" id="Polyglotte_doué_Ext_57" href="#Polyglotte_doué_Ext_57" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent et possédant au moins un rang en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> gagne quatre langues supplémentaires. Un roublard disposant de ce talent mais ne possédant aucun rang en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> gagne deux langues supplémentaires. S’il gagne des rangs en <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> par la suite, il acquiert alors deux langues supplémentaires (pour un total de quatre langues supplémentaires) en plus de celles octroyées par la compétence de <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> elle-même.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="REACTIONSLENTES" href="#REACTIONSLENTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Réactions lentes* (Ext)<a class="headeranchor" id="Réactions_lentes_Ext_58" href="#Réactions_lentes_Ext_58" title="Lien vers cette section">&#0182;</a></h3>Les adversaires blessés par l’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> du roublard ne peuvent pas porter d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a> pendant 1 round.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RESERVEDEKI" href="#RESERVEDEKI"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Réserve de ki (Ext)<a class="headeranchor" id="Réserve_de_ki_Ext_59" href="#Réserve_de_ki_Ext_59" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent obtient une petite réserve de ki. Elle ressemble à celle du <a class="pagelink" href="Pathfinder-RPG.ninja.ashx" title="Ninja">ninja</a> mais ne donne pas d’attaque supplémentaire. Elle contient un nombre de points de ki égal au modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> du roublard (1 au minimum). Cette réserve se remplit chaque matin. Si le roublard possède déjà une réserve de ki ou qu’il en obtient une plus tard, il rajoute un montant de points de ki supplémentaires égal à 1/2 bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (1 au minimum). Il peut dépenser 1 point de sa réserve de ki pour gagner un bonus de déplacement de +3 mètres (2 <abbr title="cases">c</abbr>) jusqu’à la fin de son tour.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RESILIENCE" href="#RESILIENCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Résilience (Ext)<a class="headeranchor" id="Résilience_Ext_60" href="#Résilience_Ext_60" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard possédant ce talent peut gagner un nombre de <a class="pagelink" href="Pathfinder-RPG.points%20de%20vie.ashx" title="points de vie">points de vie</a> temporaires égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de roublard. Cette capacité s’active par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a> qui ne peut se produire que lorsque le roublard est amené sous 0 point de vie. Ces points de vie temporaires, qui peuvent empêcher le roublard de mourir, persistent pendant une minute. Si les points de vie du roublard passent sous 0 lorsque ces points de vie temporaires disparaissent, celui-ci tombe <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> et devient <a class="pagelink" href="Pathfinder-RPG.mourant.ashx" title="Mourant">mourant</a> (conformément à la règle normale).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RETENIRSONSOUFFLE" href="#RETENIRSONSOUFFLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Retenir son souffle (Ext)<a class="headeranchor" id="Retenir_son_souffle_Ext_61" href="#Retenir_son_souffle_Ext_61" title="Lien vers cette section">&#0182;</a></h3>Le roublard qui dispose de ce talent peut retenir son souffle 2 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> de plus. Il peut choisir ce talent à plusieurs reprises.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ROUBLARDENFINESSE" href="#ROUBLARDENFINESSE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Roublard en finesse<a class="headeranchor" id="Roublard_en_finesse_62" href="#Roublard_en_finesse_62" title="Lien vers cette section">&#0182;</a></h3>Ce talent permet au roublard de gagner le don <a class="pagelink" href="Pathfinder-RPG.Attaque%20en%20finesse.ashx" title="Attaque en finesse">Attaque en finesse</a> en tant que don supplémentaire.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SAUTDELEXPERT" href="#SAUTDELEXPERT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Saut de l’expert (Ext)<a class="headeranchor" id="Saut_de_l’expert_Ext_63" href="#Saut_de_l’expert_Ext_63" title="Lien vers cette section">&#0182;</a></h3>Lorsque le roublard effectue un test de <a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">saut</a>, on considère toujours qu’il a pris de l’élan (même si ce n’est pas le cas). De plus, en cas de chute délibérée, un test d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 15 permet au roublard d’ignorer les 6 premiers mètres de la chute (au lieu des 3 premiers mètres).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SOURNOIS" href="#SOURNOIS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sournois* (Ext)<a class="headeranchor" id="Sournois_Ext_64" href="#Sournois_Ext_64" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent gagne un bonus de circonstances de +4 aux tests d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> quand il essaie de dissimuler une arme. De plus, s’il fait une <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> pendant le round de surprise à l’aide d’une arme cachée dont son adversaire ignore l’existence, il n’a pas besoin de lancer les dés de dégâts supplémentaires : l’attaque sournoise inflige automatiquement le maximum. Chaque jour, il peut utiliser ce talent un nombre de fois égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> (0 au minimum). <br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SPECIALISTEDELAFUITE" href="#SPECIALISTEDELAFUITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Spécialiste de la fuite (Ext)<a class="headeranchor" id="Spécialiste_de_la_fuite_Ext_65" href="#Spécialiste_de_la_fuite_Ext_65" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent ajoute <a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a> et <a class="pagelink" href="Pathfinder-RPG.Vol.ashx" title="Vol">Vol</a> à ses compétences de classe et gagne un bonus de +2 aux tests pour conduire un <a class="pagelink" href="Pathfinder-RPG.v%c3%a9hicules.ashx" title="Véhicules">véhicule</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SUBTILISATIONAUCOMBAT" href="#SUBTILISATIONAUCOMBAT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Subtilisation au combat<a class="headeranchor" id="Subtilisation_au_combat_66" href="#Subtilisation_au_combat_66" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent gagne <a class="pagelink" href="Pathfinder-RPG.Science%20de%20la%20subtilisation.ashx" title="Science de la subtilisation">Science de la subtilisation</a> comme don supplémentaire. <br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SUIVRELESINDICES" href="#SUIVRELESINDICES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Suivre les indices (Ext)<a class="headeranchor" id="Suivre_les_indices_Ext_67" href="#Suivre_les_indices_Ext_67" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut utiliser la compétence de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> au lieu de celle de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> pour suivre une piste.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TIRSOUDAIN" href="#TIRSOUDAIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tir soudain (Ext)<a class="headeranchor" id="Tir_soudain_Ext_68" href="#Tir_soudain_Ext_68" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut agir comme s’il avait obtenu 20 sur son dé d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a> pendant le <a class="pagelink" href="Pathfinder-RPG.round%20de%20surprise.ashx" title="round de surprise">round de surprise</a> et ce, quelle que soit sa valeur d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a> réelle, mais il est contraint d’effectuer une action d’attaque avec une <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADISTANCE" title="Caractéristiques des armes">arme à distance</a>. La valeur réelle du jet d’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a> est utilisée pour tous les rounds qui suivent. Si plusieurs roublards possédant ce talent participent au même combat, leurs initiatives réelles déterminent l’ordre dans lequel ils agissent mais leurs tours viennent en début de round, avant toutes les autres créatures. Si le roublard ne peut pas agir au cours du <a class="pagelink" href="Pathfinder-RPG.round%20de%20surprise.ashx" title="round de surprise">round de surprise</a>, ce talent n’a aucun effet.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TRIPESDACIER" href="#TRIPESDACIER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tripes d’acier (Ext)<a class="headeranchor" id="Tripes_d’acier_Ext_69" href="#Tripes_d’acier_Ext_69" title="Lien vers cette section">&#0182;</a></h3>Le roublard qui dispose de ce talent a un estomac en acier ou s’est entraîné à supporter les <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poisons</a>, surtout ceux qui s’ingèrent. Il gagne un bonus de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les poisons ingérés et un bonus de +4 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les sorts et effets qui rendent <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a>  ou <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreux</a>.
+</div><br /><h2 class="separator"> Description des talents de maîtres roublards <a class="headeranchor" id="Description_des_talents_de_maîtres_roublards_99" href="#Description_des_talents_de_maîtres_roublards_99" title="Lien vers cette section">&#0182;</a></h2>Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un des talents de maître roublard suivants au lieu d’un talent de roublard.<br /><br /><div class="article_2col"><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ACROBATIESRAPIDES" href="#ACROBATIESRAPIDES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Acrobaties rapides (Ext)<a class="headeranchor" id="Acrobaties_rapides_Ext_70" href="#Acrobaties_rapides_Ext_70" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent utilise la compétence d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> pour se déplacer à sa pleine vitesse à travers l’<a class="pagelink" href="Pathfinder-RPG.espace%20contr%c3%b4l%c3%a9.ashx" title="espace contrôlé">espace contrôlé</a> par un ennemi sans provoquer d'<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a>, le DD du test d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> n’augmente pas de 10.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ALLIEINVOLONTAIRE" href="#ALLIEINVOLONTAIRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Allié involontaire (Ext)<a class="headeranchor" id="Allié_involontaire_Ext_71" href="#Allié_involontaire_Ext_71" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent utilise une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a> pour pousser un adversaire à agir comme un allié en ce qui concerne la <a class="pagelink" href="Pathfinder-RPG.pris%20en%20tenaille.ashx" title="Pris en tenaille">prise en tenaille</a>, et ce jusqu’au début du prochain tour du roublard.
+L’adversaire doit entendre et voir le roublard qui doit réussir un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> opposé au test de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> de sa victime. Si le roublard réussit, son adversaire est considéré comme un allié en ce qui concerne la prise en tenaille. Qu’il réussisse ou non, il ne peut plus utiliser ce tour contre le même adversaire pendant 24 heures.
+Si le roublard rate son test de 5 ou plus, il ne peut plus utiliser ce pouvoir contre tous les adversaires qui le voient lors de son échec pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEHANDICAPANTE" href="#ATTAQUEHANDICAPANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque handicapante* (Ext)<a class="headeranchor" id="Attaque_handicapante_Ext_72" href="#Attaque_handicapante_Ext_72" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent peut porter des <a class="pagelink" href="Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE" title="Le roublard">attaques sournoises</a> tellement précises que ses coups handicapent ses adversaires. Un adversaire blessé par une attaque sournoise portée par le roublard subit un affaiblissement temporaire de 2 points de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEDISSIPANTE" href="#ATTAQUEDISSIPANTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque dissipante* (Sur)<a class="headeranchor" id="Attaque_dissipante_Sur_73" href="#Attaque_dissipante_Sur_73" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard possédant ce talent inflige des dégâts d’<a class="pagelink" href="Pathfinder-RPG.Roublard.ashx#ATTAQUESOURNOISE" title="Le roublard">attaque sournoise</a> à un ennemi, celui-ci est affecté par une <i><a class="pagelink" href="Pathfinder-RPG.dissipation%20de%20la%20magie.ashx" title="Dissipation de la magie">dissipation de la magie</a></i> ciblée qui vise l’effet magique de plus bas niveau dont il bénéficie pour l’instant. Le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> de cette capacité est égal au niveau du roublard. Le roublard doit posséder le talent de magie majeure pour pouvoir choisir ce talent.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEREDIRIGÉE" href="#ATTAQUEREDIRIGÉE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque redirigée (Ext)<a class="headeranchor" id="Attaque_redirigée_Ext_74" href="#Attaque_redirigée_Ext_74" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, lorsque le roublard disposant de ce talent est touché par une <a class="pagelink" href="Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx" title="attaque au corps à corps">attaque au corps à corps</a>, il peut la rediriger vers une créature adjacente par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. La créature choisie doit pouvoir être atteinte par l’attaque qui était initialement dirigée vers le roublard et l’attaquant qui a porté cette attaque doit effectuer un nouveau <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> contre la cible désignée par le roublard.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUESOURNOISEMORTELLE" href="#ATTAQUESOURNOISEMORTELLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attaque sournoise mortelle* (Ext)<a class="headeranchor" id="Attaque_sournoise_mortelle_Ext_75" href="#Attaque_sournoise_mortelle_Ext_75" title="Lien vers cette section">&#0182;</a></h3>Chaque fois que le roublard disposant de ce talent utilise le talent <a class="pagelink" href="Pathfinder-RPG.Attaque%20sournoise%20puissante%20(talent).ashx" title="Attaque sournoise puissante (talent)">Attaque sournoise puissante</a>, tous les 1 et les 2 qui apparaissent sur les dés de dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoises</a> sont considérés comme des 3. Le roublard doit posséder le talent <a class="pagelink" href="Pathfinder-RPG.Attaque%20sournoise%20puissante%20(talent).ashx" title="Attaque sournoise puissante (talent)">Attaque sournoise puissante</a> avant de pouvoir gagner ce pouvoir.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CACHEENPLEINELUMIERE" href="#CACHEENPLEINELUMIERE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Caché en pleine lumière (Ext)<a class="headeranchor" id="Caché_en_pleine_lumière_Ext_76" href="#Caché_en_pleine_lumière_Ext_76" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent peut choisir un environnement dans la liste des <a class="pagelink" href="Pathfinder-RPG.environnement%20de%20pr%c3%a9dilection.ashx" title="environnement de prédilection">environnements de prédilection</a> du <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeur</a>. Il passe maître dans l’art de se dissimuler dans cet environnement et peut utiliser <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> pour se cacher, même si quelqu’un l’observe. Un roublard peut choisir ce talent de maître à plusieurs reprises mais il s’applique à chaque fois à un nouvel environnement.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COCKTAILMORTEL" href="#COCKTAILMORTEL"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cocktail mortel (Ext)<a class="headeranchor" id="Cocktail_mortel_Ext_77" href="#Cocktail_mortel_Ext_77" title="Lien vers cette section">&#0182;</a></h3>Un roublard disposant de ce talent peut appliquer deux doses de <a class="pagelink" href="Pathfinder-RPG.poison.ashx" title="poison">poison</a> en même temps sur une arme. Il peut s’agir de poisons différents, auquel cas ils affectent tous les deux (et individuellement) la cible, ou de deux doses d’un même poison, auquel cas la fréquence du poison est augmentée de 50% et le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>, de +2. Ce talent est une exception à la règle indiquant que plusieurs poisons par blessure ne peuvent pas être administrés en même temps.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COLPORTEURDERUMEURS" href="#COLPORTEURDERUMEURS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Colporteur de rumeurs (Ext)<a class="headeranchor" id="Colporteur_de_rumeurs_Ext_78" href="#Colporteur_de_rumeurs_Ext_78" title="Lien vers cette section">&#0182;</a></h3><div style="float: right; margin-left: 10px; margin-right: -5px; max-width: 300px;" class="presentation recentre"><table class="tablo toutgauche autoalt" id="CacheLumièreTableau" ><caption>Colporteur de rumeurs</caption><tr><td><b>Taille de la communauté</b></td><td><b>DD</b></td></tr><tr class="premier"><td>Petite ville</td><td>18</td></tr><tr><td>Grande ville</td><td>20</td></tr><tr><td>Petite cité</td><td>25</td></tr><tr><td>Grande cité</td><td>30</td></tr><tr><td>Capitale</td><td>35</td></tr></table></div> Un roublard doté de ce talent peut tenter de répandre une rumeur dans une petite ville ou dans une agglomération plus importante grâce à un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>. Chaque semaine, il peut faire cela un nombre de fois égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> (0 au minimum).<br/>
+Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> est basé sur la taille de la ville et il faut une semaine pour que la rumeur se propage. En cas de réussite, la communauté accepte la rumeur comme un fait avéré. Si le roublard bat le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 5 ou plus, il réduit le temps que la nouvelle met pour se répandre de 1d4 jours. En cas d’échec, la rumeur n’a aucun poids mais si le roublard rate son test de 5 ou plus, c’est la rumeur inverse ou une théorie opposée qui se répand sur le sujet.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COUPASSOMMANT" href="#COUPASSOMMANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Coup assommant (Ext)<a class="headeranchor" id="Coup_assommant_Ext_79" href="#Coup_assommant_Ext_79" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, le roublard peut choisir de ne pas compter ses dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoise</a> pour tenter d’assommer un adversaire. Il doit décider d’utiliser ce talent avant le <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a>. Si l’attaque touche, elle inflige des dégâts normaux, mais au lieu des dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoise</a> (ou des autres effets déclenchés par les attaques sournoises) qui y seraient normalement ajoutés, la cible tombe <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconsciente</a> pendant 1d4 rounds. Si la cible réussit un jet de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a>, elle n’est pas <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconsciente</a> mais seulement <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a> pendant 1 round. Le DD de ce <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> vaut 10 + la moitié du niveau du roublard + le modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> du roublard.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DIFFICILEAENVOUTER" href="#DIFFICILEAENVOUTER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Difficile à envoûter (Ext)<a class="headeranchor" id="Difficile_à_envoûter_Ext_80" href="#Difficile_à_envoûter_Ext_80" title="Lien vers cette section">&#0182;</a></h3>Un roublard doté de ce talent se laisse difficilement tromper par les illusions. Au début de son tour il peut faire un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour révéler tout illusion qu'il peut voir, même s'il n'interagit pas avec. S'il échoue, il peut refaire le <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> au tour suivant contre le même <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a>. S'il échoue de nouveau, il ne dispose pas de nouvelle chance.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DONROUBLARD" href="#DONROUBLARD"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Don<a class="headeranchor" id="Don_81" href="#Don_81" title="Lien vers cette section">&#0182;</a></h3>Un roublard peut choisir un <a class="pagelink" href="Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx" title="Tableau récapitulatif des dons">don</a> supplémentaire plutôt qu’un talent.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ESPRITFUYANT" href="#ESPRITFUYANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Esprit fuyant (Ext)<a class="headeranchor" id="Esprit_fuyant_Ext_82" href="#Esprit_fuyant_Ext_82" title="Lien vers cette section">&#0182;</a></h3>Ce talent représente l’aisance avec laquelle de nombreux roublards parviennent à échapper aux effets magiques visant à les contrôler. Chaque fois que le personnage est pris pour cible par un sort ou effet de type <a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantement</a> et qu’il rate son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>, il peut tenter un second jet de sauvegarde un round plus tard (avec le même <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a>). Il n’a droit qu’à une seule seconde chance par attaque.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ESQUIVEEXTRAORDINAIRE" href="#ESQUIVEEXTRAORDINAIRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Esquive extraordinaire (Ext)<a class="headeranchor" id="Esquive_extraordinaire_Ext_83" href="#Esquive_extraordinaire_Ext_83" title="Lien vers cette section">&#0182;</a></h3>Ce talent a un effet similaire à la capacité d’<a class="pagelink" href="Pathfinder-RPG.esquive%20totale.ashx" title="esquive totale">esquive totale</a> mais lorsque le roublard qui le possède est soumis à une attaque qui autorise un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> pour réduire les dégâts de moitié, il ne subit aucun dégât s’il réussit son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> et seulement la moitié des dégâts dans le cas contraire. Le roublard perd les avantages de ce talent s’il est sans défense.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FABRICANTDEPIEGESECONOME" href="#FABRICANTDEPIEGESECONOME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fabricant de pièges économe (Ext)<a class="headeranchor" id="Fabricant_de_pièges_économe_Ext_84" href="#Fabricant_de_pièges_économe_Ext_84" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent construit un piège mécanique, il ne paie que 75% du coût normal.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FAMILIER" href="#FAMILIER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Familier (Ext)<a class="headeranchor" id="Familier_Ext_85" href="#Familier_Ext_85" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui dispose de ce talent gagne un <a class="pagelink" href="Pathfinder-RPG.familier.ashx" title="familier">familier</a>, comme le permet le <a class="pagelink" href="Pathfinder-RPG.pacte%20magique.ashx" title="pacte magique">pacte magique</a> du magicien. Ce pouvoir fonctionne de la même manière mais le niveau de magicien effectif du roublard est égal à son niveau de classe -4. Le roublard doit avoir les talents <a class="pagelink" href="Pathfinder-RPG.magie%20mineure%20(talent).ashx" title="Magie mineure (talent)">magie mineure</a> et <a class="pagelink" href="Pathfinder-RPG.magie%20majeure%20(talent).ashx" title="Magie majeure (talent)">magie majeure</a> avant de choisir celui-ci.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="LAMESDECONFUSION" href="#LAMESDECONFUSION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Lames de confusion* (Ext)<a class="headeranchor" id="Lames_de_confusion_Ext_86" href="#Lames_de_confusion_Ext_86" title="Lien vers cette section">&#0182;</a></h3>Quand un roublard qui dispose de ce talent réussit une attaque avec une arme de corps à corps, sa cible ne peut plus faire d’attaques d’opportunité avant le début du prochain tour du roublard. Le roublard doit connaître <a class="pagelink" href="Pathfinder-RPG.r%c3%a9actions%20lentes%20(talent).ashx" title="Réactions lentes (talent)">réactions lentes</a> avant de choisir ce pouvoir.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="LAMESENTREMELEES" href="#LAMESENTREMELEES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Lames entremêlées* (Ext)<a class="headeranchor" id="Lames_entremêlées_Ext_87" href="#Lames_entremêlées_Ext_87" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent touche une créature avec une <a class="pagelink" href="Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx" title="attaque au corps à corps">attaque de corps à corps</a> qui inflige des dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoises</a>, la cible ne peut pas effectuer de pas de placement de 1,50 m avant le début du tour suivant du roublard.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAINTENANTQUEJYREPENSE" href="#MAINTENANTQUEJYREPENSE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maintenant que j’y repense (Ext)<a class="headeranchor" id="Maintenant_que_j’y_repense_Ext_88" href="#Maintenant_que_j’y_repense_Ext_88" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut relancer un test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>, de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> ou de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> pour tenter d’obtenir de nouvelles ou de meilleures informations. Ce nouveau jet doit être fait le même jour que le jet initial.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITREDELAFUITE" href="#MAITREDELAFUITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maître de la fuite (Ext)<a class="headeranchor" id="Maître_de_la_fuite_Ext_89" href="#Maître_de_la_fuite_Ext_89" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent gagne un bonus de +10 aux tests de <a class="pagelink" href="Pathfinder-RPG.conduite%20de%20v%c3%a9hicule.ashx" title="conduite de véhicule">conduite de véhicule</a>. Il doit connaître le talent <a class="pagelink" href="Pathfinder-RPG.sp%c3%a9cialiste%20de%20la%20fuite%20(talent).ashx" title="spécialiste de la fuite">spécialiste de la fuite</a> avant de prendre celui-ci.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITREDUDEGUISEMENT" href="#MAITREDUDEGUISEMENT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maître du déguisement (Ext)<a class="headeranchor" id="Maître_du_déguisement_Ext_90" href="#Maître_du_déguisement_Ext_90" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut gagner un bonus de +10 à un unique test de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITRISECOMPETENCES" href="#MAITRISECOMPETENCES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Maîtrise des compétences<a class="headeranchor" id="Maîtrise_des_compétences_91" href="#Maîtrise_des_compétences_91" title="Lien vers cette section">&#0182;</a></h3>Le roublard est tellement sûr de lui qu’il peut utiliser certaines de ses compétences en toute confiance même dans les cas extrêmes.
+Lorsqu’il gagne ce talent, le roublard sélectionne un nombre de compétences égal à 3 + son modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Chaque fois qu’il se sert de l’une d’elles, il peut <a class="pagelink" href="Pathfinder-RPG.faire%2010.ashx" title="faire 10">faire 10</a> même en situation de stress ou lorsqu’il est distrait. Le roublard peut choisir ce talent plusieurs fois, mais il doit alors l’associer à de nouvelles <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétences</a> à chaque fois.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="OPPORTUNISME" href="#OPPORTUNISME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Opportunisme (Ext)<a class="headeranchor" id="Opportunisme_Ext_92" href="#Opportunisme_Ext_92" title="Lien vers cette section">&#0182;</a></h3>Une fois par round, un roublard possédant ce talent peut tenter une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a> contre une créature venant juste d’être blessée au corps à corps par un autre personnage. Cette attaque est déduite du nombre d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a> que le personnage peut effectuer au cours de ce round. Cette capacité ne peut pas être utilisée plus d’une fois par round et ce, même si le roublard possède le don <a class="pagelink" href="Pathfinder-RPG.Attaques%20r%c3%a9flexes.ashx" title="Attaques réflexes">Attaques réflexes</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ROULEBOULE" href="#ROULEBOULE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Roulé-boulé (Ext)<a class="headeranchor" id="Roulé-boulé_Ext_93" href="#Roulé-boulé_Ext_93" title="Lien vers cette section">&#0182;</a></h3>Un roublard possédant ce talent peut accompagner les coups mortels et ainsi encaisser moins de dégâts. Une fois par jour, alors qu’il vient d’être touché par une attaque qui le ferait tomber à 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou moins (mais pas s’il est victime d’un sort ou d’un pouvoir spécial), il peut tenter d’exécuter un roulé-boulé afin de réduire la violence du coup. Il effectue un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> (DD = points de dégâts encaissés) et, en cas de succès, les dégâts qu’il devait encaisser sont réduits de moitié. En cas d’échec, il reçoit les dégâts normaux. Pour tenter cette manœuvre désespérée, il doit voir venir l’attaque et pouvoir y réagir (c’est impossible s’il se trouve dans une situation où il perd son bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>). Comme ce type d’attaque n’autorise normalement pas un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> pour réduire les dégâts de moitié, le pouvoir d’<a class="pagelink" href="Pathfinder-RPG.esquive%20totale.ashx" title="esquive totale">esquive totale</a> du roublard ne lui est d’aucune utilité dans un tel cas de figure.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SUBTILISATIONDARME" href="#SUBTILISATIONDARME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Subtilisation d’arme (Ext)<a class="headeranchor" id="Subtilisation_d’arme_Ext_94" href="#Subtilisation_d’arme_Ext_94" title="Lien vers cette section">&#0182;</a></h3>Un roublard qui possède ce talent peut faire un test d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> au lieu d’un test de <a class="pagelink" href="Pathfinder-RPG.manoeuvre%20offensive.ashx" title="Manœuvre offensive">manoeuvre offensive</a> quand il tente de <a class="pagelink" href="Pathfinder-RPG.d%c3%a9sarmement.ashx" title="désarmement">désarmer un adversaire</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SURPRISEDUCHASSEUR" href="#SURPRISEDUCHASSEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Surprise du chasseur (Ext)<a class="headeranchor" id="Surprise_du_chasseur_Ext_95" href="#Surprise_du_chasseur_Ext_95" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, un roublard disposant de ce talent peut désigner comme proie un unique ennemi qui lui est adjacent. Jusqu’à la fin du prochain tour du roublard, celui-ci peut ajouter ses dégâts d'<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaques sournoises</a> à toutes les attaques effectuées contre sa proie, même si celle-ci n’est ni <a class="pagelink" href="Pathfinder-RPG.pris%20en%20tenaille.ashx" title="Pris en tenaille">prise en tenaille</a> ni <a class="pagelink" href="Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx" title="Pris au dépourvu">prise au dépourvu</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TIREURDISCRET" href="#TIREURDISCRET"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tireur discret (Ext)<a class="headeranchor" id="Tireur_discret_Ext_96" href="#Tireur_discret_Ext_96" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un roublard disposant de ce talent utilise sa compétence de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> pour un tir embusqué, son test de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> ne subit qu’un malus de –10 (au lieu de –20).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="UNJOURDEPLUS" href="#UNJOURDEPLUS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Un jour de plus (Ext)<a class="headeranchor" id="Un_jour_de_plus_Ext_97" href="#Un_jour_de_plus_Ext_97" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, lorsque le roublard devrait être réduit à 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou moins par une <a class="pagelink" href="Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx" title="attaque au corps à corps">attaque au corps à corps</a>, il peut effectuer un <a class="pagelink" href="Pathfinder-RPG.pas%20de%20placement.ashx" title="Pas de placement">pas de placement</a> de 1,50 m par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>. Si ce mouvement lui permet de sortir de la zone contrôlée par l’attaquant, il ne subit aucun dégât pour cette attaque. Le roublard est <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelant</a> pendant 1 round au cours de son prochain tour.</div>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
