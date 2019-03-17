@@ -1872,7 +1872,7 @@
     ni à l’utilisation des boucliers. En effet, une armure restreint ses gestes, ce
     qui risque de faire échouer ses sorts à composante gestuelle (voir « Sorts profanes
     et armure »)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx#Armes_et_armures_0
   
 - Nom: Sorts
   Classe: Ensorceleur
@@ -1907,7 +1907,7 @@
     à un prêtre, un ensorceleur n’a pas besoin de préparer ses sorts à l’avance. Il
     peut lancer n’importe quel sort de son répertoire à n’importe quel moment, à condition
     de ne pas avoir épuisé son quota de sorts de ce niveau pour la journée.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx#Sorts_1
   
 - Nom: Lignage
   Classe: Ensorceleur
@@ -1941,7 +1941,7 @@
     soumis aux règles de gestion des archétypes (p.72 du Manuel des Joueurs - Règles
     Avancées). Par exemple il ne peut s'additionner avec un autre archétype modifiant
     une même aptitude de classe (comme un arcane de lignage)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Lignage_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx#Lignage_2
   
 - Nom: Tours de magie
   Classe: Ensorceleur
@@ -1952,7 +1952,7 @@
     sorts de niveau 0) comme indiqué dans la Table \"Sorts connus par l'ensorceleur\".
     Ces sorts sont lancés de la même manière que les autres mais ils ne réduisent
     pas le quota quotidien de l’ensorceleur et peuvent être utilisés indéfiniment."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Tours_de_magie_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx#Tours_de_magie_3
 
 - Nom: Dispense de composantes
   Classe: Ensorceleur
@@ -1961,7 +1961,278 @@
   Auto: True
   Description: "Un ensorceleur reçoit le don Dispense de composantes matérielles comme
     don supplémentaire au niveau 1."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dispense_de_composantes_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur.ashx#Dispense_de_composantes_4
+
+##
+## Lignages d'ensorceleurs
+##
+
+- Nom: "Lignage: Aberrant"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Une corruption étrange et provenant d’ailleurs a touché la famille du personnage. Il a tendance à penser de manière bizarre et à aborder les problèmes avec un point de vue que la plupart des personnes trouveraient surprenant. Avec le temps, cette corruption se manifeste même dans l’apparence physique du personnage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Aberrant.ashx
+
+- Nom: "Lignage: Abyssal"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Il y a de cela plusieurs générations, un démon a corrompu le lignage de l’ensorceleur. Son influence ne se manifeste pas chez tous les membres de sa famille mais, chez lui, elle est particulièrement forte. Le personnage ressent peut-être des envies soudaines de répandre le chaos ou de faire le mal, mais il reste maître de sa destinée (et de son alignement)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Abyssal.ashx
+
+- Nom: "Lignage: Aquatique"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "L’héritage familial de l’ensorceleur trouve son origine dans les profondeurs des océans. Il descend peut-être d’un empire qui a quitté les fonds marins à l’arrivée de tribus de nomades aquatiques ou encore de créatures ichthyiques dont les rejetons se sont infiltrés dans des villages isolés du bord de mer. Le chant de la mer murmure dans les veines de l’ensorceleur et place sous son contrôle les vagues et toutes les créatures qui y résident."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20aquatique.ashx
+
+- Nom: "Lignage: Boréal"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "L’ensorceleur descend des êtres qui habitent les terres de glace et de neige. Parmi ses ancêtres, on trouve des créatures apparentées aux géants, aux trolls ou aux esprits du givre. Leurs énergies sauvages et pures ont glissé de génération en génération jusqu’à instiller dans les veines de l’ensorceleur le contact froid du vent polaire, des aurores crépitantes et des longues nuits hivernales."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20bor%c3%a9al.ashx
+
+- Nom: "Lignage: Céleste"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "La famille du personnage a reçu la bénédiction d’une puissance céleste, parce qu’un de ses ancêtres était d’origine céleste ou bien grâce à une intervention divine. Cette bénédiction prédispose le personnage à faire le bien mais il reste maître de son destin (et de son alignement)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20C%c3%a9leste.ashx
+
+- Nom: "Lignage: Daémon"
+  Classe: Ensorceleur
+  Source: BOF
+  Niveau: 1
+  Description: "Un daémon fait partie intégrante de l'arbre généalogique du personnage. Ses pouvoirs viennent des abominations dévoreuses d'âmes qui prennent plaisir à exercer leur puissance sur les faiblesses des mortels, telles que le vieillissememnt, la pestilence, la famine ou les horreurs de la guerre. Le lignage lui fournit d'excellentes manières d'exploiter les fragilités de ce qui vit, et d'utiliser à bon escient l'énergie des âmes volées pour accroître ses propres arts malveillants."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Daemon.ashx
+
+- Nom: "Lignage: Div"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le personnage compte parmi ses ancêtres un des génies corrompus et malveillants que l'on appelle Divs."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Div.ashx
+
+- Nom: "Lignage: Djinn"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le personnage est né du pouvoir des génies de l’air et leur magie est fortement ancrée en lui."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Djinn.ashx
+
+- Nom: "Lignage: Draconique"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Quelque part dans l’histoire de la famille de l’ensorceleur, un dragon a mêlé son sang à celui de ses ancêtres et, aujourd’hui, ce pouvoir ancien coule dans ses veines."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lignage%20Draconique.ashx
+
+- Nom: "Lignage: Ectoplasmique"
+  Classe: Ensorceleur
+  Source: AO
+  Niveau: 1
+  Description: "La famille du personnage est entrée en contact avec la substance éthérée appelée ectoplasme, soit en communiant avec les esprits ou en combattant les esprits morts-vivants. La puissance du plan Éthéré vibre dans l’esprit du personnage et tiraille sa chair."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20ectoplasmique.ashx
+
+- Nom: "Lignage: Éfrit"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le personnage est né du pouvoir des génies du feu et leur magie coule dans ses veines."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20%c3%89frit.ashx
+
+- Nom: "Lignage: Élémentaire"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Le pouvoir des éléments coule dans les veines du personnage qui, parfois, a bien de la peine à en contrôler la fureur. Cette influence provient d’un Extérieur élémentaire qui s’est mêlé à l’histoire de la famille de l’ensorceleur ou d’une époque où celui-ci (ou un de ses parents) s’est retrouvé exposé à une puissante force élémentaire."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20%c3%89l%c3%a9mentaire.ashx
+
+- Nom: "Lignage: Étoiles"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "L’ensorceleur descend d’une longue lignée d’astrologues et d’explorateurs qui se sont aventurés dans les profondeurs des ténèbres cachées derrière les étoiles. Ils ont touché le vide qui s’y trouvait et se sont laissés toucher par lui, de sorte que l’esprit, l’âme et le corps de leur héritier n’ont qu’un seul désir : traverser le gouffre qui sépare les mondes."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20des%20%c3%a9toiles.ashx
+
+- Nom: "Lignage: Féerique"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "On retrouve au sein de la famille de l’ensorceleur la nature capricieuse des fées. Cela est peut-être dû à l’existence d’un ancêtre féerique ou à un événement magique. Le personnage est plus émotif que la moyenne et assez enclin aux accès de joie et de rage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20F%c3%a9erique.ashx
+
+- Nom: "Lignage: Goule"
+  Classe: Ensorceleur
+  Source: MCA
+  Niveau: 1
+  Description: "Le lien entre le personnage et les morts-vivants affamés façonne sa magie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Goule.ashx
+
+- Nom: "Lignage: Impérieux"
+  Classe: Ensorceleur
+  Source: MR
+  Niveau: 1
+  Description: "Cet archétype est réservé aux personnages de la race humaine. Rejeton de rois oubliés à la lignée chargée de la poussière d’anciens empires qui couvrent tous les âges d’or de l’humanité, l’impérieux incarne l’apogée du potentiel humain ; sa témérité et son orgueil sont sans pareil."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Imp%c3%a9rieux.ashx
+
+- Nom: "Lignage: Impossible"
+  Classe: Ensorceleur
+  Source: COB
+  Niveau: 1
+  Description: "Le personnage voit au-delà du voile de la banalité, et il peut distinguer l'improbable, voire l'impossible. Si cette nouvelle perspective ne le rend pas fou, il apprendra peu à peu à faire de l'impossible sa réalité."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Impossible.ashx
+
+- Nom: "Lignage: Infernal"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "Un ancêtre de l’ensorceleur a passé un pacte avec un diable et ce marché a influencé la vie des membres de sa famille depuis lors. Chez lui, cette influence se manifeste de manière plus évidente, sous la forme de capacités et de pouvoirs. Même si le personnage reste maître de son destin, il lui est difficile de ne pas se demander s’il ne finira pas tôt ou tard dans la Fosse."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Infernal.ashx
+
+- Nom: "Lignage: Maestro"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le pouvoir spirituel de l’art et des chants abonde dans la famille du personnage, peut-être le résultat d’un ancien pacte avec un mécène azata ou même un héritage d’une lillende ou d’un archon trompette. Ou peut-être est-ce la conséquence de la souillure d’un héritage bien moins sympathique, comme celui d’une aïeule harpie ou d’un ancêtre devenu fou à cause du charabia d’un shoggoth. Cependant, son penchant familial pour la musique apparaît dans sa magie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Maestro.ashx
+
+- Nom: "Lignage: Marid"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le personnage est né du pouvoir des génies de l’eau et il est fortement marqué par leur magie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Marid.ashx
+
+- Nom: "Lignage: Martyre"
+  Classe: Ensorceleur
+  Source: BOA
+  Niveau: 1
+  Description: "Un des ancêtres du personnage a commis l'ultime sacrifice au nom de ses croyances, un sacrifice dont l'influence se répercute encore sur ses descendant, les imprégnant du pouvoir mystique de sa dévotion. Son lignage lui permet de résister à la douleur, braver la torture, et inspirer autrui."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Martyre.ashx
+
+- Nom: "Lignage: Maudit"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "La famille du personnage attire la malchance, la pestilence et les cauchemars comme la charogne attire les vermines. L’immonde influence d’une guenaude a souillé le lignage du personnage à un stade de son histoire. Il peut lui être réellement apparenté ou souffrir des effets d’une malédiction lancée sur un ancêtre. Les pouvoirs de la guenaude font à présent partie de son héritage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Maudit.ashx
+
+- Nom: "Lignage: Mort-vivant "
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "La souillure du tombeau infecte la famille de l’ensorceleur. Un de ses ancêtres est peut-être devenu une liche ou un vampire puissant, ou le personnage est peut-être mort-né avant de soudainement revenir à la vie. Quoi qu’il en soit, les forces de la mort agissent à travers lui et influencent chacune de ses actions."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Mort-vivant.ashx
+
+- Nom: "Lignage: Profane"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "La famille du personnage s’est démarquée par son don pour l’art mystérieux de la magie. Plusieurs parents du personnage sont des magiciens réputés mais les pouvoirs de l’ensorceleur se sont développés sans qu’il doive étudier ou s’entraîner."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Profane.ashx
+
+- Nom: "Lignage: des Ombres"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Les esprits du plan des Ombres se promènent parfois dans le monde de la lumière. Des créatures de ce genre sont entrées en contact avec l’ancêtre de l’ensorceleur et ont instillé le mystère des créations d’ombre dans son lignage. L’ensorceleur est souvent maussade et détaché de la réalité. Il préfère rester en marge des cercles sociaux, seul, et se donner un air mystérieux et majestueux."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20des%20ombres.ashx
+
+- Nom: "Lignage: Oni"
+  Classe: Ensorceleur
+  Source: DEP
+  Niveau: 1
+  Description: "Esclaves des capricieux seigneurs Oni, les ancêtres du personnage ont été forcés à se soumette aux désirs hédonistes de leurs maîtres, souillant à jamais leur descendants du sang oni. Désormais, le personnage porte des pouvoirs semblables aux leurs grâce à ce vil héritage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Oni.ashx
+
+- Nom: "Lignage: Onirique"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "L’ensorceleur descend d’une longue ligne de rêveurs qui ne rêvaient pas à la manière des mortels ordinaires mais dont les songes parvenaient jusqu’au royaume surnaturel des rêves et aux rivages les plus lointains de la nuit. Don ou malédiction, les visions du passé et du futur que l’ensorceleur reçoit le poussent inéluctablement vers une vie d’aventure."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20onirique.ashx
+
+- Nom: "Lignage: Orque"
+  Classe: Ensorceleur
+  Source: OOG
+  Niveau: 1
+  Description: "La rage des ancêtres du personnage brûle en lui, et la souillure du sang orque coule dans ses veines. Sa colère bouillonne toujours, lui donnant la force et le désir d'en avoir davantage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20orque.ashx
+
+- Nom: "Lignage: des Profondeurs"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Les échos du chant des cavernes, ainsi que les grondements et les craquements des esprits sauvages qui vivent loin sous la surface, résonnent dans l’âme de l’ensorceleur et de ses parents. Son esprit est sans doute lent, prudent et stable. Il est peu enclin aux voyages et préfère plutôt la contemplation."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20des%20profondeurs.ashx
+
+- Nom: "Lignage: Protéen"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Le Chaos primitif, dont la nature est sans cesse changeante, l’essence même de la création sans limite, habite l’ensorceleur. Son âme et son esprit sont constamment agités par l’inspiration d’une liberté sans borne, à un point tel qu’il éprouve de grandes difficultés à se concentrer sur une tâche quand une autre, nouvelle et excitante, attire son attention."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20prot%c3%a9en.ashx
+
+- Nom: "Lignage: Psychique"
+  Classe: Ensorceleur
+  Source: AO
+  Niveau: 1
+  Description: "L’énergie psychique imprègne le sang du personnage. Peutêtre est-ce dû à une prédisposition familiale ou à l’exposition à un phénomène psychique important. Quelle que soit la source de ce pouvoir, l’esprit du personnage s’avère être une arme dangereuse."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20psychique.ashx
+
+- Nom: "Lignage: Shaitan"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "Le personnage est né du pouvoir des génies de la terre et il est fortement imprégné de leur magie."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Shaitan.ashx
+
+- Nom: "Lignage: Serpentin"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Le lignage de l’ensorceleur porte la trace des anciennes races serpentines qui gouvernaient le monde lorsque celui-ci était jeune. Ses ancêtres étaient sans doute des esclaves privilégiés qui ont reçu de la part de leurs maîtres reptiliens le don de concevoir froidement des ruses et de manipuler les autres de manière subtile. La tromperie et les charmes hypnotiques font peut-être partie de la nature de l’ensorceleur, mais il peut aussi choisir de s’opposer à son héritage et de poursuivre la quête de la vérité."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20serpentin.ashx
+
+- Nom: "Lignage: des Tempêtes "
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Les pouvoirs de l’ensorceleur lui viennent des esprits fiers et féroces des tempêtes et du ciel. Des éclairs vivants chantent dans ses veines."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20des%20temp%c3%aates.ashx
+
+- Nom: "Lignage: Verdoyant"
+  Classe: Ensorceleur
+  Source: MJRA
+  Niveau: 1
+  Description: "Les ancêtres de l’ensorceleur ont infusé de la vie végétale en eux. Ils l’ont mêlée à leur propre corps et l’ont transmise dans leur semence, ce qui explique que l’ensorceleur jouit d’une connexion innée avec la nature."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20verdoyant.ashx
+
+- Nom: "Lignage: Voué à un grand destin"
+  Classe: Ensorceleur
+  Source: MJ
+  Niveau: 1
+  Description: "La famille de l’ensorceleur est vouée à un grand destin. La naissance du personnage a peut-être été prédite dans les prophéties ou elle s’est peut-être déroulée au cours d’un événement spécialement favorable, comme une éclipse solaire. Quelle que soit l’origine du lignage du personnage, un grand destin l’attend."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Vou%c3%a9%20%c3%a0%20un%20grand%20destin.ashx
+
+- Nom: "Lignage: Pestilence"
+  Classe: Ensorceleur
+  Source: SSO
+  Niveau: 1
+  Description: "Le personnage est né alors qu'une grande épidémie magique battait son plein ou né d'une mère atteinte d'une maladie surnaturelle ou il a souffert d'un fléau magique lorsqu'il était enfant. Quelle qu'en soit la raison, son âme porte encore la trace indélébile de la pestilence."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Pestilence.ashx
+
+- Nom: "Lignage: Rakshasas"
+  Classe: Ensorceleur
+  Source: AM
+  Niveau: 1
+  Description: "À un certain point de l’histoire familiale du personnage, l’un de ses ancêtres a été souillé par l’influence d’un rakshasa. La majorité de sa famille semble normale mais il a toujours eu l’impression que sa propre peau était une prison dont la magie lui permettait de s’échapper. Son droit de naissance est un secret qu’il doit peut-être cacher aux yeux de la société qui refuserait d’avoir affaire à lui s’il venait à être connu."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignage%20Rakshasa.ashx
+
 
 ##
 ## Aptitudes du guerrier
@@ -1976,7 +2247,7 @@
     est formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au
     port de tous les types d’armures (légères, intermédiaires et lourdes) et à l’utilisation
     des boucliers (y compris les pavois)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Armes_et_armures_0
   
 - Nom: Dons supplémentaires
   Classe: Guerrier
@@ -1995,7 +2266,7 @@
     accès à un autre don, à une classe de prestige ou à un autre avantage. Le guerrier
     ne peut remplacer qu’un seul don à chacun de ces niveaux et doit choisir de le
     faire ou non au moment où il sélectionne le nouveau don pour ce niveau."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Dons_supplémentaires_1
   
 - Nom: Courage (Ext)
   Classe: Guerrier
@@ -2005,7 +2276,7 @@
   Description: "À partir du niveau 2, le guerrier gagne un bonus de +1 aux jets de
     sauvegarde contre la terreur. Ce bonus augmente de +1 tous les quatre niveaux
     après le niveau 2."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Courage_Ext_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Courage_Ext_2
   
 - Nom: Entraînement aux armures (Ext)
   Classe: Guerrier
@@ -2020,7 +2291,7 @@
     et une augmentation de +4 au bonus de Dextérité maximal.\n\nDe plus, un guerrier
     peut se déplacer à sa vitesse normale même lorsqu’il porte une armure intermédiaire.
     Au niveau 7, cela est valable également lorsqu’il porte une armure lourde."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_armures_Ext_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Entraînement_aux_armures_Ext_3
   
 - Nom: Entraînement aux armes (Ext)
   Classe: Guerrier
@@ -2042,7 +2313,7 @@
     d’une arme appartenant à un de ces groupes. Il s''applique aussi à la défense
     contre les manœuvres offensives contre une tentative de désarmement ou de destruction
     effectuée par un adversaire avec l''une de ces armes.\n\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_armes_Ext_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Entraînement_aux_armes_Ext_4
   
 - Nom: Maîtrise des armures (Ext)
   Classe: Guerrier
@@ -2051,7 +2322,7 @@
   Auto: True
   Description: "Au niveau 19, le guerrier gagne une réduction aux dégâts de 5/— lorsqu’il
     porte une armure ou utilise un bouclier."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maîtrise_des_armures_Ext_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Maîtrise_des_armures_Ext_5
 
 - Nom: Maîtrise des armes (Ext)
   Classe: Guerrier
@@ -2063,7 +2334,7 @@
     attaque avec ce type d’arme sont automatiquement confirmées et le multiplicateur
     de dégâts de l’arme augmente de 1 (×2 devient ×3 par exemple). De plus, le guerrier
     ne peut plus être désarmé lorsqu’il tient une arme de ce type."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maîtrise_des_armes_Ext_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier.ashx#Maîtrise_des_armes_Ext_6
 
 ##
 ## Aptitudes du magicien
@@ -2079,7 +2350,7 @@
     des dagues et des gourdins mais pas au port des armures ni à l’utilisation des
     boucliers. En effet, une armure restreint ses gestes, ce qui risque de faire échouer
     ses sorts à composante gestuelle."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Armes_et_armures_0
 
 - Nom: Sorts
   Classe: Magicien
@@ -2100,7 +2371,7 @@
     ses sorts à l’avance en étudiant son grimoire pendant une heure, après huit heures
     de sommeil. Pendant qu’il étudie, le magicien choisit quels sorts il va préparer
     pour la journée."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Sorts_1
 
 - Nom: Langues supplémentaires
   Classe: Magicien
@@ -2109,7 +2380,7 @@
   Auto: True
   Description: "Le magicien peut apprendre le draconien à la place d’une des langues
     supplémentaires autorisées par sa race."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_supplémentaires_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Langues_supplémentaires_2
 
 - Nom: Pacte magique (Ext ou Mag)
   Classe: Magicien
@@ -2163,7 +2434,7 @@
     objet magique comme objet fétiche de remplacement. Cela fonctionne comme ci-dessus,
     si ce n’est que l’objet magique conserve ses propriétés et acquiert en plus les
     avantages et les désavantages des objets fétiches.\n\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_magique_Ext_ou_Mag_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Pacte_magique_Ext_ou_Mag_3
 
 - Nom: École de magie
   Classe: Magicien
@@ -2204,7 +2475,7 @@
     d’opposition. Pour pouvoir préparer un sort appartenant à son école d’opposition,
     il doit utiliser deux emplacements de sort, conformément aux règles normales.\n\nVoir
     la liste des écoles de magie."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#École_de_magie_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#École_de_magie_4
 
 - Nom: Tours de magie
   Classe: Magicien
@@ -2215,7 +2486,7 @@
     sorts de niveau 0) chaque jour, comme indiqué dans la Table ci-dessus sous la
     mention « Sorts par jour ». Il jette ces sorts comme les autres mais ils ne sont
     pas dépensés lorsqu’ils sont lancés et peuvent être utilisés à nouveau."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Tours_de_magie_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Tours_de_magie_5
 
 - Nom: Écriture de parchemins
   Classe: Magicien
@@ -2224,7 +2495,7 @@
   Auto: True
   Description: "Un magicien de niveau 1 acquiert automatiquement le don Écriture de
     parchemins comme don supplémentaire."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Écriture_de_parchemins_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Écriture_de_parchemins_6
 
 - Nom: Dons supplémentaires et découvertes arcaniques
   Classe: Magicien
@@ -2250,7 +2521,7 @@
     face à l’inconnu. Les découvertes arcaniques résultent de cette obsession pour
     la magie. Le magicien peut apprendre une découverte magique au lieu de choisir
     un don normal ou un don de magicien supplémentaire."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_et_découvertes_arcaniques_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Dons_supplémentaires_et_découvertes_arcaniques_7
 
 - Nom: Grimoire
   Classe: Magicien
@@ -2282,7 +2553,7 @@
     comme un sort appartenant au niveau directement supérieur à son niveau normal.
     Cette option permet aussi de lancer un sort en armure sans subir de risque d’échec
     des sorts."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grimoire_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magicien.ashx#Grimoire_8
 
 ##
 ## Aptitudes du moine
@@ -2300,7 +2571,7 @@
     porte une armure ou utilise un bouclier, ou encore lorsqu’il transporte une charge
     lourde ou intermédiaire, un moine perd son bonus à la CA ainsi que ses aptitudes
     de déplacement accéléré et de déluge de coups.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Armes_et_armures_0
 
 - Nom: Bonus à la CA (Ext)
   Classe: Moine
@@ -2315,7 +2586,7 @@
     moine est pris au dépourvu. Il les perd s’il est immobilisé, s’il est sans défense
     ou s’il porte une armure ou un bouclier ou transporte une charge intermédiaire
     ou lourde."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bonus_à_la_CA_Ext_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Bonus_à_la_CA_Ext_1
 
 - Nom: Déluge de coups (Ext)
   Classe: Moine
@@ -2345,7 +2616,7 @@
     de coups, le moine ne peut utiliser que des attaques à mains nues ou des armes
     spéciales de moines, aucune autre arme. Si le moine dispose d’attaques naturelles,
     il ne peut les utiliser ni dans un déluge de coups ni en plus d’un déluge de coups."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déluge_de_coups_Ext_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Déluge_de_coups_Ext_2
 
 - Nom: Combat à mains nues
   Classe: Moine
@@ -2369,7 +2640,7 @@
     concernent uniquement les moines de taille M. Les moines de taille P infligent
     des dégâts moins importants, tandis que ceux de taille G infligent des dégâts
     plus élevés, comme indiqué dans la table suivante."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Combat_à_mains_nues_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Combat_à_mains_nues_3
 
 - Nom: Dons supplémentaires
   Classe: Moine
@@ -2387,7 +2658,7 @@
     \n\nAu niveau 14, le don suivant s''ajoute à cette liste : Science du lancer ki,
     Entrave à distance\n\nLe moine peut choisir un de ces dons comme don supplémentaire
     même s’il ne remplit pas les conditions requises.\n\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dons_supplémentaires_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Dons_supplémentaires_4
 
 - Nom: Coup étourdissant (Ext)
   Classe: Moine
@@ -2407,7 +2678,7 @@
     pas (une créature rendue fiévreuse par cette capacité ne deviendra ainsi pas nauséeuse
     si elle est affectée par un nouveau Coup étourdissant), mais les coups supplémentaires
     augmentent la durée de l'état préjudiciable initial."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_étourdissant_Ext_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Coup_étourdissant_Ext_5
 
 - Nom: Esquive totale (Ext)
   Classe: Moine
@@ -2419,7 +2690,7 @@
     normalement réduits de moitié, il ne subit pas le moindre dégât. Un moine portant
     une armure ou une charge intermédiaire ou lourde ou qui se trouve sans défense
     perd les avantages de l’esquive totale."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Esquive_totale_Ext_6
 
 - Nom: Déplacement accéléré (Ext)
   Classe: Moine
@@ -2429,7 +2700,7 @@
   Description: "À partir du niveau 3, un moine obtient un bonus d’altération à sa
     vitesse de déplacement au sol, comme indiqué dans la Table \"Le Moine\". Il perd
     ce bonus s’il porte une armure ou une charge intermédiaire ou lourde."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déplacement_accéléré_Ext_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Déplacement_accéléré_Ext_7
 
 - Nom: Entraînement aux manœuvres offensives (Ext)
   Classe: Moine
@@ -2440,7 +2711,7 @@
     de base à l’attaque lorsqu’il calcule son bonus de manœuvre offensive. Les bonus
     de base à l’attaque provenant d’autres classes ne sont pas modifiés et se cumulent
     normalement."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Entraînement_aux_manœuvres_offensives_Ext_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Entraînement_aux_manœuvres_offensives_Ext_8
 
 - Nom: Sérénité (Ext)
   Classe: Moine
@@ -2449,7 +2720,7 @@
   Auto: True
   Description: "Un moine de niveau 3 bénéficie d’un bonus de +2 aux jets de sauvegarde
     contre les sorts et effets de type enchantement."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sérénité_Ext_9
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Sérénité_Ext_9
 
 - Nom: Réserve de ki (Sur) et Voeux
   Classe: Moine
@@ -2499,7 +2770,7 @@
     à nouveau de l’amélioration due aux autres vœux mais le ki supplémentaire issu
     du vœu brisé ne reviendra pas avant un mois de dévotion (en effet, une fois que
     le moine s’est racheté, la violation du vœu n’a plus aucun effet sur les autres)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Réserve_de_ki_Sur_et_Voeux_10
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Réserve_de_ki_Sur_et_Voeux_10
 
 - Nom: Chute ralentie (Ext)
   Classe: Moine
@@ -2514,7 +2785,7 @@
     en ignorant une partie de la distance parcourue) s’améliore lorsque son niveau
     augmente et, finalement, au niveau 20, le moine ne subit plus aucun dégât en cas
     de chute à proximité d’une paroi."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Chute_ralentie_Ext_11
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Chute_ralentie_Ext_11
 
 - Nom: Sauts puissants (Ext)
   Classe: Moine
@@ -2526,7 +2797,7 @@
     toujours d’un élan (même si ce n’est pas le cas en pratique). En dépensant 1 point
     de sa réserve de ki (ce qui nécessite une action rapide) le moine gagne pendant
     1 round un bonus de +20 à tous les tests d’Acrobaties relatifs à des sauts."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sauts_puissants_Ext_12
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Sauts_puissants_Ext_12
 
 - Nom: Pureté physique (Ext)
   Classe: Moine
@@ -2535,7 +2806,7 @@
   Auto: True
   Description: "Au niveau 5, le moine développe une immunité à toutes les maladies,
     même celles qui sont d’origine surnaturelle ou magique."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pureté_physique_Ext_13
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Pureté_physique_Ext_13
 
 - Nom: Plénitude physique (Sur)
   Classe: Moine
@@ -2545,7 +2816,7 @@
   Description: "Dès le niveau 7, le moine est capable de se soigner par une action
     simple. Il peut récupérer un nombre de points de vie égal à son niveau de moine
     en utilisant 2 points de sa réserve de ki."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Plénitude_physique_Sur_14
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Plénitude_physique_Sur_14
 
 - Nom: Esquive surnaturelle (Ext)
   Classe: Moine
@@ -2557,7 +2828,7 @@
     ne subir aucun dégât en cas de jet de sauvegarde réussi mais, en plus, il ne subit
     que la moitié des dégâts en cas d’échec du jet de sauvegarde. Le moine ne bénéficie
     pas de cette capacité s’il est sans défense."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_surnaturelle_Ext_15
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Esquive_surnaturelle_Ext_15
 
 - Nom: Corps de diamant (Sur)
   Classe: Moine
@@ -2566,7 +2837,7 @@
   Auto: True
   Description: "Au niveau 11, le moine développe une immunité à tous les types de
     poisons."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Corps_de_diamant_Sur_16
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Corps_de_diamant_Sur_16
 
 - Nom: Pas chassé (Sur)
   Classe: Moine
@@ -2578,7 +2849,7 @@
     de cette capacité nécessite une action de mouvement et coûte 2 points de ki. Le
     niveau de lanceur de sorts du moine pour cet effet est égal à son niveau de moine.
     Seul le moine peut se déplacer ainsi : il ne peut amener personne avec lui.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pas_chassé_Sur_17
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Pas_chassé_Sur_17
 
 - Nom: Âme de diamant (Ext)
   Classe: Moine
@@ -2589,7 +2860,7 @@
     son niveau de moine actuel + 10. Pour pouvoir l’affecter à l’aide d’un sort, son
     adversaire doit effectuer un test de niveau de lanceur de sorts (1d20 + son niveau
     de lanceur de sorts) et obtenir un résultat égal ou supérieur à la RM du moine."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Âme_de_diamant_Ext_18
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Âme_de_diamant_Ext_18
 
 - Nom: Paume vibratoire (Sur)
   Classe: Moine
@@ -2612,7 +2883,7 @@
     vibratoire à la fois : si une victime est encore affectée par la paume vibratoire
     du moine et que celui-ci utilise cette capacité à nouveau, l’effet le plus ancien
     prend fin immédiatement.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Paume_vibratoire_Sur_19
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Paume_vibratoire_Sur_19
 
 - Nom: Éternelle jeunesse (Ext)
   Classe: Moine
@@ -2625,7 +2896,7 @@
     ce niveau ne sont pas annulés pour autant. Le moine continue de vieillir et bénéficie
     des bonus qui en découlent. Il meurt toujours de vieillesse lorsque son heure
     est venue."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Éternelle_jeunesse_Ext_20
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Éternelle_jeunesse_Ext_20
 
 - Nom: Langues du soleil et de la lune (Ext)
   Classe: Moine
@@ -2634,7 +2905,7 @@
   Auto: True
   Description: "À partir du niveau 17, le moine peut communiquer avec toutes les créatures
     vivantes."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_du_soleil_et_de_la_lune_Ext_21
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Langues_du_soleil_et_de_la_lune_Ext_21
 
 - Nom: Désertion de l’âme (Sur)
   Classe: Moine
@@ -2646,7 +2917,7 @@
     une action de mouvement et coûte 3 points de ki. Seul le moine est affecté : il
     ne peut pas utiliser désertion de l’âme pour appliquer le même effet à d’autres
     créatures.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Désertion_de_l’âme_Sur_22
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Désertion_de_l’âme_Sur_22
 
 - Nom: Perfection de l’être
   Classe: Moine
@@ -2663,7 +2934,7 @@
     vie, comme si son type de créature n’avait pas changé.\n\nUn moine cessant d’être
     Loyal ne peut plus gagner de niveau de moine mais conserve les pouvoirs acquis
     jusque-là."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Perfection_de_l’être_23
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Perfection_de_l’être_23
 
 
 ##
@@ -2679,7 +2950,7 @@
     formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au port
     de toutes les armures (légères, intermédiaires et lourdes) et à l’utilisation
     des boucliers (à l’exception des pavois)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Armes_et_armures_0
 
 - Nom: Aura de Bien (Ext)
   Classe: Paladin
@@ -2688,7 +2959,7 @@
   Auto: True
   Description: "Un paladin génère une aura de Bien (voir le sort détection du Mal),
     dont la puissance correspond à son niveau de paladin."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_Bien_Ext_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_Bien_Ext_1
 
 - Nom: Détection du Mal (Mag)
   Classe: Paladin
@@ -2702,7 +2973,7 @@
     l’avait étudié pendant trois rounds. Lorsqu’il se concentre sur un objet ou un
     individu, le paladin ne détecte pas le Mal sur les autres objets ou individus
     à proximité."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Détection_du_Mal_Mag_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Détection_du_Mal_Mag_2
 
 - Nom: Châtiment du Mal (Sur)
   Classe: Paladin
@@ -2727,7 +2998,7 @@
     et tous les trois niveaux par la suite, le paladin obtient une utilisation quotidienne
     supplémentaire de ce pouvoir, comme indiqué dans la Table \"Le Paladin\", avec un
     maximum de sept utilisations quotidiennes au niveau 19."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Châtiment_du_Mal_Sur_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
 
 - Nom: Grâce divine (Sur)
   Classe: Paladin
@@ -2736,7 +3007,7 @@
   Auto: True
   Description: "Un paladin de niveau 2 ou plus bénéficie d’un bonus à tous ses jets
     de sauvegarde égal à son bonus de Charisme (s’il en a un)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grâce_divine_Sur_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_divine_Sur_4
 
 - Nom: Imposition des mains (Sur)
   Classe: Paladin
@@ -2756,7 +3027,7 @@
     nécessite un jet d’attaque de contact au corps à corps et ne provoque pas d’attaque
     d’opportunité. Les morts-vivants ne bénéficient d’aucun jet de sauvegarde contre
     ces dégâts."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Imposition_des_mains_Sur_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Imposition_des_mains_Sur_5
 
 - Nom: Aura de bravoure (Sur)
   Classe: Paladin
@@ -2768,7 +3039,7 @@
     bonus de moral de +4 aux jets de sauvegarde contre tous les effets de terreur.
     Cette aptitude fonctionne tant que le paladin est conscient, mais pas s’il est
     inconscient ou mort."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_bravoure_Sur_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_bravoure_Sur_6
 
 - Nom: Santé divine (Ext)
   Classe: Paladin
@@ -2777,7 +3048,7 @@
   Auto: True
   Description: "Un paladin de niveau 3 est immunisé contre toutes les maladies, y
     compris celles qui sont d’origine magique ou surnaturelle."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Santé_divine_Ext_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Santé_divine_Ext_7
 
 - Nom: Grâce (Sur)
   Classe: Paladin
@@ -2800,7 +3071,7 @@
     il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
     fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
     Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grâce_Sur_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
 
 - Nom: Canalisation d’énergie positive (Sur)
   Classe: Paladin
@@ -2813,7 +3084,7 @@
     canalisation d’énergie consomme deux utilisations de sa capacité d’imposition
     des mains. Il s’agit d’une capacité basée sur le Charisme.\n\nVoir aussi les variantes
     de canalisation."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Canalisation_d’énergie_positive_Sur_9
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Canalisation_d’énergie_positive_Sur_9
 
 - Nom: Sorts
   Classe: Paladin
@@ -2839,7 +3110,7 @@
     quels sorts préparer au cours de sa méditation quotidienne.\n\nJusqu’au niveau
     3, le paladin n’a pas de niveau de lanceur de sorts. À partir du niveau 4, son
     niveau de lanceur de sorts est égal son niveau de paladin -3."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_10
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Sorts_10
 
 - Nom: Pacte divin (Mag)
   Classe: Paladin
@@ -2896,7 +3167,7 @@
     utiliser cette capacité à nouveau. Pendant cette période d’attente, le paladin
     subit un malus de -1 à tous les jets d’attaque et de dégâts lorsqu’il combat avec
     une arme.\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_divin_Mag_11
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Pacte_divin_Mag_11
 
 - Nom: Aura de fermeté (Sur)
   Classe: Paladin
@@ -2908,7 +3179,7 @@
     d’un bonus de moral de +4 aux jets de sauvegarde contre tous les effets de charme.\n\nCette
     aptitude fonctionne tant que le paladin est conscient, mais pas s’il est inconscient
     ou mort."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_fermeté_Sur_12
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_fermeté_Sur_12
 
 - Nom: Aura de justice (Sur)
   Classe: Paladin
@@ -2921,7 +3192,7 @@
     du Mal avant que le prochain tour du paladin commence et les bonus persistent
     pendant une minute. Ce pouvoir s’utilise par une action libre. Les créatures d’alignement
     Mauvais ne tirent aucun avantage de l’aura de justice."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_justice_Sur_13
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_justice_Sur_13
 
 - Nom: Aura de foi (Sur)
   Classe: Paladin
@@ -2935,7 +3206,7 @@
     Bon lorsqu’il s’agit de déterminer si elles ignorent les réductions de dégâts.\n\nCette
     capacité fonctionne tant que le paladin est conscient, mais pas s’il est inconscient
     ou mort."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_foi_Sur_14
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_foi_Sur_14
 
 - Nom: Aura de droiture (Sur)
   Classe: Paladin
@@ -2947,7 +3218,7 @@
     ou moins bénéficient d’un bonus de moral de +4 aux jets de sauvegarde contre tous
     les effets de coercition.\n\nCette aptitude fonctionne tant que le paladin est
     conscient, mais pas s’il est inconscient ou mort."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_de_droiture_Sur_15
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_droiture_Sur_15
 
 - Nom: Champion sacré (Sur)
   Classe: Paladin
@@ -2985,7 +3256,7 @@
     Il ne peut plus gagner de niveaux de paladin. Il récupère son statut et ses capacités
     et peut à nouveau progresser en tant que paladin s’il fait acte de contrition
     (voir le sort pénitence)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Champion_sacré_Sur_16
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Champion_sacré_Sur_16
 
 ##
 ## Aptitudes du prêtre
@@ -3001,7 +3272,7 @@
     légères et intermédiaires et à l’utilisation des boucliers (à l’exception des
     pavois). Il est également formé au maniement de l’arme de prédilection de son
     dieu."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Armes_et_armures_0
 
 - Nom: Aura (Ext)
   Classe: Prêtre
@@ -3011,7 +3282,7 @@
   Description: "Le prêtre d’un dieu Chaotique, Mauvais, Bon ou Loyal possède une aura
     particulièrement puissante correspondant à l’alignement de la divinité (voir le
     sort de détection du Mal pour plus de détails)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Aura_Ext_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Aura_Ext_1
 
 - Nom: Sorts
   Classe: Prêtre
@@ -3036,7 +3307,7 @@
     et lancer n’importe quel sort figurant sur la liste des sorts de prêtres et appartenant
     à un niveau de sorts auquel il a accès. Il doit cependant choisir quels sorts
     préparer au cours de sa méditation quotidienne.\n\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Sorts_2
 
 - Nom: Canalisation d’énergie (Sur) et ses variantes
   Classe: Prêtre
@@ -3094,7 +3365,7 @@
     ou représentent une alternative à la canalisation d’énergie (comme contrôle des
     morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
     une variante.\n\nVoir les variantes de canalisation.\n\n'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
 
 - Nom: Domaines
   Classe: Prêtre
@@ -3118,7 +3389,7 @@
     prêtre reçoit également les pouvoirs indiqués dans chacun de ses domaines s’il
     a atteint un niveau suffisant. Sauf indication contraire, il suffit d’une action
     simple pour activer un pouvoir de domaine.\n\nVoir la liste des domaines de prêtres."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Domaines_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Domaines_4
 
 - Nom: Oraisons
   Classe: Prêtre
@@ -3129,7 +3400,7 @@
     de niveau 0) chaque jour, comme indiqué sur la Table \"Le Prêtre\" sous la mention
     « Sorts par jour ». Il jette ces sorts comme les autres mais ils ne sont pas dépensés
     lorsqu’ils sont lancés et peuvent être utilisés à nouveau."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Oraisons_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Oraisons_5
 
 - Nom: Incantation spontanée
   Classe: Prêtre
@@ -3149,7 +3420,7 @@
     le choix du joueur). Une fois que ce choix a été effectué, il ne peut plus être
     modifié. Cette décision indique également si l’énergie canalisée par le prêtre
     est positive ou négative (voir « Canalisation d’énergie » plus haut)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Incantation_spontanée_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Incantation_spontanée_6
 
 - Nom: Sorts du Bien, du Chaos, de la Loi et du Mal
   Classe: Prêtre
@@ -3159,7 +3430,7 @@
   Description: "Un prêtre ne peut pas lancer de sorts dont l’alignement est opposé
     au sien ou à celui de son dieu (s’il en sert un). L’alignement d’un sort est indiqué
     dans sa description par les registres Bien, Chaos, Loi et Mal."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_du_Bien_du_Chaos_de_la_Loi_et_du_Mal_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Sorts_du_Bien_du_Chaos_de_la_Loi_et_du_Mal_7
 
 - Nom: Langues supplémentaires
   Classe: Prêtre
@@ -3174,7 +3445,7 @@
     maniement des armes courantes, à l’utilisation des boucliers et au port d’armures.
     Il ne peut plus gagner de niveau de prêtre de ce dieu tant qu’il n’a pas fait
     acte de contrition (voir le sort pénitence).'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Langues_supplémentaires_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Langues_supplémentaires_8
 
 
 ##
@@ -3189,7 +3460,7 @@
     formé au maniement de toutes les armes courantes et de guerre, ainsi qu’au port
     des armures légères et intermédiaires et à l’utilisation des boucliers (à l’exception
     des pavois)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Armes_et_armures_0
 
 - Nom: Ennemis jurés (Ext)
   Classe: Rôdeur
@@ -3212,7 +3483,7 @@
     que le rôdeur peut également choisir, sont présentés dans le Bestiaire Pathfinder).
     Si une créature appartient à deux familles d’ennemis jurés, les bonus ne se cumulent
     pas : le rôdeur ne profite que du plus élevé des deux.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Ennemis_jurés_Ext_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
 
 - Nom: Pistage (Ext)
   Classe: Rôdeur
@@ -3221,7 +3492,7 @@
   Auto: True
   Description: "Le rôdeur ajoute la moitié de son niveau (au minimum +1) aux tests
     de Survie pour suivre des traces."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pistage_Ext_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Pistage_Ext_2
 
 - Nom: Empathie sauvage (Ext)
   Classe: Rôdeur
@@ -3240,7 +3511,7 @@
     rapide.\n\nUn rôdeur peut également utiliser cette aptitude pour influencer une
     créature magique dont la valeur d’Intelligence est de 1 ou 2, mais avec un malus
     de -4 sur son test."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Empathie_sauvage_Ext_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Empathie_sauvage_Ext_3
 
 - Nom: Style de combat (Ext)
   Classe: Rôdeur
@@ -3294,7 +3565,7 @@
     une armure légère, une armure intermédiaire ou s’il ne porte aucune armure. Il
     perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur a opté
     pour un style de combat, ce choix ne peut plus être modifié.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Style_de_combat_Ext_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Style_de_combat_Ext_4
 
 - Nom: Endurance
   Classe: Rôdeur
@@ -3303,7 +3574,7 @@
   Auto: True
   Description: "Un rôdeur de niveau 3 reçoit gratuitement le don Endurance en tant
     que don supplémentaire."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Endurance_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Endurance_5
 
 - Nom: Environnements de prédilection (Ext)
   Classe: Rôdeur
@@ -3322,7 +3593,7 @@
     choisir, s’il le désire).\n\nSi l’endroit où le rôdeur se trouve entre dans plusieurs
     catégories d’environnements de prédilection, les bonus ne se cumulent pas : le
     rôdeur ne bénéficie que du bonus le plus élevé.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Environnements_de_prédilection_Ext_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Environnements_de_prédilection_Ext_6
 
 - Nom: Pacte du chasseur (Ext)
   Classe: Rôdeur
@@ -3350,7 +3621,7 @@
     du rôdeur.\n\nLe compagnon suit les mêmes règles que les compagnons animaux des
     druides (voir la capacité de druide de pacte avec la nature), avec un niveau de
     druide effectif égal au niveau du rôdeur -3.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pacte_du_chasseur_Ext_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Pacte_du_chasseur_Ext_7
 
 - Nom: Sorts
   Classe: Rôdeur
@@ -3376,7 +3647,7 @@
    au cours de sa méditation quotidienne.\n\nJusqu’au niveau 3, le rôdeur n’a pas
    de niveau de lanceur de sorts. À partir du niveau 4, son niveau de lanceur de
    sorts est égal son niveau de rôdeur -3."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sorts_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Sorts_8
 
 - Nom: Déplacement facilité (Ext)
   Classe: Rôdeur
@@ -3388,7 +3659,7 @@
     zones de végétation dense. Il progresse normalement et ne subit aucun dégât.\n\nLa
     végétation enchantée de manière à restreindre les mouvements continue toutefois
     à l’affecter."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Déplacement_facilité_Ext_9
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Déplacement_facilité_Ext_9
 
 - Nom: Pistage accéléré (Ext)
   Classe: Rôdeur
@@ -3399,7 +3670,7 @@
     vitesse normale sans subir le malus de -5 sur ses tests de Survie. De plus, il
     ne subit qu’un malus de -10 (au lieu de -20) sur ses tests de Survie lorsqu’il
     suit une piste en se déplaçant au double de sa vitesse."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pistage_accéléré_Ext_10
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Pistage_accéléré_Ext_10
 
 - Nom: Esquive totale (Ext)
   Classe: Rôdeur
@@ -3413,7 +3684,7 @@
     bénéficie de cet avantage uniquement s’il porte une armure légère, intermédiaire
     ou aucune armure. Un rôdeur sans défense ne bénéficie pas des avantages de l’esquive
     totale."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_11
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Esquive_totale_Ext_11
 
 - Nom: Proie du chasseur (Ext)
   Classe: Rôdeur
@@ -3431,7 +3702,7 @@
     libre) mais il doit alors attendre vingt-quatre heures avant de désigner une nouvelle
     proie. Si le rôdeur a la preuve que sa cible est morte, ce délai d’attente est
     réduit à une heure."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Proie_du_chasseur_Ext_12
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Proie_du_chasseur_Ext_12
 
 - Nom: Camouflage (Ext)
   Classe: Rôdeur
@@ -3441,7 +3712,7 @@
   Description: "Un rôdeur de niveau 12 ou plus peut utiliser la compétence Discrétion
     même s’il ne bénéficie pas d’un abri ou de camouflage, à condition de se trouver
     dans un de ses environnements de prédilection."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Camouflage_Ext_13
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Camouflage_Ext_13
 
 - Nom: Esquive surnaturelle (Ext)
   Classe: Rôdeur
@@ -3453,7 +3724,7 @@
     moitié, il ne subit aucun dégât en cas de jet de sauvegarde réussi mais, en plus,
     il ne subit que la moitié des dégâts en cas d’échec du jet de sauvegarde. Un rôdeur
     sans défense perd les avantages de l’esquive surnaturelle."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_surnaturelle_Ext_14
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Esquive_surnaturelle_Ext_14
 
 - Nom: Discrétion totale (Ext)
   Classe: Rôdeur
@@ -3462,7 +3733,7 @@
   Auto: True
   Description: "Un rôdeur de niveau 17 ou plus se trouvant dans un de ses environnements
     de prédilection peut utiliser la compétence Discrétion même s’il est observé."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Discrétion_totale_Ext_15
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Discrétion_totale_Ext_15
 
 - Nom: Proie du maître chasseur (Ext)
   Classe: Rôdeur
@@ -3475,7 +3746,7 @@
     sans pour autant subir de pénalité. De plus, son bonus d’intuition aux jets d’attaque
     passe à +4. Si la cible est tuée ou si le rôdeur décide d’en changer, il ne doit
     plus attendre que dix minutes avant de pouvoir sélectionner une nouvelle cible."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Proie_du_maître_chasseur_Ext_16
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Proie_du_maître_chasseur_Ext_16
 
 - Nom: Maître chasseur (Ext)
   Classe: Rôdeur
@@ -3495,7 +3766,7 @@
     cette capacité une fois par jour par catégorie d’ennemis jurés qu’il possède,
     mais jamais deux fois contre la même créature au cours d’une période de vingt-quatre
     heures."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Maître_chasseur_Ext_17
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Maître_chasseur_Ext_17
 
 ##
 ## Aptitudes du roublard
@@ -3510,7 +3781,7 @@
     est formé au maniement de toutes les armes courantes, des arbalètes de poing,
     des arcs courts, des épées courtes, des matraques et des rapières. Il est également
     formé au port des armures légères mais pas à l’utilisation des boucliers."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Armes_et_armures_0
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Armes_et_armures_0
 
 - Nom: Attaque sournoise
   Classe: Roublard
@@ -3536,7 +3807,7 @@
     suffisamment pour en repérer les points faibles et dont il peut toucher les organes
     vitaux. Les attaques sournoises sont impossibles lorsque la cible bénéficie d’un
     camouflage."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Attaque_sournoise_1
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
 
 - Nom: Recherche des pièges
   Classe: Roublard
@@ -3547,7 +3818,7 @@
     tests de Perception destinés à repérer des pièges ainsi qu’aux tests de Sabotage.
     Seul un roublard peut utiliser la compétence Sabotage pour désarmer les pièges
     magiques."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Recherche_des_pièges_2
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Recherche_des_pièges_2
 
 - Nom: Esquive totale (Ext)
   Classe: Roublard
@@ -3560,7 +3831,7 @@
     Réflexes réussi, il évite l’attaque et ne subit pas le moindre dégât. Le roublard
     bénéficie de cet avantage uniquement s’il porte une armure légère ou aucune armure.
     Un roublard sans défense ne bénéficie pas des avantages de l’esquive totale."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_totale_Ext_3
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_totale_Ext_3
 
 - Nom: Talents de roublard
   Classe: Roublard
@@ -3574,7 +3845,7 @@
     fois.\n\nLes talents marqués d’un astérisque ajoutent un effet aux attaques sournoises
     du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque,
     et son choix doit être fait avant le jet d’attaque."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Talents_de_roublard_4
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_roublard_4
 
 - Nom: Sens des pièges (Ext)
   Classe: Roublard
@@ -3589,7 +3860,7 @@
     atteint le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il
     atteint le niveau 18.\n\nLes bonus de sens des pièges provenant de classes différentes
     se cumulent entre eux."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sens_des_pièges_Ext_5
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
 
 - Nom: Esquive instinctive (Ext)
   Classe: Roublard
@@ -3606,7 +3877,7 @@
     à son encontre.\n\nSi un roublard possède déjà la capacité d’esquive instinctive
     (grâce à une autre classe par exemple), il gagne à la place la capacité d’esquive
     instinctive supérieure.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_instinctive_Ext_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_instinctive_Ext_6
 
 - Nom: Esquive instinctive supérieure (Ext)
   Classe: Roublard
@@ -3620,7 +3891,7 @@
     instinctive (voir plus haut) grâce à une autre classe, les niveaux de toutes les
     classes qui lui donnent cette capacité se cumulent pour déterminer le nombre de
     niveaux de roublard qu’un attaquant doit posséder pour pouvoir le prendre en tenaille."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_instinctive_supérieure_Ext_7
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_instinctive_supérieure_Ext_7
 
 - Nom: Talents de maître roublard
   Classe: Roublard
@@ -3629,7 +3900,7 @@
   Auto: True
   Description: "Au niveau 10 et tous les deux niveaux par la suite, le roublard peut
     choisir l’un des talents de maître roublard suivants au lieu d’un talent de roublard."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Talents_de_maître_roublard_8
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
 
 - Nom: Coup de maître (Ext)
   Classe: Roublard
@@ -3647,4 +3918,6 @@
     roublard au cours des vingt-quatre heures qui suivent, et ceci qu’elle ait réussi
     son jet de sauvegarde ou non. Les créatures qui sont immunisées aux attaques sournoises
     le sont également aux coups de maître.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_de_maître_Ext_9
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Coup_de_maître_Ext_9
+
+
