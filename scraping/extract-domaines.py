@@ -12,8 +12,8 @@ from lxml import html
 
 ## Configurations pour le lancement
 MOCK_DOMAINE = None
-#MOCK_DOMAINE = "mocks/pretre-domaines.html"       # décommenter pour tester avec les rages pré-téléchargées
-#MOCK_DOMAINE_PAGE = "mocks/domain-feu.html"
+MOCK_DOMAINE = "mocks/pretre-domaines.html"       # décommenter pour tester avec les rages pré-téléchargées
+MOCK_DOMAINE_PAGE = "mocks/domain-feu.html"
 
 
 #
@@ -110,8 +110,9 @@ yml = yml.replace('1Nom','Nom')
 yml = yml.replace('2Classe','Classe')
 yml = yml.replace('4Source','Source')
 yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace('6Description','Description')
-yml = yml.replace('\\n\\n:','')
+yml = yml.replace("6Description: '",'Description: "')
+yml = yml.replace("\\n\\n:'",'"')
+yml = yml.replace("\\n\\n:'",'"')
 yml = yml.replace(u'7Référence',u'Référence')
 yml = yml.replace("EMPTY: ''",'')
 print(yml)
