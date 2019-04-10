@@ -10482,7 +10482,19 @@
 - Cible ou zone d'effet: jusqu’à 20 m²/niveau (F)
   Composantes: V, G, M (encens, soufre et huile, cordelette nouée, un peu de sang),
     F (un bâtonnet en argent)
-  Description: ''
+  Description: "Ce puissant sort permet au personnage de défendre sa demeure. Il protège jusqu’à 20 m² par niveau de lanceur de sorts. La zone affectée peut faire jusqu’à six mètres de haut et prendre la forme que le lanceur de sorts choisit. Il est également possible de protéger plusieurs étages en divisant la zone d’effet en plusieurs tranches. Le lanceur de sorts doit se trouver au sein du lieu à protéger au moment de l’incantation. Le sort engendre les effets magiques suivants :\n\n\
+    \ BROUILLARD. Un épais brouillard envahit tous les couloirs, limitant la vision à 1,50 m (même la vision dans le noir). Tout adversaire se trouvant à 1,50 m ou moins bénéficie d’un camouflage (les attaques à son encontre ont donc 20 % de chances d’échouer). Les adversaires plus éloignés bénéficient d’un camouflage total (50 % de chances d’échec des attaques et l’assaillant ne peut repérer sa cible par la vue). Jet de sauvegarde aucun. Résistance à la magie non.\n\
+    \ VERROUS DE MAGE. Toutes les portes au sein de la zone protégée sont fermées par un verrou du mage. Jet de sauvegarde aucun. Résistance à la magie non.\n\
+    \ TOILES D'ARAIGNÉES. Des toiles d’araignée envahissent les escaliers. Elles sont semblables à celles créées par le sort toile d'araignée, à ceci près qu’elles se reconstituent en 10 minutes si elles sont déchirées ou brûlées avant la fin du sort de défense magique. Jet de sauvegarde Réflexes, annule (voir la description de toile d’araignée). Résistance à la magie non.\n\
+    \ CONFUSION. Chaque fois qu’un intrus arrive à un croisement où plusieurs directions s’offrent à lui (embranchement, nouveau couloir, etc.), il est soumis à un effet magique mineur semblable à confusion. Il a alors 50 % de chances de croire qu’il se déplace dans la direction opposée à celle qu’il suit en réalité. Cet effet est un enchantement mental. Jet de sauvegarde aucun. Résistance à la magie oui.\n\
+    \ PORTES CACHÉES. Une image silencieuse camoufle les portes en les faisant apparaître comme des pans de murs ordinaires (cet effet affecte une porte par niveau de lanceur de sorts). Jet de sauvegarde Volonté, dévoile (en cas d’interaction). Résistance à la magie non.\n\n\
+    \ De plus, le personnage peut choisir un des cinq effets magiques suivants :\n\
+    \ - Des lumières dansantes apparaissant dans quatre couloirs. Le personnage peut créer un programme de déplacement relativement simple que les lumières reproduisent pendant la durée du sort de défense magique. Jet de sauvegarde aucun. Résistance à la magie non.\n\
+    \ - Deux bouches magiques apparaissant à des endroits différents. Jet de sauvegarde aucun. Résistance à la magie non.\n\
+    \ - Deux nuages nauséabonds apparaissant à des endroits différents. Le lanceur de sorts décide où les vapeurs vont se créer. Si ils sont dispersés, ils se reforment en 10 minutes, pour autant que le sort de défense magique ne soit pas terminé. Jet de sauvegarde Vigueur, annule (voir la description de nuage nauséabond). Résistance à la magie non.\n\
+    \ - Une bourrasque soufflant dans une pièce ou un couloir. Jet de sauvegarde Vigueur, annule. Résistance à la magie oui.\n\
+    \ - Une suggestion affectant un emplacement de 1,50 m de côté. Toutes les créatures qui pénètrent dans la zone désignée entendent mentalement la suggestion. Jet de sauvegarde Volonté, annule. Résistance à la magie oui.\n\n\
+    \ La zone protégée acquiert une puissante aura magique d’abjuration. Un sort de dissipation de la magie réussi ciblant un effet spécifique peut le faire disparaître, mais cela n’affecte pas pour autant le reste du sort. Une disjonction réussie, elle, dissipe totalement la défense magique."
   Durée: 2 heures/niveau (T)
   Jet de sauvegarde: Volonté, annule.
   Niveau: Ens/Mag 6, Sor 6
@@ -30933,23 +30945,6 @@
   Source: MJ
   Temps d'incantation: 1 minute
   École: Illusion (fantasme) (mental) ;
-- Cible ou zone d'effet: une créature vivante
-  Composantes: V, G
-  Description: À cause du personnage, une créature qui se trouvait sous 0 points de
-    vie mais s’était stabilisée recommence à agoniser. Le lanceur de sorts vise une
-    créature qui possède -1 point de vie ou moins. Celle-ci perd alors un point de
-    vie par round . On peut la stabiliser ensuite normalement mais le sort fait perdre
-    1 point de vie à toute créature mourante .
-  Durée: instantanée
-  Jet de sauvegarde: Volonté, annule ;
-  Niveau: Ens/Mag 0, Prê 0, Inq 0, Sor 0
-  Nom: Saignement
-  Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Saignement.ashx
-  Résistance à la magie: oui
-  Source: MJ
-  Temps d'incantation: 1 action simple
-  École: Nécromancie ;
 - Cible ou zone d'effet: rayonnement en forme de cône ou ligne
   Composantes: V, G, M (une écaille de dragon)
   Description: "Le personnage souffle une bouffée d'énergie. Les créatures situées\
