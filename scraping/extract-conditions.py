@@ -99,7 +99,7 @@ for s in section:
             if e.name == 'a':
                 condition[u'8Référence']=URL + e['href']
     elif s.name == 'br':
-        descr += '\\n'
+        descr += '\n'
     elif s.name is None or s.name == 'a' or s.name == 'i' or s.name == 'b':
         if s.string is None:
             for s2 in s.children:
@@ -115,7 +115,7 @@ for s in section:
     elif s.name == 'ul':
         for s2 in s.children:
             if s2.name == 'li':
-                descr += "- " + s2.text + "\\n"
+                descr += "- " + s2.text + "\n"
     elif s.name == 'center':
         for s2 in s.children:
             if s2.name == 'table':
