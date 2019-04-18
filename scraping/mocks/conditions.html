@@ -1,0 +1,887 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	États préjudiciables - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="états préjudiciables" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.États préjudiciables.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=%u00c9tats+pr%u00e9judiciables&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwbaMzJymWB63GpFYUkto3YoXdCJg=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALA4xz/yYCPxPyupVp2r1uM+B72oi3QcwxQT+thNGyuulx2WVQJ6pXVKLTIFpIAF6miPfUu" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.États préjudiciables">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.États préjudiciables">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.États préjudiciables">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.États préjudiciables.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.États préjudiciables.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			États préjudiciables
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="background-color: #fff; float: right; padding: 0 0 12px 12px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Liste_des_états_préjudiciables_46">Liste des états préjudiciables</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#À_terre_0">À terre</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Agrippé_1">Agrippé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Assourdi_2">Assourdi</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Aveuglé_3">Aveuglé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Brisé_4">Brisé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Chancelant_5">Chancelant</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Confus_6">Confus</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ébloui_7">Ébloui</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Effrayé_8">Effrayé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Enchevêtré_9">Enchevêtré</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Épuisé_10">Épuisé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Étourdi_11">Étourdi</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Fasciné_12">Fasciné</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Fatigué_13">Fatigué</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Fiévreux_14">Fiévreux</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Hébété_15">Hébété</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Hors_de_combat_16">Hors de combat</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Immobilisé_en_situation_de_lutte__17">Immobilisé (en situation de lutte )</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Inconscient_18">Inconscient</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Intangible_19">Intangible</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Invisible_20">Invisible</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Mort_21">Mort</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Mourant_22">Mourant</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Nauséeux_23">Nauséeux</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Paniqué_24">Paniqué</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Paralysé_25">Paralysé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Pétrifié_26">Pétrifié</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Pris_au_dépourvu_27">Pris au dépourvu</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Recroquevillé_sur_soi-même_28">Recroquevillé sur soi-même</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Saignement_29">Saignement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sans_défense_30">Sans défense</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Secoué_31">Secoué</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Stable_32">Stable</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Vidé_de_son_énergie_33">Vidé de son énergie</a><br />&nbsp;&nbsp;&nbsp;<a href="#Règle_optionnelle_:_les_avantages_des_états_préjudiciables_47">Règle optionnelle : les avantages des états préjudiciables</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Aveuglé_34">Aveuglé</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Chancelant_35">Chancelant</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Confus_36">Confus</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ébloui_37">Ébloui</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Empoisonné_ou_fiévreux_38">Empoisonné ou fiévreux</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Enchevêtrement_39">Enchevêtrement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#En_lutte_40">En lutte</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Hors_de_combat_41">Hors de combat</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Nauséeux_42">Nauséeux</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Saignement_43">Saignement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Secoué_44">Secoué</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sourd_45">Sourd</a><br /></p></div></div></td></tr></table></div><br /><h2 class="separator">Liste des états préjudiciables<a class="headeranchor" id="Liste_des_états_préjudiciables_46" href="#Liste_des_états_préjudiciables_46" title="Lien vers cette section">&#0182;</a></h2>Si plus d’un état préjudiciable affecte le personnage, appliquez-en tous les effets. Si les effets ne peuvent se combiner, appliquez les plus handicapants.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ÀTERRE" href="#ÀTERRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">À terre<a class="headeranchor" id="À_terre_0" href="#À_terre_0" title="Lien vers cette section">&#0182;</a></h3>Le personnage se trouve étendu sur le sol. Il reçoit un malus de -4 sur les <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> au corps à corps et l’arbalète est la seule <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20distance.ashx" title="arme à distance">arme à distance</a> dont il puisse se servir (il le fait sans malus). Il reçoit un malus de -4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les <a class="pagelink" href="Pathfinder-RPG.attaque%20au%20corps%20%c3%a0%20corps.ashx" title="attaque au corps à corps">attaques au corps à corps</a> mais bénéficie d’un bonus de +4 contre les <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20distance.ashx" title="Attaque à distance">attaques à distance</a>.<br /><br />Se relever est considéré comme une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> provoquant ainsi une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Agrippé" href="#Agrippé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Agrippé<a class="headeranchor" id="Agrippé_1" href="#Agrippé_1" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi la manœuvre de combat de <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Un personnage agrippé est retenu par une créature, un piège ou un effet. Il ne peut plus bouger et subit un malus de -4 à sa <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>, ainsi qu’un malus de -2 à ses <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et à ses <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">manœuvres de combat</a>, à l’exception des mouvements faits pour <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">agripper ou se libérer d’une prise</a>. D'autre part, une créature agrippée ne peut entreprendre aucune action qui nécessite l'utilisation de ses deux mains. S’il tente de lancer un sort, le personnage doit réussir un test de <a class="pagelink" href="Pathfinder-RPG.Concentration.ashx" title="Concentration">Concentration</a> (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 + le <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> de son adversaire + le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau du sort</a>). Il lui est de plus impossible de porter des <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Assourdi" href="#Assourdi"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Assourdi<a class="headeranchor" id="Assourdi_2" href="#Assourdi_2" title="Lien vers cette section">&#0182;</a></h3>Un individu assourdi n’entend rien. Il reçoit un malus de -4 à l’<a class="pagelink" href="Pathfinder-RPG.initiative.ashx" title="initiative">initiative</a>, manque automatiquement ses tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> liés à l’ouïe, subit un malus de -4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> opposés, et encourt 20% de chance de rater l’incantation de tout sort à <a class="pagelink" href="Pathfinder-RPG.composante%20verbale.ashx" title="composante verbale">composante verbale</a>. Si l’état de surdité persiste suffisamment longtemps, il peut arriver à s’y habituer plus ou moins.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Aveuglé" href="#Aveuglé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Aveuglé<a class="headeranchor" id="Aveuglé_3" href="#Aveuglé_3" title="Lien vers cette section">&#0182;</a></h3>Le personnage ne voit plus rien. Il subit un malus de -2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">classe d’armure</a>, perd son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la CA, et subit un malus de -4 sur ses tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> opposés et de la plupart des compétences associées à la <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> et à la <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>. Il ne peut pas effectuer le moindre <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">test de compétence</a> nécessitant d’y voir (comme lire ou utiliser une compétence de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> basée sur la vue). Tous ses adversaires bénéficient d’un <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a> total à son égard (50 % de risques de manquer son <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d'attaque</a>). Un personnage aveuglé se déplace à la moitié de sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse</a> habituelle (test d’<a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a> <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 pour se déplacer plus vite). Une créature qui rate ce test tombe <a class="pagelink" href="Pathfinder-RPG.%c3%a0%20terre.ashx" title="À terre">à terre</a>. Un personnage aveuglé pendant suffisamment longtemps peut s’habituer partiellement à sa condition et circonvenir certains de ces désavantages.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Brisé" href="#Brisé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Brisé<a class="headeranchor" id="Brisé_4" href="#Brisé_4" title="Lien vers cette section">&#0182;</a></h3>Lorsqu’un objet subit des dégâts supérieurs à la moitié de ses <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#SOLIDITE" title="L&#39;exploration">points de vie</a>, il est brisé et n’est plus aussi efficace dans sa tâche. Appliquez les effets suivants.
+<ul><li>Si c’est une arme, toute attaque faite par son intermédiaire subira un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2ts.ashx" title="jet de dégâts">dégâts</a>. Un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> n’est possible que sur un 20 naturel, et il n’infligera que le double des dommages s’il est confirmé.</li><li>Si c’est une armure ou un bouclier, le bonus conféré à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> est divisé par 2, arrondi à l’inférieur. Une armure brisée voit ses malus aux compétences doublés.</li><li>Si c’est un outil utile à une compétence, tout test effectué avec lui subit un malus de -2.</li><li>Si c’est une baguette ou un bâton, il consomme le double de charges.</li><li>S’il n’appartient à aucune des catégories précédentes, cela n’a aucun effet sur son utilisation, mais il perd 25% de sa valeur.</li></ul>
+Si c’est un objet magique, seuls les sorts <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9paration.ashx" title="Réparation">réparation</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9paration%20int%c3%a9grale.ashx" title="Réparation intégrale">réparation intégrale</a></i> pourront lui rendre son intégrité, et ce uniquement si le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> du personnage qui souhaite le réparer est égal ou supérieur à celui de l’objet. Cet état préjudiciable disparaît lorsque l’objet retrouve grâce au sort au moins la moitié de ses <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a>. <br /><br />Un objet ordinaire peut être réparé de la même manière par le biais de la compétence d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> appropriée. Dans ce cas, on effectue ce test au bout d’une heure de travail par point de vie à restaurer, et son <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> est de 20. La plupart des artisans demandent 10 % de la valeur de l’objet pour ce travail, parfois plus s’il est en très mauvais état.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Chancelant" href="#Chancelant"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chancelant<a class="headeranchor" id="Chancelant_5" href="#Chancelant_5" title="Lien vers cette section">&#0182;</a></h3>Se dit d’un personnage ayant encaissé exactement autant de points de dégâts non-létaux qu’il a au même moment de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a>. L’activité d’un personnage chancelant est restreinte à une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> ou <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">de mouvement</a> chaque round (mais ni les deux, ni une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>). Il peut cependant entreprendre des <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">actions rapides</a> et <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">instantanées</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Confus" href="#Confus"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Confus<a class="headeranchor" id="Confus_6" href="#Confus_6" title="Lien vers cette section">&#0182;</a></h3>Une créature confuse a l’esprit totalement embrouillé et ne peut agir normalement. Elle ne fait pas de différence entre un ami et un ennemi, et attaque l’un et l’autre indifféremment. Si l’un de ses alliés souhaite lancer sur elle un sort bénéfique et qu’il a besoin pour ce faire de la toucher, il devra faire un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> au corps à corps. Si un personnage confus est agressé, il attaquera en retour celui qui l’a frappé en dernier et ne s’arrêtera que lorsque son assaillant mourra ou ne sera plus dans son champ de vision.<br /><br />Jetez 1d100 et consultez la table suivante au début de chaque round pour déterminer les actions de la créature.<br /><br /><center>
+<table CLASS="tablo"><tr CLASS="titre"><td>d100</td><td CLASS="gauche">Comportement</td></tr><tr CLASS="premier"><td>01–25</td><td CLASS="gauche">Agit normalement.</td></tr><tr CLASS="alt"><td>26–50</td><td CLASS="gauche">Ne fait rien et babille de manière incohérente.</td></tr><tr><td>51–75</td><td CLASS="gauche">S’inflige 1d8 points de dégâts + bonus de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> avec un objet en main.</td></tr><tr CLASS="alt"><td>76–100</td><td CLASS="gauche">Attaque la créature la plus proche (dans ce cas, un familier fait partie du sujet).</td></tr></table>
+</center><br /><br />Si un personnage confus est dans l’incapacité d’effectuer l’action tirée pour ce <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>, il se contente de balbutier de façon incompréhensible. Si le personnage confus est attaqué, il riposte automatiquement en frappant son agresseur à son prochain tour de jeu (du moins s’il est encore confus), mais ce dernier ne tirera aucun avantage de l’état de sa victime. Un personnage confus ne porte pas d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a> quand il en a l’occasion, sauf si celle-ci est provoquée par une créature qu’il a décidé d’attaquer (par un jet de dé ou pour une riposte).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ébloui" href="#Ébloui"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Ébloui<a class="headeranchor" id="Ébloui_7" href="#Ébloui_7" title="Lien vers cette section">&#0182;</a></h3>
+Le personnage est dans l’incapacité de voir clairement suite à une trop forte stimulation de la rétine. Il reçoit un malus de -1 sur les <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et les tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Effrayé" href="#Effrayé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Effrayé<a class="headeranchor" id="Effrayé_8" href="#Effrayé_8" title="Lien vers cette section">&#0182;</a></h3>Un personnage effrayé fuit la source de sa peur aussi rapidement qu’il le peut. Si aucune issue ne s’ouvre à lui, il peut combattre. Il reçoit un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">sauvegarde</a>, ainsi qu’aux <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">tests de compétence</a> et de <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">caractéristique</a>. Il peut user de ses pouvoirs et ses sorts pour s’enfuir et le fait inévitablement si aucune autre solution ne s’offre à lui.<br /><br />Cet état s’apparente au fait d’être <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secoué</a>, sauf que le personnage fait tout pour s’enfuir. <a class="pagelink" href="Pathfinder-RPG.Paniqu%c3%a9.ashx" title="Paniqué">Paniqué</a> est un état de terreur encore plus poussé.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Enchevêtré" href="#Enchevêtré"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Enchevêtré<a class="headeranchor" id="Enchevêtré_9" href="#Enchevêtré_9" title="Lien vers cette section">&#0182;</a></h3>Le personnage est comme ficelé. L’enchevêtrement handicape le mouvement mais ne le bloque pas totalement, à moins que les liens soient fixés à un objet immobile ou retenus avec force. Un personnage enchevêtré se déplace à <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">demi-vitesse</a> et il lui est impossible de <a class="pagelink" href="Pathfinder-RPG.course.ashx" title="Course">courir</a> ou de <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charger</a>. Il reçoit un malus de -2 au <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> et un malus de -4 en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>. S’il se risque à lancer un sort, il le perd à moins de réussir un test de <a class="pagelink" href="Pathfinder-RPG.Concentration.ashx" title="Concentration">Concentration</a> (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 15 + <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau de sort</a>).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Épuisé" href="#Épuisé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Épuisé<a class="headeranchor" id="Épuisé_10" href="#Épuisé_10" title="Lien vers cette section">&#0182;</a></h3>Le personnage se <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">déplace</a> deux fois moins vite qu’habituellement, est dans l’incapacité de <a class="pagelink" href="Pathfinder-RPG.course.ashx" title="Course">courir</a> et de <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charger</a>, et il subit un malus de -6 en <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> et en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>. Un personnage épuisé redevient <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatigué</a> au terme d’une heure de repos total. Un personnage <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatigué</a> devient épuisé dès qu’il fait quoi que ce soit de fatiguant.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Étourdi" href="#Étourdi"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Étourdi<a class="headeranchor" id="Étourdi_11" href="#Étourdi_11" title="Lien vers cette section">&#0182;</a></h3>Un personnage étourdi laisse tomber ce qu’il avait en main, ne peut intenter aucune action, subit un malus de -2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et perd son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la CA. Les attaquants reçoivent un bonus à l'attaque de +4 lorsqu'ils tentent une manoeuvre de combat contre un ennemi étourdi.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fasciné" href="#Fasciné"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fasciné<a class="headeranchor" id="Fasciné_12" href="#Fasciné_12" title="Lien vers cette section">&#0182;</a></h3>Une créature est fascinée par un sort ou un effet surnaturel. Tant que l’effet reste en place, une créature fascinée reste assise ou debout, dans l’incapacité d’effectuer d’autre action que se concentrer sur l’effet en question. Elle reçoit un malus de -4 sur les <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">tests de compétence</a> joués en réaction, comme les tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>. L’arrivée d’une menace potentielle (comme une créature hostile) donne droit à un nouveau <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre l’effet de fascination. Toute menace évidente, comme dégainer une arme, lancer un sort ou tirer sur la créature, rompt immédiatement l’effet de fascination. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, il est possible de secouer une créature fascinée pour lui faire reprendre ses esprits.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fatigué" href="#Fatigué"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fatigué<a class="headeranchor" id="Fatigué_13" href="#Fatigué_13" title="Lien vers cette section">&#0182;</a></h3>Un personnage fatigué est dans l’incapacité de <a class="pagelink" href="Pathfinder-RPG.course.ashx" title="Course">courir</a> et de <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charger</a>. Il subit un malus de -2 en <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> ainsi qu’en <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>. La fatigue se dissipe au bout de huit heures de repos total. Un personnage fatigué devient <a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisé</a> dès qu’il fait quoi que ce soit qui causerait un nouvel état <a class="pagelink" href="Pathfinder-RPG.Fatigu%c3%a9.ashx" title="Fatigué">fatigué</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fiévreux" href="#Fiévreux"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fiévreux<a class="headeranchor" id="Fiévreux_14" href="#Fiévreux_14" title="Lien vers cette section">&#0182;</a></h3>Le personnage reçoit un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a>, de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2ts.ashx" title="jet de dégâts">dégâts</a> d’armes et de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">sauvegarde</a> ainsi qu’aux <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">tests de compétence</a> et <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">de caractéristique</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Hébété" href="#Hébété"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Hébété<a class="headeranchor" id="Hébété_15" href="#Hébété_15" title="Lien vers cette section">&#0182;</a></h3>La créature est incapable d’agir de manière normale. Elle est dans l’incapacité d’accomplir la moindre action, mais ne subit aucun malus à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Horsdecombat" href="#Horsdecombat"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Hors de combat<a class="headeranchor" id="Hors_de_combat_16" href="#Hors_de_combat_16" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#HORSDECOMBAT" title="Blessures et mort">Blessures et mort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Un individu dont le total de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> est exactement de 0, ou dont le total est inférieur mais qui est <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stabilisé</a> et conscient, est hors de combat. L’activité d’un personnage hors de combat est réduite à une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> ou une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> par round (mais pas une de chaque, ni une action complexe). Sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de déplacement</a> habituelle est réduite de moitié. Il n’y a pas de risque à ce qu’il fasse des <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">actions de mouvement</a>, mais il subit 1 point de dégâts après chaque <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> (ainsi que d’autres actions fatigantes, comme lancer un sort à <a class="pagelink" href="Pathfinder-RPG.incantation%20rapide.ashx" title="Incantation rapide">incantation rapide</a> par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>). À moins que cette action lui ait permis de régénérer des <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a>, il est maintenant à un total de points de vie négatif et <a class="pagelink" href="Pathfinder-RPG.mourant.ashx" title="Mourant">mourant</a>.<br /><br />Un personnage hors de combat dont le total de points de vie est négatif récupère des <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> normalement si quelqu’un s’occupe de lui. S’il est seul, peut se reposer huit heures puis faire un test de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> dont le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> sera de 10. Il subit un malus égal à son nombre de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> négatifs pour ce test. S’il le réussit, il commencera à récupérer des points de vie normalement. Dans le cas contraire, il subit 1 point de dégâts mais ne tombe pas inconscient. Dès qu’il commence à récupérer des points de vie, il ne risque plus d’en perdre de façon naturelle, même si son total est toujours négatif.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Immobilisé" href="#Immobilisé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Immobilisé (en situation de <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a>)<a class="headeranchor" id="Immobilisé_en_situation_de_lutte__17" href="#Immobilisé_en_situation_de_lutte__17" title="Lien vers cette section">&#0182;</a></h3>Une créature immobilisée est fermement retenue et ne peut pas entreprendre la moindre action. Elle ne peut pas se déplacer et elle ne bénéficie pas de son bonus à la <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a>. Elle subit un malus de -4 à sa <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Même si elle peut toujours tenter de se libérer en utilisant un test de <a class="pagelink" href="Pathfinder-RPG.man%c5%93uvre%20offensive.ashx" title="Manœuvre offensive">manœuvre de combat</a> ou la compétence <a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a>, ses actions sont également limitées. Elle ne peut lancer aucun sort qui exige une <a class="pagelink" href="Pathfinder-RPG.composante.ashx" title="composante">composante</a> somatique ou matérielle, mais elle est capable de parler ou d’entreprendre des actions mentales. Si elle veut lancer un sort, il lui faut réussir un test de <a class="pagelink" href="Pathfinder-RPG.Concentration.ashx" title="Concentration">Concentration</a> (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 + <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a> de son adversaire + <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20sort.ashx" title="Niveau de sort">niveau du sort</a>) ou le sort est perdu. Immobilisé est une version plus puissante d’agrippé et leurs effets ne se cumulent pas.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Inconscient" href="#Inconscient"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Inconscient<a class="headeranchor" id="Inconscient_18" href="#Inconscient_18" title="Lien vers cette section">&#0182;</a></h3>
+Un personnage inconscient est sans connaissance et sans défense. Un personnage sombre dans l’inconscience quand son total de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> tombe en dessous de 0 (mais pas plus que sa valeur de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a>), mais aussi quand il encaisse plus de points de <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#NONLETAL" title="Blessures et mort">dégâts non-létaux</a> qu’il lui reste de points de vie.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Intangible" href="#Intangible"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Intangible<a class="headeranchor" id="Intangible_19" href="#Intangible_19" title="Lien vers cette section">&#0182;</a></h3>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi <a class="pagelink" href="Pathfinder-RPG.Intangible%20(capacit%c3%a9).ashx" title="Intangible (Ext)">ici</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Dénuées de corps physique, les créatures intangibles sont immunisées contre les attaques non-magiques. Elles ne subissent que la moitié des dommages de la part d’armes magiques, de sorts, de pouvoirs magiques et d’effets surnaturels. Cependant, les autres créatures intangibles, les effets intangibles et les effets de force infligent eux des dommages normaux.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Invisible" href="#Invisible"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Invisible<a class="headeranchor" id="Invisible_20" href="#Invisible_20" title="Lien vers cette section">&#0182;</a></h3>Indétectable à l’œil nu. Les créatures invisibles bénéficient d’un bonus de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et leur cible perd son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Voir « <a class="pagelink" href="Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx#INVISIBILITE" title="Les capacités spéciales">Invisibilité</a> » dans la section des capacités spéciales.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Mort" href="#Mort"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Mort<a class="headeranchor" id="Mort_21" href="#Mort_21" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#MORT" title="Blessures et mort">Blessures et mort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Le personnage est arrivé à un total de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> négatifs égal à sa valeur de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> ou une valeur de Constitution de 0, ou a directement été achevé par un sort, un effet ou des dégâts excessifs. L’âme du personnage quitte son enveloppe corporelle. On ne peut plus soigner un personnage mort que ce soit par des moyens ordinaires ou magiques, mais il peut être ramené à la vie par magie. Un corps sans vie se décompose normalement si on ne le préserve pas magiquement mais le sort qui le ramène à la vie lui rend sa pleine santé ou l’état dans lequel il se trouvait au moment de la mort (selon le sort utilisé). Quel que soit le sort qui le ramène d’entre les morts, le personnage n’a pas à se soucier de la rigidité cadavérique, la décomposition et autres effets secondaires déplaisants de la mort.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Mourant" href="#Mourant"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Mourant<a class="headeranchor" id="Mourant_22" href="#Mourant_22" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#MOURANT" title="Blessures et mort">Blessures et mort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Le personnage est inconscient et en train de mourir. Une créature qui a un nombre de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> négatif et qui n’est pas <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stabilisée</a> agonise. Une créature agonisante ne peut pas entreprendre la moindre action. À son tour à chaque round (en commençant par celui où il est tombé en dessous de 0 point de vie) et jusqu’à ce que sont état soit stable ou qu’il meure, le personnage doit faire un test de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> dont le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> sera de 10. Il subit un malus égal à son nombre de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> négatifs. Un personnage <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stabilisé</a> n’a pas besoin de faire ce test. Un 20 naturel est un succès automatique. S’il le rate, il perd 1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a>. Une créature mourante meurt quand son nombre de points de vie négatifs égale sa valeur de Constitution.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Nauséeux" href="#Nauséeux"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Nauséeux<a class="headeranchor" id="Nauséeux_23" href="#Nauséeux_23" title="Lien vers cette section">&#0182;</a></h3>Souffrant de violentes douleurs abdominales, un personnage dans cet état est incapable d’attaquer, de lancer le moindre sort ou de maintenir l’effet de ceux qu’il a jetés précédemment, bref de faire quoi que ce soit nécessitant un minimum de concentration. Ses capacités d’action sont limitées à une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> par round.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Paniqué" href="#Paniqué"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Paniqué<a class="headeranchor" id="Paniqué_24" href="#Paniqué_24" title="Lien vers cette section">&#0182;</a></h3>Un personnage paniqué lâche ce qu’il tient en main et s’enfuit au hasard en s’éloignant de la source de sa peur et sans s’approcher des autres sources de danger potentielles. Il ne peut effectuer aucune autre action. Il subit un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a>, ainsi qu’aux <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">tests de compétence</a> et de <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">caractéristique</a>. S’il se retrouve acculé, il se <a class="pagelink" href="Pathfinder-RPG.recroquevill%c3%a9.ashx" title="Recroquevillé">recroqueville</a> sur lui-même sans pouvoir attaquer (il utilise alors généralement l’action de <a class="pagelink" href="Pathfinder-RPG.d%c3%a9fense%20totale.ashx" title="défense totale">défense totale</a>). Il peut se servir de ses pouvoirs ou de ses sorts pour s’enfuir (il y est même obligé si ceux-ci constituent la seule façon de s’enfuir).<br /><br />Un individu paniqué est dans un état de terreur plus intense que s’il était <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secoué</a> ou <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayé</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Paralysé" href="#Paralysé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Paralysé<a class="headeranchor" id="Paralysé_25" href="#Paralysé_25" title="Lien vers cette section">&#0182;</a></h3>Incapable de bouger ou d’agir, figé sur place, le personnage a une valeur effective de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> et de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> de 0, mais peut tenter des actions mentales. Une créature en vol à ce moment ne peut plus battre des ailes et tombe. Un personnage qui nage peut se noyer. Il est possible d’entrer dans le même espace qu’une créature paralysée, alliée ou non, mais le traverser compte comme deux cases de déplacement.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Pétrifié" href="#Pétrifié"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pétrifié<a class="headeranchor" id="Pétrifié_26" href="#Pétrifié_26" title="Lien vers cette section">&#0182;</a></h3>Un personnage pétrifié a été changé en pierre. Il est tenu pour inconscient. Si la statue qu’il constitue n’est que légèrement lézardée ou si les morceaux cassés sont accolés à leur place quand on le retransforme en être de chair, son corps se reforme sans qu’il en souffre. Par contre, si la statue a été sérieusement abîmée (bras cassé et réduit en poussière ou oublié par terre, etc.), le personnage sera marqué des mêmes blessures quand on le ramènera dans le monde des vivants. On doit alors définir les conséquences en termes de perte permanente de points de vie ou handicap.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Prisaudépourvu" href="#Prisaudépourvu"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pris au dépourvu<a class="headeranchor" id="Pris_au_dépourvu_27" href="#Pris_au_dépourvu_27" title="Lien vers cette section">&#0182;</a></h3>Tout personnage n’ayant pas encore entamé d’action au cours d’un combat est automatiquement pris au dépourvu. Il perd son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la CA et au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> et n’a pas la possibilité de lancer une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Recroquevillé" href="#Recroquevillé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Recroquevillé sur soi-même<a class="headeranchor" id="Recroquevillé_sur_soi-même_28" href="#Recroquevillé_sur_soi-même_28" title="Lien vers cette section">&#0182;</a></h3>Le personnage éprouve une telle terreur qu’il est dans l’incapacité de faire la moindre action. Il reçoit un malus de -2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et perd son éventuel bonus de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> à la CA.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Saignement" href="#Saignement"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Saignement<a class="headeranchor" id="Saignement_29" href="#Saignement_29" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Saignement est également le nom d'un <a class="pagelink" href="Pathfinder-RPG.sort%20saignement.ashx" title="Saignement">sort</a>. Voir aussi la <a class="pagelink" href="Pathfinder-RPG.Saignement%20(capacit%c3%a9).ashx" title="Saignement (Ext)">capacité de monstre</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+La créature se met à saigner et subit des dommages au début de chaque round.<br /><br />Il est possible d’arrêter l’hémorragie en réussissant un test de <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> (DD 15) ou en utilisant un sort curatif (et ce même si le saignement affecte une caractéristique). Il arrive parfois que le personnage subisse un saignement qui lui inflige des <a class="pagelink" href="Pathfinder-RPG.affaiblissement%20temporaire.ashx" title="affaiblissement temporaire">affaiblissements temporaires</a> ou des <a class="pagelink" href="Pathfinder-RPG.diminution%20permanente.ashx" title="diminution permanente">diminutions permanentes</a> de caractéristique. Ces dégâts ne se cumulent pas, sauf s’ils sont de nature différente. Lorsque deux sources infligent des hémorragies de même nature, appliquez le résultat le plus handicapant. Dans l’exemple précédent, la <a class="pagelink" href="Pathfinder-RPG.diminution%20permanente.ashx" title="diminution permanente">diminution permanente</a> est pire que l’<a class="pagelink" href="Pathfinder-RPG.affaiblissement%20temporaire.ashx" title="affaiblissement temporaire">affaiblissement temporaire</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sansdéfense" href="#Sansdéfense"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sans défense<a class="headeranchor" id="Sans_défense_30" href="#Sans_défense_30" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi les <a class="pagelink" href="Pathfinder-RPG.Modificateurs%20de%20combat.ashx#SANSDEFENSE" title="Modificateurs de combat">modificateurs de combat</a> des cibles sans défense.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Un personnage peut se retrouver paralysé, immobilisé par un sort, ligoté, endormi, inconscient ou à la merci de ses ennemis d’une façon ou d’une autre. Un personnage sans défense possède une valeur effective de <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">Dextérité</a> de 0 (soit un modificateur de -5). Toute <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">attaque</a> de corps à corps lancée contre le personnage s’effectue à +4 au jet (ce qui revient à attaquer un adversaire à terre). Les <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20distance.ashx" title="Attaque à distance">attaques à distance</a> ne profitent d’aucun bonus. Un <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublard</a> à la possibilité de tenter une <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> contre lui.<br /><br />Au prix d’une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, un ennemi peut essayer d’achever le personnage à l’aide d’une <a class="pagelink" href="Pathfinder-RPG.arme%20de%20corps%20%c3%a0%20corps.ashx" title="arme de corps à corps">arme de corps à corps</a>. On peut aussi porter un <a class="pagelink" href="Pathfinder-RPG.coup%20de%20gr%c3%a2ce.ashx" title="Coup de grâce">coup de grâce</a> à l’aide d’un arc ou d’une arbalète, à condition de se trouver à moins de 1,50 m de l’individu sans défense (c’est-à-dire d’occuper une position adjacente). L’agresseur touche automatiquement et l’attaque est considérée comme un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a>. Un <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublard</a> ajoute ses dégâts d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> quand il essaye de délivrer un coup de grâce. Même si la cible survit, elle doit effectuer avec succès un jet de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> (<a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 10 + nombre de points de dégâts infligés) sous peine de succomber au choc. Tenter d’achever un ennemi sans défense provoque une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>.<br /><br />Les créatures invulnérables aux coups critiques le sont également contre les tentatives de <a class="pagelink" href="Pathfinder-RPG.coup%20de%20gr%c3%a2ce.ashx" title="Coup de grâce">coup de grâce</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Secoué" href="#Secoué"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Secoué<a class="headeranchor" id="Secoué_31" href="#Secoué_31" title="Lien vers cette section">&#0182;</a></h3>Le personnage reçoit un malus de -2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">sauvegarde</a>, ainsi qu’aux <a class="pagelink" href="Pathfinder-RPG.test%20de%20comp%c3%a9tence.ashx" title="test de compétence">tests de compétence</a> et de <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">caractéristique</a>. Être secoué représente un état de terreur moins avancé qu’être <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayé</a> ou <a class="pagelink" href="Pathfinder-RPG.paniqu%c3%a9.ashx" title="Paniqué">paniqué</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Stable" href="#Stable"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Stable<a class="headeranchor" id="Stable_32" href="#Stable_32" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Voir aussi <a class="pagelink" href="Pathfinder-RPG.Blessures%20et%20mort.ashx#STABLE" title="Blessures et mort">Blessures et mort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Un personnage qui était mourant mais qui a cessé de perdre des <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> (et dont le total de points de vie est toujours négatif) est <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stable</a>. Le personnage n’est plus mourant mais reste inconscient. S’il est devenu stable grâce à une assistance extérieure (par exemple, grâce à un sort curatif ou à la compétence <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a>), il ne perd plus de <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a>. Chaque heure qui passe, il doit faire un jet de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> afin de reprendre ses esprits et de ne plus être que hors de combat (même si son total de points de vie reste négatif), en tenant compte d’un malus égal à son total de points de vie négatifs.<br /><br />S’il est devenu stable sans aide extérieure, il risque de recommencer à perdre des points de vie. Chaque heure, il doit faire un jet de <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> afin de rester stable (comme s’il recevait l’aide de quelqu’un), mais à chaque fois qu’il échoue, il perd 1 point de vie.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Vidédesonénergie" href="#Vidédesonénergie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Vidé de son énergie<a class="headeranchor" id="Vidé_de_son_énergie_33" href="#Vidé_de_son_énergie_33" title="Lien vers cette section">&#0182;</a></h3>
+Le personnage a contracté un ou plusieurs <a class="pagelink" href="Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx" title="niveau négatif">niveaux négatifs</a>, qui peuvent devenir permanents. S’il a au moins autant de niveaux négatifs que de <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">DV</a>, il meurt instantanément.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div>
+<h2 class="separator">Règle optionnelle : les avantages des états préjudiciables<a class="headeranchor" id="Règle_optionnelle_:_les_avantages_des_états_préjudiciables_47" href="#Règle_optionnelle_:_les_avantages_des_états_préjudiciables_47" title="Lien vers cette section">&#0182;</a></h2>Un lanceur de sorts plein de ressources fait appel à son expérience pour augmenter la puissance de sa magie. Si le MJ est d’accord, les <a class="pagelink" href="Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx" title="États préjudiciables">états préjudiciables</a> peuvent également fournir des avantages, tout comme certaines <a class="pagelink" href="Pathfinder-RPG.plaies.ashx" title="Plaies">plaies</a> magiques. <br /><br />Si les indications suivantes imposent un risque d’échec des sorts, il s’ajoute aux autres jets à faire pour réussir une incantation (comme un test de <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> et les risques d’échec des sorts profanes). Ce risque s’applique une fois ces jets effectués.<br /><br /><h3 class="separator">Aveuglé<a class="headeranchor" id="Aveuglé_34" href="#Aveuglé_34" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts aveuglé peut utiliser une partie de l’énergie d’un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la lumière pour contrer la cécité. Quand un lanceur de sorts lance un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la lumière, il peut prendre le risque d’avoir 20% d’échec. S’il réussit à le lancer, il dissipe la cécité.<br /><br /><h3 class="separator">Chancelant<a class="headeranchor" id="Chancelant_35" href="#Chancelant_35" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, quand le lanceur de sorts est <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secoué</a>, il peut décider de courir 20% de risques d’échec du sort en lançant un sort avec un temps d’incantation d’une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a> ou <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">simple</a>. S’il réussit, il peut faire une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> directement après avoir lancé le sort.<br /><br /><h3 class="separator">Confus<a class="headeranchor" id="Confus_36" href="#Confus_36" title="Lien vers cette section">&#0182;</a></h3>Quand le personnage est <a class="pagelink" href="Pathfinder-RPG.confus.ashx" title="Confus">confus</a> (temporairement ou de façon permanente, comme avec un sort ou un effet d’<a class="pagelink" href="Pathfinder-RPG.ali%c3%a9nation%20mentale.ashx" title="Aliénation mentale">aliénation mentale</a>), il peut puiser dans cette confusion pendant ses périodes de lucidité. Quand le lanceur de sorts peut agir normalement, le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de ses sorts à effet de confusion ou d'<a class="pagelink" href="Pathfinder-RPG.ali%c3%a9nation%20mentale.ashx" title="Aliénation mentale">aliénation mentale</a> augmente de 1. Le lanceur de sorts gagne aussi un bonus de compétence de +2 au test de <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> pour vaincre la <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">résistance à la magie</a> vis-à-vis de ces sorts.<br /><br /><h3 class="separator">Ébloui<a class="headeranchor" id="Ébloui_37" href="#Ébloui_37" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts ébloui peut utiliser une partie de l’énergie d’un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de l’obscurité pour essayer de contrer l’<a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">éblouissement</a>. Quand un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">ébloui</a> lance un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de l’obscurité, il peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme à l’<a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">éblouissement</a>.<br /><br /><h3 class="separator">Empoisonné ou fiévreux<a class="headeranchor" id="Empoisonné_ou_fiévreux_38" href="#Empoisonné_ou_fiévreux_38" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour, quand le personnage est empoisonné ou <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreux</a>, il peut décider de courir 20% de risques d’échec du sort lorsqu’il lance un sort qui inflige un effet de poison ou de <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fièvre</a>. S’il réussit, le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> des effets de poison ou de <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fièvre</a> de ce sort augmente de 2.<br /><br /><h3 class="separator">Enchevêtrement<a class="headeranchor" id="Enchevêtrement_39" href="#Enchevêtrement_39" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sort <a class="pagelink" href="Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx" title="Enchevêtré">enchevêtré</a> qui lance un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la force peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme à l’<a class="pagelink" href="Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx" title="Enchevêtré">enchevêtrement</a>. S’il était ancré au sol, il n’est plus gêné au niveau de ses mouvements mais il est toujours <a class="pagelink" href="Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx" title="Enchevêtré">enchevêtré</a>.<br /><br /><h3 class="separator">En lutte<a class="headeranchor" id="En_lutte_40" href="#En_lutte_40" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.agripp%c3%a9.ashx" title="Agrippé">agrippé</a> peut courir 20% de risques d’échec sur un sort d’attaque de contact. S’il réussit à le lancer quand même, il gagne un bonus de +2 au jet d’attaque contre la créature qui l’agrippe.<br /><br /><h3 class="separator">Hors de combat<a class="headeranchor" id="Hors_de_combat_41" href="#Hors_de_combat_41" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.hors%20de%20combat.ashx" title="Hors de combat">hors de combat</a> peut puiser dans sa peur de la mort pour améliorer ses sorts de <a class="pagelink" href="Pathfinder-RPG.convocation.ashx" title="convocation">convocation</a> (guérison). Une fois par jour, quand le personnage est <a class="pagelink" href="Pathfinder-RPG.hors%20de%20combat.ashx" title="Hors de combat">hors de combat</a> suite à des dégâts reçus, il peut lancer un unique sort de <a class="pagelink" href="Pathfinder-RPG.convocation.ashx" title="convocation">convocation</a> (guérison) sur sa personne comme s’il possédait deux niveaux de lanceur de sorts de plus qu’en réalité. Il doit lancer le sort lui-même, ce pouvoir ne permet pas d’augmenter le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> d’un sort lancé à partir d’un objet magique.<br /><br /><h3 class="separator">Nauséeux<a class="headeranchor" id="Nauséeux_42" href="#Nauséeux_42" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a> peut utiliser une partie de l’énergie d’un sort de <a class="pagelink" href="Pathfinder-RPG.convocation.ashx" title="convocation">convocation</a> (guérison) pour tenter de contrer la nausée. Quand un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a> lance un sort de <a class="pagelink" href="Pathfinder-RPG.convocation.ashx" title="convocation">convocation</a> (guérison), il peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme à la nausée.<br /><br /><h3 class="separator">Saignement<a class="headeranchor" id="Saignement_43" href="#Saignement_43" title="Lien vers cette section">&#0182;</a></h3>Tant que le lanceur de sorts est affecté par cette condition, ses sorts de blessure infligent des points de dégâts supplémentaires par dé. Ceci s’applique uniquement aux sorts de blessure destinés à blesser, pas à ceux qui soignent les <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">morts-vivants</a>.<br /><br /><h3 class="separator">Secoué<a class="headeranchor" id="Secoué_44" href="#Secoué_44" title="Lien vers cette section">&#0182;</a></h3>Quand un lanceur de sorts est <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secoué</a>, il peut, une fois par jour, puiser dans ses peurs pour augmenter la puissance d’un unique sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> de la peur. Dans ce cas, le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de ce sort est augmenté de 1. Il doit lancer le sort lui-même, ce pouvoir ne permet pas d’augmenter le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> d’un sort lancé à partir d’un objet magique.<br /><br /><h3 class="separator">Sourd<a class="headeranchor" id="Sourd_45" href="#Sourd_45" title="Lien vers cette section">&#0182;</a></h3>Un lanceur de sorts <a class="pagelink" href="Pathfinder-RPG.assourdi.ashx" title="Assourdi">sourd</a> peut utiliser une partie de l’énergie d’un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du son pour essayer de contrer la surdité. Quand un lanceur de sort <a class="pagelink" href="Pathfinder-RPG.assourdi.ashx" title="Assourdi">sourd</a> lance un sort du <a class="pagelink" href="Pathfinder-RPG.registre.ashx" title="Registre">registre</a> du son, il peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme à la surdité.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
