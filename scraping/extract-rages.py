@@ -64,6 +64,9 @@ else:
     content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx").read(),features="lxml").body
 
 section = jumpTo(html, 'h2',{'class':'separator'}, u"Description des pouvoirs de rage")
+
+source = None
+sourceNext = None
 for s in section:
     if s.name == 'div':
         rage = {'4Source':'MJ','5Niveau':1}
@@ -75,11 +78,17 @@ for s in section:
                 if newObj:
                     rage['2Classe'] = 'Barbare'
                     rage['6Description'] = descr.strip()
+                    if not sourceNext is None:
+                        rage['4Source'] = sourceNext
                     rage['EMPTY'] = ""
                     liste.append(rage)
+                    sourceNext = source
+                    source = None
                     rage = {'4Source':'MJ','5Niveau':1}
                     brCount = 0
                     descr = ""
+                else:
+                    sourceNext = source
                 rage['1Nom'] = "Rage: " + e.text.replace('¶','').strip()
                 newObj = True
             elif e.name == 'b' and e.text == u'Prérequis':
@@ -101,11 +110,11 @@ for s in section:
                 for c in e.children:
                     if c.name == 'img':
                         if('logoAPG' in c['src']):
-                            rage['4Source'] = 'MJRA'
+                            source = 'MJRA'
                         elif('logoUC' in c['src']):
-                            rage['4Source'] = 'AG'
+                            source = 'AG'
                         elif('logoMCA' in c['src']):
-                            rage['4Source'] = 'MCA'
+                            source = 'MCA'
                         else:
                             print(c['src'])
                             exit(1)
@@ -114,6 +123,8 @@ for s in section:
         ## last element
         rage['2Classe'] = 'Barbare'
         rage['6Description'] = descr.strip()
+        if not sourceNext is None:
+            rage['4Source'] = sourceNext
         rage['EMPTY'] = ""
         liste.append(rage)
             
