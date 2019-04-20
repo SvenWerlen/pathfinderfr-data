@@ -1,0 +1,750 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Tableau récapitulatif des armes - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="armes" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau récapitulatif des armes.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Tableau+r%u00e9capitulatif+des+armes&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwWPLMqf9548jkW+oMwnh17poIDpA=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJyQM/4BQwsDGu4Lb/f4IU8+B72oi3QcwxQT+thNGyuukrKBILELXf1pJoHVaS/0bOYhC0a" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Tableau récapitulatif des armes">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Tableau récapitulatif des armes">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Tableau récapitulatif des armes">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Tableau récapitulatif des armes.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Tableau récapitulatif des armes.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Tableau récapitulatif des armes
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<h2 class="separator">Accès rapide aux sections sur l'équipement<a class="headeranchor" id="Accès_rapide_aux_sections_sur_léquipement_0" href="#Accès_rapide_aux_sections_sur_léquipement_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top; text-align: left"><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Argent%20et%20richesse.ashx" title="Argent et richesse">Argent et richesse</a></li>
+<li><b><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx" title="Tableau récapitulatif des armes">Les armes</a></b></li>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx" title="Tableau récapitulatif des armes">tableau récapitulatif</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx" title="Caractéristiques des armes">caractéristiques</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx" title="Descriptions individuelles des armes">descriptions individuelles</a></li></ul>
+</ul>
+</td><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx" title="Les matériaux spéciaux">Matériaux spéciaux</a></li>
+<li><b><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx" title="Tableau récapitulatif des armures">Les armures</a></b></li>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx" title="Tableau récapitulatif des armures">tableau récapitulatif</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx" title="Caractéristiques des armures">caractéristiques</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx" title="Descriptions individuelles des armures">descriptions individuelles</a></li></ul>
+</ul>
+</td><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx" title="Matériel d&#39;aventurier">Matériel d'aventurier</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">Substances et objets spéciaux</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx" title="Matériel de classes et de compétences">Matériel de classes et de compétences</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.V%c3%aatements.ashx" title="Vêtements">Vêtements</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Nourriture%2c%20boisson%20et%20h%c3%a9bergement.ashx" title="Nourriture, boisson et hébergement">Nourriture, boisson et hébergement</a></li></ul>
+</td><td>
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Montures%20et%20harnachement.ashx" title="Montures et harnachement">Montures et harnachement</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Moyens%20de%20transport.ashx" title="Moyens de transport">Moyens de transport</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx" title="Objets récréatifs">Objets récréatifs</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Lancement%20de%20sorts%20et%20services.ashx" title="Lancement de sorts et services">Lancement de sorts et services</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx" title="Équipements raciaux">Équipements raciaux</a></li></ul>
+</td></tr></table></div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABCOURANTES" href="#TABCOURANTES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Les armes courantes <a class="headeranchor" id="Les_armes_courantes_0" href="#Les_armes_courantes_0" title="Lien vers cette section">&#0182;</a></h2>
+<center>
+<table CLASS="tablo"><caption>Tableau récapitulatif des armes courantes</caption><tr CLASS="titre"><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMECOURANTE" title="Caractéristiques des armes">Armes courantes</a></td><td>Prix</td><td>Dégâts (P)</td><td>Dégâts (M)</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Critique_6" title="Caractéristiques des armes">Critique</a></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Facteur_de_portée_7" title="Caractéristiques des armes">Facteur de portée</a></td><td>Poids <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE1" title="Tableau récapitulatif des armes">1</a>)</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Type_9" title="Caractéristiques des armes">Type</a> <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE2" title="Tableau récapitulatif des armes">2</a>)</sup></td><td>Spécial</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>COMBAT À MAINS NUES</b></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Attaqueàmainsnues" title="Descriptions individuelles des armes">Attaque à mains nues</a> <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE3" title="Tableau récapitulatif des armes">3</a>)</sup></td><td>—</td><td>1d2</td><td>1d3</td><td>×2</td><td>—</td><td>—</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#NONLETAUX" title="Caractéristiques des armes">Non-létaux</a></td></tr><tr CLASS="alt"></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMELEGERE" title="Caractéristiques des armes">LÉGÈRE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESCOURANTESLEGERES" href="#ARMESCOURANTESLEGERES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Ceste" title="Descriptions individuelles des armes">Ceste</a></td><td>5 po</td><td>1d3</td><td>1d4</td><td>19–20/×2</td><td>-</td><td>500g</td><td>C ou P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">Moine</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Ceste" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Coupdepoing" title="Descriptions individuelles des armes">Coup-de-poing américain</a></td><td>1 po</td><td>1d2</td><td>1d3</td><td>×2</td><td>—</td><td>500g</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">Moine</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Coupdepoing" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Dague" title="Descriptions individuelles des armes">Dague</a></td><td>2 po</td><td>1d3</td><td>1d4</td><td>19–20/×2</td><td>2 cases/3 m</td><td>500g</td><td>P ou T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Daguecoupdepoing" title="Descriptions individuelles des armes">Dague coup-de-poing</a></td><td>2 po</td><td>1d3</td><td>1d4</td><td>×3</td><td>—</td><td>500g</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Gantelet" title="Descriptions individuelles des armes">Gantelet</a></td><td>2 po</td><td>1d2</td><td>1d3</td><td>×2</td><td>—</td><td>500g</td><td>C</td><td> —</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Ganteletclouté" title="Descriptions individuelles des armes">Gantelet clouté</a></td><td>5 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>—</td><td>500g</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Goupillondecombat" title="Descriptions individuelles des armes">Goupillon de combat</a></td><td>5 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>2 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Goupillondecombat" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Massedarmeslégère" title="Descriptions individuelles des armes">Masse d’armes légère</a></td><td>5 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>2 kg</td><td>C</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pieudebois" title="Descriptions individuelles des armes">Pieu de bois</a></td><td>-</td><td>1d3</td><td>1d4</td><td>×2</td><td>3 m (2 <abbr title="cases">c</abbr>)</td><td>500 g</td><td>P</td><td>-</td></tr><tr CLASS="alt"><td>&emsp;Serpe</td><td>6 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>1 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEAUNEMAIN" title="Caractéristiques des armes">À UNE MAIN</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESCOURANTESUNEMAIN" href="#ARMESCOURANTESUNEMAIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épieu" title="Descriptions individuelles des armes">Épieu</a></td><td>1 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>4 cases/6 m</td><td>1,5 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Gourdin" title="Descriptions individuelles des armes">Gourdin</a></td><td>—</td><td>1d4</td><td>1d6</td><td>×2</td><td>2 cases/3 m</td><td>1,5 kg</td><td>C</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Massedarmeslourde" title="Descriptions individuelles des armes">Masse d’armes lourde</a></td><td>12 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>—</td><td>4 kg</td><td>C</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Morgenstern" title="Descriptions individuelles des armes">Morgenstern</a></td><td>8 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>—</td><td>3 kg</td><td>C et P</td><td>—</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADEUXMAINS" title="Caractéristiques des armes">À DEUX MAINS</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESCOURANTESDEUXMAINS" href="#ARMESCOURANTESDEUXMAINS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Baïonnette" title="Descriptions individuelles des armes">Baïonnette</a></td><td>5 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>2 kg</td><td>P</td><td>-</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bâton" title="Descriptions individuelles des armes">Bâton</a></td><td>—</td><td>1d4/1d4</td><td>1d6/1d6</td><td>×2</td><td>—</td><td>2 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">Double</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">moine</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lance" title="Descriptions individuelles des armes">Lance</a></td><td>2 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>4 cases/6 m</td><td>3 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lancedarrêt" title="Descriptions individuelles des armes">Lance d'arrêt</a></td><td>5 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>—</td><td>4 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lancedarrêt" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pique" title="Descriptions individuelles des armes">Pique</a></td><td>5 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>—</td><td>4,5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">réception</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADISTANCE" title="Caractéristiques des armes">À DISTANCE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESCOURANTESDISTANCE" href="#ARMESCOURANTESDISTANCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalètelégère" title="Descriptions individuelles des armes">Arbalète légère</a></td><td>35 po</td><td>1d6</td><td>1d8</td><td>19–20/×2</td><td>16 cases/24 m</td><td>2 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalètelourde" title="Descriptions individuelles des armes">Arbalète lourde</a></td><td>50 po</td><td>1d8</td><td>1d10</td><td>19–20/×2</td><td>24 cases/36 m</td><td>4 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;&emsp;Carreaux (10)</td><td>1 po</td><td>—</td><td>—</td><td>—</td><td>—</td><td>500 g</td><td>—</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#FLECHETTE" title="Descriptions individuelles des armes">Fléchettes</a></td><td>5 pa</td><td>1d3</td><td>1d4</td><td>×2</td><td>4 cases/6 m</td><td>250 g</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fronde" title="Descriptions individuelles des armes">Fronde</a></td><td>—</td><td>1d3</td><td>1d4</td><td>×2</td><td>10 cases/15 m</td><td>—</td><td>C</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Billesdefronde" title="Descriptions individuelles des armes">Billes (10)</a></td><td>1 pa</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2,5 kg</td><td>—</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Javeline" title="Descriptions individuelles des armes">Javeline</a></td><td>1 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>6 cases/9 m</td><td>1 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Sarbacane" title="Descriptions individuelles des armes">Sarbacane</a></td><td>2 po</td><td>1</td><td>1d2</td><td>×2</td><td>4 cases/6 m</td><td>500 g</td><td>P</td><td>—</td></tr><tr><td>&emsp;&emsp;Dard, sarbacane (10)</td><td>5 pa</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></table>
+</center><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABGUERRE" href="#TABGUERRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br />
+<h2 class="separator"> Les armes de guerre <a class="headeranchor" id="Les_armes_de_guerre_1" href="#Les_armes_de_guerre_1" title="Lien vers cette section">&#0182;</a></h2>
+<center>
+<table CLASS="tablo"><caption>Tableau récapitulatif des armes de guerre</caption><tr CLASS="titre"><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDEGUERRE" title="Caractéristiques des armes">Armes de guerre</a></td><td>Prix</td><td>Dégâts (P)</td><td>Dégâts (M)</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Critique_6" title="Caractéristiques des armes">Critique</a></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Facteur_de_portée_7" title="Caractéristiques des armes">Facteur de portée</a></td><td>Poids <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE1" title="Tableau récapitulatif des armes">1</a>)</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Type_9" title="Caractéristiques des armes">Type</a> <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE2" title="Tableau récapitulatif des armes">2)</a></sup></td><td>Spécial</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMELEGERE" title="Caractéristiques des armes">LÉGÈRE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESDEGUERRELEGERES" href="#ARMESDEGUERRELEGERES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Armureàpointes" title="Descriptions individuelles des armes">Armure à pointes</a></td><td>spécial</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>spécial</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épéecourte" title="Descriptions individuelles des armes">Épée courte</a></td><td>10 po</td><td>1d4</td><td>1d6</td><td>19–20/×2</td><td>—</td><td>1 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hachedelancer" title="Descriptions individuelles des armes">Hache de lancer</a></td><td>8 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>2 cases/3 m</td><td>1 kg</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hachette" title="Descriptions individuelles des armes">Hachette</a></td><td>6 po</td><td>1d4</td><td>1d6</td><td>×3</td><td>—</td><td>1,5 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Kukri" title="Descriptions individuelles des armes">Kukri</a></td><td>8 po</td><td>1d3</td><td>1d4</td><td>18–20/×2</td><td>—</td><td>1 kg</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lamétoile" title="Descriptions individuelles des armes">Lamétoile</a></td><td>24 po</td><td>1d3</td><td>1d4</td><td>×3</td><td>4 cases/6 m</td><td>1,5 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Matraque" title="Descriptions individuelles des armes">Matraque</a></td><td>1 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>1 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#NONLETAUX" title="Caractéristiques des armes">Non-létaux</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteauléger" title="Descriptions individuelles des armes">Marteau léger</a></td><td>1 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>4 cases/6 m</td><td>2 kg</td><td>C</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Picdeguerreléger" title="Descriptions individuelles des armes">Pic de guerre léger</a></td><td>4 po</td><td>1d3</td><td>1d4</td><td>×4</td><td>—</td><td>1,5 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;Rondache</td><td>spécial</td><td>1d2</td><td>1d3</td><td>×2</td><td>—</td><td>spécial</td><td>C</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Rondacheàpointes" title="Descriptions individuelles des armes">Rondache à pointes</a></td><td>spécial</td><td>1d3</td><td>1d4</td><td>×2</td><td>—</td><td>spécial</td><td>P</td><td>—</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEAUNEMAIN" title="Caractéristiques des armes">À UNE MAIN</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESDEGUERREUNEMAIN" href="#ARMESDEGUERREUNEMAIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Canneépée" title="Descriptions individuelles des armes">Canne épée</a></td><td>45 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>2 kg</td><td>C ou P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Cimeterre" title="Descriptions individuelles des armes">Cimeterre</a></td><td>15 po</td><td>1d4</td><td>1d6</td><td>18–20/×2</td><td>—</td><td>2 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;Écu</td><td>spécial</td><td>1d3</td><td>1d4</td><td>×2</td><td>—</td><td>spécial</td><td>C</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Rondacheàpointes" title="Descriptions individuelles des armes">Écu à pointes</a></td><td>spécial</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>spécial</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épéelongue" title="Descriptions individuelles des armes">Épée longue</a></td><td>15 po</td><td>1d6</td><td>1d8</td><td>19–20/×2</td><td>—</td><td>2 kg</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fléaudarmesléger" title="Descriptions individuelles des armes">Fléau d’armes léger</a></td><td>8 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>—</td><td>2,5 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hachedarmes" title="Descriptions individuelles des armes">Hache d'armes</a></td><td>10 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>—</td><td>3 kg</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteaudeguerre" title="Descriptions individuelles des armes">Marteau de guerre</a></td><td>12 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>—</td><td>2,5 kg</td><td>C</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Picdeguerrelourd" title="Descriptions individuelles des armes">Pic de guerre lourd</a></td><td>8 po</td><td>1d4</td><td>1d6</td><td>×4</td><td>—</td><td>3 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Rapière" title="Descriptions individuelles des armes">Rapière</a></td><td>20 po</td><td>1d4</td><td>1d6</td><td>18–20/×2</td><td>—</td><td>1 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Trident" title="Descriptions individuelles des armes">Trident</a></td><td>15 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>2 cases/3 m</td><td>2 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADEUXMAINS" title="Caractéristiques des armes">À DEUX MAINS</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESDEGUERREDEUXMAINS" href="#ARMESDEGUERREDEUXMAINS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bardiche" title="Descriptions individuelles des armes">Bardiche</a></td><td>13 po</td><td>1d8</td><td>1d10</td><td>19–20/×2</td><td>—</td><td>7 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bardiche" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Becdecorbin" title="Descriptions individuelles des armes">Bec de corbin</a></td><td>15 po</td><td>1d8</td><td>1d10</td><td>×3</td><td>—</td><td>6 kg</td><td>C ou P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Becdecorbin" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Cimeterreàdeuxmains" title="Descriptions individuelles des armes">Cimeterre à deux mains</a></td><td>75 po</td><td>1d6</td><td>2d4</td><td>18–20/×2</td><td>—</td><td>4 kg</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Corsèque" title="Descriptions individuelles des armes">Corsèque</a></td><td>10 po</td><td>1d6</td><td>2d4</td><td>×3</td><td>—</td><td>6 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Coutille" title="Descriptions individuelles des armes">Coutille</a></td><td>8 po</td><td>1d8</td><td>1d10</td><td>×3</td><td>—</td><td>5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épéeàdeuxmains" title="Descriptions individuelles des armes">Épée à deux mains</a></td><td>50 po</td><td>1d10</td><td>2d6</td><td>19–20/×2</td><td>—</td><td>4 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Faux" title="Descriptions individuelles des armes">Faux</a></td><td>18 po</td><td>1d6</td><td>2d4</td><td>×4</td><td>—</td><td>5 kg</td><td>P ou T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fléaudarmeslourd" title="Descriptions individuelles des armes">Fléau d’armes lourd</a></td><td>15 po</td><td>1d8</td><td>1d10</td><td>19–20/×2</td><td>—</td><td>5 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Glaiveguisarme" title="Descriptions individuelles des armes">Glaive-guisarme</a></td><td>12 po</td><td>1d8</td><td>1d10</td><td>×3</td><td>—</td><td>5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Glaiveguisarme" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Grandehache" title="Descriptions individuelles des armes">Grande hache</a></td><td>20 po</td><td>1d10</td><td>1d12</td><td>×3</td><td>—</td><td>6 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Guisarme" title="Descriptions individuelles des armes">Guisarme</a></td><td>9 po</td><td>1d6</td><td>2d4</td><td>×3</td><td>—</td><td>6 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">croc-en-jambe</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hallebarde" title="Descriptions individuelles des armes">Hallebarde</a></td><td>10 po</td><td>1d8</td><td>1d10</td><td>×3</td><td>—</td><td>6 kg</td><td>P ou T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">réception</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lancedarçon" title="Descriptions individuelles des armes">Lance d’arçon</a></td><td>10 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>—</td><td>5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteaudelucerne" title="Descriptions individuelles des armes">Marteau de Lucerne</a></td><td>15 po</td><td>1d10</td><td>1d12</td><td>×2</td><td>—</td><td>6 kg</td><td>C ou P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteaudelucerne" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Massue" title="Descriptions individuelles des armes">Massue</a></td><td>5 po</td><td>1d8</td><td>1d10</td><td>×2</td><td>—</td><td>4 kg</td><td>C</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Vouge" title="Descriptions individuelles des armes">Vouge</a></td><td>11 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>—</td><td>5,5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMEMENT" title="Caractéristiques des armes">Désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">Réception</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Vouge" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADISTANCE" title="Caractéristiques des armes">À DISTANCE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESDEGUERREDISTANCE" href="#ARMESDEGUERREDISTANCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arccourt" title="Descriptions individuelles des armes">Arc court</a></td><td>30 po</td><td>1d4</td><td>1d6</td><td>×3</td><td>12 cases/18 m</td><td>1 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arccourtcomposite" title="Descriptions individuelles des armes">Arc court composite</a></td><td>75 po</td><td>1d4</td><td>1d6</td><td>×3</td><td>14 cases/21 m</td><td>1 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arclong" title="Descriptions individuelles des armes">Arc long</a></td><td>75 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>20 cases/30 m</td><td>1,5 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arclongcomposite" title="Descriptions individuelles des armes">Arc long composite</a></td><td>100 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>22 cases/33 m</td><td>1,5 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;&emsp;Flèches (20)</td><td>1 po</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1,5 kg</td><td>—</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchesassommantes" title="Descriptions individuelles des armes">Flèches à tête ronde</a> (20)</td><td>2 po</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1,5 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchesassommantes" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchefumée" title="Descriptions individuelles des armes">Flèches de fumée</a> (20)</td><td>10 po</td><td>—</td><td>—</td><td>—</td><td>—</td><td>-</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchefumée" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchesdevol" title="Descriptions individuelles des armes">Flèches de vol</a> (20)</td><td>2 po</td><td>—</td><td>—</td><td>—</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Flèchesdevol" title="Descriptions individuelles des armes">Voir texte</a></td><td>1,5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#FLECHEVOL" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Chakram" title="Descriptions individuelles des armes">Chakram</a></td><td>1 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>9 m (6 <abbr title="cases">c</abbr>)</td><td>500 g</td><td>T</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pilum" title="Descriptions individuelles des armes">Pilum</a></td><td>5 po</td><td>1d6</td><td>1d8</td><td>×2</td><td>9 m (6 <abbr title="cases">c</abbr>)</td><td>2,5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pilum" title="Descriptions individuelles des armes">Voir texte</a></td></tr></table>
+</center><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TABEXOTIQUES" href="#TABEXOTIQUES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br />
+<h2 class="separator"> Les armes exotiques <a class="headeranchor" id="Les_armes_exotiques_2" href="#Les_armes_exotiques_2" title="Lien vers cette section">&#0182;</a></h2>
+<center>
+<table CLASS="tablo"><caption>Tableau récapitulatif des armes exotiques</caption><tr CLASS="titre"><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEEXOTIQUE" title="Caractéristiques des armes">Armes exotiques</a></td><td>Prix</td><td>Dégâts (P)</td><td>Dégâts (M)</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Critique_6" title="Caractéristiques des armes">Critique</a></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Facteur_de_portée_7" title="Caractéristiques des armes">Facteur de portée</a></td><td>Poids <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE1" title="Tableau récapitulatif des armes">1</a>)</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#Type_9" title="Caractéristiques des armes">Type</a> <sup>(<a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx#NOTE2" title="Tableau récapitulatif des armes">2</a>)</sup></td><td>Spécial</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMELEGERE" title="Caractéristiques des armes">LÉGÈRE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESEXOTIQUESLEGERES" href="#ARMESEXOTIQUESLEGERES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Daguebriseépée" title="Descriptions individuelles des armes">Dague brise-épée</a></td><td>10 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>—</td><td>1,5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">Désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Daguebriseépée" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Kama" title="Descriptions individuelles des armes">Kama</a></td><td>2 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>1 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">moine</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Nunchaku" title="Descriptions individuelles des armes">Nunchaku</a></td><td>2 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>1 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">Désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">moine</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Sai" title="Descriptions individuelles des armes">Sai</a></td><td>1 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>—</td><td>500 g</td><td>C ou P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">Désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">moine</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Siangham" title="Descriptions individuelles des armes">Siangham</a></td><td>3 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>500 g</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">Moine</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEAUNEMAIN" title="Caractéristiques des armes">À UNE MAIN</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESEXOTIQUESUNEMAIN" href="#ARMESEXOTIQUESUNEMAIN"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épéebâtarde" title="Descriptions individuelles des armes">Épée bâtarde</a></td><td>35 po</td><td>1d8</td><td>1d10</td><td>19–20/×2</td><td>—</td><td>3 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Épéededuel" title="Descriptions individuelles des armes">Épée de duel</a></td><td>20 po</td><td>1d6</td><td>1d8</td><td>19‑20/×2</td><td> —</td><td>1,5 kg</td><td>T</td><td> —</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Epéedutemple" title="Descriptions individuelles des armes">Épée du temple</a></td><td>30 po</td><td>1d6</td><td>1d8</td><td>19–20/×2</td><td>—</td><td>1,5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">moine</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Falcata" title="Descriptions individuelles des armes">Falcata</a></td><td>18 po</td><td>1d6</td><td>1d8</td><td>19–20/×3</td><td>—</td><td>2 kg</td><td>T</td><td>-</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fouet" title="Descriptions individuelles des armes">Fouet</a></td><td>1 po</td><td>1d2</td><td>1d3</td><td>×2</td><td>—</td><td>1 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">croc-en-jambe</a>, <br/> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#NONLETAUX" title="Caractéristiques des armes">non-létaux</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hachedarmesnaine" title="Descriptions individuelles des armes">Hache de guerre naine</a></td><td>30 po</td><td>1d8</td><td>1d10</td><td>×3</td><td>—</td><td>4 kg</td><td>T</td><td>—</td></tr><tr CLASS="premier"></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Khopesh" title="Descriptions individuelles des armes">Khopesh</a></td><td>20 po</td><td>1d6</td><td>1d8</td><td>19–20/×2</td><td>—</td><td>4 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#sabredentelé" title="Descriptions individuelles des armes">Sabre dentelé</a></td><td>35 po</td><td>1d6</td><td>1d8</td><td>19‑20/×2</td><td>—</td><td>1 kg</td><td>T</td><td>—</td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES DE <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEDECORPSACORPS" title="Caractéristiques des armes">CORPS À CORPS</a> <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADEUXMAINS" title="Caractéristiques des armes">À DEUX MAINS</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESEXOTIQUESDEUXMAINS" href="#ARMESEXOTIQUESDEUXMAINS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Chaînecloutée" title="Descriptions individuelles des armes">Chaîne cloutée</a></td><td>25 po</td><td>1d6</td><td>2d4</td><td>×2</td><td>—</td><td>5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Doublelame" title="Descriptions individuelles des armes">Double-lame</a></td><td>100 po</td><td>1d6/1d6</td><td>1d8/1d8</td><td>19–20/×2</td><td>—</td><td>5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">Double</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Écharpetranchante" title="Descriptions individuelles des armes">Écharpe tranchante</a></td><td>12 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>—</td><td>1 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fléaudouble" title="Descriptions individuelles des armes">Fléau double</a></td><td>90 po</td><td>1d6/1d6</td><td>1d8/1d8</td><td>×2</td><td>—</td><td>5 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <br/><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DESARMER" title="Caractéristiques des armes">désarmement</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">double</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Hachedoubleorque" title="Descriptions individuelles des armes">Hache double orque</a></td><td>60 po</td><td>1d6/1d6</td><td>1d8/1d8</td><td>×3</td><td>—</td><td>7,5 kg</td><td>T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">Double</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Happevilain" title="Descriptions individuelles des armes">Happe-vilain</a></td><td>15 po</td><td>1</td><td>1d2</td><td>-</td><td>—</td><td>5 kg</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ALLONGE" title="Caractéristiques des armes">Allonge</a>, <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Happevilain" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lameelfiqueincurvée" title="Descriptions individuelles des armes">Lame elfique incurvée</a></td><td>80 po</td><td>1d8</td><td>1d10</td><td>18–20/×2</td><td>—</td><td>3,5 kg</td><td>T</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lanceàchaîne" title="Descriptions individuelles des armes">Lance à chaîne</a></td><td>15 po</td><td>1d4/1d4</td><td>1d6/1d6</td><td>x2</td><td>—</td><td>6,5 kg</td><td>P et T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteaupioletgnome" title="Descriptions individuelles des armes">Marteau-piolet gnome</a></td><td>20 po</td><td>1d6/1d4</td><td>1d8/1d6</td><td>×3/×4</td><td>—</td><td>3 kg</td><td>C ou P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">double</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Urgroshnain" title="Descriptions individuelles des armes">Urgrosh nain</a></td><td>50 po</td><td>1d6/1d4</td><td>1d8/1d6</td><td>×3</td><td>—</td><td>6 kg</td><td>P ou T</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#DOUBLE" title="Caractéristiques des armes">Double</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#RECEPTION" title="Caractéristiques des armes">réception</a></td></tr><tr CLASS="premier"><td COLSPAN="9"><b>ARMES <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#ARMEADISTANCE" title="Caractéristiques des armes">À DISTANCE</a></b><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARMESEXOTIQUESDISTANCE" href="#ARMESEXOTIQUESDISTANCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalètedepoing" title="Descriptions individuelles des armes">Arbalète de poing</a></td><td>100 po</td><td>1d3</td><td>1d4</td><td>19–20/×2</td><td>6 cases/9 m</td><td>1 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalètedouble" title="Descriptions individuelles des armes">Arbalète double</a></td><td>300 po</td><td>1d6</td><td>1d8</td><td>19-20/x2</td><td>24 m (16 <abbr title="cases">c</abbr>)</td><td>9 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalèteàrépétition" title="Descriptions individuelles des armes">Arbalète légère à répétition</a></td><td>250 po</td><td>1d6</td><td>1d8</td><td>19-20/x2</td><td>16 cases/24 m</td><td>3 kg</td><td>P</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalèteàrépétition" title="Descriptions individuelles des armes">Arbalète lourde à répétition</a></td><td>400 po</td><td>1d8</td><td>1d10</td><td>19-20/x2</td><td>24 cases/36 m</td><td>6 kg</td><td>P</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bâtondejethalfelin" title="Descriptions individuelles des armes">Bâton de jet halfelin</a></td><td>20 po</td><td>1d6</td><td>1d8</td><td>×3</td><td>16 cases/24 m</td><td>1,5 kg</td><td>C</td><td>—</td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bolas" title="Descriptions individuelles des armes">Bolas</a></td><td>5 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>2 cases/3 m</td><td>1 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a>, <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#NONLETAUX" title="Caractéristiques des armes">non-létaux</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bolastribaux" title="Descriptions individuelles des armes">Bolas tribaux</a></td><td>15 po</td><td>1d3</td><td>1d4</td><td>×2</td><td>2 cases/3 m</td><td>1 kg</td><td>C et P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#CROCENJAMBE" title="Caractéristiques des armes">Croc-en-jambe</a></td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Boomerang" title="Descriptions individuelles des armes">Boomerang</a></td><td>3 po</td><td>1d4</td><td>1d6</td><td>×2</td><td>9 m (6 <abbr title="cases">c</abbr>)</td><td>1,5 kg</td><td>C</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Boomerang" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Filet" title="Descriptions individuelles des armes">Filet</a></td><td>20 po</td><td>—</td><td>—</td><td>—</td><td>2 cases/3 m</td><td>3 kg</td><td>—</td><td>—</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lasso" title="Descriptions individuelles des armes">Lasso</a></td><td>1 pa</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2,5 kg</td><td>—</td><td><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lasso" title="Descriptions individuelles des armes">Voir texte</a></td></tr><tr CLASS="alt"><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Shuriken" title="Descriptions individuelles des armes">Shuriken (5)</a></td><td>1 po</td><td>1</td><td>1d2</td><td>×2</td><td>2 cases/3 m</td><td>250 g</td><td>P</td><td><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx#MOINE" title="Caractéristiques des armes">Moine</a></td></tr></table>
+</center><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE1" href="#NOTE1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><i>(1) Le poids est indiqué pour une arme de taille M. Une arme de taille P pèse deux fois moins lourd et une arme de taille G deux fois plus.</i><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE2" href="#NOTE2"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><i>(2) Quand deux types sont donnés, l’arme correspond simultanément aux deux types s’ils sont séparés par un « et » ou seulement à l’un des deux (choisi par le joueur au moment de l’attaque) s’ils sont séparés par un « ou ». Abréviations : C (contondant), P (perforant), T (tranchant).</i><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE3" href="#NOTE3"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><i>(3) Les dégâts infligés par les attaques à mains nues sont non létaux, à moins de l'être par un <a class="pagelink" href="Pathfinder-RPG.moine.ashx" title="Le moine">moine</a> ou par un personnage qui dispose du don <a class="pagelink" href="Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx" title="Science du combat à mains nues">Science du combat à mains nues</a> qui peuvent choisir de faire des dégâts létaux ou non létaux.</i><br /><br />Il existe également des <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes%20%c3%a0%20feu.ashx" title="Tableau récapitulatif des armes à feu">armes à feu</a>, des <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes%20orientales.ashx" title="Tableau récapitulatif des armes orientales">armes orientales</a> et des <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes%20de%20gladiateur.ashx" title="Tableau récapitulatif des armes de gladiateur">armes de gladiateurs</a>, qui nécessitent toutefois l'accord du MJ.<br /><br /><div class="voiraussi">
+<h4>Voir aussi</h4>
+<ul><li><a class="externallink" href="https://docs.google.com/spreadsheets/d/1MZ5Nz424T1CRSNi00Ky7jG-TrcKZeCYgqoClRjTfaXQ/edit#gid=0" title="https://docs.google.com/spreadsheets/d/1MZ5Nz424T1CRSNi00Ky7jG-TrcKZeCYgqoClRjTfaXQ/edit#gid=0" target="_blank">https://docs.google.com/spreadsheets/d/1MZ5Nz424T1CRSNi00Ky7jG-TrcKZeCYgqoClRjTfaXQ/edit#gid=0</a>.<br /></div></li></ul>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
