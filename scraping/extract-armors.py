@@ -49,7 +49,7 @@ for t in tables:
             nameLink = cols[0].find('a')
             if not nameLink is None:
                 armor['01Nom'] = nameLink.text.strip()
-                armor[u'20Référence'] = nameLink['href']
+                armor[u'20Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
             else:
                 armor['01Nom'] = cols[0].text.strip()
                 armor[u'20Référence'] = URL

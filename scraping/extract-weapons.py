@@ -49,7 +49,7 @@ for t in tables:
             nameLink = cols[0].find('a')
             if not nameLink is None:
                 weapon['01Nom'] = nameLink.text.strip()
-                weapon[u'20Référence'] = nameLink['href']
+                weapon[u'20Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
             else:
                 weapon['01Nom'] = cols[0].text.strip()
                 weapon[u'20Référence'] = URL
@@ -147,7 +147,7 @@ for s in section:
             if e.name == 'h2' or e.name == 'b':
                 if not newObj:
                     addInfos(liste, name, sourceNext)
-                    
+
                 sourceNext = source
                 if e.name == 'h2':
                     newObj = True
