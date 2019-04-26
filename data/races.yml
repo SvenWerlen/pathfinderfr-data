@@ -22,6 +22,7 @@
     Description: Les demi-elfes choisissent deux classes de prédilection au niveau 1 et gagnent +1 point de vie ou +1 point de compétence chaque fois qu’ils gagnent un niveau dans l’une de ces deux classes.
   - Nom: Langues supplémentaires
     Description: "Les demi-elfes connaissent automatiquement le commun et l’elfe. Les demi-elfes qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets tels que la langue des druides)."
+
 - Nom: Demi-orque
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Demi-orque.ashx
@@ -44,6 +45,7 @@
     Description: Les demi-orques sont formés au maniement des grandes haches et des cimeterres à deux mains et ils considèrent toutes les armes dont le nom comporte le mot « orque » comme des armes de guerre.
   - Nom: Langues supplémentaires
     Description: "Les demi-orques connaissent automatiquement le commun et l’orque. Les demi-orques qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante: abyssal, draconien, géant, gnoll et gobelin."
+
 - Nom: Elfe
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Elfe.ashx
@@ -66,6 +68,7 @@
     Description: Les elfes sont formés au maniement des arcs longs (y compris les arcs longs composites), des arcs courts (y compris les arcs courts composites), des épées longues, des rapières et ils considèrent toutes les armes dont le nom comporte le mot « elfe » ou « elfique » comme des armes de guerre.
   - Nom: Langues supplémentaires
     Description: "Les elfes connaissent automatiquement le commun et l’elfe. Les elfes possédant une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante: céleste, draconien, gnoll, gnome, gobelin, orque et sylvestre."
+
 - Nom: Gnome
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gnome.ashx
@@ -94,6 +97,7 @@
     Description: Les gnomes considèrent toutes les armes dont le nom comporte le mot « gnome » comme des armes de guerre.
   - Nom: Langues supplémentaires
     Description: "Les gnomes connaissent automatiquement le commun, le gnome et le sylvestre. Les gnomes qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante: draconien, elfe, géant, gobelin, nain et orque."
+
 - Nom: Halfelin
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Halfelin.ashx
@@ -116,6 +120,7 @@
     Description: Les halfelins sont formés au maniement des frondes et considèrent toutes les armes dont le nom comporte le mot « halfelin » comme des armes de guerre.
   - Nom: Langues supplémentaires
     Description: "Les halfelins connaissent automatiquement le commun et le halfelin. Les halfelins qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : abyssal, elfe, gnome, gobelin et nain."
+
 - Nom: Humain
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Humain.ashx
@@ -132,6 +137,7 @@
     Description: Les humains obtiennent un point de compétence supplémentaire au niveau 1 et un point de compétence en plus chaque fois qu’ils gagnent un niveau.
   - Nom: Langues supplémentaires
     Description: "Les humains connaissent automatiquement le commun. Les humains qui possèdent une Intelligence élevée peuvent choisir n’importe quelle autre langue (à l’exception des langages secrets comme la langue des druides)."
+
 - Nom: Nain
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
@@ -160,3 +166,1075 @@
     Description: Les nains sont formés au maniement des haches d’arme, des pics de guerre lourds et des marteaux de guerre. Ils considèrent toutes les armes dont le nom comporte le mot « nain » comme des armes de guerre.
   - Nom: Langues supplémentaires
     Description: "Les nains connaissent automatiquement le commun et le nain. Les nains qui possèdent une Intelligence élevée peuvent choisir d’autres langues parmi la liste suivante : commun des profondeurs, élémentaire, géant, gnome, gobelin et orque."
+
+- Nom: Aasimar
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Sagesse, +2 en Charisme. Les aasimars sont perspicaces, confiants
+      et charmants.
+  - Nom: Extérieur natif
+    Description: Les aasimars sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les aasimars sont des créatures de taille M ne recevant ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les aasimars ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir
+    Description: Les aasimars voient dans le noir jusqu’à 18 mètres.
+  - Nom: Compétent
+    Description: Les aasimars ont un bonus racial de +2 à leurs tests de Diplomatie
+      et de Perception.
+  - Nom: Pouvoir magique
+    Description: Les aasimars peuvent utiliser le pouvoir magique de lumière du
+      jour une fois par jour (niveau de lanceur de sorts égal au niveau de classe
+      de l’aasimar).
+  - Nom: Résistance céleste
+    Description: Les aasimars ont une résistance à l’acide de 5, une résistance
+      au froid de 5 et une résistance à l’électricité de 5.
+  - Nom: Langues
+    Description: 'Les aasimars commencent le jeu en parlant le commun et le céleste.
+      Ceux qui ont un haut score d’Intelligence peuvent apprendre d’autres langues
+      parmi celles-ci : draconique, elfique, gnome, halfelin, nain et sylvestre.'
+
+- Nom: Dhampir
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dhampir%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Charisme, -2 en Constitution. Les dhampirs
+      sont rapides et séduisants, mais leur lien racial avec les morts-vivants handicape
+      leur résistance de mortel.
+  - Nom: Dhampir
+    Description: Les dhampirs sont des humanoïdes de sous-type dhampir.
+  - Nom: Taille M
+    Description: Les dhampirs sont des créatures de taille M qui ne reçoivent ni
+      malus ni bonus de taille.
+  - Nom: Vitesse normale
+    Description: Les dhampirs ont une vitesse de base de 9 mètres.
+  - Nom: Sens
+    Description: Vision nocturne et vision dans le noir à 18 mètres.
+  - Nom: Manipulateur
+    Description: Bonus racial de +2 en Bluff et en Perception.
+  - Nom: Résistance des morts-vivants
+    Description: Les dhampirs gagnent un bonus racial de +2 à leurs jets de sauvegarde
+      contre les maladies et les effets mentaux.
+  - Nom: Sensible à la lumière
+    Description: Les dhampirs sont éblouis dans les zones de forte lumière du soleil
+      ou dans le rayon d’un sort de lumière du jour.
+  - Nom: Affinité avec l’énergie négative
+    Description: 'Même s’il est une créature vivante, le dhampir réagit à l’énergie
+      positive et à l’énergie négative comme s’il était un mort-vivant : l’énergie
+      positive le blesse, l’énergie négative le soigne.'
+  - Nom: Pouvoir magique
+    Description: Le dhampir peut utiliser le pouvoir magique de détection des morts-vivants
+      trois fois par jour. Son niveau de lanceur de sorts pour cette capacité est
+      égal à son niveau de classe.
+  - Nom: Résistance à l’absorption de niveau (Ext)
+    Description: Le dhampir ne subit aucun malus des effets d’absorption d’énergie,
+      mais il peut quand même être tué s’il accumule plus de niveaux négatifs qu’il
+      n’a de dés de vie. Au bout de 24 heures, tous les niveaux négatifs qu’il reçoit
+      disparaissent sans qu’il n’ait besoin de faire un nouveau jet de sauvegarde.
+  - Nom: Langues
+    Description: Les dhampirs commencent le jeu en parlant le commun. Ceux qui ont
+      un score d’Intelligence élevé peuvent apprendre d’autres langues, choisissant
+      celles qu’ils veulent (à l’exception des langues secrètes comme la langue des
+      druides).
+
+- Nom: Drow
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.drow%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Charisme, -2 en Constitution. Les drows
+      sont agiles et manipulateurs.
+  - Nom: Elfe
+    Description: Les drows sont des humanoïdes de sous-type elfe.
+  - Nom: Taille M
+    Description: Les drows sont des créatures de taille M qui ne reçoivent ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les drows ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir
+    Description: Les drows voient dans le noir à 18 mètres.
+  - Nom: Immunités des drows
+    Description: Les drows sont immunisés aux effets magiques de sommeil et gagnent
+      un bonus racial de +2 à leurs jets de sauvegarde contre les sorts et effets
+      d’enchantement.
+  - Nom: Sens aiguisés
+    Description: Les drows gagnent un bonus racial de +2 à leurs tests de Perception.
+  - Nom: Utilisation des poisons
+    Description: Les drows sont doués pour l’utilisation des poisons et ne risquent
+      jamais de s’empoisonner par erreur.
+  - Nom: Résistance à la magie
+    Description: Les drows ont une résistance à la magie de 6 + leur niveau de classe.
+  - Nom: Pouvoirs magiques
+    Description: Un drow peut lancer lumières dansantes, ténèbres et lueur féerique,
+      chacun une fois par jour, en utilisant le niveau total de son personnage pour
+      définir son niveau de lanceur de sorts.
+  - Nom: Aveuglé par la lumière
+    Description: La soudaine exposition à la pleine lumière aveugle les drows pendant
+      1 round ; lors des rounds qui suivent, ils sont éblouis tant qu’ils restent
+      dans la zone d’effet.
+  - Nom: Apprentissage martial
+    Description: Les drows sont formés au maniement des arbalètes de poing, des
+      rapières et des épées courtes.
+  - Nom: Langues
+    Description: 'Les drows commencent le jeu en parlant l’elfique et le commun
+      des profondeurs. Ceux qui ont un score d’Intelligence élevé peuvent apprendre
+      d’autres langues parmi celles-ci : abyssal, aklo, aquatique, commun, draconique,
+      gnome, gobelin ou langue signée des drows.'
+
+- Nom: Fetchelin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.fetchelin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Charisme, -2 en Sagesse. Les fetchelins
+      sont vifs et énergiques, mais souvent étranges et facilement distraits par mille
+      et une pensées.
+  - Nom: Extérieur natif
+    Description: Les fetchelins sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les fetchelins sont des créatures de taille M qui ne reçoivent
+      ni bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les fetchelins ont une vitesse de base de 9 mètres (6 c).
+  - Nom: Vision dans le noir
+    Description: Les fetchelins voient dans le noir à 18 mètres (12 c).
+  - Nom: Vision nocturne
+    Description: Les fetchelins voient deux fois plus loin que les humains à faible
+      luminosité.
+  - Nom: Compétent
+    Description: Les fetchelins ont un bonus racial de +2 à leurs tests de Connaissances
+      (plans) et de Discrétion.
+  - Nom: Fusion dans les ombres (Sur)
+    Description: Les attaques contre un fetchelin sous une faible luminosité ont
+      50 % de chances de rater au lieu des 20 % normaux. Cette capacité n’accorde
+      pas d’abri total, elle augmente simplement les chances de rater.
+  - Nom: Résistance des ombres
+    Description: Les fetchelins ont une résistance au froid de 5 et une résistance
+      à l’électricité de 5.
+  - Nom: Pouvoirs magiques (Mag)
+    Description: Le fetchelin peut utiliser le pouvoir magique déguisement une fois
+      par jour. Il peut prendre la forme de n’importe quelle créature humanoïde utilisant
+      ce pouvoir magique. Lorsqu’il atteint le niveau 9, quelle que soit sa combinaison
+      de classes, il gagne le pouvoir magique traversée des ombres (portée personnelle
+      uniquement) une fois par jour et, au niveau 13, il gagne celui de changement
+      de plan (portée personnelle uniquement, vers le plan de l’Ombre ou le plan Matériel
+      uniquement) utilisable une fois par jour. Le niveau de lanceur de sorts du fetchelin
+      est égal à son total de dés de vie.
+  - Nom: Langues
+    Description: 'Les fetchelins commencent le jeu en parlant le commun. Ceux qui
+      ont un score d’Intelligence élevé peuvent apprendre d’autres langues choisies
+      parmi celles-ci : aérien, aklo, aquatique, draconique, D’ziriak (le comprennent
+      uniquement, ne savent pas le parler), igné, terreux et toute langue humaine
+      régionale.'
+
+- Nom: Gobelin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gobelin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +4 en Dextérité, -2 en Force, -2 en Charisme. Les gobelins sont
+      rapides, mais faibles et pas vraiment agréables à fréquenter.
+  - Nom: Gobelinoïde
+    Description: Les gobelins sont des humanoïdes de sous-type gobelinoïde.
+  - Nom: Taille P
+    Description: Les gobelins sont des créatures de taille P qui reçoivent un bonus
+      de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un
+      malus de -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.
+  - Nom: Rapidité
+    Description: Les gobelins sont rapides pour des créatures de leur taille, et
+      ils ont une vitesse de base de 9 mètres (6 c).
+  - Nom: Vision dans le noir
+    Description: Les gobelins voient dans le noir à 18 mètres.
+  - Nom: Compétent
+    Description: Bonus racial de +4 aux tests d’Équitation et de Discrétion.
+  - Nom: Langues
+    Description: 'Les gobelins commencent le jeu en parlant le gobelin. Ceux qui
+      ont un score d’Intelligence élevé peuvent choisir d’autres langues parmi celles-ci
+      : commun, draconique, gnoll, gnome, halfelin, nain et orque.'
+
+- Nom: Hobgobelin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.hobgobelin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Constitution. Les hobgobelins sont rapides
+      et robustes.
+  - Nom: Gobelinoïde
+    Description: Les hobgobelins sont des humanoïdes de sous-type gobelinoïde.
+  - Nom: Taille M
+    Description: Les hobgobelins sont des créatures de taille M qui ne reçoivent
+      ni bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les hobgobelins ont une vitesse de base de 9 mètres (6 c).
+  - Nom: Vision dans le noir
+    Description: Les hobgobelins voient dans le noir à 18 mètres (12 c).
+  - Nom: Furtif
+    Description: Les hobgobelins reçoivent un bonus racial de +4 à leurs tests de
+      Discrétion.
+  - Nom: Langues
+    Description: 'Les hobgobelins commencent le jeu en parlant le commun et le gobelin.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre d’autres langues
+      parmi celles-ci : draconique, géant, infernal, nain et orque.'
+
+- Nom: Homme-félin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-f%c3%a9lin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Charisme, -2 en Sagesse. Les hommes-félins
+      sont sociables et agiles, mais manquent souvent de bon sens.
+  - Nom: Homme-félin
+    Description: Les hommes-félins sont des humanoïdes de sous-type homme-félin.
+  - Nom: Taille M
+    Description: Les hommes-félins sont des créatures de taille M qui ne reçoivent
+      ni bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les hommes-félins ont une vitesse de base de 9 mètres.
+  - Nom: Vision nocturne
+    Description: À faible luminosité, les hommes-félins voient deux fois plus loin
+      que les humains.
+  - Nom: Chance féline (Sur)
+    Description: Une fois par jour, lorsqu’un homme-félin fait un jet de Réflexes,
+      il peut le relancer et garder le meilleur résultat. Il doit décider de l’utilisation
+      de cette capacité avant de faire son jet.
+  - Nom: Chasseur-né
+    Description: Les hommes-félins reçoivent un bonus racial de +2 à leurs tests
+      de Perception, de Discrétion et de Survie.
+  - Nom: Sprinter
+    Description: Les hommes-félins gagnent un bonus racial de 3 mètres à leur vitesse
+      lorsqu’ils chargent, courent ou battent en retraite.
+  - Nom: Langues
+    Description: 'Les hommes-félins commencent le jeu en parlant le commun et le
+      huline. Ceux qui ont un score d’Intelligence élevé peuvent apprendre d’autres
+      langues parmi celles-ci : elfique, gnoll, gnome, gobelin, halfelin, orque et
+      sylvestre.'
+
+- Nom: Homme-rat
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-rat%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Intelligence, -2 en Force. Les hommes-rats
+      sont agiles et intelligents, mais physiquement faibles.
+  - Nom: Homme-rat
+    Description: Les hommes-rats sont des humanoïdes de sous-type homme-rat.
+  - Nom: Taille P
+    Description: Les hommes-rats sont des créatures de taille P qui reçoivent un
+      bonus de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque,
+      un malus de -1 à leurs tests de manoeuvre offensive et au DMD, et un bonus de
+      taille de +4 à leurs tests de Discrétion.
+  - Nom: Vitesse lente
+    Description: Les hommes-rats ont une vitesse de base de 6 mètres.
+  - Nom: Vision dans le noir
+    Description: Les hommes-rats voient dans le noir à 18 mètres.
+  - Nom: Empathie avec les rongeurs
+    Description: Les hommes-rats gagnent un bonus racial de +4 à leurs tests de
+      Dressage pour influencer les rongeurs.
+  - Nom: Regroupement
+    Description: Les hommes-rats sont habitués à vivre et à combattre en communauté,
+      et sont doués quand il s’agit de se rassembler autour de leurs ennemis pour
+      prendre l’avantage au détriment de ces derniers. Deux hommes-rats au maximum
+      peuvent partager la même case en même temps. Si deux hommes-rats sur la même
+      case attaquent le même ennemi, on considère qu’ils prennent cet ennemi en tenaille
+      comme s’ils étaient sur deux cases opposées.
+  - Nom: Bricoleur
+    Description: Les hommes-rats gagnent un bonus racial de +2 à leurs tests d’Artisanat
+      (alchimie), de Perception et d’Utilisation d’objets magiques.
+  - Nom: Langues
+    Description: 'Les hommes-rats commencent le jeu en parlant le commun. Ceux qui
+      ont un score d’Intelligence élevé peuvent apprendre d’autres langues parmi celles-ci
+      : aklo, commun des profondeurs, draconique, gnoll, gnome, gobelin, halfelin,
+      nain et orque.'
+
+- Nom: Ifrit
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ifrit%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Charisme, -2 en Sagesse. Les ifrits sont
+      vifs et passionnés, mais impétueux et destructeurs.
+  - Nom: Extérieur natif
+    Description: Les ifrits sont des Extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les ifrits sont des créatures de taille M qui ne reçoivent ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les ifrits ont une vitesse de base de 9 mètres (6 c).
+  - Nom: Vision dans le noir
+    Description: Les ifrits voient dans le noir à 18 mètres (12 c).
+  - Nom: Pouvoir magique
+    Description: Mains brûlantes 1/jour (niveau de lanceur de sorts égal au niveau
+      de l’ifrit).
+  - Nom: Résistance élémentaire
+    Description: Les ifrits ont une résistance au feu de 5.
+  - Nom: Affinité avec le feu
+    Description: Les ensorceleurs ifrits de lignage élémentaire (feu) traitent leur
+      score de Charisme comme supérieur de 2 points pour tous les sorts d’ensorceleur
+      et les capacités de classe. Les lanceurs de sorts ifrits du domaine Feu utilisent
+      leurs sorts et pouvoirs de domaine à un niveau de lanceur de sorts +1.
+  - Nom: Langues
+    Description: 'Les ifrits commencent le jeu en parlant le commun et l’igné. Ceux
+      qui ont un score d’Intelligence élevé peuvent apprendre d’autres langues choisies
+      parmi celles-ci : aérien, aquatique, elfique, gnome, halfelin, nain et terreux.'
+
+- Nom: Kobold
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kobold%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, -4 en Force, -2 en Constitution. Les kobolds sont
+      rapides, mais faibles.
+  - Nom: Reptilien
+    Description: Les kobolds sont des humanoïdes de sous-type reptilien.
+  - Nom: Taille P
+    Description: Les kobolds sont des créatures de taille P qui reçoivent un bonus
+      de taille de +1 à la CA, un bonus de taille de +1 à leurs jets d’attaque, un
+      malus de -1 à leurs tests de manoeuvre offensive et au DMD, et un bonus de taille
+      de +4 à leurs tests de Discrétion.
+  - Nom: Vitesse normale
+    Description: Les kobolds ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir
+    Description: Les kobolds voient dans le noir à 18 mètres.
+  - Nom: Armure
+    Description: Les kobolds ont un bonus d’armure naturelle de +1.
+  - Nom: Ingénieux
+    Description: Les kobolds gagnent un bonus racial de +2 à leurs tests d’Artisanat
+      (fabrication de pièges), de Perception et de Profession (mineur). Artisanat
+      (pièges) et Discrétion sont toujours des compétences de classe pour le kobold.
+  - Nom: Vulnérabilité
+    Description: Sensibilité à la lumière.
+  - Nom: Langues
+    Description: 'Les kobolds commencent le jeu en parlant le draconique. Ceux qui
+      ont un score d’Intelligence élevé peuvent apprendre d’autres langues parmi celles-ci
+      : commun, commun des profondeurs, gnome et nain.'
+
+- Nom: Ondin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ondin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Sagesse, -2 en Force. Les ondins sont agiles
+      et perceptifs, mais ont tendance à s’adapter plutôt qu’à répondre à la force
+      par la force.
+  - Nom: Extérieur natif
+    Description: Les ondins sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les ondins sont des créatures de taille M qui ne reçoivent ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les ondins ont une vitesse de base 9 mètres sur la terre ferme,
+      une vitesse de nage de 9 mètres, ils peuvent se déplacer dans l’eau sans faire
+      de test de Natation et traitent toujours Natation comme une compétence de classe.
+  - Nom: Vision dans le noir
+    Description: Les ondins voient dans le noir à 18 mètres.
+  - Nom: Pouvoir magique
+    Description: Poussée hydraulique 1/jour (niveau de lanceur de sorts égal au
+      niveau de l’ondin).
+  - Nom: Résistance élémentaire
+    Description: Les ondins ont une résistance de 5 au froid.
+  - Nom: Affinité avec l’eau
+    Description: Les ensorceleurs ondins de lignage élémentaire (eau) considèrent
+      leur score de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs
+      magiques d’ensorceleur. Les prêtres ondins du domaine de l’Eau lancent tous
+      leurs sorts et pouvoirs de domaine à un niveau de lanceur de sorts +1.
+  - Nom: Langues
+    Description: 'Les ondins commencent le jeu en parlant le commun et l’aquatique.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre de nouvelles langues
+      parmi celles-ci : aérien, elfique, gnome, halfelin, igné, nain et terreux.'
+
+- Nom: Orque
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.orque%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +4 en Force, -2 en Intelligence, -2 en Sagesse, -2 en Charisme.
+      Les orques sont brutaux et sauvages.
+  - Nom: Orque
+    Description: Les orques sont des humanoïdes de sous-type orque.
+  - Nom: Taille M
+    Description: Les orques sont des créatures de taille M qui ne reçoivent ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les orques ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir
+    Description: Les orques voient dans le noir à 18 mètres.
+  - Nom: Sensibilité à la lumière
+    Description: Les orques sont éblouis dans les zones de vive lumière du soleil
+      ou dans le rayon d’un sort de lumière du jour.
+  - Nom: Férocité
+    Description: Les orques peuvent rester conscients et continuer à se battre même
+      quand leur nombre total de points de vie tombe en dessous de 0. Ils sont toujours
+      chancelants à 0 point de vie ou moins et perdent 1 point de vie par round, comme
+      d’habitude.
+  - Nom: Apprentissage martial
+    Description: Les orques sont toujours formés au maniement des grandes haches
+      et des cimeterres à deux mains, considérant toute arme comptant le mot « orque
+      » dans son nom comme une arme de guerre.
+  - Nom: Langues
+    Description: 'Les orques commencent le jeu en parlant le commun et l’orque.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre de nouvelles langues
+      parmi celles-ci : commun des profondeurs, géant, gnoll, gobelin et nain.'
+
+- Nom: Oréade
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.or%c3%a9ade%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Force, +2 en Sagesse, -2 en Charisme. Les oréades sont forts,
+      solides, stables et stoïques.
+  - Nom: Extérieur natif
+    Description: Les oréades sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les oréades sont des créatures de taille M qui ne reçoivent ni
+      bonus ni malus de taille.
+  - Nom: Vitesse lente
+    Description: Les oréades ont une vitesse de base de 6 mètres.
+  - Nom: Vision dans le noir
+    Description: Les oréades voient dans le noir à 18 mètres.
+  - Nom: Pouvoirs magiques
+    Description: Pierre magique 1/jour (niveau de lanceur de sorts égal au niveau
+      total de l’oréade).
+  - Nom: Résistance élémentaire
+    Description: Les oréades gagnent une résistance à l’acide de 5.
+  - Nom: Affinité avec la terre
+    Description: Les ensorceleurs oréades de lignage élémentaire (terre) traitent
+      leur score de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs
+      d’ensorceleur. Les prêtres oréades avec le domaine Terre utilisent leurs pouvoirs
+      et sorts de domaine à un niveau de lanceur de sorts de +1.
+  - Nom: Langues
+    Description: 'Les oréades commencent le jeu en parlant le commun et le terreux.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre d’autres langues
+      parmi celles-ci : aérien, aquatique, commun des profondeurs, elfique, gnome,
+      halfelin, igné et nain.'
+
+- Nom: Sylphe
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sylphe%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Intelligence, -2 en Constitution. Les sylphes
+      sont vifs et perspicaces, mais minces et délicats.
+  - Nom: Extérieur natif
+    Description: Les sylphes sont des Extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les sylphes sont des créatures de taille M qui ne reçoivent ni
+      bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les sylphes ont une vitesse de base de 9 mètres (6 c).
+  - Nom: Vision dans le noir
+    Description: Les sylphes voient dans le noir à 18 mètres.
+  - Nom: Pouvoir magique
+    Description: Feuille morte 1/jour (niveau de lanceur de sorts égal au niveau
+      total du sylphe).
+  - Nom: Résistance élémentaire
+    Description: Les sylphes ont une résistance à l’électricité de 5.
+  - Nom: Affinité avec l’air
+    Description: Les ensorceleurs sylphes de lignage élémentaire (air) considèrent
+      leur score de Charisme comme supérieur de 2 points pour tous les sorts et pouvoirs
+      magiques de l’ensorceleur. Les lanceurs de sorts sylphes du domaine de l’Air
+      lancent leurs sorts et pouvoirs de domaine à leur niveau de lanceur de sort
+      +1.
+  - Nom: Langues
+    Description: 'Les sylphes commencent le jeu en parlant le commun et l’aérien.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre d’autres langues
+      parmi celles-ci : aquatique, elfique, gnome, halfelin, igné, nain et terreux.'
+
+- Nom: Tengu
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Sagesse, -2 en Constitution. Les tengus
+      sont rapides et observateurs, mais relativement fragiles et délicats.
+  - Nom: Tengu
+    Description: Les tengus sont des humanoïdes de sous-type tengu.
+  - Nom: Taille M
+    Description: Les tengus sont des créatures de taille M qui ne reçoivent ni bonus
+      ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les tengus ont une vitesse de base de 9 mètres.
+  - Nom: Sens
+    Description: Les tengus ont vision nocturne.
+  - Nom: Furtif
+    Description: Les tengus gagnent un bonus racial de +2 à leurs tests de Perception
+      et de Discrétion.
+  - Nom: Linguiste doué
+    Description: Les tengus gagnent un bonus racial de +4 à leurs tests de Linguistique,
+      et apprennent 2 langues au lieu de 1 à chaque fois qu’ils gagnent un rang en
+      Linguistique.
+  - Nom: Entraînement aux épées
+    Description: Les tengus sont entraînés dès la naissance au maniement de l’épée
+      et, de ce fait, sont automatiquement doués avec les lames (y compris les épées
+      bâtardes, les dagues, les lames elfiques incurvées, les cimeterres à deux mains,
+      les épées à deux mains, les kukris, les épées longues, les dagues coup-de-poing,
+      les rapières, les cimeterres, les épées courtes et les doubles lames).
+  - Nom: Arme naturelle
+    Description: Le tengu a une attaque de morsure qui inflige 1d3 points de dégâts.
+  - Nom: Langues
+    Description: Les tengus commencent le jeu en parlant le commun et le tengu.
+      Ceux qui ont un score d’Intelligence élevé peuvent apprendre n’importe quelle
+      autre langue de leur choix (à l’exception des langues secrètes telles que la
+      langue des druides).
+
+- Nom: Tieffelin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 en Dextérité, +2 en Intelligence, -2 en Charisme. Les tieffelins
+      sont vifs de corps et d’esprit, mais sont fondamentalement étranges et déconcertants.
+  - Nom: Extérieur natif
+    Description: Les tieffelins sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les tieffelins sont des créatures de taille M qui ne reçoivent
+      ni bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les tieffelins ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir
+    Description: Les tieffelins voient dans le noir à 18 mètres.
+  - Nom: Compétent
+    Description: Les tieffelins gagnent un bonus racial de +2 à leurs tests de Bluff
+      et de Discrétion.
+  - Nom: Pouvoir magique
+    Description: Les tieffelins peuvent utiliser le pouvoir magique ténèbres une
+      fois par jour. Le niveau de lanceur de sorts de cette capacité est égal au niveau
+      de classe du tieffelin.
+  - Nom: Résistance des fiélons
+    Description: Les tieffelins ont une résistance au froid de 5, à l’électricité
+      de 5 et au feu de 5.
+  - Nom: Magie des fiélons
+    Description: Les ensorceleurs tieffelins de lignage Abyssal ou Infernal considèrent
+      leur score de Charisme supérieur de 2 points pour toutes les capacités de classe
+      de l’ensorceleur.
+  - Nom: Langues
+    Description: 'Les tieffelins commencent le jeu en parlant le commun et soit
+      l’abyssal, soit l’infernal. Ceux qui ont un score d’Intelligence élevé peuvent
+      apprendre d’autres langues parmi celles-ci : abyssal, draconique, elfique, gnome,
+      gobelin, halfelin, infernal, nain et orque.'
+
+- Nom: Aquatique
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aquatique%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Constitution, +2 Charisme, -2 Sagesse.Les aquatiques sont beaux
+      et vigoureux, mais la domination qu’exercent les aboleths sur eux a affaibli
+      leur volonté.
+  - Nom: Taille M
+    Description: Les aquatiques sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Aquatique
+    Description: Les aquatiques sont des humanoïdes de sous-type aquatique.
+  - Nom: Vitesse normale
+    Description: Les aquatiques ont une vitesse de base de 9 mètres sur la terre
+      ferme. En tant que créatures aquatiques, ils ont aussi une vitesse de nage de
+      9 mètres, peuvent se déplacer dans l’eau sans faire de test de natation, et
+      considèrent toujours Natation comme une compétence de classe.
+  - Nom: Amphibie
+    Description: Les aquatiques ont le sous-type aquatique, mais peuvent respirer
+      à l’air libre et sous l’eau.
+  - Nom: Résistance à l’enchantement
+    Description: Les aquatiques gagnent un bonus racial de +2 à leurs jets de sauvegarde
+      contre les sorts et effets d’enchantement des non-aboleths, mais reçoivent un
+      malus de -2 à leurs jets de sauvegarde contre les sources aboleths.
+  - Nom: Dépendant de l’eau
+    Description: Le corps de l’aquatique nécessite d’être constamment immergé dans
+      de l’eau douce ou salée. Les aquatiques qui passent plus d’une journée sans
+      s’immerger complètement dans l’eau risquent une défaillance des organes internes,
+      un dessèchement douloureux de la peau et la mort en 4d6 heures.
+  - Nom: Langues
+    Description: 'Les aquatiques commencent le jeu en sachant parler le commun et
+      l’aboleth. Ceux qui ont un haut score d’Intelligence peuvent choisir parmi ces
+      langues : aklo, aquatique, draconique et elfique.'
+  
+- Nom: Changelin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.changelin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Charisme, +2 Sagesse, -2 Constitution. Les changelins sont frêles,
+      mais intelligentes et avenantes.
+  - Nom: Taille M
+    Description: Les changelins sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Changelins
+    Description: Les changelins sont des humanoïdes de sous-type changelins.
+  - Nom: Vitesse normale
+    Description: Les changelins ont une vitesse de base de 9 mètres.
+  - Nom: Vision dans le noir (Ext)
+    Description: Les changelins peuvent voir dans le noir sur 18mètres.
+  - Nom: Griffes
+    Description: Les changelins ont des ongles durs et aiguisés qui leur font bénéficier
+      de deux attaques de griffe (1d4 points de dégâts chacune).
+  - Nom: Armure naturelle
+    Description: Les changelins ont un bonus d’armure naturelle de +1.
+  - Nom: Veuve verte (guenaude verte)
+    Description: 'Les changelins héritent de l’un de ces traits raciaux, en fonction
+      du type de guenaude qu’est leur mère : La changelin bénéficie d’un bonus racial
+      de +1 à ses dégâts au corps à corps. La changelin peut retenir sa respiration
+      pendant un nombre de rounds égal à trois fois sa Constitution avant de risquer
+      la noyade. La changelin reçoit un bonus racial de +2 à ses tests de Bluff contre
+      les créatures sexuellement attirées par elle.'
+  - Nom: Langues
+    Description: 'Les changelins commencent le jeu en sachant parler le commun et
+      la langue de leur société d''adoption. Ceux qui ont un haut score d’Intelligence
+      peuvent choisir parmi ces langues : aklo, draconique, elfique, géant, gnoll,
+      gobelin, nain et orque.'
+  
+- Nom: Duergar
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Constitution, +2 Sagesse, -4 Charisme. Les duergars sont robustes
+      et alertes, mais également querelleurs.
+  - Nom: Taille M
+    Description: Les duergars sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Nain
+    Description: Les duergars sont des humanoïdes de sous-type nain.
+  - Nom: Lentement mais sûrement
+    Description: Les duergars ont une vitesse de déplacement de base de 6 m (4 c),
+      mais elle n’est jamais modifiée par l’armure ou l’encombrement.
+  - Nom: Vision dans le noir supérieure
+    Description: Les duergars peuvent voir dans le noir jusqu’à 36 mètres (24 c).
+  - Nom: Immunités des duergars
+    Description: Les duergars sont immunisés contre la paralysie, les fantasmes
+      et les poisons. Ils bénéficient d’un bonus racial de +2 à leurs jets de sauvegarde
+      contre les sorts et les pouvoirs magiques.
+  - Nom: Stabilité
+    Description: Les duergars reçoivent un bonus racial de +4 à leur DMD contre
+      la bousculade ou les tentatives de croc-en-jambe lorsqu’ils sont sur la terre
+      ferme.
+  - Nom: Pouvoirs magiques
+    Description: Le duergar peut utiliser agrandissement et invisibilité une fois
+      par jour, utilisant son niveau de personnage pour déterminer son niveau de lanceur
+      de sorts, et uniquement sur lui-même.
+  - Nom: Sensibilité à la lumière
+    Description: Les duergars sont éblouis lorsqu’ils sont dans des zones de pleine
+      lumière.
+  - Nom: Langues
+    Description: 'Les duergars commencent le jeu en sachant parler le commun, le
+      nain et le commun des profondeurs. Un duergar ayant un haut score d’Intelligence
+      peut choisir parmi ces langues : aklo, draconique, géant, gobelin, orque et
+      terreux.'
+  
+- Nom: Grippli
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.grippli%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Sagesse, -2 Force. Les gripplis sont agiles et
+      alertes, mais grêles.
+  - Nom: Petite Taille
+    Description: Les gripplis sont des créatures de taille P et gagnent un bonus
+      de taille de +1 à la CA, un bonus de +1 à leurs jets d’attaque, un malus de
+      -1 au BMO et au DMD, et un bonus de taille de +4 à leurs tests de Discrétion.
+  - Nom: Grippli
+    Description: Les gripplis sont des humanoïdes de sous-type grippli.
+  - Nom: Vitesse normale
+    Description: Les gripplis ont une vitesse de base de 9 mètres et une vitesse
+      d’escalade de 6 mètres.
+  - Nom: Vision dans le noir
+    Description: Les gripplis peuvent voir dans le noir jusqu’à 18 mètres.
+  - Nom: Camouflage
+    Description: Les gripplis reçoivent un bonus racial de +4 à leurs tests de Discrétion
+      dans les zones marécageuses et forestières.
+  - Nom: Déplacement facilité (marais)
+    Description: Le grippli peut traverser les environnements difficiles à sa vitesse
+      normale quand il est dans les marais. Les environnements magiquement altérés
+      affectent le grippli normalement.
+  - Nom: Apprentissage martial
+    Description: Les gripplis sont formés au maniement des filets.
+  - Nom: Langues
+    Description: 'Les gripplis commencent le jeu en sachant parler le commun et
+      le grippli. Les gripplis ayant un haut score d’Intelligence peuvent choisir
+      parmi ces langues : bourbiérin, draconique, elfique, gnome, gobelin et sylvestre.'
+  
+- Nom: Homme-poisson
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-poisson%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Constitution, +2 Charisme.Les hommes-poissons
+      sont gracieux, vigoureux et beaux.
+  - Nom: Taille M
+    Description: Les hommes-poissons sont des créatures de taille M et n’ont aucun
+      bonus ni malus de taille.
+  - Nom: Vitesse lente
+    Description: Les hommes-poissons ont une vitesse de base de 1,5 mètre. Ils ont
+      une vitesse de nage de 15 mètres.
+  - Nom: Aquatique
+    Description: Les hommes-poissons sont des humanoïdes de sous-type aquatique.
+  - Nom: Amphibie
+    Description: Les hommes-poissons sont amphibies, mais préfèrent ne pas passer
+      trop de temps hors de l’eau.
+  - Nom: Vision nocturne
+    Description: Les hommes-poissons ont vision nocturne.
+  - Nom: Armure
+    Description: Les hommes-poissons ont un bonus d’armure naturelle de +2.
+  - Nom: Sans jambe
+    Description: Les hommes-poissons n’ont pas de jambes et ne peuvent pas être
+      pris pour cible d’un croc-en-jambe.
+  - Nom: Langues
+    Description: 'Les hommes-poissons commencent le jeu en sachant parler le commun
+      et l’aquatique. Ceux qui ont un haut score d’Intelligence peuvent choisir parmi
+      ces langues : aboleth, aklo, draconique, elfique et sylvestre.'
+  
+- Nom: Kitsune
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kitsune%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Charisme, -2 Force. Les kitsune sont agiles et
+      sociables, mais ont tendance à être physiquement faibles.
+  - Nom: Taille M
+    Description: Les kitsune sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Kitsune
+    Description: Les kitsune sont des humanoïdes de sous-types kitsune et métamorphe.
+  - Nom: Vitesse normale
+    Description: Les kitsune ont une vitesse de base de 9 mètres.
+  - Nom: Changement de forme (Sur)
+    Description: Le kitsune peut prendre une unique forme humaine spécifique de
+      son sexe. Il prend toujours cette forme lorsqu’il utilise cette capacité. Un
+      kitsune sous forme humaine ne peut pas utiliser son attaque de morsure, mais
+      reçoit un bonus racial de +10 à ses tests de Déguisement pour apparaître humain.
+      Il lui faut une action simple pour changer de forme. Cette capacité fonctionne
+      comme modification d’apparence, à la seule différence que le kitsune ne peut
+      pas ajuster ses scores de caractéristiques.
+  - Nom: Vision nocturne (Ext)
+    Description: Les kitsune peuvent voir deux fois plus loin que les humains à
+      faible luminosité.
+  - Nom: Agile (Ext)
+    Description: Le kitsune reçoit un bonus racial de +2 à ses tests d’Acrobaties.
+  - Nom: Magie kitsune (Ext/Sur)
+    Description: 'Le kitsune ajoute +1 au DD de tous les jets de sauvegarde contre
+      les sorts d’enchantement qu’il lance. Un kitsune avec un score de Charisme de
+      11 ou plus reçoit ce pouvoir magique : 3/jour – lumières dansantes.'
+  - Nom: Armes naturelles (Ext)
+    Description: Sous sa forme naturelle, le kitsune a une attaque de morsure qui
+      inflige 1d4 points de dégâts.
+  - Nom: Langues
+    Description: 'Les kitsune commencent le jeu en sachant parler le commun et le
+      sylvestre. Un kitsune ayant un haut score d’Intelligence peut choisir parmi
+      ces langues : toutes les langues humaines, aklo, céleste, elfique, gnome et
+      tengu.'
+  
+- Nom: Nagaji
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.nagaji%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Force, +2 Charisme, -2 Intelligence. Les nagajis sont solides
+      et ont une forte personnalité, mais ils ont tendance à ignorer toute logique
+      et à se moquer des aspirations scolastiques.
+  - Nom: Taille M
+    Description: Les nagajis sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Reptilien
+    Description: Les nagajis sont des humanoïdes de sous-type reptilien.
+  - Nom: Vitesse normale
+    Description: Les nagajis possèdent une vitesse de déplacement de base de 9 mètres.
+  - Nom: Vision nocturne
+    Description: Les nagajis peuvent voir deux fois plus loin que les humains à
+      faible luminosité.
+  - Nom: Écailles renforcées
+    Description: Les nagajis ont une chair écailleuse qui leur accorde un bonus
+      d’armure naturelle de +1.
+  - Nom: Résistance à l’ombre
+    Description: Les nagajis reçoivent un bonus racial de +2 à leurs jets de sauvegarde
+      contre les effets mentaux et les poisons.
+  - Nom: Perception du serpent (Ext)
+    Description: Les nagajis reçoivent un bonus racial de +2 à leurs tests de Dressage
+      contre les reptiles, et un bonus racial de +2 à leurs tests de Perception.
+  - Nom: Langues
+    Description: 'Les nagajis commencent le jeu en sachant parler le commun et le
+      draconique. Les nagajis ayant un haut score d’Intelligence peuvent choisir parmi
+      ces langues : toutes les langues humaines, abyssal, aklo, céleste, géant, infernal,
+      vishkanyan et sylvestre.'
+  
+- Nom: Samsaran
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.samsaran%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Intelligence, +2 Sagesse, -2 Constitution. Les samsarans sont
+      perspicaces et volontaires, mais leur corps est souvent frêle.
+  - Nom: Taille M
+    Description: Les samsarans sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Samsarans
+    Description: les samsarans sont des humanoïdes de sous-type samsaran.
+  - Nom: Vitesse normale
+    Description: Les samsarans ont une vitesse de base de 9 mètres.
+  - Nom: Vision nocturne (Ext)
+    Description: Les samsarans peuvent voir deux fois plus loin que les humains
+      à faible luminosité.
+  - Nom: Lié à la vie (Ext)
+    Description: Les samsarans reçoivent un bonus racial de +2 à tous leurs jets
+      de sauvegarde pour résister aux effets de mort, à leurs jets de sauvegarde contre
+      les effets d’énergie négative, à leurs jets de Vigueur pour annuler des niveaux
+      négatifs et à leurs tests de Constitution pour se stabiliser lorsque leur nombre
+      de points de vie est négatif.
+  - Nom: Magie samsaran (Mag)
+    Description: 'Les samsarans ayant un score de Charisme de 11 ou plus gagnent
+      ces pouvoirs magiques : 1/jour – compréhension des langages, perception de la
+      mort et stabilisation. Le niveau de lanceur de sorts de ces effets est égal
+      au niveau du samsaran.'
+  - Nom: Éclats du passé (Ext)
+    Description: 'Les vies antérieures du samsaran lui accordent un bonus à deux
+      compétences particulières. Le samsaran choisit deux compétences : il gagne un
+      bonus racial de +2 à chacune d’elles et elles sont considérées comme des compétences
+      de classe, quelle que soit sa classe.'
+  - Nom: Langues
+    Description: 'Les samsarans commencent le jeu en sachant parler le commun et
+      le samsaran. Ceux qui ont un haut score d’Intelligence peuvent choisir parmi
+      ces langues : toutes les langues humaines, abyssal, aérien, aquatique, céleste,
+      draconique, géant, igné, infernal, vishkanyan, tengu et terreux.'
+  
+- Nom: Strix
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.strix%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, -2 Charisme. Les strix sont vifs et insaisissables,
+      mais ils ont tendance à être têtus et prompts à la colère.
+  - Nom: Strix
+    Description: Les strix sont des humanoïdes de sous-type strix.
+  - Nom: Taille M
+    Description: Les strix sont des créatures de taille M et n’ont aucun bonus ni
+      malus de taille.
+  - Nom: Vitesse normale
+    Description: Les strix ont une vitesse de base de 9 mètres sur la terre. Ils
+      ont également une vitesse de vol de 18 mètres (moyenne).
+  - Nom: Vision nocturne
+    Description: Les strix peuvent voir deux fois plus loin que les humains à faible
+      luminosité.
+  - Nom: Vision dans le noir
+    Description: Les strix peuvent voir dans le noir jusqu’à 18 mètres.
+  - Nom: Haine
+    Description: Les strix reçoivent un bonus racial de +1 à leurs jets d’attaque
+      contre les créatures humanoïdes de sous-type humain à cause de leur formation
+      spéciale contre ces ennemis détestés.
+  - Nom: Nocturne
+    Description: Les strix reçoivent un bonus racial de +2 à leurs tests de Perception
+      et de Discrétion à faible luminosité ou dans les ténèbres.
+  - Nom: Suspicieux
+    Description: Les strix reçoivent un bonus racial de +2 à leurs jets de sauvegarde
+      contre les effets et sorts d’illusion.
+  - Nom: Langues
+    Description: 'Les strix commencent le jeu en sachant parler le strix. Les strix
+      ayant un haut score d’Intelligence peuvent choisir parmi ces langues : aérien,
+      commun, draconique, géant, gnome, gobelin, infernal.'
+  
+- Nom: Suli
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Force, +2 Charisme, -2 Intelligence. Les sulis sont souvent
+      forts et séduisants mais ils sont lents d’esprit.
+  - Nom: Extérieur natif
+    Description: Les sulis sont des extérieurs de sous-type natif.
+  - Nom: Taille M
+    Description: Les sulis sont des créatures de taille M ne recevant ni bonus ni
+      malus de taille.
+  - Nom: Vitesse normale
+    Description: Les sulis ont une vitesse de base de 9 mètres.
+  - Nom: Vision nocturne
+    Description: Les sulis voient deux fois plus loin que les humains en cas de
+      faible luminosité.
+  - Nom: Négociateur
+    Description: . Les sulis sont de fins négociateurs et gagnent un bonus racial
+      de +2 à leurs tests de Diplomatie et de Psychologie.
+  - Nom: Assaut élémentaire (Sur)
+    Description: Une fois par jour, par une action rapide, le suli peut envelopper
+      ses bras d’acide, de froid, d’électricité ou de feu. Cette capacité dure 1 round
+      par niveau et peut être annulée par une action libre. Les attaques à mains nues
+      à l’aide de ses bras ou de ses mains (ou les attaques portées avec des armes
+      tenues dans ces mains) infligent +1d6 points de dégâts du type d’énergie approprié.
+  - Nom: Résistance élémentaire
+    Description: . Les sulis ont une résistance à l’acide de 5, au froid de 5, à
+      l’électricité de 5 et au feu de 5.
+  - Nom: Langues
+    Description: '. Les sulis commencent en parlant le commun et une langue élémentaire
+      au choix (aquatique, aérien, igné ou terreux). Les sulis ayant une haute valeur
+      d’Intelligence peuvent choisir leurs langues supplémentaires parmi celles-ci
+      : aquatique, aérien, draconique, igné et terreux.'
+  
+- Nom: Svirfneblin
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.svirfneblin%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Sagesse, -2 Force, -4 Charisme. Les svirfneblins
+      sont rapides et observateurs, mais relativement faibles et émotionnellement
+      détachés.
+  - Nom: Gnome
+    Description: Les svirfneblins sont des humanoïdes de sous-type gnome.
+  - Nom: Petite Taille
+    Description: Les svirfneblins sont des créatures de taille P bénéficiant d’un
+      bonus de taille de +1 à la CA, d’un bonus de taille de +1 aux jets d’attaque,
+      d’un malus de -1 au BMO et au DMD, ainsi que d’un bonus de taille de +4 aux
+      tests de discrétion.
+  - Nom: Vitesse lente
+    Description: Les svirfneblins ont une vitesse de base de 6 mètres.
+  - Nom: Entraînement défensif
+    Description: Les svirfneblins reçoivent un bonus d’esquive de +2 à la Classe
+      d’armure.
+  - Nom: Sens
+    Description: Les svirfneblins ont vision dans le noir à 36 mètres et vision
+      nocturne.
+  - Nom: Chanceux
+    Description: Les svirfneblins reçoivent un bonus racial de +2 à tous leurs jets
+      de sauvegarde.
+  - Nom: Compétent
+    Description: . Les svirfneblins reçoivent un bonus racial de +2 à leurs tests
+      de Discrétion qui devient un bonus de +4 sous terre. Ils reçoivent un bonus
+      racial de +2 à leurs tests d’Artisanat (alchimie) et de Perception.
+  - Nom: Haine
+    Description: Les svirfneblins reçoivent un bonus de +1 à leurs jets d’attaque
+      contre les créatures humanoïdes de sous-type reptilien et nain grâce à leur
+      entraînement contre ces ennemis détestés.
+  - Nom: Connaissance de la pierre
+    Description: Les svirfneblins gagnent connaissance de la pierre, comme les nains
+      (voir la page 27 du Manuel des joueurs).
+  - Nom: Résistance à la magie
+    Description: Les svirfneblins ont une RM égale à 11 + leurs niveaux de classe.
+  - Nom: Magie des svirfneblins
+    Description: 'Les svirfneblins ajoutent +1 au DD de tous les sorts d’illusion
+      qu’ils lancent. Ils gagnent également les pouvoirs magiques suivants : Constant
+      – antidétection ; 1/jour – cécité/surdité, flou, déguisement ; le niveau de
+      lanceur de sorts est égal au niveau de classe du svirfneblin.'
+  - Nom: Langues
+    Description: 'Les svirfneblins commencent le jeu en sachant parler le gnome
+      et le commun des profondeurs. Les svirfneblins ayant un haut score d’Intelligence
+      peuvent choisir parmi ces langues : aklo, commun, draconique, elfique, géant,
+      gobelin, nain, orque et terreux.'
+  
+- Nom: Vanara
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vanara%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Sagesse, -2 Charisme. Les vanaras sont agiles
+      et perspicaces, mais également assez espiègles.
+  - Nom: Taille M
+    Description: Les vanara sont des créatures de taille M et n’ont aucun bonus
+      ni malus de taille.
+  - Nom: Vanara
+    Description: Les vanara sont des humanoïdes de sous-types vanara.
+  - Nom: Vitesse normale
+    Description: Les vanaras ont une vitesse de base de 9 mètres et une vitesse
+      d'Escalade de 9 mètres.
+  - Nom: Vision nocturne
+    Description: Les vanaras peuvent voir deux fois plus loin que les humains à
+      faible luminosité.
+  - Nom: Agilité (Ext)
+    Description: Les vanaras reçoivent un bonus racial de +2 à leurs tests d’Acrobaties
+      et de Discrétion.
+  - Nom: Queue préhensile
+    Description: Le vanara a une longue queue souple qu’il peut utiliser pour porter
+      des objets. Il ne peut pas manier d’arme avec sa queue, mais celle-ci lui permet
+      de récupérer de petits objets bien rangés sur sa personne par une action rapide.
+  - Nom: Langues
+    Description: Les vanaras commencent le jeu en sachant parler le commun et le
+      vanara. Ceux qui ont un haut score d’Intelligence peuvent choisir parmi ces
+      langues :aklo, céleste, elfique, gnome, gobelin et sylvestre.
+  
+- Nom: Vishkanya
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vishkanya%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Charisme, -2 Sagesse.Les vishkanyas sont gracieux
+      et élégants, mais souvent irrationnels.
+  - Nom: Vishkanya
+    Description: . Les vishkanyas sont des Humanoïde de sous-type vishkanya.
+  - Nom: Taille M
+    Description: Les vishkanyas sont des créatures de taille M qui ne reçoivent
+      ni bonus ni malus de taille.
+  - Nom: Vitesse normale
+    Description: Les vishkanyas ont une vitesse de base de 9 mètres.
+  - Nom: Vision nocturne
+    Description: Les vishkanyas peuvent voir deux fois plus loin que les humains
+      à faible luminosité.
+  - Nom: Sens aiguisés
+    Description: Les vishkanyas reçoivent un bonus racial de +2 à leurs tests de
+      Perception.
+  - Nom: Souplesse
+    Description: Les vishkanyas reçoivent un bonus racial de +2 à leurs tests d’Évasion
+      et de Discrétion.
+  - Nom: Résistance au poison
+    Description: Le vishkanya reçoit un bonus racial égal à ses dés de vie pour
+      ses jets de sauvegarde contre les poisons.
+  - Nom: Utilisation des poisons
+    Description: Les vishkanyas sont doués pour l’utilisation des poisons et ne
+      risquent jamais de s’empoisonner par erreur.
+  - Nom: Venin vishkanya
+    Description: Un nombre de fois par jour égal à son modificateur de Constitution,
+      le vishkanya peut empoisonner une arme qu’il manie avec sa salive ou son sang
+      toxique (l’emploi de son sang nécessite que le vishkanya soit blessé lorsqu’il
+      utilise cette capacité). Il faut une action rapide pour appliquer le venin de
+      cette manière. Blessure ; JdS Vigueur DD 10 + 1/2 dés de vie du vishkanya +
+      son modificateur de Constitution ; fréquence 1/round pendant 6 rounds ; effet
+      1d2 points de Dex ; guérison 1 réussite.
+  - Nom: Apprentissage martial
+    Description: Les vishkanyas sont formés au maniement des sarbacanes, des kukris
+      et des shurikens.
+  - Nom: Langues
+    Description: '. Les vishkanyas commencent le jeu en sachant parler le commun
+      et le vishkanyan. Les vishkanyas ayant un haut score d’Intelligence peuvent
+      choisir parmi ces langues : aklo,commun des profondeurs, draconique, elfique,
+      gobelin et sylvestre.'
+  
+- Nom: Wayang
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.wayang%20(race).ashx
+  Traits:
+  - Nom: Caractéristiques
+    Description: +2 Dextérité, +2 Intelligence, -2 Sagesse. Les wayangs sont agiles
+      et malins, mais leur perception du monde est obscurcie par les ombres.
+  - Nom: Wayang
+    Description: Les wayangs sont des Humanoïde de sous-type Wayang.
+  - Nom: Petite Taille
+    Description: Les wayangs sont des créatures de taille P, Ils gagnent donc un
+      bonus de taille de +1 à leur classe d’armure et aux jets d’attaque, un malus
+      de -1 à leur bonus de manœuvres offensives (BMO) et à leur degré de manœuvres
+      défensives (DMD), ainsi qu’un bonus de taille de +4 aux tests de Discrétion.
+  - Nom: Vitesse lente
+    Description: Les wayangs possèdent une vitesse de déplacement de base de 6 mètres
+      (4 cases).
+  - Nom: Vision dans le noir
+    Description: Les wayangs peuvent voir dans le noir jusqu’à une distance de 18
+      mètres (12 cases).
+  - Nom: Traqueur
+    Description: Les wayangs ont un bonus racial de +2 à leurs tests de Perception
+      et de Discrétion.
+  - Nom: Résistance à l’ombre
+    Description: Les wayangs reçoivent un bonus racial de +2 à leurs jets de sauvegarde
+      contre les sorts de la branche de l’ombre.
+  - Nom: Ombre et lumière (Sur)
+    Description: Une fois par jour, par une action immédiate, le wayang peut traiter
+      les effets d’énergie positive et d’énergie négative comme s’il était une créature
+      morte-vivante, recevant des dégâts de l’énergie positive et soignant ses dégâts
+      grâce à l’énergie négative. Cette capacité dure 1 minute une fois activée.
+  - Nom: Magie des ombres
+    Description: 'Les wayangs rajoutent +1 au DD de tous leurs jets de sauvegarde
+      contre les sorts de la branche de l’ombre qu’ils lancent. Les wayangs ayant
+      un score de Charisme de 11 ou plus gagnent également ces pouvoirs magiques :
+      1/jour – son imaginaire, passage sans trace et ventriloquie. Le niveau de lanceur
+      de sorts pour ces effets est égal à 10 + le niveau du sort + le modificateur
+      de Charisme du wayang.'
+  - Nom: Langues supplémentaires
+    Description: Les wayangs commencent le jeu en sachant parler le commun et le
+      wayang. Les wayangs qui possèdent une Intelligence élevée peuvent choisir abyssal,
+      aklo, draconique, gobelin, infernal, vishkanyan, samsaran et tengu.
+  
+
