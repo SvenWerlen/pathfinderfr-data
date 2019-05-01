@@ -119,7 +119,7 @@ for data in URLs:
         elif name == u"Papier de riz":
             names = [u"Feuille de papier de riz".lower()]
         elif name == u"Menottes et menottes de qualité supérieure":
-            names = [u"Menottes",u"Menottes de qualité supérieure".lower()]
+            names = [u"Menottes".lower(),u"Menottes de qualité supérieure".lower()]
 
         elif name == u"Instrument de musique, courants ou de maître":
             names = [u"Instrument de musique courant".lower(),u"Instrument de musique de maître".lower()]
