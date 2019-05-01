@@ -1,0 +1,901 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Matériel d&#39;aventurier - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Matériel daventurier.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Mat%u00e9riel+daventurier&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAw9a3QLzkbVlAua3TOPtAdiW55rY4=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIXDFy92LSo9YfQjN/CEfx2+B72oi3QcwxQT+thNGyuuoEtyjm4dov2NmbLaAoIOvGhGIow" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Matériel daventurier">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Matériel daventurier">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Matériel daventurier">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Matériel daventurier.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Matériel daventurier.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Mat%c3%a9riel%20daventurier">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Matériel d&#39;aventurier
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Mat%c3%a9riel%20daventurier" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<h2 class="separator">Accès rapide aux sections sur l'équipement<a class="headeranchor" id="Accès_rapide_aux_sections_sur_léquipement_0" href="#Accès_rapide_aux_sections_sur_léquipement_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top; text-align: left"><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Argent%20et%20richesse.ashx" title="Argent et richesse">Argent et richesse</a></li>
+<li><b><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx" title="Tableau récapitulatif des armes">Les armes</a></b></li>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx" title="Tableau récapitulatif des armes">tableau récapitulatif</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armes.ashx" title="Caractéristiques des armes">caractéristiques</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx" title="Descriptions individuelles des armes">descriptions individuelles</a></li></ul>
+</ul>
+</td><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx" title="Les matériaux spéciaux">Matériaux spéciaux</a></li>
+<li><b><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx" title="Tableau récapitulatif des armures">Les armures</a></b></li>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx" title="Tableau récapitulatif des armures">tableau récapitulatif</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx" title="Caractéristiques des armures">caractéristiques</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx" title="Descriptions individuelles des armures">descriptions individuelles</a></li></ul>
+</ul>
+</td><td>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx" title="Matériel d&#39;aventurier">Matériel d'aventurier</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx" title="Substances et objets spéciaux">Substances et objets spéciaux</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx" title="Matériel de classes et de compétences">Matériel de classes et de compétences</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.V%c3%aatements.ashx" title="Vêtements">Vêtements</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Nourriture%2c%20boisson%20et%20h%c3%a9bergement.ashx" title="Nourriture, boisson et hébergement">Nourriture, boisson et hébergement</a></li></ul>
+</td><td>
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Montures%20et%20harnachement.ashx" title="Montures et harnachement">Montures et harnachement</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Moyens%20de%20transport.ashx" title="Moyens de transport">Moyens de transport</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx" title="Objets récréatifs">Objets récréatifs</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Lancement%20de%20sorts%20et%20services.ashx" title="Lancement de sorts et services">Lancement de sorts et services</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx" title="Équipements raciaux">Équipements raciaux</a></li></ul>
+</td></tr></table></div><br /><table width="100%"><tr style="vertical-align: top"><td width="48%">
+<center>
+<table CLASS="tablo"><caption>Matériel d’aventurier</caption><tr CLASS="titre"><td>Article</td><td>Prix</td><td>Poids</td></tr><tr CLASS="premier"><td>Aiguille à coudre</td><td>5 pa</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#AIMANT" title="Matériel d&#39;aventurier">Aimant</a></td><td>5 pa</td><td>250 g</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#ANNEAUACOMPARTIMENTSECRET" title="Matériel d&#39;aventurier">Anneau à compartiment secret</a></td><td>+20 po</td><td>-</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#ARDOISE" title="Matériel d&#39;aventurier">Ardoise</a></td><td>1 po</td><td>1 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#ATTACHEDARME" title="Matériel d&#39;aventurier">Attache d'arme</a></td><td>1 pa</td><td>-</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Bélierportable" title="Matériel d&#39;aventurier">Bélier portable</a></td><td>10 po</td><td>10 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#BILLES" title="Matériel d&#39;aventurier">Billes</a></td><td>1 pa</td><td>1 kg</td></tr><tr CLASS="alt"><td>Bois de chauffage (pour un jour)</td><td>1 pc</td><td>10 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#BOUCHONSDOREILLES" title="Matériel d&#39;aventurier">Bouchons d'oreilles</a></td><td>3 pc</td><td>-</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Bougie" title="Matériel d&#39;aventurier">Bougie</a></td><td>1 pc</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#BOUEEDEQUALITE" title="Matériel d&#39;aventurier">Bouée, de qualité</a></td><td>10 po</td><td>15 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#BOUEEDENORMALE" title="Matériel d&#39;aventurier">Bouée, normale</a></td><td>5 po</td><td>8 kg</td></tr><tr><td>Bouteille de vin en verre</td><td>2 po</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Cadenas" title="Matériel d&#39;aventurier">Cadenas</a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&emsp;Simple</td><td>20 po</td><td>500 g</td></tr><tr CLASS="alt"><td>&emsp;Moyen</td><td>40 po</td><td>500 g</td></tr><tr><td>&emsp;Bon</td><td>80 po</td><td>500 g</td></tr><tr CLASS="alt"><td>&emsp;Excellent</td><td>150 po</td><td>500 g</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Chaîne" title="Matériel d&#39;aventurier">Chaîne</a>, 3 m</td><td>30 po</td><td>1 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Chaussetrappes" title="Matériel d&#39;aventurier">Chausse-trappes</a></td><td>1 po</td><td>1 kg</td></tr><tr><td>Chevalière</td><td>5 po</td><td>—</td></tr><tr CLASS="alt"><td>Chope en terre cuite</td><td>2 pc</td><td>500 g</td></tr><tr><td>Cire à cacheter</td><td>1 po</td><td>500 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Clepsydre" title="Matériel d&#39;aventurier">Clepsydre</a></td><td>1 000 po</td><td>100 kg</td></tr><tr><td>Cloche</td><td>1 po</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#COFFRE" title="Matériel d&#39;aventurier">Coffre</a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&emsp;Petit</td><td>2 po</td><td>12,5 kg</td></tr><tr CLASS="alt"><td>&emsp;Moyen</td><td>5 po</td><td>25 kg</td></tr><tr><td>&emsp;Grand</td><td>10 po</td><td>50 kg</td></tr><tr CLASS="alt"><td>&emsp;Très grand</td><td>25 po</td><td>125 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#COMBINAISONANTIESSAIM" title="Matériel d&#39;aventurier">Combinaison anti-essaim</a></td><td>20 po</td><td>5 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Cordeenchanvre" title="Matériel d&#39;aventurier">Corde en chanvre</a>, 15 m</td><td>1 po</td><td>5 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Cordeensoie" title="Matériel d&#39;aventurier">Corde en soie</a>, 15 m</td><td>10 po</td><td>2,5 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#CORDEENSOIEDARAIGNEE" title="Matériel d&#39;aventurier">Corde en soie d'araignée</a>, 15 m</td><td>100 po</td><td>2 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#CORNEDALERTE" title="Matériel d&#39;aventurier">Corne d'alerte</a></td><td>1 po</td><td>1 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#COUVERTURE" title="Matériel d&#39;aventurier">Couverture</a></td><td>2 pa</td><td>500 g<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td>Couverture d’hiver</td><td>5 pa</td><td>1,5 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Craie, morceau</td><td>1 pc</td><td>—</td></tr><tr CLASS="alt"><td>Cruche en terre cuite</td><td>2 pc</td><td>2,5 kg</td></tr><tr><td>Échelle, 3 m</td><td>5 pc</td><td>10 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Encre" title="Matériel d&#39;aventurier">Encre</a>, la fiole</td><td>8 po</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#ETUIAPARCHEMINS" title="Matériel d&#39;aventurier">Étui à cartes ou à parchemins</a></td><td>1 po</td><td>250 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#FEUILLEDEPAPIER" title="Matériel d&#39;aventurier">Feuille de papier</a></td><td>4 pa</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#PAPIERDERIZ" title="Matériel d&#39;aventurier">Feuille de papier de riz</a></td><td>5 pc</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#FICELLE" title="Matériel d&#39;aventurier">Ficelle</a>, 15 m</td><td>1 pc</td><td>250 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#FILETAPAPILLONS" title="Matériel d&#39;aventurier">Filet à papillons</a></td><td>10 po</td><td>1 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Filet de pêche, 2,5 m<sup>2</sup></td><td>4 po</td><td>2,5 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Fiole" title="Matériel d&#39;aventurier">Fiole</a> pour encre ou potion</td><td>1 po</td><td>50 g</td></tr><tr><td>Flasque (vide)</td><td>3 pc</td><td>2,25 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Grappin" title="Matériel d&#39;aventurier">Grappin</a></td><td>1 po</td><td>2 kg</td></tr><tr><td>Hameçon</td><td>1 pa</td><td>—</td></tr></table>
+</center>
+</td><td width="4%"></td><td width="48%">
+<center>
+<table CLASS="tablo"><caption>Matériel d’aventurier</caption><tr CLASS="titre"><td>Article</td><td>Prix</td><td>Poids</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Huile" title="Matériel d&#39;aventurier">Huile</a>, la flasque</td><td>1 pa</td><td>500 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Jarre" title="Matériel d&#39;aventurier">Jarre</a> en terre cuite</td><td>3 pc</td><td>4,5 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Lampe" title="Matériel d&#39;aventurier">Lampe</a></td><td>1 pa</td><td>500 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Lanterneàcapote" title="Matériel d&#39;aventurier">Lanterne à capote</a></td><td>7 po</td><td>1 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Lanternesourde" title="Matériel d&#39;aventurier">Lanterne sourde</a></td><td>12 po</td><td>1,5 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Longuevue" title="Matériel d&#39;aventurier">Longue-vue</a></td><td>1000 po</td><td>500 g</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#LUNETTESAVERREFUME" title="Matériel d&#39;aventurier">Lunettes à verre fumé</a></td><td>10 po</td><td>-</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Marteau" title="Matériel d&#39;aventurier">Marteau</a></td><td>5 pa</td><td>1 kg</td></tr><tr><td>Masse</td><td>1 po</td><td>5 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Menottes" title="Matériel d&#39;aventurier">Menottes</a></td><td>15 po</td><td>1 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Menottes" title="Matériel d&#39;aventurier">Menottes</a> de qualité supérieure</td><td>50 po</td><td>1 kg</td></tr><tr CLASS="alt"><td>Outre</td><td>1 po</td><td>2 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Paillasse</td><td>1 pa</td><td>2,5 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td>Palan</td><td>5 po</td><td>2,5 kg</td></tr><tr><td>Panier (vide)</td><td>4 pa</td><td>500 g</td></tr><tr><td>Parchemin, la feuille</td><td>2 pa</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Pelle" title="Matériel d&#39;aventurier">Pelle</a></td><td>2 po</td><td>4 kg</td></tr><tr><td>Perche, 3 m</td><td>5 pc</td><td>4 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#PERISCOPE" title="Matériel d&#39;aventurier">Périscope</a></td><td>20 po</td><td>2 kg</td></tr><tr><td>Petit miroir en acier</td><td>10 po</td><td>250 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Pieddebiche" title="Matériel d&#39;aventurier">Pied-de-biche</a></td><td>2 po</td><td>2,5 kg</td></tr><tr><td>Pierre à aiguiser</td><td>2 pc</td><td>500 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Piochedemineur" title="Matériel d&#39;aventurier">Pioche de mineur</a></td><td>3 po</td><td>5 kg</td></tr><tr><td>Piton</td><td>1 pa</td><td>250 g</td></tr><tr CLASS="alt"><td>Plume d’écriture</td><td>1 pa</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#POINTEDEFER" title="Matériel d&#39;aventurier">Pointe de fer</a></td><td>5 pc</td><td>500 g</td></tr><tr CLASS="alt"><td>Pot en fer</td><td>8 pa</td><td>2 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#POUDRE" title="Matériel d&#39;aventurier">Poudre</a></td><td>1 pc</td><td>250 g</td></tr><tr CLASS="alt"><td>Rations de survie (par jour)</td><td>5 pa</td><td>500 g<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#SABLIER" title="Matériel d&#39;aventurier">Sablier</a> (6 secondes)</td><td>10 po</td><td>-</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#SABLIER" title="Matériel d&#39;aventurier">Sablier</a> (1 minute)</td><td>20 po</td><td>250 g</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#SABLIER" title="Matériel d&#39;aventurier">Sablier</a> (1 heure)</td><td>25 po</td><td>500 g</td></tr><tr CLASS="alt"><td>Sac (vide)</td><td>1 pa</td><td>250 g<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Sac à dos (vide)</td><td>2 po</td><td>1 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#SACADOSDEMAITRE" title="Matériel d&#39;aventurier">Sac à dos de maître</a></td><td>50 po</td><td>2 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Sacoche de ceinture (vide)</td><td>1 po</td><td>0,5 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td>Savon, 1 livre</td><td>5 pa</td><td>500 g</td></tr><tr><td>Seau (vide)</td><td>5 pa</td><td>1 kg</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#SIFFLETDALERTE" title="Matériel d&#39;aventurier">Sifflet</a> d'alarme (ou silencieux)</td><td>8 pa (9 pa)</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Silexetamorce" title="Matériel d&#39;aventurier">Silex et amorce</a></td><td>1 po</td><td>—</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#TATOUAGE" title="Matériel d&#39;aventurier">Tatouage</a></td><td>1 pc-20 po</td><td>—</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#TENTE" title="Matériel d&#39;aventurier">Tente</a>, petite</td><td>10 po</td><td>10 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#TENTE" title="Matériel d&#39;aventurier">Tente</a>, moyenne</td><td>15 po</td><td>15 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#TENTE" title="Matériel d&#39;aventurier">Tente</a>, grande</td><td>30 po</td><td>20 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#TENTE" title="Matériel d&#39;aventurier">Tente</a>, pavillon</td><td>100 po</td><td>50 kg<sup><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#NOTE1" title="Matériel d&#39;aventurier">1</a></sup></td></tr><tr><td>Toile (le m2)</td><td>1 pa</td><td>1 kg</td></tr><tr CLASS="alt"><td>Tonneau (vide)</td><td>2 po</td><td>15 kg</td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#Torche" title="Matériel d&#39;aventurier">Torche</a></td><td>1 pc</td><td>500 g</td></tr><tr CLASS="alt"><td><a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#VESTEBARBELEE" title="Matériel d&#39;aventurier">Veste barbelée</a></td><td>10 po</td><td>2 kg</td></tr></table>
+</center>
+</td></tr></table><br /><i>— indique un poids nul ou négligeable.</i><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE1" href="#NOTE1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><i>1 Ces objets pèsent un quart du poids indiqué quand ils sont fabriqués pour des personnages de <a class="pagelink" href="Pathfinder-RPG.taille%20P.ashx" title="taille P">taille P</a>. La capacité des conteneurs pour personnages de taille P est elle aussi divisée par 4</i><br /><br /><h2 class="separator"> Descriptions <a class="headeranchor" id="Descriptions_52" href="#Descriptions_52" title="Lien vers cette section">&#0182;</a></h2>
+Certains des objets de ce tableau sont décrits ci-dessous, avec les avantages qu’ils confèrent au personnage.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AIMANT" href="#AIMANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Aimant<a class="headeranchor" id="Aimant_0" href="#Aimant_0" title="Lien vers cette section">&#0182;</a></h3>
+Les aimants qu’on peut tenir en main sont généralement faibles. On les utilise surtout pour détecter ou attirer du fer, du <a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx#MITHRAL" title="Les matériaux spéciaux">mithril</a> ou de l’<a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx#ADAMANTIUM" title="Les matériaux spéciaux">adamantium</a> à courte portée. Cet aimant en forme de fer à cheval et de la taille d’une main peut soulever un poids de fer maximum de 3 kg.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ANNEAUACOMPARTIMENTSECRET" href="#ANNEAUACOMPARTIMENTSECRET"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Anneau à compartiment secret<a class="headeranchor" id="Anneau_à_compartiment_secret_1" href="#Anneau_à_compartiment_secret_1" title="Lien vers cette section">&#0182;</a></h3>
+La monture de cet anneau cache un minuscule compartiment qui contient généralement du poison. Ouvrir ou refermer l’anneau nécessite une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> ; pour le faire sans se faire voir, il faut réussir un test d’<a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 20.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARDOISE" href="#ARDOISE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Ardoise<a class="headeranchor" id="Ardoise_2" href="#Ardoise_2" title="Lien vers cette section">&#0182;</a></h3>
+Un cadre de bois de la taille d’un grand livre entoure cette fine tranche de pierre noire polie. Il suffit defrotter l’ardoise avec un simple chiffon humide pour effacer toute marque de craie sur sa surface.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTACHEDARME" href="#ATTACHEDARME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Attache d'arme<a class="headeranchor" id="Attache_darme_3" href="#Attache_darme_3" title="Lien vers cette section">&#0182;</a></h3>
+Les attaches pour arme sont des liens de cuir de 60 cm qui lient une arme au poignet du porteur. Si celui-ci lâche son arme ou est désarmé, il peut la récupérer par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> et l’arme ne s’éloigne jamais de plus d’une case de lui (elle arrive, au pire, dans une case adjacente). Cependant, le porteur ne peut pas changer d’arme sans d’abord défaire l’attache (une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>) ou la couper (une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a> ou une attaque, solidité 0, 0 pv). Contrairement au gantelet d’armes, l’attache permet d’utiliser la main en question pour manipuler des objets (mais l’arme qui y pend pourrait empêcher les actions plus délicates).<br /><br /><u>Note</u> : cet objet a été erraté dans <a class="externallink" href="http://paizo.com/paizo/faq/v5748nruor1fn#v5748eaic9r9k" title="une FAQ" target="_blank">une FAQ</a> <br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Bélierportable" href="#Bélierportable"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br />
+<h3 class="separator">Bélier portable<a class="headeranchor" id="Bélier_portable_4" href="#Bélier_portable_4" title="Lien vers cette section">&#0182;</a></h3>
+Cette poutre au bout métallique portable confère un bonus de circonstances de +2 au jet de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> pour <a class="pagelink" href="Pathfinder-RPG.Donjons.ashx#PORTES" title="Les donjons">enfoncer une porte</a>, et permet au personnage de se faire aider d’un compagnon, ce qui augmente alors le bonus de +2.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BILLES" href="#BILLES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Billes<a class="headeranchor" id="Billes_5" href="#Billes_5" title="Lien vers cette section">&#0182;</a></h3>
+Comme les chausse-trappes, les billes peuvent être utilisées pour ralentir les adversaires. Un sac de 1 kg de billes permet de recouvrir une zone de 1,50 m (1 <abbr title="cases">c</abbr>) de côté. Lorsqu’une créature pénètre dans une case où des billes ont été éparpillées, elle doit réussir un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 10 pour éviter de <a class="pagelink" href="Pathfinder-RPG.%c3%a0%20terre.ashx" title="À terre">tomber au sol</a> (le bonus de stabilité contre les <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">crocs-en-jambe</a> s’applique à ce <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>). Les créatures qui se déplacent à mi-vitesse ou moins vite encore peuvent se frayer un chemin à travers une case parsemée de billes sans danger.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BOUCHONSDOREILLES" href="#BOUCHONSDOREILLES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Bouchons d'oreilles<a class="headeranchor" id="Bouchons_doreilles_6" href="#Bouchons_doreilles_6" title="Lien vers cette section">&#0182;</a></h3>
+Ces bouchons d’oreilles faits de coton et de cire ou de liège offrent un bonus de circonstances de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les effets auditifs mais imposent également une pénalité de -5 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> liés à l’ouïe.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BOUEEQUALITE" href="#BOUEEQUALITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Bouée, de qualité<a class="headeranchor" id="Bouée_de_qualité_7" href="#Bouée_de_qualité_7" title="Lien vers cette section">&#0182;</a></h3>
+Cette bouée possède un flotteur métallique creux de forme sphérique ou ovoïde (généralement en cuivre), une chaîne au lieu d’une ficelle et une ancre de métal au lieu d’un poids. À part cela, elle fonctionne comme une bouée normale.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="BOUEENORMALE" href="#BOUEENORMALE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Bouée, normale<a class="headeranchor" id="Bouée_normale_8" href="#Bouée_normale_8" title="Lien vers cette section">&#0182;</a></h3>
+Une bouée sert à repérer un endroit spécifique dans un lac, une rivière ou une étendue d’eau similaire, ce qui permet d’y revenir plus tard. Chaque bouée comporte un flotteur (généralement une vessie gonflée d’air ou une gourde étanche), une ficelle de 60 m et une pierre de 7,5 kg servant d’ancre. Le flotteur est généralement recouvert d’une peinture voyante et peut même comporter un petit drapeau pour mieux attirer l’attention. Les bouées résistent assez bien au climat normal et aux marées mais elles n’offrent guère de protection contre les créatures intelligentes déterminées à les saboter.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Bougie" href="#Bougie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Bougie<a class="headeranchor" id="Bougie_9" href="#Bougie_9" title="Lien vers cette section">&#0182;</a></h3>
+Une bougie éclaire faiblement une petite zone et augmente la luminosité ambiante dans un rayon d’un mètre cinquante (les ténèbres se transforment en faible lumière et la faible lumière devient une lumière normale ; voir <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">Vision et lumière</a> pour plus de détails sur la luminosité). Une bougie ne peut pas produire plus qu’une lumière normale. Elle brûle pendant une heure.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cadenas" href="#Cadenas"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cadenas<a class="headeranchor" id="Cadenas_10" href="#Cadenas_10" title="Lien vers cette section">&#0182;</a></h3>
+Le degré de difficulté (DD) nécessaire pour forcer un cadenas à l’aide de la compétence <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> dépend de sa qualité : simple (DD 20), moyenne (DD 25), bonne (DD 30) ou excellente (DD 40).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Chaîne" href="#Chaîne"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chaîne<a class="headeranchor" id="Chaîne_11" href="#Chaîne_11" title="Lien vers cette section">&#0182;</a></h3>
+Une chaîne a une valeur de <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> de 10 et 5 <a class="pagelink" href="Pathfinder-RPG.point%20de%20r%c3%a9sistance.ashx" title="point de résistance">points de résistance</a>. On peut la casser à l’aide d’un test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> (DD 26).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Chaussetrappes" href="#Chaussetrappes"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chausse-trappes<a class="headeranchor" id="Chausse-trappes_12" href="#Chausse-trappes_12" title="Lien vers cette section">&#0182;</a></h3>
+Les chausse-trappes sont de petites billes métalliques dotées de quatre pointes disposées de telle manière qu’il y en a toujours une dirigée vers le haut, quelle que soit la manière dont la chausse-trappe repose au sol. On les éparpille par terre, dans l’espoir que l’adversaire marchera dessus, ou du moins qu’il sera forcé de ralentir pour les éviter. Une bourse d’un kilo de chausse-trappes couvre un carré d’un mètre cinquante de côté.<br /><br />Chaque fois qu’une créature entre dans une zone semée de chausse-trappes (ou passe un round à combattre en un tel endroit), elle risque de marcher sur l’une des pointes. Le <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> des chausse-trappes (bonus d'attaque +0) ne prend en compte ni le bonus d’armure, ni le bonus de bouclier, ni le bonus de parade de la créature. Si la créature porte des chaussures, des bottes ou autre, elle bénéficie d’un bonus de +2 à sa <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Si les chausse-trappes réussissent leur attaque, la créature a marché sur l’une d’elles. La pointe lui inflige 1 point de dégâts et cette plaie à la plante du pied réduit sa <a class="pagelink" href="Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx" title="vitesse de déplacement">vitesse de déplacement</a> de moitié. Ce malus s’applique pendant 24 heures à moins que la créature ne soit soignée à l’aide d’un test de <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> DD 15 ou guérie d’au moins 1 point de vie par magie. Une créature qui court ou qui charge doit s’arrêter immédiatement si elle marche sur une chausse-trappe. Toute créature qui se déplace à la moitié de sa <a class="pagelink" href="Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx" title="vitesse de déplacement">vitesse de déplacement</a> de base ou moins peut se faufiler sans encombre entre les chausses-trappes.<br /><br />Il se peut que les chausse-trappes ne fonctionnent pas face à certains adversaires.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Clepsydre" href="#Clepsydre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Clepsydre<a class="headeranchor" id="Clepsydre_13" href="#Clepsydre_13" title="Lien vers cette section">&#0182;</a></h3>
+Ce large objet massif donne l’heure exacte à une demi-heure près, à partir du moment où on l’actionne. Il lui faut une source d’eau et elle ne doit pas être bougée car elle marque le temps grâce au débit régulier de gouttes d’eau.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COFFRE" href="#COFFRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Coffre<a class="headeranchor" id="Coffre_14" href="#Coffre_14" title="Lien vers cette section">&#0182;</a></h3>
+Il existe des coffres en bois de plusieurs tailles, entre autres des petits (50 dm3 , 1 pv, <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> 17), des moyens (100 dm3 , 15 pv, <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> 23), des grands (150 dm3 , 30 pv, <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> 29) et des très grands (200 dm3 , 50 pv, <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> 35). Ils comportent généralement une serrure simple.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COMBINAISONANTIESSAIM" href="#COMBINAISONANTIESSAIM"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Combinaison anti-essaim<a class="headeranchor" id="Combinaison_anti-essaim_15" href="#Combinaison_anti-essaim_15" title="Lien vers cette section">&#0182;</a></h3>
+Ces lourds habits composés de plusieurs couches s’accompagnent d’un large chapeau. Un filet de mailles fines attaché sur le pourtour du chapeau et ressemblant à un voile fait qu’il est quasiment impossible pour les créatures de taille Min ou Infime de rentrer en contact physique avec le corps du porteur. Une combinaison anti-essaim réduit la vitesse du porteur de 50% mais lui accorde une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 10/— contre les nuées de créatures de taille I et une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 5/— contre les nuées de créatures de taille Min.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cordeenchanvre" href="#Cordeenchanvre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Corde en chanvre<a class="headeranchor" id="Corde_en_chanvre_16" href="#Corde_en_chanvre_16" title="Lien vers cette section">&#0182;</a></h3>
+Cette corde a 2 <a class="pagelink" href="Pathfinder-RPG.point%20de%20r%c3%a9sistance.ashx" title="point de résistance">points de résistance</a>. On peut la rompre à l’aide d’un test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> DD 23.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cordeensoie" href="#Cordeensoie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Corde en soie<a class="headeranchor" id="Corde_en_soie_17" href="#Corde_en_soie_17" title="Lien vers cette section">&#0182;</a></h3>
+Cette corde a 4 <a class="pagelink" href="Pathfinder-RPG.point%20de%20r%c3%a9sistance.ashx" title="point de résistance">points de résistance</a>. On peut la rompre à l’aide d’un test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> DD 24.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CORDEENSOIEDARAIGNEE" href="#CORDEENSOIEDARAIGNEE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Corde en soie d'araignée<a class="headeranchor" id="Corde_en_soie_daraignée_18" href="#Corde_en_soie_daraignée_18" title="Lien vers cette section">&#0182;</a></h3>
+Cette corde quasiment inconnue à la surface est tissée à partir de fils de soie d’araignées monstrueuses par des esclaves gobelins au service des drows. Elle est donc surtout utilisée par les elfes noirs, même si on trouve parfois des bouts de corde plus petits (généralement d’au plus 3 m) sur les gobelins. La corde de soie d’araignée a 6 points de vie et peut être rompue avec un test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> de <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 25.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CORNEDALERTE" href="#CORNEDALERTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Corne d'alerte<a class="headeranchor" id="Corne_dalerte_19" href="#Corne_dalerte_19" title="Lien vers cette section">&#0182;</a></h3>
+Souffler dans une corne nécessite un test de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (instruments à vent) contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de  10. Cela permet d’envoyer des messages tels que  : «  À l’attaque ! », « À l’aide », « En avant ! », « Retraite ! », « Feu ! » ou « Alarme  ! ». On peut entendre le son de manière claire (<a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 0) jusqu’à un rayon de 800  m. Chaque tranche de 400 m supplémentaires ajoute une pénalité de -1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> pour entendre la corne.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="COUVERTURE" href="#COUVERTURE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Couverture<a class="headeranchor" id="Couverture_20" href="#Couverture_20" title="Lien vers cette section">&#0182;</a></h3>
+Cette chaude couverture possède des attaches qui permettent de la maintenir enroulée.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Encre" href="#Encre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Encre<a class="headeranchor" id="Encre_21" href="#Encre_21" title="Lien vers cette section">&#0182;</a></h3>
+Il s’agit d’encre noire. On peut trouver d’autres couleurs mais elles sont deux fois plus chères.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ETUIAPARCHEMINS" href="#ETUIAPARCHEMINS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Etui à parchemins<a class="headeranchor" id="Etui_à_parchemins_22" href="#Etui_à_parchemins_22" title="Lien vers cette section">&#0182;</a></h3>
+Un étui de cuir ou de bois peut facilement contenir quatre parchemins. On peut y glisser un plus grand nombre de parchemins mais il faut alors une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a> (au lieu d’une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a>) pour en extraire un. Il faut <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">détruire</a> l’étui à parchemins avant de pouvoir endommager son contenu (solidité 2 pour le cuir ou 5 pour le bois, 2 pv, <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> 15). Les étuis à parchemins ne sont pas hermétiques.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FEUILLEDEPAPIER" href="#FEUILLEDEPAPIER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Feuille de papier<a class="headeranchor" id="Feuille_de_papier_23" href="#Feuille_de_papier_23" title="Lien vers cette section">&#0182;</a></h3>
+Une feuille de papier ordinaire mesure 23 cm sur 15 cm et ne permet pas de fabriquer des parchemins magiques. Elle possède une solidité de 0, 1 pv et le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour la <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">détruire</a> est de 5.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FICELLE" href="#FICELLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Ficelle<a class="headeranchor" id="Ficelle_24" href="#Ficelle_24" title="Lien vers cette section">&#0182;</a></h3>
+La ficelle est vendue sous la forme de boules ou de bobines de 15 m. On peut s’en servir pour préparer des pièges ou des alarmes ou encore l’attacher à une flèche ou un carreau pour pouvoir ramener vers soi un objet hors d’atteinte. La ficelle a une solidité de 0, 1 pv et le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour la <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">rompre</a> est de 14.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="FILETAPAPILLONS" href="#FILETAPAPILLONS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Filet à papillons<a class="headeranchor" id="Filet_à_papillons_25" href="#Filet_à_papillons_25" title="Lien vers cette section">&#0182;</a></h3>
+Une des extrémités de ce bâton de 1,80 m supporte un grand cercle métallique recouvert d’un filet à fines mailles. On peut l’utiliser comme tamis pour séparer des objets d’une substance capable de passer à travers les mailles (comme du sable ou de l’eau). On peut également l’utiliser pour capturer des créatures de taille I ou Min comme s’il s’agissait d’un <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#FILET" title="Descriptions individuelles des armes">filet</a> (l’arme) sans qu’il soit nécessaire de le replier en cas d’échec, en utilisant le manche du filet à papillons de la même manière que la corde du <a class="pagelink" href="Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#FILET" title="Descriptions individuelles des armes">filet</a> (l’arme).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fiole" href="#Fiole"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Fiole<a class="headeranchor" id="Fiole_26" href="#Fiole_26" title="Lien vers cette section">&#0182;</a></h3>
+Une fiole est faite de verre ou de métal et contient environ trente centilitres de liquide.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Grappin" href="#Grappin"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Grappin<a class="headeranchor" id="Grappin_27" href="#Grappin_27" title="Lien vers cette section">&#0182;</a></h3>
+Pour lancer un grappin, le personnage doit réussir un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> à distance. On considère que le grappin est une arme de jet avec un <a class="pagelink" href="Pathfinder-RPG.facteur%20de%20port%c3%a9e.ashx" title="facteur de portée">facteur de portée</a> de 3 m. Les objets qui offrent assez de place pour fixer un grappin ont une <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de 5.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Huile" href="#Huile"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Huile<a class="headeranchor" id="Huile_28" href="#Huile_28" title="Lien vers cette section">&#0182;</a></h3>
+Dans une lanterne ou dans une lampe, l’huile végétale brûle au rythme d’un demi-litre toutes les six heures. On peut utiliser une flasque d’huile comme <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20impact.ashx" title="arme à impact">arme à impact</a>. Référez-vous aux règles concernant le <a class="pagelink" href="Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx#FEUGREGEOIS" title="Substances et objets spéciaux">feu grégeois</a>, mais il faudra ajouter une mèche à la flasque d’huile à l’aide d’une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>. Une fois le projectile lancé, l’huile n’a que 50 % de chances de s’enflammer à l’impact.<br /><br />Une flasque renversée à terre couvre une surface d’un mètre cinquante de côté (à condition que le revêtement soit lisse). Si on enflamme l’huile, elle brûle pendant deux rounds et inflige 1d3 points de dégâts à toute créature comprise dans la zone enflammée.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Jarre" href="#Jarre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Jarre<a class="headeranchor" id="Jarre_29" href="#Jarre_29" title="Lien vers cette section">&#0182;</a></h3>
+Cette jarre en terre cuite vendue avec un bouchon peut contenir quatre litres de liquide.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Lampe" href="#Lampe"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Lampe<a class="headeranchor" id="Lampe_30" href="#Lampe_30" title="Lien vers cette section">&#0182;</a></h3>
+Une lampe éclaire normalement une zone de quatre mètres cinquante de rayon et augmente la luminosité ambiante d’un degré dans un rayon de quatre mètres cinquante supplémentaires (les ténèbres se transforment en faible lumière et la faible lumière se transforme en lumière normale ; voir <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">Vision et lumière</a> pour plus de détails sur la luminosité). La lampe n’augmente pas la luminosité d’une zone de lumière vive ou normale. Elle brûle le contenu de son réservoir d’un demi-litre en six heures. On peut la tenir dans une main.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Lanterneàcapote" href="#Lanterneàcapote"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Lanterne à capote<a class="headeranchor" id="Lanterne_à_capote_31" href="#Lanterne_à_capote_31" title="Lien vers cette section">&#0182;</a></h3>
+Une lanterne à capote éclaire normalement une zone de neuf mètres de rayon et augmente la luminosité ambiante d’un degré dans un rayon de neuf mètres supplémentaires (les ténèbres se transforment en faible lumière et la faible lumière se transforme en lumière normale ; voir Vision et lumière pour plus de détails sur la luminosité). La lanterne n’augmente pas la luminosité d’une zone de lumière vive ou normale. Elle brûle le contenu de son réservoir d’un demi-litre en six heures. On peut la tenir dans une main.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Lanternesourde" href="#Lanternesourde"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Lanterne sourde<a class="headeranchor" id="Lanterne_sourde_32" href="#Lanterne_sourde_32" title="Lien vers cette section">&#0182;</a></h3>
+Une lanterne sourde éclaire normalement un cône de dix-huit mètres et augmente la luminosité ambiante d’un degré dans un rayon de dix-huit mètres supplémentaires (les ténèbres se transforment en faible lumière et la faible lumière se transforme en lumière normale ; voir <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">Vision et lumière</a> pour plus de détails sur la luminosité). La lanterne n’augmente pas la luminosité d’une zone de lumière vive ou normale. Elle brûle le contenu de son réservoir d’un demi-litre en six heures. On peut la tenir dans une main.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Longuevue" href="#Longuevue"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Longue-vue<a class="headeranchor" id="Longue-vue_33" href="#Longue-vue_33" title="Lien vers cette section">&#0182;</a></h3>
+La longue-vue a un pouvoir grossissant qui double la taille des objets. Les personnages qui utilisent une longue-vue subissent un malus de -1 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> par tranche de six mètres qui les sépare de leur cible, si cette dernière est visible.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="LUNETTESAVERREFUME" href="#LUNETTESAVERREFUME"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Lunettes à verre fumé<a class="headeranchor" id="Lunettes_à_verre_fumé_34" href="#Lunettes_à_verre_fumé_34" title="Lien vers cette section">&#0182;</a></h3>
+Ces lunettes possèdent des verres fumés qui protègent leur utilisateur contre les attaques de regard. En cas d’attaques de regard, le porteur de ces lunettes est protégé comme s’il détournait le regard. De plus, il gagne un bonus de circonstances de +8 sur les <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les attaques visuelles (c’est-à-dire toutes les attaques contre lesquelles une créature <a class="pagelink" href="Pathfinder-RPG.aveugl%c3%a9.ashx" title="Aveuglé">aveugle</a> serait <a class="pagelink" href="Pathfinder-RPG.immunit%c3%a9%20(capacit%c3%a9).ashx" title="Immunité (Ext ou Sur)">immunisée</a>). Le porteur subit également une pénalité de -4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> et considère tous ses adversaires comme protégés par un <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a> (20% d’échec des attaques).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Marteau" href="#Marteau"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Marteau<a class="headeranchor" id="Marteau_35" href="#Marteau_35" title="Lien vers cette section">&#0182;</a></h3>
+On peut l’utiliser en combat, comme une <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20une%20main.ashx" title="arme à une main">arme à une main</a> <a class="pagelink" href="Pathfinder-RPG.arme%20improvis%c3%a9e.ashx" title="arme improvisée">improvisée</a> qui inflige des dégâts contondants équivalents à ceux d’un gantelet clouté de même taille.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Menottes" href="#Menottes"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Menottes et menottes de qualité supérieure<a class="headeranchor" id="Menottes_et_menottes_de_qualité_supérieure_36" href="#Menottes_et_menottes_de_qualité_supérieure_36" title="Lien vers cette section">&#0182;</a></h3>
+Les menottes permettent d’attacher une créature de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a>. Le prisonnier peut se libérer à l’aide d’un test d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a> (DD 30, ou DD 35 pour des menottes de qualité supérieure). On peut briser les menottes en réussissant un test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> DD 26, ou DD 28 pour des menottes de qualité supérieure. Une paire de menottes a une <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> de 10 et 10 <a class="pagelink" href="Pathfinder-RPG.point%20de%20r%c3%a9sistance.ashx" title="point de résistance">points de résistance</a>.<br /><br />La plupart des menottes s’accompagnent d’un cadenas. Dans ce cas, il faut ajouter le prix de ce dernier à celui des menottes.<br /><br />On peut acheter des menottes pour créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20P.ashx" title="taille P">taille P</a> pour le même prix. Des menottes pour créature de <a class="pagelink" href="Pathfinder-RPG.taille%20G.ashx" title="taille G">taille G</a> valent dix fois plus cher et cent fois plus cher pour les créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20TG.ashx" title="taille TG">taille TG</a>. On ne peut pas attacher de créatures de taille C, Gig, TP, Min ou I avec des menottes à moins de les faire sur mesures.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PAPIERDERIZ" href="#PAPIERDERIZ"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Papier de riz<a class="headeranchor" id="Papier_de_riz_37" href="#Papier_de_riz_37" title="Lien vers cette section">&#0182;</a></h3>
+Ce papier est fabriqué à partir de riz ou d’écorce d’arbre. Il possède une solidité de 0, 1 pv et le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour le <a class="pagelink" href="Pathfinder-RPG.Man%c5%93uvres%20offensives.ashx#DESTRUCTION" title="Les manœuvres de combat">briser</a> est de 2.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Pelle" href="#Pelle"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pelle<a class="headeranchor" id="Pelle_38" href="#Pelle_38" title="Lien vers cette section">&#0182;</a></h3>
+Si le personnage utilise une pelle au combat, on la considère comme une <a class="pagelink" href="Pathfinder-RPG.arme%20improvis%c3%a9e.ashx" title="arme improvisée">arme improvisée</a> <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20une%20main.ashx" title="arme à une main">à une main</a> qui inflige des dégâts contondants comme un gourdin de même taille.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PERISCOPE" href="#PERISCOPE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Périscope<a class="headeranchor" id="Périscope_39" href="#Périscope_39" title="Lien vers cette section">&#0182;</a></h3>
+Chacune des extrémités de ce tube métallique de 60 cm forme un angle droit qui renferme un miroir. Si on regarde dans une des extrémités, on peut voir à travers l’autre, ce qui permet d’observer en toute sécurité au-dessus d’obstacles, derrière un coin ou dans des zones où il est impossible de mettre la tête. Lorsqu’on utilise un périscope, l’extrémité du tube fonctionne comme un objet de taille Min, ce qui la rend plus difficile à repérer. Si l’utilisateur du périscope bénéficie d’un <a class="pagelink" href="Pathfinder-RPG.camouflage%20total.ashx" title="camouflage total">camouflage total</a> par rapport à la créature observée (sans compter le bout du périscope), le test de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> utilise le modificateur correspondant à la taille Min plutôt que celui de la taille de l’utilisateur. Les miroirs déforment légèrement l’image, ce qui impose un malus de -4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> lorsqu’on observe à travers un périscope. Le tube est plutôt robuste (solidité  5, 2 pv) mais les miroirs qu’il renferme sont fragiles (solidité  1, 1 pv) et tout dégât dépassant la solidité du tube s’applique à la fois au tube et aux miroirs.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Pieddebiche" href="#Pieddebiche"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pied-de-biche<a class="headeranchor" id="Pied-de-biche_40" href="#Pied-de-biche_40" title="Lien vers cette section">&#0182;</a></h3>
+Un pied-de-biche confère un bonus de circonstances de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> destinés à forcer une porte ou un coffre. On peut l’utiliser en combat, comme une <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20une%20main.ashx" title="arme à une main">arme à une main</a> <a class="pagelink" href="Pathfinder-RPG.arme%20improvis%c3%a9e.ashx" title="arme improvisée">improvisée</a> qui inflige des dégâts contondants équivalents à ceux d’un gourdin de même taille.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Piochedemineur" href="#Piochedemineur"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pioche de mineur<a class="headeranchor" id="Pioche_de_mineur_41" href="#Pioche_de_mineur_41" title="Lien vers cette section">&#0182;</a></h3>
+Si un personnage utilise une pioche de mineur au combat, on la considère comme une <a class="pagelink" href="Pathfinder-RPG.arme%20improvis%c3%a9e.ashx" title="arme improvisée">arme improvisée</a> <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20deux%20mains.ashx" title="arme à deux mains">à deux mains</a> qui inflige des dégâts perforants égaux à ceux d’un pic de guerre lourd de même taille.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="POINTEDEFER" href="#POINTEDEFER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Pointe de fer<a class="headeranchor" id="Pointe_de_fer_42" href="#Pointe_de_fer_42" title="Lien vers cette section">&#0182;</a></h3>
+Cette pointe de fer d’une trentaine de centimètres est utilisée pour bloquer une porte en position ouverte ou fermée et pour attacher les cordages lors d’une escalade. Un test de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 5 permet d’entendre le bruit qu’un individu fait en enfonçant une pointe de fer avec un marteau.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="POUDRE" href="#POUDRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Poudre<a class="headeranchor" id="Poudre_43" href="#Poudre_43" title="Lien vers cette section">&#0182;</a></h3>
+La poudre de craie, la farine et les autres matériaux similaires sont souvent utilisés par les aventuriers pour repérer des créatures invisibles. Pour lancer un sac de poudre dans une case, il faut réussir une attaque contre une <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de 5. Pendant un moment, s’il y a une créature invisible à cet endroit, elle est révélée. Une méthode bien plus efficace consiste à saupoudrer la poudre sur une surface (ce qui prend 1 round) puis à y chercher des empreintes.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SABLIER" href="#SABLIER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sablier<a class="headeranchor" id="Sablier_44" href="#Sablier_44" title="Lien vers cette section">&#0182;</a></h3>
+Il faut 1  heure pour  que le sable s’écoule entièrement d’une section d’un sablier normal vers l’autre, mais des versions plus petites ou plus grandes existent également, permettant de mesurer le temps en intervalles pouvant descendre jusqu’à 6 secondes.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SACADOSDEMAITRE" href="#SACADOSDEMAITRE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sac à dos de maître<a class="headeranchor" id="Sac_à_dos_de_maître_45" href="#Sac_à_dos_de_maître_45" title="Lien vers cette section">&#0182;</a></h3>
+Ce sac à dos comporte de nombreuses poches où ranger divers objets qui peuvent se révéler utiles au cours d’une aventure. Des crochets permettent également d’attacher des sachets, une gamelle ou même une couverture enroulée. Le sac à dos possède des lanières renforcées qui s’attachent autour du torse et de la taille pour mieux répartir son poids. Comme un sac à dos normal, il peut contenir approximativement 50 dm3 de matériel dans sa poche principale. Un individu qui porte un sac à dos de maître calcule sa charge comme si sa valeur de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> était augmentée de 1 point.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="SIFFLETDALERTE" href="#SIFFLETDALERTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sifflet d'alerte<a class="headeranchor" id="Sifflet_dalerte_46" href="#Sifflet_dalerte_46" title="Lien vers cette section">&#0182;</a></h3>
+Un test de <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (instruments à vent) de <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 5 permet d’utiliser un sifflet d’alerte pour communiquer les mêmes messages qu’une <a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx#CORNEDALERTE" title="Matériel d&#39;aventurier">corne d’alerte</a>. Le son perçant du sifflet peut être entendu clairement (<a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 0) jusqu’à 200 m à la ronde. Chaque tranche de 200 m  supplémentaire ajoute une pénalité de -2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>. Il existe également des sifflets silencieux que seuls les animaux et les autres créatures à l’ouïe fine peuvent entendre.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Silexetamorce" href="#Silexetamorce"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Silex et amorce<a class="headeranchor" id="Silex_et_amorce_47" href="#Silex_et_amorce_47" title="Lien vers cette section">&#0182;</a></h3>
+Il faut une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a> pour allumer une torche à l’aide de ces objets et au moins aussi longtemps pour faire démarrer un autre feu.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TATOUAGE" href="#TATOUAGE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tatouage<a class="headeranchor" id="Tatouage_48" href="#Tatouage_48" title="Lien vers cette section">&#0182;</a></h3>
+Le prix d’un tatouage dépend de sa qualité, de sa taille et du nombre de couleurs utilisées. Un tatouage de la taille d’une pièce de monnaie en encre bleue qui deviendra floue après une décennie pourrait coûter 1 pc, un tatouage de la taille d’une main en encre noire qui ne s’effacera jamais coûterait 1 pa et un tatouage recouvrant tout le dos et nécessitant plusieurs sessions de travail pourrait coûter 10 po. Chaque couleur supplémentaire augmente le prix comme s’il fallait réaliser un tatouage de plus (de la même taille).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TENTE" href="#TENTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tente<a class="headeranchor" id="Tente_49" href="#Tente_49" title="Lien vers cette section">&#0182;</a></h3>
+Il existe des tentes de différentes tailles qui peuvent accueillir entre 1 et 10  personnes. Une petite tente permet de loger une créature de taille M et nécessite 20 minutes de montage. Une tente moyenne peut accueillir deux créatures et prend 30 minutes de montage. Une grande tente peut contenir quatre créatures et nécessite 45 minutes de montage. Un pavillon peut accueillir 10 créatures et prend 90 minutes de montage (deux créatures de taille P comptent comme une créature de taille M et une créature de taille G compte comme deux créatures de taille M). Les pavillons sont assez grands pour qu’on puisse y installer un petit feu au milieu. Le temps nécessaire pour replier une tente est la moitié du temps de montage.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Torche" href="#Torche"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Torche<a class="headeranchor" id="Torche_50" href="#Torche_50" title="Lien vers cette section">&#0182;</a></h3>
+Une torche éclaire une zone de six mètres de rayon et augmente la luminosité ambiante d’un degré dans un rayon de six mètres supplémentaires (les ténèbres se transforment en faible lumière et la faible lumière se transforme en lumière normale ; voir <a class="pagelink" href="Pathfinder-RPG.Exploration.ashx#VISIONLUMIERE" title="L&#39;exploration">Vision et lumière</a> pour plus de détails). Une torche n’augmente pas la luminosité d’une zone de lumière vive ou normale. On peut l’utiliser en combat, comme une <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20une%20main.ashx" title="arme à une main">arme à une main</a> <a class="pagelink" href="Pathfinder-RPG.arme%20improvis%c3%a9e.ashx" title="arme improvisée">improvisée</a> qui inflige des dégâts contondants égaux à ceux d’un gantelet de sa taille, plus 1 point de dégâts de feu.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="VESTEBARBELEE" href="#VESTEBARBELEE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Veste barbelée<a class="headeranchor" id="Veste_barbelée_51" href="#Veste_barbelée_51" title="Lien vers cette section">&#0182;</a></h3>
+De fins rabats de cuir protègent le porteur de cette veste noire des centaines de petites aiguilles en forme de hameçons qui en tapissent la surface. Ce n’est cependant pas le cas des créatures qui le blesseraient à l’aide d’une attaque à mains nues ou d’une arme naturelle : celles-ci doivent réussir un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 15 pour éviter de subir 1 point de dégâts. Si une créature engloutit le porteur de la veste, elle subit 1 point de dégâts chaque round jusqu’à ce qu’elle le recrache, qu’il s’échappe ou qu’il meure (à ce moment-là, la veste est si endommagée qu’elle n’est plus un danger pour la créature). On ne peut porter une veste barbelée qu’avec une armure légère (ou sans armure du tout).
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
