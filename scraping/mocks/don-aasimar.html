@@ -1,0 +1,787 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les Aasimars - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="aasimar, manuel des races, race" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aasimar (race).ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Aasimar+(race)&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwq1qbZd+zCV7zZ2BqFUn9zT7jK/Q=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKJzj8uh2wr2dbJmxRbYYbk+B72oi3QcwxQT+thNGyuus+wvwOrpHe/xHo39kdskVVATRYv" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG"><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Aasimar (race)">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Aasimar (race)">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Aasimar (race)">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Aasimar (race).ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Aasimar (race).ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Aasimar%20(race)">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les Aasimars
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Aasimar%20(race)" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><div class="presentation navmenu">
+<h2 class="separator">Les races additionnelles<a class="headeranchor" id="Les_races_additionnelles_0" href="#Les_races_additionnelles_0" title="Lien vers cette section">&#0182;</a></h2><div style="text-align: right; font-size: 80%; font-weight: bold;">Voir aussi les <a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESDEBASE" title="Les races des personnages">races de bases</a> et les <a class="pagelink" href="Pathfinder-RPG.Races.ashx#RACESEXTRAORDINAIRES" title="Les races des personnages">races extraordinaires</a></div>
+<table width=95%><tr>
+<tbody>
+<tr style="vertical-align: bottom">
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Aasimar (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/aasimar.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Dhampir (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/dhampir.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Drow (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/drow.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Fetchelin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/fetchelin.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Gobelin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/gobelin.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Hobgobelin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/hobgobelin.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Homme-Félin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/homme-félin.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.Homme-rat (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/homme-rat.jpg"></img></a></td>
+</tr>
+<tr style="vertical-align: top">
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Les aasimars</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.dhampir%20(race).ashx" title="Les Dhampirs">Les dhampirs</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.drow%20(race).ashx" title="Les drows">Les drows</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.fetchelin%20(race).ashx" title="Les fetchelins">Les fetchelins</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.Gobelin%20(race).ashx" title="Les gobelins">Les gobelins</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.hobgobelin%20(race).ashx" title="Les hobgobelins">Les hobgobelins</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.homme-f%c3%a9lin%20(race).ashx" title="Les Hommes-félins">Les hommes-félins</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les Hommes-rats">Les hommes-rats</a></td>
+</tr>
+<tr style="vertical-align: bottom">
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.ifrit (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/ifrit.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.kobold (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/kobold.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.ondin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/ondin.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.orque (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/orque.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.oréade (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/oréade.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.sylphe (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/sylphe.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.tengu (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/tengu.jpg"></img></a></td>
+ <td width="10%"><a style="text-align:center" href="./Pathfinder-RPG.tieffelin (race).ashx"><img width="95%" style="float: none; margin: 5px; border: 1px solid #4b3124" src="/wiki/public/upload/Illustrations/PNJ/tieffelin.jpg"></img></a></td>
+</tr><tr style="vertical-align: top">
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.ifrit%20(race).ashx" title="Les Ifrits">Les ifrits</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.kobold%20(race).ashx" title="Les Kobolds">Les kobolds</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.ondin%20(race).ashx" title="Les Ondins">Les ondins</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.orque%20(race).ashx" title="Les orques">Les orques</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.or%c3%a9ade%20(race).ashx" title="Les Oréades">Les oréades</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.sylphe%20(race).ashx" title="Les sylphes">Les sylphes</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.tengu%20(race).ashx" title="Les Tengus">Les tengus</a></td>
+ <td width="10%" align="center"><a class="pagelink" href="Pathfinder-RPG.tieffelin%20(race).ashx" title="Les Tieffelins">Les tieffelins</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="separator">Présentation<a class="headeranchor" id="Présentation_5" href="#Présentation_5" title="Lien vers cette section">&#0182;</a></h2><div style="background-color: #fff; float: right; padding: 0 0 12px 12px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Présentation_5">Présentation</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_standards_6">Traits raciaux standards</a><br />&nbsp;&nbsp;&nbsp;<a href="#Traits_raciaux_alternatifs_7">Traits raciaux alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Bonus_alternatifs_de_classe_de_prédilection_8">Bonus alternatifs de classe de prédilection</a><br />&nbsp;&nbsp;&nbsp;<a href="#Héritages_alternatifs_9">Héritages alternatifs</a><br />&nbsp;&nbsp;&nbsp;<a href="#Nouvelles_règles_raciales_10">Nouvelles règles raciales</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Dons_0">Dons</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Archétypes_de_classes_1">Archétypes de classes</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Équipement_2">Équipement</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_3">Objets magiques</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Sorts_4">Sorts</a><br /></p></div></div></td></tr></table></div>
+<i>Les aasimars sont des <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humains</a> ayant du sang de <a class="pagelink" href="Pathfinder-RPG.Arch%c3%a9types.ashx#CREATURECELESTE" title="Les archétypes">céleste</a> ou d’autres <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> Bons dans leur lignée. S’ils ne sont pas toujours bienveillants, les aasimars sont plus enclins aux actes de bonté qu’à faire le mal, et ils gravitent autour des cultes ou des organisations associés aux célestes. Il arrive que l’héritage des aasimars dorme pendant des générations pour se réveiller soudainement à travers l’enfant de deux parents apparemment humains. La plupart des sociétés interprètent les naissances aasimars comme de bons présages, mais il faut savoir que certains tirent profit de la réputation de leur race et piétinent sauvagement les attentes des autres en commettant des actes d’une terrifiante cruauté ou d’une abjecte vénalité. « C’est toujours celui auquel on s’attend le moins » définit l’axiome auquel se conforment ces aasimars maléfiques, qui mènent souvent une double vie en tant que citoyens modèles ou faux héros et dissimulent soigneusement leur corruption. Heureusement, ces quelques aasimars sont l’exception, pas la règle.</i><br /><br /><b>Description physique.</b> Les aasimars ont une apparence essentiellement <a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humaine</a>, à l’exception de quelques caractéristiques physiques mineures qui trahissent leur héritage particulier. L’aasimar typique a des cheveux brillants comme le métal, des yeux semblables à des joyaux, une peau de couleur chatoyante, voire même un halo doré, étincelant. <br /><br /><b>Société.</b> On ne peut pas vraiment dire des aasimars qu’ils ont une société indépendante bien à eux. En tant que rejetons de l’humanité, ils adoptent les normes sociales qui les entourent, bien que la plupart d’entre eux soient attirés par les organisations qui oeuvrent à la réparation des injustices et à l’apaisement des souffrances. Cet aspect les place parfois du mauvais côté de la loi dans les sociétés les plus tyranniques, mais les aasimars peuvent se montrer prudents et rusés lorsqu’il le faut : ils sont capables de se déguiser pour se cacher et détourner l’attention des oppresseurs. Si les aasimars corrompus peuvent être solitaires ou établir des sociétés secrètes dissimulant leur implication dans le monde du crime, les plus vertueux se réunissent souvent en grand nombre au
+sein d’organisations d’alignement Bon, tout particulièrement (mais pas toujours) en églises et en ordres religieux.<br /><br /><b>Relations.</b> On trouve surtout les aasimars dans les communautés humaines, où ils se sentent le plus à l’aise. C’est particulièrement vrai pour ceux dont l’ascendance est plus éloignée et qui ne portent que de faibles marques de l’essence de leurs ancêtres célestes. On ignore la raison pour laquelle la marque des <a class="pagelink" href="Pathfinder-RPG.Arch%c3%a9types.ashx#CREATURECELESTE" title="Les archétypes">célestes</a> est beaucoup plus fortement ressentie par l’humanité que par les autres races, mais il se pourrait que la faculté d’adaptation et les affinités innées de l’humanité avec le changement soient responsables de l’évolution des aasimars en une race distincte. Peut-être que les traits endémiques des autres races sont trop profondément ancrés, trop fortement présents et trop résistants pour changer. Quels que soient les batifolages auxquels les autres races se sont livrées avec les habitants des plans supérieurs, la progéniture de ces unions est exceptionnellement rare et n’a jamais engendré d’enfants aasimars.<br /><br />Néanmoins, même s’ils se tournent généralement vers les civilisations humaines, les aasimars peuvent s’adapter à pratiquement n’importe quel environnement. Ils sont à l’aise en société et ont un charme désarmant. Ils s’entendent bien avec les <a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">demi-elfes</a> avec lesquels ils partagent un statut similaire de marginal pas tout à fait humain, mais ils entretiennent souvent des relations moins cordiales avec les <a class="pagelink" href="Pathfinder-RPG.demi-orque.ashx" title="Les demi-orques">demi-orques</a>, qui n’ont aucune patience avec l’excessive beauté physique et verbale des aasimars. Les courtisans <a class="pagelink" href="Pathfinder-RPG.elfe.ashx" title="Les elfes">elfes</a> rejettent parfois les aasimars, les considérant comme pas assez sophistiqués, et critiquent leur tendance à recourir à leur charme naturel pour réparer leurs impairs. De toutes les races connues, les <a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">gnomes</a> trouvent les aasimars comme étant peut-être les plus fascinants et apprécient énormément la diversité de leur apparence ainsi que l’aspect mystique entourant leur héritage céleste.<br /><br /><b>Alignement et religion.</b> Les aasimars sont le plus souvent d’alignement Bon, mais ce n’est pas forcément une règle universelle et ceux qui ont tourné le dos à ces valeurs peuvent tomber dans un abysse indicible de dépravation. Néanmoins, les aasimars privilégient, pour la plupart, les divinités de l’honneur, du courage, de la protection, de la guérison et du refuge, ou des religions simples et prosaïques liées au foyer, à la communauté et à la famille. Certains suivent également la voie des arts, de la musique et du savoir, et trouvent la vérité et la sagesse dans la beauté et l’étude.<br /><br /><b>Aventuriers.</b> Les aasimars deviennent souvent des aventuriers, car ils ne se sentent pas souvent chez eux dans la société humaine et ils ont l’impression qu’une plus grande destinée les attend. Les <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtres</a>, les <a class="pagelink" href="Pathfinder-RPG.oracle.ashx" title="L&#39;oracle">oracles</a> et les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a> sont nombreux parmi eux, mais il n’est pas rare de trouver des <a class="pagelink" href="Pathfinder-RPG.barde.ashx" title="Le barde">bardes</a>, des <a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleurs</a> et des <a class="pagelink" href="Pathfinder-RPG.conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">conjurateurs</a> parmi ceux qui se passionnent pour la magie profane. Les <a class="pagelink" href="Pathfinder-RPG.barbare.ashx" title="Le barbare">barbares</a> aasimars sont rares, mais ceux qui naissent dans ce genre de tribus finissent souvent par en prendre la tête et encouragent leur clan à embrasser les totems célestes.<br /><br /><h2 class="separator">Traits raciaux standards<a class="headeranchor" id="Traits_raciaux_standards_6" href="#Traits_raciaux_standards_6" title="Lien vers cette section">&#0182;</a></h2><div class="presentation arrondi ombre espaceliste">
+<div class="row ligne" style=""><div class="col col-6 " style="">
+<ul><li><b>+2 en <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>, +2 en <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>.</b> Les aasimars sont perspicaces, confiants et charmants.</li><li><b>Extérieur natif.</b> Les aasimars sont des <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> de <a class="pagelink" href="Pathfinder-RPG.sous-type%20natif.ashx" title="Natif (sous-type)">sous-type natif</a>.</li><li><b>Taille M.</b> Les aasimars sont des créatures de <a class="pagelink" href="Pathfinder-RPG.taille%20M.ashx" title="taille M">taille M</a> ne recevant ni bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les aasimars ont une <a class="pagelink" href="Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx" title="vitesse de déplacement">vitesse</a> de base de 9 mètres.</li><li><b>Vision dans le noir.</b> Les aasimars voient <a class="pagelink" href="Pathfinder-RPG.vision%20dans%20le%20noir.ashx" title="vision dans le noir">dans le noir</a> jusqu’à 18 mètres.</li><li><b>Compétent.</b> Les aasimars ont un bonus racial de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> et de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.</li></ul>
+</div><div class="col col-6 " style="">
+<ul><li><b>Pouvoir magique.</b> Les aasimars peuvent utiliser le pouvoir magique de <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20du%20jour.ashx" title="Lumière du jour">lumière du jour</a></i> une fois par jour (niveau de lanceur de sorts égal au niveau de classe de l’aasimar).</li><li><b>Résistance céleste.</b> Les aasimars ont une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance à l’acide</a> de 5, une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance au froid</a> de 5 et une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance à l’électricité</a> de 5.</li><li><b>Langues.</b> Les aasimars commencent le jeu en parlant le <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">commun</a> et le <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">céleste</a>. Ceux qui ont un haut score d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> peuvent apprendre d’autres langues parmi celles-ci : <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">draconique</a>, <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">elfique</a>, <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">gnome</a>, <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">halfelin</a>, <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">nain</a> et <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx#APPRENDREUNELANGUE" title="Linguistique">sylvestre</a>.</li></ul>
+</div></div>
+</div><br /><h2 class="separator">Traits raciaux alternatifs<a class="headeranchor" id="Traits_raciaux_alternatifs_7" href="#Traits_raciaux_alternatifs_7" title="Lien vers cette section">&#0182;</a></h2>Vous pouvez choisir les traits raciaux suivants à la place des traits raciaux aasimars standard, mais consultez d’abord votre MJ.<br /><br /><div class="row ligne" style=""><div class="col col-6 " style="">
+<ul><li><b>Croisé céleste.</b> Certains aasimars accomplissent leur destinée en partant en guerre contre les puissances du Mal absolu. Ces individus reçoivent un bonus d’intuition de +1 à leurs <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> Mauvais, et un bonus racial de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.connaissances.ashx" title="Connaissances">Connaissances (plans)</a> et d’<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> pour identifier les extérieurs d’alignement Mauvais ou les objets ou effets créés par des extérieurs d’alignement Mauvais ; ils peuvent utiliser ces compétences à cet effet même s’ils n’y sont pas formés. <i>Ce trait racial remplace résistance céleste et compétent.</i></li><li><b>Enfant de l’humanité.</b> Certains aasimars ont une ascendance céleste extrêmement éloignée. Un aasimar ayant ce trait racial compte comme un <a class="pagelink" href="Pathfinder-RPG.type%20Ext%c3%a9rieur.ashx" title="Extérieur">extérieur</a> (<a class="pagelink" href="Pathfinder-RPG.sous-type%20natif.ashx" title="Natif (sous-type)">natif</a>) et un humanoïde (<a class="pagelink" href="Pathfinder-RPG.humain.ashx" title="Les humains">humain</a>) en ce qui concerne tous les effets relatifs à la race, y compris pour les conditions requises des dons et les sorts affectant les humanoïdes. Il peut se faire passer pour un humain sans avoir besoin d’utiliser sa compétence Déguisement. <i>Ce trait racial remplace la langue céleste et altère le sous-type natif.</i></li><li><b>Esprit immortel.</b> Les aasimars à la volonté particulièrement forte ont un esprit céleste capable de résister aux pouvoirs de mort. Ils bénéficient d’une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistance de 5 contre les dégâts d’énergie négative</a>. Ils ne perdent pas de points de vie lorsqu’ils gagnent des niveaux négatifs, et bénéficient d’un bonus racial de +2 à leurs <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les effets de <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#MORT" title="Créer un sort">mort</a>, l’absorption d’énergie, l’énergie négative et les sorts ou pouvoirs magiques de <a class="pagelink" href="Pathfinder-RPG.n%c3%a9cromancie%20(%c3%a9cole).ashx" title="L&#39;école de Nécromancie">l’école de nécromancie</a>. <i>Ce trait racial remplace résistance céleste.</i></li><li><b>Étincelle immortelle.</b> Les aasimars ayant ce trait racial défient les pouvoirs de mort. Ils gagnent un bonus de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.connaissances.ashx" title="Connaissances">Connaissances (histoire)</a> et à leurs <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les effets de <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#MORT" title="Créer un sort">mort</a>, et peuvent utiliser le pouvoir magique de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9sistance%20%c3%a0%20l%c3%a2ge%20mineure.ashx" title="Résistance à l&#39;âge mineure">résistance à l’âge mineure</a> une fois par jour. <i>Ce trait racial remplace ceux de compétent et de pouvoir magique.</i></li></ul>
+</div><div class="col col-6 " style="">
+<ul><li><b>Halo.</b> Certains aasimars ont la capacité de projeter un halo. Un aasimar ayant ce trait racial peut créer une lumière centrée sur sa tête comme pouvoir magique à volonté. Lorsqu’il utilise son halo, il bénéficie d’un bonus de circonstances de +2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> contre les créatures Mauvaises, et à ses <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> pour ne pas être aveuglé ou ébloui. <i>Ce trait racial remplace celui de vision dans le noir.</i></li><li><b>Incorruptible.</b> Parfois, certains aasimars développent la capacité à repousser le Mal toujours plus loin. Ceux qui ont ce trait racial peuvent lancer le pouvoir magique de <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20corruption.ashx" title="Résistance à la corruption">résistance à la corruption</a></i> contre le Mal une fois par jour. Si un aasimar utilise cette capacité sur lui-même, la durée monte à 1 heure par niveau. <i>Ce trait racial remplace celui de pouvoir magique.</i></li><li><b>Messager de la vérité.</b> Il existe certains aasimars dont la langue transcende les frontières. Ils bénéficient d’un bonus de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>, et apprennent deux langues chaque fois qu’ils gagnent un rang dans la compétence <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a>. <i>Ce trait racial remplace compétent.</i></li><li><b>Né dans les cieux.</b> Nés dans les royaumes célestes, les aasimars ayant ce trait racial gagnent un bonus de +2 à leurs tests de <a class="pagelink" href="Pathfinder-RPG.connaissances.ashx" title="Connaissances">Connaissances (plans)</a> et lancent les sorts du registre <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#BIEN" title="Créer un sort">Bien</a> ou de la <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#LUMIERE" title="Créer un sort">lumière</a> avec un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> de +1. <i>Ce trait racial remplace ceux de compétent et de pouvoir magique.</i></li><li><b>Résistance exaltée.</b> L’aasimar ayant ce trait racial gagne une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie%20(capacit%c3%a9).ashx" title="Résistance à la magie (Ext)">résistance à la magie</a> de 5 + son niveau contre les sorts et pouvoirs magiques du registre <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#MAL" title="Créer un sort">Mal</a>, ainsi que contre tous les sorts et pouvoirs magiques que lancent les extérieurs Mauvais. <i>Ce trait racial remplace résistance céleste.</i></li></ul>
+</div></div><br /><h2 class="separator">Bonus alternatifs de classe de prédilection<a class="headeranchor" id="Bonus_alternatifs_de_classe_de_prédilection_8" href="#Bonus_alternatifs_de_classe_de_prédilection_8" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles à tous les aasimars de la classe appropriée. Le bonus s’applique chaque fois que le personnage le choisit, sauf indication contraire.<br /><br /><div class="row ligne" style=""><div class="col col-6 " style="">
+<b>Barde.</b> Le <a class="pagelink" href="Pathfinder-RPG.barde.ashx" title="Le barde">barde</a> choisit une <a class="pagelink" href="Pathfinder-RPG.repr%c3%a9sentation%20bardique.ashx" title="représentation bardique">représentation bardique</a> ; traitez le personnage comme un barde de +1/6 niveau supplémentaire quand il s’agit de déterminer les effets de cette représentation.<br /><br /><b>Chevalier.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> rajoute +1/4 au bonus de dégâts contre les cibles de son défi.<br /><br /><b>Conjurateur.</b> Le <a class="pagelink" href="Pathfinder-RPG.conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">conjurateur</a> ajoute RD 1/Mal à son <a class="pagelink" href="Pathfinder-RPG.eidolon.ashx" title="L&#39;éidolon du conjurateur">eidolon</a>. Chaque fois que le conjurateur choisit cet avantage, la <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a>/Mal augmente de +1/2 (maximum RD 10/Mal).<br /><br /><b>Ensorceleur.</b> L’<a class="pagelink" href="Pathfinder-RPG.ensorceleur.ashx" title="L&#39;ensorceleur">ensorceleur</a> rajoute +1/4 à son <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> lorsqu’il lance des sorts du registre <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9er%20un%20sort.ashx#BIEN" title="Créer un sort">Bien</a>.<br /><br /></div><div class="col col-6 " style="">
+<b>Inquisiteur.</b> L’<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a> rajoute +1/2 à ses tests d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> contre les <a class="pagelink" href="Pathfinder-RPG.type%20ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a>. <br /><br /><b>Oracle.</b> L’<a class="pagelink" href="Pathfinder-RPG.oracle.ashx" title="L&#39;oracle">oracle</a> rajoute +1/6 à son niveau d’oracle quand il s’agit de déterminer les effets d’une unique révélation.<br /><br /><b>Paladin.</b> Le <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a> rajoute +1/6 au bonus de moral de ses <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> que lui fournissent les auras de paladin.<br /><br /><b>Prêtre.</b> Le <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a> rajoute +1/2 aux dégâts lorsqu’il utilise de l’<a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">énergie positive contre les morts-vivants</a> ou  <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canalisation d'énergie</a> alignée pour blesser les <a class="pagelink" href="Pathfinder-RPG.type%20ext%c3%a9rieur.ashx" title="Extérieur">extérieurs</a> Mauvais.
+</div></div><br />
+<h2 class="separator">Héritages alternatifs<a class="headeranchor" id="Héritages_alternatifs_9" href="#Héritages_alternatifs_9" title="Lien vers cette section">&#0182;</a></h2>Il arrive que certains aasimars possèdent des traits caractéristiques de leurs géniteurs ou ancêtres, permettant d'identifier précisément le type de créature céleste dont ils sont descendants.<br /><br />Dans le tableau suivant, les caractéristiques alternatives représentent le bonus appliqué à la place des bonus de caractéristiques raciaux des aasimar, les compétences alternatives représentent les bonus offerts par le trait <b>Compétent</b>, et le pouvoir magique alternatif est le pouvoir qui peut être utilisé une fois par jour et remplace <a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20du%20jour.ashx" title="Lumière du jour">lumière du jour</a>.<br /><br /><center>
+<table CLASS="tablo toutgauche"><caption>Héritages raciaux alternatifs</caption><tr CLASS="titre"><td>d6</td><td>Héritage</td><td>Caractéristiques alternatives</td><td>Compétences alternatives</td><td>Pouvoir magique alternatif</td><td>Description</td></tr><tr CLASS="premier"><td>1</td><td>Sang d'Agathion<div>(Né de l'idylle)</td><td>+2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">CHA</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">CON</a></td><td><a class="pagelink" href="Pathfinder-RPG.Dressage.ashx" title="Dressage">Dressage</a>, <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.Convocation%20dalli%c3%a9s%20naturels%20II%20.ashx" title="Convocation d&#39;alliés naturels II"> convocation d'alliés naturels II</a></i></td><td>Les aasimars nés de l'idylle, de disposition calme et souvent porteurs de traits animaux, sont de parfaits médiateurs entre l'ordre et le chaos</td></tr><tr CLASS="alt"><td>2</td><td>Sang d'Ange<div>(Né des anges)</td><td>+2 <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">FOR</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">CHA</a></td><td><a class="pagelink" href="Pathfinder-RPG.Premiers%20Secours.ashx" title="Premiers secours">Premiers Secours</a>, <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (Plans)</td><td><i><a class="pagelink" href="Pathfinder-RPG.modification%20dapparence%20.ashx" title="Modification d&#39;apparence"> modification d'apparence</a></i></td><td>Ces parangons célestes d'une beauté incroyable sont des champions de la bonté et de la lumière, quelle que soit l'apparence qu'ils empruntent.</td></tr><tr><td>3</td><td>Sang d'Archonte<div>(Porteur de l'ordre)</td><td>+2 <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">CON</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">SAG</a></td><td><a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>, <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.flamme%20%c3%a9ternelle.ashx" title="Flamme éternelle">flamme éternelle</a></i></td><td>Les porteurs de l'ordre sont des champions de la justice châtiant les mauvais, et pensent souvent que le chaos est la source de la souffrance des mortels.</td></tr><tr CLASS="alt"><td>4</td><td>Sang d'Azata<div>(Touché par les muses)</td><td> +2 <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">DEX</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">CHA</a></td><td><a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.poussi%c3%a8re%20scintillante.ashx" title="Poussière scintillante">poussière scintillante</a></i></td><td>Les aasimars touchés par les muses sont des exemples de joie et de liberté, et parcourent le monde à la recherche d'individus à libérer.</td></tr><tr><td>5</td><td>Sang de Garuda<div>(compagnon de la plume)</td><td>+2 <a class="pagelink" href="Pathfinder-RPG.Dext%c3%a9rit%c3%a9.ashx" title="La Dextérité">DEX</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">SAG</a></td><td><a class="pagelink" href="Pathfinder-RPG.Acrobaties.ashx" title="Acrobaties">Acrobaties</a>, <a class="pagelink" href="Pathfinder-RPG.Vol.ashx" title="Vol">Vol</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20de%20linvisibilit%c3%a9.ashx" title="Détection de l&#39;invisibilité">détection de l'invisibilité</a></i></td><td>Leur plumage rend les compagnons de la plume très vite reconnaissables. Bien qu'ils soient parfois impulsifs, ils ne reculent jamais une fois leur parole donnée.</td></tr><tr CLASS="alt"><td>6</td><td>Sang de Péri<div>(Né des cendres)</td><td>+2 <a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">INT</a>, +2 <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">CHA</a></td><td><a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (Plans), <a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20Magie.ashx" title="Art de la magie">Art de la Magie</a></td><td><i><a class="pagelink" href="Pathfinder-RPG.pyrotechnie.ashx" title="Pyrotechnie">pyrotechnie</a></i></td><td>Maîtres des flammes, les descendants des péri subissent l'influence duale de leur ancêtre déchu, et sont aussi bien amenés à faire le bien que le mal.</td></tr></table>
+</center><br /><br />
+<h2 class="separator">Nouvelles règles raciales<a class="headeranchor" id="Nouvelles_règles_raciales_10" href="#Nouvelles_règles_raciales_10" title="Lien vers cette section">&#0182;</a></h2>Voici les options accessibles aux aasimars, d’autres races adaptées peuvent s’en servir si le MJ donne son accord.
+<h3 class="separator">Dons<a class="headeranchor" id="Dons_0" href="#Dons_0" title="Lien vers cette section">&#0182;</a></h3>Ces dons sont accessibles aux aasimars :<br /><br /><center>
+<table CLASS="tablo autoalt toutgauche"><tr CLASS="titre"><td WIDTH="25%">&nbsp;</td><td WIDTH= "6%">Source</td><td WIDTH="25%">Conditions</td><td WIDTH="44%">Avantages</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Canalisation%20de%20force.ashx" title="Canalisation de force">Canalisation de force</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canalisation d’énergie</a> 2d6</td><td>La canalisation d'énergie peut être concentrée sur une unique cible et la repousser ou l'attirer en plus de la blesser</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Science%20de%20la%20canalisation%20de%20force.ashx" title="Science de la canalisation de force">Science de la canalisation<br />de force</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Canalisation%20de%20force.ashx" title="Canalisation de force">Canalisation de force</a>, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canalisation d’énergie</a> 4d6</td><td>L'utilisation de Canalisation de force affecte un cône de 9 m (6 <abbr title="cases">c</abbr>) ou une ligne de 18 m (12 <abbr title="cases">c</abbr>)</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Canalisation%20de%20force%20sup%c3%a9rieure.ashx" title="Canalisation de force supérieure">Canalisation de force<br />supérieure</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Canalisation%20de%20force.ashx" title="Canalisation de force">Canalisation de force</a>, <a class="pagelink" href="Pathfinder-RPG.Science%20de%20la%20canalisation%20de%20force.ashx" title="Science de la canalisation de force">Science de la canalisation de force</a>, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, <a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx#CANALISATIONDENERGIE" title="Le prêtre">canalisation d’énergie</a> 6d6</td><td>L'utilisation de Canalisation de force affecte toutes les créatures dans un rayon de 9 m (6 <abbr title="cases">c</abbr>)</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Rayonnement%20divin.ashx" title="Rayonnement divin">Rayonnement divin</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20du%20jour.ashx" title="Lumière du jour">lumière du jour</a></i> pouvoir magique, niveau suffisamment élevé (voir description)</td><td>une utilisation supplémentaire du pouvoir lumière du jour avec des effets supérieurs</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Sang%20ang%c3%a9lique.ashx" title="Sang angélique">Sang angélique</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Con</a> 13, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a></td><td>Le personnage est plus difficile à tuer et résistant au Mal</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Ailes%20dange.ashx" title="Ailes d&#39;ange">Ailes d'ange</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sang%20ang%c3%a9lique.ashx" title="Sang angélique">Sang angélique</a>, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, niveau de personnage 10</td><td>Le personnage obtient des ailes et une vitesse de vol</td></tr><tr><td>&emsp;<a class="pagelink" href="Pathfinder-RPG.Chair%20ang%c3%a9lique.ashx" title="Chair angélique">Chair angélique</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sang%20ang%c3%a9lique.ashx" title="Sang angélique">Sang angélique</a>, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a></td><td>La peau étincelante du personnage lui offre des effets bénéfiques</td></tr><tr><td>&emsp;&emsp;<a class="pagelink" href="Pathfinder-RPG.Ailes%20m%c3%a9talliques.ashx" title="Ailes métalliques">Ailes métalliques</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.Sang%20ang%c3%a9lique.ashx" title="Sang angélique">Sang angélique</a>, <a class="pagelink" href="Pathfinder-RPG.chair%20ang%c3%a9lique.ashx" title="Chair angélique">chair angélique</a>, <a class="pagelink" href="Pathfinder-RPG.ailes%20d%e2%80%99ange.ashx" title="Ailes d’ange">ailes d’ange</a>, <a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, niveau de personnage 11</td><td>Le personnage obtient deux attaques d'aile</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Serviteur%20c%c3%a9leste.ashx" title="Serviteur céleste">Serviteur céleste</a></td><td><sup>MR</sup></td><td><a class="pagelink" href="Pathfinder-RPG.aasimar%20(race).ashx" title="Les Aasimars">Aasimar</a>, <a class="pagelink" href="Pathfinder-RPG.compagnon%20animal.ashx" title="compagnon animal">compagnon animal</a>, <a class="pagelink" href="Pathfinder-RPG.familier.ashx" title="familier">familier</a> ou aptitude de classe monture</td><td>Le compagnon animal, son familier ou la monture du personnage devient une créature magique céleste</td></tr></table>
+</center>
+<div class="row ligne" style=""><div class="col col-6 " style="">
+<h3 class="separator">Archétypes de classes<a class="headeranchor" id="Archétypes_de_classes_1" href="#Archétypes_de_classes_1" title="Lien vers cette section">&#0182;</a></h3>Ces archétypes raciaux sont accessibles aux aasimars :
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Purificateur%20(oracle).ashx" title="Purificateur">Purificateur (oracle)</a></li><li><a class="pagelink" href="Pathfinder-RPG.Sage%20gardien%20(paladin).ashx" title="Sage gardien">Sage gardien (paladin)</a></li></ul>
+<h3 class="separator">Équipement<a class="headeranchor" id="Équipement_2" href="#Équipement_2" title="Lien vers cette section">&#0182;</a></h3>Les aasimars ont accès à l’<a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#AASIMAR" title="Équipements raciaux">équipement suivant</a>.
+<ul><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#AMBROISIE" title="Équipements raciaux">Ambroisie</a></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#ENCENS" title="Équipements raciaux">Encens</a></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#ENCENSOIRCELESTE" title="Équipements raciaux">Encensoir céleste</a></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#HUILESAINTE" title="Équipements raciaux">Huile sainte</a></li><li><a class="pagelink" href="Pathfinder-RPG.%c3%a9quipements%20raciaux.ashx#LAMPECELESTE" title="Équipements raciaux">Lampe céleste</a></li></ul>
+</div><div class="col col-6 " style="">
+<h3 class="separator">Objets magiques<a class="headeranchor" id="Objets_magiques_3" href="#Objets_magiques_3" title="Lien vers cette section">&#0182;</a></h3>Ces objets magiques sont spécifiques aux aasimars :
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Aur%c3%a9ole%20de%20menace.ashx" title="Auréole de menace">Auréole de menace</a></li><li><a class="pagelink" href="Pathfinder-RPG.Bouclier%20c%c3%a9leste.ashx" title="Bouclier céleste">Bouclier céleste</a></li><li><a class="pagelink" href="Pathfinder-RPG.Bouclier%20%c3%a9lys%c3%a9en.ashx" title="Bouclier élyséen">Bouclier élyséen</a></li></ul>
+<h3 class="separator">Sorts<a class="headeranchor" id="Sorts_4" href="#Sorts_4" title="Lien vers cette section">&#0182;</a></h3>Ces sorts sont réservés aux aasimars :
+<ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Espace%20sacr%c3%a9.ashx" title="Espace sacré">Espace sacré</a></i></b>, <i>(MR)</i> (<a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prê</a> 2, <a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Pal</a> 2). La puissance du Bien sanctifie la zone contre les extérieurs Mauvais</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.V%c3%a9rit%c3%a9.ashx" title="Vérité">Vérité</a></i></b>, <i>(MR)</i> (<a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Prê</a> 6, <a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">Ens</a>/<a class="pagelink" href="Pathfinder-RPG.magicien.ashx" title="Le magicien">Mag</a> 5, <a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">Sor</a> 5). Le lanceur peut communiquer avec toutes les créatures intelligentes</li><li><b><i><a class="pagelink" href="Pathfinder-RPG.Voile%20du%20paradis.ashx" title="Voile du paradis">Voile du paradis</a></i></b>, <i>(MR)</i> (<a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Pal</a> 1). Le lanceur obtient une protection contre les atteintes des extérieurs mauvais et peut les blesser<br /></div></div></li></ul>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>

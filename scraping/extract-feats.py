@@ -1,15 +1,14 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import urllib
+import urllib.request
 import yaml
 import sys
+import html
+import re
+from bs4 import BeautifulSoup
 from lxml import html
-try:
-    from BeautifulSoup import BeautifulSoup
-except ImportError:
-    from bs4 import BeautifulSoup
-    from bs4 import NavigableString
+
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -21,22 +20,6 @@ URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capit
 
 PROPERTIES = [  u"Catégorie", u"Catégories", u"Conditions", u"Condition", u"Conditions requises", u"Normal", u"Avantage", u"Avantages", u"Spécial", u"À noter"]
 
-# vérification des paramètres
-if len(sys.argv) < 2:
-    print "Usage: %s [HTML|TEXT]" % sys.argv[0]
-    print " - HTML: contenu extrait en tant que HTML"
-    print " - TEXT: contenu extrait en tant que TEXT"
-    exit(1)
-
-# message d'accueil
-html = sys.argv[1].lower() == "html"
-if html:
-    print "Génération du fichier YAML pour les dons en mode HTML"
-else:
-    print "Génération du fichier YAML pour les dons en mode TEXT"
-
-
-
 liste = []
 
 
@@ -47,7 +30,7 @@ if MOCK_LIST:
 else:
     list = []
     for u in URLs:
-        parsed_html = BeautifulSoup(urllib.urlopen(u).read(),features="lxml")
+        parsed_html = BeautifulSoup(urllib.request.urlopen(u).read(),features="lxml")
         list += parsed_html.body.find(id='PageContentDiv').find_all('tr')
 
 
@@ -64,7 +47,7 @@ for l in list:
     elif source == "MA": # doit être une erreur
         source = "AO"
     
-    print "Processing %s" % title
+    print("Processing %s" % title)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     don[u'Nom']=title
@@ -74,10 +57,10 @@ for l in list:
     if MOCK_DON:
         content = BeautifulSoup(open(MOCK_DON),features="lxml").body.find(id='PageContentDiv')
     else:
-        content = BeautifulSoup(urllib.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
+        content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
     
     if(content == None):
-        print "Page %s n'a pas pu être récupérée!" % pageURL
+        print("Page %s n'a pas pu être récupérée!" % pageURL)
         continue
 
     # lire les attributs
@@ -110,7 +93,7 @@ for l in list:
             descr = s.next_siblings
             text = ""
         else:
-            print "- Skipping unknown property %s" % key
+            print("- Skipping unknown property %s" % key)
     
     # ajouter don
     liste.append(don)
@@ -118,9 +101,5 @@ for l in list:
     if MOCK_DON:
         break
 
-if MOCK_DON:
-    print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-    exit(1)
-
-with open("dons.yml", "w") as f:
-    yaml.safe_dump(liste, f, default_flow_style=False, allow_unicode=True)
+yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
+print(yml)

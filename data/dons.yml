@@ -7289,6 +7289,12 @@
   Nom: Feinte du tueur
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20du%20tueur.ashx
   Source: MCA
+
+
+#
+# Dons spécifiques à certaines races
+#
+
 - Avantage: À partir du moment où le personnage a au moins une main libre, il peut
     dépenser une action rapide pour récupérer un seul objet ou une seule arme inutilisé
     qui pèse 5 kg ou moins et se trouve au sol, que ce soit dans la case qu’il occupe
@@ -7308,3 +7314,1094 @@
   Nom: Yeux de lynx
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Yeux%20de%20lynx.ashx
   Source: MJRA
+- Avantage: Lorsqu’il canalise l’énergie pour infliger des dégâts, l’aasimar peut
+    décider d’affecter une seule cible dans un rayon de 9 mètres. En plus d’infliger
+    des dégâts, si cette cible rate son jet de sauvegarde, l’aasimar peut attirer
+    ou repousser la cible sur une distance maximale de 1,5 mètre par tranche de 2d6
+    points de dégâts de canalisation d’énergie qu’il est capable d’infliger.
+  Conditions: Aasimar, canalisation d’énergie 2d6.
+  Nom: Canalisation de force
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Canalisation%20de%20force.ashx
+  Source: MR
+- Avantage: Lorsqu’il utilise Canalisation de force, l’aasimar peut affecter toutes
+    les créatures situées dans une ligne de 18 mètres ou dans un cône de 9 mètres.
+    Il peut décider de repousser ou d’attirer tous les êtres situés dans la zone affectée
+    qui échouent à leur jet de sauvegarde.
+  Conditions: Canalisation de force, Aasimar, canalisation d’énergie 4d6.
+  Nom: Science de la canalisation de force
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20la%20canalisation%20de%20force.ashx
+  Source: MR
+- Avantage: Lorsqu’il utilise Science de la canalisation de force, l’aasimar peut
+    affecter toutes les créatures situées dans un rayon de 9 mètres.
+  Conditions: Canalisation de force, science de la canalisation de force, Aasimar,
+    canalisation d’énergie 6d6.
+  Nom: Canalisation de force supérieure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Canalisation%20de%20force%20sup%c3%a9rieure.ashx
+  Source: MR
+- Avantage: L’aasimar gagne une utilisation supplémentaire par jour de lumière du
+    jour. Il choisit un sort dans la table ci-dessous ; en dépensant une utilisation
+    de lumière du jour, il peut utiliser ce sort comme un pouvoir magique. Pour choisir
+    un sort, il doit avoir le niveau de personnage minimum indiqué dans la table.
+    Le DD du jet de sauvegarde pour ce sort est basé sur le Charisme.
+  Conditions: Aasimar, lumière du jour pouvoir magique, niveau suffisamment élevé
+    (voir ci-dessous).
+  Nom: Rayonnement divin
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rayonnement%20divin.ashx
+  Source: MR
+  Spécial: L’aasimar peut prendre ce don plusieurs fois. Chaque fois qu’il le choisit,
+    il gagne une utilisation journalière supplémentaire de lumière du jour et peut
+    choisir un autre sort de la table.
+- Avantage: L’aasimar gagne un bonus de +2 à ses jets de sauvegarde contre les effets
+    du registre Mal et à ses tests de Constitution pour se stabiliser lorsqu’il est
+    réduit à un nombre de points de vie négatif (mais pas mort). De plus, chaque fois
+    qu’il reçoit des dégâts de saignement ou d’absorption de sang, toute créature
+    morte-vivante ou de sous-type Mal adjacente à l’aasimar reçoit également 1 point
+    de dégâts.
+  Conditions: Con 13, Aasimar.
+  Nom: Sang angélique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sang%20ang%c3%a9lique.ashx
+  Source: MR
+- Avantage: L’aasimar gagne une paire d’ailes aux plumes étincelantes qui lui accordent
+    une vitesse de vol de 9 mètres (manoeuvrabilité moyenne) s’il porte une armure
+    légère ou non-encombrante, de 6 mètres (manoeuvrabilité médiocre) s’il porte une
+    armure ou une charge intermédiaire ou lourde. Il considère Vol comme une compétence
+    de classe.
+  Conditions: Sang angélique, Aasimar, niveau de personnage 10.
+  Nom: Ailes d'ange
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20dange.ashx
+  Source: MR
+- Avantage: L’aasimar reçoit un malus de -2 à ses tests de Déguisement et de Discrétion,
+    mais gagne l’un des avantages suivants, en fonction de l’affinité métallique de
+    sa chair (il doit en choisir une).
+  Conditions: Sang angélique, Aasimar.
+  Nom: Chair angélique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chair%20ang%c3%a9lique.ashx
+  Source: MR
+- Avantage: L’aasimar gagne deux attaques d’aile. Ce sont des attaques naturelles
+    secondaires infligeant 1d4 points de dégâts tranchants (ou 1d3 si l’aasimar est
+    de taille P).
+  Conditions: Sang angélique, chair angélique, ailes d’ange, Aasimar, niveau de personnage
+    11.
+  Nom: Ailes métalliques
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20m%c3%a9talliques.ashx
+  Source: MR
+- Avantage: Le compagnon animal, le familier ou la monture de l’aasimar gagne l’archétype
+    céleste et devient une créature magique, mais l’aasimar le considère toujours
+    comme un animal lorsqu’il utilise Dressage, empathie sauvage ou tout autre sort
+    ou capacité de classe affectant spécifiquement les animaux.
+  Conditions: Aasimar, compagnon animal, familier ou aptitude de classe monture.
+  Nom: Serviteur céleste
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serviteur%20c%c3%a9leste.ashx
+  Source: MR
+- Avantage: 'Le dhampir choisit un sous-type humanoïde, comme « gobelinoïde » (ce
+    sous-type ne peut pas être « dhampir ») : il a développé un certain goût pour
+    le sang des créatures de ce sous-type. Lorsqu’il boit du sang frais d’une telle
+    créature, il gagne 5 points de vie temporaires supplémentaires et un bonus de
+    +1 à ses tests et jets de sauvegarde basés sur la Constitution. Les effets durent
+    1 heure. S’il se nourrit ainsi plusieurs fois, il continue de gagner des points
+    de vie jusqu’à un maximum de 5 points de vie temporaires par tranche de 3 dés
+    de vie qu’il a, mais le bonus de +1 à ses tests et jets de sauvegarde basés sur
+    la Constitution n’est pas cumulable.Normalement, il peut uniquement boire le sang
+    d’un adversaire sans défense, agrippé, paralysé, immobilisé en lutte, inconscient
+    ou soumis d’une manière similaire. S’il a une attaque de morsure, le dhampir peut
+    automatiquement boire du sang comme partie de son attaque ; sinon, il doit d’abord
+    entailler la cible en lui infligeant 1 point de dégâts avec une arme tranchante
+    ou perforante (mais il peut se nourrir d’une créature ayant des blessures graves
+    ou des dégâts de saignement sans avoir besoin de l’entailler au préalable). Une
+    fois qu’il a entaillé sa cible, le dhampir peut s’abreuver à sa blessure par une
+    action simple. La consommation de sang inflige un affaiblissement temporaire de
+    2 points de Constitution à la créature dont il se nourrit. Le sang doit provenir
+    d’une créature vivante du sous-type humanoïde précisé. Il ne peut pas venir d’une
+    créature morte ou invoquée. Se nourrir d’une créature intelligente non-consentante
+    est un acte maléfique.'
+  Conditions: Dhampir
+  Nom: Buveur de sang
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Buveur%20de%20sang.ashx
+  Source: MR
+- Avantage: Si le dhampir utilise son don Buveur de sang pour absorber 4 points de
+    Constitution ou plus d’une créature vivante, il gagne un bonus de +2 à ses jets
+    de dégâts et un bonus de +1 à ses tests de compétences basées sur la Force. Ce
+    bonus dure un nombre de rounds égal à la moitié de ses dés de vie.
+  Conditions: Buveur de sang, BBA+6, dhampir.
+  Nom: Festin sanglant
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Festin%20sanglant.ashx
+  Source: MR
+- Avantage: Le dhampir choisit un sous-type humanoïde ou le type humanoïde monstrueux.
+    Il peut utiliser son don Buveur de sang sur les créatures de ce type ou sous-type.
+  Conditions: Buveur de sang, dhampir.
+  Nom: Goûts variés
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gouts%20vari%c3%a9s.ashx
+  Source: MR
+  Spécial: Le dhampir peut prendre ce don plusieurs fois. Chaque fois qu’il le prend,
+    il choisit un nouveau sous-type humanoïde ou le type humanoïde monstrueux.
+- Avantage: Le dhampir peut utiliser son don Buveur de sang sur une créature morte
+    du sous-type humanoïde approprié. La créature doit être morte depuis moins de
+    6 heures au maximum.
+  Conditions: Buveur de sang, dhampir.
+  Nom: Récupération de sang
+  Normal: Le dhampir ne peut bénéficier des avantages du don Buveur de sang que s’il
+    consomme du sang frais sur une créature vivante.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9cup%c3%a9ration%20de%20sang.ashx
+  Source: MR
+- Avantage: Le dhampir peut décider de faire 20 à tous ses tests de compétences basées
+    sur le Charisme pour charmer, convaincre, persuader ou séduire les humanoïdes
+    ayant au moins une attitude amicale avec lui. Pour décider de faire 20, il faut
+    quand même exercer la compétence pendant une durée 20 fois plus longue qu’en temps
+    normal.
+  Conditions: Cha 17, dhampir.
+  Nom: Charmeur-né
+  Normal: Le dhampir ne peut pas décider de faire 20 aux tests pour lesquels il subit
+    un malus et risque un échec.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charmeur-n%c3%a9.ashx
+  Source: MR
+- Avantage: Par une action de mouvement, le personnage peut se déplacer de la moitié
+    de la distance de chute ralentie (maximum 15 mètres) sur un mur, au plafond, sur
+    une corde, sur des branches ou même sur l’eau ou n’importe quelle autre surface
+    qui ne pourrait normalement pas supporter son poids. Il doit atteindre une surface
+    solide et horizontale à la fin de son tour, sous peine de tomber.
+  Conditions: 6 rangs en Acrobaties, 6 rangs en Escalade, moine niveau 6.
+  Nom: Démarche de l'araignée (drow)
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20de%20laraign%c3%a9e.ashx
+  Source: MR
+- Avantage: Quand le personnage utilise le Châtiment canalisé contre une créature
+    vivante d’alignement Bon, il considère que tous les 1 obtenus sur le dé sont en
+    fait des 2. Si la cible du personnage est un extérieur Bon ou un lanceur de sorts
+    divins au service d’une divinité Bonne, le personnage considère qu’il possède
+    deux niveaux de plus qu’en réalité quand il détermine le nombre de dés de dégâts
+    à lancer pour son Châtiment canalisé.
+  Conditions: Châtiment canalisé, lanceur de sorts divins de niveau 5, canalisation
+    d’énergie négative, avoir un seigneur démon comme divinité protectrice.
+  Nom: Frappe du fléau des anges
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20du%20fl%c3%a9au%20des%20anges.ashx
+  Source: CM
+- Avantage: 'Lorsqu’il lance les sorts convocation de monstres ou convocation d’alliés
+    naturels, les options du drow augmentent. En fonction du niveau du sort, il peut
+    invoquer les araignées suivantes.
+
+    Les créatures marquées d’un astérisque (*) sont convoquées avec l’archétype céleste
+    si le drow est d’alignement Bon, et avec l’archétype fiélon si le drow est d’alignement
+    Mauvais. S’il est d’alignement Neutre, le drow peut choisir quel archétype appliquer
+    à la créature.En outre, lorsqu’il convoque des araignées avec convocation de monstres
+    ou convocation d’alliés naturels, le DD du poison de la créature convoquée et
+    des effets de toile augmente de 2.'
+  Conditions: ': Drow, capacité de lancer les sorts convocation de monstres ou convocation
+    d’alliés naturels'
+  Nom: Invocateur d'araignées
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocateur%20daraign%c3%a9es.ashx
+  Source: MR
+- Avantage: Le personnage peut utiliser son pouvoir magique racial lumières dansantes
+    pour créer un orbe de lumière vive. Cette lumière lui donne un bonus d’intuition
+    de +2 aux attaques à distance contre les cibles situées dans un rayon de 1,50
+    mètre autour de l’orbe. Le personnage peut déplacer la lumière par une action
+    de mouvement, dans les limites de portée du sort. En dehors de cela, l’orbe fonctionne
+    comme lumières dansantes. Le personnage peut utiliser ce pouvoir une fois par
+    jour et une fois de plus quand le niveau de lanceur de sorts de son pouvoir racial
+    lumières dansantes atteint 5, 10, 15 et 20.
+  Conditions: Tir à bout portant, pouvoir magique racial lumières dansantes.
+  Nom: Lanterne du sniper
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanterne%20du%20sniper.ashx
+  Source: CM
+- Avantage: Par une action immédiate, le personnage peut créer un linceul de ténèbres
+    brumeuses autour de sa personne et ainsi bénéficier d’un camouflage contre une
+    attaque. La brume se dissipe dès l’attaque résolue. Le personnage peut utiliser
+    ce pouvoir une fois par jour et une fois de plus quand le niveau de lanceur de
+    sorts de son pouvoir racial ténèbres atteint 5, 10, 15 et 20.
+  Conditions: Attaques réflexes, pouvoir magique racial ténèbres.
+  Nom: Linceul d'ombres
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Linceul%20dombres.ashx
+  Source: CM
+- Avantage: Lorsqu’il lance des sorts de la branche de l’ombre ou du registre de ténèbres,
+    le drow est considéré comme ayant deux niveaux de plus quand il s’agit de déterminer
+    la durée de ces sorts.
+  Conditions: ': Drow, niveau 1 de lanceur de sorts'
+  Nom: Mage ténébreux
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20t%c3%a9n%c3%a9breux.ashx
+  Source: MR
+- Avantage: Le drow peut utiliser le pouvoir magique de détection de la magie à volonté,
+    et rajoute les pouvoirs magiques de feuille morte et de lévitation à ceux qu’il
+    peut utiliser une fois par jour. Son niveau de lanceur de sorts est égal à son
+    niveau.
+  Conditions: ': Drow, capacité à utiliser les pouvoirs magiques drow.'
+  Nom: Noblesse drow
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noblesse%20drow.ashx
+  Source: MR
+- Avantage: Le drow peut utiliser les pouvoirs magiques lumières dansantes, lueur
+    féerique, feuille morte et lévitation deux fois par jour. Son pouvoir magique
+    de ténèbres est remplacé par celui de ténèbres profondes, qu’il peut utiliser
+    deux fois par jour.
+  Conditions: ': Noblesse drow, Charisme 13'
+  Nom: Science de la noblesse drow
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20la%20noblesse%20drow.ashx
+  Source: MR
+- Avantage: Le pouvoir magique détection de la magie du drow est maintenant permanent.
+    Il peut utiliser les pouvoirs magiques lumières dansantes, ténèbres profondes,
+    lueur féerique, feuille morte et lévitation à volonté.
+  Conditions: ': Science de la noblesse drow'
+  Nom: Noblesse drow supérieure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noblesse%20drow%20sup%c3%a9rieure.ashx
+  Source: MR
+- Avantage: 'Le drow choisit l’un des sorts suivants : dissipation de la magie, faveur
+    divine ou suggestion. Il peut l’utiliser une fois par jour comme un pouvoir magique.
+    Son niveau de lanceur de sorts est égal à son niveau.'
+  Conditions: ': Noblesse drow supérieure, Sagesse 13'
+  Nom: Fils de l’ombre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fils%20de%20lombre.ashx
+  Source: MR
+- Avantage: Le drow peut utiliser les pouvoirs magiques dissipation de la magie, faveur
+    divine et suggestion une fois par jour. Son niveau de lanceur de sorts est égal
+    à son niveau.
+  Conditions: ': Fils de l’ombre'
+  Nom: Fils de l’ombre supérieur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fils%20de%20lombre%20sup%c3%a9rieur.ashx
+  Source: MR
+- Avantage: La résistance à la magie du drow est égale à 11 + son niveau.
+  Conditions: ': Noblesse drow supérieure, niveau 13'
+  Nom: Noble résistance à la magie
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noble%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx
+  Source: MR
+  Spécial: Le drow reçoit un bonus de circonstances de +1 à ses tests de Diplomatie
+    et d’Intimidation contre tous les drows.
+- Avantage: Le fetchelin peut dépenser une utilisation de son pouvoir magique traversée
+    des ombres pour utiliser celui de porte dimensionnelle. Sa position de départ
+    et sa position d’arrivée pour cette capacité doivent être dans une zone de faible
+    luminosité ou de ténèbres.
+  Conditions: Fetchelin, pouvoir magique traversées des ombres
+  Nom: Arpenteur des ombres
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arpenteur%20des%20ombres.ashx
+  Source: UM
+- Avantage: Le fetchelin gagne la capacité à utiliser traversée des ombres une fois
+    de plus par jour.
+  Conditions: Fetchelin, pouvoir magique traversée des ombres
+  Nom: Fantôme d’ombre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fant%c3%b4me%20dombre.ashx
+  Source: UM
+  Spécial: Le fetchelin peut prendre ce don plusieurs fois. Ses effets se cumulent.
+- Avantage: Lorsqu’il est dans une zone de faible luminosité ou de ténèbres, le fetchelin
+    gagne un bonus de +1 à ses jets d’attaque contre les ennemis qui sont également
+    dans une zone de faible luminosité ou de ténèbres.
+  Catégorie: Combat
+  Conditions: Fetchelin, Combat en aveugle
+  Nom: Frappe obscure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20obscure.ashx
+  Source: UM
+- Avantage: Le fetchelin gagne vision dans le noir à 27 mètres (18 c), mais gagne
+    la faiblesse sensibilité à la lumière.
+  Conditions: Fetchelin
+  Nom: Vision obscure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20obscure.ashx
+  Source: UM
+- Avantage: Le fetchelin gagne la capacité de voir clairement jusqu’à 4,5 mètres dans
+    les ténèbres magiques telles que celles que crée le sort ténèbres profondes.
+  Conditions: Fetchelin, Vision obscure
+  Nom: Vision ténébreuse
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20t%c3%a9n%c3%a9breuse.ashx
+  Source: UM
+- Avantage: Le fetchelin gagne la capacité vision dans les ténèbres et perd sa faiblesse
+    sensibilité à la lumière mais gagne la faiblesse aveuglé par la lumière.
+  Conditions: Fetchelin, Vision obscure, Vision ténébreuse
+  Nom: Vision ténébreuse supérieure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20t%c3%a9n%c3%a9breuse%20sup%c3%a9rieure.ashx
+  Source: UM
+- Avantage: Le gobelin gagne un bonus de +2 à ses jets de sauvegarde contre les sorts
+    du registre feu. En outre, ses cicatrices le distinguent comme un talentueux dompteur
+    de feu, lui accordant un bonus de circonstances de +2 à ses jets de Diplomatie
+    et d’Intimidation lorsqu’il traite avec d’autres gobelins.
+  Conditions: gobelin.
+  Nom: Dompteur de feu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dompteur%20de%20feu.ashx
+  Source: MR
+- Avantage: Le gobelin gagne une résistance au feu de 5. Lorsqu’il lance des sorts
+    du registre du feu ou lance des bombes d’alchimiste infligeant des dégâts de feu,
+    il traite son niveau de lanceur de sorts ou son niveau d’alchimiste comme supérieur
+    d’un niveau.
+  Conditions: gobelin, dompteur de feu, niveau 5.
+  Nom: Coeur de feu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20de%20feu.ashx
+  Source: MR
+- Avantage: Le gobelin inflige 1d4 points de dégâts supplémentaires lorsqu’il attaque
+    avec du feu issu d’une source alchimique ou non-magique (comme des torches alchimiques
+    ou non-magiques) et gagne un bonus de compétence de +4 à ses jets de Réflexes
+    pour éviter de prendre feu ou pour éteindre les flammes lorsqu’il a pris feu.
+    Les dégâts supplémentaires causés avec ce don ne s’appliquent pas aux attaques
+    magiques (comme les bombes de l’alchimiste) ou aux dégâts d’aspersion.
+  Conditions: Gobelin, rang 1 en sabotage.
+  Nom: Crame ! Crame ! Crame !
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crame%20!%20Crame%20!%20Crame%20!.ashx
+  Source: MR
+- Avantage: Le gobelin peut manier une torche comme une arme sans subir le malus qu’impose
+    la non-maîtrise de l’arme et gagne un bonus de +1 à ses jets d’attaque avec les
+    armes de corps à corps infligeant des dégâts de feu.
+  Catégorie: ': combat'
+  Conditions: gobelin.
+  Nom: Main de feu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Main%20de%20feu.ashx
+  Source: MR
+- Avantage: Lorsqu’il réussit un test d’Acrobaties pour éviter de provoquer une attaque
+    d’opportunité de la part d’un adversaire plus grand alors qu’il traverse la zone
+    qu’il menace ou l’espace qu’il occupe, le gobelin peut déséquilibrer son adversaire
+    jusqu’à la fin de son tour par une action libre. Tandis que la créature est déséquilibrée,
+    si elle tente de se déplacer, elle doit réussir un test d’Acrobaties DD 15 ou
+    tomber à terre, gâchant son action de mouvement. Le gobelin ne peut affecter qu’une
+    créature par round avec cet effet.
+  Catégorie: ': combat'
+  Conditions: gobelin, esquive, souplesse du serpent, sous les jambes, taille M ou
+    moins.
+  Nom: Pieds emmêlés
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pieds%20emm%c3%aal%c3%a9s.ashx
+  Source: MR
+- Avantage: Le gobelin peut manier les armes à feu taille M sans subir le malus qu’impose
+    le maniement des armes de taille inappropriée.
+  Catégorie: ': combat'
+  Conditions: gobelin.
+  Nom: Pistolier gobelin
+  Normal: Le gobelin reçoit un malus de -2 lorsqu’il utilise une arme de taille inappropriée
+    (taille M).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier%20gobelin.ashx
+  Source: MR
+- Avantage: À partir du moment où le hobgobelin est dans un rayon de 9 mètres d’au
+    moins deux autres hobgobelins, il gagne un bonus de moral de +1 à ses jets de
+    sauvegarde.
+  Conditions: Hobgobelin, BBA +1
+  Nom: Discipline hobgobeline
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Discipline%20hobgobeline.ashx
+  Source: MR
+- Avantage: 'Un allié qui a lui aussi ce don peut infliger des dégâts au hobgobelin
+    afin de briser l’effet mental auquel il est sujet, lui donnant ainsi droit à un
+    jet de sauvegarde. L’allié doit infliger au moins 5 points de dégâts au hobgobelin
+    au moyen d’une attaque, d’un sort ou d’une autre capacité. Le hobgobelin refait
+    alors un jet de sauvegarde, avec un bonus de +1 par tranche de 5 points de dégâts
+    supplémentaires causés par l’attaque. Si le hobgobelin réussit son jet, l’effet
+    mental prend fin. Seuls les dégâts réellement infligés comptent pour ce don :
+    les dégâts non létaux et les dégâts réduits ou éliminés par une réduction de dégâts,
+    des résistances, etc. n’entrent pas en considération.'
+  Catégorie: Combat
+  Conditions: Hohgobelin, Discipline hobgobeline
+  Nom: Coup de focalisation
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20de%20focalisation.ashx
+  Source: MR
+- Avantage: Pour utiliser ce don, le hobgobelin doit utiliser un fouet (ou une autre
+    arme appartenant au groupe des fléaux d’armes du guerrier) pour attaquer un ennemi
+    qu’il a démoralisé au moyen d’un test d’Intimidation. S’il réussit son attaque,
+    il prolonge de 1 round la durée pendant laquelle la créature est secouée. Ce don
+    n’a aucun effet sur les créatures qui ont été secouées par une source autre que
+    des tests d’Intimidation.
+  Catégorie: Combat
+  Conditions: Hobgobelin, BBA +1, 1 rang en Intimidation
+  Nom: Coup de fouet démoralisant
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20de%20fouet%20d%c3%a9moralisant.ashx
+  Source: MR
+- Avantage: Par une action simple, le hobgobelin encourage un allié, qui doit avoir
+    moins de dés de vie que lui, à se montrer téméraire. Pendant 1 minute, cet allié
+    gagne un bonus de moral de +1 à ses jets d’attaque, à ses jets de dégâts et à
+    ses jets de Volonté contre les effets mentaux. Néanmoins, cet allié subit un malus
+    de -2 à la CA et à ses tests de compétence.Pour affecter un allié involontaire,
+    le hobgobelin doit réussir un test d’Intimidation dont le DD est le même que celui
+    utilisé pour démoraliser son allié.
+  Catégorie: Combat
+  Conditions: ', hobgobelin, Coup de fouet démoralisant, 5 rangs en Intimidation'
+  Nom: Maître des opérations
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20op%c3%a9rations.ashx
+  Source: MR
+  Spécial: Si le hobgobelin a 10 rangs ou plus en Intimidation, le bonus de moral
+    monte à +2.
+- Avantage: Lorsque le hobgobelin utilise Démonstration, en plus de ses effets normaux,
+    il peut s’en servir pour encourager ses alliés dans un rayon de 9 mètres comme
+    s’il avait utilisé le don Maître des opérations. Il utilise le même test d’Intimidation
+    pour déterminer les effets de Démonstration et de ce don.
+  Catégorie: Combat
+  Conditions: hobgobelin, Démonstration, Coup de fouet démoralisant, Maître des opérations,
+    Arme de prédilection, 10 rangs en Intimidation,  maniement de l’arme choisie
+  Nom: Démonstration terrifiante
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9monstration%20terrifiante.ashx
+  Source: MR
+- Avantage: Le hobgobelin peut réduire les dégâts de sa bombe de 1 dé pour lui donner
+    la capacité d’assourdir la créature touchée par la bombe. La bombe doit infliger
+    des dégâts de feu, de force ou de son. Si une créature est touchée directement
+    par cette bombe, elle doit réussir un jet de sauvegarde contre le DD de la bombe
+    ou être assourdie pendant 1 minute. Cet assourdissement se rajoute à tous les
+    autres effets que la bombe a normalement.
+  Conditions: Hobgobelin, Aptitude de classe Bombe
+  Nom: Explosion assourdissante
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20assourdissante.ashx
+  Source: MR
+- Avantage: Une fois par jour et par une action immédiate, lorsqu’il est touché par
+    une attaque de corps à corps, l’homme-félin peut forcer l’adversaire qui a porté
+    l’attaque à refaire son jet avec un malus de -4. L’adversaire doit prendre le
+    résultat du second jet. Il s’agit d’une capacité surnaturelle.
+  Conditions: Homme-félin
+  Nom: Chat noir
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chat%20noir.ashx
+  Source: MR
+  Spécial: Si l’homme-félin prend ce don et n’a pas déjà une fourrure toute noire,
+    alors sa celle-ci devient complètement noire lorsqu’il le choisit.
+- Avantage: L’homme-félin ne reçoit pas de malus de -2 à la CA quand il utilise le
+    don Enchaînement, le don Fente ou quand il charge.
+  Catégorie: combat
+  Conditions: homme-félin, Dex 13, BBA+1, trait racial sprinter
+  Nom: Frappe leste
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20leste.ashx
+  Source: MR
+- Avantage: Lorsqu’il charge, l’homme-félin peut effectuer une attaque à outrance
+    avec ses griffes.
+  Catégorie: combat
+  Conditions: homme-félin, For 13, Dex 15, Frappe leste, BBA+10, trait racial griffes
+    du félin ou Aspect bestial (manifestation griffes bestiales)
+  Nom: Bond griffu
+  Normal: La charge est une action complexe spéciale qui limite l’homme-félin à une
+    seule attaque.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bond%20griffu.ashx
+  Source: MR
+- Avantage: L’homme-félin gagne un bonus de +2 au DMD contre les manoeuvres offensives
+    de bousculade, de lutte, de renversement, de repositionnement et de croc-en-jambe.
+  Conditions: homme-félin, Dex 13
+  Nom: Grâce du chat
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20du%20chat.ashx
+  Source: MR
+- Avantage: L’homme-félin peut prendre le don Aspect bestial même s’il ne remplit
+    pas les conditions requises. De plus, sa nature féline se manifeste de l’une des
+    manières suivantes. Il choisit sa manifestation lorsqu’il prend ce don et ne peut
+    plus en changer.
+  Conditions: Homme-félin
+  Nom: Homme-félin modèle
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme-f%c3%a9lin%20mod%c3%a8le.ashx
+  Source: MR
+  Spécial: L’homme-félin peut prendre ce don plusieurs fois. Ses effets ne se cumulent
+    pas. À chaque fois qu’il le prend, il doit choisir une manifestation différente.
+- Avantage: Lorsqu’il se trouve sur la même case qu’un allié consentant qui possède
+    aussi ce don, l’homme-rat peut récupérer une arme sur son allié par une action
+    libre ou dégainer une arme ou tout autre objet caché par une action de mouvement.
+    Il peut également récupérer un objet qu’un allié volontaire situé sur la même
+    case que lui tient en main par une action libre. Dégainer ou récupérer un objet
+    (mais pas une arme) de cette manière provoque une attaque d’opportunité.
+  Catégorie: équipe
+  Conditions: Homme-rat, Arme en main, BBA +1, 1 rang en Escamotage, trait racial
+    de regroupement.
+  Nom: Cachette commune
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cachette%20commune.ashx
+  Source: CM
+- Avantage: Une fois par jour, quand il est confronté à une situation nécessitant
+    l’utilisation d’un objet ordinaire spécifique, l’homme-rat se trouve avoir cet
+    objet sur lui. L’objet ne doit pas valoir plus de 25 po + 5 po par niveau et l’homme-rat
+    doit s’acquitter de ce prix quand il « trouve » l’objet (en d’autres termes, l’argent
+    qu’il pensait avoir sur lui était, en réalité, l’objet attendu). L’objet doit
+    être facilement transportable (si, par exemple, l’homme-rat est à pied et n’a
+    qu’un sac à dos, il ne peut pas « trouver » un grand chaudron en fer). Il ne peut
+    pas trouver d’objets magiques avec ce don, ni posséder d’objets spécifiques tels
+    que la clé d’une porte donnée. S’il a été dépouillé de son équipement ou de ses
+    possessions, il perd les avantages de ce don jusqu’à ce qu’il ait passé au moins
+    une journée à refaire le plein de nouveaux objets.
+  Conditions: Homme-rat
+  Nom: Collectionneur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Collectionneur.ashx
+  Source: CM
+- Avantage: L’homme-rat gagne une attaque de morsure. Il s’agit d’une attaque naturelle
+    principale qui inflige 1d3 points de dégâts.
+  Conditions: Homme-rat
+  Nom: Dents acérées
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dents%20ac%c3%a9r%c3%a9es.ashx
+  Source: CM
+- Avantage: Les dégâts que l’homme-rat inflige avec son attaque de morsure ignorent
+    un nombre de points de solidité égal à 3 + la moitié de son niveau de personnage.
+    Il peut dépenser une action complexe pour infliger le double de ses dégâts de
+    morsure à un objet inanimé inutilisé.
+  Conditions: Dents acérées, homme-rat.
+  Nom: Rogneur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rogneur.ashx
+  Source: CM
+  Spécial: Si l’homme-rat possède le don Dents de fouisseur, il peut creuser à travers
+    la roche solide à une vitesse de 1,5 mètre par tranche de 10 minutes.
+- Avantage: L’homme-rat gagne deux attaques de griffe. Ce sont des attaques naturelles
+    principales infligeant 1d4 point de dégâts.
+  Catégorie: ': combat'
+  Conditions: Homme-rat.
+  Nom: Griffe-tranchante
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffe-tranchante.ashx
+  Source: MR
+- Avantage: L’homme-rat est considéré comme plus petit que la normale d’une catégorie
+    de taille quand il s’agit de l’écraser.
+  Conditions: Homme-rat, trait racial regroupement.
+  Nom: Rat des tunnels
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rat%20des%20tunnels.ashx
+  Source: MR
+- Avantage: L’homme-rat gagne une vitesse de creusement égale à la moitié de sa vitesse
+    de base. Il peut creuser dans le sable, la terre, l’argile, le gravier ou autres
+    matériaux similaires, mais pas dans la roche solide. Il ne laisse aucun trou derrière
+    lui, ni de trace de son passage à la surface.
+  Conditions: Homme-rat, griffe-tranchante, rat des tunnels.
+  Nom: Dents de fouisseur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dents%20de%20fouisseur.ashx
+  Source: MR
+- Avantage: L’ifrit gagne un bonus de +2 à ses jets de sauvegarde contre les attaques
+    de feu et les sorts du registre feu ou lumière. Par une action rapide, il peut
+    rendre deux armes métalliques non-magiques brûlantes pendant 1 round, infligeant
+    1 point de dégâts de feu supplémentaire sur une attaque réussie. Ceci ne se cumule
+    pas avec les autres effets qui s’ajoutent aux dégâts de feu de l’arme, comme la
+    propriété spéciale de feu.
+  Catégorie: ': combat'
+  Conditions: Ifrit.
+  Nom: Armes ardentes
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20ardentes.ashx
+  Source: MR
+- Avantage: Le bonus de l’ifrit à ses jets de sauvegarde contre les attaques de feu
+    et les sorts du registre feu ou lumière passe à +4. Lorsqu’il utilise Armes ardentes,
+    les armes affectées infligent 1d6 points de dégâts de feu supplémentaires au lieu
+    de 1, et lorsqu’il agrippe un adversaire, l’ifrit inflige ces dégâts à l’adversaire
+    qu’il tient lors de son tour.
+  Catégorie: ': combat'
+  Conditions: Ifrit, Armes ardentes, niveau 7.
+  Nom: Flamme intérieure
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flamme%20int%c3%a9rieure.ashx
+  Source: MR
+- Avantage: Lorsqu’il utilise Armes ardentes lors de son tour, par une action libre,
+    l’ifrit peut créer une aura de chaleur durant 1 round. Cette aura inflige 1d6
+    points de dégâts de feu à toute créature qui commence son tour adjacente à l’ifrit.
+  Catégorie: ': combat'
+  Conditions: Ifrit, Flamme intérieure, Armes ardentes, niveau 13.
+  Nom: Aura ardente
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20ardente.ashx
+  Source: MR
+- Avantage: L’ifrit gagne un bonus de +2 à ses tests de feinte lorsqu’il manie une
+    arme infligeant des dégâts de feu. Chaque fois qu’il réussit une feinte sur une
+    créature alors qu’il utilise ce genre d’armes, il peut infliger ses dégâts de
+    feu à l’ennemi.
+  Catégorie: ': combat'
+  Conditions: Ifrit, Expertise du combat, Science de la feinte.
+  Nom: Feinte brûlante
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20br%c3%bblante.ashx
+  Source: MR
+- Avantage: Une fois par jour, le personnage peut utiliser le pouvoir magique changement
+    de plan avec un niveau de lanceur de sorts égal à son niveau pour se téléporter,
+    avec les cibles volontaires, sur le plan élémentaire lié à sa race (plan du Feu
+    pour les ifrits, plan de la Terre pour les oréades, plan de l’Air pour les sylphes,
+    plan de l’Eau pour les ondins). Lorsqu’il est sur ce plan, le personnage (mais
+    aucun de ceux qu’il emmène avec lui) est considéré comme étant sous les effets
+    du sort adaptation planaire.
+  Conditions: Niveau 15, ifrit, sylphe, ondin ou oréade.
+  Nom: Saut élémentaire
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Saut%20%c3%a9l%c3%a9mentaire.ashx
+  Source: MR
+- Avantage: L’ifrit peut voir à travers le feu et la fumée sans malus, ignorant tous
+    les bonus de camouflage ou d’abri qu’offrent le feu et la fumée. Cela ne lui permet
+    pas de voir ce qu’il ne peut normalement pas voir (par exemple, les créatures
+    invisibles restent invisibles). Il est immunisé à l’état préjudiciable ébloui11.
+  Conditions: Ifrit.
+  Nom: Vision à travers le feu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20%c3%a0%20travers%20le%20feu.ashx
+  Source: MR
+- Avantage: 'Les écailles du kobold ont la couleur et certaines des résistances d’un
+    type de dragon chromatique. Il choisit l’un des types de dragons chromatiques
+    suivants : noir (acide), bleu (électricité), vert (acide), rouge (feu) ou blanc
+    (froid). Ses écailles ont la couleur de ce dragon et il gagne une résistance de
+    5 au type d’énergie correspondant.'
+  Conditions: Kobold.
+  Nom: Aspect draconique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspect%20draconique.ashx
+  Source: MR
+  Spécial: Si le kobold a le trait racial écailles de dragon, la couleur de ses écailles
+    ne change pas et il gagne un bonus d’armure naturelle de +1 à la place.
+- Avantage: Le kobold gagne un bonus de +2 contre les effets de sommeil et de paralysie.
+    Il gagne une paire d’ailes qu’il peut utiliser pour tomber et planer à un rythme
+    sûr. Il peut faire un test de Vol DD 15 pour tomber en toute sécurité de n’importe
+    quelle hauteur sans recevoir de dégâts de la chute, comme s’il utilisait feuille
+    morte. Lorsqu’il ralentit ainsi sa chute, il peut faire un autre test de Vol DD
+    15 pour planer, se déplaçant latéralement de 1,5 mètre par tranche de 6 mètres
+    de hauteur de chute.
+  Conditions: Aspect draconique, kobold.
+  Nom: Plané draconique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plan%c3%a9%20draconique.ashx
+  Source: MR
+  Spécial: S’il a le trait racial ailes de planeur, les capacités ci-dessus sont remplacées
+    par une vitesse de base augmentée à 9 mètres.
+- Avantage: "Le kobold gagne un bonus de +2 contre les effets de sommeil et de paralysie.\
+    \ Il gagne une arme de souffle que détermine la couleur de ses écailles de son\
+    \ don Aspect draconique ou de son trait racial écailles de dragon. L’utilisation\
+    \ d’une arme de souffle est une action simple qui ne provoque pas d’attaque d’opportunité.\
+    \ Il peut utiliser son souffle une fois par jour. Les créatures situées dans la\
+    \ zone du souffle qui réussissent un jet de Réflexes (DD 10 + niveaux du kobold\
+    \ + modificateur de Constitution du kobold) réduisent les dégâts de moitié.\n\
+    BLANC (SUR) Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6\
+    \ points de dégâts de froid.\nBLEU (SUR) Le kobold crache un cône de froid de\
+    \ 4,5 m de long infligeant 2d6 points de dégâts de froid.\n Le kobold crache une\
+    \ ligne d’électricité de 9 m de long infligeant 2d6 points de dégâts d’électricité.\n\
+    NOIR (SUR) Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6 points\
+    \ de dégâts de froid.\n Le kobold crache une ligne d’électricité de 9 m de long\
+    \ infligeant 2d6 points de dégâts d’électricité.\n Le kobold crache une ligne\
+    \ d’acide de 9 m de long infligeant 2d6 points de dégâts d’acide.\nROUGE (SUR)\
+    \ Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6 points de\
+    \ dégâts de froid.\n Le kobold crache une ligne d’électricité de 9 m de long infligeant\
+    \ 2d6 points de dégâts d’électricité.\n Le kobold crache une ligne d’acide de\
+    \ 9 m de long infligeant 2d6 points de dégâts d’acide.\n Le kobold crache un cône\
+    \ de feu de 4,5 m de long infligeant 2d6 points de dégâts de feu.\nVERT (SUR)\
+    \ Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6 points de\
+    \ dégâts de froid.\n Le kobold crache une ligne d’électricité de 9 m de long infligeant\
+    \ 2d6 points de dégâts d’électricité.\n Le kobold crache une ligne d’acide de\
+    \ 9 m de long infligeant 2d6 points de dégâts d’acide.\n Le kobold crache un cône\
+    \ de feu de 4,5 m de long infligeant 2d6 points de dégâts de feu.\n Le kobold\
+    \ crache un cône d’acide de 4,5 m de long infligeant 2d6 points de dégâts d’acide."
+  Conditions: Aspect draconique, kobold.
+  Nom: Souffle draconique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20draconique.ashx
+  Source: MR
+  Spécial: "Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6 points\
+    \ de dégâts de froid.\n Le kobold crache une ligne d’électricité de 9 m de long\
+    \ infligeant 2d6 points de dégâts d’électricité.\n Le kobold crache une ligne\
+    \ d’acide de 9 m de long infligeant 2d6 points de dégâts d’acide.\n Le kobold\
+    \ crache un cône de feu de 4,5 m de long infligeant 2d6 points de dégâts de feu.\n\
+    \ Le kobold crache un cône d’acide de 4,5 m de long infligeant 2d6 points de dégâts\
+    \ d’acide. Les ensorceleurs kobolds de lignage draconique ou kobold peuvent utiliser\
+    \ leur modificateur de Charisme plutôt que de Constitution pour déterminer le\
+    \ nombre de fois par jour où ils peuvent utiliser leur souffle et le DD de ce\
+    \ souffle."
+- Avantage: Le kobold gagne un bonus supplémentaire de +2 contre les effets de sommeil
+    et de paralysie. Il peut utiliser son souffle deux fois par jour et les dégâts
+    de celui-ci montent à 4d6 points de dégâts d’énergie. Les ailes qu’il obtient
+    de son don Plané draconique deviennent plus puissantes, lui accordant une vitesse
+    de vol de 6 mètres (manoeuvrabilité moyenne).
+  Conditions: Aspect draconique, Souffle draconique ou Plané draconique, niveau 10,
+    kobold.
+  Nom: Modèle draconique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mod%c3%a8le%20draconique.ashx
+  Source: MR
+- Avantage: Le kobold ne souffre d’aucun malus à ses tests de Discrétion quand il
+    se déplace à sa vitesse maximale. Il peut courir ou charger tout en restant caché,
+    recevant un malus de -10 à ces tests pour ce faire.
+  Catégorie: ': combat'
+  Conditions: 4 rangs en Discrétion, kobold.
+  Nom: Embusqueur kobold
+  Normal: Lorsqu’il se déplace plus vite qu’à la moitié de sa vitesse de base jusqu’à
+    sa vitesse maximale, le kobold reçoit un malus de -5 à ses tests de Discrétion.
+    Lorsqu’il est en mesure de courir ou de charger en utilisant sa Discrétion, il
+    reçoit un malus de -20 à son test de Discrétion.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Embusqueur%20kobold.ashx
+  Source: MR
+- Avantage: 'Le kobold peut faire une attaque de queue. Il s’agit d’une attaque naturelle
+    secondaire
+
+    infligeant 1d4 points de dégâts contondants. De plus, le kobold peut améliorer
+    son attaque de queue avec un accessoire caudal de kobold. En ce qui concerne ces
+    dons d’armes, le kobold est considéré comme sachant manier tous les accessoires
+    caudaux des kobolds.'
+  Catégorie: ': combat'
+  Conditions: BBA +1, kobold.
+  Nom: Queue de terreur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Queue%20de%20terreur.ashx
+  Source: MR
+- Avantage: Lorsqu’il tire, le kobold ne reçoit qu’un malus de -10 à ses tests de
+    Discrétion pour rester caché.
+  Catégorie: ': combat'
+  Conditions: 1 rang en Discrétion, kobold.
+  Nom: Sniper kobold
+  Normal: Le kobold reçoit un malus de -20 à ses tests de Discrétion pour maintenir
+    sa position secrète lorsqu’il tire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sniper%20kobold.ashx
+  Source: MR
+- Avantage: L’ondin gagne la capacité spéciale amphibie. Sa vitesse de nage augmente
+    de +3 mètres.
+  Conditions: Ondin.
+  Nom: Ascendance aquatique
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ascendance%20aquatique.ashx
+  Source: MR
+- Avantage: L’ondin peut augmenter le temps d’incantation d’un sort de feu à une action
+    complexe, l’imprégnant de pouvoir élémentaire (les sorts dont l’incantation prend
+    une action complexe ou plus n’augmentent pas leur temps d’incantation). Le sort
+    est traité comme un sort du registre de l’eau. Tous les effets de feu du sort
+    altéré se manifestent sous forme d’une vapeur brûlante. Le sort altéré fonctionne
+    normalement sous l’eau sans qu’un test de lanceur de sorts ne soit nécessaire.
+    Contrairement au feu, la vapeur ne peut pas enflammer les objets ni mettre le
+    feu aux créatures. Le sort infligeant toujours des dégâts de feu, les résistances
+    ou immunités au feu s’appliquent à ses effets.
+  Conditions: Ondin.
+  Nom: Mage de vapeur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20de%20vapeur.ashx
+  Source: MR
+- Avantage: L’ondin peut utiliser poussée hydraulique pour tenter une manoeuvre offensive
+    de bousculade, de désarmement, de sale coup (aveuglement ou éblouissement, voir
+    Manuel des joueurs, règles avancées), ou de croc-en-jambe. Chaque fois qu’il utilise
+    poussée hydraulique, il doit décider laquelle des manoeuvres offensives autorisées
+    il veut effectuer. Il peut utiliser ce don avec son pouvoir magique racial de
+    poussée hydraulique, son utilisation de classe de poussée hydraulique ou tous
+    les sorts de poussée hydraulique qu’il peut lancer, mais pas avec des objets magiques
+    ou d’autres sources externes d’utilisation de ce sort.
+  Conditions: Pouvoir magique poussée hydraulique, ondin.
+  Nom: Manœuvre hydraulique
+  Normal: Poussée hydraulique ne peut être utilisée que pour faire une manoeuvre offensive
+    de bousculade.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manoeuvre%20hydraulique.ashx
+  Source: MR
+- Avantage: Une fois par jour, l’ondin peut dépenser sa capacité raciale de poussée
+    hydraulique pour lancer le pouvoir magique de convocation d’alliés naturels III
+    avec un niveau de lanceur de sorts égal à son niveau de personnage. Cette utilisation
+    de la capacité ne permet de convoquer qu’un élémentaire de l’Eau de taille P ou
+    1d3 dauphins. L’utilisation de cette capacité coûte une action complexe.
+  Conditions: Niveau 5, pouvoir magique de poussée hydraulique, ondin.
+  Nom: Portail triton
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20triton.ashx
+  Source: MR
+- Avantage: Par une action simple, l’ondin peut éteindre un petit feu non-magique
+    d’un simple contact, affectant tous les feux n’excédant pas la taille d’un grand
+    feu de camp. Cette capacité n’affecte pas les feux occupant une zone totale de
+    plus de 1,5 mètre de côté. Le fait de toucher le feu de cette façon ne blesse
+    pas l’ondin.
+  Conditions: Ondin.
+  Nom: Peau d’eau
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau%20deau.ashx
+  Source: MR
+- Avantage: Lorsque l’orque tombe à 0 point de vie ou moins, il perd 2 points de vie
+    par round, mais n’est pas chancelant. S’il est enragé, il ne perd qu’un point
+    de vie par round.
+  Conditions: Trait racial férocité, orque.
+  Nom: Action féroce
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Action%20f%c3%a9roce.ashx
+  Source: MR
+- Avantage: Lorsqu’il canalise l’énergie, plutôt que de créer l’effet normal, l’orque
+    peut donner aux autres orques un bonus à leurs dégâts d’arme et à leurs jets de
+    confirmation de critique jusqu’à son prochain tour. Ce bonus est égal au nombre
+    de dés que son énergie canalisée soigne ou inflige normalement. Sa canalisation
+    agit normalement sur les autres créatures de la zone.
+  Conditions: Aptitude de classe Canalisation d’énergie, orque.
+  Nom: Agitation du sang
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Agitation%20du%20sang.ashx
+  Source: MR
+- Avantage: Par une action simple, l’orque peut porter une attaque de corps à corps
+    avec un malus de -2 à son jet d’attaque. Si l’attaque blesse son adversaire, il
+    peut faire un test d’Intimidation pour démoraliser cet adversaire par une action
+    libre.
+  Conditions: 1 rang en Intimidation, orque.
+  Nom: Coup de brute
+  Normal: Intimider un adversaire coûte une action simple.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20de%20brute.ashx
+  Source: MR
+- Avantage: L’orque peut tenter de désamorcer un piège en le frappant avec une arme
+    de corps à corps plutôt qu’en effectuant un test de Sabotage. Par une action complexe,
+    il effectue une attaque de corps à corps contre une CA égale au DD de Sabotage
+    du piège. S’il rate, le piège s’active. S’il réussit, il fait son jet de dégâts.
+    Si les dégâts sont égaux à au moins la moitié du DD de Sabotage du piège, il le
+    désamorce. S’ils sont inférieurs à la moitié du DD de Sabotage du piège, il se
+    déclenche. L’orque ne peut tenter cela que sur les pièges non-magiques. Il doit
+    être en mesure d’atteindre une partie du piège avec son attaque afin d’utiliser
+    ce don. Si le MJ le décide, certains pièges peuvent ne pas être sujets à ce don.
+  Conditions: Attaque en puissance, 1 rang en Sabotage, orque.
+  Nom: Démolisseur de pièges
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9molisseur%20de%20pi%c3%a8ges.ashx
+  Source: MR
+- Avantage: Quand il est enragé et victime d’un effet de terreur lui autorisant un
+    jet de sauvegarde, l’orque peut faire un nouveau jet de sauvegarde contre cet
+    effet de terreur au début de chacun de ses tours avant d’agir. S’il réussit son
+    nouveau jet, l’effet de terreur se dissipe.
+  Conditions: Orque, aptitude de classe rage.
+  Nom: Enragé inflexible
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20inflexible.ashx
+  Source: MR
+- Avantage: "Lorsqu’il prend ce don, l’orque choisit l’un des avantages ci-dessous.\
+    \ Lorsqu’il manie une arme ayant le mot « orque » dans son nom, il bénéficie de\
+    \ l’avantage qu’il a choisi tant qu’il maîtrise vraiment cette arme.\nDÉFENSEUR\
+    \ L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie une arme\
+    \ à deux mains).\nFILOU L’orque gagne un bonus de bouclier de +1 à la CA (ou de\
+    \ +2 s’il manie une arme à deux mains).\n L’orque gagne un bonus de +2 sur un\
+    \ seul type de test de manœuvre offensive qu’il peut effectuer avec cette arme.\n\
+    PERTURBATEUR L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie\
+    \ une arme à deux mains).\n L’orque gagne un bonus de +2 sur un seul type de test\
+    \ de manœuvre offensive qu’il peut effectuer avec cette arme.\n L’orque rajoute\
+    \ +3 aux tests de Concentration des adversaires qui lancent un sort dans la zone\
+    \ qu’il menace. Ceci ne s’applique que s’il est conscient de la position de l’ennemi\
+    \ et est en mesure de porter une attaque d’opportunité. S’il a déjà effectué toutes\
+    \ ses attaques d’opportunité pour le round, cette augmentation ne s’applique pas.\n\
+    TUEUR L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie une\
+    \ arme à deux mains).\n L’orque gagne un bonus de +2 sur un seul type de test\
+    \ de manœuvre offensive qu’il peut effectuer avec cette arme.\n L’orque rajoute\
+    \ +3 aux tests de Concentration des adversaires qui lancent un sort dans la zone\
+    \ qu’il menace. Ceci ne s’applique que s’il est conscient de la position de l’ennemi\
+    \ et est en mesure de porter une attaque d’opportunité. S’il a déjà effectué toutes\
+    \ ses attaques d’opportunité pour le round, cette augmentation ne s’applique pas.\n\
+    \ L’orque gagne un bonus de compétence de +2 à ses jets d’attaque pour confirmer\
+    \ les coups critiques.\nTYRAN L’orque gagne un bonus de bouclier de +1 à la CA\
+    \ (ou de +2 s’il manie une arme à deux mains).\n L’orque gagne un bonus de +2\
+    \ sur un seul type de test de manœuvre offensive qu’il peut effectuer avec cette\
+    \ arme.\n L’orque rajoute +3 aux tests de Concentration des adversaires qui lancent\
+    \ un sort dans la zone qu’il menace. Ceci ne s’applique que s’il est conscient\
+    \ de la position de l’ennemi et est en mesure de porter une attaque d’opportunité.\
+    \ S’il a déjà effectué toutes ses attaques d’opportunité pour le round, cette\
+    \ augmentation ne s’applique pas.\n L’orque gagne un bonus de compétence de +2\
+    \ à ses jets d’attaque pour confirmer les coups critiques.\n L’orque gagne un\
+    \ bonus de +1 à ses jets de dégâts contre les créatures plus petites que lui d’au\
+    \ moins une taille.\nVOYOU L’orque gagne un bonus de bouclier de +1 à la CA (ou\
+    \ de +2 s’il manie une arme à deux mains).\n L’orque gagne un bonus de +2 sur\
+    \ un seul type de test de manœuvre offensive qu’il peut effectuer avec cette arme.\n\
+    \ L’orque rajoute +3 aux tests de Concentration des adversaires qui lancent un\
+    \ sort dans la zone qu’il menace. Ceci ne s’applique que s’il est conscient de\
+    \ la position de l’ennemi et est en mesure de porter une attaque d’opportunité.\
+    \ S’il a déjà effectué toutes ses attaques d’opportunité pour le round, cette\
+    \ augmentation ne s’applique pas.\n L’orque gagne un bonus de compétence de +2\
+    \ à ses jets d’attaque pour confirmer les coups critiques.\n L’orque gagne un\
+    \ bonus de +1 à ses jets de dégâts contre les créatures plus petites que lui d’au\
+    \ moins une taille.\n L’orque inflige +1 point de dégâts non létaux avec son arme.Ce\
+    \ don n’a aucun effet si l’orque ne manie pas l’arme qu’il utilise."
+  Catégorie: ': combat'
+  Conditions: BBA +1, orque.
+  Nom: Expertise martiale orque
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20martiale%20orque.ashx
+  Source: MR
+  Spécial: "L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie\
+    \ une arme à deux mains).\n L’orque gagne un bonus de +2 sur un seul type de test\
+    \ de manœuvre offensive qu’il peut effectuer avec cette arme.\n L’orque rajoute\
+    \ +3 aux tests de Concentration des adversaires qui lancent un sort dans la zone\
+    \ qu’il menace. Ceci ne s’applique que s’il est conscient de la position de l’ennemi\
+    \ et est en mesure de porter une attaque d’opportunité. S’il a déjà effectué toutes\
+    \ ses attaques d’opportunité pour le round, cette augmentation ne s’applique pas.\n\
+    \ L’orque gagne un bonus de compétence de +2 à ses jets d’attaque pour confirmer\
+    \ les coups critiques.\n L’orque gagne un bonus de +1 à ses jets de dégâts contre\
+    \ les créatures plus petites que lui d’au moins une taille.\n L’orque inflige\
+    \ +1 point de dégâts non létaux avec son arme.Ce don n’a aucun effet si l’orque\
+    \ ne manie pas l’arme qu’il utilise. L’orque peut prendre ce don plusieurs fois.\
+    \ Chaque fois qu’il le choisit, il doit prendre un avantage différent. Il ne peut\
+    \ appliquer qu’un seul de ces avantages par round (défini par une action libre\
+    \ au début de son tour)."
+- Avantage: Par une action de mouvement, l’orque peut ouvrir une brèche dans ses défenses
+    afin qu’un adversaire adjacent en profite. Si l’adversaire attaque l’orque lors
+    de son tour suivant, il gagne un bonus de +4 à son jet d’attaque. Que l’adversaire
+    réussisse son attaque ou non, l’orque peut, par une action immédiate, lui porter
+    une attaque de corps à corps, gagnant un bonus de +2 à son jet d’attaque.
+  Catégorie: ': combat'
+  Conditions: Robustesse, BBA +1, orque.
+  Nom: Feinte inversée
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20invers%c3%a9e.ashx
+  Source: MR
+- Avantage: L’orque gagne un bonus de moral de +1 à ses jets d’attaque et de dégâts
+    contre les créatures qui l’ont attaqué au cours de ce combat.
+  Catégorie: ': combat'
+  Conditions: Orque.
+  Nom: Guerrier rancunier
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier%20rancunier.ashx
+  Source: MR
+- Avantage: Quand il tue ou assomme un adversaire avec une attaque de corps à corps,
+    l’orque gagne un nombre de points de vie temporaires égal à son bonus de Constitution
+    (minimum 1) jusqu’à son prochain tour. Ces points de vie temporaires ne se cumulent
+    pas. Il ne bénéficie de ce bonus que si son adversaire est sans défense ou a un
+    nombre de points de vie inférieur à la moitié des dés de vie de l’orque.
+  Conditions: Orque.
+  Nom: Naissance solitaire
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Naissance%20solitaire.ashx
+  Source: MR
+- Avantage: 'L’oréade gagne un bonus racial de +4 à ses tests
+
+    de Perception sous terre, et à ses tests de Survie pour éviter
+
+    de se perdre dans les grottes et les zones rocheuses.'
+  Conditions: oréade.
+  Nom: Échos de la pierre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89chos%20de%20la%20pierre.ashx
+  Source: MR
+- Avantage: 'L’oréade gagne une forme limitée de perception
+
+    des vibrations. Par une action de mouvement, il prend
+
+    conscience de toutes les créatures présentes dans un rayon
+
+    de 4,5 mètres qui sont en contact avec le sol à ce moment-là.'
+  Conditions: Échos de la pierre, niveau 9, oréade.
+  Nom: Murmures de la terre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Murmures%20de%20la%20terre.ashx
+  Source: MR
+- Avantage: 'L’héritage nain de l’oréade se manifeste de
+
+    deux manières. Tout d’abord, sa vitesse n’est jamais modifiée
+
+    par l’armure ou l’encombrement, comme pour le trait racial
+
+    nain lentement mais sûrement. Ensuite, l’oréade gagne le
+
+    trait racial nain connaissance de la pierre.'
+  Conditions: Oréade.
+  Nom: Sang de nain
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sang%20de%20nain.ashx
+  Source: MR
+- Avantage: Une fois par jour, le personnage peut utiliser le pouvoir magique changement
+    de plan avec un niveau de lanceur de sorts égal à son niveau pour se téléporter,
+    avec les cibles volontaires, sur le plan élémentaire lié à sa race (plan du Feu
+    pour les ifrits, plan de la Terre pour les oréades, plan de l’Air pour les sylphes,
+    plan de l’Eau pour les ondins). Lorsqu’il est sur ce plan, le personnage (mais
+    aucun de ceux qu’il emmène avec lui) est considéré comme étant sous les effets
+    du sort adaptation planaire.
+  Conditions: Niveau 15, ifrit, sylphe, ondin ou oréade.
+  Nom: Saut élémentaire
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Saut%20%c3%a9l%c3%a9mentaire.ashx
+  Source: MR
+- Avantage: 'Lorsque l’oréade se déplace, il peut traverser
+
+    1,5 mètre de terrain difficile de terre ou de pierre (débris,
+
+    escaliers en pierre, etc.) par round, comme s’il s’agissait
+
+    d’un terrain normal. Les effets de ce don se cumulent avec
+
+    les dons similaires tels que Déplacement acrobatique et
+
+    Aisance. Ce don permet à l’oréade de parcourir 1,5 mètre sur
+
+    ce genre de terrains difficiles.'
+  Conditions: Oréade.
+  Nom: Semelle de pierre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Semelle%20de%20pierre.ashx
+  Source: MR
+- Avantage: 'L’oréade gagne une vitesse de creusement égale
+
+    à la moitié de sa vitesse de base. Il peut creuser dans le sable,
+
+    la terre, l’argile, le gravier ou autres matériaux similaires,
+
+    mais pas dans la roche solide. Il ne laisse pas de trou derrière
+
+    lui ni de trace de son passage à la surface.'
+  Conditions: Semelle de pierre, niveau 9, oréade.
+  Nom: Fouisseur oréade
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouisseur%20or%c3%a9ade.ashx
+  Source: MR
+- Avantage: 'L’oréade gagne le pouvoir universel de monstre
+
+    nage dans la terre et peut l’utiliser pour traverser le sable, la
+
+    terre, l’argile, le gravier ou autres matériaux similaires à sa
+
+    vitesse maximale. S’il est protégé contre les dégâts de feu, il
+
+    peut même traverser la lave. Il peut traverser la roche solide
+
+    à la moitié de sa vitesse de base.'
+  Conditions: Fouisseur oréade, Semelle de pierre, niveau 13, oréade.
+  Nom: Oréade nageur de terre
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Or%c3%a9ade%20nageur%20de%20terre.ashx
+  Source: MR
+- Avantage: Le sylphe voit à travers le brouillard, la brume et les nuages sans malus,
+    ignorant tous les bonus d’abri ou de camouflage de ces effets. Si l’effet est
+    magique, ce don triple la distance à laquelle le sylphe peut voir sans malus au
+    lieu d'ignorer les bonus d'abri et de camouflage.
+  Conditions: Sylphe.
+  Nom: Contemplateur des nuages
+  Normal: En générale, on ne peut voir normalement qu'a 1m50 dans le brouillard, la
+    brume et les nuages.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contemplateur%20des%20nuages.ashx
+  Source: MR
+- Avantage: Le sylphe gagne un bonus de +2 à ses jets de sauvegarde contre les effets
+    du registre air ou électricité et contre les effets infligeant des dégâts d’électricité.
+    Il peut ignorer les 30 premiers points de dégâts de n’importe quelle chute lorsqu’il
+    doit déterminer les dégâts qu’il reçoit d’une chute.
+  Conditions: Sylphe
+  Nom: Pas aérien
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pas%20a%c3%a9rien.ashx
+  Source: MR
+- Avantage: Le bonus du sylphe à ses jets de sauvegarde contre les effets du registre
+    air ou électricité et contre les effets infligeant des dégâts d’électricité passe
+    à +4. En outre, le sylphe gagne une vitesse de vol surnaturelle égale à sa vitesse
+    de base (bonne manœuvrabilité). Il ne peut voler avec cette capacité que s’il
+    porte une armure légère ou pas d’armure.
+  Conditions: Pas aérien, niveau 9, Sylphe.
+  Nom: Ailes de vent
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20de%20vent.ashx
+  Source: MR
+- Avantage: Le sylphe n’a plus besoin de respirer. Il est immunisé aux effets nécessitant
+    que la créature respire (comme les poisons inhalés). Ceci ne l’immunise pas aux
+    attaques de nuages ou de gaz qui n’ont pas besoin que la créature respire, comme
+    brume mortelle.
+  Conditions: Niveau 11, Sylphe.
+  Nom: Souffle intérieur
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20int%c3%a9rieur.ashx
+  Source: MR
+- Avantage: Une fois par jour, le tengu peut se faire pousser une paire d’ailes de
+    corbeau noir géant lui accordant une vitesse de vol de 9 mètres avec une manoeuvrabilité
+    moyenne. En outre, ce pouvoir magique fonctionne comme Forme bestiale I (bien
+    que le tengu ne bénéficie d’aucun des autres avantages du sort) avec un niveau
+    de lanceur de sorts égal à son niveau.
+  Conditions: Tengu, niveau 5.
+  Nom: Ailes de tengu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20de%20tengu.ashx
+  Source: MR
+- Avantage: Une fois par jour, le tengu peut prendre la forme d’un oiseau noir de
+    taille G ressemblant à un corbeau, ce qui lui accorde une vitesse de vol de 18
+    mètres (bonne manoeuvrabilité), un bonus de taille de +4 en Force, un malus de
+    -2 en Dextérité, et un bonus d’armure naturelle de +4. En outre, ce pouvoir magique
+    fonctionne comme forme bestiale II avec un niveau de lanceur de sorts égal à son
+    niveau.
+  Catégorie: ': combat'
+  Conditions: Tengu, ailes de tengu niveau 7.
+  Nom: Forme de corbeau tengu
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20de%20corbeau%20tengu.ashx
+  Source: MR
+- Avantage: Le tengu augmente les dégâts de son attaque de bec à 1d6. En outre, lorsqu’il
+    confirme un coup critique avec une attaque de bec, il inflige également 1 point
+    de saignement.
+  Catégorie: ': combat'
+  Conditions: Tengu, BBA +5, trait racial arme naturelle.
+  Nom: Bec de sang
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bec%20de%20sang.ashx
+  Source: MR
+  Spécial: L’effet de saignement de ce don se cumule avec le don Critique sanglant
+    et les effets similaires, le tengu ajoutant 1 point à ses dégâts de saignement.
+- Avantage: Le tengu gagne un bonus racial de +2 à ses jets de sauvegarde contre les
+    maladies et les poisons ingérés (mais pas contre les autres poisons). Il reçoit
+    un bonus de +2 à ses tests de Survie pour trouver de la nourriture pour lui même
+    (et uniquement pour lui-même).
+  Conditions: Tengu.
+  Nom: Charognard
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charognard.ashx
+  Source: MR
+- Avantage: Une fois par jour, le tengu peut prendre la forme d’un humain dont le
+    nez est aussi long que son bec. Ce pouvoir magique fonctionne comme modification
+    d’apparence avec un niveau de lanceur de sorts égal à son niveau. Lorsqu’il est
+    sous cette forme, il gagne le pouvoir d’odorat et un bonus de +2 à son score de
+    Force. Étant donné que son long nez sous forme humaine indique clairement qu’il
+    n’est pas complètement humain, le tengu ne bénéficie pas du bonus normal d’utilisation
+    d’un effet de métamorphose à ses tests de déguisement (il pourrait néanmoins expliquer
+    son nez comme une malédiction ou une difformité malheureuse, ou le dissimuler
+    avec un objet comme un masque de médecin de peste).
+  Conditions: Tengu, niveau 3.
+  Nom: Long-nez
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Long-nez.ashx
+  Source: MR
+- Avantage: Le tengu gagne un bonus de +2 à ses tests d’Estimation. Il peut déterminer
+    l’objet le plus précieux d’un trésor par une action simple et bénéficie d’un bonus
+    supplémentaire de +2 à ses tests d’Estimation pour ce faire. En outre, s’il rate
+    un test d’Estimation de 5 ou plus, il traite ce test comme raté de moins de 5.
+  Conditions: Tengu.
+  Nom: OEil du charognard
+  Normal: Il faut une action complexe pour déterminer l’objet le plus précieux d’un
+    trésor.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.OEil%20du%20charognard.ashx
+  Source: MR
+- Avantage: Le tieffelin gagne un bonus d’armure naturelle de +2.
+  Conditions: Tieffelin.
+  Nom: Armure de la Fosse
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20de%20la%20Fosse.ashx
+  Source: MR
+  Spécial: 'Si le tieffelin a le trait racial peau écailleuse, il gagne à la place
+    une résistance de 5 à deux des types d’énergie contre lesquelles il n’a pas déjà
+    de résistance parmi les suivants : froid, électricité et feu.'
+- Avantage: S’il ne peut pas manier d’armes avec sa queue, il peut l’utiliser pour
+    récupérer de petits objets rangés sur lui par une action rapide.
+  Conditions: Tieffelin.
+  Nom: Queue agrippeuse
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Queue%20agrippeuse.ashx
+  Source: MR
+  Spécial: S’il a le trait racial queue préhensile, le tieffelin peut utiliser sa
+    queue pour saisir des objets non-utilisés dans un rayon de 1,5 mètre par une action
+    rapide et pour saisir ceux rangés sur sa personne ; il peut les tenir avec sa
+    queue, mais il ne peut pas les manipuler avec (il ne peut rien faire d’autre que
+    les transférer dans ses mains).
+- Avantage: 'Le tieffelin choisit un type d’énergie contre lequel il n’a pas déjà
+    de résistance parmi les suivants : acide, froid, électricité ou feu. Il gagne
+    une résistance de 5 contre ce type d’énergie.'
+  Conditions: Tieffelin.
+  Nom: Résistance des fiélons étendue
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9sistance%20des%20fi%c3%a9lons%20%c3%a9tendue.ashx
+  Source: MR
+  Spécial: Le tieffelin peut prendre ce don plusieurs fois, choisissant à chaque fois
+    un type d’énergie contre lequel il n’a pas de résistance. Il gagne une résistance
+    de 5 à ce type d’énergie.
+- Avantage: Le tieffelin gagne vision nocturne et la portée de sa vision dans le noir
+    passe à 36 mètres.
+  Conditions: Tieffelin, vision dans le noir à 18 mètres.
+  Nom: Vision fiélone
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20fi%c3%a9lone.ashx
+  Source: MR
+  Spécial: Le tieffelin peut prendre ce don deux fois. Lorsqu’il le prend une deuxième
+    fois, il gagne le pouvoir universel de monstre vision dans les ténèbres.
+
