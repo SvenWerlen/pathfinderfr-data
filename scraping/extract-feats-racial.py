@@ -117,6 +117,7 @@ for u in URLs:
                 text = ""
             elif u"Avantage" in don and len(key) < 15:
                 don[u"Avantage"] += "\n" + key.upper() + " " + value.strip()
+                text = ""
             else:
                 print("- Skipping unknown property %s" % key)
 
