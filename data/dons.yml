@@ -7369,9 +7369,20 @@
   Nom: Ailes d'ange
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20dange.ashx
   Source: MR
-- Avantage: L’aasimar reçoit un malus de -2 à ses tests de Déguisement et de Discrétion,
-    mais gagne l’un des avantages suivants, en fonction de l’affinité métallique de
-    sa chair (il doit en choisir une).
+- Avantage: "L’aasimar reçoit un malus de -2 à ses tests de Déguisement et de Discrétion,\
+    \ mais gagne l’un des avantages suivants, en fonction de l’affinité métallique\
+    \ de sa chair (il doit en choisir une). \n\nAcier. Il gagne un bonus d’armure\
+    \ naturelle de +1 à la CA, et ses coups à mains nues ou armes naturelles sont\
+    \ considérés comme étant en fer froid quand il s’agit de passer la réduction de\
+    \ dégâts.\nAirain. Il gagne une résistance de 5 au feu et un bonus de +2 à ses\
+    \ jets de sauvegarde contre les effets de feu.\nArgent. Il gagne un bonus de +2\
+    \ à ses jets de sauvegarde contre la paralysie, la pétrification et les poisons,\
+    \ ainsi ses coups à mains nues ou armes naturelles sont considérés comme étant\
+    \ en argent quand il s’agit de passer la réduction de dégâts.\nOr. Il reçoit un\
+    \ bonus de +2 à ses jets de sauvegarde contre la cécité, l’éblouissement, les\
+    \ mirages et les effets du registre de la lumière. Lorsqu’il lance des sorts ou\
+    \ pouvoirs magiques de la branche d’illusion (mirage) ou du registre de la lumière,\
+    \ il le fait avec un niveau de lanceur de sorts de +1."
   Conditions: Sang angélique, Aasimar.
   Nom: Chair angélique
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chair%20ang%c3%a9lique.ashx
@@ -7476,6 +7487,14 @@
 - Avantage: 'Lorsqu’il lance les sorts convocation de monstres ou convocation d’alliés
     naturels, les options du drow augmentent. En fonction du niveau du sort, il peut
     invoquer les araignées suivantes.
+
+    Convocation de monstres. Niveau 1 – araignée crabe géante*; Niveau 4 – veuve noire
+    géante*; Niveau 5 – araignée ogre*; Niveau 7 – tarentule géante*.
+
+    Convocation d’alliés naturels. Niveau 1 – araignée crabe géante; Niveau 4 – veuve
+    noire géante; Niveau 5 – araignée ogre; Niveau 7 – tarentule géante.
+
+
 
     Les créatures marquées d’un astérisque (*) sont convoquées avec l’archétype céleste
     si le drow est d’alignement Bon, et avec l’archétype fiélon si le drow est d’alignement
@@ -7756,10 +7775,25 @@
   Nom: Grâce du chat
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gr%c3%a2ce%20du%20chat.ashx
   Source: MR
-- Avantage: L’homme-félin peut prendre le don Aspect bestial même s’il ne remplit
+- Avantage: 'L’homme-félin peut prendre le don Aspect bestial même s’il ne remplit
     pas les conditions requises. De plus, sa nature féline se manifeste de l’une des
     manières suivantes. Il choisit sa manifestation lorsqu’il prend ce don et ne peut
     plus en changer.
+
+
+    Griffes acérées (Ext). Si le personnage n’a pas le trait racial griffes du félin
+    ou la manifestation griffes bestiales lui venant du don Aspect bestial, il gagne
+    le trait racial griffes du félin. S’il a le trait racial griffes du félin ou la
+    manifestation griffes bestiales, les dégâts de son attaque de griffe passent à
+    1d6.
+
+    Sens améliorés (Ext). Si le personnage a vision nocturne, il gagne le trait racial
+    d’homme-félin odorat. S’il a le trait racial odorat, il gagne vision nocturne.
+
+    Super sprinter (Ext). Le personnage gagne un bonus racial de 3 mètres (2 c) à
+    sa vitesse de déplacement lorsqu’il charge, court ou bat en retraite. S’il a le
+    trait racial sprinter, son bonus racial de vitesse quand il charge, court ou bat
+    en retraite est augmenté à 6 mètres (4 c).'
   Conditions: Homme-félin
   Nom: Homme-félin modèle
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme-f%c3%a9lin%20mod%c3%a8le.ashx

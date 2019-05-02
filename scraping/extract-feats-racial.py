@@ -98,6 +98,11 @@ for u in URLs:
                     break
                 elif s.string:
                     text += s.string
+                elif s.name == 'ul':
+                    text += "\n"
+                    for li in s.find_all('li'):
+                        text +=  li.text + "\n"
+                    text += "\n"
 
             value = text.strip()
             if value.startswith(":"):
