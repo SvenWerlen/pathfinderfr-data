@@ -7289,12 +7289,6 @@
   Nom: Feinte du tueur
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20du%20tueur.ashx
   Source: MCA
-
-
-#
-# Dons spécifiques à certaines races
-#
-
 - Avantage: À partir du moment où le personnage a au moins une main libre, il peut
     dépenser une action rapide pour récupérer un seul objet ou une seule arme inutilisé
     qui pèse 5 kg ou moins et se trouve au sol, que ce soit dans la case qu’il occupe
@@ -7314,6 +7308,11 @@
   Nom: Yeux de lynx
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Yeux%20de%20lynx.ashx
   Source: MJRA
+  
+#
+# Dons spécifiques à certaines races
+#
+
 - Avantage: Lorsqu’il canalise l’énergie pour infliger des dégâts, l’aasimar peut
     décider d’affecter une seule cible dans un rayon de 9 mètres. En plus d’infliger
     des dégâts, si cette cible rate son jet de sauvegarde, l’aasimar peut attirer
@@ -7484,8 +7483,8 @@
     à la créature.En outre, lorsqu’il convoque des araignées avec convocation de monstres
     ou convocation d’alliés naturels, le DD du poison de la créature convoquée et
     des effets de toile augmente de 2.'
-  Conditions: ': Drow, capacité de lancer les sorts convocation de monstres ou convocation
-    d’alliés naturels'
+  Conditions: Drow, capacité de lancer les sorts convocation de monstres ou convocation
+    d’alliés naturels
   Nom: Invocateur d'araignées
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocateur%20daraign%c3%a9es.ashx
   Source: MR
@@ -7513,7 +7512,7 @@
 - Avantage: Lorsqu’il lance des sorts de la branche de l’ombre ou du registre de ténèbres,
     le drow est considéré comme ayant deux niveaux de plus quand il s’agit de déterminer
     la durée de ces sorts.
-  Conditions: ': Drow, niveau 1 de lanceur de sorts'
+  Conditions: Drow, niveau 1 de lanceur de sorts
   Nom: Mage ténébreux
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20t%c3%a9n%c3%a9breux.ashx
   Source: MR
@@ -7521,7 +7520,7 @@
     et rajoute les pouvoirs magiques de feuille morte et de lévitation à ceux qu’il
     peut utiliser une fois par jour. Son niveau de lanceur de sorts est égal à son
     niveau.
-  Conditions: ': Drow, capacité à utiliser les pouvoirs magiques drow.'
+  Conditions: Drow, capacité à utiliser les pouvoirs magiques drow.
   Nom: Noblesse drow
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noblesse%20drow.ashx
   Source: MR
@@ -7529,33 +7528,33 @@
     féerique, feuille morte et lévitation deux fois par jour. Son pouvoir magique
     de ténèbres est remplacé par celui de ténèbres profondes, qu’il peut utiliser
     deux fois par jour.
-  Conditions: ': Noblesse drow, Charisme 13'
+  Conditions: Noblesse drow, Charisme 13
   Nom: Science de la noblesse drow
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20la%20noblesse%20drow.ashx
   Source: MR
 - Avantage: Le pouvoir magique détection de la magie du drow est maintenant permanent.
     Il peut utiliser les pouvoirs magiques lumières dansantes, ténèbres profondes,
     lueur féerique, feuille morte et lévitation à volonté.
-  Conditions: ': Science de la noblesse drow'
+  Conditions: Science de la noblesse drow
   Nom: Noblesse drow supérieure
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noblesse%20drow%20sup%c3%a9rieure.ashx
   Source: MR
 - Avantage: 'Le drow choisit l’un des sorts suivants : dissipation de la magie, faveur
     divine ou suggestion. Il peut l’utiliser une fois par jour comme un pouvoir magique.
     Son niveau de lanceur de sorts est égal à son niveau.'
-  Conditions: ': Noblesse drow supérieure, Sagesse 13'
+  Conditions: Noblesse drow supérieure, Sagesse 13
   Nom: Fils de l’ombre
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fils%20de%20lombre.ashx
   Source: MR
 - Avantage: Le drow peut utiliser les pouvoirs magiques dissipation de la magie, faveur
     divine et suggestion une fois par jour. Son niveau de lanceur de sorts est égal
     à son niveau.
-  Conditions: ': Fils de l’ombre'
+  Conditions: Fils de l’ombre
   Nom: Fils de l’ombre supérieur
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fils%20de%20lombre%20sup%c3%a9rieur.ashx
   Source: MR
 - Avantage: La résistance à la magie du drow est égale à 11 + son niveau.
-  Conditions: ': Noblesse drow supérieure, niveau 13'
+  Conditions: Noblesse drow supérieure, niveau 13
   Nom: Noble résistance à la magie
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noble%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx
   Source: MR
@@ -7631,7 +7630,7 @@
 - Avantage: Le gobelin peut manier une torche comme une arme sans subir le malus qu’impose
     la non-maîtrise de l’arme et gagne un bonus de +1 à ses jets d’attaque avec les
     armes de corps à corps infligeant des dégâts de feu.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: gobelin.
   Nom: Main de feu
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Main%20de%20feu.ashx
@@ -7643,7 +7642,7 @@
     si elle tente de se déplacer, elle doit réussir un test d’Acrobaties DD 15 ou
     tomber à terre, gâchant son action de mouvement. Le gobelin ne peut affecter qu’une
     créature par round avec cet effet.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: gobelin, esquive, souplesse du serpent, sous les jambes, taille M ou
     moins.
   Nom: Pieds emmêlés
@@ -7651,7 +7650,7 @@
   Source: MR
 - Avantage: Le gobelin peut manier les armes à feu taille M sans subir le malus qu’impose
     le maniement des armes de taille inappropriée.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: gobelin.
   Nom: Pistolier gobelin
   Normal: Le gobelin reçoit un malus de -2 lorsqu’il utilise une arme de taille inappropriée
@@ -7812,7 +7811,7 @@
     la roche solide à une vitesse de 1,5 mètre par tranche de 10 minutes.
 - Avantage: L’homme-rat gagne deux attaques de griffe. Ce sont des attaques naturelles
     principales infligeant 1d4 point de dégâts.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Homme-rat.
   Nom: Griffe-tranchante
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffe-tranchante.ashx
@@ -7837,7 +7836,7 @@
     1 point de dégâts de feu supplémentaire sur une attaque réussie. Ceci ne se cumule
     pas avec les autres effets qui s’ajoutent aux dégâts de feu de l’arme, comme la
     propriété spéciale de feu.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Ifrit.
   Nom: Armes ardentes
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20ardentes.ashx
@@ -7847,7 +7846,7 @@
     les armes affectées infligent 1d6 points de dégâts de feu supplémentaires au lieu
     de 1, et lorsqu’il agrippe un adversaire, l’ifrit inflige ces dégâts à l’adversaire
     qu’il tient lors de son tour.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Ifrit, Armes ardentes, niveau 7.
   Nom: Flamme intérieure
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flamme%20int%c3%a9rieure.ashx
@@ -7855,7 +7854,7 @@
 - Avantage: Lorsqu’il utilise Armes ardentes lors de son tour, par une action libre,
     l’ifrit peut créer une aura de chaleur durant 1 round. Cette aura inflige 1d6
     points de dégâts de feu à toute créature qui commence son tour adjacente à l’ifrit.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Ifrit, Flamme intérieure, Armes ardentes, niveau 13.
   Nom: Aura ardente
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20ardente.ashx
@@ -7864,7 +7863,7 @@
     arme infligeant des dégâts de feu. Chaque fois qu’il réussit une feinte sur une
     créature alors qu’il utilise ce genre d’armes, il peut infliger ses dégâts de
     feu à l’ennemi.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Ifrit, Expertise du combat, Science de la feinte.
   Nom: Feinte brûlante
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20br%c3%bblante.ashx
@@ -7965,7 +7964,7 @@
 - Avantage: Le kobold ne souffre d’aucun malus à ses tests de Discrétion quand il
     se déplace à sa vitesse maximale. Il peut courir ou charger tout en restant caché,
     recevant un malus de -10 à ces tests pour ce faire.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: 4 rangs en Discrétion, kobold.
   Nom: Embusqueur kobold
   Normal: Lorsqu’il se déplace plus vite qu’à la moitié de sa vitesse de base jusqu’à
@@ -7981,14 +7980,14 @@
     son attaque de queue avec un accessoire caudal de kobold. En ce qui concerne ces
     dons d’armes, le kobold est considéré comme sachant manier tous les accessoires
     caudaux des kobolds.'
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: BBA +1, kobold.
   Nom: Queue de terreur
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Queue%20de%20terreur.ashx
   Source: MR
 - Avantage: Lorsqu’il tire, le kobold ne reçoit qu’un malus de -10 à ses tests de
     Discrétion pour rester caché.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: 1 rang en Discrétion, kobold.
   Nom: Sniper kobold
   Normal: Le kobold reçoit un malus de -20 à ses tests de Discrétion pour maintenir
@@ -8136,7 +8135,7 @@
     \ bonus de +1 à ses jets de dégâts contre les créatures plus petites que lui d’au\
     \ moins une taille.\n L’orque inflige +1 point de dégâts non létaux avec son arme.Ce\
     \ don n’a aucun effet si l’orque ne manie pas l’arme qu’il utilise."
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: BBA +1, orque.
   Nom: Expertise martiale orque
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20martiale%20orque.ashx
@@ -8161,14 +8160,14 @@
     de son tour suivant, il gagne un bonus de +4 à son jet d’attaque. Que l’adversaire
     réussisse son attaque ou non, l’orque peut, par une action immédiate, lui porter
     une attaque de corps à corps, gagnant un bonus de +2 à son jet d’attaque.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Robustesse, BBA +1, orque.
   Nom: Feinte inversée
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20invers%c3%a9e.ashx
   Source: MR
 - Avantage: L’orque gagne un bonus de moral de +1 à ses jets d’attaque et de dégâts
     contre les créatures qui l’ont attaqué au cours de ce combat.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Orque.
   Nom: Guerrier rancunier
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier%20rancunier.ashx
@@ -8321,7 +8320,7 @@
     -2 en Dextérité, et un bonus d’armure naturelle de +4. En outre, ce pouvoir magique
     fonctionne comme forme bestiale II avec un niveau de lanceur de sorts égal à son
     niveau.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Tengu, ailes de tengu niveau 7.
   Nom: Forme de corbeau tengu
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20de%20corbeau%20tengu.ashx
@@ -8329,7 +8328,7 @@
 - Avantage: Le tengu augmente les dégâts de son attaque de bec à 1d6. En outre, lorsqu’il
     confirme un coup critique avec une attaque de bec, il inflige également 1 point
     de saignement.
-  Catégorie: ': combat'
+  Catégorie: combat
   Conditions: Tengu, BBA +5, trait racial arme naturelle.
   Nom: Bec de sang
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bec%20de%20sang.ashx

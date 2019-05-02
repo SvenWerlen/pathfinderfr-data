@@ -31,7 +31,8 @@ URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx"
         "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.or%c3%a9ade%20(race).ashx",
         "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sylphe%20(race).ashx",
         "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx"]
+        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx"
+        ]
 
 PROPERTIES = [  u"Catégorie", u"Catégories", u"Conditions", u"Condition", u"Conditions requises", u"Normal", u"Avantage", u"Avantages", u"Spécial", u"À noter"]
 
@@ -98,6 +99,10 @@ for u in URLs:
                 elif s.string:
                     text += s.string
 
+            value = text.strip()
+            if value.startswith(":"):
+                value = value[1:]
+
             if key in PROPERTIES:
                 if key == u"Condition" or key == u"Conditions requises":
                     key = u"Conditions"
@@ -108,10 +113,10 @@ for u in URLs:
                 elif key == u"À noter":
                     key = u"Spécial"
 
-                don[key]=text.strip()
+                don[key]=value.strip()
                 text = ""
             elif u"Avantage" in don and len(key) < 15:
-                don[u"Avantage"] += "\n" + key.upper() + " " + text.strip()
+                don[u"Avantage"] += "\n" + key.upper() + " " + value.strip()
             else:
                 print("- Skipping unknown property %s" % key)
 
