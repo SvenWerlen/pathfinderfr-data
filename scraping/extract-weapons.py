@@ -14,9 +14,9 @@ from lxml import html
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx"
 URLDET = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx"
 MOCK_W = None
-MOCK_W = "mocks/weapons.html"           # décommenter pour tester avec les armes pré-téléchargées
+#MOCK_W = "mocks/weapons.html"           # décommenter pour tester avec les armes pré-téléchargées
 MOCK_WD = None
-MOCK_WD = "mocks/weapons-details.html"  # décommenter pour tester avec les armes pré-téléchargées
+#MOCK_WD = "mocks/weapons-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
 
 #
@@ -133,7 +133,7 @@ def addInfos(liste, name, source):
 if MOCK_WD:
     content = BeautifulSoup(open(MOCK_WD),features="lxml").body
 else:
-    content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
+    content = BeautifulSoup(urllib.request.urlopen(URLDET).read(),features="lxml").body
 
 section = jumpTo(html, 'h1',{'class':'separator'}, u"À mains nues")
 newObj = True
