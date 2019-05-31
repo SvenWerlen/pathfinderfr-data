@@ -82,6 +82,7 @@ if len(sys.argv) < 1:
     exit(1)
 
 liste = []
+listePouvoirs = []
 
 
 if MOCK_LIGNAGE:
@@ -142,20 +143,34 @@ for l in lignages:
     descr += "\n\nDONS SUPPLÉMENTAIRES: " + feats
     descr += "\n\nARCANES DE LIGNAGE: " + arcans
     
-    pouvoirs = jumpTo(lignageHTML, 'h2',{'class':'separator'}, u"Pouvoirs de lignage")
-    #if pouvoirs is None:
-    #    print("NOT FOUND!!")
-    #    continue
-    #for p in pouvoirs:
-    #    if p.name is None or p.name == 'a' or p.name == 'b' or p.name == 'i':
-    #        lignage['6Description'] += p.string
-    #    elif(p.name == 'br'):
-    #        lignage['6Description'] += '\\n'
-    #    elif(p.name == 'h2'):
-    #        break
-    
     lignage['6Description'] = descr
     liste.append(lignage)
+    
+    ## Pouvoirs de lignage
+    
+    pouvoirs = jumpTo(lignageHTML, 'h2',{'class':'separator'}, u"Pouvoirs de lignage")
+    if pouvoirs is None:
+        print("Pouvoirs de lignages not found!")
+        exit(1)
+    for p in pouvoirs:
+        if p.name == 'h2':
+            break
+        if p.name == 'b':
+            pouvoirName = p.text[:-1]    
+            pouvoir = {}
+            pouvoir['1Nom'] = u"Pouvoir de lignage " + link.text + ": " + pouvoirName
+            pouvoir['2Classe'] = u"Ensorceleur"
+            pouvoir['4Source'] = lignage['4Source']
+            pouvoir['5Niveau'] = 1
+            pouvoir['6Description'] = findProperty(jumpTo(lignageHTML, 'h2',{'class':'separator'}, u"Pouvoirs de lignage"), pouvoirName)
+            pouvoir[u'7Référence'] = lignage[u'7Référence']
+            pouvoir['EMPTY'] = ""
+            
+            if pouvoir['6Description'] == None:
+                print("Invalid description for pouvoir de lignage")
+                exit(1)
+            
+            listePouvoirs.append(pouvoir)
 
 #exit(1)
 
@@ -164,9 +179,19 @@ yml = yml.replace('1Nom','Nom')
 yml = yml.replace('2Classe','Classe')
 yml = yml.replace('4Source','Source')
 yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace("6Description: '",'Description: "')
-yml = yml.replace("\\n\\n:'",'"')
-yml = yml.replace("\\n\\n:'",'"')
+yml = yml.replace("6Description",'Description')
+yml = yml.replace(u'7Référence',u'Référence')
+yml = yml.replace("EMPTY: ''",'')
+print(yml)
+
+print("\n\n\n\n\n\n\n\n")
+
+yml = yaml.safe_dump(listePouvoirs,default_flow_style=False, allow_unicode=True)
+yml = yml.replace('1Nom','Nom')
+yml = yml.replace('2Classe','Classe')
+yml = yml.replace('4Source','Source')
+yml = yml.replace('5Niveau','Niveau')
+yml = yml.replace("6Description",'Description')
 yml = yml.replace(u'7Référence',u'Référence')
 yml = yml.replace("EMPTY: ''",'')
 print(yml)
