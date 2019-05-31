@@ -166,6 +166,11 @@ for l in lignages:
             pouvoir[u'7Référence'] = lignage[u'7Référence']
             pouvoir['EMPTY'] = ""
             
+            # extraire level
+            lvl = re.search('Au niveau (\d+)', pouvoir['6Description'])
+            if lvl:
+                pouvoir['5Niveau'] = int(lvl.group(1))
+            
             if pouvoir['6Description'] == None:
                 print("Invalid description for pouvoir de lignage")
                 exit(1)
