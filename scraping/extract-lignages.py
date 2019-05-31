@@ -40,7 +40,7 @@ def findProperty(html, propName):
                     value += e.string
                 else:
                     value += e
-            return value.replace('.','').strip()
+            return value.strip()
     return None
 
 #
