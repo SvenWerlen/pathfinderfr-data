@@ -117,7 +117,30 @@ for l in lignages:
         if descr.startswith('*'):
             continue
         break
-    lignage['6Description'] = descr
+    descr = descr.replace('\n','').strip()
+    
+    # additional information
+    skill = findProperty(lignageHTML.find(id='PageContentDiv'),u'Compétence de classe')
+    if skill == None:
+        print("Skill not found")
+        exit(1)
+    spells = findProperty(lignageHTML.find(id='PageContentDiv'),u'Sorts supplémentaires')
+    if spells == None:
+        print("Spells not found")
+        exit(1)
+    feats = findProperty(lignageHTML.find(id='PageContentDiv'),u'Dons supplémentaires')
+    if feats == None:
+        print("Feats not found")
+        exit(1)
+    arcans = findProperty(lignageHTML.find(id='PageContentDiv'),u'Arcanes de lignage')
+    if arcans == None:
+        print("Arcans not found")
+        exit(1)
+    
+    descr += "\n\nCOMPÉTENCE DE CLASSE: " + skill
+    descr += "\n\nSORTS SUPPLÉMENTAIRES: " + spells
+    descr += "\n\nDONS SUPPLÉMENTAIRES: " + feats
+    descr += "\n\nARCANES DE LIGNAGE: " + arcans
     
     pouvoirs = jumpTo(lignageHTML, 'h2',{'class':'separator'}, u"Pouvoirs de lignage")
     #if pouvoirs is None:
@@ -131,7 +154,7 @@ for l in lignages:
     #    elif(p.name == 'h2'):
     #        break
     
-    lignage['6Description'] = lignage['6Description'].replace('\n','').strip()
+    lignage['6Description'] = descr
     liste.append(lignage)
 
 #exit(1)
