@@ -158,7 +158,7 @@ for l in lignages:
         if p.name == 'b':
             pouvoirName = p.text[:-1]    
             pouvoir = {}
-            pouvoir['1Nom'] = u"Pouvoir de lignage " + link.text + ": " + pouvoirName
+            pouvoir['1Nom'] = u"Lignage " + link.text + ": " + pouvoirName
             pouvoir['2Classe'] = u"Ensorceleur"
             pouvoir['4Source'] = lignage['4Source']
             pouvoir['5Niveau'] = 1
