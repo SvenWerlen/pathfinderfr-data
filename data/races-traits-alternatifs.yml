@@ -1,3 +1,9 @@
+###
+### ATTENTION: certains traits ont été ajustés manuellement
+### - Duergars: les traits des Nains ont été ajoutés individuellement
+### - Suli: les attaques d'énergie ont été ajustés (nom et description)
+###
+
 - Nom: Armes ancestrales
   Race: Demi-elfe
   Source: MR
@@ -2525,17 +2531,66 @@
   Modifie:
   - Pouvoirs magiques
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx
-  
-- Nom: Traits nains
+
+- Nom: Trait nain (implacable)
   Race: Duergar
   Source: MR
   Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
-    remplace stabilité. Ils peuvent choisir des traits raciaux nains qui remplacent
-    le trait racial nain Robustesse en renonçant aux immunités duergars.
+    remplace stabilité.
+    Les nains sont doués pour se frayer un chemin sur les champs de bataille
+    et repousser leurs adversaires facilement. Ceux qui possèdent ce trait racial
+    reçoivent un bonus racial de +2 aux tests de manoeuvre offensive pour faire une
+    bousculade ou renverser un adversaire. Ce bonus s’applique uniquement si le nain
+    et son adversaire se tiennent debout sur le sol.
   Remplace:
   - Stabilité
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx  
+
+- Nom: Trait nain (montagnard)
+  Race: Duergar
+  Source: MR
+  Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
+    remplace stabilité.
+    Les nains des montagnes sont particulièrement doués pour l’escalade
+    et pour se déplacer sur d’étroites corniches rocheuses. Ceux qui possèdent ce
+    trait sont immunisés contre le vertige et ne perdent pas leur bonus de Dextérité
+    à la CA quand ils font un test d’Escalade ou d’Acrobaties pour traverser une surface
+    étroite ou glissante.
+  Remplace:
+  - Stabilité
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
+  
+- Nom: Trait nain (borné)
+  Race: Duergar
+  Source: MR
+  Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
+    remplace le trait racial nain Robuste.
+    Les nains sont réputés être têtus. Ceux qui possèdent ce trait reçoivent
+    un bonus racial de +2 aux jets de sauvegarde pour résister aux sorts et pouvoirs
+    magiques d’enchantement (charme) et d’enchantement (coercition). De plus, s’ils
+    ratent un de ces jets, ils ont le droit d’en refaire un, 1 round plus tard, pour
+    mettre prématurément un terme à l’effet (à condition qu’il dure plus d’un round).
+    Ce second jet a le même DD que le premier. Si le nain dispose d’un pouvoir similaire
+    issu d’une autre source (comme l’esprit fuyant du roublard), il ne peut en utiliser
+    qu’un des deux par round, mais il peut se servir du second au deuxième round s’il
+    a raté son jet avec le premier pouvoir.
+  Remplace:
   - Immunités des duergars
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
+
+- Nom: Trait nain (résistant à la magie)
+  Race: Duergar
+  Source: MR
+  Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
+    remplace le trait racial nain Robuste.
+    Les clans nains les plus anciens ont développé une résistance particulière
+    à la magie. Les nains qui disposent de ce trait racial gagnent une RM de 5 + niveau
+    de personnage. Ils peuvent la baisser pendant 1 round, par une action simple.
+    Les nains qui possèdent ce trait racial subissent un malus de -2 aux tests de
+    Concentration liés aux sorts profanes.
+  Remplace:
+  - Immunités des duergars
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
   
 - Nom: Vision de jour
   Race: Duergar
@@ -2728,23 +2783,15 @@
   - Suspicieux
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.strix%20(race).ashx
   
-- Nom: Attaque d’énergie (Sur)
+- Nom: Attaque d’énergie (Sur), bouclier d’éclairs (électricité)
   Race: Suli
   Source: MR
-  Description: 'Le suli possédant ce trait racial a un lien plus fort avec un type
-    d’énergie. Choisissez : acide, froid, électricité ou feu. La capacité assaut élémentaire
-    du suli ne peut infliger que des dégâts de ce type d’énergie. Le suli a une résistance
+  Description: Le suli possédant ce trait racial a un lien plus fort avec un type
+    d’énergie. La capacité assaut élémentaire
+    du suli ne peut infliger que des dégâts du type électricité. Le suli a une résistance
     de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
-    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire
-    basée sur le type d’énergie choisi :'
-  Modifie:
-  - Assaut élémentaire (Sur)
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
-  
-- Nom: Bouclier d’éclairs (électricité)
-  Race: Suli
-  Source: MR
-  Description: Une fois par round, par une action immédiate, le suli peut envoyer
+    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
+    Une fois par round, par une action immédiate, le suli peut envoyer
     une décharge à une créature qui le touche ou l’attaque au moyen d’une attaque
     naturelle,d’une attaque à mains nues ou d’une arme de corps à corps en métal,
     infligeant 1d6 points d’électricité à la créature.
@@ -2752,10 +2799,15 @@
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
   
-- Nom: Main de feu (feu)
+- Nom: Attaque d’énergie (Sur), main de feu (feu)
   Race: Suli
   Source: MR
-  Description: 'Plutôt que de rajouter des dégâts à une attaque de corps à corps,
+  Description: 'Le suli possédant ce trait racial a un lien plus fort avec un type
+    d’énergie. La capacité assaut élémentaire
+    du suli ne peut infliger que des dégâts du type feu. Le suli a une résistance
+    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
+    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
+    Plutôt que de rajouter des dégâts à une attaque de corps à corps,
     le suli peut projeter une  d’une arme de jet. Le suli effectue une attaque de
     contact à distance : s’il touche sa cible, cette dernière reçoit 1d6 points de
     dégâts de feu. Les flammes ont un facteur de portée de 3 mètres.'
@@ -2763,10 +2815,15 @@
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
   
-- Nom: Pied de terre (acide)
+- Nom: Attaque d’énergie (Sur), pied de terre (acide)
   Race: Suli
   Source: MR
-  Description: Lorsque le suli se déplace sur un terrain difficile lié à la terre
+  Description: Le suli possédant ce trait racial a un lien plus fort avec un type
+    d’énergie. La capacité assaut élémentaire
+    du suli ne peut infliger que des dégâts du type acide. Le suli a une résistance
+    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
+    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
+    Lorsque le suli se déplace sur un terrain difficile lié à la terre
     ou à la pierre (décombres, boue, sable,etc.) il peut se déplacer de 1,5 mètre
     sur ce terrain tous les rounds comme s’il s’agissait d’un terrain normal. Cela
     lui permet de faire un pas de placement sur ce terrain difficile. Les autres genres
@@ -2776,10 +2833,15 @@
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
   
-- Nom: Semelle de glace (froid)
+- Nom: Attaque d’énergie (Sur), semelle de glace (froid)
   Race: Suli
   Source: MR
-  Description: Le suli peut marcher sur les liquides à base d’eau comme s’il utilisait
+  Description: Le suli possédant ce trait racial a un lien plus fort avec un type
+    d’énergie. La capacité assaut élémentaire
+    du suli ne peut infliger que des dégâts du type glace. Le suli a une résistance
+    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
+    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
+    Le suli peut marcher sur les liquides à base d’eau comme s’il utilisait
     marche sur l’onde, à la seule différence qu’au lieu de planer au-dessus de la
     surface, il crée une couche de glace temporaire qui le soutient et fond dès qu’il
     s’en éloigne. La glace n’est pas glissante pour le suli et n’affecte pas son équilibre
