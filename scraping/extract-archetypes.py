@@ -83,7 +83,7 @@ idx = 0
 for el in list:
     
     idx += 1
-    if idx != 1:
+    if idx > 2:
         continue
     
     title = el.find_all('h2', limit=1)[0]
@@ -185,8 +185,8 @@ for el in list:
             if s.name == 'h3':
                 if newObj:
                     classfeature['2Classe'] = classe
-                    classfeature['3Archetype'] = nom
-                    classfeature['7Description'] = descr.replace('\n','').strip()
+                    classfeature['3Archétype'] = nom
+                    classfeature['7Description'] = descr.strip()
                     classfeature['EMPTY'] = ""
                     
                      # extraire niveau
@@ -206,7 +206,7 @@ for el in list:
                     if e.name == 'a':
                         classfeature[u'8Référence']=pageURL + e['href']
             elif s.name == 'br':
-                descr += '\\n'
+                descr += '\n'
             elif s.name is None or s.name == 'a' or s.name == 'i' or s.name == 'b':
                 if s.string is None:
                     for s2 in s.children:
@@ -214,6 +214,10 @@ for el in list:
                             descr += s2.string
                 else:
                     descr += s.string
+            elif s.name == "ul":
+                for s2 in s.find_all("li"):
+                    descr += "\n\n" + s2.text
+                    
             elif s.name == 'div':
                 for s2 in s.children:
                     if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
@@ -222,8 +226,8 @@ for el in list:
 
         ## last element
         classfeature['2Classe'] = classe
-        classfeature['3Archetype'] = nom
-        classfeature['7Description'] = descr.replace('\n','').strip()
+        classfeature['3Archétype'] = nom
+        classfeature['7Description'] = descr.strip()
         classfeature['EMPTY'] = ""
         
          # extraire niveau
@@ -252,7 +256,7 @@ print("\n\n\n\n\n\n")
 yml = yaml.safe_dump(classfeatures,default_flow_style=False, allow_unicode=True)
 yml = yml.replace(u'1Nom',u'Nom')
 yml = yml.replace(u'2Classe',u'Classe')
-yml = yml.replace(u'3Archetype',u'Archetype')
+yml = yml.replace(u'3Archétype',u'Archétype')
 yml = yml.replace(u'4Source',u'Source')
 yml = yml.replace(u'5Niveau',u'Niveau')
 yml = yml.replace(u'6Auto',u'Auto')
