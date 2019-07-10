@@ -199,7 +199,7 @@ for data in URLs:
             elif value == u'Connaissances (mystère)':
                 value = u'Connaissances (mystères)'
         
-            if value == u'Connaissances (toutes)' or value == u'Connaissances (tous les domaines)':
+            if value == u'Connaissances (toutes)' or value == u'Connaissances (tous les domaines)' or value == u'Connaissances (au choix, chaque compétence devant être prise séparément)':
                 for c in CONN:
                     cl[u'CompétencesDeClasse'].append({u'Compétence':c})
             else:
