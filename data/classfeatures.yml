@@ -9059,3 +9059,867 @@
     Fléchette d’acide (Mag). Par une action simple, l’invocateur peut envoyer une fléchette d’acide sur un ennemi distant de 9 m (6 cases) ou moins en réussissant une attaque de contact à distance. La fléchette d’acide inflige 1d6 points de dégâts d’acide + 1 point par deux niveaux de magicien. Chaque jour, l’invocateur peut utiliser ce pouvoir un nombre de fois égal à 3 + son modificateur d’Intelligence. Cette attaque ignore la résistance à la magie.
     Pas interdimensionnels (Mag). Ce pouvoir permet à un invocateur de niveau 8 de se téléporter chaque jour sur une distance totale de 9 m (6 cases) par niveau de lanceur de sorts. Chaque utilisation de ce pouvoir nécessite une action simple, ne provoque pas d’attaque d’opportunité et doit correspondre à une distance exprimable sous la forme d’un multiple de 1,50 m (1 case). L’invocateur peut emmener d’autres créatures avec lui (pour autant qu’elles soient d’accord) mais il doit alors décompter plusieurs fois la distance parcourue de son quota journalier (une fois pour lui et une fois de plus pour chaque personne qui l’accompagne)."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation%20(%c3%a9cole).ashx
+
+  
+##
+## Archetype du barbare
+##  
+  
+- Nom: Visage terrifiant (Ext)
+  Classe: Barbare
+  Archetype: Balafré enragé
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Un balafré enragé ajoute la moitié de son niveau de barbare aux tests
+    d’Intimidation contre les humanoïdes qui ne font pas partie d’une tribu barbare.
+    Quand il interagit avec des barbares, il peut ajouter ce bonus à ses tests de
+    Diplomatie. Le DD des effets de terreur qu’il génère augmente de 1. Ce pouvoir
+    remplace le déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx#Visage_terrifiant_Ext_0
+  
+- Nom: Tolérance (Ext)
+  Classe: Barbare
+  Archetype: Balafré enragé
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, le balafré enragé qui rate un jet de sauvegarde contre
+    un effet qui devrait le rendre nauséeux, fiévreux, fatigué ou épuisé, peut en
+    refaire un au début de son prochain tour. Il n’a droit qu’à un jet de sauvegarde
+    supplémentaire. Si l’effet n’autorise pas de jet de sauvegarde, sa durée est réduite
+    de moitié (1 round au minimum). Ce pouvoir remplace esquive instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx#Tolérance_Ext_1
+  
+- Nom: Scarification (Ext)
+  Classe: Barbare
+  Archetype: Balafré enragé
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le balafré enragé ignore 1 point de saignement par round.
+    Ce montant augmente de 1 tous les trois niveaux après le 3. Au niveau 15, le balafré
+    ignore un effet de saignement par round. Ce pouvoir remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx#Scarification_Ext_2
+  
+- Nom: Science de la tolérance (Ext)
+  Classe: Barbare
+  Archetype: Balafré enragé
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, la tolérance du balafré enragé s’applique aussi aux effets
+    qui devraient le rendre hébété, effrayé, secoué ou étourdi. Ce pouvoir remplace
+    esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx#Science_de_la_tolérance_Ext_3
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Balafré enragé
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    balafré enragé : colère autosuggérée, férocité inspirée, hurlement terrifiant,
+    imprudente désinvolture, marque prometteuse, massue vivante, nouvelle vigueur,
+    réduction de dégâts accrue, regard intimidant, viens m’attraper, vie renouvelée,
+    vigueur interne, vigueur régénératrice et vitalité renouvelée.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx#Pouvoirs_de_rage_4
+  
+- Nom: Courage nu (Ext)
+  Classe: Barbare
+  Archetype: Barbare sauvage
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3 et lorsqu’il ne porte aucune armure (les boucliers sont
+    autorisés), le barbare sauvage bénéficie d’un bonus d’esquive de +1 à sa CA et
+    d’un bonus de moral de +1 à ses jets de sauvegarde contre la terreur, +1 par tranche
+    de six niveaux au-delà du niveau 3. Cette aptitude remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20sauvage%20(barbare).ashx#Courage_nu_Ext_0
+  
+- Nom: Robustesse naturelle (Ext)
+  Classe: Barbare
+  Archetype: Barbare sauvage
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: Au niveau 7 et lorsqu’il ne porte aucune armure (les boucliers sont
+    autorisés), le barbare sauvage bénéficie d’un bonus d’armure naturelle de +1 à
+    sa CA, +1 par tranche de trois niveaux au-delà du niveau 7. Cette aptitude remplace
+    réduction des dégâts.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20sauvage%20(barbare).ashx#Robustesse_naturelle_Ext_1
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Barbare sauvage
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype du barbare sauvage :
+    égratignure, roulé-boulé, hurlement terrifiant, posture défensive, réduction de
+    dégâts accrue, regard intimidant, superstition.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20sauvage%20(barbare).ashx#Pouvoirs_de_rage_2
+  
+- Nom: Armes et armures
+  Classe: Barbare
+  Archetype: Barbare urbain
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Le barbare urbain n’est pas formé au port de l’armure intermédiaire.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx#Armes_et_armures_0
+  
+- Nom: Compétences
+  Classe: Barbare
+  Archetype: Barbare urbain
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Le barbare urbain n’a pas Connaissances (nature) (Int), Dressage (Cha)
+    ni Survie (Sag) comme compétences de classe mais gagne à la place Connaissances
+    (folklore local) (Int), Connaissances (noblesse) (Int), Diplomatie (Cha), Linguistique
+    (Int) et Profession (Sag).\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx#Compétences_1
+  
+- Nom: Contrôle des foules (Ext)
+  Classe: Barbare
+  Archetype: Barbare urbain
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, le barbare urbain gagne un bonus de +1 aux jets d’attaque
+    et un bonus d’esquive de +1 à la CA quand il est adjacent à deux ennemis ou plus.
+    De plus, la foule ne gêne pas ses mouvements et il gagne un bonus égal à 1/2 niveau
+    de barbare aux tests d’Intimidation pour l’influencer. Ce pouvoir remplace déplacement
+    accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx#Contrôle_des_foules_Ext_2
+  
+- Nom: Rage contrôlée (Ext)
+  Classe: Barbare
+  Archetype: Barbare urbain
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Quand un barbare urbain enrage, il peut appliquer un bonus de moral
+    de +4 à sa valeur de Force, de Dextérité ou de Constitution au lieu de bénéficier
+    de ses effets de rage habituels. Ce bonus passe à +6 quand le barbare gagne rage
+    de grand berserker et à +8 quand il obtient rage de maître berserker. Il peut
+    appliquer la totalité du bonus à une valeur de caractéristique ou le répartir
+    entre plusieurs, par tranche de +2. Quand le barbare urbain utilise la rage contrôlée,
+    il ne gagne pas de bonus aux jets de Volonté, n’a pas de malus à la CA et peut
+    toujours utiliser les compétences basées sur l’Intelligence, la Dextérité et le
+    Charisme. En dehors de cela, ce pouvoir fonctionne comme la rage ordinaire.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx#Rage_contrôlée_Ext_3
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Barbare urbain
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    barbare urbain : coup inattendu, esprit vide, posture défensive, poursuite, précision
+    affinée, précision étonnante, précision létale, précision mortelle, réflexes rapides,
+    regard intimidant, vantardise, viens m''attraper.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx#Pouvoirs_de_rage_4
+  
+- Nom: Chasseur de gros gibier (Ext)
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Un briseur de titans gagne un bonus de +1 aux jets d’attaque et un
+    bonus d’esquive de +1 à la CA au corps à corps contre les créatures plus grandes
+    que lui. Ce pouvoir remplace le déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Chasseur_de_gros_gibier_Ext_0
+  
+- Nom: Poigne de Jotun (Ext)
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, le briseur de titans a le droit de manier une arme de
+    corps à corps à deux mains avec une seule main, avec un malus de -2 aux jets d’attaque.
+    L’arme doit être adaptée à sa taille et, quand le barbare détermine les effets
+    de l’Attaque en puissance, les bonus de Force aux dégâts et autres, il la considère
+    comme une arme à une main. Ce pouvoir remplace esquive instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Poigne_de_Jotun_Ext_1
+  
+- Nom: Armes massives (Ext)
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le briseur de titans apprend à manier efficacement les
+    énormes armes qu’il récupère sur le cadavre de ses ennemis titanesques. Il peut
+    manier des armes à deux mains conçues pour des créatures plus grandes que lui
+    d'une catégorie de taille avec un malus aux jets d'attaque augmenté de 4. Toutefois,
+    le malus aux jets d’attaque lié au maniement d'armes d’une catégorie de taille
+    supérieure diminue de 1, puis encore de 1 tous les trois niveaux après le 3e (jusqu'à
+    un minimum de 0). Ce pouvoir remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Armes_massives_Ext_2
+  
+- Nom: Raccourcir l’allonge (Ext)
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, par une action rapide, le briseur de titans peut choisir
+    une créature qui se trouve dans sa ligne de mire. Jusqu’à la fin de son tour,
+    on considère que l’allonge de la cible est réduite de 1,50 m (1 ) quand elle essaye
+    d’atteindre le briseur. Cette réduction augmente de 1,50 m (1 ) tous les cinq
+    niveaux après le 5e. Ce pouvoir remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Raccourcir_l’allonge_Ext_3
+  
+- Nom: Rage titanesque (Sur)
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: Au niveau 14, le briseur de titans peut bénéficier des effets d’un
+    agrandissement quand il devient enragé. Il doit dépenser 2 rounds de rage pour
+    chaque round passé sous l’effet de la rage titanesque et, à la fin de son accès
+    de rage, il est épuisé et non fatigué. Ce pouvoir remplace volonté indomptable.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Rage_titanesque_Sur_4
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Briseur de titan
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    briseur de titans : brise roc, brise roc supérieur, coup redoutable, fracassement,
+    massue vivante, pic de force, repousser l''ennemi.\n\n\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx#Pouvoirs_de_rage_5
+  
+- Nom: Rage de l’ivrogne (Ext)
+  Classe: Barbare
+  Archetype: Brute avinée
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Lorsqu’il entre en rage et par une action de mouvement, le barbare
+    peut avaler une potion, une chope de bière ou l’équivalent en alcool, ce qui ne
+    provoque pas d’attaque d’opportunité. Une potion produira ses effets normalement,
+    et une boisson alcoolisée permettra au personnage de maintenir sa rage durant
+    le round sans avoir à dépenser un de ses rounds de rage quotidiens (au lieu des
+    effets habituels de l’alcool). En plus de la fatigue normale qui suit une rage,
+    le barbare est nauséeux pendant un nombre de rounds égal au nombre de doses d’alcool
+    bues pendant sa rage. Le pouvoir de rage sans fatigue n’annule pas les nausées,
+    mais celui de vigueur interne le fait. Cette aptitude remplace déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brute%20avin%c3%a9e%20(barbare).ashx#Rage_de_l’ivrogne_Ext_0
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Brute avinée
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype de la brute avinée :
+    bon pour ce que tu as, buveur prodigieux, courage liquide, ivresse rugissante,
+    moment de lucidité, vantardise, vigueur interne.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brute%20avin%c3%a9e%20(barbare).ashx#Pouvoirs_de_rage_1
+  
+- Nom: Armes et armures
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Une carcasse métallique est formée au port des armures lourdes.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Armes_et_armures_0
+  
+- Nom: Posture indomptable (Ext)
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Une carcasse métallique gagne un bonus de +1 aux tests de manœuvre
+    offensive et au DMD contre les tentatives de bousculade. Elle gagne le même bonus
+    aux jets de Réflexes pour éviter un piétinement. Elle gagne aussi un bonus de
+    +1 à la CA contre les attaques de charge ainsi qu’aux jets d’attaque et de dégâts
+    contre des créatures qui chargent. Ce pouvoir remplace le déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Posture_indomptable_Ext_1
+  
+- Nom: Rapidité en armure (Ext)
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, la carcasse métallique se déplace plus vite quand elle
+    possède une armure intermédiaire et une armure lourde. Elle se déplace alors 1,50
+    m (1 ) plus vite, sans dépasser sa vitesse maximale. Ce pouvoir remplace esquive
+    instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Rapidité_en_armure_Ext_2
+  
+- Nom: Solide comme l’acier (Ext)
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, la carcasse métallique apprend à utiliser son armure
+    pour se protéger des coups les plus dangereux. Quand elle porte une armure lourde,
+    elle gagne un bonus de +1 à la CA contre les jets de confirmation de coup critique.
+    Ce bonus augmente de +1 tous les trois niveaux au-delà du 3 (avec un maximum de
+    +6 au niveau 18). Ce pouvoir remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Solide_comme_l’acier_Ext_3
+  
+- Nom: Science de la rapidité en armure (Ext)
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, la vitesse de déplacement de la carcasse métallique dépasse
+    la vitesse normale de sa race de +3 m. Ce bonus fonctionne quelle que soit l’armure
+    qu’elle porte, même une lourde, mais pas si elle porte une charge lourde. Ce bonus
+    s’applique avant de modifier la vitesse de déplacement de la carcasse à cause
+    d’une charge ou d’une armure. Ce bonus se cumule avec les autres bonus de vitesse
+    du barbare. Ce pouvoir remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Science_de_la_rapidité_en_armure_Ext_4
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Carcasse métallique
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    carcasse métallique : attaque dominatrice, avance dominatrice, coup inattendu,
+    esquive réflexe, posture défensive, poursuite, réduction de dégâts accrue, vantardise,
+    vie préservée, vie préservée supérieure.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx#Pouvoirs_de_rage_5
+  
+- Nom: Destructeur (Ext)
+  Classe: Barbare
+  Archetype: Concasseur
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Lorsqu’il porte une attaque de corps à corps sur un objet ou qu’il
+    choisit d’effectuer la manœuvre de combat destruction, le personnage ajoute la
+    moitié de son niveau de barbare (minimum +1) sur ses jets de dégâts. Cette aptitude
+    remplace déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Concasseur%20(barbare).ashx#Destructeur_Ext_0
+  
+- Nom: Récupérateur (Ext)
+  Classe: Barbare
+  Archetype: Concasseur
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le concasseur ne subit aucune pénalité lorsqu’il utilise
+    une arme improvisée ou cassée. Il bénéficie même d’un bonus de +1 par tranche
+    de trois niveaux au-delà du niveau 3 sur ses jets de dégâts. Cette aptitude remplace
+    sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Concasseur%20(barbare).ashx#Récupérateur_Ext_1
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Concasseur
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype du concasseur : brise
+    roc, fracassement, pic de force.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Concasseur%20(barbare).ashx#Pouvoirs_de_rage_2
+  
+- Nom: Réduction de rage (Ext)
+  Classe: Barbare
+  Archetype: Enragé haineux
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2 puis tous les niveaux pairs, l’enragé haineux ne gagne
+    qu’un round de rage supplémentaire par jour, au lieu de 2.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx#Réduction_de_rage_Ext_0
+  
+- Nom: Ennemi juré (Ext)
+  Classe: Barbare
+  Archetype: Enragé haineux
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, l’enragé haineux choisit un ennemi juré. Ce pouvoir fonctionne
+    comme celui du rôdeur. L'enragé haineux choisit un ennemi juré supplémentaire
+    aux niveaux 8, 14 et 20 et augmente ses bonus contre ceux qu’il possède déjà,
+    comme indiqué dans la description du rôdeur. \n\nQuand l’enragé haineux est en
+    rage, il fait tout ce qu’il peut pour combattre un ennemi juré plutôt qu’un autre
+    adversaire. S’il sait qu’un de ses ennemi juré est présent, il doit réussir un
+    jet de Volonté DD 20 à chaque round s’il veut attaquer une autre créature, sinon,
+    il est obligé d’attaquer son ennemi juré ou de s’en rapprocher. Il est libre d’attaquer
+    les créatures qui l’empêchent d’atteindre son ennemi juré (qu’elles le gênent
+    activement ou se trouvent juste sur son chemin). Quand il essaie d’atteindre un
+    ennemi juré, il peut éviter normalement les obstacles dangereux et il n’est pas
+    obligé de suivre l’itinéraire le plus court.\n\nCe pouvoir remplace le pouvoir
+    de rage de barbare de niveau 2. Aux niveaux 8, 14 et 20, l’enragé haineux gagne
+    un nouvel ennemi juré au lieu d’un pouvoir de rage et augmente ses bonus contre
+    les anciens.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx#Ennemi_juré_Ext_1
+  
+- Nom: Alimenter la rage (Ext)
+  Classe: Barbare
+  Archetype: Enragé haineux
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, l’enragé haineux gagne 1 round de rage supplémentaire
+    à chaque fois qu’il tue un ennemi juré ou le fait tomber inconscient. Ces rounds
+    servent uniquement à prolonger une phase de rage en cours et disparaissent quand
+    elle se termine. Ce pouvoir remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx#Alimenter_la_rage_Ext_2
+  
+- Nom: Amplifier par la rage (Ext)
+  Classe: Barbare
+  Archetype: Enragé haineux
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: Au niveau 9, l’enragé haineux ajoute la moitié de ses bonus d’ennemi
+    juré au DD des pouvoirs de rage qu’il utilise contre un ennemi juré. Ce pouvoir
+    remplace sens des pièges 3.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx#Amplifier_par_la_rage_Ext_3
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Enragé haineux
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype d’enragé
+    haineux : regard intimidant, colère autosuggérée, hurlement terrifiant, viens
+    m’attraper, férocité inspirée, avance dominatrice, imprudente désinvolture.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx#Pouvoirs_de_rage_4
+  
+- Nom: Furie élémentaire (Ext)
+  Classe: Barbare
+  Archetype: Frère élémentaire
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3 et lorsqu’il est en rage, si le frère élémentaire encaisse
+    des dégâts d’énergie supérieurs ou égaux à son niveau dans la classe, il ajoute
+    +1 au nombre de rounds total pendant lesquels il peut rester en rage durant la
+    journée, +1 par tranche de trois niveaux au-delà du niveau 6, jusqu’à un maximum
+    de +6 rounds par attaque d’énergie au niveau 18. Cette aptitude remplace sens
+    des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fr%c3%a8re%20%c3%a9l%c3%a9mentaire%20(barbare).ashx#Furie_élémentaire_Ext_0
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Frère élémentaire
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype du frère élémentaire
+    : absorption d’énergie, éruption d’énergie, rage élémentaire, rage élémentaire
+    inférieure, rage élémentaire supérieure, résistance à l’énergie.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fr%c3%a8re%20%c3%a9l%c3%a9mentaire%20(barbare).ashx#Pouvoirs_de_rage_1
+  
+- Nom: Cavalier rapide (Ext)
+  Classe: Barbare
+  Archetype: Furie montée
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Quelle que soit la monture du barbare, sa vitesse de déplacement est
+    augmentée de 3 mètres (2 ). Cette aptitude remplace déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Furie%20mont%c3%a9e%20(barbare).ashx#Cavalier_rapide_Ext_0
+  
+- Nom: Monture bestiale (Ext)
+  Classe: Barbare
+  Archetype: Furie montée
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, la furie montée gagne l’amitié d’une monture sauvage.
+    Cette aptitude fonctionne comme celle du compagnon animal du druide. Le niveau
+    effectif de druide du personnage sera inférieur de 4 à son niveau de barbare.
+    L’animal doit appartenir à une espèce qu’il pourra diriger et convenir comme monture.
+    Un barbare de taille M pourra chevaucher un chameau ou un cheval. Un poney ou
+    un loup seront adaptés pour un barbare de taille P, mais aussi un sanglier ou
+    un chien s’il est de niveau 8 ou plus. Lorsque le cavalier entre en rage et qu’il
+    se trouve sur le dos de sa monture, celle-ci bénéficie d’un bonus de moral de
+    +2 à sa Force. Cette aptitude remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Furie%20mont%c3%a9e%20(barbare).ashx#Monture_bestiale_Ext_1
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Furie montée
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype de la furie montée :
+    monture féroce, monture féroce majeur, monture spirituelle, piétinement féroce,
+    piétinement féroce majeur.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Furie%20mont%c3%a9e%20(barbare).ashx#Pouvoirs_de_rage_2
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Guerrier totem
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'L’archétype du guerrier totem est entièrement basé sur les pouvoirs
+    de rage du totem. En plus des pouvoirs de totem proprement dits, les pouvoirs
+    de rage suivants complètent l’archétype du guerrier totem, et ce en fonction du
+    totem choisi : escalade en rage, fureur animale, nage en rage, pas rapides, saut
+    en rage, vision dans le noir, vision dans la nuit.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Guerrier%20totem%20(barbare).ashx#Pouvoirs_de_rage_0
+  
+- Nom: Invulnérabilité (Ext)
+  Classe: Barbare
+  Archetype: Invulnérable enragé
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, le personnage gagne une RD/- égale à la moitié de son
+    niveau de barbare. Cette réduction des dégâts est doublée contre les dommages
+    non létaux. Cette aptitude remplace esquive instinctive, esquive instinctive supérieure
+    et réduction de dégâts.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invuln%c3%a9rable%20enrag%c3%a9%20(barbare).ashx#Invulnérabilité_Ext_0
+  
+- Nom: Endurance extrême (Ext)
+  Classe: Barbare
+  Archetype: Invulnérable enragé
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, l’invulnérable enragé est immunisé aux effets du chaud
+    ou du froid naturel (choisir l’un ou l’autre) comme s’il était sous l’influence
+    du sort endurance aux énergies destructives. De plus, il gagne un point de résistance
+    au feu ou au froid par tranche de trois niveaux au-delà du niveau 3. Cette aptitude
+    remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invuln%c3%a9rable%20enrag%c3%a9%20(barbare).ashx#Endurance_extrême_Ext_1
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Invulnérable enragé
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype de l’invulnérable enragé
+    : férocité inspirée, imprudente désinvolture, nouvelle vigueur, réduction de dégâts
+    accrue, vie préservée, viens m''attraper.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invuln%c3%a9rable%20enrag%c3%a9%20(barbare).ashx#Pouvoirs_de_rage_2
+  
+- Nom: Lanceur compétent (Ext)
+  Classe: Barbare
+  Archetype: Lanceur
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Le barbare est doué pour lancer des objets pendant qu’il se bat. Augmentez
+    le facteur de portée de n’importe quel projectile de 3 mètres (2 ). Cette aptitude
+    remplace déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanceur%20(barbare).ashx#Lanceur_compétent_Ext_0
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Lanceur
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs de rage suivants complètent l''archétype du lanceur
+    : pic de force, précision étonnante, projectile, projectile en charge, projectile
+    majeur, projectile mineur.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanceur%20(barbare).ashx#Pouvoirs_de_rage_1
+  
+- Nom: Lutte sauvage (Ext)
+  Classe: Barbare
+  Archetype: Pugiliste brutal
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, le personnage ne subit que la moitié des pénalités normales
+    à la Dextérité, aux jets d’attaque et aux tests de manœuvres de combat lorsqu’il
+    est agrippé. Il peut effectuer une attaque d’opportunité sur les créatures qui
+    cherchent à l’agripper, même si elles possèdent le don Science de la lutte ou
+    l’attaque spéciale d’étreinte. S’il parvient à toucher son adversaire grâce à
+    l’une de ces attaques d’opportunité, le barbare bénéficie d’un bonus de circonstance
+    de +2 à son DMD sur toutes les tentatives visant à l’agripper. Il ne peut cependant
+    pas bénéficier des attaques d’opportunité si son adversaire a réussi à l’agripper.
+    Cette aptitude remplace esquive instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugiliste%20brutal%20(barbare).ashx#Lutte_sauvage_Ext_0
+  
+- Nom: Guerrier de la fosse (Ext)
+  Classe: Barbare
+  Archetype: Pugiliste brutal
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le pugiliste brutal a appris les coups vicieux de la
+    lutte dans les fosses de combat et les arènes de gladiateurs. Il bénéficie d’un
+    bonus d’intuition de +1 à son BMO ou son DMD sur la manœuvre de combat de son
+    choix, et d’un bonus supplémentaire de +2 s’il ne porte aucune armure (les boucliers
+    sont permis). Tous les trois niveaux au-delà du niveau 3, le barbare peut choisir
+    une nouvelle manoeuvre de combat et ajouter ce bonus à son BMO ou son DMD, mais
+    pas plus de deux fois pour la même manoeuvre (une fois pour le BMO et une fois
+    pour le DMD). Cette aptitude remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugiliste%20brutal%20(barbare).ashx#Guerrier_de_la_fosse_Ext_1
+  
+- Nom: Science de la lutte sauvage (Ext)
+  Classe: Barbare
+  Archetype: Pugiliste brutal
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, le pugiliste brutal ne subit plus de pénalité à la Dextérité,
+    aux jets d’attaque et aux tests de manœuvre de combat lorsqu’il est agrippé. On
+    considère également qu’il est d’une catégorie de taille supérieure à sa taille
+    réelle lorsqu’il s’agit de déterminer s’il peut ou non agripper ou être agrippé.
+    Cette aptitude remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugiliste%20brutal%20(barbare).ashx#Science_de_la_lutte_sauvage_Ext_2
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Pugiliste brutal
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype du pugiliste brutal
+    : attaque dominatrice, avance dominatrice,  bagarreur, bagarreur majeur, furie
+    animale,  percussion, pic de force, repousser l''ennemi.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugiliste%20brutal%20(barbare).ashx#Pouvoirs_de_rage_3
+  
+- Nom: Rage incontrôlée (Ext)
+  Classe: Barbare
+  Archetype: Sauvage enragé
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: La rage du sauvage enragé fonctionne normalement, sauf quand il réduit
+    une créature à 0 point de vie ou moins. Il doit alors réussir un jet de Volonté
+    (DD 10 + 1/2 niveau du barbare + modificateur de Constitution du barbare) ou être
+    confus. Pendant le reste de son tour, il attaque la créature la plus proche (mais
+    pas sa propre personne). Au round suivant, il agit comme sous l’effet d’un sort
+    de confusion. À la fin de ce round et à chaque round qui suit, il a droit à un
+    nouveau jet de Volonté pour mettre un terme à la confusion. Les rounds de confusion
+    ne sont pas décomptés des rounds de rage quotidiens du barbare mais il ne peut
+    pas mettre un terme à son accès de rage volontairement et ne peut pas utiliser
+    ses pouvoirs de rage tant qu’il est confus.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sauvage%20enrag%c3%a9%20(barbare).ashx#Rage_incontrôlée_Ext_0
+  
+- Nom: Combat sauvage (Ext)
+  Classe: Barbare
+  Archetype: Sauvage enragé
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, même quand le barbare n’est pas enragé, il se bat avec
+    férocité et s’abandonne à la sauvagerie du combat. Quand il fait une attaque à
+    outrance, il a droit à une attaque supplémentaire par round, avec son meilleur
+    bonus de base à l’attaque. En revanche, il subit un malus de -2 aux jets d’attaque
+    et de -4 à la CA jusqu’au début de son prochain tour. Ce pouvoir remplace esquive
+    instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sauvage%20enrag%c3%a9%20(barbare).ashx#Combat_sauvage_Ext_1
+  
+- Nom: Conversion de rage (Ext)
+  Classe: Barbare
+  Archetype: Sauvage enragé
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, le sauvage enragé qui rate un jet de sauvegarde contre
+    un effet mental a droit à un nouveau jet de sauvegarde au début son tour suivant.
+    S’il réussit, l’effet prend fin, le barbare devient enragé puis confus, comme
+    indiqué plus haut. Ce pouvoir remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sauvage%20enrag%c3%a9%20(barbare).ashx#Conversion_de_rage_Ext_2
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Sauvage enragé
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    sauvage enragé : bagarreur, bagarreur majeur, coup handicapant, coup puissant,
+    coup redoutable, fureur animale, massue vivante, poursuite, réflexes rapides et
+    regard intimidant.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sauvage%20enrag%c3%a9%20(barbare).ashx#Pouvoirs_de_rage_3
+  
+- Nom: Sixième sens (Ext)
+  Classe: Barbare
+  Archetype: Superstitieux
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le personnage bénéficie d’un bonus de +1 à son initiative
+    et d’un bonus d’intuition de +1 à sa CA durant les round de surprise, +1 par tranche
+    de trois niveaux au-delà du niveau 3. Cette aptitude remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Superstitieux%20(barbare).ashx#Sixième_sens_Ext_0
+  
+- Nom: Sens Aiguisés (Ext)
+  Classe: Barbare
+  Archetype: Superstitieux
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Cette aptitude remplace réduction de dégâts.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Superstitieux%20(barbare).ashx#Sens_Aiguisés_Ext_1
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Superstitieux
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Les pouvoirs suivants complètent l’archétype du barbare superstitieux
+    : briseur de sorts, chasseur de sorcière, colère autosuggérée, esprit vide, perturbateur,
+    superstition.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Superstitieux%20(barbare).ashx#Pouvoirs_de_rage_2
+  
+- Nom: Armes et armures
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Une terreur des mers n’est pas formée au port de l’armure intermédiaire.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Armes_et_armures_0
+  
+- Nom: Terreur marine (Ext)
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Une terreur des mers peut retenir son souffle pendant un nombre de
+    rounds égal à quatre fois sa valeur de Constitution. De plus, elle se déplace
+    normalement dans les cases d’eau stagnante et de tourbière de moins de 30 cm de
+    profondeur. Elle n’a pas besoin de payer un coût supplémentaire en mouvement pour
+    se déplacer dans ces zones. Enfin, elle ignore le bonus d’abri à la CA dont disposent
+    habituellement les créatures partiellement immergées. Ce pouvoir remplace le déplacement
+    accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Terreur_marine_Ext_1
+  
+- Nom: Yeux de la tempête (Ext)
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 2
+  Auto: true
+  Description: Au niveau 2, la terreur des mers ignore le camouflage qui résulte
+    du brouillard, de la pluie, de la neige fondue, de la brume, du vent ou d’un autre
+    effet météorologique (sauf s’il donne un camouflage total). Tous les malus aux
+    tests de Perception qui découlent de la météo sont réduits de moitié. Ce pouvoir
+    remplace esquive instinctive.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Yeux_de_la_tempête_Ext_2
+  
+- Nom: Marin sauvage (Ext)
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, la terreur des mers gagne un bonus de +1 aux tests d’Acrobaties,
+    d’Escalade, de Natation, de Profession (marin) et de Survie quand elle se trouve
+    en terrain aquatique (y compris à bord d’un bateau ou sur la côte). Après le niveau
+    3, ce bonus augmente de +1 tous les trois niveaux. Ce pouvoir remplace sens des
+    pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Marin_sauvage_Ext_3
+  
+- Nom: Pied sûr (Ext)
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, la terreur des mers ne subit pas de malus quand elle
+    se déplace sur une surface glissante, naturelle ou magique (comme graisse, tempête
+    de grêle ou tempête de neige). Dans ces zones, elle ne risque pas de tomber et
+    ne perd pas son bonus de Dextérité. Elle ne considère pas ces terrains comme difficiles.
+    Ce pouvoir remplace esquive instinctive supérieure.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Pied_sûr_Ext_4
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Terreur des mers
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    terreur des mers : fracassement, nage en rage, nageur bestial, projectile en charge,
+    roulé-boulé, saut en rage, sauteur bestial, viens m’attraper.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx#Pouvoirs_de_rage_5
+  
+- Nom: Armes et armures
+  Classe: Barbare
+  Archetype: Véritable primitif
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Le véritable primitif est formé au port des armures de peau et des
+    armures d’os. Il sait aussi manier les boucliers en os et les armes suivantes
+    : fronde, gourdin, hache d’armes, hachette, javelot, lance, massue, pique et sarbacane.\n\n'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx#Armes_et_armures_0
+  
+- Nom: Illettrisme
+  Classe: Barbare
+  Archetype: Véritable primitif
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Un véritable primitif ne sait ni lire ni écrire et se montre tellement
+    superstitieux vis-à-vis de ces activités qu’il refuse d’apprendre, même s’il se
+    multiclasse.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx#Illettrisme_1
+  
+- Nom: Environnement de prédilection (Ext)
+  Classe: Barbare
+  Archetype: Véritable primitif
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: Un véritable primitif est plus à l’aise sur le terrain où il a grandi.
+    Ce pouvoir fonctionne comme celui de rôdeur. Le bonus d’environnement du primitif
+    augmente de +2 au niveau 5 et, par la suite, tous les cinq niveaux. En revanche,
+    il ne gagne pas de nouveaux environnements de prédilection. Ce pouvoir remplace
+    déplacement accéléré.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx#Environnement_de_prédilection_Ext_2
+  
+- Nom: Fétiche trophée (Ext)
+  Classe: Barbare
+  Archetype: Véritable primitif
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: Un véritable primitif prélève des dents, des cheveux, des os ou autres
+    trophées sur ses ennemis vaincus, pour représenter leur pouvoir et leur force.
+    Au niveau 3, il peut fixer un fétiche trophée sur une de ses armes primitives
+    traditionnelles (voir la liste). Quand il la manie, il gagne un bonus de moral
+    de +1 aux tests de dégâts. De plus, si cette arme possède la propriété fragile,
+    il peut, une fois par jour, ignorer les effets d’un 1 naturel. Le primitif peut
+    aussi attacher le fétiche à une armure de peau, ce qui lui donne un bonus de moral
+    de +1 aux jets de sauvegarde. De plus, si cette armure possède la propriété fragile,
+    il peut, une fois par jour, décider que l’armure ne se déchire pas si quelqu’un
+    confirme un coup critique contre lui. Tous les cinq niveaux après le 3, le véritable
+    primitif peut utiliser un fétiche de plus. Il peut en fixer plusieurs sur une
+    même arme ou une même armure, afin de cumuler leurs effets. On peut détruire un
+    fétiche (solidité 5, 1 pv) mais il ne subit pas de dégâts de la part des attaques
+    de zone ou de celles qui ne le visent pas expressément. Il n’a aucun effet si
+    le primitif l’attache sur une armure ou une arme autre que celles indiquées. Ce
+    pouvoir remplace sens des pièges.\n\n
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx#Fétiche_trophée_Ext_3
+  
+- Nom: Pouvoirs de rage
+  Classe: Barbare
+  Archetype: Véritable primitif
+  Source: MJ
+  Niveau: 1
+  Auto: true
+  Description: 'Voici les pouvoirs de rage qui viennent compléter l’archétype de
+    véritable primitif : briseur de sorts, chasseur de sorcière, destruction d’enchantement,
+    dévoreur de magie, fureur animale, odorat, odorat primitif, rage fantôme, superstition,
+    vision dans la nuit, vision dans le noir.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx#Pouvoirs_de_rage_4
