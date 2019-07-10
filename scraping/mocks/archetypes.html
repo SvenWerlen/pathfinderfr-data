@@ -1,0 +1,1278 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les archétypes de classes - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Les archétypes de classes.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Les+arch%u00e9types+de+classes&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwe+2D/pPuT+uD391DNtVq/Ho80cc=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIcr0De0KZpXnOwGTU3/cr3+B72oi3QcwxQT+thNGyuupDRU8yT5GUBIeFTKCHLAbP5EBwI" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Les archétypes de classes">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Les archétypes de classes">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Les archétypes de classes">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Les archétypes de classes.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Les archétypes de classes.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Les%20arch%c3%a9types%20de%20classes">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les archétypes de classes
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Les%20arch%c3%a9types%20de%20classes" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<i>Chaque classe de base de Pathfinder JdR se fonde sur une idée centrale, un concept initial qui représente l’idée que l’on se fait communément de cette classe et qui sert de squelette pour créer un grand nombre de typologies de personnages. Toutefois, ce « point de départ » a suffisamment de potentiel pour permettre d’innombrables interprétations et divers affinements. Par exemple, un membre de la classe de barde peut être un archéologue passionné, un bretteur téméraire ou un derviche à la grâce dangereuse. Chaque choix doit être représenté par certains éléments de background, des options de classe et des règles spécifiques comme les dons, qui permettent de reproduire au mieux le personnage que le joueur s’imagine et qui l’aident à accomplir des objectifs particuliers.</i><br /><br />Certains concepts de personnages se rapprochent trop des classes déjà existantes pour que l’on en crée une nouvelle, 
+mais ils sont suffisamment intéressants pour apparaître régulièrement dans les parties. C’est pour cette raison que 
+Pathfinder JdR a créé les archétypes  : des ensembles de modifications préétablis que l’on peut appliquer facilement 
+à une classe pour la personnaliser.<br /><br />Les options diffèrent en fonction des classes mais tous les archétypes sont faits pour tirer le meilleur parti de leur classe, pour imiter les pouvoirs et les talents des classiques du médiéval-fantastique et pour donner un peu plus de liberté aux joueurs qui veulent créer un personnage précis.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Aptitudes de classe alternatives<a class="headeranchor" id="Aptitudes_de_classe_alternatives_0" href="#Aptitudes_de_classe_alternatives_0" title="Lien vers cette section">&#0182;</a></h3>La plupart des options présentées dans les archétypes incluent un grand nombre d’aptitudes de classe alternatives. Lorsqu’un personnage opte pour une classe, il doit également choisir entre les aptitudes présentées dans la classe de base ou celles des archétypes. Chacune de ces nouvelles aptitudes remplace alors
+l’une de celles de la classe d’origine. <br /><br /><i>Par exemple, le <a class="pagelink" href="Pathfinder-RPG.moine.ashx#COUPELEMENTAIRE" title="Le moine">coup élémentaire</a> du <a class="pagelink" href="Pathfinder-RPG.moine%20des%20quatre%20vents%20(moine).ashx" title="Moine des quatre vents">moine des quatre vents</a> remplace le <a class="pagelink" href="Pathfinder-RPG.coup%20%c3%a9tourdissant.ashx" title="Coup étourdissant">coup étourdissant</a> du moine présenté dans la classe de base de <a class="pagelink" href="Pathfinder-RPG.moine.ashx" title="Le moine">moine</a>.</i><br /><br />Le personnage doit prendre toutes les aptitudes de classe d’un archétype, ce qui lui interdira à jamais d’en sélectionner d’autres plus familières. Il ne perd cependant pas au change car elles sont d’égale puissance.<br /><br />Toutes les autres aptitudes de classe figurant dans la classe de base et qui ne sont pas reprises par l'archétype restent inchangées. Un personnage peut les acquérir normalement lorsqu’il atteint le niveau approprié (sauf indication contraire). Choisir une aptitude de classe alternative ne revient pas à choisir celle qui lui a été substituée, même lorsqu’on réunit les prérequis nécessaires.<br /><br />Un personnage peut sélectionner plusieurs archétypes et ainsi cumuler des aptitudes de classe alternatives
+supplémentaires, mais aucune d’entre elles ne peut remplacer ou modifier une aptitude de classe préexistante
+et en faire une nouvelle aptitude de classe alternative.<br /><br /><i>Par exemple, un paladin ne peut être à la fois un <a class="pagelink" href="Pathfinder-RPG.hospitalier%20(paladin).ashx" title="Hospitalier">hospitalier</a> et un <a class="pagelink" href="Pathfinder-RPG.fl%c3%a9au%20des%20morts-vivants%20(paladin).ashx" title="Fléau des morts-vivants">fléau des morts-vivants</a> car ces deux archétypes modifient l’aptitude <a class="pagelink" href="Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL" title="Le paladin">Châtiment du mal</a> et remplacent celle d’<a class="pagelink" href="Pathfinder-RPG.paladin.ashx#AURADEJUSTICE" title="Le paladin">Aura de justice</a>. Il pourra cependant être un <a class="pagelink" href="Pathfinder-RPG.fl%c3%a9au%20des%20morts-vivants%20(paladin).ashx" title="Fléau des morts-vivants">fléau des morts-vivants</a> et un <a class="pagelink" href="Pathfinder-RPG.guerrier%20de%20la%20lumi%c3%a8re%20sainte%20(paladin).ashx" title="Guerrier de la lumière sainte">guerrier de la lumière sainte</a> puisqu’aucun des deux archétypes ne remplace ou modifie une même aptitude de classe.</i><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>Si un archétype remplace une aptitude de classe qui fait partie d’une série d’améliorations ou d’ajouts (comme l’entraînement aux armes du guerrier ou l’ennemi juré du rôdeur), la prochaine fois que le personnage devra améliorer 
+cette aptitude de base, il apprendra l’aptitude du niveau le plus faible, celle qui a été remplacée dans l’archétype. En pratique, cela retarde l’acquisition de toutes les aptitudes de cette série jusqu’à ce que le personnage ait atteint un niveau qui lui permette de les améliorer. Par exemple, si un archétype remplace le bonus d’attaque sournoise du roublard de +2d6 au niveau 3, ce roublard ne verra pas son attaque sournoise passer de +1d6 à +3d6 au niveau 5, l’attaque passera simplement à +2d6, comme s’il venait de bénéficier de l’amélioration du niveau 3. Cet ajustement se poursuit à chaque niveau qui voit une amélioration de l’attaque sournoise, jusqu’au niveau 19 où le roublard passe à +9d6 au lieu du +10d6 du roublard ordinaire.<br /><br /><h3 class="separator">Adapter des personnages existants<a class="headeranchor" id="Adapter_des_personnages_existants_1" href="#Adapter_des_personnages_existants_1" title="Lien vers cette section">&#0182;</a></h3>Les joueurs dans ce cas doivent vérifier avec leur <a class="pagelink" href="Pathfinder-RPG.MJ.ashx" title="MJ">MJ</a> si ces aptitudes de classe alternatives sont disponibles ou non dans son univers de jeu et si c’est le cas, s’ils ont la possibilité de recréer leurs personnages afin de les prendre en compte. Ces options sont équilibrées par rapport à celles présentées dans les classes de base.<br /><br />Les joueurs choisissant de modifier leurs personnages ne devraient pas être avantagés par rapport aux autres membres de leur groupe. Tant que le MJ ne voit pas d’inconvénient à ajuster rétroactivement les spécificités d’un personnage, cela ne devrait pas bouleverser le cours des prochaines aventures.<br /><br />Le passage au niveau supérieur entre deux scénarii reste le meilleur moment pour faire ces changements drastiques. Cependant, le joueur devra toujours le faire sous la tutelle de son MJ, qui voudra peut-être intégrer ces importants changements à sa campagne.<br /><br />Le MJ peut faire quelques concessions pour ceux qui, lors de la création de leurs personnages, n’ont pas eu à leur disposition ces aptitudes de classe alternatives, mais les PJ doivent rester l’un des éléments les plus stables d’une campagne. Les modifier ou les recréer constamment peut se révéler problématique. Si le MJ souhaite s’adapter et permettre à des joueurs qui se lassent de leurs personnages de faire ces changements, le système d’aptitudes alternatives ne doit pas être détourné au profit de quelques-uns, qui feront et déferont leur créature selon l’option la plus favorable du moment. Refondre un personnage à la lumière de règles allégées ou nouvelles est de temps en temps acceptable, mais le MJ ne devrait pas avoir l’impression de se montrer inéquitable ou d’enfreindre les règles s’il refuse ces changements ou s’il n’autorise pas certaines options. S’il doit toujours aider ses joueurs pour ce qui est de la gestion de leurs personnages, lui seul sait au final ce qui convient le mieux à sa campagne.<br /><br /><h3 class="separator">Les archétypes de classe<a class="headeranchor" id="Les_archétypes_de_classe_2" href="#Les_archétypes_de_classe_2" title="Lien vers cette section">&#0182;</a></h3>Voici la liste de tous les archétypes présents sur le site.<br /><br />Les personnages peuvent en choisir plusieurs s’ils réunissent les conditions imposées.<br /><br /><table><br /><br /><th></th><th>Classes de base</th><th></th><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de barbare<a class="headeranchor" id="Les_archétypes_de_barbare_0" href="#Les_archétypes_de_barbare_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Barbare.ashx" title="Le barbare">Le barbare</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Balafr%c3%a9%20enrag%c3%a9%20(barbare).ashx" title="Balafré enragé">Balafré enragé</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Barbare%20sauvage%20(barbare).ashx" title="Barbare sauvage">Barbare sauvage</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Barbare%20urbain%20(barbare).ashx" title="Barbare urbain">Barbare urbain</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Briseur%20de%20titan%20(barbare).ashx" title="Briseur de titan">Briseur de titan</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Brute%20avin%c3%a9e%20(barbare).ashx" title="Brute avinée">Brute avinée</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Carcasse%20m%c3%a9tallique%20(barbare).ashx" title="Carcasse métallique">Carcasse métallique</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Concasseur%20(barbare).ashx" title="Concasseur">Concasseur</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enrag%c3%a9%20haineux%20(barbare).ashx" title="Enragé haineux">Enragé haineux</a> (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fr%c3%a8re%20%c3%a9l%c3%a9mentaire%20(barbare).ashx" title="Frère élémentaire">Frère élémentaire</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Furie%20mont%c3%a9e%20(barbare).ashx" title="Furie montée">Furie montée</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20totem%20(barbare).ashx" title="Guerrier totem">Guerrier totem</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Invuln%c3%a9rable%20enrag%c3%a9%20(barbare).ashx" title="Invulnérable enragé">Invulnérable enragé</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lanceur%20(barbare).ashx" title="Lanceur">Lanceur</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pugiliste%20brutal%20(barbare).ashx" title="Pugiliste brutal">Pugiliste brutal</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sauvage%20enrag%c3%a9%20(barbare).ashx" title="Sauvage enragé">Sauvage enragé</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Superstitieux%20(barbare).ashx" title="Superstitieux">Superstitieux</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Terreur%20des%20mers%20(barbare).ashx" title="Terreur des mers">Terreur des mers</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.V%c3%a9ritable%20primitif%20(barbare).ashx" title="Véritable primitif">Véritable primitif</a> (UC)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de barde<a class="headeranchor" id="Les_archétypes_de_barde_0" href="#Les_archétypes_de_barde_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Barde.ashx" title="Le barde">Le barde</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arch%c3%a9ologue%20(barde).ashx" title="Archéologue">Archéologue</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Archiviste%20(barde).ashx" title="Archiviste">Archiviste</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Artiste%20des%20rues%20(barde).ashx" title="Artiste des rues">Artiste des rues</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Barde%20de%20cour%20(barde).ashx" title="Barde de cour">Barde de cour</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Barde%20fun%c3%a8bre%20(barde).ashx" title="Barde funèbre">Barde funèbre</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Casse-cou%20(barde).ashx" title="Casse-cou">Casse cou</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.C%c3%a9l%c3%a9brit%c3%a9%20(barde).ashx" title="Célébrité">Célébrité</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chantemer%20(barde).ashx" title="Chantemer">Chantemer</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Danseur%20des%20flammes%20(barde).ashx" title="Danseur des flammes">Danseur des flammes</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9magogue%20(barde).ashx" title="Démagogue">Démagogue</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Derviche%20(barde).ashx" title="Derviche">Derviche</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9tective%20(barde).ashx" title="Détective">Détective</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Duelliste%20des%20arcanes%20(barde).ashx" title="Duelliste des arcanes">Duelliste des arcanes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Frappeson%20(barde).ashx" title="Frappeson">Frappeson</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Geisha%20(barde).ashx" title="Geisha">Geisha</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Marchand%20de%20sable%20(barde).ashx" title="Le marchand de sable">Marchand de sable</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Marionnettiste%20des%20ombres%20(barde).ashx" title="Marionnettiste des ombres">Marionnettiste des ombres</a> (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Orateur%20animal%20(barde).ashx" title="Orateur animal">Orateur animal</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Prestidigitateur%20(barde).ashx" title="Prestidigitateur">Prestidigitateur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Scalde%20sauvage%20(barde).ashx" title="Scalde sauvage">Scalde sauvage</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Soignechant%20(barde).ashx" title="Soignechant">Soignechant</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Voix%20de%20la%20nature%20(barde).ashx" title="Voix de la nature">Voix de la nature</a> (MCA)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de druide<a class="headeranchor" id="Les_archétypes_de_druide_0" href="#Les_archétypes_de_druide_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Druide.ashx" title="Le druide">Le druide</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arpenteur%20de%20monde%20(druide).ashx" title="Arpenteur de monde">Arpenteur de monde</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chamanes%20animaux%20(druide).ashx" title="Chamanes animaux">Chamanes animaux</a> (MJRA,AG,AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chuchoteur%20sauvage%20(druide).ashx" title="Chuchoteur sauvage">Chuchoteur sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Croc%20de%20la%20nature%20(druide).ashx" title="Croc de la nature">Croc de la nature</a> (MCA) </li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20aquatique%20(druide).ashx" title="Druide aquatique">Druide aquatique</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20arctique%20(druide).ashx" title="Druide arctique">Druide arctique</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20de%20la%20jungle%20(druide).ashx" title="Druide de la jungle">Druide de la jungle</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20cavernes%20(druide).ashx" title="Druide des cavernes">Druide des cavernes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20d%c3%a9serts%20(druide).ashx" title="Druide des déserts">Druide des déserts</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20marais%20(druide).ashx" title="Druide des marais">Druide des marais</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20montagnes%20(druide).ashx" title="Druide des montagnes">Druide des montagnes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20plaines%20(druide).ashx" title="Druide des plaines">Druide des plaines</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20des%20temp%c3%aates%20(druide).ashx" title="Druide des tempêtes">Druide des tempêtes</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20urbain%20(druide).ashx" title="Druide urbain">Druide urbain</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Druide%20r%c3%a9incarn%c3%a9%20(druide).ashx" title="Druide réincarné">Druide réincarné</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enfant%20de%20la%20lune%20(druide).ashx" title="Enfant de la lune">Enfant de la lune</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a9trisseur%20(druide).ashx" title="Flétrisseur">Flétrisseur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9tamorphe%20sauvage%20(druide).ashx" title="Métamorphe sauvage">Métamorphe sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sage%20des%20menhirs%20(druide).ashx" title="Sage des menhirs">Sage des menhirs</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Seigneur%20de%20la%20meute%20(druide).ashx" title="Seigneur de la meute">Seigneur de la meute</a> (AM)</li></ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'ensorceleur<a class="headeranchor" id="Les_archétypes_densorceleur_0" href="#Les_archétypes_densorceleur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Ensorceleur.ashx" title="L&#39;ensorceleur">L'ensorceleur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Bagarreur%20%c3%a9trange%20(ensorceleur).ashx" title="Bagarreur étrange">Bagarreur étrange</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20b%c3%a2tard%20(ensorceleur).ashx" title="Mage bâtard">Mage bâtard</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sang%20m%c3%aal%c3%a9%20(ensorceleur).ashx" title="Sang mêlé">Sang mélé</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sang%20sauvage%20(ensorceleur).ashx" title="Sang sauvage">Sang sauvage</a>(AM)</li></ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de guerrier<a class="headeranchor" id="Les_archétypes_de_guerrier_0" href="#Les_archétypes_de_guerrier_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Guerrier.ashx" title="Le guerrier">Le guerrier</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arbal%c3%a9trier%20(guerrier).ashx" title="Arbalétrier">Arbalétrier</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Archer%20(guerrier).ashx" title="Archer">Archer</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Castagneur%20(guerrier).ashx" title="Castagneur">Castagneur</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Combattant%20%c3%a0%20deux%20armes%20(guerrier).ashx" title="Combattant à deux armes">Combattant à deux armes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Combattant%20%c3%a0%20deux%20mains%20(guerrier).ashx" title="Combattant à deux mains">Combattant à deux mains</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Combattant%20de%20la%20main%20libre%20(guerrier).ashx" title="Combattant de la main libre">Combattant de la main libre</a> (MJRA)</li> 
+  <li><a class="pagelink" href="Pathfinder-RPG.Dragon%20(guerrier).ashx" title="Dragon">Dragon</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Frappe-tonnerre%20(guerrier).ashx" title="Frappe-tonnerre">Frappe-tonnerre</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20occulte%20(guerrier).ashx" title="Gardien occulte">Gardien occulte</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gladiateur%20(guerrier).ashx" title="Gladiateur">Gladiateur</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20d%c3%a9sarm%c3%a9%20(guerrier).ashx" title="Guerrier désarmé">Guerrier désarmé</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20mobile%20(guerrier).ashx" title="Guerrier mobile">Guerrier mobile</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20mutag%c3%a9nique%20(guerrier).ashx" title="Guerrier mutagénique">Guerrier mutagénique</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20sauvage%20(guerrier).ashx" title="Guerrier sauvage">Guerrier sauvage</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Invincible%20(guerrier).ashx" title="Invincible">Invincible</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Maitre%20darmes%20(guerrier).ashx" title="Maître d&#39;armes">Maître d'armes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20dhast%20(guerrier).ashx" title="Maître d&#39;hast">Maître d'hast</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20armures%20(guerrier).ashx" title="Maître des armures">Maître des armures</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20du%20bouclier%20(guerrier).ashx" title="Maître du bouclier">Maître du bouclier</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20martial%20(guerrier).ashx" title="Maître martial">Maître martial</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Malotru%20(guerrier).ashx" title="Malotru">Malotru</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Monteur%20de%20b%c3%aates%20(guerrier).ashx" title="Monteur de bêtes">Monteur de bêtes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Phalange%20(guerrier).ashx" title="Phalange">Phalange</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sp%c3%a9cialiste%20du%20pavois%20(guerrier).ashx" title="Spécialiste du pavois">Spécialiste du pavois</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tacticien%20(guerrier).ashx" title="Tacticien">Tacticien</a> (AG)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de magicien<a class="headeranchor" id="Les_archétypes_de_magicien_0" href="#Les_archétypes_de_magicien_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Magicien.ashx" title="Le magicien">Le magicien</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chuchoteur%20spirituel%20(magicien).ashx" title="Chuchoteur spirituel">Chuchoteur spirituel</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20de%20si%c3%a8ge%20(magicien).ashx" title="Mage de siège">Mage de siège</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Magicien%20exploiteur%20(magicien).ashx" title="Magicien exploiteur">Magicien exploiteur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20parchemins%20(magicien).ashx" title="Maître des parchemins">Maître des parchemins</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Poseur%20de%20bombes%20(magicien).ashx" title="Poseur de bombes">Poseur de bombes</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sage%20%c3%a9sot%c3%a9rique%20(magicien).ashx" title="Sage ésotérique">Sage ésotérique</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sortil%c3%a9ro%20(magicien).ashx" title="Sortiléro">Sortiléro</a> (AG)</li>
+</ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de moine<a class="headeranchor" id="Les_archétypes_de_moine_0" href="#Les_archétypes_de_moine_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Moine.ashx" title="Le moine">Le moine</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Adepte%20des%20armes%20(moine).ashx" title="Adepte des armes">Adepte des armes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Archer%20zen%20(moine).ashx" title="Archer zen">Archer zen</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Artiste%20martial%20(moine).ashx" title="Artiste martial">Artiste martial</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chat%20sauvage%20(moine).ashx" title="Chat sauvage">Chat sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20%c3%a9coles%20(moine).ashx" title="Maître des écoles">Maître des écoles</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20katas%20(moine).ashx" title="Maître des katas">Maître des katas</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20manoeuvres%20(moine).ashx" title="Maître des manoeuvres">Maître des manoeuvres</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20ivre%20(moine).ashx" title="Maître ivre"> Maître ivre</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20de%20la%20main%20qui%20gu%c3%a9rit%20(moine).ashx" title="Moine de la main qui guérit"> Moine de la main qui guérit</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20de%20la%20main%20vide%20(moine).ashx" title="Moine de la Main vide">Moine de la main vide</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20de%20la%20montagne%20sacr%c3%a9e%20(moine).ashx" title="Moine de la montagne sacrée">Moine de la montagne sacrée</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20des%20quatre%20vents%20(moine).ashx" title="Moine des quatre vents">Moine des quatre vents</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20du%20Fant%c3%b4me%20affam%c3%a9%20(moine).ashx" title="Moine du fantôme affamé"> Moine du fantôme affamé</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20du%20lotus%20(moine).ashx" title="Moine du lotus">Moine du lotus</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20fluide%20(moine).ashx" title="Moine fluide">Moine fluide</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Moine%20qinggong%20(moine).ashx" title="Moine qinggong">Moine qinggong</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mystique%20ki%20(moine).ashx" title="Mystique ki">Mystique ki</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sensei%20(moine).ashx" title="Sensei">Sensei</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sohei%20(moine).ashx" title="Sohei">Sohei</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tetori%20(moine).ashx" title="Tetori">tetori</a> (AG)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de paladin<a class="headeranchor" id="Les_archétypes_de_paladin_0" href="#Les_archétypes_de_paladin_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Paladin.ashx" title="Le paladin">Le paladin</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Bouclier%20b%c3%a9ni%20(paladin).ashx" title="Bouclier béni">Bouclier béni</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20du%20temple%20(paladin).ashx" title="Champion du temple">Champion du temple</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20divin%20(paladin).ashx" title="Chasseur divin">Chasseur divin</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chevalier%20empyr%c3%a9en%20(paladin).ashx" title="Chevalier empyréen">Chevalier empyréen</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chevalier%20%c3%a9tincelant%20(paladin).ashx" title="Chevalier étincelant">Chevalier étincelant</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9fenseur%20divin%20(paladin).ashx" title="Défenseur divin">Défenseur divin</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Elu%20(paladin).ashx" title="Élu">Élu</a> (Famf)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fl%c3%a9au%20des%20morts-vivants%20(paladin).ashx" title="Fléau des morts-vivants">Fléau des morts-vivants</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guerrier%20de%20la%20lumi%c3%a8re%20sainte%20(paladin).ashx" title="Guerrier de la lumière sainte">Guerrier de la lumière sainte</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guide%20saint%20(paladin).ashx" title="Guide saint">Guide saint</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Hospitalier%20(paladin).ashx" title="Hospitalier">Hospitalier</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Paladin%20asserment%c3%a9%20(paladin).ashx" title="Paladin assermenté">Paladin assermenté</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saint%20pistolet%20(paladin).ashx" title="Saint pistolet">Saint pistolet</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saint%20tacticien%20(paladin).ashx" title="Saint tacticien">Saint tacticien</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Serviteur%20sacr%c3%a9%20(paladin).ashx" title="Serviteur sacré"> Serviteur sacré</a> (MJRA)</li><br /><br />  <li><a class="pagelink" href="Pathfinder-RPG.Antipaladin.ashx" title="Antipaladin">Antipaladin</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chevalier%20du%20s%c3%a9pulcre%20(paladin).ashx" title="Chevalier du sépulcre">Chevalier du sépulcre</a> (AG)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de prêtre<a class="headeranchor" id="Les_archétypes_de_prêtre_0" href="#Les_archétypes_de_prêtre_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre.ashx" title="Le prêtre">Le prêtre</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%89vang%c3%a9liste%20(pr%c3%aatre).ashx" title="Évangéliste">Évangéliste</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9risseur%20mis%c3%a9ricordieux%20(pr%c3%aatre).ashx" title="Guérisseur miséricordieux">Guérisseur miséricordieux</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20clo%c3%aetr%c3%a9%20(pr%c3%aatre).ashx" title="Prêtre cloîtré">Prêtre cloîtré</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saint%20combattant%20(pr%c3%aatre).ashx" title="Saint combattant">Saint combattant</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Seigneur%20des%20morts-vivants%20(pr%c3%aatre).ashx" title="Seigneur des morts-vivants">Seigneur des morts-vivants</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.S%c3%a9paratiste%20(pr%c3%aatre).ashx" title="Séparatiste">Séparatiste</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Strat%c3%a8ge%20divin%20(pr%c3%aatre).ashx" title="Stratège divin">Stratège divin</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Th%c3%a9ologien%20(pr%c3%aatre).ashx" title="Théologien">Théologien</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Th%c3%a9urge%20eccl%c3%a9siastique%20(pr%c3%aatre).ashx" title="Théurge ecclésiastique">Théurge ecclésiastique</a> (MCA)</li>
+</ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de rôdeur<a class="headeranchor" id="Les_archétypes_de_rôdeur_0" href="#Les_archétypes_de_rôdeur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur.ashx" title="Le rôdeur">Le rôdeur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arpenteur%20des%20profondeurs%20(r%c3%b4deur).ashx" title="Arpenteur des profondeurs">Arpenteur des profondeurs</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20rebelle%20(r%c3%b4deur).ashx" title="Champion rebelle">Champion rebelle</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Changeforme%20(r%c3%b4deur).ashx" title="Changeforme">Changeforme</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20de%20troph%c3%a9es%20(r%c3%b4deur).ashx" title="Chasseur de trophées">Chasseur de trophées</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20sauvage%20(r%c3%b4deur).ashx" title="Chasseur sauvage">Chasseur sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%89claireur%20de%20larm%c3%a9e%20(r%c3%b4deur).ashx" title="Éclaireur de l&#39;armée">Eclaireur de l'armée</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fauconnier%20(r%c3%b4deur).ashx" title="Fauconnier">Fauconnier</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20(r%c3%b4deur).ashx" title="Gardien">Gardien</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Guide%20(r%c3%b4deur).ashx" title="Guide">Guide</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20b%c3%aates%20(r%c3%b4deur).ashx" title="Maître des bêtes">Maître des bêtes</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pisteur%20divin%20(r%c3%b4deur).ashx" title="Pisteur divin">Pisteur divin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur%20infiltr%c3%a9%20(r%c3%b4deur).ashx" title="Rôdeur infiltré">Rôdeur infiltré</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur%20spirituel%20(r%c3%b4deur).ashx" title="Rôdeur spirituel">Rôdeur spirituel</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.R%c3%b4deur%20urbain%20(r%c3%b4deur).ashx" title="Rôdeur urbain">Rôdeur urbain</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Seigneur%20des%20chevaux%20(r%c3%b4deur).ashx" title="Seigneur des chevaux">Seigneur des chevaux</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tirailleur%20(r%c3%b4deur).ashx" title="Tirailleur">Tirailleur</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Traqueur%20sauvage%20(r%c3%b4deur).ashx" title="Traqueur sauvage">Traqueur sauvage</a> (UC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Trappeur%20(r%c3%b4deur).ashx" title="Trappeur">Trappeur</a> (UM)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de roublard<a class="headeranchor" id="Les_archétypes_de_roublard_0" href="#Les_archétypes_de_roublard_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Roublard.ashx" title="Le roublard">Le roublard</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Acrobate%20(roublard).ashx" title="Acrobate">Acrobate</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Bandit%20(roublard).ashx" title="Bandit">Bandit</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Bretteur%20(roublard).ashx" title="Bretteur">Bretteur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cambrioleur%20(roublard).ashx" title="Cambrioleur">Cambrioleur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cam%c3%a9l%c3%a9on%20(roublard).ashx" title="Caméléon">Caméléon</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Charlatan%20(roublard).ashx" title="Charlatan">Charlatan</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20clandestin%20(roublard).ashx" title="Chimiste clandestin">Chimiste clandestin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cocher%20(roublard).ashx" title="Cocher">Cocher</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Coriace%20(roublard).ashx" title="Coriace">Coriace</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Coureur%20des%20toits%20(roublard).ashx" title="Coureur des toits">Coureur des toits</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Eclaireur%20(roublard).ashx" title="Éclaireur">Eclaireur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Effront%c3%a9%20(roublard).ashx" title="Effronté">Effronté</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Empoisonneur%20(roublard).ashx" title="Empoisonneur">Empoisonneur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur%20(roublard).ashx" title="Enquêteur">Enquêteur</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Espion%20(roublard).ashx" title="Espion">Espion</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fabricant%20de%20pi%c3%a8ges%20(roublard).ashx" title="Fabricant de pièges">Fabricant de pièges</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Happe-bourse%20(roublard).ashx" title="Happe-bourse">Happe-bourse</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20charlatan%20(roublard).ashx" title="Mage charlatan">Mage charlatan</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20couteaux%20(roublard).ashx" title="Maître des couteaux">Maître des couteaux</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pirate%20(roublard).ashx" title="Pirate">Pirate</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Roublard%20sanctifi%c3%a9%20(roublard).ashx" title="Roublard sanctifié">Roublard sanctifié</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tireur%20embusqu%c3%a9%20(roublard).ashx" title="Tireur embusqué">Tireur embusqué</a> (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Voyou%20(roublard).ashx" title="Voyou">Voyou</a> (MJRA)</li><br /><br />  <li><a class="pagelink" href="Pathfinder-RPG.Ninja.ashx" title="Ninja">Ninja</a> (Classe alternative) (AG)</li>
+</div></td>
+<td width="1%"></td>
+<td width="32%"></td>
+</tr><br /><br /></table><br /><table>
+<th></th><th>Classes avancées</th><th></th><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'alchimiste<a class="headeranchor" id="Les_archétypes_dalchimiste_0" href="#Les_archétypes_dalchimiste_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Alchimiste.ashx" title="L&#39;alchimiste">L'alchimiste</a> (classe de base)(MJRA)</li>
+    <li><a class="pagelink" href="Pathfinder-RPG.Alchimiste%20des%20marais%20(alchimiste).ashx" title="Alchimiste des marais">Alchimiste des marais</a> (<a class="pagelink" href="Pathfinder-RPG.grippli%20(race).ashx" title="Les gripplis">Grippli</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Alchimiste%20interne%20(alchimiste).ashx" title="Alchimiste interne">Alchimiste interne</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Animorphe%20(alchimiste).ashx" title="Animorphe">Animorphe</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Artificier%20des%20profondeurs%20(alchimiste).ashx" title="Artificier des profondeurs">Artificier des profondeurs</a> (<a class="pagelink" href="Pathfinder-RPG.svirfneblin%20(race).ashx" title="Les svirfneblins">Svirfneblin</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Brasseur%20d%c3%a9pines%20(alchimiste).ashx" title="Brasseur d&#39;épines">Brasseur d'épines</a> (<a class="pagelink" href="Pathfinder-RPG.demi-elfe.ashx" title="Les demi-elfes">Demi-elfe</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20enrag%c3%a9%20(alchimiste).ashx" title="Chimiste enragé">Chimiste enragé</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20inspir%c3%a9%20(Alchimiste).ashx" title="Chimiste inspiré">Chimiste inspiré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chimiste%20spirituel%20(alchimiste).ashx" title="Chimiste spirituel">Chimiste spirituel</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chirurgien%20(alchimiste).ashx" title="Chirurgien">Chirurgien</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Collectionneur%20(alchimiste).ashx" title="Collectionneur">Collectionneur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Homonculiste%20(alchimiste).ashx" title="Homonculiste ">Homonculiste</a> (FF)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20clones%20(alchimiste).ashx" title="Maître des clones">Maître des clones</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Maraudeur%20ail%c3%a9%20(alchimiste).ashx" title="Maraudeur ailé">Maraudeur ailé</a> (<a class="pagelink" href="Pathfinder-RPG.gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>) (CM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Porte-peste%20(alchimiste).ashx" title="Porte-peste">Porte-peste</a> (<a class="pagelink" href="Pathfinder-RPG.homme-rat%20(race).ashx" title="Les Hommes-rats">Homme-rat</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Psychonaute%20(alchimiste).ashx" title="Psychonaute">Psychonaute</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pyrobombardier%20(alchimiste).ashx" title="Pyrobombardier">Pyrobombardier</a> (<a class="pagelink" href="Pathfinder-RPG.gobelin%20(race).ashx" title="Les gobelins">Gobelin</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.R%c3%a9animateur%20(alchimiste).ashx" title="Réanimateur">Réanimateur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Saboteur%20(alchimiste).ashx" title="Saboteur">Saboteur</a> (<a class="pagelink" href="Pathfinder-RPG.gnome.ashx" title="Les gnomes">Gnome</a>) (MR)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Vivisectioniste%20(alchimiste).ashx" title="Vivisectioniste">Vivisectioniste</a> (AM)</li></ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de chevalier<a class="headeranchor" id="Les_archétypes_de_chevalier_0" href="#Les_archétypes_de_chevalier_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx" title="Le chevalier">Le chevalier</a> (classe de base) (MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.App%c3%a2t%20(chevalier).ashx" title="Appât">Appât</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cavalier%20des%20b%c3%aates%20(chevalier).ashx" title="Cavalier des bêtes">Cavalier des bêtes</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20audacieux%20(chevalier).ashx" title="Champion audacieux">Champion audacieux</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%89missaire%20(chevalier).ashx" title="Émissaire">Émissaire</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Garde%20dhonneur%20%20(chevalier).ashx" title="Garde d&#39;honneur">Garde d'honneur</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Hussard%20(chevalier).ashx" title="Hussard">Hussard</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mousquetaire%20(chevalier).ashx" title="Mousquetaire">Mousquetaire</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Porte-%c3%a9tendard%20(chevalier).ashx" title="Porte-étendard">Porte-étendard</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Strat%c3%a8ge%20(chevalier).ashx" title="Stratège">Stratège</a> (AG)</li><br /><br />  <li><a class="pagelink" href="Pathfinder-RPG.samoura%c3%af.ashx" title="Samouraï">Le samouraï</a> (classe alternative) (AG)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de conjurateur<a class="headeranchor" id="Les_archétypes_de_conjurateur_0" href="#Les_archétypes_de_conjurateur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Conjurateur.ashx" title="Le conjurateur (aussi appelé invocateur)">Le conjurateur</a> (classe de base)(MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%a9volutionniste%20(conjurateur).ashx" title="Evolutionniste">Évolutionniste</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Invocateur%20desprit%20(conjurateur).ashx" title="Invocateur d&#39;esprit">Invocateur d'esprit</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20couv%c3%a9es%20(conjurateur).ashx" title="Maître des couvées">Maître des couvées</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20invocateur%20(conjurateur).ashx" title="Maître Conjurateur">Maître invocateur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Naturaliste%20(conjurateur).ashx" title="Naturaliste">Naturaliste</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Synth%c3%a9tiseur%20(conjurateur).ashx" title="Synthétiseur">Synthétiseur</a> (AM)</li>
+</ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'inquisiteur<a class="headeranchor" id="Les_archétypes_dinquisiteur_0" href="#Les_archétypes_dinquisiteur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">L'inquisiteur</a> (classe de base)(MJRA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Brise-sortil%c3%a8ge%20(inquisiteur).ashx" title="Brise-sortilège">Brise-sortilège</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20de%20sorci%c3%a8res%20(inquisiteur).ashx" title="Chasseur de sorcières">Chasseur de sorcières</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Exorciste%20(inquisiteur).ashx" title="Exorciste">Exorciste</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Exterminateur%20sacr%c3%a9%20(inquisiteur).ashx" title="Exterminateur sacré">Exterminateur sacré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.H%c3%a9r%c3%a9tique%20(inquisiteur).ashx" title="Hérétique">Hérétique</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Iconoclaste%20(inquisiteur).ashx" title="Iconoclaste">Iconoclaste</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Infiltrateur%20(inquisiteur).ashx" title="Infiltrateur">Infiltrateur</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mangeur%20de%20p%c3%aach%c3%a9s%20(inquisiteur).ashx" title="Mangeur de pêchés">Mangeur de pêchés</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20chasseur%20sacr%c3%a9%20(inquisiteur).ashx" title="Maître chasseur sacré">Maître chasseur sacré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aacheur%20(inquisiteur).ashx" title="Prêcheur">Prêcheur</a> (AM)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'oracle<a class="headeranchor" id="Les_archétypes_doracle_0" href="#Les_archétypes_doracle_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Oracle.ashx" title="L&#39;oracle">Oracle</a> (classe de base) (MJRA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Chercheur%20psychique%20(oracle).ashx" title="Chercheur psychique">Chercheur psychique</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Combattant%20intuitif%20(oracle).ashx" title="Combattant intuitif">Combattant intuitif</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Guide%20spirituel%20(oracle).ashx" title="Guide spirituel">Guide spirituel</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Oracle%20doublement%20maudit%20(oracle).ashx" title="Oracle doublement maudit">Oracle doublement maudit</a> (AM)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Oracle%20des%20%c3%a9toiles%20(oracle).ashx" title="Oracle des étoiles">Oracle des étoiles</a> (AM)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Oracle%20planaire%20(oracle).ashx" title="Oracle planaire">Oracle planaire</a> (AM)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Oracle%20poss%c3%a9d%c3%a9%20(oracle).ashx" title="Oracle possédé">Oracle possédé</a> (AM)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Philosophe%20%c3%a9clair%c3%a9%20(oracle).ashx" title="Philosophe éclairé">Philosophe éclairé</a> (AM)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Proph%c3%a8te%20(oracle).ashx" title="Prophète">Prophète</a> (AM)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de sorcière<a class="headeranchor" id="Les_archétypes_de_sorcière_0" href="#Les_archétypes_de_sorcière_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re.ashx" title="La sorcière">La sorcière</a> (classe de base)
+  <li><a class="pagelink" href="Pathfinder-RPG.Amie%20des%20animaux%20(sorci%c3%a8re).ashx" title="Amie des animaux">Amie des animaux</a> (AM)</li>
+  <li><a class="unknownlink" href="Pathfinder-RPG.Bouda%20(sorci%c3%a8re).ashx" title="Pathfinder-RPG.Bouda (sorcière)">Bouda</a> (MC)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Canalisatrice%20de%20mal%c3%a9fices%20(sorci%c3%a8re).ashx" title="Canalisatrice de maléfices">Canalisatrice de maléfices</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Marchetombe%20(sorci%c3%a8re).ashx" title="Marchetombe">Marchetombe</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re%20des%20mers%20(sorci%c3%a8re).ashx" title="Sorcière des mers">Sorcière des mers</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re%20aux%20toxines%20(sorci%c3%a8re).ashx" title="Sorcière aux toxines">Sorcière aux toxines</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re%20de%20village%20(sorci%c3%a8re).ashx" title="Sorcière de village">Sorcière de village</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sorci%c3%a8re%20des%20montagnes%20(sorci%c3%a8re).ashx" title="Sorcière des montagnes">Sorcière des montagnes</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Synergiste%20(sorci%c3%a8re).ashx" title="Synergiste">Synergiste</a></li>
+</ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de magus<a class="headeranchor" id="Les_archétypes_de_magus_0" href="#Les_archétypes_de_magus_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Magus.ashx" title="Le magus">Le magus</a> (classe de base) (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Forge%c3%a2me%20(magus).ashx" title="Forgeâme">Forgeâme</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Kensai%20(magus).ashx" title="Kensai">Kensai</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lameli%c3%a9.ashx" title="Lamelié">Lamelié</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lamesort.ashx" title="Lamesort">Lamesort</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lanceur%20de%20mal%c3%a9fices.ashx" title="Lanceur de maléfices">Lanceur de maléfices</a> (AM)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Myrmidarque%20(magus).ashx" title="Myrmidarque">Myrmidarque</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Rejeton%20%c3%a9trange%20(magus).ashx" title="Rejeton étrange">Rejeton étrange</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Skirnir%20(magus).ashx" title="Skirnir">Skirnir</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sp%c3%a9cialiste%20du%20b%c3%a2ton.ashx" title="Spécialiste du bâton">Spécialiste du bâton</a> (AM)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de pistolier<a class="headeranchor" id="Les_archétypes_de_pistolier_0" href="#Les_archétypes_de_pistolier_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Pistolier.ashx" title="Pistolier">Pistolier</a> (classe de base)(Ag)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arbal%c3%a9trier%20d%c3%a9lite%20(pistolier).ashx" title="Arbalétrier d&#39;élite">Arbalétrier d'élite</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Armure-pistolet%20(pistolier).ashx" title="Armure-pistolet">Armure-pistolet</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20du%20mousquet%20(pistolier).ashx" title="Maître du mousquet">Maître du mousquet</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Myst%c3%a9rieux%20voyageur%20(pistolier).ashx" title="Mystérieux voyageur">Mystérieux voyageur</a> (AG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pistolero%20(pistolier).ashx" title="Pistolero">Pistolero</a> (AG)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"></td>
+</tr>
+</table><br /><table>
+<th></th><th>Classes hybrides</th><th></th><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'arcaniste<a class="headeranchor" id="Les_archétypes_darcaniste_0" href="#Les_archétypes_darcaniste_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Arcaniste.ashx" title="Arcaniste">L'arcaniste</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Adepte%20des%20lames%20(arcaniste).ashx" title="Adepte des lames">Adepte des lames</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Agent%20%c3%a9trange%20(arcaniste).ashx" title="Agent étrange">Agent étrange</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arcaniste%20du%20sang%20(arcaniste).ashx" title="Arcaniste du sang">Arcaniste du sang</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arcaniste%20ill%c3%a9tr%c3%a9%20(arcaniste).ashx" title="Arcaniste illétré">Arcaniste illétré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20blanc%20(arcaniste).ashx" title="Mage blanc">Mage blanc</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20%c3%a9l%c3%a9mentaire%20(arcaniste).ashx" title="Maître élémentaire">Maître élémentaire</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Occultiste%20(arcaniste).ashx" title="Occultiste">Occultiste</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Savant%20dune%20%c3%a9cole%20de%20magie%20(arcaniste).ashx" title="Savant d&#39;une école de magie">Savant d'une école de magie</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sp%c3%a9cialiste%20des%20sortil%c3%a8ges%20(arcaniste).ashx" title="Spécialiste des sortilèges">Spécialiste des sortilèges</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Transmutateur%20%c3%a0%20fourrure%20brune%20(arcaniste).ashx" title="Transmutateur à fourrure brune">Transmutateur à fourrure brune</a> (MCA)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de bretteur<a class="headeranchor" id="Les_archétypes_de_bretteur_0" href="#Les_archétypes_de_bretteur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Bretteur.ashx" title="Bretteur">Le bretteur</a> (classe de base)</li><br />
+  <li><a class="pagelink" href="Pathfinder-RPG.Bretteur%20inspir%c3%a9%20(bretteur).ashx" title="Bretteur inspiré">Bretteur inspiré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Infiltr%c3%a9%20audacieux%20(bretteur).ashx" title="Infiltré audacieux">Infiltré audacieux</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lame%20volante%20(bretteur).ashx" title="Lame volante">Lame volante</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mousquetaire%20(bretteur).ashx" title="Mousquetaire">Mousquetaire</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Myst%c3%a9rieux%20vengeur%20(bretteur).ashx" title="Mystérieux vengeur">Mystérieux vengeur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Petit%20bretteur%20(bretteur).ashx" title="Petit bretteur">Petit bretteur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Picaro%20(bretteur).ashx" title="Picaro">Picaro</a> (MCA)</li></ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de chaman<a class="headeranchor" id="Les_archétypes_de_chaman_0" href="#Les_archétypes_de_chaman_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Chaman.ashx" title="Chaman">Le chaman</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Animiste%20(Chaman).ashx" title="Animiste">Animiste</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chaman%20non%20asserment%c3%a9%20(Chaman).ashx" title="Chaman non-assermenté">Chamane non-assermenté</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chaman%20poss%c3%a9d%c3%a9%20(Chaman).ashx" title="Chaman possédé">Chamane possédé</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20spirituel%20(Chaman).ashx" title="Gardien spirituel">Gardien spirituel</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gu%c3%a9risseur%20(Chaman).ashx" title="Guérisseur">Guérisseur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Locuteur%20du%20pass%c3%a9%20(Chaman).ashx" title="Locuteur du passé">Locuteur du passé</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Visionnaire%20(Chaman).ashx" title="Visionnaire">Visionnaire</a> (MCA)</li>
+</ul>
+</div> </td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de chasseur<a class="headeranchor" id="Les_archétypes_de_chasseur_0" href="#Les_archétypes_de_chasseur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Chasseur.ashx" title="Chasseur">Le chasseur</a> (classe de base)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Adepte%20de%20la%20vermine%20(Chasseur).ashx" title="Adepte de la vermine">Adepte de la vermine</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20au%20compagnon%20primitif%20(Chasseur).ashx" title="Chasseur au compagnon primitif">Chasseur au compagnon primitif</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20divin%20(Chasseur).ashx" title="Chasseur divin">Chasseur divin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20sauvage%20(Chasseur).ashx" title="Chasseur sauvage">Chasseur sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.chef%20de%20meute%20(Chasseur).ashx" title="Chef de meute">Chef de meute</a> (MCA)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'enquêteur<a class="headeranchor" id="Les_archétypes_denquêteur_0" href="#Les_archétypes_denquêteur_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur.ashx" title="Enquêteur">L'enquêteur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Conspirateur%20(Enqu%c3%aateur).ashx" title="Conspirateur">Conspirateur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Empiriste%20(Enqu%c3%aateur).ashx" title="Empiriste">Empiriste</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enqu%c3%aateur%20infiltr%c3%a9%20(Enqu%c3%aateur).ashx" title="Enquêteur infiltré">Enquêteur infiltré</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Harceleur%20dacier%20(Enqu%c3%aateur).ashx" title="Harceleur d&#39;acier">Harceleur d'acier</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Limier%20(Enqu%c3%aateur).ashx" title="Limier">Limier</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Spiritualiste%20(Enqu%c3%aateur).ashx" title="Spiritualiste">Spiritualiste</a> (MCA)</li></ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de lutteur<a class="headeranchor" id="Les_archétypes_de_lutteur_0" href="#Les_archétypes_de_lutteur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Lutteur.ashx" title="Lutteur">Le lutteur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Broyeur%20de%20m%c3%a9tal%20(lutteur).ashx" title="Broyeur de métal">Broyeur de métal</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20du%20bouclier%20(lutteur).ashx" title="Champion du bouclier">Champion du bouclier</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enfant%20sauvage%20(lutteur).ashx" title="Enfant sauvage">Enfant sauvage</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%89trangleur%20(lutteur).ashx" title="Étrangleur">Étrangleur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Exemplaire%20(lutteur).ashx" title="Exemplaire">Exemplaire</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lutteur%20mutag%c3%a9nique%20(lutteur).ashx" title="Lutteur mutagénique">Lutteur mutagénique</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lutteur%20serpentin%20(lutteur).ashx" title="Lutteur serpentin">Lutteur serpentin</a> (MCA)</li>
+</ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes </br>de prêtre combattant<a class="headeranchor" id="Les_archétypes_de_prêtre_combattant_0" href="#Les_archétypes_de_prêtre_combattant_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx" title="Prêtre combattant">Le prêtre combattant</a> (classe de base)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Champion%20de%20la%20foi%20(pr%c3%aatre%20combattant).ashx" title="Champion de la foi">Champion de la Foi</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Chef%20de%20culte%20(pr%c3%aatre%20combattant).ashx" title="Chef de culte">Chef de culte</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Commandant%20divin%20(pr%c3%aatre%20combattant).ashx" title="Commandant divin">Commandant divin</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9senchanteur%20(pr%c3%aatre%20combattant).ashx" title="Désenchanteur">Désenchanteur</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Poing%20sacr%c3%a9%20(pr%c3%aatre%20combattant).ashx" title="Poing sacré">Poing sacré</a> (MCA)</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Pr%c3%aatre%20forgeron%20(pr%c3%aatre%20combattant).ashx" title="Prêtre forgeron">Prêtre forgeron</a> (MCA)</li>
+</ul>
+</div><br /></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de sanguin<a class="headeranchor" id="Les_archétypes_de_sanguin_0" href="#Les_archétypes_de_sanguin_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Sanguin.ashx" title="Sanguin">Le sanguin</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cavalier%20sanguin%20(Sanguin).ashx" title="Cavalier sanguin">Cavalier sanguin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9voreur%20de%20sorts%20(Sanguin).ashx" title="Dévoreur de sorts">Dévoreur de sorts</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Interm%c3%a9diaire%20sanguin%20(Sanguin).ashx" title="Intermédiaire sanguin">Intermédiaire sanguin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9tamorphe%20sanguin%20(Sanguin).ashx" title="Métamorphe sanguin">Métamorphe sanguin</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Primitif%20(Sanguin).ashx" title="Primitif">Primitif</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sangacier%20(Sanguin).ashx" title="Sangacier">Sangacier</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sanguin%20au%20sang%20m%c3%aal%c3%a9%20(Sanguin).ashx" title="Sanguin au sang mêlé">Sanguin au sang mêlé</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sanguin%20intouchable%20(Sanguin).ashx" title="Sanguin intouchable">Sanguin intouchable</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sanguin%20m%c3%a9tamagique%20(Sanguin).ashx" title="Sanguin métamagique">Sanguin métamagique</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Sanguin%20verdoyant%20(Sanguin).ashx" title="Sanguin verdoyant">Sanguin verdoyant</a> (MCA)</li>
+</ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de scalde<a class="headeranchor" id="Les_archétypes_de_scalde_0" href="#Les_archétypes_de_scalde_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Scalde.ashx" title="Scalde">Le scalde</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20pr%c3%a9destin%c3%a9%20(Scalde).ashx" title="Champion prédestiné">Champion prédestiné</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Destructeur%20de%20sorts%20(Scalde).ashx" title="Destructeur de sorts">Destructeur de sorts</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.H%c3%a9raut%20du%20cor%20(Scalde).ashx" title="Héraut du cor">Héraut du cor</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Scalde%20tot%c3%a9mique%20(Scalde).ashx" title="Scalde totémique">Scalde totémique</a> (MCA)</li></ul>
+</div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de tueur<a class="headeranchor" id="Les_archétypes_de_tueur_0" href="#Les_archétypes_de_tueur_0" title="Lien vers cette section">&#0182;</a></h2>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Tueur.ashx" title="Tueur">Le tueur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chasseur%20de%20primes%20(tueur).ashx" title="Chasseur de primes">Chasseur de primes</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Coupe-jarret%20(tueur).ashx" title="Coupe-jarret">Coupe-jarret</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20des%20tombes%20(tueur).ashx" title="Gardien des tombes">Gardien des tombes</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Lib%c3%a9rateur%20(tueur).ashx" title="Libérateur">Libérateur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Nettoyeur%20(tueur).ashx" title="Nettoyeur">Nettoyeur</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tireur%20embusqu%c3%a9%20(tueur).ashx" title="Tireur embusqué">Tireur embusqué</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tueur%20en%20premi%c3%a8re%20ligne%20(tueur).ashx" title="Tueur en première ligne">Tueur en première ligne</a> (MCA)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Tueur%20stygien%20(tueur).ashx" title="Tueur stygien">Tueur stygien</a> (MCA)</li>
+</ul>
+</div></td>
+<td width="1%"></td>
+<td width="32%"></td>
+<td width="1%"></td>
+<td width="32%"></td>
+</tr><br /><br /></table><br /><table>
+<th></th><th>Classes occultes</th><th></th><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de cinétiste<a class="headeranchor" id="Les_archétypes_de_cinétiste_0" href="#Les_archétypes_de_cinétiste_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste.ashx" title="Le Cinétiste">Le cinétiste</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.%c3%82me%20invincible%20(Cin%c3%a9tiste).ashx" title="Âme invincible (Cinétiste)">Âme invincible</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Annihilateur%20%c3%a9l%c3%a9mentaire%20(Cin%c3%a9tiste).ashx" title="Annihilateur élémentaire (Cinétiste)">Annihilateur élémentaire</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Asc%c3%a8te%20%c3%a9l%c3%a9mentaire%20(Cin%c3%a9tiste).ashx" title="Ascète élémentaire (Cinétiste)">Ascète élémentaire</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chirurgien%20cin%c3%a9tique%20(Cin%c3%a9tiste).ashx" title="Chirurgien cinétique (Cinétiste)">Chirurgien cinétique</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Cin%c3%a9tiste%20du%20sang%20(Cin%c3%a9tiste).ashx" title="Cinétiste du sang">Cinétiste du sang</a> (AO)</li></ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'hypnotiseur<a class="headeranchor" id="Les_archétypes_dhypnotiseur_0" href="#Les_archétypes_dhypnotiseur_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Hypnotiseur.ashx" title="Hypnotiseur">L'hypnotiseur</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Casse-cou%20humiliant%20(Hypnotiseur).ashx" title="Casse-cou humiliant (Hypnotiseur)">Casse-cou humiliant</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20du%20culte%20(Hypnotiseur).ashx" title="Maître du culte (Hypnotiseur)">Maître du culte</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Marcheur%20spirituel%20(Hypnotiseur).ashx" title="Marcheur spirituel (Hypnotiseur)">Marcheur spirituel</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Toxicologue%20(Hypnotiseur).ashx" title="Toxicologue (Hypnotiseur)">Toxicologue</a> (AO)</li></ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de médium<a class="headeranchor" id="Les_archétypes_de_médium_0" href="#Les_archétypes_de_médium_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium.ashx" title="Médium">Le médium</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Canalisateur%20de%20reliques%20(M%c3%a9dium).ashx" title="Canalisateur de reliques (médium)">Canalisateur de reliques</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Conteur%20(M%c3%a9dium).ashx" title="Conteur (médium)">Conteur</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Danseur%20spirituel%20(M%c3%a9dium).ashx" title="Danseur spirituel (Médium)">Danseur spirituel</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium%20des%20kamis%20(M%c3%a9dium).ashx" title="Médium des kamis (Médium)">Médium des kamis</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.M%c3%a9dium%20r%c3%a9anim%c3%a9%20(M%c3%a9dium).ashx" title="Médium réanimé (médium)">Médium réanimé</a> (AO)</li></ul></div></td>
+</tr><br /><br /><tr>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes d'occultiste<a class="headeranchor" id="Les_archétypes_doccultiste_0" href="#Les_archétypes_doccultiste_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Occultiste.ashx" title="Occultiste">L'occultiste</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.D%c3%a9voreur%20de%20livres%20(Occultiste).ashx" title="Dévoreur de livres">Dévoreur de livres</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.H%c3%b4te%20de%20guerre%20(Occultiste).ashx" title="Hôte de guerre">Hôte de guerre</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.N%c3%a9croccultiste%20(Occultiste).ashx" title="Nécroccultiste">Nécroccultiste</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Shair%20(Occultiste).ashx" title="Shair (Occultiste)">Sha'ir</a> (AO)</li></ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de psychiste<a class="headeranchor" id="Les_archétypes_de_psychiste_0" href="#Les_archétypes_de_psychiste_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Psychiste.ashx" title="Psychiste">Le psychiste</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Adepte%20informe%20(Psychiste).ashx" title="Adepte informe (Psychiste)">Adepte informe</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Amn%c3%a9sique%20(Psychiste).ashx" title="Amnésique (Psychiste)">Amnésique</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Duelliste%20psychique%20(Psychiste).ashx" title="Duelliste psychique (Psychiste)">Duelliste psychique</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Esprit%20mut%c3%a9%20(Psychiste).ashx" title="Esprit muté (Psychiste)">Esprit muté</a> (AO)</li></ul></div></td>
+<td width="1%"></td>
+<td width="32%"><div class="presentation navmenudroite">
+<h2 class="separator">Les archétypes de spirite<a class="headeranchor" id="Les_archétypes_de_spirite_0" href="#Les_archétypes_de_spirite_0" title="Lien vers cette section">&#0182;</a></h2><ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Spirite.ashx" title="Spirite">Le spirite</a> (classe de base)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Canalisateur%20de%20geist%20(Spirite).ashx" title="Canalisateur de geist (Spirite)">Canalisateur de geist</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ectoplasmiste%20(Spirite).ashx" title="Ectoplasmiste (Spirite)">Ectoplasmiste</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Esprit%20fractur%c3%a9%20(Spirite).ashx" title="Esprit fracturé (Spirite)">Esprit fracturé</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Onmyoji%20(Spirite).ashx" title="Onmyoji (Spirite)">Onmyoji</a> (AO)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Spirite%20hant%c3%a9%20(Spirite).ashx" title="Spirite hanté (Spirite)">Spirite hanté</a> (AO)</li></ul></div></td>
+</tr><br /><br /></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
