@@ -1,0 +1,751 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les ordres de chevalerie - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="art de la guerre, chevalier, manuel des joueurs règles avancées, ordres, samouraï" /><meta name="description" content="ajout de l'ordre du linceul (AO)" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ordres.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Ordres&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwxILyMXOoNrYTD2ufgDEcnRrVvKs=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKs/+AwrNoQL2PU0762zmSq+B72oi3QcwxQT+thNGyuuoscb3u8dNoUZDIKkdSlQaQjfDQ2" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Ordres">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Ordres">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Ordres">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Ordres.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Ordres.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Ordres">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les ordres de chevalerie
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Ordres" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<i>Voici les Ordres des chevaliers et des samouraïs les plus répandus. <br /><br />Leurs membres ne sont pas forcément liés entre eux mais il existe des organisations qui se composent uniquement de chevaliers et de samouraïs du même ordre. <br /><br />Certains ordres sont plus spécifiques aux Samouraïs ou aux Chevaliers mais ils restent accessibles aux deux classes</i><br /><br /><div style="background-color: #fff; float: right; padding: 0 0 12px 12px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Ordres_de_chevalier_15">Ordres de chevalier</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_l’épée_0">Ordre de l’épée</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_l’étoile_1">Ordre de l’étoile</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_l’étoile_orientale_2">Ordre de l’étoile orientale</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_la_bête_3">Ordre de la bête</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_la_patte_4">Ordre de la patte</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_bouclier_5">Ordre du bouclier</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_cockatrice_6">Ordre du cockatrice</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_dragon_7">Ordre du dragon</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_linceul_8">Ordre du linceul</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_lion_9">Ordre du lion</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_livre_10">Ordre du livre</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_de_la_rose_bleue_11">Ordre de la rose bleue</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_sceau_12">Ordre du sceau</a><br />&nbsp;&nbsp;&nbsp;<a href="#Ordres_de_Samouraï_16">Ordres de Samouraï</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_guerrier_13">Ordre du guerrier</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Ordre_du_ronin_14">Ordre du ronin</a><br /></p></div></div></td></tr></table></div><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div>
+<h2 class="separator">Ordres de chevalier<a class="headeranchor" id="Ordres_de_chevalier_15" href="#Ordres_de_chevalier_15" title="Lien vers cette section">&#0182;</a></h2>
+<h3 class="separator">Ordre de l’épée<a class="headeranchor" id="Ordre_de_l’épée_0" href="#Ordre_de_l’épée_0" title="Lien vers cette section">&#0182;</a></h3><i>Les chevaliers qui rejoignent l’ordre de l’épée dédient leur vie au code de la chevalerie et vivent pour l’honneur, le courage et la justice. Ils jurent généralement fidélité à un seigneur ou une dame. De tous les ordres, c’est peut-être celui qui possède le plus large spectre d’objectifs et d’idéaux.</i><br /><br /><b>Édits.</b> Le chevalier doit faire montre de courage face au danger, de clémence envers ceux qui lui ont fait du tort et de charité envers les pauvres et les faibles. Il doit être juste et honorable à tout moment et en toutes choses. Il doit défendre son honneur et, par-dessus tout, celui de ceux qu’il sert.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre de l’épée lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de moral de +1 aux jets d’attaque contre la cible du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> tant qu’il se trouve sur sa monture. Ce bonus dure 1 minute. Il augmente de +1 par tranche de quatre niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de l’épée ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) (Int) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) (Int) à sa liste de compétences de classe. Quand il utilise la compétence <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> opposée à un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, il reçoit un bonus au <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum).<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier qui appartient à l’ordre de l’épée bénéficie des pouvoirs suivants quand il gagne des niveaux.
+<ul><li><b><i>Sur mon honneur (Ext).</i></b> Au niveau 2, le chevalier doit choisir un <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a>. Tant qu’il le conserve, il reçoit un bonus de moral de +2 à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> de son choix.</li><li><b><i>Maître du combat monté (Ext).</i></b> Au niveau 8, le personnage ignore les malus d’armure quand il fait un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>, que la créature qu’il chevauche soit sa monture ou non. Quand il fait une <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a> montée, il reçoit un bonus d’esquive de +4 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> pour éviter les attaques contre la <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a>. Quand il <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a>, il ajoute le modificateur de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> de sa monture à son jet de dégâts, en plus de son propre modificateur. Il reçoit également un don supplémentaire issu de la liste suivante : <a class="pagelink" href="Pathfinder-RPG.Combat%20mont%c3%a9.ashx" title="Combat monté">Combat monté</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20au%20galop.ashx" title="Attaque au galop">Attaque au galop</a>, <a class="pagelink" href="Pathfinder-RPG.Talent.ashx" title="Talent">Talent</a> (<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>), <a class="pagelink" href="Pathfinder-RPG.Charge%20d%c3%a9vastatrice.ashx" title="Charge dévastatrice">Charge dévastatrice</a>, <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a9tinement.ashx" title="Piétinement">Piétinement</a> ou <a class="pagelink" href="Pathfinder-RPG.D%c3%a9sar%c3%a7onner.ashx" title="Désarçonner">Désarçonner</a>. Il doit remplir les conditions requises pour le don choisi.</li><li><b><i>Défi du chevalier (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut lancer un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> une fois par jour. Cela fonctionne comme un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> normal mais le chevalier ajoute son bonus de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> aux jets d’attaque et de dégâts contre la créature défiée. De plus, il reçoit un bonus de circonstance de +4 aux jets d’attaque pour confirmer un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> contre la cible du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>.</li></ul>
+<h3 class="separator">Ordre de l’étoile<a class="headeranchor" id="Ordre_de_l’étoile_1" href="#Ordre_de_l’étoile_1" title="Lien vers cette section">&#0182;</a></h3><i>Les chevaliers qui rejoignent l’ordre de l’étoile dédient leur vie à la protection d’une religion et de ses membres. Ils ont tendance à suivre nombre des principes et guides de la foi qu’ils servent. Quand un chevalier rejoint cet ordre, il doit choisir une unique religion à servir.</i><br /><br /><b>Édits.</b> Le chevalier doit protéger sa religion et tous ceux qui suivent ses enseignements, des prêtres aux gens du commun. Il doit adhérer aux préceptes de sa foi, les promouvoir dès qu’il le peut et servir les agents du divin.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre de l’étoile lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de moral de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> tant qu’il menace la cible de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>. Ce bonus augmente de +1 par tranche de quatre niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de l’étoile ajoute <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> (Sag) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) (Int) à sa liste de compétences de classe. S’il a des rangs dans ces compétences, il reçoit un bonus au test égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum) tant que le test implique un membre de sa religion.<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier qui appartient à l’ordre de l’étoile bénéficie des pouvoirs suivants quand il gagne des niveaux.
+<ul><li><b><i>Vocation (Ext).</i></b>Au niveau 2, le chevalier peut faire une courte prière par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Il déborde alors de confiance dans ses aptitudes. Dans la minute qui suit, il peut, quand il le souhaite, recevoir un bonus de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a> égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> à un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristique.ashx" title="caractéristique">caractéristique</a>, d’attaque, de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">sauvegarde</a> ou de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>. Il doit annoncer qu’il souhaite utiliser ce bonus avant de lancer le dé. Il peut utiliser ce pouvoir jusqu’à quatre fois par jour, une fois par type de test ou de jet. De plus, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> ajoute la moitié de son niveau de classe à ses éventuels niveaux de <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladin</a> ou de <a class="pagelink" href="Pathfinder-RPG.pr%c3%aatre.ashx" title="Le prêtre">prêtre</a> quand il détermine les effets de sa <a class="pagelink" href="Pathfinder-RPG.canalisation%20d%c3%a9nergie.ashx" title="canalisation d&#39;énergie">canalisation d’énergie</a> ou d’<a class="pagelink" href="Pathfinder-RPG.imposition%20des%20mains.ashx" title="Imposition des mains">imposition des mains</a>.</li><li><b><i>Pour la foi (Ext).</i></b> Au niveau 8, le chevalier peut puiser dans sa foi pour l’aider au combat. Par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>, il crie le nom de sa <a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">divinité</a>, ce qui lui donne un bonus de moral égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> aux jets d’attaque pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. De plus, tous les alliés qui se trouvent dans les 9 m (6 cases) et partagent la même religion que lui bénéficient de la moitié de ce bonus (minimum +1). Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut utiliser ce pouvoir une fois par jour, une fois de plus au niveau 12 et par la suite une fois de plus tous les quatre niveaux.</li><li><b><i>Représailles (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> fait subir de lourdes représailles à toute créature qui ose frapper un agent de sa foi. Quand un adversaire réussit une attaque de corps à corps contre le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> ou un allié adjacent dévoué au même dieu que lui, cet ennemi provoque une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a> de la part du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>. Ce dernier reçoit un bonus de moral de +2 pour cette attaque. Si l’adversaire a réussi un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a>, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut le traiter comme la cible d’un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> pour cette <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>. Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut utiliser ce pouvoir une fois par <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>.</li></ul>
+<h3 class="separator">Ordre de l’étoile orientale<a class="headeranchor" id="Ordre_de_l’étoile_orientale_2" href="#Ordre_de_l’étoile_orientale_2" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" />
+</div><i>Cet ordre de chevaliers a pour objectif la conservation des secrets dangereux pour le monde et la protection secrète du monde contre des menaces étrangères et incompréhensibles pour les royaumes des mortels. Ces chevaliers partent en reconnaissance et observent. Les problèmes de moralité sont pour eux sans intérêt et ils préfèrent assurer la survie des sociétés dans leur ensemble.</i><br /><br /><b>Édits.</b> Le chevalier doit protéger les secrets de son ordre en même temps que la civilisation contre les menaces occultes. Il doit déjouer les complots ourdis par les horreurs originaires d’autres mondes et rapporter aux autorités de son ordre toute présence de menaces potentielles.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre de l’étoile orientale lance un défi, il bénéficie d’un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et d’un bonus d’intuition de +1 aux <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDESAUVEGARDE" title="Valeurs de combat">jets de sauvegarde</a> contre les attaques et les pouvoirs de la créature défiée. Il doit porter une armure légère et transporter une charge légère tout au plus s’il souhaite bénéficier de ces bonus. Ces bonus augmentent de +1 tous les 4 niveaux de chevalier possédés par le personnage.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de l’étoile orientale ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (plans) à sa liste de compétences de classe. Il peut effectuer des tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (plans) sans formation. S’il a investi des rangs dans ces compétences, il bénéficie d’un bonus à leurs tests égal à la moitié de son niveau de chevalier (+1 au minimum) s’ils concernent les domaines de l’occulte ou du surnaturel.<br /><br /><b>Dons.</b> Un chevalier de cet ordre acquiert <a class="pagelink" href="Pathfinder-RPG.Sensibilit%c3%a9%20psychique.ashx" title="Sensibilité psychique">Sensibilité psychique</a> en don supplémentaire.<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre de l’étoile orientale acquiert les pouvoirs suivants au fur et à mesure de sa progression en niveaux.
+<ul><li><b><i>Protégé (Ext).</i></b> Au niveau 2, le chevalier acquiert une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 1/- et un bonus de moral de +2 aux <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDESAUVEGARDE" title="Valeurs de combat">jets de sauvegarde</a> quand il ne porte aucune armure ou une armure légère seulement, et se bat sur la défensive ou en utilisant l’<a class="pagelink" href="Pathfinder-RPG.Expertise%20du%20combat.ashx" title="Expertise du combat">Expertise du combat</a>. Au niveau 6 et tous les 4 niveaux par la suite, la <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> augmente de 1. Il perd les avantages conférés par ce pouvoir s’il transporte une charge intermédiaire ou lourde.</li><li><b><i>Percée des défenses (Ext).</i></b> Au niveau 8, quand il attaque avec une arme légère ou à une main, le chevalier ignore le malus s’il combat sur la défensive ou s’il utilise l’<a class="pagelink" href="Pathfinder-RPG.Expertise%20du%20combat.ashx" title="Expertise du combat">Expertise du combat</a> lors de son premier <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDATTAQUE" title="Valeurs de combat">jet d’attaque</a> au corps à corps à chaque round. S’il combat avec deux armes, il ignore le malus lors de la première attaque avec chaque arme, si l’arme tenue dans sa main non directrice est légère. Le chevalier ne peut pas utiliser ce pouvoir avec des armes doubles.</li><li><b><i>Un seul objectif (Ext).</i></b> Au niveau 15, la monture du chevalier bénéficie elle aussi des avantages conférés par le pouvoir protégé du chevalier, tant que les deux ne portent aucune armure ou une armure légère seulement et que chacun transporte une charge légère au maximum. Le chevalier, et pas nécessairement sa monture, doit combattre sur la défensive ou utiliser l’<a class="pagelink" href="Pathfinder-RPG.Expertise%20du%20combat.ashx" title="Expertise du combat">Expertise du combat</a> pour conférer ces avantages. En outre, la monture bénéficie de tous les avantages du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">défi</a> du chevalier, quelle que soit le type d’armure qu’elle porte.</li></ul>
+<h3 class="separator">Ordre de la bête<a class="headeranchor" id="Ordre_de_la_bête_3" href="#Ordre_de_la_bête_3" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Class Guide/Manuel du joueur - classes avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMCA.gif" style="opacity: 0.7" />
+</div><i>Un chevalier qui rejoint cet ordre sert la nature sous toutes ses formes. Ces chevaliers restent proches des créatures des bois et estiment que les animaux sont les plus fidèles des compagnons.</i><br /><br /><b>Édits.</b> Un chevalier de l’ordre de la bête fait tout son possible pour protéger la nature, y compris les animaux et les créatures magiques, contre l’empiètement de la civilisation et de ceux qui cherchent à lui nuire. Il peut tuer des animaux et des créatures magiques enragés seulement si les tentatives pour les calmer ou les pacifier ont échoué.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre de la bête lance un défi, sa monture gagne un bonus de circonstance de +1 aux jets d’attaque au corps à corps contre la cible de son défi si le chevalier la menace. Ce bonus augmente de +1 pour chaque tranche de 4 niveaux de chevalier.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de la bête ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) et <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> à sa liste des compétences de classe. Quand il utilise Survie pour suivre des traces, il gagne un bonus au test égal à la moitié de son niveau de chevalier (minimum +1).<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre de la bête gagne les pouvoirs suivants au fur et à mesure qu’il gagne des niveaux.
+<ul><li><b><i>Empathie sauvage (Ext).</i></b> Au niveau 2, le chevalier peut améliorer l’attitude d’un animal. Ce pouvoir fonctionne comme l’aptitude de <a class="pagelink" href="Pathfinder-RPG.Druide.ashx#EMPATHIESAUVAGE" title="Le druide">druide</a> du même nom. Le chevalier remplace le niveau de druide par son niveau de chevalier quand il utilise ce pouvoir.</li><li><b><i>Transformation de monture sauvage (Sur).</i></b> Au niveau 8, une fois par jour, un chevalier de l’ordre de la bête peut temporairement transformer sa <a class="pagelink" href="Pathfinder-RPG.monture.ashx" title="Monture">monture</a> en un animal différent de taille M ou G. Il peut transformer sa monture en n’importe quelle créature de type animal. Ce pouvoir fonctionne comme <i><a class="pagelink" href="Pathfinder-RPG.forme%20bestiale%20II.ashx" title="Forme bestiale II">forme bestiale II</a></i>, à l’exception des indications suivantes.<ul><li>L’effet dure une heure par niveau de chevalier ou jusqu’à ce que le personnage souhaite que sa monture reprenne sa forme normale.</li><li>Le changement de forme de la monture (pour prendre la forme d’un animal différent ou pour reprendre sa forme normale) nécessite que le chevalier la touche par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> qui ne provoque pas d’<a class="pagelink" href="Pathfinder-RPG.AO.ashx" title="Attaque d&#39;opportunité (redirection)">attaque d’opportunité</a>.</li><li>Le chevalier doit bien connaitre la forme animale choisie.</li><li>La monture ne change pas de taille mais reçoit les bonus (mais pas les malus) décrits dans <i><a class="pagelink" href="Pathfinder-RPG.forme%20bestiale%20II.ashx" title="Forme bestiale II">forme bestiale II</a></i> pour les animaux de <a class="pagelink" href="Pathfinder-RPG.taille%20G.ashx" title="taille G">taille G</a>.<br /><br />Le chevalier peut utiliser ce pouvoir une fois de plus par jour au niveau 10 et tous les 4 niveaux par la suite (jusqu’à un maximum de quatre fois par jour au niveau 18). Au niveau 15, le chevalier peut utiliser transformation de monture sauvage pour transformer sa monture en un dragon de taille M ou G. Sous cet aspect, la transformation de monture sauvage du chevalier fonctionne désormais comme le sort <i><a class="pagelink" href="Pathfinder-RPG.forme%20draconique%20I.ashx" title="Forme draconique I">forme draconique I</a></i>, à l’exception des indications ci-dessus.</li></ul></li><li><b><i>Charge féroce (Ext).</i></b> Au niveau 15, le chevalier incarne la fureur de la nature. Quand il <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a> une créature, il peut effectuer un test d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> pour démoraliser son ennemi par une action libre. S’il réussit, la cible est <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayée</a>.</li></ul>
+<h3 class="separator">Ordre de la patte<a class="headeranchor" id="Ordre_de_la_patte_4" href="#Ordre_de_la_patte_4" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><i>Seuls les <a class="pagelink" href="Pathfinder-RPG.halfelin.ashx" title="Les halfelins">halfelins</a> qui chevauchent des chiens ou des loups ont le droit d’entrer dans cet ordre de chevaliers. Ils jurent alors de défendre les halfelins et leurs villages, ainsi que d’autres innocents, en patrouillant dans les étendues sauvages et en cherchant à débusquer tout ce qui pourrait menacer des individus ou des communautés entières. Ces chevaliers traquent les dangers potentiels avec une efficacité et une détermination impitoyables qui surprennent les non-halfelins et les inquiètent parfois.</i><br /><br /><b>Édits.</b> Le chevalier doit protéger sa communauté contre les monstres en maraude et les conquérants. Il aide en priorité les communautés halfelines, mais il jure aussi de défendre tous ceux qui ne peuvent pas se protéger de ce genre de dangers. Il n’a pas le droit de faire quelque chose qui mettrait un village halfelin ou une créature innocente en danger. Un chevalier de l’ordre de la Patte doit obligatoirement choisir un <a class="pagelink" href="Pathfinder-RPG.chien%20de%20selle.ashx" title="Chien de selle">chien</a> ou un <a class="pagelink" href="Pathfinder-RPG.loup.ashx" title="Loup">loup</a> comme monture.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre de la Patte lance un <a class="pagelink" href="Pathfinder-RPG.d%c3%a9fi.ashx" title="défi">défi</a>, sa monture gagne un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> tant qu’elle menace la cible du défi de son chevalier et que ce dernier est en selle. Ce bonus augmente de +1 tous les quatre niveaux de chevalier.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de la Patte ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) et <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> à sa liste de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences%20de%20classe.ashx" title="compétences de classe">compétences de classe</a>. Il peut faire un test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) sans formation. Un chevalier de l’ordre de la Patte est aussi entraîné à suivre une piste en selle. Pour ce faire, il utilise la vitesse de sa monture au lieu de la sienne pour déterminer le malus au <a class="pagelink" href="Pathfinder-RPG.pistage.ashx" title="Pistage">pistage</a> quand il se déplace, qu’il soit monté ou non.<br /><br /><b>Pouvoirs de l’ordre.</b> En montant de niveau, le chevalier de l’ordre de la Patte gagne les pouvoirs suivants.<br /><br /><ul><li><b><i>Anticiper le danger (Ext).</i></b> Au niveau 2, le chevalier peut préparer ses alliés à affronter le danger. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, il donne un bonus à un unique <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> (<a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a>, <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> ou <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a>) à tous les alliés dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>). Il doit choisir le type de jet de sauvegarde à améliorer au moment où il utilise ce pouvoir. Dans la minute qui suit, chaque allié qui rate un jet de sauvegarde du type choisi peut relancer le dé avec un bonus de compétence de +4. C’est une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>. L’allié doit conserver le résultat du second jet, même s’il est pire que le premier. Il peut utiliser ce pouvoir jusqu’à trois fois par jour, une pour chaque type de jet de sauvegarde.</li><li><b><i>Férocité canine (Ext).</i></b> Au niveau 8, quand le chevalier utilise son chien ou son loup pour faire une manoeuvre de <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a> ou de <a class="pagelink" href="Pathfinder-RPG.renversement.ashx" title="renversement">renversement</a>, sa monture est considérée comme étant d’une catégorie de taille de plus qu’en réalité quand il s’agit de déterminer la taille des créatures contre lesquelles elle peut effectuer sa manoeuvre et pour déterminer son <a class="pagelink" href="Pathfinder-RPG.BMO.ashx" title="BMO">BMO</a>. Le chevalier reçoit aussi un <a class="pagelink" href="Pathfinder-RPG.don.ashx" title="don">don</a> supplémentaire issu de la liste suivante : <a class="pagelink" href="Pathfinder-RPG.Combat%20mont%c3%a9.ashx" title="Combat monté">Combat monté</a>, <a class="pagelink" href="Pathfinder-RPG.Attaque%20au%20galop.ashx" title="Attaque au galop">Attaque au galop</a>, <a class="pagelink" href="Pathfinder-RPG.Talent.ashx" title="Talent">Talent</a> (<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>), <a class="pagelink" href="Pathfinder-RPG.Charge%20d%c3%a9vastatrice.ashx" title="Charge dévastatrice">Charge dévastatrice</a>, <a class="pagelink" href="Pathfinder-RPG.Pi%c3%a9tinement.ashx" title="Piétinement">Piétinement</a> ou <a class="pagelink" href="Pathfinder-RPG.D%c3%a9sar%c3%a7onner.ashx" title="Désarçonner">Désarçonner</a>. Il doit remplir les conditions requises.</li><li><b><i>Tueur de géants (Ext).</i></b> Au niveau 15, quand le chevalier touche la cible de son défi avec une attaque au corps à corps et qu’elle est au moins de deux catégories de <a class="pagelink" href="Pathfinder-RPG.taille.ashx" title="taille">taille</a> de plus que lui, il gagne un bonus aux jets de dégâts égal à la moitié de son niveau de chevalier. Ces dégâts sont multipliés en cas de <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a>.</li></ul><br /><h3 class="separator">Ordre du bouclier<a class="headeranchor" id="Ordre_du_bouclier_5" href="#Ordre_du_bouclier_5" title="Lien vers cette section">&#0182;</a></h3><i>Tout chevalier qui appartient à cet ordre a juré de dédier sa vie à la protection du petit peuple, du simple fermier à l’honnête artisan. Ces chevaliers luttent contre tout et protègent les innocents des maraudeurs et des monstres affamés.</i><br /><br /><b>Édits.</b> Le chevalier doit protéger la vie et les intérêts des gens du commun, en les défendant contre les abus de ceux qui voudraient les malmener ou les exploiter. Il se doit de faire la charité quand il le faut et d’apporter son aide si besoin. Il ne doit jamais faire quoi que ce soit qui puisse causer du tort ou faire du mal à des gens incapables de se défendre.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du bouclier lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de moral de +1 aux jets d’attaque contre la cible du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> si elle attaque une personne autre que lui. Ce bonus dure 1 minute. Il augmente de +1 par tranche de quatre niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre du bouclier ajoute <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> (Sag) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local) (Int) à sa liste de compétences de classe. Quand il utilise la compétence <a class="pagelink" href="Pathfinder-RPG.Premiers%20secours.ashx" title="Premiers secours">Premiers secours</a> sur une créature autre que lui, il reçoit un bonus au <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum).<br /><br /><b>Pouvoirs de l’ordre.</b>Un chevalier qui appartient à l’ordre du bouclier bénéficie des pouvoirs suivants quand il gagne des niveaux.<br /><br /><ul><li><b><i>Résolu (Ext).</i></b> Au niveau 2, quand le chevalier reçoit des dégâts à cause d’une attaque à distance ou au corps à corps alors qu’il porte une <a class="pagelink" href="Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx#LOURDES" title="Tableau récapitulatif des armures">armure lourde</a>, il peut convertir 1 point de dégâts létaux en <a class="pagelink" href="Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non%20l%c3%a9taux.ashx" title="Dégâts non létaux">dégâts non létaux</a>. Il peut utiliser ce pouvoir une fois par coup reçu. En revanche, il ne peut pas s’en servir pour convertir des points d’<a class="pagelink" href="Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx#AFFTEMPDIMPERM" title="Les capacités spéciales">affaiblissement de caractéristique</a>, de <a class="pagelink" href="Pathfinder-RPG.Capacit%c3%a9s%20sp%c3%a9ciales.ashx#AFFTEMPDIMPERM" title="Les capacités spéciales">diminution de caractéristique</a> ou de dégâts d’énergie. Au niveau 6 et tous les quatre niveaux par la suite, le nombre de points de dégâts convertis augmente de 1.</li><li><b><i>Endiguer la marée (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> reçoit <a class="pagelink" href="Pathfinder-RPG.Immobiliser.ashx" title="Immobiliser">Immobiliser</a> comme don supplémentaire, même s’il ne remplit pas les conditions requises. Au lieu de faire un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.man%c5%93uvre%20offensive.ashx" title="Manœuvre offensive">manœuvre offensive</a> pour empêcher son ennemi de bouger, il peut faire une attaque normale. S’il touche et inflige des dégâts, la cible doit arrêter son mouvement, comme si le chevalier avait réussi un <a class="unknownlink" href="Pathfinder-RPG.tes.ashx" title="Pathfinder-RPG.tes">tes</a>t de <a class="pagelink" href="Pathfinder-RPG.man%c5%93uvre%20offensive.ashx" title="Manœuvre offensive">manœuvre offensive</a>.</li><li><b><i>Protéger les faibles (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut se déplacer pour intercepter un ennemi. Par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, il peut faire un déplacement à sa vitesse de base (ou à celle de sa monture) et faire une unique attaque. Ce déplacement provoque des <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunités</a>, comme d’habitude. Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit terminer son mouvement de façon à se trouver adjacent à un ennemi. Au tour suivant, il est <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelant</a> et ne peut pas réutiliser ce pouvoir avant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>.</li></ul>
+<h3 class="separator">Ordre du cockatrice<a class="headeranchor" id="Ordre_du_cockatrice_6" href="#Ordre_du_cockatrice_6" title="Lien vers cette section">&#0182;</a></h3><i>Un chevalier qui appartient à cet ordre ne sert personne d’autre que lui et travaille à atteindre ses propres objectifs et à accroître son prestige. Les chevaliers de cet ordre sont généralement égoïstes et ne se soucient que de leurs propres intérêts et de leurs ambitions personnelles.</i><br /><br /><b>Édits.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit faire passer ses ambitions et ses propres désirs avant toute chose. Il doit toujours accepter d’être payé quand cela lui est dû, d’être récompensé quand il le mérite et de recevoir une part égale (ou supérieure) du butin. Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit profiter de la moindre opportunité pour accroître son statut, son prestige et sa puissance.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> issu de l’Ordre du cockatrice lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de moral de +1 aux jets de dégâts au corps à corps contre la cible de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> tant qu’il est le seul à la menacer (sans compter sa monture). Ce bonus augmente de +1 par tranche de 4 niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’Ordre du cockatrice ajoute <a class="pagelink" href="Pathfinder-RPG.Estimation.ashx" title="Estimation">Estimation</a> (Int) et <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (Cha) à sa liste de compétences de classe. De plus, il ajoute son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> à son <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> quand une créature tente de le démoraliser à l’aide de l’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> (en plus du modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> habituel).<br /><br /><b>Pouvoirs de l’ordre.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> qui appartient à l’Ordre du cockatrice bénéficie des pouvoirs suivants quand il progresse de niveaux.<br /><br /><ul><li><b><i>Fanfaron (Ext).</i></b> Au niveau 2, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut utiliser une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> pour vanter ses propres prouesses et exploits au combat. Il reçoit le don <a class="pagelink" href="Pathfinder-RPG.D%c3%a9monstration.ashx" title="Démonstration">Démonstration</a> comme don supplémentaire. Il n’a pas besoin de tenir une arme en main pour l’utiliser. Il gagne un bonus de moral de +2 aux jets d’attaque au corps à corps contre les créatures démoralisées.</li><li><b><i>Vol de gloire (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut voler la gloire qu’une autre créature devrait obtenir quand elle réussit une attaque. Quand une créature autre que le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> donne un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> à une cible que le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> menace aussi, il peut faire une <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a> contre cette cible.</li><li><b><i>Instant de triomphe (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut, par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>, déclarer un instant de triomphe. Pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>, il reçoit un bonus de compétence égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> à tous les tests de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristique.ashx" title="caractéristique">caractéristique</a>, d’attaque, de dégâts et de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>, ainsi qu’à tous ses <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a>. Ce bonus s’ajoute également à sa <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. De plus, il confirme automatiquement ses <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coups critiques</a> possibles. Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> ne peut utiliser ce pouvoir qu’une fois par jour.</li></ul><br /><h3 class="separator">Ordre du dragon<a class="headeranchor" id="Ordre_du_dragon_7" href="#Ordre_du_dragon_7" title="Lien vers cette section">&#0182;</a></h3><i>Les chevaliers qui appartiennent à l’ordre du dragon se dévouent à un groupe d’individus qui possèdent la même tournure d’esprit qu’eux, qu’il s’agisse d’une compagnie mercenaire ou d’un petit groupe d’aventuriers. Ils croient à la loyauté et à l’amitié et sont prêts à sacrifier leur vie pour défendre leurs alliés.</i><br /><br /><b>Édits.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit rester loyal à ses alliés et travailler à atteindre les objectifs de son groupe. Il doit protéger ses alliés et défendre leur honneur si quelqu’un le met en doute.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> issu de l’ordre du dragon lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, ses alliés reçoivent un bonus de circonstances de +1 aux jets d’attaque au corps à corps contre la cible du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> tant qu’il la menace. Ce bonus augmente de +1 par tranche de 4 niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du dragon ajoute <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> (Sag) et <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> (Sag) à sa liste de compétences de classe. De plus, quand il utilise la <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> pour chercher de l’eau et de la nourriture pour ses alliés ou pour les protéger des rudesses du climat, il reçoit un bonus au test égal à la moitié de son niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (avec un minimum de 1).<br /><br /><b>Pouvoirs de l’ordre.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> qui appartient à l’ordre du dragon bénéficie des pouvoirs suivants quand il gagne des niveaux.<br /><br /><ul><li><b><i>Aider ses alliés (Ext).</i></b> Au niveau 2, quand le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du dragon utilise l’action <a class="pagelink" href="Pathfinder-RPG.Actions%20sp%c3%a9ciales.ashx#AIDERQQN" title="Actions spéciales">aider autrui</a> pour aider un allié, ce dernier reçoit un bonus de +3 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>, aux jets d’attaque et de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">sauvegarde</a> ou aux tests de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>. Au niveau 8 et tous les six niveaux par la suite, ce bonus augmente de +1</li><li><b><i>Stratégie (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut utiliser une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> pour accorder un bonus à tous les alliés situés dans les 9 m / 6 cases (y compris lui‑même). Pour recevoir ce bonus, les alliés doivent le voir et l’entendre. Il peut accorder un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> pour un <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>, un bonus de moral de +2 aux jets d’attaque pour un <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> ou la capacité de se déplacer à <a class="pagelink" href="Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx" title="vitesse de déplacement">vitesse</a> normale par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a> une seule fois. Il peut donner un bonus différent à chaque allié à portée mais les alliés ne peuvent en bénéficier qu’une fois par combat.</li><li><b><i>Comme un seul homme (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut utiliser une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> pour se déplacer à sa <a class="pagelink" href="Pathfinder-RPG.vitesse%20de%20d%c3%a9placement.ashx" title="vitesse de déplacement">vitesse</a> et faire une attaque de corps à corps. Tous les alliés situés dans un rayon de 9 m (6 cases) peuvent faire de même par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>. Ce déplacement et cette attaque peuvent faire partie d’une <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a> si le mouvement le permet. Toutes les attaques bénéficient d’un bonus de +2 (qui se cumule avec le bonus de <a class="pagelink" href="Pathfinder-RPG.charge.ashx" title="charge">charge</a>) et tous les participants reçoivent un bonus d’esquive de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> ne peut utiliser ce pouvoir qu’une fois par combat.</li></ul>
+<h3 class="separator">Ordre du linceul<a class="headeranchor" id="Ordre_du_linceul_8" href="#Ordre_du_linceul_8" title="Lien vers cette section">&#0182;</a></h3><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Occult Adventures/Aventures occultes" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoOA.gif" style="opacity: 0.7" />
+</div><i>Les chevaliers de cet ordre pourchassent et détruisent les mortsvivants et les créatures qui les créent ou les aident à se cacher. Ils fouillent d’anciennes cryptes, des cimetières et des champs de bataille pour leur apporter le repos éternel.</i><br /><br /><b>Édits.</b> Le chevalier doit protéger les gens du peuple du fléau que représentent les morts-vivants. Il doit pourchasser et détruire les morts sans repos et aider ceux que ces créatures tourmentent. Il doit protéger les personnes incapables de se défendre et éradiquer les sources qui corrompent le cycle de la vie et de la mort.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre du linceul défie un <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">mort-vivant</a>, il bénéficie d’un bonus de moral de +1 aux <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDATTAQUE" title="Valeurs de combat">jets d’attaque</a> contre lui pendant une minute. Le bonus augmente de +1 tous les 4 niveaux de chevalier possédés par le personnage.<br /><br /><b>Compétences.</b> Un chevalier du linceul ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) à la liste de ses compétences de classe. Il peut effectuer des tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) sans formation. S’il a investi des rangs dans cette compétence, il bénéficie d’un bonus au test égal à la moitié de son niveau de chevalier (+1 au minimum) s’il concerne des morts-vivants ou des apparitions.<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre du linceul acquiert les pouvoirs suivants au fur et à mesure de sa progression en niveaux.
+<ul><li><b><i>Bouclier spirituel (Sur).</i></b> Un chevalier de niveau 2 peut demander aux esprits des morts de le protéger. Une fois par jour par une <a class="pagelink" href="Pathfinder-RPG.types%20dactions.ashx#IMMEDIATE" title="Les types d&#39;actions">action immédiate</a>, s’il est attaqué par un mort-vivant qu’il a défié, le chevalier bénéficie d’un bonus de parade à sa <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre cette attaque égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>. Le chevalier doit décider s’il utilise ce pouvoir avant que le <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDATTAQUE" title="Valeurs de combat">jets d’attaque</a> ne soit effectué.</li><li><b><i>Destructeur de morts-vivants (Sur).</i></b> On considère que les armes d’un chevalier de niveau 8 sont du même alignement que le personnage lorsqu’il s’agit d’ignorer l’éventuelle <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réduction de dégâts</a> des morts-vivants. Contre un mort-vivant défié, le chevalier ignore automatiquement toutes les <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réduction de dégâts</a> dont il bénéficie.</li><li><b><i>Rempart contre les ténèbres (Ext ou Sur).</i></b> Un chevalier de niveau 15 peut se venger sur les morts-vivants qui osent le frapper lui ou ceux qu’il cherche à protéger. Quand un mort-vivant défié touche le chevalier ou un allié adjacent avec une attaque au corps à corps, la créature provoque une attaque d’opportunité de la part du chevalier. Celui-ci bénéficie d’un bonus de moral de +2 aux <a class="pagelink" href="Pathfinder-RPG.valeurs%20de%20combat.ashx#JETDATTAQUE" title="Valeurs de combat">jets d’attaque</a> d’opportunité résultant de ce pouvoir. Si un mort-vivant défié par le chevalier obtient une probabilité de coup critique contre lui, il bénéficie d’un bonus de parade contre le jet de confirmation égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>. Ce bonus fait office de pouvoir surnaturel.</li></ul>
+<h3 class="separator">Ordre du lion<a class="headeranchor" id="Ordre_du_lion_9" href="#Ordre_du_lion_9" title="Lien vers cette section">&#0182;</a></h3><i>Tout chevalier qui appartient à cet ordre a juré fidélité à un souverain, qu’il s’agisse d’un roi, d’une reine ou même d’un seigneur de guerre local. Ces chevaliers sont loyaux et dévoués à leur cause, et ils sont prêts à tout pour assurer la sécurité de leur seigneur et de son domaine.</i><br /><br /><b>Édits.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit protéger la vie et les terres de son souverain à n’importe quel prix. Il doit également lui obéir sans poser de questions et chercher à augmenter la puissance et le prestige de son royaume.<br /><br /><b>Défi.</b> Quand un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus d’esquive de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les attaques lancées par la créature défiée. Ce bonus augmente de +1 par tranche de quatre niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Compétences.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local) (Int) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) (Int) à sa liste de compétences de classe. Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion peut faire un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) même sans formation. S’il possède un rang dans cette <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>, il reçoit un bonus au test égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum) tant que le <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> implique son souverain.<br /><br /><b>Pouvoirs de l’ordre.</b> Un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> qui appartient à l’ordre du lion bénéficie des pouvoirs suivants quand il gagne des niveaux.<br /><br /><ul><li><b><i>Appel du lion (Ext).</i></b> Au niveau 2, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion gagne le pouvoir de motiver ses alliés. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, il prononce un discours encourageant qui donne à tout allié situé dans les 18 m (12 <abbr title="cases">c</abbr>) un bonus de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a> contre la peur égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> et un bonus de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a> de +1 aux jets d’attaque pour un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal à son niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>. Si un allié à portée se trouve sous l’effet d’un sort ou d’un pouvoir qui l’<a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effraye</a> ou le <a class="pagelink" href="Pathfinder-RPG.paniqu%c3%a9.ashx" title="Paniqué">panique</a>, il peut refaire immédiatement un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> pour résister (si l’effet autorise un jet).</li><li><b><i>Pour le roi (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion peut lancer un appel à ses alliés pour leur inspirer des actes de grandeur. Par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> accorde un bonus de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a> égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> à tous les jets d’attaque et de dégâts des alliés situés dans les 9 m (6 cases). Ce bonus dure 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. Ce pouvoir ne s’utilise qu’une fois par combat.</li><li><b><i>Bouclier du lige (Ext).</i></b> Au niveau 15, un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du lion peut protéger ceux qui l’entourent. Les alliés adjacents au chevalier reçoivent un bonus de bouclier de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. De plus, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut rediriger l’attaque d’une créature adjacente vers sa propre personne, tant que l’attaquant est à sa portée. Il doit annoncer qu’il utilise ce pouvoir avant que l’attaquant ne fasse son jet d’attaque. Cette dernière se fait contre la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et les défenses du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>, même si, normalement, la créature ne devrait pas toucher ni attaquer le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>. Ce dernier perd tout bonus d’<a class="pagelink" href="Pathfinder-RPG.abri.ashx" title="abri">abri</a> ou de <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a> quand il est la cible d’une attaque redirigée.</li></ul>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Ordre du livre<a class="headeranchor" id="Ordre_du_livre_10" href="#Ordre_du_livre_10" title="Lien vers cette section">&#0182;</a></h3><i>La connaissance est la pierre angulaire de la vérité et du pouvoir. Les membres de l’ordre du livre cherchent donc à la préserver. La plupart sont prêts à protéger le savoir écrit à n’importe quel prix mais certains membres de l’ordre pensent qu’il existe des connaissances trop dangereuses et cherchent à les détruire.</i><br /><br /><b>Édits.</b> Un chevalier de l’ordre du livre doit protéger le savoir écrit (ou du moins approuvé), quel qu’en soit le prix. Certains se consacrent à l’annihilation des connaissances interdites et se montrent tout aussi zélés dans leur quête de destruction. La plupart des chevaliers du livre pensent que les textes valent plus qu’une vie, même la leur, car ce sont eux qui apporteront la sagesse aux générations futures.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre du livre lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les sorts et les pouvoirs magiques de la cible et un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> qui impliquent cette cible.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre du livre ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) (Int), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion) (Int) et <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> à sa liste de compétences de classe. De plus, il peut utiliser la <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> sans entraînement. Il reçoit un bonus au test égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (1 au minimum).<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre du livre obtient les pouvoirs suivants, au fur et à mesure qu’il monte de niveau.<br /><br /><ul><li><b><i>Connaissances spécialisées (Ext).</i></b> Au niveau 2, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du livre choisit <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères) ou (religion). Il peut faire des tests dans la compétence choisie sans entraînement. Il ne peut pas revenir sur ce choix par la suite. S’il possède des rangs dans la compétence choisie, il reçoit un bonus au test égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum) tant que le test concerne un livre, un ouvrage, un parchemin ou toute autre forme de connaissance écrite.</li><li><b><i>Puissance du savoir (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> apprend à lire les parchemins et à s’en servir pour lancer des sorts profanes ou divins comme s’il avait un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> égal à son niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> -4. Il peut déchiffrer n’importe quel parchemin en se servant de la <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> et non de l’<a class="pagelink" href="Pathfinder-RPG.Art%20de%20la%20magie.ashx" title="Art de la magie">Art de la magie</a> et il n’a pas besoin de lancer <a class="pagelink" href="Pathfinder-RPG.lecture%20de%20la%20magie.ashx" title="Lecture de la magie">lecture de la magie</a>. Le genre de sort qu’il peut lancer dépend de la compétence de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> qu’il a choisie en connaissances spécialisées. S’il a opté pour <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères), il peut lancer des sorts profanes à l’aide de parchemins et s’il a choisi <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion), il peut lancer des sorts divins à partir des parchemins. De plus, il gagne un bonus de +1 à une valeur de caractéristique quand il s’agit de déterminer le niveau du sort qu’il lance à partir du parchemin. Ce bonus augmente de +1 au niveau 10 et par la suite tous les cinq niveaux (avec un maximum de +4 au niveau 20). La valeur de caractéristique augmentée dépend de la compétence choisie avec connaissances spécialisées. Si le chevalier a opté pour <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères), il gagne un bonus à l’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> et s’il a choisi <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion), il gagne un bonus à la <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.</li><li><b><i>Connaissances défensives (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> de l’ordre du livre peut accorder certains des avantages de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a> à ses alliés. Quand ils sont adjacents, ils gagnent un bonus de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a> contre les sorts et les pouvoirs magiques de la cible du défi. De plus, chaque jour, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut, par une action immédiate et un nombre de fois égal à son modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> ou de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (1 au minimum), permettre à un allié de refaire un jet de sauvegarde raté contre un sort ou un pouvoir magique qui émane de la cible de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>. Pour bénéficier de ce second jet, l’allié doit voir et entendre le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>. La valeur de caractéristique qui détermine le nombre de fois où le chevalier peut se servir de ce pouvoir chaque jour dépend de la compétence qu’il a choisie avec connaissances spécialisées. S’il a opté pour <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (mystères), le nombre d’utilisations quotidiennes du pouvoir se base sur l’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> et sur la <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> s’il a choisi <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (religion).</li></ul>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Ordre de la rose bleue<a class="headeranchor" id="Ordre_de_la_rose_bleue_11" href="#Ordre_de_la_rose_bleue_11" title="Lien vers cette section">&#0182;</a></h3><i>Les chevaliers de l’ordre de la rose bleue défendent la paix sur les terres qu’ils traversent. Ce sont des guerriers
+talentueux et des diplomates hors pair qui conseillent la sagesse, la patience et la compréhension. Pourtant, ils sont toujours prêts à prendre les armes pour terrasser les agresseurs, les tyrans et les usurpateurs maléfiques. Ils croient sincèrement que la paix est un objectif et une fin en soi, mais ce sont avant tout des guerriers qui accordent une grande importance à leur rôle de protecteur de tous ceux qui ne peuvent ou ne veulent pas prendre les armes pour se défendre.</i><br /><br /><b>Édits.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit éviter toute violence inutile et protéger le pays et ses habitants contre les guerres qu’ils n’ont pas commencées et qu’ils ne veulent pas mener. Il doit chercher à mettre un terme aux conflits en versant le minimum de sang et encourager les solutions pacifiques aux désaccords entre créatures intelligentes. Il doit aussi s’efforcer de soigner les plaies que laisse la guerre. Quand il fait des prisonniers, il doit respecter sa décision et protéger les captifs qui se sont rendus, même contre ses propres alliés.<br /><br /><b>Défi.</b> Quand un chevalier de l’ordre de la rose bleue lance un <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, il reçoit un bonus de moral de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre la cible du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>, à condition qu’il s’agisse d’une créature intelligente à qui le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> a donné une chance de se rendre (ce qui lui coûte une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> pour donner les termes de la reddition). Ce bonus augmente de +1 tous les quatre niveaux de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (avec un maximum de +5 au niveau 17).<br /><br /><b>Compétences.</b> Un chevalier de l’ordre de la rose bleue ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (histoire) (Int) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) (Int) à sa liste de compétences de classe. À chaque fois qu’un chevalier de l’ordre de la rose bleue utilise la <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> pour essayer d’arbitrer une dispute entre deux parties auxquelles il n’appartient pas, il reçoit un bonus au test égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (1 au minimum).<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre de la rose bleue obtient les pouvoirs suivants, au fur et à mesure qu’il monte de niveau.<br /><br /><ul><li><b><i>Plat de la lame (Ext).</i></b> Au niveau 2, le chevalier de l’ordre de la rose bleue apprend à modérer ses attaques pour capturer son adversaire vivant. Il ne subit plus de malus de -4 quand il choisit de faire des <a class="pagelink" href="Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non%20l%c3%a9taux.ashx" title="Dégâts non létaux">dégâts non létaux</a> avec une arme létale. Quand il inflige des <a class="pagelink" href="Pathfinder-RPG.d%c3%a9g%c3%a2ts%20non%20l%c3%a9taux.ashx" title="Dégâts non létaux">dégâts non létaux</a>, il reçoit même un bonus de +2 aux jets de dégâts. Quand le chevalier se sert de ce pouvoir, il peut tenter de soumettre sa cible sans la tuer. S’il utilise une force létale après avoir activé ce pouvoir ou qu’il laisse ses alliés tuer la cible, on considère qu’il viole son édit.</li><li><b><i>Paix intérieure (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> sait que, même si tout ne se passe pas comme il le voudrait, il doit rester calme et concentré. Une fois par jour, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, il peut ignorer des dégâts d’une unique source (une attaque, un sort ou un effet) pour un montant égal à son niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a>. Ce pouvoir lui permet seulement d’ignorer les points de dégâts. Il peut l’utiliser une fois de plus au niveau 12 et une autre tous les quatre niveaux (avec un maximum de quatre fois par jour au niveau 20).</li><li><b><i>Bouclier de lames (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> devient extrêmement sensible à la violence qui se déchaîne autour de lui. Quand il se met en <a class="pagelink" href="Pathfinder-RPG.d%c3%a9fense%20totale.ashx" title="défense totale">défense totale</a>, il peut étendre sa protection à ceux qui l’entourent et leur accorder un bonus de circonstances de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> (les alliés doivent être adjacents au <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>). De plus, quand il est en <a class="pagelink" href="Pathfinder-RPG.d%c3%a9fense%20totale.ashx" title="défense totale">défense totale</a>, il peut, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, tenter de dévier une attaque. Il fait alors un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> opposé à celui de l’assaillant originel. S’il réussit, il dévie l’attaque qui n’inflige pas de dégâts.</li></ul>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<h3 class="separator">Ordre du sceau<a class="headeranchor" id="Ordre_du_sceau_12" href="#Ordre_du_sceau_12" title="Lien vers cette section">&#0182;</a></h3><i>Les chevaliers du sceau forment un ordre secret où chacun est chargé de protéger un objet spécifique (comme un dangereux objet magique), un lieu (un temple perdu) ou une information (comme de savoir qu’un certain paysan est
+en réalité le dernier descendant d’une lignée royale). Ces chevaliers défendent d’anciennes traditions ou servent un
+dirigeant qui cache d’importants secrets. Il leur faut parfois faire des recherches sur ces derniers pour les protéger.</i><br /><br /><b>Édits.</b> Le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> doit protéger ce qu’il a juré de défendre à n’importe quel prix : sa santé, son honneur ou même sa vie. S’il garde un lieu, il doit en chasser les intrus, si c’est un objet, il doit empêcher qu’on ne le vole ou le récupérer si quelqu’un le subtilise.<br /><br /><b>Défi.</b> Un chevalier de l’ordre du sceau peut faire une manœuvre de <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a> ou de <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a> à chaque fois qu’il fait une <a class="pagelink" href="Pathfinder-RPG.attaque%20%c3%a0%20outrance.ashx" title="attaque à outrance">attaque à outrance</a> contre la cible de son <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">Défi</a>. Cette manœuvre offensive gratuite ne provoque pas d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>.<br /><br /><b>Compétences.</b> Un chevalier de l’ordre du sceau ajoute <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> (Dex) et <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> (Int) à sa liste de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences%20de%20classe.ashx" title="compétences de classe">compétences de classe</a>. À chaque fois que le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> utilise le <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> pour cacher une information sur ce qu’il a juré de protéger, il reçoit un bonus de compétence égal à 1/2 niveau de <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> (+1 au minimum).<br /><br /><b>Pouvoirs de l’ordre.</b> Un chevalier de l’ordre du sceau obtient les pouvoirs suivants, au fur et à mesure qu’il monte de niveau.<br /><br /><ul><li><b><i>Garde (Ext).</i></b> Au niveau 2, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut, une fois par jour, choisir un lieu ou un secret qu’il a juré de protéger. Si c’est un lieu, il gagne un bonus de moral de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> quand il le défend directement. Si c’est un secret, il gagne un bonus de moral de +2 aux jets de sauvegarde et aux tests opposés quand il essaye de ne pas révéler d’information sur ce secret. Il bénéficie de ces bonus jusqu’à ce qu’il choisisse de protéger un nouvel objet, un nouveau lieu ou un nouveau secret.</li><li><b><i>Je ne bougerai pas (Ext).</i></b> Au niveau 8, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut faire appel à sa dévotion pour surmonter une faiblesse physique. Quand il ne fait pas plus d’un pas de 1,50 m, il reçoit un bonus d’esquive de +2 au <a class="pagelink" href="Pathfinder-RPG.DMD.ashx" title="DMD">DMD</a> pour résister aux manœuvres de <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a>, <a class="pagelink" href="Pathfinder-RPG.croc-en-jambe.ashx" title="croc-en-jambe">croc-en-jambe</a>, d’<a class="pagelink" href="Pathfinder-RPG.entra%c3%aenement.ashx" title="entraînement">entraînement</a>, de <a class="pagelink" href="Pathfinder-RPG.renversement.ashx" title="renversement">renversement</a> et de <a class="pagelink" href="Pathfinder-RPG.repositionnement.ashx" title="repositionnement">repositionnement</a>, et ce jusqu’à son prochain tour.</li><li><b><i>Assaut et bousculade (Ext).</i></b> Au niveau 15, le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut repousser un adversaire sans céder un pouce de terrain. Par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, il peut faire une unique attaque avec son meilleur bonus. S’il touche, l’attaque inflige des dégâts normaux et le <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a> peut faire une <a class="pagelink" href="Pathfinder-RPG.bousculade.ashx" title="bousculade">bousculade</a>. Il gagne un bonus au <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> égal à la moitié des dégâts de l’attaque.</li></ul>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div><br /><h2 class="separator">Ordres de Samouraï<a class="headeranchor" id="Ordres_de_Samouraï_16" href="#Ordres_de_Samouraï_16" title="Lien vers cette section">&#0182;</a></h2>
+<h3 class="separator">Ordre du guerrier<a class="headeranchor" id="Ordre_du_guerrier_13" href="#Ordre_du_guerrier_13" title="Lien vers cette section">&#0182;</a></h3><i>La plupart des samouraïs jurent de suivre le code du guerrier qui privilégie le devoir, l’honneur, la loyauté et l’obéissance. Ce code s’applique non seulement à leur seigneur et maître mais aussi à leur famille et à leurs compagnons. Ceux qui suivent la voie du guerrier font partie des combattants les plus redoutés et les plus dignes de confiance du pays.</i><br /><br /><b>Édits.</b> Le samouraï doit protéger la vie et les terres de son seigneur au péril de sa vie. Il doit être digne de confiance et se montrer courageux. Il respecte ses aînés et ses maîtres, il est loyal envers ses amis et ses vassaux. Il doit se conduire avec honneur et honnêteté.<br /><br /><b>Défi.</b> Quand un samouraï de l’ordre du guerrier lance un défi, il gagne une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 1/– contre les attaques qui viennent de la cible de son défi. Cette <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> augmente de +1 par tranche de quatre niveaux de samouraï.<br /><br /><b>Compétences.</b> Un samouraï de l’ordre du guerrier ajoute <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (histoire) (Int) et <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) (Int) à sa liste de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétences</a> de classe. Il peut faire un test de Connaissances (noblesse) sans entraînement. S’il possède des <a class="pagelink" href="Pathfinder-RPG.rang.ashx" title="rang">rangs</a> dans cette compétence, il reçoit un bonus égal à 1/2 niveau de samouraï (+1 au minimum) au test tant que ce dernier concerne la noblesse ou la politique de son pays.<br /><br /><b>Pouvoirs de l’ordre.</b> Un samouraï qui appartient à l’ordre du guerrier dispose des pouvoirs suivants quand il monte de niveau.<br /><br /><ul><li><b><i>De l’honneur en toute chose (Ext).</i></b> Au niveau 2, le samouraï de l’ordre du guerrier puise sa force dans son sens de l’honneur. Quand il fait un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de compétence ou un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>, il peut, par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>, faire appel à son honneur pour bénéficier d’un bonus de moral de +4 au jet. Au niveau 2, il peut utiliser ce pouvoir une fois par jour et une fois de plus tous les quatre niveaux (avec un maximum de cinq fois par jour au niveau 18).</li><li><b><i>La voie du samouraï (Ext).</i></b> Au niveau 8, le sens de l’honneur et de la loyauté du samouraï de l’ordre du guerrier le pousse à accomplir des tâches qui semblent pourtant impossibles. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, il peut mobiliser toute sa force de caractère et, pendant la minute qui suit, il peut lancer trois fois le dé pour un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a>, <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">de sauvegarde</a> ou un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de compétence et choisir le meilleur résultat des trois. Il doit annoncer qu’il utilise ce pouvoir avant de faire le premier jet de dé. Ce pouvoir dépense une utilisation journalière de résolution.</li><li><b><i>Frapper juste (Ext).</i></b> Au niveau 15, le samouraï peut tirer la quintessence de ses années d’entraînement et se concentrer pour faire une attaque parfaite. Quand il utilise ce pouvoir, il fait une attaque normale. Si elle touche, elle se transforme en <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a>. Le samouraï doit alors confirmer ce critique. L’attaque inflige le maximum de dégâts possibles mais, pour les dégâts supplémentaires dus à une propriété de celle-ci ou une <a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> et ceux dus au critique, il lance les dés normalement. Les dégâts de cette attaque ignorent complètement la <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">réduction de dégâts</a> et rendent la cible <a class="pagelink" href="Pathfinder-RPG.aveugle.ashx" title="aveugle">aveugle</a>, <a class="pagelink" href="Pathfinder-RPG.sourd.ashx" title="sourd">sourde</a>, <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreux</a> ou <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a> pendant 1d4 rounds (au choix du samouraï). Cette attaque demande une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Le samouraï peut utiliser ce pouvoir une fois par jour.</li></ul>
+<h3 class="separator">Ordre du ronin<a class="headeranchor" id="Ordre_du_ronin_14" href="#Ordre_du_ronin_14" title="Lien vers cette section">&#0182;</a></h3><i>La plupart des samouraïs appartiennent à l’ordre du guerrier et mettent leurs immenses talents au service de leur seigneur, de leur pays et de leur peuple mais certains n’ont pas de maître, pour plusieurs raisons possibles : parfois ce dernier est mort, ou alors le samouraï est tombé en disgrâce ou, quelquefois, c’est un choix. Ces samouraïs errants que l’on appelle des ronins suivent leurs propres idéaux. Ils sont libres de leurs actes mais ne bénéficient pas du même respect que les samouraïs et ne reçoivent pas autant de soutien. Les chevaliers qui choisissent cet ordre sont appelés des chevaliers errants et non des ronins.</i><br /><br /><b>Devenir un ronin.</b> Quand un samouraï désire changer d’ordre, il doit suivre un long processus au cours duquel il adhère aux édits de son nouvel ordre sans en tirer le moindre bénéfice. Ce n’est pas le cas s’il veut devenir un ronin. Le samouraï perd immédiatement tous les bonus, compétences et pouvoirs de son ancien ordre et gagne ceux des ronins. S’il veut à nouveau se consacrer à un autre ordre, il doit suivre les règles habituelles.<br /><br /><b>Édits.</b> Les ronins obéissent à une éthique et un code de l’honneur personnels, c’est pourquoi leurs édits sont extrêmement flexibles et sujets à modification. C’est à chacun d’eux de les déterminer. Un édit doit contenir trois clauses et est soumis à l’approbation du MJ.<br /><br /><b>Défi.</b> À chaque fois que le ronin est victime d’un <a class="pagelink" href="Pathfinder-RPG.Chevalier.ashx#DEFI" title="Le chevalier">défi</a>, d’un <a class="pagelink" href="Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL" title="Le paladin">châtiment</a> ou qu’il est la <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx#PROIEDUCHASSEUR" title="Le rôdeur">proie d’un chasseur</a> et qu’en retour, il lance un défi à l’adversaire, il reçoit un bonus de moral de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> contre la cible de ce défi et un bonus d’esquive à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de +1 contre les attaques qu’elle lui porte. Ces bonus augmentent de +1 tous les quatre niveaux de samouraï (avec un maximum de +5 au niveau 20).<br /><br /><b>Compétences.</b> Les ronins ajoutent <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (folklore local) (Int) et <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> (Sag) à leur liste de compétences de classe.<br /><br /><b>Pouvoirs de l’ordre.</b> Un samouraï qui appartient à l’ordre du ronin dispose des pouvoirs suivants quand il monte de niveau.<br /><br /><ul><li><b><i>Autosuffisant (Ext).</i></b> À partir du niveau 2, le ronin ne compte que sur lui-même, même dans les pires situations. À chaque fois qu’il rate un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> contre un effet qui dure plus d’un round, il peut refaire un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> à la fin du deuxième round d’effet. S’il réussit, il se passe la même chose que s’il avait réussi le jet original (l’effet est annulé en totalité ou en partie). De plus, à chaque fois qu’un ronin tombe à moins de 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a>, au prochain tour, il peut faire deux jets pour se <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stabiliser</a> et conserver le meilleur résultat.</li><li><b><i>Sans maître (Ext).</i></b> Au niveau 8, le ronin aime tellement son indépendance qu’elle lui permet de résister envers et contre tout. Par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, le ronin peut rassembler toute sa force de caractère et l’utiliser de trois manières. Il peut faire appel à elle pour revenir à 1 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> et rester conscient quand il est victime d’une attaque qui devrait le faire passer à moins de 0 point de vie sans le tuer. Il peut aussi l’utiliser après avoir fait un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> pour confirmer un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">critique</a>, pour refaire le jet de confirmation. Enfin, il peut s’en servir pour <a class="pagelink" href="Pathfinder-RPG.faire%2010.ashx" title="faire 10">faire 10</a> à un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de compétences en combat, même si la situation ou la compétence ne devrait pas le lui permettre. Le ronin peut utiliser ce pouvoir une fois par combat.</li><li><b>Choisir son destin (Ext).</b> À partir du niveau 15, le ronin est le maître de sa propre destinée. Quand il fait un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre un effet de <a class="pagelink" href="Pathfinder-RPG.pr%c3%a9sentation%20des%20sorts.ashx#CHARME" title="Présentation des sorts">charme</a> ou de <a class="pagelink" href="Pathfinder-RPG.pr%c3%a9sentation%20des%20sorts.ashx#COERCITION" title="Présentation des sorts">coercition</a>, il peut lancer deux fois les dés et choisir le meilleur résultat. De plus, il peut, une fois par jour, considérer qu’un jet de d20 a fait un 20 naturel. Il doit annoncer qu’il se sert de ce pouvoir avant de faire ses jets.</li></ul>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
