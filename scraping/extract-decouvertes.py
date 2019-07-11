@@ -82,7 +82,7 @@ for s in section:
                 decouverte['6Description'] = descr.replace('\n','').strip()
                 decouverte['EMPTY'] = ""
                 liste.append(decouverte)
-                decouverte = {'5Niveau':2}
+                decouverte = {'5Niveau':1}
                 descr = ""
 
             decouverte['1Nom'] = u"Découverte: " + nom
