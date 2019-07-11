@@ -66,9 +66,10 @@ else:
 
 section = content.find_all('td', width="49%" )
 
-decouverte = {'4Source':'MJ','5Niveau':1}
+decouverte = {'5Niveau':1}
 newObj = False
 descr = ""
+source = 'MJRA'
 for s in section:
     for el in s.children:
         if el.name == "b":
@@ -81,10 +82,12 @@ for s in section:
                 decouverte['6Description'] = descr.replace('\n','').strip()
                 decouverte['EMPTY'] = ""
                 liste.append(decouverte)
-                decouverte = {'4Source':'MJ','5Niveau':2}
+                decouverte = {'5Niveau':2}
                 descr = ""
 
             decouverte['1Nom'] = u"Découverte: " + nom
+            decouverte['4Source'] = source
+            source = "MJRA"
             newObj = True
         
         elif el.name is None or el.name == 'a':
@@ -93,25 +96,32 @@ for s in section:
             for c in el.children:
                 if c.name == 'img':
                     if('logoAPG' in c['src']):
-                        decouverte['4Source'] = 'MJRA'
+                        source = 'MJRA'
                     elif('logoUC' in c['src']):
-                        decouverte['4Source'] = 'AG'
+                        source = 'AG'
                     elif('logoMR' in c['src']):
-                        decouverte['4Source'] = 'MR'
+                        source = 'MR'
                     elif('logoMCA' in c['src']):
-                        decouverte['4Source'] = 'MCA'
+                        source = 'MCA'
                     elif('logoUM' in c['src']):
-                        decouverte['4Source'] = 'AM'
+                        source = 'AM'
                     elif('logoMC' in c['src']):
-                        decouverte['4Source'] = 'MC'
+                        source = 'MC'
                     elif('logoOA' in c['src']):
-                        decouverte['4Source'] = 'AO'
+                        source = 'AO'
                     else:
                         print("Invalid source: " + c['src'])
                         exit(1)
                 elif c.name == 'a':
                     decouverte[u'7Référence']="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx" + c['href']
-        
+
+# last element        
+decouverte['2Classe'] = 'Alchimiste'
+decouverte['6Description'] = descr.replace('\n','').strip()
+decouverte['EMPTY'] = ""
+liste.append(decouverte)
+
+
 
 yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
 yml = yml.replace('1Nom','Nom')
