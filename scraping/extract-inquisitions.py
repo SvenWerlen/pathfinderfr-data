@@ -123,7 +123,7 @@ for el in section:
                     exit(1)
         
 # last element        
-inquisition['2Classe'] = 'Samouraï'
+inquisition['2Classe'] = 'Inquisiteur'
 inquisition['6Description'] = descr.strip()
 inquisition['EMPTY'] = ""
 liste.append(inquisition)
