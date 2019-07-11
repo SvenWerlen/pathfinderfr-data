@@ -86,7 +86,7 @@ for s in section:
                 malediction = {'5Niveau':1}
                 descr = ""
 
-            malediction['1Nom'] = nom
+            malediction['1Nom'] = u"Malédiction: " + nom
             malediction['4Source'] = source
             malediction[u'7Référence'] = reference
             newObj = True
