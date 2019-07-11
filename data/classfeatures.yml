@@ -12180,7 +12180,298 @@
     13, ce bonus passe à +4 et au niveau 18 il est de +6. Ces bonus ne se cumulent
     pas avec d’autres bonus d’ennemi juré (on applique uniquement le plus élevé).'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.inquisitions.ashx#Inquisition_de_zèle_31
+
   
+##
+## Exploits
+##
+
+- Nom: 'Exploit: Bout portant (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, le pistolier peut faire une attaque de contact au lieu
+    d’une attaque normale quand il tire sur une cible située au-delà du premier facteur
+    de portée de son arme à feu. Cet exploit lui coûte 1 point d’audace par facteur
+    de portée au-delà du premier. Lorsque le pistolier accomplit cet exploit, il subit
+    toujours un malus de -2 aux jets d’attaque pour chaque facteur de portée au-delà
+    du premier.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Bout_portant_Ext_0
+  
+- Nom: 'Exploit: Esquive du pistolier (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, le pistolier devient étrangement doué pour éviter les
+    attaques à distance. Quand il est victime d’une telle attaque, il peut dépenser
+    1 point d’audace pour se déplacer de 1,50 m (1 ) par une action immédiate. Il
+    gagne alors un bonus de +2 à la CA contre l’attaque qui a déclenché ce pouvoir.
+    Il ne peut pas accomplir cet exploit s’il porte plus qu’une armure légère ou intermédiaire
+    et une charge légère.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Esquive_du_pistolier_Ext_1
+  
+- Nom: 'Exploit: Nettoyage rapide (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, par une action simple, le pistolier peut débarrasser
+    une arme à feu de la condition brisée si elle est due à un long feu. Le pistolier
+    doit avoir au moins 1 point d’audace pour réussir cet exploit. S’il dépense 1
+    point pour l’accomplir, il peut nettoyer son arme par une action de mouvement
+    au lieu d’une action simple.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Nettoyage_rapide_Ext_2
+  
+- Nom: 'Exploit: Coup de crosse (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 3
+  Auto: true
+  Description: Au niveau 3, le pistolier peut, par une action simple, faire une attaque
+    surprise au corps à corps avec la crosse de son arme à feu. On considère alors
+    qu’il sait manier l’arme à feu comme une arme de corps à corps et il gagne un
+    bonus aux jets d’attaque et de dégâts égal au bonus d’altération de l’arme. La
+    crosse inflige des dégâts contondants en fonction de sa taille. Les armes à feu
+    à une main infligent 1d6 points de dégâts (1d4 si elles se trouvent entre les
+    mains d’une créature P) et celles à deux mains 1d10 (1d8 pour une créature P).
+    Quelle que soit la taille du propriétaire de l’arme, elle a un multiplicateur
+    de critique de 20/×2. Si le pistolier réussit son attaque, il a droit de faire
+    un test de manoeuvre offensive pour faire tomber son adversaire. Cet exploit coûte
+    1 point d’audace.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Coup_de_crosse_Ext_3
+  
+- Nom: 'Exploit: Initiative du pistolier (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 3
+  Auto: true
+  Description: 'Au niveau 3, tant que le pistolier a au moins 1 point d’audace, il
+    gagne les avantages suivants : un bonus de +2 aux tests d’initiative et, s’il
+    dispose du don Arme en main, qu’il a les mains libres et que l’arme n’est pas
+    dissimulée, il peut sortir une unique arme à feu lors du test d’initiative.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Initiative_du_pistolier_Ext_4
+  
+- Nom: 'Exploit: Tir utilitaire (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 3
+  Auto: true
+  Description: 'Au niveau 3, si le pistolier possède au moins 1 point d’audace, il
+    peut faire un tir utilitaire tiré de la liste qui suit. Chaque tir utilitaire
+    s’applique à une unique attaque qui s’effectue avec une arme à feu. Le pistolier
+    doit préciser le type de tir qu’il utilise avant de tirer.
+
+
+
+    *) Cautérisation : Le pistolier tire une fois avant de presser le canon brûlant
+    de son arme contre lui ou contre une créature adjacente pour cautériser une blessure.
+    Au lieu d’infliger des points de dégâts, le tir met fin à un saignement sur la
+    cible. Le pistolier n’a pas besoin de faire de jet d’attaque pour accomplir cet
+    exploit, il tire en l’air (ce qui consomme tout de même des munitions).
+
+    *) Déplacer un objet abandonné : Le pistolier fait un test d’attaque contre un
+    objet abandonné de taille TP ou moins, situé à moins d’un facteur de portée. Un
+    objet TP a une CA de 5, un objet Min de 7 et un objet Infime de 11. Si le pistolier
+    touche sa cible, il ne l’endommage pas, il la déplace à un maximum de 4,50 m (3
+    c) de sa position d’origine. Si le pistolier rate son jet d’attaque, il abîme
+    l’objet normalement.
+
+    *) Faire sauter la serrure : Le pistolier fait un jet d’attaque contre une serrure
+    située à moins d’un facteur de portée. Une serrure Minuscule a généralement une
+    CA de 7, les plus grosses une CA moindre. La serrure gagne un bonus à la CA contre
+    l’attaque du pistolier en fonction de sa qualité. Une serrure simple a un bonus
+    de +10, une serrure ordinaire un bonus de +15, une bonne serrure un bonus de +20
+    et une serrure de qualité supérieure un bonus de +30. Un verrou du mage donne
+    un bonus de +10 à la CA contre ce type d’attaque. Si le pistolier touche, la serrure
+    est détruite et on peut ouvrir l’objet comme s’il n’avait pas été verrouillé.
+    En cas d’échec, la serrure est détruite mais l’objet est coincé et toujours considéré
+    comme verrouillé. On peut toujours l’ouvrir en refaisant cet exploit et en le
+    réussissant, en faisant un test de Sabotage ou avec un test de casser. Le DD des
+    deux tests augmente de 10 après l’échec. Les clefs, les combinaisons et autres
+    méthodes de déverrouillage mécanique ne fonctionnent plus mais un sort de déblocage
+    permet encore d’ouvrir l’objet. Le créateur du verrou du mage peut toujours ignorer
+    la fermeture magique.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_utilitaire_Ext_5
+  
+- Nom: 'Exploit: Cibler (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: 'Au niveau 7, le pistolier peut utiliser une action complexe pour
+    faire une unique attaque avec son arme à feu en visant une partie précise de sa
+    cible. Si la créature visée est dépourvue d’une des parties anatomiques données
+    dans la liste suivante, le pistolier ne peut pas viser cette partie de corps.
+    Cet exploit coûte 1 point d’audace, quelle que soit la partie visée. Les créatures
+    immunisées contre les attaques sournoises le sont aussi contre cet exploit.
+
+
+
+    *) Ailes : Si le pistolier touche sa cible, elle reçoit des dégâts normaux et
+    doit réussir un test de Vol DD 20 ou faire une chute de 6 m (4 c).
+
+    *) Bras : Si le pistolier touche sa cible, elle ne subit pas de dégâts mais elle
+    lâche un objet choisi par le pistolier, même s’il est tenu à deux mains. Un objet
+    attaché à un gantelet ne tombe pas même si le pistolier touche le bras.
+
+    *) Jambes : Si le pistolier touche sa cible, elle subit des dégâts normaux et
+    tombe. Les créatures qui possèdent quatre jambes ou plus ou qui sont immunisées
+    contre les attaques de croc-en-jambe sont immunisées contre cet effet.
+
+    *) Tête : Si le pistolier touche sa cible, elle subit des dégâts normaux et elle
+    est confuse pendant 1 round. C’est un effet mental.
+
+    *) Torse : Si le pistolier vise le torse, il menace une zone de critique de 19-20.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Cibler_Ext_6
+  
+- Nom: 'Exploit: Tir déroutant (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: Au niveau 7, un pistolier qui possède au moins 1 point d’audace peut
+    utiliser une action simple pour rater volontairement une créature qu’il est à
+    même de toucher avec son arme à feu. Sa cible est alors prise au dépourvu jusqu’au
+    début de son prochain tour.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_déroutant_Ext_7
+  
+- Nom: 'Exploit: Tir mortel (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: Au niveau 7, par une action complexe, le pistolier peut prendre le
+    temps de viser soigneusement et rassembler le potentiel de toutes ses attaques
+    dans un seul tir mortel. Il tire alors sur une cible unique et fait autant de
+    jets d’attaque que son bonus de base à l’attaque le lui permet. Les jets se font
+    du bonus d’attaque le plus élevé au plus bas, comme si le pistolier faisait une
+    attaque à outrance. Si un des jets lui permet de toucher la cible, on considère
+    que son unique tir a touché. À chaque fois qu’il réussit une attaque de plus,
+    il augmente les dégâts du tir d’un montant égal au dé de dégâts de base de l’arme.
+    Par exemple, si un pistolier de niveau 7 fait un tir mortel au mousquet et touche
+    avec ses deux attaques, il inflige 2d12 points de dégâts au lieu de 1d12. Les
+    dégâts de précision et les dégâts supplémentaires des aptitudes spéciales des
+    armes (comme une arme de feu) viennent s’ajouter en tant que modificateurs de
+    dégâts, cet exploit ne les augmente pas. Si le pistolier fait un ou plusieurs
+    coups critiques, il les confirme une seule fois, en utilisant son meilleur bonus
+    de base à l’attaque -5. Ce malus est réduit de -1 pour chaque critique en cours
+    au-delà du premier (avec un minimum de 0). Lors d’un tir mortel, le pistolier
+    fait long feu uniquement si toutes ses attaques font long feu. Il ne peut pas
+    accomplir cet exploit avec un tromblon ou une autre arme à dispersion quand il
+    attaque des créatures situées dans un cône. Le pistolier doit dépenser 1 point
+    d’audace pour réaliser cet exploit.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_mortel_Ext_8
+  
+- Nom: 'Exploit: Blessure hémorragique (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 11
+  Auto: true
+  Description: Au niveau 11, quand le pistolier touche une créature vivante avec
+    une arme à feu, il peut dépenser 1 point d’audace par une action libre pour infliger
+    des dégâts de saignement supplémentaires. Le montant de dégâts du saignement est
+    égal au modificateur de Dextérité du pistolier. Sinon, il peut dépenser 2 points
+    d’audace pour infliger 1 point de saignement d’affaiblissement de Force, de Dextérité
+    ou de Constitution (au choix du pistolier). Les créatures immunisées contre les
+    attaques sournoises sont également immunisées contre ces dégâts de saignement.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Blessure_hémorragique_Ext_9
+  
+- Nom: 'Exploit: Expert en rechargement (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 11
+  Auto: true
+  Description: Au niveau 11, quand le pistolier fait long feu avec un pistolet brisé,
+    il peut dépenser 1 point d’audace pour l’empêcher d’exploser, même si cela ne
+    le répare pas pour autant.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Expert_en_rechargement_Ext_10
+  
+- Nom: 'Exploit: Rechargement éclair (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 11
+  Auto: true
+  Description: Au niveau 11, tant que le pistolier a au moins 1 point d’audace, il
+    peut recharger le barillet d’une arme à feu à une ou deux mains par une action
+    rapide, une fois par round. S’il dispose du don Rechargement rapide ou s’il utilise
+    des cartouches alchimiques (ou les deux), il peut recharger le barillet par une
+    action libre une fois par round. De plus, quand il réalise cet exploit, il ne
+    provoque pas d’attaques d’opportunité.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Rechargement_éclair_Ext_11
+  
+- Nom: 'Exploit: Chance du tireur (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 15, le pistolier peut dépenser des points d’audace pour
+    refaire un jet de sauvegarde ou un test de compétence : 2 point pour un jet de
+    sauvegarde et 1 pour un test de compétence. Le pistolier doit conserver le résultat
+    du second jet, même s’il est pire. Le pistolier ne peut pas utiliser l’audace
+    absolue, l’Exploit signé ni aucun autre effet qui vise à réduire le montant d’audace
+    pour diminuer le coût de cet exploit.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Chance_du_tireur_Ext_12
+  
+- Nom: 'Exploit: Insaisissable (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: Au niveau 15, tant que le pistolier a au moins 1 point d’audace, il
+    bénéficie de l’esquive totale, instinctive et instinctive supérieure du roublard.
+    Pour l’esquive instinctive supérieure, il utilise ses niveaux de pistolier comme
+    niveaux de roublard.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Insaisissable_Ext_13
+  
+- Nom: 'Exploit: Tir menaçant (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: Au niveau 15, le pistolier peut dépenser 1 point d’audace pour tirer
+    en l’air. Toutes les créatures situées à moins de 9 m (6 ) sont victimes d’un
+    sort de terreur. Le DD de l’effet est de 10 + 1/2 niveau du pistolier + modificateur
+    de Sagesse du pistolier.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_menaçant_Ext_14
+  
+- Nom: 'Exploit: Tir étourdissant (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: Au niveau 19, quand un pistolier touche une créature, il peut dépenser
+    2 points d’audace pour tenter de l’étourdir pendant 1 round. La créature doit
+    faire un jet de Vigueur (DD = 10 + 1/2 niveau du pistolier + modificateur de Sagesse
+    du pistolier). Si elle échoue, elle est étourdie pour 1 round. Les créatures immunisées
+    contre les coups critiques sont aussi immunisées contre cet effet.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_étourdissant_Ext_15
+  
+- Nom: 'Exploit: Tir fatal (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: Au niveau 19, quand le pistolier réussit un coup critique, il peut
+    dépenser 1 point d’audace. Il inflige alors des dégâts normaux mais la cible doit
+    faire un jet de Vigueur avec un DD égal à 10 + 1/2 niveau du pistolier + modificateur
+    de Dextérité du pistolier. Si elle rate son jet, elle meurt. C’est une attaque
+    de mort. Quand le pistolier accomplit cet exploit, il ne récupère pas d’audace
+    pour avoir confirmé un coup critique ni achevé un ennemi.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_fatal_Ext_16
+  
+- Nom: 'Exploit: Feinter la faucheuse (Ext)'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: Au niveau 19, quand le pistolier tombe à 0 point de vie ou moins,
+    il peut dépenser tous les points d’audace qui lui restent (1 au minimum) pour
+    passer à seulement 1 point de vie au lieu de 0.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Feinter_la_faucheuse_Ext_17
+  
+
 
 ##
 ## Archétypes
