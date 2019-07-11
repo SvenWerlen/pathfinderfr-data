@@ -67,7 +67,7 @@ else:
 section = content.find_all("div",{'class':['article_2col']})
 
 LVL = 3
-arcane = {'5Niveau':LVL, '6Auto': True}
+arcane = {'5Niveau':LVL}
 newObj = False
 descr = ""
 source = 'AM'
@@ -85,7 +85,7 @@ for s in section:
                 arcane['6Description'] = descr.replace("\n"," ").strip()
                 arcane['EMPTY'] = ""
                 liste.append(arcane)
-                arcane = {'5Niveau':LVL, '6Auto': True}
+                arcane = {'5Niveau':LVL}
                 
             descr = ""
             arcane['1Nom'] = u"Arcane: " + nom
