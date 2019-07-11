@@ -83,10 +83,11 @@ for s in section:
                 decouverte['EMPTY'] = ""
                 liste.append(decouverte)
                 decouverte = {'5Niveau':1}
-                descr = ""
 
+            descr = ""
             decouverte['1Nom'] = u"Découverte: " + nom
             decouverte['4Source'] = source
+            decouverte['7Référence'] = reference
             source = "MJRA"
             newObj = True
         
@@ -113,7 +114,7 @@ for s in section:
                         print("Invalid source: " + c['src'])
                         exit(1)
                 elif c.name == 'a':
-                    decouverte[u'7Référence']="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx" + c['href']
+                    reference="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx" + c['href']
 
 # last element        
 decouverte['2Classe'] = 'Alchimiste'
