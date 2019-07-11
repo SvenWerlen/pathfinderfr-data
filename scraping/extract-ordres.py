@@ -64,7 +64,73 @@ if MOCK_ORDRE:
 else:
     content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx").read(),features="lxml").body
 
-#section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de chevalier")
+section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de chevalier")
+
+ordre = {'5Niveau':1}
+newObj = False
+descr = ""
+source = 'MJRA'
+for el in section:
+    if el.name == "h2":
+        break
+        
+    if el.name == "h3":
+        nom = el.text
+        if nom.endswith('¶'):
+            nom = nom[:-1]
+        reference = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ordres.ashx" + el.find_next("a")['href']
+
+        if newObj:
+            ordre['2Classe'] = 'Chevalier'
+            ordre['6Description'] = descr.strip()
+            ordre['EMPTY'] = ""
+            liste.append(ordre)
+            ordre = {'5Niveau':1}
+            descr = ""
+
+        ordre['1Nom'] = nom
+        ordre['4Source'] = source
+        source = 'MJRA'
+        ordre[u'7Référence'] = reference
+        newObj = True
+    
+    elif el.name is None or el.name == 'a':
+        descr += el.string
+    elif el.name == 'i':
+        descr += el.text.replace("\n"," ")
+    elif el.name == 'b':
+        descr += "\n\n" + el.text.replace("\n"," ").upper()
+    elif el.name == 'ul':
+        for li in el.find_all("li"):
+            descr += "\n*) " + li.text.replace("\n"," ")
+    
+    elif el.name == 'div':
+        for c in el.children:
+            if c.name == 'img':
+                if('logoAPG' in c['src']):
+                    source = 'MJRA'
+                elif('logoUC' in c['src']):
+                    source = 'AG'
+                elif('logoMR' in c['src']):
+                    source = 'MR'
+                elif('logoMCA' in c['src']):
+                    source = 'MCA'
+                elif('logoUM' in c['src']):
+                    source = 'AM'
+                elif('logoMC' in c['src']):
+                    source = 'MC'
+                elif('logoOA' in c['src']):
+                    source = 'AO'
+                else:
+                    print("Invalid source: " + c['src'])
+                    exit(1)
+        
+# last element        
+ordre['2Classe'] = 'Chevalier'
+ordre['6Description'] = descr.strip()
+ordre['EMPTY'] = ""
+liste.append(ordre)
+
 section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de Samouraï")
 
 ordre = {'5Niveau':1}
@@ -91,6 +157,7 @@ for el in section:
 
         ordre['1Nom'] = nom
         ordre['4Source'] = source
+        source = 'MJRA'
         ordre[u'7Référence'] = reference
         newObj = True
     
@@ -130,6 +197,7 @@ ordre['2Classe'] = 'Samouraï'
 ordre['6Description'] = descr.strip()
 ordre['EMPTY'] = ""
 liste.append(ordre)
+
 
 
 yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
