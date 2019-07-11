@@ -9060,6 +9060,1349 @@
     Pas interdimensionnels (Mag). Ce pouvoir permet à un invocateur de niveau 8 de se téléporter chaque jour sur une distance totale de 9 m (6 cases) par niveau de lanceur de sorts. Chaque utilisation de ce pouvoir nécessite une action simple, ne provoque pas d’attaque d’opportunité et doit correspondre à une distance exprimable sous la forme d’un multiple de 1,50 m (1 case). L’invocateur peut emmener d’autres créatures avec lui (pour autant qu’elles soient d’accord) mais il doit alors décompter plusieurs fois la distance parcourue de son quota journalier (une fois pour lui et une fois de plus pour chaque personne qui l’accompagne)."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invocation%20(%c3%a9cole).ashx
 
+
+##
+## Découvertes (Alchimiste)
+##
+  
+- Nom: 'Découverte: Ailes (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 1
+  Description: 'L’alchimiste obtient des ailes fonctionnelles de chauve-souris, d’oiseau
+    ou d’insecte qui lui permettent de voler, comme avec le sort de , pendant un nombre
+    de minutes par jour égal à son niveau de lanceur. Cette durée n’est pas forcément
+    consécutive mais doit se découper en tranches d’une minute. L’alchimiste peut
+    faire cette découverte à plusieurs reprises : à chaque fois, il ajoute son niveau
+    de lanceur à sa durée de vol quotidienne. Cette méthode de vol est un pouvoir
+    surnaturel. L’alchimiste doit être au moins de niveau 6 avant de faire cette découverte.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BAPTEMEADISTANCE
+  
+- Nom: 'Découverte: Baptême à distance'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste utilise de l'eau bénite comme arme à impact, toutes
+    les cases dans la zone affectée par l'eau bénite sont affectées par un sort de  pour
+    un nombre de rounds égal au modificateur d'Intelligence de l'alchimiste. Les morts-vivants
+    touchés par l'eau bénite subissent l'effet d'un sort de consécration pour la même
+    durée. L’alchimiste doit être au moins de niveau 4 avant de faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEACIDE
+  
+- Nom: 'Découverte: Bombe acide*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut décider qu’elle inflige
+    des dégâts d’acide. Les créatures directement touchées par la bombe subissent
+    1d6 points de dégâts d’acide supplémentaires, 1 round après l’impact.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEAECLATSDEVERRE
+  
+- Nom: 'Découverte: Bombe à éclats de verre*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Lorsque l’alchimiste crée une bombe, il peut décider de la créer de
+    manière à ce qu’elle recouvre le sol d’éclats de cristaux explosifs en plus de
+    ses effets normaux. Ces cristaux agissent comme des chausse-trappes, se dissipant
+    en un gaz nauséabond, mais inoffensif en 2d6 rounds.  Tous les personnages peuvent
+    accéder à cette découverte mais elle est plus commune chez les svirfneblins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEAECLATSDOS
+  
+- Nom: 'Découverte: Bombe à éclats d''os'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut créer des bombes infligeant des dégâts perforants
+    et non de feu, et infligeant 1d4 dégâts de saignement supplémentaires à moins
+    que les cibles ne réussissent un jet de Vigueur. Une créature mourant des effets
+    de la bombe à éclats d'os ou du saignement se relève aussitôt en tant que mort-vivant
+    avec l'archétype squelette. Ces squelettes sont considérés comme animés avec animation
+    des morts pour savoir combien de mort-vivants l'alchimiste peut contrôler à la
+    fois. L'alchimiste doit avoir découverte de zombi alchimique avant de pouvoir
+    faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEAFRAGMENTATION
+  
+- Nom: 'Découverte: Bombe à fragmentation* (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Lorsque l’alchimiste crée une bombe, il peut décider de la faire exploser
+    en éclats d’obus infligeant des dégâts perforants. Une créature directement touchée
+    par une bombe à fragmentation reçoit 1 point de saignement par dé de dégâts de
+    la bombe, à moins de réussir un jet de Réflexes. Cette découverte est réservée
+    aux alchimistes gobelins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEAVEUGLANTE
+  
+- Nom: 'Découverte: Bombe aveuglante* (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut choisir une détonation
+    particulièrement vive. Les créatures directement touchées par la bombe aveuglante
+    sont aveuglées pendant une minute à moins qu’elles ne réussissent un jet de Vigueur.
+    Celles qui se trouvent dans la zone d’aspersion et ratent leur jet sont éblouies
+    pendant 1 minute. C’est un effet lumineux. L’alchimiste doit être au moins de
+    niveau 8 avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEASSOURDISSANTE
+  
+- Nom: 'Découverte: Bombe assourdissante*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut lui faire infliger des
+    dégâts sonores. Ce type de bombe inflige 1d4 points de dégâts sonores plus 1d4
+    points par niveau impair (au lieu de 1d6). Les créatures directement touchées
+    par une  sont sourdes pendant 1 minute sauf si elles réussissent un jet de Vigueur.
+    L’alchimiste doit avoir atteint le niveau 6 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEARETARDEMENT
+  
+- Nom: 'Découverte: Bombe à retardement'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut placer sa bombe de manière à ce qu’elle explose
+    un certain nombre de rounds après qu’il n’est plus en contact avec elle. C’est
+    à l’alchimiste de choisir ce nombre, entre 0 et un nombre de round maximal égal
+    à son niveau. S’il récupère la bombe avant qu’elle n’explose, il peut arrêter
+    le compte à rebours et empêcher la détonation. Une  explose immédiatement si une
+    personne autre que l’alchimiste essaye de la toucher ou de la déplacer, ou si
+    son contenu quitte sa fiole (si la fiole est brisée par exemple). Quand la bombe
+    explose, elle inflige les mêmes dégâts que si elle avait directement touché les
+    créatures qui se trouvent dans la même case qu’elle et inflige les dégâts d’aspersion
+    habituels aux créatures qui se trouvent dans les cases adjacentes. Un alchimiste
+    ne peut pas avoir plus d’une  à la fois. S’il en crée une seconde, la première
+    devient inerte. La  permet de neutraliser une , tout comme un test de Sabotage
+    réussi (DD égal à 10 + niveau de l’alchimiste + modificateur d’Intelligence de
+    l’alchimiste). L’alchimiste doit avoir atteint le niveau 8 avant de pouvoir faire
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBECOLLANTE
+  
+- Nom: 'Découverte: Bombe collante'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: Les effets des bombes de l’alchimiste persistent en continuant de
+    blesser les créatures touchées 1 round après les dégâts initiaux. Les créatures
+    directement touchées par la bombe collante subissent les dégâts normaux d’aspersion,
+    un round plus tard. Les bombes dont les effets devraient se déclencher un round
+    après voient leurs effets frapper 2 rounds plus tard. L’alchimiste doit avoir
+    atteint le niveau 8 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDIMMOLATION
+  
+- Nom: 'Découverte: Bombe d’immolation*'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Quand l’alchimiste crée sa bombe, il peut choisir une substance qui
+    va recouvrir le corps de la cible directe et lui infliger des dégâts sur la durée
+    au lieu de dégâts immédiats. L’effet de la bombe se prolonge pendant un nombre
+    de rounds égal au nombre de dés de dégâts qu’elle aurait dû infliger en un coup
+    (par exemple, une bombe qui aurait dû faire 5d6 points de dégâts dure 5 rounds).
+    Quand la bombe touche sa cible directe, elle lui inflige 1d6 points de dégâts
+    + modificateur d’Int de l’alchimiste. Les créatures qui se trouvent dans la zone
+    d’aspersion subissent 1 point de dégâts + modificateur d’Int de l’alchimiste.
+    La bombe répète ses dégâts sur sa cible directe à chaque round où elle persiste.
+    Les dégâts se produisent au début du tour de l’alchimiste. Quand la cible directe
+    reçoit des dégâts de la part de la bombe d’immolation, elle inflige aussi des
+    dégâts d’aspersion à toutes les créatures adjacentes. Une créature qui reçoit
+    des dégâts directs à cause d’une bombe d’immolation peut faire un jet de Réflexes
+    qui demande une action complexe (DD = 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Int de l’alchimiste) pour éteindre les flammes. Comme le feu est de nature alchimique,
+    la victime ne gagne aucun bonus au jet de sauvegarde en se roulant par terre et
+    il ne suffit pas de l’asperger d’eau pour noyer les flammes. On peut utiliser
+    ces bombes sous l’eau. L’alchimiste doit avoir atteint le niveau 3 avant de faire
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDECONFUSION
+  
+- Nom: 'Découverte: Bombe de confusion* (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: La bombe de l’alchimiste perturbe la cible qui ne distingue plus ses
+    amis de ses ennemis. Toute créature directement touchée par une bombe de confusion
+    reçoit les dégâts appropriés et se retrouve sous l’effet d’un sort de  pendant
+    1 round par niveau de lanceur de l’alchimiste. Réduisez les dégâts que la bombe
+    devrait infliger de 2d6 (une bombe qui inflige habituellement 6d6+4 points de
+    dégâts n’en inflige plus que 4d6+4).L’alchimiste doit être au moins de niveau
+    8 avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEDEMENCE
+  
+- Nom: 'Découverte: Bombe de démence'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les bombes de l’alchimiste font plus que blesser la chair, elles endommagent
+    aussi l’esprit. Une créature directement touchée par une  subit les dégâts de
+    la bombe + 1d4 points d’affaiblissement de Sagesse. Réduisez les dégâts normaux
+    de la bombe de 2d6 (une bombe qui devrait infliger 6d6+4 points de dégâts n’en
+    inflige plus que 4d6+4). L’affaiblissement de Sagesse de la bombe est réduit de
+    1 par  ayant touché la créature au cours des dernières 24 heures, jusqu’à un minimum
+    de 1 point d’affaiblissement. L’alchimiste doit avoir atteint le niveau 12 avant
+    de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEDISSIPATION
+  
+- Nom: 'Découverte: Bombe de dissipation'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut lui faire dissiper la magie
+    au lieu d’infliger des dégâts. Les créatures directement touchées par la  sont
+    soumises à une  d’un NLS égal au niveau de l’alchimiste. La bombe ne peut pas
+    servir à dissiper un effet spécifique. L’alchimiste doit avoir atteint le niveau
+    6 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEFORCE
+  
+- Nom: 'Découverte: Bombe de force*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut lui faire infliger des
+    dégâts de force. Ce type de bombe inflige 1d4 points de dégâts de force plus 1d4
+    points par niveau impair au lieu de 1d6. Les créatures directement touchées par
+    une  tombent à terre à moins de réussir un jet de Réflexes. L’alchimiste doit
+    avoir atteint le niveau 8 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEFOUDRE
+  
+- Nom: 'Découverte: Bombe de foudre*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut choisir de lui faire infliger
+    des dégâts d’électricité. Les créatures directement touchées sont éblouies pendant
+    1d4 rounds.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEGIVRE
+  
+- Nom: 'Découverte: Bombe de givre*'
+  Classe: Alchimiste
+  Source: MC
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut décider qu’elle inflige
+    des dégâts de froid. Les créatures directement touchées par la bombe sont chancelantes
+    à leur prochain tour à moins de réussir un jet de Vigueur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDELETOILENOIRE
+  
+- Nom: 'Découverte: Bombe de l''étoile noire*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Cette découverte est réservé aux alchimistes drow. Cette bombe broie
+    sa cible comme une bombe du néant puis repousse les créatures voisines avec une
+    explosion de gravité. La cible reçoit les mêmes dégâts que si elle avait été victime
+    d’une bombe du néant et toutes les créatures situées dans un rayon de 1,50 mètre
+    autour de cette cible sont sujettes à une bousculade. Pour déterminer le résultat
+    de sa bousculade, l’alchimiste utilise son niveau de classe au lieu de son bonus
+    de manoeuvre offensive et ajoute son modificateur d’Intelligence au lieu de son
+    modificateur de Force ou de Dextérité. Les créatures déplacées par la bombe de
+    l’étoile noire sont repoussées en ligne droite à l’opposé de la cible de la bombe.
+    L’alchimiste doit connaître la bombe du néant avant d’apprendre celle de l’étoile
+    noire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEPRECISION
+  
+- Nom: 'Découverte: Bombe de précision'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: Quand l’alchimiste lance une bombe, il peut choisir un nombre de cases
+    égal à son modificateur d’Intelligence et décider qu’elles ne seront pas affectées
+    par les dégâts d’aspersion de la bombe. Si la bombe rate sa cible, cette découverte
+    n’a aucun effet.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDESIEGE
+  
+- Nom: 'Découverte: Bombe de siège*'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: Par une action simple, l’alchimiste imprègne une munition déjà installée
+    sur une arme de siège avec la puissance de sa bombe. Tant que l’arme de siège
+    tire la munition avant le début du prochain tour de l’alchimiste, le projectile
+    inflige des dégâts normaux mais aussi ceux de la bombe. Le rayon d’aspersion de
+    la bombe est de 6 m (4 ) au lieu de 1,50 m (1 ). Les créatures qui reçoivent des
+    dégâts à cause de la bombe (soit directement, soit à cause de l’aspersion) subissent
+    1d6 points de dégâts de feu (ou d’un autre type d’énergie si l’alchimiste peut
+    choisir) et ce à chaque round jusqu’à ce que les flammes s’éteignent. Pour ce
+    faire, il faut une action complexe et un jet de Réflexes. Si la cible se roule
+    par terre, elle bénéficie d’un bonus de +2 au jet. Si quelqu’un l’arrose d’au
+    moins 8 litres d’eau, les flammes s’éteignent automatiquement. L’alchimiste doit
+    avoir atteint le niveau 12 et connaître la bombe explosive avant de faire cette
+    découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDESOUFFLE
+  
+- Nom: 'Découverte: Bombe de souffle*'
+  Classe: Alchimiste
+  Source: MC
+  Niveau: 2
+  Description: Au lieu de prendre les composantes d’une bombe, de la fabriquer et
+    de la lancer, l’alchimiste peut sélectionner ces composantes, les boire, les mélanger
+    dans son corps et les projeter comme une arme de souffle, par une action simple.
+    Ce souffle englobe un cône de 4,50 m (3 ) et possède le même DD que la bombe ordinaire.
+    Les créatures qui se trouvent dans le cône subissent les mêmes dégâts que si la
+    bombe de l’alchimiste les avait touchées directement mais elles ont droit à un
+    jet de Réflexes (DD = 10 + 1/2 niveau de l’alchimiste + modificateur d’Int de
+    l’alchimiste) pour 1/2 dégâts. La sélection, le mélange et l’absorption des composantes
+    et l’expulsion de la bombe de souffle ne provoquent pas d’attaque d’opportunité,
+    contrairement aux bombes ordinaires. L’alchimiste doit avoir atteint le niveau
+    6 avant de faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDUNEANT
+  
+- Nom: 'Découverte: Bombe du néant*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Cette découverte est réservé aux alchimistes drow. Certains alchimistes
+    drows parviennent à combiner les spores de curieux champignons avec des éclats
+    de néant extra-dimensionnel pour créer des bombes capables de causer des explosions
+    de gravité broyant les créatures prises dans leur champ d’action. Une bombe du
+    néant inflige 1d4 points de dégâts contondants plus 1d4 points de dégâts contondants
+    par tranche de deux niveaux d’alchimiste après le 1 , au lieu de 1d6. Une créature
+    touchée par la bombe doit faire un jet de Réflexes contre le DD de la bombe. Si
+    elle échoue, elle tombe au sol et ne peut pas se relever pendant 1 round. Si elle
+    réussit, toutes ses vitesses de déplacement sont réduites à 1,50 mètre pendant
+    1 round. Les créatures situées dans un rayon de 1,50 mètre autour de la cible
+    de la bombe ne subissent pas de dégâts, mais doivent réussir un jet de Réflexes
+    contre le DD de la bombe sous peine de voir leurs vitesses de déplacement réduites
+    à 1,50 mètre pendant 1 round. Un alchimiste doit avoir atteint le niveau 6 avant
+    de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDETENEBRES
+  
+- Nom: 'Découverte: Bombe de ténèbres*'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: Lorsque l’alchimiste crée une bombe, il peut décider de la faire de
+    manière à supprimer toutes les sources de lumière sur la cible. Elle éteint les
+    sources de lumière non-magiques que porte la cible et dissipe les sources de lumière
+    magiques pendant 1 round/niveau comme s’il s’agissait de ténèbres profondes. Tous
+    les personnages peuvent accéder à cette découverte mais elle est plus commune
+    chez les svirfneblins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEDEFOLIANTE
+  
+- Nom: 'Découverte: Bombe défoliante'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: . Cette bombe empoisonnée élimine le feuillage et inflige des dégâts
+    supplémentaires aux créatures de type plante. Quand un alchimiste crée une bombe,
+    il peut faire en sorte qu’elle inflige plus de dégâts aux créatures de type plante
+    et moins aux autres. Elle inflige 1d8 points de dégâts aux plantes plus 1d8 points
+    par niveau impair d’alchimiste, au lieu de 1d6. Elle inflige seulement 1d4 points
+    de dégâts aux autres créatures plus 1d4 points par niveau impair l’alchimiste,
+    au lieu de 1d6. C’est un effet de poison. La bombe défoliante tue la végétation
+    ordinaire présente dans la case de la cible et dans la zone d’aspersion. Si cette
+    zone comportait un terrain rendu difficile par la végétation, il se transforme
+    en terrain normal.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEECTOPLASMIQUE
+  
+- Nom: 'Découverte: Bombe ectoplasmique*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L'alchimiste peut intégrer à sa bombe un onguent qui inflige des dommages
+    aux créatures intangibles et révèle la présence des mort-vivants cachés dans la
+    zone. Les créatures intangibles touchées par une bombe ectoplasmique subissent
+    l'entièreté des dégâts de la bombe. De plus, dans la zone d'effet de la bombe,
+    les cases où un mort-vivant est passé au cours de la dernière minute se mettent
+    à briller légèrement (même si le mort-vivant bénéficiait d'un effet d'invisibilité
+    ou d'une autre forme de camouflage, comme forme éthérée). Tous les morts-vivants
+    situés dans la zone affectée au moment de l'explosion se mettent également à briller
+    légèrement. Cet effet de brillance persiste pendant 1 minute et fonctionne comme
+    lueur féerique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEEMPOISONNEE
+  
+- Nom: 'Découverte: Bombe empoisonnée*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les effets de la fumée créée par la bombe de l’alchimiste imitent
+    les effets d’une  au lieu d’une  et emplissent une zone égale à deux fois le rayon
+    d’aspersion de la bombe pendant 1 round par niveau. L’alchimiste doit avoir atteint
+    le niveau 12 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEEXPLOSIVE
+  
+- Nom: 'Découverte: Bombe explosive*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les bombes de l’alchimiste ont à présent un rayon d’aspersion de 3
+    m (2 ) au lieu de 1,50 m (1 ). Les créatures directement touchées par la  s’enflamment
+    et subissent 1d6 points de dégâts de feu par round jusqu’à extinction des flammes.
+    Pour les étouffer, il faut dépenser une action complexe et réussir un jet de Réflexes.
+    Si la cible se roule par terre, elle reçoit un bonus de +2 au jet de sauvegarde.
+    Si quelqu’un arrose la cible d’au moins 8 litres d’eau, les flammes sont automatiquement
+    éteintes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEFUMIGENE
+  
+- Nom: 'Découverte: Bombe fumigène*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut choisir de lui faire dégager
+    un épais nuage de fumée lors de l’explosion. Ce nuage fonctionne comme une  et
+    emplit une zone égale à deux fois le rayon d’aspersion de la bombe pendant 1 round
+    par niveau.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEFUSEE
+  
+- Nom: 'Découverte: Bombe-fusée (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les alchimistes ayant cette découverte peuvent préparer des fusées
+    particulières lâchant leurs bombes. Les bombes-fusées parcourent une distance
+    plus longue et explosent plus violemment que les bombes normales, mais elles ne
+    peuvent pas cibler de créatures individuelles. Les bombes-fusées explosent dans
+    un rayon de 6 mètres (4 ), et toutes les créatures situées dans la zone reçoivent
+    les dégâts normaux d’aspersion de l’alchimiste. Le facteur de portée d’une bombe-fusée
+    est de 15 mètres. Les bombes-fusées ne peuvent pas être utilisées avec les découvertes
+    bombe de précision ni bombes rapides. L’alchimiste doit être au moins de niveau
+    6 pour prendre cette découverte. Cette découverte est réservée aux alchimistes
+    gobelins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEGUERISSEUSE
+  
+- Nom: 'Découverte: Bombe guérisseuse*'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Quand l’alchimiste crée une bombe, il peut choisir de la faire soigner
+    au lieu d'infliger des dommages. Pour ça, il doit dépenser un extrait ou une potion
+    contenant un sort de soin. Une créature subissant le plein effet d'une telle bombe
+    est soignée du montant normal de l'extrait ou de la potion, et les créatures dans
+    la zone d'aspersion sont soignés d'un montant égal au montant minimal de soins
+    de l'extrait ou de la potion. Les morts-vivants sont blessés par cet effet.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEIMMOBILISANTE
+  
+- Nom: 'Découverte: Bombe immobilisante* (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Toute créature directement touchée par la bombe immobilisante doit
+    réussir un jet de sauvegarde contre le DD de la bombe ou se retrouver enchevêtrée
+    et collée au sol comme si elle avait raté un jet de sauvegarde contre une sacoche
+    immobilisante. Les créatures qui se trouvent dans la zone d’aspersion et ratent
+    leur jet sont enchevêtrées mais pas collées au sol, celles qui réussissent le
+    jet ne sont même pas enchevêtrées.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEINCENDIAIRE
+  
+- Nom: 'Découverte: Bombe incendiaire*'
+  Classe: Alchimiste
+  Source: MCA
+  Niveau: 2
+  Description: Les effets de la fumée créée par la bombe de l’alchimiste reproduisent
+    les effets d’un  au lieu de ceux d’une  et occupent une zone égale à deux fois
+    le rayon d’aspersion de la bombe pendant 1 round par niveau. L’alchimiste doit
+    avoir atteint le niveau 16 et découvert la  avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEINSPIREE
+  
+- Nom: 'Découverte: Bombe inspirée (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Un alchimiste qui connait cette découverte et possède une réserve
+    d’inspiration (par le biais d’une aptitude de classe, d’un don ou de la découverte
+    cognatogène d’inspiration) peut dépenser deux utilisations d’inspiration pour
+    augmenter d’1d6 les dégâts infligés par la bombe. Le type de dégâts infligés ne
+    change pas. À la différence des autres découvertes qui affectent les bombes, celle-ci
+    peut s’appliquer à une bombe bénéficiant d’une autre découverte, mais pas plus
+    d’une fois par bombe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEMAUDITE
+  
+- Nom: 'Découverte: Bombe maudite* (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Quand l’Alchimiste crée sa bombe, il peut choisir de l'imprégner de
+    substances maudites. Les cibles touchées par l'explosion doivent faire un jet
+    de Volonté. Dans le cas contraire, elles subissent l'effet d'une malédiction.
+    L’alchimiste doit être au moins de niveau 12 avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEMITRAILLEUSE
+  
+- Nom: 'Découverte: Bombe mitrailleuse (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste peut lancer une bombe à aspersion sur une ligne de 12
+    mètres (8 ) et non dans un certain rayon. La ligne débute au niveau de l’alchimiste
+    et se prolonge dans la direction qu’il choisit. Il désigne comme cible une créature
+    située dans l’une des cases de la ligne. Il fait un jet d’attaque contre elle.
+    Toutes les autres cases de la ligne reçoivent des dégâts d’aspersion. Si l’alchimiste
+    a fait la découverte bombe explosive et qu’il lance une bombe explosive mitrailleuse,
+    la ligne d’aspersion est de 24 mètres (16 ) de long au lieu de 12 (8 ).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEPESTIFEREE
+  
+- Nom: 'Découverte: Bombe pestiférée* (Sur)'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: Les effets de la bombe fumigène de l’alchimiste reproduisent les effets
+    d’un sort de  au lieu de . La fumée occupe une zone égale au double de la zone
+    d’aspersion de la bombe pendant 1 round par niveau. L’alchimiste doit être au
+    moins de niveau 8 et doit avoir découvert la bombe fumigène avant de choisir cette
+    découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEPESTIFEREESUPERIEURE
+  
+- Nom: 'Découverte: Bombe pestiférée supérieure* (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les effets de la fumée que crée la bombe de l’alchimiste reproduisent
+    les effets de  plutôt que ceux de , et remplissent une zone correspondant à deux
+    fois le rayon de dispersion de la bombe pendant 1 round par niveau. L’alchimiste
+    doit être au moins de niveau 16 et avoir les découvertes bombe pestiférée et bombe
+    fumigène pour choisir cette découverte. Tous les personnages peuvent accéder à
+    cette découverte mais elle est plus commune chez les hommes-rats.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEPSYCHOACTIVE
+  
+- Nom: 'Découverte: Bombe psychoactive*'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée sa bombe, il peut choisir de l'imprégner de
+    neurotoxines amplifiant certaines sensations et certains effets. La cible subit
+    une pénalité de -1 sur tous ses jets de résistance contre les effets de charme,
+    de peur, d'émotion et de douleur, et le DD des tests d'Intimidation le concernant
+    est réduit de 2 pour la durée de l'effet. Cet effet dure 1 heure par niveau d'alchimiste,
+    et ne se cumule pas avec lui-même. Une bombe psychoactive inflige 1d6 points de
+    dégâts de moins. L’alchimiste doit être au moins de niveau 6 avant de choisir
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBEPUANTE
+  
+- Nom: 'Découverte: Bombe puante*'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Les effets de la fumée créée par la bombe de l’alchimiste imitent
+    les effets d’un  au lieu d’une  et emplissent une zone égale à deux fois le rayon
+    d’aspersion de la bombe pendant 1 round. L’alchimiste doit avoir découvert la  avant
+    de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBESOLEIL
+  
+- Nom: 'Découverte: Bombe soleil* (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut lancer des bombes qui explosent avec une lumière
+    aussi vive que celle du soleil et agissent comme des bombes aveuglantes. Les morts-vivants,
+    les champignons, les vases, les mucus et les créatures qui craignent la lumière
+    du soleil reçoivent +2 points de dégâts par dé de la bombe. Si un mort-vivant
+    susceptible d’être blessé par la lumière du soleil rate son jet de sauvegarde
+    contre la bombe, il est chancelant pendant 1 round. L’alchimiste doit être au
+    moins de niveau 10 et doit avoir découvert la bombe aveuglante avant de choisir
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BOMBESRAPIDES
+  
+- Nom: 'Découverte: Bombes rapides'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Un alchimiste qui a fait cette découverte peut rapidement créer assez
+    de bombes pour en lancer plus d’une par round. Il peut préparer et lancer des
+    bombes supplémentaires lors d’une attaque à outrance si son bonus de base à l’attaque
+    est assez élevé pour lui permettre de faire des attaques supplémentaires. Ceci
+    fonctionne comme une attaque à outrance avec une arme à distance. L’alchimiste
+    doit être au moins de niveau 8 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#BRASVESTIGIAL
+  
+- Nom: 'Découverte: Bras vestigial (Ext)'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: L’alchimiste gagne un nouveau bras (droit ou gauche) qui lui pousse
+    sur le torse. Le bras est placé sous son contrôle absolu mais il ne peut pas le
+    cacher, à moins d’user de magie ou de porter des vêtements particulièrement amples.
+    Le bras ne permet pas de faire une attaque ou une action supplémentaire dans un
+    round, mais il peut tenir une arme et attaquer lors de l’attaque habituelle de
+    l’alchimiste (en utilisant le combat à deux armes). Le bras permet de manipuler
+    ou de tenir un objet, tout comme les bras originaux de l’alchimiste (par exemple,
+    l’alchimiste peut tenir une arme dans une main, une potion dans la deuxième et
+    une bombe dans la troisième main). Le bras possède sa propre « main » et l'emplacement
+    d’anneau associé (même si l’alchimiste ne peut porter que deux anneaux et deux
+    baguettes magiques à la fois).L’alchimiste peut faire cette découverte à deux
+    reprises.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#CAMELEON
+  
+- Nom: 'Découverte: Caméléon (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Un alchimiste avec cette découverte peut changer la couleur de sa
+    peau et de son équipement pour se fondre dans son environnement. Il reçoit un
+    bonus d’altération de +4 à ses tests de Discrétion. Au niveau 10, ce bonus monte
+    à +8. Tous les personnages peuvent accéder à cette découverte mais elle est plus
+    commune chez les gripplis.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#CHANGEMENTDALIGNEMENT
+  
+- Nom: 'Découverte: Changement d''alignement'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: Lorsqu'il prépare ses extraits, l'alchimiste peut choisir de préparer
+    une infusion supplémentaire qui rend une créature Bonne. La créature a droit à
+    un jet de Volonté pour résister à cet effet, qui dure 10 minutes par niveau d'alchimiste.
+    L'alchimiste ne peut posséder qu'un seul extrait de ce type. L'utilisation d'un
+    tel extrait n'est pas sans danger, et peut plonger certaines victimes dans la
+    confusion et la folie, aussi de nombreuses écoles de pensée Bonnes en interdisent
+    l'utilisation. L’alchimiste doit avoir atteint le niveau 12 au minimum et avoir
+    déjà découvert l'infusion avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#CHAIRECOEURANTE
+  
+- Nom: 'Découverte: Chair écoeurante'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste imprègne son corps de poison. Toute créature qui le mord,
+    l’engloutit ou l’enveloppe doit réussir un jet de Vigueur ou être nauséeuse pendant
+    1d4 rounds. L’alchimiste doit avoir atteint le niveau 12 avant de faire cette
+    découverte et ne souffre pas des effets du poison qui imprègne sa chair.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#CHARGEDEDEMOLITION
+  
+- Nom: 'Découverte: Charge de démolition'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Quand l’alchimiste crée sa bombe, il peut choisir de lui faire infliger
+    des dommages aux objets et structures, comme avec une manoeuvre de destruction.
+    Si l'objet est sur une créature, cette dernière est considérée comme étant dans
+    la zone d'aspersion. Cette bombe inflige 2d6 dégâts de plus à un objet qui n'est
+    porté par aucune créature. L’alchimiste doit avoir atteint le niveau 8 avant de
+    faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COGNATOGENE
+  
+- Nom: 'Découverte: Cognatogène (Sur)'
+  Classe: Alchimiste
+  Source: MCA
+  Niveau: 2
+  Description: L’alchimiste apprend à créer un cognatogène, une mixture semblable
+    à un mutagène qui augmente une caractéristique mentale au détriment d’une caractéristique
+    physique. Si le cognatogène améliore l’Intelligence, le malus s’applique à la
+    Force, s’il améliore la Sagesse, le malus s’applique à la Dextérité et s’il améliore
+    le Charisme, le malus s’applique à la Constitution. En dehors de ceci, ce pouvoir
+    se comporte comme un mutagène (y compris en ce qui concerne le bonus d’armure
+    naturelle).L’alchimiste peut toujours préparer un cognatogène à la place d’un
+    mutagène. Les cognatogènes obéissent aux mêmes limitations que les mutagènes,
+    comme s’il s’agissait de la même substance. L’alchimiste ne peut donc posséder
+    qu’un mutagène ou un cognatogène au même moment. Tout cognatogène qui ne se trouve
+    plus en possession de l’alchimiste devient inerte, toute personne autre qu’un
+    alchimiste qui boit un cognatogène est malade, etc. Quand les effets du cognatogène
+    se dissipent, l’alchimiste reçoit 2 points d’affaiblissement dans la caractéristique
+    qu’il pénalise. Les découvertes mutagène imprégné et mutagène persistant s’appliquent
+    aussi aux cognatogènes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COGNATOGENEDINSPIRATION
+  
+- Nom: 'Découverte: Cognatogène d’inspiration (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: 'Un alchimiste qui connait cette découverte sait comment préparer
+    un cognatogène d’inspiration, une mixture semblable au mutagène qui lui confère
+    l’inspiration (comme l’aptitude de classe d’enquêteur) aux dépens de sa Force
+    et de sa Constitution. En buvant ce cognatogène, l’alchimiste dispose d’une réserve
+    d’inspiration égale à la moitié de son niveau d’alchimiste + son modificateur
+    d’Intelligence (minimum 1). Il bénéficie également d’un bonus d’esquive de +2
+    à la CA et subit un malus de -2 à sa Force et à sa Constitution. Par une action
+    libre, l’alchimiste peut ajouter 1d6 au résultat d’un test de compétence ou de
+    caractéristique (y compris s’il décide de faire 10 ou 20) en dépensant une utilisation
+    d’inspiration. Cette aptitude fonctionne exactement comme l’aptitude d’inspiration
+    de l’enquêteur, sauf que l’alchimiste obtient la réserve d’inspiration en buvant
+    le cognatogène d’inspiration et toute l’inspiration non-dépensée est perdue lorsque
+    l’effet du cognatogène prend fin. Si l’alchimiste a déjà accès à l’inspiration,
+    celle conférée par ce cognatogène est ajoutée à sa réserve d’inspiration mais,
+    chaque fois qu’il dépense au moins une utilisation d’inspiration pendant que cette
+    aptitude est active, il doit réussir un jet de Volonté DD 20 pour ne pas être
+    hébété pendant 1 round. Il ne peut pas utiliser l’inspiration pour améliorer ce
+    jet de sauvegarde. Toutes les restrictions des mutagènes s’appliquent aux cognatogènes
+    d’inspiration comme si leur substance était identique : un alchimiste peut maintenir
+    actif un seul mutagène ou cognatogène à la fois (soit le cognatogène standard,
+    soit le cognatogène  d’inspiration). Un cognatogène qui n’est plus en possession
+    d’un alchimiste devient inerte, un non-alchimiste qui ingurgite un cognatogène
+    devient nauséeux, et ainsi de suite. Quand l’effet d’un cognatogène d’inspiration
+    prend fin, l’alchimiste subit un affaiblissement temporaire de 2 points à sa Force
+    et à sa Dextérité. La découverte mutagène imprégné et l’aptitude de classe mutagène
+    persistant s’appliquent à un cognatogène d’inspiration.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COGNATOGENESUPERIEUR
+  
+- Nom: 'Découverte: Cognatogène supérieur (Sur)'
+  Classe: Alchimiste
+  Source: MCA
+  Niveau: 2
+  Description: Le cognatogène de l’alchimiste donne à présent un bonus de +4 à l’armure
+    naturelle, un bonus alchimique de +6 à une caractéristique mentale (Intelligence,
+    Sagesse ou Charisme) et un bonus alchimique de +4 à une seconde. L’alchimiste
+    reçoit un malus de -2 à la caractéristique physique associée tant que le cognatogène
+    fait effet et subit 2 points d’affaiblissement temporaire dans ces mêmes caractéristiques
+    physiques quand son effet se dissipe. L’alchimiste doit avoir atteint le niveau
+    12 au minimum et avoir déjà découvert le cognatogène ou l’obtenir comme pouvoir
+    de classe avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COGNATOGENEDINSPIRATIONSUPERIEUR
+  
+- Nom: 'Découverte: Cognatogène d’inspiration supérieur (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: 'Le cognatogène d’inspiration de l’alchimiste confère désormais un
+    bonus d’esquive de +2 à la CA, un bonus de +2 aux jets de Réflexes, un malus de
+    -4 à la Force et à la Constitution et les effets des talents d’enquêteur suivants
+    : incroyable inspiration, inspiration étendue et souvenir eidétique. Un alchimiste
+    doit être de niveau 12 au moins et connaitre la découverte cognatogène d’inspiration
+    pour pouvoir prendre cette découverte.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COMBINAISONDEXTRAITS
+  
+- Nom: 'Découverte: Combinaison d’extraits'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée un extrait, il peut placer deux formules à
+    l’intérieur. Elles font toutes deux effet quand l’alchimiste boit l’extrait. Ce
+    dernier a un niveau supérieur de deux niveaux à celui de la formule la plus complexe
+    qu’il contient. L’alchimiste doit avoir atteint le niveau 8 avant de pouvoir faire
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#COMPREHENSIONINTUITIVE
+  
+- Nom: 'Découverte: Compréhension intuitive (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Lorsqu'il est sous l'effet d'un cognatogène, le personnage utilise
+    les extraits de divination qu'il consomme avec un NLS accru de +2. De plus, une
+    seule fois par cognatogène, le personnage peut utiliser augure comme pouvoir magique.
+    Au niveau 10, il peut utiliser divination à la place. L’alchimiste doit avoir
+    atteint le niveau 4 au minimum et avoir déjà découvert le cognatogène ou l’obtenir
+    comme pouvoir de classe avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#CONTACTGUERISSEUR
+  
+- Nom: 'Découverte: Contact guérisseur (Ext)'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: L’alchimiste est capable de soigner d’autres créatures. Par une action
+    simple, il peut en toucher une et lui appliquer ainsi les effets de sa découverte
+    guérison spontanée pendant 1 round. Ceci est décompté de sa limite quotidienne.
+    La limite de points de vie soignés par la guérison spontanée augmente à 5 × son
+    niveau d’alchimiste. Ce pouvoir fonctionne uniquement si la cible est de même
+    type que l’alchimiste (humanoïde, mort-vivant etc.). L’alchimiste doit avoir au
+    minimum atteint le niveau 6 et avoir déjà découvert la guérison spontanée ou l’obtenir
+    comme pouvoir de classe avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#DEMOLITIONSOUSMARINE
+  
+- Nom: 'Découverte: Démolition sous-marine (Ext)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Démolition sous-marine (Ext). L’alchimiste gagne la capacité à lancer
+    des bombes sous l’eau (normalement, les armes de jet ne peuvent pas être utilisées
+    sous l’eau), tout comme il peut les lancer des airs dans l’eau. Si la bombe traverse
+    l’eau, le facteur de portée est réduit à 1,5 mètre (1 ). Tous les personnages
+    peuvent accéder à cette découverte mais elle est plus commune chez les gripplis.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#DILUTION
+  
+- Nom: 'Découverte: Dilution'
+  Classe: Alchimiste
+  Source: AO
+  Niveau: 2
+  Description: Une fois par jour, l’alchimiste peut diluer une potion ou un élixir
+    et créer ainsi deux doses de la même potion à partir d’une seule. La dilution
+    coûte un quart du prix de la potion en po. Une potion diluée ne peut plus l’être
+    à nouveau. L’alchimiste ne peut pas utiliser cette découverte pour diluer un extrait
+    ou un mutagène. L’alchimiste doit avoir atteint le niveau 12 avant de pouvoir
+    faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#DISCIPLEINVENTIF
+  
+- Nom: 'Découverte: Disciple inventif'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: un alchimiste avec cette découverte connaît les techniques pour construire
+    des créatures artificielles grâce à ses recherches alchimiques et non à la magie
+    profane. Il acquiert Création de créatures artificielles en don supplémentaire
+    sans avoir besoin de satisfaire les conditions d’acquisition. L’alchimiste remplace
+    le niveau de lanceur de sorts par son nombre de rangs en Artisanat (alchimie)
+    et doit utiliser cette compétence pour créer des créatures artificielles. Le DD
+    pour créer une telle créature augmente toujours pour chaque condition de sort
+    que l’alchimiste ne peut fournir. L’alchimiste peut cependant utiliser des extraits
+    à la place des sorts pour remplir ces conditions. Un alchimiste doit avoir atteint
+    le niveau 6 au moins avant de pouvoir choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#ELIXIRDEVIE
+  
+- Nom: 'Découverte: Élixir de vie'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: Une fois par jour, l’alchimiste peut préparer un . Cette décoction
+    spéciale coûte 25 000 po à créer et demande 1 heure de travail. Quand l’élixir
+    est administré par l’alchimiste qui l’a préparé, il redonne vie à une créature
+    décédée comme avec un sort de . Sinon, l’alchimiste peut boire lui-même la potion.
+    Dans ce cas, il reviendra à la vie lors de sa prochaine mort, comme avec un sort
+    de . Quand l’alchimiste utilise l’élixir de cette manière, ses effets durent un
+    nombre de jours égal à son modificateur d’Intelligence. S’il ne meurt pas avant
+    la fin de ce délai, l’élixir est perdu. L’alchimiste doit avoir atteint le niveau
+    16 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#EXCRETIONSMORTELLES
+  
+- Nom: 'Découverte: Excrétions mortelles (Ext)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Lorsqu’il utilise sa capacité de peau toxique, l’alchimiste] peut
+    décider d’excréter un poison de Constitution plutôt qu’un poison de Dextérité.
+    Ce poison fonctionne comme le poison normal de la peau toxique du grippli, à la
+    seule différence qu’un jet de sauvegarde raté provoque un affaiblissement temporaire
+    de 1 point de Constitution. L’alchimiste doit être d’au moins niveau 8 et doit
+    avoir le trait racial peau toxique avant de pouvoir choisir cette découverte.
+    Tous les personnages peuvent accéder à cette découverte mais elle est plus commune
+    chez les gripplis.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#FAMILIERTUMEUR
+  
+- Nom: 'Découverte: Familier tumeur (Ext)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste crée une tumeur Min ou TP sur son corps, généralement
+    dans le dos ou sur l’estomac. Par une action simple, il peut la détacher de lui
+    pour obtenir une créature qui ressemble vaguement à un familier (une chauve-souris,
+    un chat, etc.). Elle se déplace comme si elle était indépendante. Elle peut se
+    rattacher à l’alchimiste par une action simple. La tumeur possède toutes les aptitudes
+    de l’animal auquel elle ressemble (une tumeur en forme de chauve-souris vole,
+    par exemple), ainsi que les pouvoirs de familier basés sur le niveau de lanceur
+    de l’alchimiste (même si certains ne lui seront d’aucune utilité).La tumeur se
+    comporte comme le familier de l’alchimiste, qu’elle soit attachée ou non (elle
+    lui accorde donc un bonus à une compétence, aux points de vie ou au jets de sauvegarde,
+    le don Vigilance, etc.) Tant qu’elle est attachée à l’alchimiste, elle obtient
+    la guérison accélérée 5. On considère les extraits et les mutagènes comme des
+    sorts en ce qui concerne les pouvoirs de familier comme le transfert de sorts
+    et les sorts de contact.Si la tumeur meurt ou que l’alchimiste la perd, il peut
+    la remplacer après une semaine, grâce à un processus spécial qui coûte 200 po
+    par niveau d’alchimiste. Le rituel demande 8 heures.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDCOGNATOGENE
+  
+- Nom: 'Découverte: Grand cognatogène (Sur)'
+  Classe: Alchimiste
+  Source: MCA
+  Niveau: 2
+  Description: Le cognatogène de l’alchimiste donne à présent un bonus de +6 à l’armure
+    naturelle, un bonus alchimique de +8 à une caractéristique mentale (Intelligence,
+    Sagesse ou Charisme), un bonus alchimique de +6 à une deuxième caractéristique
+    mentale et un bonus alchimique de +4 à une troisième. L’alchimiste reçoit un malus
+    de -2 à la Force, à la Dextérité et à la Constitution tant que le cognatogène
+    fait effet et subit 2 points d’affaiblissement temporaire dans toutes ces caractéristiques
+    physiques quand son effet se dissipe. L’alchimiste doit avoir au minimum atteint
+    le niveau 16 et avoir déjà découvert le cognatogène supérieur ou l’obtenir comme
+    pouvoir de classe avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDCOGNATOGENEDINSPIRATION
+  
+- Nom: 'Découverte: Grand cognatogène d’inspiration (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: 'Le cognatogène d’inspiration de l’alchimiste confère désormais un
+    bonus d’esquive de +4 à la CA, un bonus de +4 aux jets de Réflexes, un malus de
+    -6 à la Force et à la Constitution et les effets des talents d’enquêteur suivants
+    : connaissance des objets, inspiration tenace et inspiration de la pègre. Un alchimiste
+    doit être de niveau 16 au moins et connaitre la découverte cognatogène d’inspiration
+    supérieur pour pouvoir choisir cette découverte.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#GRANDMUTAGENE
+  
+- Nom: 'Découverte: Grand mutagène'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: À présent, le mutagène donne à l’alchimiste un bonus d’armure naturelle
+    de +6, un bonus alchimique à une caractéristique physique (Force, Dextérité, Constitution)
+    de +8, un bonus alchimique de +6 à une deuxième caractéristique physique et un
+    bonus alchimique de +4 à une troisième. Il subit un malus de -2 à l’Intelligence,
+    la Sagesse et au Charisme tant que le mutagène fait effet. L’alchimiste doit avoir
+    atteint le niveau 16 et avoir découvert le  avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#GUERISONSPONTANEE
+  
+- Nom: 'Découverte: Guérison spontanée (Ext)'
+  Classe: Alchimiste
+  Source: MR
+  Niveau: 2
+  Description: L’alchimiste apprend à soigner rapidement ses blessures. Par une action
+    libre, une fois par round, il peut soigner 5 points de dégâts comme s’il bénéficiait
+    de la guérison accélérée. Chaque jour, il peut soigner ainsi 5 points de dégâts
+    par tranche de deux niveaux d’alchimiste. S’il tombe inconscient à cause d’une
+    perte de points de vie et qu’il n’a pas encore dépensé toutes ses utilisations
+    de guérison spontanée, le pouvoir s’active automatiquement à chaque round jusqu’à
+    ce qu’il reprenne conscience ou que son pouvoir soit épuisé pour la journée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#INFECTIONPROLONGEE
+  
+- Nom: 'Découverte: Infection prolongée'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Une créature qui doit réussir un jet de sauvegarde contre une maladie
+    causée par l’extrait ou une autre capacité de classe de l’alchimiste doit faire
+    un deuxième jet de sauvegarde 1 round plus tard pour éviter que la durée de l’effet
+    de la maladie ne soit doublée. Si la maladie n’a pas de durée, cette découverte
+    divise son temps d’incubation et sa fréquence par deux. L’alchimiste doit être
+    au moins de niveau 8 pour prendre cette découverte. Tous les personnages peuvent
+    accéder à cette découverte mais elle est plus commune chez les hommes-rats.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#INFUSION
+  
+- Nom: 'Découverte: Infusion'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée un extrait, il peut l’imprégner d’une part
+    supplémentaire de sa propre puissance magique. L’extrait créé persiste même si
+    l’alchimiste ne le tient plus en main. Tant qu’il existe, il continue d’occuper
+    l’un des emplacements d’extraits quotidiens de l’alchimiste. Une personne qui
+    n’est pas alchimiste peut boire l’extrait infusé pour bénéficier de ses avantages.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#INFUSIONSOUILLEE
+  
+- Nom: 'Découverte: Infusion souillée'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Quand l’alchimiste crée un extrait, il peut lui ajouter une bombe
+    lors de la création, tant que la durée de l'extrait n'est pas instantanée. Il
+    peut dans ce cas réduire la durée de l'effet à 1 round. Quand l'effet de l'infusion
+    expire, la bombe détonne à l'intérieur de la victime en infligeant 150% des dommages
+    d'une bombe normale. Elle n'a pas de rayon d'explosion. L'utilisation d'un tel
+    pouvoir consomme une utilisation de bombe et une utilisation d'extrait. L’alchimiste
+    doit avoir fait les découvertes d'infusion et de bombe à retardement avant de
+    choisir celle-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#JUMEAUPARASITE
+  
+- Nom: 'Découverte: Jumeau parasite (Ext)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Les membres vestigiaux qui dépassent du torse de l’alchimiste (une
+    tête, un torse et deux bras issus de la découverte bras vestigial) appartiennent
+    à un jumeau parasite. Normalement, ce jumeau est majoritairement caché dans le
+    corps de l’alchimiste, ses bras, visibles, agissant comme la découverte bras vestigial,
+    mais l’alchimiste peut le faire sortir ou rentrer par une action simple. Le jumeau
+    est sans défense, entièrement soumis à l’alchimiste et il est impossible de le
+    prendre pour cible ou de le blesser.Une fois par jour, si l’alchimiste succombe
+    à un effet mental qui devrait le rendre inconscient, sans défense ou lui faire
+    perdre le contrôle de ses actions (comme ,  ou ), il peut refaire le jet de sauvegarde.
+    S’il réussit, c’est le jumeau qui a absorbé l’effet et l’alchimiste peut l’ignorer.
+    Quand l’alchimiste utilise ce pouvoir, il est fiévreux pendant toute la durée
+    de l’effet absorbé (dès que le jumeau n’est plus affecté, la fièvre disparaît)
+    et il ne peut pas utiliser les membres du jumeau. En revanche, les effets passifs
+    (comme un anneau porté sur un membre vestigial) se poursuivent normalement. L’alchimiste
+    doit avoir fait la découverte bras vestigial à deux reprises avant de choisir
+    celle-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MARQUEDEFEU
+  
+- Nom: 'Découverte: Marque de feu (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Un alchimiste ayant cette découverte peut dépenser une utilisation
+    journalière de bombe pour en appliquer les agents réactifs à son arme par une
+    action rapide. L’arme ainsi traitée inflige des dégâts de feu comme si elle avait
+    la propriété spéciale de feu. Au niveau 10, l’arme est considérée comme ayant
+    la propriété spéciale de feu intense. Les agents réactifs de la bombe continuent
+    de brûler pendant 1 minute ou jusqu’à ce que l’arme soit plongée dans l’eau. L’alchimiste
+    peut utiliser cette capacité avec ses armes naturelles, mais il reçoit 1d6 points
+    de dégâts de feu par round pour chaque arme naturelle ainsi traitée. Cette découverte
+    est réservée aux alchimistes gobelins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MEMBRESPECTRAL
+  
+- Nom: 'Découverte: Membre spectral (Ext)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste gagne un nouveau bras incorporel (droit ou gauche) qui
+    lui pousse sur le torse. Le bras ne permet pas de faire une attaque ou une action
+    supplémentaire dans un round, et il ne permet pas de tenir un objet, pas même
+    immatériel. Il peut utiliser cette main pour faire une attaque de contact au corps
+    à corps, infligeant à une cible 1d4 dégâts par niveau d'alchimiste (un jet de
+    Vigueur réussi divise ces dégâts par 2). Les créatures immunisées à ce qui est
+    incorporel le sont aussi à cet effet, mais toute autre réduction de dégâts (sauf
+    la RD/épique) sont ignorées. L'alchimiste peut faire apparaître ou disparaître
+    ce bras par une action rapide, et peut l'utiliser un nombre de rounds par jour
+    égal à 3 + son modificateur d'Intelligence. Ces rounds ne doivent pas forcément
+    être consécutifs.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MEMOIRECOLLECTIVE
+  
+- Nom: 'Découverte: Mémoire collective (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste, s'il est sous l'effet d'un cognatogène, ajoute la moitié
+    de son niveau aux tests de Connaissances et peut toutes les utiliser sans formation.
+    Ce bonus ne se cumule pas avec le souvenir parfait du chimiste spirituel. L'alchimiste
+    doit avoir déjà découvert le cognatogène avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MOMIFICATION
+  
+- Nom: 'Découverte: Momification (Ext)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste maîtrise les processus de conservation de la chair et
+    les applique à son propre corps, ce qui fait de lui une créature semblable à un
+    mort-vivant. Une fois que l’alchimiste a fait cette découverte, il doit suivre
+    un régime spécial pendant 30 jours, pratiquer des exercices rigoureux et boire
+    un thé alchimique légèrement empoisonné. Au terme de cette période, il tombe inconscient
+    pendant 24 heures et se réveille en tant que « momie vivante ». L’alchimiste ne
+    change pas de type mais il est à présent immunisé contre le froid, les dégâts
+    non létaux, la paralysie et le sommeil. Il doit avoir au minimum atteint le niveau
+    10 et avoir déjà découvert la préservation des organes avant de choisir cette
+    découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENE
+  
+- Nom: 'Découverte: Mutagène (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Cette découverte permet à l’alchimiste de bénéficier du pouvoir de
+    classe mutagène. (Cette découverte existe pour que les archétypes d’alchimistes
+    qui possèdent des variantes de mutagène, comme le chimiste spirituel, puissent
+    tout de même apprendre à fabriquer des mutagènes ordinaires.)
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENEAPOUPEEDECHIFFON
+  
+- Nom: 'Découverte: Mutagène de poupée de chiffon (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Lorsque l’alchimiste ingère un mutagène, son corps et ses os deviennent
+    caoutchouteux, faciles à contorsionner. Il gagne un bonus égal à son niveau de
+    classe à ses tests d’Évasion, il peut se faufiler dans certains endroits comme
+    s’il était plus petit d’une catégorie de taille et peut faire un jet de Réflexes
+    (DD égal à 15 + 1 par tranche de 3 mètres de chute) pour réduire de moitié les
+    dégâts d’une chute. Au niveau 10, tous les dégâts de chute sont considérés comme
+    non létaux et l’alchimiste peut se faufiler dans certains endroits comme s’il
+    était plus petit de deux catégories de taille lorsqu’il est sous l’effet du mutagène.
+    Cette découverte est réservée aux alchimistes gobelins.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENEELEMENTAIRE
+  
+- Nom: 'Découverte: Mutagène élémentaire'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: 'L''alchimiste choisit un élément. Quand il absorbe un mutagène, il
+    gagne une résistance de 5 points au type d''énergie associé, et un bonus de +2
+    à la compétence associée. La résistance augmente de 5 points et le bonus de +2
+    pour chaque découverte connue parmi les suivantes : mutagène supérieur, grand
+    mutagène et mutagène absolu. Les éléments et leurs caractéristiques associées
+    sont Feu (feu, Acrobaties), Eau (froid, Natation), Vent (électricité, Vol) et
+    Terre (acide, Escalade). L''alchimiste peut choisir cette découverte quatre fois,
+    mais elle s''applique à chaque fois à un élément différent. Il choisit malgré
+    tout un seul élément à chaque mutagène qu''il consomme.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENEIMPREGNE
+  
+- Nom: 'Découverte: Mutagène imprégné'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste crée un mutagène, il peut l’imprégner d’un supplément
+    de son propre pouvoir magique. Cela lui inflige un affaiblissement temporaire
+    de 2 points d’Intelligence et lui coûte 1 000 po de réactifs rares mais le mutagène
+    créé persiste par lui-même et ne devient pas inerte si l’alchimiste en fabrique
+    un autre. Ceci permet au personnage de créer différents types de mutagènes et
+    de les garder à portée de main en cas d’urgence. En revanche, ceci ne permet pas
+    à l’alchimiste de bénéficier des effets de plusieurs mutagènes à la fois, seulement
+    du dernier qu’il a bu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENESAUVAGE
+  
+- Nom: 'Découverte: Mutagène sauvage'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Quand l’alchimiste absorbe un mutagène, il gagne deux attaques de
+    griffe et une attaque de morsure. Ce sont des attaques principales qui utilisent
+    le bonus de base à l’attaque maximum du personnage. Les attaques de griffe infligent
+    1d6 points de dégâts (1d4 si l’alchimiste est de taille  P) et la morsure fait
+    1d8 points de dégâts (1d6 si l’alchimiste est de taille P). Tant que le mutagène
+    fait effet, l’alchimiste bénéficie d’un bonus de compétence de +2 aux tests d’Intimidation.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#MUTAGENESUPERIEUR
+  
+- Nom: 'Découverte: Mutagène supérieur'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Maintenant, le mutagène donne à l’alchimiste un bonus d’armure naturelle
+    de +4, un bonus alchimique à une caractéristique physique (Force, Dextérité, Constitution)
+    de +6 et un bonus alchimique de +4 à une seconde caractéristique physique. Il
+    subit un malus de -2 à aux caractéristiques mentales associées tant que le mutagène
+    fait effet. L’alchimiste doit avoir atteint le niveau 12 avant de pouvoir faire
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POISONCOLLANT
+  
+- Nom: 'Découverte: Poison collant'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: 'Tous les poisons créés par l’alchimiste sont collants : quand il
+    les applique sur une arme, cette dernière reste empoisonnée pendant un nombre
+    de coups égal au modificateur d’Intelligence de l’alchimiste. L’alchimiste doit
+    avoir atteint le niveau 6 avant de pouvoir faire cette découverte.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POISONCELESTE
+  
+- Nom: 'Découverte: Poison céleste'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut imprégner le poison qu'il prépare d'énergie céleste,
+    ce qui lui permet d'affecter même les créatures immunisées au poison. Il peut
+    désormais empoisonner les extérieurs Mauvais et les morts-vivants avec ses poisons,
+    bien que certains effets restent inefficaces (par exemple les dégâts de Constitution
+    sur les morts-vivants qui n'en possèdent pas)
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POISONCONCENTRE
+  
+- Nom: 'Découverte: Poison concentré'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut combiner deux doses du même poison pour augmenter
+    son effet. Pour cela, il a besoin de deux doses du poison et de 1 minute de concentration.
+    Quand il a terminé, il obtient une dose de poison dont la fréquence est prolongée
+    de 50% et le DD augmenté de +2. Il doit utiliser le poison dans l’heure sinon
+    il sera gâché.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POISONMALIN
+  
+- Nom: 'Découverte: Poison malin'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut par une action complexe accroître l'efficacité d'un
+    poison. Sa fréquence est prolongée de 2 unités de temps, et le DD augmenté de
+    +4. De plus, l'effet du poison est immédiat, et il n'a aucune durée d'incubation.
+    L'effet demeure pendant un nombre de minutes égal au niveau de l'alchimiste, après
+    quoi le poison retrouve son état d'origine. L’alchimiste doit avoir atteint le
+    niveau 10 avant de pouvoir faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POTIONAMELIOREE
+  
+- Nom: 'Découverte: Potion améliorée'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Chaque jour, un nombre de fois égal à son modificateur d’Intelligence,
+    l’alchimiste peut donner à une potion qu’il boit un niveau de lanceur égal à son
+    propre niveau de classe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POTIONETERNELLE
+  
+- Nom: 'Découverte: Potion éternelle'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Si l’alchimiste boit une potion dont il a prolongé l’effet, cet effet
+    reste permanent à moins qu’il ne décide de rendre une autre potion permanente.
+    L’alchimiste doit avoir atteint le niveau 16 et avoir découvert la  avant de pouvoir
+    faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#POTIONPROLONGEE
+  
+- Nom: 'Découverte: Potion prolongée'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: Chaque jour, un nombre de fois égal à son modificateur d’Intelligence,
+    l’alchimiste peut faire fonctionner une potion qu’il boit deux fois plus longtemps
+    qu’elle ne devrait, tant qu’elle n’a pas une durée instantanée. Ceci ne s’applique
+    pas aux extraits.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#PRESERVATIONDESORGANES
+  
+- Nom: 'Découverte: Préservation des organes (Ext)'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: L’alchimiste apprend comment préserver et protéger ses organes vitaux,
+    ce qui réduit les risques de blessures mortelles. Quand il est victime d’un coup
+    critique ou d’une attaque sournoise, il a 25% de chances d’annuler le critique
+    ou l’attaque sournoise, l’attaque ne lui infligeant donc que les dégâts normaux.
+    Ce pouvoir ne se cumule pas avec d’autres pouvoirs qui annulent les critiques
+    (comme l’armure de défense). L’alchimiste peut choisir cette découverte à trois
+    reprises. Ses effets se cumulent et font passer les chances d’annulation à 50%
+    puis 75%.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#PROJECTILEEXPLOSIF
+  
+- Nom: 'Découverte: Projectile explosif'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: Par une action simple, l’alchimiste peut imprégner un unique projectile
+    (une flèche, un carreau ou une balle d’arme à feu à une main) avec la puissance
+    de cette bombe. Il charge ensuite le projectile et tire. Pour cela, il doit être
+    formé au maniement de l’arme à distance qu’il utilise. Quand le projectile imprégné
+    touche sa cible, il inflige des dégâts normaux et explose, comme si l’alchimiste
+    avait lancé une bombe. S’il rate sa cible, le projectile n’explose pas. L’alchimiste
+    doit avoir atteint le niveau 4 avant de faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#QUASITENBOUTEILLE
+  
+- Nom: 'Découverte: Quasit en bouteille (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste a appris à conserver un quasit dans des bouteilles scellées.
+    Il peut en préparer un en préparant un extrait. Quand il active l’extrait, il
+    lance la bouteille dans une case située dans un rayon de 9 mètres (6 ), ce qui
+    libère le quasit. Ce dernier n’est pas soumis au contrôle de l’alchimiste mais
+    en dehors de cela, on la considère comme une créature invoquée. Le quasit reste
+    1 round par niveau de lanceur et se réduit en poudre au terme de cette durée.
+    Si l’alchimiste a fait la découverte infusion, il peut laisser un autre personnage
+    utiliser le spécimen imprégné. Pour mettre un quasit en bouteille, il faut un
+    extrait d’un niveau 4. L’alchimiste doit avoir au moins atteint le niveau 10 avant
+    de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#RETARDERLEDEPART
+  
+- Nom: 'Découverte: Retarder le départ (Ext)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste connaît suffisamment les liens qui unissent son corps
+    à son esprit pour s’attarder plus longtemps que les personnes ordinaires dans
+    ce monde lorsque vient la mort. Quand il s’agit de déterminer le nombre de points
+    de dégâts qui permet de le tuer, l’alchimiste considère qu’il possède 10 points
+    de Constitution de plus que ce qu’il possède réellement (ainsi, un alchimiste
+    avec 10 de Constitution et cette découverte meurt à -20 points de vie au lieu
+    de -10). S’il tombe à 0 en Constitution ou équivalent (à cause d’un affaiblissement
+    temporaire de caractéristique, d’une diminution permanente ou autre), il tombe
+    inconscient et sombre dans le coma mais ne meurt pas tant qu’il n’a pas perdu
+    5 points de Constitution de plus (par affaiblissement, diminution ou autre). En
+    pratique, ces attaques doivent faire tomber l’alchimiste à -5 Constitution pour
+    le tuer.L’alchimiste doit avoir au minimum atteint le niveau 4 avant de choisir
+    cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#SIMULACREALCHIMIQUE
+  
+- Nom: 'Découverte: Simulacre alchimique (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste peut créer un simulacre mineur. Ceci fonctionne comme
+    le sort de simulacre mineur mais coûte 100 po de matériel alchimique par DV du
+    simulacre. Il faut 24 heures pour le faire grandir et, si quelqu’un le tue, il
+    devient une masse de chairs inertes en décomposition au lieu d’un tas de glace
+    ou de neige. L’alchimiste doit passer au moins niveau 8 avant de choisir cette
+    découverte. Le simulacre ainsi créé est une créature et non un effet surnaturel.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#SIMULACREALCHIMIQUESUPERIEUR
+  
+- Nom: 'Découverte: Simulacre alchimique supérieur (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste apprend à créer un simulacre. Ceci fonctionne comme le
+    sort de  mais coûte 100 po en matériaux alchimiques par DV du simulacre. La croissance
+    prend 24 heures et le simulacre se décompose en une masse de chairs inertes, pas
+    en glace ou en neige. L’alchimiste doit avoir au minimum atteint le niveau 14
+    et avoir déjà découvert le simulacre alchimique avant de choisir cette découverte.
+    Le simulacre ainsi créé est une créature, pas un effet surnaturel.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#SIMULACREDEDOPPELGANGER
+  
+- Nom: 'Découverte: Simulacre de doppelganger (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste apprend à créer une réplique sans âme de son corps, dans
+    laquelle il peut projeter sa conscience. Par une action complexe, il peut faire
+    passer sa conscience de son corps actuel dans un simulacre doppelganger disponible,
+    à condition que celui-ci se trouve sur le même plan que lui. Si le simulacre se
+    fait tuer, il se transfère automatiquement dans son propre corps, si c’est ce
+    dernier qui se fait tuer, l’alchimiste meurt.Un simulacre inutilisé (et le corps
+    originel abandonné) ressemble à un cadavre même s’il ne se décompose pas. La création
+    de ce double coûte 1 000 po en matériaux alchimiques et prend une semaine pour
+    arriver à maturité. L’alchimiste doit avoir au minimum atteint le niveau 10 et
+    avoir déjà découvert le simulacre alchimique avant de choisir cette découverte.
+    Le simulacre ainsi créé est une créature, pas un effet surnaturel.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#SOLUTIONDESABLEPIERRE
+  
+- Nom: 'Découverte: Solution de sablepierre (Sur)'
+  Classe: Alchimiste
+  Source: MJ
+  Niveau: 2
+  Description: L’alchimiste peut par une action complexe transformer une potion ou
+    extrait en substance qui une fois appliqué à la terre ou au sable, lui confère
+    la solidité de la pierre pendant une heure, affectant une surface dans un rayon
+    de 3 mètres (2 ) par niveau de l'objet. S'il est appliqué à un bloc de pierre
+    de 1m30 (1 ), il réduit au contraire sa solidité d'un nombre de points égal au
+    double du niveau de l'extrait pendant 1 minute.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#SOLUTIONPSYCHOKINETIQUE
+  
+- Nom: 'Découverte: Solution psychokinétique (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste peut une fois par jour préparer une solution au goût
+    immonde qui permet de s'approprier le pouvoir des esprits. En buvant cette solution
+    par une action simple, il attire alors les esprits autour de lui. Il attire un
+    esprit à lui pour chaque 4 niveaux d'alchimiste qu'il possède. Chaque esprit tourne
+    autour de l'alchimiste, lui conférant un bonus de +1 à la CA. Par une action simple,
+    l'alchimiste peut projeter un des esprits vers un ennemi par une attaque de contact
+    à distance. S'il lance un esprit ainsi, le bonus à la CA diminue de 1. L'esprit
+    traversant la cible émet un cri horrible qu'elle seule peut entendre, et elle
+    se retrouve alors effrayée pour un round par niveau d'alchimiste (un jet de Volonté
+    annule cet effet). Si elle réussit son jet de sauvegarde, elle est immunisée à
+    cet effet pour 24 heures. L'effet de la solution dure dix minutes par niveau d'alchimiste,
+    ou jusqu'à ce que tous les esprits aient été lancés. L’alchimiste doit passer
+    au moins niveau 4 avant de choisir cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#TENTACULE
+  
+- Nom: 'Découverte: Tentacule (Ext)'
+  Classe: Alchimiste
+  Source: AG
+  Niveau: 2
+  Description: L’alchimiste ajoute un tentacule préhensile, grand comme un bras,
+    quelque part sur son corps. Le tentacule est placé sous son contrôle absolu mais
+    il ne peut pas le cacher, à moins d’user de magie ou de porter des vêtements particulièrement
+    amples. Le tentacule ne permet pas de faire une attaque ou une action supplémentaire
+    au cours du round ; il sert à faire une attaque de tentacule (1d4 points de dégâts
+    pour un alchimiste M, 1d3 pour un P) et à utiliser le pouvoir étreinte. Le tentacule
+    permet de manipuler ou de tenir un objet, tout comme les bras originaux de l’alchimiste
+    (par exemple, l’alchimiste peut tenir une arme dans une main, une potion dans
+    le tentacule et une bombe dans la seconde main). Contrairement aux bras, le tentacule
+    n’a pas d’emplacement d’objet magique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#TRANSFORMATIONDEPOISON
+  
+- Nom: 'Découverte: Transformation de poison'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: En 1 minute, l’alchimiste peut convertir une dose de poison d’un type
+    en un autre (contact, ingestion, inhalation ou blessure). Par exemple, il peut
+    reconvertir du poison de mille-pattes P (un poison de blessure) en poison inhalé.
+    Ce processus nécessite un laboratoire d’alchimie. L’alchimiste doit avoir atteint
+    le niveau 6 avant de faire cette découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#VASEENBOUTEILLE
+  
+- Nom: 'Découverte: Vase en bouteille (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: L’alchimiste a appris à conserver des extraits de vase dans des bouteilles
+    scellées. Il peut les utiliser pour préparer des extraits. Quand il active l’extrait,
+    il lance la bouteille dans une case située dans un rayon de 9 mètres (6 ), ce
+    qui libère la vase qui se reconstitue et attaque la créature la plus proche. La
+    vase n’est pas soumise au contrôle de l’alchimiste mais en dehors de cela, on
+    la considère comme une créature invoquée. La vase reste 1 round par niveau de
+    lanceur et se réduit en poudre au terme de cette durée. Si l’alchimiste a fait
+    la découverte infusion, il peut laisser un autre personnage utiliser le spécimen
+    imprégné. Pour mettre une vase en bouteille, il faut un extrait d’un niveau équivalent
+    au FP de la vase (une vase grise FP 4 aura donc besoin d’un extrait de niveau
+    4). L’alchimiste doit avoir au moins atteint le niveau 6 avant de choisir cette
+    découverte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#VECTEURDELAPESTE
+  
+- Nom: 'Découverte: Vecteur de la peste (Sur)'
+  Classe: Alchimiste
+  Source: AM
+  Niveau: 2
+  Description: 'La bombe pestiférée de l''alchimiste voit ses propriétés modifiées
+    ainsi : le DD de la maladie devient égal à 10 + 1/2 niveau d''alchimiste + modificateur
+    d''Intelligence, et les créatures affectées par la maladie deviennent des vecteurs
+    de cette maladie, infectant tous ceux qu''ils touchent pour un nombre de jours
+    égal au modificateur d''Intelligence de l''alchimiste. Le DD pour cet infection
+    est identique à celui de la découverte.  L’alchimiste doit avoir au moins atteint
+    le niveau 14 et avoir déjà découvert la bombe pestiférée avant de choisir cette
+    découverte.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx#ZOMBIALCHIMIQUE
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   
 ##
 ## Archétypes
