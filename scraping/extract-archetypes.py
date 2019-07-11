@@ -83,8 +83,8 @@ idx = 0
 for el in list:
     
     idx += 1
-    if idx > 2:
-        continue
+    #if idx != 35:
+    #    continue
     
     title = el.find_all('h2', limit=1)[0]
     classe = None
@@ -112,6 +112,7 @@ for el in list:
         m = re.search(u"(.*)\((.*)\)", a.text)
         if m:
             nom = m.group(1).strip()
+            nom = nom[0] + nom[1:]
             source = m.group(2)
         else:
             print("Extraction du nom de l'archetype impossible: %s" % a.text)
@@ -175,17 +176,20 @@ for el in list:
         found = True
         
         liste.append(archetype)
+        #continue
     
         ## extract class features for archetypes
         classfeature = {'4Source':'MJ','5Niveau':1,'6Auto': True}
         newObj = False
         descr = ""
         
+        
         for s in content.children:
             if s.name == 'h3':
                 if newObj:
                     classfeature['2Classe'] = classe
-                    classfeature['3Archétype'] = nom
+                    classfeature[u'3Archétype'] = nom
+                    classfeature['4Source'] = source
                     classfeature['7Description'] = descr.strip()
                     classfeature['EMPTY'] = ""
                     
@@ -199,7 +203,10 @@ for el in list:
                     brCount = 0
                     
                 descr = ""
-                classfeature['1Nom'] = s.text.replace('¶','').strip()
+                featureName = s.text.replace('¶','').strip()
+                if featureName.endswith('.'):
+                    featureName = featureName[:-1]
+                classfeature['1Nom'] = featureName[0] + featureName[1:]
                 newObj = True
                 
                 for e in s.children:
@@ -211,9 +218,9 @@ for el in list:
                 if s.string is None:
                     for s2 in s.children:
                         if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
-                            descr += s2.string
+                            descr += s2.string.replace("\n","")
                 else:
-                    descr += s.string
+                    descr += s.string.replace("\n","")
             elif s.name == "ul":
                 for s2 in s.find_all("li"):
                     descr += "\n\n" + s2.text
@@ -222,11 +229,12 @@ for el in list:
                 for s2 in s.children:
                     if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
                         if not s2.string is None:
-                            descr += s2.string
+                            descr += s2.string.replace("\n","")
 
         ## last element
         classfeature['2Classe'] = classe
-        classfeature['3Archétype'] = nom
+        classfeature[u'3Archétype'] = nom
+        classfeature['4Source'] = source
         classfeature['7Description'] = descr.strip()
         classfeature['EMPTY'] = ""
         
