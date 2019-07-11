@@ -93,7 +93,7 @@ for s in section:
                         malefice = {'5Niveau':LVL}
                         
                     descr = ""
-                    malefice['1Nom'] = u"Exploit: " + nom
+                    malefice['1Nom'] = u"Maléfice: " + nom
                     malefice['4Source'] = source
                     malefice['7Référence'] = reference
                     source = "MJRA"
