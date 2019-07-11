@@ -1,0 +1,716 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Inquisitions - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="art de la magie, inquisiteur, inquisitions" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inquisitions.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=inquisitions&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwaQ2eeXmTHog83s8bc3qu+ulcpSc=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJf3eSu0TQRIzawyMUKdhrb+B72oi3QcwxQT+thNGyuugsGBTizhuoan4NcgRaD3LM2b9xY" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Inquisitions">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Inquisitions">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Inquisitions">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Inquisitions.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Inquisitions.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Inquisitions">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Inquisitions
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Inquisitions" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><i>La plupart des gens ont une vision stéréotypée de l’inquisiteur affublé d’un mélange d’habits officiels et de divers outils indispensables aux aventuriers. Bien souvent, sa parole est aussi respectée que la loi divine. Mais ce ne sont là que les aspects les plus superficiels de l’inquisiteur. Sa vie est rythmée par les connaissances secrètes, un danger constant et l’étrange politique des mortels et des extérieurs. Son chemin est jalonné de nombreux embranchements et autant de spécialisations qui proposent toutes une méthode différente pour débusquer les ennemis de la foi et les vaincre.</i><br /><br /><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_bannissement_0">Inquisition de bannissement</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_cavalerie_1">Inquisition de cavalerie</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_colère_2">Inquisition de colère</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_conversion_3">Inquisition de conversion</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_damnation_4">Inquisition de damnation</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_du_destin_5">Inquisition du destin</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’emprisonnement_6">Inquisition d’emprisonnement</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’excommunication_7">Inquisition d’excommunication</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_ferveur_8">Inquisition de ferveur</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’hérésie_9">Inquisition d’hérésie</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’héroïsme_10">Inquisition d’héroïsme</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’illumination_11">Inquisition d’illumination</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_justice_12">Inquisition de justice</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_l’ordre_13">Inquisition de l’ordre</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_d’oubli_14">Inquisition d’oubli</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_péché_15">Inquisition de péché</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_persévérance_16">Inquisition de persévérance</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_possession_17">Inquisition de possession</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_la_poudre_noire_18">Inquisition de la poudre noire</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_récupération_19">Inquisition de récupération</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_rédemption_20">Inquisition de rédemption</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_réforme_21">Inquisition de réforme</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_repos_éternel_22">Inquisition de repos éternel</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_restauration_23">Inquisition de restauration</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_révélation_24">Inquisition de révélation</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_tactique_25">Inquisition de tactique</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_torture_26">Inquisition de torture</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_tueur_de_sorts_27">Inquisition de tueur de sorts</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_vengeance_28">Inquisition de vengeance</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_vérité_29">Inquisition de vérité</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_vraie_mort_30">Inquisition de vraie mort</a><br />&nbsp;&nbsp;&nbsp;<a href="#Inquisition_de_zèle_31">Inquisition de zèle</a><br /></p></div></div></td></tr></table><br />Si un pouvoir d’inquisition autorise un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>, le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> est égal à 10 + 1/2 niveau de l’inquisiteur + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>. Sauf indication contraire, le <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">niveau de lanceur de sorts</a> des pouvoirs magiques est égal à son niveau d’inquisiteur.<br /><br />Un prêtre ou une classe avec un domaine peut choisir une inquisition à la place (en accord avec sa divinité) mais elle ne donne pas d’<a class="pagelink" href="Pathfinder-RPG.emplacement%20de%20sort.ashx" title="emplacement de sort">emplacement de sort</a> de domaine ni de sort de domaine, les inquisitions sont donc un mauvais choix pour les autres classes. Celles-ci utilisent le niveau de classe adéquat comme niveau d’inquisiteur effectif en ce qui concerne les pouvoirs qu’accorde l’inquisition (les prêtres utilisent leur niveau de prêtre comme niveau d’inquisiteur etc.)<br /><br /><h2 class="separator">Inquisition de bannissement<a class="headeranchor" id="Inquisition_de_bannissement_0" href="#Inquisition_de_bannissement_0" title="Lien vers cette section">&#0182;</a></h2><i>La dévotion du personnage à sa divinité n'a d'égal que sa haine des fiélons, et il sait renvoyer les extérieurs malveillants à leurs plans d'origine.</i><br /><br /><b>Juste colère (Sur).</b> Lorsque le personnage fait une attaque de contact à mains nues contre une créature d'<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> Mauvais, elle doit faire un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> ou être <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secouée</a> pour 1d4 tours. Si la créature touchée est un extérieur, elle est <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayée</a> et non secouée. Le personnage peut utiliser ce pouvoir un nombre de fois par jour égal à 3 + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Toucher de renvoi (Sur).</b> Au niveau 8, le personnage peut utiliser <a class="pagelink" href="Pathfinder-RPG.renvoi.ashx" title="Renvoi">renvoi</a> en tant que pouvoir magique une fois par jour en effectuant une attaque de contact à mains nues contre un Extérieur mauvais. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de ce pouvoir est augmenté de 2. <br /><br /><h2 class="separator">Inquisition de cavalerie<a class="headeranchor" id="Inquisition_de_cavalerie_1" href="#Inquisition_de_cavalerie_1" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage suit la voie de la chevalerie, défendant son honneur et chevauchant un noble destrier.</i><br /><br /><b>Monture (Ext).</b> Ce pouvoir fonctionne comme celui du <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevalier</a>.<br /><br /><b>Fidèle destrier (Sur).</b> Au niveau 8, quand le personnage rend un <a class="pagelink" href="Pathfinder-RPG.jugements.ashx" title="Les jugements d&#39;inquisiteur">jugement</a>, sa monture bénéficie également de l'effet d'un jugement. Au niveau 16, elle bénéficie de l'effet de deux jugements.<br /><br /><h2 class="separator">Inquisition de colère<a class="headeranchor" id="Inquisition_de_colère_2" href="#Inquisition_de_colère_2" title="Lien vers cette section">&#0182;</a></h2><i>La divinité protectrice de l’inquisiteur lui accorde une rage sacrée (ou impie) qui lui permet de remporter une victoire sanglante.</i><br /><br /><b>Réplique haineuse (Ext).</b> Une fois par jour, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, juste après que le personnage s’est fait toucher au corps à corps, il peut faire une attaque de mêlée contre la créature qui l’a touché. Cette attaque utilise son <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">bonus d’attaque maximal</a>, même si le personnage a déjà attaqué au cours du round.<br /><br /><b>Colère divine (Ext).</b> Au niveau 6, le personnage peut entrer en <a class="pagelink" href="Pathfinder-RPG.rage.ashx" title="Rage">rage</a> comme un <a class="pagelink" href="Pathfinder-RPG.barbare.ashx" title="Le barbare">barbare</a>. Son niveau de barbare effectif est égal à son niveau d’inquisiteur -3. S’il possède également des niveaux de barbare, ces niveaux se cumulent pour déterminer la puissance de l’effet de rage. L’inquisiteur n’obtient aucun pouvoir de rage grâce à cette inquisition mais, s’il en possède déjà avec une autre classe, il peut les appliquer à ses rages d’inquisiteur. Chaque jour, il peut entrer en rage pendant un nombre de rounds égal à son bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> plus 1 round par niveau d’inquisiteur au-delà du 4.<br /><br /><h2 class="separator">Inquisition de conversion<a class="headeranchor" id="Inquisition_de_conversion_3" href="#Inquisition_de_conversion_3" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage possède de puissants pouvoirs de persuasion. Sa langue de miel renforcée par l’argumentation divine lui permet de ranger les indifférents comme les opposants à son avis.</i><br /><br /><b>Charme de la sagesse (Ext).</b> Le personnage utilise son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> au lieu de son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> quand il fait un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> ou d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>.<br /><br /><b>Parole convaincante (Mag).</b> Au niveau 8, le personnage peut, une fois par jour, prononcer une parole inspirée par la sagesse divine et ainsi rallier une créature à sa cause. La cible doit se trouver dans sa ligne de mire et doit l’entendre. Si elle rate son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>, elle est affectée par une <i><a class="pagelink" href="Pathfinder-RPG.domination.ashx" title="Domination">domination</a></i> de personne d’une durée de 1 minute seulement.<br /><br /><h2 class="separator">Inquisition de damnation<a class="headeranchor" id="Inquisition_de_damnation_4" href="#Inquisition_de_damnation_4" title="Lien vers cette section">&#0182;</a></h2><i>La perspective d'un au-delà de tourments est capable de faire frisonner même les individus les plus endurcis - ne serait-ce qu'un moment.</i><br /><br /><b>Crainte des flammes (Sur).</b> Le personnage peut donner à une créature dans un rayon de 15 mètres (12 <abbr title="cases">c</abbr>) une chance d'éviter une éternité de souffrance en lui ordonnant d'effectuer une action dont la durée ne dépasse pas un round. Les créatures d'<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> Bon ou Neutre qui refusent sont <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secouées</a> pour un tour (un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> annule cet effet) et les créatures d'alignement Mauvais qui obéissent reçoivent un bonus de morale de +2 à tous les tests et lancers de dé pour un tour. C'est un effet mental dépendant du langage. Le personnage peut utiliser ce pouvoir un nombre de fois par jour égal à 3 + son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Collecteur d'âmes (Mag).</b> Au niveau 8, le personnage peut, une fois par jour, invoquer par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> un fiélon illusoire pour plonger temporairement une créature vivante et intelligente dans un univers de douleur et de tourments. Ce pouvoir fonctionne comme celui d'<a class="pagelink" href="Pathfinder-RPG.assassin%20imaginaire.ashx" title="Assassin imaginaire">assassin imaginaire</a> si ce n'est que les créatures qui échouent leur jet de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> sont <a class="pagelink" href="Pathfinder-RPG.paralys%c3%a9.ashx" title="Paralysé">paralysées</a> pour un nombre de rounds égal à 1d4 + niveau d'<a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a> au lieu de mourir. <br /><br /><h2 class="separator">Inquisition du destin<a class="headeranchor" id="Inquisition_du_destin_5" href="#Inquisition_du_destin_5" title="Lien vers cette section">&#0182;</a></h2><i>Le destin est un puissant outil pour ceux qui font justice au nom de leur dieu. Le personnage sait lire les fils du destin et ce sont eux qui le guident.</i><br /><br /><b>Augure (Mag).</b> Une fois par jour, l’inquisiteur peut lancer <i><a class="pagelink" href="Pathfinder-RPG.augure.ashx" title="Augure">augure</a></i> comme un pouvoir magique.<br /><br /><b>Agent du destin (Sur).</b> Au niveau 8, quand le personnage utilise son pouvoir d’<i><a class="pagelink" href="Pathfinder-RPG.augure.ashx" title="Augure">augure</a></i>, ses bénéfices se prolongent jusqu’à la fin de son prochain combat. Si le résultat du sort est « fortune », tous les effets de soins utilisés sur le personnage soignent 1d10 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> de plus. Si le résultat est « péril », ses attaques de corps à corps infligent +1d6 points de dégâts. Si le résultat est « fortune et péril » ou « rien », le personnage gagne un bonus d’intuition de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>.<br /><br /><h2 class="separator">Inquisition d’emprisonnement<a class="headeranchor" id="Inquisition_d’emprisonnement_6" href="#Inquisition_d’emprisonnement_6" title="Lien vers cette section">&#0182;</a></h2><i>Parfois, il vaut mieux capturer ses ennemis que les tuer, car l’inquisiteur peut les punir pour leurs crimes ou les torturer pour obtenir des informations.</i><br /><br /><b>Frappe de la prison (Sur).</b> Des chaînes spectrales s’enroulent autour de la cible pendant une courte période, après une frappe dévastatrice. À chaque fois que le personnage confirme un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec une arme de corps à corps ou à distance (y compris les sorts qui nécessitent des jets d’attaque), il peut décider d’<a class="pagelink" href="Pathfinder-RPG.enchev%c3%aatr%c3%a9.ashx" title="Enchevêtré">enchevêtrer</a> la cible pendant 1d4 rounds (<a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a> pour annuler). Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Prison divine.</b> Au niveau 8, chaque jour, quand l’inquisiteur réussit une attaque de corps à corps, il peut affecter sa cible avec <i><a class="pagelink" href="Pathfinder-RPG.immobilisation%20de%20monstre.ashx" title="Immobilisation de monstre">immobilisation de monstre</a></i> (<a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler).<br /><br /><h2 class="separator">Inquisition d’excommunication<a class="headeranchor" id="Inquisition_d’excommunication_7" href="#Inquisition_d’excommunication_7" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage peut repousser l'influence de serviteurs divins égarés.</i><br /><br /><b>Toucher de silence (Sur).</b> Par une attaque de contact au corps à corps, le personnage peut rendre une créature silencieuse pour un tour, comme avec un sort de <a class="pagelink" href="Pathfinder-RPG.silence.ashx" title="Silence">silence</a>. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Excommunication.</b> Au niveau 8, le personnage peut, une fois par jour, retirer par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> l'usage de la parole à une créature unique dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>). Un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> annule cet effet. Une créature qui échoue ce jet a droit à un second jet de sauvegarde au tour suivant. Si elle y échoue également, elle est privée de la parole et ne peut plus parler, lancer de sorts à composante verbale, écrire, mimer, ou communiquer de quelque manière que ce soit excepté pour répondre par l'affirmative ou la négative pour un jour.<br /><br /><h2 class="separator">Inquisition de ferveur<a class="headeranchor" id="Inquisition_de_ferveur_8" href="#Inquisition_de_ferveur_8" title="Lien vers cette section">&#0182;</a></h2><i>Seule une personne aussi passionnée et vertueuse que l’inquisiteur peut faire respecter la justice.</i><br /><br /><b>Feux de la foi (Mag).</b> L’inquisiteur peut déchaîner une colonne de feu sacré ou impie qui brûle une cible située à 9 mètres (6 <abbr title="cases">c</abbr>), comme une attaque de contact à distance. La cible subit 1d6 points de dégâts de feu plus la moitié du niveau de l’inquisiteur (avec un minimum de +1). Si l’inquisiteur est Bon, les flammes ne blessent que les cibles non Bonnes. S’il est Mauvais, elles ne blessent que les créatures non Mauvaises.<br /><br />Si l’inquisiteur n’est ni Bon ni Mauvais, il doit décider si les flammes blesseront des cibles Bonnes ou Mauvaises. Une fois qu’il a pris cette décision, il ne peut plus en changer (mais s’il change d’alignement, les effets des flammes se modifient en conséquence). Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Action fervente (Ext).</b> Au niveau 8, une fois par jour, par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>, l’inquisiteur peut faire une attaque de corps à corps avec son <a class="pagelink" href="Pathfinder-RPG.BBA.ashx" title="BBA">bonus d’attaque</a> maximal, se déplacer à sa <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de base</a> ou lancer un sort d’inquisiteur préparé (d’un niveau de sort inférieur de 1 au sort de plus haut niveau qu’il puisse lancer) comme avec <a class="pagelink" href="Pathfinder-RPG.Incantation%20rapide.ashx" title="Incantation rapide">Incantation rapide</a>.<br /><br /><h2 class="separator">Inquisition d’hérésie<a class="headeranchor" id="Inquisition_d’hérésie_9" href="#Inquisition_d’hérésie_9" title="Lien vers cette section">&#0182;</a></h2><i>Il est souvent bien difficile de différencier les hérétiques des fidèles. L’inquisiteur utilise sa duplicité, sa discrétion et les propres arguments des hérétiques pour les débusquer et les traîner devant la justice.</i><br /><br /><b>Infiltration vertueuse (Ext).</b> Le personnage utilise son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> au lieu de son modificateur de <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> quand il fait ses tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> et d’<a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>.<br /><br /><b>Infiltration bénie (Ext).</b> Au niveau 4, quand le personnage fait un test de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> ou de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>, il peut lancer le dé à deux reprises et choisir le meilleur résultat. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à son bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Parole anathème (Mag).</b> Au niveau 8, une fois par jour, le personnage peut prononcer l’anathème contre une unique créature située dans les 18 mètres (12 <abbr title="cases">c</abbr>) (jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler). Ceci fonctionne comme <i><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9diction.ashx" title="malédiction">malédiction</a></i> et dure 1 minute, ce qui donne à la cible un malus de -4 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">de sauvegarde</a> et aux tests de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a> et de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>.<br /><br /><h2 class="separator">Inquisition d’héroïsme<a class="headeranchor" id="Inquisition_d’héroïsme_10" href="#Inquisition_d’héroïsme_10" title="Lien vers cette section">&#0182;</a></h2><i>Il faut du courage pour affronter les ennemis de sa religion.</i><br /><br /><b>Caresse de résolution (Mag).</b> Chaque jour, le personnage peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.regain%20dassurance.ashx" title="Regain d&#39;assurance">regain d’assurance</a></i> sur une créature un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Sans peur (Sur).</b> Au niveau 8, l’inquisiteur est immunisé contre la peur.<br /><br /><h2 class="separator">Inquisition d’illumination<a class="headeranchor" id="Inquisition_d’illumination_11" href="#Inquisition_d’illumination_11" title="Lien vers cette section">&#0182;</a></h2><i>Bien souvent, l’illumination la plus pure et la plus inébranlable représente la meilleure arme de l’inquisiteur, car la lumière et la sagesse débusquent les erreurs.</i><br /><br /><b>Caresse de l’illumination (Mag).</b> La main de l’inquisiteur brille d’une lueur divine. Il peut alors toucher une créature, par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, et lui donner un bonus à un unique jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a>, test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a>, test de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> ou test de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>. Ce bonus est égal à 1/2 du niveau de l’inquisiteur. Ce pouvoir persiste 1 heure ou jusqu’à ce que la cible choisisse de l’appliquer à un jet. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Aura d’illumination (Sur).</b> Au niveau 4, le personnage émet une aura de lumière normale de 9 mètres (6 <abbr title="cases">c</abbr>) de <a class="pagelink" href="Pathfinder-RPG.rayon.ashx" title="rayon">rayon</a>. Les alliés situés à l’intérieur reçoivent un bonus d’intuition de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>. Ce pouvoir compte comme un effet de lumière de niveau 2 quand il s’agit de contrer ou de dissiper un effet d’obscurité. Chaque jour, l’inquisiteur peut utiliser son aura un nombre de fois égal à son niveau d’inquisiteur. Ces rounds ne sont pas nécessairement consécutifs.<br /><br /><h2 class="separator">Inquisition de justice<a class="headeranchor" id="Inquisition_de_justice_12" href="#Inquisition_de_justice_12" title="Lien vers cette section">&#0182;</a></h2><i>Certaines personnes doivent apprendre que se soumettre à son destin revient à se soumettre à la justice de l’inquisiteur.</i><br /><br /><b>Force judicieuse (Sur).</b> Si le personnage ou un allié situé dans les 3 mètres (2 <abbr title="cases">c</abbr>) fait un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> avec une attaque de corps à corps ou à distance, il peut, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a>, ajouter un bonus de +4 au jet de confirmation. Ceci ne se cumule pas avec le <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>. Chaque jour, l’inquisiteur peut utiliser ce pouvoir un nombre de fois égal à son bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Chaînes de justice (Sur).</b> Au niveau 6, une fois par jour, le personnage peut enchaîner un adversaire situé dans les 18 mètres (12 <abbr title="cases">c</abbr>) avec des chaînes spectrales (jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler).<br /><br />Quand le personnage reçoit des dégâts de la part d’un ennemi, la cible enchaînée subit les mêmes dégâts. L’inquisiteur et sa cible ne sont pas physiquement attachés ensemble et ils peuvent tous deux mettre un terme à l’effet en brisant la ligne d’effet ou en sortant du rayon de portée du pouvoir. Le personnage peut renvoyer les chaînes par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>.<br /><br /><h2 class="separator">Inquisition de l’ordre<a class="headeranchor" id="Inquisition_de_l’ordre_13" href="#Inquisition_de_l’ordre_13" title="Lien vers cette section">&#0182;</a></h2><i>La plupart des inquisiteurs combattent les aberrations et les créatures démoniaques mais aussi le chaos de l’hérésie. Ils se reposent sur les maximes et les atours de la loi pour les aider dans leur lutte.</i><br /><br /><b>Manteau contre le chaos (Mag).</b> Le personnage peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.protection%20contre%20le%20chaos.ashx" title="Protection contre le Chaos">protection contre le chaos</a></i> sur sa personne ou sur autrui, comme un pouvoir magique. Chaque jour, il peut lancer ce pouvoir un nombre de minutes égal à son niveau d’inquisiteur (1 au minimum). Cette durée n’est pas forcément continue mais doit se découper en segments d’une minute.<br /><br /><b>Ordre impérieux (Mag).</b> Au niveau 8, l’inquisiteur peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.injonction%20supr%c3%aame.ashx" title="Injonction suprême">injonction suprême</a></i> mais elle n’affecte qu’une cible. Chaque jour, il peut se servir de ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><h2 class="separator">Inquisition d’oubli<a class="headeranchor" id="Inquisition_d’oubli_14" href="#Inquisition_d’oubli_14" title="Lien vers cette section">&#0182;</a></h2><i>Certains inquisiteurs croient qu’en dehors de la foi, il n’y a que l’oubli. Mais quelques serviteurs du divin en savent assez sur les ténèbres au-delà de la religion pour les utiliser comme outil et comme arme.</i><br /><br /><b>Ancre vitale (Sur).</b> Le personnage émet une aura de 3 mètres (2 <abbr title="cases">c</abbr>) qui aide les créatures mourantes à s’accrocher à la vie. Au sein de cette aura, toute créature à l’agonie (y compris l’inquisiteur) ajoute le bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> du personnage à ses tests de <a class="pagelink" href="Pathfinder-RPG.stabilisation.ashx" title="Stabilisation">stabilisation</a> (en plus des éventuels autres modificateurs).<br /><br /><b>Yeux de l’oubli (Mag).</b> Au niveau 8, le personnage peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9bilit%c3%a9.ashx" title="Débilité">débilité</a></i> comme attaque de <a class="pagelink" href="Pathfinder-RPG.regard.ashx" title="Regard">regard</a> contre une créature (<a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler). Cet effet dure 1d4 rounds. Au niveau 8, le personnage peut utiliser ce pouvoir une fois par jour et ensuite une fois de plus tous les quatre niveaux.<br /><br /><h2 class="separator">Inquisition de péché<a class="headeranchor" id="Inquisition_de_péché_15" href="#Inquisition_de_péché_15" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage sait comment éveiller les sept péchés d'autrui et les manipuler pour satisfaire ses propres desseins.</i><br /><br /><b>Sens du péché (Ext).</b> Par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, le personnage peut déterminer quel péché influence plus fortement une cible en lisant son esprit. Il bénéficie alors d'un bonus de +4 au prochain test dépendant du <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> envers cette personne pourvu qu'il y incorpore une tentation en lien avec ce péché. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (1 au minimum).<br /><br /><b>Succomber à la tentation (Sur).</b> Au niveau 8, le personnage peut, une fois par jour par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, forcer un individu à succomber à son plus grand vice. La créature ciblée ne doit pas avoir été ciblée précédemment par le sens du péché, et a droit à un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler l'effet. Si elle échoue, pendant les prochaines 24 heures, dès que la créature a la possibilité de satisfaire ce péché, elle doit céder à la tentation ou faire un autre jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a>, devenant <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreuse</a> pour une minute si elle échoue. C'est un <a class="pagelink" href="Pathfinder-RPG.effet%20mental.ashx" title="effet mental">effet mental</a>.<br /><br /><h2 class="separator">Inquisition de persévérance<a class="headeranchor" id="Inquisition_de_persévérance_16" href="#Inquisition_de_persévérance_16" title="Lien vers cette section">&#0182;</a></h2><i>Le dieu de l’inquisiteur l’a choisi pour sa persévérance. Il a juré de poursuivre tous les ennemis de la foi, jusqu’aux confins de la terre si nécessaire. Il reçoit S’avancer comme don supplémentaire.</i><br /><br /><b>Marche acharnée (Ext).</b> Par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>, le personnage peut augmenter sa vitesse de 3 mètres (2 <abbr title="cases">c</abbr>). Cette augmentation compte comme un bonus d’altération et affecte la distance de saut, comme il se doit. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (1 au minimum).<br /><br /><b>Force intérieure (Sur).</b> Au niveau 6, le personnage peut, une fois par jour, se soigner par une <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">action rapide</a>. Il récupère 1d6 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> par tranche de deux niveaux d’inquisiteur. Quand il se sert de ce pouvoir, il peut également se débarrasser de l’une des conditions suivantes : <a class="pagelink" href="Pathfinder-RPG.aveugle.ashx" title="aveugle">aveugle</a>, <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelant</a>, <a class="pagelink" href="Pathfinder-RPG.confus.ashx" title="Confus">confus</a>, <a class="pagelink" href="Pathfinder-RPG.effray%c3%a9.ashx" title="Effrayé">effrayé</a>, <a class="pagelink" href="Pathfinder-RPG.%c3%a9tourdi.ashx" title="Étourdi">étourdi</a>, <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreux</a>, <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeux</a>, <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secoué</a> ou <a class="pagelink" href="Pathfinder-RPG.sourd.ashx" title="sourd">sourd</a>.<br /><br /><h2 class="separator">Inquisition de possession<a class="headeranchor" id="Inquisition_de_possession_17" href="#Inquisition_de_possession_17" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage peut investir le corps d'êtres inférieurs et les plier à sa volonté.</i><br /><br /><b>Contrôle de soi (Ext).</b> Le personnage possède un contrôle remarquable de lui-même et gagne un bonus de +2 aux jets de sauvegarde contre les effets de <a class="pagelink" href="Pathfinder-RPG.charme.ashx" title="charme">charme</a> et de <a class="pagelink" href="Pathfinder-RPG.coercition.ashx" title="coercition">coercition</a>.<br /><br /><b>Possession d'animal (Sur).</b> Au niveau 4, une fois par jour par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le personnage peut posséder le corps d'un animal à moins de 9 mètres (6 <abbr title="cases">c</abbr>) de lui pendant un nombre de rounds égal à son niveau d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a>. Pendant ce temps, le corps du personnage est sans défense. Le personnage peut se déplacer de n'importe quelle distance tant qu'il reste dans le même plan que son corps. Le personnage peut interrompre cet effet par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. Si l'animal ou le corps reçoit des dommages, ou si le personnage tente de faire faire à l'animal une action illogique, l'effet s'interrompt immédiatement.<br /><br /><b>Vol de corps (Sur).</b> Au niveau 10, le personnage peut, une fois par jour, par une <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">action immédiate</a> lorsqu'il devient <a class="pagelink" href="Pathfinder-RPG.inconscient.ashx" title="Inconscient">inconscient</a> après être passé en dessous de 0 points de vie, projeter son âme hors de son corps et la faire posséder le corps d'une créature à moins de 9 mètres (6 <abbr title="cases">c</abbr>) de lui. Ce pouvoir fonctionne comme un sort de <a class="pagelink" href="Pathfinder-RPG.possession.ashx" title="Possession">possession</a> si ce n'est que le corps sert de réceptacle et que l'esprit de la cible n'est pas envoyée dans un réceptacle, seulement étouffé pendant la durée du sort. Le corps d'origine continue de saigner tant qu'il n'est pas stabilisé, et si ses PV passent en dessous d'une valeur négative égal au à la <a class="pagelink" href="Pathfinder-RPG.Constitution.ashx" title="La Constitution">Constitution</a> du personnage, l'effet s'interrompt prématurément et le personnage meurt.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<h2 class="separator">Inquisition de la poudre noire<a class="headeranchor" id="Inquisition_de_la_poudre_noire_18" href="#Inquisition_de_la_poudre_noire_18" title="Lien vers cette section">&#0182;</a></h2>
+<b>Pouvoirs accordés.</b> L’inquisiteur gagne <a class="pagelink" href="Pathfinder-RPG.Maniement%20dune%20arme%20exotique.ashx" title="Maniement d&#39;une arme exotique">Maniement d'une arme exotique</a> (armes à feu) et <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20%c3%a0%20feu.ashx" title="Création d&#39;armes à feu">Création d’armes à feu</a> comme dons supplémentaires. Quand il utilise une <a class="pagelink" href="Pathfinder-RPG.arme%20%c3%a0%20feu.ashx" title="arme à feu">arme à feu</a> et touche un lanceur de sorts profane ou une créature qui utilise des pouvoirs magiques, la victime doit réussir un jet de <a class="pagelink" href="Pathfinder-RPG.Vigueur.ashx" title="Vigueur">Vigueur</a>. Si elle échoue, elle reçoit un malus de -4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Concentration.ashx" title="Concentration">Concentration</a> pendant 1 round.<br /><br /><h2 class="separator">Inquisition de récupération<a class="headeranchor" id="Inquisition_de_récupération_19" href="#Inquisition_de_récupération_19" title="Lien vers cette section">&#0182;</a></h2><i>Là ou certains chassent les secrets, le personnage traque des objets plus tangibles.</i><br /><br /><b>Recherche concentrée (Ext).</b> Le personnage peut, une fois par jour, choisir un personnage ou un objet comme objet de sa concentration. Ce pouvoir prend une minute de <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a> pendant lequel il visualise l'objet ou la personne (s'il en est capable) ou médite sur sa description (dans le cas contraire). Jusqu'à ce qu'il ait choisi une nouvelle cible, il gagne un bonus égal à la moitié de son niveau d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a> sur ses tests de <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> pour le voir et l'entendre, et de <a class="pagelink" href="Pathfinder-RPG.Survie.ashx" title="Survie">Survie</a> pour le pister, ou pister une créature en sa possession. Ce pouvoir se cumule avec les bonus de pistage de l'inquisiteur.<br /><br /><b>Localiser la cible (Mag).</b> Au niveau 8, une fois par jour, l'inquisiteur peut utiliser <a class="pagelink" href="Pathfinder-RPG.localisation%20dobjet.ashx" title="Localisation d&#39;objet">localisation d'objet</a> ou <a class="pagelink" href="Pathfinder-RPG.localisation%20de%20cr%c3%a9ature.ashx" title="Localisation de créature">localisation de créature</a> en tant que pouvoir magique sur l'objet de sa concentration. La portée de cet effet est d'un kilomètre par niveau.<br /><br /><h2 class="separator">Inquisition de rédemption<a class="headeranchor" id="Inquisition_de_rédemption_20" href="#Inquisition_de_rédemption_20" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage s'adresse à ses frères égarés et leur donne une chance de se racheter du conflit avec la véritable foi, même si ce différend passe par la violence.</i><br /><br /><b>Sensibilité patiente (Ext).</b> Le personnage gagne un bonus de +2 aux tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> et <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>.<br /><br /><b>Merci du rédempteur (Ext).</b> Au niveau 4, toute arme maniée par l'inquisiteur gagne la propriété <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx" title="Les armes magiques">miséricordieuse</a> tant qu'il la manie.<br /><br /><b>Seconde chance (Mag).</b> Au niveau 8, une fois par jour, l'inquisiteur peut par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> lancer un sort de <a class="pagelink" href="Pathfinder-RPG.p%c3%a9nitence.ashx" title="Pénitence">pénitence</a>, ciblant une unique créature ayant manqué à la foi d'une religion partagée avec l'inquisiteur, ou souhaitant prendre l'alignement du personnage. Si le sort de <a class="pagelink" href="Pathfinder-RPG.p%c3%a9nitence.ashx" title="Pénitence">pénitence</a> demandait normalement une offrande à cause d'une transgression volontaire, l'inquisiteur doit accepter à la place un niveau négatif permanent. En plus de l'effet d'un sort de <a class="pagelink" href="Pathfinder-RPG.p%c3%a9nitence.ashx" title="Pénitence">pénitence</a>, la cible reçoit également l'effet d'un sort de <a class="pagelink" href="Pathfinder-RPG.soins%20intensifs.ashx" title="Soins intensifs">soins intensifs</a>.<br /><br /><h2 class="separator">Inquisition de réforme<a class="headeranchor" id="Inquisition_de_réforme_21" href="#Inquisition_de_réforme_21" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage parle avec une éloquence divine.</i><br /><br /><b>Rhétorique inspirée (Ext).</b> Le personnage utilise sa <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> et non son <a class="pagelink" href="Pathfinder-RPG.Charisme.ashx" title="Le Charisme">Charisme</a> pour ses tests de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> et <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (Arts oratoires), et <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (Arts oratoires) est toujours une compétence de classe pour lui.<br /><br /><b>Correction bénie (Ext).</b> Au niveau 4, si le personnage doit effectuer un test de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>, <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a> ou <a class="pagelink" href="Pathfinder-RPG.Repr%c3%a9sentation.ashx" title="Représentation">Représentation</a> (Arts oratoires), il peut lancer le dé deux fois et choisir le résultat le plus favorable. Il peut utiliser ce pouvoir un nombre de fois par jour égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Eveiller le mécontentement (Sur).</b> Au niveau 8, l'inquisiteur peut énoncer une intense tirade condamnant les erreurs des individus au pouvoir et réclamant une réforme, faisant subir à la cible du discours l'effet d'un <a class="pagelink" href="Pathfinder-RPG.charme-personne.ashx" title="Charme-personne">charme-personne</a> (DD 10 + 1/2 niveau d'<a class="pagelink" href="Pathfinder-RPG.Inquisiteur.ashx" title="L&#39;inquisiteur">Inquisiteur</a> + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>). Il peut utiliser ce pouvoir un nombre de fois par jour égal à son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><h2 class="separator">Inquisition de repos éternel<a class="headeranchor" id="Inquisition_de_repos_éternel_22" href="#Inquisition_de_repos_éternel_22" title="Lien vers cette section">&#0182;</a></h2><i>Les morts sont voués au repos - et les voir se déplacer est une aberration que rien n'excuse. Le personnage s'applique à protéger ce saint repos.</i><br /><br /><b>Dissiper l'animation (Mag).</b>Le personnage peut utiliser <a class="pagelink" href="Pathfinder-RPG.destruction%20de%20mort-vivant.ashx" title="Destruction de mort-vivant">destruction de mort-vivant</a> comme pouvoir magique, ajoutant son modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> aux dégâts infligés. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (minimum 1).<br /><br /><b>Déchirer l'animation (Sur).</b> Au niveau 8, quand l’inquisiteur ajoute à son arme la propriété tueuse de morts-vivants, il lui ajoute également la propriété <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx" title="Les armes magiques">destruction</a>. Le DD pour y résister est égal à 10 + 1/2 niveau d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a> + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a><br /><br /><h2 class="separator">Inquisition de restauration<a class="headeranchor" id="Inquisition_de_restauration_23" href="#Inquisition_de_restauration_23" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage est un guérisseur, non seulement pour les individus mais aussi pour les sites sacrés souillés par la corruption.</i><br /><br /><b>Guérir les brisés (Sur).</b>Le personnage peut toucher une créature ou un objet et la soigner de 1d4 points +1 pour chaque deux niveaux d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a>. Ce pouvoir ne peut être utilisé que sur un objet cassé ou un individu dont les points de vie sont inférieurs à la moitié des points de vie maximum. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (minimum 1).<br /><br /><b>Dissiper l'impureté (Sur).</b> Au niveau 8, le personnage choisit un <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> opposé au sien, sur l'axe Bien/Mal ou Loi/Chaos. Une fois fait, ce choix ne peut plus être changé. Le personnage ajoute son bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> aux tests de lanceur de sort pour percer la <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">RM</a> de créatures avec cet alignement, dissiper les sorts avec cet alignement, et retirer les <a class="pagelink" href="Pathfinder-RPG.maladies.ashx" title="Les maladies">maladies</a>, <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9dictions.ashx" title="Les malédictions">malédictions</a> et <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a>. Un <a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a> neutre ne bénéficie que de ce dernier bonus.<br /><br /><h2 class="separator">Inquisition de révélation<a class="headeranchor" id="Inquisition_de_révélation_24" href="#Inquisition_de_révélation_24" title="Lien vers cette section">&#0182;</a></h2><i>Le mal emprunte souvent le visage d'un saint. Le personnage est un expert dans l'art de déceler ceux dont l'apparence est trompeuse, et utilise ses pouvoirs pour révéler le véritable visage des indignes.</i><br /><br /><b>Brûler le voile (Sur).</b> Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le personnage peut effectuer une attaque de contact à mains nues envers une cible. Cette cible subit alors 1d4 points de dégâts de feu +1 par deux niveaux d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a>. Si la cible est sous un effet de <a class="pagelink" href="Pathfinder-RPG.m%c3%a9tamorphose.ashx" title="Métamorphose">métamorphose</a> ou d'une illusion modifiant l'apparence, la elle subit à la place 1d6 points de dégâts de feu +1 par deux niveaux d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a>.  Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (minimum 1).<br /><br /><b>Révéler l'apparence (Sur).</b> Au niveau 8, une fois par jour en invoquant le nom de sa divinité par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le personnage peut tenter de forcer une cible  à moins de 9 mètres (6 <abbr title="cases">c</abbr>) à renoncer à tous ses effets de métamorphose. La cible doit faire un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler. Si elle échoue, au prochain tour, elle est contrainte de dissiper tous ses effets de changement d'apparence et d'adopter sa véritable forme. Si elle en est incapable pour une raison ou une autre, elle est <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a> pour un round. C'est un effet mental de <a class="pagelink" href="Pathfinder-RPG.coercition.ashx" title="coercition">coercition</a>.<br /><br /><h2 class="separator">Inquisition de tactique<a class="headeranchor" id="Inquisition_de_tactique_25" href="#Inquisition_de_tactique_25" title="Lien vers cette section">&#0182;</a></h2><i>Souvent, ce sont les froids esprits tactiques qui remportent la victoire. Un sacrifice approprié et soigneusement calculé peut inspirer les alliés d’autrui à rejoindre la cause de l’inquisiteur.</i><br /><br /><b>Mise en scène de l’inquisiteur (Sur).</b> Au début de son tour, l’inquisiteur peut entrer dans un état de réflexion tranquille et renoncer à faire la moindre action (ni <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">simple</a>, ni de <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">mouvement</a>, ni <a class="pagelink" href="Pathfinder-RPG.action%20rapide.ashx" title="Action rapide">rapide</a>, ni <a class="pagelink" href="Pathfinder-RPG.action%20imm%c3%a9diate.ashx" title="Action immédiate">immédiate</a>, ni <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">libre</a>, pas plus que des <a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaques d’opportunité</a>) pour tout le <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. Il choisit alors un allié situé dans les 9 mètres (6 <abbr title="cases">c</abbr>) et lui accorde les bénéfices d’un sort de <i><a class="pagelink" href="Pathfinder-RPG.rapidit%c3%a9.ashx" title="Rapidité">rapidité</a></i> pour 1 round. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> (minimum 1).<br /><br /><b>Donner l’initiative (Ext).</b> Au niveau 8, l’inquisiteur et ses alliés situés à moins de 9 mètres (6 <abbr title="cases">c</abbr>) ajoutent le bonus de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a> de l’inquisiteur à leurs tests d’initiative.<br /><br /><h2 class="separator">Inquisition de torture<a class="headeranchor" id="Inquisition_de_torture_26" href="#Inquisition_de_torture_26" title="Lien vers cette section">&#0182;</a></h2><i>Ce n’est que par la douleur que la vérité et la justice font surface. Et si cela ne fonctionne pas, l’inquisiteur a au moins appliqué la vengeance divine.</i><br /><br /><b>Présence du tortionnaire (Ext).</b> Le personnage gagne un bonus de +2 quand il utilise la compétence <a class="pagelink" href="Pathfinder-RPG.Intimidation.ashx" title="Intimidation">Intimidation</a>. Ce bonus s’ajoute à celui de <a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx#REGARDSEVERE" title="L&#39;inquisiteur">Regard sévère</a>.<br /><br /><b>Caresse du tortionnaire (Ext).</b> L’inquisiteur peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.fatigue.ashx" title="Fatigue">fatigue</a></i> comme un pouvoir magique. Ce pouvoir reste sans effet sur les créatures immunisées contre les effets de douleur. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Précision critique (Ext).</b> Au niveau 8, quand le personnage menace de faire un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a>, il peut dépenser une utilisation de sa caresse du tortionnaire pour ajouter un bonus de +4 au jet de confirmation. Ceci ne se cumule pas avec <a class="pagelink" href="Pathfinder-RPG.Don%20pour%20les%20critiques.ashx" title="Don pour les critiques">Don pour les critiques</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Combat/Art de la Guerre" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUC.gif" style="opacity: 0.7" />
+</div>
+<h2 class="separator">Inquisition de tueur de sorts<a class="headeranchor" id="Inquisition_de_tueur_de_sorts_27" href="#Inquisition_de_tueur_de_sorts_27" title="Lien vers cette section">&#0182;</a></h2><i>Beaucoup de fidèles et d’ordres religieux sont souvent en conflit avec les pratiquants de la magie profane, c’est pourquoi ils ont créé des inquisitions et entraîné des régiments pour les combattre.</i><br /><br /><b>Pouvoirs accordés.</b> L’inquisiteur gagne <a class="pagelink" href="Pathfinder-RPG.Perturbateur.ashx" title="Perturbateur">Perturbateur</a> comme don supplémentaire, même s’il ne remplit pas les conditions requises. Quand il triomphe d’un ennemi (qu’il le réduise à 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou moins, qu’il le fasse prisonnier ou qu’il accepte une trêve), il gagne un bonus sacré ou impie de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> pendant 1 minute par niveau. Le personnage gagne un bonus sacré s’il est Bon, impie s’il est Mauvais. S’il est Neutre, il choisit le type de bonus au moment où il apprend cette inquisition. Il ne peut pas changer d’avis par la suite. Quand l’inquisiteur touche une créature qui a des niveaux d’<a class="pagelink" href="Pathfinder-RPG.alchimiste.ashx" title="L&#39;alchimiste">alchimiste</a> ou d’une classe de lanceurs de sorts profanes ou encore une créature qui possède des pouvoirs magiques, il peut sacrifier son bonus pour rendre sa victime <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a>.<br /><br />À chaque tour, la victime a droit à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre l’effet (y compris lors du tour où elle subit la condition pour la première fois). Il suffit de réussir un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour mettre un terme à l’effet.<br /><br /><h2 class="separator">Inquisition de vengeance<a class="headeranchor" id="Inquisition_de_vengeance_28" href="#Inquisition_de_vengeance_28" title="Lien vers cette section">&#0182;</a></h2><i>La vengeance n’est rien d’autre que la justice dépouillée de tout artifice. L’inquisiteur a juré de faire ainsi justice, sans contrainte.</i><br /><br /><b>Divine vengeance (Mag).</b> Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le personnage peut désigner une créature située dans les 9 mètres (6 <abbr title="cases">c</abbr>) pour indiquer qu’elle est la cible de la colère divine. Il lui arrive alors une mésaventure ou un accident en accord avec l’environnement, comme une branche qui lui tombe dessus, des pierres qui chutent d’une voûte ou autre incident non magique. Quelle que soit la cause de l’accident, il inflige 1d6 points de dégâts + 1 par tranche de deux niveaux d’inquisiteur (jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a>, 1/2 dégâts). C’est au MJ de décider si ces dégâts sont de nature contondante, tranchante ou perforante. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Ultime vengeance (Sur).</b> Au niveau 8, l’inquisiteur peut, une fois par jour, faire une attaque de corps à corps contre un adversaire à portée en réponse à une attaque qui devrait faire tomber ses <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">points de vie</a> dans le négatif. Une fois l’attaque portée, l’inquisiteur subit les effets normaux de celle dont il est victime et qui a déclenché ce pouvoir. Les effets qui tuent le personnage ou ne font pas passer ses points de vie en négatif (comme les diminutions ou les <a class="pagelink" href="Pathfinder-RPG.affaiblissement%20temporaire.ashx" title="affaiblissement temporaire">affaiblissements</a> de caractéristique, les niveaux négatifs ou la <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9sint%c3%a9gration.ashx" title="Désintégration">désintégration</a></i>) ne déclenchent pas ce pouvoir.<br /><br /><h2 class="separator">Inquisition de vérité<a class="headeranchor" id="Inquisition_de_vérité_29" href="#Inquisition_de_vérité_29" title="Lien vers cette section">&#0182;</a></h2><i>Pour trouver la vérité, il faut arracher l’honnêteté aux autres, de gré ou de force.</i><br /><br /><b>Véritable chemin de la justice (Mag).</b> Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le personnage peut toucher une créature et lui donner un bonus d’intuition à un <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a>, un test de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>, de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristiques.ashx" title="Les caractéristiques">caractéristique</a> ou un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> avant que ce ne soit à nouveau son tour. Ce bonus est égal à la moitié du niveau de l’inquisiteur (1 au minimum) et dure 1 round. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à 3 + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Étreinte de l’honnêteté (Sur).</b> Au niveau 8, toute créature en <a class="pagelink" href="Pathfinder-RPG.lutte.ashx" title="lutte">lutte</a> contre l’inquisiteur ou <a class="pagelink" href="Pathfinder-RPG.immobilis%c3%a9.ashx" title="Immobilisé">immobilisée</a> par ses soins est affectée par une <i><a class="pagelink" href="Pathfinder-RPG.zone%20de%20v%c3%a9rit%c3%a9.ashx" title="Zone de vérité">zone de vérité</a></i> (<a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler). En dehors des combats, le personnage peut utiliser ce pouvoir en touchant sa cible des deux mains. Chaque jour, le personnage peut utiliser ce pouvoir un nombre de fois égal à son niveau d’inquisiteur. Ces rounds ne sont pas nécessairement consécutifs. L’effet se termine dès que le personnage arrête de lutter contre sa cible, de l’immobiliser ou de la toucher.<br /><br /><h2 class="separator">Inquisition de vraie mort<a class="headeranchor" id="Inquisition_de_vraie_mort_30" href="#Inquisition_de_vraie_mort_30" title="Lien vers cette section">&#0182;</a></h2><i>Le personnage voit les mort-vivants comme une perversion de l'ordre naturel, une insulte à la magie, ou un esclavage injuste du corps des défunts, et s'est juré de détruire ces abominations.</i><br /><br /><b>Retour à la tombe (Sur).</b> Lorsque le personnage lance des sorts de soins pour blesser un mort vivant, il ajoute 2 dommages par niveau d'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a> au lieu d'un. La limite des dégâts infligés de la sorte n'est pas modifiée.<br /><br /><b>Rite sacré (Sur).</b> Au niveau 8, le personnage gagne le droit d'accomplir un rituel funéraire sacré. Ce rituel prend un jour entier, durant lequel le personnage brûle de l'encens en prononçant des paroles sacrées. Au bout d'un jour, le personnage doit assister à l'enterrement du cadavre. Ce dernier doit s'effectuer dans les 24 heures suivant la fin du rituel. Une fois le corps enterré, il ne peut plus être transformé en mort-vivant, comme s'il bénéficiait d'un sort de <a class="pagelink" href="Pathfinder-RPG.sanctification.ashx" title="Sanctification">sanctification</a> avec un <a class="pagelink" href="Pathfinder-RPG.NLS.ashx" title="NLS">NLS</a> égal au niveau de l'<a class="pagelink" href="Pathfinder-RPG.inquisiteur.ashx" title="L&#39;inquisiteur">inquisiteur</a>.<br /><br /><h2 class="separator">Inquisition de zèle<a class="headeranchor" id="Inquisition_de_zèle_31" href="#Inquisition_de_zèle_31" title="Lien vers cette section">&#0182;</a></h2><i>L’inquisiteur doit faire preuve d’un zèle sans faille pour que la volonté de son dieu soit exécutée.</i><br /><br /><b>Excès de zèle (Mag).</b> Une fois par jour, quand le personnage tombe à 0 <a class="pagelink" href="Pathfinder-RPG.pv.ashx" title="pv">point de vie</a> ou moins, il guérit un nombre de points de vie égal à son niveau d’inquisiteur + modificateur de <a class="pagelink" href="Pathfinder-RPG.Sagesse.ashx" title="La Sagesse">Sagesse</a>.<br /><br /><b>Fléau de l’ennemi (Ext).</b> Au niveau 8, le personnage choisit une religion rivale ou ennemie de la sienne. Il considère ses membres comme des <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx#ENNEMIJURE" title="Le rôdeur">ennemis jurés</a> (comme le pouvoir du <a class="pagelink" href="Pathfinder-RPG.r%c3%b4deur.ashx" title="Le rôdeur">rôdeur</a>) et gagne donc un bonus de +2 aux jets appropriés. Au niveau 13, ce bonus passe à +4 et au niveau 18 il est de +6. Ces bonus ne se cumulent pas avec d’autres bonus d’ennemi juré (on applique uniquement le plus élevé).
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>

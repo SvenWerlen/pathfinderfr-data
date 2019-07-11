@@ -11,8 +11,8 @@ from lxml import html
 
 
 ## Configurations pour le lancement
-MOCK_JUGEMENT = None
-MOCK_JUGEMENT = "mocks/jugements.html"       # décommenter pour tester avec les jugements pré-téléchargées
+MOCK_INQUISITION = None
+MOCK_INQUISITION = "mocks/inquisitions.html"       # décommenter pour tester avec les inquisitions pré-téléchargées
 
 
 
@@ -59,39 +59,48 @@ if len(sys.argv) < 1:
 liste = []
 
 
-if MOCK_JUGEMENT:
-    content = BeautifulSoup(open(MOCK_JUGEMENT),features="lxml").body
+if MOCK_INQUISITION:
+    content = BeautifulSoup(open(MOCK_INQUISITION),features="lxml").body
 else:
-    content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.jugements.ashx").read(),features="lxml").body
+    content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.inquisitions.ashx").read(),features="lxml").body
 
 section = content.find(id='PageContentDiv').children
 
-jugement = {'5Niveau':1, '6Auto': True}
+inquisition = {'5Niveau':1}
 newObj = False
 descr = ""
-source = 'MJRA'
+source = 'AM'
 for el in section:
-    if el.name == "h3":
+    if el.name == "h2":
         nom = el.text
         if nom.endswith('¶'):
             nom = nom[:-1]
+        reference = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.inquisitions.ashx" + el.find_next("a")['href']
 
         if newObj:
-            jugement['2Classe'] = 'Inquisiteur'
-            jugement['6Description'] = descr.replace('\n','').strip()
-            jugement['EMPTY'] = ""
-            liste.append(jugement)
-            jugement = {'5Niveau':1, '6Auto': True}
-            
-        descr = ""
-        jugement['1Nom'] = u"Jugement: " + nom
-        jugement['4Source'] = source
-        jugement['7Référence'] = reference
-        source = "MJRA"
+            inquisition['2Classe'] = 'Inquisiteur'
+            inquisition['6Description'] = descr.strip()
+            inquisition['EMPTY'] = ""
+            liste.append(inquisition)
+            inquisition = {'5Niveau':1}
+            descr = ""
+
+        inquisition['1Nom'] = nom
+        inquisition['4Source'] = source
+        source = 'AM'
+        inquisition[u'7Référence'] = reference
         newObj = True
     
     elif el.name is None or el.name == 'a':
         descr += el.string
+    elif el.name == 'i':
+        descr += el.text.replace("\n"," ")
+    elif el.name == 'b':
+        descr += "\n\n" + el.text.replace("\n"," ").upper()
+    elif el.name == 'ul':
+        for li in el.find_all("li"):
+            descr += "\n*) " + li.text.replace("\n"," ")
+    
     elif el.name == 'div':
         for c in el.children:
             if c.name == 'img':
@@ -112,15 +121,12 @@ for el in section:
                 else:
                     print("Invalid source: " + c['src'])
                     exit(1)
-            elif c.name == 'a':
-                reference="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.jugements.ashx" + c['href']
-
+        
 # last element        
-jugement['2Classe'] = 'Inquisiteur'
-jugement['6Description'] = descr.replace('\n','').strip()
-jugement['EMPTY'] = ""
-liste.append(jugement)
-
+inquisition['2Classe'] = 'Samouraï'
+inquisition['6Description'] = descr.strip()
+inquisition['EMPTY'] = ""
+liste.append(inquisition)
 
 
 yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
@@ -129,7 +135,6 @@ yml = yml.replace('2Classe','Classe')
 yml = yml.replace(u'3Prérequis',u'Prérequis')
 yml = yml.replace('4Source','Source')
 yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace('6Auto','Auto')
 yml = yml.replace('6Description','Description')
 yml = yml.replace(u'7Référence',u'Référence')
 yml = yml.replace("EMPTY: ''",'')
