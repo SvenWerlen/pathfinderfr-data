@@ -64,7 +64,8 @@ if MOCK_ORDRE:
 else:
     content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx").read(),features="lxml").body
 
-section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de chevalier")
+#section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de chevalier")
+section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de Samouraï")
 
 ordre = {'5Niveau':1}
 newObj = False
@@ -81,7 +82,7 @@ for el in section:
         reference = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ordres.ashx" + el.find_next("a")['href']
 
         if newObj:
-            ordre['2Classe'] = 'Chevalier'
+            ordre['2Classe'] = 'Samouraï'
             ordre['6Description'] = descr.strip()
             ordre['EMPTY'] = ""
             liste.append(ordre)
@@ -125,7 +126,7 @@ for el in section:
                     exit(1)
         
 # last element        
-ordre['2Classe'] = 'Chevalier'
+ordre['2Classe'] = 'Samouraï'
 ordre['6Description'] = descr.strip()
 ordre['EMPTY'] = ""
 liste.append(ordre)
