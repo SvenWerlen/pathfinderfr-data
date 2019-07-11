@@ -218,9 +218,9 @@ for el in list:
                 if s.string is None:
                     for s2 in s.children:
                         if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
-                            descr += s2.string.replace("\n","")
+                            descr += s2.string.replace("\n"," ")
                 else:
-                    descr += s.string.replace("\n","")
+                    descr += s.string.replace("\n"," ")
             elif s.name == "ul":
                 for s2 in s.find_all("li"):
                     descr += "\n\n" + s2.text
@@ -229,7 +229,7 @@ for el in list:
                 for s2 in s.children:
                     if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
                         if not s2.string is None:
-                            descr += s2.string.replace("\n","")
+                            descr += s2.string.replace("\n"," ")
 
         ## last element
         classfeature['2Classe'] = classe
