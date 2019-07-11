@@ -1,0 +1,856 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les maléfices de sorcières - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="maléfices, sorcière" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.maléfices.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=mal%u00e9fices&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwiIjjD73kxQ7PwNGf+lCb5qkL93g=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIrR2O6lm+EHjbGNIcQJFBX+B72oi3QcwxQT+thNGyuujywXREaoVk4Hy++a/lObRZM2AmH" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.maléfices">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.maléfices">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.maléfices">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.maléfices.ashx?Discuss=1">Discuter (1)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.maléfices.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.mal%c3%a9fices">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les maléfices de sorcières
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.mal%c3%a9fices" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><i>Les sorcières sont des créatures de mystère et de pouvoir, aussi craintes que respectées pour leurs étranges capacités et leurs puissants maléfices. Alors que certains lanceurs de sorts se penchent sur des ouvrages poussiéreux tandis que d’autres utilisent les pouvoirs de leur héritage et que d’autres encore puisent leur force dans leur foi, les sorcières tirent leur puissance de leur communion avec l’inconnu. Leurs familiers leur servent de conduit à travers lequel elles reçoivent des pouvoirs accordés par des êtres issus d’autres mondes, êtres avec lesquels elles ont passé un pacte. Plus les sorcières développent leurs pouvoirs, plus certaines cherchent à comprendre l’origine précise de ceux-ci tandis que d’autres restent dans une bienheureuse ignorance et ne savent jamais quelles forces maléfiques guident leur main et leurs incantations. Il leur suffit d’accéder à la puissance et, s’il y a un prix à payer plus tard... qu’il en soit ainsi.</i><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div>
+Les <a class="pagelink" href="Pathfinder-RPG.sorci%c3%a8re.ashx" title="La sorcière">sorcières</a> apprennent un certain nombre de sortilèges, appelés des maléfices, qui améliorent leurs pouvoirs ou affaiblissent leurs ennemis. Au niveau 1, la sorcière gagne un maléfice de son choix, un autre au niveau 2 et ensuite un de plus tous les deux niveaux. La sorcière ne peut pas choisir le même maléfice à plusieurs reprises. Sauf indication, pour lancer un maléfice, la sorcière doit utiliser une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> qui ne provoque pas d’<a class="pagelink" href="Pathfinder-RPG.AO.ashx" title="Attaque d&#39;opportunité (redirection)">attaque d’opportunité</a>. Le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour résister à ces sorts est de 10 + 1/2 niveau de sorcière + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de la sorcière.<br /><br /><center>
+<table CLASS="tablo toutgauche autoalt"><caption>Maléfices de sorcières</caption><tr CLASS="titre"><td>Maléfices</td><td>Maléfices majeurs</td><td>Grands maléfices</td></tr><tr CLASS="premier"><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Cercle" title="Les maléfices de sorcières">Cercle (Ext)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Agonie" title="Les maléfices de sorcières">Agonie (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Désastrenaturel" title="Les maléfices de sorcières">Désastre naturel (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#CHANCE" title="Les maléfices de sorcières">Chance (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Cauchemars" title="Les maléfices de sorcières">Cauchemars (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Donneusedevie" title="Les maléfices de sorcières">Donneuse de vie (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Charme" title="Les maléfices de sorcières">Charme (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Contrôleduclimat" title="Les maléfices de sorcières">Contrôle du climat (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Malédictionmortelle" title="Les maléfices de sorcières">Malédiction mortelle (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Déguisement" title="Les maléfices de sorcières">Déguisement (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Guérisonmajeure" title="Les maléfices de sorcières">Guérison majeure (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Réincarnationforcée" title="Les maléfices de sorcières">Réincarnation forcée (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Dépérissement" title="Les maléfices de sorcières">Dépérissement (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Oeildeguenaude" title="Les maléfices de sorcières">Oeil de guenaude (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Sommeiléternel" title="Les maléfices de sorcières">Sommeil éternel (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Dondeslangues" title="Les maléfices de sorcières">Don des langues (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Poupéedecire" title="Les maléfices de sorcières">Poupée de cire (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Convocationdesprit" title="Les maléfices de sorcières">Convocation d’esprit (Mag)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Guérison" title="Les maléfices de sorcières">Guérison (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Représailles" title="Les maléfices de sorcières">Représailles (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Huttedelasorcière" title="Les maléfices de sorcières">Hutte de la sorcière (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Malchance" title="Les maléfices de sorcières">Malchance (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Vision" title="Les maléfices de sorcières">Vision (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Sinistreprophétie" title="Les maléfices de sorcières">Sinistre prophétie (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Mauvaisœil" title="Les maléfices de sorcières">Mauvais œil (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Blessuresinfectées" title="Les maléfices de sorcières">Blessures infectées (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Ricanement" title="Les maléfices de sorcières">Ricanement (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx#Brouetdelasorcière" title="Les maléfices de sorcières">Brouet de la sorcière (Ext)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#SCEAU" title="Les maléfices de sorcières">Sceau (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Couvertdegivre" title="Les maléfices de sorcières">Couvert de givre (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Sommeil" title="Les maléfices de sorcières">Sommeil (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Cuisinerlesgens" title="Les maléfices de sorcières">Cuisiner les gens (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Vol" title="Les maléfices de sorcières">Vol (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx#Demeurecachée" title="Les maléfices de sorcières">Demeure cachée (Mag)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Agacerlesbêtes" title="Les maléfices de sorcières">Agacer les bêtes (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx#Oeildelabête" title="Les maléfices de sorcières">OEil de la bête (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Cheveuxpréhensiles" title="Les maléfices de sorcières">Cheveux préhensiles (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Parlerenrêve" title="Les maléfices de sorcières">Parler en rêve (Mag)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Cicatrice" title="Les maléfices de sorcières">Cicatrice (Sur)</a></td><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Tombedeglace" title="Les maléfices de sorcières">Tombe de glace (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Langagesauvage" title="Les maléfices de sorcières">Langage sauvage (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Odeurdenfant" title="Les maléfices de sorcières">Odeur d'enfant (Ext)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Oiseaudemauvaisaugure" title="Les maléfices de sorcières">Oiseau de mauvais augure (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Ongle" title="Les maléfices de sorcières">Ongle (Ext)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Poumonaquatique" title="Les maléfices de sorcières">Poumon aquatique (Ext)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Sorcièredumarais" title="Les maléfices de sorcières">Sorcière du marais (Mag)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Sorcièredeboue" title="Les maléfices de sorcières">Sorcière de boue (Sur)</a></td></tr><tr><td><a class="pagelink" href="Pathfinder-RPG.Mal%c3%a9fices.ashx#Tremperdanslepoison" title="Les maléfices de sorcières">Tremper dans le poison (Mag)</a></td></tr></table>
+</center><br /><br /><h2 class="separator">Maléfices<a class="headeranchor" id="Maléfices_63" href="#Maléfices_63" title="Lien vers cette section">&#0182;</a></h2>
+<table class="page espace-col deuxcol"><tr><td>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Agacerlesbêtes" href="#Agacerlesbêtes"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Agacer les bêtes (Sur)<a class="headeranchor" id="Agacer_les_bêtes_Sur_0" href="#Agacer_les_bêtes_Sur_0" title="Lien vers cette section">&#0182;</a></h3>Les animaux deviennent irritables en présence de la cible (Volonté pour annuler). Les animaux sont inquiets et agressifs : les chevaux ruent, les chiens aboient et claquent des mâchoires, les taureaux chargent, etc. Le maléfice dure un nombre d’heures égal au modificateur d’Intelligence de la sorcière. Une créature qui réussit son jet de sauvegarde ne peut plus être affectée par ce maléfice pendant 1 jour. La réaction des animaux est un effet mental de charme mais ce n’est pas le cas du sort lancé sur la cible.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Auradepureté" href="#Auradepureté"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Aura de pureté (Sur)<a class="headeranchor" id="Aura_de_pureté_Sur_1" href="#Aura_de_pureté_Sur_1" title="Lien vers cette section">&#0182;</a></h3>La sorcière purifie l'air autour d'elle. Les <a class="pagelink" href="Pathfinder-RPG.maladies.ashx" title="Les maladies">maladies</a>, <a class="pagelink" href="Pathfinder-RPG.poisons.ashx" title="Les poisons  ">poisons</a> inhalés et effets de gaz nocifs sont annulés dans un rayon de 3 mètres (2 <abbr title="cases">c</abbr>) autour d'elle pour un nombre de minutes par jour égal à son niveau de sorcière. Ces minutes ne doivent pas forcément être consécutives. Les effets de sorts dont le niveau est supérieur à la moitié du niveau de la sorcière ne sont pas affectés.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cercle" href="#Cercle"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cercle (Ext)<a class="headeranchor" id="Cercle_Ext_2" href="#Cercle_Ext_2" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière compte comme une <a class="pagelink" href="Pathfinder-RPG.Monstres.ashx#G_6" title="Monstres Pathfinder">guenaude</a> quand il s’agit de rejoindre un <a class="pagelink" href="Pathfinder-RPG.Guenaude%20verte.ashx#Cercles_de_guenaudes_0" title="Guenaude verte">cercle</a> de ces créatures. Le cercle doit contenir au moins une véritable <a class="pagelink" href="Pathfinder-RPG.Monstres.ashx#G_6" title="Monstres Pathfinder">guenaude</a>. Quand une sorcière qui dispose de ce maléfice se trouve à moins de 9 m d’une autre qui le possède aussi, elle peut utiliser l’action <a class="pagelink" href="Pathfinder-RPG.Actions%20sp%c3%a9ciales.ashx#Aider_quelqu’un_4" title="Actions spéciales">aider</a> autrui pour donner à l’autre un bonus de +1 au <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. Ce bonus s’applique aux sorts et aux maléfices de la sorcière.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHANCE" href="#CHANCE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Chance (Sur)<a class="headeranchor" id="Chance_Sur_3" href="#Chance_Sur_3" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut donner un peu de chance à une créature qui se trouve dans les 9 m pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. La cible peut faire appel à cette chance une fois par <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>, ce qui lui permet de refaire un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de caractéristique, un jet d’attaque, un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de compétence et de choisir le meilleur résultat. La cible doit décider d’utiliser sa chance avant de faire son premier jet. La durée du sort s’allonge d’un <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 8 puis au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 16. Une fois qu’une créature a profité de la chance, elle ne peut plus en bénéficier pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Charme" href="#Charme"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Charme (Sur)<a class="headeranchor" id="Charme_Sur_4" href="#Charme_Sur_4" title="Lien vers cette section">&#0182;</a></h3>La sorcière charme une créature animale ou humanoïde située dans les 9 m en lui faisant signe et en lui murmurant des paroles apaisantes. Ceci améliore l’attitude de la créature d’une catégorie, comme si la sorcière avait réussi un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a>. Cet effet dure un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal à son <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">modificateur d’Intelligence</a>. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> annule cet effet. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">jet</a> ou non, elle n’est plus affectée par ce maléfice pendant 1 jour. Au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 8, cet effet améliore l’attitude de la cible de 2 catégories. C’est un <a class="pagelink" href="Pathfinder-RPG.effet%20mental.ashx" title="effet mental">effet mental</a> de <a class="pagelink" href="Pathfinder-RPG.charme.ashx" title="charme">charme</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Chaudron" href="#Chaudron"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Chaudron (Ext)<a class="headeranchor" id="Chaudron_Ext_5" href="#Chaudron_Ext_5" title="Lien vers cette section">&#0182;</a></h3>La sorcière reçoit <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9paration%20de%20potions.ashx" title="Préparation de potions">Préparation de potions</a> comme <a class="pagelink" href="Pathfinder-RPG.don.ashx" title="don">don</a> supplémentaire et un bonus d’intuition de +4
+aux tests d’<a class="pagelink" href="Pathfinder-RPG.Artisanat.ashx" title="Artisanat">Artisanat</a> (alchimie).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cheveuxpréhensiles" href="#Cheveuxpréhensiles"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cheveux préhensiles (Sur)<a class="headeranchor" id="Cheveux_préhensiles_Sur_6" href="#Cheveux_préhensiles_Sur_6" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut faire pousser ses cheveux (ou même ses sourcils) instantanément, jusqu’à une longueur de 3 mètres ou les réduire à leur taille naturelle. Elle peut les manipuler comme s’il s’agissait d’un membre avec une valeur de Force égale à son Intelligence. Ses cheveux ont une allonge de 3 mètres et elle peut les utiliser comme attaque naturelle secondaire qui inflige 1d3 points de dégâts (1d2 pour une sorcière P). Elle peut s’en servir pour manipuler des objets (mais pas des armes) aussi habilement qu’avec une main humaine. Il est impossible de casser les cheveux ou de les attaquer comme une créature indépendante. Les mèches de cheveux allongés coupées se réduisent à néant. Quand la sorcière se sert de ses cheveux, elle ne risque pas de se blesser le cou ou la tête, même si elle soulève quelque chose de lourd. Chaque jour, elle peut manipuler ses cheveux pendant un nombre de minutes égal à son niveau. Cette durée n’est pas forcément continue mais doit se diviser en segments de 1 minute. Un sorcier qui connaît ce maléfice peut également manipuler sa barbe, ses moustaches ou ses sourcils.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cicatrice" href="#Cicatrice"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cicatrice (Sur)<a class="headeranchor" id="Cicatrice_Sur_7" href="#Cicatrice_Sur_7" title="Lien vers cette section">&#0182;</a></h3>Ce maléfice maudit une unique cible touchée en lui infligeant d’horribles cicatrices, selon les désirs de la sorcière, qu’il s’agisse d’une simple lettre sur le front ou d’une grosse cicatrice aux allures de brûlure quelque part sur le corps. La cible doit faire un jet de Volonté pour résister à ce maléfice. Ces cicatrices ne gênent en rien les mouvements ni les pouvoirs de la cible mais elles peuvent affecter ses interactions sociales. Elles persistent malgré les déguisements et les changements de formes. La sorcière peut utiliser ses maléfices sur la cible de la cicatrice dans un rayon de 1,5 km et la cicatrice est considérée comme faisant partie du corps de la cible pour les sorts de <i><a class="pagelink" href="Pathfinder-RPG.scrutation.ashx" title="Scrutation">scrutation</a></i> et tous les sorts de <a class="pagelink" href="Pathfinder-RPG.Divination.ashx" title="Divination">Divination</a> du même type. La sorcière peut débarrasser une victime de ce maléfice par une action de mouvement, quelle que soit la distance qui les sépare. Le nombre de cicatrices surnaturelles que la sorcière peut maintenir à la fois est égal à son bonus d’Intelligence. Une fois qu’elle a atteint sa limite, elle doit retirer une cicatrice déjà en place avant d’en infliger une à une nouvelle victime. On peut enlever une cicatrice à l’aide de tout effet qui dissipe les malédictions.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Déguisement" href="#Déguisement"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Déguisement (Sur)<a class="headeranchor" id="Déguisement_Sur_8" href="#Déguisement_Sur_8" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut changer son apparence pendant un nombre d’heures égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de classe, comme si elle utilisait le sort <i><a class="pagelink" href="Pathfinder-RPG.sort%20D%c3%a9guisement.ashx" title="Déguisement">déguisement</a></i>. Cette durée n’est pas forcément continue mais doit se découper en heure complètes.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Dépérissement" href="#Dépérissement"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Dépérissement (Sur)<a class="headeranchor" id="Dépérissement_Sur_9" href="#Dépérissement_Sur_9" title="Lien vers cette section">&#0182;</a></h3>La sorcière maudit un <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animal</a>, une <a class="pagelink" href="Pathfinder-RPG.type%20Plante.ashx" title="Plante">plante</a> ou une parcelle de terre qui dépérit et meurt. Il faut 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> pour maudire une portion de terrain avec laquelle la sorcière et son familier doivent être en contact. Dans ce cas, la terre commence à dépérir le lendemain et, en une semaine, toutes les plantes de la zone meurent. Rien ne repousse dans cette zone tant que la malédiction persiste. La sorcière peut affecter une parcelle d’un rayon égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de classe × 3 m. Pour faire dépérir une créature, elle doit faire une <a class="pagelink" href="Pathfinder-RPG.attaque%20de%20contact.ashx" title="attaque de contact">attaque de contact</a> au corps à corps qui nécessite une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Si la sorcière jette ce sort sur une créature de type <a class="pagelink" href="Pathfinder-RPG.type%20Animal.ashx" title="Animal">animal</a> ou <a class="pagelink" href="Pathfinder-RPG.type%20Plante.ashx" title="Plante">végétal</a>, la cible est victime de la malédiction suivante :<br /><br /><div class="BD">
+<div class="BDtitre">Maléfice de dépérissement<div style="float:right;"></div></div>
+<ul><li><b>Type</b> malédiction ; <b>JdS</b> Volonté, annule ; <b>Fréquence</b> 1/jour</li><li><b>Effet</b> 1 point d’affaiblissement de Constitution.</li></ul>
+</div>
+On peut se débarrasser des deux types de malédiction à l’aide d’une <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx" title="Délivrance des malédictions">délivrance des malédictions</a></i> ou d’une magie similaire, en utilisant le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> comme <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> pour lever la malédiction. Une sorcière ne peut maintenir qu’un dépérissement à la fois, si elle lance ce maléfice une deuxième fois, le premier se termine immédiatement.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Discorde" href="#Discorde"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Discorde (Sur)<a class="headeranchor" id="Discorde_Sur_10" href="#Discorde_Sur_10" title="Lien vers cette section">&#0182;</a></h3>Une sorcière peut obliger un humanoïde ou un animal dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>) à se méfier d'un autre de son choix dans sa ligne de mire. L'attitude de la cible vis à vis de l'autre créature diminue d'un cran, et d'un cran supplémentaire au niveau 8. L'effet dure un nombre de tours égal au modificateur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de la sorcière. Un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> réussi annule cet effet. Qu'il soit réussi ou non, la cible ne peut plus être affectée par ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Dondeslangues" href="#Dondeslangues"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Don des langues (Sur)<a class="headeranchor" id="Don_des_langues_Sur_11" href="#Don_des_langues_Sur_11" title="Lien vers cette section">&#0182;</a></h3>Chaque jour, une sorcière qui dispose de ce maléfice comprend tous les langages parlés pendant un nombre de minutes égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a>, comme avec un sort de <i><a class="pagelink" href="Pathfinder-RPG.compr%c3%a9hension%20des%20langages.ashx" title="Compréhension des langages">compréhension des langages</a></i>. Cette durée n’est pas forcément continue, mais elle doit se découper en minutes complètes. Au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 5, la sorcière peut utiliser ce pouvoir pour parler n’importe quelle langue, comme avec un <i><a class="pagelink" href="Pathfinder-RPG.don%20des%20langues.ashx" title="Don des langues">don des langues</a></i>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fioledelasorcière" href="#Fioledelasorcière"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Fiole de la sorcière (Sur)<a class="headeranchor" id="Fiole_de_la_sorcière_Sur_12" href="#Fiole_de_la_sorcière_Sur_12" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut une fois par jour préparer une potion contenant l'effet d'un de ses maléfices par un rituel de 10 minutes. Elle ne peut utiliser ce maléfice tant que la potion n'a pas été consommée ou rendue inactive. Seuls les maléfices qui ciblent une autre créature que la sorcière peuvent être utilités de la sorte. La sorcière peut dissiper l'effet de la potion par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a>. La sorcière doit disposer du maléfice de chaudron avant de prendre celui-ci.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Guérison" href="#Guérison"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Guérison (Sur)<a class="headeranchor" id="Guérison_Sur_13" href="#Guérison_Sur_13" title="Lien vers cette section">&#0182;</a></h3>Une sorcière peut apaiser les blessures de ceux qu’elle touche, ce qui fonctionne comme un sort de <i><a class="pagelink" href="Pathfinder-RPG.soins%20l%c3%a9gers.ashx" title="Soins légers">soins légers</a></i> avec le <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a> de la sorcière. Quand une créature a bénéficié de ce sort, elle ne peut plus en profiter pendant 24 heures. Au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 5, ce maléfice fonctionne comme <i><a class="pagelink" href="Pathfinder-RPG.soins%20mod%c3%a9r%c3%a9s.ashx" title="Soins modérés">soins modérés</a></i>.<br /><br /></td><td><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Langagesauvage" href="#Langagesauvage"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Langage sauvage (Sur)<a class="headeranchor" id="Langage_sauvage_Sur_14" href="#Langage_sauvage_Sur_14" title="Lien vers cette section">&#0182;</a></h3>Ce maléfice permet à la sorcière de parler à n’importe quel animal et de comprendre sa réponse, comme avec communication avec les animaux, mais à chaque fois qu’elle utilise ce pouvoir, elle doit choisir si elle veut parler à des amphibiens, des oiseaux, des poissons, des mammifères ou des reptiles. Elle ne comprendra et ne sera comprise que de ces créatures. Elle peut se faire comprendre aussi loin que porte sa voix. Ce maléfice ne prédispose pas les animaux à réagir d’une manière ou d’une autre. Au niveau 12, la sorcière peut aussi utiliser ce pouvoir pour communiquer avec la vermine.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Liendepaix" href="#Liendepaix"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Lien de paix (Sur)<a class="headeranchor" id="Lien_de_paix_Sur_15" href="#Lien_de_paix_Sur_15" title="Lien vers cette section">&#0182;</a></h3>Ce maléfice  empêche une cible unique de dégainer ses armes pour un nombre de rounds égal au niveau de la sorcière. Les armes naturelles ne sont pas affectées, pas plus que les armes dégainées, mais un archer ne peut plus décocher de flèches. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet d’annuler ce maléfice. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Malchance" href="#Malchance"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Malchance (Sur)<a class="headeranchor" id="Malchance_Sur_16" href="#Malchance_Sur_16" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut affliger une créature qui se trouve dans les 9 m d’une terrible malchance pendant 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. Quand la cible fait un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristique.ashx" title="caractéristique">caractéristique</a>, un jet d’attaque, un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou un <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>, elle doit lancer deux dés et choisir le pire. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet d’annuler ce maléfice. La durée de ce maléfice s’allonge d’un <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> au niveau 8 puis au niveau 16. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Mauvaisœil" href="#Mauvaisœil"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Mauvais œil (Sur)<a class="headeranchor" id="Mauvais_œil_Sur_17" href="#Mauvais_œil_Sur_17" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut semer le doute dans l’esprit d’un ennemi visible situé à moins de 9 m d’elle. Il subit un malus de –2 sur l’un des éléments suivants : <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>, <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.caract%c3%a9ristique.ashx" title="caractéristique">caractéristique</a>, jet d’attaque, <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou <a class="pagelink" href="Pathfinder-RPG.test.ashx" title="test">test</a> de <a class="pagelink" href="Pathfinder-RPG.comp%c3%a9tences.ashx" title="Les compétences">compétence</a>. Ce maléfice dure un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal à 3 + <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">modificateur d’Intelligence</a> de la sorcière. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet de réduire cette durée à 1 <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>. C’est un <a class="pagelink" href="Pathfinder-RPG.effet%20mental.ashx" title="effet mental">effet mental</a>. Au niveau 8, le malus passe à –4..<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Odeurdenfant" href="#Odeurdenfant"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Odeur d'enfant (Ext)<a class="headeranchor" id="Odeur_denfant_Ext_18" href="#Odeur_denfant_Ext_18" title="Lien vers cette section">&#0182;</a></h3>La sorcière gagne le pouvoir odorat mais il lui permet seulement de sentir les enfants humanoïdes et les animaux juvéniles. Elle sent donc des enfants cachés ou une tanière avec des louveteaux, mais ni les parents des enfants ni la louve.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Oiseaudemauvaisaugure" href="#Oiseaudemauvaisaugure"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Oiseau de mauvais augure (Sur)<a class="headeranchor" id="Oiseau_de_mauvais_augure_Sur_19" href="#Oiseau_de_mauvais_augure_Sur_19" title="Lien vers cette section">&#0182;</a></h3>La sorcière imprègne son familier d’une étrange magie qui lui permet de lancer un maléfice mineur sur le premier ennemi qui le voit. L’ennemi a droit à un jet de Volonté, s’il le rate, il est affecté par un sort d’<a class="pagelink" href="Pathfinder-RPG.impr%c3%a9cation.ashx" title="Imprécation">Imprécation</a> (niveau égal au niveau de lanceur de sorts de la sorcière). Elle peut lancer ce maléfice sur son familier à une distance de 18 mètres. Le familier affecté ne doit pas se trouver à plus de 18 mètres de la cible, si celle-ci se trouve plus loin, elle peut regarder le familier sans courir de risques (mais s’il se rapproche et arrive à portée, le maléfice prend effet). Le sort d’imprécation affecte la créature la plus proche du familier (en cas d’égalité, elle affecte celle qui possède la valeur d’initiative la plus élevée). Que la cible ait réussi son jet de sauvegarde ou non, elle ne peut plus être affectée par cet effet pendant 1 jour (les utilisations ultérieures ignorent la créature au moment de déterminer qui sera affecté).<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ongle" href="#Ongle"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Ongle (Ext)<a class="headeranchor" id="Ongle_Ext_20" href="#Ongle_Ext_20" title="Lien vers cette section">&#0182;</a></h3>La sorcière a des ongles longs et acérés qui comptent comme des armes naturelles qui infligent 1d3 points de dégâts (1d2 pour une sorcière P). Ce sont des attaques secondaires. Si la sorcière se coupe les ongles, ils repoussent en 1d4 jours.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Poumon aquatique" href="#Poumon aquatique"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Poumon aquatique (Sur)<a class="headeranchor" id="Poumon_aquatique_Sur_21" href="#Poumon_aquatique_Sur_21" title="Lien vers cette section">&#0182;</a></h3>Une cible terrestre peut respirer sous l’eau et une cible aquatique peut respirer sur terre. Ce pouvoir dure 1 minute. Si la sorcière utilise ce pouvoir sur elle-même, elle peut le maintenir tout en dormant, ce qui lui permet de sommeiller sous l’eau en toute sécurité.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ricanement" href="#Ricanement"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Ricanement (Sur)<a class="headeranchor" id="Ricanement_Sur_22" href="#Ricanement_Sur_22" title="Lien vers cette section">&#0182;</a></h3>Par une <a class="pagelink" href="Pathfinder-RPG.action%20de%20mouvement.ashx" title="Action de mouvement">action de mouvement</a>, la sorcière se met à ricaner follement. Toute créature située dans les 9 m et affectée par un maléfice d’agonie, de charme, de mauvais oeil, de chance ou de malchance lancé par cette sorcière voit la durée de cet effet augmenter d’un <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Romprelaconnexion" href="#Romprelaconnexion"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Rompre la connexion (Sur)<a class="headeranchor" id="Rompre_la_connexion_Sur_23" href="#Rompre_la_connexion_Sur_23" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> rompre le lien entre une créature invoquée et celui qui l'a convoquée. La cible a droit à un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour ne pas être <a class="pagelink" href="Pathfinder-RPG.Confusion.ashx" title="Confusion">confuse</a> pendant 1d4 rounds. Lorsqu'elle lance un dé pour déterminer la manière dont elle agit, si le résultat du dé est 76-100, la créature agit comme si c'est la sorcière qui l'avait convoqué. Au niveau 8, elle agit ainsi sur un 51-100, et au niveau 16, sur un 26-100. La durée de ce maléfice est affectée par le maléfice de ricanement. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sceau" href="#Sceau"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sceau (Sur)<a class="headeranchor" id="Sceau_Sur_24" href="#Sceau_Sur_24" title="Lien vers cette section">&#0182;</a></h3>Une sorcière qui dispose de ce maléfice place un sceau protecteur sur une créature. Cette dernière reçoit un <a class="pagelink" href="Pathfinder-RPG.Valeurs%20de%20combat.ashx#BONUSPARADE" title="Valeurs de combat">bonus de parade</a> de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> et un bonus de résistance de +2 aux <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jets de sauvegarde</a>. Le sceau demeure jusqu’à ce que la créature protégée se fasse toucher ou rate un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a>. La sorcière sait quand la créature n’est plus protégée et ne peut activer qu’un sceau de protection à la fois, si elle utilise ce pouvoir une seconde fois, les effets du premier se dissipent immédiatement. La sorcière ne peut pas utiliser le sceau sur sa propre personne. Le bonus accordé par le sceau augmente de +1 au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 8 et au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 16.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sommeil" href="#Sommeil"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sommeil (Sur)<a class="headeranchor" id="Sommeil_Sur_25" href="#Sommeil_Sur_25" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut plonger une créature qui se trouve dans les 9 m dans un <i><a class="pagelink" href="Pathfinder-RPG.sommeil%20profond.ashx" title="Sommeil profond">sommeil profond</a></i>, comme avec le sort du même nom. La cible a droit à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> pour annuler l’effet. Si elle échoue, elle s’endort pendant un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de la sorcière. Ce maléfice affecte les créatures quel que soit leur nombre de <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">DV</a>. La créature ne se réveille pas à cause du bruit ni de la lumière, mais une tierce personne peut la réveiller par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Tout dégât infligé à la cible met immédiatement un terme au maléfice. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sorcièredumarais" href="#Sorcièredumarais"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sorcière du marais (Mag)<a class="headeranchor" id="Sorcière_du_marais_Mag_26" href="#Sorcière_du_marais_Mag_26" title="Lien vers cette section">&#0182;</a></h3>Quand la sorcière traverse un marais, une tourbière, un marécage ou un terrain similaire, elle ne laisse aucune trace et il est impossible de la pister, comme le pouvoir de druide passage sans trace. La sorcière peut marcher dans la boue et même les sables mouvants comme sur un terrain normal.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sorcièredeboue" href="#Sorcièredeboue"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sorcière de boue (Sur) (gobelin)<a class="headeranchor" id="Sorcière_de_boue_Sur_gobelin_27" href="#Sorcière_de_boue_Sur_gobelin_27" title="Lien vers cette section">&#0182;</a></h3>Une sorcière connaissant ce maléfice peut se changer en boue brune et visqueuse. Son type change pour devenir <a class="pagelink" href="Pathfinder-RPG.type%20vase.ashx" title="Vase">vase)</a> et elle peut se faufiler dans de minces fissures mais elle ne peut pas attaquer ni lancer de sorts à composante verbale, gestuelle ou matérielle ni à focalisateur divin. Sous cette forme, elle perd également ses pouvoirs surnaturels. Si la sorcière a un sort de contact prêt à l’emploi, il se décharge sans causer de dégâts quand elle utilise ce maléfice. Tant qu’elle est sous forme de boue, la sorcière possède une <a class="pagelink" href="Pathfinder-RPG.VD.ashx" title="VD">vitesse de déplacement</a> de 3 m (2 <abbr title="cases">c</abbr>) et une vitesse de nage de 6 m (4 <abbr title="cases">c</abbr>). Elle gagne une <a class="pagelink" href="Pathfinder-RPG.RD.ashx" title="RD">RD</a> 10/tranchant et une résistance au froid de 10. Au niveau 10, tant qu’elle est sous forme de boue, sa vitesse passe à 6 m (4 <abbr title="cases">c</abbr>) et sa vitesse de nage à 12 m (8 <abbr title="cases">c</abbr>). Chaque jour, elle peut utiliser ce pouvoir un nombre de minutes égal à son niveau. Cette durée n’est pas forcément continue mais doit se découper en portions d’une minute. Ce maléfice affecte uniquement la sorcière. La sorcière doit connaître le maléfice sorcière du marais avant d’apprendre celui-ci.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Tremperdanslepoison" href="#Tremperdanslepoison"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><h3 class="separator">Tremper dans le poison (Mag)<a class="headeranchor" id="Tremper_dans_le_poison_Mag_28" href="#Tremper_dans_le_poison_Mag_28" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut utiliser son chaudron pour fabriquer une immonde toxine dans laquelle elle peut tremper des fruits ou autres denrées comestibles appétissantes. Une fois ingérées, elles ont alors le même effet qu’un sort d’<i><a class="pagelink" href="Pathfinder-RPG.empoisonnement.ashx" title="Empoisonnement">empoisonnement</a></i>. Il faut une heure pour préparer le poison et y tremper les aliments. La sorcière peut imbiber jusqu’à 500 grammes de nourriture. Elle est empoisonnée pendant 24 heures et il est impossible de transférer le poison sur un autre objet. La nourriture a un goût normal mais on peut détecter le poison par magie. La sorcière doit connaître le maléfice de chaudron avant de choisir celui-ci.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Vol" href="#Vol"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Vol (Sur)<a class="headeranchor" id="Vol_Sur_29" href="#Vol_Sur_29" title="Lien vers cette section">&#0182;</a></h3>Plus la sorcière gagne en puissance, plus elle devient légère et elle finit par être capable de voler. Au
+<a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 1, elle peut utiliser <i><a class="pagelink" href="Pathfinder-RPG.feuille%20morte.ashx" title="Feuille morte">feuille morte</a></i> à volonté et gagne un bonus racial de +4 aux tests de <a class="pagelink" href="Pathfinder-RPG.Natation.ashx" title="Natation">Natation</a>. Au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 3, elle peut lancer <i><a class="pagelink" href="Pathfinder-RPG.l%c3%a9vitation.ashx" title="Lévitation">lévitation</a></i> une fois par jour. Au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 5, elle peut voler chaque jour, comme avec le sort de <i><a class="pagelink" href="Pathfinder-RPG.sort%20vol.ashx" title="Vol">vol</a></i>, un nombre de minutes égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a>. Cette durée n’est pas forcément continue mais doit se découper en minutes complètes. Ce maléfice n’affecte que la sorcière.
+</td></tr></table><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MALEFICEMAJEUR" href="#MALEFICEMAJEUR"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Maléfices majeurs <a class="headeranchor" id="Maléfices_majeurs_64" href="#Maléfices_majeurs_64" title="Lien vers cette section">&#0182;</a></h2>À partir du niveau 10 et, par la suite, tous les niveaux pairs, la sorcière peut choisir un maléfice majeur à chaque fois qu’elle a l’occasion de choisir un nouveau maléfice.<br /><br /><table class="page espace-col deuxcol"><tr><td>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="Agonie" href="#Agonie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Agonie (Sur)<a class="headeranchor" id="Agonie_Sur_30" href="#Agonie_Sur_30" title="Lien vers cette section">&#0182;</a></h3>Accompagné de quelques paroles rapides, la sorcière peut lancer ce maléfice sur une créature qui se trouve à moins de 18 m et lui inflige ainsi d’immenses souffrances. La cible est <a class="pagelink" href="Pathfinder-RPG.naus%c3%a9eux.ashx" title="Nauséeux">nauséeuse</a> pendant un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal au <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de la sorcière. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Vigueur</a> permet d’annuler cet effet. Si la cible rate son jet, elle peut en refaire un à chaque <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> pour mettre un terme à la nausée. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Blessuresinfectées" href="#Blessuresinfectées"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Blessures infectées (Sur)<a class="headeranchor" id="Blessures_infectées_Sur_31" href="#Blessures_infectées_Sur_31" title="Lien vers cette section">&#0182;</a></h3>Les blessures de la cible s’infectent (Vigueur pour annuler). La cible reçoit 1 point d’affaiblissement de Constitution par jour. Une fois la première journée écoulée, elle a droit à un jet de sauvegarde par jour pour soigner l’infection. C’est un effet de maladie.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Brouetdelasorcière" href="#Brouetdelasorcière"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Brouet de la sorcière (Ext)<a class="headeranchor" id="Brouet_de_la_sorcière_Ext_32" href="#Brouet_de_la_sorcière_Ext_32" title="Lien vers cette section">&#0182;</a></h3>Quand la sorcière utilise son chaudron pour préparer une potion, elle peut doubler le prix de création pour fabriquer deux potions identiques dans la journée au lieu d’une seule. Au niveau 15, elle peut tripler le prix pour en préparer trois dans la journée. La sorcière doit disposer du maléfice de chaudron avant de prendre celui-ci.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cauchemars" href="#Cauchemars"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cauchemars (Sur)<a class="headeranchor" id="Cauchemars_Sur_33" href="#Cauchemars_Sur_33" title="Lien vers cette section">&#0182;</a></h3>La sorcière fait appel à de viles puissances pour lancer un maléfice sur une créature qui se trouve à 18 m. Le sommeil de la malheureuse est alors troublé par d’horribles cauchemars. Ce pouvoir fonctionne comme un sort de <i><a class="pagelink" href="Pathfinder-RPG.sort%20cauchemar.ashx" title="Cauchemar">cauchemar</a></i> à chaque fois que la victime essaye de dormir. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> annule cet effet. Si la cible le rate, elle peut en refaire un chaque nuit, sans quoi, elle n’arrive pas à se reposer.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Contrôleduclimat" href="#Contrôleduclimat"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Contrôle du climat (Sur)<a class="headeranchor" id="Contrôle_du_climat_Sur_34" href="#Contrôle_du_climat_Sur_34" title="Lien vers cette section">&#0182;</a></h3>Une sorcière qui dispose de ce maléfice peut lancer <i><a class="pagelink" href="Pathfinder-RPG.contr%c3%b4le%20du%20climat.ashx" title="Contrôle du climat">contrôle du climat</a></i> une fois par jour, mais pour cela, elle doit psalmodier, danser et communier avec son familier pendant une heure.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Couvertdegivre" href="#Couvertdegivre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Couvert de givre (Sur)<a class="headeranchor" id="Couvert_de_givre_Sur_35" href="#Couvert_de_givre_Sur_35" title="Lien vers cette section">&#0182;</a></h3>La cible est recouverte d’une coquille d’aiguilles de givre qui s’enfoncent lentement dans ses chairs (Vigueur pour annuler). La cible devient pâle et bleue et reçoit 1 point d’affaiblissement de Constitution par minute, jusqu’à ce qu’elle meure, qu’elle réussisse un jet de sauvegarde (un par minute) ou qu’on la soigne. On peut mettre un terme à cet effet avec annulation d’enchantement, dissipation de la magie, dissipation des malédictions ou un sort similaire. Si la cible réussit un jet de sauvegarde, elle est immunisée contre ce maléfice pendant 1 jour. C’est un effet de froid.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Cuisinerlesgens" href="#Cuisinerlesgens"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Cuisiner les gens (Sur)<a class="headeranchor" id="Cuisiner_les_gens_Sur_36" href="#Cuisiner_les_gens_Sur_36" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut créer des sorts fabuleux en faisant cuire un humanoïde intelligent dans son chaudron, qu’il soit mort ou vif. Ce maléfice donne un repas ou une portion de nourriture, au choix de la sorcière, généralement un délicieux ragoût ou une pâte pour faire des gâteaux, des pâtisseries ou autres desserts. Il faut une heure pour cuisiner la victime. L’ingestion de cette nourriture permet de bénéficier de l’un des avantages suivants : endurance de l’ours, force de taureau, grâce féline, guérison des maladies (instantanée), neutralisation du poison (instantanée), résistance à l’âge*, ruse du renard, splendeur de l’aigle, sagesse du hibou. Sinon, la sorcière peut façonner la pâte pour fabriquer une créature humanoïde P qui s’anime pendant 1 heure, comme un homoncule. La sorcière doit connaître le maléfice de chaudron avant de choisir celuici. L’utilisation de ce maléfice est un acte mauvais, tout comme l’absorption délibérée de son contenu.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Demeurecachée" href="#Demeurecachée"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Demeure cachée (Mag)<a class="headeranchor" id="Demeure_cachée_Mag_37" href="#Demeure_cachée_Mag_37" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut cacher ou déguiser sa maison et la zone qui l’entoure, comme avec mirage. Avant de se servir de ce maléfice, elle doit passer une journée à arpenter les frontières d’une zone d’environ 3 600 mètres carrés (environs 60 mètres sur 60), pour définir l’emplacement de la demeure. Ensuite, elle peut utiliser le maléfice pour changer l’apparence de la zone par une action simple tant qu’elle se trouve à l’intérieur. L’illusion persiste jusqu’à ce qu’elle en change ou qu’elle la dissipe. En ce qui concerne ce pouvoir, la sorcière ne peut avoir qu’une « demeure » à la fois.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Délicieusepeur" href="#Délicieusepeur"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Délicieuse peur (Sur)<a class="headeranchor" id="Délicieuse_peur_Sur_38" href="#Délicieuse_peur_Sur_38" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut se nourrir de la peur d'une cible. Celle-ci devient <a class="pagelink" href="Pathfinder-RPG.secou%c3%a9.ashx" title="Secoué">secouée</a> pour un nombre de rounds égal à 3 + le modificateur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de la sorcière. De plus, tant que la cible est à moins de 9 mètres (6 <abbr title="cases">c</abbr>) de la sorcière, celle-ci gagne un bonus de moral de +1 à ses jets de sauvegarde et ses jets d'attaque. Un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> réussi réduit à un round cette durée. C'est un <a class="pagelink" href="Pathfinder-RPG.effet%20mental.ashx" title="effet mental">effet mental</a> de peur.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Emissairedelasorcière" href="#Emissairedelasorcière"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Emissaire de la sorcière (sur)<a class="headeranchor" id="Emissaire_de_la_sorcière_sur_39" href="#Emissaire_de_la_sorcière_sur_39" title="Lien vers cette section">&#0182;</a></h3>Une fois par jour en préparant ses sorts, la sorcière peut désigner une créature consentante comme son émissaire. Cette créature bénéficie d'un effet de <a class="pagelink" href="Pathfinder-RPG.rapport.ashx" title="Rapport">rapport</a> constant et peut bénéficier de sorts inoffensifs de portée contact comme si elle était au contact, et ce dans un rayon de 9 mètres (6 <abbr title="cases">c</abbr>). Une fois un émissaire choisi, il garde ces effets jusqu'à ce que la sorcière en choisisse un autre.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Faveurdelasorcière" href="#Faveurdelasorcière"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Faveur de la sorcière (Sur)<a class="headeranchor" id="Faveur_de_la_sorcière_Sur_40" href="#Faveur_de_la_sorcière_Sur_40" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut bénir un arbre ou un buisson pour lui conférer une délicieuse récolte. A l'aube, à tous les matins, des <a class="pagelink" href="Pathfinder-RPG.baie%20nourrici%c3%a8re.ashx" title="Baie nourricière">baies nourricières</a> poussent sur l'arbre jusqu'à atteindre un nombre égal à deux fois son niveau de sorcière. Ces baies demeurent jusqu'à avoir été cueillies. La sorcière peut déplacer sa bénédiction sur un autre arbre, mais pour ce faire elle doit accomplir un rituel d'une heure.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Guérisonmajeure" href="#Guérisonmajeure"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Guérison majeure (Sur)<a class="headeranchor" id="Guérison_majeure_Sur_41" href="#Guérison_majeure_Sur_41" title="Lien vers cette section">&#0182;</a></h3>La sorcière fait appel à des pouvoirs étranges et soigne les blessures les plus graves d’un simple contact. Ce pouvoir fonctionne comme <i><a class="pagelink" href="Pathfinder-RPG.soins%20importants.ashx" title="Soins importants">soins importants</a></i> et utilise le <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de la sorcière comme <a class="pagelink" href="Pathfinder-RPG.niveau%20de%20lanceur%20de%20sorts.ashx" title="Niveau de lanceur de sorts">niveau de lanceur de sorts</a>. Quand une créature a bénéficié de ce maléfice, elle ne peut plus en profiter pendant 24 heures. Pour une sorcière de <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> 15, la guérison majeure fonctionne comme des <i><a class="pagelink" href="Pathfinder-RPG.soins%20intensifs.ashx" title="Soins intensifs">soins intensifs</a></i>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Oeildeguenaude" href="#Oeildeguenaude"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Oeil de guenaude (Sur)<a class="headeranchor" id="Oeil_de_guenaude_Sur_42" href="#Oeil_de_guenaude_Sur_42" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière qui possède ce maléfice crée un capteur magique visuel. Ceci fonctionne comme le sort <i><a class="pagelink" href="Pathfinder-RPG.oeil%20du%20mage.ashx" title="Œil du mage">oeil du mage</a></i>. Si la sorcière dispose du maléfice <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx#Cercle_Ext_0" title="Les maléfices de sorcières">cercle</a>, toutes les sorcières qui se trouvent dans les 9 mètres possèdent aussi le maléfice de <a class="pagelink" href="Pathfinder-RPG.mal%c3%a9fices.ashx#Cercle_Ext_0" title="Les maléfices de sorcières">cercle</a> peuvent voir à travers ce capteur, même si seule la sorcière qui l’a créé peut le contrôler. Chaque jour, elle peut utiliser cet oeil pendant un nombre de minutes égal à son <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de classe. Cette durée n’est pas forcément continue mais doit se découper en minutes complètes.
+</td><td>
+<div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="OEildelabête" href="#OEildelabête"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">OEil de la bête (Sur)<a class="headeranchor" id="OEil_de_la_bête_Sur_43" href="#OEil_de_la_bête_Sur_43" title="Lien vers cette section">&#0182;</a></h3>La sorcière projette ses perceptions dans un animal situé dans les 30 mètres et ressent le monde à travers ses sens. Elle ne peut pas contrôler les actions de la bête. Par une action simple, elle peut faire passer ses
+perceptions de cet animal à un autre situé à moins de 30 mètres de lui. Rien ne l’empêche de continuer ces bonds sensoriels, ce qui lui permet de voir ce qui se passe très loin d’elle. Elle peut rapatrier ses sensations dans son propre corps par une action libre. Les animaux normaux n’ont pas droit à un jet de sauvegarde contre ce pouvoir mais les compagnons animaux, les montures de paladin et autres bêtes inhabituelles peuvent faire un jet de Volonté pour résister. La sorcière peut utiliser ce pouvoir sur son propre familier comme si c’était un animal. Si la sorcière possède le maléfice de cercle, toutes les sorcières qui se trouvent à moins de 3 mètres d’elle et disposent aussi du cercle peuvent, à volonté, voir à travers l’animal, même si c’est la sorcière qui a initié l’utilisation du pouvoir qui le contrôle. Chaque jour, la sorcière peut utiliser ce pouvoir un nombre de minutes égal à son niveau. Cette durée n’est pas forcément continue mais doit se diviser en segments de 1 minute.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Paria" href="#Paria"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Paria (Sur)<a class="headeranchor" id="Paria_Sur_44" href="#Paria_Sur_44" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut forcer une unique créature dans un rayon de 18 mètres (12 <abbr title="cases">c</abbr>) à être rejetée par ses alliés pendant un nombre de rounds égal à son modificateur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>. Toute créature cherchant à <a class="unknownlink" href="Pathfinder-RPG.aider%20autrui.ashx" title="Pathfinder-RPG.aider autrui">l'aider</a> ou à la faire bénéficier d'un sort inoffensif doit faire un test de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a>. S'il réussit, la cible n'est plus affectée par le maléfice. Dans le cas contraire, l'action est perdue, son effet est annulé et la créature ne peut plus aider la cible pour la durée du maléfice.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Parlerenrêve" href="#Parlerenrêve"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Parler en rêve (Mag)<a class="headeranchor" id="Parler_en_rêve_Mag_45" href="#Parler_en_rêve_Mag_45" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut entrer en contact avec une créature comme si elle utilisait songe. Chaque jour, elle peut se servir de ce pouvoir sur un nombre de créatures égal à son bonus d’Intelligence mais, pendant cette journée, elle peut leur parler aussi souvent qu’elle le désire.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Peauanimale" href="#Peauanimale"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Peau animale (Sur)<a class="headeranchor" id="Peau_animale_Sur_46" href="#Peau_animale_Sur_46" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut se transformer en <a class="pagelink" href="Pathfinder-RPG.type%20animal.ashx" title="Animal">animal</a> de taille TP à G dont elle porte la peau. Ce pouvoir fonctionne comme <a class="pagelink" href="Pathfinder-RPG.forme%20bestiale%20II.ashx" title="Forme bestiale II">forme bestiale II</a> à l'exception que la sorcière peut prendre l'apparence précise de la créature dont elle porte la peau.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Poupéedecire" href="#Poupéedecire"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Poupée de cire (Sur)<a class="headeranchor" id="Poupée_de_cire_Sur_47" href="#Poupée_de_cire_Sur_47" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière peut passer une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a> à modeler une réplique de cire grossière mais
+inquiétante d’une créature visible située dans les 9 m. Une fois la réplique terminée, la cible doit faire un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a>. Si elle échoue, la sorcière exerce un contrôle limité sur elle. À chaque fois qu’elle décide de se servir de ce contrôle, la cible a droit à un nouveau <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> pour mettre fin à l’effet. Ce dernier se déclenche au tour de la sorcière et n’empêche pas sa cible d’agir comme elle le souhaite à son tour. La sorcière peut utiliser la poupée de cire un nombre de fois égal à son <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques.ashx#TABLEAUCARACTERISTIQUES" title="Les caractéristiques">modificateur d’Intelligence</a> avant qu’elle ne fonde. Par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, la sorcière peut obliger sa cible à exécuter l’un des ordres suivants : se déplacer à sa vitesse dans n’importe quelle direction, s’attaquer une seule fois avec n’importe quelle arme déjà en main (cette attaque touche automatiquement), se coucher par terre ou lâcher tout ce qu’elle tient. Sinon, la sorcière peut se servir d’une de ses utilisations de la poupée pour la torturer. La créature est alors <a class="pagelink" href="Pathfinder-RPG.fi%c3%a9vreux.ashx" title="Fiévreux">fiévreuse</a> et <a class="pagelink" href="Pathfinder-RPG.chancelant.ashx" title="Chancelant">chancelante</a> quand vient son tour. Dès que la créature a réussi un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> contre cet effet, elle est immunisée pendant 24 heures. C’est un effet d’<a class="pagelink" href="Pathfinder-RPG.enchantement.ashx" title="Enchantement">enchantement</a> (<a class="pagelink" href="Pathfinder-RPG.coercition.ashx" title="coercition">coercition</a>).<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Représailles" href="#Représailles"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Représailles (Sur)<a class="headeranchor" id="Représailles_Sur_48" href="#Représailles_Sur_48" title="Lien vers cette section">&#0182;</a></h3>La sorcière lance un maléfice de représailles sur une créature située dans les 18 m pour que de terribles blessures s’ouvrent dans sa chair à chaque fois qu’elle inflige des dégâts au <a class="pagelink" href="Pathfinder-RPG.Actions%20simples.ashx#Attaques_au_corps_à_corps_0" title="Actions simples">corps à corps</a> à une autre créature. Tout de suite après que la cible a fait des dégâts au <a class="pagelink" href="Pathfinder-RPG.Actions%20simples.ashx#Attaques_au_corps_à_corps_0" title="Actions simples">corps à corps</a>, elle reçoit la moitié des dégâts infligés (arrondi à l’inférieur). Ces dégâts ignorent toute résistance, <a class="pagelink" href="Pathfinder-RPG.immunit%c3%a9.ashx" title="Immunité">immunités</a> ou <a class="pagelink" href="Pathfinder-RPG.r%c3%a9duction%20de%20d%c3%a9g%c3%a2ts.ashx" title="réduction de dégâts">réduction de dégâts</a> de la créature. Cet effet dure un nombre de <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">rounds</a> égal au modificateur d’Intelligence de la sorcière. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet d’annuler cet effet.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Tombedeglace" href="#Tombedeglace"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Tombe de glace (Sur)<a class="headeranchor" id="Tombe_de_glace_Sur_49" href="#Tombe_de_glace_Sur_49" title="Lien vers cette section">&#0182;</a></h3>Une tempête de glace enveloppe la cible tandis que des vents glacials la fouaillent et elle reçoit 3d8 points de dégâts de froid (Vigueur 1/2 dégâts). Si la cible rate son jet de sauvegarde, elle est paralysée et inconsciente mais elle n’a pas besoin de manger ni de respirer tant que la glace demeure. Cette dernière a 20 points de vie. Il suffit de la briser pour libérer la créature emprisonnée qui est alors chancelante pendant 1d4 rounds. Que la cible ait réussi ou non son jet de sauvegarde, elle ne peut plus être victime de ce maléfice pendant 1 jour.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Vision" href="#Vision"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Vision (Sur)<a class="headeranchor" id="Vision_Sur_50" href="#Vision_Sur_50" title="Lien vers cette section">&#0182;</a></h3> 
+Une sorcière qui dispose du maléfice de vision peut donner un aperçu du futur à la créature qu’elle touche. Il lui faut 1 minute pour accorder une vision. La sorcière et son sujet doivent rester en contact pendant tout ce temps. Ensuite, le sujet reçoit une brève image du futur, généralement pas plus d’un an en avance, au choix du <a class="pagelink" href="Pathfinder-RPG.MJ.ashx" title="MJ">MJ</a>. Ce n’est qu’une version possible du futur, ces visions sont donc peu sûres, au mieux. La plupart des visions s’orientent selon l’<a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> de la sorcière qui les donne. Par exemple, les visions accordées par une sorcière <a class="pagelink" href="Pathfinder-RPG.Alignement.ashx#Chaotique Mauvais" title="L&#39;alignement">Chaotique Mauvaise</a> montrent souvent des scènes de carnage et de destruction alors que celles d’une sorcière <a class="pagelink" href="Pathfinder-RPG.Alignement.ashx#Neutre Bon" title="L&#39;alignement">Neutre Bonne</a> représentent plutôt des évènements joyeux. Une créature ne peut plus recevoir de vision tant que la première reçue ne s’est pas réalisée ou n’a pas été empêchée. La sorcière ne peut pas utiliser ce pouvoir sur elle-même. Les créatures non consentantes ont droit à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> pour annuler la vision.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Voldevoix" href="#Voldevoix"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Vol de voix (Sur)<a class="headeranchor" id="Vol_de_voix_Sur_51" href="#Vol_de_voix_Sur_51" title="Lien vers cette section">&#0182;</a></h3> 
+Une sorcière peut voler la voix d'une créature dans un rayon de 9m (6<abbr title="cases">c</abbr>), lui faisant perdre pendant un nombre de rounds égal au modificateur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de la cible, la rendant incapable de communiquer, y compris pour utiliser des sorts ou représentations bardiques à composante vocale. La cible a droit à un jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a> pour annuler l'effet. Pendant la durée du maléfice, la sorcière peut utiliser la voix de la créature affectée comme avec un sort d'<a class="pagelink" href="Pathfinder-RPG.alt%c3%a9ration%20vocale.ashx" title="Altération vocale">altération vocale</a>. Si la cible est consentante, l'effet dure un nombre d'heures égal au modificateur d'<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a> de la cible. Que la cible ait réussi ou non son jet de sauvegarde, elle ne peut plus être victime de ce maléfice pendant 1 jour. Ce maléfice est réservé aux <a class="pagelink" href="Pathfinder-RPG.tieffelin%20(race).ashx" title="Les Tieffelins">tieffelins.</a>
+</td></tr></table><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="GRANDMALEFICE" href="#GRANDMALEFICE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Grands maléfices <a class="headeranchor" id="Grands_maléfices_65" href="#Grands_maléfices_65" title="Lien vers cette section">&#0182;</a></h2>À partir du niveau 18 et par la suite tous les deux niveaux, la sorcière peut choisir l’un des grands maléfices suivants à chaque fois qu’elle peut choisir un nouveau maléfice.<br /><br /><table class="page espace-col deuxcol"><tr><td>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="Abomination" href="#Abomination"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Abomination (Mag)<a class="headeranchor" id="Abomination_Mag_52" href="#Abomination_Mag_52" title="Lien vers cette section">&#0182;</a></h3>La sorcière transforme une cible comme avec un sort de <a class="pagelink" href="Pathfinder-RPG.m%c3%a9tamorphose%20funeste.ashx" title="Métamorphose funeste">métamorphose funeste</a>, excepté que la cible devient une aberration de taille P, M ou G. Les capacités de la cible sont modifiées comme avec <a class="pagelink" href="Pathfinder-RPG.forme%20bestiale%20IV.ashx" title="Forme bestiale IV">forme bestiale IV</a>. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Convocationdesprit" href="#Convocationdesprit"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Convocation d’esprit (Mag)<a class="headeranchor" id="Convocation_d’esprit_Mag_53" href="#Convocation_d’esprit_Mag_53" title="Lien vers cette section">&#0182;</a></h3>La sorcière fait appel au fantôme d’une créature humanoïde qui ne possède pas plus de 18 DV. Ce fantôme possède une personnalité et des désirs qui lui sont propres, mais il est prêt à négocier avec la sorcière, comme avec allié suprême d’outreplan. Avant de sceller un accord avec elle, il exige une quantité d’énergie vitale qui équivaut à 1 niveau négatif (en plus du paiement standard exigé en échange des services du fantôme). Ce niveau négatif persiste tant que le fantôme reste au service de la sorcière. Elle peut mettre un terme à l’accord par une action simple et se débarrasse immédiatement du niveau négatif.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Désastrenaturel" href="#Désastrenaturel"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Désastre naturel (Sur)<a class="headeranchor" id="Désastre_naturel_Sur_54" href="#Désastre_naturel_Sur_54" title="Lien vers cette section">&#0182;</a></h3> 
+Une sorcière qui utilise ce maléfice fait appel aux forces de la nature pour semer le chaos dans une zone. Ceci fonctionne comme une <i><a class="pagelink" href="Pathfinder-RPG.temp%c3%aate%20vengeresse.ashx" title="Tempête vengeresse">tempête vengeresse</a></i> combinée à un <i><a class="pagelink" href="Pathfinder-RPG.tremblement%20de%20terre.ashx" title="Tremblement de terre">tremblement de terre</a></i> qui se déclenche au deuxième <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> de l’effet (alors qu’il pleut de l’acide). La sorcière doit se concentrer pendant toute la durée de l’effet. Si elle perd sa <a class="pagelink" href="Pathfinder-RPG.concentration.ashx" title="Concentration">concentration</a>, l’effet se termine immédiatement. La sorcière ne peut utiliser ce pouvoir qu’une fois par jour.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Donneusedevie" href="#Donneusedevie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Donneuse de vie (Sur)<a class="headeranchor" id="Donneuse_de_vie_Sur_55" href="#Donneuse_de_vie_Sur_55" title="Lien vers cette section">&#0182;</a></h3> 
+Une fois par jour, par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, la sorcière peut toucher une créature morte pour la ramener à la vie. Ce sort fonctionne comme une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9surrection.ashx" title="Résurrection">résurrection</a> mais ne nécessite pas de <a class="pagelink" href="Pathfinder-RPG.composante%20mat%c3%a9rielle.ashx" title="composante matérielle">composante matérielle</a>.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Huttedelasorcière" href="#Huttedelasorcière"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Hutte de la sorcière (Sur)<a class="headeranchor" id="Hutte_de_la_sorcière_Sur_56" href="#Hutte_de_la_sorcière_Sur_56" title="Lien vers cette section">&#0182;</a></h3>La sorcière peut animer une hutte, une petite maison, un chariot couvert, une tente ou une construction similaire pour en faire un objet animé. La hutte est de taille TG au maximum (environ 4,50 mètres sur
+4,50). Sa solidité passe à 8 et ses points de vie sont doublés. La sorcière peut lui donner les ordres suivants : garde (la hutte guette les intrus dans un rayon de 36 mètres, en se servant du modificateur de Perception de la sorcière, et hurle dès qu’elle en aperçoit un), cache-moi (toutes les entrées sont
+cachées derrière des murs illusoires et fermées par des verrous magiques) et bouge (se déplace à une vitesse de 18 mètres (12 <abbr title="cases">c</abbr>) sur des pattes d’oiseau géant ou des jambes d’os, comme le lui indique la sorcière, obéissant même à des ordres comme « suis-moi à 30 mètres de distance »). La hutte est animée pendant 24 heures, jusqu’à ce que la sorcière la renvoie ou qu’elle en anime une autre ; elle s’arrête alors là où elle se trouve et reprend un état non magique.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Malédictiondenonviolence" href="#Malédictiondenonviolence"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Malédiction de non-violence (Sur)<a class="headeranchor" id="Malédiction_de_non-violence_Sur_57" href="#Malédiction_de_non-violence_Sur_57" title="Lien vers cette section">&#0182;</a></h3>Ce puissant maléfice empêche la cible de blesser autrui. Si elle échoue son jet de <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9.ashx" title="Volonté">Volonté</a>, elle ne peut entreprendre d'actions violentes ou faire de mal à des créatures avec moins de <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">DV</a> qu'elle en possède. Si une créature se montre hostile envers la cible, elle peut également se montrer hostile envers elle, et envers elle seulement. C'est un effet permanent d'abjuration, qui ne peut être retiré qu'avec <a class="pagelink" href="Pathfinder-RPG.souhait.ashx" title="Souhait">souhait</a>, <a class="pagelink" href="Pathfinder-RPG.miracle.ashx" title="Miracle">miracle</a> ou <a class="pagelink" href="Pathfinder-RPG.d%c3%a9livrance%20des%20mal%c3%a9dictions.ashx" title="Délivrance des malédictions">délivrance des malédictions</a>. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.
+</td><td>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="Malédictionmortelle" href="#Malédictionmortelle"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Malédiction mortelle (Sur)<a class="headeranchor" id="Malédiction_mortelle_Sur_58" href="#Malédiction_mortelle_Sur_58" title="Lien vers cette section">&#0182;</a></h3>Ce puissant maléfice s’empare du cœur d’une créature et provoque sa mort en quelques instants.
+Il a une portée de 9 m. La victime du maléfice a droit à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> pour annuler l’effet. Si elle le rate, elle devient <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatiguée</a> au premier <a class="pagelink" href="Pathfinder-RPG.round.ashx" title="round">round</a> d’effet. Au deuxième, elle est <a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisée</a> et au troisième elle meurt, à moins de réussir un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Vigueur</a>. Une créature qui rate son premier <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> mais réussit le deuxième reste <a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisée</a> et subit 4d6 points de dégâts + 1 point par <a class="pagelink" href="Pathfinder-RPG.niveau.ashx" title="niveau">niveau</a> de sorcière. On peut mettre un terme à l’effet en tuant la sorcière qui a lancé le maléfice mais les effets de <a class="pagelink" href="Pathfinder-RPG.fatigu%c3%a9.ashx" title="Fatigué">fatigue</a> ou d’<a class="pagelink" href="Pathfinder-RPG.%c3%a9puis%c3%a9.ashx" title="Épuisé">épuisement</a> demeurent. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Réincarnationforcée" href="#Réincarnationforcée"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Réincarnation forcée (Sur)<a class="headeranchor" id="Réincarnation_forcée_Sur_59" href="#Réincarnation_forcée_Sur_59" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière oblige une créature qui se trouve dans les 9 m à mourir et se réincarner immédiatement dans un nouveau corps. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet d’annuler cet effet. La cible qui échoue meurt et se réincarne comme par un sort de <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9incarnation.ashx" title="Réincarnation">réincarnation</a></i>. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Reposéternel" href="#Reposéternel"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Repos éternel (Mag)<a class="headeranchor" id="Repos_éternel_Mag_60" href="#Repos_éternel_Mag_60" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière fait subir à un mort-vivant unique un effet d'<a class="pagelink" href="Pathfinder-RPG.annihilation%20de%20mort-vivant.ashx" title="Annihilation de mort-vivant">annihilation de mort-vivant</a>. Un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> permet d’annuler cet effet. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.<br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Ultimate Magic/Art de la Magie" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoUM.gif" style="opacity: 0.7" loop="infinite" />
+</div><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sinistreprophétie" href="#Sinistreprophétie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sinistre prophétie (Sur)<a class="headeranchor" id="Sinistre_prophétie_Sur_61" href="#Sinistre_prophétie_Sur_61" title="Lien vers cette section">&#0182;</a></h3>La sorcière maudit la cible qui est condamnée à mourir (Volonté pour annuler). Tant que la victime est affectée par ce maléfice, elle subit un malus de -4 à la CA, aux jets d’attaque et de sauvegarde ainsi qu’aux tests de compétence et de caractéristique. Tant que le maléfice affecte la cible, la sorcière peut y mettre un terme en déchaînant d’un coup toute sa puissance sur sa victime. Cette dernière subit alors un malus égal au niveau de lanceur de sorts de la sorcière à la CA ou sur un unique jet d’attaque, test de manoeuvre offensive, test de caractéristique opposé, test de compétence ou jet de sauvegarde. La sorcière doit décider
+d’appliquer ce malus avant que la victime ne fasse le jet de dé à modifier. Si la sorcière n’a pas sa victime en ligne de mire, la pleine puissance de la malédiction s’abat sur la malheureuse au moment que le MJ estime le plus approprié, quand elle est en danger de mort, par exemple. Que la cible réussisse son jet de sauvegarde ou non, elle ne peut plus être affectée par ce maléfice pendant 1 jour. C’est un effet de malédiction.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Sommeiléternel" href="#Sommeiléternel"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator">Sommeil éternel (Sur)<a class="headeranchor" id="Sommeil_éternel_Sur_62" href="#Sommeil_éternel_Sur_62" title="Lien vers cette section">&#0182;</a></h3> 
+La sorcière peut toucher une créature pour la plonger dans un <i><a class="pagelink" href="Pathfinder-RPG.sommeil%20profond.ashx" title="Sommeil profond">sommeil profond</a></i> permanent. La cible a droit à un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de Volonté</a> pour annuler cet effet. Si elle échoue, elle s’endort et il est impossible de la réveiller. Il est impossible de dissiper cet effet à moins d’un <i><a class="pagelink" href="Pathfinder-RPG.souhait.ashx" title="Souhait">souhait</a></i> ou d’une magie similaire. On peut aussi tuer la sorcière pour mettre un terme à l’effet. La sorcière peut utiliser ce pouvoir pour empoisonner de la nourriture ou de la boisson. Une personne qui consomme ces aliments doit faire un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou s’endormir pour toujours. La sorcière ne peut avoir qu’une dose de poison active à la fois et il perd toute virulence s’il n’est pas consommé dans la minute. Que la créature ait réussi son <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ou non, elle ne peut plus subir ce maléfice pendant 24 heures.
+</td></tr></table>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
