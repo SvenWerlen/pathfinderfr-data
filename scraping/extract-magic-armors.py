@@ -9,13 +9,13 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import table2text
-from libhtml import extractBD
+from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
-MOCK_MAGIC = "mocks/magic-armors.html"       # décommenter pour tester avec les armures pré-téléchargées
-
+MOCK_MAGIC = "mocks/magic-armors.html"                  # décommenter pour tester avec les armures pré-téléchargées
+MOCK_MAGIC_ITEM = None
+#MOCK_MAGIC_ITEM = "mocks/magic-bouclier-elysien.html"      # décommenter pour tester avec détails pré-téléchargé
 
 
 liste = []
@@ -46,11 +46,6 @@ else:
 
 
 propList = []
-proprietes = content.find_all('div',{'class':['BD']})
-
-for prop in proprietes:
-    propList.append(extractBD(prop))
-    
 
 tables = content.find_all('table',{'class':['tablo col1centre']})
 
@@ -68,67 +63,97 @@ for t in tables:
         for td in tr.find_all('td'):
             columnIdx += 1
             if columnIdx == TABLEDEF[tableIdx][0]:
-                nom = TABLEDEF[tableIdx][2] + td.text
+                nom = TABLEDEF[tableIdx][2] + html2text(td)
                 href = td.find('a')
                 if href:
                     href = href['href']
             elif columnIdx == TABLEDEF[tableIdx][1]:
-                prix = td.text
+                prix = html2text(td)
         
         # sauter les entrées du type "relancer le dé"
         if u"le dé" in nom:
             continue
         
-        # ignore some entries
+        # ignorer certaines entrées (référence à un autre tableau dans la page)
         if nom in IGNORE:
             continue
         
-        # reference
+        # référence de base
         reference = REFERENCE
         
+        # débogage
+        #print("Traitement de %s..." % nom.strip())
+        
+        data = {"nom": nom.strip(), "prix": prix.strip(), "descr": ""}
+        
         # get description from same page
-        descr = ""
         if href and "#" in href and not "NOTE" in href:
             ref = "#" + href.split('#')[1]
             jumpTo = content.find('a',{'href':ref})
             if jumpTo is None:
                 print("Lien invalide: %s" % href)
                 exit(1)
-            data = extractBD(jumpTo.find_next('div',{'class':['BD']}))
-            descr = data['descr']
+            data = {**data, **extractBD_Type1(jumpTo.find_next('div',{'class':['BD']}))}
+            
             reference = REFERENCE + href
-            if len(descr) == 0:
+            if len(data['descr']) == 0:
                 print("Description invalide pour: %s" % href)
                 exit(1)
         
         elif href and not "#" in href:
-            page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + href).read(),features="lxml").body
-            data = extractBD(page.find('div',{'class':['BD']}))
+            # récupérer le détail d'un objet
+            if MOCK_MAGIC_ITEM:
+                page = BeautifulSoup(open(MOCK_MAGIC_ITEM),features="lxml").body
+            else:
+                page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + href).read(),features="lxml").body
+                
+            data = {**data, **extractBD_Type2(page.find('div',{'class':['BD']}))}
             descr = data['descr']
-            reference = PATHFINDER + href
-            if len(descr) == 0:
+            
+            if len(data['descr']) == 0:
                 print("Description invalide pour: %s" % href)
                 exit(1)
         
         element = {}
-        element["1Nom"] = nom.strip()
-        element["2Type"] = TYPE
-        element["3Prix"] = prix.strip()
-        element["4Source"] = "MJ"
-        element["6Description"] = descr
-        element["7Référence"] = reference
+        element["01Nom"] = data["nom"]
+        element["02Type"] = TYPE
+        element["03Prix"] = data["prix"]
+        element["04Source"] = "MJ"
+        element["20Description"] = data["descr"]
+        element["21Référence"] = reference
+        
+        # infos additionnelles
+        if "emplacement" in data:
+            element["05Emplacement"] = data["emplacement"]
+        if "poids" in data:
+            element["06Poids"] = data["poids"]
+        if "aura" in data:
+            element["07Aura"] = data["aura"]
+        if "nls" in data:
+            element["08NLS"] = data["nls"]
+        if "conditions" in data:
+            element["09Fabrication"] = data["conditions"]
+        if "coût" in data:
+            element["10Coût"] = data["coût"]
+        
         element["EMPTY"] = ""
         liste.append(element)
     
 #exit(1)
 
 yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('1Nom','Nom')
-yml = yml.replace('2Type','Type')
-yml = yml.replace('3Prix','Prix')
-yml = yml.replace('4Source','Source')
-yml = yml.replace('6Description','Description')
-yml = yml.replace(u'7Référence',u'Référence')
+yml = yml.replace('01Nom','Nom')
+yml = yml.replace('02Type','Type')
+yml = yml.replace('03Prix','Prix')
+yml = yml.replace('04Source','Source')
+yml = yml.replace('05Emplacement','Emplacement')
+yml = yml.replace('06Poids','Poids')
+yml = yml.replace('07Aura','Aura')
+yml = yml.replace('08NLS','NLS')
+yml = yml.replace('09Fabrication','Fabrication')
+yml = yml.replace('10Coût','Coût')
+yml = yml.replace('20Description','Description')
+yml = yml.replace('21Référence','Référence')
 yml = yml.replace("EMPTY: ''",'')
 print(yml)
 
