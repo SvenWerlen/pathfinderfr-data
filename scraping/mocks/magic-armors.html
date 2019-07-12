@@ -1,0 +1,1064 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les armures et boucliers magiques - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="armures magiques, boucliers magiques, propriétés spéciales" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armures magiques.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Armures+magiques&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwHsuppI9ksWBmy/F1E2yVV9esByc=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSOh9488SLjTnGoM2giFK++B72oi3QcwxQT+thNGyuutAXyaA+etMur/cL+Sz8eYCpXIJp" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Armures magiques">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Armures magiques">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Armures magiques">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Armures magiques.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Armures magiques.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Armures%20magiques">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les armures et boucliers magiques
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Armures%20magiques" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div style="float: right; padding: 0 0 8px 8px"><table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#Propriétés_spéciales_des_armures_magiques_0">Propriétés spéciales des armures magiques</a><br />&nbsp;&nbsp;&nbsp;<a href="#Propriétés_spéciales_des_boucliers_magiques_1">Propriétés spéciales des boucliers magiques</a><br />&nbsp;&nbsp;&nbsp;<a href="#Description_des_propriétés_spéciales_des_armures_et_boucliers_magiques_2">Description des propriétés spéciales des armures et boucliers magiques</a><br />&nbsp;&nbsp;&nbsp;<a href="#Armures_spécifiques_3">Armures spécifiques</a><br />&nbsp;&nbsp;&nbsp;<a href="#Boucliers_spécifiques_4">Boucliers spécifiques</a><br /></p></div></div></td></tr></table>
+</div>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="BONUSALTERATION" href="#BONUSALTERATION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Les <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx" title="Les armes magiques">armes magiques</a> possèdent également un <a class="pagelink" href="Pathfinder-RPG.armes%20magiques.ashx#BONUSALTERATION" title="Les armes magiques">bonus d'altération</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>Les armures et boucliers magiques offrent à leur utilisateur une protection supplémentaire, sous la forme d’un bonus d’altération (au maximum de +5) qui s’ajoute au bonus à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de l’objet lui-même. Les bonus d’une armure, d’un bouclier et de leur magie respective sont cumulatifs. Toutes les armures et tous les boucliers magiques sont des versions de maître, leur malus d’armure aux tests est ainsi réduit de 1.<br /><br />Une armure peut, en plus de son bonus d’altération, posséder certaines propriétés. Celles-ci sont considérées comme un bonus supplémentaire pour ce qui est du prix de l’armure, même si elles n’ont aucune influence sur la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Une armure ne peut jamais avoir un bonus total (bonus d’altération plus bonus du aux propriétés, y compris celles qui proviennent des aptitudes du personnage et des sorts) supérieur à +10. Toute armure possédant une propriété spéciale doit avoir un bonus d’altération d’au moins +1.<br /><br />Les armures et les boucliers peuvent être fabriqués dans un matériau inhabituel. Lancez 1d100 : sur un résultat de 01–95, l’objet est d’un matériau standard et, sur 96–100, il est fait d’un matériau spécial (voir la Section "<a class="pagelink" href="Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx" title="Les matériaux spéciaux">Les matériaux spéciaux</a>").<br /><br />Même si l’armure est accompagnée de bottes, de gantelets ou d’un heaume, ces parties peuvent être échangées contre d’autres objets magiques du même type sans nuire à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>.<br /><br /><b>Niveau de lanceur de sorts des armures et boucliers magiques.</b> Le niveau de lanceur de sorts d’une armure ou d’un bouclier possédant une ou plusieurs propriétés spéciales est indiqué dans la description de l’objet. Si l’armure ou le bouclier bénéficie seulement d’un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a>, son niveau de lanceur de sorts est égal à trois fois son bonus. Si l’objet possède un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> ainsi que des propriétés magiques, le plus haut niveau de lanceur de sorts entre les deux est celui qui doit être considéré.<br /><br /><b>Boucliers.</b> Le <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> d’un bouclier magique se cumule avec le <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> d’une armure magique. Le <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> du bouclier n’est pas comptabilisé dans le <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jet d’attaque</a> ou de dégâts dans le cas d’un coup de bouclier. La propriété spéciale d’attaque confère un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> de +1 aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et de dégâts avec un bouclier (voir la description de la capacité spéciale "<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Attaque" title="Les armures et boucliers magiques">Attaque</a>").<br /><br />Il est possible de faire d’un bouclier une arme magique, mais il faut alors ajouter aux coûts du <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> ceux du <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> aux <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> et aux dégâts.<br /><br />De la même façon que pour les armures, les propriétés spéciales d’un bouclier sont considérées comme un bonus supplémentaire pour ce qui est du prix de l’objet, même si elles n’améliorent pas la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a>. Un bouclier ne peut jamais avoir un bonus total (<a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> plus bonus du aux propriétés) supérieur à +10. Tout bouclier possédant une propriété spéciale doit avoir un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> d’au moins +1.<br /><br /><b>Activation.</b> Une armure ou un bouclier magique fonctionne en général de la même manière qu’un modèle normal, offrant à son utilisateur les mêmes avantages. Si l’armure ou le bouclier possède une propriété qui doit être activée volontairement, cela se fait le plus souvent par le biais d’un <a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAMOTDECOMMANDE" title="Règles relatives aux objets magiques">mot de commande</a> (une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>).<br /><br /><b>Armures pour les créatures de taille inhabituelle.</b> Le prix des armures conçues pour les créatures non humanoïdes ou d’une catégorie de taille autre que P ou M est différent de celui qui est indiqué (voir la Section "<a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx#ARMURESINHABITUELLES" title="Caractéristiques des armures">Armures pour créatures inhabituelles</a>"). Le coût de la qualité <a class="pagelink" href="Pathfinder-RPG.Caract%c3%a9ristiques%20des%20armures.ashx#ARMURESMAITRE" title="Caractéristiques des armures">de maître</a> et de l’altération magique restent les mêmes quelle que soit la taille de l’armure.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DETERMINATION" href="#DETERMINATION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo col1centre"><caption>Armures et boucliers</caption><tr CLASS="titre"><td>Faible</td><td>Intermédiaire</td><td>Puissant</td><td>Objet</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01–60</td><td>01–05</td><td>—</td><td><i>Bouclier +1</i></td><td>+1 000 po</td></tr><tr CLASS="alt"><td>61–80</td><td>06–10</td><td>—</td><td><i>Armure +1</i></td><td>+1 000 po</td></tr><tr><td>81–85</td><td>11–20</td><td>—</td><td><i>Bouclier +2</i></td><td>+4 000 po</td></tr><tr CLASS="alt"><td>86–87</td><td>21–30</td><td>—</td><td><i>Armure +2</i></td><td>+4 000 po</td></tr><tr><td>—</td><td>31–40</td><td>01–08</td><td><i>Bouclier +3</i></td><td>+9 000 po</td></tr><tr CLASS="alt"><td>—</td><td>41–50</td><td>09–16</td><td><i>Armure +3</i></td><td>+9 000 po</td></tr><tr><td>—</td><td>51–55</td><td>17–27</td><td><i>Bouclier +4</i></td><td>+16 000 po</td></tr><tr CLASS="alt"><td>—</td><td>56–57</td><td>28–38</td><td><i>Armure +4</i></td><td>+16 000 po</td></tr><tr><td>—</td><td>—</td><td>39–49</td><td><i>Bouclier +</i>5</td><td>+25 000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>50–57</td><td><i>Armure +5</i></td><td>+25 000 po</td></tr><tr><td>—</td><td>—</td><td>—</td><td><i>Armure/bouclier +6<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE" title="Les armures et boucliers magiques">*</a></i></td><td>+36 000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>—</td><td><i>Armure/bouclier +7<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE" title="Les armures et boucliers magiques">*</a></i></td><td>+49 000 po</td></tr><tr><td>—</td><td>—</td><td>—</td><td><i>Armure/bouclier +8<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE" title="Les armures et boucliers magiques">*</a></i></td><td>+64 000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>—</td><td><i>Armure/bouclier +9<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE" title="Les armures et boucliers magiques">*</a></i></td><td>+81 000 po</td></tr><tr><td>—</td><td>—</td><td>—</td><td><i>Armure/bouclier +10<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE" title="Les armures et boucliers magiques">*</a></i></td><td>+100 000 po</td></tr><tr CLASS="alt"><td>88–89</td><td>58–60</td><td>58–60</td><td><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#DTMARMURESPECIFIQUE" title="Les armures et boucliers magiques">Armure spécifique</a></td><td>—</td></tr><tr><td>90–91</td><td>61–63</td><td>61–63</td><td><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#DTMBOUCLIERSPECIFIQUE" title="Les armures et boucliers magiques">Bouclier spécifique</a></td><td>—</td></tr><tr CLASS="alt"><td>92–100</td><td>64–100</td><td>64–100</td><td>Propriété spéciale <br/>(<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#DTMSPECIALEARMURE" title="Les armures et boucliers magiques">armure</a> ou <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#DTMSPECIALEBOUCLIER" title="Les armures et boucliers magiques">bouclier</a>)<br/> et relancez le dé</td><td>—</td></tr><tr><td COLSPAN="5" CLASS="note"><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE" href="#NOTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><i>(*) Le bonus effectif de l’armure ou du bouclier ne peut être supérieur à +5. Ces lignes <br/>indiquent le prix des armures et boucliers possédant des propriétés spéciales.</i></td></tr></table>
+</center><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PROPRIETESSPECIALES" href="#PROPRIETESSPECIALES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h2 class="separator"> Propriétés spéciales des armures magiques <a class="headeranchor" id="Propriétés_spéciales_des_armures_magiques_0" href="#Propriétés_spéciales_des_armures_magiques_0" title="Lien vers cette section">&#0182;</a></h2>La plupart des armures et boucliers magiques possèdent simplement un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a>, mais certains peuvent également avoir une ou plusieurs des propriétés spéciales décrites ci-après. Une armure ou un bouclier ayant une propriété spéciale doit avoir un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> d’au moins +1.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DTMSPECIALEARMURE" href="#DTMSPECIALEARMURE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo col1centre"><caption>Propriété spéciales des armures (Manuel des Joueurs)</caption><tr CLASS="titre"><td>Faible</td><td>Intermédiaire</td><td>Puissante</td><td>Propriété spéciale</td><td>Modificateur<br/> au prix de base</td></tr><tr CLASS="premier"><td>01–25</td><td>01–05</td><td>01–03</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Mimétisme" title="Les armures et boucliers magiques">Mimétisme</a></i></td><td>+2 700 po</td></tr><tr CLASS="alt"><td>26–32</td><td>06–08</td><td>04</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense légère</a></i></td><td>bonus de +1<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>33–52</td><td>09–11</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Graisseuse" title="Les armures et boucliers magiques">Graisseuse</a></i></td><td>+3 750 po</td></tr><tr CLASS="alt"><td>53–92</td><td>12–17</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Ombre" title="Les armures et boucliers magiques">Ombre</a></i></td><td>+3 750 po</td></tr><tr><td>93–96</td><td>18–19</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (13)</a></i></td><td>bonus de +2<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>97</td><td>20–29</td><td>05–07</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Graisseusesupérieure" title="Les armures et boucliers magiques">Graisseuse supérieure</a></i></td><td>+15,000 po</td></tr><tr><td>98–99</td><td>30–49</td><td>08–13</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Ombresupérieure" title="Les armures et boucliers magiques">Ombre supérieure</a></i></td><td>+15,000 po</td></tr><tr CLASS="alt"><td>—</td><td>50–74</td><td>14–28</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergies" title="Les armures et boucliers magiques">Résistance aux énergies</a></i></td><td>+18,000 po</td></tr><tr><td>—</td><td>75–79</td><td>29–33</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Spectral" title="Les armures et boucliers magiques">Spectrale</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>80–84</td><td>34–35</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Invulnérabilité" title="Les armures et boucliers magiques">Invulnérabilité</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>85–89</td><td>36–40</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense intermédiaire</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>90–94</td><td>41–42</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (15)</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>95–99</td><td>43</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Formeanimale" title="Les armures et boucliers magiques">Forme animale</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>44–48</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Graisseusesuprême" title="Les armures et boucliers magiques">Graisseuse suprême</a></i></td><td>+33 750 po</td></tr><tr><td>—</td><td>—</td><td>49–58</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Ombresuprême" title="Les armures et boucliers magiques">Ombre suprême</a></i></td><td>+33 750 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>59–83</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergiessupérieure" title="Les armures et boucliers magiques">Résistance aux énergies supérieure</a></i></td><td>+42 000 po</td></tr><tr><td>—</td><td>—</td><td>84–88</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (17)</a></i></td><td>bonus de +4<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>89</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Éthérée" title="Les armures et boucliers magiques">Éthérée</a></i></td><td>+49,000 po</td></tr><tr><td>—</td><td>—</td><td>90</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Contrôledesmortsvivants" title="Les armures et boucliers magiques">Contrôle des morts-vivants</a></i></td><td>+49,000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>91–92</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense lourde</a></i></td><td>bonus de +5<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></td></tr><tr><td>—</td><td>—</td><td>93–94</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (19)</a></i></td><td>bonus de +5<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>95–99</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergiessuprême" title="Les armures et boucliers magiques">Résistance aux énergies suprême</a></i></td><td>+66,000 po</td></tr><tr><td>100</td><td>100</td><td>100</td><td>Rejouez deux fois le dé<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE2" title="Les armures et boucliers magiques">2</a></sup></td><td>—</td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE1" href="#NOTE1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(1) À ajouter au bonus d’altération de manière à déterminer le prix de vente total.</i></td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE2" href="#NOTE2"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(2) Si vous obtenez deux fois la même propriété, seule la plus forte compte.</i></td></tr></table><br /><table CLASS="tablo col1centre"><caption>Propriété spéciales des armures (APG)</caption><tr CLASS="titre"><td>Faible</td><td>Intermédiaire</td><td>Puissante</td><td>Propriété spéciale</td><td>Modificateur<br/> au prix de base</td></tr><tr CLASS="premier"><td>01–40</td><td>01–35</td><td>01–19</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Championne" title="Les armures et boucliers magiques">Championne</a></i></td><td>+1 bonus<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>41–80</td><td>36–66</td><td>20-37</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Fourberie" title="Les armures et boucliers magiques">Fourberie</a></i></td><td>+1 bonus<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>81–99</td><td>67–70</td><td>38-39</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Joute" title="Les armures et boucliers magiques">Joute</a></i></td><td>+3 750 po</td></tr><tr CLASS="alt"><td>—</td><td>71-83</td><td>40-61</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Vertueuse" title="Les armures et boucliers magiques">Vertueuse</a></i></td><td>+27 000 po</td></tr><tr><td>—</td><td>84-96</td><td>62-80</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Impie" title="Les armures et boucliers magiques">Impie</a></i></td><td>+27 000 po</td></tr><tr CLASS="alt"><td>—</td><td>97-99</td><td>81-90</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Détermination" title="Les armures et boucliers magiques">Détermination</a></i></td><td>+30 000 po</td></tr><tr><td>100</td><td>100</td><td>91-100</td><td>Relancez deux fois le dé<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE2" title="Les armures et boucliers magiques">2</a></sup></td><td>—</td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE1" href="#NOTE1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(1) À ajouter au bonus d’altération de manière à déterminer le prix de vente total.</i></td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE2" href="#NOTE2"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(2) Si vous obtenez deux fois la même propriété, seule la plus forte compte.</i></td></tr></table>
+</center><br /><br />
+<h2 class="separator"> Propriétés spéciales des boucliers magiques <a class="headeranchor" id="Propriétés_spéciales_des_boucliers_magiques_1" href="#Propriétés_spéciales_des_boucliers_magiques_1" title="Lien vers cette section">&#0182;</a></h2>
+<center>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="DTMSPECIALEBOUCLIER" href="#DTMSPECIALEBOUCLIER"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<table CLASS="tablo col1centre"><caption>Propriété spéciales des boucliers</caption><tr CLASS="titre"><td>Faible</td><td>Intermédiaire</td><td>Puissante</td><td>Propriété spéciale</td><td>Modificateur<br/> au prix de base</td></tr><tr CLASS="premier"><td>01–20</td><td>01–10</td><td>01–05</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Interceptiondeprojectiles" title="Les armures et boucliers magiques">Interception de projectiles</a></i></td><td>bonus de +1<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>21–40</td><td>11–20</td><td>06–08</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Attaque" title="Les armures et boucliers magiques">Attaque</a></i></td><td>bonus de +1<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>41–50</td><td>21–25</td><td>09–10</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Aveuglant" title="Les armures et boucliers magiques">Aveuglant</a></i></td><td>bonus de +1<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>51–75</td><td>26–40</td><td>11–15</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense légère</a></i></td><td>bonus de +1<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>76–92</td><td>41–50</td><td>16–20</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Antiprojectiles" title="Les armures et boucliers magiques">Antiprojectiles</a></i></td><td>bonus de +2<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>93–97</td><td>51–57</td><td>21–25</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Animé" title="Les armures et boucliers magiques">Animé</a></i></td><td>bonus de +2<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>98–99</td><td>58–59</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (13)</a></i></td><td>bonus de +2<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>60–79</td><td>26–41</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergies" title="Les armures et boucliers magiques">Résistance aux énergies</a></i></td><td>+18,000 po</td></tr><tr><td>—</td><td>80–85</td><td>42–46</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Spectral" title="Les armures et boucliers magiques">Spectral</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>86–95</td><td>47–56</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense intermédiaire</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>96–98</td><td>57–58</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (15)</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>99</td><td>59</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Formeanimale" title="Les armures et boucliers magiques">Forme animale</a></i></td><td>bonus de +3<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>—</td><td>60–84</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergiessupérieure" title="Les armures et boucliers magiques">Résistance aux énergies supérieure</a></i></td><td>+42,000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>85–86</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (17)</a></i></td><td>bonus de +4<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>—</td><td>87</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Contrôledesmortsvivants" title="Les armures et boucliers magiques">Contrôle des morts-vivants</a></i></td><td>+49,000 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>88–91</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Défense" title="Les armures et boucliers magiques">Défense lourde</a></i></td><td>bonus de +5<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>—</td><td>92–93</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Réfléchissant" title="Les armures et boucliers magiques">Réfléchissant</a></i></td><td>bonus de +5<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>94</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceàlamagie" title="Les armures et boucliers magiques">Résistance à la magie (19)</a></i></td><td>bonus de +5<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE1" title="Les armures et boucliers magiques">1</a></sup></td></tr><tr><td>—</td><td>—</td><td>95–99</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Résistanceauxénergiessuprême" title="Les armures et boucliers magiques">Résistance aux énergies suprême</a></i></td><td>+66,000 po</td></tr><tr CLASS="alt"><td>100</td><td>100</td><td>100</td><td>Rejouer 2 fois le dé<sup><a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#NOTE2" title="Les armures et boucliers magiques">2</a></sup></td><td>—</td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE1" href="#NOTE1"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(1) À ajouter au bonus d’altération de manière à déterminer le prix de vente total.</i></td></tr><tr CLASS="note"><td COLSPAN=5><div class="ref right" style="padding: 0 0 3px 3px;"><a name="NOTE2" href="#NOTE2"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div> <i>(2) Si vous obtenez deux fois la même propriété, seule la plus forte compte.</i></td></tr></table>
+</center><br /><br /><h2 class="separator"> Description des propriétés spéciales des armures et boucliers magiques <a class="headeranchor" id="Description_des_propriétés_spéciales_des_armures_et_boucliers_magiques_2" href="#Description_des_propriétés_spéciales_des_armures_et_boucliers_magiques_2" title="Lien vers cette section">&#0182;</a></h2>
+<table class="page espace-col deuxcol"><tr><td>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="Animé" href="#Animé"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Animé<div style="float:right;"></div></div>
+Sur commande, un bouclier animé flotte à côté de son propriétaire, le protégeant aussi bien que si celui-ci le tenait lui-même, bien qu’il ait les deux mains libres, et ce durant 4 rounds au bout desquels le bouclier tombe à terre. Lorsqu’il est animé de la sorte, il fait bénéficier son propriétaire non seulement de sa protection, mais également de toutes ses propriétés spéciales. Il ne peut cependant pas entreprendre d’action par lui-même (comme la propriété spéciale d’<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Attaque" title="Les armures et boucliers magiques">attaque</a> ou <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Aveuglant" title="Les armures et boucliers magiques">aveuglante</a>), mais peut utiliser celles qui ne requièrent pas d’action pour fonctionner (comme <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Antiprojectiles" title="Les armures et boucliers magiques">antiprojectiles</a> ou <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#réfléchissant" title="Les armures et boucliers magiques">réfléchissante</a>). Un bouclier animé occupe le même espace que son possesseur, même si celui-ci se déplace par des moyens magiques. Il impose toujours les désavantages liés au port d’un bouclier, comme un malus d’armure aux tests, un risque d’échec des sorts profanes et un malus pour non-formation. S’il a une main libre, le personnage qui a animé le bouclier peut le rattraper en <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a> à la fin des 4 rounds, et le bouclier ne peut plus alors s’animer pendant au moins 4 rounds. Un pavois ne peut bénéficier de cette propriété.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> puissante ; <b>NLS</b> 12 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.animation%20dobjets.ashx" title="Animation d&#39;objets">animation d’objets</a></i> ; <b>Prix</b> bonus de +2.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Antiprojectiles" href="#Antiprojectiles"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Antiprojectiles<div style="float:right;"></div></div>
+Un bouclier antiprojectiles protège son porteur comme si celui-ci possédait le don <a class="pagelink" href="Pathfinder-RPG.Parade%20de%20projectiles.ashx" title="Parade de projectiles">Parade de projectiles</a>. Une fois par round, quand le personnage devrait être touché par une arme à distance, il peut faire un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> (de <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 20 ; si l’arme à distance possède un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a>, celui-ci s’ajoute au <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> du jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a>). En cas de réussite, le bouclier détourne le projectile. Le personnage doit voir venir l’attaque et ne pas être <a class="pagelink" href="Pathfinder-RPG.pris%20au%20d%c3%a9pourvu.ashx" title="Pris au dépourvu">pris au dépourvu</a>. Parer un projectile n’est pas considéré comme une action. Les projectiles hors du commun, comme un rocher <a class="pagelink" href="Pathfinder-RPG.lancer%20de%20rochers.ashx" title="Lancer de rochers">lancé par un géant</a> ou une flèche acide, ne peuvent être détournés.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> faible ; <b>NLS</b> 5 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.bouclier.ashx" title="Bouclier">bouclier</a></i> ; <b>Prix</b> bonus de +2.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Attaque" href="#Attaque"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Attaque<div style="float:right;"></div></div>
+Un bouclier possédant cette capacité est conçu pour porter des coups de bouclier. Il inflige des dégâts comme s’il possédait deux catégories de taille de plus que la sienne (une rondache de taille M inflige 1d6 points de dégâts et un écu de taille M 1d8 points de dégâts). Un bouclier d’attaque est considéré comme une arme +1 lorsqu’il s’agit d’attaquer avec lui. Cette propriété ne peut être placée que sur un écu ou une rondache.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> modérée ; <b>NLS</b> 8 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.force%20de%20taureau.ashx" title="Force de taureau">force de taureau</a></i> ; <b>Prix</b> bonus de +1.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Aveuglant" href="#Aveuglant"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Aveuglant<div style="float:right;"></div></div>
+Cette propriété ne peut être placée que sur un bouclier. Sur <a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAMOTDECOMMANDE" title="Règles relatives aux objets magiques">commande</a> et jusqu’à deux fois par jour, un bouclier aveuglant peut générer une vive lumière. Toutes les créatures distantes de 6 m ou moins (à l’exception du porteur) doivent réussir un jet de <a class="pagelink" href="Pathfinder-RPG.R%c3%a9flexes.ashx" title="Réflexes">Réflexes</a> de <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> 14 sous peine d’être <a class="pagelink" href="Pathfinder-RPG.%c3%a9bloui.ashx" title="Ébloui">aveuglées</a> pendant 1d4 rounds.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#EVOCATION" title="Présentation des sorts">Évocation</a> modérée ; <b>NLS</b> 7 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.lumi%c3%a8re%20br%c3%bblante.ashx" title="Lumière brûlante">lumière brûlante</a></i> ; <b>Prix</b> bonus de +1.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Championne" href="#Championne"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Championne<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Cette propriété d’armure ne fonctionne que pour les créatures <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">bonnes</a> qui possèdent le pouvoir <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">défi</a> (comme les <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevaliers</a>) ou <a class="pagelink" href="Pathfinder-RPG.paladin.ashx#CHATIMENTDUMAL" title="Le paladin">châtiment du mal</a> (comme les <a class="pagelink" href="Pathfinder-RPG.paladin.ashx" title="Le paladin">paladins</a>, les <a class="pagelink" href="Pathfinder-RPG.Demi-c%c3%a9leste%2c%20arch%c3%a9type.ashx" title="Demi-céleste, archétype">demi-célestes</a> et les créatures d’archétype céleste). Quand une créature utilise un de ces pouvoirs alors qu’elle porte un objet doué de cette propriété, elle bénéficie d’un bonus sacré de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les attaques de sa cible.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> faible ; <b>NLS</b> 5 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.protection%20contre%20le%20mal.ashx" title="Protection contre le Mal">protection contre le mal</a></i> ou <i><a class="pagelink" href="Pathfinder-RPG.protection%20contre%20le%20bien.ashx" title="Protection contre le Bien">protection contre le bien</a></i> ; <b>Prix</b> +1 bonus.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Contrôledesmortsvivants" href="#Contrôledesmortsvivants"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Contrôle des morts-vivants<div style="float:right;"></div></div>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Contrôle des morts-vivants est également le nom d'un <a class="pagelink" href="Pathfinder-RPG.contr%c3%b4le%20des%20morts-vivants.ashx" title="Contrôle des morts-vivants">don</a> et d'un <a class="pagelink" href="Pathfinder-RPG.sort%20contr%c3%b4le%20des%20morts-vivants.ashx" title="Contrôle des morts-vivants">sort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Une armure ou un bouclier de contrôle des morts-vivants semble entièrement être fait d’ossements. Cet aspect esthétique n’a cependant aucune incidence sur la <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> de l’objet. Le porteur de cet objet peut contrôler jusqu’à 26 <a class="pagelink" href="Pathfinder-RPG.DV.ashx" title="DV">DV</a> de <a class="pagelink" href="Pathfinder-RPG.type%20mort-vivant.ashx" title="Mort-vivant">morts-vivants</a> par jour, comme s’il utilisait le sort <i><a class="pagelink" href="Pathfinder-RPG.contr%c3%b4le%20des%20morts-vivants.ashx" title="Contrôle des morts-vivants">contrôle des morts-vivants</a></i>. Le personnage perd son contrôle à l’aube suivante.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#NECROMANCIE" title="Présentation des sorts">Nécromancie</a> puissante ; <b>NLS</b> 13 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.contr%c3%b4le%20des%20morts-vivants.ashx" title="Contrôle des morts-vivants">contrôle des morts-vivants</a></i> ; <b>Prix</b> +49 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Défense" href="#Défense"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Défense<div style="float:right;"></div></div>
+Une armure ou un bouclier de défense crée un champ de force protégeant plus efficacement les organes vitaux du porteur. Quand celui-ci subit un <a class="pagelink" href="Pathfinder-RPG.coup%20critique.ashx" title="coup critique">coup critique</a> ou une <a class="pagelink" href="Pathfinder-RPG.roublard.ashx#ATTAQUESOURNOISE" title="Le roublard">attaque sournoise</a>, il y a des chances pour que l’attaque inflige seulement des dégâts normaux.<br /><br /><center>
+<table CLASS="tablo"><tr CLASS="titre"><td>Type de défense</td><td>Chance dégâts normaux</td><td>Mod. prix de base</td></tr><tr CLASS="premier"><td>Légère</td><td>25%</td><td>Bonus de +1</td></tr><tr CLASS="alt"><td>Intermédiaire</td><td>50%</td><td>Bonus de +3</td></tr><tr><td>Lourde</td><td>75%</td><td>Bonus de +5</td></tr></table>
+</center>
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> puissante ; <b>NLS</b> 13 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, soit <i><a class="pagelink" href="Pathfinder-RPG.miracle.ashx" title="Miracle">miracle</a></i>, soit <i><a class="pagelink" href="Pathfinder-RPG.souhait%20limit%c3%a9.ashx" title="Souhait limité">souhait limité</a></i> ; <b>Prix</b> variable (voir ci-dessus).</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Détermination" href="#Détermination"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Détermination<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Une armure ou un bouclier qui possède cette propriété permet de continuer à se battre même quand la situation semble désespérée. Une fois par jour, quand le propriétaire de l’armure tombe à 0 point de vie ou moins, l’objet lui accorde immédiatement les avantages d’un <i><a class="pagelink" href="Pathfinder-RPG.souffle%20de%20vie.ashx" title="Souffle de vie">souffle de vie</a></i>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#CONVOCATION" title="Présentation des sorts">Convocation</a> modérée ; <b>NLS</b> 10 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.souffle%20de%20vie.ashx" title="Souffle de vie">souffle de vie</a></i> ; prix +30 000 po</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Éthérée" href="#Éthérée"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Éthérée<div style="float:right;"></div></div>
+Sur commande et une fois par jour, une armure éthérée rend son porteur <a class="pagelink" href="Pathfinder-RPG.%c3%a9th%c3%a9r%c3%a9.ashx" title="Éthéré">éthéré</a> (voir le sort <i><a class="pagelink" href="Pathfinder-RPG.forme%20%c3%a9th%c3%a9r%c3%a9e.ashx" title="Forme éthérée">forme éthérée</a></i>). Le personnage peut rester dans cet état aussi longtemps qu’il le souhaite, mais à l’instant où il revient dans le <a class="pagelink" href="Pathfinder-RPG.plan%20Mat%c3%a9riel.ashx" title="plan Matériel">plan Matériel</a>, il lui faut attendre vingt-quatre heures avant de pouvoir retourner dans le <a class="pagelink" href="Pathfinder-RPG.plan%20%c3%89th%c3%a9r%c3%a9.ashx" title="plan Éthéré">plan Éthéré</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> puissante ; <b>NLS</b> 13 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.forme%20%c3%a9th%c3%a9r%c3%a9e.ashx" title="Forme éthérée">forme éthérée</a></i> ; <b>Prix</b> +49 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Formeanimale" href="#Formeanimale"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Forme animale<div style="float:right;"></div></div>
+Une armure ou un bouclier de forme animale est décoré de motifs représentant des feuilles. Le porteur de cet objet conserve le bonus d’armure (et tout <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a>) lorsqu’il prend une forme animale. L’armure (ou le bouclier) n’est cependant alors pas visible.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> modérée ; <b>NLS</b> 9 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.m%c3%a9tamorphose%20funeste.ashx" title="Métamorphose funeste">métamorphose funeste</a></i> ; <b>Prix</b> bonus de +3.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fourberie" href="#Fourberie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Fourberie<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Cette propriété d’armure ne fonctionne que pour les créatures <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">Mauvaises</a> qui possèdent le pouvoir <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx#DEFI" title="Le chevalier">défi</a> (comme les <a class="pagelink" href="Pathfinder-RPG.chevalier.ashx" title="Le chevalier">chevaliers</a>) ou <a class="pagelink" href="Pathfinder-RPG.antipaladin.ashx#CHATIMENTDUBIEN" title="Antipaladin">châtiment du bien</a> (comme les <a class="pagelink" href="Pathfinder-RPG.antipaladin.ashx" title="Antipaladin">antipaladins</a>, les <a class="pagelink" href="Pathfinder-RPG.demi-fi%c3%a9lon%2c%20arch%c3%a9type.ashx" title="Demi-fiélon, archétype">demi-fiélons</a> et les créatures d’archétype fiélon). Quand une créature utilise un de ces pouvoirs alors qu’elle porte un objet doué de cette propriété, elle bénéficie d’un bonus de malfaisance de +2 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les attaques de sa cible.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> faible  ; <b>NLS</b> 5  ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>,  <i><a class="pagelink" href="Pathfinder-RPG.protection%20contre%20le%20mal.ashx" title="Protection contre le Mal">protection contre le mal</a></i> ou  <i><a class="pagelink" href="Pathfinder-RPG.protection%20contre%20le%20bien.ashx" title="Protection contre le Bien">protection contre le bien</a></i> ; <b>prix</b> +1 bonus</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Fumante" href="#Fumante"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Fumante<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Codex monstrueux/Monster Codex" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMC.gif" style="opacity: 0.7" />
+</div></div></div>
+Une armure fumante se compose de nombreuses plaques mobiles pour aider à la ventilation. Trois fois par jour, son propriétaire peut prononcer un mot de commande pour qu’elle dégage un nuage de vapeur brûlante. La vapeur persiste pendant 5 rounds ou jusqu’à ce que le porteur de l’armure la dissipe en prononçant un deuxième mot de commande.
+Quand le porteur prononce le mot de commande puis au début de son tour lors des rounds suivants, la vapeur inflige 1d6 points de dégâts à toute créature en lutte avec lui ou occupant la même case que lui (mais pas à lui). Elle inflige 1 point de dégâts à toute créature se trouvant dans un rayonnement de 1,50 mètre autour du porteur (mais pas à celles qui reçoivent déjà des dégâts parce qu’elles sont en lutte avec lui). Tant que le pouvoir d’armure fumante est actif, une créature qui se trouve dans un rayon de 1,50 mètre autour de son porteur et lui lance une attaque au corps à corps ou tente une manoeuvre offensive contre lui doit réussir un jet de Réflexes DD 14 ou subir 1d6 points de dégâts de feu. 
+Le pouvoir spécial d’armure fumante s’applique uniquement sur des armures intermédiaires ou lourdes.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#EVOCATION" title="Présentation des sorts">Évocation</a> faible ; <b>NLS</b> 3 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.aura%20%c3%a9l%c3%a9mentaire.ashx" title="Aura élémentaire">aura élémentaire</a></i> ; <b>Prix</b> +2 bonus</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Graisseuse" href="#Graisseuse"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Graisseuse<div style="float:right;"></div></div>
+Une armure graisseuse semble en permanence recouverte d’un film gras qui offre un bonus d’aptitude de +5 aux tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a> de son porteur. Le malus d’armure aux tests s’applique normalement.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#INVOCATION" title="Présentation des sorts">Invocation</a> faible ; <b>NLS</b> 4 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.graisse.ashx" title="Graisse">graisse</a></i> ; <b>Prix</b> +3 750 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Graisseusesupérieure" href="#Graisseusesupérieure"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Graisseuse supérieure<div style="float:right;"></div></div>
+Cette propriété est identique à <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Graisseuse" title="Les armures et boucliers magiques">graisseuse</a>, mais elle confère un bonus d’aptitude de +10 aux tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#INVOCATION" title="Présentation des sorts">Invocation</a> modérée ; <b>NLS</b> 10 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.graisse.ashx" title="Graisse">graisse</a></i> ; <b>Prix</b> +15 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Graisseusesuprême" href="#Graisseusesuprême"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Graisseuse suprême<div style="float:right;"></div></div>
+Cette propriété est identique à <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Graisseuse" title="Les armures et boucliers magiques">graisseuse</a>, mais elle confère un bonus d’aptitude de +15 aux tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#INVOCATION" title="Présentation des sorts">Invocation</a> puissante ; <b>NLS</b> 15 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.graisse.ashx" title="Graisse">graisse</a></i> ; <b>Prix</b> +33 750 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Impie" href="#Impie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Impie<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Les armures qui possèdent cette propriété sont souvent sculptées de symboles impies. Une fois par jour et sur commande, le porteur de l’armure peut invoquer un effet de <i><a class="pagelink" href="Pathfinder-RPG.force%20du%20colosse.ashx" title="Force du colosse">force du colosse</a></i> pendant 10 rounds. L’armure impie est toujours d’alignement <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">Mauvais</a> (énergie négative) en ce qui concerne ces effets. Les armures impies infligent un <a class="pagelink" href="Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx" title="niveau négatif">niveau négatif</a> permanent à toute créature <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">Bonne</a> qui les enfile. Il perdure tant que la créature porte l’armure ou le bouclier et disparaît quand elle l’enlève. La créature ne peut pas se débarrasser de ce <a class="pagelink" href="Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx" title="niveau négatif">niveau négatif</a> (même avec un sort de <i><a class="pagelink" href="Pathfinder-RPG.restauration.ashx" title="Restauration">restauration</a></i>) tant qu’elle porte l’armure.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> modérée  ; <b>NLS</b> 10  ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.force%20du%20colosse.ashx" title="Force du colosse">force du colosse</a></i> ; <b>prix</b> +27 000 po</li></ul>
+</div>
+</td><td><br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Interceptiondeprojectiles" href="#Interceptiondeprojectiles"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Interception de projectiles<div style="float:right;"></div></div>
+Un bouclier avec cette propriété attire les projectiles. Il confère un bonus de parade de +1 à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> contre les armes à distance. De plus, toute arme de jet et tout projectile qui vise une cible située à 1,50 m ou moins du porteur de ce bouclier sont eux aussi attirés. Si le porteur dispose d’un <a class="pagelink" href="Pathfinder-RPG.abri.ashx" title="abri">abri</a> total vis-à-vis de l’attaquant, l’attaque n’est pas déviée. De même, les attaques à distance visant le porteur ne souffrent d’aucun risque d’échec (comme celui causé par un <a class="pagelink" href="Pathfinder-RPG.camouflage.ashx" title="camouflage">camouflage</a>). Enfin, les armes à projectiles ou de jet possédant un <a class="pagelink" href="Pathfinder-RPG.armures%20magiques.ashx#BONUSALTERATION" title="Les armures et boucliers magiques">bonus d’altération</a> plus élevé que le bonus de base à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> fourni par le bouclier ne sont pas redirigées vers le porteur (mais le bonus de parade du bouclier s’applique malgré tout face à ces attaques). Le porteur peut activer et désactiver les effets de cette propriété grâce à un <a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAMOTDECOMMANDE" title="Règles relatives aux objets magiques">mot de commande</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> modérée ; <b>NLS</b> 8 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.bouclier%20entropique.ashx" title="Bouclier entropique">bouclier entropique</a></i> ; <b>Prix</b> bonus de +1.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Invulnérabilité" href="#Invulnérabilité"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Invulnérabilité<div style="float:right;"></div></div>
+Une armure d’invulnérabilité confère à son porteur une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9duction%20des%20d%c3%a9g%c3%a2ts.ashx" title="réduction des dégâts">réduction des dégâts</a> de 5/magie.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> puissante (et Évocation si l’on utilise miracle) ; <b>NLS</b> 18 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.peau%20de%20pierre.ashx" title="Peau de pierre">peau de pierre</a></i>, et soit <i><a class="pagelink" href="Pathfinder-RPG.miracle.ashx" title="Miracle">miracle</a></i>, soit <i><a class="pagelink" href="Pathfinder-RPG.souhait.ashx" title="Souhait">souhait</a></i> ; <b>Prix</b> bonus de +3.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Joute" href="#Joute"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Joute<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Cette armure aide son propriétaire à rester en selle et à garder le contrôle de sa monture. Il gagne un bonus de compétence de +5 aux tests d’<a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> faible ; <b>NLS</b> 5  ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, le créateur doit avoir 5 rangs en <a class="pagelink" href="Pathfinder-RPG.%c3%89quitation.ashx" title="Équitation">Équitation</a> ; prix +3 750 po</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Mimétisme" href="#Mimétisme"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Mimétisme<div style="float:right;"></div></div>
+Sur <a class="pagelink" href="Pathfinder-RPG.R%c3%a8gles%20relatives%20aux%20objets%20magiques.ashx#OBJETSAMOTDECOMMANDE" title="Règles relatives aux objets magiques">commande</a>, une armure possédant cette propriété change de forme pour prendre l’aspect de vêtements. Elle conserve toutes ses propriétés (y compris son poids), même lorsqu’elle est transformée. Seul le sort <i><a class="pagelink" href="Pathfinder-RPG.vision%20lucide.ashx" title="Vision lucide">vision lucide</a></i> révèle la véritable nature d’une armure de mimétisme transformée.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ILLUSION" title="Présentation des sorts">Illusion</a> modérée ; <b>NLS</b> 10 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9guisement.ashx" title="Déguisement">déguisement</a></i> ; <b>Prix</b> +2 700 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ombre" href="#Ombre"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Ombre<div style="float:right;"></div></div>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Ombre est également le nom d'un <a class="pagelink" href="Pathfinder-RPG.ombre.ashx" title="Ombre">monstre</a> et d'une <a class="pagelink" href="Pathfinder-RPG.branche%20ombre.ashx" title="Ombre">branche</a> de l'école d'<a class="pagelink" href="Pathfinder-RPG.Illusion.ashx" title="Illusion">Illusion</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Cette armure semble devenir floue quand son porteur tente de se cacher, et les sons qui l’entourent sont atténués, ce qui se traduit par un bonus d’aptitude de +5 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> de son porteur. Le malus d’armure aux tests s’applique normalement.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ILLUSION" title="Présentation des sorts">Illusion</a> faible ; <b>NLS</b> 5 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.invisibilit%c3%a9.ashx" title="Invisibilité">invisibilité</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.silence.ashx" title="Silence">silence</a></i> ; <b>Prix</b> +3 750 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ombresupérieure" href="#Ombresupérieure"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Ombre supérieure<div style="float:right;"></div></div>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Ombre supérieure est également le nom d'un <a class="pagelink" href="Pathfinder-RPG.ombre%20sup%c3%a9rieure.ashx" title="Ombre supérieure">monstre</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Cette propriété est identique à celle d’<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Ombre" title="Les armures et boucliers magiques">ombre</a>, mais elle confère un bonus d’aptitude de +10 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ILLUSION" title="Présentation des sorts">Illusion</a> modérée ; <b>NLS</b> 10 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.invisibilit%c3%a9.ashx" title="Invisibilité">invisibilité</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.silence.ashx" title="Silence">silence</a></i> ; <b>Prix</b> +15 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Ombresuprême" href="#Ombresuprême"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Ombre suprême<div style="float:right;"></div></div>
+Cette propriété est identique à celle d’<a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#Ombre" title="Les armures et boucliers magiques">ombre</a>, mais elle confère un bonus d’aptitude de +15 aux tests de <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ILLUSION" title="Présentation des sorts">Illusion</a> puissante ; <b>NLS</b> 15 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.invisibilit%c3%a9.ashx" title="Invisibilité">invisibilité</a></i> et <i><a class="pagelink" href="Pathfinder-RPG.silence.ashx" title="Silence">silence</a></i> ; <b>Prix</b> +33 750 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PROTECTION" href="#PROTECTION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Protection<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div></div></div>
+Un bouclier de protection permet au porteur de transférer une partie ou l’intégralité du <a class="pagelink" href="Pathfinder-RPG.bonus.ashx" title="bonus">bonus</a> d’altération de son bouclier à la <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> d’une créature adjacente (ce bonus se cumule avec tous les autres). Par une <a class="pagelink" href="Pathfinder-RPG.action%20libre.ashx" title="Action libre">action libre</a> effectuée au début de son <a class="pagelink" href="Pathfinder-RPG.tour.ashx" title="tour">tour</a> avant d’utiliser les autres capacités de son bouclier, le porteur peut désigner une cible adjacente et définit la hauteur du bonus d’altération du bouclier qu’il alloue au début de son tour. Le bonus de CA de la cible dure jusqu’au prochain tour du porteur ou jusqu’à ce que plus de 1,5 mètre (1 <abbr title="cases">c</abbr>) sépare le porteur et la cible, auquel cas le bonus de la cible se dissipe et le bonus d’altération du bouclier fonctionne normalement pour le porteur. Cette capacité n’offre le bonus d’altération du bouclier qu’à la classe d’armure, pas son bonus d’altération sur les <a class="pagelink" href="Pathfinder-RPG.jet%20dattaque.ashx" title="jet dattaque">jets d’attaque</a> (s’il en a un) ni aucune autre propriété du bouclier. Cette propriété est spécifique aux <a class="pagelink" href="Pathfinder-RPG.or%c3%a9ade%20(race).ashx" title="Les Oréades">oréades</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#INVOCATION" title="Présentation des sorts">Invocation</a> modérée ; <b>NLS</b> 8 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.protection%20dautrui.ashx" title="Protection d&#39;autrui">protection d'autrui</a></i> ; <b>Prix</b> bonus de +1.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PROTECTIONSUPERIEURE" href="#PROTECTIONSUPERIEURE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Protection supérieure<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div></div></div>
+Comme la propriété de <a class="pagelink" href="Pathfinder-RPG.Armures%20magiques.ashx#PROTECTION" title="Les armures et boucliers magiques">protection</a>, excepté qu’il en coûte une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>, le porteur définit un nombre d’alliés adjacents qui reçoivent le <a class="pagelink" href="Pathfinder-RPG.bonus.ashx" title="bonus">bonus</a> du bouclier. Tous les alliés désignés reçoivent le même bonus. Si une cible ainsi protégée est à plus de 1,5 mètre (1 <abbr title="cases">c</abbr>) du porteur, l’effet se dissipe pour elle, mais pas pour les autres cibles. Cette propriété est spécifique aux <a class="pagelink" href="Pathfinder-RPG.or%c3%a9ade%20(race).ashx" title="Les Oréades">oréades</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#INVOCATION" title="Présentation des sorts">Invocation</a> modérée ; <b>NLS</b> 12 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.protection%20dautrui.ashx" title="Protection d&#39;autrui">protection d'autrui</a></i> ; <b>Prix</b> bonus de +2.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="RAFALEDENUAGES" href="#RAFALEDENUAGES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Rafale de nuages<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div></div></div>
+Une telle armure est généralement gravée de nuages d’orages et d’éclairs. Si une attaque touche le porteur et inflige au moins 10 points de <a class="pagelink" href="Pathfinder-RPG.jet%20de%20d%c3%a9g%c3%a2t.ashx" title="jet de dégât">dégâts</a> d’électricité, l’armure se charge d’électricité pendant 1 round. Par une <a class="pagelink" href="Pathfinder-RPG.Actions%20rapides.ashx" title="Actions rapides">action rapide</a> qui ne provoque pas d’<a class="pagelink" href="Pathfinder-RPG.attaque%20dopportunit%c3%a9.ashx" title="attaque d&#39;opportunité">attaque d’opportunité</a>, lors de son prochain <a class="pagelink" href="Pathfinder-RPG.tour.ashx" title="tour">tour</a>, le porteur peut utiliser le pouvoir magique <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9charge%20%c3%a9lectrique.ashx" title="Décharge électrique">décharge électrique</a></i>, infligeant 1d6 points de dégâts d’électricité par tranche de 10 points de dégâts d’électricité qu’il a reçus depuis son dernier tour (maximum de 5d6 par tranche de 50 points de dégâts d’électricité ou plus reçus). Les effets de la décharge électrique sont déterminés en fonction du nombre de dégâts que l’attaque électrique qui l’a déclenchée aurait infligés au porteur avant de leur appliquer de quelconques <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20(capacit%c3%a9).ashx" title="Résistance (aux énergies destructrices) (Ext)">résistances</a> ou <a class="pagelink" href="Pathfinder-RPG.Immunit%c3%a9%20(capacit%c3%a9).ashx" title="Immunité (Ext ou Sur)">immunités</a>. Cette propriété est spécifique aux <a class="pagelink" href="Pathfinder-RPG.sylphe%20(race).ashx" title="Les sylphes">sylphes</a>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> et <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#EVOCATION" title="Présentation des sorts">Évocation</a> faibles ; <b>NLS</b> 5 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">résistance aux énergies destructives</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9charge%20%c3%a9lectrique.ashx" title="Décharge électrique">décharge électrique</a></i> ; <b>Prix</b> +5 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Réfléchissant" href="#Réfléchissant"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Réfléchissant<div style="float:right;"></div></div>
+Cette propriété ne peut être placée que sur un bouclier. Un bouclier réfléchissant est lisse comme un miroir et on se voit parfaitement dedans. Une fois par jour, son porteur peut s’en servir pour retourner un sort à son lanceur (voir le sort <i><a class="pagelink" href="Pathfinder-RPG.renvoi%20des%20sorts.ashx" title="Renvoi des sorts">renvoi des sorts</a></i>).
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> puissante ; <b>NLS</b> 14 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.renvoi%20des%20sorts.ashx" title="Renvoi des sorts">renvoi des sorts</a></i> ; <b>Prix</b> bonus de +5.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Résistanceauxénergies" href="#Résistanceauxénergies"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Résistance à l’énergie<div style="float:right;"></div></div>
+Cette propriété peut être placée sur une armure ou un bouclier. Elle protège le porteur des effets d’un type d’énergie (acide, électricité, feu, froid ou son), et l’objet qui en bénéficie porte des décorations spécifiques à l’élément dont il protège. L’armure absorbe les 10 premiers points de dommages d’une attaque d’énergie subie par le porteur, comme si celui-ci utilisait le sort <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">résistance aux énergies destructives</a></i>.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> faible ; <b>NLS</b> 3 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">résistance aux énergies destructives</a></i> ; <b>Prix</b> +18 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Résistanceauxénergiessupérieure" href="#Résistanceauxénergiessupérieure"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Résistance supérieure à l’énergie<div style="float:right;"></div></div>
+En tout point semblable à la propriété décrite ci-dessus, sauf que l’objet absorbe les 20 premiers points de dommages d’une attaque d’énergie subie par le porteur.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> modérée ; <b>NLS</b> 7 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">résistance aux énergies destructives</a></i> ; <b>Prix</b> +42 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Résistanceauxénergiessuprême" href="#Résistanceauxénergiessuprême"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Résistance suprême à l’énergie<div style="float:right;"></div></div>
+En tout point semblable à la propriété décrite ci-dessus, sauf que l’objet absorbe les 30 premiers points de dommages d’une attaque d’énergie subie par le porteur.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> modérée ; <b>NLS</b> 11 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20aux%20%c3%a9nergies%20destructives.ashx" title="Résistance aux énergies destructives">résistance aux énergies destructives</a></i> ; <b>Prix</b> +66 000 po.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Résistanceàlamagie" href="#Résistanceàlamagie"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Résistance à la magie<div style="float:right;"></div></div>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Résistance à la magie est également le nom d'une <a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">capacité spéciale</a> et d'un <a class="pagelink" href="Pathfinder-RPG.sort%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">sort</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Une armure ou un bouclier de résistance à la magie confère à son porteur une <a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">résistance à la magie</a> ; la valeur de celle-ci varie en fonction du modèle (13, 15, 17 ou 19).
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#ABJURATION" title="Présentation des sorts">Abjuration</a> puissante ; <b>NLS</b> 15 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Résistance à la magie">résistance à la magie</a></i> ; <b>Prix</b> bonus de +2 (<a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">RM</a> 13), de +3 (<a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">RM</a> 15), de +4 (<a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">RM</a> 17) ou de +5 (<a class="pagelink" href="Pathfinder-RPG.RM.ashx" title="RM">RM</a> 19).</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Spectral" href="#Spectral"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Spectral(e)<div style="float:right;"></div></div>
+<div style="float:right; padding: 0 0 8px 8px">
+<table>
+<tr style="vertical-align:bottom">
+<td style="display:none; background-color: #f3efe2; border: 1px solid #4b3124; padding: 2px; width:250px; text-align: left">
+<table><tr style="vertical-align: top"><td>
+<b><i>Spectral est également le nom d'une <a class="pagelink" href="Pathfinder-RPG.Armes%20magiques.ashx#Spectrale" title="Les armes magiques">propriété d'armes magiques</a>.</i></b></td><td style="height:30px"></td></tr></table></td>
+<td><img style="width:30px" src="http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png" title="Cliquez pour afficher/cacher l'information" alt="Cliquez pour afficher/cacher l'information" ONCLICK="
+var cible = this.parentNode.previousSibling.previousSibling;
+if (cible.style.display=='none') {
+  $(cible).show('slide');
+  $(this).fadeTo(500,0.4);
+} else {
+  $(cible).hide('slide');
+  $(this).fadeTo(500,1);
+}" ONMOUSEOVER="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ialt.png';"
+ONMOUSEOUT="this.src = 'http://www.pathfinder-fr.org/images/pathfinder/wiki/ibase.png';" /></td>
+</tr></table></div>
+Une armure ou un bouclier spectral semble presque translucide. L’ensemble de ses bonus (armure, bouclier, altération) est pris en compte contre les attaques des créatures <a class="pagelink" href="Pathfinder-RPG.intangible.ashx" title="Intangible">intangibles</a>. L’objet enchanté peut être utilisé normalement par les créatures <a class="pagelink" href="Pathfinder-RPG.intangible.ashx" title="Intangible">intangibles</a> ; celles-ci bénéficient de sa protection contre les attaques des créatures dotées d’un corps physique et des créatures <a class="pagelink" href="Pathfinder-RPG.intangible.ashx" title="Intangible">intangibles</a>, tout en pouvant continuer de passer au travers des solides.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> puissante ; <b>NLS</b> 15 ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.passage%20dans%20l%c3%a9ther.ashx" title="Passage dans l&#39;éther">passage dans l’éther</a></i> ; <b>Prix</b> bonus de +3.</li></ul>
+</div><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="Vertueuse" href="#Vertueuse"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<div class="BD">
+<div class="BDtitre">Vertueuse<div style="float:right;"><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div></div></div>
+Les armures qui possèdent cette propriété sont souvent gravées ou émaillées de symboles religieux. Une fois par jour et sur commande, le porteur de l’armure peut invoquer un effet de <i><a class="pagelink" href="Pathfinder-RPG.force%20du%20colosse.ashx" title="Force du colosse">force du colosse</a></i> (comme le sort de même nom) pendant 10 rounds. L’armure vertueuse est toujours d’alignement <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">Bon</a> (énergie positive) en ce qui concerne ces effets. Les armures vertueuses infligent un <a class="pagelink" href="Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx" title="niveau négatif">niveau négatif</a> permanent à toute créature <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">Mauvaise</a> qui les enfile. Il perdure tant que la créature porte l’armure ou le bouclier et disparaît quand elle l’enlève. La créature ne peut pas se débarrasser de ce <a class="pagelink" href="Pathfinder-RPG.niveau%20n%c3%a9gatif.ashx" title="niveau négatif">niveau négatif</a> (même avec un sort de <i><a class="pagelink" href="Pathfinder-RPG.restauration.ashx" title="Restauration">restauration</a></i>) tant qu’elle porte l’armure.
+<div class="box">Caractéristiques</div>
+<ul><li><b>Aura</b> <a class="pagelink" href="Pathfinder-RPG.Pr%c3%a9sentation%20des%20sorts.ashx#TRANSMUTATION" title="Présentation des sorts">Transmutation</a> modérée  ; <b>NLS</b> 10  ; <a class="pagelink" href="Pathfinder-RPG.Cr%c3%a9ation%20darmes%20et%20armures%20magiques.ashx" title="Création d&#39;armes et armures magiques">Création d’armes et armures magiques</a>, <i><a class="pagelink" href="Pathfinder-RPG.force%20du%20colosse.ashx" title="Force du colosse">force du colosse</a></i> ; <b>prix</b> +27 000 po</li></ul>
+</div>
+</td></tr></table><br /><br /><br />
+<h2 class="separator"> Armures spécifiques <a class="headeranchor" id="Armures_spécifiques_3" href="#Armures_spécifiques_3" title="Lien vers cette section">&#0182;</a></h2><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DTMARMURESPECIFIQUE" href="#DTMARMURESPECIFIQUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><center>
+<table CLASS="tablo col1centre"><caption>Armures spécifiques (Manuel des joueurs)</caption><tr CLASS="titre"><td>Faible</td><td>Intermédiaire</td><td>Puissante</td><td>Armure spéciale</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01–50</td><td>01–25</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Chemise%20de%20mailles%20en%20mithral.ashx" title="Chemise de mailles en mithral">Chemise de mailles en mithral</a></i></td><td>1 100 po</td></tr><tr CLASS="alt"><td>51–80</td><td>26–45</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Harnois%20en%20peau%20de%20dragon.ashx" title="Harnois en peau de dragon">Harnois en peau de dragon</a></i></td><td>3 300 po</td></tr><tr><td>81–100</td><td>46–57</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Cotte%20de%20mailles%20elfique.ashx" title="Cotte de mailles elfique">Cotte de mailles elfique</a></i></td><td>5 150 po</td></tr><tr CLASS="alt"><td>—</td><td>58–67</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20de%20peau%20de%20rhinoc%c3%a9ros.ashx" title="Armure de peau de rhinocéros">Armure de peau de rhinocéros</a></i></td><td>5 165 po</td></tr><tr><td>—</td><td>68–82</td><td>01–10</td><td><i><a class="pagelink" href="Pathfinder-RPG.Cuirasse%20en%20adamantium.ashx" title="Cuirasse en adamantium">Cuirasse en adamantium</a></i></td><td>10 200 po</td></tr><tr CLASS="alt"><td>—</td><td>83–97</td><td>11–20</td><td><i><a class="pagelink" href="Pathfinder-RPG.Harnois%20nain.ashx" title="Harnois nain">Harnois nain</a></i></td><td>16 500 po</td></tr><tr><td>—</td><td>98–100</td><td>21–32</td><td><i><a class="pagelink" href="Pathfinder-RPG.Crevice%20de%20la%20seconde%20chance.ashx" title="Crevice de la seconde chance">Crevice de la seconde chance</a></i></td><td>18 900 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>33–50</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20c%c3%a9leste.ashx" title="Armure céleste">Armure céleste</a></i></td><td>22 400 po</td></tr><tr><td>—</td><td>—</td><td>51–60</td><td><i><a class="pagelink" href="Pathfinder-RPG.Harnois%20des%20profondeurs.ashx" title="Harnois des profondeurs">Harnois des profondeurs</a></i></td><td>24 650po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>61–75</td><td><i><a class="pagelink" href="Pathfinder-RPG.Cuirasse%20de%20commandement.ashx" title="Cuirasse de commandement">Cuirasse de commandement</a></i></td><td>25 400 po</td></tr><tr><td>—</td><td>—</td><td>76–90</td><td><i><a class="pagelink" href="Pathfinder-RPG.Harnois%20en%20mithral%20de%20vitesse.ashx" title="Harnois en mithral de vitesse">Harnois en mithral de vitesse</a></i></td><td>26 500 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>91–100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20d%c3%a9moniaque.ashx" title="Armure démoniaque">Armure démoniaque</a></i></td><td>52 260 po</td></tr></table>
+</center><br /><br /><center>
+<table CLASS="tablo col1centre"><caption>Armures spécifiques (APG)</caption><tr CLASS="titre"><td>Intermédiaire</td><td>Puissante</td><td>Armure spéciale</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01-20</td><td>01-02</td><td><i><a class="pagelink" href="Pathfinder-RPG.Maillebrume.ashx" title="Maillebrume">Maillebrume</a></i></td><td>2 250 po</td></tr><tr CLASS="alt"><td>21-35</td><td>03-05</td><td><i><a class="pagelink" href="Pathfinder-RPG.Habits%20du%20devin.ashx" title="Habits du devin">Habits du devin</a></i></td><td>10 300 po</td></tr><tr><td>36-50</td><td>06</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20de%20contorsionniste.ashx" title="Armure de contorsionniste">Armure de contorsionniste</a></i></td><td>12 160 po</td></tr><tr CLASS="alt"><td>51-65</td><td>07</td><td><i><a class="pagelink" href="Pathfinder-RPG.Habits%20noirs%20du%20meurtrier.ashx" title="Habits noirs du meurtrier">Habits noirs du meurtrier</a></i></td><td>12 405 po</td></tr><tr><td>66-90</td><td>08-12</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20pliante.ashx" title="Armure pliante">Armure pliante</a></i></td><td>12 650 po</td></tr><tr CLASS="alt"><td>91-100</td><td>13-27</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20dinsultes.ashx" title="Armure d&#39;insultes">Armures d'insultes</a></i></td><td>16 175 po</td></tr><tr><td>-</td><td>28-42</td><td><i><a class="pagelink" href="Pathfinder-RPG.Cuirasse%20du%20boucanier.ashx" title="Cuirasse du boucanier">Cuirasse du boucanier</a></i></td><td>23 850 po</td></tr><tr CLASS="alt"><td>-</td><td>43-49</td><td><i><a class="pagelink" href="Pathfinder-RPG.Crevice%20impie.ashx" title="Crevice impie">Crevice impie</a></i></td><td>25 400 po</td></tr><tr><td>-</td><td>50-61</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.ogre.ashx" title="Ogre">ogre</a>)</i></td><td>39 165 po</td></tr><tr CLASS="alt"><td>-</td><td>62-71</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20des%20collines.ashx" title="Géant des collines">des collines</a>)</i></td><td>46 665 po</td></tr><tr><td>-</td><td>72-81</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20des%20pierres.ashx" title="Géant de pierre">des pierres</a>)</i></td><td>54 165 po</td></tr><tr CLASS="alt"><td>-</td><td>82-86</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20du%20feu.ashx" title="Géant du feu">du feu</a>)</i></td><td>54 165 po</td></tr><tr><td>-</td><td>87-91</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20du%20froid.ashx" title="Géant du froid">du froid</a>)</i></td><td>54 165 po</td></tr><tr CLASS="alt"><td>-</td><td>92-96</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.troll.ashx" title="Troll">troll</a>)</i></td><td>59 165 po</td></tr><tr><td>-</td><td>97</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20des%20nuages.ashx" title="Géant des nuages">des nuages</a>)</i></td><td>69 165 po</td></tr><tr CLASS="alt"><td>-</td><td>98</td><td><i><a class="pagelink" href="Pathfinder-RPG.Armure%20en%20peau%20de%20g%c3%a9ant.ashx" title="Armure en peau de géant">Armure en peau de géant</a> (<a class="pagelink" href="Pathfinder-RPG.G%c3%a9ant%20des%20temp%c3%aates.ashx" title="Géant des tempêtes">des tempêtes</a>)</i></td><td>76 665 po</td></tr><tr><td>-</td><td>99-100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Astre%20du%20jour.ashx" title="Astre du jour">Astre du jour</a></i></td><td>81 250 po</td></tr></table>
+</center><br /><br /><br /><br /><h2 class="separator"> Boucliers spécifiques <a class="headeranchor" id="Boucliers_spécifiques_4" href="#Boucliers_spécifiques_4" title="Lien vers cette section">&#0182;</a></h2>
+<div class="ref right" style="padding: 0 0 3px 3px;"><a name="DTMBOUCLIERSPECIFIQUE" href="#DTMBOUCLIERSPECIFIQUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div><br /><center>
+<table CLASS="tablo col1centre"><caption>Boucliers spécifiques (Manuel des Joueurs)</caption><tr CLASS="titre"><td>Mineur</td><td>Intermédiaire</td><td>Puissant</td><td>Bouclier spécial</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01–30</td><td>01–20</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Rondache%20en%20%c3%a9b%c3%a9nite.ashx" title="Rondache en ébénite">Rondache en ébénite</a></i></td><td>203 po</td></tr><tr CLASS="alt"><td>31–80</td><td>21–45</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.%c3%89cu%20en%20%c3%a9b%c3%a9nite.ashx" title="Écu en ébénite">Écu en ébénite</a></i></td><td>257 po</td></tr><tr><td>81–95</td><td>46–70</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.%c3%89cu%20en%20mithral.ashx" title="Écu en mithral">Écu en mithral</a></i></td><td>1 020 po</td></tr><tr CLASS="alt"><td>96–100</td><td>71–85</td><td>01–20</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20des%20arcanes.ashx" title="Bouclier des arcanes">Bouclier des arcanes</a></i></td><td>3 153 po</td></tr><tr><td>—</td><td>86–90</td><td>21–40</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20de%20la%20manticore.ashx" title="Bouclier de la manticore">Bouclier de la manticore</a></i></td><td>5 580 po</td></tr><tr CLASS="alt"><td>—</td><td>91–95</td><td>41–60</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20du%20lion.ashx" title="Bouclier du lion">Bouclier du lion</a></i></td><td>9 170 po</td></tr><tr><td>—</td><td>96–100</td><td>61–90</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20ail%c3%a9.ashx" title="Bouclier ailé">Bouclier ailé</a></i></td><td>17 257 po</td></tr><tr CLASS="alt"><td>—</td><td>—</td><td>91–100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20phagocyte.ashx" title="Bouclier phagocyte">Bouclier phagocyte</a></i></td><td>50 170 po</td></tr></table>
+</center><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><center>
+<table CLASS="tablo col1centre"><caption>Boucliers spécifiques </caption><tr CLASS="titre"><td>Puissant</td><td>Bouclier spécial</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01-50</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20cr%c3%a9nel%c3%a9.ashx" title="Bouclier crénelé">Bouclier crénelé</a></i></td><td>16 180 po</td></tr><tr CLASS="alt"><td>51-100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20forteresse.ashx" title="Bouclier forteresse">Bouclier forteresse</a></i></td><td>19 180 po</td></tr></table>
+</center><br /><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Manuel des races/Advanced Race Guide" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoMR.gif" style="opacity: 0.7" />
+</div><center>
+<table CLASS="tablo col1centre"><caption>Boucliers spécifiques</caption><tr CLASS="titre"><td> Bouclier spécial</td><td>Prix de vente</td></tr><tr CLASS="premier"><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20c%c3%a9leste.ashx" title="Bouclier céleste">Bouclier céleste</a></i> (aasimar)</td><td>13 170 po</td></tr><tr CLASS="alt"><td><i><a class="pagelink" href="Pathfinder-RPG.Bouclier%20%c3%a9lys%c3%a9en.ashx" title="Bouclier élyséen">Bouclier élyséen</a></i> (aasimar)</td><td>26 390 po</td></tr></table>
+</center>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
