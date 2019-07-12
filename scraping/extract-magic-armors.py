@@ -27,15 +27,15 @@ REFERENCE = PATHFINDER + "Pathfinder-RPG.Armures%20magiques.ashx"
 TYPE = "Armure/Bouclier"
 IGNORE = ["Armure spécifique","Bouclier spécifique"]
 TABLEDEF = {
-    1: [4,5],
-    2: [4,5],
-    3: [4,5],
-    4: [4,5],
-    5: [4,5],
-    6: [3,4],
-    7: [4,5],
-    8: [2,3],
-    9: [1,2],
+    1: [4,5,""],
+    2: [4,5,"Armure: "],
+    3: [4,5,"Armure: "],
+    4: [4,5,"Bouclier: "],
+    5: [4,5,""],
+    6: [3,4,""],
+    7: [4,5,""],
+    8: [2,3,""],
+    9: [1,2,""],
 }
 
 
@@ -68,7 +68,7 @@ for t in tables:
         for td in tr.find_all('td'):
             columnIdx += 1
             if columnIdx == TABLEDEF[tableIdx][0]:
-                nom = td.text
+                nom = TABLEDEF[tableIdx][2] + td.text
                 href = td.find('a')
                 if href:
                     href = href['href']
