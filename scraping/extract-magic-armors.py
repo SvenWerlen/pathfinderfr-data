@@ -66,7 +66,7 @@ for t in tables:
         for td in tr.find_all('td'):
             columnIdx += 1
             if columnIdx == TABLEDEF[tableIdx][0]:
-                nom = TABLEDEF[tableIdx][2] + html2text(td)
+                nom = html2text(td)
                 href = td.find('a')
                 if href:
                     href = href['href']
@@ -80,7 +80,9 @@ for t in tables:
         # ignorer certaines entrées (référence à un autre tableau dans la page)
         if nom in IGNORE:
             continue
-        
+        else:
+            nom = TABLEDEF[tableIdx][2] + nom
+            
         # référence de base
         reference = REFERENCE
         
@@ -136,7 +138,11 @@ for t in tables:
         if "aura" in data:
             element["07Aura"] = data["aura"]
         if "nls" in data:
-            element["08NLS"] = data["nls"]
+            # NLS parfois variable
+            if isinstance(data["nls"], int):
+                element["08NLS"] = data["nls"]
+            else:
+                element["20Description"] = "NLS: " + data["nls"] + "\n\n" + element["20Description"]
         if "conditions" in data:
             element["09Conditions"] = data["conditions"]
         if "coût" in data:
