@@ -106,7 +106,11 @@ def extractProps(liste):
                         props["nls"] = int(NLS.group(1))
                         props["conditions"] = cleanProperty(NLS.group(2))
                     else:
-                        props["nls"] = int(value)
+                        try:
+                            props["nls"] = int(value)
+                        except:
+                            props["nls"] = value
+                        
                 # ignorer "Prix" qui est déjà déterminé
                 elif curProp != "prix":
                     props[curProp] = value
@@ -162,6 +166,11 @@ def extractBD_Type1(html):
     # merge props
     return { **{'descr': descr.strip()}, **caracs }
 
+
+def cleanDescription(descr):
+    return descr.replace('•','*)').strip()
+    
+
 #
 # cette fonction extait une propriété (format BD type 2)
 #
@@ -216,4 +225,4 @@ def extractBD_Type2(html):
     checkProperties(fabrics,VALID_FABRICS)
     
     # merge props
-    return { **{'descr': descr.strip()}, **props, **fabrics }
+    return { **{'descr': cleanDescription(descr)}, **props, **fabrics }
