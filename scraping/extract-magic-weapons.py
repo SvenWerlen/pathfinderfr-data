@@ -26,7 +26,7 @@ liste = []
 # second = column with cost
 PATHFINDER = "http://www.pathfinder-fr.org/Wiki/"
 REFERENCE = PATHFINDER + "Pathfinder-RPG.Armes magiques.ashx"
-TYPE = "Armes"
+TYPE = "Arme"
 IGNORE = ["Arme spécifique"]
 TABLEDEF = {
     1: [4,5,"", {'descr': TEXTE}],
