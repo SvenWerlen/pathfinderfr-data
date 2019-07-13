@@ -23,7 +23,7 @@ def table2text(table):
         if first:
             first = False
         else:
-            text += "*) "
+            text += "• "
         for td in tr:
             text += td.text.strip() + ", "
         text = text[:-2] + "\n"
@@ -168,7 +168,7 @@ def extractBD_Type1(html):
 
 
 def cleanDescription(descr):
-    return descr.replace('•','*)').strip()
+    return descr.strip()
     
 
 #
