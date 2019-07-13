@@ -17,8 +17,10 @@ MOCK_MAGIC = "mocks/magic-armors.html"                  # décommenter pour test
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-bouclier-elysien.html"      # décommenter pour tester avec détails pré-téléchargé
 
+TEXTE = 'Le niveau de lanceur de sorts d’une armure ou d’un bouclier possédant une ou plusieurs propriétés spéciales est indiqué dans la description de l’objet. Si l’armure ou le bouclier bénéficie seulement d’un bonus d’altération, son niveau de lanceur de sorts est égal à trois fois son bonus. Si l’objet possède un bonus d’altération ainsi que des propriétés magiques, le plus haut niveau de lanceur de sorts entre les deux est celui qui doit être considéré.\n\nBoucliers. Le bonus d’altération d’un bouclier magique se cumule avec le bonus d’altération d’une armure magique. Le bonus d’altération du bouclier n’est pas comptabilisé dans le jet d’attaque ou de dégâts dans le cas d’un coup de bouclier. La propriété spéciale d’attaque confère un bonus d’altération de +1 aux jets d’attaque et de dégâts avec un bouclier (voir la description de la capacité spéciale "Attaque").'
 
 liste = []
+
 
 # first = column with name
 # second = column with cost
@@ -27,7 +29,7 @@ REFERENCE = PATHFINDER + "Pathfinder-RPG.Armures%20magiques.ashx"
 TYPE = "Armure/Bouclier"
 IGNORE = ["Armure spécifique","Bouclier spécifique"]
 TABLEDEF = {
-    1: [4,5,""],
+    1: [4,5,"", {'descr': TEXTE}],
     2: [4,5,"Armure: "],
     3: [4,5,"Armure: "],
     4: [4,5,"Bouclier: "],
@@ -56,6 +58,7 @@ for t in tables:
     tableIdx += 1
     caption = t.find('caption').text
     for tr in t.find_all('tr'):
+        
         if tr.has_attr('class') and (tr['class'][0] == 'titre' or tr['class'][0] == 'soustitre'):
             continue
         
@@ -81,10 +84,13 @@ for t in tables:
         # référence de base
         reference = REFERENCE
         
+        data = {"nom": nom.strip(), "prix": prix.strip(), "descr": ""}
+        
+        if len(TABLEDEF[tableIdx]) == 4:
+            data = { **data, **TABLEDEF[tableIdx][3] }
+        
         # débogage
         #print("Traitement de %s..." % nom.strip())
-        
-        data = {"nom": nom.strip(), "prix": prix.strip(), "descr": ""}
         
         # get description from same page
         if href and "#" in href and not "NOTE" in href:
@@ -132,7 +138,7 @@ for t in tables:
         if "nls" in data:
             element["08NLS"] = data["nls"]
         if "conditions" in data:
-            element["09Fabrication"] = data["conditions"]
+            element["09Conditions"] = data["conditions"]
         if "coût" in data:
             element["10Coût"] = data["coût"]
         
@@ -150,7 +156,7 @@ yml = yml.replace('05Emplacement','Emplacement')
 yml = yml.replace('06Poids','Poids')
 yml = yml.replace('07Aura','Aura')
 yml = yml.replace('08NLS','NLS')
-yml = yml.replace('09Fabrication','Fabrication')
+yml = yml.replace('09Conditions','Conditions')
 yml = yml.replace('10Coût','Coût')
 yml = yml.replace('20Description','Description')
 yml = yml.replace('21Référence','Référence')

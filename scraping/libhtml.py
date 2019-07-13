@@ -25,8 +25,9 @@ def table2text(table):
         else:
             text += "*) "
         for td in tr:
-            text += td.text.replace("\n", " ").strip() + ", "
-        text = text[:-1] + "\n"
+            text += td.text.strip() + ", "
+        text = text[:-2] + "\n"
+
     return text
 
 
