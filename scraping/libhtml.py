@@ -42,7 +42,7 @@ def html2text(htmlEl):
     elif htmlEl.name == 'br':
         return "\n"
     elif htmlEl.name == 'b':
-        return "\n" + htmlEl.text.replace("\n"," ").upper()
+        return htmlEl.text.replace("\n"," ").upper()
     elif htmlEl.name == 'center':
         return table2text(htmlEl.find('table'))
     elif htmlEl.name == 'ul':
@@ -164,11 +164,11 @@ def extractBD_Type1(html):
     #print(props)
     
     # merge props
-    return { **{'descr': descr.strip()}, **caracs }
+    return { **{'nomAlt': titre, 'descr': descr.strip()}, **caracs }
 
 
 def cleanDescription(descr):
-    return descr.strip()
+    return descr.replace("\n\n•","\n•").strip()
     
 
 #
@@ -225,4 +225,4 @@ def extractBD_Type2(html):
     checkProperties(fabrics,VALID_FABRICS)
     
     # merge props
-    return { **{'descr': cleanDescription(descr)}, **props, **fabrics }
+    return { **{'nomAlt': titre, 'descr': cleanDescription(descr)}, **props, **fabrics }
