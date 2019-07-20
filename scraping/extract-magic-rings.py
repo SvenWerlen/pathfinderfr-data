@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text
+from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cleanName
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
@@ -79,7 +79,7 @@ for t in tables:
         # référence de base
         reference = REFERENCE
         
-        data = {"nom": nom.strip(), "prix": prix.strip(), "descr": ""}
+        data = {"nom": cleanName(nom), "prix": prix.strip(), "descr": ""}
         
         if len(TABLEDEF[tableIdx]) == 4:
             data = { **data, **TABLEDEF[tableIdx][3] }

@@ -11,7 +11,7 @@ TYPE_DESCR = 1
 TYPE_PROPS = 2
 TYPE_FABRI = 3
 
-VALID_PROPS   = ["aura", "nls", "conditions", "emplacement", "poids"]
+VALID_PROPS   = ["aura", "nls", "conditions", "emplacement", "poids", "prixalt"] 
 VALID_FABRICS = ["coût", "conditions"]
 
 
@@ -77,7 +77,8 @@ def checkProperties(caracs, valid):
         #print("Checking %s..." % c)
         found = False
         for v in valid:
-            if c.lower() == v:
+            #print("- %s == %s?" % (c.lower(), v.lower()))
+            if c.lower() == v.lower():
                 found = True
                 break
         if not found:
@@ -111,10 +112,13 @@ def extractProps(liste):
                         except:
                             props["nls"] = value
                         
-                # ignorer "Prix" qui est déjà déterminé
-                elif curProp != "prix":
-                    props[curProp] = value
                 
+                else:
+                    # "Prix" est déjà déterminé
+                    if curProp == "prix":
+                        curProp = "prixAlt"
+                        
+                    props[curProp] = value
                     
             curProp = el.text.strip().lower()
             curValue = ""
@@ -169,7 +173,9 @@ def extractBD_Type1(html):
 
 def cleanDescription(descr):
     return descr.replace("\n\n•","\n•").strip()
-    
+
+def cleanName(name):
+    return name.replace("’","'").strip()
 
 #
 # cette fonction extait une propriété (format BD type 2)
@@ -178,9 +184,9 @@ def cleanDescription(descr):
 #   -------------
 #   Caractéristiques
 #   -------------
-#   Description
+#   Description OR Caractéristiques (A&E)
 #   -------------
-#   Fabrication (optionnel)
+#   Fabrication (optionnel) OR Creation (A&E)
 #
 def extractBD_Type2(html):
     
@@ -197,9 +203,9 @@ def extractBD_Type2(html):
     fabrics = []
     for el in titreEl.next_siblings:
         if el.name == "div" and 'class' in el.attrs and "box" in el.attrs['class']:
-            if el.text.lower() == "description":
+            if el.text.lower() == "description" or el.text.lower() == "caractéristiques":
                 section = TYPE_DESCR
-            elif el.text.lower() == "fabrication":
+            elif el.text.lower() == "fabrication" or el.text.lower() == "création":
                 section = TYPE_FABRI
             else:
                 print("Section invalide: %s" % el.text)
@@ -225,4 +231,4 @@ def extractBD_Type2(html):
     checkProperties(fabrics,VALID_FABRICS)
     
     # merge props
-    return { **{'nomAlt': titre, 'descr': cleanDescription(descr)}, **props, **fabrics }
+    return { **{'nomAlt': cleanName(titre), 'descr': cleanDescription(descr)}, **props, **fabrics }
