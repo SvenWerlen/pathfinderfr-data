@@ -1,0 +1,1482 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Liste alphabétique des objets merveilleux - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.liste alphabétique des objets merveilleux.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Liste+alphab%u00e9tique+des+objets+merveilleux&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwFSkpbMiBsV38BtKsv50WAl2+FKQ=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAImRd5Bz3ZGUtbKdg87wy+6+B72oi3QcwxQT+thNGyuulQaeZwQ9c/yGVvnw+A1oJ4sxMDu" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.liste alphabétique des objets merveilleux">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.liste alphabétique des objets merveilleux">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.liste alphabétique des objets merveilleux">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.liste alphabétique des objets merveilleux.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.liste alphabétique des objets merveilleux.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.liste%20alphab%c3%a9tique%20des%20objets%20merveilleux">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Liste alphabétique des objets merveilleux
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.liste%20alphab%c3%a9tique%20des%20objets%20merveilleux" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<i>Retour à la page des <a class="pagelink" href="Pathfinder-RPG.objets%20merveilleux.ashx" title="Les Objets merveilleux">objets merveilleux</a></i>.
+<table id="TocContainerTable"><tr><td><div id="TocContainer"><p class="small"><b>Table des Matières</b><span id="ExpandTocSpan"> [<a href="#" onclick="javascript:if(document.getElementById('Toc').style['display']=='none') document.getElementById('Toc').style['display']=''; else document.getElementById('Toc').style['display']='none'; return false;">Cacher/Visualiser</a>]</span></p><div id="Toc"><p><br />&nbsp;&nbsp;&nbsp;<a href="#A_0">A</a><br />&nbsp;&nbsp;&nbsp;<a href="#B_1">B</a><br />&nbsp;&nbsp;&nbsp;<a href="#C_2">C</a><br />&nbsp;&nbsp;&nbsp;<a href="#D_3">D</a><br />&nbsp;&nbsp;&nbsp;<a href="#E_4">E</a><br />&nbsp;&nbsp;&nbsp;<a href="#F_5">F</a><br />&nbsp;&nbsp;&nbsp;<a href="#G_6">G</a><br />&nbsp;&nbsp;&nbsp;<a href="#H_7">H</a><br />&nbsp;&nbsp;&nbsp;<a href="#I_8">I</a><br />&nbsp;&nbsp;&nbsp;<a href="#J_9">J</a><br />&nbsp;&nbsp;&nbsp;<a href="#K_10">K</a><br />&nbsp;&nbsp;&nbsp;<a href="#L_11">L</a><br />&nbsp;&nbsp;&nbsp;<a href="#M_12">M</a><br />&nbsp;&nbsp;&nbsp;<a href="#N_13">N</a><br />&nbsp;&nbsp;&nbsp;<a href="#O_14">O</a><br />&nbsp;&nbsp;&nbsp;<a href="#P_15">P</a><br />&nbsp;&nbsp;&nbsp;<a href="#Q_16">Q</a><br />&nbsp;&nbsp;&nbsp;<a href="#R_17">R</a><br />&nbsp;&nbsp;&nbsp;<a href="#S_18">S</a><br />&nbsp;&nbsp;&nbsp;<a href="#T_19">T</a><br />&nbsp;&nbsp;&nbsp;<a href="#U_20">U</a><br />&nbsp;&nbsp;&nbsp;<a href="#V_21">V</a><br />&nbsp;&nbsp;&nbsp;<a href="#W_22">W</a><br />&nbsp;&nbsp;&nbsp;<a href="#X_23">X</a><br />&nbsp;&nbsp;&nbsp;<a href="#Y_24">Y</a><br />&nbsp;&nbsp;&nbsp;<a href="#Z_25">Z</a><br />&nbsp;&nbsp;&nbsp;<a href="#Objets_magiques_raciaux_26">Objets magiques raciaux</a><br />&nbsp;&nbsp;&nbsp;<a href="#Autres_objets_27">Autres objets</a><br /></p></div></div></td></tr></table><br /><h2 class="separator">A<a class="headeranchor" id="A_0" href="#A_0" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Ailes%20de%20vol.ashx" title="Ailes de vol">Ailes de vol</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20dantid%c3%a9tection.ashx" title="Amulette d&#39;antidétection">Amulette d’antidétection</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20dastuce%20magique.ashx" title="Amulette d&#39;astuce magique">Amulette d'astuce magique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20darmure%20naturelle.ashx" title="Amulette d&#39;armure naturelle">Amulette d’armure naturelle</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20des%20arts%20magiques.ashx" title="Amulette des arts magiques">Amulette des arts magiques</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20de%20lumi%c3%a8re%20cach%c3%a9e.ashx" title="Amulette de lumière cachée">Amulette de lumière cachée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20des%20plans.ashx" title="Amulette des plans">Amulette des plans</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20des%20poings%20invincibles.ashx" title="Amulette des poings invincibles">Amulette des poings invincibles</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20de%20sombresire.ashx" title="Amulette de sombresire">Amulette de sombresire</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20de%20vie%20canalis%c3%a9e.ashx" title="Amulette de vie canalisée">Amulette de vie canalisée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Amulette%20en%20dent%20de%20requin.ashx" title="Amulette en dent de requin">Amulette en dent de requin</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneaux%20de%20transport.ashx" title="Anneaux de transport">Anneaux de transport</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Atham%c3%a9%20du%20n%c3%a9cromancien.ashx" title="Athamé du nécromancien">Athamé du nécromancien</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Aur%c3%a9ole%20de%20calme%20int%c3%a9rieur.ashx" title="Auréole de calme intérieur">Auréole de calme intérieur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Aur%c3%a9ole%20de%20menace.ashx" title="Auréole de menace">Auréole de menace</a> <br />
+</div><br /><h2 class="separator">B<a class="headeranchor" id="B_1" href="#B_1" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Balai%20volant.ashx" title="Balai volant">Balai volant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandages%20de%20gu%c3%a9rison%20rapide.ashx" title="Bandages de guérison rapide">Bandages de guérison rapide</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20dinspiration.ashx" title="Bandeau d&#39;inspiration">Bandeau d’inspiration</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20dintelligence.ashx" title="Bandeau d&#39;intelligence">Bandeau d’intelligence</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20de%20belle%20allure.ashx" title="Bandeau de belle allure">Bandeau de belle allure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20de%20contr%c3%b4le%20de%20la%20vermine.ashx" title="Bandeau de contrôle de la vermine">Bandeau de contrôle de la vermine</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20de%20prouesse%20mentale.ashx" title="Bandeau de prouesse mentale">Bandeau de prouesse mentale</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bandeau%20de%20sup%c3%a9riorit%c3%a9%20mentale.ashx" title="Bandeau de supériorité mentale">Bandeau de supériorité mentale</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Banni%c3%a8re%20seigneuriale.ashx" title="Bannière seigneuriale">Bannière seigneuriale</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bateau%20pliant.ashx" title="Bateau pliant">Bateau pliant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bille%20de%20force.ashx" title="Bille de force">Bille de force</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bo%c3%aete%20%c3%a0%20tintamarre.ashx" title="Boîte à tintamarre">Boîte à tintamarre</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20ail%c3%a9es.ashx" title="Bottes ailées">Bottes ailées</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20fuite.ashx" title="Bottes de fuite">Bottes de fuite</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20l%c3%a9vitation.ashx" title="Bottes de lévitation">Bottes de lévitation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20rapidit%c3%a9.ashx" title="Bottes de rapidité">Bottes de rapidité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20sept%20lieues.ashx" title="Bottes de sept lieues">Bottes de sept lieues</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20t%c3%a9l%c3%a9portation.ashx" title="Bottes de téléportation">Bottes de téléportation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20de%20terrain%20amical.ashx" title="bottes de terrain amical">Bottes de terrain amical</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20des%20terres%20gel%c3%a9es.ashx" title="Bottes des terres gelées">Bottes des terres gelées</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bottes%20elfiques.ashx" title="Bottes elfiques">Bottes elfiques</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Boule%20de%20cristal.ashx" title="Boule de cristal">Boule de cristal</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bouteille%20%c3%a0%20message.ashx" title="Bouteille à message">Bouteille à message</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelet%20dassistance.ashx" title="Bracelet d&#39;assistance">Bracelet d’assistance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelets%20darcher.ashx" title="Bracelets d&#39;archer">Bracelets d’archer</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelets%20darmure.ashx" title="Bracelets d&#39;armure">Bracelets d’armure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelet%20de%20ch%c3%a2timent%20argent%c3%a9.ashx" title="Bracelet de châtiment argenté">Bracelet de châtiment argenté</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelets%20de%20gr%c3%a2ce.ashx" title="Bracelets de grâce">Bracelets de grâce</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bracelets%20de%20la%20vengeance%20promise.ashx" title="Bracelets de la vengeance promise">Bracelets de la vengeance promise</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Brique%20de%20r%c3%a9paration.ashx" title="Brique de réparation">Brique de réparation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Broche%20antigolems.ashx" title="Broche antigolems">Broche antigolems</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Broche%20de%20cam%c3%a9l%c3%a9on%20racial.ashx" title="Broche de caméléon racial">Broche de caméléon racial</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Broche%20de%20d%c3%a9fense.ashx" title="Broche de défense">Broche de défense</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bulle%20au%20tr%c3%a9sor.ashx" title="Bulle au trésor">Bulle au trésor</a> <br />
+</div><br /><h2 class="separator">C<a class="headeranchor" id="C_2" href="#C_2" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Cape%20dapparence%20humaine.ashx" title="Cape d&#39;apparence humaine">Cape d'apparence humaine</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20crocs.ashx" title="Cape de crocs">Cape de crocs</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20d%c3%a9placement.ashx" title="Cape de déplacement">Cape de déplacement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20du%20diplomate.ashx" title="Cape du diplomate">Cape du diplomate</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20dissimulation%20enflamm%c3%a9e.ashx" title="Cape de dissimulation enflammée">Cape de dissimulation enflammée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20laraign%c3%a9e.ashx" title="Cape de l&#39;araignée">Cape de l’araignée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20la%20chauve-souris.ashx" title="Cape de la chauve-souris">Cape de la chauve-souris</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20la%20raie%20manta.ashx" title="Cape de la raie manta">Cape de la raie manta</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20prestidigitateur.ashx" title="Cape de prestidigitateur">Cape de prestidigitateur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20de%20r%c3%a9sistance.ashx" title="Cape de résistance">Cape de résistance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20du%20l%c3%a2che%20accroupi.ashx" title="Cape du lâche accroupi">Cape du lâche accroupi</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20elfique.ashx" title="Cape elfique">Cape elfique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20%c3%a9th%c3%a9r%c3%a9e.ashx" title="Cape éthérée">Cape éthérée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cape%20enveloppante.ashx" title="Cape enveloppante">Cape enveloppante</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Carafe%20intarissable.ashx" title="Carafe intarissable">Carafe intarissable</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cartes%20fantasmagoriques.ashx" title="Cartes fantasmagoriques">Cartes fantasmagoriques</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Carillon%20dinterruption.ashx" title="Carillon d&#39;interruption">Carillon d’interruption</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Carillon%20douverture.ashx" title="Carillon d&#39;ouverture">Carillon d’ouverture</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Carquois%20efficace.ashx" title="Carquois efficace">Carquois efficace</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Carreau%20du%20sp%c3%a9l%c3%a9ologue.ashx" title="Carreau du spéléologue">Carreau du spéléologue</a>  <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20compr%c3%a9hension.ashx" title="Casque de compréhension">Casque de compréhension</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20lhomme-poisson.ashx" title="Casque de l&#39;homme-poisson">Casque de l’homme-poisson</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20mille%20feux.ashx" title="Casque de mille feux">Casque de mille feux</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20pr%c3%a9sence%20intimidante.ashx" title="Casque de présence intimidante">Casque de présence intimidante</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20t%c3%a9l%c3%a9pathie.ashx" title="Casque de télépathie">Casque de télépathie</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Casque%20de%20t%c3%a9l%c3%a9portation.ashx" title="Casque de téléportation">Casque de téléportation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cataplasme%20de%20soins.ashx" title="Cataplasme de soins">Cataplasme de soins</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20des%20nains.ashx" title="Ceinture des nains">Ceinture des nains</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20de%20constitution%20de%20lours.ashx" title="Ceinturon de constitution de l&#39;ours">Ceinturon de constitution de l’ours</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20de%20dext%c3%a9rit%c3%a9%20du%20chat.ashx" title="Ceinturon de dextérité du chat">Ceinturon de dextérité du chat</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20de%20force%20de%20g%c3%a9ant.ashx" title="Ceinturon de force de géant">Ceinturon de force de géant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20de%20la%20perfection%20physique.ashx" title="Ceinturon de la perfection physique">Ceinturon de la perfection physique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20peau%20de%20pierre.ashx" title="Ceinture de peau de pierre">Ceinture de peau de pierre</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20de%20puissance%20de%20g%c3%a9ant.ashx" title="Ceinturon de puissance de géant">Ceinturon de puissance de géant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20du%20cueilleur.ashx" title="Ceinture du cueilleur">Ceinture du cueilleur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20m%c3%a9ridienne.ashx" title="Ceinture méridienne">Ceinture méridienne</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cha%c3%aenes%20dignoble%20emprisonnement.ashx" title="Chaînes d&#39;ignoble emprisonnement">Chaînes d’ignoble emprisonnement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cha%c3%aenes%20dimensionnelles.ashx" title="Chaînes dimensionnelles">Chaînes dimensionnelles</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ch%c3%a2le%20d%c3%a9cume.ashx" title="Châle d&#39;écume">Châle d’écume</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ch%c3%a2le%20de%20pr%c3%a9servation%20vitale.ashx" title="Châle de préservation vitale">Châle de préservation vitale</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chapelet%20de%20pri%c3%a8res.ashx" title="Chapelet de prières">Chapelet de prières</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Charme%20antipoison.ashx" title="Charme antipoison">Charme antipoison</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Charme%20de%20bonne%20sant%c3%a9.ashx" title="Charme de bonne santé">Charme de bonne santé</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Charme%20de%20coagulation.ashx" title="Charme de coagulation">Charme de coagulation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chasuble%20de%20druide.ashx" title="Chasuble de druide">Chasuble de druide</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chasuble%20de%20la%20foi.ashx" title="Chasuble de la foi">Chasuble de la foi</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20%c3%a0%20d%c3%a9coction.ashx" title="Chaudron à décoction">Chaudron à décoction</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20dabondance.ashx" title="Chaudron d&#39;abondance">Chaudron d'abondance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20des%20morts.ashx" title="Chaudron des morts">Chaudron des morts</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20de%20r%c3%a9surrection.ashx" title="Chaudron de résurrection">Chaudron de résurrection</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20de%20vision.ashx" title="Chaudron de vision">Chaudron de vision</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaudron%20de%20vol.ashx" title="Chaudron de vol">Chaudron de vol</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaussons%20daraign%c3%a9e.ashx" title="Chaussons d&#39;araignée">Chaussons d’araignée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Chaussons%20du%20triton.ashx" title="Chaussons du triton">Chaussons du triton</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cierge%20dinvocation.ashx" title="Cierge d&#39;invocation">Cierge d’invocation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cierge%20de%20v%c3%a9rit%c3%a9.ashx" title="Cierge de vérité">Cierge de vérité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cirage%20d%c3%a9foliant.ashx" title="Cirage défoliant">Cirage défoliant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Clef%20de%20solide%20fermeture.ashx" title="Clef de solide fermeture">Clef de solide fermeture</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Coiffe%20d%e2%80%99apparence%20humaine.ashx" title="Coiffe d’apparence humaine">Coiffe d’apparence humaine</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Colle%20universelle.ashx" title="Colle universelle">Colle universelle</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Collier%20%c3%a0%20boules%20de%20feu.ashx" title="Collier à boules de feu">Collier à boules de feu</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Collier%20dadaptation.ashx" title="Collier d&#39;adaptation">Collier d’adaptation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Collier%20de%20s%c3%a9r%c3%a9nit%c3%a9.ashx" title="Collier de sérénité">Collier de sérénité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cor%20de%20d%c3%a9vastation.ashx" title="Cor de dévastation">Cor de dévastation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cor%20du%20Biendu%20Mal.ashx" title="Cor du Bien/du Mal">Cor du Bien/du Mal</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cor%20du%20Valhalla.ashx" title="Cor du Valhalla">Cor du Valhalla</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corbeau%20de%20jade%20noir.ashx" title="Corbeau de jade noir">Corbeau de jade noir</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cordes%20de%20mulet.ashx" title="Cordes de mulet">Cordes de mulet</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corde%20denchev%c3%aatrement.ashx" title="Corde d&#39;enchevêtrement">Corde d’enchevêtrement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corde%20descalade.ashx" title="Corde d&#39;escalade">Corde d’escalade</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corne%20dantagonisme.ashx" title="Corne d&#39;antagonisme">Corne d'antagonisme</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corne%20de%20brume.ashx" title="Corne de brume">Corne de brume</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corne%20du%20grand%20veneur.ashx" title="Corne du grand veneur">Corne du grand veneur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corset%20du%20vishkanya.ashx" title="Corset du vishkanya">Corset du vishkanya</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Couronne%20d%c3%a9p%c3%a9es.ashx" title="Couronne d&#39;épées">Couronne d'épées</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Couronne%20du%20conqu%c3%a9rant.ashx" title="Couronne du conquérant">Couronne du conquérant</a> <br /><a class="pagelink" href="Pathfinder-RPG.Cape%20de%20rochebrume.ashx" title="Cape de rochebrume">Cape de rochebrume</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Couvre-chef%20de%20d%c3%a9guisement.ashx" title="Couvre-chef de déguisement">Couvre-chef de déguisement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cr%c3%a2ne%20des%20t%c3%a9n%c3%a8bres.ashx" title="Crâne des ténèbres">Crâne des ténèbres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cristal%20des%20mains%20gu%c3%a9risseuses.ashx" title="Cristal des mains guérisseuses">Cristal des mains guérisseuses</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cube%20de%20force.ashx" title="Cube de force">Cube de force</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cube%20de%20r%c3%a9sistance%20au%20froid.ashx" title="Cube de résistance au froid">Cube de résistance au froid</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cube%20des%20plans.ashx" title="Cube des plans">Cube des plans</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cuill%c3%a8re%20nourrissante.ashx" title="Cuillère nourrissante">Cuillère nourrissante</a> <br />
+</div><br /><h2 class="separator">D<a class="headeranchor" id="D_3" href="#D_3" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Diad%c3%a8me%20%c3%a0%20oeil-de-chat.ashx" title="Diadème à oeil-de-chat">Diadème à oeil-de-chat</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Diad%c3%a8me%20de%20la%20lune.ashx" title="Diadème de la lune">Diadème de la lune</a> <br />
+</div><br /><h2 class="separator">E<a class="headeranchor" id="E_4" href="#E_4" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.%c3%89charpe%20de%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx" title="Écharpe de résistance à la magie">Écharpe de résistance à la magie</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89charpe%20du%20champion.ashx" title="Écharpe du champion">Écharpe du champion</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20dacrobatie.ashx" title="Élixir d&#39;acrobatie">Élixir d’acrobatie</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20dacuit%c3%a9%20visuelle.ashx" title="Élixir d&#39;acuité visuelle">Élixir d’acuité visuelle</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Philtre%20damour.ashx" title="Philtre d&#39;amour">Élixir d’Amour</a> (Philtre d’Amour) <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20de%20discr%c3%a9tion%20instinctive.ashx" title="Élixir de discrétion instinctive">Élixir de discrétion instinctive</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20de%20nage.ashx" title="Élixir de nage">Élixir de nage</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20de%20souffle%20enflamm%c3%a9.ashx" title="Élixir de souffle enflammé">Élixir de souffle enflammé</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20de%20vision%20dans%20les%20t%c3%a9n%c3%a8bres.ashx" title="Elixir de vision dans les ténèbres">Élixir de vision dans les ténèbres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89lixir%20dexhalation%20imp%c3%a9rieuse.ashx" title="Élixir d&#39;exhalation impérieuse">Élixir d’exhalation impérieuse</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Encens%20de%20destins%20multiples.ashx" title="Encens de destins multiples">Encens de destins multiples</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Encens%20de%20m%c3%a9ditation.ashx" title="Encens de méditation">Encens de méditation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89tendard%20de%20guerre%20hobgobelin.ashx" title="Étendard de guerre hobgobelin">Étendard de guerre hobgobelin</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89tonnants%20outils%20dartisanat.ashx" title="Étonnants outils d&#39;artisanat">Étonnants outils d'artisanat</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89ventail%20de%20plumes%20noires.ashx" title="Éventail de plumes noires">Éventail de plumes noires</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89ventail%20de%20plumes%20rouges.ashx" title="Éventail de plumes rouges">Éventail de plumes rouges</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89ventail%20enchant%c3%a9.ashx" title="Éventail enchanté">Éventail enchanté</a> <br />
+</div><br /><h2 class="separator">F<a class="headeranchor" id="F_5" href="#F_5" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Fen%c3%aatre%20vacillante.ashx" title="Fenêtre vacillante">Fenêtre vacillante</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fermoir%20ancestral.ashx" title="Fermoir ancestral">Fermoir ancestral</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fers%20%c3%a0%20cheval%20de%20coups%20%c3%a9crasants.ashx" title="Fers à cheval de coups écrasants">Fers à cheval de coups écrasants</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fers%20%c3%a0%20cheval%20de%20rapidit%c3%a9.ashx" title="Fers à cheval de rapidité">Fers à cheval de rapidité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fers%20%c3%a0%20cheval%20du%20z%c3%a9phyr.ashx" title="Fers à cheval du zéphyr">Fers à cheval du zéphyr</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Flacon%20dair%20pur.ashx" title="Flacon d&#39;air pur">Flacon d’air pur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Flasque%20de%20fer.ashx" title="Flasque de fer">Flasque de fer</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fl%c3%bbte%20%c3%a0%20bruitages.ashx" title="Flûte à bruitages">Flûte à bruitages</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fl%c3%bbte%20dHamelin.ashx" title="Flûte d&#39;Hamelin">Flûte d’Hamelin</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fl%c3%bbte%20de%20hantise.ashx" title="Flûte de hantise">Flûte de hantise</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fl%c3%bbte%20du%20gardien%20du%20terrier.ashx" title="Flûte du gardien du terrier">Flûte du gardien du terrier</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Forteresse%20instantan%c3%a9e.ashx" title="Forteresse instantanée">Forteresse instantanée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fourreau%20daff%c3%bbtage.ashx" title="Fourreau d&#39;affûtage">Fourreau d’affûtage</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fourreau%20de%20coagulation.ashx" title="Fourreau de coagulation">Fourreau de coagulation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fourreau%20de%20lame%20discr%c3%a8te.ashx" title="Fourreau de lame discrète">Fourreau de lame discrète</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Fourreau%20de%20vigueur.ashx" title="Fourreau de vigueur">Fourreau de vigueur</a> <br />
+</div><br /><h2 class="separator">G<a class="headeranchor" id="G_6" href="#G_6" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Gants%20antiprojectiles.ashx" title="Gants antiprojectiles">Gants antiprojectiles</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20dassistance.ashx" title="Gants dassistance">Gants d'assistance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20de%20d%c3%a9combres.ashx" title="Gants de décombres">Gants de décombres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20de%20duelliste.ashx" title="Gants de duelliste">Gants de duelliste</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20de%20nage%20et%20descalade.ashx" title="Gants de nage et d&#39;escalade">Gants de nage et d’escalade</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gant%20de%20rangement.ashx" title="Gant de rangement">Gant de rangement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20des%20doigts%20rapides.ashx" title="Gants des doigts rapides">Gants des doigts rapides</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20dextraction.ashx" title="Gants d&#39;extraction">Gants d'extraction</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20elfiques.ashx" title="Gants elfiques">Gants elfiques</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gantelets%20briseurs%20dos.ashx" title="Gantelets briseurs d&#39;os">Gantelets briseurs d’os</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gantelet%20de%20rouille.ashx" title="Gantelet de rouille">Gantelet de rouille</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gantelets%20du%20ma%c3%aetre%20darmes.ashx" title="Gantelets du maître d&#39;armes">Gantelets du maître d'armes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gants%20luisants.ashx" title="Gants luisants">Gants luisants</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gemme%20%c3%a0%20%c3%a9l%c3%a9mentaire.ashx" title="Gemme à élémentaire">Gemme à élémentaire</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gemme%20des%20fantasmes.ashx" title="Gemme des fantasmes">Gemme des fantasmes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gemme%20de%20vision.ashx" title="Gemme de vision">Gemme de vision</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gemme%20dillumination.ashx" title="Gemme d&#39;illumination">Gemme d’illumination</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gemme-%c3%a9toile%20du%20kitsune.ashx" title="Gemme-étoile du kitsune">Gemme-étoile du kitsune</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Gilet%20d%c3%a9vasion.ashx" title="Gilet d&#39;évasion">Gilet d’évasion</a> <br />
+</div><br /><h2 class="separator">H<a class="headeranchor" id="H_7" href="#H_7" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Harpe%20de%20suggestion.ashx" title="Harpe de suggestion">Harpe de suggestion</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Harpe%20du%20destin.ashx" title="Harpe du destin">Harpe du destin</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Havresac.ashx" title="Havresac">Havresac</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Herbe%20%c3%a0%20pipe%20de%20fum%c3%a9e%20solide.ashx" title="Herbe à pipe de fumée solide">Herbe à pipe de fumée solide</a> <br />
+</div><br /><h2 class="separator">I<a class="headeranchor" id="I_8" href="#I_8" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">J<a class="headeranchor" id="J_9" href="#J_9" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Jarre%20de%20purification%20tengu.ashx" title="Jarre de purification tengu">Jarre de purification tengu</a> <br />
+</div><br /><h2 class="separator">K<a class="headeranchor" id="K_10" href="#K_10" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">L<a class="headeranchor" id="L_11" href="#L_11" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Lanterne%20dombres%20dansantes.ashx" title="Lanterne d&#39;ombres dansantes">Lanterne d’ombres dansantes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lanterne%20r%c3%a9v%c3%a9latrice.ashx" title="Lanterne révélatrice">Lanterne révélatrice</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lentilles%20de%20t%c3%a9n%c3%a8bres.ashx" title="Lentilles de ténèbres">Lentilles de ténèbres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Liens%20dacier%20mystiques.ashx" title="Liens d&#39;acier mystiques">Liens d'acier mystiques</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Livre%20des%20recettes%20merveilleuses.ashx" title="Livre des recettes merveilleuses">Livre des recettes merveilleuses</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Livre%20du%20ma%c3%aetre%20du%20savoir.ashx" title="Livre du maître du savoir">Livre du maître du savoir</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Livre%20magique.ashx" title="Livre magique">Livre magique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Loupe%20de%20d%c3%a9tection.ashx" title="Loupe de détection">Loupe de détection</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lunettes%20dannihilation.ashx" title="Lunettes d&#39;annihilation">Lunettes d'annihilation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lunettes%20grossissantes.ashx" title="Lunettes grossissantes">Lunettes grossissantes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lunettes%20de%20nyctalope.ashx" title="Lunettes de nyctalope">Lunettes de nyctalope</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lunettes%20de%20sniper.ashx" title="Lunettes de sniper">Lunettes de sniper</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lustrargent.ashx" title="Lustrargent">Lustrargent</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lustr%c3%a9cailles%20nagaji.ashx" title="Lustrécailles nagaji">Lustrécailles nagaji</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lyre%20de%20b%c3%a2tisseur.ashx" title="Lyre de bâtisseur">Lyre de bâtisseur</a> <br />
+</div><br /><h2 class="separator">M<a class="headeranchor" id="M_12" href="#M_12" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Maillet%20des%20titans.ashx" title="Maillet des titans">Maillet des titans</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Main%20du%20mage.ashx" title="Main du mage">Main du mage</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Main%20miraculeuse.ashx" title="Main miraculeuse">Main miraculeuse</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Manuel%20de%20coordination%20physique.ashx" title="Manuel de coordination physique">Manuel de coordination physique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Manuel%20de%20remise%20en%20forme.ashx" title="Manuel de remise en forme">Manuel de remise en forme</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Manuel%20de%20vitalit%c3%a9.ashx" title="Manuel de vitalité">Manuel de vitalité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Masque%20de%20la%20camarde.ashx" title="Masque de la camarde">Masque de la camarde</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Masque%20de%20maintien%20de%20pierre.ashx" title="Masque de maintien de pierre">Masque de maintien de pierre</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Masque%20des%20g%c3%a9ants.ashx" title="Masque des géants">Masque des géants</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Masque%20du%20lutteur.ashx" title="Masque du lutteur">Masque du lutteur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.M%c3%a9daillon%20des%20pens%c3%a9es.ashx" title="Médaillon des pensées">Médaillon des pensées</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Menottes%20de%20coop%c3%a9ration.ashx" title="Menottes de coopération">Menottes de coopération</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Miroir%20demprisonnement.ashx" title="Miroir d&#39;emprisonnement">Miroir d’emprisonnement</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Miroir%20dopposition.ashx" title="Miroir d&#39;opposition">Miroir d’opposition</a> <br />
+</div><br /><h2 class="separator">N<a class="headeranchor" id="N_13" href="#N_13" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Natte%20de%20ki.ashx" title="Natte de ki">Natte de ki</a> <br />
+</div><br /><h2 class="separator">O<a class="headeranchor" id="O_14" href="#O_14" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Onguent%20dinsaisissabilit%c3%a9.ashx" title="Onguent d&#39;insaisissabilité">Onguent d’insaisissabilité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Onguent%20dintemporalit%c3%a9.ashx" title="Onguent d&#39;intemporalité">Onguent d’intemporalité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Onguent%20de%20restauration.ashx" title="Onguent de restauration">Onguent de restauration</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Onguent%20des%20roches.ashx" title="Onguent des roches">Onguent des roches</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Onguent%20de%20vol.ashx" title="Onguent de vol">Onguent de vol</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Orbe%20des%20temp%c3%aates.ashx" title="Orbe des tempêtes">Orbe des tempêtes</a> <br />
+</div><br /><h2 class="separator">P<a class="headeranchor" id="P_15" href="#P_15" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Pattes%20de%20velours%20du%20casse-cou.ashx" title="Pattes de velours du casse-cou">Pattes de velours du casse-cou</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Peinture%20de%20guerre%20du%20terrible%20visage.ashx" title="Peinture de guerre du terrible visage">Peinture de guerre du terrible visage</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pennon%20du%20chevalier.ashx" title="Pennon du chevalier">Pennon du chevalier</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Perle%20de%20thaumaturge.ashx" title="Perle de thaumaturge">Perle de thaumaturge</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Perle%20de%20feu%20de%20camp.ashx" title="Perle de feu de camp">Perle de feu de camp</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Perle%20des%20sir%c3%a8nes.ashx" title="Perle des sirènes">Perle des sirènes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Philtre%20damour.ashx" title="Philtre d&#39;amour">Philtre d’amour</a><br />
+<a class="pagelink" href="Pathfinder-RPG.Phylact%c3%a8re%20de%20canalisation.ashx" title="Phylactère de canalisation">Phylactère de canalisation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Phylact%c3%a8re%20du%20croyant.ashx" title="Phylactère du croyant">Phylactère du croyant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pierre%20dalerte.ashx" title="Pierre d&#39;alerte">Pierre d’alerte</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pierre%20ioun.ashx" title="Pierre ioun">Pierre ioun</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pierre%20porte-bonheur.ashx" title="Pierre porte-bonheur">Pierre porte-bonheur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pigments%20merveilleux.ashx" title="Pigments merveilleux">Pigments merveilleux</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pioche%20des%20titans.ashx" title="Pioche des titans">Pioche des titans</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Plume%20magique.ashx" title="Plume magique">Plume magique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Pomme%20du%20sommeil%20%c3%a9ternel.ashx" title="Pomme du sommeil éternel">Pomme du sommeil éternel</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poudre%20dapparition.ashx" title="Poudre d&#39;apparition">Poudre d’apparition</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poudre%20dillusion.ashx" title="Poudre d&#39;illusion">Poudre d’illusion</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poudre%20de%20disparition.ashx" title="Poudre de disparition">Poudre de disparition</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poudre%20de%20dissimulation%20des%20traces.ashx" title="Poudre de dissimulation des traces">Poudre de dissimulation des traces</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poudre%20dessiccative.ashx" title="Poudre dessiccative">Poudre dessiccative</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poussi%c3%a8re%20de%20fuite.ashx" title="Poussière de fuite">Poussière de fuite</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poussi%c3%a8re%20d%c3%a9mulation.ashx" title="Poussière d&#39;émulation">Poussière d'émulation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Puits%20des%20mondes.ashx" title="Puits des mondes">Puits des mondes</a> <br />
+</div><br /><h2 class="separator">Q<a class="headeranchor" id="Q_16" href="#Q_16" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">R<a class="headeranchor" id="R_17" href="#R_17" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Robe%20darchimage.ashx" title="Robe d&#39;archimage">Robe d’archimage</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20dossements.ashx" title="Robe d&#39;ossements">Robe d’ossements</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20de%20camelot.ashx" title="Robe de camelot">Robe de camelot</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robes%20de%20lh%c3%a9ritage%20magique.ashx" title="Robes de lhéritage magique">Robes de l'héritage magique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20de%20mim%c3%a9tisme.ashx" title="Robe de mimétisme">Robe de mimétisme</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20de%20moine.ashx" title="Robe de moine">Robe de moine</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20de%20vision%20totale.ashx" title="Robe de vision totale">Robe de vision totale</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20%c3%a9toil%c3%a9e.ashx" title="Robe étoilée">Robe étoilée</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Robe%20prismatique.ashx" title="Robe prismatique">Robe prismatique</a> <br />
+</div><br /><h2 class="separator">S<a class="headeranchor" id="S_18" href="#S_18" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Sac%20%c3%a0%20malice.ashx" title="Sac à malice">Sac à malice</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sac%20sans%20fond.ashx" title="Sac sans fond">Sac sans fond</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sacoche%20de%20nuages%20dombre.ashx" title="Sacoche de nuages d&#39;ombre">Sacoche de nuages d’ombre</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sacoche%20du%20pi%c3%a9geur.ashx" title="Sacoche du piégeur">Sacoche du piégeur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Savon%20de%20l%c3%a2me.ashx" title="Savon de l&#39;âme">Savon de l'âme</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Scarab%c3%a9e%20de%20protection.ashx" title="Scarabée de protection">Scarabée de protection</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Serre-t%c3%aate%20de%20lumi%c3%a8re.ashx" title="Serre-tête de lumière">Serre-tête de lumière</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Serre-t%c3%aate%20de%20persuasion.ashx" title="Serre-tête de persuasion">Serre-tête de persuasion</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.S%c3%a9rum%20de%20v%c3%a9rit%c3%a9.ashx" title="Sérum de vérité">Sérum de vérité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Solvant%20universel.ashx" title="Solvant universel">Solvant universel</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Statuette%20merveilleuse.ashx" title="Statuette merveilleuse">Statuette merveilleuse</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Submersible%20du%20crabe.ashx" title="Submersible du crabe">Submersible du crabe</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Symbole%20de%20commandement%20maudit.ashx" title="Symbole de commandement maudit">Symbole de commandement maudit</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Symbole%20de%20chance.ashx" title="Symbole de chance">Symbole de chance</a> <br />
+</div><br /><h2 class="separator">T<a class="headeranchor" id="T_19" href="#T_19" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Tapis%20volant.ashx" title="Tapis volant">Tapis volant</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Timbales%20de%20panique.ashx" title="Timbales de panique">Timbales de panique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Torche%20ioun.ashx" title="Torche ioun">Torche ioun</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Torque%20de%20la%20furie%20du%20lion.ashx" title="Torque de la furie du lion">Torque de la furie du lion</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trait%c3%a9%20dautorit%c3%a9%20et%20dinfluence.ashx" title="Traité d&#39;autorité et d&#39;influence">Traité d’autorité et d’influence</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trait%c3%a9%20de%20compr%c3%a9hension.ashx" title="Traité de compréhension">Traité de compréhension</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trait%c3%a9%20de%20cr%c3%a9ation%20des%20golems.ashx" title="Traité de création des golems">Traité de création des golems</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trait%c3%a9%20de%20perspicacit%c3%a9.ashx" title="Traité de perspicacité">Traité de perspicacité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trou%20portable.ashx" title="Trou portable">Trou portable</a> <br />
+</div><br /><h2 class="separator">U<a class="headeranchor" id="U_20" href="#U_20" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Urne%20du%20mauvais%20g%c3%a9nie.ashx" title="Urne du mauvais génie">Urne du mauvais génie</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Urne%20fumig%c3%a8ne.ashx" title="Urne fumigène">Urne fumigène</a> <br />
+</div><br /><h2 class="separator">V<a class="headeranchor" id="V_21" href="#V_21" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Veste%20%c3%a0%20outils.ashx" title="Veste à outils">Veste à outils</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Veste%20du%20cafard.ashx" title="Veste du cafard">Veste du cafard</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.V%c3%aatements%20vivants.ashx" title="Vêtements vivants">Vêtements vivants</a> <br />
+</div><br /><h2 class="separator">W<a class="headeranchor" id="W_22" href="#W_22" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">X<a class="headeranchor" id="X_23" href="#X_23" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">Y<a class="headeranchor" id="Y_24" href="#Y_24" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Yeux%20danath%c3%a8me.ashx" title="Yeux d&#39;anathème">Yeux d’anathème</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Yeux%20de%20charme.ashx" title="Yeux de charme">Yeux de charme</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Yeux%20de%20lynx%20(objet).ashx" title="Yeux de lynx">Yeux de lynx</a>
+</div><br /><h2 class="separator">Z<a class="headeranchor" id="Z_25" href="#Z_25" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+</div><br /><h2 class="separator">Objets magiques raciaux<a class="headeranchor" id="Objets_magiques_raciaux_26" href="#Objets_magiques_raciaux_26" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Anneau%20daction%20f%c3%a9roce.ashx" title="Anneau de férocité">Anneau d'action féroce</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneau%20dartisanat%20magique.ashx" title="Anneau d&#39;artisanat magique">Anneau d'artisanat magique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneau%20de%20crocs%20de%20rat.ashx" title="Anneau de crocs de rat">Anneau de crocs de rat</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneau%20de%20nu%c3%a9e%20de%20coups.ashx" title="Anneau de nuée de coups">Anneau de nuée de coups</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneau%20de%20sophistication.ashx" title="Anneau de sophistication">Anneau de sophistication</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bouclier%20c%c3%a9leste.ashx" title="Bouclier céleste">Bouclier céleste</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Bouclier%20%c3%a9lys%c3%a9en.ashx" title="Bouclier élyséen">Bouclier élyséen</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Grande%20hache%20rapide%20en%20obsidienne.ashx" title="Grande hache rapide en obsidienne">Grande hache rapide en obsidienne</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Griffes%20m%c3%a9talliques%20de%20lac%c3%a9ration.ashx" title="Griffes métalliques de lacération">Griffes métalliques de lacération</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Lame%20de%20t%c3%a9n%c3%a8bres.ashx" title="Lame de ténèbres">Lame de ténèbres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Perle%20de%20purification.ashx" title="Perle de purification">Perle de purification</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sceptre%20dombres.ashx" title="Sceptre d&#39;ombres">Sceptre d’ombres</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20ferme%20r%c3%a9solution.ashx" title="Sceptre de ferme résolution">Sceptre de ferme résolution</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20la%20terre.ashx" title="Sceptre de la terre">Sceptre de la terre</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20puissance%20naine.ashx" title="Sceptre de puissance naine">Sceptre de puissance naine</a> <br />
+</div><br /><h2 class="separator">Autres objets<a class="headeranchor" id="Autres_objets_27" href="#Autres_objets_27" title="Lien vers cette section">&#0182;</a></h2><div class="article_3col">
+<a class="pagelink" href="Pathfinder-RPG.Bande%20de%20Cabriole.ashx" title="Bande de Cabriole">Bande de Cabriole</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Cartouchi%c3%a8re%20B%c3%a9n%c3%a9fique.ashx" title="Cartouchière Bénéfique">Cartouchière Bénéfique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinturon%20M%c3%a9ridien.ashx" title="Ceinturon Méridien">Ceinturon Méridien</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20%c3%80%20Lame.ashx" title="Ceinture À Lame">Ceinture À Lame</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20dAll%c3%a8gement%20du%20Fardeau.ashx" title="Ceinture d&#39;Allègement du Fardeau">Ceinture d’Allègement du Fardeau</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Large%20Ceinture%20Aquatique.ashx" title="Large Ceinture Aquatique">Large Ceinture Aquatique</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20d%c3%89quitation.ashx" title="Ceinture d&#39;Équitation">Ceinture d’Équitation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20Mordante.ashx" title="Ceinture Mordante">Ceinture Mordante</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20R%c3%a9cup%c3%a9ration%20dArmes.ashx" title="Ceinture de Récupération d&#39;Armes">Ceinture de Récupération d’Armes</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Subsistance.ashx" title="Ceinture de Subsistance">Ceinture de Subsistance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20la%20Belette.ashx" title="Ceinture de la Belette">Ceinture de la Belette</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Charge%20Tonitruante.ashx" title="Ceinture de Charge Tonitruante">Ceinture de Charge Tonitruante</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20du%20Rat%20Contamin%c3%a9.ashx" title="Ceinture du Rat Contaminé">Ceinture du Rat Contaminé</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20du%20Rat%20Contamin%c3%a9%20Sup%c3%a9rieure.ashx" title="Ceinture du Rat Contaminé Supérieure">Ceinture du Rat Contaminé Supérieure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Sant%c3%a9.ashx" title="Ceinture de Santé">Ceinture de Santé</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Surveillance.ashx" title="Ceinture de Surveillance">Ceinture de Surveillance</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Corde%20de%20T%c3%a9nacit%c3%a9.ashx" title="Corde de Ténacité">Corde de Ténacité</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20Simiesque.ashx" title="Ceinture Simiesque">Ceinture Simiesque</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20Simiesque%20Sup%c3%a9rieure.ashx" title="Ceinture Simiesque Supérieure">Ceinture Simiesque Supérieure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Anneaux%20de%20lAnaconda.ashx" title="Anneaux de l&#39;Anaconda">Anneaux de l’Anaconda</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20Reptilienne.ashx" title="Ceinture Reptilienne">Ceinture Reptilienne</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20Reptilienne%20Sup%c3%a9rieure.ashx" title="Ceinture Reptilienne Supérieure">Ceinture Reptilienne Supérieure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20des%20H%c3%a9ros%20D%c3%a9chus.ashx" title="Ceinture des Héros Déchus">Ceinture des Héros Déchus</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20la%20Gorgone.ashx" title="Ceinture de la Gorgone">Ceinture de la Gorgone</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Terre%20%c3%89l%c3%a9mentaire.ashx" title="Ceinture de Terre Élémentaire">Ceinture de Terre Élémentaire</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.%c3%89charpe%20de%20D%c3%a9viation.ashx" title="Écharpe de Déviation">Écharpe de Déviation</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20lHomme-poisson.ashx" title="Ceinture de l&#39;Homme-poisson">Ceinture de l’Homme-poisson</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Jet.ashx" title="Ceinture de Jet">Ceinture de Jet</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20de%20Jet%20Sup%c3%a9rieure.ashx" title="Ceinture de Jet Supérieure">Ceinture de Jet Supérieure</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Ceinture%20dIntangibilit%c3%a9.ashx" title="Ceinture d&#39;Intangibilité">Ceinture d’Intangibilité</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20Corde%20Infinie.ashx" title="Pathfinder-RPG.Robe de Corde Infinie">Robe de Corde Infinie</a>  <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20la%20Manticore.ashx" title="Pathfinder-RPG.Robe de la Manticore">Robe de la Manticore</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandelettes%20de%20Frappes%20D%c3%a9vastratrices.ashx" title="Pathfinder-RPG.Bandelettes de Frappes Dévastratrices">Bandelettes de Frappes Dévastratrices</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corset%20Vishkanyan.ashx" title="Pathfinder-RPG.Corset Vishkanyan">Corset Vishkanyan</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Soutane%20de%20Pr%c3%aatre.ashx" title="Pathfinder-RPG.Soutane de Prêtre">Soutane de Prêtre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20dEnsorceleur.ashx" title="Pathfinder-RPG.Robe dEnsorceleur">Robe d’Ensorceleur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20Composantes.ashx" title="Pathfinder-RPG.Robe de Composantes">Robe de Composantes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20M%c3%a9morisation.ashx" title="Pathfinder-RPG.Robe de Mémorisation">Robe de Mémorisation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Harnais%20dAncrage%20Pour%20Eidolon.ashx" title="Pathfinder-RPG.Harnais dAncrage Pour Eidolon">Harnais d’Ancrage Pour Eidolon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20Ardente.ashx" title="Pathfinder-RPG.Robe Ardente">Robe Ardente</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20%c3%89lectrifi%c3%a9e.ashx" title="Pathfinder-RPG.Robe Électrifiée">Robe Électrifiée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20Gel%c3%a9e.ashx" title="Pathfinder-RPG.Robe Gelée">Robe Gelée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20du%20Xorn.ashx" title="Pathfinder-RPG.Robe du Xorn">Robe du Xorn</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corset%20de%20Sorcellerie.ashx" title="Pathfinder-RPG.Corset de Sorcellerie">Corset de Sorcellerie</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cache-poussi%c3%a8re%20du%20Tireur.ashx" title="Pathfinder-RPG.Cache-poussière du Tireur">Cache-poussière du Tireur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20Contrebandier.ashx" title="Pathfinder-RPG.Robe de Contrebandier">Robe de Contrebandier</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20de%20Convocation.ashx" title="Pathfinder-RPG.Robe de Convocation">Robe de Convocation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Kimono%20Mystique.ashx" title="Pathfinder-RPG.Kimono Mystique">Kimono Mystique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Robe%20Resplendissante%20du%20Com%c3%a9dien.ashx" title="Pathfinder-RPG.Robe Resplendissante du Comédien">Robe Resplendissante du Comédien</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Maillot%20de%20Sprinter.ashx" title="Pathfinder-RPG.Maillot de Sprinter">Maillot de Sprinter</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cartouchi%c3%a8re%20In%c3%a9puisable.ashx" title="Pathfinder-RPG.Cartouchière Inépuisable">Cartouchière Inépuisable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gilet%20de%20M%c3%a9decin.ashx" title="Pathfinder-RPG.Gilet de Médecin">Gilet de Médecin</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Tunique%20dIncantation%20Minutieuse.ashx" title="Pathfinder-RPG.Tunique dIncantation Minutieuse">Tunique d’Incantation Minutieuse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Veste%20Absorbante.ashx" title="Pathfinder-RPG.Veste Absorbante">Veste Absorbante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gilet%20de%20Tir%20Impitoyable.ashx" title="Pathfinder-RPG.Gilet de Tir Impitoyable">Gilet de Tir Impitoyable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gilet%20du%20Traqueur.ashx" title="Pathfinder-RPG.Gilet du Traqueur">Gilet du Traqueur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Plastron%20Proph%c3%a9tique.ashx" title="Pathfinder-RPG.Plastron Prophétique">Plastron Prophétique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Tunique%20de%20Puissance%20D%c3%a9vastatrice.ashx" title="Pathfinder-RPG.Tunique de Puissance Dévastatrice">Tunique de Puissance Dévastatrice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Vareuse%20de%20Sorci%c3%a8re%20Ricaneuse.ashx" title="Pathfinder-RPG.Vareuse de Sorcière Ricaneuse">Vareuse de Sorcière Ricaneuse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Uniforme%20Resplendissant.ashx" title="Pathfinder-RPG.Uniforme Resplendissant">Uniforme Resplendissant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chemise%20Enflamm%c3%a9e.ashx" title="Pathfinder-RPG.Chemise Enflammée">Chemise Enflammée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Tunique%20En%20Peau%20de%20Serpent.ashx" title="Pathfinder-RPG.Tunique En Peau de Serpent">Tunique En Peau de Serpent</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Baudrier%20du%20Tueur.ashx" title="Pathfinder-RPG.Baudrier du Tueur">Baudrier du Tueur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chemise%20de%20Libert%c3%a9.ashx" title="Pathfinder-RPG.Chemise de Liberté">Chemise de Liberté</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gilet%20de%20Stabilit%c3%a9%20Mutag%c3%a8ne.ashx" title="Pathfinder-RPG.Gilet de Stabilité Mutagène">Gilet de Stabilité Mutagène</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Linceul%20Spectral.ashx" title="Pathfinder-RPG.Linceul Spectral">Linceul Spectral</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.P%c3%a8lerine%20dImmortalit%c3%a9.ashx" title="Pathfinder-RPG.Pèlerine dImmortalité">Pèlerine d’Immortalité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Veston%20de%20lEmpoisonneur%20Sup%c3%a9rieur.ashx" title="Pathfinder-RPG.Veston de lEmpoisonneur Supérieur">Veston de l’Empoisonneur Supérieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Baudrier%20Mis%c3%a9ricordieux.ashx" title="Pathfinder-RPG.Baudrier Miséricordieux">Baudrier Miséricordieux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chasuble%20de%20R%c3%a9sistance%20%c3%80%20la%20Magie.ashx" title="Pathfinder-RPG.Chasuble de Résistance À la Magie">Chasuble de Résistance À la Magie</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Yeux%20de%20Perception%20de%20la%20Mort.ashx" title="Pathfinder-RPG.Yeux de Perception de la Mort">Yeux de Perception de la Mort</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cache-oeil%20de%20Pirate.ashx" title="Pathfinder-RPG.Cache-oeil de Pirate">Cache-oeil de Pirate</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.B%c3%a9sicles%20de%20Compr%c3%a9hension.ashx" title="Pathfinder-RPG.Bésicles de Compréhension">Bésicles de Compréhension</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Yeux%20de%20Chouette.ashx" title="Pathfinder-RPG.Yeux de Chouette">Yeux de Chouette</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Yeux%20Per%c3%a7ants.ashx" title="Pathfinder-RPG.Yeux Perçants">Yeux Perçants</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20du%20Chasseur%20de%20Tr%c3%a9sors.ashx" title="Pathfinder-RPG.Lunettes du Chasseur de Trésors">Lunettes du Chasseur de Trésors</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Monocle%20dEnqu%c3%aateur.ashx" title="Pathfinder-RPG.Monocle dEnquêteur">Monocle d’Enquêteur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20de%20Vision%20Jumel%c3%a9e.ashx" title="Pathfinder-RPG.Lunettes de Vision Jumelée">Lunettes de Vision Jumelée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20Elfiques.ashx" title="Pathfinder-RPG.Lunettes Elfiques">Lunettes Elfiques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20de%20Lumi%c3%a8re%20Aveuglante.ashx" title="Pathfinder-RPG.Lunettes de Lumière Aveuglante">Lunettes de Lumière Aveuglante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.B%c3%a9sicles%20de%20D%c3%a9tection%20des%20Chim%c3%a8res.ashx" title="Pathfinder-RPG.Bésicles de Détection des Chimères">Bésicles de Détection des Chimères</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20lAveugle.ashx" title="Pathfinder-RPG.Bandeau de lAveugle">﻿Bandeau de l’Aveugle</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20de%20Vision%20%c3%80%20360%c2%b0.ashx" title="Pathfinder-RPG.Lunettes de Vision À 360°">Lunettes de Vision À 360°</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20dOmbreterre.ashx" title="Pathfinder-RPG.Lunettes dOmbreterre">Lunettes d’Ombreterre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20Arc-en-ciel.ashx" title="Pathfinder-RPG.Lunettes Arc-en-ciel">Lunettes Arc-en-ciel</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.B%c3%a9sicles%20du%20Mauvais%20Oeil.ashx" title="Pathfinder-RPG.Bésicles du Mauvais Oeil">Bésicles du Mauvais Œil</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20de%20Sniper%20Sup%c3%a9rieures.ashx" title="Pathfinder-RPG.Lunettes de Sniper Supérieures">Lunettes de Sniper Supérieures</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Monocle%20dInvestigateur.ashx" title="Pathfinder-RPG.Monocle dInvestigateur">Monocle d’Investigateur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cache-oeil%20du%20Tyran%20des%20Mers.ashx" title="Pathfinder-RPG.Cache-oeil du Tyran des Mers">Cache-oeil du Tyran des Mers</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20du%20Ma%c3%aetre%20dArmes.ashx" title="Pathfinder-RPG.Bandeau du Maître dArmes">Bandeau du Maître d’Armes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Yeux%20de%20Domination%20Mentale.ashx" title="Pathfinder-RPG.Yeux de Domination Mentale">Yeux de Domination Mentale</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Yeux%20de%20Dragon.ashx" title="Pathfinder-RPG.Yeux de Dragon">Yeux de Dragon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunettes%20de%20Vision%20Lucide.ashx" title="Pathfinder-RPG.Lunettes de Vision Lucide">Lunettes de Vision Lucide</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20du%20Chat.ashx" title="Pathfinder-RPG.Bottes du Chat">Bottes du Chat</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20de%20Casse-cou.ashx" title="Pathfinder-RPG.Bottes de Casse-cou">Bottes de Casse-cou</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20dEndurance.ashx" title="Pathfinder-RPG.Bottes dEndurance">Bottes d’Endurance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pantoufles%20de%20D%c3%a9marche%20A%c3%a9rienne.ashx" title="Pathfinder-RPG.Pantoufles de Démarche Aérienne">Pantoufles de Démarche Aérienne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20du%20Terrain%20Amical.ashx" title="Pathfinder-RPG.Bottes du Terrain Amical">Bottes du Terrain Amical</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20de%20Terres%20Gel%c3%a9es.ashx" title="Pathfinder-RPG.Bottes de Terres Gelées">Bottes de Terres Gelées</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chaussons%20dAcrobate.ashx" title="Pathfinder-RPG.Chaussons dAcrobate">Chaussons d’Acrobate</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20du%20Bourbier.ashx" title="Pathfinder-RPG.Bottes du Bourbier">Bottes du Bourbier</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20de%20Cambrioleur.ashx" title="Pathfinder-RPG.Bottes de Cambrioleur">Bottes de Cambrioleur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fers%20%c3%80%20Cheval%20de%20Ruade%20D%c3%a9vastatrice.ashx" title="Pathfinder-RPG.Fers À Cheval de Ruade Dévastatrice">Fers À Cheval de Ruade Dévastatrice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sandales%20R%c3%a9actives.ashx" title="Pathfinder-RPG.Sandales Réactives">Sandales Réactives</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chaussons%20de%20Marche%20Brumeuse.ashx" title="Pathfinder-RPG.Chaussons de Marche Brumeuse">Chaussons de Marche Brumeuse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sandales%20de%20L%c3%a9g%c3%a8ret%c3%a9%20A%c3%a9rienne.ashx" title="Pathfinder-RPG.Sandales de Légèreté Aérienne">Sandales de Légèreté Aérienne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Souliers%20Hant%c3%a9s.ashx" title="Pathfinder-RPG.Souliers Hantés">Souliers Hantés</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20d%c3%89chapp%c3%a9e.ashx" title="Pathfinder-RPG.Bottes dÉchappée">Bottes d’Échappée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20dEnracinement.ashx" title="Pathfinder-RPG.Bottes dEnracinement">Bottes d’Enracinement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20d%c3%89vasion.ashx" title="Pathfinder-RPG.Bottes dÉvasion">Bottes d’Évasion</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20Cauchemardesque.ashx" title="Pathfinder-RPG.Bottes Cauchemardesque">Bottes Cauchemardesque</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fers%20%c3%80%20Cheval%20Cauchemardesque.ashx" title="Pathfinder-RPG.Fers À Cheval Cauchemardesque">Fers À Cheval Cauchemardesque</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20de%20Perception%20des%20Vibrations.ashx" title="Pathfinder-RPG.Bottes de Perception des Vibrations">Bottes de Perception des Vibrations</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20du%20Mastodonte.ashx" title="Pathfinder-RPG.Bottes du Mastodonte">Bottes du Mastodonte</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chaussures%20d%c3%89clairs%20Bondissants.ashx" title="Pathfinder-RPG.Chaussures dÉclairs Bondissants">Chaussures d’Éclairs Bondissants</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20%c3%80%20Chausse-trappes.ashx" title="Pathfinder-RPG.Bottes À Chausse-trappes">Bottes À Chausse-trappes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20Verdoyantes.ashx" title="Pathfinder-RPG.Bottes Verdoyantes">Bottes Verdoyantes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chaussures%20de%20Marche%20Sur%20le%20Feu.ashx" title="Pathfinder-RPG.Chaussures de Marche Sur le Feu">Chaussures de Marche Sur le Feu</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sandales%20des%20Dryades.ashx" title="Pathfinder-RPG.Sandales des Dryades">Sandales des Dryades</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fers%20%c3%80%20Cheval%20de%20Brume.ashx" title="Pathfinder-RPG.Fers À Cheval de Brume">Fers À Cheval de Brume</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20dEscampette.ashx" title="Pathfinder-RPG.Bottes dEscampette">Bottes d’Escampette</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fers%20%c3%80%20Cheval%20Glorieux.ashx" title="Pathfinder-RPG.Fers À Cheval Glorieux">Fers À Cheval Glorieux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bottes%20de%20Cambrioleur%20Sup%c3%a9rieures.ashx" title="Pathfinder-RPG.Bottes de Cambrioleur Supérieures">Bottes de Cambrioleur Supérieures</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Soutien.ashx" title="Pathfinder-RPG.Gants de Soutien">Gants de Soutien</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Griffes%20de%20lOurs%20Polaire.ashx" title="Pathfinder-RPG.Griffes de lOurs Polaire">Griffes de l’Ours Polaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.OGant%20Luisant.ashx" title="Pathfinder-RPG.OGant Luisant">OGant Luisant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Mitaines%20de%20Reconnaissance.ashx" title="Pathfinder-RPG.Mitaines de Reconnaissance">Mitaines de Reconnaissance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20dApprenti%20Prestidigitateur.ashx" title="Pathfinder-RPG.Gants dApprenti Prestidigitateur">Gants d’Apprenti Prestidigitateur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20du%20D%c3%a9fi.ashx" title="Pathfinder-RPG.Gants du Défi">Gants du Défi</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20dEscamotage.ashx" title="Pathfinder-RPG.Gants dEscamotage">Gants d’Escamotage</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20du%20Gu%c3%a9risseur.ashx" title="Pathfinder-RPG.Gants du Guérisseur">Gants du Guérisseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20dIng%c3%a9nieur.ashx" title="Pathfinder-RPG.Gants dIngénieur">Gants d’Ingénieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20de%20Manoeuvre%20Offensive.ashx" title="Pathfinder-RPG.Gantelets de Manoeuvre Offensive">Gantelets de Manoeuvre Offensive</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20D%c3%a9samor%c3%a7age%20des%20Pi%c3%a8ges.ashx" title="Pathfinder-RPG.Gants de Désamorçage des Pièges">Gants de Désamorçage des Pièges</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Vision%20Spectrale.ashx" title="Pathfinder-RPG.Gants de Vision Spectrale">Gants de Vision Spectrale</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Frappe%20Magique.ashx" title="Pathfinder-RPG.Gants de Frappe Magique">Gants de Frappe Magique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20Empoisonn%c3%a9s.ashx" title="Pathfinder-RPG.Gants Empoisonnés">Gants Empoisonnés</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20Magn%c3%a9tiques.ashx" title="Pathfinder-RPG.Gants Magnétiques">Gants Magnétiques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelet%20du%20Cobra%20de%20Fer.ashx" title="Pathfinder-RPG.Gantelet du Cobra de Fer">Gantelet du Cobra de Fer</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20de%20Neutralisation%20des%20M%c3%a9tamorphes.ashx" title="Pathfinder-RPG.Gantelets de Neutralisation des Métamorphes">Gantelets de Neutralisation des Métamorphes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Magus.ashx" title="Pathfinder-RPG.Gants de Magus">Gants de Magus</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20D%c3%a9liquescents.ashx" title="Pathfinder-RPG.Gants Déliquescents">Gants Déliquescents</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gant%20de%20Fauconnier.ashx" title="Pathfinder-RPG.Gant de Fauconnier">Gant de Fauconnier</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20D%c3%a9samor%c3%a7age%20des%20Glyphes.ashx" title="Pathfinder-RPG.Gants de Désamorçage des Glyphes">Gants de Désamorçage des Glyphes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Fa%c3%a7onnage.ashx" title="Pathfinder-RPG.Gants de Façonnage">Gants de Façonnage</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Mitaines%20d%c3%89lasticit%c3%a9.ashx" title="Pathfinder-RPG.Mitaines dÉlasticité">Mitaines d’Élasticité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20Vampiriques.ashx" title="Pathfinder-RPG.Gants Vampiriques">Gants Vampiriques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20de%20Poigne%20Colossale.ashx" title="Pathfinder-RPG.Gantelets de Poigne Colossale">Gantelets de Poigne Colossale</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20de%20Raccourcis.ashx" title="Pathfinder-RPG.Gants de Raccourcis">Gants de Raccourcis</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gants%20dInvocateur%20Autoritaire.ashx" title="Pathfinder-RPG.Gants dInvocateur Autoritaire">Gants d’Invocateur Autoritaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelet%20de%20Rouille%20Sup%c3%a9rieur.ashx" title="Pathfinder-RPG.Gantelet de Rouille Supérieur">Gantelet de Rouille Supérieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Serres%20de%20Leng.ashx" title="Pathfinder-RPG.Serres de Leng">Serres de Leng</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20de%20Ma%c3%aetre%20dArmes.ashx" title="Pathfinder-RPG.Gantelets de Maître dArmes">Gantelets de Maître d’Armes</a> <br /><br /><br /><br /><br /><a class="unknownlink" href="Pathfinder-RPG.Masque%20de%20lHomme%20de%20Marbre.ashx" title="Pathfinder-RPG.Masque de lHomme de Marbre">Masque de l’Homme de Marbre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couvre-chef%20de%20D%c3%a9guisement%20Humano%c3%afde.ashx" title="Pathfinder-RPG.Couvre-chef de Déguisement Humanoïde">Couvre-chef de Déguisement Humanoïde</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Calotte%20de%20Lumi%c3%a8re.ashx" title="Pathfinder-RPG.Calotte de Lumière">Calotte de Lumière</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Couvre-chef%20Amortissant.ashx" title="Couvre-chef amortissant">Couvre-chef Amortissant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20de%20lAvare.ashx" title="Pathfinder-RPG.Masque de lAvare">Masque de l’Avare</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20du%20Traqueur.ashx" title="Pathfinder-RPG.Masque du Traqueur">Masque du Traqueur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Jingasa%20du%20Soldat%20Chanceux.ashx" title="Pathfinder-RPG.Jingasa du Soldat Chanceux">Jingasa du Soldat Chanceux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Serre-t%c3%aate%20de%20Lumi%c3%a8re%20Destructrice.ashx" title="Pathfinder-RPG.Serre-tête de Lumière Destructrice">Serre-tête de Lumière Destructrice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20du%20Krenshar.ashx" title="Pathfinder-RPG.Masque du Krenshar">Masque du Krenshar</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Heaume%20du%20Seigneur%20des%20Mammouths.ashx" title="Pathfinder-RPG.Heaume du Seigneur des Mammouths">Heaume du Seigneur des Mammouths</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Voilette%20des%20Regards%20Fugaces.ashx" title="Pathfinder-RPG.Voilette des Regards Fugaces">Voilette des Regards Fugaces</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20de%20la%20M%c3%a9duse.ashx" title="Pathfinder-RPG.Masque de la Méduse">Masque de la Méduse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20Encyclop%c3%a9dique.ashx" title="Pathfinder-RPG.Masque Encyclopédique">Masque Encyclopédique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couvre-chef%20du%20Libre%20Penseur.ashx" title="Pathfinder-RPG.Couvre-chef du Libre Penseur">Couvre-chef du Libre Penseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Aur%c3%a9ole%20de%20S%c3%a9r%c3%a9nit%c3%a9.ashx" title="Pathfinder-RPG.Auréole de Sérénité">Auréole de Sérénité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couronne%20Oeil-de-chat.ashx" title="Pathfinder-RPG.Couronne Oeil-de-chat">Couronne Oeil-de-chat</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gueule%20de%20Dragon.ashx" title="Pathfinder-RPG.Gueule de Dragon">Gueule de Dragon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Mitre%20du%20Hi%c3%a9rophante.ashx" title="Pathfinder-RPG.Mitre du Hiérophante">Mitre du Hiérophante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chapeau%20de%20Magicien.ashx" title="Pathfinder-RPG.Chapeau de Magicien">Chapeau de Magicien</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Diad%c3%a8me%20de%20D%c3%a9tection%20de%20Pens%c3%a9es.ashx" title="Pathfinder-RPG.Diadème de Détection de Pensées">Diadème de Détection de Pensées</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Casque%20Hurlant.ashx" title="Pathfinder-RPG.Casque Hurlant">Casque Hurlant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Serre-t%c3%aate%20de%20Lumi%c3%a8re%20D%c3%a9vastatrice.ashx" title="Pathfinder-RPG.Serre-tête de Lumière Dévastatrice">Serre-tête de Lumière Dévastatrice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couronne%20de%20Conqu%c3%a9rant.ashx" title="Pathfinder-RPG.Couronne de Conquérant">Couronne de Conquérant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Casque%20Batracien.ashx" title="Pathfinder-RPG.Casque Batracien">Casque Batracien</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20Anti-%c3%a9pid%c3%a9mie.ashx" title="Pathfinder-RPG.Masque Anti-épidémie">Masque Anti-épidémie</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lauriers%20de%20Commandement.ashx" title="Pathfinder-RPG.Lauriers de Commandement">Lauriers de Commandement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20Mineur%20des%20G%c3%a9ants.ashx" title="Pathfinder-RPG.Masque Mineur des Géants">Masque Mineur des Géants</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Serre-t%c3%aate%20de%20Protection%20des%20%c3%82mes.ashx" title="Pathfinder-RPG.Serre-tête de Protection des Âmes">Serre-tête de Protection des Âmes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couvre-chef%20de%20Volont%c3%a9%20In%c3%a9branlable.ashx" title="Pathfinder-RPG.Couvre-chef de Volonté Inébranlable">Couvre-chef de Volonté Inébranlable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Heaume%20du%20Seigneur%20des%20Temp%c3%aates.ashx" title="Pathfinder-RPG.Heaume du Seigneur des Tempêtes">Heaume du Seigneur des Tempêtes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Casque%20de%20Cent%20Feux.ashx" title="Pathfinder-RPG.Casque de Cent Feux">Casque de Cent Feux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Perruque%20de%20Juge.ashx" title="Pathfinder-RPG.Perruque de Juge">Perruque de Juge</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Masque%20Majeur%20des%20G%c3%a9ants.ashx" title="Pathfinder-RPG.Masque Majeur des Géants">Masque Majeur des Géants</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Casque%20d%c3%89clat%20%c3%89lectrique.ashx" title="Pathfinder-RPG.Casque dÉclat Électrique">Casque d’Éclat Électrique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Diad%c3%a8me%20des%20Cieux.ashx" title="Pathfinder-RPG.Diadème des Cieux">Diadème des Cieux</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20du%20Mort.ashx" title="Pathfinder-RPG.Bandeau du Mort">Bandeau du Mort</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%ef%bb%bfBandeau%20dAgilit%c3%a9%20A%c3%a9rienne.ashx" title="Pathfinder-RPG.﻿Bandeau dAgilité Aérienne">﻿Bandeau d’Agilité Aérienne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20M%c3%a9tamorphe.ashx" title="Pathfinder-RPG.Bandeau de Métamorphe">Bandeau de Métamorphe</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20R%c3%a9miniscence.ashx" title="Pathfinder-RPG.Bandeau de Réminiscence">Bandeau de Réminiscence</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Focalisation%20Ki.ashx" title="Pathfinder-RPG.Bandeau de Focalisation Ki">Bandeau de Focalisation Ki</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20R%c3%a9solution%20In%c3%a9branlable.ashx" title="Pathfinder-RPG.Bandeau de Résolution Inébranlable">Bandeau de Résolution Inébranlable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Couronne%20de%20Houx.ashx" title="Pathfinder-RPG.Couronne de Houx">Couronne de Houx</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20dInfaillible%20D%c3%a9termination.ashx" title="Pathfinder-RPG.Bandeau dInfaillible Détermination">Bandeau d’Infaillible Détermination</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20dIntuition.ashx" title="Pathfinder-RPG.Bandeau dIntuition">Bandeau d’Intuition</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Phylact%c3%a8re%20du%20Berger.ashx" title="Pathfinder-RPG.Phylactère du Berger">Phylactère du Berger</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Chance%20Renforc%c3%a9e.ashx" title="Pathfinder-RPG.Bandeau de Chance Renforcée">Bandeau de Chance Renforcée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20lEnrag%c3%a9.ashx" title="Pathfinder-RPG.Bandeau de lEnragé">Bandeau de l’Enragé</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20du%20Serpent.ashx" title="Pathfinder-RPG.Bandeau du Serpent">Bandeau du Serpent</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20du%20Chasseur.ashx" title="Pathfinder-RPG.Bandeau du Chasseur">Bandeau du Chasseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Phylact%c3%a8re%20Energie%20N%c3%a9gative.ashx" title="Pathfinder-RPG.Phylactère Energie Négative">Phylactère de Canalisation d’Énergie Négative</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Phylact%c3%a8re%20Energie%20Positive.ashx" title="Pathfinder-RPG.Phylactère Energie Positive">Phylactère de Canalisation d’Énergie Positive</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Oeil%20Voil%c3%a9.ashx" title="Pathfinder-RPG.Oeil Voilé">Œil Voilé</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Vaillance.ashx" title="Pathfinder-RPG.Bandeau de Vaillance">Bandeau de Vaillance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Ninjitsu.ashx" title="Pathfinder-RPG.Bandeau de Ninjitsu">Bandeau de Ninjitsu</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20d%c3%89nergie%20Magique.ashx" title="Pathfinder-RPG.Bandeau dÉnergie Magique">Bandeau d’Énergie Magique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Contresort.ashx" title="Pathfinder-RPG.Bandeau de Contresort">Bandeau de Contresort</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20Ma%c3%aetrise%20des%20Zombis.ashx" title="Pathfinder-RPG.Bandeau de Maîtrise des Zombis">Bandeau de Maîtrise des Zombis</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Oeil%20des%20%c3%82mes.ashx" title="Pathfinder-RPG.Oeil des Âmes">Œil des Âmes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20du%20Loup%20Arctique.ashx" title="Pathfinder-RPG.Bandeau du Loup Arctique">Bandeau du Loup Arctique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20S%c3%a9duction.ashx" title="Pathfinder-RPG.Bandeau de Séduction">Bandeau de Séduction</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bandeau%20de%20R%c3%a9sistance%20Mentale.ashx" title="Pathfinder-RPG.Bandeau de Résistance Mentale">Bandeau de Résistance Mentale</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Effigie%20de%20Gu%c3%a9rison.ashx" title="Pathfinder-RPG.Effigie de Guérison">Effigie de Guérison</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20Pare-balle.ashx" title="Pathfinder-RPG.Amulette Pare-balle">Amulette Pare-balle</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Broche%20Tueuse%20de%20Nu%c3%a9es.ashx" title="Pathfinder-RPG.Broche Tueuse de Nuées">Broche Tueuse de Nuées</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Collerette%20dImitateur.ashx" title="Pathfinder-RPG.Collerette dImitateur">Collerette d’Imitateur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.M%c3%a9daillon%20de%20Protection%20Spirituelle.ashx" title="Pathfinder-RPG.Médaillon de Protection Spirituelle">Médaillon de Protection Spirituelle</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20de%20Conflit%20%c3%89l%c3%a9mentaire.ashx" title="Pathfinder-RPG.Amulette de Conflit Élémentaire">Amulette de Conflit Élémentaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20des%20Poings%20Vertueux.ashx" title="Pathfinder-RPG.Amulette des Poings Vertueux">Amulette des Poings Vertueux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Leurre%20%c3%80%20Temp%c3%aates.ashx" title="Pathfinder-RPG.Leurre À Tempêtes">Leurre À Tempêtes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Collier%20de%20lEnfant-f%c3%a9e.ashx" title="Pathfinder-RPG.Collier de lEnfant-fée">Collier de l’Enfant-fée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cha%c3%aene%20de%20D%c3%a9tention.ashx" title="Pathfinder-RPG.Chaîne de Détention">Chaîne de Détention</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20Anti-sommeil.ashx" title="Pathfinder-RPG.Amulette Anti-sommeil">Amulette Anti-sommeil</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20de%20Protection%20Contre%20la%20P%c3%a9trification.ashx" title="Pathfinder-RPG.Amulette de Protection Contre la Pétrification">Amulette de Protection Contre la Pétrification</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pendentif%20Garde-tombes.ashx" title="Pathfinder-RPG.Pendentif Garde-tombes">Pendentif Garde-tombes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20de%20Force%20Soudaine.ashx" title="Pathfinder-RPG.Amulette de Force Soudaine">Amulette de Force Soudaine</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20des%20Poings%20Glac%c3%a9s.ashx" title="Pathfinder-RPG.Amulette des Poings Glacés">Amulette des Poings Glacés</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Collier%20du%20Fid%c3%a8le%20Compagnon.ashx" title="Pathfinder-RPG.Collier du Fidèle Compagnon">Collier du Fidèle Compagnon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Charme%20de%20Protection%20Contre%20les%20Mal%c3%a9dictions.ashx" title="Pathfinder-RPG.Charme de Protection Contre les Malédictions">Charme de Protection Contre les Malédictions</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gorgerin%20de%20Protection.ashx" title="Pathfinder-RPG.Gorgerin de Protection">Gorgerin de Protection</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20des%20Poings%20Ardents.ashx" title="Pathfinder-RPG.Amulette des Poings Ardents">Amulette des Poings Ardents</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Broche%20d%c3%89tincelles%20Ambr%c3%a9es.ashx" title="Pathfinder-RPG.Broche dÉtincelles Ambrées">Broche d’Étincelles Ambrées</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Symbole%20de%20Protection%20Sanguine.ashx" title="Pathfinder-RPG.Symbole de Protection Sanguine">Symbole de Protection Sanguine</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20dOpposition%20Aux%20Dragons.ashx" title="Pathfinder-RPG.Amulette dOpposition Aux Dragons">Amulette d’Opposition Aux Dragons</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%ef%bb%bfAmpoule%20de%20Sang%20Factice.ashx" title="Pathfinder-RPG.﻿Ampoule de Sang Factice">﻿Ampoule de Sang Factice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Amulette%20de%20Ma%c3%aetrise%20Magique.ashx" title="Pathfinder-RPG.Amulette de Maîtrise Magique">Amulette de Maîtrise Magique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Main%20de%20Pierre.ashx" title="Pathfinder-RPG.Main de Pierre">Main de Pierre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Collier%20d%c3%89toiles%20Enchev%c3%aatr%c3%a9es.ashx" title="Pathfinder-RPG.Collier dÉtoiles Enchevêtrées">Collier d’Étoiles Enchevêtrées</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20D%c3%a9guisement%20Humain.ashx" title="Pathfinder-RPG.Cape de Déguisement Humain">Cape de Déguisement Humain</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20D%c3%a9fensive.ashx" title="Pathfinder-RPG.Cape Défensive">Cape Défensive</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ch%c3%a2le%20de%20Transfert%20Vital.ashx" title="Pathfinder-RPG.Châle de Transfert Vital">Châle de Transfert Vital</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Transformiste.ashx" title="Pathfinder-RPG.Cape de Transformiste">Cape de Transformiste</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20du%20Magicien%20Solitaire.ashx" title="Pathfinder-RPG.Cape du Magicien Solitaire">Cape du Magicien Solitaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Disparition%20Enflamm%c3%a9e.ashx" title="Pathfinder-RPG.Cape de Disparition Enflammée">Cape de Disparition Enflammée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Spalli%c3%a8res%20du%20Serpent.ashx" title="Pathfinder-RPG.Spallières du Serpent">Spallières du Serpent</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20des%20Brumes%20Montagneuses.ashx" title="Pathfinder-RPG.Cape des Brumes Montagneuses">Cape des Brumes Montagneuses</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20du%20Grand%20Ch%c3%aane.ashx" title="Pathfinder-RPG.Cape du Grand Chêne">Cape du Grand Chêne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20du%20Rat%20Sanguinaire.ashx" title="Pathfinder-RPG.Cape du Rat Sanguinaire">Cape du Rat Sanguinaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ch%c3%a2le%20d%c3%89cume%20de%20Mer.ashx" title="Pathfinder-RPG.Châle dÉcume de Mer">Châle d’Écume de Mer</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20lAigle.ashx" title="Pathfinder-RPG.Cape de lAigle">Cape de l’Aigle</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20du%20Chasseur.ashx" title="Pathfinder-RPG.Cape du Chasseur">Cape du Chasseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20Cocon.ashx" title="Pathfinder-RPG.Cape Cocon">Cape Cocon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Marcheur%20du%20Cr%c3%a9puscule.ashx" title="Pathfinder-RPG.Cape de Marcheur du Crépuscule">Cape de Marcheur du Crépuscule</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Pierre.ashx" title="Pathfinder-RPG.Cape de Pierre">Cape de Pierre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Spalli%c3%a8res%20du%20Taureau.ashx" title="Pathfinder-RPG.Spallières du Taureau">Spallières du Taureau</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Spalli%c3%a8res%20du%20Lion%20Vigilant.ashx" title="Pathfinder-RPG.Spallières du Lion Vigilant">Spallières du Lion Vigilant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20du%20Lion.ashx" title="Pathfinder-RPG.Cape du Lion">Cape du Lion</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Houppelande%20de%20Spores.ashx" title="Pathfinder-RPG.Houppelande de Spores">Houppelande de Spores</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20d%c3%89vasion%20Radieuse.ashx" title="Pathfinder-RPG.Cape dÉvasion Radieuse">Cape d’Évasion Radieuse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20Tentaculaire.ashx" title="Pathfinder-RPG.Cape Tentaculaire">Cape Tentaculaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poncho%20de%20Franc-tireur.ashx" title="Pathfinder-RPG.Poncho de Franc-tireur">Poncho de Franc-tireur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Spalli%c3%a8res%20%c3%80%20Pointes%20D%c3%a9moniaques.ashx" title="Pathfinder-RPG.Spallières À Pointes Démoniaques">Spallières À Pointes Démoniaques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20Confortable.ashx" title="Pathfinder-RPG.Cape Confortable">Cape Confortable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ch%c3%a2le%20de%20M%c3%a9g%c3%a8re.ashx" title="Pathfinder-RPG.Châle de Mégère">Châle de Mégère</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.P%c3%a8lerine%20de%20Bateleur.ashx" title="Pathfinder-RPG.Pèlerine de Bateleur">Pèlerine de Bateleur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%c3%89tole%20de%20Justice.ashx" title="Pathfinder-RPG.Étole de Justice">Étole de Justice</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20la%20M%c3%a9duse.ashx" title="Pathfinder-RPG.Cape de la Méduse">Cape de la Méduse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Diplomate.ashx" title="Pathfinder-RPG.Cape de Diplomate">Cape de Diplomate</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Pierre%20Sup%c3%a9rieure.ashx" title="Pathfinder-RPG.Cape de Pierre Supérieure">Cape de Pierre Supérieure</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20Tranchante.ashx" title="Pathfinder-RPG.Cape Tranchante">Cape Tranchante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20D%c3%a9placement%20Mineure.ashx" title="Pathfinder-RPG.Cape de Déplacement Mineure">Cape de Déplacement Mineure</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Bandit%20de%20Grand%20Chemin.ashx" title="Pathfinder-RPG.Cape de Bandit de Grand Chemin">Cape de Bandit de Grand Chemin</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Spalli%c3%a8res%20de%20Juggernaut.ashx" title="Pathfinder-RPG.Spallières de Juggernaut">Spallières de Juggernaut</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Charlatan.ashx" title="Pathfinder-RPG.Cape de Charlatan">Cape de Charlatan</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20D%c3%a9placement%20Majeure.ashx" title="Pathfinder-RPG.Cape de Déplacement Majeure">Cape de Déplacement Majeure</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ailes%20de%20Gargouille.ashx" title="Pathfinder-RPG.Ailes de Gargouille">Ailes de Gargouille</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20la%20Vouivre.ashx" title="Pathfinder-RPG.Cape de la Vouivre">Cape de la Vouivre</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Manches%20%c3%80%20V%c3%aatements.ashx" title="Pathfinder-RPG.Manches À Vêtements">Manches À Vêtements</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20de%20Lutteur.ashx" title="Pathfinder-RPG.Brassards de Lutteur">Brassards de Lutteur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20de%20Cambrioleur.ashx" title="Pathfinder-RPG.Brassards de Cambrioleur">Brassards de Cambrioleur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelets%20dAssiduit%c3%a9.ashx" title="Pathfinder-RPG.Bracelets dAssiduité">Bracelets d’Assiduité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Menottes%20dOb%c3%a9issance.ashx" title="Pathfinder-RPG.Menottes dObéissance">Menottes d’Obéissance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20du%20Faucon%20Chasseur.ashx" title="Pathfinder-RPG.Brassards du Faucon Chasseur">Brassards du Faucon Chasseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Canons%20Fortifi%c3%a9s%20dInquisiteur.ashx" title="Pathfinder-RPG.Canons Fortifiés dInquisiteur">Canons Fortifiés d’Inquisiteur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20dIncantation%20D%c3%a9fensive.ashx" title="Pathfinder-RPG.Brassards dIncantation Défensive">Brassards d’Incantation Défensive</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelet%20de%20Vigne.ashx" title="Pathfinder-RPG.Bracelet de Vigne">Bracelet de Vigne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20de%20D%c3%a9fense.ashx" title="Pathfinder-RPG.Brassards de Défense">Brassards de Défense</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20Broyeurs.ashx" title="Pathfinder-RPG.Gantelets Broyeurs">Gantelets Broyeurs</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20dAllonge.ashx" title="Pathfinder-RPG.Brassards dAllonge">Brassards d’Allonge</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20dAmuseur.ashx" title="Pathfinder-RPG.Brassards dAmuseur">Brassards d’Amuseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelet%20de%20Charmes.ashx" title="Pathfinder-RPG.Bracelet de Charmes">Bracelet de Charmes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20de%20Tacticien.ashx" title="Pathfinder-RPG.Brassards de Tacticien">Brassards de Tacticien</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Canons%20dAvant-bras%20Mis%c3%a9ricordieux.ashx" title="Pathfinder-RPG.Canons dAvant-bras Miséricordieux">Canons d’Avant-bras Miséricordieux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Canons%20de%20Duelliste.ashx" title="Pathfinder-RPG.Canons de Duelliste">Canons de Duelliste</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fl%c3%a9au%20des%20S%c3%a9ducteurs.ashx" title="Pathfinder-RPG.Fléau des Séducteurs">Fléau des Séducteurs</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20du%20Chevalier%20Vengeur.ashx" title="Pathfinder-RPG.Brassards du Chevalier Vengeur">Brassards du Chevalier Vengeur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelets%20de%20Ma%c3%aetre-archer.ashx" title="Pathfinder-RPG.Bracelets de Maître-archer">Bracelets de Maître-archer</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20des%20G%c3%a9nies.ashx" title="Pathfinder-RPG.Brassards des Génies">Brassards des Génies</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelet%20de%20N%c3%a9gociation.ashx" title="Pathfinder-RPG.Bracelet de Négociation">Bracelet de Négociation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelet%20de%20Gr%c3%a2ce.ashx" title="Pathfinder-RPG.Bracelet de Grâce">Bracelet de Grâce</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20du%20Chevalier%20Mis%c3%a9ricordieux.ashx" title="Pathfinder-RPG.Brassards du Chevalier Miséricordieux">Brassards du Chevalier Miséricordieux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelet%20de%20Chances%20Renouvel%c3%a9es.ashx" title="Pathfinder-RPG.Bracelet de Chances Renouvelées">Bracelet de Chances Renouvelées</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Menottes%20de%20Domination.ashx" title="Pathfinder-RPG.Menottes de Domination">Menottes de Domination</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bracelets%20dArcher%20Hors-pair.ashx" title="Pathfinder-RPG.Bracelets dArcher Hors-pair">Bracelets d’Archer Hors-pair</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Brassards%20de%20Vengeance.ashx" title="Pathfinder-RPG.Brassards de Vengeance">Brassards de Vengeance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gantelets%20de%20Comp%c3%a9tence%20Martiale.ashx" title="Pathfinder-RPG.Gantelets de Compétence Martiale">Gantelets de Compétence Martiale</a> <br /><br /><br />
+<a class="unknownlink" href="Pathfinder-RPG.Piton%20Tenace.ashx" title="Pathfinder-RPG.Piton Tenace">Piton Tenace</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Alambic%20%c3%80%20Formules.ashx" title="Pathfinder-RPG.Alambic À Formules">Alambic À Formules</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Entonnoir%20dHybridation.ashx" title="Pathfinder-RPG.Entonnoir dHybridation">Entonnoir d’Hybridation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gouttes%20de%20Vision%20Nocturne.ashx" title="Pathfinder-RPG.Gouttes de Vision Nocturne">Gouttes de Vision Nocturne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Huile%20de%20Silence.ashx" title="Pathfinder-RPG.Huile de Silence">Huile de Silence</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Outil%20Multifonction%20de%20Baroudeu.ashx" title="Pathfinder-RPG.Outil Multifonction de Baroudeu">Outil Multifonction de Baroudeu</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Vermine%20En%20Papier%20Pli%c3%a9.ashx" title="Pathfinder-RPG.Vermine En Papier Plié">Vermine En Papier Plié</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pomme%20dOr%20All%c3%a9chante.ashx" title="Pathfinder-RPG.Pomme dOr Alléchante">Pomme d’Or Alléchante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fourreau%20%c3%80%20Aiguiser.ashx" title="Pathfinder-RPG.Fourreau À Aiguiser">Fourreau À Aiguiser</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Mal%c3%a9fice%20En%20Bouteille.ashx" title="Pathfinder-RPG.Maléfice En Bouteille">Maléfice En Bouteille</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Portrait%20Anim%c3%a9.ashx" title="Pathfinder-RPG.Portrait Animé">Portrait Animé</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Th%c3%a9%20Divinatoire.ashx" title="Pathfinder-RPG.Thé Divinatoire">Thé Divinatoire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Aimant%20%c3%80%20Projectiles.ashx" title="Pathfinder-RPG.Aimant À Projectiles">Aimant À Projectiles</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poudre%20Obscurcissante.ashx" title="Pathfinder-RPG.Poudre Obscurcissante">Poudre Obscurcissante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sel%20dAbjuration.ashx" title="Pathfinder-RPG.Sel dAbjuration">Sel d’Abjuration</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corde%20de%20Fer.ashx" title="Pathfinder-RPG.Corde de Fer">Corde de Fer</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Feuille%20Magique.ashx" title="Pathfinder-RPG.Feuille Magique">Feuille Magique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Torche%20dArchon.ashx" title="Pathfinder-RPG.Torche dArchon">Torche d’Archon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Livre%20de%20Convocation%20Durable%20inf%c3%a9rieur.ashx" title="Pathfinder-RPG.Livre de Convocation Durable inférieur">Livre de Convocation Durable inférieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fourrure%20de%20Y%c3%a9ti%20En%20Bouteille.ashx" title="Pathfinder-RPG.Fourrure de Yéti En Bouteille">Fourrure de Yéti En Bouteille</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Poussi%c3%a8re%20d%c3%89mulation.ashx" title="Poussière d&#39;émulation">Poussière d’Émulation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pierre%20dEntrailles%20En%20Acier.ashx" title="Pathfinder-RPG.Pierre dEntrailles En Acier">Pierre d’Entrailles En Acier</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poudre%20Dessicative.ashx" title="Pathfinder-RPG.Poudre Dessicative">Poudre Dessicative</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poup%c3%a9e%20Anatomique.ashx" title="Pathfinder-RPG.Poupée Anatomique">Poupée Anatomique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bille%20Antim%c3%a9tamorphose.ashx" title="Pathfinder-RPG.Bille Antimétamorphose">Bille Antimétamorphose</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.P%c3%a2te%20de%20Lien%20Animal.ashx" title="Pathfinder-RPG.Pâte de Lien Animal">Pâte de Lien Animal</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ex-libris%20de%20Rappel.ashx" title="Pathfinder-RPG.Ex-libris de Rappel">Ex-libris de Rappel</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bille%20de%20Bore.ashx" title="Pathfinder-RPG.Bille de Bore">Bille de Bore</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poche%20de%20Dissimulation.ashx" title="Pathfinder-RPG.Poche de Dissimulation">Poche de Dissimulation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Liqueur%20Radiesth%c3%a9sique.ashx" title="Pathfinder-RPG.Liqueur Radiesthésique">Liqueur Radiesthésique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Encens%20de%20Transcendance.ashx" title="Pathfinder-RPG.Encens de Transcendance">Encens de Transcendance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Page%20de%20Connaissances%20Magiques.ashx" title="Pathfinder-RPG.Page de Connaissances Magiques">Page de Connaissances Magiques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Flasque%20de%20Conservation%20Alchimique.ashx" title="Pathfinder-RPG.Flasque de Conservation Alchimique">Flasque de Conservation Alchimique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Ciboire%20des%20Domaines%20Alt%c3%a9r%c3%a9s.ashx" title="Pathfinder-RPG.Ciboire des Domaines Altérés">Ciboire des Domaines Altérés</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Nid%20Grouillant%20de%20Gu%c3%aapes.ashx" title="Pathfinder-RPG.Nid Grouillant de Guêpes">Nid Grouillant de Guêpes</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sel%20Fun%c3%a9raire.ashx" title="Pathfinder-RPG.Sel Funéraire">Sel Funéraire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cr%c3%a2ne%20Gobelin%20Explosif.ashx" title="Pathfinder-RPG.Crâne Gobelin Explosif">Crâne Gobelin Explosif</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%c3%89lixir%20de%20Souffle%20Draconique.ashx" title="Pathfinder-RPG.Élixir de Souffle Draconique">Élixir de Souffle Draconique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bouteille%20%c3%80%20Paroles.ashx" title="Pathfinder-RPG.Bouteille À Paroles">Bouteille À Paroles</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Marque-page%20Trompeur.ashx" title="Pathfinder-RPG.Marque-page Trompeur">Marque-page Trompeur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poudre%20Absorbante%20Acide.ashx" title="Pathfinder-RPG.Poudre Absorbante Acide">Poudre Absorbante Acide</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corne%20%c3%80%20Poudre%20%c3%89tanche.ashx" title="Pathfinder-RPG.Corne À Poudre Étanche">Corne À Poudre Étanche</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.B%c3%a2ton%20de%20Marche%20Agile.ashx" title="Pathfinder-RPG.Bâton de Marche Agile">Bâton de Marche Agile</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Havresac%20du%20Mage.ashx" title="Pathfinder-RPG.Havresac du Mage">Havresac du Mage</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pointe%20En%20Fer%20Illusoire.ashx" title="Pathfinder-RPG.Pointe En Fer Illusoire">Pointe En Fer Illusoire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sang%20de%20Prouesse%20Physique.ashx" title="Pathfinder-RPG.Sang de Prouesse Physique">Sang de Prouesse Physique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pilule%20Volatile.ashx" title="Pathfinder-RPG.Pilule Volatile">Pilule Volatile</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poup%c3%a9e%20Malfaisante.ashx" title="Pathfinder-RPG.Poupée Malfaisante">Poupée Malfaisante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Livre%20de%20Convocation%20Durable%20interm%c3%a9diaire.ashx" title="Pathfinder-RPG.Livre de Convocation Durable intermédiaire">Livre de Convocation Durable intermédiaire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Linceul%20de%20D%c3%a9sint%c3%a9gration.ashx" title="Pathfinder-RPG.Linceul de Désintégration">Linceul de Désintégration</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poudre%20dAlourdissement.ashx" title="Pathfinder-RPG.Poudre dAlourdissement">Poudre d’Alourdissement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pyxide%20de%20Vigilance.ashx" title="Pathfinder-RPG.Pyxide de Vigilance">Pyxide de Vigilance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fili%c3%a8re%20de%20Pr%c3%a9caution.ashx" title="Pathfinder-RPG.Filière de Précaution">Filière de Précaution</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%c3%89chelle%20Dimensionnelle.ashx" title="Pathfinder-RPG.Échelle Dimensionnelle">Échelle Dimensionnelle</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunette%20Longue%20Distance.ashx" title="Pathfinder-RPG.Lunette Longue Distance">Lunette Longue Distance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Tambour%20de%20Feu%20incendiaire%20Gobelin.ashx" title="Pathfinder-RPG.Tambour de Feu incendiaire Gobelin">Tambour de Feu incendiaire Gobelin</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Poudre%20N%c3%a9antis%c3%a9.ashx" title="Pathfinder-RPG.Poudre Néantisé">Poudre Néantisé</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fiole%20de%20M%c3%a9lange.ashx" title="Pathfinder-RPG.Fiole de Mélange">Fiole de Mélange</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lame%20dOs.ashx" title="Pathfinder-RPG.Lame dOs">Lame d’Os</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Heurtoir%20de%20Porte%20Magique.ashx" title="Pathfinder-RPG.Heurtoir de Porte Magique">Heurtoir de Porte Magique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Maillet%20de%20B%c3%a2tisseur.ashx" title="Pathfinder-RPG.Maillet de Bâtisseur">Maillet de Bâtisseur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bourse%20Polymorphe.ashx" title="Pathfinder-RPG.Bourse Polymorphe">Bourse Polymorphe</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Banc%20dYeux-poissons%20Indiscrets.ashx" title="Pathfinder-RPG.Banc dYeux-poissons Indiscrets">Banc d’Yeux-poissons Indiscrets</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pierre%20dAlliance.ashx" title="Pathfinder-RPG.Pierre dAlliance">Pierre d’Alliance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fer%20de%20Convocation.ashx" title="Pathfinder-RPG.Fer de Convocation">Fer de Convocation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lanterne%20Macabre.ashx" title="Pathfinder-RPG.Lanterne Macabre">Lanterne Macabre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pi%c3%a8ce%20de%20Destin%c3%a9e%20Al%c3%a9atoire.ashx" title="Pathfinder-RPG.Pièce de Destinée Aléatoire">Pièce de Destinée Aléatoire</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cor%20de%20Lucidit%c3%a9%20Martiale.ashx" title="Pathfinder-RPG.Cor de Lucidité Martiale">Cor de Lucidité Martiale</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Insigne%20de%20Lien%20Vital.ashx" title="Pathfinder-RPG.Insigne de Lien Vital">Insigne de Lien Vital</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Larme%20de%20Martyr.ashx" title="Pathfinder-RPG.Larme de Martyr">Larme de Martyr</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corde%20de%20Nouement.ashx" title="Pathfinder-RPG.Corde de Nouement">Corde de Nouement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bol%20Chantant%20de%20Frappe%20Ki.ashx" title="Pathfinder-RPG.Bol Chantant de Frappe Ki">Bol Chantant de Frappe Ki</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Familier%20de%20Pierre.ashx" title="Pathfinder-RPG.Familier de Pierre">Familier de Pierre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Livre%20de%20Convocation%20Durable%20sup%c3%a9rieur.ashx" title="Pathfinder-RPG.Livre de Convocation Durable supérieur">Livre de Convocation Durable supérieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Baguettes%20Divinatoires%20En%20Os%20de%20Dragon.ashx" title="Pathfinder-RPG.Baguettes Divinatoires En Os de Dragon">Baguettes Divinatoires En Os de Dragon</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bindi%20En%20%c3%89caille%20de%20Naga.ashx" title="Pathfinder-RPG.Bindi En Écaille de Naga">Bindi En Écaille de Naga</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Flacon%20dOmbres.ashx" title="Pathfinder-RPG.Flacon dOmbres">Flacon d’Ombres</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cape%20de%20Bravade.ashx" title="Pathfinder-RPG.Cape de Bravade">Cape de Bravade</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pont%20Escamotable.ashx" title="Pathfinder-RPG.Pont Escamotable">Pont Escamotable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Miroir%20Aux%20Reflets%20Protecteurs.ashx" title="Pathfinder-RPG.Miroir Aux Reflets Protecteurs">Miroir Aux Reflets Protecteurs</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Baume%20de%20Souplesse%20Taquine.ashx" title="Pathfinder-RPG.Baume de Souplesse Taquine">Baume de Souplesse Taquine</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bougie%20dAir%20Pur.ashx" title="Pathfinder-RPG.Bougie dAir Pur">Bougie d’Air Pur</a> <br />
+<a class="pagelink" href="Pathfinder-RPG.Trait%c3%a9%20de%20Guerre.ashx" title="Traité de guerre">Traité de Guerre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Coupe%20de%20Larmes%20Toxiques.ashx" title="Pathfinder-RPG.Coupe de Larmes Toxiques">Coupe de Larmes Toxiques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Goupillon%20dExorciste.ashx" title="Pathfinder-RPG.Goupillon dExorciste">Goupillon d’Exorciste</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Harpe%20Fracassante.ashx" title="Pathfinder-RPG.Harpe Fracassante">Harpe Fracassante</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Insigne%20de%20Courage.ashx" title="Pathfinder-RPG.Insigne de Courage">Insigne de Courage</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Aiguilles%20de%20Tatouage%20Magiques.ashx" title="Pathfinder-RPG.Aiguilles de Tatouage Magiques">Aiguilles de Tatouage Magiques</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Outils%20de%20Cambrioleur%20Anim%c3%a9s.ashx" title="Pathfinder-RPG.Outils de Cambrioleur Animés">Outils de Cambrioleur Animés</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sifflet-garou.ashx" title="Pathfinder-RPG.Sifflet-garou">Sifflet-garou</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Miroir%20D%c3%a9testable.ashx" title="Pathfinder-RPG.Miroir Détestable">Miroir Détestable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Craie%20de%20D%c3%a9limitation.ashx" title="Pathfinder-RPG.Craie de Délimitation">Craie de Délimitation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Carillon%20de%20Silence%20Retentissant.ashx" title="Pathfinder-RPG.Carillon de Silence Retentissant">Carillon de Silence Retentissant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Tambour%20de%20Course.ashx" title="Pathfinder-RPG.Tambour de Course">Tambour de Course</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fil%20dEmbaumement.ashx" title="Pathfinder-RPG.Fil dEmbaumement">Fil d’Embaumement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Oeil%20Indicible.ashx" title="Pathfinder-RPG.Oeil Indicible">Oeil Indicible</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Sablier%20de%20la%20Derni%c3%a8re%20Chance.ashx" title="Pathfinder-RPG.Sablier de la Dernière Chance">Sablier de la Dernière Chance</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Symbole%20Sacr%c3%a9%20Mall%c3%a9able.ashx" title="Pathfinder-RPG.Symbole Sacré Malléable">Symbole Sacré Malléable</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Coffret%20du%20Minet.ashx" title="Pathfinder-RPG.Coffret du Minet">Coffret du Minet</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Symbole%20de%20Lumi%c3%a8re%20Gu%c3%a9risseuse.ashx" title="Pathfinder-RPG.Symbole de Lumière Guérisseuse">Symbole de Lumière Guérisseuse</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Moulin%20%c3%80%20Pri%c3%a8re%20de%20Puissance%20Morale.ashx" title="Pathfinder-RPG.Moulin À Prière de Puissance Morale">Moulin À Prière de Puissance Morale</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cheval%20de%20Pierre.ashx" title="Pathfinder-RPG.Cheval de Pierre">Cheval de Pierre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cristal%20de%20Possession.ashx" title="Pathfinder-RPG.Cristal de Possession">Cristal de Possession</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Scell%c3%a9%20de%20Tr%c3%a9sorier.ashx" title="Pathfinder-RPG.Scellé de Trésorier">Scellé de Trésorier</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Gemme%20d%c3%82me%20Noircie.ashx" title="Pathfinder-RPG.Gemme dÂme Noircie">Gemme d’Âme Noircie</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Selle%20du%20Ma%c3%aetre%20de%20Guerre.ashx" title="Pathfinder-RPG.Selle du Maître de Guerre">Selle du Maître de Guerre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fl%c3%bbte%20de%20Dissipation.ashx" title="Pathfinder-RPG.Flûte de Dissipation">Flûte de Dissipation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Fl%c3%bbte%20de%20Douleur.ashx" title="Pathfinder-RPG.Flûte de Douleur">Flûte de Douleur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Lunette%20de%20D%c3%a9tection%20de%20lInvisibilit%c3%a9.ashx" title="Pathfinder-RPG.Lunette de Détection de lInvisibilité">Lunette de Détection de l’Invisibilité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Essences%20de%20Transmutation.ashx" title="Pathfinder-RPG.Essences de Transmutation">Essences de Transmutation</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Harpe%20de%20Contagion.ashx" title="Pathfinder-RPG.Harpe de Contagion">Harpe de Contagion</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Banni%c3%a8re%20N%c3%a9antis%c3%a9e.ashx" title="Pathfinder-RPG.Bannière Néantisée">Bannière Néantisée</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Trompette%20du%20Jugement.ashx" title="Pathfinder-RPG.Trompette du Jugement">Trompette du Jugement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Conque%20des%20Tritons.ashx" title="Pathfinder-RPG.Conque des Tritons">Conque des Tritons</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Orbe%20d%c3%89pouvante%20Abaddonienne.ashx" title="Pathfinder-RPG.Orbe dÉpouvante Abaddonienne">Orbe d’Épouvante Abaddonienne</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cloche%20Dor%c3%a9e%20de%20Bannissement.ashx" title="Pathfinder-RPG.Cloche Dorée de Bannissement">Cloche Dorée de Bannissement</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Orbe%20des%20Cieux.ashx" title="Pathfinder-RPG.Orbe des Cieux">Orbe des Cieux</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corne%20d%c3%89ternelle%20Bravoure.ashx" title="Pathfinder-RPG.Corne dÉternelle Bravoure">Corne d’Éternelle Bravoure</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.%c3%89meraude%20Chaotique.ashx" title="Pathfinder-RPG.Émeraude Chaotique">Émeraude Chaotique</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Balai%20Volant%20de%20Course.ashx" title="Pathfinder-RPG.Balai Volant de Course">Balai Volant de Course</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Orbe%20de%20Chaos%20Absolu.ashx" title="Pathfinder-RPG.Orbe de Chaos Absolu">Orbe de Chaos Absolu</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Chaudron%20Volant.ashx" title="Pathfinder-RPG.Chaudron Volant">Chaudron Volant</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Talisman%20dAnimosit%c3%a9.ashx" title="Pathfinder-RPG.Talisman dAnimosité">Talisman d’Animosité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Timbales%20de%20Rapidit%c3%a9.ashx" title="Pathfinder-RPG.Timbales de Rapidité">Timbales de Rapidité</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Corne%20du%20Valhalla.ashx" title="Pathfinder-RPG.Corne du Valhalla">Corne du Valhalla</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Feuilles%20Automnales%20des%20Dryades.ashx" title="Pathfinder-RPG.Feuilles Automnales des Dryades">Feuilles Automnales des Dryades</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Orbe%20de%20Loi%20Parfaite.ashx" title="Pathfinder-RPG.Orbe de Loi Parfaite">Orbe de Loi Parfaite</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Cor%20de%20D%c3%a9vastation%20Sup%c3%a9rieur.ashx" title="Pathfinder-RPG.Cor de Dévastation Supérieur">Cor de Dévastation Supérieur</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bol%20de%20Convocation%20d%c3%89l%c3%a9mentaires%20de%20lEau.ashx" title="Pathfinder-RPG.Bol de Convocation dÉlémentaires de lEau">Bol de Convocation d’Élémentaires de l’Eau</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Bras%c3%a9ro%20de%20Convocation%20d%c3%89l%c3%a9mentaires%20du%20Feu.ashx" title="Pathfinder-RPG.Braséro de Convocation dÉlémentaires du Feu">Braséro de Convocation d’Élémentaires du Feu</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Encensoir%20de%20Convocation%20d%c3%89l%c3%a9mentaires%20de%20lAir.ashx" title="Pathfinder-RPG.Encensoir de Convocation dÉlémentaires de lAir">Encensoir de Convocation d’Élémentaires de l’Air</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Pierre%20de%20Convocation%20d%c3%89l%c3%a9mentaires%20de%20la%20Terre.ashx" title="Pathfinder-RPG.Pierre de Convocation dÉlémentaires de la Terre">Pierre de Convocation d’Élémentaires de la Terre</a> <br />
+<a class="unknownlink" href="Pathfinder-RPG.Miroir%20de%20Prouesse%20Mentale.ashx" title="Pathfinder-RPG.Miroir de Prouesse Mentale">Miroir de Prouesse Mentale</a> <br />
+</div>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>

@@ -13,7 +13,7 @@ from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cle
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
-MOCK_MAGIC = "mocks/magic-armors.html"                  # décommenter pour tester avec les armures pré-téléchargées
+#MOCK_MAGIC = "mocks/magic-armors.html"                  # décommenter pour tester avec les armures pré-téléchargées
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-bouclier-elysien.html"      # décommenter pour tester avec détails pré-téléchargé
 

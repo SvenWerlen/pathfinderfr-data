@@ -13,7 +13,7 @@ from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cle
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
-MOCK_MAGIC = "mocks/magic-rings.html"                  # décommenter pour tester avec les anneaux pré-téléchargées
+#MOCK_MAGIC = "mocks/magic-rings.html"                  # décommenter pour tester avec les anneaux pré-téléchargées
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-ring-protection.html"      # décommenter pour tester avec détails pré-téléchargé
 
@@ -25,7 +25,7 @@ liste = []
 # first = column with name
 # second = column with cost
 PATHFINDER = "http://www.pathfinder-fr.org/Wiki/"
-REFERENCE = PATHFINDER + "Pathfinder-RPG.Anneaux magiques.ashx"
+REFERENCE = PATHFINDER + "Pathfinder-RPG.Anneaux%20magiques.ashx"
 TYPE = "Anneau"
 IGNORE = ["Arme spécifique"]
 TABLEDEF = {

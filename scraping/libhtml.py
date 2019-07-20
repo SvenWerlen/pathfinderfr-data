@@ -65,6 +65,9 @@ def html2text(htmlEl):
 # 
 def cleanProperty(text):  
     text = text.strip()
+    if text.startswith(':'):
+        text = text[1:].strip()
+    
     if text.endswith('.') or text.endswith(';'):
         text = text[:-1].strip()
     return text
@@ -114,18 +117,18 @@ def extractProps(liste):
                         
                 
                 else:
-                    # "Prix" est déjà déterminé
-                    if curProp == "prix":
-                        curProp = "prixAlt"
-                        
-                    props[curProp] = value
+                    props[curProp] = cleanProperty(value)
                     
             curProp = el.text.strip().lower()
+            # "Prix" est déjà déterminé
+            if curProp == "prix":
+                curProp = "prixAlt"
+                        
             curValue = ""
         else:
             curValue += html2text(el)
     # dernière entrée
-    if curProp and curProp != "prix":
+    if curProp and not curProp in props:
         props[curProp] =  cleanProperty(curValue)
     return props
 

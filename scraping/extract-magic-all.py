@@ -15,3 +15,7 @@ echo "Processing anneaux..."
 printf "###\n### Bâtons\n###\n\n" >> ../data/magic.yml
 echo "Processing bâtons..."
 ./extract-magic-staffs.py >> ../data/magic.yml
+
+printf "###\n### Objets merveilleux\n###\n\n" >> ../data/magic.yml
+echo "Processing objets merveilleux..."
+./extract-magic-objects.py >> ../data/magic.yml
