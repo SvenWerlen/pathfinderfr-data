@@ -13,7 +13,9 @@ from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cle
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
-#MOCK_MAGIC = "mocks/magic-weapons.html"                  # décommenter pour tester avec les armes pré-téléchargées
+#MOCK_MAGIC = "mocks/magic-scepters.html"                  # décommenter pour tester avec les sceptres pré-téléchargées
+MOCK_MAGIC_META = None
+#MOCK_MAGIC_META = "mocks/magic-scepters-meta.html"                  # décommenter pour tester avec les sorts de métamagie pré-téléchargés
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-carreau.html"      # décommenter pour tester avec détails pré-téléchargé
 
@@ -25,17 +27,13 @@ liste = []
 # first = column with name
 # second = column with cost
 PATHFINDER = "http://www.pathfinder-fr.org/Wiki/"
-REFERENCE = PATHFINDER + "Pathfinder-RPG.Armes%20magiques.ashx"
-TYPE = "Arme"
-IGNORE = ["Arme spécifique"]
+REFERENCE = PATHFINDER + "Pathfinder-RPG.Sceptres%20magiques.ashx"
+REFERENCE_META = "Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx"
+TYPE = "Sceptre"
+IGNORE = []
 TABLEDEF = {
-    1: [4,5,"Arme ", {'descr': TEXTE}],
-    2: [4,5,"Arme càc: "],
-    3: [4,5,"Arme càc: "],
-    4: [4,5,"Arme dist: "],
-    5: [4,5,"Arme dist"],
-    6: [4,5,""],
-    7: [4,5,""],
+    1: [3,4,""],
+    2: [3,4,""],
 }
 
 
@@ -44,6 +42,22 @@ if MOCK_MAGIC:
 else:
     content = BeautifulSoup(urllib.request.urlopen(REFERENCE).read(),features="lxml").body
 
+if MOCK_MAGIC_META:
+    meta = BeautifulSoup(open(MOCK_MAGIC_META),features="lxml").body
+else:
+    meta = BeautifulSoup(urllib.request.urlopen(PATHFINDER + REFERENCE_META).read(),features="lxml").body
+
+
+##
+## Load all metamagie
+##
+metalist = []
+tables = meta.find_all('div',{'class':['BD']})
+for t in tables:
+    data = extractBD_Type2(t)
+    # extract property
+    data['prop'] = data['nomAlt'].split(', ')[1].lower()
+    metalist.append(data)
 
 propList = []
 
@@ -92,21 +106,24 @@ for t in tables:
         # débogage
         #print("Traitement de %s..." % nom.strip())
         
-        # get description from same page
-        if href and "#" in href and not "NOTE" in href:
-            ref = "#" + href.split('#')[1]
-            jumpTo = content.find('a',{'href':ref})
-            if jumpTo is None:
-                print("Lien invalide: %s" % href)
-                exit(1)
-            data = {**data, **extractBD_Type1(jumpTo.find_next('div',{'class':['BD']}))}
+        
+        # get description from metamagie
+        if href and href.startswith(REFERENCE_META):
+            # try to find matching metamagie
+            found = None
+            for m in metalist:
+                if m['prop'] in data['nom'].lower():
+                    found = m
             
-            reference = PATHFINDER + href
-            if len(data['descr']) == 0:
-                print("Description invalide pour: %s" % href)
+            if found:
+                reference = PATHFINDER + REFERENCE_META
+                data = {**data, **found}
+            else:
+                print("Correspondance non-trouvé pour %s" % data["nom"])
                 exit(1)
         
         elif href and not "#" in href:
+
             # récupérer le détail d'un objet
             if MOCK_MAGIC_ITEM:
                 page = BeautifulSoup(open(MOCK_MAGIC_ITEM),features="lxml").body
@@ -122,7 +139,7 @@ for t in tables:
                 exit(1)
         
         element = {}
-        element["01Nom"] = data["nom"]
+        element["01Nom"] = data["nomAlt"]
         element["02Type"] = TYPE
         element["03Prix"] = data["prix"]
         element["04Source"] = "MJ"

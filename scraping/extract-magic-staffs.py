@@ -97,7 +97,7 @@ for t in tables:
                 exit(1)
             data = {**data, **extractBD_Type1(jumpTo.find_next('div',{'class':['BD']}))}
             
-            reference = REFERENCE + href
+            reference = PATHFINDER + href
             if len(data['descr']) == 0:
                 print("Description invalide pour: %s" % href)
                 exit(1)
@@ -109,6 +109,7 @@ for t in tables:
             else:
                 page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + href).read(),features="lxml").body
                 
+            reference = PATHFINDER + href
             data = {**data, **extractBD_Type2(page.find('div',{'class':['BD']}))}
             descr = data['descr']
             

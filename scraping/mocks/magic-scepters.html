@@ -1,0 +1,712 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les sceptres magiques - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres magiques.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Sceptres+magiques&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwbyeDR/csXbCSKBLN2D+QdYPEQVs=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAL59xRjB4J4F1e/lsGzo+/Q+B72oi3QcwxQT+thNGyuusMD0I9Ig03PEnSLaMsg7AqUeM8U" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Sceptres magiques">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Sceptres magiques">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Sceptres magiques">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Sceptres magiques.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Sceptres magiques.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Sceptres%20magiques">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les sceptres magiques
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Sceptres%20magiques" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		Les sceptres sont des objets magiques proposant des <a class="pagelink" href="Pathfinder-RPG.pouvoirs%20magiques.ashx" title="pouvoirs magiques">pouvoirs magiques</a> uniques et qui n’ont généralement pas de charges. N’importe qui peut les utiliser.<br /><br /><b>Description.</b> Les sceptres pèsent environ 2,5 kg et mesurent entre soixante et quatre-vingt-dix centimètres. Ils sont le plus généralement en fer ou en un autre métal (la plupart d’entre eux peuvent faire office de masse d’armes légère ou de gourdin, vu leur solidité). Ils ont une <a class="pagelink" href="Pathfinder-RPG.CA.ashx" title="CA">CA</a> de 9, 10 <a class="pagelink" href="Pathfinder-RPG.points%20de%20vie.ashx" title="points de vie">points de vie</a>, une <a class="pagelink" href="Pathfinder-RPG.solidit%c3%a9.ashx" title="solidité">solidité</a> de 10 et le test de <a class="pagelink" href="Pathfinder-RPG.Force.ashx" title="La Force">Force</a> pour les casser a un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 27.<br /><br /><b>Activation.</b> L’activation des sceptres varie d’un modèle à l’autre. Voir la description de chacun pour plus de précisions.<br /><br /><b>Propriétés spéciales.</b> Lancer un dé. Sur un 01, le sceptre est <a class="pagelink" href="Pathfinder-RPG.objets%20intelligents.ashx" title="Les objets intelligents">intelligent</a>. Sur 02–31, un indice quant à sa capacité figure quelque part à sa surface (dessin, inscription, etc.), et sur 33–100, il n’a aucune propriété spéciale. Les <a class="pagelink" href="Pathfinder-RPG.objets%20intelligents.ashx" title="Les objets intelligents">objets intelligents</a> ont des propriétés supplémentaires et parfois des <a class="pagelink" href="Pathfinder-RPG.pouvoirs%20extraordinaires.ashx" title="pouvoirs extraordinaires">pouvoirs extraordinaires</a> et des desseins spéciaux (pour plus de précisions, voir la section "<a class="pagelink" href="Pathfinder-RPG.Objets%20intelligents.ashx" title="Les objets intelligents">Objets intelligents</a>"). Les sceptres à charges ne sont eux jamais <a class="pagelink" href="Pathfinder-RPG.objets%20intelligents.ashx" title="Les objets intelligents">intelligents</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="DETERMINATION" href="#DETERMINATION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<center>
+<table CLASS="tablo col1centre"><caption>Sceptres (MdJ)</caption><tr CLASS="titre"><td>Intermédiaire</td><td>Puissante</td><td>Sceptre</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01–07</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Extension de portée</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>08–14</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Extension de durée</i></td><td>3 000 po</td></tr><tr><td>15–21</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Incantation silencieuse</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>22–28</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20inamovible.ashx" title="Sceptre inamovible">Inamovible</a></i></td><td>5 000 po</td></tr><tr><td>29–35</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Extension d’effet</i></td><td>9 000 po</td></tr><tr CLASS="alt"><td>36–42</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20d%c3%a9tection%20des%20m%c3%a9taux%20et%20des%20min%c3%a9raux.ashx" title="Sceptre de détection des métaux et des minéraux">Détection des métaux et des minéraux</a></i></td><td>10 500 po</td></tr><tr><td>43–53</td><td>01–04</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20doblit%c3%a9ration.ashx" title="Sceptre d&#39;oblitération">Oblitération</a></i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>54–57</td><td>05–06</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Extension de portée</i></td><td>11 000po</td></tr><tr><td>58–61</td><td>07–08</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Extension de durée</i></td><td>11 000po</td></tr><tr CLASS="alt"><td>62–65</td><td>09–10</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Incantation silencieuse</i></td><td>11 000po</td></tr><tr><td>66–71</td><td>11–14</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20merveilleux.ashx" title="Sceptre merveilleux">Merveilleux</a></i></td><td>12 000 po</td></tr><tr CLASS="alt"><td>72–79</td><td>15–19</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20du%20python.ashx" title="Sceptre du python">Python</a></i></td><td>13 000 po</td></tr><tr><td>80–83</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Quintessence des sorts</i></td><td>14 000 po</td></tr><tr CLASS="alt"><td>84–89</td><td>20–21</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20dextinction%20des%20feux.ashx" title="Sceptre d&#39;extinction des feux">Extinction des feux</a></i></td><td>15 000 po</td></tr><tr><td>90–97</td><td>22–25</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20la%20vip%c3%a8re.ashx" title="Sceptre de la vipère">Vipère</a></i></td><td>19 000 po</td></tr><tr CLASS="alt"><td>—</td><td>26–30</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20d%c3%a9tection%20de%20lhostilit%c3%a9.ashx" title="Sceptre de détection de l&#39;hostilité">Détection de l’hostilité</a></i></td><td>23 500 po</td></tr><tr><td>—</td><td>31–36</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Extension de portée</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>37–42</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Extension de durée</i></td><td>24 500 po</td></tr><tr><td>—</td><td>43–48</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Incantation silencieuse</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>49–53</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20prestance.ashx" title="Sceptre de prestance">Prestance</a></i></td><td>25 000 po</td></tr><tr><td>—</td><td>54–58</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20fl%c3%a9trissement.ashx" title="Sceptre de flétrissement">Flétrissement</a></i></td><td>25 000 po</td></tr><tr CLASS="alt"><td>98–99</td><td>59–64</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Extension d'effet</i></td><td>32 500 po</td></tr><tr><td>—</td><td>65–69</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20lorage.ashx" title="Sceptre de l&#39;orage">Orage</a></i></td><td>33 000 po</td></tr><tr CLASS="alt"><td>100</td><td>70–73</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Incantation rapide</i></td><td>35 000 po</td></tr><tr><td>—</td><td>74–77</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20dannulation.ashx" title="Sceptre d&#39;annulation">Annulation</a></i></td><td>37 000 po</td></tr><tr CLASS="alt"><td>—</td><td>78–80</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20dabsorption.ashx" title="Sceptre d&#39;absorption">Absorption</a></i></td><td>50 000 po</td></tr><tr><td>—</td><td>81–84</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20du%20grand%20fl%c3%a9au.ashx" title="Sceptre du grand fléau">Grand fléau</a></i></td><td>50 000 po</td></tr><tr CLASS="alt"><td>—</td><td>85–86</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Quintessence des sorts</i></td><td>54 000 po</td></tr><tr><td>—</td><td>87–88</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20suzerainet%c3%a9.ashx" title="Sceptre de suzeraineté">Suzeraineté</a></i></td><td>60 000 po</td></tr><tr CLASS="alt"><td>—</td><td>89–90</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20s%c3%a9curit%c3%a9.ashx" title="Sceptre de sécurité">Sécurité</a></i></td><td>61 000 po</td></tr><tr><td>—</td><td>91–92</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20des%20seigneurs%20de%20la%20guerre.ashx" title="Sceptre des seigneurs de la guerre">Seigneurs de la guerre</a></i></td><td>70 000 po</td></tr><tr CLASS="alt"><td>—</td><td>93–94</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Extension d'effet</i></td><td>73 000 po</td></tr><tr><td>—</td><td>95–96</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Incantation rapide</i></td><td>75 500 po</td></tr><tr CLASS="alt"><td>—</td><td>97–98</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20l%c3%a9ternelle%20vigilance.ashx" title="Sceptre de l&#39;éternelle vigilance">Éternelle vigilance</a></i></td><td>85 000 po</td></tr><tr><td>—</td><td>99</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Quintessence des sorts</i></td><td>121 500 po</td></tr><tr CLASS="alt"><td>—</td><td>100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Incantation rapide</i></td><td>170 000 po</td></tr></table>
+</center><br /><br /><center>
+<table CLASS="tablo col1centre"><caption>Sceptres (APG)</caption><tr CLASS="titre"><td>Intermédiaire</td><td>Puissante</td><td>Sceptre</td><td>Prix de vente</td></tr><tr CLASS="premier"><td>01–03</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort miséricordieux</i></td><td>1 500 po</td></tr><tr CLASS="alt"><td>04–06</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort perturbateur</i></td><td>3 000 po</td></tr><tr><td>07-11</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort ectoplasmique</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>12–21</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort élémentaire</i></td><td>3 000 po</td></tr><tr><td>22-27</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort concentré</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>28-33</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort intense</i></td><td>3 000 po</td></tr><tr><td>34-36</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort soutenu</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>37-39</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort persistant</i></td><td>9 000 po</td></tr><tr><td>40-43</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort éloigné</i></td><td>3 000 po</td></tr><tr CLASS="alt"><td>44-53</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort sélectif</i></td><td>3 000 po</td></tr><tr><td>54-55</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort miséricordieux</i></td><td>5 000 po</td></tr><tr CLASS="alt"><td>56-58</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort à rebonds</i></td><td>3 000 po</td></tr><tr><td>59-62</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort écœurant</i></td><td>9 000 po</td></tr><tr CLASS="alt"><td>63-66</td><td>—</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort tonitruant</i></td><td>9 000 po</td></tr><tr><td>67-70</td><td>01-03</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort perturbateur</i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>71-74</td><td>04-09</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort ectoplasmique</i></td><td>11 000 po</td></tr><tr><td>75-80</td><td>10-20</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort élémentaire</i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>81-83</td><td>21-28</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort concentré</i></td><td>11 000 po</td></tr><tr><td>84-86</td><td>29-36</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort intense</i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>87-88</td><td>37-39</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort soutenu</i></td><td>11 000 po</td></tr><tr><td>89-90</td><td>40-43</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort persistant</i></td><td>32 500 po</td></tr><tr CLASS="alt"><td>91-93</td><td>44-46</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort éloigné</i></td><td>11 000 po</td></tr><tr><td>94-97</td><td>47-54</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort sélectif</i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>98</td><td>55-56</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort miséricordieux</i></td><td>12 250 po</td></tr><tr><td>99-100</td><td>57-58</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie mineure</a>, Sort hébétant</i></td><td>14 000 po</td></tr><tr CLASS="alt"><td>—</td><td>59-60</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort perturbateur</i></td><td>24 500 po</td></tr><tr><td>—</td><td>61-63</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort ectoplasmique</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>64-69</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort élémentaire</i></td><td>24 500 po</td></tr><tr><td>—</td><td>70-73</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort concentré</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>74-77</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort intense</i></td><td>24 500 po</td></tr><tr><td>—</td><td>78-79</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort soutenu</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>80</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort persistant</i></td><td>73 000 po</td></tr><tr><td>—</td><td>81-82</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort éloigné</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>83-86</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort sélectif</i></td><td>24 500 po</td></tr><tr><td>—</td><td>87-89</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort à rebonds</i></td><td>11 000 po</td></tr><tr CLASS="alt"><td>—</td><td>90-91</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort écœurant</i></td><td>32 500 po</td></tr><tr><td>—</td><td>92-93</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort tonitruant</i></td><td>32 500 po</td></tr><tr CLASS="alt"><td>—</td><td>94-95</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie modérée</a>, Sort hébétant</i></td><td>54 000 po</td></tr><tr><td>—</td><td>96-97</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort à rebonds</i></td><td>24 500 po</td></tr><tr CLASS="alt"><td>—</td><td>98</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort écœurant</i></td><td>73 000 po</td></tr><tr><td>—</td><td>99</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort tonitruant</i></td><td>73 000 po</td></tr><tr CLASS="alt"><td>—</td><td>100</td><td><i><a class="pagelink" href="Pathfinder-RPG.Sceptre%20de%20m%c3%a9tamagie.ashx" title="Sceptre de métamagie">Métamagie majeure</a>, Sort hébétant</i></td><td>121 500 po</td></tr></table>
+</center>
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
