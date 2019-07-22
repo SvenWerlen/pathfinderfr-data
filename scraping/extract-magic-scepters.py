@@ -64,6 +64,7 @@ propList = []
 tables = content.find_all('table',{'class':['tablo col1centre']})
 
 liste = []
+exists = []
 
 tableIdx = 0
 for t in tables:
@@ -141,7 +142,7 @@ for t in tables:
         element = {}
         element["01Nom"] = data["nomAlt"]
         element["02Type"] = TYPE
-        element["03Prix"] = data["prix"]
+        element["03Prix"] = data["prixAlt"]
         element["04Source"] = "MJ"
         element["20Description"] = data["descr"]
         element["21Référence"] = reference
@@ -165,7 +166,10 @@ for t in tables:
             element["10Coût"] = data["coût"]
         
         element["EMPTY"] = ""
-        liste.append(element)
+        
+        if not data["nomAlt"] in exists:
+            exists.append(data["nomAlt"])
+            liste.append(element)
     
 #exit(1)
 

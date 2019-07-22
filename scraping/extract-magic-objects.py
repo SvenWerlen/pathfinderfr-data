@@ -53,7 +53,7 @@ for m in multicol:
         nom = link.text.strip()
         
         # jump
-        #if nom == "Solvant universel":
+        #if nom == "Lunettes grossissantes":
         #    found = True
         
         #if not found:
@@ -81,42 +81,44 @@ for m in multicol:
             except:
                 #print("Page doesn't exist! Skipping...")
                 continue
+
+        for boite in page.find_all('div',{'class':['BD']}):
             
-        data = {**extractBD_Type2(page.find('div',{'class':['BD']}))}
-        descr = data['descr']
-        
-        if len(data['descr']) == 0:
-            print("Description invalide pour: %s" % href)
-            exit(1)
-        
-        element = {}
-        element["01Nom"] = data["nomAlt"] # prendre le nom de la page détaillée
-        element["02Type"] = TYPE
-        element["03Prix"] = data["prixAlt"] # prendre le prix de la page détaillée
-        element["04Source"] = "MJ"
-        element["20Description"] = data["descr"]
-        element["21Référence"] = reference
-        
-        # infos additionnelles
-        if "emplacement" in data:
-            element["05Emplacement"] = data["emplacement"]
-        if "poids" in data:
-            element["06Poids"] = data["poids"]
-        if "aura" in data:
-            element["07Aura"] = data["aura"]
-        if "nls" in data:
-            # NLS parfois variable
-            if isinstance(data["nls"], int):
-                element["08NLS"] = data["nls"]
-            else:
-                element["20Description"] = "NLS: " + data["nls"] + "\n\n" + element["20Description"]
-        if "conditions" in data:
-            element["09Conditions"] = data["conditions"]
-        if "coût" in data:
-            element["10Coût"] = data["coût"]
-        
-        element["EMPTY"] = ""
-        liste.append(element)
+            data = {**extractBD_Type2(boite)}
+            descr = data['descr']
+            
+            if len(data['descr']) == 0:
+                print("Description invalide pour: %s" % href)
+                exit(1)
+            
+            element = {}
+            element["01Nom"] = data["nomAlt"] # prendre le nom de la page détaillée
+            element["02Type"] = TYPE
+            element["03Prix"] = data["prixAlt"] # prendre le prix de la page détaillée
+            element["04Source"] = "MJ"
+            element["20Description"] = data["descr"]
+            element["21Référence"] = reference
+            
+            # infos additionnelles
+            if "emplacement" in data:
+                element["05Emplacement"] = data["emplacement"]
+            if "poids" in data:
+                element["06Poids"] = data["poids"]
+            if "aura" in data:
+                element["07Aura"] = data["aura"]
+            if "nls" in data:
+                # NLS parfois variable
+                if isinstance(data["nls"], int):
+                    element["08NLS"] = data["nls"]
+                else:
+                    element["20Description"] = "NLS: " + data["nls"] + "\n\n" + element["20Description"]
+            if "conditions" in data:
+                element["09Conditions"] = data["conditions"]
+            if "coût" in data:
+                element["10Coût"] = data["coût"]
+            
+            element["EMPTY"] = ""
+            liste.append(element)
     
 #exit(1)
 
