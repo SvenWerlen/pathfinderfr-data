@@ -47,11 +47,12 @@ for t in tables:
         if len(cols) == 9:
             # Name & Reference
             nameLink = cols[0].find('a')
+            weapon['01Nom'] = cols[0].text.strip()
+            if weapon['01Nom'].endswith(" (3)"):
+                weapon['01Nom'] = weapon['01Nom'][:-4]
             if not nameLink is None:
-                weapon['01Nom'] = nameLink.text.strip()
                 weapon[u'20Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
             else:
-                weapon['01Nom'] = cols[0].text.strip()
                 weapon[u'20Référence'] = URL
             # Others
             weapon['01Nom'] = weapon['01Nom'].replace('’','\'')
@@ -87,9 +88,9 @@ def addInfos(liste, name, source):
     elif(name == u"Masse d'armes"):
         names = [u"Masse d'armes lourde".lower(),u"Masse d'armes légère".lower()]
     elif(name == u"Flèche de fumée ou flèche fumigène"):
-        names = [u"Flèches de fumée".lower()]
+        names = [u"Flèches de fumée (20)".lower()]
     elif(name == u"Flèches assommantes ou flèches à têtes rondes"):
-        names = [u"Flèches à tête ronde".lower()]
+        names = [u"Flèches à tête ronde (20)".lower()]
     elif(name == u"Fléchette ou dard"):
         names = [u"Fléchettes".lower()]
     elif(name == u"Bille de fronde"):
@@ -98,6 +99,8 @@ def addInfos(liste, name, source):
         names = [u"Carreaux (10)".lower()]
     elif(name == u"Flèches"):
         names = [u"Flèches (20)".lower()]
+    elif(name == u"Flèches de vol"):
+        names = [u"Flèches de vol (20)".lower()]
     elif(name == u"Shuriken"):
         names = [u"Shuriken (5)".lower()]
     elif(name == u"Fléchettes de sarbacane"):
