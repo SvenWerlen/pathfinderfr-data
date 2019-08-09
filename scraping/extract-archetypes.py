@@ -14,6 +14,7 @@ from lxml import html
 MOCK_ARCHLIST = None
 MOCK_ARCHLIST = "mocks/archetypes.html"             # décommenter pour tester avec archetypes pré-téléchargés
 MOCK_ARCH = None
+#MOCK_ARCH = "mocks/archetype-spirite-hanté.html"
 #MOCK_ARCH = u"mocks/archetype-barbare-balafré.html" # décommenter pour tester avec un archetype pré-téléchargé
 #MOCK_ARCH = u"mocks/archetype-bretteur.html" # décommenter pour tester avec un archetype pré-téléchargé
 
@@ -193,10 +194,12 @@ for el in list:
                     classfeature['7Description'] = descr.strip()
                     classfeature['EMPTY'] = ""
                     
-                     # extraire niveau
-                    lvl = re.search('Au niveau (\d+)', descr)
-                    if lvl:
-                        classfeature['5Niveau'] = int(lvl.group(1))
+                    # extraire niveau
+                    idx = descr.find('Au niveau ')
+                    if idx >=0 and idx < 30:
+                        lvl = re.search('Au niveau (\d+)', descr)
+                        if lvl:
+                            classfeature['5Niveau'] = int(lvl.group(1))
                                         
                     classfeatures.append(classfeature)
                     classfeature = {'4Source':'MJ','5Niveau':1,'6Auto': True}
