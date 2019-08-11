@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import yaml
 import re
 
 #
@@ -279,3 +280,76 @@ def extractBD_Type2(html):
     
     # merge props
     return { **{'nomAlt': cleanName(titre), 'descr': cleanDescription(descr)}, **props, **fabrics }
+
+#
+# cette fonction fusionne un YAML avec un existant en respectant les règles suivantes
+# - l'ordre des champs
+# - un retour à la ligne (ligne vide) entre chaque entrée
+# - insertion uniquement à la fin
+# - aucune suppression
+# - modification des existantes (merge) sur la base du nom
+#
+def mergeYAML(origPath, order, header, yaml2merge):
+    
+    liste = []
+    
+    # lire le copyright (à intégrer en haut de chaque fichier)
+    with open('../data/COPYRIGHT.TXT', 'r') as file:
+        COPY = file.read()
+    
+    # lire le fichier original avec lequel fusionner
+    with open(origPath, 'r') as stream:
+        try:
+            liste = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+            exit(1)
+    
+    
+    # préparer les champs pour le tri
+    FIELDS = {}
+    idx = 1
+    for o in order:
+        FIELDS[o]="{:02d}{:s}".format(idx,o)
+        idx += 1
+            
+    # fusionner les listes
+    for el in yaml2merge:
+        idx = 0
+        found = False
+        for elOrig in liste:
+            if el['Nom'] == elOrig['Nom']:
+                liste[idx] = el
+                found = True
+                break
+            idx += 1
+        
+        if not found:
+            print("Élément '%s' ajouté" % el['Nom'])
+            liste.append(el)
+    
+    # préparer la liste finale (tri, retour de ligne, etc.)
+    retListe = []
+    for el in liste:
+        newEl = {}
+        
+        # change field keys to apply sorting
+        for k in el.keys():
+            if k in FIELDS.keys():
+                newEl[FIELDS[k]]=el[k]
+            else:
+                print("Champs %s ne peut être trié!" % k)
+                print(el)
+                exit(1)
+        
+        newEl['EMPTY'] = ""
+        retListe.append(newEl)
+    
+    result = yaml.safe_dump(retListe,default_flow_style=False, allow_unicode=True)
+    for f in FIELDS:
+        result = result.replace(FIELDS[f], f)
+    result = result.replace("EMPTY: ''",'')
+    
+    # écrire le résultat dans le fichier d'origine
+    outFile = open(origPath, "w")
+    outFile.write(COPY + header + result)

@@ -9,18 +9,18 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import extractList
+from libhtml import extractList, mergeYAML
 
 
 ## Configurations pour le lancement
 MOCK_TRAITS_BASE = None
-MOCK_TRAITS_BASE = "mocks/traits-base.html"       # décommenter pour tester avec la liste de traits pré-téléchargée
+#MOCK_TRAITS_BASE = "mocks/traits-base.html"       # décommenter pour tester avec la liste de traits pré-téléchargée
 MOCK_TRAITS_RACE = None
-MOCK_TRAITS_RACE = "mocks/traits-race.html"       # décommenter pour tester avec la liste de traits pré-téléchargée
+#MOCK_TRAITS_RACE = "mocks/traits-race.html"       # décommenter pour tester avec la liste de traits pré-téléchargée
 MOCK_TRAITS_REG = None
-MOCK_TRAITS_REG = "mocks/traits-region.html"      # décommenter pour tester avec la liste de traits pré-téléchargée
+#MOCK_TRAITS_REG = "mocks/traits-region.html"      # décommenter pour tester avec la liste de traits pré-téléchargée
 MOCK_TRAITS_RELI = None
-MOCK_TRAITS_RELI = "mocks/traits-religieux.html"  # décommenter pour tester avec la liste de traits pré-téléchargée
+#MOCK_TRAITS_RELI = "mocks/traits-religieux.html"  # décommenter pour tester avec la liste de traits pré-téléchargée
 
 REF_TRAITS_BASE = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx"
 REF_TRAITS_RACE = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx"
@@ -28,10 +28,12 @@ REF_TRAITS_REG  = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%
 REF_TRAITS_RELI = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx"
 liste = []
 
+FIELDS = ['Nom', 'Race', 'Source', 'Description', 'Remplace', 'Modifie', 'Référence' ]
 
 #
 # traits de base
 #
+print("Extraction des traits de base...")
 if MOCK_TRAITS_BASE:
     content = BeautifulSoup(open(MOCK_TRAITS_BASE),features="lxml").body
 else:
@@ -59,16 +61,16 @@ for s in sections:
     
     for l in extractList(s):
         trait = {}
-        trait[u'01Nom'] = prefix + l["Name"]
-        trait[u'03Source'] = "MJRA"
-        trait[u'04Description'] = l["Desc"]
-        trait[u'06Référence'] = REF_TRAITS_BASE
-        trait['EMPTY'] = ""
+        trait['Nom'] = prefix + l["Name"]
+        trait['Source'] = "MJRA"
+        trait['Description'] = l["Desc"]
+        trait['Référence'] = REF_TRAITS_BASE
         liste.append(trait)
 
 #
 # traits de race
 #
+print("Extraction des traits de race...")
 if MOCK_TRAITS_RACE:
     content = BeautifulSoup(open(MOCK_TRAITS_RACE),features="lxml").body
 else:
@@ -102,18 +104,18 @@ for s in sections:
     
     for l in extractList(s):
         trait = {}
-        trait[u'01Nom'] = "Trait de race: " + l["Name"]
-        trait[u'02Race'] = race
-        trait[u'03Source'] = "MJRA"
-        trait[u'04Description'] = l["Desc"]
-        trait[u'06Référence'] = REF_TRAITS_RACE
-        trait['EMPTY'] = ""
+        trait['Nom'] = "Trait de race: " + l["Name"]
+        trait['Race'] = race
+        trait['Source'] = "MJRA"
+        trait['Description'] = l["Desc"]
+        trait['Référence'] = REF_TRAITS_RACE
         liste.append(trait)
 
 
 #
 # traits régionaux
 #
+print("Extraction des traits régionaux...")
 if MOCK_TRAITS_REG:
     content = BeautifulSoup(open(MOCK_TRAITS_REG),features="lxml").body
 else:
@@ -123,16 +125,16 @@ page = content.find('div',{'class':['presentation navmenudroite']})
 
 for l in extractList(page):
     trait = {}
-    trait[u'01Nom'] = "Trait régional: " + l["Name"]
-    trait[u'03Source'] = "MJRA"
-    trait[u'04Description'] = l["Desc"]
-    trait[u'06Référence'] = REF_TRAITS_REG
-    trait['EMPTY'] = ""
+    trait['Nom'] = "Trait régional: " + l["Name"]
+    trait['Source'] = "MJRA"
+    trait['Description'] = l["Desc"]
+    trait['Référence'] = REF_TRAITS_REG
     liste.append(trait)
     
 #
 # traits religieux
 #
+print("Extraction des traits religieux...")
 if MOCK_TRAITS_RELI:
     content = BeautifulSoup(open(MOCK_TRAITS_RELI),features="lxml").body
 else:
@@ -142,21 +144,21 @@ page = content.find('div',{'class':['presentation navmenudroite']})
 
 for l in extractList(page):
     trait = {}
-    trait[u'01Nom'] = "Trait religieux: " + l["Name"]
-    trait[u'03Source'] = "MJRA"
-    trait[u'04Description'] = l["Desc"]
-    trait[u'06Référence'] = REF_TRAITS_RELI
-    trait['EMPTY'] = ""
+    trait['Nom'] = "Trait religieux: " + l["Name"]
+    trait['Source'] = "MJRA"
+    trait['Description'] = l["Desc"]
+    trait['Référence'] = REF_TRAITS_RELI
     liste.append(trait)
 
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace(u'01Nom',u'Nom')
-yml = yml.replace(u'02Race',u'Race')
-yml = yml.replace(u'03Source',u'Source')
-yml = yml.replace(u'04Description',u'Description')
-yml = yml.replace(u'05Remplace',u'Remplace')
-yml = yml.replace(u'05Modifie',u'Modifie')
-yml = yml.replace(u'06Référence',u'Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
+
+HEADER = """###
+### ATTENTION: certains traits ont été ajustés manuellement
+### - Duergars: les traits des Nains ont été ajoutés individuellement
+### - Suli: les attaques d'énergie ont été ajustés (nom et description)
+###
+
+"""
+
+mergeYAML("../data/races-traits-alternatifs.yml", FIELDS, HEADER, liste)
