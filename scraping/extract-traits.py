@@ -162,4 +162,4 @@ HEADER = """###
 
 """
 
-mergeYAML("../data/races-traits-alternatifs.yml", MATCH, FIELDS, HEADER, liste)
+mergeYAML("../data/traits.yml", MATCH, FIELDS, HEADER, liste)
