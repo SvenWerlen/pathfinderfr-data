@@ -133,6 +133,50 @@ def extractProps(liste):
     return props
 
 #
+# cette fonction nettoie un libellé
+#
+def cleanLabel(nom):
+    value = nom.strip()
+    if value.endswith('.'):
+        value = value[:-1]
+    return value
+
+#
+# cette fonction nettoie une description
+#
+def cleanInlineDescription(desc):
+    return desc.replace('\n', ' ').strip()
+
+#
+# cette fonction extrait la liste des propriétés basée sur le format suivant
+#
+# <b>Nom de la propriété</b> Texte descriptif
+# ...
+# <h?> Fin de la liste
+#
+def extractList(htmlElement):
+    newObj = False
+    liste = []
+    nom = ""
+    descr = ""
+    for el in htmlElement.next_siblings:
+        if el.name in ('h1', 'h2', 'h3', 'h4'):
+            break
+        if el.name == "b":
+            if newObj:
+                liste.append({ 'Name': nom, 'Desc': cleanInlineDescription(descr) })
+            nom = cleanLabel(el.text)
+            descr = ""
+            newObj = True
+        
+        elif el.name is None or el.name == 'a':
+            descr += el.string
+    # last element        
+    liste.append({ 'Name': nom, 'Desc': cleanInlineDescription(descr) })
+    
+    return liste
+
+#
 # cette fonction extait une propriété (format BD type 1)
 #
 #   NOM

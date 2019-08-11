@@ -1,0 +1,804 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Les traits religieux - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits religieux.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Traits+religieux&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwfVVK2coeXVWFti9EnDeAeGvneas=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALk4sFXRz7pvtUbW7T2nZup+B72oi3QcwxQT+thNGyuumobdCpIuUWSO03SNAAL8Cka6X+W" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="https://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Traits religieux">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Traits religieux">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Traits religieux">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Traits religieux.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Traits religieux.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Traits%20religieux">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Les traits religieux
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Traits%20religieux" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenudroite">
+<h2 class="separator"> Traits de personnages <a class="headeranchor" id="Traits_de_personnages_0" href="#Traits_de_personnages_0" title="Lien vers cette section">&#0182;</a></h2><ul><li><a class="pagelink" href="Pathfinder-RPG.Traits.ashx" title="Traits de personnages">Présentation générale</a></li>
+<li style="list-style-type: none; list-style-image: none">&nbsp;</li>
+<li><a class="pagelink" href="Pathfinder-RPG.Traits%20de%20base.ashx" title="Les traits de base">Traits de base</a>
+<li><a class="pagelink" href="Pathfinder-RPG.Traits%20de%20campagne.ashx" title="Les traits de campagne">Traits de campagne</a>
+<li><a class="pagelink" href="Pathfinder-RPG.Traits%20de%20race.ashx" title="Les traits de race">Traits de race</a>
+<li><a class="pagelink" href="Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx" title="Les traits régionaux">Traits régionaux</a>
+<li><a class="pagelink" href="Pathfinder-RPG.Traits%20religieux.ashx" title="Les traits religieux">Traits religieux</a></li></ul>
+</div><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div>
+<i>Vérifier sur le PRD anglais ce qu'il est possible de faire avec les noms des divinités.</i><br /><br />Les traits religieux sont liés à des divinités spécifiques.
+Les traits religieux qui suivent se rapportent aux divinités de Golarion. Voir les <a class="pagelink" href="Golarion.Religions%20et%20philosophies.ashx" title="Religions et philosophies">Religions et philosophies</a>.<br /><br /><b>Buveur résistant (<a class="pagelink" href="Golarion.Cayden%20Cail%c3%a9an.ashx" title="Cayden Cailéan">Cayden Cailéan</a>).</b> Le breuvage sacré de
+Cayden Cailéan renforce votre esprit et vous protège contre
+les attaques mentales. Chaque fois que vous buvez une
+boisson alcoolisée, vous gagnez un bonus de trait de +2 aux
+jets de sauvegarde contre les effets mentaux pendant 1 heure.<br /><br /><b>Chasseur de démon d’Asmodéus (<a class="pagelink" href="Golarion.Asmod%c3%a9us.ashx" title="Asmodéus">Asmodéus</a>).</b> Le
+personnage a été élevé au sein de l’église d’Asmodéus (qu’il
+peut vénérer ou pas), où il a appris à canaliser la ferveur
+qu’on lui a endoctrinée pour éliminer des démons. Il gagne
+un bonus de trait de +3 aux tests de Connaissances (plans)
+concernant les démons et un bonus de trait de +2 aux jets de
+Volonté contre les sorts et effets mentaux des démons.<br /><br /><b>Combattant vétéran (<a class="pagelink" href="Golarion.Gorum.ashx" title="Gorum">Gorum</a>).</b> Le personnage a participé
+à de nombreuses batailles et, chaque fois, il a ressenti la
+présence de Gorum qui guidait son bras et lui permettait de
+réagir rapidement. Il gagne un bonus de trait de +1 aux tests
+d’initiative. De plus, lors des rounds de surprise, s’il peut
+agir, il peut dégainer une arme par une action libre (mais pas
+une potion ni un objet magique).<br /><br /><b>Destructeur de morts-vivants (<a class="pagelink" href="Golarion.Pharasma.ashx" title="Pharasma">Pharasma</a>).</b> Le personnage,
+à qui on a enseigné les préceptes du culte de Pharasma depuis
+son plus jeune âge, considère les morts-vivants comme des
+abominations qui doivent être détruites afin de permettre à
+leurs âmes d’aller dans l’au-delà et d’y être jugées. Il gagne un
+bonus de trait de +1 aux dégâts des armes contre les mortsvivants.<br /><br /><b>Enfant de la nature (<a class="pagelink" href="Golarion.Gozreh.ashx" title="Gozreh">Gozreh</a>).</b> Grâce à la bénédiction
+de Gozreh, le personnage se sent comme chez lui dans la
+nature. Il gagne un bonus de trait de +2 aux tests de Survie
+pour trouver de la nourriture et de l’eau et un bonus de
+trait de +1 aux tests de Connaissance (nature). De plus, une
+de ces compétences (au choix du joueur) est toujours une
+compétence de classe pour lui.<br /><br /><b>Enfant des étoiles (<a class="pagelink" href="Golarion.Desna.ashx" title="Desna">Desna</a>).</b> Desna a senti que le personnage
+aimait voyager et lui a promis qu’il pourrait toujours
+retrouver le chemin de sa demeure. Il peut automatiquement
+déterminer où le nord véritable se trouve. Il gagne un bonus
+de trait de +4 aux tests de Survie pour éviter de se retrouver
+perdu.<br /><br /><b>Flamme de la Fleur de l’Aube (<a class="pagelink" href="Golarion.Sarenrae.ashx" title="Sarenrae">Sarenrae</a>).</b> L’éducation du
+personnage l’a incité à se voir comme une lame au service
+de Sarenrae, ou peut-être s’est-il lui même attribué ce rôle.
+Chaque fois qu’il inflige un coup critique à l’aide d’un
+cimeterre, il inflige 2 points de dégâts de feu supplémentaires
+à sa cible.<br /><br /><b>Guerrier divin (<a class="pagelink" href="Golarion.Iom%c3%a9dae.ashx" title="Iomédae">Iomédae</a>).</b> Dès son plus jeune âge, le
+personnage a été entraîné par un ordre de prêtres guerriers.
+Il vénère les enseignements d’Iomédae et cherche à les
+répandre par la force. Lorsqu’il lance un sort divin qui affecte une ou plusieurs armes de corps à corps, l'une d'elles de son choix gagne un bonus de trait de +1 aux dégâts des armes pour la durée du sort.<br /><br /><b>La magie, c’est la vie (<a class="pagelink" href="Golarion.N%c3%a9thys.ashx" title="Néthys">Néthys</a>).</b> La foi que le personnage place
+en la magie lui permet d’utiliser instinctivement l’énergie
+de n’importe quel sort l’affectant pour le sauver de la mort.
+Tant qu’un sort l’affecte (quel que soit ce sort), le personnage
+gagne un bonus de trait de +2 aux jets de sauvegarde contre
+les effets de mort. S’il est amené à un nombre de points de
+vie négatif alors qu’il est sous les effets d’un sort, il réussit
+automatiquement ses tests de stabilisation.<br /><br /><b>Les yeux et les oreilles de la ville (<a class="pagelink" href="Golarion.Abadar.ashx" title="Abadar">Abadar</a>).</b> Au cours de
+son entraînement religieux, le personnage a servi dans la
+milice d’une grande ville avec, comme mission principale,
+de monter la garde en haut des murs de la ville. Il gagne un
+bonus de trait de +1 aux tests de Perception et Perception est
+toujours une compétence de classe pour lui.<br /><br /><b>Optimiste patient (<a class="pagelink" href="Golarion.%c3%89rastil.ashx" title="Érastil">Érastil</a>).</b> Le personnage sait que tout
+passe avec le temps et il est habitué à devoir répéter les
+mêmes arguments plusieurs fois pour parvenir à convaincre
+les plus entêtés. Il gagne un bonus de trait de +2 aux tests
+de Diplomatie pour influencer des créatures hostiles ou
+inamicales. De plus, s’il échoue lors d’une telle tentative, il
+bénéficie d’une (unique) seconde chance.<br /><br /><b>Oreille musicale (<a class="pagelink" href="Golarion.Sh%c3%a9lyn.ashx" title="Shélyn">Shélyn</a>).</b> Pendant sa jeunesse, le
+personnage a passé d’innombrables heures dans un temple de
+Shélyn à écouter des musiciens et des chanteurs talentueux.
+Il gagne un bonus de trait de +1 à une des catégories de la
+compétence Représentation et un bonus de trait de +2 à tous
+les tests de Connaissances (folklore local) lié à l’art ou à la
+musique.<br /><br /><b>Prostitué(e) de Calistria (<a class="pagelink" href="Golarion.Calistria.ashx" title="Calistria">Calistria</a>).</b> Le personnage a
+travaillé en tant que prostitué sacré dans un des temples de
+Calistria. Il sait comment flatter les gens, leur faire plaisir et
+(surtout) les écouter. Il gagne un bonus de trait de +1 aux tests
+de Psychologie et aux tests de Diplomatie visant à recueillir
+des informations et une de ces compétences (au choix du
+joueur) est toujours une compétence de classe pour lui.<br /><br /><b>Protecteur de la Forge (<a class="pagelink" href="Golarion.Torag.ashx" title="Torag">Torag</a>).</b> Les devoirs sacrés de
+Torag consistent à protéger les fidèles, à apprendre des
+grands artisans et stratèges d’antan et à se préparer en vue
+de périodes sombres. Le personnage reçoit un bonus de trait
+de +1 aux tests de Connaissances (histoire) et Connaissances
+(ingénierie). Une de ces compétences (au choix du joueur) est
+toujours une compétence de classe pour lui.<br /><br /><b>Sagesse incarnée (<a class="pagelink" href="Golarion.Irori.ashx" title="Irori">Irori</a>).</b> Les nombreuses heures que le
+personnage a passées à méditer sur la perfection intérieure
+et la nature de la force et de la vitesse lui ont permis de
+concentrer ses pensées pour accomplir des choses que
+son corps ne pourrait pas faire normalement. Choisissez
+une compétence dépendant de la Force, de la Dextérité
+ou de la Constitution. Lorsque le personnage utilise cette
+compétence, il remplace le modificateur de la caractéristique
+associée par son modificateur de Sagesse. De plus, cette
+compétence est toujours une compétence de classe pour lui.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>
