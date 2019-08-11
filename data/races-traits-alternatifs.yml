@@ -1,3 +1,14 @@
+#
+# Ces données ont été extraites du site www.pathfinder-fr.org
+# Ce fichier utilise des marques déposées et/ou des droits d’auteurs qui sont la propriété 
+# de Black Book Editions et de Paizo Publishing 
+#
+# Voir: 
+#  - http://www.pathfinder-fr.org/Wiki/PCUP.ashx
+#  - http://paizo.com/communityuse
+#  - http://www.black-book-editions.fr/texte.php?id=6
+#
+
 ###
 ### ATTENTION: certains traits ont été ajustés manuellement
 ### - Duergars: les traits des Nains ont été ajoutés individuellement
@@ -2531,27 +2542,25 @@
   Modifie:
   - Pouvoirs magiques
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx
-
+  
 - Nom: Trait nain (implacable)
   Race: Duergar
   Source: MR
   Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
-    remplace stabilité.
-    Les nains sont doués pour se frayer un chemin sur les champs de bataille
-    et repousser leurs adversaires facilement. Ceux qui possèdent ce trait racial
-    reçoivent un bonus racial de +2 aux tests de manoeuvre offensive pour faire une
-    bousculade ou renverser un adversaire. Ce bonus s’applique uniquement si le nain
-    et son adversaire se tiennent debout sur le sol.
+    remplace stabilité. Les nains sont doués pour se frayer un chemin sur les champs
+    de bataille et repousser leurs adversaires facilement. Ceux qui possèdent ce trait
+    racial reçoivent un bonus racial de +2 aux tests de manoeuvre offensive pour faire
+    une bousculade ou renverser un adversaire. Ce bonus s’applique uniquement si le
+    nain et son adversaire se tiennent debout sur le sol.
   Remplace:
   - Stabilité
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx  
-
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
+  
 - Nom: Trait nain (montagnard)
   Race: Duergar
   Source: MR
   Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
-    remplace stabilité.
-    Les nains des montagnes sont particulièrement doués pour l’escalade
+    remplace stabilité. Les nains des montagnes sont particulièrement doués pour l’escalade
     et pour se déplacer sur d’étroites corniches rocheuses. Ceux qui possèdent ce
     trait sont immunisés contre le vertige et ne perdent pas leur bonus de Dextérité
     à la CA quand ils font un test d’Escalade ou d’Acrobaties pour traverser une surface
@@ -2564,30 +2573,28 @@
   Race: Duergar
   Source: MR
   Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
-    remplace le trait racial nain Robuste.
-    Les nains sont réputés être têtus. Ceux qui possèdent ce trait reçoivent
-    un bonus racial de +2 aux jets de sauvegarde pour résister aux sorts et pouvoirs
-    magiques d’enchantement (charme) et d’enchantement (coercition). De plus, s’ils
-    ratent un de ces jets, ils ont le droit d’en refaire un, 1 round plus tard, pour
-    mettre prématurément un terme à l’effet (à condition qu’il dure plus d’un round).
-    Ce second jet a le même DD que le premier. Si le nain dispose d’un pouvoir similaire
-    issu d’une autre source (comme l’esprit fuyant du roublard), il ne peut en utiliser
-    qu’un des deux par round, mais il peut se servir du second au deuxième round s’il
-    a raté son jet avec le premier pouvoir.
+    remplace le trait racial nain Robuste. Les nains sont réputés être têtus. Ceux
+    qui possèdent ce trait reçoivent un bonus racial de +2 aux jets de sauvegarde
+    pour résister aux sorts et pouvoirs magiques d’enchantement (charme) et d’enchantement
+    (coercition). De plus, s’ils ratent un de ces jets, ils ont le droit d’en refaire
+    un, 1 round plus tard, pour mettre prématurément un terme à l’effet (à condition
+    qu’il dure plus d’un round). Ce second jet a le même DD que le premier. Si le
+    nain dispose d’un pouvoir similaire issu d’une autre source (comme l’esprit fuyant
+    du roublard), il ne peut en utiliser qu’un des deux par round, mais il peut se
+    servir du second au deuxième round s’il a raté son jet avec le premier pouvoir.
   Remplace:
   - Immunités des duergars
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
-
+  
 - Nom: Trait nain (résistant à la magie)
   Race: Duergar
   Source: MR
   Description: Les duergars peuvent choisir n’importe quel trait racial nain qui
-    remplace le trait racial nain Robuste.
-    Les clans nains les plus anciens ont développé une résistance particulière
-    à la magie. Les nains qui disposent de ce trait racial gagnent une RM de 5 + niveau
-    de personnage. Ils peuvent la baisser pendant 1 round, par une action simple.
-    Les nains qui possèdent ce trait racial subissent un malus de -2 aux tests de
-    Concentration liés aux sorts profanes.
+    remplace le trait racial nain Robuste. Les clans nains les plus anciens ont développé
+    une résistance particulière à la magie. Les nains qui disposent de ce trait racial
+    gagnent une RM de 5 + niveau de personnage. Ils peuvent la baisser pendant 1 round,
+    par une action simple. Les nains qui possèdent ce trait racial subissent un malus
+    de -2 aux tests de Concentration liés aux sorts profanes.
   Remplace:
   - Immunités des duergars
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx
@@ -2787,14 +2794,14 @@
   Race: Suli
   Source: MR
   Description: Le suli possédant ce trait racial a un lien plus fort avec un type
-    d’énergie. La capacité assaut élémentaire
-    du suli ne peut infliger que des dégâts du type électricité. Le suli a une résistance
-    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
-    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
-    Une fois par round, par une action immédiate, le suli peut envoyer
-    une décharge à une créature qui le touche ou l’attaque au moyen d’une attaque
-    naturelle,d’une attaque à mains nues ou d’une arme de corps à corps en métal,
-    infligeant 1d6 points d’électricité à la créature.
+    d’énergie. La capacité assaut élémentaire du suli ne peut infliger que des dégâts
+    du type électricité. Le suli a une résistance de 5 à ce type d’énergie, mais aucune
+    résistance raciale aux trois autres types. Si sa capacité d’assaut élémentaire
+    est active, le suli reçoit une capacité supplémentaire. Une fois par round, par
+    une action immédiate, le suli peut envoyer une décharge à une créature qui le
+    touche ou l’attaque au moyen d’une attaque naturelle,d’une attaque à mains nues
+    ou d’une arme de corps à corps en métal, infligeant 1d6 points d’électricité à
+    la créature.
   Modifie:
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
@@ -2803,14 +2810,14 @@
   Race: Suli
   Source: MR
   Description: 'Le suli possédant ce trait racial a un lien plus fort avec un type
-    d’énergie. La capacité assaut élémentaire
-    du suli ne peut infliger que des dégâts du type feu. Le suli a une résistance
-    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
-    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
-    Plutôt que de rajouter des dégâts à une attaque de corps à corps,
-    le suli peut projeter une  d’une arme de jet. Le suli effectue une attaque de
-    contact à distance : s’il touche sa cible, cette dernière reçoit 1d6 points de
-    dégâts de feu. Les flammes ont un facteur de portée de 3 mètres.'
+    d’énergie. La capacité assaut élémentaire du suli ne peut infliger que des dégâts
+    du type feu. Le suli a une résistance de 5 à ce type d’énergie, mais aucune résistance
+    raciale aux trois autres types. Si sa capacité d’assaut élémentaire est active,
+    le suli reçoit une capacité supplémentaire. Plutôt que de rajouter des dégâts
+    à une attaque de corps à corps, le suli peut projeter une  d’une arme de jet.
+    Le suli effectue une attaque de contact à distance : s’il touche sa cible, cette
+    dernière reçoit 1d6 points de dégâts de feu. Les flammes ont un facteur de portée
+    de 3 mètres.'
   Modifie:
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
@@ -2819,16 +2826,15 @@
   Race: Suli
   Source: MR
   Description: Le suli possédant ce trait racial a un lien plus fort avec un type
-    d’énergie. La capacité assaut élémentaire
-    du suli ne peut infliger que des dégâts du type acide. Le suli a une résistance
-    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
-    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
-    Lorsque le suli se déplace sur un terrain difficile lié à la terre
-    ou à la pierre (décombres, boue, sable,etc.) il peut se déplacer de 1,5 mètre
-    sur ce terrain tous les rounds comme s’il s’agissait d’un terrain normal. Cela
-    lui permet de faire un pas de placement sur ce terrain difficile. Les autres genres
-    de terrains difficiles (glace, chaussetrappes,frondaisons, etc.) affectent le
-    suli normalement.
+    d’énergie. La capacité assaut élémentaire du suli ne peut infliger que des dégâts
+    du type acide. Le suli a une résistance de 5 à ce type d’énergie, mais aucune
+    résistance raciale aux trois autres types. Si sa capacité d’assaut élémentaire
+    est active, le suli reçoit une capacité supplémentaire. Lorsque le suli se déplace
+    sur un terrain difficile lié à la terre ou à la pierre (décombres, boue, sable,etc.)
+    il peut se déplacer de 1,5 mètre sur ce terrain tous les rounds comme s’il s’agissait
+    d’un terrain normal. Cela lui permet de faire un pas de placement sur ce terrain
+    difficile. Les autres genres de terrains difficiles (glace, chaussetrappes,frondaisons,
+    etc.) affectent le suli normalement.
   Modifie:
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
@@ -2837,17 +2843,16 @@
   Race: Suli
   Source: MR
   Description: Le suli possédant ce trait racial a un lien plus fort avec un type
-    d’énergie. La capacité assaut élémentaire
-    du suli ne peut infliger que des dégâts du type glace. Le suli a une résistance
-    de 5 à ce type d’énergie, mais aucune résistance raciale aux trois autres types.
-    Si sa capacité d’assaut élémentaire est active, le suli reçoit une capacité supplémentaire.
-    Le suli peut marcher sur les liquides à base d’eau comme s’il utilisait
-    marche sur l’onde, à la seule différence qu’au lieu de planer au-dessus de la
-    surface, il crée une couche de glace temporaire qui le soutient et fond dès qu’il
-    s’en éloigne. La glace n’est pas glissante pour le suli et n’affecte pas son équilibre
-    ni sa vitesse, bien que les autres glaces l’affectent normalement.Les autres créatures
-    ne peuvent pas traverser cette glace, mais le suli peut porter une créature alors
-    qu’il la traverse.
+    d’énergie. La capacité assaut élémentaire du suli ne peut infliger que des dégâts
+    du type glace. Le suli a une résistance de 5 à ce type d’énergie, mais aucune
+    résistance raciale aux trois autres types. Si sa capacité d’assaut élémentaire
+    est active, le suli reçoit une capacité supplémentaire. Le suli peut marcher sur
+    les liquides à base d’eau comme s’il utilisait marche sur l’onde, à la seule différence
+    qu’au lieu de planer au-dessus de la surface, il crée une couche de glace temporaire
+    qui le soutient et fond dès qu’il s’en éloigne. La glace n’est pas glissante pour
+    le suli et n’affecte pas son équilibre ni sa vitesse, bien que les autres glaces
+    l’affectent normalement.Les autres créatures ne peuvent pas traverser cette glace,
+    mais le suli peut porter une créature alors qu’il la traverse.
   Modifie:
   - Assaut élémentaire (Sur)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx
@@ -2928,868 +2933,3 @@
   - Magie des ombres
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.wayang%20(race).ashx
   
-
-- Nom: 'Trait de combat: Agile pour esquiver'
-  Source: MJRA
-  Description: En grandissant dans un quartier difficile ou un environnement dangereux,
-    le personnage a affûté ses sens. Il gagne un bonus de trait de +1 aux jets de
-    Réflexes.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Anatomiste'
-  Source: MJRA
-  Description: Le personnage a étudié l’anatomie soit en tant qu’étudiant à l’université
-    soit en tant qu’apprenti croquemort ou nécromancien. Il sait où viser pour toucher
-    des organes vitaux et gagne donc un bonus de trait de +1 sur tous les jets de
-    confirmation de critiques.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Brutalisé'
-  Source: MJRA
-  Description: 'Le personnage a souvent été brutalisé au cours de son enfance. Aujourd’hui,
-    il se tient toujours prêt à se défendre à mains nues lorsqu’un ennemi s’approche
-    de lui. Il gagne un bonus de trait de +1 sur les attaques d’opportunité à mains
-    nues. Notez que ce trait ne le rend pas capable de porter des attaques d’opportunité
-    à mains nues : il doit avoir un niveau de moine, le don Science du combat à mains
-    nues ou une capacité similaire pour pouvoir tirer parti de ce trait. Toutefois,
-    il peut choisir ce trait même sans cela : il n’en tire simplement aucun bénéfice
-    avant de remplir une de ces conditions.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Combattant opportuniste'
-  Source: MJRA
-  Description: Le personnage n’aurait pas survécu à son enfance sans l’aide d’un
-    parent, d’un ami ou d’un compagnon sur lequel il pouvait toujours compter pour
-    distraire ses ennemis suffisamment longtemps et lui permettre de causer un peu
-    plus de dégâts que la normale. Ce compagnon pourrait être un autre PJ ou un PNJ
-    (qui pourrait avoir récemment quitté le personnage). Lorsque le personnage touche
-    un ennemi qu’il prend en tenaille avec un allié, il inflige 1 point de dégâts
-    de plus (celui-ci est ajouté aux dégâts de base et est multiplié lors d’un coup
-    critique). Ce bonus aux dégâts est un bonus de trait.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Courageux'
-  Source: MJRA
-  Description: Le personnage a connu une enfance violente, à laquelle il a survécu
-    avant tout grâce à sa force de caractère et en croyant que, quelles que soient
-    les difficultés, on peut les vaincre en persévérant. Il gagne un bonus de trait
-    de +2 aux jets de sauvegarde contre les effets de terreur.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Escrimeur'
-  Source: MJRA
-  Description: Le personnage s’est entraîné au maniement des lames pendant de longues
-    heures pendant sa jeunesse. Ses parents lui ont peut-être offert des cours dans
-    l’art noble de l’escrime auprès d’un tuteur, ou peut-être qu’un ancien escrimeur,
-    qui pourrait être tombé dans une vie de crimes, l’a pris sous son aile. Il gagne
-    un bonus de trait de +1 aux attaques d’opportunité réalisées avec une dague, une
-    épée ou une autre lame de même genre.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Expert en armures'
-  Source: MJRA
-  Description: D’aussi loin qu’il se souvienne, le personnage a toujours porté une
-    armure. Cela faisait peut être partie de son entraînement en tant qu’écuyer d’un
-    chevalier ou il cherchait tout simplement à ressembler à un héros. Son armure
-    d’enfant n’était pas aussi efficace qu’une vraie armure mais elle était tout aussi
-    lourde, ce qui lui a permis d’apprendre à se déplacer avec une certaine grâce
-    malgré cet accoutrement. Lorsqu’il porte une armure (quel que soit son type),
-    son malus aux tests de compétences est réduit de 1, pour un minimum de 0.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Réactif'
-  Source: MJRA
-  Description: Le personnage a souvent été brutalisé au cours de son enfance, mais
-    il n’a jamais répondu par la violence. Au lieu de cela, il a appris à anticiper
-    les attaques soudaines et à réagir rapidement au danger. Il gagne un bonus de
-    trait de +2 aux tests d’initiative.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Résistant'
-  Source: MJRA
-  Description: Le personnage, qui a grandi dans un quartier pauvre ou sur une terre
-    sauvage et inhospitalière, a souvent été contraint de consommer de la nourriture
-    et de l’eau d’origine douteuse pour survivre. C’est ainsi qu’il a développé une
-    certaine résistance physique. Il gagne un bonus de trait de +1 aux tests de Vigueur.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de combat: Tueur'
-  Source: MJRA
-  Description: Le personnage était très jeune quand il a tué pour la première fois,
-    et il s’est rendu compte que la guerre ou le meurtre lui plaisait. Il s’est peut-être
-    enorgueilli d’un coup particulièrement bien placé ou s’est aperçu que faire tourner
-    la lame pour augmenter la douleur lui procurait un plaisir sadique. Chaque fois
-    qu’il porte un coup critique avec une arme, il inflige des dégâts supplémentaires
-    égaux au multiplicateur de critique de l’arme. Ces dégâts supplémentaires sont
-    ajoutés au total final (ils ne sont pas multipliés). Ces dégâts supplémentaires
-    sont considérés comme un bonus de trait.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Adepte de la Foi verte'
-  Source: MJRA
-  Description: Grâce à sa foi en la nature ou en un des dieux de la nature, le personnage
-    retient plus facilement tout ce qui touche à la nature. Il gagne un bonus de trait
-    de +1 aux tests de Connaissances (géographie) et Connaissance (nature) et l’une
-    de ces deux compétences (au choix du joueur) est toujours une compétence de classe
-    pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Aide-soignant'
-  Source: MJRA
-  Description: En tant que fils ou fille d’un herboriste ou assistant dans un temple
-    de guérisseurs, le personnage a souvent eu l’occasion de prendre part aux soins
-    aux malades et aux blessés. Il gagne un bonus de trait de +1 aux tests de Premiers
-    secours et Premiers secours est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Conduit sacré'
-  Source: MJRA
-  Description: 'L’accouchement a été particulièrement douloureux et difficile pour
-    la mère du personnage : de puissantes magies divines ont été nécessaires pour
-    assurer la survie du bébé (la mère peut avoir survécu ou pas). Quoi qu’il en soit,
-    la magie a touché le personnage dès son plus jeune âge. Il peut désormais canaliser
-    de l’énergie divine plus facilement que les autres. Chaque fois qu’il canalise
-    de l’énergie, il gagne un bonus de trait de +1 au DD de sa canalisation.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Érudit du Grand Au-Delà'
-  Source: MJRA
-  Description: Lorsqu’il était un enfant, le personnage ne s’intéressait pas aux
-    événements actuels ni aux choses habituelles. Il s’est toujours senti différent,
-    comme s’il était né à la mauvaise époque. Il prend aisément part aux discussions
-    philosophiques portant sur le Grand Au-Delà ou sur des événements historiques.
-    Il gagne un bonus de trait de +1 aux tests de Connaissances (histoire) et Connaissances
-    (plans) et une de ces deux compétences (au choix du joueur) est toujours une compétence
-    de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Fils (fille) du temple'
-  Source: MJRA
-  Description: Le personnage a longtemps servi au sein d’un temple urbain. Il a
-    non seulement pris connaissance des nombreuses habitudes propres aux nobles mais
-    a également passé beaucoup de temps à étudier sa foi dans la bibliothèque du temple.
-    Il gagne un bonus de trait de +1 aux tests de Connaissances (noblesse) et Connaissances
-    (religion) et l’une de ces deux compétences (au choix du joueur) est toujours
-    une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Foi facile'
-  Source: MJRA
-  Description: Le mentor du personnage, l’individu qui lui a transmis sa foi dès
-    son plus jeune âge, a fait en sorte qu’il comprenne bien que l’origine de ses
-    pouvoirs magiques divins n’est pas très différente de celle des pouvoirs magiques
-    des autres religions. Grâce à cette philosophie, les rapports entre le personnage
-    et les individus qui ne partagent pas sa foi sont facilités. Il gagne un bonus
-    de trait de +1 aux tests de Diplomatie et Diplomatie est toujours une compétence
-    de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Foi inébranlable'
-  Source: MJRA
-  Description: Le personnage est né dans une région où la foi n’était pas populaire
-    mais il n’a jamais perdu la sienne. Son combat incessant pour entretenir sa foi
-    l’a renforcé. Il gagne donc un bonus de trait de +1 aux jets de Volonté.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Marque de naissance'
-  Source: MJRA
-  Description: Le personnage possède une étrange marque de naissance d’apparence
-    fort similaire au symbole sacré du dieu qu’il a choisi de vénérer par la suite.
-    Cette marque peut lui servir de focalisateur divin pour lancer des sorts. De plus,
-    en tant que manifestation physique de son dieu, elle accroît la dévotion du personnage.
-    Celui-ci gagne donc un bonus de trait de +2 sur tous les jets de sauvegarde contre
-    les effets de charme et de coercition.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Passé d’hérétique'
-  Source: MJRA
-  Description: Le personnage a été élevé dans un milieu où circulaient des opinions
-    hérétiques. À cause de cela, il a du mal à accepter la plupart des croyances religieuses
-    et ceux qu’il aime, tout comme lui, ont souvent été traités comme des parias.
-    Il s’est donc détourné des enseignements religieux. Tant que le personnage ne
-    possède pas de niveau dans une classe octroyant des sorts divins, il gagne un
-    bonus de trait de +1 sur tous les jets de sauvegarde contre les sorts divins.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de foi: Toucher sacré'
-  Source: MJRA
-  Description: Le personnage a été exposé à une puissante source d’énergie positive
-    alors qu’il était un enfant, peut-être en naissant lors d’une conjonction cosmique
-    particulière ou parce que l’un de ses parents était un guérisseur hors pair. Par
-    une action simple, le personnage peut automatiquement stabiliser une créature
-    mourante d’un simple toucher.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Adepte de l''alchimie'
-  Source: MJRA
-  Description: Le personnage a un talent naturel pour créer des objets alchimiques.
-    Il gagne un bonus de trait de +2 aux tests d'Artisanat (Alchimie) pour créer des
-    objets alchimiques. De plus, s'il fait un 1 naturel ou échoue un test d'Artisanat
-    (Alchimie) de plus de 5 points, il ne gaspille aucun des matériaux utilisés.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Adepte doué'
-  Source: MJRA
-  Description: L’intérêt du personnage pour la magie s’est développé au moment où
-    il a vu quelqu’un lancer un sort de manière particulièrement dramatique. Peut-être
-    même s’agissait-il d’un sort qui l’a affecté physiquement ou mentalement. Grâce
-    à cette exposition précoce à la magie, il lui est facile de reproduire des effets
-    magiques similaires. Choisissez un sort lorsque le personnage acquiert ce trait.
-    Dès lors, chaque fois qu’il lance le sort en question, ses effets se manifestent
-    comme si son niveau de lanceur de sorts était augmenté de +1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Apprenti diaboliste'
-  Source: MJRA
-  Description: Lorsque le personnage invoque une créature fiélonne, elle gagne un
-    Point de Vie de plus par niveau du personnage pendant la durée du sort.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Bête de la société'
-  Source: MJRA
-  Description: Un maître druide a enseigné au personnage les secrets de la concentration
-    lorsqu'il prend l'aspect d'un animal. Lorsqu'il se transforme en animal de taille
-    P ou M avec le pouvoir de forme animale, l'effet dure 2 heures par niveau de druide
-    au lieu d'1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Concentration'
-  Source: MJRA
-  Description: Pendant son enfance, le personnage a été assailli de leçons diverses
-    (musicales ou académiques par exemple), ou la vie à la maison était peut-être
-    si horrible qu’il a développé une capacité à ignorer les distractions et à se
-    concentrer sur ce qu’il faisait. Il gagne un bonus de trait de +2 sur les tests
-    de Concentration.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Dangereuse curiosité'
-  Source: MJRA
-  Description: Le personnage a toujours été intrigué par la magie, peut-être parce
-    que l’un de ses parents était magicien ou prêtre. Il s’est souvent rendu en douce
-    dans le laboratoire ou le lieu de culte de son parent pour jouer avec les composantes
-    desorts et les appareils ésotériques, ce qui a souvent résulté en des dégâts plus
-    ou moins importants et de nombreux tracas pour ses parents. Il gagne un bonus
-    de trait de +1 aux tests d’Utilisation d’objets magiques et Utilisation d’objets
-    magiques est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Dominant'
-  Source: MJRA
-  Description: Le personnage a très rapidement su s'entourer de compagnons dévoués
-    grâce à son talent et il découle de cette expérience une certaine assurance et
-    une impression de supériorité. Cette confiance en lui est si forte qu'elle lui
-    donne une aptitude naturelle pour contrôler autrui. Choisissez un sortilège d'Enchantement
-    de niveau 1 que le personnage sait lancer. Le DD de ce sort augmente de 1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Don pour la magie'
-  Source: MJRA
-  Description: Le personnage a été élevée (exclusivement ou en partie seulement)
-    par une créature magique, peut-être après qu’il ait été abandonné dans les bois
-    ou parce que ses parents le laissaient souvent aux bons soins d’un serviteur magique.
-    Grâce à cette exposition constante à la magie, il lui est facile de comprendre
-    les mystères magiques, et cela même après s’être tourné vers d’autres centres
-    d’intérêts et d’autres activités. Choisissez une classe lorsque le personnage
-    acquiert ce trait. Son niveau de lanceur de sorts dans cette classe gagne un bonus
-    de trait de +2 tant que cela ne le fait pas dépasser le nombre de dés de vie total
-    du personnage.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Double discipline'
-  Source: MJRA
-  Description: Les études variées du personnage lui ont enseigné une méthode plus
-    efficace de lancer des sorts. Une fois par jour, le personnage peut lancer un
-    sort figurant à la fois sur les listes de sort du magus et du magicien comme si
-    son niveau de lanceur de sorts était augmenté de +1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Enfant de la lune'
-  Source: MJRA
-  Description: Le personnage est béni par la lune, une bénédiction qui se renforce
-    lorsque celle-ci est pleine. Choisissez Discrétion, Escalade ou Natation. Le personnage
-    gagne un bonus de trait de +1 à une de ces compétences. Ce bonus passe à +2 entre
-    le premier et le troisième quartier de la lune, et à +4 lors d'une pleine lune.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Exil de l''équilibre'
-  Source: MJRA
-  Description: L'intervention des Extérieurs dans les affaires de ce monde emplit
-    le personnage d'une fureur qui accroît ses capacités magiques. Tant qu'il reste
-    Neutre, le DD des sorts qu'il utilise pour renvoyer dans leurs plans des Extérieurs
-    Chaotiques, Loyaux, Bons ou Mauvais augmente de 1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Explorateur de l''étrange'
-  Source: MJRA
-  Description: Le personnage est insatiable de connaissances se rapportant aux secrets
-    de ce monde et veut être le premier à les découvrir. Il gagne un bonus de trait
-    de +1 aux tests de Connaissances (Exploration souterraine) et Connaissances (Histoire)
-    et lance tous les sorts de la sous-école de la Téléportation comme si son niveau
-    de lanceur de sorts était augmenté de +1.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Formation classique'
-  Source: MJRA
-  Description: Lorsqu’il était étudiant ou apprenti, le personnage s’est principalement
-    intéressé aux applications directes de la magie. Il gagne un bonus de trait de
-    +1 aux tests d’Art de la magie et Art de la magie est toujours une compétence
-    de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Fureur profane'
-  Source: MJRA
-  Description: Le personnage dispose de réflexes rapides et d'une concentration
-    tout aussi féroce. Il gagne un bonus de trait de +1 à ses tests d'Initiative et
-    de Concentration.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Intuition alchimique'
-  Source: MJRA
-  Description: Le personnage est souvent frappé de révélations concernant les méthodes
-    et substances alchimiques. Une fois par jour, par une action libre, il peut gagner
-    un bonus de trait égal à son modificateur de Charisme (minimum 0) à un test d'Artisanat
-    (Alchimie). Il applique ce bonus après le test, transformant potentiellement un
-    échec en succès.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Lignage magique'
-  Source: MJRA
-  Description: Un des parents du personnage était un lanceur de sorts doué qui utilisait
-    souvent la métamagie et qui a développé de nombreux objets magiques, voire peut-être
-    même un nouveau sort ou deux. Le personnage a hérité d’une partie de son talent.
-    Choisissez un sort lorsque le personnage acquiert ce trait. Lorsque le personnage
-    applique des dons de métamagie à ce sort, le niveau final du sort modifié est
-    calculé comme si le niveau normal du sort était inférieur de 1 à son niveau réel.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Magicien amateur'
-  Source: MJRA
-  Description: Pendant une période, le personnage a été l’apprenti d’un artisan
-    qui fabriquait souvent des objets magiques. Celui-ci lui a enseigné de nombreux
-    trucs pratiques et des techniques pour travailler plus rapidement et à moindre
-    coût. Chaque fois que le personnage fabrique un objet magique, le coût de fabrication
-    est réduit de 5%.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Magie acérée'
-  Source: MJRA
-  Description: Le personnage dispose d'un talent inné pour imprégner les armes de
-    magie, ou au contraire exprimer la magie en elles. Il gagne un bonus de trait
-    de +1 aux tests d'Artisanat (Armes) pour forger des armes de maîtres ou des armes
-    magiques. De plus, lorsqu'il utilise sa réserve magique pour conférer un bonus
-    d'altération à son arme, ce bonus dure deux minutes au lieu d'une.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Mutagène persistant'
-  Source: MJRA
-  Description: Grâce à un entraînement spécifique, au corps unique du personnage
-    ou à l'expérimentation avec l'alchimie, les mutagènes du personnage durent plus
-    longtemps. La durée des mutagènes du personnage augmente de 1 minute par niveau
-    d'alchimiste.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Prodige mathématique'
-  Source: MJRA
-  Description: Les mathématiques ont toujours coulé de source pour le personnage,
-    et il a toujours su « percevoir les équations » du monde physique et du monde
-    magique. Il gagne un bonus de trait de +1 aux tests de Connaissances (ingénierie)
-    et Connaissances (mystères) et l’une de ces deux compétences (au choix du joueur)
-    est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Réminiscence ancestrale'
-  Source: MJRA
-  Description: Le personnage voit son premier pouvoir offert par son lignage exceptionnellement
-    puissant. Son niveau d'Ensorceleur est considéré comme plus haut de 1 pour calculer
-    les effets de son premier pouvoir de lignage.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Résolution désespérée'
-  Source: MJRA
-  Description: Le personnage est capable de garder sa concentration dans les situations
-    les plus difficiles. Il gagne un bonus de trait de +1 aux traits de Concentration.
-    Ce bonus passe à +4 si le personnage est agrippé, soumis à des mouvements violents
-    ou des intempéries, enchevêtré ou immobilisé.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Revitalisation profane'
-  Source: MJRA
-  Description: Les prouesses martiales du personnage peuvent nourrir ses pouvoirs
-    profanes. Une fois par jour, lorsque le personnage confirme un coup critique avec
-    une arme, il peut regagner un point de sa réserve magique, pourvu qu'il n'excède
-    pas le nombre maximal de points.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Sceptique'
-  Source: MJRA
-  Description: Pendant son enfance, le personnage a côtoyé de près tellement d’effets
-    magiques qu’il s’est rendu compte que bon nombre d’entre eux n’étaient que de
-    la poudre aux yeux. Il gagne un bonus de trait de +2 sur tous les jets de sauvegarde
-    contre les illusions.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Talent magique'
-  Source: MJRA
-  Description: Le personnage est parvenu à maîtriser un tour de magie grâce à ses
-    talents innés, par le bon vouloir des dieux ou après avoir longuement étudié des
-    tomes étranges de manière obsessionnelle. Choisissez un sort de niveau 0. Le personnage
-    peut lancer ce sort une fois par jour sous la forme d’un pouvoir magique qui prend
-    effet au plus haut niveau de lanceur de sorts possédé par le personnage (s’il
-    n’a aucun niveau de lanceur de sorts, il fonctionne au NLS 1). Le DD du jet de
-    sauvegarde du pouvoir magique dépend du Charisme du personnage.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Talent pour la distance'
-  Source: MJRA
-  Description: Le personnage a été exposé à la magie d'une porte elfique, ou d'une
-    quelconque forme de magie d'altération spatiale. Ce contact a permis au personnage
-    de développer ses propres talents pour le lancement de sorts à distance. Il calcule
-    la distance de ses sorts comme si son niveau de lanceur de sorts était augmenté
-    de +1 pour le calcul de la portée uniquement.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Touché par l''air'
-  Source: MJRA
-  Description: Le personnage possède une forte affinité avec l'élément de l'air.
-    Il bénéficie d'une RD 1/- contre les attaques et créatures de type Air.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Touché par la terre'
-  Source: MJRA
-  Description: Le personnage possède une forte affinité avec l'élément de la terre.
-    Il bénéficie d'une RD 1/- contre les attaques et créatures de type Terre.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de magie: Vitesse désespérée'
-  Source: MJRA
-  Description: L'eidolon du personnage est capable d'effectuer des pointes de vitesse
-    dans un déplacement que vous ne maîtrisez pas. L'eidolon gagne un bonus d'altération
-    de +1.5m (1) à une vitesse de déplacement que vous ne possédez pas (comme Vol,
-    Vitesse ou Natation), pourvu qu'il la possède. Ce choix ne peut plus être changé
-    une fois effectué.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Adopté'
-  Source: MJRA
-  Description: Le personnage a été adopté et élevé par un individu de race différente.
-    Il a grandi dans une société qui n’était pas la sienne. C’est ainsi qu’il a acquis
-    un trait correspondant à la race de ses parents adoptifs et de la société qui
-    l’a accueilli. Il peut choisir immédiatement un trait racial lié à la race de
-    ses parents adoptifs.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Argot'
-  Source: MJRA
-  Description: Le personnage a grandi au milieu des voleurs et des brigands. Leurs
-    tournures de phrases inhabituelles et leurs expressions ne le déroutent plus du
-    tout. Toute personne qui tente d’utiliser la compétence de Bluff pour délivrer
-    un message secret au personnage gagne un bonus de +5 sur son test de Bluff. Lorsque
-    le personnage tente d’intercepter un message secret grâce à la compétence de Psychologie,
-    il gagne un bonus de trait de +5 sur son test.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Baratineur'
-  Source: MJRA
-  Description: Le personnage s’est souvent retrouvé dans des situations problématiques
-    pendant sa jeunesse, ce qui l’a poussé à devenir un beau parleur dès son plus
-    jeune âge. Il gagne un bonus de trait de +1 aux tests de Bluff et Bluff est toujours
-    une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Brute'
-  Source: MJRA
-  Description: Le personnage a grandi dans un environnement où les faibles étaient
-    ignorés et où il a souvent dû recourir aux menaces ou à la violence pour se faire
-    entendre. Il gagne un bonus de trait de +1 aux tests d’Intimidation et Intimidation
-    est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Charmant'
-  Source: MJRA
-  Description: Le personnage, qui est doté d’un charme naturel, a pris l’habitude
-    d’utiliser le fait que les autres le trouvent beau. Il gagne un bonus de trait
-    de +1 lorsqu’il utilise Bluff ou Diplomatie sur un individu qui est (ou pourrait
-    être) attiré sexuellement par lui et un bonus de trait de +1 au DD des jets de
-    sauvegarde de tous les sorts dépendant de la langue qu’il lance sur de tels individus.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Dirigeant né'
-  Source: MJRA
-  Description: Le personnage a souvent été considéré comme un chef par les autres.
-    Il peut même se rappeler parfaitement un événement de son enfance où il a mené
-    un groupe d’enfants et leur a permis d’accomplir un but qu’ils n’auraient jamais
-    pu atteindre séparément. Tous les compagnons d’armes, tous les suivants et toutes
-    les créatures invoquées sous le contrôle du personnage gagnent un bonus de moral
-    de +1 aux jets de Volonté pour résister aux effets mentaux. Si le personnage prend
-    le don Prestige, il gagne un bonus de trait de +1 à sa valeur de prestige.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Enfant des rues'
-  Source: MJRA
-  Description: Le personnage a grandi sur les rues d’une grande ville et a donc
-    développé ses talents de pickpocket et appris à cacher des petits objets sur lui.
-    Il gagne un bonus de trait de +1 aux tests d’Escamotage et Escamotage est toujours
-    une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Méfiant'
-  Source: MJRA
-  Description: Alors qu’il était encore très jeune, le personnage a découvert qu’une
-    personne en qui il avait confiance (peut-être un frère ou une soeur plus âgé,
-    ou encore un parent) lui avait menti et continuait à mentir à propos d’un sujet
-    qu’il avait pris pour la vérité. Cette découverte l’a amené à remettre en question
-    tout ce que les autres disent. Il gagne un bonus de trait de +1 sur les tests
-    de Psychologie et Psychologie est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Parents riches'
-  Source: MJRA
-  Description: Le personnage est né dans une famille riche, peut-être même une famille
-    noble. Même s’il a choisi une vie d’aventure, il bénéficie d’un bonus à son pactole
-    de départ. Il entre en jeu avec 900 po de plus que la valeur normale.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait social: Pauvre'
-  Source: MJRA
-  Description: Le personnage a connu une enfance difficile, où chaque pièce de cuivre
-    gagnée par ses parents était précieuse. Il a souvent connu la faim, a dû trouver
-    sa nourriture par lui-même ou encore passer la nuit dehors. Il gagne un bonus
-    de trait de +1 aux tests de Survie et Survie est toujours une compétence de classe
-    pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
-  
-- Nom: 'Trait de race: Apprenti raté'
-  Race: Demi-elfe
-  Source: MJRA
-  Description: Lorsqu’il était enfant, les parents du personnage l’ont envoyé en
-    tant qu’apprenti dans la lointaine tour d’un magicien pour qu’il y apprenne les
-    arts magiques. Malheureusement, il n’avait aucun talent pour la magie. Il a toutefois
-    appris pas mal de choses au sujet du fonctionnement des sorts et de la manière
-    d’y résister. Il gagne un bonus de trait de +1 aux jets de sauvegarde contre les
-    sorts profanes.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Réflexes elfiques'
-  Race: Demi-elfe
-  Source: MJRA
-  Description: Le personnage a hérité des réflexes rapides d’un de ses parents,
-    qui appartenait à une tribu d’elfes sauvages. Il gagne un bonus de trait de +2
-    aux tests d’initiative.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Brute'
-  Race: Demi-orque
-  Source: MJRA
-  Description: Le personnage a travaillé pour un baron du crime, peut-être en tant
-    que garde ou qu’homme de main pour les basses besognes. Il sait comment effrayer
-    les gens. Il gagne un bonus de trait de +1 aux tests d’Intimidation et Intimidation
-    est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Rejeté'
-  Race: Demi-orque
-  Source: MJRA
-  Description: Ville après ville, le personnage a été rejeté à cause de son héritage.
-    Il a appris à vivre à l’écart des autres. Il gagne un bonus de trait de +1 aux
-    tests de Survie et Survie est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Accablé'
-  Race: Elfe
-  Source: MJRA
-  Description: Le personnage a vécu la majeure partie de sa vie en-dehors de la
-    société elfique traditionnelle. Il sait que le monde peut être un endroit cruel
-    et dangereux qui ne montre aucune pitié pour les faibles. Il gagne un bonus de
-    trait de +1 aux jets de Vigueur.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Ancien guerrier'
-  Race: Elfe
-  Source: MJRA
-  Description: Lorsqu’il était enfant, le personnage a dévoué de longues heures
-    aux entraînements militaires. Même si le temps les a réduits à l’état de souvenirs,
-    il reste prompt à réagir en cas de problème. Il gagne un bonus de trait de +2
-    aux tests d’initiative.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Ami des animaux'
-  Race: Gnome
-  Source: MJRA
-  Description: Depuis longtemps, le personnage est un ami des animaux et il se sent
-    plus en sécurité lorsqu’il est entouré d’animaux. Il gagne un bonus de trait de
-    +1 aux jets de Volonté tant qu’un animal (de taille TP au moins et avec une attitude
-    indifférente ou meilleure envers lui) se trouve à 9 m ou moins de lui et Dressage
-    est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Vaurien'
-  Race: Gnome
-  Source: MJRA
-  Description: Toute sa vie, le personnage s’est moqué de l’ordre établi et enorgueilli
-    de ses accrochages avec la loi. Pour une raison ou pour une autre, il n’a jamais
-    été pris malgré ses nombreux méfaits. Il gagne un bonus de trait de +1 aux tests
-    d’Évasion et un bonus de trait de +1 aux tests d’initiative.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Bien informé'
-  Race: Halfelin
-  Source: MJRA
-  Description: Le personnage met un point d’honneur à connaître tous ceux qui l’entourent
-    et à avoir de nombreuses relations. Il fréquente les meilleurs tavernes, se rend
-    à tous les événements importants et aide gracieusement tous ceux qui en ont besoin.
-    Grâce à cela, il gagne un bonus de trait de +1 aux tests de Diplomatie pour recueillir
-    des informations et aux tests de Connaissances (folklore local). Une de ces compétences
-    (au choix du joueur) est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Combattant de la liberté'
-  Race: Halfelin
-  Source: MJRA
-  Description: Les parents du personnage ont permis à des esclaves en fuite de se
-    cacher chez eux et les histoires que ces derniers ont raconté au personnage lui
-    ont inspiré une profonde haine de l’esclavage. Il gagne un bonus de trait de +1
-    sur tous les tests de compétence et jets d’attaque effectués lorsqu’il tente d’échapper
-    à la capture ou d’aider un esclave à s’enfuir et Évasion est toujours une compétence
-    de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Érudit des ruines'
-  Race: Humain
-  Source: MJRA
-  Description: Depuis le moment où le personnage a appris à marcher et à parler,
-    il a toujours été fasciné par les ruines des civilisations anciennes. C’est ainsi
-    qu’il a développé une sorte d’intuition au sujet de la géographie et appris comment
-    explorer les endroits oubliés. Il gagne un bonus de trait de +1 aux tests de Connaissances
-    (géographie) et de Connaissances (donjons). Une de ces deux compétences (au choix
-    du joueur) est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Globe trotter'
-  Race: Humain
-  Source: MJRA
-  Description: 'La famille du personnage a poussé l’amour du voyage jusqu’à l’extrême
-    et a parcouru le monde dans tous les sens. Il a visité des dizaines de cultures
-    et a appris à apprécier la diversité qu’offrait le monde. Choisissez une des compétences
-    suivantes : Connaissances (folklore local), Diplomatie ou Psychologie. Le personnage
-    gagne un bonus de trait de +1 à cette compétence et elle est toujours une compétence
-    de classe pour lui.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Combattant des tunnels'
-  Race: Nain
-  Source: MJRA
-  Description: Le personnage se sent comme chez lui dans les grottes et les tunnels.
-    Lorsqu’il se trouve sous la surface, il gagne un bonus de trait de +2 aux tests
-    d’initiative et un bonus de trait de +1 aux dégâts des armes en cas de coup critique
-    (ce bonus est multiplié).
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait de race: Renifleur d’or'
-  Race: Nain
-  Source: MJRA
-  Description: Les sens affûtés du personnages le conduisent vers des trésors cachés.
-    Il gagne un bonus de trait de +2 aux tests de Perception concernant des métaux,
-    des bijoux ou des pierres précieuses.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
-  
-- Nom: 'Trait régional: Draveur (forêt)'
-  Source: MJRA
-  Description: Grâce au temps que le personnage a passé à sauter d’un rondin à l’autre
-    alors que ceux-ci descendaient la rivière en direction du marché, il a appris
-    à garder l’équilibre. Il gagne un bonus de trait de +1 aux tests d’Acrobaties
-    et un bonus de trait de +1 à son DMD lorsqu’il tente d’éviter un croc-en-jambe.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Enfant de la savane (plaines)'
-  Source: MJRA
-  Description: 'Le personnage est né et a été élevé dans des plaines vallonnées
-    ou sur la savane. Il a passé une bonne partie de sa jeunesse à explorer ces vastes
-    territoires et en connaît les secrets. Choisissez l’une des compétences suivantes
-    : Connaissances (nature), Dressage ou Équitation. Le personnage gagne un bonus
-    de trait de +1 à cette compétence et elle est toujours une compétence de classe
-    pour lui.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Enfant du désert (désert)'
-  Source: MJRA
-  Description: Le personnage est né et a été élevé dans des déserts rocailleux.
-    Il est habitué aux températures élevées et gagne un bonus de trait de +4 à tous
-    les jets de sauvegarde effectués pour résister aux effets de la chaleur et un
-    bonus de trait de +1 à tous les jets de sauvegarde contre les effets de feu.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Enfant vagabond (ville)'
-  Source: MJRA
-  Description: 'Le personnage a grandi parmi les exclus de la société et les hors-la-loi.
-    Il a appris à trouver de la nourriture et à survivre dans un environnement urbain.
-    Choisissez l’une des compétences suivantes : Escamotage, Évasion ou Sabotage.
-    Le personnage gagne un bonus de trait de +1 à cette compétence et elle est toujours
-    une compétence de classe pour lui.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Habitant des hautes terres (collines ou montagnes)'
-  Source: MJRA
-  Description: Le personnage est né et a été élevé dans des collines ou des régions
-    rocheuses, où il a appris à éviter les prédateurs et les monstres qui hantent
-    ces terres. Il gagne un bonus de trait de +1 aux tests de Discrétion et Discrétion
-    est toujours une compétence de classe pour lui. Ce bonus de trait passe à +2 dans
-    les collines et les régions rocheuses.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Milicien vétéran (n’importe quelle ville ou village)'
-  Source: MJRA
-  Description: 'Le premier travail du personnage consistait à servir dans la milice
-    de son village. Grâce à ce qu’il a appris en s’entraînant quotidiennement et en
-    protégeant les autres villageois, le personnage a développé une sorte d’intuition
-    militaire. Choisissez l’une des compétences suivantes : Équitation, Profession
-    (soldat) ou Survie. Le personnage gagne un bonus de trait de +1 à cette compétence
-    et elle est toujours une compétence de classe pour lui.'
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait régional: Pirate des rivières (marécage ou rivière)'
-  Source: MJRA
-  Description: Le personnage a appris à nager dès qu’il a su marcher. Alors qu’il
-    était enfant, le personnage travaillait pour un groupe de pirates des rivières
-    qui le faisaient nager de nuit dans les rivières et les canaux, une dague entre
-    les dents, afin d’aller couper les amarres des vaisseaux marchands. Il gagne un
-    bonus de trait de +1 aux dégâts infligés avec une dague et un bonus de trait de
-    +1 aux tests de Natation. Natation est toujours une compétence de classe pour
-    lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
-  
-- Nom: 'Trait religieux: Buveur résistant (Cayden Cailéan)'
-  Source: MJRA
-  Description: Le breuvage sacré de Cayden Cailéan renforce votre esprit et vous
-    protège contre les attaques mentales. Chaque fois que vous buvez une boisson alcoolisée,
-    vous gagnez un bonus de trait de +2 aux jets de sauvegarde contre les effets mentaux
-    pendant 1 heure.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Chasseur de démon d’Asmodéus (Asmodéus)'
-  Source: MJRA
-  Description: Le personnage a été élevé au sein de l’église d’Asmodéus (qu’il peut
-    vénérer ou pas), où il a appris à canaliser la ferveur qu’on lui a endoctrinée
-    pour éliminer des démons. Il gagne un bonus de trait de +3 aux tests de Connaissances
-    (plans) concernant les démons et un bonus de trait de +2 aux jets de Volonté contre
-    les sorts et effets mentaux des démons.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Combattant vétéran (Gorum)'
-  Source: MJRA
-  Description: Le personnage a participé à de nombreuses batailles et, chaque fois,
-    il a ressenti la présence de Gorum qui guidait son bras et lui permettait de réagir
-    rapidement. Il gagne un bonus de trait de +1 aux tests d’initiative. De plus,
-    lors des rounds de surprise, s’il peut agir, il peut dégainer une arme par une
-    action libre (mais pas une potion ni un objet magique).
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Destructeur de morts-vivants (Pharasma)'
-  Source: MJRA
-  Description: Le personnage, à qui on a enseigné les préceptes du culte de Pharasma
-    depuis son plus jeune âge, considère les morts-vivants comme des abominations
-    qui doivent être détruites afin de permettre à leurs âmes d’aller dans l’au-delà
-    et d’y être jugées. Il gagne un bonus de trait de +1 aux dégâts des armes contre
-    les mortsvivants.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Enfant de la nature (Gozreh)'
-  Source: MJRA
-  Description: Grâce à la bénédiction de Gozreh, le personnage se sent comme chez
-    lui dans la nature. Il gagne un bonus de trait de +2 aux tests de Survie pour
-    trouver de la nourriture et de l’eau et un bonus de trait de +1 aux tests de Connaissance
-    (nature). De plus, une de ces compétences (au choix du joueur) est toujours une
-    compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Enfant des étoiles (Desna)'
-  Source: MJRA
-  Description: Desna a senti que le personnage aimait voyager et lui a promis qu’il
-    pourrait toujours retrouver le chemin de sa demeure. Il peut automatiquement déterminer
-    où le nord véritable se trouve. Il gagne un bonus de trait de +4 aux tests de
-    Survie pour éviter de se retrouver perdu.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Flamme de la Fleur de l’Aube (Sarenrae)'
-  Source: MJRA
-  Description: L’éducation du personnage l’a incité à se voir comme une lame au
-    service de Sarenrae, ou peut-être s’est-il lui même attribué ce rôle. Chaque fois
-    qu’il inflige un coup critique à l’aide d’un cimeterre, il inflige 2 points de
-    dégâts de feu supplémentaires à sa cible.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Guerrier divin (Iomédae)'
-  Source: MJRA
-  Description: Dès son plus jeune âge, le personnage a été entraîné par un ordre
-    de prêtres guerriers. Il vénère les enseignements d’Iomédae et cherche à les répandre
-    par la force. Lorsqu’il lance un sort divin qui affecte une ou plusieurs armes
-    de corps à corps, l'une d'elles de son choix gagne un bonus de trait de +1 aux
-    dégâts des armes pour la durée du sort.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: La magie, c’est la vie (Néthys)'
-  Source: MJRA
-  Description: La foi que le personnage place en la magie lui permet d’utiliser
-    instinctivement l’énergie de n’importe quel sort l’affectant pour le sauver de
-    la mort. Tant qu’un sort l’affecte (quel que soit ce sort), le personnage gagne
-    un bonus de trait de +2 aux jets de sauvegarde contre les effets de mort. S’il
-    est amené à un nombre de points de vie négatif alors qu’il est sous les effets
-    d’un sort, il réussit automatiquement ses tests de stabilisation.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Les yeux et les oreilles de la ville (Abadar)'
-  Source: MJRA
-  Description: Au cours de son entraînement religieux, le personnage a servi dans
-    la milice d’une grande ville avec, comme mission principale, de monter la garde
-    en haut des murs de la ville. Il gagne un bonus de trait de +1 aux tests de Perception
-    et Perception est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Optimiste patient (Érastil)'
-  Source: MJRA
-  Description: Le personnage sait que tout passe avec le temps et il est habitué
-    à devoir répéter les mêmes arguments plusieurs fois pour parvenir à convaincre
-    les plus entêtés. Il gagne un bonus de trait de +2 aux tests de Diplomatie pour
-    influencer des créatures hostiles ou inamicales. De plus, s’il échoue lors d’une
-    telle tentative, il bénéficie d’une (unique) seconde chance.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Oreille musicale (Shélyn)'
-  Source: MJRA
-  Description: Pendant sa jeunesse, le personnage a passé d’innombrables heures
-    dans un temple de Shélyn à écouter des musiciens et des chanteurs talentueux.
-    Il gagne un bonus de trait de +1 à une des catégories de la compétence Représentation
-    et un bonus de trait de +2 à tous les tests de Connaissances (folklore local)
-    lié à l’art ou à la musique.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Prostitué(e) de Calistria (Calistria)'
-  Source: MJRA
-  Description: Le personnage a travaillé en tant que prostitué sacré dans un des
-    temples de Calistria. Il sait comment flatter les gens, leur faire plaisir et
-    (surtout) les écouter. Il gagne un bonus de trait de +1 aux tests de Psychologie
-    et aux tests de Diplomatie visant à recueillir des informations et une de ces
-    compétences (au choix du joueur) est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Protecteur de la Forge (Torag)'
-  Source: MJRA
-  Description: Les devoirs sacrés de Torag consistent à protéger les fidèles, à
-    apprendre des grands artisans et stratèges d’antan et à se préparer en vue de
-    périodes sombres. Le personnage reçoit un bonus de trait de +1 aux tests de Connaissances
-    (histoire) et Connaissances (ingénierie). Une de ces compétences (au choix du
-    joueur) est toujours une compétence de classe pour lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-- Nom: 'Trait religieux: Sagesse incarnée (Irori)'
-  Source: MJRA
-  Description: Les nombreuses heures que le personnage a passées à méditer sur la
-    perfection intérieure et la nature de la force et de la vitesse lui ont permis
-    de concentrer ses pensées pour accomplir des choses que son corps ne pourrait
-    pas faire normalement. Choisissez une compétence dépendant de la Force, de la
-    Dextérité ou de la Constitution. Lorsque le personnage utilise cette compétence,
-    il remplace le modificateur de la caractéristique associée par son modificateur
-    de Sagesse. De plus, cette compétence est toujours une compétence de classe pour
-    lui.
-  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
-  
-
