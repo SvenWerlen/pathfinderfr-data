@@ -29,6 +29,7 @@ REF_TRAITS_RELI = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20re
 liste = []
 
 FIELDS = ['Nom', 'Race', 'Source', 'Description', 'Remplace', 'Modifie', 'Référence' ]
+MATCH = ['Nom']
 
 #
 # traits de base
@@ -161,4 +162,4 @@ HEADER = """###
 
 """
 
-mergeYAML("../data/races-traits-alternatifs.yml", FIELDS, HEADER, liste)
+mergeYAML("../data/races-traits-alternatifs.yml", MATCH, FIELDS, HEADER, liste)

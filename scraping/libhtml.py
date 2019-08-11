@@ -16,7 +16,44 @@ VALID_PROPS   = ["aura", "nls", "conditions", "emplacement", "poids", "prixalt"]
 VALID_FABRICS = ["coût", "conditions"]
 
 
+#
+# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
+#
+def jumpTo(html, afterTag, afterCond, elementText):
+    seps = html.find_all(afterTag, afterCond);
+    for s in seps:
+        if s.text.lower().strip().startswith(elementText.lower()):
+            return s.next_siblings
 
+#
+# cette fonction extrait le texte du prochain élément après ...
+#
+def findAfter(html, afterTag, afterCond, searched):
+    elements = html.find_next(afterTag, afterCond).next_siblings
+    for el in elements:
+        if el.name == searched:
+            return el.text.strip()
+
+#
+# cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
+#
+def findProperty(html, propName):
+    for el in html:
+        if el.name == 'b' and el.text.lower().startswith(propName.lower()):
+            value = ""
+            for e in el.next_siblings:
+                if e.name == 'br':
+                    break
+                elif e.string:
+                    value += e.string
+                else:
+                    value += e
+            return value.replace('.','').strip()
+    return None
+
+#
+# cette fonction convertit un tableau en texte
+#
 def table2text(table):
     text = ""
     first = True
@@ -132,6 +169,7 @@ def extractProps(liste):
     if curProp and not curProp in props:
         props[curProp] =  cleanProperty(curValue)
     return props
+
 
 #
 # cette fonction nettoie un libellé
@@ -281,6 +319,7 @@ def extractBD_Type2(html):
     # merge props
     return { **{'nomAlt': cleanName(titre), 'descr': cleanDescription(descr)}, **props, **fabrics }
 
+
 #
 # cette fonction fusionne un YAML avec un existant en respectant les règles suivantes
 # - l'ordre des champs
@@ -289,7 +328,7 @@ def extractBD_Type2(html):
 # - aucune suppression
 # - modification des existantes (merge) sur la base du nom
 #
-def mergeYAML(origPath, order, header, yaml2merge):
+def mergeYAML(origPath, matchOn, order, header, yaml2merge):
     
     liste = []
     
@@ -318,7 +357,13 @@ def mergeYAML(origPath, order, header, yaml2merge):
         idx = 0
         found = False
         for elOrig in liste:
-            if el['Nom'] == elOrig['Nom']:
+            match = True
+            # s'assurer que tous les champs correspondent
+            for m in matchOn:
+                if cleanName(el[m]) != cleanName(elOrig[m]):
+                    match = False
+                    break
+            if match:
                 liste[idx] = el
                 found = True
                 break
