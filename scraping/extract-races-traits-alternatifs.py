@@ -186,6 +186,7 @@ HEADER = """###
 ### ATTENTION: certains traits ont été ajustés manuellement
 ### - Duergars: les traits des Nains ont été ajoutés individuellement
 ### - Suli: les attaques d'énergie ont été ajustés (nom et description)
+### - Traits de campagne: ajouté manuellement
 ###
 
 """
