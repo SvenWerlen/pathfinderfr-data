@@ -19,7 +19,7 @@ MOCK_W = None
 MOCK_WD = None
 #MOCK_WD = "mocks/armors-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
-FIELDS = ['Nom', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Type', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -34,13 +34,21 @@ else:
 tables = content.find_all('table',{'class':'tablo'})
 
 armor = {}
+type = ""
 
 print("Extraction des armures...")
 
 for t in tables:
-    rows = t.find_all('tr',{'class':''}) + t.find_all('tr',{'class':['alt']})
+    rows = t.find_all('tr')
     for r in rows:
         cols = r.find_all('td')
+        if 'class' in r.attrs and 'premier' in r.attrs['class']:
+            type = r.text.strip()
+            type = type[0].upper() + type[1:].lower()
+            # hack (fonctionne par hasard ;-)
+            type = type.replace('s','').replace('2','')
+            print("Extraction %s ..." % type)
+            continue
         if len(cols) == 10:
             # Name & Reference
             nameLink = cols[0].find('a')
@@ -52,6 +60,7 @@ for t in tables:
                 armor['Référence'] = URL
             # Others
             armor['Nom'] = armor['Nom'].replace('’','\'')
+            armor['Type'] = type
             armor['Prix'] = cols[1].text.strip()
             armor['Bonus'] = cols[2].text.strip()
             armor['BonusDexMax'] = cols[3].text.strip()
@@ -67,6 +76,10 @@ for t in tables:
                 armor['Source'] = "AG"
             liste.append(armor)
             armor = {}
+
+# last element
+
+
 
 #
 # cette fonction ajoute les infos additionelles
