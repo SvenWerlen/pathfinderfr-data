@@ -123,7 +123,7 @@ def addInfos(liste, name, source):
                 l['Source'] = source
             found = True
     if not found:
-        print("COULD NOT FIND : '" + name + "'");
+        print("- une description existe pour '" + name + "' mais pas le sommaire!");
 
 
 if MOCK_WD:
@@ -180,7 +180,7 @@ addInfos(liste, name, sourceNext)
 
 for l in liste:
     if not l['Complete']:
-        print("INCOMPLETE: '" + l['Nom'] + "'");
+        print("- aucune description n'existe pour '" + l['Nom'] + "'!");
     del l['Complete']
 
 

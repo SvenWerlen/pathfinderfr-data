@@ -153,7 +153,7 @@ def addInfos(liste, name, source):
                 l['Source'] = source
             found = True
     if not found:
-        print("- Une description existe pour '" + name + "' mais pas le sommaire!");
+        print("- une description existe pour '" + name + "' mais pas le sommaire!");
 
 
 if MOCK_WD:

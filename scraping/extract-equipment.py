@@ -9,6 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
 URLs = [
@@ -22,20 +23,17 @@ URLs = [
     {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx", 'category': u"Objets récréatifs"},
 ]
 
+FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'Référence' ]
+MATCH = ['Nom']
+
+
 MOCK_E = None
 #MOCK_E = "mocks/materiel-aventurier.html"           # décommenter pour tester avec données pré-téléchargées
 
 
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = content.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
-
 liste = []
+
+print("Extraction de l'équipement...")
 
 # itération sur chaque page
 for data in URLs:
@@ -47,7 +45,7 @@ for data in URLs:
 
     tables = content.find_all('table',{'class':'tablo'})
 
-    equipment = {'99Complete': False}
+    equipment = {'Complete': False}
     parent = None
 
     for t in tables:
@@ -66,18 +64,18 @@ for data in URLs:
                 # Name & Reference
                 nameLink = cols[0].find('a')
                 if not nameLink is None:
-                    equipment['01Nom'] = cols[0].text.strip()
-                    equipment[u'20Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
+                    equipment['Nom'] = cols[0].text.strip()
+                    equipment['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
                 else:
-                    equipment['01Nom'] = cols[0].text.strip()
-                    equipment[u'20Référence'] = data["URL"]
+                    equipment['Nom'] = cols[0].text.strip()
+                    equipment['Référence'] = data["URL"]
 
                 if not cols[1].text.strip() and not cols[2].text.strip():
-                    parent = {'01Nom':equipment['01Nom'], u'20Référence': equipment[u'20Référence']}
+                    parent = {'Nom':equipment['Nom'], 'Référence': equipment['Référence']}
                     continue
                 elif cols[0].text.startswith(' ') and parent:
-                    equipment['01Nom'] = parent['01Nom'] + " (" + equipment['01Nom'].lower() + ")"
-                    equipment[u'20Référence'] = parent[u'20Référence']
+                    equipment['Nom'] = parent['Nom'] + " (" + equipment['Nom'].lower() + ")"
+                    equipment['Référence'] = parent['Référence']
                 elif cols[0].text.startswith(' ') and not parent:
                     print("SOMETHING STRANGE!!")
                     exit(1)
@@ -85,22 +83,21 @@ for data in URLs:
                     parent = None
 
                 # Others
-                equipment['01Nom'] = equipment['01Nom'].replace('’','\'')
-                equipment['04Prix'] = cols[1].text.strip()
-                equipment[u'10Catégorie'] = data["category"]
-                equipment[u'09Poids'] = cols[2].text.strip().replace("kg1","kg")
+                equipment['Nom'] = equipment['Nom'].replace('’','\'')
+                equipment['Prix'] = cols[1].text.strip()
+                equipment['Catégorie'] = data["category"]
+                equipment['Poids'] = cols[2].text.strip().replace("kg1","kg")
 
                 # Special for "Substances"
                 if len(cols) == 4:
                     try:
-                        equipment['10Artisanat'] = int(cols[3].text.strip())
+                        equipment['Artisanat'] = int(cols[3].text.strip())
                     except:
                         pass
 
-                equipment['02Source'] = "MJ"
-                equipment['EMPTY'] = ""
+                equipment['Source'] = "MJ"
                 liste.append(equipment)
-                equipment = {'99Complete': False}
+                equipment = {'Complete': False}
 
 
     #
@@ -148,17 +145,17 @@ for data in URLs:
         # add infos to existing weapong in list
         found = False
         for l in liste:
-            if l['01Nom'].lower() in names or l['01Nom'].lower().startswith(name.lower()):
-                l[u'99Complete'] = True
-                l[u'12Description'] = descr.strip()
+            if l['Nom'].lower() in names or l['Nom'].lower().startswith(name.lower()):
+                l['Complete'] = True
+                l['Description'] = descr.strip()
                 if not source is None:
-                    l['02Source'] = source
+                    l['Source'] = source
                 found = True
         if not found:
-            print("COULD NOT FIND : '" + name + "'");
+            print("- une description existe pour '" + name + "' mais pas le sommaire!");
 
 
-    section = jumpTo(html, 'h2',{'class':'separator'}, u"Descriptions")
+    section = jumpTo(content, 'h2',{'class':'separator'}, u"Descriptions")
     newObj = True
     name = ""
     descr = ""
@@ -171,7 +168,7 @@ for data in URLs:
 
             sourceNext = source
             if e.name == 'h3':
-                name = e.text.replace("¶","").strip()
+                name = cleanSectionName(e.text)
                 descr = ""
                 source = None
                 newObj = False
@@ -202,19 +199,13 @@ for data in URLs:
 
 
 for l in liste:
-    if  u'99Complete' in l and not l[u'99Complete']:
-        print("INCOMPLETE: '" + l['01Nom'] + "'");
-    del l[u'99Complete']
+    if  'Complete' in l and not l['Complete']:
+        print("- aucune description n'existe pour '" + l['Nom'] + "'!");
+    del l['Complete']
 
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('01Nom','Nom')
-yml = yml.replace('02Source','Source')
-yml = yml.replace('04Prix','Prix')
-yml = yml.replace('09Poids','Poids')
-yml = yml.replace('10Artisanat','Artisanat')
-yml = yml.replace(u'10Catégorie',u'Catégorie')
-yml = yml.replace(u'12Description',u'Description')
-yml = yml.replace(u'20Référence',u'Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
+
+HEADER = ""
+
+mergeYAML("../data/equipement.yml", MATCH, FIELDS, HEADER, liste)
