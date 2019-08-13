@@ -181,6 +181,13 @@ def cleanLabel(nom):
     return value
 
 #
+# cette fonction nettoie un nom de section
+#
+def cleanSectionName(nom):
+    value = nom.replace("¶", "")
+    return value.strip()
+
+#
 # cette fonction nettoie une description
 #
 def cleanInlineDescription(desc):

@@ -9,6 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx"
@@ -19,14 +20,9 @@ MOCK_WD = None
 #MOCK_WD = "mocks/weapons-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
 
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = content.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
+FIELDS = ['Nom', 'Catégorie', 'Sous-catégorie', 'Source', 'Prix', 'DégâtsP', 'DégâtsM', 'Critique', 'Portée', 'Poids', 'Type', 'Spécial', 'Description', 'Référence' ]
+MATCH = ['Nom']
+
 
 liste = []
 
@@ -36,40 +32,67 @@ if MOCK_W:
 else:
     content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
+sections = content.find_all('h2',{'class':'separator'})
+
+type1 = []
+
+# extraction des types
+for s in sections:
+    if s.text.startswith("Accès rapide"):
+        continue
+    section = cleanSectionName(s.text)
+    section = section.replace("Les armes", "Arme").replace("s","")
+    type1.append(section)
+
 tables = content.find_all('table',{'class':'tablo'})
 
 weapon = {}
+type2 = ""
 
+print("Extraction des armes...")
+
+idx = 0
 for t in tables:
-    rows = t.find_all('tr',{'class':''}) + t.find_all('tr',{'class':['alt']})
+    rows = t.find_all('tr')
     for r in rows:
         cols = r.find_all('td')
+        if 'class' in r.attrs and 'titre' in r.attrs['class']:
+            continue
+        if len(cols) == 1 and 'class' in r.attrs and 'premier' in r.attrs['class']:
+            type2 = r.text.strip()
+            type2 = type2[0].upper() + type2[1:].lower()
+            type2 = type2.replace('Armes','Arme')
+            print("Extraction %s ..." % type2)
+            continue
         if len(cols) == 9:
             # Name & Reference
             nameLink = cols[0].find('a')
-            weapon['01Nom'] = cols[0].text.strip()
-            if weapon['01Nom'].endswith(" (3)"):
-                weapon['01Nom'] = weapon['01Nom'][:-4]
+            weapon['Nom'] = cols[0].text.strip()
+            if weapon['Nom'].endswith(" (3)"):
+                weapon['Nom'] = weapon['Nom'][:-4]
             if not nameLink is None:
-                weapon[u'20Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
+                weapon['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
             else:
-                weapon[u'20Référence'] = URL
+                weapon['Référence'] = URL
             # Others
-            weapon['01Nom'] = weapon['01Nom'].replace('’','\'')
-            weapon['04Prix'] = cols[1].text.strip()
-            weapon[u'05DégâtsP'] = cols[2].text.strip()
-            weapon[u'06DégâtsM'] = cols[3].text.strip()
-            weapon[u'07Critique'] = cols[4].text.strip()
-            weapon[u'08Portée'] = cols[5].text.strip()
-            weapon[u'09Poids'] = cols[6].text.strip()
-            weapon[u'10Type'] = cols[7].text.strip()
-            weapon[u'11Spécial'] = cols[8].text.strip()
-            weapon[u'99Complete'] = False
+            weapon['Nom'] = weapon['Nom'].replace('’','\'')
+            weapon['Catégorie'] = type1[idx]
+            weapon['Sous-catégorie'] = type2
+            weapon['Prix'] = cols[1].text.strip()
+            weapon['DégâtsP'] = cols[2].text.strip()
+            weapon['DégâtsM'] = cols[3].text.strip()
+            weapon['Critique'] = cols[4].text.strip()
+            weapon['Portée'] = cols[5].text.strip()
+            weapon['Poids'] = cols[6].text.strip()
+            weapon['Type'] = cols[7].text.strip()
+            weapon['Spécial'] = cols[8].text.strip()
+            weapon['Complete'] = False
 
-            weapon['02Source'] = "MJ"
-            weapon['EMPTY'] = ""
+            weapon['Source'] = "MJ"
             liste.append(weapon)
             weapon = {}
+    
+    idx+=1
 
 
 #
@@ -123,14 +146,14 @@ def addInfos(liste, name, source):
     # add infos to existing weapong in list
     found = False
     for l in liste:
-        if l['01Nom'].lower() in names:
-            l[u'99Complete'] = True
-            l[u'12Description'] = descr.strip()
+        if l['Nom'].lower() in names:
+            l['Complete'] = True
+            l['Description'] = descr.strip()
             if not source is None:
-                l['02Source'] = source
+                l['Source'] = source
             found = True
     if not found:
-        print("COULD NOT FIND : '" + name + "'");
+        print("- Une description existe pour '" + name + "' mais pas le sommaire!");
 
 
 if MOCK_WD:
@@ -138,7 +161,7 @@ if MOCK_WD:
 else:
     content = BeautifulSoup(urllib.request.urlopen(URLDET).read(),features="lxml").body
 
-section = jumpTo(html, 'h1',{'class':'separator'}, u"À mains nues")
+section = jumpTo(content, 'h1',{'class':'separator'}, u"À mains nues")
 newObj = True
 name = ""
 descr = ""
@@ -183,23 +206,13 @@ for s in section:
 addInfos(liste, name, sourceNext)
 
 for l in liste:
-    if not l[u'99Complete']:
-        print("INCOMPLETE: '" + l['01Nom'] + "'");
-    del l[u'99Complete']
+    if not l['Complete']:
+        print("- aucune description n'existe pour '" + l['Nom'] + "'!");
+    del l['Complete']
 
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('01Nom','Nom')
-yml = yml.replace('02Source','Source')
-yml = yml.replace('04Prix','Prix')
-yml = yml.replace(u'05DégâtsP',u'DégâtsP')
-yml = yml.replace(u'06DégâtsM',u'DégâtsM')
-yml = yml.replace('07Critique','Critique')
-yml = yml.replace(u'08Portée',u'Portée')
-yml = yml.replace('09Poids','Poids')
-yml = yml.replace('10Type','Type')
-yml = yml.replace(u'11Spécial',u'Spécial')
-yml = yml.replace(u'12Description',u'Description')
-yml = yml.replace(u'20Référence',u'Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
+
+HEADER = ""
+
+mergeYAML("../data/armes.yml", MATCH, FIELDS, HEADER, liste)

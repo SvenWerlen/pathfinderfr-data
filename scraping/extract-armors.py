@@ -19,7 +19,7 @@ MOCK_W = None
 MOCK_WD = None
 #MOCK_WD = "mocks/armors-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
-FIELDS = ['Nom', 'Type', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Catégorie', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -60,7 +60,7 @@ for t in tables:
                 armor['Référence'] = URL
             # Others
             armor['Nom'] = armor['Nom'].replace('’','\'')
-            armor['Type'] = type
+            armor['Catégorie'] = type
             armor['Prix'] = cols[1].text.strip()
             armor['Bonus'] = cols[2].text.strip()
             armor['BonusDexMax'] = cols[3].text.strip()

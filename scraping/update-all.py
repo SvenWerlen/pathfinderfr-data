@@ -4,6 +4,7 @@ echo "#####################"
 echo "       EQUIPMENT"
 echo "#####################"
 
+./extract-weapons.py
 ./extract-armors.py
 
 echo "#####################"
