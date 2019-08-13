@@ -1,6 +1,12 @@
 #!/bin/bash
 
 echo "#####################"
+echo "       EQUIPMENT"
+echo "#####################"
+
+./extract-armors.py
+
+echo "#####################"
 echo "       TRAITS"
 echo "#####################"
 
