@@ -1,6 +1,12 @@
 #!/bin/bash
 
 echo "#####################"
+echo "       BASE"
+echo "#####################"
+
+./extract-feats.py
+
+echo "#####################"
 echo "       EQUIPMENT"
 echo "#####################"
 

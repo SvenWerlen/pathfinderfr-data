@@ -9,6 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -16,9 +17,11 @@ MOCK_DON = None
 #MOCK_LIST = "mocks/donsListe.html"   # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_DON  = "mocks/don3.html"        # décommenter pour tester avec un sort pré-téléchargé
 
-URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx"]
+URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx"
+PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
 
-PROPERTIES = [  u"Catégorie", u"Catégories", u"Conditions", u"Condition", u"Conditions requises", u"Normal", u"Avantage", u"Avantages", u"Spécial", u"À noter"]
+FIELDS = ['Nom', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+MATCH = ['Nom']
 
 liste = []
 
@@ -28,15 +31,17 @@ if MOCK_LIST:
     parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml")
     list = parsed_html.body.find(id='PageContentDiv').find_all('tr')
 else:
-    list = []
-    for u in URLs:
-        parsed_html = BeautifulSoup(urllib.request.urlopen(u).read(),features="lxml")
-        list += parsed_html.body.find(id='PageContentDiv').find_all('tr')
+    parsed_html = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml")
+    list = parsed_html.body.find(id='PageContentDiv').find_all('tr')
 
+print("Extraction des dons...")
 
 # itération sur chaque page
 for l in list:
     don = {}
+    
+    if 'class' in l.attrs and 'titre' in l.attrs['class']:
+        continue
     
     element = l.find_next('a')
     title = element.text
@@ -50,9 +55,9 @@ for l in list:
     print("Processing %s" % title)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
-    don[u'Nom']=title
-    don[u'Référence']=pageURL
-    don[u'Source']=source
+    don['Nom']=title
+    don['Référence']=pageURL
+    don['Source']=source
         
     if MOCK_DON:
         content = BeautifulSoup(open(MOCK_DON),features="lxml").body.find(id='PageContentDiv')
@@ -101,5 +106,9 @@ for l in list:
     if MOCK_DON:
         break
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-print(yml)
+
+print("Fusion avec fichier YAML existant...")
+
+HEADER = ""
+
+mergeYAML("../data/dons.yml", MATCH, FIELDS, HEADER, liste)
