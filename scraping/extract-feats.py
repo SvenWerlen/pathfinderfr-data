@@ -20,7 +20,7 @@ MOCK_DON = None
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx"
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
 
-FIELDS = ['Nom', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
 MATCH = ['Nom']
 
 liste = []
@@ -37,20 +37,28 @@ else:
 print("Extraction des dons...")
 
 # itération sur chaque page
-for l in list:
+for tr in list:
     don = {}
     
-    if 'class' in l.attrs and 'titre' in l.attrs['class']:
+    if 'class' in tr.attrs and 'titre' in tr.attrs['class']:
         continue
     
-    element = l.find_next('a')
+    element = tr.find_next('a')
     title = element.text
     link  = element.get('href')
-    source  = l.find_next('sup').text
+    source  = tr.find_next('sup').text
     if source == "MJ-UC":
         source = "MJ"
     elif source == "MA": # doit être une erreur
         source = "AO"
+    
+    avantageShort = None
+    columnIdx = 0
+    for td in tr.find_all('td'):
+        columnIdx += 1
+        if columnIdx == 4:
+            avantageShort = td.text
+            break
     
     print("Processing %s" % title)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
@@ -58,6 +66,11 @@ for l in list:
     don['Nom']=title
     don['Référence']=pageURL
     don['Source']=source
+    don['Résumé']=avantageShort
+    
+    if not avantageShort:
+        print("Résumé n'a pas été trouvé pour %s" % title)
+        exit(1)
         
     if MOCK_DON:
         content = BeautifulSoup(open(MOCK_DON),features="lxml").body.find(id='PageContentDiv')
