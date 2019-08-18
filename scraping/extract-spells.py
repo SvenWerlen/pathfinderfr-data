@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, mergeYAML
+from libhtml import jumpTo, html2text, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -47,30 +47,9 @@ else:
 #
 def extractText(list):
     text = ""
-    
     for el in list:
-        
-        if el.name == 'br':
-            if text[-2:] != '\n\n':
-                text += '\n'
-        elif el.name in ('b','h2','h3'):
-            if el.string:
-                text += ' ' + el.string.strip().upper()
-            else:
-                text += ' ' + extractText(el.contents).upper()
-        elif el.string:
-            text += ' ' + el.string.strip()
-        elif el.name in ('div','ul','li','i','a'):
-            if el.name == 'li':
-                text += '\n *'
-            text += ' ' + extractText(el.contents)
-        elif el.name in ('img'):
-            # do nothing
-            text
-        else:
-            print(" - HTML element %s ignored!" % el.name)
-
-    return text.strip(' ').replace(u'¶','')
+        text += html2text(el)
+    return text
 
 # itération sur chaque page
 for l in list:
@@ -142,7 +121,6 @@ for l in list:
 
     # lire la description
     text = extractText(descr)
-    
     sort['Description']=text.strip()
     
     # ajouter sort
