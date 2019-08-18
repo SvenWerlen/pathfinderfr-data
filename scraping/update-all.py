@@ -15,6 +15,17 @@ echo "#####################"
 ./extract-equipment.py
 
 echo "#####################"
+echo "       MAGIC ITEM"
+echo "#####################"
+
+#./extract-magic-armors.py
+#./extract-magic-weapons.py
+#./extract-magic-rings.py
+#./extract-magic-scepters.py
+#./extract-magic-staffs.py
+#./extract-magic-objects.py
+
+echo "#####################"
 echo "       TRAITS"
 echo "#####################"
 
