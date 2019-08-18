@@ -2631,17 +2631,17 @@
     \ . Si elle le rate, elle est touchée par l’ illusion et doit alors réussir un\
     \ jet de Vigueur sous peine de mourir de peur. Même si elle réussit ce second\
     \ jet de sauvegarde , le choc est tel qu’elle perd 3d6 points de vie .\n\n Si\
-    \ la cible porte un casque de télépathie et réussit son jet de Volonté , elle\
-    \ peut renvoyer l’ assassin imaginaire sur son lanceur. C’est alors ce dernier\
-    \ qui doit effectuer un ou deux jets de sauvegarde s’il ne veut pas être tué par\
-    \ son propre sort.\n\n MYTHIQUE   Si la cible rate son jet de Volonté mais réussit\
-    \ son jet de Vigueur , l’assassin imaginaire hante son esprit et elle est alors\
-    \ hébétée jusqu’au prochain tour du personnage. À ce moment là, la cible doit\
-    \ effectuer un autre jet de Vigueur contre le fantasme. Une réussite signifie\
-    \ que la cible subit 3d6 points de dégâts, un échec qu’elle meurt de peur.\n\n\
-    \ AMPLIFIÉ (6ÈME). Si le personnage dépense deux utilisations de pouvoir mythique\
-    \ , le sort peut affecter une créature vivante immunisée à la terreur, aux illusions\
-    \ ou aux effets mentaux."
+    \ la cible possède Télépathie (Sur) ou porte un casque de télépathie et réussit\
+    \ son jet de Volonté , elle peut renvoyer l’ assassin imaginaire sur son lanceur.\
+    \ C’est alors ce dernier qui doit effectuer un ou deux jets de sauvegarde s’il\
+    \ ne veut pas être tué par son propre sort.\n\n MYTHIQUE   Si la cible rate son\
+    \ jet de Volonté mais réussit son jet de Vigueur , l’assassin imaginaire hante\
+    \ son esprit et elle est alors hébétée jusqu’au prochain tour du personnage. À\
+    \ ce moment là, la cible doit effectuer un autre jet de Vigueur contre le fantasme.\
+    \ Une réussite signifie que la cible subit 3d6 points de dégâts, un échec qu’elle\
+    \ meurt de peur.\n\n AMPLIFIÉ (6ÈME). Si le personnage dépense deux utilisations\
+    \ de pouvoir mythique , le sort peut affecter une créature vivante immunisée à\
+    \ la terreur, aux illusions ou aux effets mentaux."
   Durée: instantanée
   Jet de sauvegarde: Volonté, dévoile (en cas d’interaction), puis Vigueur, partiel
     (voir description) ;
@@ -7223,19 +7223,20 @@
 - Cible ou zone d'effet: créature vivante touchée
   Composantes: V, G
   Description: "Le sujet contracte une maladie tirée de la liste suivante : bouille-crâne,\
-    \ croupissure, fièvre des marais, fièvre gloussante, lèpre, mal rouge, mort vaseuse,\
-    \ peste bubonique, tremblote.\n\n Cette maladie le frappe sur-le-champ, sans la\
-    \ moindre période d’incubation. Utilisez la fréquence et le DD des maladies indiquées\
-    \ pour déterminer leurs effets. Pour plus d’informations sur ces maladies , consultez\
-    \ la section \" Les maladies \".\n\n MYTHIQUE   La cible affectée est hautement\
-    \ contagieuse. Les créatures qu’elle touche et celles qui la touchent avec leurs\
-    \ armes naturelles ou leurs coups à mains nues doivent réussir leur jet de sauvegarde\
-    \ pour ne pas contracter la maladie. Le DD du jet de sauvegarde pour ces cibles\
-    \ est égal à celui du sort -4. La cible ne peut transmettre cette maladie au personnage.\n\
-    \n AMPLIFIÉ (7ÈME). Si le personnage dépense cinq utilisations de pouvoir mythique\
-    \ , le sort cible toutes les créatures vivantes dans un rayon de 1,5 kilomètre.\
-    \ Le personnage peut sélectionner une créature par niveau de lanceur de sorts\
-    \ dans sa ligne de mire : ces créatures ne sont pas affectées par le sort."
+    \ mal aveuglant ( anciennement croupissure ), fièvre des marais, fièvre gloussante,\
+    \ lèpre, mal rouge, mort vaseuse, peste bubonique, tremblote.\n\n Cette maladie\
+    \ le frappe sur-le-champ, sans la moindre période d’incubation. Utilisez la fréquence\
+    \ et le DD des maladies indiquées pour déterminer leurs effets. Pour plus d’informations\
+    \ sur ces maladies , consultez la section \" Les maladies \".\n\n MYTHIQUE   La\
+    \ cible affectée est hautement contagieuse. Les créatures qu’elle touche et celles\
+    \ qui la touchent avec leurs armes naturelles ou leurs coups à mains nues doivent\
+    \ réussir leur jet de sauvegarde pour ne pas contracter la maladie. Le DD du jet\
+    \ de sauvegarde pour ces cibles est égal à celui du sort -4. La cible ne peut\
+    \ transmettre cette maladie au personnage.\n\n AMPLIFIÉ (7ÈME). Si le personnage\
+    \ dépense cinq utilisations de pouvoir mythique , le sort cible toutes les créatures\
+    \ vivantes dans un rayon de 1,5 kilomètre. Le personnage peut sélectionner une\
+    \ créature par niveau de lanceur de sorts dans sa ligne de mire : ces créatures\
+    \ ne sont pas affectées par le sort."
   Durée: instantanée
   Jet de sauvegarde: Vigueur, annule ;
   Niveau: antipaladin 3, Dru 3, Ens/Mag 4, Prê 3
@@ -9380,12 +9381,12 @@
     \ dans l’incapacité de l’attaquer.\n\n Le destrier a une CA de 18 (-1 taille,\
     \ +4 armure naturelle, +5 Dex ) et 7 points de vie +1 par niveau de lanceur de\
     \ sorts . Il se dissipe dès qu’il perd tous ses points de vie. Il se déplace à\
-    \ une vitesse de 6 m par niveau de lanceur de sorts , jusqu’à un maximum de 72\
-    \ m au niveau 12. Il peut transporter son cavalier plus 5 kg par niveau de lanceur\
-    \ de sorts .\n\n Le coursier hérite de certains pouvoirs en fonction du niveau\
-    \ de lanceur de sorts, toutes les facultés qui suivent étant cumulatives. \n *\
-    \ NIVEAU 8. le cheval peut avancer dans le sable, la boue ou les marécages sans\
-    \ que sa vitesse de déplacement n’en soit affectée.\n * NIVEAU 10. il utilise\
+    \ une vitesse de 6 m tous les deux niveaux de lanceur de sorts , jusqu’à un maximum\
+    \ de 30 m au niveau 10. Il peut transporter son cavalier plus 5 kg par niveau\
+    \ de lanceur de sorts .\n\n Le coursier hérite de certains pouvoirs en fonction\
+    \ du niveau de lanceur de sorts, toutes les facultés qui suivent étant cumulatives.\
+    \ \n * NIVEAU 8. le cheval peut avancer dans le sable, la boue ou les marécages\
+    \ sans que sa vitesse de déplacement n’en soit affectée.\n * NIVEAU 10. il utilise\
     \ marche sur l’onde à volonté (comme le sort du même nom, inutile d’entreprendre\
     \ une action pour activer ce pouvoir).\n * NIVEAU 12. il utilise marche dans les\
     \ airs à volonté (comme le sort du même nom, inutile d’entreprendre une action\
@@ -9502,7 +9503,7 @@
   Source: MJRA
   Temps d'incantation: 1 heure
   École: Divination ;
-- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 3 cubes de 1,50 mètre/niveau
+- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 3 cubes de 3 mètre/niveau
     (S)
   Composantes: V, G, F (une baguette fourchue en métal d’au moins 500 po)
   Description: "Le personnage crée un petit demi-plan fini. Pour lancer le sort, il\
@@ -9559,7 +9560,7 @@
   Source: AM
   Temps d'incantation: 2 heures
   École: invocation (création) ;
-- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 20 cubes de 1,50 mètre/niveau
+- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 20 cubes de 3 mètre/niveau
     (S)
   Composantes: V, G, F (une baguette fourchue en métal d’au moins 500 po)
   Description: "Ce sort fonctionne comme création de demi-plan mais englobe une zone\
@@ -9602,7 +9603,7 @@
   Source: AM
   Temps d'incantation: 6 heures
   École: invocation (création) ;
-- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 10 cubes de 1,50 mètre/niveau
+- Cible ou zone d'effet: demi-plan extradimensionnel, jusqu’à 10 cubes de 3 mètre/niveau
     (S)
   Description: "Ce sort fonctionne comme création de demi-plan mineure mais affecte\
     \ une zone plus importante et permet d’ajouter plus de caractéristiques au plan.\
@@ -9773,20 +9774,17 @@
 - Cible ou zone d'effet: objet non-magique de matière inerte de 30 dm³/niveau
   Composantes: V, G, M (un morceau de matériau correspondant à celui que l’on souhaite
     créer)
-  Description: "Grâce à cette invocation le personnage peut créer un objet non-magique\
-    \ de matière inerte, d’origine végétale ou minérale (pierre, métaux, cristaux,\
-    \ etc.). La durée d’existence de l’objet est déterminée par sa dureté et sa rareté\
-    \ :\n\n (*) Incluant l’ adamantium , l’ argent alchimique et le mithral . Il n’est\
-    \ pas possible d’utiliser création majeure pour créer un objet en fer froid .\n\
-    \n Le volume de l’objet créé ne peut en aucun cas dépasser 30 dm³ par niveau .\
-    \ Si l’objet souhaité est assez complexe, il faut réussir un test d’ Artisanat\
-    \ approprié.\n\n Si l’on essaye d’utiliser un objet créé grâce à cette incantation\
-    \ comme composante matérielle d’un autre sort, ce dernier échoue automatiquement.\n\
-    \n Ce sort s’apparente à celui de création mineure , à la différence qu’il permet\
-    \ également de créer des objets minéraux (pierre, métaux, cristaux, etc.). La\
-    \ durée d’existence de l’objet est déterminée par sa dureté et sa rareté :\n\n\
-    \ (*) Incluant l’ adamantium , l’ argent alchimique et le mithral . Il n’est pas\
-    \ possible d’utiliser création majeure pour créer un objet en fer froid ."
+  Description: "Ce sort s’apparente à celui de création mineure , à la différence\
+    \ qu’il permet également de créer des objets minéraux.\n\n Grâce à cette invocation\
+    \ le personnage peut créer un objet non-magique de matière inerte, d’origine végétale\
+    \ ou minérale (pierre, métaux, cristaux, etc.). La durée d’existence de l’objet\
+    \ est déterminée par sa dureté et sa rareté :\n\n (*) Incluant l’ adamantium ,\
+    \ l’ argent alchimique et le mithral . Il n’est pas possible d’utiliser création\
+    \ majeure pour créer un objet en fer froid .\n\n Le volume de l’objet créé ne\
+    \ peut en aucun cas dépasser 30 dm³ par niveau . Si l’objet souhaité est assez\
+    \ complexe, il faut réussir un test d’ Artisanat approprié.\n\n Si l’on essaye\
+    \ d’utiliser un objet créé grâce à cette incantation comme composante matérielle\
+    \ d’un autre sort, ce dernier échoue automatiquement."
   Durée: voir description
   Jet de sauvegarde: aucun ;
   Niveau: Conj 4, Ens/Mag 5, Sor 5
@@ -10482,19 +10480,7 @@
 - Cible ou zone d'effet: jusqu’à 20 m²/niveau (F)
   Composantes: V, G, M (encens, soufre et huile, cordelette nouée, un peu de sang),
     F (un bâtonnet en argent)
-  Description: "Ce puissant sort permet au personnage de défendre sa demeure. Il protège jusqu’à 20 m² par niveau de lanceur de sorts. La zone affectée peut faire jusqu’à six mètres de haut et prendre la forme que le lanceur de sorts choisit. Il est également possible de protéger plusieurs étages en divisant la zone d’effet en plusieurs tranches. Le lanceur de sorts doit se trouver au sein du lieu à protéger au moment de l’incantation. Le sort engendre les effets magiques suivants :\n\n\
-    \ BROUILLARD. Un épais brouillard envahit tous les couloirs, limitant la vision à 1,50 m (même la vision dans le noir). Tout adversaire se trouvant à 1,50 m ou moins bénéficie d’un camouflage (les attaques à son encontre ont donc 20 % de chances d’échouer). Les adversaires plus éloignés bénéficient d’un camouflage total (50 % de chances d’échec des attaques et l’assaillant ne peut repérer sa cible par la vue). Jet de sauvegarde aucun. Résistance à la magie non.\n\
-    \ VERROUS DE MAGE. Toutes les portes au sein de la zone protégée sont fermées par un verrou du mage. Jet de sauvegarde aucun. Résistance à la magie non.\n\
-    \ TOILES D'ARAIGNÉES. Des toiles d’araignée envahissent les escaliers. Elles sont semblables à celles créées par le sort toile d'araignée, à ceci près qu’elles se reconstituent en 10 minutes si elles sont déchirées ou brûlées avant la fin du sort de défense magique. Jet de sauvegarde Réflexes, annule (voir la description de toile d’araignée). Résistance à la magie non.\n\
-    \ CONFUSION. Chaque fois qu’un intrus arrive à un croisement où plusieurs directions s’offrent à lui (embranchement, nouveau couloir, etc.), il est soumis à un effet magique mineur semblable à confusion. Il a alors 50 % de chances de croire qu’il se déplace dans la direction opposée à celle qu’il suit en réalité. Cet effet est un enchantement mental. Jet de sauvegarde aucun. Résistance à la magie oui.\n\
-    \ PORTES CACHÉES. Une image silencieuse camoufle les portes en les faisant apparaître comme des pans de murs ordinaires (cet effet affecte une porte par niveau de lanceur de sorts). Jet de sauvegarde Volonté, dévoile (en cas d’interaction). Résistance à la magie non.\n\n\
-    \ De plus, le personnage peut choisir un des cinq effets magiques suivants :\n\
-    \ - Des lumières dansantes apparaissant dans quatre couloirs. Le personnage peut créer un programme de déplacement relativement simple que les lumières reproduisent pendant la durée du sort de défense magique. Jet de sauvegarde aucun. Résistance à la magie non.\n\
-    \ - Deux bouches magiques apparaissant à des endroits différents. Jet de sauvegarde aucun. Résistance à la magie non.\n\
-    \ - Deux nuages nauséabonds apparaissant à des endroits différents. Le lanceur de sorts décide où les vapeurs vont se créer. Si ils sont dispersés, ils se reforment en 10 minutes, pour autant que le sort de défense magique ne soit pas terminé. Jet de sauvegarde Vigueur, annule (voir la description de nuage nauséabond). Résistance à la magie non.\n\
-    \ - Une bourrasque soufflant dans une pièce ou un couloir. Jet de sauvegarde Vigueur, annule. Résistance à la magie oui.\n\
-    \ - Une suggestion affectant un emplacement de 1,50 m de côté. Toutes les créatures qui pénètrent dans la zone désignée entendent mentalement la suggestion. Jet de sauvegarde Volonté, annule. Résistance à la magie oui.\n\n\
-    \ La zone protégée acquiert une puissante aura magique d’abjuration. Un sort de dissipation de la magie réussi ciblant un effet spécifique peut le faire disparaître, mais cela n’affecte pas pour autant le reste du sort. Une disjonction réussie, elle, dissipe totalement la défense magique."
+  Description: ''
   Durée: 2 heures/niveau (T)
   Jet de sauvegarde: Volonté, annule.
   Niveau: Ens/Mag 6, Sor 6
@@ -10546,7 +10532,7 @@
     pourraient offrir.
   Durée: instantanée
   Jet de sauvegarde: aucun ;
-  Niveau: Dru 2, Ens/Mag 2, Rôd 1
+  Niveau: Dru 2, Ens/Mag 2, Rod 1
   Nom: Défoliant
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9foliant.ashx
@@ -17384,17 +17370,17 @@
   Description: "Ce sort fait apparaître plusieurs copies illusoires du personnage\
     \ dans l’espace qu’il occupe. À cause de la présence de ces sosies, ses ennemis\
     \ éprouvent des difficultés à le localiser précisément.\n\n Image miroir crée\
-    \ 1d4 doubles, +1 tous les trois niveaux du personnage (jusqu’à un maximum de\
-    \ huit images). Ces chimères restent toujours dans la case du lanceur de sorts\
-    \ et se déplacent en même temps que lui. Elles reproduisent ses mouvements, ses\
-    \ bruits et ses actes à la perfection. Quand le personnage est attaqué ou victime\
-    \ d’un sort qui nécessite un jet d’attaque , il y a des chances qu’une image soit\
-    \ touchée au lieu du personnage. Si l’attaque touche, il faut lancer un dé pour\
-    \ déterminer si l’attaque touche le personnage ou une de ses images. Une attaque\
-    \ réussie contre une chimère la fait disparaître instantanément. Si une attaque\
-    \ rate le personnage de 5 ou moins, elle détruit une chimère au passage. Les sorts\
-    \ de zone affectent le personnage normalement et n’abîment pas ses chimères .\
-    \ De même, les sorts et les effets qui ne nécessitent pas de jet d’attaque affectent\
+    \ 1d4 doubles, +1 tous les trois niveaux (jusqu’à un maximum de huit images).\
+    \ Ces chimères restent toujours dans la case du lanceur de sorts et se déplacent\
+    \ en même temps que lui. Elles reproduisent ses mouvements, ses bruits et ses\
+    \ actes à la perfection. Quand le personnage est attaqué ou victime d’un sort\
+    \ qui nécessite un jet d’attaque , il y a des chances qu’une image soit touchée\
+    \ au lieu du personnage. Si l’attaque touche, il faut lancer un dé pour déterminer\
+    \ si l’attaque touche le personnage ou une de ses images. Une attaque réussie\
+    \ contre une chimère la fait disparaître instantanément. Si une attaque rate le\
+    \ personnage de 5 ou moins, elle détruit une chimère au passage. Les sorts de\
+    \ zone affectent le personnage normalement et n’abîment pas ses chimères . De\
+    \ même, les sorts et les effets qui ne nécessitent pas de jet d’attaque affectent\
     \ le personnage normalement et ne détruisent pas ses images. Un sort qui nécessite\
     \ une attaque de contact se décharge sans effet si on l’utilise sur une chimère\
     \ (qui est alors détruite).\n\n Les images illusoires ne peuvent tromper que les\
@@ -22982,12 +22968,13 @@
     \ pendant 1d4+1 rounds après qu’elle en est sortie (faire un jet de dés séparé\
     \ pour chaque créature). Si un personnage réussit son jet de Vigueur mais reste\
     \ dans la zone d’effet du sort, il doit effectuer un nouveau jet de sauvegarde\
-    \ à chaque round .\n\n On peut user de permanence sur un sort de nuage nauséabond\
-    \ . Un tel nuage dispersé par le vent se reforme en dix minutes.\n\n MYTHIQUE\
-    \   Les créatures qui réussissent leur jet de sauvegarde sont fiévreuses tant\
-    \ qu’elles demeurent dans le nuage et pendant 1d4+1 rounds après en être sorti.\
-    \ Les créatures qui ratent leur jet de sauvegarde continuent d’être fiévreuses\
-    \ pendant 1 heure après être sorties du nuage."
+    \ à chaque round , au tour du lanceur de sorts. C'est un effet de poison .\n\n\
+    \ On peut user de permanence sur un sort de nuage nauséabond . Un tel nuage dispersé\
+    \ par le vent se reforme en dix minutes.\n\n MYTHIQUE   Les créatures qui réussissent\
+    \ leur jet de sauvegarde sont fiévreuses tant qu’elles demeurent dans le nuage\
+    \ et pendant 1d4+1 rounds après en être sorti. Les créatures qui ratent leur jet\
+    \ de sauvegarde continuent d’être fiévreuses pendant 1 heure après être sorties\
+    \ du nuage."
   Durée: 1 round/niveau
   Jet de sauvegarde: Vigueur, annule (voir description) ;
   Niveau: Conj 3, Ens/Mag 3, Magus 3, Sor 3
@@ -29890,16 +29877,16 @@
     \ quelle distance. Si la cible réussit un jet de Volonté , le sort échoue. La\
     \ difficulté dépend de la connaissance que le lanceur de sorts a du sujet et des\
     \ liens qui les unissent. Si la cible se trouve dans un autre plan d’existence,\
-    \ le jet de Volonté s’accompagne d’un malus de +5.\n\n (*) Pour pouvoir l’espionner,\
-    \ le lanceur de sorts doit posséder un lien le rapprochant d’une créature qu’il\
-    \ ne connaît pas (voir ci-dessous).\n\n En cas d’échec au jet de sauvegarde ,\
-    \ le personnage voit et entend le sujet et ses environs immédiats (trois mètres\
-    \ dans toutes les directions). Si le sujet se déplace, le capteur le suit à une\
-    \ vitesse allant jusqu’à 45 m par round.\n\n Comme pour tous les sorts de Divination\
-    \ ( scrutation ), le capteur bénéficie de toutes les facultés visuelles du lanceur\
-    \ de sorts, ce qui inclut les effets magiques. Ceux qui suivent ont seulement\
-    \ 5 % de chances par niveau de lanceur de sorts de fonctionner correctement :\
-    \ détection de la Loi , détection de la magie , détection du Bien , détection\
+    \ elle bénéficie d'un bonus de +5 à son jet de Volonté .\n\n (*) Pour pouvoir\
+    \ l’espionner, le lanceur de sorts doit posséder un lien le rapprochant d’une\
+    \ créature qu’il ne connaît pas (voir ci-dessous).\n\n En cas d’échec au jet de\
+    \ sauvegarde , le personnage voit et entend le sujet et ses environs immédiats\
+    \ (trois mètres dans toutes les directions). Si le sujet se déplace, le capteur\
+    \ le suit à une vitesse allant jusqu’à 45 m par round.\n\n Comme pour tous les\
+    \ sorts de Divination ( scrutation ), le capteur bénéficie de toutes les facultés\
+    \ visuelles du lanceur de sorts, ce qui inclut les effets magiques. Ceux qui suivent\
+    \ ont seulement 5 % de chances par niveau de lanceur de sorts de fonctionner correctement\
+    \ : détection de la Loi , détection de la magie , détection du Bien , détection\
     \ du Chaos , détection du Mal et message .\n\n Si la cible réussit son jet de\
     \ sauvegarde , le personnage ne peut pas essayer de la scruter à nouveau avant\
     \ vingt-quatre heures."
