@@ -8,6 +8,7 @@ import html
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, findAfter, findProperty, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_CLASS = None
@@ -15,6 +16,10 @@ MOCK_CLASS = None
 #MOCK_CLASS = "mocks/classe-antipaladin.html"       # décommenter pour tester avec une classe pré-téléchargée
 #MOCK_CLASS = "mocks/classe-inquisiteur.html"       # décommenter pour tester avec une classe pré-téléchargée
 #MOCK_CLASS = "mocks/classe-arpenteur.html"       # décommenter pour tester avec une classe pré-téléchargée
+
+FIELDS = ['Nom', 'Prestige', 'CompétencesDeClasse', 'DésDeVie', 'Alignement', 'Progression', 'Description', 'Source', 'Référence' ]
+MATCH = ['Nom']
+
 
 URLs = [
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx", 'source': 'MJ', 'spellLvl': 0},
@@ -80,59 +85,19 @@ URLs = [
     
 ]
 
-CONN = (u'Connaissances (exploration souterraine)',u'Connaissances (folklore local)',u'Connaissances (géographie)',u'Connaissances (histoire)',
-         'Connaissances (ingénierie)',u'Connaissances (mystères)',u'Connaissances (nature)',u'Connaissances (noblesse)',u'Connaissances (plans)',u'Connaissances (religion)');
-
-# vérification des paramètres
-if len(sys.argv) < 1:
-    print("Usage: %s" % sys.argv[0])
-    exit(1)
-
+CONN = ('Connaissances (exploration souterraine)','Connaissances (folklore local)','Connaissances (géographie)','Connaissances (histoire)',
+         'Connaissances (ingénierie)','Connaissances (mystères)','Connaissances (nature)','Connaissances (noblesse)','Connaissances (plans)','Connaissances (religion)');
 
 #
 # cette fonction convertit le nom 'Le barbare' => 'Barbare'
 #
-def cleanName(name):
+def extractName(name):
     if name.lower().startswith(u"le ") or name.lower().startswith(u"la "):
         name = name[3:]
     elif name.lower().startswith(u"l'"):
         name = name[2:]
     return name[:1].upper() + name[1:].lower()
 
-#
-# cette fonction extrait le texte du prochain élément après ...
-#
-def findAfter(html, afterTag, afterCond, searched):
-    elements = html.find_next(afterTag, afterCond).next_siblings
-    for el in elements:
-        if el.name == searched:
-            return el.text.strip()
-
-#
-# cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
-#
-def findProperty(html, propName):
-    for el in html:
-        if el.name == 'b' and el.text.lower().startswith(propName.lower()):
-            value = ""
-            for e in el.next_siblings:
-                if e.name == 'br':
-                    break
-                elif e.string:
-                    value += e.string
-                else:
-                    value += e
-            return value.replace('.','').strip()
-    return None
-
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = content.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
 
 liste = []
 
@@ -151,38 +116,47 @@ for data in URLs:
         content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body
 
     # titre
-    name = cleanName(content.find_next('caption').string.strip())
-    cl[u'Nom'] = name
+    name = extractName(content.find_next('caption').string.strip())
+    cl['Nom'] = name
 
     # référence
-    cl[u'Référence'] = link
+    cl['Référence'] = link
     
     # prestige
     if 'prestige' in data.keys() and data['prestige']:
-        cl[u'Prestige'] = True
+        cl['Prestige'] = True
     
     # source
-    cl[u'Source'] = data['source']
+    cl['Source'] = data['source']
 
     # description
     descr = findAfter(content, "div", {"class": "presentation"},'i');
-    cl[u'Description'] = descr
+    cl['Description'] = descr
 
     # alignement
-    align = findProperty(content.find(id='PageContentDiv'), u"alignement");
-    cl[u'Alignement'] = align
+    align = findProperty(content.find(id='PageContentDiv'), "alignement");
+    cl['Alignement'] = align
 
     # dés de vie
-    desVie = findProperty(content.find(id='PageContentDiv'), u"dés de vie");
+    desVie = findProperty(content.find(id='PageContentDiv'), "dés de vie");
     if desVie == None:
-        desVie = findProperty(content.find(id='PageContentDiv'), u"dé de vie");
-    cl[u'DésDeVie'] = desVie
+        desVie = findProperty(content.find(id='PageContentDiv'), "dé de vie");
+    cl['DésDeVie'] = desVie
 
     # compétences de classe
-    cl[u'CompétencesDeClasse'] = []
-    section = jumpTo(html, 'h2',{'class':'separator'}, u"Compétences de classe")
-    if section is None:
-        section = jumpTo(html, 'h2',{'class':'separator'}, u"Compétences de la classe")
+    cl['CompétencesDeClasse'] = []
+    
+    
+    sectionNames = ["Compétences de classe", "Compétences de la classe"]
+    section = None
+    for s in sectionNames:
+        section = jumpTo(content, 'h2',{'class':'separator'}, s)
+        if section:
+            break
+    
+    if not section:
+        print("- Compétences de la classe %s n'a pas être trouvée!!!" % cl['Nom'])
+        continue
     
     for s in section:
         if s.name == 'a' and len(s.text) > 3:
@@ -194,16 +168,16 @@ for data in URLs:
             
             value = value.replace('’',"'")
             # hacks
-            if value == u'Utilisation des objets magiques':
-                value = u'Utilisation d\'objets magiques'
-            elif value == u'Connaissances (mystère)':
-                value = u'Connaissances (mystères)'
+            if value == 'Utilisation des objets magiques':
+                value = 'Utilisation d\'objets magiques'
+            elif value == 'Connaissances (mystère)':
+                value = 'Connaissances (mystères)'
         
-            if value == u'Connaissances (toutes)' or value == u'Connaissances (tous les domaines)' or value == u'Connaissances (au choix, chaque compétence devant être prise séparément)':
+            if value == 'Connaissances (toutes)' or value == 'Connaissances (tous les domaines)' or value == 'Connaissances (au choix, chaque compétence devant être prise séparément)':
                 for c in CONN:
-                    cl[u'CompétencesDeClasse'].append({u'Compétence':c})
+                    cl['CompétencesDeClasse'].append({'Compétence':c})
             else:
-                cl[u'CompétencesDeClasse'].append({u'Compétence':value.strip()})
+                cl['CompétencesDeClasse'].append({'Compétence':value.strip()})
         elif s.name == 'br':
             break;
 
@@ -217,7 +191,7 @@ for data in URLs:
     if 'spellLvl0' in data.keys() and  data['spellLvl0']:
         minSpellLvl = 0
 
-    cl[u'Progression'] = []
+    cl['Progression'] = []
     for r in rows:
         # ignorer les en-têtes
         if r.has_attr('class') and (r['class'][0] == 'titre' or r['class'][0] == 'soustitre'):
@@ -237,17 +211,14 @@ for data in URLs:
                     break;
 
         if len(values) >= 5:
-            cl[u'Progression'].append({
-                u'Niveau': int(values[0]),
-                u'BBA': values[1],
-                u'Réflexes': values[2],
-                u'Vigueur': values[3],
-                u'Volonté': values[4],
-                u'SortMax': spellLvl,
+            cl['Progression'].append({
+                'Niveau': int(values[0]),
+                'BBA': values[1],
+                'Réflexes': values[2],
+                'Vigueur': values[3],
+                'Volonté': values[4],
+                'SortMax': spellLvl,
             });
-
-
-
 
     # ajouter classe
     liste.append(cl)
@@ -255,9 +226,8 @@ for data in URLs:
     if MOCK_CLASS:
         break
 
-if MOCK_CLASS:
-    print(yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True))
-    exit(1)
+print("Fusion avec fichier YAML existant...")
 
-with open("classes.yml", "w") as f:
-    yaml.safe_dump(liste, f, default_flow_style=False, allow_unicode=True)
+HEADER = ""
+
+mergeYAML("../data/classes.yml", MATCH, FIELDS, HEADER, liste)
