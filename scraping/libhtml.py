@@ -204,6 +204,18 @@ def cleanInlineDescription(desc):
     return desc.replace('\n', ' ').strip()
 
 #
+# recherche dans le texte "... niveau XX"
+# Ex: À partir du niveau 17, le barbare ...
+#
+def extractLevel(text, maxdist):
+    idx = text.find(' niveau ')
+    if idx >=0 and idx < maxdist:
+        m = re.search(' ?niveau (\d+)', text)
+        if m:
+            return int(m.group(1))
+    return 1
+
+#
 # cette fonction extrait la liste des propriétés basée sur le format suivant
 #
 # <b>Nom de la propriété</b> Texte descriptif
