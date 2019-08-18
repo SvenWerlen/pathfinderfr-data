@@ -1,15 +1,14 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import urllib
+import urllib.request
 import yaml
 import sys
+import html
+from bs4 import BeautifulSoup
 from lxml import html
-try:
-    from BeautifulSoup import BeautifulSoup
-except ImportError:
-    from bs4 import BeautifulSoup
-    from bs4 import NavigableString
+
+from libhtml import html2text, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -17,24 +16,12 @@ MOCK_COMP = None
 #MOCK_LIST = "mocks/compsListe.html" # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_COMP = "mocks/comp2.html"       # décommenter pour tester avec un sort pré-téléchargé
 
-URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20comp%c3%a9tences.ashx"]
+URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20comp%c3%a9tences.ashx"
 
-PROPERTIES = [ u"Caractéristique associée", u"caractéristique associée", u"Formation nécessaire", u"Formation nécesssaire", u"Malus d’armure"]
+PROPERTIES = [ "Caractéristique associée", "caractéristique associée", "Formation nécessaire", "Formation nécesssaire", "Malus d’armure"]
 
-# vérification des paramètres
-if len(sys.argv) < 2:
-    print "Usage: %s [HTML|TEXT]" % sys.argv[0]
-    print " - HTML: contenu extrait en tant que HTML"
-    print " - TEXT: contenu extrait en tant que TEXT"
-    exit(1)
-
-# message d'accueil
-html = sys.argv[1].lower() == "html"
-if html:
-    print "Génération du fichier YAML pour les compétences en mode HTML"
-else:
-    print "Génération du fichier YAML pour les compétences en mode TEXT"
-
+FIELDS = ['Nom', 'Caractéristique associée', 'Malus d’armure', 'Formation nécessaire', 'Description', 'Référence' ]
+MATCH = ['Nom']
 
 
 liste = []
@@ -45,10 +32,8 @@ if MOCK_LIST:
     parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml")
     list = parsed_html.body.find(id='PageContentDiv').find_next('table',class_="tablo").find_all('tr')
 else:
-    list = []
-    for u in URLs:
-        parsed_html = BeautifulSoup(urllib.urlopen(u).read(),features="lxml")
-        list += parsed_html.body.find(id='PageContentDiv').find_next('table',class_="tablo").find_all('tr')
+    parsed_html = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml")
+    list += parsed_html.body.find(id='PageContentDiv').find_next('table',class_="tablo").find_all('tr')
 
 #
 # cette fonction se charge d'extraire le texte de la partie HTML
@@ -59,10 +44,6 @@ def extractText(list):
     text = ""
     
     for el in list:
-        if html:
-            text += repr(el)
-            continue
-        
         if el.name == 'br':
             if text[-2:] != '\n\n':
                 text += '\n'
@@ -85,7 +66,7 @@ def extractText(list):
             # do nothing
             text
         else:
-            print " - HTML element %s ignored!" % el.name
+            print(" - HTML element %s ignored!" % el.name)
 
     return text.strip(' ').replace(u'¶','')
 
@@ -106,7 +87,7 @@ for l in list:
         continue
 
     
-    print "Processing %s" % title
+    print("Processing %s" % title)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     sort['Nom']=title
@@ -115,7 +96,7 @@ for l in list:
     if MOCK_COMP:
         content = BeautifulSoup(open(MOCK_COMP),features="lxml").body.find(id='PageContentDiv')
     else:
-        content = BeautifulSoup(urllib.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
+        content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
     
     # lire les attributs
     text = ""
@@ -124,7 +105,7 @@ for l in list:
         key = attr.text.strip()
         
         for s in attr.next_siblings:
-            #print "%s %s" % (key,s.name)
+            #print("%s %s" % (key,s.name))
             if s.name == 'b' or  s.name == 'br':
                 break
             elif s.string:
@@ -137,16 +118,16 @@ for l in list:
 
         if key in PROPERTIES:
             # merge properties with almost the same name
-            if key == u"Formation nécesssaire":
-                key = u"Formation nécessaire"
-            elif key == u"caractéristique associée":
-                key = u"Caractéristique associée"
+            if key == "Formation nécesssaire":
+                key = "Formation nécessaire"
+            elif key == "caractéristique associée":
+                key = "Caractéristique associée"
             
             sort[key]=text
             descr = s.next_siblings
             text = ""
         #else:
-        #    print "- Skipping unknown property %s" % key
+        #    print("- Skipping unknown property %s" % key)
 
     # lire la description
     text = extractText(descr)
@@ -159,9 +140,8 @@ for l in list:
     if MOCK_COMP:
         break
 
-if MOCK_COMP:
-    print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-    exit(1)
+print("Fusion avec fichier YAML existant...")
 
-with open("competences.yml", "w") as f:
-    yaml.safe_dump(liste, f, default_flow_style=False, allow_unicode=True)
+HEADER = ""
+
+mergeYAML("../data/competences.yml", MATCH, FIELDS, HEADER, liste)
