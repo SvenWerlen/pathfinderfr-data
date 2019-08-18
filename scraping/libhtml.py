@@ -386,7 +386,7 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
     # s'assurer que toutes les nouvelles entrées on un "nom"
     for el in yaml2merge:
         if not "Nom" in el:
-            print("Entrée invalide (ne contient pas de mom)" % m)
+            print("Entrée invalide (ne contient pas de nom)" % el)
             print(el)
             exit(1)
             
