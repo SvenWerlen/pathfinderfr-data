@@ -8,7 +8,7 @@ echo "#####################"
 ./extract-classes.py
 ./extract-skills.py
 ./extract-feats.py
-#./extract-feats-racial.py
+./extract-feats-racial.py
 ./extract-spells.py
 #./extract-conditions.py
 

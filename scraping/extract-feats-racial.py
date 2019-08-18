@@ -9,11 +9,12 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import html2text, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
 MOCK_DON = None
-#MOCK_LIST = "mocks/don-aasimar.html"   # décommenter pour tester avec une liste pré-téléchargée
+#MOCK_LIST = "mocks/don-aasimar.html" # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_DON  = "mocks/don3.html"        # décommenter pour tester avec un sort pré-téléchargé
 
 URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx",
@@ -34,7 +35,10 @@ URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx"
         "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx"
         ]
 
-PROPERTIES = [  u"Catégorie", u"Catégories", u"Conditions", u"Condition", u"Conditions requises", u"Normal", u"Avantage", u"Avantages", u"Spécial", u"À noter"]
+PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
+
+FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+MATCH = ['Nom']
 
 liste = []
 
@@ -109,19 +113,19 @@ for u in URLs:
                 value = value[1:]
 
             if key in PROPERTIES:
-                if key == u"Condition" or key == u"Conditions requises":
-                    key = u"Conditions"
-                elif key == u"Avantages":
-                    key = u"Avantage"
-                elif key == u"Catégories":
-                    key = u"Catégorie"
-                elif key == u"À noter":
-                    key = u"Spécial"
+                if key == "Condition" or key == "Conditions requises":
+                    key = "Conditions"
+                elif key == "Avantages":
+                    key = "Avantage"
+                elif key == "Catégories":
+                    key = "Catégorie"
+                elif key == "À noter":
+                    key = "Spécial"
 
                 don[key]=value.strip()
                 text = ""
-            elif u"Avantage" in don and len(key) < 15:
-                don[u"Avantage"] += "\n" + key.upper() + " " + value.strip()
+            elif "Avantage" in don and len(key) < 15:
+                don["Avantage"] += "\n" + key.upper() + " " + value.strip()
                 text = ""
             else:
                 print("- Skipping unknown property %s" % key)
@@ -129,6 +133,8 @@ for u in URLs:
         # ajouter don
         liste.append(don)
 
+print("Fusion avec fichier YAML existant...")
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-print(yml)
+HEADER = ""
+
+mergeYAML("../data/dons.yml", MATCH, FIELDS, HEADER, liste)
