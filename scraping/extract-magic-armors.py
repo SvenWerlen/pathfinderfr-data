@@ -97,7 +97,7 @@ for t in tables:
             data = { **data, **TABLEDEF[tableIdx][3] }
         
         # débogage
-        print("Traitement de %s" % nom.strip())
+        print("Traitement de %s..." % nom.strip())
         
         # get description from same page
         if href and "#" in href and not "NOTE" in href:
