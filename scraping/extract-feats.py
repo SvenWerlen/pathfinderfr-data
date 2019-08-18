@@ -9,13 +9,13 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import cleanSectionName, mergeYAML
+from libhtml import cleanSectionName, html2text, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
 MOCK_DON = None
 #MOCK_LIST = "mocks/donsListe.html"   # décommenter pour tester avec une liste pré-téléchargée
-#MOCK_DON  = "mocks/don3.html"        # décommenter pour tester avec un sort pré-téléchargé
+#MOCK_DON  = "mocks/don7.html"        # décommenter pour tester avec un sort pré-téléchargé
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx"
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
@@ -60,7 +60,7 @@ for tr in list:
             avantageShort = td.text
             break
     
-    print("Processing %s" % title)
+    print("Traitement de %s" % title)
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     don['Nom']=title
@@ -94,8 +94,8 @@ for tr in list:
             #print "%s %s" % (key,s.name)
             if s.name == 'b':
                 break
-            elif s.string:
-                text += s.string
+            else:
+                text += html2text(s)
 
         if key in PROPERTIES:
             if key == u"Condition" or key == u"Conditions requises":
@@ -106,7 +106,10 @@ for tr in list:
                 key = u"Catégorie"
             elif key == u"À noter":
                 key = u"Spécial"
-                
+            
+            if text.startswith(":"):
+                text = text[1:]
+            
             don[key]=text.strip()
             descr = s.next_siblings
             text = ""
