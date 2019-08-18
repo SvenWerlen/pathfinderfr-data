@@ -380,6 +380,13 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
     for o in order:
         FIELDS[o]="{:02d}{:s}".format(idx,o)
         idx += 1
+
+    # s'assurer que toutes les nouvelles entrées on un "nom"
+    for el in yaml2merge:
+        if not "Nom" in el:
+            print("Entrée invalide (ne contient pas de mom)" % m)
+            print(el)
+            exit(1)
             
     # fusionner les listes
     for el in yaml2merge:
@@ -389,11 +396,9 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
             match = True
             # s'assurer que tous les champs correspondent
             for m in matchOn:
-                if not m in el:
-                    print("Entrée invalide (ne continent pas '%s')" % m)
-                    print(el)
-                    exit(1)
-                if cleanName(el[m]) != cleanName(elOrig[m]):
+                val1 = cleanName(el[m]) if m in el else ""
+                val2 = cleanName(elOrig[m]) if m in elOrig else ""
+                if val1 != val2:
                     match = False
                     break
             if match:

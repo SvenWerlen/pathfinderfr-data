@@ -8,81 +8,57 @@ import html
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, html2text, cleanSectionName, cleanInlineDescription, extractLevel, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_RACE = None
 #MOCK_RACE = "mocks/race-drow.html"       # décommenter pour tester avec une classe pré-téléchargée
 
 URLs = [
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dhampir%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.drow%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.fetchelin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gobelin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.hobgobelin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-f%c3%a9lin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-rat%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ifrit%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kobold%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ondin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.orque%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.or%c3%a9ade%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sylphe%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Demi-elfe', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Demi-elfe.ashx", 'source': 'MJ'},
+    {'name': 'Demi-orque', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Demi-orque.ashx", 'source': 'MJ'},
+    {'name': 'Elfe', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Elfe.ashx", 'source': 'MJ'},
+    {'name': 'Gnome', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gnome.ashx", 'source': 'MJ'},
+    {'name': 'Halfelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Halfelin.ashx", 'source': 'MJ'},
+    {'name': 'Humain', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Humain.ashx", 'source': 'MJ'},
+    {'name': 'Nain', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nain.ashx", 'source': 'MJ'},
+    
+    {'name': 'Aasimar', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx", 'source': 'MR'},
+    {'name': 'Dhampir', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dhampir%20(race).ashx", 'source': 'MR'},
+    {'name': 'Drow', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.drow%20(race).ashx", 'source': 'MR'},
+    {'name': 'Fetchelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.fetchelin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Gobelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gobelin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Hobgobelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.hobgobelin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Homme-félin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-f%c3%a9lin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Homme-rat', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-rat%20(race).ashx", 'source': 'MR'},
+    {'name': 'Ifrit', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ifrit%20(race).ashx", 'source': 'MR'},
+    {'name': 'Kobold', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kobold%20(race).ashx", 'source': 'MR'},
+    {'name': 'Ondin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ondin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Orque', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.orque%20(race).ashx", 'source': 'MR'},
+    {'name': 'Oréade', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.or%c3%a9ade%20(race).ashx", 'source': 'MR'},
+    {'name': 'Sylphe', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sylphe%20(race).ashx", 'source': 'MR'},
+    {'name': 'Tengu', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx", 'source': 'MR'},
+    {'name': 'Tieffelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx", 'source': 'MR'},
 
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aquatique%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.changelin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.grippli%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-poisson%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kitsune%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.nagaji%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.samsaran%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.strix%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.svirfneblin%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vanara%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vishkanya%20(race).ashx", 'source': 'MR'},
-    {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.wayang%20(race).ashx", 'source': 'MR'},
-
+    {'name': 'Aquatique', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aquatique%20(race).ashx", 'source': 'MR'},
+    {'name': 'Changelin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.changelin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Duergar', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.duergar%20(race).ashx", 'source': 'MR'},
+    {'name': 'Grippli', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.grippli%20(race).ashx", 'source': 'MR'},
+    {'name': 'Homme-poisson', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-poisson%20(race).ashx", 'source': 'MR'},
+    {'name': 'Kitsune', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kitsune%20(race).ashx", 'source': 'MR'},
+    {'name': 'Nagaji', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.nagaji%20(race).ashx", 'source': 'MR'},
+    {'name': 'Samsaran', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.samsaran%20(race).ashx", 'source': 'MR'},
+    {'name': 'Strix', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.strix%20(race).ashx", 'source': 'MR'},
+    {'name': 'Suli', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.suli%20(race).ashx", 'source': 'MR'},
+    {'name': 'Svirfneblin', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.svirfneblin%20(race).ashx", 'source': 'MR'},
+    {'name': 'Vanara', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vanara%20(race).ashx", 'source': 'MR'},
+    {'name': 'Vishkanya', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.vishkanya%20(race).ashx", 'source': 'MR'},
+    {'name': 'Wayang', 'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.wayang%20(race).ashx", 'source': 'MR'},
 ]
 
+FIELDS = ['Nom', 'Source', 'Référence', 'Traits', 'Description' ]
+MATCH = ['Nom']
 
-#
-# cette fonction extrait le texte du prochain élément après ...
-#
-def findAfter(html, afterTag, afterCond, searched):
-    elements = html.find_next(afterTag, afterCond).next_siblings
-    for el in elements:
-        if el.name == searched:
-            return el.text.strip()
-
-#
-# cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
-#
-def findProperty(html, propName):
-    for el in html:
-        if el.name == 'b' and el.text.lower().startswith(propName.lower()):
-            value = ""
-            for e in el.next_siblings:
-                if e.name == 'br':
-                    break
-                elif e.string:
-                    value += e.string
-                else:
-                    value += e
-            return value.replace('.','').strip()
-    return None
-
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = content.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
 
 liste = []
 
@@ -92,7 +68,7 @@ for data in URLs:
 
     link = data['link']
 
-    print("Processing %s" % link)
+    print("Traitement %s" % link)
     pageURL = link
 
     if MOCK_RACE:
@@ -105,17 +81,17 @@ for data in URLs:
     if name.startswith('Les '):
         name = name[4:-1].title()
 
-    race[u'01Nom'] = name
+    race['Nom'] = data['name']
 
     # source
-    race[u'03Source'] = data['source']
+    race['Source'] = data['source']
 
     # référence
-    race[u'04Référence'] = link
+    race['Référence'] = link
 
     # traits
-    race[u'05Traits'] = []
-    section = jumpTo(html, 'h2',{'class':'separator'}, u"Traits raciaux standards")
+    race['Traits'] = []
+    section = jumpTo(content, 'h2',{'class':'separator'}, "Traits raciaux standards")
     for s in section:
         if s.name == 'div' and 'class' in s.attrs and "arrondi" in s.attrs['class']:
             first = True
@@ -126,20 +102,18 @@ for data in URLs:
                     if el.name == 'b':
                         name = el.text.strip()
                         if first:
-                            trait['01Nom'] = u"Caractéristiques"
+                            trait['Nom'] = "Caractéristiques"
                             descr = name
                         else:
                             if name.endswith('.'):
                                 name = name[:-1]
-                            trait['01Nom'] = name
+                            trait['Nom'] = name
                         first = False
                     elif el.string:
                         descr += el.string
 
-                trait['02Description'] = descr.strip()
-                race[u'05Traits'].append(trait)
-
-    race['EMPTY'] = ""
+                trait['Description'] = descr.strip()
+                race['Traits'].append(trait)
 
     # ajouter race
     liste.append(race)
@@ -147,12 +121,8 @@ for data in URLs:
     if MOCK_RACE:
         break
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace(u'01Nom',u'Nom')
-yml = yml.replace(u'02Référence',u'Référence')
-yml = yml.replace(u'02Description',u'Description')
-yml = yml.replace(u'03Source',u'Source')
-yml = yml.replace(u'04Référence',u'Référence')
-yml = yml.replace(u'05Traits',u'Traits')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
+
+HEADER = ""
+
+mergeYAML("../data/races.yml", MATCH, FIELDS, HEADER, liste)
