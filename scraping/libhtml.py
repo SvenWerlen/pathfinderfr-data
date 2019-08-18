@@ -63,7 +63,7 @@ def table2text(table):
         else:
             text += "• "
         for td in tr.find_all('td'):
-            text += html2text(td) + ", "
+            text += html2text(td).replace('\n','') + ", "
         text = text[:-2] + "\n"
 
     return text
