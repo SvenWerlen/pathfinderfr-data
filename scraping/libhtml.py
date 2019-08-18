@@ -102,6 +102,8 @@ def html2text(htmlEl):
         for c in htmlEl.children:
             text += html2text(c)
         return text
+    elif htmlEl.name == "h2" or htmlEl.name == "h3":
+        return cleanSectionName(htmlEl.text).upper()
     elif htmlEl.name == "abbr":
         return htmlEl.text
     else:
