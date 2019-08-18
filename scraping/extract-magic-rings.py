@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cleanName
+from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cleanName, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
@@ -18,6 +18,10 @@ MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-ring-protection.html"      # décommenter pour tester avec détails pré-téléchargé
 
 TEXTE = ''
+
+FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'Référence' ]
+MATCH = ['Nom']
+
 
 liste = []
 
@@ -45,6 +49,8 @@ propList = []
 tables = content.find_all('table',{'class':['tablo col1centre']})
 
 liste = []
+
+print("Extraction des anneaux magiques...")
 
 tableIdx = 0
 for t in tables:
@@ -85,7 +91,7 @@ for t in tables:
             data = { **data, **TABLEDEF[tableIdx][3] }
         
         # débogage
-        #print("Traitement de %s..." % nom.strip())
+        print("Traitement de %s..." % nom.strip())
         
         # get description from same page
         if href and "#" in href and not "NOTE" in href:
@@ -117,49 +123,37 @@ for t in tables:
                 exit(1)
         
         element = {}
-        element["01Nom"] = data["nom"]
-        element["02Type"] = TYPE
-        element["03Prix"] = data["prix"]
-        element["04Source"] = "MJ"
-        element["20Description"] = data["descr"]
-        element["21Référence"] = reference
+        element["Nom"] = data["nom"]
+        element["Type"] = TYPE
+        element["Prix"] = data["prix"]
+        element["Source"] = "MJ"
+        element["Description"] = data["descr"]
+        element["Référence"] = reference
         
         # infos additionnelles
         if "emplacement" in data:
-            element["05Emplacement"] = data["emplacement"]
+            element["Emplacement"] = data["emplacement"]
         if "poids" in data:
-            element["06Poids"] = data["poids"]
+            element["Poids"] = data["poids"]
         if "aura" in data:
-            element["07Aura"] = data["aura"]
+            element["Aura"] = data["aura"]
         if "nls" in data:
             # NLS parfois variable
             if isinstance(data["nls"], int):
-                element["08NLS"] = data["nls"]
+                element["NLS"] = data["nls"]
             else:
-                element["20Description"] = "NLS: " + data["nls"] + "\n\n" + element["20Description"]
+                element["Description"] = "NLS: " + data["nls"] + "\n\n" + element["Description"]
         if "conditions" in data:
-            element["09Conditions"] = data["conditions"]
+            element["Conditions"] = data["conditions"]
         if "coût" in data:
-            element["10Coût"] = data["coût"]
+            element["Coût"] = data["coût"]
         
-        element["EMPTY"] = ""
         liste.append(element)
     
 #exit(1)
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('01Nom','Nom')
-yml = yml.replace('02Type','Type')
-yml = yml.replace('03Prix','Prix')
-yml = yml.replace('04Source','Source')
-yml = yml.replace('05Emplacement','Emplacement')
-yml = yml.replace('06Poids','Poids')
-yml = yml.replace('07Aura','Aura')
-yml = yml.replace('08NLS','NLS')
-yml = yml.replace('09Conditions','Conditions')
-yml = yml.replace('10Coût','Coût')
-yml = yml.replace('20Description','Description')
-yml = yml.replace('21Référence','Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
 
+HEADER = ""
+
+mergeYAML("../data/magic.yml", MATCH, FIELDS, HEADER, liste)

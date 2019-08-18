@@ -57,13 +57,13 @@ def findProperty(html, propName):
 def table2text(table):
     text = ""
     first = True
-    for tr in table:
+    for tr in table.find_all('tr'):
         if first:
             first = False
         else:
             text += "• "
-        for td in tr:
-            text += td.text.strip() + ", "
+        for td in tr.find_all('td'):
+            text += html2text(td) + ", "
         text = text[:-2] + "\n"
 
     return text
@@ -71,29 +71,39 @@ def table2text(table):
 
 def html2text(htmlEl):
     if htmlEl.name is None or htmlEl.name == 'a':
-        return htmlEl.string
+        if htmlEl.string is None:
+            return ""
+        else:
+            return htmlEl.string
     # ignore <sup>
     elif htmlEl.name == 'sup':
         return ""
     elif htmlEl.name == 'i':
-        return htmlEl.text.replace("\n"," ")
+        text = ""
+        for c in htmlEl.children:
+            text += html2text(c)
+        return text.replace("\n"," ")
     elif htmlEl.name == 'br':
         return "\n"
     elif htmlEl.name == 'b':
-        return htmlEl.text.replace("\n"," ").upper()
+        text = ""
+        for c in htmlEl.children:
+            text += html2text(c)
+        return text.replace("\n"," ").upper()
     elif htmlEl.name == 'center':
         return table2text(htmlEl.find('table'))
     elif htmlEl.name == 'ul':
+        text = ""
         for li in htmlEl.find_all('li'):
-            text = ""
-            for c in li.children:
-                text += html2text(c)
-            return text
+            text += "• " + li.text + "\n"
+        return text
     elif htmlEl.name == "td":
         text = ""
         for c in htmlEl.children:
             text += html2text(c)
         return text
+    elif htmlEl.name == "abbr":
+        return htmlEl.text
     else:
         return ""
 
@@ -367,6 +377,10 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
             match = True
             # s'assurer que tous les champs correspondent
             for m in matchOn:
+                if not m in el:
+                    print("Entrée invalide (ne continent pas '%s')" % m)
+                    print(el)
+                    exit(1)
                 if cleanName(el[m]) != cleanName(elOrig[m]):
                     match = False
                     break
