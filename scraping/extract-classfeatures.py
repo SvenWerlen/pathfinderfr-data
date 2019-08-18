@@ -16,7 +16,7 @@ MOCK_CF = None
 #MOCK_CF = "mocks/classe-ensorceleur.html"       # décommenter pour tester avec les rages pré-téléchargées
 
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
-MATCH = ['Nom','Classe']
+MATCH = ['Nom', 'Classe', 'Archétype']
 
 
 classes = []

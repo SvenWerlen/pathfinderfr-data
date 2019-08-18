@@ -4,6 +4,7 @@ echo "#####################"
 echo "       BASE"
 echo "#####################"
 
+./extract-races.py
 ./extract-classes.py
 ./extract-feats.py
 ./extract-spells.py
@@ -13,6 +14,7 @@ echo "       CLASSFEATURES"
 echo "#####################"
 
 ./extract-classfeatures.py
+./extract-classes-archetypes.py
 
 echo "#####################"
 echo "       EQUIPMENT"

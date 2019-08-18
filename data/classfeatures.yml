@@ -18414,23 +18414,9 @@
   Source: MCA
   Niveau: 9
   Auto: true
-  Description: 'Au niveau 9, un croc de la nature peut étudier une cible par une
+  Description: Au niveau 9, un croc de la nature peut étudier une cible par une
     action de mouvement ou une action rapide. Cette aptitude remplace immunité aux
     venins.
-
-
-    Talents de tueur. Les talents de tueur suivants viennent compléter l’archétype
-    de croc de la nature : style de combat de rôdeur, tromper les indiscrets, utilisation
-    des poisons. De plus, les talents de roublard suivants, également accessibles
-    aux tueurs, viennent s’ajouter à la liste ci-dessus : attaque sanglante, attaque
-    surprise, camouflageMdJ-RA, discret et rapide, empoisonnement rapideMdJ-RA, maîtrise
-    du terrainAG, mouvement à quatre pattes, poison persistantMdJ-RA, réactions lentes,
-    roublard en finesse.
-
-
-    Talents de maître. Les talents de maître tueur suivants viennent compléter l’archétype
-    de croc de la nature : assassinat, camouflage du tueur, déplacement facilité.
-    Le talent de maître roublard suivant vient compléter cette liste : maître du déguisementMdJ-RA.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Croc%20de%20la%20nature%20(druide).ashx#Étude_rapide_de_la_cible_Ext_3
   
 - Nom: Empathie sauvage (Ext)
@@ -21736,10 +21722,11 @@
   Niveau: 13
   Auto: true
   Description: Au niveau 13, le maître d'hast peut utiliser n'importe quel type
-    de lance ou d'arme d'hast pour effectuer une bousculade ou un croc-en-jambe. Il
-    subira cependant une pénalité de -4 à son BMO s'il tente l'une de ces manœuvres,
-    sauf s'il utilise une arme possédant la capacité spéciale Croc-en-jambe. Cette
-    capacité remplace entraînement aux armes 3.
+    de lance ou d'arme d'hast pour effectuer une bousculade, mais il subira alors
+    une pénalité de -4 à son BMO pour cette manœuvre. Lorsqu'il utilise une lance
+    ou une arme d'hast pour effectuer une manœuvre de croc-en-jambe, il traite ces
+    armes comme si elles avaient la capacité spéciale Croc-en-jambe. Cette capacité
+    remplace entraînement aux armes 3.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20dhast%20(guerrier).ashx#Balayage_riposte_Ext_4
   
 - Nom: Pas de côté (Ext)
@@ -30958,16 +30945,14 @@
   Classe: Conjurateur
   Archétype: Maître des couvées
   Source: AM
-  Niveau: 2
+  Niveau: 14
   Auto: true
-  Description: Au niveau 2, le maître des couvées forge un lien étroit avec ses
-    eidolons. Ce pouvoir fonctionne comme lien vital et le remplace, sauf que le maître
-    des couvées ne peut empêcher qu’un seul eidolon à la fois de subir des dégâts
-    en sacrifiant des points de vie. Si deux eidolons ou plus subissent assez de dégâts
-    pour se faire renvoyer dans leur plan d’origine, le maître des couvées peut sacrifier
-    ses points mais il n’empêchera qu’un seul d’entre eux de subir des dégâts. Ce
-    pouvoir remplace lien vital.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20couv%c3%a9es%20(conjurateur).ashx#Lien_de_la_couvée_Sur_2
+  Description: Au niveau 14, la vie de l’invocateur est liée à celle de sa couvée.
+    Ceci fonctionne comme le lien vital mais le maître ne peut transférer ses dégâts
+    qu’à un eidolon à la fois. Si cet eidolon reçoit assez de dégâts pour retourner
+    dans son plan natal, les dégâts en excès sont infligés au maître des couvées et
+    le tuent. Ce pouvoir remplace lien vital.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20couv%c3%a9es%20(conjurateur).ashx#Lien_de_la_couvée_Sur_9
   
 - Nom: Sens liés (Sur)
   Classe: Conjurateur
@@ -41811,4 +41796,1544 @@
     peut également utiliser ce pouvoir en réponse à un coup critique, même si l’attaque
     le met hors de combat ou le tue.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx#Vengeance_divine_Mag_12
+  
+- Nom: Coup du plat de la lame (Ext)
+  Classe: Barde
+  Archétype: Boucanier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un boucanier apprend à combattre avec la garde et le plat de la lame
+    de ses armes pour ne pas tuer ses victimes. Il peut manier une arme qui inflige
+    normalement des dégâts létaux afin d’infliger des dégâts non létaux sans subir
+    le malus habituel sur son jet d’attaque. Cette aptitude remplace savoir bardique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boucanier%20(barde).ashx#Coup_du_plat_de_la_lame_Ext_0
+  
+- Nom: Chant de reddition (Sur)
+  Classe: Barde
+  Archétype: Boucanier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un boucanier de niveau 4 ou plus peut utiliser sa représentation
+    bardique pour pousser un ennemi à se rendre. Cet ennemi doit se trouver à 9 mètres
+    (6 ) ou moins du boucanier et entendre sa représentation. Un ennemi affecté succombe
+    à l’irrésistible pulsion qui le contraint à lâcher ses armes et à se coucher,
+    ventre à terre. Cet effet dure un round et l’ennemi affecté, dans les faits, n’entreprend
+    aucune action lors de son prochain tour autre que celle qui consiste à se mettre
+    à terre, même si, par ailleurs, il n’est aucunement considéré comme pris au dépourvu
+    ou sans défense. La réussite d’un jet de Volonté (DD 10 + la moitié du niveau
+    de boucanier + modificateur de Charisme du boucanier) annule l’effet. Cette aptitude
+    affecte une seule créature. Le chant de reddition produit un effet d’enchantement
+    (coercition) mental basé sur le langage et des composantes sonores. Cette aptitude
+    remplace suggestion.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boucanier%20(barde).ashx#Chant_de_reddition_Sur_1
+  
+- Nom: Assommer (Ext)
+  Classe: Barde
+  Archétype: Boucanier
+  Source: PMI
+  Niveau: 5
+  Auto: true
+  Description: Au niveau 5, un boucanier peut tenter d’assommer ses adversaires.
+    Une fois par jour par une action rapide, il peut choisir une cible et tenter de
+    l’assommer. Le boucanier ajoute son bonus de Charisme (le cas échéant) à son jet
+    d’attaque et son niveau de boucanier à ses éventuels jets de dégâts non létaux
+    effectués contre la cible. Le bonus persiste jusqu’à ce que le boucanier inflige
+    des dégâts non létaux à sa cible ou s’il choisit une nouvelle cible pour tenter
+    de l’assommer. Il peut utiliser cette aptitude une fois de plus par jour et par
+    tranche de 6 niveaux possédés au-delà du 5ème, jusqu’à un maximum de trois fois
+    par jour au niveau 17. Cette aptitude remplace maître du savoir.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boucanier%20(barde).ashx#Assommer_Ext_2
+  
+- Nom: Chant de reddition de groupe (Sur)
+  Classe: Barde
+  Archétype: Boucanier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Cette aptitude fonctionne comme chant de reddition mais permet à
+    un boucanier de niveau 16 ou plus d’affecter tous les ennemis situés à 9 mètres
+    (6 ) ou moins de lui. Les ennemis à portée de cet effet ont toujours droit à un
+    jet de sauvegarde. Le chant de reddition de groupe produit un effet d’enchantement
+    (coercition) mental basé sur le langage et des composantes sonores. Cette aptitude
+    remplace suggestion de groupe.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boucanier%20(barde).ashx#Chant_de_reddition_de_groupe_Sur_3
+  
+- Nom: Armes  et  armures
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Les  derviches  danseurs  de  l’aube  sont formés au maniement du\
+    \ cimeterre. \n\nCette aptitude remplace leur formation au maniement de la rapière\
+    \ et du fouet."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Armes_et_armures_0
+  
+- Nom: Divinité
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Un derviche de l''aube doit vouer un culte à une divinité du bien
+    et du soleil.
+
+
+    Un derviche qui abandonne ou trahit sa foi devient un barde classique.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Divinité_1
+  
+- Nom: Danse de guerre
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un derviche  de l’aube est formé à  l’utilisation  de  la  compétence\
+    \  de  Représentation,  et  plus particulièrement  la  danse,  pour  créer  des\
+    \  effets  magiques  sur lui-même.  Cette  aptitude  fonctionne  comme  la  représentation\
+    \ bardique, sauf que celle d’un derviche confère le  double  des  bonus  normaux\
+    \  à  lui-même  uniquement.  Il  n’est pas  nécessaire  qu’il  voie  ou  entende\
+    \  sa  propre  représentation. La  danse  de  guerre  est  considérée  comme \
+    \ une  représentation  bardique  dans  le  cadre  des  dons,  des  pouvoirs  et\
+    \  des  effets  qui affectent  les  représentations  bardiques,  sauf  qu’elle\
+    \  ne  bénéficie pas des avantages conférés par le don Représentation prolongée\
+    \ ou  par  tout  autre  pouvoir  qui  prolonge  la  durée  des  bonus conférés\
+    \ par une représentation bardique après la fin de celle-ci.   Les avantages de\
+    \ la danse de guerre s’appliquent uniquement si le barde ne porte aucune armure\
+    \ ou seulement une armure légère. De la même façon qu’une représentation bardique,\
+    \ les effets d’une danse de guerre ne peuvent être maintenus actifs en même temps\
+    \ que d’autres pouvoirs de représentation.\n\nIl faut une action de mouvement\
+    \ pour commencer une danse de  guerre,  mais  une  action  libre seulement  pour\
+    \  la  maintenir. \n\nPour  changer  l’effet  d’une  danse  de  guerre  et  en\
+    \  produire  un autre, le  derviche  doit  arrêter sa danse de  guerre actuelle\
+    \ et en commencer une nouvelle par une action de mouvement. Comme dans le cas\
+    \ des bardes, la représentation du derviche  de  l’aube  prend  fin  immédiatement\
+    \  s’il  est tué,  paralysé, étourdi, inconscient ou si quoi  que ce soit d’autre\
+    \ l’empêche d’accomplir  une  action libre à chaque round.\n\nLe derviche ne peut\
+    \ pas accomplir plus d’une danse de guerre en même temps. \n\nAu  niveau  10,\
+    \  un  derviche  de de l’aube peut commencer une danse de guerre par une action\
+    \ rapide au lieu d’une action de mouvement.\n\nQuand le derviche utilise les représentations\
+    \ bardiques  d’inspiration   vaillante, d’inspiration glorieuse ou  d’inspiration\
+    \  héroïque  sans  forme  de  danse  de  guerre,  elles confèrent des bonus au\
+    \ derviche seulement. Tous les autres types de   représentation bardique s’appliquent\
+    \ normalement (elles affectent le barde et ses alliés ou les ennemis du barde\
+    \ en fonction de la situation).\n\n\nCette  aptitude modifie l’aptitude standard\
+    \ de représentation bardique."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Danse_de_guerre_2
+  
+- Nom: Danse  du  derviche  (Ext)
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Un  derviche  de  l’aube obtient Danse  du  derviche  en  don  supplémentaire.
+    Cette aptitude remplace savoir bardique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Danse_du_derviche_Ext_3
+  
+- Nom: Lanceur de sorts tournoyant (Ext)
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 5, le derviche gagne un bonus de +4 aux tests de concentration
+    pour  lancer  des  sorts  sur  la  défensive. Cette  aptitude remplace maître
+    du savoir.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Lanceur_de_sorts_tournoyant_Ext_4
+  
+- Nom: Tourbillon  méditatif  (Ext)
+  Classe: Barde
+  Archétype: Derviche de l'aube
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  8,  quand  il  utilise  la danse  de  guerre,  le  derviche\
+    \  de  l’aube  peut  entrer dans une  transe en  tourbillonnant  pour  harmoniser\
+    \  son  esprit aux aspects guérisseurs de sa divinité. Ce mouvement de rotation\
+    \ représente celui des planètes autour du soleil. En se concentrant sur son mouvement\
+    \ de tourbillon et en effectuant une action de mouvement, le derviche peut appliquer\
+    \ le don Incantation rapide à un sort de soins qu’il est sur le point de lancer\
+    \ (dans les faits, il dépense une action de mouvement et une action rapide pour\
+    \ lancer  le  sort).  L’utilisation  de  cette  aptitude  ne  modifie  pas  le\
+    \ niveau du sort ni le temps d’incantation. \n\nLe derviche peut utiliser cette\
+    \ aptitude une fois par jour au niveau 8 et une fois de plus par jour tous les\
+    \ 2 niveaux de derviche au-delà du 8e. \n\nCette aptitude remplace la représentation\
+    \ bardique de chant funeste."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Derviche%20de%20laube%20(barde).ashx#Tourbillon_méditatif_Ext_5
+  
+- Nom: Célèbre
+  Classe: Barde
+  Archétype: Diva
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  1,  une  diva  peut  choisir  la région  où  elle  est\
+    \  célèbre.  Dans  cette  région,  les  autochtones auront tendance à réagir favorablement\
+    \ à son encontre. Le barde gagne un bonus aux tests de Bluff et d’Intimidation\
+    \ effectués dans  cette région et lorsqu’il influence les gens qui en sont originaires.\n\
+    \nAu   niveau   1,   cette   région   comprend   une   ou   plusieurs communautés\
+    \   qui   rassemblent   une   population   totale   de 1  000  personnes  ou \
+    \ moins  et  le  modificateur  aux  test  de  Bluff et d’Intimidation s’élève\
+    \ à +1. Au fur et à mesure que sa célébrité s’accroît, on entend parler d’elle\
+    \ dans des régions supplémentaires (généralement  dans  les  endroits  où  elle\
+    \  a  vécu  ou  voyagé,  ou dans des communautés proches de celles où elle est\
+    \ connue) et ses  bonus  s’appliquent  à  davantage  de  personnes.\n\n\nAu  niveau \
+    \ 5, la   région   comprend   une   ou   plusieurs   communautés   qui rassemblent\
+    \ une population totale de 5 000 personnes ou moins et le modificateur aux tests\
+    \ de Bluff et d’Intimidation s’élève à +2. Au niveau 9, la région comprend une\
+    \ ou plusieurs communautés qui rassemblent une population totale de 25 000 personnes\
+    \ ou moins et le modificateur aux tests de Bluff et d’Intimidation s’élève à +3.\
+    \ \n\nAu niveau 13, la région comprend une ou plusieurs communautés qui  rassemblent\
+    \  une  population  totale  de  100  000  personnes ou moins et le modificateur\
+    \ aux tests de Bluff et d’Intimidation s’élève  à  +4.  Au  niveau  17  et  plus,\
+    \  la  renommée  de  la  diva  s’est encore  plus  répandue  et  la  plupart \
+    \ des  peuplades  civilisées  la connaissent (à la discrétion du MJ). Son modificateur\
+    \ aux tests de Diplomatie et d’Intimidation s’élève à +5. \n\nCette aptitude remplace\
+    \ savoir bardique."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Diva%20(barde).ashx#Célèbre_0
+  
+- Nom: Prima donna (Ext)
+  Classe: Barde
+  Archétype: Diva
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 2, alors qu’elle déploie toujours plus d’efforts pour\
+    \ surpasser ses rivaux, une diva peut dépenser des rounds supplémentaires de représentation\
+    \ bardique pour améliorer ses contrechants, ses représentations mortelles, ses\
+    \ fascinations,  ses  mélodies  effrayantes  et  ses  diatribes  blessantes (voir\
+    \ plus bas). Quand elle utilise ce pouvoir, elle bénéficie d’un  bonus de +2 aux\
+    \ tests de ces Représentations ou au DD des jets de sauvegarde effectués contre\
+    \ elle. La diva doit dépenser un round de représentation bardique supplémentaire\
+    \ lors de chaque round où elle utilise prima donna pour augmenter le résultat\
+    \ de son test de Représentation ou le DD des jets de sauvegarde. \n\nCette aptitude\
+    \ remplace érudition."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Diva%20(barde).ashx#Prima_donna_Ext_1
+  
+- Nom: Maîtrise des costumes (Ext)
+  Classe: Barde
+  Archétype: Diva
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 5, la diva est tellement  habituée  à  porter  d’étranges\
+    \  et  volumineux  costumes pendant  ses  représentations  qu’elle  est  désormais\
+    \  formée  au port des armures intermédiaires et sait lancer des sorts de barde\
+    \ tout  en  portant  ce  type  d’armures,  sans  se  préoccuper  du  risque d’échec\
+    \  des  sorts  profanes  qu’elles  occasionnent  normalement. \n\nAu  niveau \
+    \ 11,  elle  est  formée  au  port  des  armures  lourdes  et peut lancer des\
+    \ sorts de barde tout en portant ce type d’armures sans  se  préoccuper  du  risque\
+    \  d’échec  des  sorts  profanes  qu’elles occasionnent normalement. \n\nUne diva\
+    \ multiclassée applique tout de même le risque d’échec des sorts profanes lancés\
+    \ par le biais d’autres classes. \n\nCette aptitude remplace maître du savoir."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Diva%20(barde).ashx#Maîtrise_des_costumes_Ext_2
+  
+- Nom: Représentations bardiques
+  Classe: Barde
+  Archétype: Diva
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Une diva peut accomplir les   représentations   bardiques   suivantes.   Ces   représentations  peuvent
+    être accomplies au plus vite par une action simple.
+
+
+    Aria  dévastatrice  (Sur).  Au  niveau  3,  la  diva peut dépenser  1  round  de  représentation  bardique  par  une  action
+    simple  pour  projeter  une  déflagration  de  paroles  et  de  sons  sur une
+    créature ou un objet. Cette représentation inflige 1d4 points de dégâts + le niveau
+    de la diva à un objet ou la moitié de ces dégâts à une créature vivante. Cette
+    représentation remplace inspiration talentueuse.
+
+
+    Diatribe blessante (Sur). Une diva de niveau 8 ou plus peut  utiliser  cette  représentation  pour  fustiger  une  créature  qui
+    devient alors effrayée. L’ennemi ciblé doit être situé à 9 mètres ou moins de
+    la diva et doit pouvoir voir et entendre sa représentation. L’effet persiste aussi
+    longtemps que l’ennemi reste à 9 mètres ou moins et que la diva poursuit sa représentation,
+    plus 1d4 rounds.Même  si  la  diva  peut  diriger  l’effet  sur  une  créature  à  la  fois
+    seulement, l’effet persiste tant qu’elle continue sa représentation, même si elle
+    s’en prend à une créature différente. Par exemple, elle pourrait fustiger un aubergiste
+    qui devient effrayé, puis déchaîner sa  colère  sur  le  capitaine  de  la  garde  et  l’aubergiste  reste  effrayé
+    pendant 1d4 rounds de plus, même si l’attention de la diva n’est plus sur lui.
+
+
+    Cette  représentation  ne  peut  provoquer  la  panique  chez  une créature, même
+    si la cible est déjà effrayée à cause d’un autre effet. La diatribe blessante
+    est un effet mental de terreur basé sur des composantes visuelles et auditives.
+    Cette représentation remplace chant funeste.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Diva%20(barde).ashx#Représentations_bardiques_3
+  
+- Nom: Talents de tueur conseillés
+  Classe: Druide
+  Archétype: Croc de la nature
+  Source: MCA
+  Niveau: 1
+  Auto: true
+  Description: "Les talents de tueur suivants viennent compléter l’archétype de\
+    \ croc de la nature : style de combat de rôdeur, tromper les indiscrets, utilisation\
+    \ des poisons. \n\nDe plus, les talents de roublard suivants, également accessibles\
+    \ aux tueurs, viennent s’ajouter à la liste ci-dessus : attaque sanglante, attaque\
+    \ surprise, camouflage, discret et rapide, empoisonnement rapide, maîtrise du\
+    \ terrain, mouvement à quatre pattes, poison persistant, réactions lentes, roublard\
+    \ en finesse."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Croc%20de%20la%20nature%20(druide).ashx#Talents_de_tueur_conseillés_4
+  
+- Nom: Talents de maître
+  Classe: Druide
+  Archétype: Croc de la nature
+  Source: MCA
+  Niveau: 1
+  Auto: true
+  Description: "Les talents de maître tueur suivants viennent compléter l’archétype\
+    \ de croc de la nature : assassinat, camouflage du tueur, déplacement facilité.\
+    \ \n\nLe talent de maître roublard suivant vient compléter cette liste : maître\
+    \ du déguisement."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Croc%20de%20la%20nature%20(druide).ashx#Talents_de_maître_5
+  
+- Nom: Armes  et  armures
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Les  druides  des  ouragans  sont  formés au maniement du trident,
+    en plus de la formation normale des druides au maniement des armes et au port
+    des armures.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Armes_et_armures_0
+  
+- Nom: Incantation  de  domaine  spontanée
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un  druide  des  ouragans peut  canaliser  de  l’énergie  magique\
+    \  pour  lancer  des  sorts  de domaine qu’il n’a pas préparés au préalable. Il\
+    \ peut « perdre » un sort préparé afin de lancer un sort de domaine de niveau\
+    \ égal ou inférieur. \n\nCette aptitude remplace celle qui permet au druide de\
+    \ lancer des sorts de convocation de manière spontanée."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Incantation_de_domaine_spontanée_1
+  
+- Nom: Lien avec la nature (Ext)
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Un druide des ouragans ne peut pas choisir de compagnon animal et
+    doit à la place sélectionner un domaine qu’il obtient grâce à l’aptitude pacte
+    de la nature. Il doit choisir le Domaine de l''Air ou du Climat, le domaine aquatique
+    ou des marais décrits ou le sous-domaine des Nuages, du Vent ou des Tempêtes.
+
+
+    Voir liste des domaines.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Lien_avec_la_nature_Ext_2
+  
+- Nom: Affinité avec les régions tempétueuses (Ext)
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un druide des ouragans gagne  un  bonus  de  +4  aux  tests  de\
+    \  Survie  et  de  Connaissances (nature) effectués dans les régions côtières\
+    \ et marécageuses. \n\nCette aptitude remplace instinct naturel."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Affinité_avec_les_régions_tempétueuses_Ext_3
+  
+- Nom: Résistance  à  l’électricité  (Ext)
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  3,  un  druide  des ouragans  gagne  une  résistance\
+    \  de  5  contre  l’électricité.  Par  une action  simple,  il  peut  transférer\
+    \  cette  résistance  vers  une  autre créature pendant 1 heure. Une fois cette\
+    \ heure écoulée, le druide  bénéficie à nouveau de cette résistance. \n\nCette\
+    \ aptitude remplace absence de traces."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Résistance_à_l’électricité_Ext_4
+  
+- Nom: Yeux  des  tempêtes  (Ext)
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau 4,  le  druide peut voir jusqu’à 3 m (2 ) à travers un\
+    \ brouillard, une brume, un gaz, un vent, une pluie ou  une  autre condition \
+    \ climatique  peu clémente similaire d’origine magique. Il ignore le camouflage\
+    \ que ces conditions  climatiques procurent. La distance de visibilité augmente\
+    \ de 1,50  m (1 ) tous les quatre niveaux après le 4e. \n\n\nCe pouvoir remplace\
+    \ résistance à l’appel de la nature."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Yeux_des_tempêtes_Ext_5
+  
+- Nom: Manipulation  de  l’électricité  (Sur)
+  Classe: Druide
+  Archétype: Druide des ouragans
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au  niveau  9,  un  druide des ouragans peut rediriger les attaques
+    électriques à proximité. Par une action immédiate, le druide peut déplacer de
+    1,50 mètre (1 ) dans la direction de son choix la zone ou la cible d’une attaque
+    d’électricité. Si l’électricité affecte une zone, le druide sélectionne une case
+    qui n’est pas affectée et une case adjacente qui est affectée (si cette case est
+    déjà située dans la zone, aucun effet supplémentaire n’est produit). Si l’électricité
+    affecte une cible, le druide sélectionne une cible adjacente. Il ne peut rediriger
+    les dégâts d’électricité que lui-même inflige par contact physique sur un objet
+    ou une créature (comme avec poigne électrique ou avec une arme de foudre). Il
+    peut utiliser cette aptitude un nombre de fois par jour égal à son bonus de Charisme.
+
+
+    Par exemple, si le druide est situé sur la ligne d’un éclair lancé par un magicien,
+    il pourrait décaler la case sur laquelle il se trouve pour que le sort affecte
+    une  case  adjacente,  même si la ligne affectée par le sort n’est plus continue.
+    Si un autre druide l’attaque avec un appel de la foudre, il peut déplacer l’éclair
+    ciblé vers une case adjacente afin qu’il frappe une créature située dans cette
+    case (si une telle créature est présente).
+
+
+    Cette aptitude remplace immunité aux venins.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide%20des%20ouragans%20(druide).ashx#Manipulation_de_l’électricité_Sur_6
+  
+- Nom: Tatouage  de  familier  (Sur)
+  Classe: Ensorceleur
+  Archétype: Ensorceleur tatoué
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un  ensorceleur  tatoué  obtient  un familier par le biais d’un\
+    \ pacte magique, en remplaçant le niveau de magicien par son niveau d’ensorceleur.\
+    \ Ses niveaux d’ensorceleur se cumulent avec les éventuels niveaux de magicien\
+    \ et de sorcière qu’il  possède  lorsqu’il  s’agit  de  déterminer  les  pouvoirs\
+    \  de  son familier. Cette aptitude ne lui permet pas de posséder en même temps\
+    \ un familier et un objet fétiche. À la différence des autres familiers, le sien\
+    \ peut se transformer en tatouage encré sur sa peau. Le familier doit effectuer\
+    \ une action de  mouvement  pour  se  transformer  en  tatouage  ou  en  familier\
+    \ vivant. Le tatouage a l’aspect stylisé de la forme vivante du familier, mais\
+    \ sous forme de tatouage, il n’est pas considéré comme une créature  indépendante\
+    \  de  l’ensorceleur  tatoué.  Le  familier  sous forme  de  tatouage  continue\
+    \  de  conférer  ses  pouvoirs  spéciaux, mais ne possède, par ailleurs, aucun\
+    \ autre pouvoir et ne peut entreprendre aucune action, à part celle qui lui permet\
+    \ de se transformer en créature. Un tatouage de familier ne peut être effacé ou\
+    \ dissipé. \n\nCette aptitude remplace le pouvoir de lignage obtenu par l’ensorceleur\
+    \ au niveau 1."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur%20tatou%c3%a9%20(ensorceleur).ashx#Tatouage_de_familier_Sur_0
+  
+- Nom: Tatouage magique (Ext)
+  Classe: Ensorceleur
+  Archétype: Ensorceleur tatoué
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, l’ensorceleur tatoué gagne Tatouage  magique en don\
+    \ supplémentaire. S’il ne possède pas le don École renforcée, il peut choisir\
+    \ l’école de magie améliorée par son Tatouage magique. \n\nCette  aptitude  remplace\
+    \  le  don  supplémentaire  Dispense  de composantes matérielles."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur%20tatou%c3%a9%20(ensorceleur).ashx#Tatouage_magique_Ext_1
+  
+- Nom: Tatouages  de  lignage  (Ext)
+  Classe: Ensorceleur
+  Archétype: Ensorceleur tatoué
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: À  chaque  fois  que  l’ensorceleur tatoué  acquiert  un  sort  de  lignage,  un  nouveau  tatouage  qui
+    représente ce sort apparaît sur sa peau. Ses sorts de lignage sont toujours améliorés
+    par son don Tatouage magique, même s’ils ne  font pas partie de l’école à laquelle
+    est lié ce don.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur%20tatou%c3%a9%20(ensorceleur).ashx#Tatouages_de_lignage_Ext_2
+  
+- Nom: Création de tatouages de sort (Sur)
+  Classe: Ensorceleur
+  Archétype: Ensorceleur tatoué
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 7, un ensorceleur tatoué peut créer un tatouage de sort\
+    \ une fois par jour, par simple contact et par une action simple. Le bénéficiaire\
+    \ doit être consentant au moment où il reçoit le tatouage. Si l’ensorceleur  appose\
+    \ le tatouage sur sa propre personne, celui-ci n’est pas compté dans la limite\
+    \ normale des tatouages magiques qu’il peut porter. Le sort inclus dans le tatouage\
+    \ doit être connu de l’ensorceleur et ne doit nécessiter l’utilisation d’aucune\
+    \ composante matérielle ou focalisateur divin. Il ne peut porter qu’un seul tatouage\
+    \ de sort créé  par  cette  aptitude  à  la  fois.  S’il  utilise  cette  aptitude\
+    \  à  nouveau, le  tatouage  de  sort  précédemment  créé  par  ses  soins  disparaît.\
+    \ \n\nLes tatouages de sort qu’il crée avec le don Création de tatouages magiques\
+    \ ne comptent pas dans cette limite. Il peut utiliser cette aptitude deux fois\
+    \ par jour au niveau 11 et trois fois par jour au niveau  15.\n\n\nCette  aptitude\
+    \  remplace  le  don  de  lignage  obtenu  au niveau 7."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur%20tatou%c3%a9%20(ensorceleur).ashx#Création_de_tatouages_de_sort_Sur_3
+  
+- Nom: Amélioration   de   tatouage   magique   (Sur)
+  Classe: Ensorceleur
+  Archétype: Ensorceleur tatoué
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au   niveau   9, l’ensorceleur  tatoué  peut  sélectionner  un  sort  qu’il  connaît  et
+    reproduit par le don Tatouage magique. Ce sort ne doit nécessiter aucun  focalisateur  ou  composante  matérielle  coûteuse.  Il  peut
+    utiliser ce sort comme un pouvoir magique une fois par jour. Ce pouvoir  magique  n’est  pas  amélioré  par  son  Tatouage  magique,
+    mais  l’ensorceleur  ajoute  +2  à  son  NLS  d’ensorceleur  lorsqu’il l’utilise.  Quand  il  gagne  un  pouvoir  de  lignage  ultérieurement,
+    il peut changer ce pouvoir magique en un autre sort approprié.
+
+
+    Cette aptitude remplace le pouvoir de lignage obtenu au niveau 9.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ensorceleur%20tatou%c3%a9%20(ensorceleur).ashx#Amélioration__de__tatouage__magique__Sur_4
+  
+- Nom: Fausse piété (Ext)
+  Classe: Ensorceleur
+  Archétype: Faux prêtre
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un faux prêtre remplace les compétences de classe Estimation\
+    \ et Vol par les compétences de  classe  Connaissances  (religion)  et  Représentation.\
+    \  Il  ajoute la  moitié  de  son  niveau  d’ensorceleur  aux  tests  d’Utilisation\
+    \ d’objets  magiques  effectués  pour  activer  les  objets  à  potentiel magique\
+    \ et à fin d’incantation qui déclenchent des sorts divins. \n\nIl gagne Faux focalisateur\
+    \ en don supplémentaire. \n\nEn plus du remplacement des compétences de classe\
+    \ Estimation et Vol, cette aptitude remplace le don supplémentaire dispense de\
+    \ composantes matérielles."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Faux%20pr%c3%aatre%20(ensorceleur).ashx#Fausse_piété_Ext_0
+  
+- Nom: Soigneur laïque (Sur)
+  Classe: Ensorceleur
+  Archétype: Faux prêtre
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 3, un faux prêtre ajoute aide à sa liste de sorts connus\
+    \ de niveau 2. \n\nAu niveau 5, il ajoute guérison des maladies à sa liste de\
+    \ sorts connus de niveau 3. \n\nCette aptitude remplace les sorts de lignage obtenus\
+    \ au niveau 3 et 5 respectivement."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Faux%20pr%c3%aatre%20(ensorceleur).ashx#Soigneur_laïque_Sur_1
+  
+- Nom: Fausse canalisation  (Sur)
+  Classe: Ensorceleur
+  Archétype: Faux prêtre
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au   niveau   9, un faux prêtre peut utiliser sa propre magie pour
+    activer les objets à potentiel magique et à fin d’incantation qui déclenchent
+    des sorts  divins.  Il  dépense  un  emplacement  de  sort  d’ensorceleur d’au  moins  1 
+    niveau  de  plus  que  le  niveau  du  sort  qu’il  tente  d’activer, puis il
+    effectue un test d’Utilisation d’objets magiques.
+
+
+    En cas de réussite, le sort de l’objet s’active et l’objet ou la charge n’est
+    pas dépensée. En cas d’échec, rien ne se passe. Que le test soit réussi ou non,
+    son emplacement de sort n’est pas dépensé.
+
+
+    Cette aptitude remplace le pouvoir de lignage obtenu au niveau 9.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Faux%20pr%c3%aatre%20(ensorceleur).ashx#Fausse_canalisation_Sur_2
+  
+- Nom: Armes de pirate (Ext)
+  Classe: Guerrier
+  Archétype: Corsaire
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un corsaire connaît particulièrement bien les différentes armes appréciées
+    des pirates. Quand il sélectionne un groupe d’armes grâce à son aptitude d’entraînement
+    aux armes, il peut choisir le groupe d’armes de pirate. Dans ce groupe d’armes,
+    on trouve l’arbalète, le sabre d’abordage, la dague, le crochet de pirate, la
+    rapière et l’épée courte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corsaire%20(guerrier).ashx#Armes_de_pirate_Ext_0
+  
+- Nom: Combat sur le pont (Ext)
+  Classe: Guerrier
+  Archétype: Corsaire
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un corsaire est habitué à combattre sur les ponts noirs de monde
+    et l’affrontement contre plusieurs adversaires en même temps ne l’intimide pas.
+    Au niveau 2, il obtient Enchaînement en don supplémentaire. Il peut utiliser ce
+    don même s’il ne satisfait pas les conditions requises. Un corsaire ne subit pas
+    le malus normal de -2 à sa CA quand il utilise Enchaînement. Cette aptitude remplace
+    le don supplémentaire que le guerrier obtient au niveau 2.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corsaire%20(guerrier).ashx#Combat_sur_le_pont_Ext_1
+  
+- Nom: Pirate en armure (Ext)
+  Classe: Guerrier
+  Archétype: Corsaire
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un corsaire peut porter une armure plus lourde que celles habituellement
+    portées à bord d’un navire. Au niveau 3, il réduit à 0 le malus d’armure aux tests
+    de l’armure légère qu’il porte en ce qui concerne les tests d’Acrobaties et de
+    Natation. Au niveau 7, il fait de même avec les armures intermédiaires, puis avec
+    les armures lourdes au niveau 11. Cette aptitude remplace entraînement aux armures.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corsaire%20(guerrier).ashx#Pirate_en_armure_Ext_2
+  
+- Nom: Science du combat sur le pont (Ext)
+  Classe: Guerrier
+  Archétype: Corsaire
+  Source: PMI
+  Niveau: 6
+  Auto: true
+  Description: Au niveau 6, le corsaire obtient Succession d’enchaînements en don
+    supplémentaire. Il peut utiliser ce don même s’il ne satisfait pas les conditions
+    requises. Un corsaire ne subit pas le malus normal de -2 à sa CA quand il utilise
+    Succession d’enchaînements. Cette aptitude remplace le don supplémentaire que
+    le guerrier obtient au niveau 6.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corsaire%20(guerrier).ashx#Science_du_combat_sur_le_pont_Ext_3
+  
+- Nom: Sorts  de  l’ombre  (Sur)
+  Classe: Magicien
+  Archétype: Mage des ombres
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  1,  un  mage  des  ombres utilise sa propre ombre pour\
+    \ préparer des sorts supplémentaires. \n\nPour  utiliser  cette  aptitude,  il\
+    \  doit  passer  sa  période  entière  de préparation des sorts dans une zone\
+    \ faiblement éclairée. Il peut préparer  un  nombre  de  niveaux  de  sort  supplémentaires\
+    \  égal au  niveau  le  plus  élevé  de  sort  de  magicien  qu’il  est  capable\
+    \  de lancer. Par exemple, s’il est capable de lancer des sorts de magicien de\
+    \ niveau 6, il peut préparer six sorts de niveau 1, deux sorts de niveau 3 ou\
+    \ toute autre combinaison de sorts dont le niveau total atteint 6. Ces sorts sont\
+    \ stockés dans son ombre. Il peut lancer ces sorts uniquement lorsqu’il se trouve\
+    \ dans une zone normalement ou faiblement éclairée. Il gagne la langue de l’ombre\
+    \ en langage supplémentaire. \n\nCette aptitude remplace pacte magique."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20des%20ombres%20(magicien).ashx#Sorts_de_l’ombre_Sur_0
+  
+- Nom: Sombre vision (Ext)
+  Classe: Magicien
+  Archétype: Mage des ombres
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 5, un mage des ombres obtient la vision dans le noir jusqu’à\
+    \ 18 mètres. \n\nCette aptitude remplace le don supplémentaire que le magicien\
+    \ obtient normalement au niveau 5."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20des%20ombres%20(magicien).ashx#Sombre_vision_Ext_1
+  
+- Nom: Spécialisation des ombres (Ext)
+  Classe: Magicien
+  Archétype: Mage des ombres
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 10, quand un mage des  ombres  lance  reflets  d’ombre,\
+    \  convocation  d’ombres,  magie  des ombres et des sorts d’illusion similaires\
+    \ dont une fraction précisée produit  des  effets  réels,  il  augmente  le  pourcentage\
+    \  de  dégâts  infligés par l’effet du sort ou par les créatures convoquées de\
+    \ 1/5e (+20  %)  sur  les  créatures  qui  réussissent  leur  jet  de  sauvegarde\
+    \ contre  l’effet,  jusqu’à  un  maximum  de  100  %  d’effet réel. Par exemple,\
+    \ convocation d’ombres et magie des ombres infligent 40 % de dégâts  réels  au\
+    \  lieu  de  20  %  lors  d’un  jet  de  sauvegarde  réussi. \n\nCette  aptitude\
+    \  remplace  le  don  supplémentaire  de  magicien obtenu au niveau 10."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20des%20ombres%20(magicien).ashx#Spécialisation_des_ombres_Ext_2
+  
+- Nom: Magie primordiale (Sur)
+  Classe: Magicien
+  Archétype: Primordialiste
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un primordialiste peut tenter de canaliser la magie\
+    \ primordiale par une action rapide pour lancer un sort préparé sans que celui-ci\
+    \ ne disparaisse de son emplacement de sort. Dans les faits, le primordialiste\
+    \ injecte de la magie primordiale dans son environnement et tente de la façonner\
+    \ pour créer un effet magique spécifique. \n\nPour utiliser cette aptitude, il\
+    \ lance le sort comme il le ferait normalement, mais quand les effets du sort\
+    \ se manifestent, il effectue un test de concentration (DD = 20 + le double du\
+    \ niveau du sort). En cas d’échec à ce test, il dépense le sort normalement comme\
+    \ s’il l’avait lancé, mais ses effets sont remplacés par un évènement de magie\
+    \ primordiale dont le FP est égal à son niveau de lanceur de sorts. De plus, il\
+    \ est chancelant pendant 1 round par niveau du sort qu’il a tenté de lancer. En\
+    \ cas de réussite au test, il lance le sort normalement et celui-ci ne disparaît\
+    \ pas de l’emplacement  de sort préparé, ce qui lui permet de le lancer à nouveau\
+    \ ultérieurement.\n\nLe personnage peut utiliser la magie primordiale de cette\
+    \ façon une fois par jour. Il peut l’utiliser une fois de plus par jour aux niveaux\
+    \ 5, 10, 15 et 20.\n\nCette aptitude remplace pacte magique."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Primordialiste%20(magicien).ashx#Magie_primordiale_Sur_0
+  
+- Nom: Amélioration des évènements de magie primordiale (Sur)
+  Classe: Magicien
+  Archétype: Primordialiste
+  Source: MMI
+  Niveau: 5
+  Auto: true
+  Description: "Au niveau 5, quand le primordialiste déclenche un évènement de magie\
+    \ primordiale, il peut, par une action rapide, augmenter ou diminuer son FP de\
+    \ 1. S’il réussit un test de concentration (DD = 15 + le FP de l’évènement de\
+    \ magie primordiale), il peut, à la place, augmenter ou diminuer le FP de 2. S’il\
+    \ réduit le FP de l’évènement à moins de 1, celui-ci est annulé. Il peut décider\
+    \ d’utiliser cette aptitude après avoir déterminé la nature  de l’évènement de\
+    \ magie primordiale déclenché, mais avant la résolution de ses effets. \n\nCette\
+    \ aptitude remplace le don supplémentaire de magicien obtenu au niveau 5."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Primordialiste%20(magicien).ashx#Amélioration_des_évènements_de_magie_primordiale_Sur_1
+  
+- Nom: Surtension  primordiale  (Sur)
+  Classe: Magicien
+  Archétype: Primordialiste
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  10,  quand  un primordialiste déclenche un évènement\
+    \ de magie primordiale, il lance le d100 deux fois et choisit lequel des deux\
+    \ évènements déterminés se déclenche. Il développe également une résistance aux\
+    \ effets des évènements de magie primordiale. Dès qu’un évènement devrait l’affecter,\
+    \ le MJ lance 1d20 + le FP de l’évènement contre un DD égal à 11 + le niveau de\
+    \ magicien du personnage. En cas d’échec, l’évènement ne l’affecte en rien, de\
+    \ la même façon qu’une créature dotée d’une résistance à la magie ignore les effets\
+    \ magiques suite à l’échec d’un test contre sa RM. \n\nSi l’évènement de magie\
+    \ primordiale reproduit les effets d’un sort qui n’autorise aucune résistance\
+    \ à la magie (comme création de fosse), cette résistance ne s’applique pas. \n\
+    \nCette aptitude remplace le don supplémentaire de magicien obtenu au niveau 10."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Primordialiste%20(magicien).ashx#Surtension_primordiale_Sur_2
+  
+- Nom: Fidèle de la justice
+  Classe: Paladin
+  Archétype: Épée du courage
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: La divinité tutélaire d’une épée du courage doit être une divinité
+    de la justice, du courage et de l'honneur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89p%c3%a9e%20du%20courage%20(paladin).ashx#Fidèle_de_la_justice_0
+  
+- Nom: Toujours prêt au combat (Sur)
+  Classe: Paladin
+  Archétype: Épée du courage
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 2, une épée du courage peut dépenser 1 utilisation de\
+    \ châtiment du Mal ou d’imposition des  mains  pour  agir  lors  du  round  de\
+    \  surprise,  même  s’il  est lui-même surpris. Quand le paladin effectue un test\
+    \ d’initiative, il gagne un bonus à ce test égal à son bonus de Charisme. \n\n\
+    Cette aptitude remplace grâce divine."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89p%c3%a9e%20du%20courage%20(paladin).ashx#Toujours_prêt_au_combat_Sur_1
+  
+- Nom: Prière du quatrième acte (Sur)
+  Classe: Paladin
+  Archétype: Épée du courage
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au niveau 6, si elle prie sa divinité pendant 1 minute, l’épée du
+    courage peut dépenser une utilisation de  canalisation  d’énergie  pour  conférer  aux  créatures  situées
+    dans le rayonnement de sa canalisation un nombre de points de  vie temporaires
+    égal au montant de points de vie normalement soignés   par   cette   aptitude.   Ces   points   de   vie   temporaires
+    disparaissent  au  bout  d’une  heure.
+
+
+
+    Cette  aptitude  remplace  la grâce obtenue par le paladin au niveau 6.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89p%c3%a9e%20du%20courage%20(paladin).ashx#Prière_du_quatrième_acte_Sur_2
+  
+- Nom: Ennemi méritant (Sur)
+  Classe: Paladin
+  Archétype: Épée du courage
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 11, quand une épée du courage inflige un coup critique\
+    \ avec un châtiment sur un ennemi, celui-ci doit réussir un jet de Volonté (DD\
+    \ = 10 + la moitié du niveau de paladin + le bonus de Charisme du paladin) pour\
+    \ ne pas être obligé de se rendre, comme si le paladin avait utilisé sur lui un\
+    \ sort de suggestion (NLS = le niveau du paladin) lui ordonnant de baisser ses\
+    \ armes et d’arrêter le combat. Un ennemi qui succombe à cette aptitude reste\
+    \ docile à moins que le paladin ou l’un de ses alliés ne le blesse, auquel cas\
+    \ l’injonction prend fin immédiatement et  l’ennemi  récupère  immédiatement \
+    \ son  libre  arbitre.  Si l’ennemi  réussit  son  jet  de  sauvegarde,  il  ne\
+    \  peut  plus  être la  cible  de  cette  aptitude  pendant  les  24  prochaines\
+    \  heures. \n\nEnnemi méritant est un effet mental. Cette aptitude remplace l’aura\
+    \ de justice."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89p%c3%a9e%20du%20courage%20(paladin).ashx#Ennemi_méritant_Sur_3
+  
+- Nom: Route de la fortune
+  Classe: Prêtre
+  Archétype: Pèlerin nomade
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un pèlerin nomade doit choisir l’un de ses domaines\
+    \ parmi les suivants : Chance, Chaos, Climat, Communauté,  Libération  ou  Voyage\
+    \  (ou  parmi  l’un  des  sous-domaines  suivants  :  Commerce,  Destin,  Exploration,\
+    \  Liberté  ou Saisons décrits dans le Manuel des Joueurs – règles avancées, s’ils\
+    \ sont disponibles  dans  la  campagne).  Si  le  prêtre  vénère  une  divinité\
+    \ qui, en temps normal, n’octroie pas l’un de ces domaines, il accède  à ce domaine\
+    \ seulement et ne peut pas en choisir un deuxième. Par conséquent, très rares\
+    \ sont les prêtres qui décident de devenir des pèlerins nomades et dont les divinités\
+    \ tutélaires ne permettent pas d’accéder à l’un des domaines ou sous-domaines\
+    \ mentionnés ci-dessus. \n\nPour tous les autres aspects, cette aptitude fonctionne\
+    \ comme celle de domaine d’un prêtre standard et la remplace."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.P%c3%a8lerin%20nomade%20(pr%c3%aatre).ashx#Route_de_la_fortune_0
+  
+- Nom: Pacte avec la caravane (Sur)
+  Classe: Prêtre
+  Archétype: Pèlerin nomade
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au niveau 1, en menant un groupe de prière pendant 1 minute, un
+    pèlerin peut sélectionner un nombre de compagnons de voyage égal à son niveau
+    de prêtre + son bonus de Sagesse. Il peut utiliser les pouvoirs de domaine qu’il
+    applique normalement sur lui-même sur ces compagnons. Ceux-ci  doivent  être  situés  à  9 
+    mètres  ou  moins,  même  si  le  pouvoir utilisé  nécessite  normalement  d’être  au  contact.
+
+
+
+    Cette  aptitude remplace  la  formation  au  maniement  des  boucliers  et  au  port
+    des armures intermédiaires du prêtre. Il conserve uniquement la formation au port
+    des armures légères.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.P%c3%a8lerin%20nomade%20(pr%c3%aatre).ashx#Pacte_avec_la_caravane_Sur_1
+  
+- Nom: Bénédiction  du  tourment  (Sur)
+  Classe: Prêtre
+  Archétype: Pèlerin nomade
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  8  et  une  fois  par jour, le pèlerin peut accomplir\
+    \ une lecture du tourment pour lui-même ou pour une autre créature. Cette aptitude\
+    \ est par ailleurs identique à la bénédiction du tourment décrite pour la classe\
+    \ de prestige de voyante. \n\nCette aptitude remplace le pouvoir obtenu au niveau 8\
+    \ de l’un des domaines choisis par le pèlerin nomade."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.P%c3%a8lerin%20nomade%20(pr%c3%aatre).ashx#Bénédiction_du_tourment_Sur_2
+  
+- Nom: Faux arcaniste (Ext)
+  Classe: Prêtre
+  Archétype: Prêtre clandestin
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un prêtre clandestin est capable de déguiser ses incantations\
+    \ de prêtre pour les faire passer pour des incantations de sorts profanes.\n\n\
+    Le prêtre camoufle les composantes verbales et gestuelles des sorts de prêtre\
+    \ sous les apparats appropriés de la profession imitée. Il doit effectuer un test\
+    \ de compétence (DD = 10 + deux fois le niveau du sort) pour déguiser son incantation\
+    \ et lancer le sort avec succès. La compétence à utiliser dépend du type de lanceur\
+    \ de sorts qu’il prétend être : Artisanat (alchimie) pour un alchimiste, Représentation\
+    \ pour un barde, Connaissances (mystères) pour un ensorceleur ou un magicien.\
+    \ L’utilisation d’Art de la magie pour identifier le sort fonctionne normalement,\
+    \ mais l’observateur se rend compte de la nature divine du sort si le résultat\
+    \ de son test est supérieur ou égal au DD + 10.\n\nQuand le prêtre clandestin\
+    \ utilise cette aptitude, il doit toujours fournir les focalisateurs divins appropriés\
+    \ aux sorts qu’il lance. Toutefois, ce focalisateur ne doit pas obligatoirement\
+    \ être un symbole évident de sa religion. Ça peut être une petite pièce, un tatouage\
+    \ ou un vêtement sur lequel est cousu le symbole. Ce dernier peut être évident,\
+    \ déguisé ou camouflé au sein d’une plus grande illustration.\n\nUn prêtre clandestin\
+    \ ajoute la moitié de son niveau de classe (minimum +1) aux tests de Bluff effectués\
+    \ pou renvoyer des messages secrets si le thème abordé concerne la religion, ainsi\
+    \ qu’aux tests de Psychologie pour identifier ce type de messages. \n\nIl ajoute\
+    \ également ce bonus aux tests de Perception et de Psychologie effectués à l’encontre\
+    \ des représentants de la loi hostiles à sa religion (y compris les gardes des\
+    \ villes dans les régions où ces lois sont en vigueur).\n\nCette aptitude remplace\
+    \ l’un des deux pouvoirs de domaine du prêtre obtenu au niveau 1 (au choix du\
+    \ joueur)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20clandestin%20(pr%c3%aatre).ashx#Faux_arcaniste_Ext_0
+  
+- Nom: Dévotion invisible (Sur)
+  Classe: Prêtre
+  Archétype: Prêtre clandestin
+  Source: MMI
+  Niveau: 8
+  Auto: true
+  Description: "Au niveau 8, un prêtre clandestin peut appliquer les dons Incantation\
+    \ silencieuse et Incantation statique à un sort qu’il s’apprête à lancer. L’application\
+    \ de ces dons ne modifie pas  le niveau ou le temps d’incantation du sort. Il\
+    \ peut utiliser cette aptitude une fois par jour au niveau 8 et une fois de plus\
+    \  par jour tous les 4 niveaux de prêtre au-delà du 8e. Même si cette aptitude\
+    \ ne modifie pas le niveau réel du sort, le prêtre ne peut pas l’utiliser pour\
+    \ lancer un sort qu’il serait incapable de lancer si l’on appliquait normalement\
+    \ la modification de niveau (si le niveau modifié est supérieur à celui des sorts\
+    \ de plus haut niveau qu’il est capable de lancer). Cette aptitude applique toujours\
+    \ les deux dons (le prêtre ne peut pas l’utiliser pour appliquer seulement l’un\
+    \ ou l’autre). \n\nCette aptitude remplace l’un des deux pouvoirs de domaine du\
+    \ prêtre obtenu au niveau 8 (au choix du joueur)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20clandestin%20(pr%c3%aatre).ashx#Dévotion_invisible_Sur_1
+  
+- Nom: Armes   et   armures
+  Classe: Prêtre
+  Archétype: Prêtre croisé
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Un prêtre croisé est formé au maniement des armes courantes, de l’arme
+    de prédilection de sa divinité et des boucliers (à l’exception du pavois), ainsi
+    qu’au port des armures légères, intermédiaires et lourdes.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20crois%c3%a9%20(pr%c3%aatre).ashx#Armes__et__armures_0
+  
+- Nom: Incantation amoindrie
+  Classe: Prêtre
+  Archétype: Prêtre croisé
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Un prêtre croisé choisit un seul domaine,  au  lieu  de  deux,  parmi  la  liste  des  domaines  de  sa
+    divinité.
+
+
+    Cette aptitude fonctionne par ailleurs comme l’aptitude de domaine standard du
+    prêtre et la remplace.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20crois%c3%a9%20(pr%c3%aatre).ashx#Incantation_amoindrie_1
+  
+- Nom: Connaissance des démons (Ext)
+  Classe: Prêtre
+  Archétype: Prêtre croisé
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, quand il effectue des  tests  de  Connaissances  (plans)  envers  les  démons,  les
+    cultes démoniaques et leur magie, un prêtre croisé gagne un bonus sur ces tests
+    égal à la moitié de son niveau de classe (minimum +1). Il peut effectuer ces tests
+    de Connaissances même sans formation.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20crois%c3%a9%20(pr%c3%aatre).ashx#Connaissance_des_démons_Ext_2
+  
+- Nom: Don  de  travail  en  équipe
+  Classe: Prêtre
+  Archétype: Prêtre croisé
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Aux  niveaux  4  et  8,  un prêtre croisé gagne un don supplémentaire.\
+    \ Ce don doit être un don de travail en équipe ou l’un des dons suivants : Canalisation\
+    \ alignée,  Efficacité des sorts accrue , Efficacité  des sorts accrue supérieure\
+    \ ou Prestige. \n\nLe prêtre doit remplir les conditions du don supplémentaire\
+    \ choisi."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20crois%c3%a9%20(pr%c3%aatre).ashx#Don_de_travail_en_équipe_3
+  
+- Nom: Ennemi du flibustier (Ext)
+  Classe: Rôdeur
+  Archétype: Flibustier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, le flibustier peut, par une action de mouvement, désigner
+    un ennemi en combat et inciter ses alliés à le prendre pour cible. Le flibustier
+    et ses alliés bénéficient d’un bonus de +1 aux jets d’attaque et de dégâts des
+    armes contre cette cible. Cette aptitude s’applique uniquement pour les alliés
+    qui voient et entendent le flibustier et s’ils se situent à 9 mètres (6 ) ou moins
+    de lui au moment où il l’active. Au niveau 5 et tous les 5 niveaux par la suite
+    (aux niveaux 10, 15 et 20), le bonus augmente de +1. L’aptitude ennemi du flibustier
+    dure jusqu’à la mort de la cible ou dès que le flibustier choisit une nouvelle
+    cible. Cette aptitude remplace ennemi juré.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flibustier%20(r%c3%b4deur).ashx#Ennemi_du_flibustier_Ext_0
+  
+- Nom: Pacte du flibustier (Ext)
+  Classe: Rôdeur
+  Archétype: Flibustier
+  Source: PMI
+  Niveau: 4
+  Auto: true
+  Description: Au niveau 4, un flibustier pactise avec les membres de son équipage.
+    Ce pacte lui permet d’entreprendre une action de mouvement pour que ses alliés
+    puissent réaliser des prouesses martiales supplémentaires lorsqu’ils travaillent
+    en équipe. Tous les alliés situés à 9 mètres (6 ) ou moins du flibustier et qui
+    peuvent le voir et l’entendre bénéficient d’un bonus supplémentaire de +2 aux
+    jets d’attaque lorsqu’ils prennent en tenaille un adversaire avec le flibustier
+    ou avec un autre allié affecté par cette aptitude. Cette aptitude remplace pacte
+    du chasseur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flibustier%20(r%c3%b4deur).ashx#Pacte_du_flibustier_Ext_1
+  
+- Nom: Nageur rapide (Ext)
+  Classe: Rôdeur
+  Archétype: Flibustier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Dès le niveau 7, un flibustier peut nager à la moitié de sa vitesse
+    par une action de mouvement ou à sa vitesse normale par une action complexe s’il
+    réussit un test de Natation. Le flibustier bénéficie d’un bonus de +2 aux tests
+    de Natation. Cette aptitude remplace déplacement facilité.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flibustier%20(r%c3%b4deur).ashx#Nageur_rapide_Ext_2
+  
+- Nom: Armes et armures
+  Classe: Rôdeur
+  Archétype: Rôdeur libre des forêts
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Un rôdeur libre des forêts est formé au maniement  des  armes  courantes  et  de  guerre,  ainsi  qu’au  port
+    des armures légères. Ceci remplace la section Armes et armures d’un rôdeur classique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur%20libre%20des%20for%c3%aats%20(r%c3%b4deur).ashx#Armes_et_armures_0
+  
+- Nom: Ennemi de prédilection (Ext)
+  Classe: Rôdeur
+  Archétype: Rôdeur libre des forêts
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un rôdeur libre choisit un ennemi juré (généralement\
+    \ « humanoïde humain »). Il n’obtient aucun ennemi juré supplémentaire aux niveaux\
+    \  supérieurs.  Le  bonus  de  son  ennemi  juré  augmente de +2 aux niveaux 5,\
+    \ 10, 15 et 20. \n\nCette aptitude fonctionne par ailleurs comme l’aptitude standard\
+    \ ennemi juré et la remplace."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur%20libre%20des%20for%c3%aats%20(r%c3%b4deur).ashx#Ennemi_de_prédilection_Ext_1
+  
+- Nom: Fantôme  de  la  forêt  (Ext)
+  Classe: Rôdeur
+  Archétype: Rôdeur libre des forêts
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  1,  un  rôdeur  libre  du Nirmathas ajoute un bonus\
+    \ égal à la moitié de son niveau aux tests de Perception et de Survie effectués\
+    \ dans les forêts. \n\nCette aptitude remplace empathie sauvage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur%20libre%20des%20for%c3%aats%20(r%c3%b4deur).ashx#Fantôme_de_la_forêt_Ext_2
+  
+- Nom: Spécialiste   d’un   environnement
+  Classe: Rôdeur
+  Archétype: Rôdeur libre des forêts
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au   niveau   3,   un   rôdeur libre  choisit  un  environnement\
+    \  de  prédilection (généralement  les  forêts).  Il  n’obtient  aucun  environnement\
+    \  de prédilection supplémentaire aux niveaux supérieurs. Le bonus de son environnement\
+    \ de prédilection augmente de +2 aux niveaux 8, 13 et 18. \n\nCette aptitude fonctionne\
+    \ par ailleurs comme l’aptitude standard environnement de prédilection et la remplace."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur%20libre%20des%20for%c3%aats%20(r%c3%b4deur).ashx#Spécialiste__d’un__environnement_3
+  
+- Nom: Sorts
+  Classe: Rôdeur
+  Archétype: Rôdeur libre des forêts
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au niveau 4, un rôdeur libre des forêts augmente de +1 le nombre
+    de sorts de chaque niveau qu’il peut lancer chaque jour.  Ainsi,  il  peut  lancer  au  moins  1 
+    sort  par  jour  d’un  niveau donné dès qu’il accède à un nouveau niveau de sort,
+    même si la table indique  le  chiffre  0 dans le nombre de sorts par jour qu’il
+    peut lancer pour chaque niveau correspondant.
+
+
+    Un rôdeur libre des forêts apprend également à manipuler la magie druidique.  Chaque  jour,  quand  le  rôdeur  prépare  ses  sorts,  il  peut
+    choisir un sort de druide et le préparer comme si celui-ci faisait partie de sa
+    liste de sorts de rôdeur. Le niveau du sort choisi reste le même.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur%20libre%20des%20for%c3%aats%20(r%c3%b4deur).ashx#Sorts_4
+  
+- Nom: Pot de vin
+  Classe: Roublard
+  Archétype: Contrebandier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un contrebandier aguerri sait comment apaiser les interactions avec
+    les autorités douanières. Au niveau 3, quand il interagit avec des officiels en
+    charge d’un poste de contrôle qui effectuent une inspection ou accomplissent une
+    activité similaire, un contrebandier peut effectuer un test de Diplomatie opposé
+    au test de Psychologie de l’officiel responsable pour veiller à ce que ses produits
+    de contrebande passent sans problème. Il bénéficie d’un bonus de +1 au test de
+    Diplomatie. En cas de réussite à ce test, le contrebandier verse un petit pot
+    de vin (5d4 po) pour éviter le contrôle de sa cargaison. Ce bonus s’élève à +2
+    quand le contrebandier atteint le niveau 6, +3 au niveau 9, +4 au niveau 12, +5
+    au niveau 15 et +6 au niveau 18. Cette aptitude remplace sens des pièges.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrebandier%20(roublard).ashx#Pot_de_vin_0
+  
+- Nom: Dissimulation d’objet
+  Classe: Roublard
+  Archétype: Contrebandier
+  Source: PMI
+  Niveau: 1
+  Auto: true
+  Description: Un contrebandier ajoute la moitié de son niveau (minimum +1) à ses
+    tests d’Escamotage. Il peut utiliser cette compétence pour dissimuler un petit
+    objet dans un récipient ou dans une pièce, comme dans le double fond d’un coffre
+    ou sous des lattes de parquet. Quiconque tente de trouver un objet dissimulé de
+    cette façon doit effectuer un test de Perception opposé au résultat du test d’Escamotage
+    obtenu par le contrebandier quand il a dissimulé l’objet. Cette aptitude remplace
+    recherche des pièges.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrebandier%20(roublard).ashx#Dissimulation_d’objet_1
+  
+- Nom: Diversion
+  Classe: Roublard
+  Archétype: Contrebandier
+  Source: PMI
+  Niveau: 2
+  Auto: true
+  Description: Un contrebandier se sert de son baratin et du langage corporel pour
+    éloigner d’éventuels fouineurs d’objets dissimulés. Au niveau 2, un contrebandier
+    peut effectuer un test de Bluff opposé au test de Perception d’un fouineur quand
+    celui-ci cherche des objets dissimulés par le contrebandier. Si le test de Bluff
+    du contrebandier réussit, le fouineur doit effectuer un deuxième test de Perception
+    et appliquer le résultat du moins bon des deux. Cette aptitude remplace esquive
+    totale.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contrebandier%20(roublard).ashx#Diversion_2
+  
+- Nom: Grande découverte (Sur)
+  Classe: Alchimiste
+  Archétype: Brasseur d'épines (Demi-elfe)
+  Source: MR
+  Niveau: 20
+  Auto: true
+  Description: Au niveau 20, le brasseur d’épines qui choisit la grande découverte
+    mutagène absolu crée un mutagène de dendrite qui donne un bonus d’armure naturelle
+    de +8 et un bonus alchimique de +6 à la Force, la Constitution et à la Dextérité.
+    Tant que le mutagène fait effet, le brasseur subit un malus de -2 à l’Intelligence,
+    la Sagesse et au Charisme. Sa guérison accélérée passe à 10 et marche aussi quand
+    il se trouve dans une zone de lumière normale, en plus de fonctionner sous une
+    vive lumière. Le brasseur d’épines doit faire la découverte grand mutagène avant
+    de faire celle-ci.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brasseur%20d%c3%a9pines%20(alchimiste).ashx#Grande_découverte_Sur_2
+  
+- Nom: Découvertes
+  Classe: Alchimiste
+  Archétype: Chercheur visionnaire
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Les  découvertes  suivantes  viennent  compléter l’archétype :
+
+
+    Bombe  acide,  bombe soleil, infusion, mutagène imprégné, mutagène sauvage, vase
+    en bouteille.
+
+
+    Voir les découvertes de l''alchimiste.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chercheur%20visionnaire%20(alchimiste).ashx#Découvertes_0
+  
+- Nom: Mutagène  expérimental  (Sur)
+  Classe: Alchimiste
+  Archétype: Chercheur visionnaire
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au  niveau  2,  un  chercheur  sait   comment   créer   un   mutagène\
+    \   expérimental dont  les  autres  peuvent  bénéficier,  même  si  l’effet est\
+    \ moins important   que   celui   d’un   mutagène   normal. \n\n\nLe   mutagène\
+    \ expérimental fonctionne comme un mutagène standard, sauf que le bonus d’armure\
+    \ naturelle et le bonus alchimique à la valeur de caractéristique sont divisés\
+    \ par deux (bonus d’armure naturelle de +1 et +2 à la valeur d’une caractéristique).\
+    \ Le mutagène expérimental ne rend pas nauséeuse la créature qui l’ingurgite.\
+    \ \n\nQuand il crée le mutagène, le chercheur décide si celui-ci est standard\
+    \ (ce qui ne donne aucun avantage si une autre créature l’ingurgite) ou s’il est\
+    \ expérimental (dont autrui peut bénéficier). Le coût, le temps de création et\
+    \ tous les autres aspects du mutagène restent les mêmes. \n\nSi  le  chercheur\
+    \  connaît  des  découvertes  ou  possède  d’autres aptitudes qui modifient ou\
+    \ améliorent les avantages du mutagène, celles-ci s’appliquent au mutagène expérimental\
+    \ (mais la créature qui l’ingurgite ne bénéficie toujours que de la moitié du\
+    \ bonus numérique  conféré  par  le  mutagène).\n\n\nCette aptitude remplace utilisation\
+    \ des poisons."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chercheur%20visionnaire%20(alchimiste).ashx#Mutagène_expérimental_Sur_1
+  
+- Nom: Résistance à l’acide (Ext)
+  Classe: Alchimiste
+  Archétype: Chercheur visionnaire
+  Source: MMI
+  Niveau: 3
+  Auto: true
+  Description: 'Au niveau 3, un chercheur gagne  une  résistance  à  l’acide  de  5.
+
+
+
+    Cette  aptitude  remplace alchimie rapide.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chercheur%20visionnaire%20(alchimiste).ashx#Résistance_à_l’acide_Ext_2
+  
+- Nom: Bombes  d’alkahest  (Sur)
+  Classe: Alchimiste
+  Archétype: Explorateur de cryptes
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Les  bombes  d’un  explorateur  de cryptes   sont   particulièrement\
+    \   efficaces contre les créatures artificielles et les morts-vivants tangibles :\
+    \ deux types d’ennemis que  l’on  rencontre  fréquemment  dans  les  tombes  antiques.\
+    \ Appelées bombes d’alkahest, elles infligent des dégâts d’acide et non  des \
+    \ dégâts  de  feu.  L’alkahest  est  une  substance  alchimique qui ronge la chair\
+    \ des morts-vivants et les créatures artificielles animées,  mais  qui  perd \
+    \ de  son  efficacité contre d’autres types de  cibles.  Contre  les  créatures\
+    \  artificielles  et  les  morts-vivants tangibles,  les  bombes  d’alkahest \
+    \ infligent  1d8  points  de  dégâts, plus 1d8 points de dégâts à chaque niveau\
+    \ impair d’alchimiste (au lieu de 1d6). Contre tous les autres types de créatures,\
+    \ ces bombes infligent 1d4 points de dégâts, plus 1d4 points de dégâts de force\
+    \ à chaque niveau impair d’alchimiste. \n\nCette aptitude fonctionne par ailleurs\
+    \ comme l’aptitude de classe de bombe de l’alchimiste et la remplace."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explorateur%20de%20cryptes%20(alchimiste).ashx#Bombes_d’alkahest_Sur_0
+  
+- Nom: Breuvage de l’explorateur de cryptes (Sur)
+  Classe: Alchimiste
+  Archétype: Explorateur de cryptes
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au lieu de préparer des  mutagènes  qui  améliorent  leur  armure  naturelle  et  leurs
+    capacités  physiques  au  détriment  de  leurs  facultés  mentales, les  explorateurs  de  cryptes  se  spécialisent  dans  la  confection  de  breuvages  spéciaux  qui  développent  leurs  sens.  Quand  un
+    explorateur des cryptes ingurgite l’un de ces breuvages, il gagne un bonus de
+    +4 aux tests de Perception et l’un des sens spéciaux suivants : vision dans le
+    noir jusqu’à 18 mètres, vision nocturne ou odorat. Lorsqu’il est sous les effets
+    d’un tel breuvage, l’alchimiste  est  également  aveuglé  par  la  lumière.  Cette  aptitude  remplace
+    l’aptitude de classe de mutagène (un explorateur de cryptes ne peut pas créer
+    des mutagènes à moins qu’il ne choisisse la découverte mutagène décrite dans L’Art
+    de la magie).'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explorateur%20de%20cryptes%20(alchimiste).ashx#Breuvage_de_l’explorateur_de_cryptes_Sur_1
+  
+- Nom: Recherche de pièges
+  Classe: Alchimiste
+  Archétype: Explorateur de cryptes
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un explorateur de cryptes ajoute la moitié de son niveau aux tests\
+    \ de Perception effectués pour trouver des  pièges et aux tests de Désamorçage\
+    \ (minimum +1). Un explorateur de cryptes peut utiliser la compétence Sabotage\
+    \ pour désamorcer des pièges magiques. Remplacez les niveaux de roublard par ses\
+    \ niveaux d’alchimiste lorsqu’il s’agit de déterminer son aptitude en matière\
+    \ de serrures et de pièges. \n\nCette aptitude remplace le don supplémentaire\
+    \ Préparation de potions."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explorateur%20de%20cryptes%20(alchimiste).ashx#Recherche_de_pièges_2
+  
+- Nom: Découvertes
+  Classe: Alchimiste
+  Archétype: Explorateur de cryptes
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Un explorateur de cryptes peut choisir les talents de  roublard  suivants  en  guise  de  découvertes 
+    :  dénicheur  de pièges,  désamorçage  rapide  et  sens  des  pièges.  Remplacez  les
+    niveaux de roublard par ses niveaux d’alchimiste lorsqu’il s’agit de déterminer
+    les effets de ces talents.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explorateur%20de%20cryptes%20(alchimiste).ashx#Découvertes_3
+  
+- Nom: Alkahest amélioré (Sur)
+  Classe: Alchimiste
+  Archétype: Explorateur de cryptes
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 14, l’alkahest d’un explorateur de   cryptes   augmente\
+    \   en   puissance.   Contre   des   créatures artificielles et des morts-vivants\
+    \ tangibles, ses bombes d’alkahest infligent  +1  point  de  dégâts  par  dé \
+    \ et  ses  probabilités  de  coup critique s’élèvent à 19-20. Cette amélioration\
+    \ des probabilités de critique ne se cumule pas avec d’autres effets du même type.\
+    \ \n\nCette aptitude remplace mutagène persistant."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explorateur%20de%20cryptes%20(alchimiste).ashx#Alkahest_amélioré_Sur_4
+  
+- Nom: Convocation d’alliés naturels (Mag)
+  Classe: Conjurateur
+  Archétype: Conjurateur féerique
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, un conjurateur féérique peut  lancer  convocation \
+    \ d’alliés  naturels  un nombre de fois par jour égal à 3 + son modificateur de\
+    \ Charisme. \n\nPar la suite, et aux niveaux où il devrait avoir accès à un pouvoir\
+    \ magique  de  convocation  de  monstres  plus  puissant,  il  gagne  à  la place\
+    \ le pouvoir magique de convocation d’alliés naturels équivalent (au  niveau \
+    \ 19,  il  peut  utiliser  convocation  d’alliés  naturels  IX  ou portail). \
+    \ Quand  un  conjurateur féérique  obtient  un pouvoir  magique  de  convocation\
+    \  d’alliés  naturels,  il  ajoute  le  sort correspondant  à  sa  liste  de \
+    \ sorts  (il  doit  toujours  l’apprendre  et le connaître s’il souhaite véritablement\
+    \ le lancer). \n\nCette aptitude remplace celle de convocation de monstres d’un\
+    \ conjurateur standard."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur%20f%c3%a9erique%20(conjurateur).ashx#Convocation_d’alliés_naturels_Mag_0
+  
+- Nom: Convocation de fées (Sur)
+  Classe: Conjurateur
+  Archétype: Conjurateur féerique
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au niveau 3, un conjurateur féérique ajoute les créatures suivantes
+    aux listes des créatures qu’il  peut convoquer  avec  son  pouvoir  magique  de
+    convocation  d’alliés naturels.
+
+
+
+
+    Convocation  d’alliés  naturels  II  :  gremlin  ( jinkin,  pugwampi  ou vexgit,
+    voir Bestiaire 2).
+
+
+    Convocation d’alliés naturels III : gremlin (nuglub, voir Bestiaire 2).
+
+
+    Convocation d’alliés naturels IV : licorne.
+
+
+    Convocation d’alliés naturels V : pixie, satyre.
+
+
+    Convocation d’alliés naturels VII : nymphe.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur%20f%c3%a9erique%20(conjurateur).ashx#Convocation_de_fées_Sur_1
+  
+- Nom: Eidolon
+  Classe: Conjurateur
+  Archétype: Conjurateur féerique
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "À  la  place  d’un  extérieur,  l’eidolon  d’un  conjurateur féérique\
+    \  est  une  créature  de  type  fée  et  de  sous-type extraplanaire. Voici les\
+    \ modifications à apporter au profil de cet eidolon : \n\nDés de Vie : d6 (au\
+    \ lieu de d10)\n\nBBA : égal à la moitié des Dés de Vie de l’eidolon.\n\nJets\
+    \ de sauvegarde forts/faibles : toujours Réflexes et Volonté.\n\nCompétences \
+    \ :  les  compétences  de  classe  de  l’eidolon  sont Acrobaties,     Artisanat,\
+    \     Bluff,     Connaissances     (géographie), Connaissances  (nature),  Déguisement,\
+    \  Diplomatie,  Discrétion, Escalade, Escamotage, Évasion, Natation, Perception,\
+    \ Psychologie, Représentation, Utilisation d’objets magiques et Vol.\n\nSens :\
+    \ l’eidolon remplace vision dans le noir par vision nocturne. Le conjurateur peut\
+    \ octroyer la vision dans le noir jusqu’à 18 mètres à son eidolon pour 1 point\
+    \ d’évolution.\n\nRéduction de dégâts : si le conjurateur choisit cette évolution,\
+    \ il peut choisir RD/fer froid au lieu de l’un des types de réductions basés sur\
+    \ les alignements. Cette  aptitude  fonctionne  comme  celle  du conjurateur normal\
+    \ et la remplace."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur%20f%c3%a9erique%20(conjurateur).ashx#Eidolon_2
+  
+- Nom: Jugement
+  Classe: Inquisiteur
+  Archétype: Chasseur de vampire
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Comparés  à  ceux  d’un  inquisiteur  standard,  les jugements suivants\
+    \ fonctionnent différemment pour un chasseur de vampire. Cette  aptitude  altère\
+    \ les jugements de l'inquisiteur. \n\nPureté Au niveau 10, le bonus conféré par\
+    \ ce jugement double contre les maladies et l’absorption d’énergie, mais pas contre\
+    \ les malédictions et le poison.\n\nChâtiment Au niveau 6, les armes sont considérées\
+    \ comme étant en argent et non comme alignées."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire%20(inquisiteur).ashx#Jugement_0
+  
+- Nom: Spécialiste  de  l’argent
+  Classe: Inquisiteur
+  Archétype: Chasseur de vampire
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Au  niveau  2,  un  chasseur  de  vampires apprend les secrets qui
+    lui permettent de forger de dangereuses armes en argent. Il ajoute un bonus égal
+    à son niveau de classe aux tests d’Artisanat ou d’Art de la magie effectués pour
+    fabriquer un  objet  en  argent  qui  ignore  la  RD/argent,  comme  l’argent
+    alchimique,  le  lustrargent  ou  le  blanchis  pour  arme.  Cette  aptitude  remplace  détection
+    d’alignement.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire%20(inquisiteur).ashx#Spécialiste_de_l’argent_1
+  
+- Nom: Tueur (Sur)
+  Classe: Inquisiteur
+  Archétype: Chasseur de vampire
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Un  chasseurs de vampire peut conférer à ses armes la propriété tueuse
+    de morts-vivants seulement, mais celle-ci reste en place même s’il ne les tient
+    plus en main.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire%20(inquisiteur).ashx#Tueur_Sur_2
+  
+- Nom: Brûlure du soleil (Sur)
+  Classe: Inquisiteur
+  Archétype: Chasseur de vampire
+  Source: MMI
+  Niveau: 5
+  Auto: true
+  Description: "Au niveau 5, un  chasseurs de vampire peut apposer sur une arme\
+    \ qu’il tient en main la lumière purificatrice  du  soleil  par  une  action rapide\
+    \ et ce, pendant un nombre de rounds par jour égal à son niveau d’inquisiteur.\n\
+    \nCes  rounds ne sont  pas  obligatoirement consécutifs. Une arme imprégnée ainsi\
+    \  de  la  lumière  du  soleil inflige +1d6  points de dégâts aux créatures sensibles\
+    \ ou vulnérables à la lumière du soleil, ce  qui inclut de  nombreux  types  de\
+    \  morts-vivants (en particulier les spectres, les vampires et  les  âmes-en-peine).\
+    \  Ces dégâts supplémentaires s’appliquent également aux vases et aux monstres\
+    \ de type fongoïde. \n\nUne arme imprégnée de la lumière du soleil produit une\
+    \ lumière équivalente à celle d’un bâton éclairant."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire%20(inquisiteur).ashx#Brûlure_du_soleil_Sur_3
+  
+- Nom: Malédiction du sang noir (Sur)
+  Classe: Oracle
+  Archétype: Oracle au sang noir
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Tous les oracles au sang noir partagent  effectivement  la  même  corruption
+     :  la  malédiction du  sang  noir.  La  matière  affecte  ces  oracles  autant  sur  le  plan
+    physique  que  mental.  Elle  modifie  leur  physiologie  et  leurs pouvoirs mystiques.
+    Le sang d’un tel oracle est effectivement noir, les blessures qu’il subit sont
+    infectées par son propre pouvoir et difficiles  à soigner . Cet oracle est immunisé
+    aux effets  du sang noir (qu’ils soient bénéfiques ou nocifs). Les énergies positive
+    et négative affectent un oracle au sang noir comme s’il était un mort- vivant :
+    l’énergie positive le blesse et l’énergie négative le soigne (cet  aspect  de  la  malédiction  ne  produit  aucun  effet  si  l’oracle
+    est  effectivement  un  mort-vivant).
+
+
+
+    Cette  malédiction  émousse quelque  peu  la  coordination  de  l’oracle  et  lui  inflige  un  malus
+    de  -4  aux  tests  basés  sur  la  Dextérité. Au  niveau  5,  il  gagne  une
+    résistance au froid de 5. Cette résistance passe à 10 au niveau 10 et  devient  une  immunité  au  niveau 
+    15.  Cette  aptitude  remplace malédiction de l’oracle.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle%20au%20sang%20noir%20(oracle).ashx#Malédiction_du_sang_noir_Sur_0
+  
+- Nom: Révélations  du  sang  noir
+  Classe: Oracle
+  Archétype: Oracle au sang noir
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Tous  les  oracles  au  sang  noir  ont accès  aux  révélations\
+    \  suivantes,  quel  que  soit  le  mystère  qu’ils  choisissent.\n\n\n\nÉclaboussures\
+    \  de  sang  noir  (Sur).  Par  une  action  immédiate,  à chaque fois qu’un oracle\
+    \ au sang noir subit des dégâts perforants ou tranchants, il peut projeter le\
+    \ sang noir qui s’écoule de sa blessure sur  une  cible  adjacente.  Il  doit\
+    \  effectuer  une  attaque  de  contact au corps à corps pour toucher la cible\
+    \ (s’il attaque la créature à l’origine de sa blessure, il gagne un bonus de circonstances\
+    \ de +4 à son jet d’attaque). S’il touche, il inflige 1d8 points de dégâts de\
+    \ froid +1 point par tranche de 2 niveaux d’oracle possédés. Il peut utiliser\
+    \ cette révélation un nombre de fois par jour égal à la moitié de son niveau d’oracle\
+    \ (1/jour minimum). \n\nSombre  résistance  (Sur).  Le  sang  noir  qui  coule\
+    \  dans  les  veines d’un  oracle  au  sang  noir  lui  confère  une  résistance\
+    \  à  nombre des  effets  auxquels  les  morts-vivants  sont  immunisés.  Une\
+    \  fois par  jour  et  par  une  action  immédiate,  quand  il  rate  un  jet\
+    \  de sauvegarde contre une diminution permanente de caractéristique, un effet\
+    \ de mort, une maladie, l’absorption d’énergie, la paralysie ou un poison, il\
+    \ peut relancer le jet de sauvegarde en bénéficiant cette fois d’un bonus de circonstances\
+    \ de +4. Il doit appliquer le deuxième résultat même s’il est moins avantageux.\
+    \ Il peut utiliser cette révélation deux fois par jour au niveau 7 et trois fois\
+    \ par jour au niveau 15. \n\nVision dans le noir (Ext). Un oracle au sang noir\
+    \ gagne la vision dans le noir jusqu’à 18 mètres. Cette distance passe à 27 mètres\
+    \ au niveau 15."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle%20au%20sang%20noir%20(oracle).ashx#Révélations_du_sang_noir_1
+  
+- Nom: Familier
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Les sorcières de l’hiver doivent choisir un familier natif de la\
+    \ toundra gelée, même si elles-mêmes opèrent dans d’autres  régions. Traditionnellement,\
+    \ ce choix se limite aux chauves-souris, chats, renards, faucons, hiboux, rats,\
+    \ corbeaux ou pies. \n\nUne sorcière de l’hiver qui obtient le don Familier supérieur\
+    \ peut choisir n’importe quel type de familier, à l’exception de ceux du sous-type\
+    \ feu."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Familier_0
+  
+- Nom: Tours de magie
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Une sorcière de l’hiver ajoute rayon de givre à sa liste de sorts,
+    mais n’apprend pas automatiquement ce sort.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Tours_de_magie_1
+  
+- Nom: Protecteur
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Une  sorcière  de  l’hiver  doit  choisir  son protecteur parmi
+    les thèmes suivants : ancêtres, duplicité, eau, enchantement, étoiles, endurance,
+    hiver, lune, occulte, présages, sagesse, transformation, tromperie ou vengeance.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Protecteur_2
+  
+- Nom: Magie de la glace
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Quand une sorcière de l’hiver lance des sorts du registre du froid,
+    le DD des jets de sauvegarde de ces sorts augmente de +1. Une sorcière de l’hiver
+    ne peut pas apprendre ou lancer des sorts du registre du feu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Magie_de_la_glace_3
+  
+- Nom: Métabolisme froid (Ext)
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Au niveau 1, une sorcière de l’hiver gagne le pouvoir magique permanent\
+    \ d’endurance aux énergies destructives qui agit uniquement contre les températures\
+    \ froides. Au niveau 4, elle gagne une résistance de 5 contre le froid, ce qui\
+    \ lui permet de supporter sans aucun problème les températures proches du point\
+    \ de congélation. Au niveau 9, cette résistance au froid s’élève à 10 et la sorcière\
+    \ devient immunisée au froid au niveau 14. \n\nCette aptitude remplace le maléfice\
+    \ obtenu par la sorcière au niveau 4."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Métabolisme_froid_Ext_4
+  
+- Nom: Maléfices
+  Classe: Sorcière
+  Archétype: Sorcière de l'hiver
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Les  maléfices  suivants  viennent  compléter l’archétype de sorcière\
+    \ de l’hiver : couvert de givre, cuisiner les  gens, dépérissement, hutte de la\
+    \ sorcière, langage sauvage, mauvais œil, œil de guenaude, œil de la bête, tombe\
+    \ de glace. \n\nUne sorcière de l’hiver peut choisir parmi la liste de maléfices\
+    \ suivante : \n\nCaresse du givre (Sur). À chaque fois qu’une sorcière de l’hiver\
+    \ lance un sort de contact, elle peut injecter du froid dans la magie de ce sort\
+    \ par une action rapide. Ceci lui confère le registre du froid et l’effet du sort\
+    \ inflige 1d4 points de dégâts de froid supplémentaires. Si le sort de contact\
+    \ autorise un jet de sauvegarde, la réussite de ce jet annule ces dégâts de froid\
+    \ supplémentaires.\n\nPieds de glace (Sur). Ce maléfice fonctionne comme le sort\
+    \ de pattes d’araignée, mais les surfaces que la sorcière peut grimper doivent\
+    \ être verglacées. La sorcière peut se déplacer sans malus sur des surfaces verglacées\
+    \ et n’a pas besoin d’effectuer des tests d’Acrobaties pour courir ou charger\
+    \ sur la glace. Elle peut traverser sans malus des zones enneigées normales et\
+    \ les zones fortement enneigées nécessitent 2 cases de déplacement seulement au\
+    \ lieu de 4."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorci%c3%a8re%20de%20lhiver%20(sorci%c3%a8re).ashx#Maléfices_5
+  
+- Nom: Armes  et  armures
+  Classe: Magus
+  Archétype: Défenseur de la tour
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: "Un  défenseur  de  la  tour  est  formé  au maniement  des  armes\
+    \  courantes  et  de  guerre,  légères  et  à  une main, ainsi qu’au maniement\
+    \ des armes de corps à corps exotiques légères  ou  à  une  main  dotées  des\
+    \  caractéristiques  spéciales désarmement ou croc-en-jambe.\n\nUn défenseur de\
+    \ la tour n’est formé au port d’aucune armure et n’est formé au maniement d’aucun\
+    \ bouclier. Il ne possède pas  l’aptitude du magus qui lui permet d’ignorer les\
+    \ risques d’échec des sorts profanes occasionnés par le port des armures. \n\n\
+    Toutefois, s’il apprend à porter les armures légères, il gagne automatiquement\
+    \ l’aptitude du magus qui lui permet d’ignorer les risques d’échec des sorts profanes\
+    \ occasionnés par le port de ce type d’armure. S’il apprend à porter les armures\
+    \ intermédiaires, il ignore, au niveau 7, les risques d’échec des sorts profanes\
+    \ occasionnés par le port de ce type d’armure. S’il apprend à porter les armures\
+    \ lourdes, il ignore, au  niveau  13,  les  risques  d’échec  des  sorts  profanes\
+    \  occasionnés par le port de ce type d’armure. \n\nCette aptitude remplace la\
+    \ section Armes et armures du magus."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fenseur%20de%20la%20tour%20(magus).ashx#Armes_et_armures_0
+  
+- Nom: Dons supplémentaires (Ext)
+  Classe: Magus
+  Archétype: Défenseur de la tour
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: Au niveau 1, le défenseur de la tour gagne Expertise du combat et
+    Esquive en dons supplémentaires, même s’il ne remplit pas leurs conditions.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fenseur%20de%20la%20tour%20(magus).ashx#Dons_supplémentaires_Ext_1
+  
+- Nom: Amélioration  magique  (Sur)
+  Classe: Magus
+  Archétype: Défenseur de la tour
+  Source: MMI
+  Niveau: 1
+  Auto: true
+  Description: 'Au  niveau  4,  un  défenseur  de la  tour  peut  dépenser  1  point  de  sa  réserve  magique  par  une
+    action rapide pour bénéficier, pendant 1 minute, d’un bonus de compétence de +5
+    à l’une des compétences suivantes : Acrobaties, Discrétion, Escalade, Évasion,
+    Natation et Perception. Pour chaque tranche de 3 niveaux au-delà du 4e , le défenseur
+    de la tour gagne un bonus d’altération supplémentaire de +1, jusqu’à un maximum
+    de +10 au niveau 19. Cette aptitude remplace souvenir magique.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fenseur%20de%20la%20tour%20(magus).ashx#Amélioration_magique_Sur_2
+  
+- Nom: Maîtrise des armes du bretteur (Ext)
+  Classe: Bretteur
+  Archétype: Lame volante
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: Au niveau 20, quand une lame volante menace d’infliger un coup critique
+    avec une dague ou une lamétoile, ce coup critique est automatiquement confirmé.
+    De plus, les modificateurs de critique des dagues et des lamétoiles augmentent
+    de 1 (×2 devient ×3 et ainsi de suite). Cette aptitude remplace maîtrise des armes
+    du bretteur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lame%20volante%20(bretteur).ashx#Maîtrise_des_armes_du_bretteur_Ext_3
   
