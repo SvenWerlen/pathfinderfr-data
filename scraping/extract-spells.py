@@ -1,17 +1,15 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import urllib
+import urllib.request
 import yaml
 import sys
+import html
 import re
+from bs4 import BeautifulSoup
 from lxml import html
 
-try:
-    from BeautifulSoup import BeautifulSoup
-except ImportError:
-    from bs4 import BeautifulSoup
-    from bs4 import NavigableString
+from libhtml import jumpTo, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -23,26 +21,14 @@ URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts.as
        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx",
        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx"]
 
-PROPERTIES = [ u"Nom", u"École", u"Niveau", u"Portée", u"Cible ou zone d'effet", u"Temps d'incantation", u"Composantes", u"Durée", u"Jet de sauvegarde", u"Résistance à la magie", u"Description"]
-
-# vérification des paramètres
-if len(sys.argv) < 2:
-    print "Usage: %s [HTML|TEXT]" % sys.argv[0]
-    print " - HTML: contenu extrait en tant que HTML"
-    print " - TEXT: contenu extrait en tant que TEXT"
-    exit(1)
-
-# message d'accueil
-html = sys.argv[1].lower() == "html"
-if html:
-    print "Génération du fichier YAML pour les sorts en mode HTML"
-else:
-    print "Génération du fichier YAML pour les sorts en mode TEXT"
+FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
+MATCH = ['Nom']
 
 
 
 liste = []
 
+print("Extraction des sorts...")
 
 list = []
 if MOCK_LIST:
@@ -51,7 +37,7 @@ if MOCK_LIST:
 else:
     list = []
     for u in URLs:
-        parsed_html = BeautifulSoup(urllib.urlopen(u).read(),features="lxml")
+        parsed_html = BeautifulSoup(urllib.request.urlopen(u).read(),features="lxml")
         list += parsed_html.body.find(id='PageContentDiv').find_all('li')
 
 #
@@ -63,10 +49,6 @@ def extractText(list):
     text = ""
     
     for el in list:
-        
-        if html:
-            text += repr(el)
-            continue
         
         if el.name == 'br':
             if text[-2:] != '\n\n':
@@ -86,7 +68,7 @@ def extractText(list):
             # do nothing
             text
         else:
-            print " - HTML element %s ignored!" % el.name
+            print(" - HTML element %s ignored!" % el.name)
 
     return text.strip(' ').replace(u'¶','')
 
@@ -106,23 +88,23 @@ for l in list:
             source = source_search.group(1)
             
             # special cases
-            if source == u"partagé":
+            if source == "partagé":
                 source = None
-            elif source == u"Blog Paizo":
-                source = u"PAIZO"
-            elif source.startswith(u"MR"):
-                source = u"MR"
-            elif source == u"AdM":
-                source = u"AM"
-            elif source == u"APG":
-                source = u"MJRA"
-            elif source == u"UC":
-                source = u"AG"
+            elif source == "Blog Paizo":
+                source = "PAIZO"
+            elif source.startswith("MR"):
+                source = "MR"
+            elif source == "AdM":
+                source = "AM"
+            elif source == "APG":
+                source = "MJRA"
+            elif source == "UC":
+                source = "AG"
     
     if not source:
         source = "MJ"
     
-    print "Processing %s (%s)" % (title, source)
+    print("Processing %s (%s)" % (title, source))
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     sort[u'Nom']=title
@@ -132,7 +114,7 @@ for l in list:
     if MOCK_SORT:
         content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
     else:
-        content = BeautifulSoup(urllib.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
+        content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
     
     # lire les attributs
     text = ""
@@ -148,15 +130,15 @@ for l in list:
 
         # convertir les propriétés qui sont similaires
         if "cible" in key.lower() or "effet" in key.lower() or "cible" in key.lower() or "zone" in key.lower():
-            key = u"Cible ou zone d'effet"
-        key = key.replace(u"’",u"'")
+            key = "Cible ou zone d'effet"
+        key = key.replace("’","'")
 
-        if key in PROPERTIES:
+        if key in FIELDS:
             sort[key]=text.strip()
             descr = s.next_siblings
             text = ""
         else:
-            print "- Skipping unknown property %s" % key
+            print("- Skipping unknown property %s" % key)
 
     # lire la description
     text = extractText(descr)
@@ -169,10 +151,8 @@ for l in list:
     if MOCK_SORT:
         break
 
+print("Fusion avec fichier YAML existant...")
 
-if MOCK_SORT:
-    print yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-    exit(1)
+HEADER = ""
 
-with open("sorts.yml", "w") as f:
-    yaml.safe_dump(liste, f, default_flow_style=False, allow_unicode=True)
+mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, liste)
