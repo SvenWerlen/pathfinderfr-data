@@ -8069,7 +8069,7 @@
     être un aasimar ou un archon
   Coût: 42 000 po
   Description: Lorsqu’on la place sur la tête, cette auréole en acier scintillant
-    se met à flotter au-dessus. Elle diffuse constamment une aura de 6 mètres (4 )
+    se met à flotter au-dessus. Elle diffuse constamment une aura de 6 mètres (4 c)
     de rayon autour du porteur. Une créature hostile située dans le rayon de l’aura
     doit réussir un jet de Volonté DD 20 ou recevoir un malus de -2 à ses jets d’attaque,
     à ses jets de sauvegarde et à la CA pendant les prochaines 24 heures ou jusqu’à
@@ -8278,13 +8278,33 @@
     touche ou la renverse, elle perd toute efficacité jusqu’à ce que les alliés de
     son propriétaire la reconquièrent et la hissent à nouveau.
 
+    • Diligence. Tout groupe ou armée qui voyage sous une bannière seigneuriale de
+    diligence avance à marche forcée sans avoir besoin de faire de tests de Constitution
+    et sans souffrir de dégâts non létaux, ce qui lui permet de couvrir de grandes
+    distances et d’arriver prêt au combat. Ce pouvoir affecte toutes les créatures
+    alliées situées dans un rayon de 1,5 kilomètre tant qu’elles peuvent voir la bannière
+    au moins une fois dans la journée.
 
-    Diligence. Tout groupe ou armée qui voyage sous une bannière seigneuriale de diligence
-    avance à marche forcée sans avoir besoin de faire de tests de Constitution et
-    sans souffrir de dégâts non létaux, ce qui lui permet de couvrir de grandes distances
-    et d’arriver prêt au combat. Ce pouvoir affecte toutes les créatures alliées situées
-    dans un rayon de 1,5 kilomètre tant qu’elles peuvent voir la bannière au moins
-    une fois dans la journée.'
+    • Terreur. Tant que les ennemis du porteur de la bannière seigneuriale de terreur
+    se trouvent à moins de 9 mètres (6 c) d’elle et peuvent la voir, ils doivent faire
+    un jet de Volonté DD 16 ou s’enfuir paniqués, aussi vite que possible tant que
+    la bannière reste en vue. Ceux qui réussissent le jet sont seulement secoués.
+    Une créature qui réussit son jet de sauvegarde est immunisée contre les effets
+    de la bannière pour 1 journée.
+
+    • Victoire. Les alliés du propriétaire de la bannière seigneuriale de victoire
+    gagnent un bonus de moral de +2 aux jets d’attaque, de sauvegarde et aux tests
+    de compétence tant qu’ils peuvent voir la bannière.
+
+    • Croisades. La noble bannière seigneuriale des croisades émet un effet de sanctification
+    dans un rayon de 12 mètres (9 c) autour d’elle, tant qu’elle est portée par un
+    véritable fidèle de la religion de celui dont les armoiries figurent sur la bannière
+    (ces drapeaux intègrent généralement un symbole sacré ou autre signe religieux
+    à leurs motifs). La bannière montre le symbole sacré de la religion de son propriétaire
+    à côté de son blason.FabricationConditions Création d''objets merveilleux, liberté
+    de mouvement (diligence), terreur (terreur), héroïsme (victoire), sanctification
+    (croisades) ; Coût  50 000 po (croisades), 5 000 po (diligence), 28 000 po (terreur),
+    37 500 po (victoire)'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Banni%c3%a8re%20seigneuriale.ashx
   
 - Nom: Bateau pliant
@@ -8400,8 +8420,8 @@
   Description: Ces robustes bottes en tissu à semelle de cuir sont munies de lanières
     au niveau de la cheville et du mollet, pour assurer un maintien optimal. Une fois
     par jour, quand leur porteur est agrippé, immobilisé ou enchevêtré, il peut se
-    téléporter à 9 mètres (6 ). Cela fonctionne comme une porte dimensionnelle. Si
-    un gnome porte ces bottes, il peut se transférer à 120 mètres (90 ).
+    téléporter à 9 mètres (6 c). Cela fonctionne comme une porte dimensionnelle. Si
+    un gnome porte ces bottes, il peut se transférer à 120 mètres (90 c).
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bottes%20de%20fuite.ashx
   
 - Nom: Bottes de lévitation
@@ -8528,35 +8548,20 @@
     de cristal est éventuellement dotée)
   Coût: 21 000 po (ordinaire), 25 000 po (détection de l’invisibilité), 25 500 po
     (détection de pensées), 35 000 po (télépathie), 40 000 po (vision lucide)
-  Description: 'La boule de cristal, qui fait généralement une quinzaine de centimètres
-    de diamètre, est l’objet de scrutation le plus courant. Elle est utilisée pour
-    observer ce qui se passe à distance, et même dans d’autres plans d’existence,
-    comme à l’aide du sort scrutation (jet de Volonté DD 16 pour annuler).
-
-
-    Certaines boules de cristal possèdent des pouvoirs dont leur utilisateur peut
-    se servir pour examiner plus en détail l’endroit qui l’intéresse.
-
-
-    Type de boule de cristal, Prix de vente
-
-    • Boule de cristal ordinaire, 42 000 po
-
-    • Boule de cristal dotée de détection de l’invisibilité, 50 000 po
-
-    • Boule de cristal dotée de détection de pensées (jet de Volonté DD 13 pour annuler),
-    51 000 po
-
-    • Boule de cristal dotée de télépathie*, 70 000 po
-
-    • Boule de cristal dotée de vision lucide, 80 000 po
-
-
-
-    (*) Le personnage peut communiquer silencieusement avec l’individu apparaissant
-    dans la boule de cristal. Une fois par jour, il peut également essayer de lui
-    transmettre une suggestion (voir le sort suggestion, jet de Volonté DD 14 pour
-    annuler).'
+  Description: "La boule de cristal, qui fait généralement une quinzaine de centimètres\
+    \ de diamètre, est l’objet de scrutation le plus courant. Elle est utilisée pour\
+    \ observer ce qui se passe à distance, et même dans d’autres plans d’existence,\
+    \ comme à l’aide du sort scrutation (jet de Volonté DD 16 pour annuler).\n\nCertaines\
+    \ boules de cristal possèdent des pouvoirs dont leur utilisateur peut se servir\
+    \ pour examiner plus en détail l’endroit qui l’intéresse.\n\nType de boule de\
+    \ cristal, Prix de vente\n• Boule de cristal ordinaire, 42 000 po\n• Boule de\
+    \ cristal dotée de détection de l’invisibilité, 50 000 po\n• Boule de cristal\
+    \ dotée de détection de pensées \n(jet de Volonté DD 13 pour annuler), 51 000\
+    \ po\n• Boule de cristal dotée de télépathie*, 70 000 po\n• Boule de cristal dotée\
+    \ de vision lucide, 80 000 po\n\n\n(*) Le personnage peut communiquer silencieusement\
+    \ avec l’individu apparaissant dans la boule de cristal. Une fois par jour, il\
+    \ peut également essayer de lui transmettre une suggestion (voir le sort suggestion,\
+    \ jet de Volonté DD 14 pour annuler)."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boule%20de%20cristal.ashx
   
 - Nom: Bouteille à message
@@ -8807,7 +8812,7 @@
     au trésor. La bulle coule sur commande jusqu’au fond de l’eau, s’enterrant automatiquement
     à une profondeur de 30 centimètres dans le sol si celui-ci est composé de boue
     ou de tout autre matériau meuble. Si on prononce trois fois le mot de commande
-    dans un rayon de 9 mètres (6 ) de la bulle, elle remonte à la surface et peut
+    dans un rayon de 9 mètres (6 c) de la bulle, elle remonte à la surface et peut
     alors être ouverte afin que les objets en soient retirés. Une fois ouverte, la
     bulle retrouve sa forme de perle pendant 24 heures. Cette bulle est étanche, mais
     ne protège ni ne préserve magiquement son contenu. Si on cherche à forcer son
@@ -10037,10 +10042,10 @@
     en emportant jusqu’à 250 kilos de poids supplémentaire comme s’il utilisait vol
     supérieur. Le chaudron se déplace selon les indications de celui qui a prononcé
     son mot de commande et peut transporter jusqu’au double de sa capacité mais cela
-    réduit sa vitesse de déplacement à 9 mètres (6 ). Il peut faire du sur place sans
-    avoir besoin de faire de test de Vol. Le chaudron offre un abri partiel à toute
-    personne qui se trouve à l’intérieur. Il a une solidité de 10 et 60 points de
-    vie.
+    réduit sa vitesse de déplacement à 9 mètres (6 c). Il peut faire du sur place
+    sans avoir besoin de faire de test de Vol. Le chaudron offre un abri partiel à
+    toute personne qui se trouve à l’intérieur. Il a une solidité de 10 et 60 points
+    de vie.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaudron%20de%20vol.ashx
   
 - Nom: Chaussons d'araignée
@@ -10077,9 +10082,9 @@
 
     dans ce genre d’environnements. Si le porteur n’a pas de vitesse de
 
-    nage, il en gagne une de 9 mètres (6 ). S’il a une vitesse de nage, il y
+    nage, il en gagne une de 9 mètres (6 c). S’il a une vitesse de nage, il y
 
-    ajoute un bonus d’altération de +3 mètres (2 ).'
+    ajoute un bonus d’altération de +3 mètres (2 c).'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaussons%20du%20triton.ashx
   
 - Nom: Cierge d'invocation
@@ -10234,48 +10239,31 @@
   Conditions: Création d'objets merveilleux, boule de feu
   Coût: 825 po (modèle 1), 1 350 po (modèle 2), 2 175 po (modèle 3), 2 700 po (modèle
     4), 2 975 po (modèle 5), 4 050 po (modèle 6), 4 350 po (modèle 7)
-  Description: 'Cet objet a l’apparence de perles passées sur une ficelle, dont
-    les extrémités sont quelquefois reliées pour former un collier. Bien qu’il soit
-    porté autour du cou, il n’occupe pas cet emplacement et le laisse libre pour un
-    autre objet magique comme une amulette. Cependant, un personnage le tenant le
-    voit pour ce qu’il est vraiment : une chaîne en or agrémentée de plusieurs sphères
-    du même métal. Ces sphères sont faciles à détacher par le porteur du collier (et
-    lui seul), qui peut les lancer à une distance maximale de 21 m. Quand un de ces
-    projectiles arrive en bout de trajectoire, il explose comme une boule de feu (jet
-    de Réflexes de DD 14 pour demi-dégâts).
-
-
-    Les sphères ont des puissances variables, depuis celles qui infligent 2d6 points
-    de dégâts de feu jusqu’à celles qui infligent 10d6 points de dégâts. Le prix de
-    vente d’une sphère est de 150 po par dé de dégâts infligé (soit de 300 po pour
-    une sphère à 2d6 jusqu’à 1 500 po pour une à 10d6).
-
-
-    Chaque collier à boules de feu contient une combinaison donnée de sphères de puissances
-    diverses. Les combinaisons les plus courantes sont détaillées dans la table ci-dessous.
-
-
-    Si le personnage rate son jet de sauvegarde contre une attaque de type feu magique,
-    le collier doit lui aussi faire un jet de sauvegarde (avec un modificateur de
-    +7). Si l’objet le rate à son tour, toutes les sphères restantes explosent aussitôt,
-    ce qui a bien souvent des conséquences regrettables pour son possesseur.
-
-
-    Collier, 2d6, 3d6, 4d6, 5d6, 6d6, 7d6, 8d6, 9d6, 10d6, Prix de vente
-
-    • 1er modèle, —, 2, —, 1, —, —, —, —, —, 1 650 po
-
-    • 2e modèle, 2, —, 2, —, 1, —, —, —, —, 2 700 po
-
-    • 3e modèle, —, 4, —, 2, —, 1, —, —, —, 4 350 po
-
-    • 4e modèle, 4, —, 2, —, 2, —, 1, —, —, 5 400 po
-
-    • 5e modèle, —, 2, —, 2, —, 2, —, 1, —, 5 850 po
-
-    • 6e modèle, —, —, 4, —, 2, —, 2, —, 1, 8 100 po
-
-    • 7e modèle, —, 2, —, 2, —, 2, —, 2, 1, 8 700 po'
+  Description: "Cet objet a l’apparence de perles passées sur une ficelle, dont\
+    \ les extrémités sont quelquefois reliées pour former un collier. Bien qu’il soit\
+    \ porté autour du cou, il n’occupe pas cet emplacement et le laisse libre pour\
+    \ un autre objet magique comme une amulette. Cependant, un personnage le tenant\
+    \ le voit pour ce qu’il est vraiment : une chaîne en or agrémentée de plusieurs\
+    \ sphères du même métal. Ces sphères sont faciles à détacher par le porteur du\
+    \ collier (et lui seul), qui peut les lancer à une distance maximale de 21 m.\
+    \ Quand un de ces projectiles arrive en bout de trajectoire, il explose comme\
+    \ une boule de feu (jet de Réflexes de DD 14 pour demi-dégâts).\n\nLes sphères\
+    \ ont des puissances variables, depuis celles qui infligent 2d6 points de dégâts\
+    \ de feu jusqu’à celles qui infligent 10d6 points de dégâts. Le prix de vente\
+    \ d’une sphère est de 150 po par dé de dégâts infligé (soit de 300 po pour une\
+    \ sphère à 2d6 jusqu’à 1 500 po pour une à 10d6).\n\nChaque collier à boules de\
+    \ feu contient une combinaison donnée de sphères de puissances diverses. Les combinaisons\
+    \ les plus courantes sont détaillées dans la table ci-dessous.\n\nSi le personnage\
+    \ rate son jet de sauvegarde contre une attaque de type feu magique, le collier\
+    \ doit lui aussi faire un jet de sauvegarde (avec un modificateur de +7). Si l’objet\
+    \ le rate à son tour, toutes les sphères restantes explosent aussitôt, ce qui\
+    \ a bien souvent des conséquences regrettables pour son possesseur.\n\nCollier,\
+    \ 2d6, 3d6, 4d6, 5d6, 6d6, 7d6, 8d6, 9d6, 10d6, Prix \nde vente\n• 1er \nmodèle,\
+    \ —, 2, —, 1, —, —, —, —, —, 1 650 po\n• 2e \nmodèle, 2, —, 2, —, 1, —, —, —,\
+    \ —, 2 700 po\n• 3e \nmodèle, —, 4, —, 2, —, 1, —, —, —, 4 350 po\n• 4e \nmodèle,\
+    \ 4, —, 2, —, 2, —, 1, —, —, 5 400 po\n• 5e \nmodèle, —, 2, —, 2, —, 2, —, 1,\
+    \ —, 5 850 po\n• 6e \nmodèle, —, —, 4, —, 2, —, 2, —, 1, 8 100 po\n• 7e \nmodèle,\
+    \ —, 2, —, 2, —, 2, —, 2, 1, 8 700 po"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Collier%20%c3%a0%20boules%20de%20feu.ashx
   
 - Nom: Collier d'adaptation
@@ -10386,31 +10374,20 @@
   NLS: 13
   Conditions: Création d'objets merveilleux, convocation de monstres VI
   Coût: 25 000 po
-  Description: 'Il existe 4 variété de corne mais chacune paraît normale tant que
-    l’on a pas prononcé le mot de commande qui lui est associé et que l’on a pas soufflé
-    dedans. Une corne du Valhalla invoque des barbares humains qui combattront aux
-    côtés de l’invocateur. Chaque corne ne peut retentir qu’une fois tous les 7 jours.
-    Lancez 1d100 et référez-vous à la table ci-dessous. Si l’invocateur ne satisfait
-    pas aux conditions d’utilisation de la corne, les barbares s’en prennent à lui
-    directement en l’attaquant.
-
-
-    Les barbares invoqués sont des fabrications (et pas de véritables êtres vivants).
-    Ils apparaissent équipés et combattent les ennemis de l’invocateur jusqu’à ce
-    qu’ils soient morts ou pendant une heure au maximum.
-
-
-    d100, Corne, Barbares, Condition d’utilisation
-
-    • 01-40, Argent, 2d4+2, niveau 2, Aucune
-
-    • 41-75, Cuivre, 2d4+1, niveau 3, NLS 1
-
-    • 76-90, Bronze, 2d4, niveau 4, Formé au maniement des armes de guerre ou capacité
-    de représentation bardique
-
-    • 91-100, Acier, 1d4+1, niveau 5, Formé au maniement des armes de guerre ou capacité
-    de représentation bardique'
+  Description: "Il existe 4 variété de corne mais chacune paraît normale tant que\
+    \ l’on a pas prononcé le mot de commande qui lui est associé et que l’on a pas\
+    \ soufflé dedans. Une corne du Valhalla invoque des barbares humains qui combattront\
+    \ aux côtés de l’invocateur. Chaque corne ne peut retentir qu’une fois tous les\
+    \ 7 jours. Lancez 1d100 et référez-vous à la table ci-dessous. Si l’invocateur\
+    \ ne satisfait pas aux conditions d’utilisation de la corne, les barbares s’en\
+    \ prennent à lui directement en l’attaquant.\n\nLes barbares invoqués sont des\
+    \ fabrications (et pas de véritables êtres vivants). Ils apparaissent équipés\
+    \ et combattent les ennemis de l’invocateur jusqu’à ce qu’ils soient morts ou\
+    \ pendant une heure au maximum.\n\nd100, Corne, Barbares, Condition d’utilisation\n\
+    • 01-40, Argent, 2d4+2,\n niveau 2, Aucune\n• 41-75, Cuivre, 2d4+1,\n niveau 3,\
+    \ NLS 1\n• 76-90, Bronze, 2d4,\n niveau 4, Formé au maniement des armes de guerre\n\
+    \ ou capacité de représentation bardique\n• 91-100, Acier, 1d4+1,\n niveau 5,\
+    \ Formé au maniement des armes de guerre\n ou capacité de représentation bardique"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cor%20du%20Valhalla.ashx
   
 - Nom: Corbeau de jade noir
@@ -10516,7 +10493,7 @@
     un étrange gémissement à vous retourner l’estomac à chaque fois qu’on en sonne.
     Un personnage qui dispose du pouvoir ennemi juré peut souffler dedans par une
     action simple pour hébéter un type d’ennemi juré dans un rayon de 30 mètres (20
-    ) pour une durée de 1d4 rounds (jet de Volonté DD 13 pour annuler). Les créatures
+    c) pour une durée de 1d4 rounds (jet de Volonté DD 13 pour annuler). Les créatures
     souffrent d’un malus au jet de sauvegarde égal au bonus d’ennemi juré dont le
     personnage dispose contre elles. C’est un effet mental sonore. Les créatures qui
     n’entendent pas la corne sont immunisées contre ses effets. La magie de la corne
@@ -10558,7 +10535,7 @@
     lui donne plus l’air d’une énorme pipe que d’un instrument de chasse. Une fois
     par jour, une personne doté du pouvoir de classe pacte du chasseur (compagnons)
     peut souffler dans la corne par une action simple pour accorder à tous les alliés
-    qui se trouvent dans un rayon de 9 mètres (6), l’entendent et la voient, la totalité
+    qui se trouvent dans un rayon de 9 mètres (6c), l’entendent et la voient, la totalité
     de son bonus d’ennemi juré (au lieu de la moitié). Cet effet dure 1 minute.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corne%20du%20grand%20veneur.ashx
   
@@ -10703,57 +10680,28 @@
   NLS: 10
   Conditions: Création d'objets merveilleux, mur de force
   Coût: 31 000 po
-  Description: 'Cet objet de la taille d’un dé à jouer (environ deux centimètres
-    d’arête) peut être taillé dans l’ivoire, l’os, ou dans tout minéral suffisamment
-    dur. Il permet de faire apparaître autour de son possesseur un mur de force de
-    forme cubique. Chaque face de ce champ de force fait trois mètres de côté. L’écran
-    se déplace avec le personnage et l’immunise contre les attaques indiquées ci-dessous,
-    selon le réglage choisi. Le cube possède 36 charges, restaurées au début de chaque
-    journée. Le personnage doit presser une des faces du cube pour activer ou désactiver
-    le mur de force. Le propriétaire du cube en presse une face pour activer un type
-    d’écran ou pour désactiver un écran en place. Chaque effet coûte un certain nombre
-    de charges par minute (ou portion de minute) d’utilisation. Tant qu’un écran est
-    actif, la vitesse de son porteur est limitée à la valeur indiquée dans la table.
-
-
-    Quand le mur de force est activé, toute attaque infligeant plus de 30 points de
-    dégâts oblige le cube à dépenser 1 charge additionnelle pour chaque tranche de
-    10 points de dégâts supplémentaires.
-
-
-    Face du cube, Charges par minute, Vitesse max., Effet
-
-    • 1, 1, 9 m, Protège du gaz, des vents, etc.
-
-    • 2, 2, 6 m, Protège de la matière non-vivante
-
-    • 3, 3, 4,50 m, Protège de la matière vivante
-
-    • 4, 4, 3 m, Protège de la magie
-
-    • 5, 6, 3 m, Protège de tout
-
-    • 6, 0, Normale, Désactive le cube
-
-
-
-    Les sorts qui affectent l’intégrité physique du cube coûte également des charges
-    à celui-ci.
-
-
-    Sort ou effet, Charges supplémentaires
-
-    • Cor de dévastation, 6
-
-    • Désintégration, 6
-
-    • Mur de feu, 2
-
-    • Passe-muraille, 3
-
-    • Porte de phase, 5
-
-    • Rayons prismatiques, 7'
+  Description: "Cet objet de la taille d’un dé à jouer (environ deux centimètres\
+    \ d’arête) peut être taillé dans l’ivoire, l’os, ou dans tout minéral suffisamment\
+    \ dur. Il permet de faire apparaître autour de son possesseur un mur de force\
+    \ de forme cubique. Chaque face de ce champ de force fait trois mètres de côté.\
+    \ L’écran se déplace avec le personnage et l’immunise contre les attaques indiquées\
+    \ ci-dessous, selon le réglage choisi. Le cube possède 36 charges, restaurées\
+    \ au début de chaque journée. Le personnage doit presser une des faces du cube\
+    \ pour activer ou désactiver le mur de force. Le propriétaire du cube en presse\
+    \ une face pour activer un type d’écran ou pour désactiver un écran en place.\
+    \ Chaque effet coûte un certain nombre de charges par minute (ou portion de minute)\
+    \ d’utilisation. Tant qu’un écran est actif, la vitesse de son porteur est limitée\
+    \ à la valeur indiquée dans la table.\n\nQuand le mur de force est activé, toute\
+    \ attaque infligeant plus de 30 points de dégâts oblige le cube à dépenser 1 charge\
+    \ additionnelle pour chaque tranche de 10 points de dégâts supplémentaires.\n\n\
+    Face \ndu cube, Charges \npar minute, Vitesse \nmax., Effet\n• 1, 1, 9 m, Protège\
+    \ du gaz, des vents, etc.\n• 2, 2, 6 m, Protège de la matière non-vivante\n• 3,\
+    \ 3, 4,50 m, Protège de la matière vivante\n• 4, 4, 3 m, Protège de la magie\n\
+    • 5, 6, 3 m, Protège de tout\n• 6, 0, Normale, Désactive le cube\n\n\nLes sorts\
+    \ qui affectent l’intégrité physique du cube coûte également des charges à celui-ci.\n\
+    \nSort ou effet, Charges supplémentaires\n• Cor de dévastation, 6\n• Désintégration,\
+    \ 6\n• Mur de feu, 2\n• Passe-muraille, 3\n• Porte de phase, 5\n• Rayons prismatiques,\
+    \ 7"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cube%20de%20force.ashx
   
 - Nom: Cube de résistance au froid
@@ -10865,7 +10813,7 @@
   Coût: 10 000 po
   Description: 'Ce mince diadème d’argent est généralement serti d’une pierre de
     lune ou gravé d’un croissant. Son porteur bénéficie de la vision dans le noir
-    à 18 mètres (12 ) (s’il ne l’avait pas déjà). Ses avantages supplémentaires ne
+    à 18 mètres (12 c) (s’il ne l’avait pas déjà). Ses avantages supplémentaires ne
     servent qu’aux lanceurs de sorts profanes.
 
 
@@ -11021,10 +10969,10 @@
     de flotter, bien qu’il soit ballonné. Il gagne un bonus de compétence de +4 à
     ses tests d’Acrobaties pour faire des sauts en longueur ou en hauteur, et à ses
     tests de Natation pendant 1 heure au maximum après consommation de l’élixir. Par
-    une action simple, le buveur peut souffler une bourrasque de 4,5 mètres (3 ) de
-    long. Le buveur peut souffler jusqu’à 3 bourrasques, après quoi l’effet de l’élixir
-    se décharge et les bonus de compétence se terminent. Les bourrasques inutilisées
-    se dissipent au bout d’une heure.
+    une action simple, le buveur peut souffler une bourrasque de 4,5 mètres (3 c)
+    de long. Le buveur peut souffler jusqu’à 3 bourrasques, après quoi l’effet de
+    l’élixir se décharge et les bonus de compétence se terminent. Les bourrasques
+    inutilisées se dissipent au bout d’une heure.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89lixir%20dexhalation%20imp%c3%a9rieuse.ashx
   
 - Nom: Encens de destins multiples
@@ -11100,16 +11048,16 @@
     \ de porteur, mais s’il est renversé ou touché \npar un ennemi, il perd son utilité\
     \ jusqu’à ce qu’il soit récupéré et \nreplanté par les alliés de son propriétaire.\n\
     DÉSESPOIR. Les ennemis du porteur de l’étendard de guerre hobgobelin du désespoir\
-    \ sont fiévreux dans un rayon de 18 mètres (12 ) de la bannière. Un ennemi qui\
+    \ sont fiévreux dans un rayon de 18 mètres (12 c) de la bannière. Un ennemi qui\
     \ essuie un coup critique alors qu’il est fiévreux à cause de l’étendard doit\
     \ réussir un jet de Volonté (DD 15) ou être hébété pendant 1 round.\nFÉROCITÉ.\
     \ Les alliés du porteur de l’étendard de guerre hobgobelin de férocité bénéficient\
     \ d’un bonus de moral de +2 à leurs jets d’attaque, à leurs jets de dégâts et\
     \ à leurs jets de sauvegarde contre les effets mentaux tant qu’ils sont dans un\
-    \ rayon de 18 mètres (12 ) de la bannière.\nVOLONTÉ DE FER. Les alliés du porteur\
+    \ rayon de 18 mètres (12 c) de la bannière.\nVOLONTÉ DE FER. Les alliés du porteur\
     \ de l’étendard de guerre hobgobelin de volonté de fer gagnent 10 points de vie\
     \ temporaires et bénéficient des avantages du don Dur à cuire tant qu’ils sont\
-    \ dans un rayon de 9 mètres (6 ) de la bannière. Les points de vie temporaires\
+    \ dans un rayon de 9 mètres (6 c) de la bannière. Les points de vie temporaires\
     \ ne peuvent être gagnés qu’une fois par jour par créature."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tendard%20de%20guerre%20hobgobelin.ashx
   
@@ -11610,7 +11558,7 @@
     d’attaque et de dégâts. La durée de l’effet dépend du bonus désiré.
 
 
-    • bonus, Durée
+    bonus, Durée
 
     • +4, 1 round
 
@@ -11889,7 +11837,7 @@
   Description: Le propriétaire de ces gants de fin cuir blanc peut les presser contre
     une surface ou un objet, par une action simple, et laisser une empreinte lumineuse.
     Elle brille de la couleur souhaitée par le personnage, émet autant de lumière
-    qu’une chandelle et on la voit facilement jusqu’à 18 mètres (12 ). Ces empreintes
+    qu’une chandelle et on la voit facilement jusqu’à 18 mètres (12 c). Ces empreintes
     luisent 1 jour avant de disparaître. L’empreinte luisante correspond à la main
     du personnage en termes de taille, de position des doigts, etc.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gants%20luisants.ashx
@@ -12061,7 +12009,7 @@
     possède le pouvoir de classe représentation bardique, il peut l’utiliser pour
     jouer un chant funeste même si, en théorie, il n’a pas le niveau suffisant pour
     le faire. Un barde capable de jouer un chant funeste qui utilise cette harpe pendant
-    sa prestation fait passer le rayon d’effet du chant à 18 mètres (12 ).
+    sa prestation fait passer le rayon d’effet du chant à 18 mètres (12 c).
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Harpe%20du%20destin.ashx
   
 - Nom: Havresac
@@ -12175,7 +12123,7 @@
     comme un sort de convocation d’ombres. En outre, une fois par jour, la lanterne
     peut, sur commande, solidifier les ombres pour un court moment. Ces ombres solidifiées
     obligent les créatures intangibles situées dans le rayon de lumière de la lanterne
-    (9 mètres [6 ]) à fusionner en une forme semi-physique, comme le sort requiem
+    (9 mètres [6 c]) à fusionner en une forme semi-physique, comme le sort requiem
     pour les fantômes de groupe.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lanterne%20dombres%20dansantes.ashx
   
@@ -12383,8 +12331,8 @@
   Description: La lanière de cuir fixée sur ces lentilles bulbeuses permet à leur
     propriétaire de les adapter à sa tête. Il peut alors faire des attaques sournoises
     à distance, quel que soit l’éloignement de sa cible, pas seulement si elle se
-    trouve à moins de 9 mètres (6 ). Quand il fait une attaque sournoise à distance
-    dans un rayon de 9 mètres (6 ), il gagne un bonus de circonstance de +2 sur chaque
+    trouve à moins de 9 mètres (6 c). Quand il fait une attaque sournoise à distance
+    dans un rayon de 9 mètres (6 c), il gagne un bonus de circonstance de +2 sur chaque
     dé de dégâts de l’attaque sournoise.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lunettes%20de%20sniper.ashx
   
@@ -12640,7 +12588,7 @@
     d’adopter la forme de n’importe quel humanoïde de sous-type géant. Le masque mineur
     permet de se changer en ogre, troll, géant du feu, géant du froid et géant des
     pierres. Si la forme choisie possède l’un des pouvoirs suivants, le personnage
-    en profite également : vision dans le noir à 18 mètres (12 ), vision nocturne,
+    en profite également : vision dans le noir à 18 mètres (12 c), vision nocturne,
     odorat. Sous forme de géant, le personnage bénéficie d’un bonus de taille de +4
     à la Force, d’un bonus d’armure naturelle de 1 et subit un malus de Dextérité
     de -2.
@@ -12650,7 +12598,7 @@
     supplémentaires. Si la forme de géant dispose de l’un des pouvoirs suivants, le
     personnage en profite aussi : éventration (2d6 points de dégâts), régénération
     5 (acide ou feu), réception de rocher, lancer de rocher (facteur de portée de
-    18 mètres (12 ), 2d6 points de dégâts). Si le géant choisi possède une résistance
+    18 mètres (12 c), 2d6 points de dégâts). Si le géant choisi possède une résistance
     ou une immunité contre un type d’énergie, le personnage obtient une résistance
     de 20 contre ce type d’énergie quand il revêt la forme de ce géant. Si le géant
     est vulnérable à un type d’énergie, il en va de même pour le personnage transformé.
@@ -12944,7 +12892,7 @@
     sur le visage d’une créature. Une fois la peinture de guerre appliquée, le personnage
     peut lui demander, par une action rapide, de se disposer en un mélange de couleurs
     inquiétant qui lui donne momentanément une apparence hideuse et dérangeante. Il
-    choisit une créature située dans les 9 mètres (6 ) susceptible de voir son visage
+    choisit une créature située dans les 9 mètres (6 c) susceptible de voir son visage
     peint et l’affecte d’un sort de frayeur (DD 11). Une fois la peinture ainsi utilisée,
     elle perd toute magie et redevient une peinture ordinaire. Une fois la peinture
     appliquée, le personnage a 24 heures pour utiliser sa magie, après quoi, elle
@@ -12967,9 +12915,16 @@
     même un bâton. Il n’a aucun effet s’il n’est pas attaché ainsi. Le pennon de chevalier
     accorde différents avantages en fonction de sa couleur et de son dessin.
 
+    • Honneur. Le pennon d’honneur de chevalier doré permet à son porteur de bénéficier
+    d’une protection contre le Mal une fois par jour.
 
-    Honneur. Le pennon d’honneur de chevalier doré permet à son porteur de bénéficier
-    d’une protection contre le Mal une fois par jour.'
+    • Bataille. Le pennon de bataille de chevalier rouge permet à son porteur de bénéficier
+    d’héroïsme une fois par jour.
+
+    • Pourparlers. Quand le personnage hisse son pennon de pourparlers de chevalier
+    blanc alors qu’il se rend à des négociations, il bénéficie d’un bonus d’altération
+    de +4 aux tests de Bluff, de Diplomatie, d’Intimidation et de Psychologie pendant
+    1 heure, tant qu’il n’entreprend pas d’action hostile.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pennon%20du%20chevalier.ashx
   
 - Nom: Perle de thaumaturge
@@ -13703,9 +13658,9 @@
   Description: 'Cette précieuse robe a l’air on ne peut plus ordinaire tant que
     quelqu’un ne l’enfile pas. À partir de ce moment, son porteur est capable de voir
     dans toutes les directions à la fois, grâce aux dizaines d’yeux magiques qui ornent
-    la robe. Il bénéficie également de vision dans le noir (jusqu’à 36 m (24 ) de
+    la robe. Il bénéficie également de vision dans le noir (jusqu’à 36 m (24 c) de
     portée) et voit les créatures et objets invisibles ou éthérés à la même distance
-    (36 m/24 )).
+    (36 m/24 c)).
 
 
     La robe de vision totale confère également un bonus d’aptitude de +10 aux tests
@@ -13764,7 +13719,7 @@
     les environs. Une fois le mot de commande prononcé, la robe se pare de couleurs
     au bout de 1 round. Pour commencer, les arcs-en-ciel qui se succèdent à la surface
     de la robe constituent l’équivalent d’une attaque de regard dans un rayon de 9
-    m (6 ). Toutes les créatures tournées vers le personnage sont hébétées pendant
+    m (6 c). Toutes les créatures tournées vers le personnage sont hébétées pendant
     1d4+1 rounds (jet de Volonté de DD 16 pour annuler). Il s’agit là d’un effet mental
     de type mirage.
 
@@ -13776,7 +13731,7 @@
     de 50 %, correspondant à un camouflage total).
 
 
-    Enfin, la robe éclaire dans une zone de 9 m (6 ) de rayon.
+    Enfin, la robe éclaire dans une zone de 9 m (6 c) de rayon.
 
 
     La robe prismatique ne peut pas fonctionner plus de 10 rounds par jour, en continu
@@ -13841,13 +13796,13 @@
 
     • (poids), (volume)
 
-    • 1er modèle, 7,5 kg, 125 kg, 1,25 m3, 2 500 po
+    • 1er modèle, 7,5 kg, 125 kg, 1,25 m, 2 500 po
 
-    • 2e modèle, 12,5 kg, 250 kg, 2,5 m3, 5 000 po
+    • 2e modèle, 12,5 kg, 250 kg, 2,5 m, 5 000 po
 
-    • 3e modèle, 17,5 kg, 500 kg, 5 m3, 7 400 po
+    • 3e modèle, 17,5 kg, 500 kg, 5 m, 7 400 po
 
-    • 4e modèle, 30 kg, 750 kg, 7,5 m3, 10 000 po
+    • 4e modèle, 30 kg, 750 kg, 7,5 m, 10 000 po
 
 
 
@@ -13887,10 +13842,10 @@
     connecté au plan des Ombres. Trois fois par jour, par une action de mouvement,
     le porteur peut plonger la main dans le sac et en retirer 1d4 éclats semi-solides
     d’ombre. Le porteur du sac peut utiliser chacun de ces éclats d’ombre comme une
-    arme de jet ciblant une seule case de 1,5 mètre (1 ) de côté. Lorsque son attaque
+    arme de jet ciblant une seule case de 1,5 mètre (1 c) de côté. Lorsque son attaque
     réussit, l’éclat agit comme un sort de ténèbres, mais affecte uniquement la case
     de 1,5 mètre de côté. Par une action de mouvement, le porteur du sac peut déplacer
-    un nuage d’ombre jusqu’à 3 mètres (2 ) dans n’importe quelle direction. Que ces
+    un nuage d’ombre jusqu’à 3 mètres (2 c) dans n’importe quelle direction. Que ces
     éclats d’ombre et nuages d’ombre soient projetés ou non, ils durent 10 minutes
     avant de se dissiper.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sacoche%20de%20nuages%20dombre.ashx
@@ -13910,7 +13865,7 @@
     \ l’observe de plus près, elle est pleine de couteaux, de rouages, de pioches,\
     \ de pelles et de flèches. Une fois par jour, par une action complexe, le porteur\
     \ peut commander au sac de créer n’importe quel piège mécanique de FP 4 ou moins\n\
-    \ qui apparaît à l’emplacement désigné dans un rayon de 15 mètres (10 ). Le porteur\
+    \ qui apparaît à l’emplacement désigné dans un rayon de 15 mètres (10 c). Le porteur\
     \ doit réussir un test d’Artisanat(pièges) d’un DD égal au DD normal de création\
     \ du piège. \nS’il réussit, le piège fusionne instantanément avec la zone choisie,\
     \ exactement comme si quelqu’un avait construit ce piège à cet endroit. S’il rate\
@@ -14064,7 +14019,7 @@
     \ et pourra de nouveau servir ultérieurement.\n\nCHÈVRES D’IVOIRE. (Transmutation]\
     \ modérée ; NLS 11  Création d'objets merveilleux, animation d’objets) Ces statuettes\
     \ vont par trois, légèrement différentes les unes des autres. Les fonctions de\
-    \ chacune sont les suivantes :\nChèvre de la terreur. Quand son possesseur prononce\
+    \ chacune sont les suivantes :\n• Chèvre de la terreur. Quand son possesseur prononce\
     \ le mot de commande, cette statuette se transforme en une monture possédant les\
     \ mêmes caractéristiques qu’un cheval léger, n’en différent que sur le plan de\
     \ l’apparence. Ses cornes sont détachables, et son cavalier peut s’en servir d’armes.\
@@ -14072,72 +14027,84 @@
     \ +5. En situation de combat, cette chèvre dégage une aura de Terreur dans un\
     \ rayon de 9 m (comme le sort du même nom, jet de Volonté DD 15 pour effet partiel).\
     \ On peut s’en servir une fois tous les quinze jours, pour un maximum de trois\
-    \ heures à chaque fois.\nCHIEN D’ONYX. (Transmutation modérée ; NLS 11  Création\
-    \ d'objets merveilleux, animation d’objets) Cette statuette, lorsque le mot de\
-    \ commande est prononcé, se transforme en chien possédant les caractéristiques\
-    \ d’un chien de selle, si ce n’est qu’il a une valeur d’Intelligence de 8, qu’il\
-    \ peut communiquer en commun et qu’il possède des facultés visuelles et olfactives\
-    \ hors du commun (il a le pouvoir spécial odorat et bénéficie d’un bonus de +4\
-    \ aux tests de Perception). Enfin, il dispose de la vision dans le noir (jusqu’à\
-    \ 18 m) et voit l’invisible (comme à l’aide du sort détection de l’invisibilité).\
-    \ On peut l’appeler une fois par semaine, pour une période de six heures maximum.\
-    \ Il n’obéit qu’à son maître. \n\nCORBEAU D’ARGENT. (Enchantement et Transmutation\
-    \ modérés ; NLS 6  Création d'objets merveilleux, animation d’objets, messager\
-    \ animal) Cette statuette, lorsque le mot de commande est prononcé, se transforme\
-    \ en corbeau mais conserve sa consistance métallique (ce qui lui confère une solidité\
-    \ de 10). Un autre mot de commande permet de l’envoyer délivrer un message, comme\
-    \ tout animal affecté par le sort messager animal. En dehors de cela, il obéit\
-    \ aux ordres de son maître mais ne possède pas de pouvoirs spéciaux ni de facultés\
-    \ télépathiques. La statuette peut rester en corbeau pour un total de vingt-quatre\
-    \ heures par semaine, durée qui n’est pas nécessairement continue. \n\nDESTRIER\
-    \ D’OBSIDIENNE. (Invocation et Transmutation modérées ; NLS 15  Création d'objets\
-    \ merveilleux, animation d’objets, changement de plan, forme éthérée, vol supérieur)\
-    \ Cette statuette est à la base un petit bloc informe de pierre noire. Il faut\
-    \ l’étudier de près pour se rendre compte qu’elle ressemble vaguement à une sorte\
-    \ de quadrupède. Toutefois, dès que le mot de commande est prononcé, elle se transforme\
-    \ en monture fantastique. Ses caractéristiques sont les mêmes que celles d’un\
-    \ cheval lourd, si ce n’est qu’elle peut également utiliser les pouvoirs suivants,\
-    \ à volonté et au rythme d’un par round : vol supérieur, changement de plan et\
-    \ forme éthérée. Le destrier accepte d’être monté, mais dans le cas où son cavalier\
-    \ est d’alignement Bon, le destrier a 10 % de chances par utilisation de l’amener\
-    \ contre son gré dans l’un des plans inférieurs et de s’y retransformer automatiquement\
-    \ en statuette. On peut faire appel au destrier d’obsidienne une fois par semaine,\
-    \ pour un maximum de vingt-quatre heures d’usage continu. Si la monture passe\
-    \ dans le plan Éthéré ou change de plan, son cavalier la suit. Cette statuette\
-    \ permet donc de se déplacer entre les plans. \n\nÉLÉPHANT DE MARBRE.  (Transmutation\
-    \ modérée ; NLS 11  Création d'objets merveilleux, animation d’objets) Cette statuette\
-    \ est de loin la plus grande de toutes, sa taille équivalant à peu près à celle\
-    \ d’une main. Dès que son possesseur prononce le mot de commande, elle grandit\
-    \ rapidement et se transforme en éléphant. L’animal obéit fidèlement à son maître,\
-    \ que celui-ci s’en serve de bête de somme, de monture ou d’allié au combat. Le\
-    \ pouvoir de la statuette peut être utilisé jusqu’à quatre fois par mois, pour\
-    \ une durée maximale de vingt-quatre heures à chaque fois. \n\nGRIFFON DE BRONZE.\
-    \ (Transmutation modérée ; NLS 11  Création d'objets merveilleux, animation d’objets)\
-    \ Une fois animé, le griffon de bronze se comporte en tout point comme un griffon\
-    \ normal, obéissant au propriétaire de la statuette. On peut faire appel à lui\
-    \ deux fois par semaine, pour un maximum de six heures à chaque fois. Quand cette\
-    \ durée est écoulée (ou le mot de commande prononcé), le griffon de bronze se\
-    \ retransforme en minuscule statuette. \n\nHIBOU DE CHRYSOLITE. (Transmutation\
-    \ modérée ; NLS 11  Création d'objets merveilleux, animation d’objets) En fonction\
-    \ du mot de commande utilisé, cette statuette peut se transformer en grand duc\
-    \ ou en hibou géant (utilisez les caractéristiques de l’aigle géant). La transformation\
-    \ peut s’effectuer une fois par jour, pour une durée maximale de huit heures à\
-    \ chaque fois. Néanmoins, la statuette perd tout son pouvoir après trois transformations\
-    \ en hibou géant. Le grand duc communique par télépathie avec son maître, l’informant\
-    \ de tout ce qu’il voit ou entend. \n\nLIONS D’OR. (Transmutation modérée ; NLS\
-    \ 11  Création d'objets merveilleux, animation d’objets) Ces statuettes vont par\
-    \ paire. Quand le mot de commande est prononcé, elles donnent naissance à deux\
-    \ lions adultes. Si ceux-ci meurent au combat, il est impossible de les rappeler\
-    \ tant qu’une semaine entière n’est pas écoulée. Dans le cas contraire, ils peuvent\
-    \ être utilisés une fois par jour, pour une heure maximum. Ils se transforment\
-    \ en statuettes ou en lions dès que leur propriétaire prononce le mot de commande.\
-    \ \n\nMOUCHE D’ÉBÈNE. (Transmutation modérée ; NLS 11  Création d'objets merveilleux,\
-    \ animation d’objets) Quand on l’anime, la mouche d’ébène devient une mouche grosse\
-    \ comme un poney, et dont les caractéristiques sont celles d’un pégase. Elle est\
-    \ incapable de combattre. Elle peut être utilisée trois fois par semaine, pour\
-    \ un maximum de douze heures à chaque fois. Quand ce laps de temps est écoulé\
-    \ (ou quand le mot de commande est prononcé), la mouche d’ébène se retransforme\
-    \ en minuscule statuette."
+    \ heures à chaque fois.\n• Chèvre des titans. Cette statuette se transforme en\
+    \ chèvre monstrueuse, plus grosse qu’un taureau et dont les caractéristiques sont\
+    \ les mêmes que celles d’un destrier noir, en dehors du fait qu’elle est également\
+    \ à même de combattre à l’aide de ses cornes acérées (deux attaques supplémentaires,\
+    \ infligeant 1d8+4 points de dégâts chacune). Si la chèvre charge, elle ne peut\
+    \ attaquer qu’à l’aide de ses cornes, mais si elle touche, elle bénéficie d’un\
+    \ bonus de +6 points de dégâts à chaque coup au but. Elle ne peut être appelée\
+    \ qu’une fois par mois, et pour douze heures seulement.\n• Chèvre de voyage. Cette\
+    \ statuette se transforme en monture rapide et résistante à l’effort, dont les\
+    \ caractéristiques sont les mêmes que celles d’un cheval lourd, même si son apparence\
+    \ diffère sensiblement. Elle peut voyager un maximum d’un jour par semaine, en\
+    \ continu ou par périodes ne dépassant pas un total de vingt-quatre heures. Une\
+    \ fois ce temps écoulé, elle retrouve sa forme de statuette pendant au moins vingt-quatre\
+    \ heures.\n\nCHIEN D’ONYX. (Transmutation modérée ; NLS 11  Création d'objets\
+    \ merveilleux, animation d’objets) Cette statuette, lorsque le mot de commande\
+    \ est prononcé, se transforme en chien possédant les caractéristiques d’un chien\
+    \ de selle, si ce n’est qu’il a une valeur d’Intelligence de 8, qu’il peut communiquer\
+    \ en commun et qu’il possède des facultés visuelles et olfactives hors du commun\
+    \ (il a le pouvoir spécial odorat et bénéficie d’un bonus de +4 aux tests de Perception).\
+    \ Enfin, il dispose de la vision dans le noir (jusqu’à 18 m) et voit l’invisible\
+    \ (comme à l’aide du sort détection de l’invisibilité). On peut l’appeler une\
+    \ fois par semaine, pour une période de six heures maximum. Il n’obéit qu’à son\
+    \ maître. \n\nCORBEAU D’ARGENT. (Enchantement et Transmutation modérés ; NLS 6\
+    \  Création d'objets merveilleux, animation d’objets, messager animal) Cette statuette,\
+    \ lorsque le mot de commande est prononcé, se transforme en corbeau mais conserve\
+    \ sa consistance métallique (ce qui lui confère une solidité de 10). Un autre\
+    \ mot de commande permet de l’envoyer délivrer un message, comme tout animal affecté\
+    \ par le sort messager animal. En dehors de cela, il obéit aux ordres de son maître\
+    \ mais ne possède pas de pouvoirs spéciaux ni de facultés télépathiques. La statuette\
+    \ peut rester en corbeau pour un total de vingt-quatre heures par semaine, durée\
+    \ qui n’est pas nécessairement continue. \n\nDESTRIER D’OBSIDIENNE. (Invocation\
+    \ et Transmutation modérées ; NLS 15  Création d'objets merveilleux, animation\
+    \ d’objets, changement de plan, forme éthérée, vol supérieur) Cette statuette\
+    \ est à la base un petit bloc informe de pierre noire. Il faut l’étudier de près\
+    \ pour se rendre compte qu’elle ressemble vaguement à une sorte de quadrupède.\
+    \ Toutefois, dès que le mot de commande est prononcé, elle se transforme en monture\
+    \ fantastique. Ses caractéristiques sont les mêmes que celles d’un cheval lourd,\
+    \ si ce n’est qu’elle peut également utiliser les pouvoirs suivants, à volonté\
+    \ et au rythme d’un par round : vol supérieur, changement de plan et forme éthérée.\
+    \ Le destrier accepte d’être monté, mais dans le cas où son cavalier est d’alignement\
+    \ Bon, le destrier a 10 % de chances par utilisation de l’amener contre son gré\
+    \ dans l’un des plans inférieurs et de s’y retransformer automatiquement en statuette.\
+    \ On peut faire appel au destrier d’obsidienne une fois par semaine, pour un maximum\
+    \ de vingt-quatre heures d’usage continu. Si la monture passe dans le plan Éthéré\
+    \ ou change de plan, son cavalier la suit. Cette statuette permet donc de se déplacer\
+    \ entre les plans. \n\nÉLÉPHANT DE MARBRE.  (Transmutation modérée ; NLS 11  Création\
+    \ d'objets merveilleux, animation d’objets) Cette statuette est de loin la plus\
+    \ grande de toutes, sa taille équivalant à peu près à celle d’une main. Dès que\
+    \ son possesseur prononce le mot de commande, elle grandit rapidement et se transforme\
+    \ en éléphant. L’animal obéit fidèlement à son maître, que celui-ci s’en serve\
+    \ de bête de somme, de monture ou d’allié au combat. Le pouvoir de la statuette\
+    \ peut être utilisé jusqu’à quatre fois par mois, pour une durée maximale de vingt-quatre\
+    \ heures à chaque fois. \n\nGRIFFON DE BRONZE. (Transmutation modérée ; NLS 11\
+    \  Création d'objets merveilleux, animation d’objets) Une fois animé, le griffon\
+    \ de bronze se comporte en tout point comme un griffon normal, obéissant au propriétaire\
+    \ de la statuette. On peut faire appel à lui deux fois par semaine, pour un maximum\
+    \ de six heures à chaque fois. Quand cette durée est écoulée (ou le mot de commande\
+    \ prononcé), le griffon de bronze se retransforme en minuscule statuette. \n\n\
+    HIBOU DE CHRYSOLITE. (Transmutation modérée ; NLS 11  Création d'objets merveilleux,\
+    \ animation d’objets) En fonction du mot de commande utilisé, cette statuette\
+    \ peut se transformer en grand duc ou en hibou géant (utilisez les caractéristiques\
+    \ de l’aigle géant). La transformation peut s’effectuer une fois par jour, pour\
+    \ une durée maximale de huit heures à chaque fois. Néanmoins, la statuette perd\
+    \ tout son pouvoir après trois transformations en hibou géant. Le grand duc communique\
+    \ par télépathie avec son maître, l’informant de tout ce qu’il voit ou entend.\
+    \ \n\nLIONS D’OR. (Transmutation modérée ; NLS 11  Création d'objets merveilleux,\
+    \ animation d’objets) Ces statuettes vont par paire. Quand le mot de commande\
+    \ est prononcé, elles donnent naissance à deux lions adultes. Si ceux-ci meurent\
+    \ au combat, il est impossible de les rappeler tant qu’une semaine entière n’est\
+    \ pas écoulée. Dans le cas contraire, ils peuvent être utilisés une fois par jour,\
+    \ pour une heure maximum. Ils se transforment en statuettes ou en lions dès que\
+    \ leur propriétaire prononce le mot de commande. \n\nMOUCHE D’ÉBÈNE. (Transmutation\
+    \ modérée ; NLS 11  Création d'objets merveilleux, animation d’objets) Quand on\
+    \ l’anime, la mouche d’ébène devient une mouche grosse comme un poney, et dont\
+    \ les caractéristiques sont celles d’un pégase. Elle est incapable de combattre.\
+    \ Elle peut être utilisée trois fois par semaine, pour un maximum de douze heures\
+    \ à chaque fois. Quand ce laps de temps est écoulé (ou quand le mot de commande\
+    \ est prononcé), la mouche d’ébène se retransforme en minuscule statuette."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Statuette%20merveilleuse.ashx
   
 - Nom: Submersible du crabe
@@ -14784,9 +14751,9 @@
   Coût: 5 820 po
   Description: Le fer de cette grande hache acérée +1 est taillé dans un bloc d’obsidienne
     noir de jais. Quand son utilisateur charge un ennemi, il reçoit un bonus d’altération
-    de +3 mètres (2 ) à sa vitesse pour le round. Une fois par jour, il peut ordonner
+    de +3 mètres (2 c) à sa vitesse pour le round. Une fois par jour, il peut ordonner
     à la hache de donner, pour un round, un bonus d’altération de +3 mètres à la vitesse
-    à tous les alliés situés à moins de 9 mètres (6 ).
+    à tous les alliés situés à moins de 9 mètres (6 c).
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grande%20hache%20rapide%20en%20obsidienne.ashx
   
 - Nom: Griffes métalliques de lacération
@@ -14882,7 +14849,7 @@
   Description: 'Ce sceptre fonctionne comme une masse d’armes légère +2. Il se présente
     sous la forme d’une masse d’armes légère avec un poing fermé en guise de tête.
     Quand une créature manie cette masse, tous ses alliés situés dans un rayon de
-    6 mètres (4 )  bénéficient d’un bonus de moral de +2 aux jets de sauvegarde contre
+    6 mètres (4 c)  bénéficient d’un bonus de moral de +2 aux jets de sauvegarde contre
     la terreur et les effets d’émotion. Ce bonus passe à +4 si le bénéficiaire est
     un humain.
 
