@@ -1,0 +1,767 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="initial-scale=1" /><title>
+	Le maître espion - Wikis Pathfinder-fr
+</title>
+    <script type="text/javascript">
+        function __GetServerElementById(id) {
+            return document.getElementById(__BaseName + id);
+        }
+        function __RequestConfirm() {
+            return confirm(__ConfirmMessage);
+        }
+    </script>
+	<script type="text/javascript">
+var appInsights=window.appInsights||function(a){
+  function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+  }({
+      instrumentationKey:"0220534a-383b-4901-ac9d-42db01e59904"
+  });
+  
+window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+
+<!-- Start Current Sueetie Framework Version -->
+<meta name="CommunityFramework" content="Sueetie Version 3.2.6064.21024" />
+<!-- End Current Sueetie Framework Version -->
+
+<meta name="keywords" content="esprit fuyant, esprit secret, Maître espion, vol d'identité" /><link rel="canonical" href="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maître espion.ashx" /><script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+<script type="text/javascript" src="JS/SearchHighlight.js"></script>
+<script type="text/javascript" src="JS/tags.js"></script>
+<link rel="stylesheet" href="Themes/v2/Custom.css" type="text/css" />
+<link rel="stylesheet" media="print" href="Themes/v2/Print_Styles.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="Themes/v2/Screen_Styles.css" type="text/css" />
+<link rel="stylesheet" href="Themes/v2/Sueetie.css" type="text/css" />
+<link rel="stylesheet" href="Themes/Editor.css" type="text/css" />
+<link rel="search" href="Search.aspx?OpenSearch=1" type="application/opensearchdescription+xml" title="Wikis Pathfinder-fr - Search" /><script src="Themes/v2/Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="Themes/v2/Icon.ico" type="image/x-icon" />
+<style type="text/css">
+.dropdown { display: inline-block; }
+.dropdown ul { position: absolute; list-style-position: outside; padding: 0 8px 0 18px; margin: 0; }
+.dropdown li { padding: 0; }
+</style>
+<script type="text/javascript">
+$(function() { $(".sousmenu").hide(); });
+$(function() { $("ul.listecachée").hide(); });
+$(function () { $(".opachover").each(function() { setopac(this); }).hover(function() { entre(this); }, function () { sort(this); }); });
+function setopac(o) { var bopac = $(o).css('opacity'); $(o).attr('bopac',bopac); }
+function entre(o) { $(o).animate({opacity : 1}, 250); }
+function sort(o) { var bopac = $(o).attr('bopac'); $(o).animate({opacity : bopac}, 100); }
+function arrayset(a,i,v) { a[i] = v; }
+function arrayget(a,i) { return (a[i]); }
+
+function expandMenu(id) {
+  var target = document.getElementById(id);
+  var bouton = document.getElementById('bouton' + id)
+  if (target.style.display == 'none') {
+    bouton.src = '/images/pathfinder/wiki/BoutonM.jpg';
+    target.opacity = 0;
+    $('#' + id).slideDown('normal');
+  } else {
+    bouton.src = '/images/pathfinder/wiki/BoutonP.jpg';
+    $('#' + id).slideUp('normal');
+  }
+}
+function outButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  bouton.parentNode.parentNode.style.backgroundColor = '';
+}
+function overButton(id) {
+  var bouton = document.getElementById('bouton' + id);
+  var target = document.getElementById(id);
+  if (target.style.display == 'none') {
+    bouton.parentNode.parentNode.style.backgroundColor = '#ffc';
+  }
+}
+function affichemenu(me) {
+  me.children("ul.tag").show();
+  me.children("center").css("background-color","#ffc");
+}
+function cachemenu(me) {
+  me.children("center").css("background-color","");
+  me.children("ul.tag").hide();
+}
+function tableFilter (triggerElement) {
+	var trigger = $(triggerElement);
+	var table = trigger.nextAll("table").first();
+	if (!table) {
+		console.log ("TableFilter: no table found!");
+		return;
+	}
+	var filter = prompt("Entrez le filtre à appliquer (ou rien pour tout afficher; mot1|mot2 pour choix multiple).", "");
+	var reFilter = new RegExp(filter,"i");
+	var rows = table.find("tr").filter(function () {
+		return $(this).children("th").length == 0;
+	});
+	rows.each(function () {
+		var inner = $(this).html();
+		var keep = inner.match(reFilter) != null;
+		$(this).css("display", keep ? "table-row" : "none");
+	});
+	trigger.attr("title","Filtre actuel : " + (filter == "" ? "aucun" : filter)
+		+ " - cliquez pour changer le filtre");
+}
+</script><link href="/themes/v2/style/shared.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/wiki.css" rel="stylesheet" type="text/css" />
+<link href="/themes/v2/style/custom.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link rel="stylesheet" href="/themes/v2/style/ie.css" type="text/css" />
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="./Default.aspx?Page=Ma%u00eetre+espion&amp;NS=Pathfinder-RPG" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ3NjA4MDI2DxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEPZBYEAgEPZBYEAgIPDxYEHgtOYXZpZ2F0ZVVybAUTL21lbWJlcnMvbG9naW4uYXNweB4EVGV4dAUUQmllbnZlbnVlLCBJbnZpdMOpICFkZAIKDxYCHgdWaXNpYmxlaGQCEQ9kFgYCGw8PFgIeDUFudGhlbVZpc2libGVoZGQCHQ8PFgIfA2hkZAInDw8WAh8DaGQWAmYPFgIeC18hSXRlbUNvdW50ZmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFF2N0bDAwJFN1ZWV0aWVUYWcyJGN0bDAwHfrFjmNWZ9dADSKArAeuQyH57tw=" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Anthem_FormID = "aspnetForm";
+//]]>
+</script>
+<script src="/Wiki/WebResource.axd?d=2UuhrOV2shRvKT2wLs0VOtGZhxluLYqx-YWP4bCIYaTv-BhNyUEc_CeVK8m16HdZtz6sh7TbsYLxnKeWSb4Ek8lo8pL2qAxO8_yMJR76CUM6U2vI0&amp;t=636884257499503226" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E75476E" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KMATVWwTxDeSeG55XxOj-akfnGQW9yZE_LXoXxd12s9vShRzE-U3xtJnAGsQGM0EI0d-szsDIRy53jifqvThDKmkRmY1" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJsLnCX25ZSAoiYf3kFq7uK+B72oi3QcwxQT+thNGyuuin1sOhb8GcWCCThws9vGuMZiV9/" />
+    <table id="wrapper">
+        <tr>
+            <td id="margin-l" rowspan="2"></td>
+            <td id="page">
+                <div id="header">
+                    <div id="userpanel">
+                        <img class="UserMenuAvatar" onClick="javascript:window.open(&#39;/forum/yaf_profile0.aspx&#39;,&#39;_self&#39;)" src="http://www.pathfinder-fr.org/images/avatars/0t.jpg" style="height:60px;width:60px;border-width:1px;" />
+<ul>
+    <li>
+        <a id="ctl00_UserMenu1_WelcomeLink" href="/members/login.aspx">Bienvenue, Invité !</a>
+    </li>
+    
+    <li>
+        <span>
+                <a href="/members/login.aspx">Connexion</a>
+            </span>
+    </li>
+    <span>
+            <li>
+                <a href="/members/register.aspx">Inscription</a>
+            </li>
+        </span>
+        
+</ul>
+                    </div>
+                    <div id="banner">
+                        <span>Pathfinder-FR</span>
+                    </div>                        
+                    <span><div id="nav">
+  <ul>
+    <li id="HomeTab">
+      <a href="/Default.aspx" class="home">
+        <span>Accueil</span>
+      </a>
+    </li>
+    <li id="BlogTab">
+      <a href="/Blog/" class="blog">
+        <span>Blog</span>
+      </a>
+    </li>
+    <li id="WikiTabber">
+      <span class="bullet">
+        <a href="/Wiki/" class="wikis bullet">
+          <span>Wikis</span>
+        </a>
+      </span>
+      <ul class="sub sub-wikis">
+        <li>
+          <a href="/Wiki/Pathfinder-RPG.MainPage.ashx" class="wiki-pfrpg">
+            <span>Pathfinder-RPG</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Golarion.MainPage.ashx" class="wiki-golarion">
+            <span>Golarion</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Ressources.MainPage.ashx" class="wiki-informations">
+            <span>Ressources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Wiki/Aventures.MainPage.ashx" class="wiki-aventures">
+            <span>Aventures</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="ForumsTab">
+      <span class="bullet">
+        <a href="/Forum/" class="forum bullet">
+          <span>Forum</span>
+        </a>
+      </span>
+    </li>
+    <li id="MediaTab">
+      <span class="bullet">
+        <a href="/Media/" class="galerie">
+          <span>Galerie</span>
+        </a>
+      </span>
+    </li>
+    <li id="PartiesTab">
+      <span class="bullet">
+        <a href="/Wiki/Parties.MainPage.ashx" class="parties">
+          <span>Galerie</span>
+        </a>
+      </span>
+      <ul class="sub sub-parties">
+        <li>
+          <a href="/Wiki/Parties.MainPage.ashx" class="parties-wiki">
+            <span>Wikis</span>
+          </a>
+        </li>
+        <li>
+          <a href="/Forum/yaf_forum7_Parties-sur-forum.aspx" class="parties-forum">
+            <span>Forums</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li id="AdminTab" style="display:none;">
+      <a href="/admin/default.aspx" class="admin">
+        <span>Admin</span>
+      </a>
+    </li>
+    <li id="SearchTab">
+      <a href="/search/default.aspx" class="search">
+        <span>Recherche</span>
+      </a>
+    </li>
+    <li id="ContactTab">
+      <a href="/Blog/Contact.aspx" class="contact">
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</div></span>
+                </div>
+                
+                    <script type="text/javascript">
+<!--
+__BaseName = "ctl00_CphMaster_";
+__ConfirmMessage = "Etes-vous sûr?";
+// -->
+</script>
+                <div id="container">
+                    <div id="container-tl">
+                        <div id="sidebar">
+                            
+                            <h1 class="separator"> Navigation dans les wikis <a class="headeranchor" id="Navigation_dans_les_wikis_0" href="#Navigation_dans_les_wikis_0" title="Lien vers cette section">&#0182;</a></h1><table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="MainPage.ashx" title="Bienvenue sur les wikis de Pathfinder-fr !">Accueil</a></li>
+<li><a class="pagelink" href="Projets.ashx" title="Projets en cours">Projets en cours</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Liens.ashx" title="Sites partenaires">Partenaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG "><h4 class="light arrow">Wiki Pathfinder-RPG</h4></a>
+<p style="font-size: 80%; font-style: italic; padding-top : 0">Tout sur les règles officielles de Pathfinder.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.MainPage.ashx" title="Bienvenue sur le Wiki Pathfinder-RPG ">Accueil</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Monstres.ashx" title="Monstres Pathfinder">Bestiaire</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.FAQ.ashx" title="FAQ">FAQ</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Pathfinder-RPG.Aides%20de%20jeu.ashx" title="Aides de jeu pour Pathfinder-RPG">Aides de jeu</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Publications.ashx" title="Publications relatives à Pathfinder RPG">Livres</a></li>
+<li><a class="pagelink" href="Pathfinder-RPG.Glossaire.ashx" title="Glossaire anglais/français">Glossaires</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion"><h4 class="light arrow">Wiki Golarion</h4></a>
+<p style="font-size: 80%; font-style: italic">Tout sur le monde de Golarion.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.MainPage.ashx" title="Bienvenue sur le Wiki Golarion">Accueil</a></li>
+<li><a class="pagelink" href="Golarion.Wayfinder.ashx" title="Wayfinder">Wayfinder</a></li>
+<li><a class="pagelink" href="Golarion.religions%20et%20philosophies.ashx" title="Religions et philosophies">Dieux</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Golarion.Aides%20de%20jeu.ashx" title="Aides de jeu sur Golarion">Aides de jeu</a></li>
+<li><a class="pagelink" href="Golarion.Publications.ashx" title="Publications sur le monde de Golarion">Livres</a></li>
+<li><a class="pagelink" href="Golarion.Romans.ashx" title="Romans se déroulant sur Golarion">Romans</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<ul>
+<li><a class="pagelink" href="Golarion.JourGolarion.ashx" title="Un jour sur Golarion">Un jour sur Golarion</a></li>
+</ul>
+<a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources"><h4 class="light arrow">Wiki Ressources</h4></a>
+<p style="font-size: 80%; font-style: italic">Des ressources de tous genres (aides informatiques, règles maison…).</p>
+<ul>
+<li><a class="pagelink" href="Ressources.MainPage.ashx" title="Bienvenue sur le Wiki Ressources">Accueil</a></li>
+<li><a class="pagelink" href="Ressources.Articles%20KQ.ashx" title="Articles issus du blog de Kobold Quarterly">Articles de Kobold Quarterly</a></li>
+<li><a class="pagelink" href="Ressources.Blog%20des%20concepteurs.ashx" title="Le blog des concepteurs">Blog des concepteurs (Paizo)</a></li>
+<li><a class="pagelink" href="Ressources.RM%20Index.ashx" title="Index des règles maison">Règles maison</a></li>
+<li>et bon nombre d'autres ressources</li>
+</ul>
+<a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures"><h4 class="light arrow">Wiki Aventures</h4></a>
+<p style="font-size: 80%; font-style: italic">Aides de jeu et outils pour les MJ.</p>
+<table width="100%">
+<tr style="vertical-align: top">
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.MainPage.ashx" title="Bienvenue sur le Wiki Aventures">Accueil</a></li>
+<li><a class="pagelink" href="Aventures.Campagnes.ashx" title="Campagnes officielles (Adventure Paths) ">Campagnes</a></li>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Modules.ashx" title="Présentation des modules">Modules</a></li>
+</ul>
+</td>
+<td width="50%">
+<ul>
+<li><a class="pagelink" href="Aventures.Pr%c3%a9sentation%20Pathfinder%20Society.ashx" title="Présentation de la Pathfinder Society">PF Society</a></li>
+<li><a class="pagelink" href="Aventures.Aventures%20de%20fans.ashx" title="Aventures créées par les fans">Aventures</a></li>
+<li><a class="pagelink" href="Aventures.Liste%20PNJ.ashx" title="Les PNJs par FP">PNJ</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h4 class="light arrow">Wiki Parties en ligne</h4>
+<ul>
+<li><a class="pagelink" href="Parties.MainPage.ashx" title="Parties">Ressources (parties en ligne)</a></li>
+ 
+</ul>
+ 
+<h1 class="separator"> Aides et guides <a class="headeranchor" id="Aides_et_guides_1" href="#Aides_et_guides_1" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="pagelink" href="Cr%c3%a9ation.ashx" title="Guide de création pour le Wiki">Guide de création</a></li></ul>
+<h1 class="separator"> Outils des Wikis <a class="headeranchor" id="Outils_des_Wikis_2" href="#Outils_des_Wikis_2" title="Lien vers cette section">&#0182;</a></h1><ul><li><a class="systemlink" href="Pathfinder-RPG.Edit.aspx" title="Créer une nouvelle page">Créer une nouvelle page</a></li><li><a class="systemlink" href="Pathfinder-RPG.Rss.aspx" title="RSS">RSS</a></li><li><a class="systemlink" href="Pathfinder-RPG.RandPage.aspx" title="Page au hasard">Page au hasard</a></li><li><a class="systemlink" href="Pathfinder-RPG.AllPages.aspx" title="Toutes les pages">Toutes les pages</a></li><li><a class="systemlink" href="Pathfinder-RPG.Category.aspx" title="Catégories">Catégories</a></li><li><a class="systemlink" href="Pathfinder-RPG.Upload.aspx" title="Gestion fichiers">Gestion fichiers</a></li><li><a class="systemlink" href="Pathfinder-RPG.Admin.aspx" title="Administration wiki">Administration wiki</a></li></ul>
+<h1 class="separator">Cette page<a class="headeranchor" id="Cette_page_3" href="#Cette_page_3" title="Lien vers cette section">&#0182;</a></h1><ul><li><a href="/Wiki/History.aspx?Page=Pathfinder-RPG.Maître espion">Historique</a></li><li><a href="/Wiki/Print.aspx?Page=Pathfinder-RPG.Maître espion">Imprimer</a></li><li><a href="/Wiki/IncomingLinks.aspx?Page=Pathfinder-RPG.Maître espion">Liens entrants</a></li></ul>
+<h1 class="separator">Section<a class="headeranchor" id="Section_4" href="#Section_4" title="Lien vers cette section">&#0182;</a></h1><center>
+<small>Vous êtes dans la section</small><br/>
+<select class="namespacedropdown" onchange="javascript:var sel = this.value; document.location = (sel != '' ? (sel + '.') : '') + 'Default.aspx';"><option value="">&lt;root&gt;</option><option value="ADJ">ADJ</option><option value="Aventures">Aventures</option><option value="Db">Db</option><option value="Golarion">Golarion</option><option value="Parties">Parties</option><option selected="selected" value="Pathfinder-RPG">Pathfinder-RPG</option><option value="Ressources">Ressources</option><option value="Starfinder">Starfinder</option></select>
+</center>
+
+                        </div>
+                        <div id="container-tr">
+                            <div id="content">
+                                <div id="MainHeaderDiv">
+                                      
+
+                                </div>
+                                <div id="PageInternalHeaderDiv">
+</div>
+                                
+
+    <script type="text/javascript">
+    <!--
+        function __ShowAllTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "none";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "";
+                __SetStatus("1");
+            }
+            catch(ex) { }
+            return false;
+        }
+        function __HideTrail() {
+            try {
+                document.getElementById("BreadcrumbsDivMin").style["display"] = "";
+                document.getElementById("BreadcrumbsDivAll").style["display"] = "none";
+                __SetStatus("0");
+            }
+            catch(ex) { }
+            return false;
+        }
+        
+        function __SetStatus(open) {
+            __CreateCookie("ScrewTurnWikiBCT", open, 365);
+        }
+        function __GetStatus() {
+            var value = __ReadCookie("ScrewTurnWikiBCT");
+            if(value) return value;
+            else return "0";
+        }
+
+        function __InitBCT() {
+        	if(__GetStatus() == "1") {
+        		__ShowAllTrail();
+        	}
+        }
+
+        var __attachmentsMenuJustShown = false;
+        var __adminToolsMenuJustShown = false;
+        var __ie7Mode = false;
+
+        function __ToggleAttachmentsMenu(cx, cy) {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("PageAttachmentsLink"), element);
+        			}
+        			__attachmentsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAttachmentsMenu() {
+        	var element = document.getElementById("PageAttachmentsDiv");
+        	if(element && !__attachmentsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if (__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__attachmentsMenuJustShown = false;
+        	return true; // Needed to enabled next clicks' action (file download)
+        }
+
+        function __ToggleAdminToolsMenu(cx, cy) {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element) {
+        		if(element.style["display"] == "none") {
+        			element.style["display"] = "";
+        			var pos = __AbsolutePosition(element);
+        			if(pos.left - cx > 0) {
+        				__ie7Mode = true;
+        				element.style["position"] = "absolute";
+        				element.style["top"] = cy + "px";
+        				element.style["left"] = (cx - pos.width) + "px";
+        			}
+        			else {
+        				__RepositionDiv(document.getElementById("AdminToolsLink"), element);
+        			}
+        			__adminToolsMenuJustShown = true;
+        		}
+        	}
+        	return false;
+        }
+        function __HideAdminToolsMenu() {
+        	var element = document.getElementById("AdminToolsDiv");
+        	if(element && !__adminToolsMenuJustShown) {
+        		element.style["display"] = "none";
+        		if(__ie7Mode) element.style["left"] = "10000px";
+        	}
+        	__adminToolsMenuJustShown = false;
+        	return true; // Needed to enable next clicks' action (admin tools)
+        }
+
+        function __HideAllMenus() {
+        	__HideAttachmentsMenu();
+        	__HideAdminToolsMenu();
+        }
+
+        document.body.onclick = __HideAllMenus;
+
+        function __AbsolutePosition(obj) {
+        	var pos = null;
+        	if(obj != null) {
+        		pos = new Object();
+        		pos.top = obj.offsetTop;
+        		pos.left = obj.offsetLeft;
+        		pos.width = obj.offsetWidth;
+        		pos.height = obj.offsetHeight;
+
+        		obj = obj.offsetParent;
+        		while(obj != null) {
+        			pos.top += obj.offsetTop;
+        			pos.left += obj.offsetLeft;
+        			obj = obj.offsetParent;
+        		}
+        	}
+        	return pos;
+        }
+
+        var __showTimer = null;
+        var __hideTimer = null;
+
+        function __ShowDropDown(e, divId, parent) {
+           	// Set a timer
+        	// On mouse out, cancel the timer and start a 2nd timer that hides the menu
+        	// When the 1st timer elapses
+        	//   show the drop-down
+        	//   on menu mouseover, cancel the 2nd timer
+        	//   on menu mouse out, hide the menu
+        	__showTimer = setTimeout('__ShowDropDownForReal(' + e.clientX + ', ' + e.clientY + ', "' + divId + '", "' + parent.id + '");', 200);
+        }
+
+        function __ShowDropDownForReal(cx, cy, divId, parentId) {
+        	var pos = __AbsolutePosition(document.getElementById(parentId));
+        	var menu = document.getElementById(divId);
+
+			// This is needed to trick IE7 which, for some reason,
+			// does not position the drop-down correctly with the new Default theme
+        	if(pos.left - cx > 30) {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = cy + "px";
+        		menu.style["left"] = (cx - 10) + "px";
+        	}
+        	else {
+        		menu.style["display"] = "";
+        		menu.style["position"] = "absolute";
+        		menu.style["top"] = (pos.top + pos.height) + "px";
+        		menu.style["left"] = pos.left + "px";
+        	}
+        	__showTimer = null;
+        }
+
+        function __HideDropDown(divId) {
+        	if(__showTimer) clearTimeout(__showTimer);
+        	__hideTimer = setTimeout('__HideDropDownForReal("' + divId + '");', 200);
+        }
+
+        function __HideDropDownForReal(divId) {
+        	document.getElementById(divId).style["display"] = "none";
+        	__hideTimer = null;
+        }
+
+        function __CancelHideTimer() {
+        	if(__hideTimer) clearTimeout(__hideTimer);
+        }
+        
+    // -->
+    </script>
+
+	<a id="PageTop"></a>
+	
+	<div id="PageHeaderDiv">
+	
+		<!-- Change this to PageToolbarDiv -->
+		<div id="EditHistoryLinkDiv">
+			<a id="DiscussLink" title="Discuter" href="Pathfinder-RPG.Maître espion.ashx?Discuss=1">Discuter (0)</a>
+			
+			<a id="ViewCodeLink" title="Voir le code de la Page" href="Pathfinder-RPG.Maître espion.ashx?Code=1">Voir le code de la Page</a>
+			<a id="HistoryLink" title="Voir l'historique d'édition de la page" href="Pathfinder-RPG.History.aspx?Page=Pathfinder-RPG.Ma%c3%aetre%20espion">Historique</a>
+			
+			
+			
+			
+			
+		</div>
+		
+		<h1 class="pagetitle">
+			
+			Le maître espion
+			
+		</h1>
+		
+		<div id="PrintLinkDiv">
+			<a id="PrintLink" href="Pathfinder-RPG.Print.aspx?Page=Pathfinder-RPG.Ma%c3%aetre%20espion" title="Version imprimable" target="_blank">Imprimer</a>
+		</div>
+		
+		<div id="RssLinkDiv">
+			
+		</div>
+		
+		<div id="EmailNotificationDiv">
+			<span id="Anthem_ctl00_CphMaster_btnEmailNotification__"></span>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+	<div id="PageContentDiv">
+		<div class="presentation navmenu">
+<h2 class="separator">Les classes de prestige<a class="headeranchor" id="Les_classes_de_prestige_0" href="#Les_classes_de_prestige_0" title="Lien vers cette section">&#0182;</a></h2>
+<table><tr style="vertical-align: top"><td width="20%">
+<ul><li><b><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20prestige.ashx" title="Les classes de prestige">Introduction</a></b></li></ul>
+<ul><li><a class="pagelink" href="Pathfinder-RPG.Archer-mage.ashx" title="L&#39;archer-mage">L'archer-mage</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Arpenteur%20dhorizon.ashx" title="L&#39;arpenteur d&#39;horizon">L'arpenteur d'horizon</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Assassin.ashx" title="L&#39;assassin">L'assassin</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Champion%20occultiste.ashx" title="Le champion occultiste">Le champion occultiste</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Chroniqueur.ashx" title="Le chroniqueur">Le chroniqueur</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Disciple%20draconien.ashx" title="Le disciple draconien">Le disciple draconien</a></li></ul>
+</td><td width="20%">
+<ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Duelliste.ashx" title="Le duelliste">Le duelliste</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Fid%c3%a8le%20d%c3%a9fenseur.ashx" title="Le fidèle défenseur">Le fidèle défenseur</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20de%20la%20nature.ashx" title="Le gardien de la nature">Le gardien de la nature</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Gardien%20du%20savoir.ashx" title="Le gardien du savoir">Le gardien du savoir</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.H%c3%a9raut.ashx" title="Le héraut">Le héraut</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20chymiste.ashx" title="Le maître chimiste">Le maître chymiste</a> (APG)</li></ul>
+</td><td width="20%">
+<ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20des%20ombres.ashx" title="Le maître des ombres">Le maître des ombres</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Ma%c3%aetre%20espion.ashx" title="Le maître espion">Le maître espion</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mystificateur%20profane.ashx" title="Le mystificateur profane">Le mystificateur profane</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Proph%c3%a8te%20enrag%c3%a9.ashx" title="Le prophète enragé">Le prophète enragé</a> (APG)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Th%c3%a9urge%20mystique.ashx" title="Le théurge mystique">Le théurge mystique</a></li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx" title="Le vengeur sacré">Le vengeur sacré</a> (APG)</li></ul>
+</td><td width="20%">
+<ul>
+  <li><a class="pagelink" href="Pathfinder-RPG.Assassin%20des%20mantes%20rouges.ashx" title="Assassin pourpre">L'assassin pourpre</a> (CCMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Enfant%20divin.ashx" title="Enfant divin">L'enfant divin</a> (MMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.L%c3%a9gionnaire%20infernal.ashx" title="Légionnaire infernal">Le légionnaire infernal</a> (CCMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Mage%20des%20glyphes.ashx" title="Mage des glyphes">Le mage des glyphes</a> (MMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Pirate%20de%20la%20mer%20Int%c3%a9rieure.ashx" title="Pirate de Haute Mer">Le pirate de Haute mer</a> (PMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Liseuse%20de%20tourment.ashx" title="Voyante">La voyante</a> (CCMI)</li>
+  <li><a class="pagelink" href="Pathfinder-RPG.Templier%20d%c3%a9chu.ashx" title="Templier déchu">Le templier parjure</a> (CCMI)</li>
+</ul>
+</td><td width="20%">
+<ul><li><b><i><a class="pagelink" href="Pathfinder-RPG.Classes.ashx" title="Les classes">Classes de base</a></i></b></li>
+<li><b><i><a class="pagelink" href="Pathfinder-RPG.Classes%20de%20PNJ.ashx" title="Classes de PNJ">Classes de PNJ</a></i></b></li></ul>
+</td></tr></table></div><br /><div style="float:right; padding: 4px 4px 8px 8px;">
+<img title="Source : Advanced Player's Guide/Manuel du joueur - règles avancées" class="opachover" src="http://www.pathfinder-fr.org/Wiki/public/Upload/Illustrations/Logos/logoAPG.gif" style="opacity: 0.7" />
+</div><i>Adeptes inégalés de la tromperie, les maîtres espions se reposent plus sur la supercherie et la ruse que sur les muscles ou les sorts. Un maître espion est un expert dans l’art d’échapper à la détection, magique ou non, et son esprit vif lui permet d’improviser facilement. Les espions peuvent travailler pour un pays, pour des intérêts privés ou vendre leurs services au plus offrant sans se soucier de loyauté à long terme.<br /><br />Grâce à leur vaste éventail de compétences, les bardes et les roublards sont particulièrement bien adaptés au rôle d’espion. Les roublards se font facilement passer pour des membres de n’importe quelle profession qui ne demande pas de lancer des sorts (même si leurs aptitudes sont diminuées quand ils doivent jouer le rôle d’un guerrier en armure) tandis que les bardes peuvent incarner de nombreux lanceurs de sorts de manière assez convaincante pour tromper un observateur ordinaire. La polyvalence et l’adaptabilité sont les maîtres mots de l’espionnage et les maîtres espions les plus talentueux laissent leurs pions terminer leurs complots pour eux en attirant subtilement leurs cibles dans leurs machinations.</i><br /><br /><center>
+<table CLASS="tablo"><caption>Le maître espion</caption><tr CLASS="titre"><td>Niveau</td><td>BBA</td><td>Réflexes</td><td>Vigueur</td><td>Volonté</td><td CLASS="gauche">Spécial</td></tr><tr CLASS="premier"><td>1</td><td>+0</td><td>+1</td><td>+0</td><td>+1</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ARTDELATROMPERIE" title="Le maître espion">Art de la tromperie</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#MAITREDESDEGUISEMENTS" title="Le maître espion">maître des déguisements</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ATTAQUESOURNOISE" title="Le maître espion">attaque sournoise</a> +1d6</td></tr><tr CLASS="alt"><td>2</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#MENSONGEDESINVOLTE" title="Le maître espion">Mensonge désinvolte</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#MASQUERSONALIGNEMENT" title="Le maître espion">masquer son alignement</a></td></tr><tr><td>3</td><td>+2</td><td>+2</td><td>+1</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#AURANONMAGIQUE" title="Le maître espion">Aura non magique</a> 2/jour, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#CONNAISSANCESUPERFICIELLES" title="Le maître espion">connaissances superficielles</a></td></tr><tr CLASS="alt"><td>4</td><td>+3</td><td>+2</td><td>+1</td><td>+2</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#PENSEEDISSIMULEES" title="Le maître espion">Pensées dissimulées</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#CHANGEMENTRAPIDE" title="Le maître espion">changement rapide</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ATTAQUESOURNOISE" title="Le maître espion">attaque sournoise</a> +2d6</td></tr><tr><td>5</td><td>+3</td><td>+3</td><td>+2</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ECHAPPERALADETECTION" title="Le maître espion">Échapper à la détection</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ESPRITFUYANT" title="Le maître espion">esprit fuyant</a></td></tr><tr CLASS="alt"><td>6</td><td>+4</td><td>+3</td><td>+2</td><td>+3</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#CHANGERSONALIGNEMENT" title="Le maître espion">Changer son alignement</a></td></tr><tr><td>7</td><td>+5</td><td>+4</td><td>+2</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ATTAQUESOURNOISE" title="Le maître espion">Attaque sournoise</a> +3d6</td></tr><tr CLASS="alt"><td>8</td><td>+6</td><td>+4</td><td>+3</td><td>+4</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ATTAQUEMORTELLE" title="Le maître espion">Attaque mortelle</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#TROMPERLAMAGIE" title="Le maître espion">tromper la magie</a></td></tr><tr><td>9</td><td>+6</td><td>+5</td><td>+3</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ESPRITSECRET" title="Le maître espion">Esprit secret</a></td></tr><tr CLASS="alt"><td>10</td><td>+7</td><td>+5</td><td>+3</td><td>+5</td><td CLASS="gauche"><a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#VOLDIDENTITE" title="Le maître espion">Vol d’identité</a>, <a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ATTAQUESOURNOISE" title="Le maître espion">attaque sournoise</a> +4d6</td></tr></table>
+</center><br /><br /><b>Rôle.</b> Les maîtres espions travaillent rarement en équipe à moins d’être sous couverture. Ironiquement, les compétences spéciales si utiles dans leur domaine en font des chefs exceptionnels mais leur inclinaison naturelle les pousse à rester dans l’ombre. Notez que, même si un espion se cache au sein d’un groupe d’aventuriers, il n’a pas forcément l’intention de le trahir ; des héros armés offrent une excellente couverture à un maître espion en route pour sa véritable mission, que le groupe soit au courant de ses intentions ou non.<br /><br /><b>Alignement.</b> La pratique de l’espionnage demande une certaine dose de flexibilité morale et éthique, la plupart des espions sont donc plutôt neutres que loyaux ou chaotiques.<br /><br /><b>Dé de vie.</b> d8<br /><br /><h2 class="separator"> Conditions requises <a class="headeranchor" id="Conditions_requises_17" href="#Conditions_requises_17" title="Lien vers cette section">&#0182;</a></h2>Pour devenir un maître espion, il faut satisfaire aux conditions suivantes :<br /><br /><b>Dons.</b> <a class="pagelink" href="Pathfinder-RPG.Fourberie.ashx" title="Fourberie">Fourberie</a>, <a class="pagelink" href="Pathfinder-RPG.Volont%c3%a9%20de%20fer.ashx" title="Volonté de fer">Volonté de fer</a>.<br /><br /><b>Compétences.</b> 7 rangs en <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, 7 rangs en <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a>, 5 rangs en <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a>, 5 rangs en <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>.<br /><br /><h2 class="separator"> Compétences de classe <a class="headeranchor" id="Compétences_de_classe_18" href="#Compétences_de_classe_18" title="Lien vers cette section">&#0182;</a></h2>Voici les compétences de classe du maître espion : <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (toutes) (Int), <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Diplomatie.ashx" title="Diplomatie">Diplomatie</a> (Cha), <a class="pagelink" href="Pathfinder-RPG.Discr%c3%a9tion.ashx" title="Discrétion">Discrétion</a> (Dex), <a class="pagelink" href="Pathfinder-RPG.Escamotage.ashx" title="Escamotage">Escamotage</a> (Dex), <a class="pagelink" href="Pathfinder-RPG.%c3%89vasion.ashx" title="Évasion">Évasion</a> (Dex), <a class="pagelink" href="Pathfinder-RPG.Linguistique.ashx" title="Linguistique">Linguistique</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Perception.ashx" title="Perception">Perception</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a> (Sag), <a class="pagelink" href="Pathfinder-RPG.Sabotage.ashx" title="Sabotage">Sabotage</a> (Int), <a class="pagelink" href="Pathfinder-RPG.Utilisation%20dobjets%20magiques.ashx" title="Utilisation d&#39;objets magiques">Utilisation d'objets magiques</a> (Cha).<br /><br /><b>Nombre de rangs par niveau.</b> 6 + modificateur d’<a class="pagelink" href="Pathfinder-RPG.Intelligence.ashx" title="L&#39;Intelligence">Intelligence</a>.<br /><br />
+<h2 class="separator"> Caractéristiques de classe <a class="headeranchor" id="Caractéristiques_de_classe_19" href="#Caractéristiques_de_classe_19" title="Lien vers cette section">&#0182;</a></h2>Voici les caractéristiques de la classe de prestige de maître espion.<br /><br /><h3 class="separator"> Armes et armures <a class="headeranchor" id="Armes_et_armures_0" href="#Armes_et_armures_0" title="Lien vers cette section">&#0182;</a></h3>Un maître espion ne gagne aucune compétence dans le maniement des armes ni dans le port des armures.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ARTDELATROMPERIE" href="#ARTDELATROMPERIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Art de la tromperie (Ext) <a class="headeranchor" id="Art_de_la_tromperie_Ext_1" href="#Art_de_la_tromperie_Ext_1" title="Lien vers cette section">&#0182;</a></h3>Un maître espion ajoute ses niveaux de classe aux tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>, de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a> et de <a class="pagelink" href="Pathfinder-RPG.Psychologie.ashx" title="Psychologie">Psychologie</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MAITREDESDEGUISEMENTS" href="#MAITREDESDEGUISEMENTS"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Maître des déguisements (Ext) <a class="headeranchor" id="Maître_des_déguisements_Ext_2" href="#Maître_des_déguisements_Ext_2" title="Lien vers cette section">&#0182;</a></h3>Un maître espion crée un <a class="pagelink" href="Pathfinder-RPG.d%c3%a9guisement.ashx" title="Déguisement">déguisement</a> en moitié moins de temps que la normale. De plus, tous les malus liés à un déguisement d’un sexe, d’une race, d’un âge ou d’une taille différente sont réduits de 1.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUESOURNOISE" href="#ATTAQUESOURNOISE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Attaque sournoise (Ext) <a class="headeranchor" id="Attaque_sournoise_Ext_3" href="#Attaque_sournoise_Ext_3" title="Lien vers cette section">&#0182;</a></h3>Ce pouvoir fonctionne comme le pouvoir de <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublard</a> du même nom. Les dégâts supplémentaires augmentent de +1d6 tous les trois niveaux (1, 4, 7 et 10). Si le maître espion possède des bonus d’<a class="pagelink" href="Pathfinder-RPG.attaque%20sournoise.ashx" title="attaque sournoise">attaque sournoise</a> issus d’une autre source, ils se cumulent.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MENSONGEDESINVOLTE" href="#MENSONGEDESINVOLTE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Mensonge désinvolte (Sur) <a class="headeranchor" id="Mensonge_désinvolte_Sur_4" href="#Mensonge_désinvolte_Sur_4" title="Lien vers cette section">&#0182;</a></h3>Un maître espion de niveau 2 ou plus peut même tromper la magie qui décèle habituellement la vérité. Toute créature qui use de ce genre de magie contre l’espion doit réussir un <a class="pagelink" href="Pathfinder-RPG.test%20de%20niveau%20de%20lanceur%20de%20sorts.ashx" title="test de niveau de lanceur de sorts">test de niveau de lanceur de sorts</a> contre un <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de 15 + niveau de classe du maître espion (comme s’il était sous l’effet d’un sort de <i><a class="pagelink" href="Pathfinder-RPG.bagou.ashx" title="Bagou">bagou</a></i>). En cas d’échec, le sort ne détecte pas les mensonges de l’espion ou ne l’oblige pas à dire la vérité. Ce pouvoir ne donne pas le bonus de <i><a class="pagelink" href="Pathfinder-RPG.bagou.ashx" title="Bagou">bagou</a></i> lors des tests de <a class="pagelink" href="Pathfinder-RPG.Bluff.ashx" title="Bluff">Bluff</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="MASQUERSONALIGNEMENT" href="#MASQUERSONALIGNEMENT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Masquer son alignement (Sur) <a class="headeranchor" id="Masquer_son_alignement_Sur_5" href="#Masquer_son_alignement_Sur_5" title="Lien vers cette section">&#0182;</a></h3>Un maître espion de niveau 2 ou plus peut modifier l’aura de son <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> pour tromper des sorts capables de détecter l’alignement (comme <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20du%20mal.ashx" title="Détection du Mal">détection du mal</a></i>). Il peut décider de se faire détecter comme appartenant à un alignement particulier ou comme s’il n’en avait pas. Ce pouvoir ne protège pas contre les sorts ou les effets qui provoquent des dégâts basés sur l’alignement. Le camouflage de l’alignement est une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> et il persiste jusqu’à ce que le maître espion le change ou y mette un terme.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="AURANONMAGIQUE" href="#AURANONMAGIQUE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Aura non magique (Mag) <a class="headeranchor" id="Aura_non_magique_Mag_6" href="#Aura_non_magique_Mag_6" title="Lien vers cette section">&#0182;</a></h3>Au niveau 3, le maître espion peut lancer <i><a class="pagelink" href="Pathfinder-RPG.aura%20magique.ashx" title="Aura magique">aura magique</a></i> deux fois par jour mais seulement pour faire croire qu’un objet n’est pas magique.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CONNAISSANCESSUPERFICIELLES" href="#CONNAISSANCESSUPERFICIELLES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Connaissances superficielles (Ext) <a class="headeranchor" id="Connaissances_superficielles_Ext_7" href="#Connaissances_superficielles_Ext_7" title="Lien vers cette section">&#0182;</a></h3>Le maître espion donne l’impression de savoir plus de choses que ce n’est réellement le cas. À partir du niveau 3, quand il cherche à préserver sa couverture ou à se faire passer pour quelqu’un, il peut faire des tests de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> et de <a class="pagelink" href="Pathfinder-RPG.Profession.ashx" title="Profession">Profession</a> sans y être entraîné comme s’il l’était et gagne un bonus égal à la moitié de son niveau de classe. Par exemple, un maître espion qui se fait passer pour un noble peut faire un test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (histoire) à propos du royaume et de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (noblesse) sur les familles nobles et royales comme s’il y était entraîné, bien que ce ne soit pas le cas. En revanche, il ne peut pas faire de test de <a class="pagelink" href="Pathfinder-RPG.Connaissances.ashx" title="Connaissances">Connaissances</a> (nature) pour identifier des herbes alors qu’il n’y est pas entraîné.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="PENSEESDISSIMULEES" href="#PENSEESDISSIMULEES"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Pensées dissimulées (Sur) <a class="headeranchor" id="Pensées_dissimulées_Sur_8" href="#Pensées_dissimulées_Sur_8" title="Lien vers cette section">&#0182;</a></h3>Au niveau 4, le maître espion peut dissimuler ses complots contre la magie qui permet de lire dans les esprits. Quand une créature utilise <i><a class="pagelink" href="Pathfinder-RPG.d%c3%a9tection%20de%20pens%c3%a9es.ashx" title="Détection de pensées">détection de pensées</a></i> ou une magie similaire pour lire dans l’esprit du maître, c’est lui qui décide quelles pensées superficielles seront détectées, ses véritables pensées restant inviolées. Ce pouvoir ne le protège pas contre les attaques mentales ou la lecture de pensées qui va plus loin que les pensées superficielles.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHANGEMENTRAPIDE" href="#CHANGEMENTRAPIDE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Changement rapide (Ext) <a class="headeranchor" id="Changement_rapide_Ext_9" href="#Changement_rapide_Ext_9" title="Lien vers cette section">&#0182;</a></h3>À partir du niveau 4, le maître espion peut se déguiser en seulement 2d4 rounds s’il accepte un malus de -10 au test de <a class="pagelink" href="Pathfinder-RPG.D%c3%a9guisement.ashx" title="Déguisement">Déguisement</a>. Ce malus tombe à -5 au niveau 8.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ECHAPPERALADETECTION" href="#ECHAPPERALADETECTION"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Échapper à la détection (Mag) <a class="headeranchor" id="Échapper_à_la_détection_Mag_10" href="#Échapper_à_la_détection_Mag_10" title="Lien vers cette section">&#0182;</a></h3>Au niveau 5, le maître espion peut tromper la magie de <a class="pagelink" href="Pathfinder-RPG.divination.ashx" title="Divination">divination</a> employée contre lui comme s’il était sous l’effet d’un sort d’<i><a class="pagelink" href="Pathfinder-RPG.antid%c3%a9tection.ashx" title="Antidétection">antidétection</a></i> avec un niveau de lanceur de sorts égal à son niveau de personnage. Il peut annuler ou réactiver cette protection par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Si quelqu’un dissipe l'effet d’<i>antidétection</i>, le maître espion ne peut pas la réactiver avant 1d4 rounds.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ESPRITFUYANT" href="#ESPRITFUYANT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Esprit fuyant (Sur) <a class="headeranchor" id="Esprit_fuyant_Sur_11" href="#Esprit_fuyant_Sur_11" title="Lien vers cette section">&#0182;</a></h3>Au niveau 5, le maître espion peut échapper au contrôle mental. Ceci fonctionne comme le talent de <a class="pagelink" href="Pathfinder-RPG.roublard.ashx" title="Le roublard">roublard</a> du même nom. Si l’espion dispose déjà de ce pouvoir grâce à une autre classe, leurs nombres d’utilisations se cumulent mais le personnage ne peut l’utiliser qu’une fois par round.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="CHANGERSONALIGNEMENT" href="#CHANGERSONALIGNEMENT"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Changer son alignement (Sur) <a class="headeranchor" id="Changer_son_alignement_Sur_12" href="#Changer_son_alignement_Sur_12" title="Lien vers cette section">&#0182;</a></h3>À partir du niveau 6, le maître espion améliore le contrôle qu’il exerce sur son aura. Quand il endosse un <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a> factice, il peut décider que tous les sorts et objets magiques l’affectent comme s’il appartenait réellement à cet <a class="pagelink" href="Pathfinder-RPG.alignement.ashx" title="L&#39;alignement">alignement</a>. Ceci inclut les effets bénéfiques et néfastes. Par exemple, un maître espion Neutre Bon peut faire passer son aura pour Loyal Mauvais pour franchir une porte qui envoie une décharge sur toute créature qui ne serait pas Loyale Mauvaise. En revanche, s’il est frappé par un <i><a class="pagelink" href="Pathfinder-RPG.ch%c3%a2timent%20sacr%c3%a9.ashx" title="Châtiment sacré">châtiment sacré</a></i> avec cette aura factice, il subira les mêmes dégâts que s’il était réellement Mauvais. Le maître espion peut faire passer son aura d’un alignement masqué (comme avec le pouvoir de classe de niveau 2, quand les effets l’affectent encore en fonction de son véritable alignement) à un changement d’alignement (comme le fait ce pouvoir, quand les effets l’affectent en fonction de son alignement factice) par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Changer son alignement est une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a> et l’effet persiste jusqu’à ce qu’il en change à nouveau ou mette un terme à l’effet.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ATTAQUEMORTELLE" href="#ATTAQUEMORTELLE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Attaque mortelle (Ext) <a class="headeranchor" id="Attaque_mortelle_Ext_13" href="#Attaque_mortelle_Ext_13" title="Lien vers cette section">&#0182;</a></h3>Au niveau 8, le maître espion apprend l’art de tuer ou de paralyser un ennemi d’un coup précis. Ceci fonctionne comme le pouvoir d’<a class="pagelink" href="Pathfinder-RPG.assassin.ashx" title="L&#39;assassin">assassin</a> du <a class="pagelink" href="Pathfinder-RPG.assassin.ashx#ATTAQUEMORTELLE" title="L&#39;assassin">même nom</a>. Si le maître espion a des niveaux dans une classe qui accorde également ce pouvoir, ses niveaux s’ajoutent à ceux d’espion quand il s’agit de déterminer le <a class="pagelink" href="Pathfinder-RPG.DD.ashx" title="DD">DD</a> de l’attaque mortelle, même s’il n’a pas encore atteint le niveau 8 en tant que maître espion.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="TROMPERLAMAGIE" href="#TROMPERLAMAGIE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Tromper la magie (Sur) <a class="headeranchor" id="Tromper_la_magie_Sur_14" href="#Tromper_la_magie_Sur_14" title="Lien vers cette section">&#0182;</a></h3>Un maître espion de niveau 8 ou plus peut faire croire à un adversaire qu’il est charmé ou dominé. Quand le maître espion réussit un jet de sauvegarde contre un effet magique qui permet d’exercer un contrôle continu (comme  <i><a class="pagelink" href="Pathfinder-RPG.charme-personne.ashx" title="Charme-personne">charme-personne</a></i>, <i><a class="pagelink" href="Pathfinder-RPG.domination.ashx" title="Domination">domination</a></i> ou le pouvoir de domination d’un vampire), il peut laisser le sort l’affecter partiellement. Le lanceur de sorts croit que l’espion a raté son jet mais ce dernier n’est pas sous son contrôle. Si le sort établit un lien télépathique, ce dernier fonctionne normalement mais le maître espion n’est pas obligé d’obéir aux ordres qui lui sont donnés. Le maître espion peut utiliser tromper la magie s’il réussit un <a class="pagelink" href="Pathfinder-RPG.jet%20de%20sauvegarde.ashx" title="jet de sauvegarde">jet de sauvegarde</a> ultérieur contre un effet persistant, comme l’y autorise l’<a class="pagelink" href="Pathfinder-RPG.ma%c3%aetre%20espion.ashx#ESPRITFUYANT" title="Le maître espion">esprit fuyant</a>.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="ESPRITSECRET" href="#ESPRITSECRET"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Esprit secret (Mag) <a class="headeranchor" id="Esprit_secret_Mag_15" href="#Esprit_secret_Mag_15" title="Lien vers cette section">&#0182;</a></h3>Au niveau 9, le maître espion profite des avantages d’un sort d’<i><a class="pagelink" href="Pathfinder-RPG.esprit%20imp%c3%a9n%c3%a9trable.ashx" title="Esprit impénétrable">esprit impénétrable</a></i> permanent avec un niveau de lanceur de sorts égal à son niveau de personnage. L’espion peut activer ou désactiver cette protection par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>. Si quelqu’un dissipe l’<i><a class="pagelink" href="Pathfinder-RPG.esprit%20imp%c3%a9n%c3%a9trable.ashx" title="Esprit impénétrable">esprit impénétrable</a></i>, le maître espion ne peut pas le réactiver avant 1d4 rounds.<br /><br /><div class="ref right" style="padding: 0 0 3px 3px;"><a name="VOLDIDENTITE" href="#VOLDIDENTITE"><img class="opachover" src="/images/pathfinder/wiki/logoref.png" width="12px" style="opacity:0.1"></a></div>
+<h3 class="separator"> Vol d’identité (Sur) <a class="headeranchor" id="Vol_d’identité_Sur_16" href="#Vol_d’identité_Sur_16" title="Lien vers cette section">&#0182;</a></h3>Le pouvoir ultime du maître espion lui permet de s’emparer de l’identité d’un autre personnage. Par une <a class="pagelink" href="Pathfinder-RPG.action%20complexe.ashx" title="Action complexe">action complexe</a>, l’espion touche une créature <a class="pagelink" href="Pathfinder-RPG.sans%20d%c3%a9fense.ashx" title="Sans défense">sans défense</a> et modifie son aura afin qu’elle corresponde à celle de cette cible. Ce pouvoir trompe les effets et sorts de <a class="pagelink" href="Pathfinder-RPG.divination.ashx" title="Divination">divination</a>, même ceux aussi puissants que la  <i><a class="pagelink" href="Pathfinder-RPG.localisation%20supr%c3%aame.ashx" title="Localisation suprême">localisation suprême</a></i>. Ils considèrent alors l’espion comme étant la créature qu’il a touchée. Ce pouvoir peut échouer contre les divinités ou les êtres de même puissance. Ce vol d’identité se prolonge jusqu’à ce que le maître espion y mette un terme (par une <a class="pagelink" href="Pathfinder-RPG.action%20simple.ashx" title="Action simple">action simple</a>) ou qu’il l’utilise sur une autre créature.
+
+	</div>
+	
+	
+	
+	<div id="PageAttachmentsDiv" style="position: absolute; left: 10000px;">
+		
+    </div>
+    
+    <div id="AdminToolsDiv" style="position: absolute; left: 10000px;">
+		
+		
+		
+    </div>
+    
+    <script type="text/javascript">
+    <!--
+    	function __RepositionDiv(link, element) {
+    		var absPos = __AbsolutePosition(link);
+    		var elemAbsPos = __AbsolutePosition(element);
+
+    		element.style["top"] = (absPos.top + absPos.height) + "px";
+    		element.style["left"] = (absPos.left - (elemAbsPos.width - absPos.width)) + "px";
+    		element.style["position"] = "absolute";
+    	}
+
+		// Hide attachments and admin tools divs
+    	// This is needed because __RepositionDiv cannot calculate the width of the element when it's hidden
+    	var __elem = document.getElementById("PageAttachmentsDiv");
+    	if(document.getElementById("PageAttachmentsLink")) {
+    		__RepositionDiv(document.getElementById("PageAttachmentsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__elem = document.getElementById("AdminToolsDiv");
+    	if(document.getElementById("AdminToolsLink")) {
+    		__RepositionDiv(document.getElementById("AdminToolsLink"), __elem);
+    	}
+    	__elem.style["display"] = "none";
+
+    	__InitBCT();
+    // -->
+    </script>
+
+
+                                <div id="PageInternalFooterDiv"><div style="border: 1px solid #4b3124; background-color: #f3efe2; padding: 3px; margin: 12px 0 0 0; clear: both">
+<center><i>Le contenu officiel de ce wiki appartient à et a été utilisé avec l'autorisation de <a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a>.<br/>
+Pathfinder-RPG est une création de <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>.<br/>
+Vous pouvez réemployer des extraits du texte officiel à condition de mentionner clairement des liens vers <a class="externallink" href="http://paizo.com/" title="Paizo Publishing" target="_blank">Paizo Publishing</a>,<a class="externallink" href="http://www.black-book-editions.fr/" title="Black Book Editions" target="_blank">Black Book Editions</a> et <a class="externallink" href="http://www.pathfinder-fr.org" title="Pathfinder-FR" target="_blank">Pathfinder-FR</a><br/>
+Ce site se base sur les licences <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/OGL.ashx" title="Open Game License" target="_blank">Open Game License</a> et <a class="externallink" href="http://www.pathfinder-fr.org/Wiki/PCUP.ashx" title="Pathfinder Community Use Policy" target="_blank">Pathfinder Community Use Policy</a>.</i></center>
+</div>
+<span style="visibility:hidden">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+                                <div id="MainFooterDiv">
+                                    <!-- Used for layout purposes only -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="margin-r" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td id="footer">
+                <span><div id="footerlinks">
+    <span id="HomeFooterLink">
+        <a href="/">Accueil</a>
+    </span>
+    <span id="BlogsFooterLink">
+        &bull;
+        <a href="/Blog/">Blog</a>
+    </span>
+    <span id="orumsFooterLink">
+        &bull; <a href="/Forum/">Forums</a>
+    </span>
+    <span id="MediaFooterLink">
+        &bull;
+        <a href="/Media/">Galerie</a>
+    </span>
+    <span id="WikiFooterLink">
+        &bull; <a href="/Wiki/">Wikis</a>
+    </span>
+    <span id="ContactUsFooterLink">
+        &bull; <a href="/Blog/contact.aspx">Nous contacter</a>
+    </span>
+    <span id="SearchFooterLink">
+        &bull; <a href="/Search/">Recherche</a>
+    </span>
+</div></span>
+                <p>La gamme Pathfinder est une cr&eacute;ation de <a href="http://www.paizo.com/" target="_blank">Paizo Publishing</a> traduite en fran&ccedil;ais par <a href="http://www.black-book-editions.fr/">Black Book Editions</a>.</p>
+                <p>Ce site se base sur les licences <a href="/Wiki/OGL.ashx">Open Game License</a> et <a href="/Wiki/PCUP.ashx">Pathfinder Community Use Policy et les conditions d'utilisation BBE</a>.</p>
+                <p class="small"><a class="externallink" href="http://www.screwturn.eu" title="ScrewTurn Wiki" target="_blank">ScrewTurn Wiki</a> version 3.0.5.629. Some of the icons created by <a class="externallink" href="http://www.famfamfam.com" title="FamFamFam" target="_blank">FamFamFam</a>.</p>
+
+                <p><input type="image" name="ctl00$SueetieTag2$ctl00" class="SueetieLogoImage" src="/images/shared/sueetie/footertagwhite.png" alt="This Site Built with the Sueetie Open Source Community Framework." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SueetieTag2$ctl00&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://sueetie.com&quot;, false, false))" /><span class="SueetieLogoText"><p>This site was built with the Sueetie Open Source Community Framework. Learn more at <a href='http://sueetie.com'>Sueetie.com.</a> Sueetie is distributed under the <a href='http://creativecommons.org/licenses/GPL/2.0/'>GNU GPL v2 license</a></p></span></p>
+            </td>
+        </tr>
+    </table>
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12647865-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></form>
+</body>
+</html>

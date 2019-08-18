@@ -13,7 +13,7 @@ from libhtml import jumpTo, html2text, cleanSectionName, cleanInlineDescription,
 
 ## Configurations pour le lancement
 MOCK_CF = None
-#MOCK_CF = "mocks/classe-ensorceleur.html"       # décommenter pour tester avec les rages pré-téléchargées
+#MOCK_CF = "mocks/classe-maitre-espion.html"       # décommenter pour tester avec les rages pré-téléchargées
 
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
@@ -61,6 +61,7 @@ for cl in classes:
                 classfeature['Description'] = cleanInlineDescription(descr)
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
                 liste.append(classfeature)
+                classfeature = {'Auto': True }
                 descr = ""
                 
             newObj = True
@@ -76,7 +77,9 @@ for cl in classes:
     classfeature['Description'] = cleanInlineDescription(descr)
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
     liste.append(classfeature)
-
+    
+    if MOCK_CF:
+        break
 
 print("Fusion avec fichier YAML existant...")
 
