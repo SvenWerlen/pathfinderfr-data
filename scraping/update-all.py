@@ -4,6 +4,7 @@ echo "#####################"
 echo "       BASE"
 echo "#####################"
 
+./extract-classes.py
 ./extract-feats.py
 ./extract-spells.py
 

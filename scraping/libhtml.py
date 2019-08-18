@@ -32,7 +32,7 @@ def findAfter(html, afterTag, afterCond, searched):
     elements = html.find_next(afterTag, afterCond).next_siblings
     for el in elements:
         if el.name == searched:
-            return el.text.strip()
+            return html2text(el)
 
 #
 # cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
