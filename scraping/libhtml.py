@@ -218,6 +218,31 @@ def extractLevel(text, maxdist):
     return 1
 
 #
+# extrait la source
+#
+def extractSource(div):
+    for c in div.children:
+        if c.name == 'img':
+            if('logoAPG' in c['src']):
+                return 'MJRA'
+            elif('logoUC' in c['src']):
+                return 'AG'
+            elif('logoMR' in c['src']):
+                return 'MR'
+            elif('logoMCA' in c['src']):
+                return 'MCA'
+            elif('logoUM' in c['src']):
+                return 'AM'
+            elif('logoMC' in c['src']):
+                return 'MC'
+            elif('logoOA' in c['src']):
+                return 'AO'
+            else:
+                print("Invalid source: " + c['src'])
+                exit(1)
+    return None
+
+#
 # cette fonction extrait la liste des propriétés basée sur le format suivant
 #
 # <b>Nom de la propriété</b> Texte descriptif
