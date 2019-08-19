@@ -15511,7 +15511,7 @@
   Auto: true
   Description: Au niveau 1, le pistolier devient étrangement doué pour éviter les
     attaques à distance. Quand il est victime d’une telle attaque, il peut dépenser
-    1 point d’audace pour se déplacer de 1,50 m (1 ) par une action immédiate. Il
+    1 point d’audace pour se déplacer de 1,50 m (1 c) par une action immédiate. Il
     gagne alors un bonus de +2 à la CA contre l’attaque qui a déclenché ce pouvoir.
     Il ne peut pas accomplir cet exploit s’il porte plus qu’une armure légère ou intermédiaire
     et une charge légère.
@@ -15569,21 +15569,20 @@
     doit préciser le type de tir qu’il utilise avant de tirer.
 
 
-
-    *) Cautérisation : Le pistolier tire une fois avant de presser le canon brûlant
+    • Cautérisation : Le pistolier tire une fois avant de presser le canon brûlant
     de son arme contre lui ou contre une créature adjacente pour cautériser une blessure.
     Au lieu d’infliger des points de dégâts, le tir met fin à un saignement sur la
     cible. Le pistolier n’a pas besoin de faire de jet d’attaque pour accomplir cet
     exploit, il tire en l’air (ce qui consomme tout de même des munitions).
 
-    *) Déplacer un objet abandonné : Le pistolier fait un test d’attaque contre un
+    • Déplacer un objet abandonné : Le pistolier fait un test d’attaque contre un
     objet abandonné de taille TP ou moins, situé à moins d’un facteur de portée. Un
     objet TP a une CA de 5, un objet Min de 7 et un objet Infime de 11. Si le pistolier
     touche sa cible, il ne l’endommage pas, il la déplace à un maximum de 4,50 m (3
     c) de sa position d’origine. Si le pistolier rate son jet d’attaque, il abîme
     l’objet normalement.
 
-    *) Faire sauter la serrure : Le pistolier fait un jet d’attaque contre une serrure
+    • Faire sauter la serrure : Le pistolier fait un jet d’attaque contre une serrure
     située à moins d’un facteur de portée. Une serrure Minuscule a généralement une
     CA de 7, les plus grosses une CA moindre. La serrure gagne un bonus à la CA contre
     l’attaque du pistolier en fonction de sa qualité. Une serrure simple a un bonus
@@ -15613,22 +15612,21 @@
     immunisées contre les attaques sournoises le sont aussi contre cet exploit.
 
 
+    • Ailes : Si le pistolier touche sa cible, elle reçoit des dégâts normaux et doit
+    réussir un test de Vol DD 20 ou faire une chute de 6 m (4 c).
 
-    *) Ailes : Si le pistolier touche sa cible, elle reçoit des dégâts normaux et
-    doit réussir un test de Vol DD 20 ou faire une chute de 6 m (4 c).
-
-    *) Bras : Si le pistolier touche sa cible, elle ne subit pas de dégâts mais elle
+    • Bras : Si le pistolier touche sa cible, elle ne subit pas de dégâts mais elle
     lâche un objet choisi par le pistolier, même s’il est tenu à deux mains. Un objet
     attaché à un gantelet ne tombe pas même si le pistolier touche le bras.
 
-    *) Jambes : Si le pistolier touche sa cible, elle subit des dégâts normaux et
-    tombe. Les créatures qui possèdent quatre jambes ou plus ou qui sont immunisées
-    contre les attaques de croc-en-jambe sont immunisées contre cet effet.
+    • Jambes : Si le pistolier touche sa cible, elle subit des dégâts normaux et tombe.
+    Les créatures qui possèdent quatre jambes ou plus ou qui sont immunisées contre
+    les attaques de croc-en-jambe sont immunisées contre cet effet.
 
-    *) Tête : Si le pistolier touche sa cible, elle subit des dégâts normaux et elle
+    • Tête : Si le pistolier touche sa cible, elle subit des dégâts normaux et elle
     est confuse pendant 1 round. C’est un effet mental.
 
-    *) Torse : Si le pistolier vise le torse, il menace une zone de critique de 19-20.'
+    • Torse : Si le pistolier vise le torse, il menace une zone de critique de 19-20.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Cibler_Ext_6
   
 - Nom: 'Exploit: Tir déroutant (Ext)'
@@ -15736,7 +15734,7 @@
   Niveau: 15
   Auto: true
   Description: Au niveau 15, le pistolier peut dépenser 1 point d’audace pour tirer
-    en l’air. Toutes les créatures situées à moins de 9 m (6 ) sont victimes d’un
+    en l’air. Toutes les créatures situées à moins de 9 m (6 c) sont victimes d’un
     sort de terreur. Le DD de l’effet est de 10 + 1/2 niveau du pistolier + modificateur
     de Sagesse du pistolier.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.exploits.ashx#Tir_menaçant_Ext_14
