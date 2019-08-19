@@ -19,7 +19,7 @@ for clf in data:
     if 'Archétype' in clf:
         archetype = clf['Archétype']
         
-    key = clf['Nom'] + "#" + clf['Classe'] + "#" + archetype
+    key = clf['Nom'].strip() + "#" + clf['Classe'].strip() + "#" + archetype.strip()
     if key in hashmap:
         print("Doublon détecté!")
         print(clf)
