@@ -30,7 +30,7 @@ echo "#####################"
 ./extract-classfeatures-malefices.py
 ./extract-classfeatures-ordres.py
 ./extract-classfeatures-rages.py
-#./extract-classfeatures-talents.py
+./extract-classfeatures-talents.py
 
 echo "#####################"
 echo "       EQUIPMENT"
