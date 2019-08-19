@@ -62,14 +62,14 @@
   Source: MJ
   Description: "Lorsqu’un objet subit des dégâts supérieurs à la moitié de ses points\
     \ de vie, il est brisé et n’est plus aussi efficace dans sa tâche. Appliquez les\
-    \ effets suivants.\n- Si c’est une arme, toute attaque faite par son intermédiaire\
+    \ effets suivants.\n• Si c’est une arme, toute attaque faite par son intermédiaire\
     \ subira un malus de -2 aux jets d’attaque et de dégâts. Un coup critique n’est\
     \ possible que sur un 20 naturel, et il n’infligera que le double des dommages\
-    \ s’il est confirmé.\n- Si c’est une armure ou un bouclier, le bonus conféré à\
+    \ s’il est confirmé.\n• Si c’est une armure ou un bouclier, le bonus conféré à\
     \ la CA est divisé par 2, arrondi à l’inférieur. Une armure brisée voit ses malus\
-    \ aux compétences doublés.\n- Si c’est un outil utile à une compétence, tout test\
-    \ effectué avec lui subit un malus de -2.\n- Si c’est une baguette ou un bâton,\
-    \ il consomme le double de charges.\n- S’il n’appartient à aucune des catégories\
+    \ aux compétences doublés.\n• Si c’est un outil utile à une compétence, tout test\
+    \ effectué avec lui subit un malus de -2.\n• Si c’est une baguette ou un bâton,\
+    \ il consomme le double de charges.\n• S’il n’appartient à aucune des catégories\
     \ précédentes, cela n’a aucun effet sur son utilisation, mais il perd 25% de sa\
     \ valeur.\n\nSi c’est un objet magique, seuls les sorts réparation ou réparation\
     \ intégrale pourront lui rendre son intégrité, et ce uniquement si le niveau de\
@@ -94,25 +94,39 @@
   
 - Nom: Confus
   Source: MJ
-  Description: "Une créature confuse a l’esprit totalement embrouillé et ne peut\
-    \ agir normalement. Elle ne fait pas de différence entre un ami et un ennemi,\
-    \ et attaque l’un et l’autre indifféremment. Si l’un de ses alliés souhaite lancer\
-    \ sur elle un sort bénéfique et qu’il a besoin pour ce faire de la toucher, il\
-    \ devra faire un jet d’attaque au corps à corps. Si un personnage confus est agressé,\
-    \ il attaquera en retour celui qui l’a frappé en dernier et ne s’arrêtera que\
-    \ lorsque son assaillant mourra ou ne sera plus dans son champ de vision.\n\n\
-    Jetez 1d100 et consultez la table suivante au début de chaque round pour déterminer\
-    \ les actions de la créature.\n\n\n- d100 Comportement \n- 01–25 Agit normalement.\
-    \ \n- 26–50 Ne fait rien et babille de manière incohérente. \n- 51–75 S’inflige\
-    \ 1d8 points de dégâts + bonus de Force avec un objet en main. \n- 76–100 Attaque\
-    \ la créature la plus proche (dans ce cas, un familier fait partie du sujet).\
-    \ \n\n\n\nSi un personnage confus est dans l’incapacité d’effectuer l’action tirée\
-    \ pour ce round, il se contente de balbutier de façon incompréhensible. Si le\
-    \ personnage confus est attaqué, il riposte automatiquement en frappant son agresseur\
-    \ à son prochain tour de jeu (du moins s’il est encore confus), mais ce dernier\
-    \ ne tirera aucun avantage de l’état de sa victime. Un personnage confus ne porte\
-    \ pas d’attaque d’opportunité quand il en a l’occasion, sauf si celle-ci est provoquée\
-    \ par une créature qu’il a décidé d’attaquer (par un jet de dé ou pour une riposte)."
+  Description: 'Une créature confuse a l’esprit totalement embrouillé et ne peut
+    agir normalement. Elle ne fait pas de différence entre un ami et un ennemi, et
+    attaque l’un et l’autre indifféremment. Si l’un de ses alliés souhaite lancer
+    sur elle un sort bénéfique et qu’il a besoin pour ce faire de la toucher, il devra
+    faire un jet d’attaque au corps à corps. Si un personnage confus est agressé,
+    il attaquera en retour celui qui l’a frappé en dernier et ne s’arrêtera que lorsque
+    son assaillant mourra ou ne sera plus dans son champ de vision.
+
+
+    Jetez 1d100 et consultez la table suivante au début de chaque round pour déterminer
+    les actions de la créature.
+
+
+    d100, Comportement
+
+    • 01–25, Agit normalement.
+
+    • 26–50, Ne fait rien et babille de manière incohérente.
+
+    • 51–75, S’inflige 1d8 points de dégâts + bonus de Force avec un objet en main.
+
+    • 76–100, Attaque la créature la plus proche (dans ce cas, un familier fait partie
+    du sujet).
+
+
+
+    Si un personnage confus est dans l’incapacité d’effectuer l’action tirée pour
+    ce round, il se contente de balbutier de façon incompréhensible. Si le personnage
+    confus est attaqué, il riposte automatiquement en frappant son agresseur à son
+    prochain tour de jeu (du moins s’il est encore confus), mais ce dernier ne tirera
+    aucun avantage de l’état de sa victime. Un personnage confus ne porte pas d’attaque
+    d’opportunité quand il en a l’occasion, sauf si celle-ci est provoquée par une
+    créature qu’il a décidé d’attaquer (par un jet de dé ou pour une riposte).'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Confus_6
   
 - Nom: Ébloui
@@ -231,7 +245,7 @@
     réussir un test de Concentration (DD 10 + BMO de son adversaire + niveau du sort)
     ou le sort est perdu. Immobilisé est une version plus puissante d’agrippé et leurs
     effets ne se cumulent pas.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Immobilisé_en_situation_de_lutte__17
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashxPathfinder-RPG.lutte.ashx
   
 - Nom: Inconscient
   Source: MJ
