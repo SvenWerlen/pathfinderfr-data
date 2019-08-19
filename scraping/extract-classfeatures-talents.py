@@ -9,114 +9,71 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, html2text, cleanInlineDescription, cleanSectionName, extractSource, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_TALENT = None
-MOCK_TALENT = "mocks/roublard-talents.html"       # décommenter pour tester avec les rages pré-téléchargées
+#MOCK_TALENT = "mocks/roublard-talents.html"       # décommenter pour tester avec les rages pré-téléchargées
 
-
-#
-# cette fonction extrait le texte du prochain élément après ...
-#
-def findAfter(html, afterTag, afterCond, searched):
-    elements = html.find_next(afterTag, afterCond).next_siblings
-    for el in elements:
-        if el.name == searched:
-            return el.text.strip()
-
-#
-# cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
-#
-def findProperty(html, propName):
-    for el in html:
-        if el.name == 'b' and el.text.lower().startswith(propName.lower()):
-            value = ""
-            for e in el.next_siblings:
-                if e.name == 'br':
-                    break
-                elif e.string:
-                    value += e.string
-                else:
-                    value += e
-            return value.replace('.','').strip()
-    return None
-
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = content.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
-
-# vérification des paramètres
-if len(sys.argv) < 1:
-    print("Usage: %s" % sys.argv[0])
-    exit(1)
+URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx"
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
+
+print("Extraction des aptitude (talents)...")
 
 
 if MOCK_TALENT:
     content = BeautifulSoup(open(MOCK_TALENT),features="lxml").body
 else:
-    content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx").read(),features="lxml").body
+    content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
-section = jumpTo(html, 'h2',{'class':'separator'}, u"Description des talents de roublard")
+section = jumpTo(content, 'h2',{'class':'separator'}, u"Description des talents de roublard")
+
+level = 0
 for s in section:
-    if s.name == 'div':
-        rage = {'4Source':'MJ','5Niveau':2}
+ 
+    if s.name == 'div' and s.has_attr('class') and "article_2col" in s['class']:
+        level = 2 if level == 0 else 10
+
+        rage = {'Source':'MJ','Niveau':level}
         newObj = False
         brCount = 0
         descr = ""
         for e in s.children:
             if e.name == 'h3':
                 if newObj:
-                    rage['2Classe'] = 'Roublard'
-                    rage['6Description'] = descr.replace('\n','').strip()
-                    rage['EMPTY'] = ""
+                    rage['Classe'] = 'Roublard'
+                    rage['Description'] = descr.strip()
                     liste.append(rage)
-                    rage = {'4Source':'MJ','5Niveau':2}
+                    rage = {'Source':'MJ','Niveau':level}
                     brCount = 0
                     descr = ""
-                rage['1Nom'] = "Talent: " + e.text.replace('¶','').strip()
+                rage['Nom'] = "Talent: " + cleanSectionName(e.text)
+                rage['Référence'] = URL + e.find_next("a")['href']
                 newObj = True
             elif e.name == 'br':
                 brCount+=1
-                if(brCount==2 and u'3Prérequis' in rage):
+                if(brCount==2 and u'Prérequis' in rage):
                     descr = ""
-            elif e.name is None or e.name == 'a':
-                descr += e.string
-            elif e.name == 'div':
-                for c in e.children:
-                    if c.name == 'img':
-                        if('logoAPG' in c['src']):
-                            rage['4Source'] = 'MJRA'
-                        elif('logoUC' in c['src']):
-                            rage['4Source'] = 'AG'
-                        elif('logoMR' in c['src']):
-                            rage['4Source'] = 'MR'
-                        elif('logoMCA' in c['src']):
-                            rage['4Source'] = 'MCA'
-                        else:
-                            print(c['src'])
-                            exit(1)
-                    elif c.name == 'a':
-                        rage[u'7Référence']="http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx" + c['href']
+                    
+            elif e.name == 'div' and not e.has_attr('class'):
+                src = extractSource(e)
+                if not src is None:
+                    rage['Source'] = src
+            
+            else:
+                descr += html2text(e)
+            
+        
         ## last element
-        rage['2Classe'] = 'Roublard'
-        rage['6Description'] = descr.replace('\n','').strip()
-        rage['EMPTY'] = ""
+        rage['Classe'] = 'Roublard'
+        rage['Description'] = descr.strip()
         liste.append(rage)
             
+print("Fusion avec fichier YAML existant...")
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('1Nom','Nom')
-yml = yml.replace('2Classe','Classe')
-yml = yml.replace('4Source','Source')
-yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace('6Description','Description')
-yml = yml.replace(u'7Référence',u'Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+HEADER = ""
+
+mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)

@@ -98,6 +98,8 @@ def html2text(htmlEl):
         return text.replace("\n"," ").upper()
     elif htmlEl.name == 'center':
         return table2text(htmlEl.find('table'))
+    elif htmlEl.name == 'div' and not htmlEl.find('table') is None:
+        return table2text(htmlEl.find('table'))
     elif htmlEl.name == 'ul':
         text = ""
         for li in htmlEl.find_all('li'):
