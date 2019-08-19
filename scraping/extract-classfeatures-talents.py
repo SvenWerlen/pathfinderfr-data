@@ -64,7 +64,7 @@ for s in section:
                     rage['Source'] = src
             
             else:
-                descr += html2text(e)
+                descr += html2text(e, False)
             
         
         ## last element

@@ -50,8 +50,8 @@ def findProperty(html, propName, removeEndDot = True):
                     value += e
             
             value = value.strip()
-            if removeEndDot and value.endswith('.'):
-                return value[:-1].strip()
+            if removeEndDot:
+                return value.replace('.','').strip()
             else:
                 return value
 
@@ -75,7 +75,7 @@ def table2text(table):
     return text
 
 
-def html2text(htmlEl):
+def html2text(htmlEl, skipDiv = True):
     if htmlEl.name is None or htmlEl.name == 'a':
         if htmlEl.string is None:
             return ""
@@ -98,7 +98,7 @@ def html2text(htmlEl):
         return text.replace("\n"," ").upper()
     elif htmlEl.name == 'center':
         return table2text(htmlEl.find('table'))
-    elif htmlEl.name == 'div' and not htmlEl.find('table') is None:
+    elif not skipDiv and htmlEl.name == 'div' and htmlEl.find('table'):
         return table2text(htmlEl.find('table'))
     elif htmlEl.name == 'ul':
         text = ""
