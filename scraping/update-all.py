@@ -10,7 +10,7 @@ echo "#####################"
 ./extract-feats.py
 ./extract-feats-racial.py
 ./extract-spells.py
-#./extract-conditions.py
+./extract-conditions.py
 
 echo "#####################"
 echo "       CLASSFEATURES"
@@ -18,8 +18,7 @@ echo "#####################"
 
 ./extract-classfeatures.py
 ./extract-classes-archetypes.py
-
-#./extract-classfeatures-arcanes.py
+./extract-classfeatures-arcanes.py
 #./extract-classfeatures-astuces.py
 #./extract-classfeatures-decouvertes.py
 #./extract-classfeatures-domaines.py
