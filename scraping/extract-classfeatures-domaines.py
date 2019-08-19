@@ -9,60 +9,25 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
+from libhtml import jumpTo, html2text, cleanLabel, cleanInlineDescription, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_DOMAINE = None
-MOCK_DOMAINE = "mocks/pretre-domaines.html"       # décommenter pour tester avec les rages pré-téléchargées
-MOCK_DOMAINE_PAGE = "mocks/domain-feu.html"
+#MOCK_DOMAINE = "mocks/pretre-domaines.html"       # décommenter pour tester avec les rages pré-téléchargées
+#MOCK_DOMAINE_PAGE = "mocks/domain-feu.html"
 
-
-#
-# cette fonction extrait le texte du prochain élément après ...
-#
-def findAfter(html, afterTag, afterCond, searched):
-    elements = html.find_next(afterTag, afterCond).next_siblings
-    for el in elements:
-        if el.name == searched:
-            return el.text.strip()
-
-#
-# cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
-#
-def findProperty(html, propName):
-    for el in html:
-        if el.name == 'b' and el.text.lower().startswith(propName.lower()):
-            value = ""
-            for e in el.next_siblings:
-                if e.name == 'br':
-                    break
-                elif e.string:
-                    value += e.string
-                else:
-                    value += e
-            return value.replace('.','').strip()
-    return None
-
-#
-# cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
-#
-def jumpTo(html, afterTag, afterCond, elementText):
-    seps = html.find_all(afterTag, afterCond);
-    for s in seps:
-        if s.text.lower().strip().startswith(elementText.lower()):
-            return s.next_siblings
-
-# vérification des paramètres
-if len(sys.argv) < 1:
-    print("Usage: %s" % sys.argv[0])
-    exit(1)
+URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.domaines.ashx"
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
 
+print("Extraction des aptitude (domaines)...")
 
 if MOCK_DOMAINE:
     content = BeautifulSoup(open(MOCK_DOMAINE),features="lxml").body
 else:
-    content = BeautifulSoup(urllib.request.urlopen("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.domaines.ashx").read(),features="lxml").body
+    content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
 domaines = content.find("div", {'presentation navmenu'}).find_all("li");
 for d in domaines:
@@ -71,48 +36,37 @@ for d in domaines:
         break;
     
     domain = {}
-    domain['1Nom'] = link.text
-    domain['2Classe'] = u"Prêtre"
-    domain['4Source'] = "MJ"
-    domain['5Niveau'] = 1
-    domain['6Description'] = ""
-    domain[u'7Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
-    domain['EMPTY'] = ""
+    domain['Nom'] = link.text
+    domain['Classe'] = "Prêtre"
+    domain['Source'] = "MJ"
+    domain['Niveau'] = 1
+    domain['Description'] = ""
+    domain['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
     
-    print("Processing: " + link["href"])
+    print("Traitement: " + link["href"])
     if MOCK_DOMAINE:
         domainHTML = BeautifulSoup(open(MOCK_DOMAINE_PAGE),features="lxml").body
     else:
-        domainHTML = BeautifulSoup(urllib.request.urlopen(domain[u'7Référence']).read(),features="lxml").body
+        domainHTML = BeautifulSoup(urllib.request.urlopen(domain['Référence']).read(),features="lxml").body
     
-    pouvoirs = jumpTo(domainHTML, 'h2',{'class':'separator'}, u"Pouvoirs accordés")
+    pouvoirs = jumpTo(domainHTML, 'h2',{'class':'separator'}, "Pouvoirs accordés")
     if pouvoirs is None:
-        pouvoirs = jumpTo(domainHTML, 'b',{}, u"Pouvoirs accordés")
+        pouvoirs = jumpTo(domainHTML, 'b',{}, "Pouvoirs accordés")
     if pouvoirs is None:
         print("NOT FOUND!!")
         continue
     for p in pouvoirs:
-        if p.name is None or p.name == 'a' or p.name == 'b' or p.name == 'i':
-            domain['6Description'] += p.string
-        elif(p.name == 'br'):
-            domain['6Description'] += '\\n'
-        elif(p.name == 'h2'):
+        if(p.name == 'h2'):
             break
-    
-    domain['6Description'] += ":"
-    domain['6Description'] = domain['6Description'].replace('\n','').strip()
+        else:
+            domain['Description'] += html2text(p)
+        
     liste.append(domain)
 
 #exit(1)
 
-yml = yaml.safe_dump(liste,default_flow_style=False, allow_unicode=True)
-yml = yml.replace('1Nom','Nom')
-yml = yml.replace('2Classe','Classe')
-yml = yml.replace('4Source','Source')
-yml = yml.replace('5Niveau','Niveau')
-yml = yml.replace("6Description: '",'Description: "')
-yml = yml.replace("\\n\\n:'",'"')
-yml = yml.replace("\\n\\n:'",'"')
-yml = yml.replace(u'7Référence',u'Référence')
-yml = yml.replace("EMPTY: ''",'')
-print(yml)
+print("Fusion avec fichier YAML existant...")
+
+HEADER = ""
+
+mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)

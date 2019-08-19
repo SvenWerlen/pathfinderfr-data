@@ -21,7 +21,7 @@ echo "#####################"
 ./extract-classfeatures-arcanes.py
 ./extract-classfeatures-astuces.py
 ./extract-classfeatures-decouvertes.py
-#./extract-classfeatures-domaines.py
+./extract-classfeatures-domaines.py
 #./extract-classfeatures-exploits.py
 #./extract-classfeatures-inquisitions.py
 #./extract-classfeatures-jugements.py
