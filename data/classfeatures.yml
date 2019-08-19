@@ -177,7 +177,7 @@
   
 - Nom: 'Rage: Absorption d’énergie (Sur)'
   Classe: Barbare
-  Prérequis: Résistance à l’énergie, majeur
+  Prérequis: Résistance à l’énergie, majeur, niveau 12
   Source: MJRA
   Niveau: 12
   Description: Lorsqu’il est en rage et une fois par jour, le barbare peut absorber
@@ -185,11 +185,11 @@
     a choisi. Il n’a pas besoin de faire de jet de sauvegarde et ne subit aucun dommage.
     Il gagne à la place 1 pv temporaire par tranche de 3 points de dégâts que l’attaque
     aurait infligés, et ce jusqu’à la fin de sa rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#AILESTOTEMIQUESDRACONIQUES
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Absorption_d’énergie_Sur_0
   
 - Nom: 'Rage: Ailes totémiques draconiques (Sur)'
   Classe: Barbare
-  Prérequis: Totem draconique, Résilience totémique draconique
+  Prérequis: Totem draconique, Résilience totémique draconique, niveau 10
   Source: AG
   Niveau: 10
   Description: Quand un barbare choisit ce pouvoir de rage, il obtient Vol (Dex)
@@ -201,27 +201,27 @@
     il le souhaite, même si ce n’est pas son tour. Chaque round où il est enragé et
     qu’il vole consomme 2 rounds de rage. Il ne peut plus voler dès qu’il n’est plus
     en rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ANIMALTOTEM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Ailes_totémiques_draconiques_Sur_1
   
 - Nom: 'Rage: Animal totem (Sur)'
   Classe: Barbare
-  Prérequis: Animal totem mineur
+  Prérequis: Animal totem mineur, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare bénéficie d’un bonus d’armure naturelle
     de +1, +1 par tranche de quatre niveaux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ANIMALTOTEMMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Animal_totem_Sur_2
   
 - Nom: 'Rage: Animal totem, majeur (Sur)'
   Classe: Barbare
-  Prérequis: Animal totem
+  Prérequis: Animal totem, niveau 10
   Source: MJRA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare acquiert la capacité spéciale bond
     et peut ainsi porter une attaque à outrance lorsqu’il termine sa charge. De plus,
     ses griffes infligent 1d8 points de dégâts (1d6 s’il est de taille P), triplés
     sur un coup critique.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ANIMALTOTEMMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Animal_totem_majeur_Sur_3
   
 - Nom: 'Rage: Animal totem, mineur (Sur)'
   Classe: Barbare
@@ -231,17 +231,17 @@
     qui sont considérées comme des attaques primaires et doivent être portées avec
     le BBA maximum. Les griffes infligent 1d6 points de dégâts d’armes tranchantes
     (1d4 s’il est de taille P), auquel on ajoute le modificateur de Force du personnage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ATTAQUEDOMINATRICE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Animal_totem_mineur_Sur_4
   
 - Nom: 'Rage: Attaque dominatrice (Ext)'
   Classe: Barbare
-  Prérequis: Avance dominatrice
+  Prérequis: Avance dominatrice, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare peut renverser plus d’une cible
     par round s’il accepte une pénalité cumulative de -2 à son BMO pour chaque test
     de renversement qu’il effectue après le premier.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#AVANCEDOMINATRICE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Attaque_dominatrice_Ext_5
   
 - Nom: 'Rage: Avance dominatrice (Ext)'
   Classe: Barbare
@@ -249,7 +249,7 @@
   Niveau: 1
   Description: Lorsqu’il est en rage et s’il réussit une manoeuvre de renversement,
     le barbare inflige des dégâts égaux à son bonus de Force.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BAGARREUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Avance_dominatrice_Ext_6
   
 - Nom: 'Rage: Bagarreur'
   Classe: Barbare
@@ -258,7 +258,7 @@
   Description: Lorsqu’il est en rage, le barbare bénéficie du don science du combat
     à mains nues. S’il a déjà choisi ce don, ses coups infligent 1d6 points de dégâts
     (1d4 s’il est de taille P).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BAGARREURMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bagarreur_7
   
 - Nom: 'Rage: Bagarreur majeur'
   Classe: Barbare
@@ -267,7 +267,7 @@
   Niveau: 1
   Description: Lorsqu’il est en rage, le barbare bénéficie du don combat à deux
     armes quand il porte des attaques à mains nues.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BETEFEROCE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bagarreur_majeur_8
   
 - Nom: 'Rage: Bête féroce'
   Classe: Barbare
@@ -278,16 +278,16 @@
     des bienfaits de la rage du barbare, bien que le barbare doive pour cela dépenser
     un round de rage par round, ou deux si le compagnon animal du barbare ne lui est
     pas adjacent.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BETEFEROCESUPERIEURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bête_féroce_9
   
 - Nom: 'Rage: Bête féroce supérieure'
   Classe: Barbare
-  Prérequis: Bête féroce
+  Prérequis: Bête féroce, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Lorsqu’il est en rage, le compagnon animal du barbare bénéficie également
     de tous les pouvoirs de rage de ce dernier dont l'effet est constant.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BONPOURCEQUETUAS
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bête_féroce_supérieure_10
   
 - Nom: 'Rage: Bon pour ce que tu as (Ext)'
   Classe: Barbare
@@ -300,11 +300,11 @@
     pour la durée de sa rage. S’il a été empoisonné, il peut utiliser ce pouvoir pour
     relancer le jet de sauvegarde. Un succès sera comptabilisé dans le nombre de succès
     requis pour la guérison, mais un échec n’aura aucun effet préjudiciable.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BRISEROC
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Bon_pour_ce_que_tu_as_Ext_11
   
 - Nom: 'Rage: Brise roc (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 6
   Source: MJRA
   Niveau: 6
   Description: Une fois par rage et par une action simple, le barbare peut frapper
@@ -313,26 +313,26 @@
     l’espace qu’il occupe et toutes les cases adjacentes deviennent des terrains difficiles.
     Les créatures qui s’y trouvent (à l’exception du barbare) doivent réussir un jet
     de Réflexes DD 15 ou être projetées à terre.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BRISEROCSUPERIEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Brise_roc_Ext_12
   
 - Nom: 'Rage: Brise roc supérieur (Ext)'
   Classe: Barbare
-  Prérequis: Brise roc
+  Prérequis: Brise roc, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare utilise le pouvoir de rage Brise roc, il peut augmenter
     son rayon d’effet de 1,50 m (1 ). Il peut choisir ce pouvoir à trois reprises
     et cumuler ses effets.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BRISEURDESORTS
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Brise_roc_supérieur_Ext_13
   
 - Nom: 'Rage: Briseur de sorts'
   Classe: Barbare
-  Prérequis: Perturbateur
+  Prérequis: Perturbateur, niveau 12
   Source: MJRA
   Niveau: 12
   Description: Lorsqu’il entre en rage, le barbare bénéficie gratuitement du don
     du même nom.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#BUVEURPRODIGIEUX
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Briseur_de_sorts_14
   
 - Nom: 'Rage: Buveur prodigieux (Ext)'
   Classe: Barbare
@@ -342,7 +342,7 @@
     de +1 à sa CA contre les attaques d’opportunité, et ce pour chaque dose d’alcool
     qu’il a ingérée durant sa rage, jusqu’à un maximum de +1 par tranche de quatre
     niveaux de barbare.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#CHASSEURDESORCIERE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Buveur_prodigieux_Ext_15
   
 - Nom: 'Rage: Chasseur de sorcière (Ext)'
   Classe: Barbare
@@ -352,7 +352,7 @@
   Description: Lorsqu’il est en rage, le barbare bénéficie d’un bonus de +1 à ses
     jets de dégâts contre toutes les créatures possédant des sorts ou des pouvoirs
     magiques, +1 par tranche de quatre niveaux de barbare.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COLEREAUTOSUGGEREE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Chasseur_de_sorcière_Ext_16
   
 - Nom: 'Rage: Colère autosuggérée (Ext)'
   Classe: Barbare
@@ -362,11 +362,11 @@
     utilise ce pouvoir pour entrer en rage, le barbare est immunisé à l’état préjudiciable
     fatigué mais, lorsque la rage se termine, il est alors épuisé pendant dix minutes
     par round passé en rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COUPHANDICAPANT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Colère_autosuggérée_Ext_17
   
 - Nom: 'Rage: Coup handicapant (Ext)'
   Classe: Barbare
-  Prérequis: Coup puissant
+  Prérequis: Coup puissant, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare utilise son pouvoir de Coup puissant, il peut renoncer
@@ -375,28 +375,28 @@
     de caractéristique à la Force ou à la Dextérité de la cible pour chaque tranche
     de quatre niveaux de barbare. La cible a droit à un jet de Vigueur, 1/2 dégâts
     (DD = 10 + 1/2 niveau de barbare + modificateur de Force du barbare).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COUPHEMORRAGIQUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_handicapant_Ext_18
   
 - Nom: 'Rage: Coup hémorragique (Ext)'
   Classe: Barbare
-  Prérequis: Coup puissant
+  Prérequis: Coup puissant, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare utilise son pouvoir de coup puissant, il inflige
     aussi un montant de points de saignement égal au bonus de dégâts qu’il obtient
     grâce au coup puissant. Ce saignement ignore la résistance aux dégâts.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COUPINATTENDU
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_hémorragique_Ext_19
   
 - Nom: 'Rage: Coup inattendu (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 8
   Source: MJ
   Niveau: 8
   Description: Le barbare peut porter une attaque d’opportunité contre un ennemi
     qui entre dans la zone qu’il contrôle, que ce mouvement provoque normalement une
     attaque d’opportunité ou pas. Ce pouvoir de rage ne peut être employé qu’une seule
     fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COUPPUISSANT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_inattendu_Ext_20
   
 - Nom: 'Rage: Coup puissant (Ext)'
   Classe: Barbare
@@ -406,17 +406,17 @@
     de +1 par tranche de quatre niveaux de barbare. Ce pouvoir s’active par une action
     rapide précédant le jet d’attaque et ne peut être employé qu’une seule fois par
     rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COUPREDOUTABLE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_puissant_Ext_21
   
 - Nom: 'Rage: Coup redoutable (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 12
   Source: MJ
   Niveau: 12
   Description: Le barbare confirme automatiquement un coup critique. Ce pouvoir
     s’utilise par une action immédiate lorsqu’une possibilité de coup critique survient.
     Ce pouvoir de rage ne peut être utilisé qu’une seule fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#COURAGELIQUIDE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Coup_redoutable_Ext_22
   
 - Nom: 'Rage: Courage liquide (Ext)'
   Classe: Barbare
@@ -426,21 +426,21 @@
     les jets de sauvegarde contre les effets affectant l’esprit de +1 par dose d’alcool
     qu’il consomme durant sa rage. Ce bonus ne peut dépasser +1 par tranche de quatre
     niveaux dans la classe.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#DESTRUCTIONDENCHANTEMENT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Courage_liquide_Ext_23
   
 - Nom: 'Rage: Destruction d''enchantement (Sur)'
   Classe: Barbare
-  Prérequis: Destruction de sort
+  Prérequis: Destruction de sort, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare est enragé et qu’il réussit une manœuvre offensive
     contre un objet magique, il supprime ses pouvoirs magiques pendant 1 round et
     1 round de plus pour chaque tranche de 5 points au delà du DMD de la cible.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#DESTRUCTIONDESORT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Destruction_denchantement_Sur_24
   
 - Nom: 'Rage: Destruction de sort (Sur)'
   Classe: Barbare
-  Prérequis: Chasseur de sorcières
+  Prérequis: Chasseur de sorcières, niveau 6
   Source: AG
   Niveau: 6
   Description: Une fois par accès de rage, le barbare peut tenter de détruire un
@@ -451,11 +451,11 @@
     contre le DMD de la créature +5. Il ignore les risques de rater dus à un sort
     ou un pouvoir magique. Si le barbare réussit, il supprime l’effet pendant 1 round
     ou 2 s’il dépasse le DMD de 5 à 9. S’il le dépasse de 10 ou plus, il dissipe l’effet.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#DEVOREURDEMAGIE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Destruction_de_sort_Sur_25
   
 - Nom: 'Rage: Dévoreur de magie (Sur)'
   Classe: Barbare
-  Prérequis: Superstition
+  Prérequis: Superstition, niveau 10
   Source: AG
   Niveau: 10
   Description: Une fois par session de rage, quand le barbare rate un jet de sauvegarde
@@ -467,11 +467,11 @@
     Ces points de vie temporaires subsistent jusqu’à ce qu’ils soient absorbés par
     des dégâts ou disparaissent au bout d’une minute, selon ce qui se produit le plus
     rapidement.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ESPRITDUSERPENTMONDE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Dévoreur_de_magie_Sur_26
   
 - Nom: 'Rage: Esprit du serpent-monde (Sur)'
   Classe: Barbare
-  Prérequis: Totem du serpent-monde
+  Prérequis: Totem du serpent-monde, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est enragé, il considère ses armes comme Chaotiques,
@@ -480,11 +480,11 @@
     sorts et les effets qui appartiennent à un registre d’alignement, qui viennent
     d’un Extérieur ou d’une aberration. Ce bonus augmente de +1 pour chaque pouvoir
     de rage du serpent-monde, sauf celui-ci.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#EGRATIGNURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esprit_du_serpent-monde_Sur_27
   
 - Nom: 'Rage: Égratignure (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 10
   Source: MJRA
   Niveau: 10
   Description: Une fois par rage, le barbare peut tenter d’éviter les graves blessures
@@ -493,11 +493,11 @@
     éventuelles pénalités d’armure. En cas de succès, il encaissera la moitié des
     dégâts prévus qui deviendront non létaux. Le barbare doit décider d’utiliser ce
     pouvoir après le jet d’attaque mais avant que les dommages soient déterminés.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ERUPTIONDENERGIE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Égratignure_Ext_28
   
 - Nom: 'Rage: Éruption d’énergie (Sur)'
   Classe: Barbare
-  Prérequis: Absorption d’énergie
+  Prérequis: Absorption d’énergie, niveau 16
   Source: MJRA
   Niveau: 16
   Description: Une fois par rage, le barbare peut absorber l’énergie d’une unique
@@ -509,7 +509,7 @@
     sauvegarde de Réflexes (DD 10 + la moitié du niveau de barbare + le modificateur
     de Constitution du barbare) pour réduire de moitié les dégâts, et ce même si l’effet
     original ne le permettait pas.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ESCALADEENRAGE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Éruption_d’énergie_Sur_29
   
 - Nom: 'Rage: Escalade en rage (Ext)'
   Classe: Barbare
@@ -517,7 +517,7 @@
   Niveau: 1
   Description: Lorsque le barbare est en rage, il ajoute à tous ses tests d’Escalade
     un bonus d’altération égal à son niveau.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ESPRITVIDE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Escalade_en_rage_Ext_30
   
 - Nom: 'Rage: Esprit vide (Ext)'
   Classe: Barbare
@@ -529,16 +529,16 @@
     résultat même si celui-ci est moins bon que le premier. Ce pouvoir de rage n’est
     accessible qu’aux barbares de niveau 8 ou plus. Il ne peut être utilisé qu’une
     seule fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ESQUIVEREFLEXE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esprit_vide_Ext_31
   
 - Nom: 'Rage: Esquive réflexe (Ext)'
   Classe: Barbare
-  Prérequis: Roulé-boulé
+  Prérequis: Roulé-boulé, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare se sert de son pouvoir de Roulé-boulé, il peut appliquer
     son bonus d’esquive à la CA comme bonus aux jets de Réflexes.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#FEROCITEINSPIREE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Esquive_réflexe_Ext_32
   
 - Nom: 'Rage: Férocité inspirée (Ext)'
   Classe: Barbare
@@ -550,7 +550,7 @@
     tous ses alliés qui le souhaitent et qui se trouvent dans un rayon de 27 m (18
     cases) autour de lui, et ce pendant un nombre de rounds égal à son modificateur
     de Charisme (minimum 1).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#FRACASSEMENT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Férocité_inspirée_Ext_33
   
 - Nom: 'Rage: Fracassement (Ext)'
   Classe: Barbare
@@ -560,7 +560,7 @@
     la manoeuvre de combat destruction, le barbare peut ignorer la solidité de cet
     objet. Il lui faudra déclarer son intention avant de faire son jet d’attaque ou
     son test de destruction.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#FUREURANIMALE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Fracassement_Ext_34
   
 - Nom: 'Rage: Fureur animale (Ext)'
   Classe: Barbare
@@ -576,20 +576,20 @@
     Cette attaque se déroule avant le test de lutte. Si elle réussit, le barbare bénéficie
     d’un bonus de +2 à tous les tests de lutte effectués à l’encontre de la cible
     de la morsure au cours du round où celle-ci a eu lieu.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#GRIMPEURBESTIAL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Fureur_animale_Ext_35
   
 - Nom: 'Rage: Grimpeur bestial (Ext)'
   Classe: Barbare
-  Prérequis: Escalade en rage
+  Prérequis: Escalade en rage, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est en rage, il gagne une vitesse d’escalade naturelle
     égale à sa vitesse de déplacement de base.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#HURLEMENTTERRIFIANT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Grimpeur_bestial_Ext_36
   
 - Nom: 'Rage: Hurlement terrifiant (Ext)'
   Classe: Barbare
-  Prérequis: Regard intimidant
+  Prérequis: Regard intimidant, niveau 8
   Source: MJ
   Niveau: 8
   Description: Le barbare peut utiliser une action simple pour pousser un hurlement
@@ -599,7 +599,7 @@
     Les ennemis qui ont tenté un jet de sauvegarde contre le hurlement terrifiant
     du barbare (qu’ils l’aient réussi ou non) sont immunisés à ce pouvoir pendant
     vingt-quatre heures.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#IMPRUDENTEDESINVOLTURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Hurlement_terrifiant_Ext_37
   
 - Nom: 'Rage: Imprudente désinvolture (Ext)'
   Classe: Barbare
@@ -609,7 +609,7 @@
     de -1 à sa CA pour bénéficier d’un bonus de +1 à ses jets d’attaque. Le malus
     à la CA et le bonus à l'attaque augmentent d'un point au niveau 4 puis tous les
     quatre niveaux par la suite.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#IVRESSERUGISSANTE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Imprudente_désinvolture_Ext_38
   
 - Nom: 'Rage: Ivresse rugissante (Ext)'
   Classe: Barbare
@@ -620,7 +620,7 @@
     de terreur qu’il provoque, pour chaque dose d’alcool qu’il a ingurgitée durant
     sa rage. Ce bonus ne peut dépasser +1 par tranche de quatre niveaux dans cette
     classe.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#LUCIDITEPARFAITE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Ivresse_rugissante_Ext_39
   
 - Nom: 'Rage: Lucidité parfaite (Ext)'
   Classe: Barbare
@@ -631,7 +631,7 @@
     lancer les dés à deux reprises quand il a un risque de rater sa cible ou quand
     il fait un jet de Volonté pour dévoiler une illusion. Il conserve le meilleur
     résultat.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MARQUEPROMETTEUSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Lucidité_parfaite_Ext_40
   
 - Nom: 'Rage: Marque prometteuse (Sur)'
   Classe: Barbare
@@ -643,11 +643,11 @@
     faire appel aux faveurs des esprits. Il bénéficie d’un bonus de +1d6 à un jet
     de d20 qu’il vient juste de faire. Il peut demander les faveurs des esprits après
     avoir vu le résultat du jet de d20.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MASSUEVIVANTE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Marque_prometteuse_Sur_41
   
 - Nom: 'Rage: Massue vivante (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 10
   Source: AG
   Niveau: 10
   Description: Quand le barbare est en rage et qu’il immobilise un adversaire plus
@@ -664,7 +664,7 @@
     le barbare peut l’utiliser comme arme sans avoir besoin de lutter avec ou de l’immobiliser,
     et ce jusqu’à ce que la créature soit réduite à 0 point de vie. Elle n’a alors
     plus aucune utilité en tant qu’arme improvisée.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MOMENTDELUCIDITE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Massue_vivante_Ext_42
   
 - Nom: 'Rage: Moment de lucidité (Ext)'
   Classe: Barbare
@@ -676,7 +676,7 @@
     Une action rapide suffit pour activer ce pouvoir. Malgré cela, le round en question
     compte quand même comme round de rage par rapport au quota quotidien. Ce pouvoir
     ne peut être utilisé qu’une seule fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MONTUREFEROCE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Moment_de_lucidité_Ext_43
   
 - Nom: 'Rage: Monture féroce (Ext)'
   Classe: Barbare
@@ -688,29 +688,29 @@
     Si elle entre en rage de cette manière, le barbare doit dépenser un round supplémentaire
     de rage par round pour sa monture. Il peut choisir de ne pas le faire, auquel
     cas sa monture n’entre pas en rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MONTUREFEROCEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Monture_féroce_Ext_44
   
 - Nom: 'Rage: Monture féroce, majeur (Ext)'
   Classe: Barbare
-  Prérequis: Monture féroce
+  Prérequis: Monture féroce, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Lorsqu’il est en rage et sur le dos de sa monture, celle-ci gagne
     les avantages de n’importe quel pouvoir de rage ayant un effet constant sur lui
     quand il est en rage. Cependant, elle ne peut pas bénéficier de ceux qui nécessitent
     une action pour être activés, et ce même si c’est une action libre.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#MONTURESPIRITUELLE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Monture_féroce_majeur_Ext_45
   
 - Nom: 'Rage: Monture spirituelle (Sur)'
   Classe: Barbare
-  Prérequis: Monture féroce
+  Prérequis: Monture féroce, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage et sur le dos de sa monture, celle-ci bénéficie
     d’une RD/magie égale à la moitié du niveau de barbare du personnage. On considère
     que ses armes naturelles sont magiques pour ce qui est de surpasser la réduction
     des dégâts.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#NAGEENRAGE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Monture_spirituelle_Sur_46
   
 - Nom: 'Rage: Nage en rage (Ext)'
   Classe: Barbare
@@ -718,16 +718,16 @@
   Niveau: 1
   Description: Lorsque le barbare est en rage, il ajoute à tous ses tests de Natation
     un bonus d’altération égal à son niveau.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#NAGEURBESTIAL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Nage_en_rage_Ext_47
   
 - Nom: 'Rage: Nageur bestial (Ext)'
   Classe: Barbare
-  Prérequis: Nage en rage
+  Prérequis: Nage en rage, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est en rage, il gagne une vitesse de nage naturelle
     égale à sa vitesse de déplacement de base.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#NOUVELLEVIGUEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Nageur_bestial_Ext_48
   
 - Nom: 'Rage: Nouvelle vigueur (Ext)'
   Classe: Barbare
@@ -739,7 +739,7 @@
     1d8 tous les quatre niveaux de barbare au-delà du niveau 4 et ce jusqu’à un maximum
     de 5d8 au niveau 20. Ce pouvoir de rage ne peut être employé qu’une seule fois
     par jour (et seulement lorsque le barbare est en rage).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ODORAT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Nouvelle_vigueur_Ext_49
   
 - Nom: 'Rage: Odorat (Ext)'
   Classe: Barbare
@@ -747,11 +747,11 @@
   Niveau: 1
   Description: Le barbare bénéficie de la capacité d’odorat lorsqu’il est en rage
     et peut utiliser cette capacité pour situer des ennemis invisibles.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ODORATPRIMITIF
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Odorat_Ext_50
   
 - Nom: 'Rage: Odorat primitif (Ext)'
   Classe: Barbare
-  Prérequis: Odorat
+  Prérequis: Odorat, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare utilise son pouvoir odorat, il ajoute la moitié
@@ -759,7 +759,7 @@
     et à ses tests de Perception pour localiser une créature qu’il ne voit pas. S’il
     repère la position d’une créature qui bénéficie d’un camouflage total, il la traite
     comme si elle était juste camouflée.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PASRAPIDES
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Odorat_primitif_Ext_51
   
 - Nom: 'Rage: Pas rapides (Ext)'
   Classe: Barbare
@@ -768,7 +768,7 @@
   Description: Le barbare gagne un bonus d’altération de +1,50 m (1 case) à sa vitesse
     de déplacement. Cet avantage est toujours actif lorsque le barbare est en rage.
     Un barbare peut choisir ce pouvoir jusqu’à trois fois et ses effets se cumulent.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PERCUSSION
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pas_rapides_Ext_52
   
 - Nom: 'Rage: Percussion (Ext)'
   Classe: Barbare
@@ -778,15 +778,15 @@
     et place d’une attaque au corps à corps. S’il y parvient, sa cible subit des dégâts
     égaux à son modificateur de Force et est projetée à terre. Cette action ne provoque
     pas d’attaque d’opportunité.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PERTURBATEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Percussion_Ext_53
   
 - Nom: 'Rage: Perturbateur'
   Classe: Barbare
-  Prérequis: Superstition
+  Prérequis: Superstition, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Lorsqu’il est en rage, le barbare bénéficie du don Perturbateur.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PICDEFORCE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Perturbateur_54
   
 - Nom: 'Rage: Pic de force (Ext)'
   Classe: Barbare
@@ -796,11 +796,11 @@
     de manœuvre offensive ou à sa défense contre les manœuvres offensives lorsqu’un
     adversaire tente une telle manœuvre à son encontre. Ce pouvoir s’utilise par une
     action immédiate et ne peut être employé qu’une seule fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PIETINEMENTFEROCE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Pic_de_force_Ext_55
   
 - Nom: 'Rage: Piétinement féroce (Ext)'
   Classe: Barbare
-  Prérequis: Monture féroce
+  Prérequis: Monture féroce, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Lorsqu’il est en rage et sur le dos de sa monture, celle-ci gagne
@@ -812,18 +812,18 @@
     qui se trouvent sur la trajectoire de la monture ou qui contrôlent une zone qu’elle
     traverse peuvent porter des attaques d’opportunité sur elle ou son cavalier, mais
     pas sur les deux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PIETINEMENTFEROCEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Piétinement_féroce_Ext_56
   
 - Nom: 'Rage: Piétinement féroce, majeur (Ext)'
   Classe: Barbare
-  Prérequis: Piétinement féroce
+  Prérequis: Piétinement féroce, niveau 12
   Source: MJRA
   Niveau: 12
   Description: La monture d’un barbare peut piétiner des créatures dont la taille
     est inférieure ou égale à la sienne. De plus, elle peut par une action libre tenter
     un renversement sur une créature qui a raté son jet de Réflexes (ou choisi de
     ne pas faire de jet de sauvegarde afin de bénéficier d’une attaque d’opportunité).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#POSTUREDEFENSIVE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Piétinement_féroce_majeur_Ext_57
   
 - Nom: 'Rage: Posture défensive (Ext)'
   Classe: Barbare
@@ -834,7 +834,7 @@
     actuelle de son modificateur de Constitution (au minimum 1 round). Ce bonus augmente
     de +1 par tranche de six niveaux de barbare. Une action de mouvement est nécessaire
     pour activer ce pouvoir et celle-ci ne provoque pas d’attaque d’opportunité.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#POURSUITE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Posture_défensive_Ext_58
   
 - Nom: 'Rage: Poursuite (Ext)'
   Classe: Barbare
@@ -846,18 +846,18 @@
     à côté de l’ennemi qui a battu en retraite. Le déplacement du barbare est sujet
     aux attaques d’opportunité normalement. Ce pouvoir ne peut être utilisé qu’une
     seule fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PRECISIONAFFINEE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Poursuite_Ext_59
   
 - Nom: 'Rage: Précision affinée (Ext)'
   Classe: Barbare
-  Prérequis: Précision étonnante
+  Prérequis: Précision étonnante, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare se sert de sa précision étonnante, il ignore les
     chances de rater dues au camouflage et considère le camouflage total comme un
     simple camouflage. Il ignore également les malus dus à un abri, sauf en cas d’abri
     total.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PRECISIONETONNANTE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Précision_affinée_Ext_60
   
 - Nom: 'Rage: Précision étonnante (Ext)'
   Classe: Barbare
@@ -867,48 +867,48 @@
     augmente de +1 par tranche de quatre niveaux de barbare. Ce pouvoir s’active par
     une action rapide précédant le jet d’attaque et ne peut être employé qu’une seule
     fois par rage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PRECISIONLETALE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Précision_étonnante_Ext_61
   
 - Nom: 'Rage: Précision létale (Ext)'
   Classe: Barbare
-  Prérequis: Précision mortelle
+  Prérequis: Précision mortelle, niveau 16
   Source: AG
   Niveau: 16
   Description: Quand le barbare utilise son pouvoir de rage précision étonnante,
     son multiplicateur de dégâts critiques augmente de 1 (un multiplicateur de ×2
     devient ×3, un multiplicateur 19-20/×2 devient 19-20/×3, un ×3 devient un ×4 et
     un ×4 devient un ×5).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PRECISIONMORTELLE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Précision_létale_Ext_62
   
 - Nom: 'Rage: Précision mortelle (Ext)'
   Classe: Barbare
-  Prérequis: Précision étonnante
+  Prérequis: Précision étonnante, niveau 4
   Source: AG
   Niveau: 4
   Description: Si le barbare est en passe de confirmer un coup critique alors qu’il
     utilise son pouvoir de précision étonnante, il applique deux fois son bonus de
     précision étonnante au jet qui lui permet de confirmer le critique.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PROJECTILE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Précision_mortelle_Ext_63
   
 - Nom: 'Rage: Projectile (Ext)'
   Classe: Barbare
-  Prérequis: Projectile mineur
+  Prérequis: Projectile mineur, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Ce pouvoir est en tout point semblable à Projectile mineur, mais
     le barbare peut en plus augmenter le facteur de portée à 18 m (12 cases) ou la
     taille de son projectile d’une catégorie.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PROJECTILEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Projectile_Ext_64
   
 - Nom: 'Rage: Projectile majeur (Ext)'
   Classe: Barbare
-  Prérequis: Projectile
+  Prérequis: Projectile, niveau 12
   Source: MJRA
   Niveau: 12
   Description: Ce pouvoir est en tout point semblable à Projectile, mais le barbare
     peut augmenter le facteur de portée de 27 m (18 ) ou la taille de son projectile
     de deux catégories.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PROJECTILEMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Projectile_majeur_Ext_65
   
 - Nom: 'Rage: Projectile mineur (Ext)'
   Classe: Barbare
@@ -925,11 +925,11 @@
     (DD 10 + la moitié du niveau de barbare + son modificateur de Force). Le personnage
     peut choisir de faire usage du don Attaque en puissance pour cette attaque, appliqué
     à une arme à une ou à deux mains.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#PROJECTILEENCHARGE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Projectile_mineur_Ext_66
   
 - Nom: 'Rage: Projectile en charge (Ext)'
   Classe: Barbare
-  Prérequis: Projectile mineur
+  Prérequis: Projectile mineur, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage et qu’il charge, le barbare peut sortir et
@@ -939,11 +939,11 @@
     au moins 3 m supplémentaires avant d'effectuer son attaque au corps-à-corps de
     fin de charge. Il doit avoir un projectile en main ou une main libre au début
     de la charge.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RAGEELEMENTAIRE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Projectile_en_charge_Ext_67
   
 - Nom: 'Rage: Rage élémentaire (Sur)'
   Classe: Barbare
-  Prérequis: Rage élémentaire mineure
+  Prérequis: Rage élémentaire mineure, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Toutes les attaques de corps à corps du barbare infligent 1d6 de
@@ -951,58 +951,58 @@
     est choisi au moment où il entre en rage. Notez que le personnage peut utiliser
     son pouvoir de rage élémentaire mineure en même temps, mais il doit choisir un
     autre type d’énergie.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RAGEELEMENTAIREMAJEURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Rage_élémentaire_Sur_68
   
 - Nom: 'Rage: Rage élémentaire majeure (Sur)'
   Classe: Barbare
-  Prérequis: Rage élémentaire
+  Prérequis: Rage élémentaire, niveau 12
   Source: MJRA
   Niveau: 12
   Description: Lorsqu’il est en rage, tous les coups critiques qu’il fera avec une
     de ses armes de corps à corps infligent 1d10 points de dégâts d’énergie supplémentaires
     (2d10 si ses dégâts sont triplés sur un coup critique, et 3d10 s’ils sont quadruplés).
     Le type d’énergie sera le même que celui choisi pour le pouvoir de rage élémentaire.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RAGEELEMENTAIREMINEURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Rage_élémentaire_majeure_Sur_69
   
 - Nom: 'Rage: Rage élémentaire mineure (Sur)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 4
   Source: MJRA
   Niveau: 4
   Description: Une fois par rage et par une action rapide, les attaques de corps
     à corps du barbare infligent 1d6 points de dégâts d’énergie (acide, froid, électricité
     ou feu) supplémentaires pendant 1 round.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RAGEFANTOME
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Rage_élémentaire_mineure_Sur_70
   
 - Nom: 'Rage: Rage fantôme (Sur)'
   Classe: Barbare
-  Prérequis: Superstition
+  Prérequis: Superstition, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est enragé, il inflige des dégâts normaux aux créatures
     intangibles, même s’il n’utilise pas d’arme magique. Il gagne également un bonus
     de moral à la CA au contact d’un montant égal au bonus aux jets de sauvegarde
     qu’il obtient grâce à son pouvoir superstition.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RAGESANSPEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Rage_fantôme_Sur_71
   
 - Nom: 'Rage: Rage sans peur (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 12
   Source: MJ
   Niveau: 12
   Description: Lorsque le barbare est en rage, il est immunisé aux états préjudiciables
     secoué et effrayé.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#REDUCTIONDEDEGATSACCRUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Rage_sans_peur_Ext_72
   
 - Nom: 'Rage: Réduction de dégâts accrue (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 8
   Source: MJ
   Niveau: 8
   Description: La réduction de dégâts du barbare s’accroît de 1/–. Ce bonus est
     actif tant que le barbare est en rage. Un barbare peut choisir ce pouvoir jusqu’à
     trois fois ; ses effets se cumulent.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#REFLEXESRAPIDES
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Réduction_de_dégâts_accrue_Ext_73
   
 - Nom: 'Rage: Réflexes rapides (Ext)'
   Classe: Barbare
@@ -1010,7 +1010,7 @@
   Niveau: 1
   Description: Lorsque le barbare est en rage, il peut porter une attaque d’opportunité
     supplémentaire par round.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#REGARDINTIMIDANT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Réflexes_rapides_Ext_74
   
 - Nom: 'Rage: Regard intimidant (Ext)'
   Classe: Barbare
@@ -1020,7 +1020,7 @@
     contre un ennemi adjacent. S’il parvient à démoraliser son adversaire, celui-ci
     est secoué pendant 1d4 rounds + 1 round par tranche de 5 points de différence
     entre son résultat et le DD du test.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#REPOUSSERLENNEMI
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Regard_intimidant_Ext_75
   
 - Nom: 'Rage: Repousser l’ennemi (Ext)'
   Classe: Barbare
@@ -1031,11 +1031,11 @@
     la cible subit des dégâts égaux au modificateur de Force du barbare en plus d’être
     repoussée. Le barbare n’est pas obligé de se déplacer avec la cible en cas de
     réussite. Cette technique ne provoque pas d’attaque d’opportunité.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RESILIENCETOTEMIQUEDRACONIQUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Repousser_l’ennemi_Ext_76
   
 - Nom: 'Rage: Résilience totémique draconique (Sur)'
   Classe: Barbare
-  Prérequis: Totem draconique
+  Prérequis: Totem draconique, niveau 8
   Source: AG
   Niveau: 8
   Description: 'Quand le barbare est enragé, il devient résistant au type d’énergie
@@ -1043,11 +1043,11 @@
     électricité (bleu et bronze) ou feu (airain, or et rouge). Cette résistance est
     égale au double de la RD/– dont le barbare bénéficie actuellement grâce à sa réduction
     de dégâts de classe. Cette RD augmente de 2 par totem draconique, y compris celui-ci.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RESILIENCETOTEMIQUEDELARUCHE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Résilience_totémique_draconique_Sur_77
   
 - Nom: 'Rage: Résilience totémique de la ruche (Sur)'
   Classe: Barbare
-  Prérequis: Totem de la ruche
+  Prérequis: Totem de la ruche, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est enragé, il ne subit plus de dégâts de la part
@@ -1055,7 +1055,7 @@
     comme le poison ou les saignements. Il gagne aussi un bonus de +1 aux tests de
     manœuvre offensive et au DMD, quand il est en lutte, pour chaque tranche de quatre
     niveaux de barbare (+5 au maximum).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RESISTANCEALENERGIE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Résilience_totémique_de_la_ruche_Sur_78
   
 - Nom: 'Rage: Résistance à l’énergie (Ext)'
   Classe: Barbare
@@ -1067,17 +1067,17 @@
     au moment où le pouvoir de rage est choisi. Il est possible de sélectionner ce
     pouvoir plusieurs fois, mais ses effets ne se cumulent pas, ils s’appliquent à
     un type d’énergie différent.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#RESISTANCEALENERGIEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Résistance_à_l’énergie_Ext_79
   
 - Nom: 'Rage: Résistance à l’énergie majeur (Ext)'
   Classe: Barbare
-  Prérequis: Résistance à l’énergie
+  Prérequis: Résistance à l’énergie, niveau 8
   Source: MJRA
   Niveau: 8
   Description: Une fois par rage, le barbare peut réduire de moitié les dégâts d’énergie
     d’une unique attaque, s’il a choisi la résistance à l’énergie correspondante (divisez
     les dégâts par 2 puis appliquez la résistance).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#ROULEBOULE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Résistance_à_l’énergie_majeur_Ext_80
   
 - Nom: 'Rage: Roulé-boulé (Ext)'
   Classe: Barbare
@@ -1088,7 +1088,7 @@
     actuel (au minimum 1 round). Ce bonus augmente de +1 par tranche de 6 niveaux
     de barbare. Cette capacité s'utilise en une action de mouvement qui ne provoque
     pas d'attaque d'opportunité.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGABYSSALMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Roulé-boulé_Ext_81
   
 - Nom: 'Rage: Sang abyssal mineur (Sur)'
   Classe: Barbare
@@ -1099,26 +1099,26 @@
     l’attaque maximum du barbare. Elles infligent 1d6 points de dégâts tranchants
     pour une créature de taille M (1d4 pour créature de taille P) plus son modificateur
     de Force.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGABYSSAL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_abyssal_mineur_Sur_82
   
 - Nom: 'Rage: Sang abyssal (Sur)'
   Classe: Barbare
-  Prérequis: Sang abyssal mineur
+  Prérequis: Sang abyssal mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Une fois par jour quand le barbare entre en rage, il peut choisir
     d’augmenter sa taille de base d’une catégorie (comme le sort , même si le barbare
     n’est pas humanoïde).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGABYSSALMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_abyssal_Sur_83
   
 - Nom: 'Rage: Sang abyssal majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang abyssal
+  Prérequis: Sang abyssal, niveau 10
   Source: MCA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare gagne une résistance de 5 contre
     l’acide, le feu et le froid.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGCELESTEMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_abyssal_majeur_Sur_84
   
 - Nom: 'Rage: Sang céleste mineur (Sur)'
   Classe: Barbare
@@ -1128,27 +1128,27 @@
     du barbare sont des armes alignées sur le Bien dans le cadre de la réduction des
     dégâts. De plus, le barbare inflige 1d6 points de dégâts supplémentaires lorsqu’il
     blesse un extérieur Mauvais avec une attaque au corps à corps.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGCELESTE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_céleste_mineur_Sur_85
   
 - Nom: 'Rage: Sang céleste (Sur)'
   Classe: Barbare
-  Prérequis: Sang céleste mineur
+  Prérequis: Sang céleste mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare gagne une résistance de 5 contre
     l’acide et le froid.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGCELESTEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_céleste_Sur_86
   
 - Nom: 'Rage: Sang céleste majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang céleste
+  Prérequis: Sang céleste, niveau 10
   Source: MCA
   Niveau: 10
   Description: Une fois par rage, le barbare peut relancer un test de caractéristique,
     un test de compétence ou un jet de sauvegarde qu’il vient d’effectuer. Il doit
     conserver le deuxième résultat, même s’il est inférieur. Il doit décider s’il
     utilise ce pouvoir après avoir lancé le dé mais avant la révélation du résultat.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDEMORTVIVANTMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_céleste_majeur_Sur_87
   
 - Nom: 'Rage: Sang de mort-vivant mineur (Sur).'
   Classe: Barbare
@@ -1159,25 +1159,25 @@
     rounds égal à la moitié du niveau de barbare du personnage (minimum 1). Cet effet
     ne se cumule pas avec d’autres effets de terreur pour infliger un état préjudiciable
     plus important.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDEMORTVIVANT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_de_mort-vivant_mineur_Sur_88
   
 - Nom: 'Rage: Sang de mort-vivant (Sur)'
   Classe: Barbare
-  Prérequis: Sang de mort-vivant mineur
+  Prérequis: Sang de mort-vivant mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Lorsqu’il est en rage, on considère que toutes les attaques au corps
     à corps du barbare bénéficient de la propriété spéciale d’arme spectrale.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDEMORTVIVANTMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_de_mort-vivant_Sur_89
   
 - Nom: 'Rage: Sang de mort-vivant majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang de mort-vivant
+  Prérequis: Sang de mort-vivant, niveau 10
   Source: MCA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare gagne une résistance au froid 10,
     ainsi qu’une RD 10/- contre les dégâts non létaux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDRACONIQUEMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_de_mort-vivant_majeur_Sur_90
   
 - Nom: 'Rage: Sang draconique mineur (Sur)'
   Classe: Barbare
@@ -1187,22 +1187,22 @@
     comme ses attaques principales et effectuées en appliquant son bonus de base à
     l’attaque maximum. Elles infligent 1d6 points de dégâts tranchants pour une créature
     de taille M (1d4 pour créature de taille P) plus son modificateur de Force.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDRACONIQUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_draconique_mineur_Sur_91
   
 - Nom: 'Rage: Sang draconique (Sur)'
   Classe: Barbare
-  Prérequis: Sang draconique mineur
+  Prérequis: Sang draconique mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: 'Choisissez un type d’énergie destructive parmi les suivants : acide,
     électricité, feu ou froid. Lorsqu’il est en rage, le barbare gagne une résistance
     de 5 contre le type d’énergie destructive choisi et un bonus d’armure naturelle
     de +1.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGDRACONIQUEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_draconique_Sur_92
   
 - Nom: 'Rage: Sang draconique majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang draconique
+  Prérequis: Sang draconique, niveau 10
   Source: MCA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare dispose d’une attaque de souffle
@@ -1214,7 +1214,7 @@
     la zone d’effet du souffle doivent réussir un jet de Réflexes pour diminuer les
     dégâts de moitié. Le DD de ce jet de sauvegarde est égal à 10 + la moitié du niveau
     du barbare + son modificateur de Constitution.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGELEMENTAIREMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_draconique_majeur_Sur_93
   
 - Nom: 'Rage: Sang élémentaire mineur (Sur)'
   Classe: Barbare
@@ -1225,21 +1225,21 @@
     trois fois par jour, imprégner ses attaques au corps à corps d’énergie élémentaire.
     Elles infligent alors 1d6 points de dégâts supplémentaires du type d’énergie choisi
     pendant un round.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGELEMENTAIRE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_élémentaire_mineur_Sur_94
   
 - Nom: 'Rage: Sang élémentaire (Sur)'
   Classe: Barbare
-  Prérequis: Sang élémentaire mineur
+  Prérequis: Sang élémentaire mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare gagne une résistance aux énergies
     destructives de 10 contre le type d’énergie choisi lorsqu’il a pris le pouvoir
     de sang élémentaire mineur.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGELEMENTAIREMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_élémentaire_Sur_95
   
 - Nom: 'Rage: Sang élémentaire majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang élémentaire mineur
+  Prérequis: Sang élémentaire mineur, niveau 10
   Source: MCA
   Niveau: 10
   Description: 'Lorsqu’il est en rage, le barbare gagne un type de déplacement spécial
@@ -1248,7 +1248,7 @@
     vitesse de nage de 18 mètres (12 ), le feu confère une augmentation de 9 mètres
     (6 ) de la vitesse de déplacement de base au sol et l’électricité confère une
     vitesse de vol de 18 mètres (12 ) (bonne manoeuvrabilité).'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGFEERIQUEMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_élémentaire_majeur_Sur_96
   
 - Nom: 'Rage: Sang féerique mineur (Sur)'
   Classe: Barbare
@@ -1258,25 +1258,25 @@
     critique, la cible doit réussir un jet de Volonté (DD = 10 + 1/2 du niveau du
     barbare + son modificateur de Constitution) pour ne pas être confuse pendant un
     round. C’est un effet mental de coercition.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGFEERIQUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_féerique_mineur_Sur_97
   
 - Nom: 'Rage: Sang féerique (Sur)'
   Classe: Barbare
-  Prérequis: Sang féerique mineur
+  Prérequis: Sang féerique mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Lorsqu’il est en rage et qu’il charge, le barbare ignore les terrains
     difficiles (y compris les terrains magiques, mais pas les créatures).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGFEERIQUEMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_féerique_Sur_98
   
 - Nom: 'Rage: Sang féerique majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang féerique
+  Prérequis: Sang féerique, niveau 10
   Source: MCA
   Niveau: 10
   Description: Lorsqu’il est en rage et tant qu’il se déplace de 3 mètres au moins,
     le barbare bénéficie des effets d’un sort de  pendant 1 round.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGINFERNALMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_féerique_majeur_Sur_99
   
 - Nom: 'Rage: Sang infernal mineur (Sur)'
   Classe: Barbare
@@ -1286,25 +1286,25 @@
     le barbare peut imprégner ses attaques de feu infernal pendant un round. Toutes
     ses attaques au corps à corps gagnent alors la propriété spéciale d’arme magique
     de feu.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGINFERNAL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_infernal_mineur_Sur_100
   
 - Nom: 'Rage: Sang infernal (Sur)'
   Classe: Barbare
-  Prérequis: Sang infernal mineur
+  Prérequis: Sang infernal mineur, niveau 6
   Source: MCA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare gagne une résistance au feu 5,
     ainsi qu’un bonus de +2 aux jets de sauvegarde contre le poison.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SANGINFERNALMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_infernal_Sur_101
   
 - Nom: 'Rage: Sang infernal majeur (Sur)'
   Classe: Barbare
-  Prérequis: Sang infernal
+  Prérequis: Sang infernal, niveau 10
   Source: MCA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare gagne un bonus de +4 contre les
     enchantements et les effets de terreur.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SAUTENRAGE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sang_infernal_majeur_Sur_102
   
 - Nom: 'Rage: Saut en rage (Ext)'
   Classe: Barbare
@@ -1313,26 +1313,26 @@
   Description: Lorsque le barbare est en rage et qu’il utilise la compétence Acrobaties
     pour sauter, son test de compétence gagne un bonus d’altération égal à son niveau,
     et on considère qu’il bénéficie automatiquement d’un élan.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SAUTEURBESTIAL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Saut_en_rage_Ext_103
   
 - Nom: 'Rage: Sauteur bestial (Ext)'
   Classe: Barbare
-  Prérequis: Saut en rage
+  Prérequis: Saut en rage, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est en rage, il peut faire une action de mouvement
     pour se déplacer et faire une action simple à n’importe quel stade de ce déplacement.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SPRINT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sauteur_bestial_Ext_104
   
 - Nom: 'Rage: Sprint (Ext)'
   Classe: Barbare
-  Prérequis: Pas rapides
+  Prérequis: Pas rapides, niveau 4
   Source: AG
   Niveau: 4
   Description: Une fois par accès de rage, le barbare peut dépenser une action complexe
     pour se déplacer à 6 fois sa vitesse ou dépenser seulement une action de charge
     lors d’une action complexe pour se déplacer à 3 fois sa vitesse.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#SUPERSTITION
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Sprint_Ext_105
   
 - Nom: 'Rage: Superstition (Ext)'
   Classe: Barbare
@@ -1344,11 +1344,11 @@
     il ne peut pas se soumettre volontairement aux effets d’un sort. Il doit tenter
     un jet de sauvegarde pour résister à chacun des sorts qui sont lancés contre lui,
     même ceux provenant de ses alliés.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDELARUCHE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Superstition_Ext_106
   
 - Nom: 'Rage: Totem de la ruche (Sur)'
   Classe: Barbare
-  Prérequis: Fureur animale
+  Prérequis: Fureur animale, niveau 4
   Source: AG
   Niveau: 4
   Description: Quand le barbare est enragé, il subit seulement la moitié des dégâts
@@ -1356,28 +1356,28 @@
     qui agit comme telle (comme une  qui sert à convoquer des araignées ou un ). Il
     gagne aussi un bonus de +1 aux tests de Force et au DMD contre les manœuvres bousculade,
     attirer et croc-en-jambe par tranche de quatre niveaux de barbare (+5 au maximum).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDUCHAOS
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_de_la_ruche_Sur_107
   
 - Nom: 'Rage: Totem du chaos (Sur)'
   Classe: Barbare
-  Prérequis: Totem du chaos mineur
+  Prérequis: Totem du chaos mineur, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, le corps du barbare est possédé par le chaos.
     Il bénéficie d’un bonus de +4 sur ses tests d’Évasion et a 25% de chances d’ignorer
     les dégâts supplémentaires d’un coup critique ou d’une attaque sournoise.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDUCHAOSMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_du_chaos_Sur_108
   
 - Nom: 'Rage: Totem du chaos, majeur (Sur)'
   Classe: Barbare
-  Prérequis: Totem du chaos
+  Prérequis: Totem du chaos, niveau 10
   Source: MJRA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare bénéficie d’une RD/Loyal égale
     à la moitié de son niveau de barbare. On considère que ses armes et ses armes
     naturelles sont d’alignement Chaotique pour ce qui est de surpasser la résistance
     aux dégâts.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDUCHAOSMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_du_chaos_majeur_Sur_109
   
 - Nom: 'Rage: Totem du chaos, mineur (Sur)'
   Classe: Barbare
@@ -1388,11 +1388,11 @@
     de +1 sur les jets de sauvegarde contre la confusion, la folie, le métamorphisme
     et les effets de la magie du registre Loyal. Ce bonus augmente de +1 pour chaque
     pouvoir de rage de totem du chaos que le personnage possède.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDRACONIQUE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_du_chaos_mineur_Sur_110
   
 - Nom: 'Rage: Totem draconique (Sur)'
   Classe: Barbare
-  Prérequis: Fureur animale, Regard intimidant
+  Prérequis: Fureur animale, Regard intimidant, niveau 6
   Source: AG
   Niveau: 6
   Description: Le barbare doit choisir la couleur du dragon qu’il prend pour totem
@@ -1402,7 +1402,7 @@
     de sommeil. Ce bonus augmente de +1 à chaque fois qu’il acquiert un nouveau pouvoir
     de rage totémique draconique (comme la Résilience totémique draconique ou les
     Ailes totémiques draconiques).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMDUSERPENTMONDE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_draconique_Sur_111
   
 - Nom: 'Rage: Totem du serpent-monde (Sur)'
   Classe: Barbare
@@ -1411,22 +1411,22 @@
   Description: Quand le barbare est enragé, il gagne un bonus d’intuition de +1
     à la CA contre les Extérieurs et les aberrations. Ce bonus augmente de +1 pour
     chaque pouvoir de rage du serpent-monde, sauf celui-ci.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMFIELON
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_du_serpent-monde_Sur_112
   
 - Nom: 'Rage: Totem fiélon (Sur)'
   Classe: Barbare
-  Prérequis: Totem fiélon mineur
+  Prérequis: Totem fiélon mineur, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, des dizaines de pointes acérées jaillissent
     du corps du barbare. Tous ceux qui tentent de l’atteindre avec une arme de corps
     à corps, une attaque à mains nues ou une arme naturelle subissent 1d6 de dégâts
     perforants.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMFIELONMAJEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_fiélon_Sur_113
   
 - Nom: 'Rage: Totem fiélon, majeur (Sur)'
   Classe: Barbare
-  Prérequis: Totem fiélon
+  Prérequis: Totem fiélon, niveau 10
   Source: MJRA
   Niveau: 10
   Description: Lorsqu’il est en rage, le barbare est entouré d’une aura de menace.
@@ -1435,7 +1435,7 @@
     du personnage, alors que leur chair est entaillée par des dizaines de petites
     coupures. Les créatures d’alignement Neutre sont secouées mais ne subissent pas
     de dégâts, celles d’alignement Mauvais ne sont quant à elles pas affectées.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMFIELONMINEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_fiélon_majeur_Sur_114
   
 - Nom: 'Rage: Totem fiélon, mineur (Sur)'
   Classe: Barbare
@@ -1448,18 +1448,18 @@
     de Force du barbare. S’il frappe également avec des armes, le coup de corne sera
     considéré comme une attaque secondaire mais elle subira un malus de -5 et le modificateur
     de Force sera divisé par deux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMSPIRITUEL
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_fiélon_mineur_Sur_115
   
 - Nom: 'Rage: Totem spirituel (Sur)'
   Classe: Barbare
-  Prérequis: Totem spirituel mineur
+  Prérequis: Totem spirituel mineur, niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare devient plus difficile à discerner.
     Les esprits autour de lui infligent aux adversaires ne se trouvant pas dans une
     zone adjacente au personnage 20% de chances de le rater sur des attaques à distance
     et de corps à corps (typiquement à cause de l’allonge).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMSPIRITUELINFERIEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_spirituel_Sur_116
   
 - Nom: 'Rage: Totem spirituel inférieur (Sur)'
   Classe: Barbare
@@ -1470,11 +1470,11 @@
     et situés dans une zone adjacente à celle où se trouve le personnage, et bénéficient
     pour ce faire du BBA maximum du barbare + son modificateur de Charisme. Les attaques
     font 1d4 dégâts d'énergie négative + le modificateur de Charisme du barbare
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOTEMSPIRITUELSUPERIEUR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_spirituel_inférieur_Sur_117
   
 - Nom: 'Rage: Totem spirituel, supérieur (Sur)'
   Classe: Barbare
-  Prérequis: Totem spirituel
+  Prérequis: Totem spirituel, niveau 10
   Source: MJRA
   Niveau: 10
   Description: Lorsqu’il est en rage, les esprits qui entourent le barbare deviennent
@@ -1483,11 +1483,11 @@
     de son tour. De plus, ils peuvent attaquer les ennemis qui se tiennent à une distance
     maximale de 4,5m de leur protégé, et cette attaque de coup inflige 1d6 points
     de dégâts d’énergie négative.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#TOXICITEDELARUCHE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Totem_spirituel_supérieur_Sur_118
   
 - Nom: 'Rage: Toxicité de la ruche (Sur)'
   Classe: Barbare
-  Prérequis: Résilience totémique de la ruche
+  Prérequis: Résilience totémique de la ruche, niveau 8
   Source: AG
   Niveau: 8
   Description: Quand le barbare est enragé, le dé de dégâts de morsure auquel il
@@ -1497,22 +1497,22 @@
     et inflige un affaiblissement de 1d3 points de Constitution. Il se guérit avec
     un jet de sauvegarde réussi. Le jet de sauvegarde est un jet de Vigueur DD = 10
     + 1/2 niveau de barbare + modificateur de Constitution du barbare.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#UNITEDUSERPENTMONDE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Toxicité_de_la_ruche_Sur_119
   
 - Nom: 'Rage: Unité du serpent-monde (Sur)'
   Classe: Barbare
-  Prérequis: Esprit du serpent-monde
+  Prérequis: Esprit du serpent-monde, niveau 10
   Source: AG
   Niveau: 10
   Description: Quand le barbare est enragé, il double son bonus de déplacement accéléré
     et il est impossible de le faire tomber. Il double également le bonus d’intuition
     que lui apporte le totem de serpent-monde contre les attaques qui viennent d’un
     Extérieur ou d’une aberration et qui visent à confirmer un coup critique.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VANTARDISE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Unité_du_serpent-monde_Sur_120
   
 - Nom: 'Rage: Vantardise (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 6
   Source: MJRA
   Niveau: 6
   Description: Lorsqu’il est en rage, le barbare peut inciter une créature à l’attaquer
@@ -1521,7 +1521,7 @@
     parvenue à lui porter une attaque au corps-à-corps. Le barbare bénéficie d’un
     bonus de circonstance de +2 par dose d’alcool qu’il aura ingurgitée durant sa
     rage. C’est un effet mental dépendant du langage qui utilise une composante sonore.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIEPRESERVEE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vantardise_Ext_121
   
 - Nom: 'Rage: Vie préservée (Ext)'
   Classe: Barbare
@@ -1530,21 +1530,21 @@
   Description: Lorsqu’il est en rage et s’il tombe en dessous de 0 pv, il peut convertir
     1 point de dégâts létal par niveau de barbare en point de dégâts non létal. S’il
     était en négatif, il est immédiatement stabilisé.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIEPRESERVEESUPERIEURE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vie_préservée_Ext_122
   
 - Nom: 'Rage: Vie préservée supérieure (Ext)'
   Classe: Barbare
-  Prérequis: Vie préservée
+  Prérequis: Vie préservée, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare se sert de son pouvoir de rage vie préservée, il
     convertit un point de dégâts létaux de plus en dégâts non létaux par niveau de
     barbare.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIERENOUVELEE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vie_préservée_supérieure_Ext_123
   
 - Nom: 'Rage: Vie renouvelée (Ext)'
   Classe: Barbare
-  Prérequis: Vitalité renouvelée
+  Prérequis: Vitalité renouvelée, niveau 6
   Source: AG
   Niveau: 6
   Description: Quand le barbare est enragé, il ignore un niveau négatif temporaire
@@ -1552,11 +1552,11 @@
     le barbare termine un accès de rage alors qu’il possède des niveaux négatifs temporaires,
     il peut faire un jet de sauvegarde pour se débarrasser d’un nombre de niveaux
     négatifs égal au nombre de niveaux qu’il peut ignorer quand il est enragé.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIENSMATTRAPER
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vie_renouvelée_Ext_124
   
 - Nom: 'Rage: Viens m’attraper (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 12
   Source: MJRA
   Niveau: 12
   Description: Lorsqu’il est en rage et par une action libre, le barbare peut délibérément
@@ -1564,27 +1564,27 @@
     un bonus de +4 à leurs jets d’attaque et de dégâts jusqu’au début du tour suivant.
     Cependant, chaque coup porté au barbare provoquera une attaque d’opportunité qui
     sera résolue avant celles de ses adversaires.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIGUEURINTERNE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Viens_m’attraper_Ext_125
   
 - Nom: 'Rage: Vigueur interne (Ext)'
   Classe: Barbare
-  Prérequis: ''
+  Prérequis: niveau 8
   Source: MJ
   Niveau: 8
   Description: Lorsque le barbare est en rage, il est immunisé aux états préjudiciables
     fiévreux et nauséeux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VIGUEURREGENERATRICE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vigueur_interne_Ext_126
   
 - Nom: 'Rage: Vigueur régénératrice (Ext)'
   Classe: Barbare
-  Prérequis: Nouvelle vigueur
+  Prérequis: Nouvelle vigueur, niveau 6
   Source: AG
   Niveau: 6
   Description: Une fois que le barbare a utilisé le pouvoir de rage nouvelle vigueur
     jusqu’à la fin de son accès de rage, il bénéficie de la guérison accélérée 1/6
     niveaux de barbare (3 au maximum). Il récupère les points de vie dus à la guérison
     au début de chaque tour.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VISIONDANSLANUIT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vigueur_régénératrice_Ext_127
   
 - Nom: 'Rage: Vision dans la nuit (Ext)'
   Classe: Barbare
@@ -1592,7 +1592,7 @@
   Niveau: 1
   Description: Lorsque le barbare est en rage, ses sens sont si aiguisés qu’il bénéficie
     des effets de la vision nocturne.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VISIONDANSLENOIR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vision_dans_la_nuit_Ext_128
   
 - Nom: 'Rage: Vision dans le noir (Ext)'
   Classe: Barbare
@@ -1602,11 +1602,11 @@
   Description: Lorsque le barbare est en rage, ses sens deviennent incroyablement
     aiguisés et il bénéficie des effets de la vision dans le noir sur une distance
     de 18 m (12 cases).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#VITALITERENOUVELEE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vision_dans_le_noir_Ext_129
   
 - Nom: 'Rage: Vitalité renouvelée (Ext)'
   Classe: Barbare
-  Prérequis: Nouvelle vigueur
+  Prérequis: Nouvelle vigueur, niveau 4
   Source: AG
   Niveau: 4
   Description: Quand le barbare est enragé, il ignore les effets de 1 point d’affaiblissement
@@ -1616,6 +1616,7 @@
     (le cas échéant) contre un effet qui lui impose ces désagréments. S’il réussit,
     il se débarrasse d’un nombre de points d’affaiblissement ou de malus égal à celui
     qu’il peut ignorer quand il est enragé.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx#Vitalité_renouvelée_Ext_130
   
 - Nom: Armes et armures
   Classe: Barde
