@@ -26,7 +26,7 @@ echo "#####################"
 ./extract-classfeatures-inquisitions.py
 ./extract-classfeatures-jugements.py
 ./extract-classfeatures-lignages.py
-#./extract-classfeatures-maledictions.py
+./extract-classfeatures-maledictions.py
 #./extract-classfeatures-malefices.py
 #./extract-classfeatures-ordres.py
 #./extract-classfeatures.py
