@@ -37,7 +37,7 @@ def findAfter(html, afterTag, afterCond, searched):
 #
 # cette fonction extrait le texte pour une propriété <b>propriété</b> en prenant le texte qui suit
 #
-def findProperty(html, propName):
+def findProperty(html, propName, removeEndDot = True):
     for el in html:
         if el.name == 'b' and el.text.lower().startswith(propName.lower()):
             value = ""
@@ -48,7 +48,13 @@ def findProperty(html, propName):
                     value += e.string
                 else:
                     value += e
-            return value.replace('.','').strip()
+            
+            value = value.strip()
+            if removeEndDot and value.endswith('.'):
+                return value[:-1].strip()
+            else:
+                return value
+
     return None
 
 #
