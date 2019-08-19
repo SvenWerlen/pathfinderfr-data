@@ -61,7 +61,7 @@ for s in section:
 
 # last element        
 arcane['Classe'] = 'Magus'
-arcane['Description'] = descr.replace("\n"," ").strip()
+arcane['Description'] = cleanInlineDescription(descr)
 liste.append(arcane)
 
 
