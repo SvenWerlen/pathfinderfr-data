@@ -58,7 +58,7 @@ for cl in classes:
     for s in section:
         if s.name == 'h3':
             if newObj:
-                classfeature['Description'] = cleanInlineDescription(descr)
+                classfeature['Description'] = descr
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
                 liste.append(classfeature)
                 classfeature = {'Auto': True }
@@ -74,7 +74,7 @@ for cl in classes:
             descr += html2text(s)
 
     ## last element
-    classfeature['Description'] = cleanInlineDescription(descr)
+    classfeature['Description'] = descr
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
     liste.append(classfeature)
     
