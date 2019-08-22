@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, html2text, mergeYAML
+from libhtml import jumpTo, html2text, getValidSource, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_LIST = None
@@ -64,26 +64,12 @@ for l in list:
     if sourceEl.string:
         source_search = re.search('\((.*)\)', sourceEl.string, re.IGNORECASE)
         if source_search:
-            source = source_search.group(1)
-            
-            # special cases
-            if source == "partagé":
-                source = None
-            elif source == "Blog Paizo":
-                source = "PAIZO"
-            elif source.startswith("MR"):
-                source = "MR"
-            elif source == "AdM":
-                source = "AM"
-            elif source == "APG":
-                source = "MJRA"
-            elif source == "UC":
-                source = "AG"
+            source = getValidSource(source_search.group(1))
     
     if not source:
         source = "MJ"
     
-    print("Processing %s (%s)" % (title, source))
+    print("Sort %s (%s)" % (title, source))
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
     
     sort[u'Nom']=title
