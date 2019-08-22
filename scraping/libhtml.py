@@ -125,6 +125,8 @@ def cleanProperty(text):
     text = text.strip()
     if text.startswith(':'):
         text = text[1:].strip()
+    if text.startswith('.'):
+        text = text[1:].strip()
     
     if text.endswith('.') or text.endswith(';'):
         text = text[:-1].strip()
@@ -224,6 +226,37 @@ def extractLevel(text, maxdist):
         if m:
             return int(m.group(1))
     return 1
+
+#
+# check source
+#
+def getValidSource(src):
+    src = src.upper()
+    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "MMI", "CMY"];
+    for v in VALID:
+        if src == v:
+            return src
+    if src == "UM":
+        return "AM"
+    if src == "UC":
+        return "AG"
+    if src == "APG":
+        return "MJRA"
+    if src == "MJ-UC":
+        return "MJ"
+    if src == "partagé":
+        return None
+    if src == "ISWG":
+        return "CCMI"
+    if src == "Blog Paizo":
+        return "PAIZO"
+    if src.startswith("MR"):
+        return "MR"
+    if src == "ADM":
+        return "AM"
+    
+    print('Source invalide: ' + src)
+    exit(1)
 
 #
 # extrait la source
