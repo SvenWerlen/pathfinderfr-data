@@ -232,7 +232,7 @@ def extractLevel(text, maxdist):
 #
 def getValidSource(src):
     src = src.upper()
-    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "MMI", "CMY"];
+    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "CMY", "FF", "CM"];
     for v in VALID:
         if src == v:
             return src
@@ -248,13 +248,15 @@ def getValidSource(src):
         return None
     if src == "ISWG":
         return "CCMI"
-    if src == "Blog Paizo":
+    if src == "BLOG PAIZO":
         return "PAIZO"
     if src.startswith("MR"):
         return "MR"
     if src == "ADM":
         return "AM"
-    
+    if src == "FAMF" or src == "":
+        return "FF"
+
     print('Source invalide: ' + src)
     exit(1)
 

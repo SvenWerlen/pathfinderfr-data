@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import mergeYAML
+from libhtml import cleanName, cleanSectionName, cleanDescription, html2text, getValidSource, extractLevel, mergeYAML
 
 ## Configurations pour le lancement
 MOCK_ARCHLIST = None
@@ -18,6 +18,7 @@ MOCK_ARCH = None
 #MOCK_ARCH = "mocks/archetype-spirite-hanté.html"
 #MOCK_ARCH = u"mocks/archetype-barbare-balafré.html" # décommenter pour tester avec un archetype pré-téléchargé
 #MOCK_ARCH = u"mocks/archetype-bretteur.html" # décommenter pour tester avec un archetype pré-téléchargé
+#MOCK_ARCH = u"mocks/archetype-ens-tatoué.html" # décommenter pour tester avec un archetype pré-téléchargé
 
 FIELDS_ARCHETYPE = ['Nom', 'Classe', 'Source', 'Description', 'Référence' ]
 MATCH_ARCHETYPE  = ['Nom','Classe']
@@ -90,33 +91,12 @@ for el in list:
         
         if source == "classe de base" or "(classe de base)" in nom:
             continue
-        elif source == "UC" or source == "AG" or source == "Ag":
-            source = "AG" # Art de la guerre
-        elif source == "AM" or source == "UM":
-            source = "AM" # Art de la magie
-        elif source == "APG" or source == "MJRA":
-            source = "MJRA" # Manuel des joueurs - règles avancées
-        elif source == "MR":
-            source = "MR" # Manuel des races
-        elif source == "MCA":
-            source = "MCA" # Manuel du joueur - classes avancées
         elif source == "MJRA,AG,AM":
             continue ## cas spécial - doit être fait à la main
         elif source == "MC":
             continue ## ???
-        elif source == "Famf" or source == "FF":
-            source = "FF"
-        elif source == "CM":
-            source = "CM" # Codex Monstrueux
-        elif source == "AO":
-            source = "AO" # Aventures occultes
-        elif source == "PMI":
-            source = "PMI" # Pirates de la mer intérieure
-        elif source == "MMI":
-            source = "MMI" # Magie de la mer intérieure
         else:
-            print("Source invalide %s!" % source)
-            exit(1)
+            source = getValidSource(source)
         
         print("- Archétype %s..." % nom)
         
@@ -163,53 +143,31 @@ for el in list:
                     classfeature['Classe'] = classe
                     classfeature['Archétype'] = nom
                     classfeature['Source'] = source
-                    classfeature['Description'] = descr.strip()
-                    
-                    # extraire niveau
-                    idx = descr.find('Au niveau ')
-                    if idx >=0 and idx < 30:
-                        lvl = re.search('Au niveau (\d+)', descr)
-                        if lvl:
-                            classfeature['Niveau'] = int(lvl.group(1))
-                                        
+                    classfeature['Description'] = cleanDescription(descr)
+                    classfeature['Niveau'] = extractLevel(classfeature['Description'],30)
                     classfeatures.append(classfeature)
                     classfeature = {'Source':'MJ','Niveau':1,'Auto': True}
                     brCount = 0
                     
                 descr = ""
-                featureName = s.text.replace('¶','').strip()
+                featureName = cleanSectionName(s.text)
                 if featureName.endswith('.'):
                     featureName = featureName[:-1]
-                classfeature['Nom'] = featureName[0] + featureName[1:]
+                classfeature['Nom'] = cleanName(featureName[0] + featureName[1:])
                 newObj = True
                 
                 for e in s.children:
                     if e.name == 'a':
                         classfeature['Référence']=pageURL + e['href']
-            elif s.name == 'br':
-                descr += '\n'
-            elif s.name is None or s.name == 'a' or s.name == 'i' or s.name == 'b':
-                if s.string is None:
-                    for s2 in s.children:
-                        if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
-                            descr += s2.string.replace("\n"," ")
-                else:
-                    descr += s.string.replace("\n"," ")
-            elif s.name == "ul":
-                for s2 in s.find_all("li"):
-                    descr += "\n\n" + s2.text
-                    
-            elif s.name == 'div':
-                for s2 in s.children:
-                    if s2.name is None or s2.name == 'a' or s2.name == 'b' or s2.name == 'i':
-                        if not s2.string is None:
-                            descr += s2.string.replace("\n"," ")
+            else:
+                descr += html2text(s)
 
         ## last element
         classfeature['Classe'] = classe
         classfeature['Archétype'] = nom
         classfeature['Source'] = source
-        classfeature['Description'] = descr.strip()
+        classfeature['Description'] = cleanDescription(descr)
+        classfeature['Niveau'] = extractLevel(classfeature['Description'],30)
         
          # extraire niveau
         lvl = re.search('Au niveau (\d+)', descr)
@@ -219,7 +177,8 @@ for el in list:
         classfeatures.append(classfeature)
 
         if MOCK_ARCH:
-            break
+            print(classfeature)
+            exit(1)
 
 print("Fusion avec fichier YAML existant...")
 HEADER = ""
