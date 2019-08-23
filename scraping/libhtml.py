@@ -354,11 +354,15 @@ def extractBD_Type1(html):
     return { **{'nomAlt': titre, 'descr': descr.strip()}, **caracs }
 
 
+def cleanText(text):
+    text = text.replace('\xa0', ' ')
+    return re.sub(' +', ' ', text).replace("’","'").strip()
+
 def cleanDescription(descr):
-    return descr.replace("\n\n•","\n•").strip()
+    return cleanText(descr).replace("\n\n•","\n•").strip()
 
 def cleanName(name):
-    return name.replace("’","'").strip()
+    return cleanText(name)
 
 #
 # cette fonction extait une propriété (format BD type 2)

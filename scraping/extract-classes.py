@@ -159,7 +159,7 @@ for data in URLs:
         continue
     
     for s in section:
-        if s.name == 'a' and len(s.text) > 3:
+        if s.name == 'a' and (len(s.text) > 3 or s.text.lower() == "vol"):
             value = s.text
             if value == u"Connaissances":
                 idx = s.next_sibling.index(')')
