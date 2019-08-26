@@ -366,6 +366,14 @@ def cleanDescription(descr):
 def cleanName(name):
     return cleanText(name)
 
+def cleanNameForMatch(name):
+    name = cleanText(name)
+    m = re.search('(.*)\([a-zA-Z]+\)', name)
+    if m:
+        return m.group(1).strip()
+    else:
+        return name
+
 #
 # cette fonction extait une propriété (format BD type 2)
 #
@@ -470,8 +478,8 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
             match = True
             # s'assurer que tous les champs correspondent
             for m in matchOn:
-                val1 = cleanName(el[m]) if m in el else ""
-                val2 = cleanName(elOrig[m]) if m in elOrig else ""
+                val1 = cleanNameForMatch(el[m]) if m in el else ""
+                val2 = cleanNameForMatch(elOrig[m]) if m in elOrig else ""
                 if val1 != val2:
                     match = False
                     break

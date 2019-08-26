@@ -18,7 +18,6 @@ MOCK_CF = None
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
-
 classes = []
 with open("../data/classes.yml", 'r') as stream:
     try:
@@ -28,8 +27,32 @@ with open("../data/classes.yml", 'r') as stream:
         exit(1)
 
 liste = []
+listeDescr = []
+listeNames = {}
 
 print("Extraction des aptitude...")
+
+def addClassFeature(name, link, level):
+    for el in listeDescr:
+        if el['RéférenceAlt'] and el['RéférenceAlt'] in link:
+            add = dict(el)
+            add['Nom'] = name.strip()
+            add['Nom'] = add['Nom'][0].upper() + add['Nom'][1:]
+            add['Niveau'] = level
+            # si nom déjà dans liste => ajouter #D pour distinguer
+            if add['Nom'] in listeNames:
+                listeNames[add['Nom']] += 1
+                add['Nom'] += " #%s" % listeNames[add['Nom']]
+            else:
+                listeNames[add['Nom']] = 1
+            
+            print("'%s'" % add['Nom'])
+            del add['RéférenceAlt']
+            liste.append(add)
+            return
+    # non-trouvé!
+    print("Aucune description correspondant à '%s'" % link)
+    exit(1)
 
 for cl in classes:
 
@@ -47,7 +70,7 @@ for cl in classes:
         if section:
             break
 
-    classfeature = {'Auto': True }
+    classfeature = {'Auto': True, 'RéférenceAlt': None }
     newObj = False
     descr = ""
 
@@ -55,13 +78,19 @@ for cl in classes:
         print("- Section Description/Caractéristiques pour la classe %s n'a pas être trouvée!!!" % cl['Nom'])
         continue
 
+    #
+    # extraction des descriptions des aptitudes
+    #
+    listeDescr = []
+    altLink = None
     for s in section:
         if s.name == 'h3':
             if newObj:
                 classfeature['Description'] = descr
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
-                liste.append(classfeature)
-                classfeature = {'Auto': True }
+                listeDescr.append(classfeature)
+                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
+                altLink = None
                 descr = ""
                 
             newObj = True
@@ -69,17 +98,61 @@ for cl in classes:
             classfeature['Classe'] = cl['Nom']
             classfeature['Source'] = cl['Source']
             classfeature['Référence'] = cl['Référence'] + s.find('a')['href']
-            
+
+        elif s.name == 'div' and s.has_attr('class') and (s['class'][0] == 'ref'):
+            altLink = s.find('a')['href']
         else:
             descr += html2text(s)
 
     ## last element
     classfeature['Description'] = descr
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
-    liste.append(classfeature)
+    listeDescr.append(classfeature)
+    
+    #
+    # extraction des aptitudes depuis le tableau
+    #
+    rows = content.find_next('table',{"class": "tablo"}).find_all('tr')
+    column = 0
+    level = 1
+    for r in rows:
+        # trouver "Spécial" dans les tites pour identifier la bonne colonne
+        if r.has_attr('class') and (r['class'][0] == 'titre' or r['class'][0] == 'soustitre'):
+            idx = 0
+            for td in r.find_all('td'):
+                if td.text == "Spécial":
+                    column = idx
+                idx+=1
+            continue
+        
+        # colonne non-trouvée?
+        if column == 0:
+            print("Incapable de trouver la liste des aptitudes dans le tableau!")
+            exit(1)
+            
+        tds = r.find_all('td')
+        # extraire chaque aptitude
+        curName = ""
+        curHref = ""
+        for c in tds[column].children:
+            if c.name == "a":
+                curHref = c['href']
+            elif c.name is None and "," in c.string :
+                val = c.string.split(',')
+                curName += val[0]
+                addClassFeature(curName, curHref, level)
+                curName = ""
+                curHref = ""
+                continue
+            curName += c.string
+        # dernier élément
+        addClassFeature(curName, curHref, level)
+        
+        level += 1
     
     if MOCK_CF:
         break
+    break
 
 print("Fusion avec fichier YAML existant...")
 
