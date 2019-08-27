@@ -27,7 +27,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Armes_et_armures_0
   
-- Nom: Déplacement accéléré (Ext)
+- Nom: Déplacement accéléré
   Classe: Barbare
   Source: MJ
   Niveau: 1
@@ -46,7 +46,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Déplacement_accéléré_Ext_1
   
-- Nom: Rage de berserker (Ext)
+- Nom: Rage de berserker
   Classe: Barbare
   Source: MJ
   Niveau: 1
@@ -87,7 +87,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Rage_de_berserker_Ext_2
   
-- Nom: Pouvoirs de rage (Ext)
+- Nom: Pouvoir de rage
   Classe: Barbare
   Source: MJ
   Niveau: 2
@@ -109,7 +109,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
   
-- Nom: Esquive instinctive (Ext)
+- Nom: Esquive instinctive
   Classe: Barbare
   Source: MJ
   Niveau: 2
@@ -133,7 +133,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Esquive_instinctive_Ext_4
   
-- Nom: Sens des pièges (Ext)
+- Nom: Sens des pièges +1
   Classe: Barbare
   Source: MJ
   Niveau: 3
@@ -151,30 +151,31 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
   
-- Nom: Esquive instinctive supérieure (Ext)
+- Nom: Esquive instinctive supérieure
   Classe: Barbare
   Source: MJ
   Niveau: 5
   Auto: true
   Description: '
 
-    À partir du niveau 5, un barbare ne peut plus être pris en tenaille. Un roublard
-    ne peut donc pas utiliser ses capacités pour porter une attaque sournoise contre
-    le barbare en le prenant en tenaille, à moins de posséder au moins quatre niveaux
-    de roublard de plus que le nombre de niveaux de barbare de sa cible.
+    Au niveau 2, le barbare gagne la capacité de réagir aux dangers avant même que
+    ses sens les perçoivent. Il ne peut pas être pris au dépourvu et, de plus, il
+    conserve son bonus de Dextérité à la classe d’armure lorsqu’il est attaqué par
+    un adversaire invisible. La règle normale s’applique cependant lorsqu’il est immobilisé
+    : dans ce cas, il perd son bonus de Dextérité à la classe d’armure. Un barbare
+    disposant de cette capacité perd également son bonus de Dextérité à la classe
+    d’armure si un adversaire parvient à réaliser une feinte en combat à son encontre.
 
 
-    Si le personnage dispose déjà de la capacité d’esquive instinctive grâce à une
-    autre classe, les niveaux de toutes les classes qui lui donnent cette capacité
-    se cumulent pour déterminer le nombre de niveaux de roublard qu’un attaquant doit
-    posséder pour pouvoir le prendre en tenaille.
+    Si un barbare possède déjà la capacité d’esquive instinctive (grâce à une autre
+    classe par exemple), il gagne la capacité d’esquive instinctive supérieure.
 
 
 
     '
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Esquive_instinctive_supérieure_Ext_6
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Esquive_instinctive_Ext_4
   
-- Nom: Réduction de dégâts (Ext)
+- Nom: Réduction de dégâts 1/-
   Classe: Barbare
   Source: MJ
   Niveau: 7
@@ -192,7 +193,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Réduction_de_dégâts_Ext_7
   
-- Nom: Rage de grand berserker (Ext)
+- Nom: Rage de grand berserker
   Classe: Barbare
   Source: MJ
   Niveau: 11
@@ -208,7 +209,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Rage_de_grand_berserker_Ext_8
   
-- Nom: Volonté indomptable (Ext)
+- Nom: Volonté indomptable
   Classe: Barbare
   Source: MJ
   Niveau: 14
@@ -224,7 +225,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Volonté_indomptable_Ext_9
   
-- Nom: Rage sans fatigue (Ext)
+- Nom: Rage sans fatigue
   Classe: Barbare
   Source: MJ
   Niveau: 17
@@ -238,7 +239,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Rage_sans_fatigue_Ext_10
   
-- Nom: Rage de maître berserker (Ext)
+- Nom: Rage de maître berserker
   Classe: Barbare
   Source: MJ
   Niveau: 20
@@ -57652,4 +57653,364 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx#Pluie_de_sang_Sur_11
+  
+- Nom: 'Pouvoir de rage #2'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 4
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: 'Pouvoir de rage #3'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Sens des pièges +2
+  Classe: Barbare
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    Au niveau 3, le barbare gagne un bonus de +1 aux jets de Réflexes destinés à éviter
+    des pièges ainsi qu’un bonus d’esquive de +1 à la classe d’armure contre les attaques
+    provoquées par des pièges. Ces bonus augmentent de +1 tous les trois niveaux par
+    la suite (aux niveaux 6, 9, 12, 15 et 18). Les bonus de sens des pièges provenant
+    de classes différentes se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: 'Pouvoir de rage #4'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 8
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Sens des pièges +3
+  Classe: Barbare
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: '
+
+    Au niveau 3, le barbare gagne un bonus de +1 aux jets de Réflexes destinés à éviter
+    des pièges ainsi qu’un bonus d’esquive de +1 à la classe d’armure contre les attaques
+    provoquées par des pièges. Ces bonus augmentent de +1 tous les trois niveaux par
+    la suite (aux niveaux 6, 9, 12, 15 et 18). Les bonus de sens des pièges provenant
+    de classes différentes se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Réduction de dégâts 2/-
+  Classe: Barbare
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    Au niveau 7, le barbare gagne une réduction de dégâts. Chaque fois qu’une arme
+    ou qu’une attaque naturelle lui inflige des dégâts, ceux-ci sont réduits de 1.
+    Au niveau 10 et tous les trois niveaux de barbare par la suite (aux niveaux 13,
+    16 et 19) cette réduction de dégâts augmente de 1 point. Les réductions de dégâts
+    peuvent diminuer la quantité de dégâts jusqu’à 0 mais pas au-delà.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Réduction_de_dégâts_Ext_7
+  
+- Nom: 'Pouvoir de rage #5'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: 'Pouvoir de rage #6'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Sens des pièges +4
+  Classe: Barbare
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    Au niveau 3, le barbare gagne un bonus de +1 aux jets de Réflexes destinés à éviter
+    des pièges ainsi qu’un bonus d’esquive de +1 à la classe d’armure contre les attaques
+    provoquées par des pièges. Ces bonus augmentent de +1 tous les trois niveaux par
+    la suite (aux niveaux 6, 9, 12, 15 et 18). Les bonus de sens des pièges provenant
+    de classes différentes se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Réduction de dégâts 3/-
+  Classe: Barbare
+  Source: MJ
+  Niveau: 13
+  Auto: true
+  Description: '
+
+    Au niveau 7, le barbare gagne une réduction de dégâts. Chaque fois qu’une arme
+    ou qu’une attaque naturelle lui inflige des dégâts, ceux-ci sont réduits de 1.
+    Au niveau 10 et tous les trois niveaux de barbare par la suite (aux niveaux 13,
+    16 et 19) cette réduction de dégâts augmente de 1 point. Les réductions de dégâts
+    peuvent diminuer la quantité de dégâts jusqu’à 0 mais pas au-delà.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Réduction_de_dégâts_Ext_7
+  
+- Nom: 'Pouvoir de rage #7'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Sens des pièges +5
+  Classe: Barbare
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Au niveau 3, le barbare gagne un bonus de +1 aux jets de Réflexes destinés à éviter
+    des pièges ainsi qu’un bonus d’esquive de +1 à la classe d’armure contre les attaques
+    provoquées par des pièges. Ces bonus augmentent de +1 tous les trois niveaux par
+    la suite (aux niveaux 6, 9, 12, 15 et 18). Les bonus de sens des pièges provenant
+    de classes différentes se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Réduction de dégâts 4/-
+  Classe: Barbare
+  Source: MJ
+  Niveau: 16
+  Auto: true
+  Description: '
+
+    Au niveau 7, le barbare gagne une réduction de dégâts. Chaque fois qu’une arme
+    ou qu’une attaque naturelle lui inflige des dégâts, ceux-ci sont réduits de 1.
+    Au niveau 10 et tous les trois niveaux de barbare par la suite (aux niveaux 13,
+    16 et 19) cette réduction de dégâts augmente de 1 point. Les réductions de dégâts
+    peuvent diminuer la quantité de dégâts jusqu’à 0 mais pas au-delà.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Réduction_de_dégâts_Ext_7
+  
+- Nom: 'Pouvoir de rage #8'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 16
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: 'Pouvoir de rage #9'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Sens des pièges +6
+  Classe: Barbare
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 3, le barbare gagne un bonus de +1 aux jets de Réflexes destinés à éviter
+    des pièges ainsi qu’un bonus d’esquive de +1 à la classe d’armure contre les attaques
+    provoquées par des pièges. Ces bonus augmentent de +1 tous les trois niveaux par
+    la suite (aux niveaux 6, 9, 12, 15 et 18). Les bonus de sens des pièges provenant
+    de classes différentes se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Réduction de dégâts 5/-
+  Classe: Barbare
+  Source: MJ
+  Niveau: 19
+  Auto: true
+  Description: '
+
+    Au niveau 7, le barbare gagne une réduction de dégâts. Chaque fois qu’une arme
+    ou qu’une attaque naturelle lui inflige des dégâts, ceux-ci sont réduits de 1.
+    Au niveau 10 et tous les trois niveaux de barbare par la suite (aux niveaux 13,
+    16 et 19) cette réduction de dégâts augmente de 1 point. Les réductions de dégâts
+    peuvent diminuer la quantité de dégâts jusqu’à 0 mais pas au-delà.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Réduction_de_dégâts_Ext_7
+  
+- Nom: 'Pouvoir de rage #10'
+  Classe: Barbare
+  Source: MJ
+  Niveau: 20
+  Auto: true
+  Description: '
+
+    En gagnant des niveaux, un barbare apprend à canaliser sa rage sous diverses formes.
+    Le barbare gagne un pouvoir de rage au niveau 2 et un autre pouvoir tous les deux
+    niveaux de barbare suivants. Pour bénéficier des avantages octroyés par ses pouvoirs
+    de rage, le barbare doit être en rage. Certains pouvoirs nécessitent également
+    une action spécifique. Sauf mention contraire, un barbare ne peut pas choisir
+    le même pouvoir de rage plus d’une fois.
+
+
+    Voir la liste des pouvoirs de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
   
