@@ -67,7 +67,6 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
             if newObj:
                 classfeature['Description'] = descr
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
-                print(classfeature['Référence'])
                 listeDescr.append(classfeature)
                 classfeature = {'Auto': True, 'RéférenceAlt': altLink }
                 altLink = None
@@ -96,7 +95,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 3:
+    if idx != 4:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
