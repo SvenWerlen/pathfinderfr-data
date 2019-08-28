@@ -2365,7 +2365,7 @@
 - Nom: Oraisons
   Classe: Druide
   Source: MJ
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: '
 
@@ -2404,7 +2404,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Langues_supplémentaires_7
   
-- Nom: Pacte avec la nature (Ext)
+- Nom: Pacte avec la nature
   Classe: Druide
   Source: MJ
   Niveau: 1
@@ -2447,7 +2447,7 @@
     \n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Pacte_avec_la_nature_Ext_8
   
-- Nom: Instinct naturel (Ext)
+- Nom: Instinct naturel
   Classe: Druide
   Source: MJ
   Niveau: 1
@@ -2462,7 +2462,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Instinct_naturel_Ext_9
   
-- Nom: Empathie sauvage (Ext)
+- Nom: Empathie sauvage
   Classe: Druide
   Source: MJ
   Niveau: 1
@@ -2491,7 +2491,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Empathie_sauvage_Ext_10
   
-- Nom: Déplacement facilité (Ext)
+- Nom: Déplacement facilité
   Classe: Druide
   Source: MJ
   Niveau: 2
@@ -2509,7 +2509,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Déplacement_facilité_Ext_11
   
-- Nom: Absence de traces (Ext)
+- Nom: Absence de traces
   Classe: Druide
   Source: MJ
   Niveau: 3
@@ -2524,7 +2524,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Absence_de_traces_Ext_12
   
-- Nom: Résistance à l’appel de la nature (Ext)
+- Nom: Résistance à l'appel de la nature
   Classe: Druide
   Source: MJ
   Niveau: 4
@@ -2541,7 +2541,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Résistance_à_l’appel_de_la_nature_Ext_13
   
-- Nom: Forme animale (Sur)
+- Nom: Forme animale (1/jour)
   Classe: Druide
   Source: MJ
   Niveau: 4
@@ -2606,7 +2606,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
   
-- Nom: Immunité contre le venin (Ext)
+- Nom: Immunité contre le venin
   Classe: Druide
   Source: MJ
   Niveau: 9
@@ -2620,7 +2620,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Immunité_contre_le_venin_Ext_15
   
-- Nom: Mille visages (Sur)
+- Nom: Mille visages
   Classe: Druide
   Source: MJ
   Niveau: 13
@@ -2636,7 +2636,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Mille_visages_Sur_16
   
-- Nom: Éternelle jeunesse (Ext)
+- Nom: Éternelle jeunesse
   Classe: Druide
   Source: MJ
   Niveau: 15
@@ -58408,4 +58408,524 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
+  
+- Nom: Forme animale (2/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (3/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 8
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (4/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (5/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (6/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (7/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 16
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (8/jour)
+  Classe: Druide
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
+  
+- Nom: Forme animale (à volonté)
+  Classe: Druide
+  Source: MJ
+  Niveau: 20
+  Auto: true
+  Description: '
+
+    Au niveau 4, le druide gagne la capacité de se transformer en un animal de taille
+    P ou M puis de reprendre sa forme normale une fois par jour. Il peut prendre la
+    forme de n’importe quelle créature de type animal. Ce pouvoir fonctionne comme
+    le sort de forme bestiale I, mis à part les différences précisées ici. Cet effet
+    dure au maximum une heure par niveau de druide mais le druide peut y mettre fin
+    avant. La transformation (vers ou depuis la forme animale) est une action simple
+    qui ne provoque pas d’attaque d’opportunité. La forme choisie doit être celle
+    d’un animal que le druide connaît bien.
+
+
+    Tant qu’il est transformé, un druide est incapable de parler. Il doit se contenter
+    des bruits qu’un animal ordinaire est capable de produire sans entraînement. Il
+    peut néanmoins communiquer normalement avec les autres animaux de la même espèce,
+    ou d’une espèce proche de sa forme actuelle (à noter dans la nature, les perroquets
+    poussent des cris, ils ne sont pas capables de parler).
+
+
+    Le personnage gagne une utilisation quotidienne supplémentaire de ce pouvoir au
+    niveau 6 et tous les deux niveaux par la suite, pour un total de huit utilisations
+    au niveau 18. Au niveau 20, le druide peut utiliser cette capacité à volonté.
+    En gagnant des niveaux, le druide a accès à d’autres formes, comme celles d’animaux
+    plus petits et plus grands, d’élémentaires et de plantes. Quelle que soit la forme
+    choisie, la transformation consomme une utilisation de ce pouvoir.
+
+
+    Au niveau 6, un druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TP ou taille G ou en élémentaire de taille P. Lorsqu’il prend
+    la forme d’un animal, la capacité fonctionne désormais comme le sort forme bestiale
+    II. Lorsqu’il prend la forme d’un élémentaire, elle fonctionne comme le sort corps
+    élémentaire I.
+
+
+    Au niveau 8, le druide peut également utiliser ce pouvoir pour se transformer
+    en animal de taille TG ou Min, en élémentaire de taille M ou en créature de type
+    plante de taille P ou M. Lorsqu’il prend la forme d’un animal, la capacité fonctionne
+    désormais comme le sort forme bestiale III. Lorsqu’il prend la forme d’un élémentaire,
+    elle fonctionne comme le sort corps élémentaire II. Lorsqu’il prend la forme d’une
+    créature de type plante, elle fonctionne comme le sort forme végétale I.
+
+
+    Au niveau 10, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille G ou en créature de type plante de taille G. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire III. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort forme végétale II.
+
+
+    Au niveau 12, le druide peut également utiliser ce pouvoir pour se transformer
+    en élémentaire de taille TG ou en créature de type plante de taille TG. Lorsqu’il
+    prend la forme d’un élémentaire, la capacité fonctionne désormais comme le sort
+    corps élémentaire IV. Lorsqu’il prend la forme d’une créature de type plante,
+    elle fonctionne comme le sort de forme végétale III.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Druide.ashx#Forme_animale_Sur_14
   

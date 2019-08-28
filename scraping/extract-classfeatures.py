@@ -96,7 +96,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 2:
+    if idx != 3:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
@@ -171,6 +171,8 @@ for cl in classes:
                 addClassFeature(curName, curHref, level)
                 curName = ""
                 curHref = ""
+                continue
+            elif c.name == "br":
                 continue
             curName += c.string
         # dernier élément
