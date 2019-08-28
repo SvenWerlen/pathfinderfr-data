@@ -1770,7 +1770,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Sorts_1
   
-- Nom: Savoir bardique (Ext)
+- Nom: Savoir bardique
   Classe: Barde
   Source: MJ
   Niveau: 1
@@ -1853,7 +1853,7 @@
 - Nom: Tours de magie
   Classe: Barde
   Source: MJ
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: '
 
@@ -1867,7 +1867,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Tours_de_magie_4
   
-- Nom: Versatilité artistique (Ext)
+- Nom: Versatilité artistique
   Classe: Barde
   Source: MJ
   Niveau: 2
@@ -1896,7 +1896,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Versatilité_artistique_Ext_5
   
-- Nom: Érudition (Ext)
+- Nom: Érudition
   Classe: Barde
   Source: MJ
   Niveau: 2
@@ -1913,7 +1913,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Érudition_Ext_6
   
-- Nom: Maître du savoir (Ext)
+- Nom: Maître du savoir 1/jour
   Classe: Barde
   Source: MJ
   Niveau: 5
@@ -1934,7 +1934,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Maître_du_savoir_Ext_7
   
-- Nom: Touche-à-tout (Ext)
+- Nom: Touche-à-tout
   Classe: Barde
   Source: MJ
   Niveau: 10
@@ -1947,38 +1947,48 @@
     \ d’une compétence qui n’autorise normalement pas cette possibilité.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Touche-à-tout_Ext_8
   
-- Nom: 'Repr. bardique: Contre-chant (Sur)'
+- Nom: Contre-chant
   Classe: Barde
   Source: MJ
   Niveau: 1
   Auto: true
-  Description: Au niveau 1, le barde apprend à contrer les effets magiques véhiculés
-    par le son (mais pas les sorts qui possèdent une composante verbale). Lorsque
-    le barde utilise cet effet, il réalise un test de Représentation (chant, instruments
-    à clavier, instruments à corde, instruments à vent ou percussions) chaque round.
-    Les créatures qui se trouvent dans un rayon de 9 m (6 cases) autour du barde (y
-    compris le barde lui-même) et qui sont affectées par une attaque magique de son
-    ou une attaque magique basée sur le langage peuvent remplacer le résultat de leur
-    jet de sauvegarde par celui du test de Représentation du barde si celui-ci est
-    plus élevé. Si une créature est déjà sous l’effet d’une telle attaque et que celle-ci
-    n’est pas instantanée, elle bénéficie d’un nouveau jet de sauvegarde contre cet
-    effet chaque round où elle perçoit la représentation bardique, mais elle doit
-    utiliser le résultat du test de Représentation du barde comme jet de sauvegarde.
-    Cet effet de représentation bardique n’agit pas contre les attaques magiques qui
-    n’autorisent pas de jet de sauvegarde. Le contre-chant requiert une composante
-    sonore.
+  Description: '
+
+
+
+
+    Au niveau 1, le barde apprend à contrer les effets magiques véhiculés par le son
+    (mais pas les sorts qui possèdent une composante verbale). Lorsque le barde utilise
+    cet effet, il réalise un test de Représentation (chant, instruments à clavier,
+    instruments à corde, instruments à vent ou percussions) chaque round. Les créatures
+    qui se trouvent dans un rayon de 9 m (6 cases) autour du barde (y compris le barde
+    lui-même) et qui sont affectées par une attaque magique de son ou une attaque
+    magique basée sur le langage peuvent remplacer le résultat de leur jet de sauvegarde
+    par celui du test de Représentation du barde si celui-ci est plus élevé. Si une
+    créature est déjà sous l’effet d’une telle attaque et que celle-ci n’est pas instantanée,
+    elle bénéficie d’un nouveau jet de sauvegarde contre cet effet chaque round où
+    elle perçoit la représentation bardique, mais elle doit utiliser le résultat du
+    test de Représentation du barde comme jet de sauvegarde. Cet effet de représentation
+    bardique n’agit pas contre les attaques magiques qui n’autorisent pas de jet de
+    sauvegarde. Le contre-chant requiert une composante sonore.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Contre-chant_Sur_0
   
-- Nom: 'Repr. bardique: Distraction (Sur)'
+- Nom: Distraction
   Classe: Barde
   Source: MJ
   Niveau: 1
   Auto: true
-  Description: À partir du niveau 1, le barde peut utiliser sa capacité de représentation
-    bardique pour contrer les effets magiques basés sur la vue. Lorsque le barde utilise
-    cet effet, il réalise un test de Représentation (danse, déclamation, farce ou
-    scène) chaque round. Les créatures qui se trouvent dans un rayon de 9 m (6 cases)
-    autour du barde (y compris le barde lui-même) et qui sont affectées par une illusion
+  Description: '
+
+    À partir du niveau 1, le barde peut utiliser sa capacité de représentation bardique
+    pour contrer les effets magiques basés sur la vue. Lorsque le barde utilise cet
+    effet, il réalise un test de Représentation (danse, déclamation, farce ou scène)
+    chaque round. Les créatures qui se trouvent dans un rayon de 9 m (6 cases) autour
+    du barde (y compris le barde lui-même) et qui sont affectées par une illusion
     magique de type mirage ou chimère peuvent remplacer le résultat de leur jet de
     sauvegarde par celui du test de Représentation du barde si celui-ci est plus élevé.
     Si une créature est déjà sous l’effet d’une telle attaque et que celle-ci n’est
@@ -1987,21 +1997,26 @@
     le résultat du test de Représentation du barde comme jet de sauvegarde. Cet effet
     de représentation n’agit pas contre les illusions magiques qui n’autorisent pas
     de jet de sauvegarde. La distraction requiert une composante visuelle.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Distraction_Sur_1
   
-- Nom: 'Repr. bardique: Fascination (Sur)'
+- Nom: Fascination
   Classe: Barde
   Source: MJ
   Niveau: 1
   Auto: true
-  Description: 'Dès le niveau 1, un barde peut utiliser sa capacité de représentation
-    bardique pour fasciner une ou plusieurs créatures. Celles-ci doivent se trouver
-    dans un rayon de 27 m (18 cases) autour du barde et être capables de le voir,
-    de l’entendre et de lui prêter attention. Le barde doit pouvoir voir ses cibles.
-    Un combat proche ou un danger manifeste sont des distractions trop importantes
-    pour que cette capacité puisse fonctionner. La fascination s’exerce sur une seule
-    créature au niveau 1 et affecte une créature de plus tous les trois niveaux de
-    barde au-delà du premier.
+  Description: '
+
+    Dès le niveau 1, un barde peut utiliser sa capacité de représentation bardique
+    pour fasciner une ou plusieurs créatures. Celles-ci doivent se trouver dans un
+    rayon de 27 m (18 cases) autour du barde et être capables de le voir, de l’entendre
+    et de lui prêter attention. Le barde doit pouvoir voir ses cibles. Un combat proche
+    ou un danger manifeste sont des distractions trop importantes pour que cette capacité
+    puisse fonctionner. La fascination s’exerce sur une seule créature au niveau 1
+    et affecte une créature de plus tous les trois niveaux de barde au-delà du premier.
 
 
     Les créatures qui se trouvent à portée bénéficient d’un jet de Volonté (DD 10
@@ -2018,55 +2033,73 @@
 
 
     La fascination est un effet mental de type enchantement (coercition) qui s’appuie
-    sur des composantes sonores et visuelles.'
+    sur des composantes sonores et visuelles.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Fascination_Sur_2
   
-- Nom: 'Repr. bardique: Inspiration vaillante (Sur)'
+- Nom: Inspiration vaillante +1
   Classe: Barde
   Source: MJ
   Niveau: 1
   Auto: true
-  Description: Dès le niveau 1, un barde peut utiliser sa capacité de représentation
-    bardique pour susciter la bravoure chez ses alliés (ainsi qu’en lui), les protéger
-    contre la peur et améliorer leurs compétences martiales. Pour bénéficier de cet
-    effet, un allié doit être capable de voir ou d’entendre le spectacle du barde.
-    Il bénéficie alors d’un bonus de moral de +1 aux jets de sauvegarde contre les
-    effets de terreur et de charme et d’un bonus d’aptitude de +1 aux jets d’attaque
-    et de dégâts avec des armes. Lorsque le barde atteint le niveau 5 et tous les
-    six niveaux de barde par la suite, ce bonus augmente de +1, jusqu’à un maximum
-    de +4 au niveau 17. L’inspiration vaillante est un effet mental qui peut utiliser
-    des composantes sonores ou visuelles (le barde doit choisir quelle composante
-    utiliser lorsqu’il active cet effet).
+  Description: '
+
+    Dès le niveau 1, un barde peut utiliser sa capacité de représentation bardique
+    pour susciter la bravoure chez ses alliés (ainsi qu’en lui), les protéger contre
+    la peur et améliorer leurs compétences martiales. Pour bénéficier de cet effet,
+    un allié doit être capable de voir ou d’entendre le spectacle du barde. Il bénéficie
+    alors d’un bonus de moral de +1 aux jets de sauvegarde contre les effets de terreur
+    et de charme et d’un bonus d’aptitude de +1 aux jets d’attaque et de dégâts avec
+    des armes. Lorsque le barde atteint le niveau 5 et tous les six niveaux de barde
+    par la suite, ce bonus augmente de +1, jusqu’à un maximum de +4 au niveau 17.
+    L’inspiration vaillante est un effet mental qui peut utiliser des composantes
+    sonores ou visuelles (le barde doit choisir quelle composante utiliser lorsqu’il
+    active cet effet).
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_vaillante_Sur_3
   
-- Nom: 'Repr. bardique: Inspiration talentueuse (Sur)'
+- Nom: Inspiration talentueuse +2
   Classe: Barde
   Source: MJ
   Niveau: 3
   Auto: true
-  Description: À partir du niveau 3, un barde peut utiliser sa capacité de représentation
-    bardique pour aider un allié à mener à bien une tâche. Cet allié doit se trouver
-    à 9 m (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un
-    bonus d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant
-    que le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
+  Description: '
+
+    À partir du niveau 3, un barde peut utiliser sa capacité de représentation bardique
+    pour aider un allié à mener à bien une tâche. Cet allié doit se trouver à 9 m
+    (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un bonus
+    d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant que
+    le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
     ce bonus augmente de +1 (devenant +3 au niveau 7, +4 au niveau 11, +5 au niveau
     15 et +6 au niveau 19). Le MJ peut interdire les utilisations de cette capacité
     qui s’avèrent impossibles (comme dans le cas de la compétence de Discrétion par
     exemple). Le barde ne peut pas utiliser cet effet sur lui-même. L’inspiration
     talentueuse est un pouvoir mental qui utilise une composante sonore.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
   
-- Nom: 'Repr. bardique: Suggestion (Mag)'
+- Nom: Suggestion
   Classe: Barde
   Source: MJ
   Niveau: 6
   Auto: true
-  Description: 'Un barde de niveau 6 ou plus peut utiliser sa capacité de représentation
-    bardique pour faire une suggestion (comme le sort suggestion) à une créature qu’il
-    a préalablement fascinée (voir plus haut). Cette suggestion n’interrompt pas l’effet
-    de fascination mais nécessite une action simple (en plus de l’action libre servant
-    à maintenir la fascination). S’il le désire, le barde peut utiliser cette capacité
-    plusieurs fois sur la même cible au cours d’une représentation bardique.
+  Description: '
+
+    Un barde de niveau 6 ou plus peut utiliser sa capacité de représentation bardique
+    pour faire une suggestion (comme le sort suggestion) à une créature qu’il a préalablement
+    fascinée (voir plus haut). Cette suggestion n’interrompt pas l’effet de fascination
+    mais nécessite une action simple (en plus de l’action libre servant à maintenir
+    la fascination). S’il le désire, le barde peut utiliser cette capacité plusieurs
+    fois sur la même cible au cours d’une représentation bardique.
 
 
     L’utilisation d’une suggestion n’est pas prise en compte dans le nombre de rounds
@@ -2074,118 +2107,158 @@
     de Volonté (DD 10 + la moitié du niveau du barde + le modificateur de Charisme
     du barde) réussi permet d’annuler cet effet. La capacité de suggestion n’affecte
     qu’une seule créature. Il s’agit d’un effet mental de langage et de type enchantement
-    (coercition) et il s’appuie sur une composante sonore.'
+    (coercition) et il s’appuie sur une composante sonore.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Suggestion_Mag_5
   
-- Nom: 'Repr. bardique: Chant funeste (Sur)'
+- Nom: Chant funeste
   Classe: Barde
   Source: MJ
   Niveau: 8
   Auto: true
-  Description: Un barde de niveau 8 ou plus peut utiliser sa capacité de représentation
-    bardique pour insinuer la crainte dans le cœur de ses ennemis et les rendre secoués.
-    Cela n’affecte que les ennemis qui se trouvent dans un rayon de 9 m (6 cases)
-    autour du barde et qui peuvent voir et entendre son spectacle. Cet effet se prolonge
+  Description: '
+
+    Un barde de niveau 8 ou plus peut utiliser sa capacité de représentation bardique
+    pour insinuer la crainte dans le cœur de ses ennemis et les rendre secoués. Cela
+    n’affecte que les ennemis qui se trouvent dans un rayon de 9 m (6 cases) autour
+    du barde et qui peuvent voir et entendre son spectacle. Cet effet se prolonge
     tant que l’ennemi reste dans ce rayon et que le barde continue sa représentation.
     Un chant funeste ne peut ni effrayer ni paniquer une créature et ce même si elle
     était déjà secouée à cause d’un autre effet. Le chant funeste est un effet mental
     de terreur qui utilise des composantes sonores et visuelles.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Chant_funeste_Sur_6
   
-- Nom: 'Repr. bardique: Inspiration glorieuse (Sur)'
+- Nom: Inspiration glorieuse
   Classe: Barde
   Source: MJ
   Niveau: 9
   Auto: true
-  Description: Un barde de niveau 9 ou plus peut utiliser sa capacité de représentation
-    bardique pour inspirer un sentiment de grandeur et améliorer ses propres talents
-    de combattant ou ceux d’un allié situé à 9 m (6 cases) ou moins de lui. Cet effet
-    n’affecte qu’une seule cible au niveau 9 mais s’étend à un allié de plus tous
-    les trois niveaux de barde au-delà du niveau 9 (jusqu’à un maximum de quatre cibles
-    au niveau 18). Toutes les cibles doivent être capables de voir et d’entendre le
-    barde. Elles gagnent 2 dés de vie supplémentaires (des d10), le nombre de points
-    de vie temporaires correspondant (le modificateur de Constitution de la cible
-    s’applique à chacun des dés de vie supplémentaires), un bonus d’aptitude de +2
-    aux jets d’attaque et un bonus d’aptitude de +1 aux jets de Vigueur. Les dés de
-    vie supplémentaires entrent en ligne de compte pour déterminer l’effet des sorts
-    qui dépendent du nombre de dés de vie. L’inspiration glorieuse est un effet mental
-    qui utilise des composantes sonores et visuelles.
+  Description: '
+
+    Un barde de niveau 9 ou plus peut utiliser sa capacité de représentation bardique
+    pour inspirer un sentiment de grandeur et améliorer ses propres talents de combattant
+    ou ceux d’un allié situé à 9 m (6 cases) ou moins de lui. Cet effet n’affecte
+    qu’une seule cible au niveau 9 mais s’étend à un allié de plus tous les trois
+    niveaux de barde au-delà du niveau 9 (jusqu’à un maximum de quatre cibles au niveau
+    18). Toutes les cibles doivent être capables de voir et d’entendre le barde. Elles
+    gagnent 2 dés de vie supplémentaires (des d10), le nombre de points de vie temporaires
+    correspondant (le modificateur de Constitution de la cible s’applique à chacun
+    des dés de vie supplémentaires), un bonus d’aptitude de +2 aux jets d’attaque
+    et un bonus d’aptitude de +1 aux jets de Vigueur. Les dés de vie supplémentaires
+    entrent en ligne de compte pour déterminer l’effet des sorts qui dépendent du
+    nombre de dés de vie. L’inspiration glorieuse est un effet mental qui utilise
+    des composantes sonores et visuelles.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_glorieuse_Sur_7
   
-- Nom: 'Repr. bardique: Représentation apaisante (Sur)'
+- Nom: Représentation apaisante
   Classe: Barde
   Source: MJ
   Niveau: 12
   Auto: true
-  Description: Un barde de niveau 12 ou plus peut utiliser sa capacité de représentation
-    bardique pour créer un effet similaire à un sort de soins importants de groupe
-    en utilisant son niveau de barde comme niveau de lanceur de sorts. Cet effet enlève
-    également les états préjudiciables fatigué, fiévreux et secoué chez toutes les
-    cibles. Quatre rounds consécutifs de représentation bardique sont nécessaires
-    pour produire cet effet, et les cibles doivent être capables de voir et d’entendre
-    le barde tout au long de ce spectacle. Une représentation apaisante affecte toutes
-    les cibles qui restent dans un rayon de 9 m (6 cases) autour du barde pendant
-    ces quatre rounds et utilise des composantes sonores et visuelles.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Repr%C3%A9sentation_apaisante_Sur_8
+  Description: '
+
+    Un barde de niveau 12 ou plus peut utiliser sa capacité de représentation bardique
+    pour créer un effet similaire à un sort de soins importants de groupe en utilisant
+    son niveau de barde comme niveau de lanceur de sorts. Cet effet enlève également
+    les états préjudiciables fatigué, fiévreux et secoué chez toutes les cibles. Quatre
+    rounds consécutifs de représentation bardique sont nécessaires pour produire cet
+    effet, et les cibles doivent être capables de voir et d’entendre le barde tout
+    au long de ce spectacle. Une représentation apaisante affecte toutes les cibles
+    qui restent dans un rayon de 9 m (6 cases) autour du barde pendant ces quatre
+    rounds et utilise des composantes sonores et visuelles.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Représentation_apaisante_Sur_8
   
-- Nom: 'Repr. bardique: Mélodie effrayante (Mag)'
+- Nom: Mélodie effrayante
   Classe: Barde
   Source: MJ
   Niveau: 14
   Auto: true
-  Description: 'Un barde de niveau 14 ou plus peut utiliser sa capacité de représentation
-    bardique pour instiller la peur chez ses ennemis. Seuls ceux qui sont capables
-    d’entendre le spectacle du barde et qui se situent à 9 m (6 cases) ou moins de
-    lui sont affectés. Ils bénéficient d’un jet de Volonté (DD 10 + la moitié du niveau
-    du barde + le modificateur de Charisme du barde) pour annuler cet effet. Les créatures
-    qui réussissent ce jet de sauvegarde sont immunisées à cet effet pendant vingt-quatre
-    heures. En cas d’échec, la cible est effrayée : elle fuit tant qu’elle entend
-    la représentation du barde. La mélodie effrayante utilise une composante sonore.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#M%C3%A9lodie_effrayante_Mag_9
+  Description: '
+
+    Un barde de niveau 14 ou plus peut utiliser sa capacité de représentation bardique
+    pour instiller la peur chez ses ennemis. Seuls ceux qui sont capables d’entendre
+    le spectacle du barde et qui se situent à 9 m (6 cases) ou moins de lui sont affectés.
+    Ils bénéficient d’un jet de Volonté (DD 10 + la moitié du niveau du barde + le
+    modificateur de Charisme du barde) pour annuler cet effet. Les créatures qui réussissent
+    ce jet de sauvegarde sont immunisées à cet effet pendant vingt-quatre heures.
+    En cas d’échec, la cible est effrayée : elle fuit tant qu’elle entend la représentation
+    du barde. La mélodie effrayante utilise une composante sonore.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Mélodie_effrayante_Mag_9
   
-- Nom: 'Repr. bardique: Inspiration héroïque (Sur)'
+- Nom: Inspiration héroïque
   Classe: Barde
   Source: MJ
   Niveau: 15
   Auto: true
-  Description: Un barde de niveau 15 ou plus peut utiliser sa capacité de représentation
-    bardique pour instiller un sentiment d’héroïsme en lui-même ou chez un allié situé
-    à 9 m (6 cases) ou moins. Cet effet n’affecte qu’une seule cible au niveau 15
-    mais touche un allié de plus tous les trois niveaux de barde au-delà du quinzième.
+  Description: '
+
+    Un barde de niveau 15 ou plus peut utiliser sa capacité de représentation bardique
+    pour instiller un sentiment d’héroïsme en lui-même ou chez un allié situé à 9
+    m (6 cases) ou moins. Cet effet n’affecte qu’une seule cible au niveau 15 mais
+    touche un allié de plus tous les trois niveaux de barde au-delà du quinzième.
     Toutes les cibles doivent être capables de voir et d’entendre le barde . Les créatures
     ainsi inspirées bénéficient alors d’un bonus de moral de +4 aux jets de sauvegarde
     et d’un bonus d’esquive de +4 à la classe d’armure. Cet effet persiste tant que
     les cibles sont capables de percevoir le spectacle du barde . L’inspiration héroïque
     est un effet mental qui utilise des composantes sonores et visuelles.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_h%C3%A9ro%C3%AFque_Sur_10
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_héroïque_Sur_10
   
-- Nom: 'Repr. bardique: Suggestion de groupe (Mag)'
+- Nom: Suggestion de groupe
   Classe: Barde
   Source: MJ
   Niveau: 18
   Auto: true
-  Description: Cette capacité fonctionne comme celle de suggestion mais elle permet
-    à un barde de niveau 18 ou plus d’affecter simultanément plusieurs des créatures
-    qu’il a fascinées. Il s’agit d’un effet mental de langage et de type enchantement
-    (coercition) et il s’appuie sur une composante sonore.
+  Description: '
+
+    Cette capacité fonctionne comme celle de suggestion mais elle permet à un barde
+    de niveau 18 ou plus d’affecter simultanément plusieurs des créatures qu’il a
+    fascinées. Il s’agit d’un effet mental de langage et de type enchantement (coercition)
+    et il s’appuie sur une composante sonore.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Suggestion_de_groupe_Mag_11
   
-- Nom: 'Repr. bardique: Représentation mortelle (Sur)'
+- Nom: Représentation mortelle
   Classe: Barde
   Source: MJ
-  Niveau: 18
+  Niveau: 20
   Auto: true
-  Description: Un barde de niveau 20 ou plus peut utiliser sa capacité de représentation
-    bardique pour faire mourir un ennemi de joie ou de tristesse. La cible doit être
-    capable de voir et d’entendre le spectacle du barde pendant un round entier et
-    se situer dans un rayon de 9 m (6 cases). Elle bénéficie d’un jet de Volonté (DD
-    10 + la moitié du niveau du barde + le modificateur de Charisme du barde) pour
-    annuler l’effet. En cas de réussite du jet de sauvegarde, la cible chancelle pendant
-    1d4 rounds et le barde ne peut plus utiliser de représentation mortelle à son
-    encontre au cours des vingt-quatre heures qui suivent. En cas d’échec du jet de
-    sauvegarde, la cible meurt. Une représentation mortelle est un effet mental de
-    mort qui utilise des composantes sonores et visuelles.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Repr%C3%A9sentation_mortelle_Sur_12
+  Description: "\nUn barde de niveau 20 ou plus peut utiliser sa capacité de représentation\
+    \ bardique pour faire mourir un ennemi de joie ou de tristesse. La cible doit\
+    \ être capable de voir et d’entendre le spectacle du barde pendant un round entier\
+    \ et se situer dans un rayon de 9 m (6 cases). Elle bénéficie d’un jet de Volonté\
+    \ (DD 10 + la moitié du niveau du barde + le modificateur de Charisme du barde)\
+    \ pour annuler l’effet. En cas de réussite du jet de sauvegarde, la cible chancelle\
+    \ pendant 1d4 rounds et le barde ne peut plus utiliser de représentation mortelle\
+    \ à son encontre au cours des vingt-quatre heures qui suivent. En cas d’échec\
+    \ du jet de sauvegarde, la cible meurt. Une représentation mortelle est un effet\
+    \ mental de mort qui utilise des composantes sonores et visuelles.\n\r\n\t"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Représentation_mortelle_Sur_12
   
 - Nom: Armes et armures
   Classe: Druide
@@ -58013,4 +58086,326 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barbare.ashx#Pouvoirs_de_rage_Ext_3
+  
+- Nom: Inspiration vaillante +2
+  Classe: Barde
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: '
+
+    Dès le niveau 1, un barde peut utiliser sa capacité de représentation bardique
+    pour susciter la bravoure chez ses alliés (ainsi qu’en lui), les protéger contre
+    la peur et améliorer leurs compétences martiales. Pour bénéficier de cet effet,
+    un allié doit être capable de voir ou d’entendre le spectacle du barde. Il bénéficie
+    alors d’un bonus de moral de +1 aux jets de sauvegarde contre les effets de terreur
+    et de charme et d’un bonus d’aptitude de +1 aux jets d’attaque et de dégâts avec
+    des armes. Lorsque le barde atteint le niveau 5 et tous les six niveaux de barde
+    par la suite, ce bonus augmente de +1, jusqu’à un maximum de +4 au niveau 17.
+    L’inspiration vaillante est un effet mental qui peut utiliser des composantes
+    sonores ou visuelles (le barde doit choisir quelle composante utiliser lorsqu’il
+    active cet effet).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_vaillante_Sur_3
+  
+- Nom: 'Versatilité artistique #2'
+  Classe: Barde
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    Au niveau 2, un barde peut choisir une forme de la compétence Représentation et
+    utiliser le modificateur correspondant à la place des modificateurs de certaines
+    compétences auxquelles elles sont associées. Lorsque le barde choisit de faire
+    cette substitution, il utilise son bonus total pour la compétence de Représentation
+    (y compris son bonus de compétence de classe) au lieu de son bonus dans la compétence
+    associée et ce, qu’il ait investi des points de compétence dans celle-ci ou non.
+    Au niveau 6 et tous les quatre niveaux par la suite, le barde peut choisir une
+    nouvelle forme de la compétence Représentation qu’il pourra également utiliser
+    pour cette substitution.
+
+
+    Les formes de Représentation et leurs compétences associées sont : chant (Bluff,
+    Psychologie), danse (Acrobaties, Vol), déclamation (Diplomatie, Psychologie),
+    farce (Bluff, Intimidation), instruments à clavier (Diplomatie, Intimidation),
+    instruments à cordes (Bluff, Diplomatie), instruments à vent (Diplomatie, Dressage),
+    percussions (Dressage, Intimidation) et scène (Bluff, Déguisement).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Versatilité_artistique_Ext_5
+  
+- Nom: Inspiration talentueuse +3
+  Classe: Barde
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, un barde peut utiliser sa capacité de représentation bardique
+    pour aider un allié à mener à bien une tâche. Cet allié doit se trouver à 9 m
+    (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un bonus
+    d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant que
+    le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
+    ce bonus augmente de +1 (devenant +3 au niveau 7, +4 au niveau 11, +5 au niveau
+    15 et +6 au niveau 19). Le MJ peut interdire les utilisations de cette capacité
+    qui s’avèrent impossibles (comme dans le cas de la compétence de Discrétion par
+    exemple). Le barde ne peut pas utiliser cet effet sur lui-même. L’inspiration
+    talentueuse est un pouvoir mental qui utilise une composante sonore.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
+  
+- Nom: 'Versatilité artistique #3'
+  Classe: Barde
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    Au niveau 2, un barde peut choisir une forme de la compétence Représentation et
+    utiliser le modificateur correspondant à la place des modificateurs de certaines
+    compétences auxquelles elles sont associées. Lorsque le barde choisit de faire
+    cette substitution, il utilise son bonus total pour la compétence de Représentation
+    (y compris son bonus de compétence de classe) au lieu de son bonus dans la compétence
+    associée et ce, qu’il ait investi des points de compétence dans celle-ci ou non.
+    Au niveau 6 et tous les quatre niveaux par la suite, le barde peut choisir une
+    nouvelle forme de la compétence Représentation qu’il pourra également utiliser
+    pour cette substitution.
+
+
+    Les formes de Représentation et leurs compétences associées sont : chant (Bluff,
+    Psychologie), danse (Acrobaties, Vol), déclamation (Diplomatie, Psychologie),
+    farce (Bluff, Intimidation), instruments à clavier (Diplomatie, Intimidation),
+    instruments à cordes (Bluff, Diplomatie), instruments à vent (Diplomatie, Dressage),
+    percussions (Dressage, Intimidation) et scène (Bluff, Déguisement).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Versatilité_artistique_Ext_5
+  
+- Nom: Inspiration talentueuse +4
+  Classe: Barde
+  Source: MJ
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, un barde peut utiliser sa capacité de représentation bardique
+    pour aider un allié à mener à bien une tâche. Cet allié doit se trouver à 9 m
+    (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un bonus
+    d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant que
+    le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
+    ce bonus augmente de +1 (devenant +3 au niveau 7, +4 au niveau 11, +5 au niveau
+    15 et +6 au niveau 19). Le MJ peut interdire les utilisations de cette capacité
+    qui s’avèrent impossibles (comme dans le cas de la compétence de Discrétion par
+    exemple). Le barde ne peut pas utiliser cet effet sur lui-même. L’inspiration
+    talentueuse est un pouvoir mental qui utilise une composante sonore.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
+  
+- Nom: Inspiration vaillante +3
+  Classe: Barde
+  Source: MJ
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    Dès le niveau 1, un barde peut utiliser sa capacité de représentation bardique
+    pour susciter la bravoure chez ses alliés (ainsi qu’en lui), les protéger contre
+    la peur et améliorer leurs compétences martiales. Pour bénéficier de cet effet,
+    un allié doit être capable de voir ou d’entendre le spectacle du barde. Il bénéficie
+    alors d’un bonus de moral de +1 aux jets de sauvegarde contre les effets de terreur
+    et de charme et d’un bonus d’aptitude de +1 aux jets d’attaque et de dégâts avec
+    des armes. Lorsque le barde atteint le niveau 5 et tous les six niveaux de barde
+    par la suite, ce bonus augmente de +1, jusqu’à un maximum de +4 au niveau 17.
+    L’inspiration vaillante est un effet mental qui peut utiliser des composantes
+    sonores ou visuelles (le barde doit choisir quelle composante utiliser lorsqu’il
+    active cet effet).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_vaillante_Sur_3
+  
+- Nom: Maître du savoir 2/jour
+  Classe: Barde
+  Source: MJ
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    Au niveau 5, le barde devient un maître érudit et peut « faire 10 » chaque fois
+    qu’il doit réaliser un test de compétence relatif à une catégorie de Connaissances
+    dans laquelle il a investi des points de compétence. Le barde n’est pas obligé
+    de « faire 10 » et peut choisir de lancer le dé normalement. De plus, une fois
+    par jour, le barde peut « faire 20 » sur un test de Connaissances en utilisant
+    une action simple. Tous les six niveaux de barde après le niveau 5, il peut utiliser
+    cette capacité une fois de plus chaque jour, jusqu’à un maximum de trois utilisations
+    quotidiennes au niveau 17.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Maître_du_savoir_Ext_7
+  
+- Nom: 'Versatilité artistique #4'
+  Classe: Barde
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: '
+
+    Au niveau 2, un barde peut choisir une forme de la compétence Représentation et
+    utiliser le modificateur correspondant à la place des modificateurs de certaines
+    compétences auxquelles elles sont associées. Lorsque le barde choisit de faire
+    cette substitution, il utilise son bonus total pour la compétence de Représentation
+    (y compris son bonus de compétence de classe) au lieu de son bonus dans la compétence
+    associée et ce, qu’il ait investi des points de compétence dans celle-ci ou non.
+    Au niveau 6 et tous les quatre niveaux par la suite, le barde peut choisir une
+    nouvelle forme de la compétence Représentation qu’il pourra également utiliser
+    pour cette substitution.
+
+
+    Les formes de Représentation et leurs compétences associées sont : chant (Bluff,
+    Psychologie), danse (Acrobaties, Vol), déclamation (Diplomatie, Psychologie),
+    farce (Bluff, Intimidation), instruments à clavier (Diplomatie, Intimidation),
+    instruments à cordes (Bluff, Diplomatie), instruments à vent (Diplomatie, Dressage),
+    percussions (Dressage, Intimidation) et scène (Bluff, Déguisement).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Versatilité_artistique_Ext_5
+  
+- Nom: Inspiration talentueuse +5
+  Classe: Barde
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, un barde peut utiliser sa capacité de représentation bardique
+    pour aider un allié à mener à bien une tâche. Cet allié doit se trouver à 9 m
+    (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un bonus
+    d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant que
+    le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
+    ce bonus augmente de +1 (devenant +3 au niveau 7, +4 au niveau 11, +5 au niveau
+    15 et +6 au niveau 19). Le MJ peut interdire les utilisations de cette capacité
+    qui s’avèrent impossibles (comme dans le cas de la compétence de Discrétion par
+    exemple). Le barde ne peut pas utiliser cet effet sur lui-même. L’inspiration
+    talentueuse est un pouvoir mental qui utilise une composante sonore.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
+  
+- Nom: Inspiration vaillante +4
+  Classe: Barde
+  Source: MJ
+  Niveau: 17
+  Auto: true
+  Description: '
+
+    Dès le niveau 1, un barde peut utiliser sa capacité de représentation bardique
+    pour susciter la bravoure chez ses alliés (ainsi qu’en lui), les protéger contre
+    la peur et améliorer leurs compétences martiales. Pour bénéficier de cet effet,
+    un allié doit être capable de voir ou d’entendre le spectacle du barde. Il bénéficie
+    alors d’un bonus de moral de +1 aux jets de sauvegarde contre les effets de terreur
+    et de charme et d’un bonus d’aptitude de +1 aux jets d’attaque et de dégâts avec
+    des armes. Lorsque le barde atteint le niveau 5 et tous les six niveaux de barde
+    par la suite, ce bonus augmente de +1, jusqu’à un maximum de +4 au niveau 17.
+    L’inspiration vaillante est un effet mental qui peut utiliser des composantes
+    sonores ou visuelles (le barde doit choisir quelle composante utiliser lorsqu’il
+    active cet effet).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_vaillante_Sur_3
+  
+- Nom: Maître du savoir 3/jour
+  Classe: Barde
+  Source: MJ
+  Niveau: 17
+  Auto: true
+  Description: '
+
+    Au niveau 5, le barde devient un maître érudit et peut « faire 10 » chaque fois
+    qu’il doit réaliser un test de compétence relatif à une catégorie de Connaissances
+    dans laquelle il a investi des points de compétence. Le barde n’est pas obligé
+    de « faire 10 » et peut choisir de lancer le dé normalement. De plus, une fois
+    par jour, le barde peut « faire 20 » sur un test de Connaissances en utilisant
+    une action simple. Tous les six niveaux de barde après le niveau 5, il peut utiliser
+    cette capacité une fois de plus chaque jour, jusqu’à un maximum de trois utilisations
+    quotidiennes au niveau 17.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Maître_du_savoir_Ext_7
+  
+- Nom: 'Versatilité artistique #5'
+  Classe: Barde
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 2, un barde peut choisir une forme de la compétence Représentation et
+    utiliser le modificateur correspondant à la place des modificateurs de certaines
+    compétences auxquelles elles sont associées. Lorsque le barde choisit de faire
+    cette substitution, il utilise son bonus total pour la compétence de Représentation
+    (y compris son bonus de compétence de classe) au lieu de son bonus dans la compétence
+    associée et ce, qu’il ait investi des points de compétence dans celle-ci ou non.
+    Au niveau 6 et tous les quatre niveaux par la suite, le barde peut choisir une
+    nouvelle forme de la compétence Représentation qu’il pourra également utiliser
+    pour cette substitution.
+
+
+    Les formes de Représentation et leurs compétences associées sont : chant (Bluff,
+    Psychologie), danse (Acrobaties, Vol), déclamation (Diplomatie, Psychologie),
+    farce (Bluff, Intimidation), instruments à clavier (Diplomatie, Intimidation),
+    instruments à cordes (Bluff, Diplomatie), instruments à vent (Diplomatie, Dressage),
+    percussions (Dressage, Intimidation) et scène (Bluff, Déguisement).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barde.ashx#Versatilité_artistique_Ext_5
+  
+- Nom: Inspiration talentueuse +6
+  Classe: Barde
+  Source: MJ
+  Niveau: 19
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, un barde peut utiliser sa capacité de représentation bardique
+    pour aider un allié à mener à bien une tâche. Cet allié doit se trouver à 9 m
+    (6 cases) du barde au plus et doit pouvoir l’entendre. Il reçoit alors un bonus
+    d’aptitude de +2 aux tests relatifs à une compétence au choix et ce, tant que
+    le barde maintient cet effet. Tous les quatre niveaux de barde après le troisième,
+    ce bonus augmente de +1 (devenant +3 au niveau 7, +4 au niveau 11, +5 au niveau
+    15 et +6 au niveau 19). Le MJ peut interdire les utilisations de cette capacité
+    qui s’avèrent impossibles (comme dans le cas de la compétence de Discrétion par
+    exemple). Le barde ne peut pas utiliser cet effet sur lui-même. L’inspiration
+    talentueuse est un pouvoir mental qui utilise une composante sonore.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentations.ashx#Inspiration_talentueuse_Sur_4
   

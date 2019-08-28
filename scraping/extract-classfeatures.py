@@ -17,6 +17,7 @@ MOCK_CF = None
 
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
+URL = "http://www.pathfinder-fr.org/Wiki/"
 
 classes = []
 with open("../data/classes.yml", 'r') as stream:
@@ -33,20 +34,22 @@ listeNames = {}
 print("Extraction des aptitude...")
 
 def addClassFeature(name, link, level):
+    if "#" in link:
+        link = "#" + link.split("#")[1]
     for el in listeDescr:
-        if el['RéférenceAlt'] and el['RéférenceAlt'] in link:
+        if el['RéférenceAlt'] and el['RéférenceAlt'] == link:
             add = dict(el)
             add['Nom'] = name.strip()
             add['Nom'] = add['Nom'][0].upper() + add['Nom'][1:]
             add['Niveau'] = level
             # si nom déjà dans liste => ajouter #D pour distinguer
-            if add['Nom'] in listeNames:
+            matches = [c for c in listeNames if add['Nom'] == c]
+            if matches:
                 listeNames[add['Nom']] += 1
                 add['Nom'] += " #%s" % listeNames[add['Nom']]
             else:
                 listeNames[add['Nom']] = 1
             
-            print("'%s'" % add['Nom'])
             del add['RéférenceAlt']
             liste.append(add)
             return
@@ -54,7 +57,47 @@ def addClassFeature(name, link, level):
     print("Aucune description correspondant à '%s'" % link)
     exit(1)
 
+def extractDescriptions(cl, listeDescr, section, baseURL):
+    newObj = False
+    descr = ""
+
+    altLink = None
+    for s in section:
+        if s.name == 'h3':
+            if newObj:
+                classfeature['Description'] = descr
+                classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
+                print(classfeature['Référence'])
+                listeDescr.append(classfeature)
+                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
+                altLink = None
+                descr = ""
+            else:
+                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
+                
+            newObj = True
+            classfeature['Nom'] = cleanSectionName(s.text)
+            classfeature['Classe'] = cl['Nom']
+            classfeature['Source'] = cl['Source']
+            classfeature['Référence'] = baseURL + s.find('a')['href']
+
+        elif s.name == 'div' and s.has_attr('class') and (s['class'][0] == 'ref'):
+            altLink = s.find('a')['href']
+        else:
+            descr += html2text(s)
+    
+    ## last element
+    classfeature['Description'] = descr
+    classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
+    listeDescr.append(classfeature)
+    
+    
+
+idx = 0
 for cl in classes:
+    idx+=1
+    if idx != 2:
+        continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
 
@@ -70,10 +113,6 @@ for cl in classes:
         if section:
             break
 
-    classfeature = {'Auto': True, 'RéférenceAlt': None }
-    newObj = False
-    descr = ""
-
     if not section:
         print("- Section Description/Caractéristiques pour la classe %s n'a pas être trouvée!!!" % cl['Nom'])
         continue
@@ -82,32 +121,21 @@ for cl in classes:
     # extraction des descriptions des aptitudes
     #
     listeDescr = []
-    altLink = None
-    for s in section:
-        if s.name == 'h3':
-            if newObj:
-                classfeature['Description'] = descr
-                classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
-                listeDescr.append(classfeature)
-                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
-                altLink = None
-                descr = ""
-                
-            newObj = True
-            classfeature['Nom'] = cleanSectionName(s.text)
-            classfeature['Classe'] = cl['Nom']
-            classfeature['Source'] = cl['Source']
-            classfeature['Référence'] = cl['Référence'] + s.find('a')['href']
-
-        elif s.name == 'div' and s.has_attr('class') and (s['class'][0] == 'ref'):
-            altLink = s.find('a')['href']
-        else:
-            descr += html2text(s)
-
-    ## last element
-    classfeature['Description'] = descr
-    classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
-    listeDescr.append(classfeature)
+    extractDescriptions(cl, listeDescr, section, cl['Référence'])
+    
+    #
+    # extraction des descriptions provenant d'autres pages
+    #
+    links = content.find_next('table',{"class": "tablo"}).find_all('a')
+    for a in links:
+        link = a['href']
+        if '#' in link:
+            link = link.split('#')[0]
+        if link.lower() not in cl['Référence'].lower():
+            print("- Extraction sous-page: %s" % link)
+            detailPage = BeautifulSoup(urllib.request.urlopen(URL + link).read(),features="lxml").body
+            extractDescriptions(cl, listeDescr, detailPage.find('div',{"id": "PageContentDiv"}).children, URL + link)
+            break
     
     #
     # extraction des aptitudes depuis le tableau
@@ -146,7 +174,8 @@ for cl in classes:
                 continue
             curName += c.string
         # dernier élément
-        addClassFeature(curName, curHref, level)
+        if len(curName.strip()) > 0:
+            addClassFeature(curName, curHref, level)
         
         level += 1
     
