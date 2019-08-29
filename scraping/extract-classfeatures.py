@@ -34,6 +34,8 @@ listeNames = {}
 print("Extraction des aptitude...")
 
 def addClassFeature(name, link, level):
+    if name == "—":
+        return
     if "#" in link:
         link = "#" + link.split("#")[1]
     for el in listeDescr:
@@ -95,7 +97,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 5:
+    if idx != 6:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
