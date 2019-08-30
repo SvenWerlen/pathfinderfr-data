@@ -44347,7 +44347,7 @@
     \r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Maître_scalde_Sur_14
   
-- Nom: Maître tueur (Ext)
+- Nom: Maître tueur
   Classe: Tueur
   Source: MCA
   Niveau: 20
@@ -51761,7 +51761,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Armes_et_armures_0
   
-- Nom: Cible étudiée (Ext)
+- Nom: 1re cible étudiée
   Classe: Tueur
   Source: MCA
   Niveau: 1
@@ -51786,7 +51786,7 @@
     \n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Cible_étudiée_Ext_1
   
-- Nom: Pistage (Ext)
+- Nom: Pistage
   Classe: Tueur
   Source: MCA
   Niveau: 1
@@ -51795,7 +51795,7 @@
     \ tests de Survie quand il suit une piste.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Pistage_Ext_2
   
-- Nom: Talents de tueur
+- Nom: Talent de tueur
   Classe: Tueur
   Source: MCA
   Niveau: 2
@@ -51810,7 +51810,7 @@
     \n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
   
-- Nom: Attaque sournoise
+- Nom: Attaque sournoise +1d6
   Classe: Tueur
   Source: MCA
   Niveau: 3
@@ -51834,7 +51834,7 @@
     \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
   
-- Nom: Traqueur (Ext)
+- Nom: Traqueur
   Classe: Tueur
   Source: MCA
   Niveau: 7
@@ -51847,7 +51847,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Traqueur_Ext_5
   
-- Nom: Talents de maître tueur
+- Nom: Talent de maître tueur
   Classe: Tueur
   Source: MCA
   Niveau: 10
@@ -51857,7 +51857,7 @@
     \ talents de maître tueur\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_maître_tueur_6
   
-- Nom: Pistage rapide (Ext)
+- Nom: Pistage rapide
   Classe: Tueur
   Source: MCA
   Niveau: 11
@@ -51868,7 +51868,7 @@
     \ au lieu de –20.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Pistage_rapide_Ext_7
   
-- Nom: Avancée du tueur (Ext)
+- Nom: Avancée du tueur 1/jour
   Classe: Tueur
   Source: MCA
   Niveau: 13
@@ -51879,7 +51879,7 @@
     \ il peut utiliser ce pouvoir deux fois par jour. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Avancée_du_tueur_Ext_8
   
-- Nom: Proie du chasseur (Ext)
+- Nom: Proie du chasseur
   Classe: Tueur
   Source: MCA
   Niveau: 14
@@ -51896,7 +51896,7 @@
     \ il peut en choisir une nouvelle une heure plus tard.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Proie_du_chasseur_Ext_9
   
-- Nom: Proie du maître chasseur (Ext)
+- Nom: Proie du maître chasseur
   Classe: Tueur
   Source: MCA
   Niveau: 19
@@ -69768,4 +69768,370 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: 'Talent de tueur #2'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 4
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: 2e cible étudiée
+  Classe: Tueur
+  Source: MCA
+  Niveau: 5
+  Auto: true
+  Description: "Le tueur étudie un adversaire présent dans son champ de vision par\
+    \ une action de mouvement. Il gagne ensuite un bonus de +1 aux tests de Bluff,\
+    \ de Connaissances, de Perception, de Psychologie et de Survie contre cet adversaire\
+    \ et bénéficie d’un bonus de +1 aux jets d’attaque et de dégâts des armes à son\
+    \ encontre. Le DD de ses aptitudes de classe de tueur augmente de 1 contre la\
+    \ cible étudiée. \n\nLe tueur bénéficie de ces bonus contre une cible à la fois\
+    \ seulement. Ils restent effectifs jusqu’à ce que la cible trépasse ou que le\
+    \ tueur en étudie une nouvelle.\n\nSi le tueur inflige des dégâts d’attaque sournoise\
+    \ à une cible, il peut l’étudier par une action immédiate, ce qui lui permet d’appliquer\
+    \ le bonus de cible étudiée sur sa victime (y compris sur les dégâts normaux de\
+    \ l’attaque).\n\nAux niveaux 5, 10, 15 et 20, le bonus de cible étudiée aux jets\
+    \ d’attaque et de dégâts augmente de 1, tout comme le DD des aptitudes de tueur\
+    \ contre la cible étudiée. De plus, à chaque fois que le tueur atteint l’un de\
+    \ ces niveaux, il apprend à maintenir ces bonus contre une cible de plus à la\
+    \ fois. Il peut briser le lien avec une cible étudiée par une action libre, ce\
+    \ qui lui permet d’en étudier une autre à la place.\n\nÀ partir du niveau 7, le\
+    \ tueur étudie sa cible par une action de mouvement ou par une action rapide.\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Cible_étudiée_Ext_1
+  
+- Nom: 'Talent de tueur #3'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Attaque sournoise +2d6
+  Classe: Tueur
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 3, si un tueur attaque un adversaire incapable de se défendre\
+    \ efficacement contre son assaut, il peut frapper un point vital pour infliger\
+    \ des dégâts supplémentaires. L’attaque du tueur inflige des dégâts supplémentaires\
+    \ à chaque fois que sa victime est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède un tel bonus ou non) ou quand le tueur la prend en tenaille. Ces dégâts\
+    \ supplémentaires s’élèvent à 1d6 au niveau 3 et augmentent ensuite de 1d6 tous\
+    \ les trois niveaux. \n\nSi le tueur réussit un coup critique lors d’une attaque\
+    \ sournoise, il ne multiplie pas les dégâts supplémentaires.\n\nLes attaques à\
+    \ distance fonctionnent comme des attaques sournoises à condition que la cible\
+    \ se trouve à 9 mètres (6 c) ou moins.\n\nLe tueur peut effectuer une attaque\
+    \ sournoise infligeant des dégâts supplémentaires non-létaux avec une arme conçue\
+    \ pour infliger des dégâts non-létaux, comme une matraque, un fouet ou ses mains\
+    \ nues. Si son arme inflige des dégâts létaux, il ne peut pas s’en servir pour\
+    \ infliger des dégâts supplémentaires non-létaux, pas même avec le malus de –4.\
+    \ \n\nLe tueur doit voir sa cible assez distinctement pour repérer un point vital\
+    \ et doit être en mesure de l’atteindre. Il ne peut pas porter d’attaque sournoise\
+    \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
+  
+- Nom: 'Talent de tueur #4'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Attaque sournoise +3d6
+  Classe: Tueur
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: "Au niveau 3, si un tueur attaque un adversaire incapable de se défendre\
+    \ efficacement contre son assaut, il peut frapper un point vital pour infliger\
+    \ des dégâts supplémentaires. L’attaque du tueur inflige des dégâts supplémentaires\
+    \ à chaque fois que sa victime est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède un tel bonus ou non) ou quand le tueur la prend en tenaille. Ces dégâts\
+    \ supplémentaires s’élèvent à 1d6 au niveau 3 et augmentent ensuite de 1d6 tous\
+    \ les trois niveaux. \n\nSi le tueur réussit un coup critique lors d’une attaque\
+    \ sournoise, il ne multiplie pas les dégâts supplémentaires.\n\nLes attaques à\
+    \ distance fonctionnent comme des attaques sournoises à condition que la cible\
+    \ se trouve à 9 mètres (6 c) ou moins.\n\nLe tueur peut effectuer une attaque\
+    \ sournoise infligeant des dégâts supplémentaires non-létaux avec une arme conçue\
+    \ pour infliger des dégâts non-létaux, comme une matraque, un fouet ou ses mains\
+    \ nues. Si son arme inflige des dégâts létaux, il ne peut pas s’en servir pour\
+    \ infliger des dégâts supplémentaires non-létaux, pas même avec le malus de –4.\
+    \ \n\nLe tueur doit voir sa cible assez distinctement pour repérer un point vital\
+    \ et doit être en mesure de l’atteindre. Il ne peut pas porter d’attaque sournoise\
+    \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
+  
+- Nom: 'Talent de tueur #5'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: 3e cible étudiée
+  Classe: Tueur
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Le tueur étudie un adversaire présent dans son champ de vision par\
+    \ une action de mouvement. Il gagne ensuite un bonus de +1 aux tests de Bluff,\
+    \ de Connaissances, de Perception, de Psychologie et de Survie contre cet adversaire\
+    \ et bénéficie d’un bonus de +1 aux jets d’attaque et de dégâts des armes à son\
+    \ encontre. Le DD de ses aptitudes de classe de tueur augmente de 1 contre la\
+    \ cible étudiée. \n\nLe tueur bénéficie de ces bonus contre une cible à la fois\
+    \ seulement. Ils restent effectifs jusqu’à ce que la cible trépasse ou que le\
+    \ tueur en étudie une nouvelle.\n\nSi le tueur inflige des dégâts d’attaque sournoise\
+    \ à une cible, il peut l’étudier par une action immédiate, ce qui lui permet d’appliquer\
+    \ le bonus de cible étudiée sur sa victime (y compris sur les dégâts normaux de\
+    \ l’attaque).\n\nAux niveaux 5, 10, 15 et 20, le bonus de cible étudiée aux jets\
+    \ d’attaque et de dégâts augmente de 1, tout comme le DD des aptitudes de tueur\
+    \ contre la cible étudiée. De plus, à chaque fois que le tueur atteint l’un de\
+    \ ces niveaux, il apprend à maintenir ces bonus contre une cible de plus à la\
+    \ fois. Il peut briser le lien avec une cible étudiée par une action libre, ce\
+    \ qui lui permet d’en étudier une autre à la place.\n\nÀ partir du niveau 7, le\
+    \ tueur étudie sa cible par une action de mouvement ou par une action rapide.\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Cible_étudiée_Ext_1
+  
+- Nom: 'Talent de tueur #6'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Attaque sournoise +4d6
+  Classe: Tueur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Au niveau 3, si un tueur attaque un adversaire incapable de se défendre\
+    \ efficacement contre son assaut, il peut frapper un point vital pour infliger\
+    \ des dégâts supplémentaires. L’attaque du tueur inflige des dégâts supplémentaires\
+    \ à chaque fois que sa victime est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède un tel bonus ou non) ou quand le tueur la prend en tenaille. Ces dégâts\
+    \ supplémentaires s’élèvent à 1d6 au niveau 3 et augmentent ensuite de 1d6 tous\
+    \ les trois niveaux. \n\nSi le tueur réussit un coup critique lors d’une attaque\
+    \ sournoise, il ne multiplie pas les dégâts supplémentaires.\n\nLes attaques à\
+    \ distance fonctionnent comme des attaques sournoises à condition que la cible\
+    \ se trouve à 9 mètres (6 c) ou moins.\n\nLe tueur peut effectuer une attaque\
+    \ sournoise infligeant des dégâts supplémentaires non-létaux avec une arme conçue\
+    \ pour infliger des dégâts non-létaux, comme une matraque, un fouet ou ses mains\
+    \ nues. Si son arme inflige des dégâts létaux, il ne peut pas s’en servir pour\
+    \ infliger des dégâts supplémentaires non-létaux, pas même avec le malus de –4.\
+    \ \n\nLe tueur doit voir sa cible assez distinctement pour repérer un point vital\
+    \ et doit être en mesure de l’atteindre. Il ne peut pas porter d’attaque sournoise\
+    \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
+  
+- Nom: 'Talent de tueur #7'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Attaque sournoise +5d6
+  Classe: Tueur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: "Au niveau 3, si un tueur attaque un adversaire incapable de se défendre\
+    \ efficacement contre son assaut, il peut frapper un point vital pour infliger\
+    \ des dégâts supplémentaires. L’attaque du tueur inflige des dégâts supplémentaires\
+    \ à chaque fois que sa victime est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède un tel bonus ou non) ou quand le tueur la prend en tenaille. Ces dégâts\
+    \ supplémentaires s’élèvent à 1d6 au niveau 3 et augmentent ensuite de 1d6 tous\
+    \ les trois niveaux. \n\nSi le tueur réussit un coup critique lors d’une attaque\
+    \ sournoise, il ne multiplie pas les dégâts supplémentaires.\n\nLes attaques à\
+    \ distance fonctionnent comme des attaques sournoises à condition que la cible\
+    \ se trouve à 9 mètres (6 c) ou moins.\n\nLe tueur peut effectuer une attaque\
+    \ sournoise infligeant des dégâts supplémentaires non-létaux avec une arme conçue\
+    \ pour infliger des dégâts non-létaux, comme une matraque, un fouet ou ses mains\
+    \ nues. Si son arme inflige des dégâts létaux, il ne peut pas s’en servir pour\
+    \ infliger des dégâts supplémentaires non-létaux, pas même avec le malus de –4.\
+    \ \n\nLe tueur doit voir sa cible assez distinctement pour repérer un point vital\
+    \ et doit être en mesure de l’atteindre. Il ne peut pas porter d’attaque sournoise\
+    \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
+  
+- Nom: 4e cible étudiée
+  Classe: Tueur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: "Le tueur étudie un adversaire présent dans son champ de vision par\
+    \ une action de mouvement. Il gagne ensuite un bonus de +1 aux tests de Bluff,\
+    \ de Connaissances, de Perception, de Psychologie et de Survie contre cet adversaire\
+    \ et bénéficie d’un bonus de +1 aux jets d’attaque et de dégâts des armes à son\
+    \ encontre. Le DD de ses aptitudes de classe de tueur augmente de 1 contre la\
+    \ cible étudiée. \n\nLe tueur bénéficie de ces bonus contre une cible à la fois\
+    \ seulement. Ils restent effectifs jusqu’à ce que la cible trépasse ou que le\
+    \ tueur en étudie une nouvelle.\n\nSi le tueur inflige des dégâts d’attaque sournoise\
+    \ à une cible, il peut l’étudier par une action immédiate, ce qui lui permet d’appliquer\
+    \ le bonus de cible étudiée sur sa victime (y compris sur les dégâts normaux de\
+    \ l’attaque).\n\nAux niveaux 5, 10, 15 et 20, le bonus de cible étudiée aux jets\
+    \ d’attaque et de dégâts augmente de 1, tout comme le DD des aptitudes de tueur\
+    \ contre la cible étudiée. De plus, à chaque fois que le tueur atteint l’un de\
+    \ ces niveaux, il apprend à maintenir ces bonus contre une cible de plus à la\
+    \ fois. Il peut briser le lien avec une cible étudiée par une action libre, ce\
+    \ qui lui permet d’en étudier une autre à la place.\n\nÀ partir du niveau 7, le\
+    \ tueur étudie sa cible par une action de mouvement ou par une action rapide.\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Cible_étudiée_Ext_1
+  
+- Nom: 'Talent de tueur #8'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Avancée du tueur 2/jour
+  Classe: Tueur
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: "Au niveau 13, le tueur peut, une fois par jour, se déplacer du double\
+    \ de sa vitesse de base lors d’une action de mouvement. Il peut utiliser la Discrétion\
+    \ lors de ce déplacement mais subit alors un malus de –10 au test. Au niveau 17,\
+    \ il peut utiliser ce pouvoir deux fois par jour. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Avancée_du_tueur_Ext_8
+  
+- Nom: 'Talent de tueur #9'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: Attaque sournoise +6d6
+  Classe: Tueur
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: "Au niveau 3, si un tueur attaque un adversaire incapable de se défendre\
+    \ efficacement contre son assaut, il peut frapper un point vital pour infliger\
+    \ des dégâts supplémentaires. L’attaque du tueur inflige des dégâts supplémentaires\
+    \ à chaque fois que sa victime est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède un tel bonus ou non) ou quand le tueur la prend en tenaille. Ces dégâts\
+    \ supplémentaires s’élèvent à 1d6 au niveau 3 et augmentent ensuite de 1d6 tous\
+    \ les trois niveaux. \n\nSi le tueur réussit un coup critique lors d’une attaque\
+    \ sournoise, il ne multiplie pas les dégâts supplémentaires.\n\nLes attaques à\
+    \ distance fonctionnent comme des attaques sournoises à condition que la cible\
+    \ se trouve à 9 mètres (6 c) ou moins.\n\nLe tueur peut effectuer une attaque\
+    \ sournoise infligeant des dégâts supplémentaires non-létaux avec une arme conçue\
+    \ pour infliger des dégâts non-létaux, comme une matraque, un fouet ou ses mains\
+    \ nues. Si son arme inflige des dégâts létaux, il ne peut pas s’en servir pour\
+    \ infliger des dégâts supplémentaires non-létaux, pas même avec le malus de –4.\
+    \ \n\nLe tueur doit voir sa cible assez distinctement pour repérer un point vital\
+    \ et doit être en mesure de l’atteindre. Il ne peut pas porter d’attaque sournoise\
+    \ contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Attaque_sournoise_4
+  
+- Nom: 'Talent de tueur #10'
+  Classe: Tueur
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: " \nEn prenant de l’expérience, le tueur apprend quelques astuces\
+    \ qui l’aident à perturber ses adversaires. À partir du niveau 2 puis tous les\
+    \ deux niveaux, il gagne un talent de tueur. Sauf indication contraire, il ne\
+    \ peut pas sélectionner un même talent à plusieurs reprises.\n\nLes talents marqués\
+    \ d’un astérisque ajoutent un effet à l’attaque sournoise du tueur. Ce dernier\
+    \ ne peut appliquer qu’un seul de ces talents à une attaque donnée et doit choisir\
+    \ lequel avant d’effectuer son jet d’attaque.\n\nVoir les talents de tueur\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Talents_de_tueur_3
+  
+- Nom: 5e cible étudiée
+  Classe: Tueur
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "Le tueur étudie un adversaire présent dans son champ de vision par\
+    \ une action de mouvement. Il gagne ensuite un bonus de +1 aux tests de Bluff,\
+    \ de Connaissances, de Perception, de Psychologie et de Survie contre cet adversaire\
+    \ et bénéficie d’un bonus de +1 aux jets d’attaque et de dégâts des armes à son\
+    \ encontre. Le DD de ses aptitudes de classe de tueur augmente de 1 contre la\
+    \ cible étudiée. \n\nLe tueur bénéficie de ces bonus contre une cible à la fois\
+    \ seulement. Ils restent effectifs jusqu’à ce que la cible trépasse ou que le\
+    \ tueur en étudie une nouvelle.\n\nSi le tueur inflige des dégâts d’attaque sournoise\
+    \ à une cible, il peut l’étudier par une action immédiate, ce qui lui permet d’appliquer\
+    \ le bonus de cible étudiée sur sa victime (y compris sur les dégâts normaux de\
+    \ l’attaque).\n\nAux niveaux 5, 10, 15 et 20, le bonus de cible étudiée aux jets\
+    \ d’attaque et de dégâts augmente de 1, tout comme le DD des aptitudes de tueur\
+    \ contre la cible étudiée. De plus, à chaque fois que le tueur atteint l’un de\
+    \ ces niveaux, il apprend à maintenir ces bonus contre une cible de plus à la\
+    \ fois. Il peut briser le lien avec une cible étudiée par une action libre, ce\
+    \ qui lui permet d’en étudier une autre à la place.\n\nÀ partir du niveau 7, le\
+    \ tueur étudie sa cible par une action de mouvement ou par une action rapide.\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur.ashx#Cible_étudiée_Ext_1
   
