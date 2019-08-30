@@ -7839,7 +7839,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Armes_et_armures_0
   
-- Nom: Attaque sournoise
+- Nom: Attaque sournoise +1d6
   Classe: Roublard
   Source: MJ
   Niveau: 1
@@ -7894,7 +7894,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Recherche_des_pièges_2
   
-- Nom: Esquive totale (Ext)
+- Nom: Esquive totale
   Classe: Roublard
   Source: MJ
   Niveau: 2
@@ -7913,10 +7913,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_totale_Ext_3
   
-- Nom: Talents de roublard
+- Nom: Talent de roublard
   Classe: Roublard
   Source: MJ
-  Niveau: 1
+  Niveau: 2
   Auto: true
   Description: '
 
@@ -7935,7 +7935,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_roublard_4
   
-- Nom: Sens des pièges (Ext)
+- Nom: Sens des pièges +1
   Classe: Roublard
   Source: MJ
   Niveau: 3
@@ -7959,7 +7959,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
   
-- Nom: Esquive instinctive (Ext)
+- Nom: Esquive instinctive
   Classe: Roublard
   Source: MJ
   Niveau: 4
@@ -7983,7 +7983,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_instinctive_Ext_6
   
-- Nom: Esquive instinctive supérieure (Ext)
+- Nom: Esquive instinctive supérieure
   Classe: Roublard
   Source: MJ
   Niveau: 8
@@ -8008,7 +8008,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Esquive_instinctive_supérieure_Ext_7
   
-- Nom: Talents de maître roublard
+- Nom: Talent de maître-roublard
   Classe: Roublard
   Source: MJ
   Niveau: 10
@@ -8023,7 +8023,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
   
-- Nom: Coup de maître (Ext)
+- Nom: Coup de maître
   Classe: Roublard
   Source: MJ
   Niveau: 20
@@ -61811,4 +61811,616 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
+  
+- Nom: Attaque sournoise +2d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de roublard #2'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 4
+  Auto: true
+  Description: '
+
+    En gagnant de l’expérience, un roublard acquiert divers talents qui l’avantagent
+    ou désavantagent ses ennemis. Il obtient un premier talent de roublard au niveau
+    2, puis il gagne un talent de roublard supplémentaire tous les deux niveaux de
+    roublard par la suite. Aucun talent ne peut être choisi plus d’une fois.
+
+
+    Les talents marqués d’un astérisque ajoutent un effet aux attaques sournoises
+    du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque,
+    et son choix doit être fait avant le jet d’attaque.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_roublard_4
+  
+- Nom: Attaque sournoise +3d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de roublard #3'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    En gagnant de l’expérience, un roublard acquiert divers talents qui l’avantagent
+    ou désavantagent ses ennemis. Il obtient un premier talent de roublard au niveau
+    2, puis il gagne un talent de roublard supplémentaire tous les deux niveaux de
+    roublard par la suite. Aucun talent ne peut être choisi plus d’une fois.
+
+
+    Les talents marqués d’un astérisque ajoutent un effet aux attaques sournoises
+    du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque,
+    et son choix doit être fait avant le jet d’attaque.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_roublard_4
+  
+- Nom: Sens des pièges +2
+  Classe: Roublard
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant d’éviter
+    les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets de Réflexes
+    effectués pour éviter les pièges et par un bonus d’esquive de +1 à la CA contre
+    les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque le roublard
+    atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il atteint
+    le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il atteint
+    le niveau 18.
+
+
+    Les bonus de sens des pièges provenant de classes différentes se cumulent entre
+    eux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Attaque sournoise +4d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de roublard #4'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 8
+  Auto: true
+  Description: '
+
+    En gagnant de l’expérience, un roublard acquiert divers talents qui l’avantagent
+    ou désavantagent ses ennemis. Il obtient un premier talent de roublard au niveau
+    2, puis il gagne un talent de roublard supplémentaire tous les deux niveaux de
+    roublard par la suite. Aucun talent ne peut être choisi plus d’une fois.
+
+
+    Les talents marqués d’un astérisque ajoutent un effet aux attaques sournoises
+    du roublard. Le roublard ne peut appliquer que l’un de ces effets à chaque attaque,
+    et son choix doit être fait avant le jet d’attaque.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_roublard_4
+  
+- Nom: Attaque sournoise +5d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: Sens des pièges +3
+  Classe: Roublard
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant d’éviter
+    les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets de Réflexes
+    effectués pour éviter les pièges et par un bonus d’esquive de +1 à la CA contre
+    les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque le roublard
+    atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il atteint
+    le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il atteint
+    le niveau 18.
+
+
+    Les bonus de sens des pièges provenant de classes différentes se cumulent entre
+    eux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Attaque sournoise +6d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de maître-roublard #2'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un
+    des talents de maître roublard suivants au lieu d’un talent de roublard.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
+  
+- Nom: Sens des pièges +4
+  Classe: Roublard
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant d’éviter
+    les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets de Réflexes
+    effectués pour éviter les pièges et par un bonus d’esquive de +1 à la CA contre
+    les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque le roublard
+    atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il atteint
+    le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il atteint
+    le niveau 18.
+
+
+    Les bonus de sens des pièges provenant de classes différentes se cumulent entre
+    eux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Attaque sournoise +7d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 13
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de maître-roublard #3'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: '
+
+    Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un
+    des talents de maître roublard suivants au lieu d’un talent de roublard.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
+  
+- Nom: Attaque sournoise +8d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: Sens des pièges +5
+  Classe: Roublard
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant d’éviter
+    les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets de Réflexes
+    effectués pour éviter les pièges et par un bonus d’esquive de +1 à la CA contre
+    les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque le roublard
+    atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il atteint
+    le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il atteint
+    le niveau 18.
+
+
+    Les bonus de sens des pièges provenant de classes différentes se cumulent entre
+    eux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: 'Talent de maître-roublard #4'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 16
+  Auto: true
+  Description: '
+
+    Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un
+    des talents de maître roublard suivants au lieu d’un talent de roublard.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
+  
+- Nom: Attaque sournoise +9d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 17
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de maître-roublard #5'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un
+    des talents de maître roublard suivants au lieu d’un talent de roublard.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
+  
+- Nom: Sens des pièges +6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    À partir du niveau 3, le roublard acquiert un sens intuitif lui permettant d’éviter
+    les dangers des pièges, ce qui se traduit par un bonus de +1 aux jets de Réflexes
+    effectués pour éviter les pièges et par un bonus d’esquive de +1 à la CA contre
+    les attaques déclenchées par des pièges. Ces bonus passent à +2 lorsque le roublard
+    atteint le niveau 6, à +3 lorsqu’il atteint le niveau 9, à +4 lorsqu’il atteint
+    le niveau 12, à +5 lorsqu’il atteint le niveau 15 et enfin à +6 lorsqu’il atteint
+    le niveau 18.
+
+
+    Les bonus de sens des pièges provenant de classes différentes se cumulent entre
+    eux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Sens_des_pièges_Ext_5
+  
+- Nom: Attaque sournoise +10d6
+  Classe: Roublard
+  Source: MJ
+  Niveau: 19
+  Auto: true
+  Description: '
+
+    Lorsqu’un roublard attaque son adversaire dans une situation où ce dernier est
+    incapable de se défendre efficacement, il peut lui infliger des dégâts supplémentaires
+    en touchant un point sensible.
+
+
+    L’attaque du roublard inflige des dégâts supplémentaires lorsque sa cible se trouve
+    dans un cas de figure lui ôtant son bonus de Dextérité à la CA (qu’elle en ait
+    un ou pas) ou qu’elle est prise en tenaille par le roublard et un compagnon de
+    celui-ci. Les dégâts supplémentaires s’élèvent à 1d6 points au niveau 1, et ils
+    augmentent de 1d6 points tous les deux niveaux de roublard suivants. Si le roublard
+    obtient un coup critique sur une attaque sournoise, ces dégâts supplémentaires
+    ne sont pas multipliés. Une attaque à distance ne peut être une attaque sournoise
+    que si la cible se trouve à 9 m (6 cases) ou moins.
+
+
+    S’il utilise une arme qui inflige des dégâts non létaux (comme une matraque, un
+    fouet ou une attaque à mains nues), le personnage peut porter une attaque sournoise
+    infligeant elle aussi des dégâts non létaux. Il ne peut pas choisir cette option
+    avec une arme occasionnant normalement des dégâts létaux (même en acceptant une
+    pénalité de -4 au jet d’attaque).
+
+
+    Le roublard ne peut tenter une attaque sournoise que contre un adversaire qu’il
+    peut observer suffisamment pour en repérer les points faibles et dont il peut
+    toucher les organes vitaux. Les attaques sournoises sont impossibles lorsque la
+    cible bénéficie d’un camouflage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Attaque_sournoise_1
+  
+- Nom: 'Talent de maître-roublard #6'
+  Classe: Roublard
+  Source: MJ
+  Niveau: 20
+  Auto: true
+  Description: '
+
+    Au niveau 10 et tous les deux niveaux par la suite, le roublard peut choisir l’un
+    des talents de maître roublard suivants au lieu d’un talent de roublard.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
   
