@@ -44089,7 +44089,7 @@
     \ (voir la description du sort du même nom).\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inquisiteur.ashx#Sorts_du_Bien_du_Chaos_de_la_Loi_et_du_Mal_21
   
-- Nom: Malédiction de l’oracle (Ext)
+- Nom: Malédiction de l'oracle
   Classe: Oracle
   Source: MJRA
   Niveau: 1
@@ -48153,18 +48153,8 @@
     \ soit son origine, le mystère se manifeste de plusieurs manières au fur et à\
     \ mesure que l’oracle gagne des niveaux. L’oracle doit en choisir un au niveau\
     \ 1 et ne pourra pas en changer par la suite. \n\nVoir les mystères d'oracle.\n\
-    \n\nAu niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend de nouveaux\
-    \ sorts issus de son mystère. Il est impossible de les échanger contre d’autres\
-    \ sorts en atteignant un niveau supérieur. \n\n\n Au niveau 1, 3 et ensuite tous\
-    \ les quatre niveaux (7, 11, etc.), l’oracle découvre un nouveau secret sur le\
-    \ mystère qui lui accorde ses pouvoirs et ses aptitudes. Il doit choisir une révélation\
-    \ dans la liste de celles disponibles pour son mystère. S’il choisit une révélation\
-    \ à un niveau supérieur, il gagne toutes les aptitudes et tous les bonus associés\
-    \ en fonction de son niveau actuel. Sauf indication contraire, il faut une action\
-    \ simple pour activer les pouvoirs d’une révélation.\n\n\n Au niveau 20, l’oracle\
-    \ découvre la révélation finale de son mystère, ce qui lui donne des pouvoirs\
-    \ prodigieux. La nature de ces bonus dépend de son mystère.\n\n\n"
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Mystère_6
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Mystère_3
   
 - Nom: Armes et armures
   Classe: Sorcière
@@ -64377,4 +64367,231 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inquisiteur.ashx#Jugement_Sur_3
+  
+- Nom: Oraison
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 1
+  Auto: true
+  Description: 'L’oracle connaît un certain nombre d’oraisons, ou sorts de niveau
+    0, comme indiqué dans la table des « sorts connus » ci-contre. Il jette ces sorts
+    comme les autres mais ils ne sont pas dépensés lorsqu’ils sont lancés et peuvent
+    être utilisés à nouveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Oraisons_2
+  
+- Nom: Révélation
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 1
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: Sort de mystère
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 2
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Révélation #2'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 3
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: 'Sort de mystère #2'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 4
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Sort de mystère #3'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Révélation #3'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 7
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: 'Sort de mystère #4'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 8
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Sort de mystère #5'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Révélation #4'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 11
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: 'Sort de mystère #6'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 12
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Sort de mystère #7'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Révélation #5'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 15
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: 'Sort de mystère #8'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 16
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Sort de mystère #9'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 18
+  Auto: true
+  Description: "Au niveau 2, et par la suite tous les niveaux pairs, l’oracle apprend\
+    \ de nouveaux sorts issus de son mystère. Il est impossible de les échanger contre\
+    \ d’autres sorts en atteignant un niveau supérieur. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Sorts_de_mystère_4
+  
+- Nom: 'Révélation #6'
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 19
+  Auto: true
+  Description: ' Au niveau 1, 3 et ensuite tous les quatre niveaux (7, 11, etc.),
+    l’oracle découvre un nouveau secret sur le mystère qui lui accorde ses pouvoirs
+    et ses aptitudes. Il doit choisir une révélation dans la liste de celles disponibles
+    pour son mystère. S’il choisit une révélation à un niveau supérieur, il gagne
+    toutes les aptitudes et tous les bonus associés en fonction de son niveau actuel.
+    Sauf indication contraire, il faut une action simple pour activer les pouvoirs
+    d’une révélation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_5
+  
+- Nom: Révélation finale
+  Classe: Oracle
+  Source: MJRA
+  Niveau: 20
+  Auto: true
+  Description: ' Au niveau 20, l’oracle découvre la révélation finale de son mystère,
+    ce qui lui donne des pouvoirs prodigieux. La nature de ces bonus dépend de son
+    mystère.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Oracle.ashx#Révélation_finale_6
   
