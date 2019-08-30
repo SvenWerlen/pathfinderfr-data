@@ -44054,7 +44054,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Charge_suprême_Ext_15
   
-- Nom: Eidolon jumelé (Sur)
+- Nom: Eidolon jumelé
   Classe: Conjurateur
   Source: MJRA
   Niveau: 20
@@ -47348,7 +47348,7 @@
 - Nom: Tours de magie
   Classe: Conjurateur
   Source: MJRA
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: 'Le conjurateur connaît un certain nombre de tours de magie, ou sorts
     de niveau 0, comme indiqué dans la table des « sorts connus. » Ils se lancent
@@ -47414,7 +47414,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Eidolon_3
   
-- Nom: Lien vital (Sur)
+- Nom: Lien vital
   Classe: Conjurateur
   Source: MJRA
   Niveau: 1
@@ -47442,7 +47442,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Lien_vital_Sur_4
   
-- Nom: Convocation de monstres/Portail (Mag)
+- Nom: Convocation de monstres I
   Classe: Conjurateur
   Source: MJRA
   Niveau: 1
@@ -47468,7 +47468,7 @@
     \ servir.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
   
-- Nom: Sens liés (Sur)
+- Nom: Sens liés
   Classe: Conjurateur
   Source: MJRA
   Niveau: 2
@@ -47485,7 +47485,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Sens_liés_Sur_6
   
-- Nom: Protection d’allié (Ext)
+- Nom: Protection d'allié
   Classe: Conjurateur
   Source: MJRA
   Niveau: 4
@@ -47500,7 +47500,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Protection_d’allié_Ext_7
   
-- Nom: Appel du créateur (Sur)
+- Nom: Appel du créateur
   Classe: Conjurateur
   Source: MJRA
   Niveau: 6
@@ -47519,7 +47519,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Appel_du_créateur_Sur_8
   
-- Nom: Transposition (Sur)
+- Nom: Transposition
   Classe: Conjurateur
   Source: MJRA
   Niveau: 8
@@ -47535,7 +47535,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Transposition_Sur_9
   
-- Nom: Aspect (Sur)
+- Nom: Aspect
   Classe: Conjurateur
   Source: MJRA
   Niveau: 10
@@ -47554,7 +47554,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Aspect_Sur_10
   
-- Nom: Protection d'allié supérieure (Sur)
+- Nom: Protection d'allié supérieure
   Classe: Conjurateur
   Source: MJRA
   Niveau: 12
@@ -47570,7 +47570,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Protection_dallié_supérieure_Sur_11
   
-- Nom: Vies liées (Sur)
+- Nom: Vies liées
   Classe: Conjurateur
   Source: MJRA
   Niveau: 14
@@ -47592,7 +47592,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Vies_liées_Sur_12
   
-- Nom: Fusion des formes (Sur)
+- Nom: Fusion des formes
   Classe: Conjurateur
   Source: MJRA
   Niveau: 16
@@ -47625,7 +47625,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Fusion_des_formes_Sur_13
   
-- Nom: Aspect supérieur (Sur)
+- Nom: Aspect supérieur
   Classe: Conjurateur
   Source: MJRA
   Niveau: 18
@@ -63831,4 +63831,238 @@
     \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
     \ de chaque ordre de chevalerie.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: Convocation de monstres II
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 3
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres III
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 5
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres IV
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 7
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres V
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 9
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres VI
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 11
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres VII
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 13
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres VIII
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 15
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Convocation de monstres IX
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 17
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
+  
+- Nom: Portail
+  Classe: Conjurateur
+  Source: MJRA
+  Niveau: 19
+  Auto: true
+  Description: "Chaque jour, à partir du niveau 1, un conjurateur peut lancer convocation\
+    \ de monstres I comme un pouvoir magique un nombre de fois égal à 3 + modificateur\
+    \ de Charisme. Pour utiliser ce pouvoir, le conjurateur doit puiser dans la même\
+    \ puissance que celle qui lui permet d’invoquer son eidolon, il ne peut donc pas\
+    \ se servir de ce pouvoir si son eidolon est présent. Il lance ce sort par une\
+    \ action simple et les créatures restent avec lui une minute par niveau (au lieu\
+    \ d’un round par niveau).\n\nAu niveau 3 et par la suite tous les deux niveaux,\
+    \ la force de ce pouvoir augmente d’un niveau de sort, ce qui lui permet d’invoquer\
+    \ des créatures plus puissantes (avec convocation de monstres IX au maximum au\
+    \ niveau 17).\n \nAu niveau 19, le conjurateur peut utiliser ce pouvoir pour lancer\
+    \ convocation de monstres IX ou portail. S’il choisit cette dernière option, il\
+    \ doit payer les composantes matérielles nécessaires. Il ne peut pas avoir plus\
+    \ d’un sort de convocation de monstres ou de portail actif à la fois. S’il en\
+    \ utilise un à nouveau, les créatures issues du sort précédent disparaissent.\n\
+    \nEn ce qui concerne les objets à potentiel magique et les objets à fin d’incantation,\
+    \ ces sorts de convocation sont considérés comme appartenant à la liste de sorts\
+    \ du conjurateur. De plus, il peut utiliser ce pouvoir pour remplir toute condition\
+    \ requise dans la création d’un objet magique, tant qu’il est capable de s’en\
+    \ servir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conjurateur.ashx#Convocation_de_monstresPortail_Mag_5
   
