@@ -44211,7 +44211,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Audace_absolue_Ext_8
   
-- Nom: Dernière résistance (Ext)
+- Nom: Dernière résistance
   Classe: Samouraï
   Source: AG
   Niveau: 20
@@ -49080,7 +49080,7 @@
     \ intermédiaires et lourdes) et de manier des boucliers (sauf le pavois).\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Armes_et_armures_0
   
-- Nom: Défi (Ext)
+- Nom: Défi 1/Jour
   Classe: Samouraï
   Source: AG
   Niveau: 1
@@ -49108,7 +49108,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
   
-- Nom: Monture (Ext)
+- Nom: Monture
   Classe: Samouraï
   Source: AG
   Niveau: 1
@@ -49137,10 +49137,11 @@
 
 
 
+
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Monture_Ext_2
   
-- Nom: Ordre (Ext)
+- Nom: Ordre
   Classe: Samouraï
   Source: AG
   Niveau: 1
@@ -49174,7 +49175,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Ordre_Ext_3
   
-- Nom: Résolution (Ext)
+- Nom: Résolution
   Classe: Samouraï
   Source: AG
   Niveau: 1
@@ -49218,7 +49219,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Résolution_Ext_4
   
-- Nom: Expertise martiale (Ext)
+- Nom: Expertise martiale
   Classe: Samouraï
   Source: AG
   Niveau: 3
@@ -49237,7 +49238,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Expertise_martiale_Ext_5
   
-- Nom: Archer monté (Ext)
+- Nom: Archer monté
   Classe: Samouraï
   Source: AG
   Niveau: 4
@@ -49252,7 +49253,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Archer_monté_Ext_6
   
-- Nom: Bannière (Ext)
+- Nom: Bannière
   Classe: Samouraï
   Source: AG
   Niveau: 5
@@ -49285,7 +49286,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Don_supplémentaire_8
   
-- Nom: Résolution supérieure (Ext)
+- Nom: Résolution supérieure
   Classe: Samouraï
   Source: AG
   Niveau: 9
@@ -49302,7 +49303,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Résolution_supérieure_Ext_9
   
-- Nom: Résistance honorable (Ext)
+- Nom: Résistance honorable
   Classe: Samouraï
   Source: AG
   Niveau: 11
@@ -49325,7 +49326,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Résistance_honorable_Ext_10
   
-- Nom: Défi éprouvant (Ext)
+- Nom: Défi éprouvant
   Classe: Samouraï
   Source: AG
   Niveau: 12
@@ -49340,7 +49341,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_éprouvant_Ext_11
   
-- Nom: Grande bannière (Ext)
+- Nom: Grande bannière
   Classe: Samouraï
   Source: AG
   Niveau: 14
@@ -49360,7 +49361,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Grande_bannière_Ext_12
   
-- Nom: Résolution suprême (Ext)
+- Nom: Résolution suprême
   Classe: Samouraï
   Source: AG
   Niveau: 17
@@ -65633,4 +65634,304 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
+  
+- Nom: Pouvoir de l’ordre
+  Classe: Samouraï
+  Source: AG
+  Niveau: 2
+  Auto: true
+  Description: 'Au niveau 1, le samouraï doit prêter serment à un ordre spécifique,
+    ce qui lui octroie un certain nombre de bonus, de compétences de classe et de
+    pouvoirs spéciaux. Chaque ordre possède des édits que le samouraï doit respecter.
+    S’il en viole un, il perd les avantages liés au Défi de son ordre pendant 24 heures.
+    Toute violation potentielle est sujette à l’interprétation du MJ.
+
+
+    La plupart des samouraïs appartiennent à l’ordre du guerrier et sont dévoués à
+    leur seigneur. Ceux qui n’ont pas de seigneur ou qui l’abandonnent sont des ronins.
+    Un samouraï peut se consacrer à un ordre de chevalier mais ce cas est rare.
+
+
+    Un samouraï ne peut pas changer d’ordre à moins d’entamer un long processus qui
+    lui permette de se consacrer à une nouvelle cause. S’il fait tout de même ce choix,
+    il perd tous les avantages de son ordre précédent. Il doit ensuite suivre les
+    édits de son nouvel ordre pendant tout un niveau sans en tirer le moindre bénéfice.
+    Une fois cette tâche accomplie, il bénéficie de tous les avantages de ce nouvel
+    ordre. La transformation d’un samouraï en ronin est une exception : elle est immédiate,
+    le samouraï perd les avantages de son ancien ordre et les remplace immédiatement
+    par ceux des ronins. En revanche, si un ronin veut changer d’ordre, il doit suivre
+    le processus détaillé plus haut. Notez que le nom des ordres peut varier selon
+    le cadre de campagne et les préférences du MJ.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Ordre_Ext_3
+  
+- Nom: Défi 2/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 4
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
+  
+- Nom: Défi 3/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
+  
+- Nom: 'Pouvoir de l’ordre #2'
+  Classe: Samouraï
+  Source: AG
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 1, le samouraï doit prêter serment à un ordre spécifique,
+    ce qui lui octroie un certain nombre de bonus, de compétences de classe et de
+    pouvoirs spéciaux. Chaque ordre possède des édits que le samouraï doit respecter.
+    S’il en viole un, il perd les avantages liés au Défi de son ordre pendant 24 heures.
+    Toute violation potentielle est sujette à l’interprétation du MJ.
+
+
+    La plupart des samouraïs appartiennent à l’ordre du guerrier et sont dévoués à
+    leur seigneur. Ceux qui n’ont pas de seigneur ou qui l’abandonnent sont des ronins.
+    Un samouraï peut se consacrer à un ordre de chevalier mais ce cas est rare.
+
+
+    Un samouraï ne peut pas changer d’ordre à moins d’entamer un long processus qui
+    lui permette de se consacrer à une nouvelle cause. S’il fait tout de même ce choix,
+    il perd tous les avantages de son ordre précédent. Il doit ensuite suivre les
+    édits de son nouvel ordre pendant tout un niveau sans en tirer le moindre bénéfice.
+    Une fois cette tâche accomplie, il bénéficie de tous les avantages de ce nouvel
+    ordre. La transformation d’un samouraï en ronin est une exception : elle est immédiate,
+    le samouraï perd les avantages de son ancien ordre et les remplace immédiatement
+    par ceux des ronins. En revanche, si un ronin veut changer d’ordre, il doit suivre
+    le processus détaillé plus haut. Notez que le nom des ordres peut varier selon
+    le cadre de campagne et les préférences du MJ.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Ordre_Ext_3
+  
+- Nom: Défi 4/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 10
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
+  
+- Nom: 'Don supplémentaire #2'
+  Classe: Samouraï
+  Source: AG
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 6 et tous les 6 niveaux par la suite, le samouraï gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Ces dons sont à choisir dans la liste des dons guerriers. Le samouraï doit remplir
+    les conditions requises.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Don_supplémentaire_8
+  
+- Nom: Défi 5/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 13
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
+  
+- Nom: 'Pouvoir de l’ordre #3'
+  Classe: Samouraï
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 1, le samouraï doit prêter serment à un ordre spécifique,
+    ce qui lui octroie un certain nombre de bonus, de compétences de classe et de
+    pouvoirs spéciaux. Chaque ordre possède des édits que le samouraï doit respecter.
+    S’il en viole un, il perd les avantages liés au Défi de son ordre pendant 24 heures.
+    Toute violation potentielle est sujette à l’interprétation du MJ.
+
+
+    La plupart des samouraïs appartiennent à l’ordre du guerrier et sont dévoués à
+    leur seigneur. Ceux qui n’ont pas de seigneur ou qui l’abandonnent sont des ronins.
+    Un samouraï peut se consacrer à un ordre de chevalier mais ce cas est rare.
+
+
+    Un samouraï ne peut pas changer d’ordre à moins d’entamer un long processus qui
+    lui permette de se consacrer à une nouvelle cause. S’il fait tout de même ce choix,
+    il perd tous les avantages de son ordre précédent. Il doit ensuite suivre les
+    édits de son nouvel ordre pendant tout un niveau sans en tirer le moindre bénéfice.
+    Une fois cette tâche accomplie, il bénéficie de tous les avantages de ce nouvel
+    ordre. La transformation d’un samouraï en ronin est une exception : elle est immédiate,
+    le samouraï perd les avantages de son ancien ordre et les remplace immédiatement
+    par ceux des ronins. En revanche, si un ronin veut changer d’ordre, il doit suivre
+    le processus détaillé plus haut. Notez que le nom des ordres peut varier selon
+    le cadre de campagne et les préférences du MJ.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Ordre_Ext_3
+  
+- Nom: Défi 6/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 16
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
+  
+- Nom: 'Don supplémentaire #3'
+  Classe: Samouraï
+  Source: AG
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 6 et tous les 6 niveaux par la suite, le samouraï gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Ces dons sont à choisir dans la liste des dons guerriers. Le samouraï doit remplir
+    les conditions requises.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Don_supplémentaire_8
+  
+- Nom: Défi 7/Jour
+  Classe: Samouraï
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: 'Une fois par jour, le samouraï peut mettre un ennemi au Défi de
+    le combattre. Par une action rapide, il choisit une créature (qu’il peut voir)
+    et la défie. Ses attaques de corps à corps infligent alors des dégâts supplémentaires
+    quand il se bat contre elle. Ces dégâts supplémentaires sont égaux au niveau du
+    samouraï. Il peut utiliser ce pouvoir une fois par jour au niveau 1 et une fois
+    de plus tous les trois niveaux après le premier, avec un maximum de sept fois
+    par jour au niveau 19.
+
+
+    Le samouraï a besoin de toute sa concentration pour défier son ennemi. Il subit
+    un malus de -2 à la CA, sauf contre les attaques qui viennent de sa cible.
+
+
+    Le défi reste valable jusqu’à ce que la cible du samouraï meure, tombe inconsciente
+    ou que le combat se termine. Chaque défi de samouraï comporte un effet supplémentaire
+    décrit dans le paragraphe de chaque ordre.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx#Défi_Ext_1
   
