@@ -44035,7 +44035,7 @@
     \ pénitence).\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antipaladin.ashx#Champion_maudit_Sur_16
   
-- Nom: Charge suprême (Ext)
+- Nom: Charge suprême
   Classe: Chevalier
   Source: MJRA
   Niveau: 20
@@ -47042,7 +47042,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Armes_et_armures_0
   
-- Nom: Défi (Ext)
+- Nom: Défi 1/jour
   Classe: Chevalier
   Source: MJRA
   Niveau: 1
@@ -47061,7 +47061,7 @@
     \ de chaque ordre de chevalerie.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
   
-- Nom: Monture (Ext)
+- Nom: Monture
   Classe: Chevalier
   Source: MJRA
   Niveau: 1
@@ -47084,7 +47084,7 @@
     \ tant que le chevalier n’aura pas gagné un niveau.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Monture_Ext_2
   
-- Nom: Ordre (Ext)
+- Nom: Ordre
   Classe: Chevalier
   Source: MJRA
   Niveau: 1
@@ -47110,7 +47110,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Ordre_Ext_3
   
-- Nom: Tacticien (Ext)
+- Nom: Tacticien
   Classe: Chevalier
   Source: MJRA
   Niveau: 1
@@ -47126,10 +47126,10 @@
     \ suite.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Tacticien_Ext_4
   
-- Nom: Pouvoir de l'Ordre
+- Nom: Pouvoir de l'ordre
   Classe: Chevalier
   Source: MJRA
-  Niveau: 1
+  Niveau: 2
   Auto: true
   Description: 'Aux niveaux 2, 8 et 15, le chevalier obtient des pouvoirs accordés
     par son Ordre.
@@ -47139,7 +47139,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Pouvoir_de_lOrdre_5
   
-- Nom: Charge de cavalerie (Ext)
+- Nom: Charge de cavalerie
   Classe: Chevalier
   Source: MJRA
   Niveau: 3
@@ -47151,7 +47151,7 @@
     \ reste sur sa monture.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Charge_de_cavalerie_Ext_6
   
-- Nom: Dresseur expérimenté (Ext)
+- Nom: Dresseur expérimenté
   Classe: Chevalier
   Source: MJRA
   Niveau: 4
@@ -47165,7 +47165,7 @@
     \ fois mais chaque monture supplémentaire augmente le DD de +2.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Dresseur_expérimenté_Ext_7
   
-- Nom: Bannière (Ext)
+- Nom: Bannière
   Classe: Chevalier
   Source: MJRA
   Niveau: 5
@@ -47191,7 +47191,7 @@
     \ remplir les conditions requises.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Don_supplémentaire_9
   
-- Nom: Grand tacticien (Ext)
+- Nom: Grand tacticien
   Classe: Chevalier
   Source: MJRA
   Niveau: 9
@@ -47202,7 +47202,7 @@
     \ Il utilise à présent ce pouvoir par une action rapide.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Grand_tacticien_Ext_10
   
-- Nom: Charge puissante (Ext)
+- Nom: Charge puissante
   Classe: Chevalier
   Source: MJRA
   Niveau: 11
@@ -47220,7 +47220,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Charge_puissante_Ext_11
   
-- Nom: Défi éprouvant (Ext)
+- Nom: Défi éprouvant
   Classe: Chevalier
   Source: MJRA
   Niveau: 12
@@ -47235,7 +47235,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_éprouvant_Ext_12
   
-- Nom: Grande bannière (Ext)
+- Nom: Grande bannière
   Classe: Chevalier
   Source: MJRA
   Niveau: 14
@@ -47255,7 +47255,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Grande_bannière_Ext_13
   
-- Nom: Maître tacticien (Ext)
+- Nom: Maître tacticien
   Classe: Chevalier
   Source: MJRA
   Niveau: 17
@@ -63669,4 +63669,166 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antipaladin.ashx#Châtiment_du_Bien_Sur_3
+  
+- Nom: Défi 2/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 4
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: Défi 3/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 7
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: 'Pouvoir de l''ordre #2'
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 8
+  Auto: true
+  Description: 'Aux niveaux 2, 8 et 15, le chevalier obtient des pouvoirs accordés
+    par son Ordre.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Pouvoir_de_lOrdre_5
+  
+- Nom: Défi 4/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 10
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: 'Don supplémentaire #2'
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 12
+  Auto: true
+  Description: " \nAu niveau 6 et tous les six niveaux par la suite, le chevalier\
+    \ gagne un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.\
+    \ Ces dons sont à choisir dans la liste des dons de combat. Le chevalier doit\
+    \ remplir les conditions requises.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Don_supplémentaire_9
+  
+- Nom: Défi 5/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 13
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: 'Pouvoir de l''ordre #3'
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 15
+  Auto: true
+  Description: 'Aux niveaux 2, 8 et 15, le chevalier obtient des pouvoirs accordés
+    par son Ordre.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Pouvoir_de_lOrdre_5
+  
+- Nom: Défi 6/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 16
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
+  
+- Nom: 'Don supplémentaire #3'
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 18
+  Auto: true
+  Description: " \nAu niveau 6 et tous les six niveaux par la suite, le chevalier\
+    \ gagne un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.\
+    \ Ces dons sont à choisir dans la liste des dons de combat. Le chevalier doit\
+    \ remplir les conditions requises.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Don_supplémentaire_9
+  
+- Nom: Défi 7/jour
+  Classe: Chevalier
+  Source: MJRA
+  Niveau: 19
+  Auto: true
+  Description: " \nUne fois par jour, le chevalier peut mettre un ennemi au défi\
+    \ de le combattre. Par une action rapide, il choisit une créature (qu’il peut\
+    \ voir) et la défie. Ses attaques de corps à corps infligent alors des dégâts\
+    \ supplémentaires quand il se bat contre elle. Ces dégâts supplémentaires sont\
+    \ égaux au niveau du chevalier. Il peut utiliser ce pouvoir une fois par jour\
+    \ au niveau 1 et une fois de plus tous les trois niveaux après le premier, pour\
+    \ un maximum de sept fois par jour au niveau 19.\n\nLe chevalier a besoin de toute\
+    \ sa concentration pour défier son ennemi. Il subit un malus de -2 à la CA sauf\
+    \ contre les attaques qui viennent de sa cible.\n\nLe défi reste valable jusqu’à\
+    \ ce que la cible du chevalier meure, tombe inconsciente ou que le combat se termine.\
+    \ Chaque défi de chevalier comporte un effet supplémentaire décrit dans la section\
+    \ de chaque ordre de chevalerie.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevalier.ashx#Défi_Ext_1
   
