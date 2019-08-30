@@ -44196,7 +44196,7 @@
     \ en dessous de 1.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Maître_secret_Sur_10
   
-- Nom: Audace absolue (Ext)
+- Nom: Audace absolue
   Classe: Pistolier
   Source: AG
   Niveau: 20
@@ -48955,7 +48955,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Armurier_2
   
-- Nom: Audace (Ext)
+- Nom: Audace
   Classe: Pistolier
   Source: AG
   Niveau: 1
@@ -48996,7 +48996,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Audace_Ext_3
   
-- Nom: Exploits
+- Nom: Exploit
   Classe: Pistolier
   Source: AG
   Niveau: 1
@@ -49017,7 +49017,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
   
-- Nom: Dérobade (Ext)
+- Nom: Dérobade +1
   Classe: Pistolier
   Source: AG
   Niveau: 2
@@ -49052,7 +49052,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
   
-- Nom: Entraînement aux armes à feu (Ext)
+- Nom: Entraînement aux armes à feu
   Classe: Pistolier
   Source: AG
   Niveau: 5
@@ -65337,4 +65337,300 @@
     \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
     \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: 'Exploit #2'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 3
+  Auto: true
+  Description: 'Les pistoliers dépensent des points d’audace pour accomplir des
+    exploits. Ces derniers leur octroient des bonus ou des effets momentanés, mais
+    certains durent plus longtemps et d’autres restent actifs tant que le pistolier
+    possède au moins 1 point d’audace. Voici la liste des exploits de base. Le pistolier
+    peut seulement accomplir des exploits de son niveau ou moins. Sauf indication
+    contraire, il peut réaliser le même exploit à plusieurs reprises, tant qu’il possède
+    assez d’audace pour cela.
+
+
+    Voir la liste des exploits.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
+  
+- Nom: Dérobade +2
+  Classe: Pistolier
+  Source: AG
+  Niveau: 6
+  Auto: true
+  Description: 'À partir du niveau 2, le pistolier gagne un bonus d’esquive de +1
+    à la CA, à condition qu’il porte une armure légère ou pas d’armure du tout. S’il
+    perd son bonus de Dextérité à la CA, il perd également ce bonus d’esquive. Ce
+    bonus augmente de +1 tous les quatre niveaux après le 2 (avec un maximum de +5
+    au niveau 20).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Dérobade_Ext_5
+  
+- Nom: 'Exploit #3'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: 'Les pistoliers dépensent des points d’audace pour accomplir des
+    exploits. Ces derniers leur octroient des bonus ou des effets momentanés, mais
+    certains durent plus longtemps et d’autres restent actifs tant que le pistolier
+    possède au moins 1 point d’audace. Voici la liste des exploits de base. Le pistolier
+    peut seulement accomplir des exploits de son niveau ou moins. Sauf indication
+    contraire, il peut réaliser le même exploit à plusieurs reprises, tant qu’il possède
+    assez d’audace pour cela.
+
+
+    Voir la liste des exploits.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
+  
+- Nom: 'Don supplémentaire #2'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 4 puis tous les quatre niveaux, le pistolier gagne un
+    don supplémentaire, en plus de ceux qu’il obtient normalement. Il doit les choisir
+    parmi les dons de combat ou d’audace.
+
+
+    Il peut également dépenser un des dons supplémentaires pour choisir une bravade
+    utilisable lorsqu''il n''a plus de point d''audace et qui lui accorde des pouvoirs
+    et lui permet de regagner de l''audace lorsqu''il n''en a plus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
+  
+- Nom: Entraînement aux armes à feu 2
+  Classe: Pistolier
+  Source: AG
+  Niveau: 9
+  Auto: true
+  Description: 'À partir du niveau 5, le pistolier choisit un type d’arme à feu
+    (comme la hache mousquet, le tromblon, le mousquet ou le pistolet).Lorsqu’il tire
+    avec une arme à feu de ce type, il ajoute son modificateur de Dextérité aux jets
+    de dégâts. De plus, quand son arme fait long feu, sa valeur de long feu augmente
+    de 2 au lieu de 4. Par la suite, tous les quatre niveaux (9, 13 et 17), le pistolier
+    choisit un nouveau type d’arme à laquelle il ajoute ce bonus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Entraînement_aux_armes_à_feu_Ext_7
+  
+- Nom: Dérobade +3
+  Classe: Pistolier
+  Source: AG
+  Niveau: 10
+  Auto: true
+  Description: 'À partir du niveau 2, le pistolier gagne un bonus d’esquive de +1
+    à la CA, à condition qu’il porte une armure légère ou pas d’armure du tout. S’il
+    perd son bonus de Dextérité à la CA, il perd également ce bonus d’esquive. Ce
+    bonus augmente de +1 tous les quatre niveaux après le 2 (avec un maximum de +5
+    au niveau 20).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Dérobade_Ext_5
+  
+- Nom: 'Exploit #4'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 11
+  Auto: true
+  Description: 'Les pistoliers dépensent des points d’audace pour accomplir des
+    exploits. Ces derniers leur octroient des bonus ou des effets momentanés, mais
+    certains durent plus longtemps et d’autres restent actifs tant que le pistolier
+    possède au moins 1 point d’audace. Voici la liste des exploits de base. Le pistolier
+    peut seulement accomplir des exploits de son niveau ou moins. Sauf indication
+    contraire, il peut réaliser le même exploit à plusieurs reprises, tant qu’il possède
+    assez d’audace pour cela.
+
+
+    Voir la liste des exploits.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
+  
+- Nom: 'Don supplémentaire #3'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 4 puis tous les quatre niveaux, le pistolier gagne un
+    don supplémentaire, en plus de ceux qu’il obtient normalement. Il doit les choisir
+    parmi les dons de combat ou d’audace.
+
+
+    Il peut également dépenser un des dons supplémentaires pour choisir une bravade
+    utilisable lorsqu''il n''a plus de point d''audace et qui lui accorde des pouvoirs
+    et lui permet de regagner de l''audace lorsqu''il n''en a plus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
+  
+- Nom: Entraînement aux armes à feu 3
+  Classe: Pistolier
+  Source: AG
+  Niveau: 13
+  Auto: true
+  Description: 'À partir du niveau 5, le pistolier choisit un type d’arme à feu
+    (comme la hache mousquet, le tromblon, le mousquet ou le pistolet).Lorsqu’il tire
+    avec une arme à feu de ce type, il ajoute son modificateur de Dextérité aux jets
+    de dégâts. De plus, quand son arme fait long feu, sa valeur de long feu augmente
+    de 2 au lieu de 4. Par la suite, tous les quatre niveaux (9, 13 et 17), le pistolier
+    choisit un nouveau type d’arme à laquelle il ajoute ce bonus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Entraînement_aux_armes_à_feu_Ext_7
+  
+- Nom: Dérobade +4
+  Classe: Pistolier
+  Source: AG
+  Niveau: 14
+  Auto: true
+  Description: 'À partir du niveau 2, le pistolier gagne un bonus d’esquive de +1
+    à la CA, à condition qu’il porte une armure légère ou pas d’armure du tout. S’il
+    perd son bonus de Dextérité à la CA, il perd également ce bonus d’esquive. Ce
+    bonus augmente de +1 tous les quatre niveaux après le 2 (avec un maximum de +5
+    au niveau 20).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Dérobade_Ext_5
+  
+- Nom: 'Exploit #5'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: 'Les pistoliers dépensent des points d’audace pour accomplir des
+    exploits. Ces derniers leur octroient des bonus ou des effets momentanés, mais
+    certains durent plus longtemps et d’autres restent actifs tant que le pistolier
+    possède au moins 1 point d’audace. Voici la liste des exploits de base. Le pistolier
+    peut seulement accomplir des exploits de son niveau ou moins. Sauf indication
+    contraire, il peut réaliser le même exploit à plusieurs reprises, tant qu’il possède
+    assez d’audace pour cela.
+
+
+    Voir la liste des exploits.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
+  
+- Nom: 'Don supplémentaire #4'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 16
+  Auto: true
+  Description: 'Au niveau 4 puis tous les quatre niveaux, le pistolier gagne un
+    don supplémentaire, en plus de ceux qu’il obtient normalement. Il doit les choisir
+    parmi les dons de combat ou d’audace.
+
+
+    Il peut également dépenser un des dons supplémentaires pour choisir une bravade
+    utilisable lorsqu''il n''a plus de point d''audace et qui lui accorde des pouvoirs
+    et lui permet de regagner de l''audace lorsqu''il n''en a plus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
+  
+- Nom: Entraînement aux armes à feu 4
+  Classe: Pistolier
+  Source: AG
+  Niveau: 17
+  Auto: true
+  Description: 'À partir du niveau 5, le pistolier choisit un type d’arme à feu
+    (comme la hache mousquet, le tromblon, le mousquet ou le pistolet).Lorsqu’il tire
+    avec une arme à feu de ce type, il ajoute son modificateur de Dextérité aux jets
+    de dégâts. De plus, quand son arme fait long feu, sa valeur de long feu augmente
+    de 2 au lieu de 4. Par la suite, tous les quatre niveaux (9, 13 et 17), le pistolier
+    choisit un nouveau type d’arme à laquelle il ajoute ce bonus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Entraînement_aux_armes_à_feu_Ext_7
+  
+- Nom: Dérobade +5
+  Classe: Pistolier
+  Source: AG
+  Niveau: 18
+  Auto: true
+  Description: 'À partir du niveau 2, le pistolier gagne un bonus d’esquive de +1
+    à la CA, à condition qu’il porte une armure légère ou pas d’armure du tout. S’il
+    perd son bonus de Dextérité à la CA, il perd également ce bonus d’esquive. Ce
+    bonus augmente de +1 tous les quatre niveaux après le 2 (avec un maximum de +5
+    au niveau 20).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Dérobade_Ext_5
+  
+- Nom: 'Exploit #6'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: 'Les pistoliers dépensent des points d’audace pour accomplir des
+    exploits. Ces derniers leur octroient des bonus ou des effets momentanés, mais
+    certains durent plus longtemps et d’autres restent actifs tant que le pistolier
+    possède au moins 1 point d’audace. Voici la liste des exploits de base. Le pistolier
+    peut seulement accomplir des exploits de son niveau ou moins. Sauf indication
+    contraire, il peut réaliser le même exploit à plusieurs reprises, tant qu’il possède
+    assez d’audace pour cela.
+
+
+    Voir la liste des exploits.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Exploits_4
+  
+- Nom: 'Don supplémentaire #5'
+  Classe: Pistolier
+  Source: AG
+  Niveau: 20
+  Auto: true
+  Description: 'Au niveau 4 puis tous les quatre niveaux, le pistolier gagne un
+    don supplémentaire, en plus de ceux qu’il obtient normalement. Il doit les choisir
+    parmi les dons de combat ou d’audace.
+
+
+    Il peut également dépenser un des dons supplémentaires pour choisir une bravade
+    utilisable lorsqu''il n''a plus de point d''audace et qui lui accorde des pouvoirs
+    et lui permet de regagner de l''audace lorsqu''il n''en a plus.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx#Don_supplémentaire_6
   
