@@ -44247,7 +44247,7 @@
     \ lancé.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arcaniste.ashx#Suprématie_magique_Sur_8
   
-- Nom: Manifestation (Sur)
+- Nom: Manifestation
   Classe: Chaman
   Source: MCA
   Niveau: 20
@@ -49761,7 +49761,7 @@
 - Nom: Oraisons
   Classe: Chaman
   Source: MCA
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: 'Chaque jour, le chaman peut préparer un certain nombre d’oraisons
     (ou sorts de niveau 0) indiqué dans la table ci-dessus Le chaman les lance comme
@@ -49773,7 +49773,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Oraisons_2
   
-- Nom: Esprit (Sur)
+- Nom: Esprit
   Classe: Chaman
   Source: MCA
   Niveau: 1
@@ -49794,7 +49794,7 @@
     \n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Esprit_Sur_3
   
-- Nom: Esprit animal (Ext)
+- Nom: Esprit animal
   Classe: Chaman
   Source: MCA
   Niveau: 1
@@ -49846,7 +49846,7 @@
     \n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
   
-- Nom: Esprit errant (Sur)
+- Nom: Esprit errant
   Classe: Chaman
   Source: MCA
   Niveau: 4
@@ -66519,4 +66519,223 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur.ashx#Don_supplémentaire_6
+  
+- Nom: 'Maléfice #2'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 4
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: 'Maléfice #3'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: Esprit supérieur
+  Classe: Chaman
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: "Le chaman tisse un lien mystique avec les esprits de son monde.\
+    \ Il forge une relation durable avec l’un d’eux qui lui accorde des pouvoirs et\
+    \ définit une grande partie de ses aptitudes de classe.\n\n• Au niveau 1, le chaman\
+    \ gagne le pouvoir de l’esprit qu’il a choisi. Il ajoute les sorts de cet esprit\
+    \ à la liste de sorts qu’il lance grâce à sa magie des esprits. Il ajoute également\
+    \ les maléfices propres à cet esprit à la liste de maléfices qu’il lance grâce\
+    \ à l’aptitude de classe de maléfice et de maléfice errant.\n• Au niveau 8, le\
+    \ chaman gagne les pouvoirs liés à la version supérieure de l’esprit qu’il a choisi.\n\
+    • Au niveau 16, il gagne les pouvoirs de la version suprême de son esprit.\n\n\
+    Si le chaman prend des niveaux dans une autre classe donnant accès à un mystère\
+    \ (comme l’oracle), l’esprit et le mystère doivent correspondre, même s’il faut\
+    \ pour cela en changer un. \n\nSi le MJ accepte, le chaman peut modifier son ancien\
+    \ esprit ou mystère pour les mettre en conformité.\n\nVoir les Esprits du Chaman\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Esprit_Sur_3
+  
+- Nom: 'Maléfice #4'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: 'Maléfice #5'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: Esprit errant supérieur
+  Classe: Chaman
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 4, le chaman peut former un lien temporaire avec un esprit
+    autre que celui qu’il a choisi avec son aptitude de classe d’esprit. Il doit choisir
+    cet esprit errant chaque jour quand il prépare ses sorts. Tant que cette aptitude
+    est active, le chaman bénéficie du pouvoir d’esprit offert par l’esprit errant.
+    Il ajoute également les sorts de cet esprit à la liste de ceux qu’il peut lancer
+    grâce à la magie des esprits. Il n’ajoute pas les maléfices de l’esprit errant
+    à la liste des maléfices qu’il peut choisir grâce à son aptitude de classe de
+    maléfice. Au niveau 12, le chaman gagne les pouvoirs indiqués dans la version
+    supérieure de l’esprit errant et au niveau 20 il acquiert les pouvoirs de la version
+    suprême de l’esprit errant.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Esprit_errant_Sur_7
+  
+- Nom: Maléfice errant (2 maléfices)
+  Classe: Chaman
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: " \nAu niveau 6, le chaman peut utiliser temporairement un maléfice\
+    \ offert par n’importe lequel de ses esprits. Il doit faire son choix chaque jour,\
+    \ quand il prépare ses sorts. Dans le cadre de cette aptitude, il peut choisir\
+    \ n’importe quel maléfice de son esprit ou de son esprit errant. S’il choisit\
+    \ un maléfice de l’esprit errant, il en perd immédiatement l’usage s’il se lie\
+    \ à un autre esprit mais il peut alors en choisir un autre, soit dans la liste\
+    \ de son esprit, soit dans celle de son nouvel esprit errant. Au niveau 14, le\
+    \ chaman peut choisir deux maléfices errants par jour au lieu d’un seul. En dehors\
+    \ de cela, ce pouvoir fonctionne comme le pouvoir de classe de maléfice.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_errant_8
+  
+- Nom: 'Maléfice #6'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: Esprit suprême
+  Classe: Chaman
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "Le chaman tisse un lien mystique avec les esprits de son monde.\
+    \ Il forge une relation durable avec l’un d’eux qui lui accorde des pouvoirs et\
+    \ définit une grande partie de ses aptitudes de classe.\n\n• Au niveau 1, le chaman\
+    \ gagne le pouvoir de l’esprit qu’il a choisi. Il ajoute les sorts de cet esprit\
+    \ à la liste de sorts qu’il lance grâce à sa magie des esprits. Il ajoute également\
+    \ les maléfices propres à cet esprit à la liste de maléfices qu’il lance grâce\
+    \ à l’aptitude de classe de maléfice et de maléfice errant.\n• Au niveau 8, le\
+    \ chaman gagne les pouvoirs liés à la version supérieure de l’esprit qu’il a choisi.\n\
+    • Au niveau 16, il gagne les pouvoirs de la version suprême de son esprit.\n\n\
+    Si le chaman prend des niveaux dans une autre classe donnant accès à un mystère\
+    \ (comme l’oracle), l’esprit et le mystère doivent correspondre, même s’il faut\
+    \ pour cela en changer un. \n\nSi le MJ accepte, le chaman peut modifier son ancien\
+    \ esprit ou mystère pour les mettre en conformité.\n\nVoir les Esprits du Chaman\n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Esprit_Sur_3
+  
+- Nom: 'Maléfice #7'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: 'Maléfice #8'
+  Classe: Chaman
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "Le chaman connaît un certain nombre de maléfices qui renforcent\
+    \ sa puissance ou affaiblissent ses ennemis. \n\nIl apprend un maléfice au niveau\
+    \ 2 et de nouveaux maléfices aux niveaux 4, 8, 10, 12, 16, 18 et 20. Il peut choisir\
+    \ ses maléfices parmi les maléfices du chaman ou dans la liste de maléfices de\
+    \ l’esprit qu’il a choisi. \n\nSauf indication contraire, le chaman ne peut choisir\
+    \ un même maléfice plus d’une fois.\n\nL’utilisation du maléfice est une action\
+    \ simple qui ne provoque pas d’attaque d’opportunité, sauf indication contraire.\
+    \ Le DD du jet de sauvegarde pour résister au maléfice est de 10 + 1/2 niveau\
+    \ de chaman + son modificateur de Sagesse.\n\nVoir les Maléfices du chaman\n\n\
+    \n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Maléfice_6
+  
+- Nom: Esprit errant suprême
+  Classe: Chaman
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: 'Au niveau 4, le chaman peut former un lien temporaire avec un esprit
+    autre que celui qu’il a choisi avec son aptitude de classe d’esprit. Il doit choisir
+    cet esprit errant chaque jour quand il prépare ses sorts. Tant que cette aptitude
+    est active, le chaman bénéficie du pouvoir d’esprit offert par l’esprit errant.
+    Il ajoute également les sorts de cet esprit à la liste de ceux qu’il peut lancer
+    grâce à la magie des esprits. Il n’ajoute pas les maléfices de l’esprit errant
+    à la liste des maléfices qu’il peut choisir grâce à son aptitude de classe de
+    maléfice. Au niveau 12, le chaman gagne les pouvoirs indiqués dans la version
+    supérieure de l’esprit errant et au niveau 20 il acquiert les pouvoirs de la version
+    suprême de l’esprit errant.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chaman.ashx#Esprit_errant_Sur_7
   
