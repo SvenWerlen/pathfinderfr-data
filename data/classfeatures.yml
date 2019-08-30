@@ -6132,7 +6132,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Armes_et_armures_0
   
-- Nom: Aura (Ext)
+- Nom: Aura
   Classe: Prêtre
   Source: MJ
   Niveau: 1
@@ -6186,7 +6186,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Sorts_2
   
-- Nom: Canalisation d’énergie (Sur) et ses variantes
+- Nom: Canalisation d'énergie 1d6
   Classe: Prêtre
   Source: MJ
   Niveau: 1
@@ -6305,7 +6305,7 @@
 - Nom: Oraisons
   Classe: Prêtre
   Source: MJ
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: '
 
@@ -76288,4 +76288,715 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx#Guérison_miraculeuse_Sur_5
+  
+- Nom: Canalisation d'énergie 2d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 3
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 3d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 4d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 5d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 6d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 7d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 13
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 8d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 9d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 17
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
+  
+- Nom: Canalisation d'énergie 10d6
+  Classe: Prêtre
+  Source: MJ
+  Niveau: 19
+  Auto: true
+  Description: '
+
+    Les prêtres sont les messagers et les serviteurs des dieux. Ils canalisent la
+    magie divine et l’énergie positive ou négative à l’état pur. Même si les prêtres
+    aventuriers typiques sont toujours prêts à frapper les ennemis de leur foi à grand
+    renfort de sorts et d’armes, beaucoup se cloîtrent dans des bibliothèques isolées
+    et honorent les dieux lors de leurs travaux d’érudits tandis que d’autres embrassent
+    des croyances hérétiques qui embarrassent les partisans de la pensée dominante
+    du clergé. Les prêtres utilisent leur canalisation divine pour soigner ou blesser
+    et certains ont développé de nouvelles méthodes pour terrasser leurs adversaires
+    ou aider leurs alliés.
+
+
+    Quel que soit son alignement, le prêtre peut libérer une vague d’énergie en canalisant
+    la puissance de sa foi à travers son symbole sacré (ou maudit). Selon le type
+    d’énergie canalisée et les créatures affectées, il peut utiliser cette capacité
+    pour blesser ou pour soigner.
+
+
+    Un prêtre d’alignement Bon (ou qui vénère une divinité Bonne) canalise de l’énergie
+    positive et peut blesser les morts-vivants ou soigner les vivants. Un prêtre d’alignement
+    Mauvais (ou qui vénère une divinité Mauvaise) canalise de l’énergie négative et
+    peut blesser les vivants ou soigner les morts-vivants. Un prêtre Neutre qui vénère
+    une divinité Neutre (ou qui ne sert aucun dieu) doit choisir entre énergie positive
+    et énergie négative. Ce choix, une fois fait, ne peut plus être modifié. Cette
+    décision détermine également le type de sorts que le prêtre peut lancer spontanément
+    (voir « Incantation spontanée »).
+
+
+    L’énergie canalisée crée un rayonnement qui affecte toutes les créatures d’un
+    type donné (soit vivants, soit morts-vivants) dans un rayon de 9 m (6 cases) autour
+    du prêtre. La quantité de dégâts infligés ou de points de vie soignés est égale
+    à 1d6 points plus 1d6 points par tranche de deux niveaux de prêtre au-delà du
+    premier (2d6 au niveau 3, 3d6 au niveau 5 et ainsi de suite). Les créatures qui
+    sont blessées par l’énergie canalisée bénéficient d’un jet de Volonté pour diminuer
+    les dégâts de moitié. Le DD de ce jet de sauvegarde vaut 10 + la moitié du niveau
+    du prêtre + le modificateur de Charisme du prêtre. Les créatures qui sont soignées
+    par l’énergie canalisée ne peuvent dépasser leur nombre maximal de points de vie
+    : les points de vie excédentaires sont perdus. Chaque jour, le prêtre peut canaliser
+    l’énergie un nombre de fois égal à 3 + son modificateur de Charisme. Cela requiert
+    une action simple qui ne provoque pas d’attaque d’opportunité. Le prêtre peut
+    choisir que cet effet l’affecte également ou pas. Il doit être capable de brandir
+    son symbole sacré pour utiliser ce pouvoir.
+
+
+    La canalisation d’énergie positive ou négative est un pouvoir iconique des prêtres,
+    qu’ils s’en servent pour soigner, pour blesser, pour intimider les morts-vivants
+    ou pour les renvoyer. Pourtant, étant donné l’immense variété des divinités et
+    des thèmes qui leur sont associés, il semble normal que certaines dotent leurs
+    serviteurs mortels de pouvoirs de canalisation qui reflètent leurs centres d’intérêt.
+    Les catégories suivantes fournissent des exemples de pouvoirs de canalisation
+    alternatifs basés sur la nature d’une divinité. Par exemple, un dieu du feu accordera
+    des pouvoirs de canalisation d’énergie négative qui infligeront des dégâts de
+    feu à la place d’une partie des dégâts de canalisation classique ou de leur totalité.
+
+
+    Quand un joueur crée un personnage prêtre, il doit décider s’il utilise la forme
+    standard de canalisation d’énergie ou une variante présentée ici et basée sur
+    un des thèmes associés à sa divinité. Une fois qu’il a fait ce choix, il ne peut
+    plus revenir dessus. Les canalisations alternatives possèdent la même zone d’effet,
+    les mêmes DD et le même nombre d’utilisations quotidiennes que les autres canalisations
+    d’énergie et suivent les mêmes règles. Les dons et les pouvoirs qui modifient
+    ou représentent une alternative à la canalisation d’énergie (comme contrôle des
+    morts-vivants ou renvoi des morts-vivants) fonctionnent normalement, même avec
+    une variante.
+
+
+    Voir les variantes de canalisation.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre.ashx#Canalisation_d’énergie_Sur_et_ses_variantes_3
   
