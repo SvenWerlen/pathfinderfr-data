@@ -44321,7 +44321,7 @@
     \ amende honorable (voir le sort de pénitence).\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Aspect_de_la_guerre_Sur_14
   
-- Nom: Rage de maître sanguin (Sur)
+- Nom: Rage de maître sanguin
   Classe: Sanguin
   Source: MCA
   Niveau: 20
@@ -51241,7 +51241,7 @@
     \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
   
-- Nom: Rage sanguine (Sur)
+- Nom: Rage sanguine
   Classe: Sanguin
   Source: MCA
   Niveau: 1
@@ -51276,7 +51276,7 @@
     \ aux dons, les pouvoirs des objets magiques et les effets de sort. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Rage_sanguine_Sur_2
   
-- Nom: Déplacement accéléré (Ext)
+- Nom: Déplacement accéléré
   Classe: Sanguin
   Source: MCA
   Niveau: 1
@@ -51293,7 +51293,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Déplacement_accéléré_Ext_3
   
-- Nom: Esquive instinctive (Ext)
+- Nom: Esquive instinctive
   Classe: Sanguin
   Source: MCA
   Niveau: 2
@@ -51308,7 +51308,7 @@
     \ (voir plus bas) à la place de celle-ci.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Esquive_instinctive_Ext_4
   
-- Nom: Sanctuaire sanguin (Sur)
+- Nom: Sanctuaire sanguin
   Classe: Sanguin
   Source: MCA
   Niveau: 3
@@ -51323,7 +51323,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Sanctuaire_sanguin_Sur_5
   
-- Nom: Incantation sanguine (Sur)
+- Nom: Incantation sanguine
   Classe: Sanguin
   Source: MCA
   Niveau: 4
@@ -51376,7 +51376,7 @@
     \ déjà. Cet échange suit les mêmes règles que celles de l'ensorceleur.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Sorts_8
   
-- Nom: Esquive instinctive supérieure (Ext)
+- Nom: Esquive instinctive supérieure
   Classe: Sanguin
   Source: MCA
   Niveau: 5
@@ -51396,7 +51396,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Esquive_instinctive_supérieure_Ext_9
   
-- Nom: Réduction de dégâts (Ext)
+- Nom: Réduction de dégâts 1/—
   Classe: Sanguin
   Source: MCA
   Niveau: 7
@@ -51412,7 +51412,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Réduction_de_dégâts_Ext_10
   
-- Nom: Rage de grand sanguin (Sur)
+- Nom: Rage de grand sanguin
   Classe: Sanguin
   Source: MCA
   Niveau: 11
@@ -51432,7 +51432,7 @@
     \ sort.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Rage_de_grand_sanguin_Sur_11
   
-- Nom: Volonté indomptable (Ext)
+- Nom: Volonté indomptable
   Classe: Sanguin
   Source: MCA
   Niveau: 14
@@ -51447,7 +51447,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Volonté_indomptable_Ext_12
   
-- Nom: Rage sanguine sans fatigue (Sur)
+- Nom: Rage sanguine sans fatigue
   Classe: Sanguin
   Source: MCA
   Niveau: 17
@@ -68623,4 +68623,563 @@
     \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
     \ seulement.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
+  
+- Nom: Pouvoir de lignage
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 1
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Pouvoir de lignage #2'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 4
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Don de lignage
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Sort de lignage
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 7
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Pouvoir de lignage #3'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Don de lignage #2'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Sort de lignage #2'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Réduction de dégâts 2/—
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: 'Au niveau 7, le sanguin gagne une réduction de dégâts. À chaque
+    fois qu’il subit des dégâts à cause d’une attaque naturelle ou d’une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point au niveau 10 puis tous les trois niveaux. Elle peut réduire les dégâts
+    à 0 mais jamais les faire passer en dessous de 0.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Réduction_de_dégâts_Ext_10
+  
+- Nom: 'Don de lignage #3'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Pouvoir de lignage #4'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Sort de lignage #3'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 13
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Réduction de dégâts 3/—
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 13
+  Auto: true
+  Description: 'Au niveau 7, le sanguin gagne une réduction de dégâts. À chaque
+    fois qu’il subit des dégâts à cause d’une attaque naturelle ou d’une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point au niveau 10 puis tous les trois niveaux. Elle peut réduire les dégâts
+    à 0 mais jamais les faire passer en dessous de 0.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Réduction_de_dégâts_Ext_10
+  
+- Nom: 'Don de lignage #4'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Sort de lignage #4'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: 'Pouvoir de lignage #5'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Réduction de dégâts 4/—
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: 'Au niveau 7, le sanguin gagne une réduction de dégâts. À chaque
+    fois qu’il subit des dégâts à cause d’une attaque naturelle ou d’une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point au niveau 10 puis tous les trois niveaux. Elle peut réduire les dégâts
+    à 0 mais jamais les faire passer en dessous de 0.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Réduction_de_dégâts_Ext_10
+  
+- Nom: 'Don de lignage #5'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Réduction de dégâts 5/—
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: 'Au niveau 7, le sanguin gagne une réduction de dégâts. À chaque
+    fois qu’il subit des dégâts à cause d’une attaque naturelle ou d’une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point au niveau 10 puis tous les trois niveaux. Elle peut réduire les dégâts
+    à 0 mais jamais les faire passer en dessous de 0.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Réduction_de_dégâts_Ext_10
+  
+- Nom: 'Pouvoir de lignage #6'
+  Classe: Sanguin
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: " \nTous les sanguins ont une source magique quelque part dans leur\
+    \ arbre généalogique, un héritage qui leur offre leur rage sanguine, ainsi que\
+    \ leurs dons et sorts supplémentaires. Parfois il s’agit d’un lien parental distant\
+    \ avec un être très puissant, d’autres fois il s’agit d’un événement capital qui\
+    \ a impliqué leur famille et une telle créature.  Quelle que soit l’origine de\
+    \ cette influence, elle se manifeste de diverses manières. Le sanguin doit choisir\
+    \ son lignage quand il prend son premier niveau dans cette classe. Ensuite, il\
+    \ ne peut plus en changer. L’alignement du sanguin ne réduit pas ses possibilités\
+    \ de choix au niveau du lignage. Un sanguin Bon peut tout à fait être issu d’un\
+    \ lignage abyssal et un lignage céleste peut engendrer des générations de sanguins\
+    \ Mauvais tout comme un lignage infernal peut compter des sanguins Chaotiques,\
+    \ etc. Le lignage du sanguin lui confère ses pouvoirs mais il ne dicte pas ses\
+    \ pensées ni son comportement et ne les limite en rien.\n\nLe sanguin gagne des\
+    \ pouvoirs de lignage aux niveaux 1 et 4 puis tous les quatre niveaux. Ses pouvoirs\
+    \ sont décrits dans la section du lignage choisi. Considérez le niveau du sanguin\
+    \ comme le niveau de lanceur de sorts pour tous ses pouvoirs magiques de lignage.\n\
+    \nAu niveau 6 puis tous les 3 niveaux, le sanguin reçoit un don supplémentaire\
+    \ issu d’une liste spécifique à chaque lignage. Pour choisir un don, le sanguin\
+    \ doit remplir les conditions requises.\n\nAux niveaux 7, 10, 13 et 16, le sanguin\
+    \ apprend un nouveau sort dépendant de son lignage. Il s’ajoute au nombre de sorts\
+    \ indiqués dans la table des sorts connus du Sanguin (voir tableau ci-dessous).\
+    \ Il ne peut pas échanger ces sorts contre \nd’autres quand il gagne des niveaux.\n\
+    \nSi le sanguin prend des niveaux dans une autre classe donnant accès à un lignage,\
+    \ ce dernier doit être le même que celui du sanguin, même si cela oblige à changer\
+    \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
+    \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
   
