@@ -44456,7 +44456,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Maîtrise_dune_école_instrumentale_Sur_14
   
-- Nom: Manipulation du soi (Mag)
+- Nom: Manipulation du soi
   Classe: Psychiste
   Source: AO
   Niveau: 20
@@ -53789,7 +53789,7 @@
 - Nom: Astuces
   Classe: Psychiste
   Source: AO
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: '
 
@@ -53804,7 +53804,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Astuces_2
   
-- Nom: Réserve phrénique(Sur)
+- Nom: Réserve phrénique
   Classe: Psychiste
   Source: AO
   Niveau: 1
@@ -53850,7 +53850,7 @@
     \ phrénique pour activer ses amplifications.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
   
-- Nom: Discipline psychique
+- Nom: Pouvoir disciplinaire
   Classe: Psychiste
   Source: AO
   Niveau: 1
@@ -53876,7 +53876,7 @@
     \ des niveaux.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
   
-- Nom: Détection de pensées (Mag)
+- Nom: Détection de pensées
   Classe: Psychiste
   Source: AO
   Niveau: 2
@@ -53897,7 +53897,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Détection_de_pensées_Mag_6
   
-- Nom: Lien télépathique (Mag)
+- Nom: Lien télépathique
   Classe: Psychiste
   Source: AO
   Niveau: 9
@@ -53917,7 +53917,7 @@
     \ à la place de lien télépathique.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Lien_télépathique_Mag_7
   
-- Nom: Amplifications majeures
+- Nom: Amplification majeure
   Classe: Psychiste
   Source: AO
   Niveau: 11
@@ -53927,7 +53927,7 @@
     \ phréniques à la place d’une amplification phrénique. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplifications_majeures_8
   
-- Nom: Télépathie (Sur)
+- Nom: Télépathie
   Classe: Psychiste
   Source: AO
   Niveau: 17
@@ -73044,4 +73044,431 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Appel_dExtérieur_Sur_11
+  
+- Nom: Sort disciplinaire
+  Classe: Psychiste
+  Source: AO
+  Niveau: 1
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: Discipline psychique
+  Classe: Psychiste
+  Source: AO
+  Niveau: 1
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Amplification phrénique #2'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 3
+  Auto: true
+  Description: "\nUn psychiste développe des techniques particulières, appelées\
+    \ amplifications phréniques, pour amplifier ses incantations. Il peut activer\
+    \ une amplification phrénique uniquement quand il lance un sort de magie psychique\
+    \ et celle-ci modifie alors les effets du sort ou l’incantation elle même.\n\n\
+    Le sort en cours d’incantation est appelé sort lié. Le psychiste peut activer\
+    \ une seule amplification à chaque incantation et cette activation est incluse\
+    \ dans l’action effectuée pour lancer le sort. Il peut utiliser n’importe quelle\
+    \ amplification de son répertoire avec n’importe quel sort psychique. Certaines\
+    \ amplifications restreignent toutefois leur application à certains types de sorts.\
+    \ Un psychiste apprend une amplification phrénique au niveau 1 qu’il choisit dans\
+    \ la  liste des améliorations phréniques. Au niveau 3 et tous les 4 niveaux par\
+    \ la suite, le psychiste apprend une nouvelle amplification phrénique. \n\nIl\
+    \ n’est pas possible de choisir plusieurs fois une même amplification phrénique.\
+    \ \n\nLe choix d’une amplification phrénique est définitif et il est impossible\
+    \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
+    \ phrénique pour activer ses amplifications.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
+  
+- Nom: 'Sort disciplinaire #2'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 4
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Pouvoir disciplinaire #2'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 5
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Sort disciplinaire #3'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 6
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Amplification phrénique #3'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 7
+  Auto: true
+  Description: "\nUn psychiste développe des techniques particulières, appelées\
+    \ amplifications phréniques, pour amplifier ses incantations. Il peut activer\
+    \ une amplification phrénique uniquement quand il lance un sort de magie psychique\
+    \ et celle-ci modifie alors les effets du sort ou l’incantation elle même.\n\n\
+    Le sort en cours d’incantation est appelé sort lié. Le psychiste peut activer\
+    \ une seule amplification à chaque incantation et cette activation est incluse\
+    \ dans l’action effectuée pour lancer le sort. Il peut utiliser n’importe quelle\
+    \ amplification de son répertoire avec n’importe quel sort psychique. Certaines\
+    \ amplifications restreignent toutefois leur application à certains types de sorts.\
+    \ Un psychiste apprend une amplification phrénique au niveau 1 qu’il choisit dans\
+    \ la  liste des améliorations phréniques. Au niveau 3 et tous les 4 niveaux par\
+    \ la suite, le psychiste apprend une nouvelle amplification phrénique. \n\nIl\
+    \ n’est pas possible de choisir plusieurs fois une même amplification phrénique.\
+    \ \n\nLe choix d’une amplification phrénique est définitif et il est impossible\
+    \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
+    \ phrénique pour activer ses amplifications.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
+  
+- Nom: 'Sort disciplinaire #4'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 8
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Sort disciplinaire #5'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 10
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Amplification phrénique #4'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 11
+  Auto: true
+  Description: "\nUn psychiste développe des techniques particulières, appelées\
+    \ amplifications phréniques, pour amplifier ses incantations. Il peut activer\
+    \ une amplification phrénique uniquement quand il lance un sort de magie psychique\
+    \ et celle-ci modifie alors les effets du sort ou l’incantation elle même.\n\n\
+    Le sort en cours d’incantation est appelé sort lié. Le psychiste peut activer\
+    \ une seule amplification à chaque incantation et cette activation est incluse\
+    \ dans l’action effectuée pour lancer le sort. Il peut utiliser n’importe quelle\
+    \ amplification de son répertoire avec n’importe quel sort psychique. Certaines\
+    \ amplifications restreignent toutefois leur application à certains types de sorts.\
+    \ Un psychiste apprend une amplification phrénique au niveau 1 qu’il choisit dans\
+    \ la  liste des améliorations phréniques. Au niveau 3 et tous les 4 niveaux par\
+    \ la suite, le psychiste apprend une nouvelle amplification phrénique. \n\nIl\
+    \ n’est pas possible de choisir plusieurs fois une même amplification phrénique.\
+    \ \n\nLe choix d’une amplification phrénique est définitif et il est impossible\
+    \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
+    \ phrénique pour activer ses amplifications.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
+  
+- Nom: 'Sort disciplinaire #6'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 12
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Pouvoir disciplinaire #3'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 13
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Sort disciplinaire #7'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 14
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Amplification phrénique #5'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 15
+  Auto: true
+  Description: "\nUn psychiste développe des techniques particulières, appelées\
+    \ amplifications phréniques, pour amplifier ses incantations. Il peut activer\
+    \ une amplification phrénique uniquement quand il lance un sort de magie psychique\
+    \ et celle-ci modifie alors les effets du sort ou l’incantation elle même.\n\n\
+    Le sort en cours d’incantation est appelé sort lié. Le psychiste peut activer\
+    \ une seule amplification à chaque incantation et cette activation est incluse\
+    \ dans l’action effectuée pour lancer le sort. Il peut utiliser n’importe quelle\
+    \ amplification de son répertoire avec n’importe quel sort psychique. Certaines\
+    \ amplifications restreignent toutefois leur application à certains types de sorts.\
+    \ Un psychiste apprend une amplification phrénique au niveau 1 qu’il choisit dans\
+    \ la  liste des améliorations phréniques. Au niveau 3 et tous les 4 niveaux par\
+    \ la suite, le psychiste apprend une nouvelle amplification phrénique. \n\nIl\
+    \ n’est pas possible de choisir plusieurs fois une même amplification phrénique.\
+    \ \n\nLe choix d’une amplification phrénique est définitif et il est impossible\
+    \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
+    \ phrénique pour activer ses amplifications.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
+  
+- Nom: 'Sort disciplinaire #8'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 16
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Sort disciplinaire #9'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 18
+  Auto: true
+  Description: "\nChaque psychiste apprend et améliore ses pouvoirs mentaux par\
+    \ l’application d’une méthode particulière telle qu’un apprentissage rigoureux\
+    \ ou l’atteinte d’un état mental particulier. \n\nCes méthodes sont appelées disciplines\
+    \ psychiques. Un psychiste ajoute des sorts supplémentaires à son répertoire de\
+    \ sorts connus en fonction de la discipline choisie dans la liste des disciplines\
+    \ psychiques. Le choix de la discipline doit être fait au niveau 1 et ne peut\
+    \ être changé par la suite. Chaque discipline psychique confère au psychiste un\
+    \ certain nombre de pouvoirs de discipline (aux niveaux 1, 5 et 13) etlui permet\
+    \ d’ajouter des sorts à son répertoire. De plus, la discipline détermine la valeur\
+    \ de caractéristique appliquée par le psychiste pour ses aptitudes de réserve\
+    \ et d’amplifications phréniques. Le DD des jets de sauvegarde contre un pouvoir\
+    \ de discipline psychique est égal à 10 + la moitié du niveau de psychiste + le\
+    \ modificateur d’Intelligence du psychiste. \n\nAu niveau 1, un psychiste apprend\
+    \ un sort supplémentaire déterminé par sa discipline. Il apprend un autre sort\
+    \ supplémentaire au niveau 4 et tous les 2 niveaux par la suite, jusqu’au dernier\
+    \ sort au niveau 18. Ces sorts viennent en plus du nombre de ceux indiqués dans\
+    \ la Table 1-8. Les sorts appris par le biais d’une discipline ne peuvent être\
+    \ échangés contre des sorts différents au fur et à mesure que le personnage gagne\
+    \ des niveaux.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Discipline_psychique_5
+  
+- Nom: 'Amplification phrénique #6'
+  Classe: Psychiste
+  Source: AO
+  Niveau: 19
+  Auto: true
+  Description: "\nUn psychiste développe des techniques particulières, appelées\
+    \ amplifications phréniques, pour amplifier ses incantations. Il peut activer\
+    \ une amplification phrénique uniquement quand il lance un sort de magie psychique\
+    \ et celle-ci modifie alors les effets du sort ou l’incantation elle même.\n\n\
+    Le sort en cours d’incantation est appelé sort lié. Le psychiste peut activer\
+    \ une seule amplification à chaque incantation et cette activation est incluse\
+    \ dans l’action effectuée pour lancer le sort. Il peut utiliser n’importe quelle\
+    \ amplification de son répertoire avec n’importe quel sort psychique. Certaines\
+    \ amplifications restreignent toutefois leur application à certains types de sorts.\
+    \ Un psychiste apprend une amplification phrénique au niveau 1 qu’il choisit dans\
+    \ la  liste des améliorations phréniques. Au niveau 3 et tous les 4 niveaux par\
+    \ la suite, le psychiste apprend une nouvelle amplification phrénique. \n\nIl\
+    \ n’est pas possible de choisir plusieurs fois une même amplification phrénique.\
+    \ \n\nLe choix d’une amplification phrénique est définitif et il est impossible\
+    \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
+    \ phrénique pour activer ses amplifications.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
   
