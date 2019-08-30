@@ -30045,188 +30045,203 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Armes_et_armures_0
   
 - Nom: Utilisation du poison
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+  Classe: Ninja
   Source: AG
   Niveau: 1
   Auto: true
-  Description: Au niveau 1, le ninja apprend à utiliser les poisons et ne risque
-    pas de s'empoisonner accidentellement quand il enduit une arme.
+  Description: 'Au niveau 1, le ninja apprend à utiliser les poisons et ne risque
+    pas de s’empoisonner accidentellement quand il enduit une arme.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Utilisation_du_poison_1
   
-- Nom: Attaque sournoise
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Attaque sournoise +1d6
+  Classe: Ninja
   Source: AG
   Niveau: 1
   Auto: true
-  Description: "Si le ninja surprend son adversaire alors qu'il est dans l'incapacité\
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
     \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
     \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
-    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu'elle\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
     \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
     \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
     \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
-    \ critique lors d'une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
     \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
     \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
-    \ des dégâts non létaux (comme une matraque, un fouet ou s'il attaque à mains\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
     \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
-    \ létaux. En revanche, il ne peut pas faire des dégâts d'attaque sournoise non\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
     \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
     \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
-    \ point vital) et doit pouvoir l'atteindre. Un ninja ne peut pas faire une attaque\
-    \ sournoise contre une créature qui bénéficie d'un camouflage."
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
   
-- Nom: Réserve de ki (Sur)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Réserve de ki
+  Classe: Ninja
   Source: AG
   Niveau: 2
   Auto: true
   Description: 'Au niveau 2, le ninja gagne une réserve de ki, une énergie surnaturelle
-    qu''il utilise pour accomplir des actions extraordinaires. Le montant de points
+    qu’il utilise pour accomplir des actions extraordinaires. Le montant de points
     de la réserve est égal à 1/2 niveau du ninja + modificateur de Charisme. Tant
-    qu''il lui reste au moins un point, à chaque fois qu''il utilise la compétence
-    Acrobaties pour sauter, on considère qu''il a eu droit à une course d''élan. Au
-    niveau 10, le DD de tous les tests d''Acrobaties faits pour sauter est réduit
-    de moitié (mais il ne peut pas aller plus loin que ce que sa vitesse lui autorise).
+    qu’il lui reste au moins un point, à chaque fois qu’il utilise la compétence Acrobaties
+    pour sauter, on considère qu’il a eu droit à une course d’élan. Au niveau 10,
+    le DD de tous les tests d’Acrobaties faits pour sauter est réduit de moitié (mais
+    il ne peut pas aller plus loin que ce que sa vitesse lui autorise).
 
 
-    Lors d''une attaque à outrance uniquement, le ninja peut dépenser 1 point de sa
+    Lors d’une attaque à outrance uniquement, le ninja peut dépenser 1 point de sa
     réserve de ki pour faire une attaque supplémentaire avec son meilleur bonus de
     base. Il peut aussi dépenser 1 point pour augmenter sa vitesse de 6 m pendant
     1 round. Enfin, il peut dépenser 1 point de sa réserve de ki pour gagner un bonus
-    d''intuition de +4 aux tests de Discrétion pendant 1 round. Ces pouvoirs s''activent
-    par une action rapide. Un ninja peut obtenir d''autres pouvoirs qui s''activent
+    d’intuition de +4 aux tests de Discrétion pendant 1 round. Ces pouvoirs s’activent
+    par une action rapide. Un ninja peut obtenir d’autres pouvoirs qui s’activent
     grâce à la réserve de ki en choisissant certaines astuces de ninja.
 
 
     La réserve de ki se régénère chaque matin, après 8 heures de repos ou de méditation
-    (cette durée n''est pas forcément continue). Si le ninja possède des niveaux dans
+    (cette durée n’est pas forcément continue). Si le ninja possède des niveaux dans
     une autre classe qui donne des points de ki, il ajoute ses niveaux de ninja à
     ceux de cette autre classe pour déterminer le nombre de points de ki qui se trouve
-    dans la réserve commune mais il n''ajoute qu''un seul modificateur de caractéristique
-    au total. Le ninja choisit la caractéristique à utiliser lorsqu''il prend son
-    premier niveau dans la seconde classe qui autorise du ki. Il est impossible de
-    revenir sur ce choix. Le ninja utilise alors les points de sa réserve de ki pour
-    alimenter les pouvoirs de toutes les classes basées sur le ki.'
+    dans la réserve commune mais il n’ajoute qu’un seul modificateur de caractéristique
+    au total. Le ninja choisit la caractéristique à utiliser lorsqu’il prend son premier
+    niveau dans la seconde classe qui autorise du ki. Il est impossible de revenir
+    sur ce choix. Le ninja utilise alors les points de sa réserve de ki pour alimenter
+    les pouvoirs de toutes les classes basées sur le ki.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Réserve_de_ki_Sur_3
   
-- Nom: Astuces de ninja
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Astuce de ninja
+  Classe: Ninja
   Source: AG
-  Niveau: 1
+  Niveau: 2
   Auto: true
   Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
-    \ permettent de tromper ses ennemis et d'obtenir des pouvoirs surnaturels. \n\n\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
     À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
     \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
-    \ reprises.\n\nVoir la liste des astuces de ninja."
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
   
-- Nom: Pas de trace (Ext)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Pas de trace +1
+  Classe: Ninja
   Source: AG
   Niveau: 3
   Auto: true
-  Description: Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
+  Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
     et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
     Survie augmente de +1. De plus, grâce à son entraînement, le ninja gagne un bonus
-    d'intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
-    quand il reste immobile et n'entreprend pas la moindre action pendant au moins
+    d’intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
+    quand il reste immobile et n’entreprend pas la moindre action pendant au moins
     1 round. Le DD des tests de Survie et le bonus des tests de Déguisement et de
     Discrétion opposés augmentent de 1 tous les trois niveaux.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pas_de_trace_Ext_5
   
-- Nom: Esquive instinctive (Ext)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Esquive instinctive
+  Classe: Ninja
   Source: AG
   Niveau: 4
   Auto: true
   Description: 'À partir du niveau 4, le ninja réagit au danger plus tôt que ses
     sens ne devraient normalement le lui permettre. Il est impossible de le prendre
     au dépourvu et il ne perd pas son bonus de Dextérité à la CA si son assaillant
-    est invisible. Il perd tout de même son bonus de Dextérité à la CA s''il est immobilisé.
+    est invisible. Il perd tout de même son bonus de Dextérité à la CA s’il est immobilisé.
     Le ninja qui possède ce pouvoir perd tout de même son bonus de Dextérité à la
     CA si son adversaire réussit une feinte.
 
 
-    Si le ninja dispose déjà de l''esquive instinctive grâce à une autre classe, il
-    gagne automatiquement l''esquive instinctive supérieure.'
+    Si le ninja dispose déjà de l’esquive instinctive grâce à une autre classe, il
+    gagne automatiquement l’esquive instinctive supérieure.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Esquive_instinctive_Ext_6
   
-- Nom: Pied léger (Ext)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Pied léger
+  Classe: Ninja
   Source: AG
   Niveau: 6
   Auto: true
-  Description: Au niveau 6, un ninja apprend à se déplacer en effleurant à peine
-    le sol. Par une action complexe, il peut se déplacer au double de sa vitesse normale
-    en ignorant le terrain difficile. Quand il se déplace ainsi, n'importe quelle
-    surface arrive à soutenir son poids, quel qu'il soit. Il peut donc se déplacer
-    sur l'eau, la lave ou les plus minces branches. Il doit terminer son mouvement
-    sur une surface capable de le supporter normalement. Il ne peut pas se déplacer
-    dans les airs ni gravir des murs ou autres surfaces verticales. Quand il se déplace
-    ainsi, il ne reçoit aucun dégâts dus aux surfaces ou aux dangers qui se déclenchent
-    par contact, comme ceux causés par la lave ou les chausse-trappes. Il n'a pas
-    besoin de faire de test d'Acrobaties pour éviter de tomber quand il traverse une
-    surface glissante ou bosselée. Enfin, tant qu'il utilise pied léger, il ignore
-    les pièges mécaniques qui se déclenchent en fonction de l'espace.
+  Description: " \nAu niveau 6, un ninja apprend à se déplacer en effleurant à peine\
+    \ le sol. Par une action complexe, il peut se déplacer au double de sa vitesse\
+    \ normale en ignorant le terrain difficile. Quand il se déplace ainsi, n’importe\
+    \ quelle surface arrive à soutenir son poids, quel qu’il soit. Il peut donc se\
+    \ déplacer sur l’eau, la lave ou les plus minces branches. Il doit terminer son\
+    \ mouvement sur une surface capable de le supporter normalement. Il ne peut pas\
+    \ se déplacer dans les airs ni gravir des murs ou autres surfaces verticales.\
+    \ Quand il se déplace ainsi, il ne reçoit aucun dégâts dus aux surfaces ou aux\
+    \ dangers qui se déclenchent par contact, comme ceux causés par la lave ou les\
+    \ chausse-trappes. Il n’a pas besoin de faire de test d’Acrobaties pour éviter\
+    \ de tomber quand il traverse une surface glissante ou bosselée. Enfin, tant qu’il\
+    \ utilise pied léger, il ignore les pièges mécaniques qui se déclenchent en fonction\
+    \ de l’espace.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pied_léger_Ext_7
   
-- Nom: Esquive instinctive supérieure (Ext)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Esquive instinctive supérieure
+  Classe: Ninja
   Source: AG
   Niveau: 8
   Auto: true
   Description: 'Au niveau 8, on ne peut plus prendre le ninja en tenaille. Les autres
-    ninjas (et les roublards) ne peuvent donc plus lui porter d''attaques sournoises
-    en le prenant en tenaille à moins que l''assaillant n''ait au moins quatre niveaux
+    ninjas (et les roublards) ne peuvent donc plus lui porter d’attaques sournoises
+    en le prenant en tenaille à moins que l’assaillant n’ait au moins quatre niveaux
     de ninja (ou de roublard) de plus que le personnage.
 
 
-    Si le personnage dispose déjà de l''esquive instinctive supérieure grâce à une
+    Si le personnage dispose déjà de l’esquive instinctive supérieure grâce à une
     autre classe, les niveaux de cette classe et de celle de ninja se cumulent pour
     déterminer le niveau minimum de ninja (ou de roublard) nécessaire pour prendre
-    le personnage en tenaille.'
+    le personnage en tenaille.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Esquive_instinctive_supérieure_Ext_8
   
 - Nom: Astuce de maître
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+  Classe: Ninja
   Source: AG
   Niveau: 10
   Auto: true
   Description: 'Au niveau 10 et ensuite tous les deux niveaux, le ninja peut choisir
-    une astuce de maître au lieu d''une astuce de ninja.
+    une astuce de maître au lieu d’une astuce de ninja.
 
 
-    Voir les astuces de maître.'
+    Voir les astuces de maître.
+
+
+
+    '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuce_de_maître_9
   
-- Nom: Maître secret (Sur)
-  Classe: Roublard
-  Archétype: Ninja (Classe alternative)
+- Nom: Maître secret
+  Classe: Ninja
   Source: AG
   Niveau: 20
   Auto: true
-  Description: Au niveau 20, le ninja est au sommet de son art. Par une action simple,
-    il peut lancer invisibilité suprême sur sa personne. Il est alors impossible de
-    le détecter, par quelque moyen que ce soit, même la négation de l'invisibilité,
-    la détection de l'invisibilité et la vision lucide n'y font rien. Le ninja utilise
-    son niveau de classe comme niveau de lanceur de sorts. Ce pouvoir consomme 3 points
-    de sa réserve de ki. De plus, quand le ninja fait une attaque sournoise, il peut
-    sacrifier des dés de dégâts supplémentaires pour pénaliser une caractéristique
-    pendant une minute. Le malus est égal au nombre de dés sacrifiés. Ce malus ne
-    se cumule pas avec lui-même et ne peut pas faire passer une caractéristique en
-    dessous de 1.
+  Description: " \nAu niveau 20, le ninja est au sommet de son art. Par une action\
+    \ simple, il peut lancer invisibilité suprême sur sa personne. Il est alors impossible\
+    \ de le détecter, par quelque moyen que ce soit, même la négation de l’invisibilité,\
+    \ la détection de l’invisibilité et la vision lucide n’y font rien. Le ninja utilise\
+    \ son niveau de classe comme niveau de lanceur de sorts. Ce pouvoir consomme 3\
+    \ points de sa réserve de ki. De plus, quand le ninja fait une attaque sournoise,\
+    \ il peut sacrifier des dés de dégâts supplémentaires pour pénaliser une caractéristique\
+    \ pendant une minute. Le malus est égal au nombre de dés sacrifiés. Ce malus ne\
+    \ se cumule pas avec lui-même et ne peut pas faire passer une caractéristique\
+    \ en dessous de 1.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Maître_secret_Sur_10
   
 - Nom: Compétences de classe
@@ -48741,10 +48756,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Utilisation_du_poison_1
   
-- Nom: Attaque sournoise
+- Nom: Attaque sournoise +2d6
   Classe: Ninja
   Source: AG
-  Niveau: 1
+  Niveau: 3
   Auto: true
   Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
     \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
@@ -48803,10 +48818,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Réserve_de_ki_Sur_3
   
-- Nom: Astuces de ninja
+- Nom: 'Astuce de ninja #2'
   Classe: Ninja
   Source: AG
-  Niveau: 1
+  Niveau: 4
   Auto: true
   Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
     \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
@@ -48815,10 +48830,10 @@
     \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
   
-- Nom: Pas de trace (Ext)
+- Nom: Pas de trace +2
   Classe: Ninja
   Source: AG
-  Niveau: 3
+  Niveau: 6
   Auto: true
   Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
     et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
@@ -64962,4 +64977,364 @@
     \ sorts s’appliquent uniquement aux sorts de la liste de magus, à moins d’une\
     \ indication contraire.\n\nVoir la liste des arcanes de magus.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magus.ashx#Arcanes_du_magus_7
+  
+- Nom: Attaque sournoise +3d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 5
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #3'
+  Classe: Ninja
+  Source: AG
+  Niveau: 6
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Attaque sournoise +4d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 7
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #4'
+  Classe: Ninja
+  Source: AG
+  Niveau: 8
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Attaque sournoise +5d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 9
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: Pas de trace +3
+  Classe: Ninja
+  Source: AG
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
+    et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
+    Survie augmente de +1. De plus, grâce à son entraînement, le ninja gagne un bonus
+    d’intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
+    quand il reste immobile et n’entreprend pas la moindre action pendant au moins
+    1 round. Le DD des tests de Survie et le bonus des tests de Déguisement et de
+    Discrétion opposés augmentent de 1 tous les trois niveaux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pas_de_trace_Ext_5
+  
+- Nom: 'Astuce de ninja #5'
+  Classe: Ninja
+  Source: AG
+  Niveau: 10
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Attaque sournoise +6d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 11
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #6'
+  Classe: Ninja
+  Source: AG
+  Niveau: 12
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Pas de trace +4
+  Classe: Ninja
+  Source: AG
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
+    et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
+    Survie augmente de +1. De plus, grâce à son entraînement, le ninja gagne un bonus
+    d’intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
+    quand il reste immobile et n’entreprend pas la moindre action pendant au moins
+    1 round. Le DD des tests de Survie et le bonus des tests de Déguisement et de
+    Discrétion opposés augmentent de 1 tous les trois niveaux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pas_de_trace_Ext_5
+  
+- Nom: Attaque sournoise +7d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 13
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #7'
+  Classe: Ninja
+  Source: AG
+  Niveau: 14
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Attaque sournoise +8d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: Pas de trace +5
+  Classe: Ninja
+  Source: AG
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
+    et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
+    Survie augmente de +1. De plus, grâce à son entraînement, le ninja gagne un bonus
+    d’intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
+    quand il reste immobile et n’entreprend pas la moindre action pendant au moins
+    1 round. Le DD des tests de Survie et le bonus des tests de Déguisement et de
+    Discrétion opposés augmentent de 1 tous les trois niveaux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pas_de_trace_Ext_5
+  
+- Nom: 'Astuce de ninja #8'
+  Classe: Ninja
+  Source: AG
+  Niveau: 16
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Attaque sournoise +9d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 17
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #9'
+  Classe: Ninja
+  Source: AG
+  Niveau: 18
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
+  
+- Nom: Pas de trace +6
+  Classe: Ninja
+  Source: AG
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 3, le ninja apprend à camoufler ses traces, à rester caché
+    et à dissimuler sa présence. Le DD des tests visant à suivre un ninja avec la
+    Survie augmente de +1. De plus, grâce à son entraînement, le ninja gagne un bonus
+    d’intuition de +1 aux tests de Déguisement et aux tests de Discrétion opposés
+    quand il reste immobile et n’entreprend pas la moindre action pendant au moins
+    1 round. Le DD des tests de Survie et le bonus des tests de Déguisement et de
+    Discrétion opposés augmentent de 1 tous les trois niveaux.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Pas_de_trace_Ext_5
+  
+- Nom: Attaque sournoise +10d6
+  Classe: Ninja
+  Source: AG
+  Niveau: 19
+  Auto: true
+  Description: "Si le ninja surprend son adversaire alors qu’il est dans l’incapacité\
+    \ de se défendre efficacement, il peut viser un point vital pour lui infliger\
+    \ des dégâts supplémentaires. \n\nLes attaques du ninja font des dégâts supplémentaires\
+    \ à chaque fois que sa cible est privée de son bonus de Dextérité à la CA (qu’elle\
+    \ possède ou non un bonus de Dextérité) ou quand elle est prise en tenaille. Au\
+    \ niveau 1, ces dégâts supplémentaires sont de 1d6 et ils augmentent de 1d6 tous\
+    \ les deux niveaux. Ce sont des dégâts de précision. Si le ninja fait un coup\
+    \ critique lors d’une attaque sournoise, il ne multiplie pas le montant des dégâts\
+    \ de précision. Les attaques à distance permettent de faire des attaques sournoises\
+    \ si la cible se trouve à moins de 9 m.\n\nSi le ninja manie une arme qui inflige\
+    \ des dégâts non létaux (comme une matraque, un fouet ou s’il attaque à mains\
+    \ nues), son attaque sournoise peut infliger des dégâts non létaux au lieu de\
+    \ létaux. En revanche, il ne peut pas faire des dégâts d’attaque sournoise non\
+    \ létaux avec une arme qui inflige des dégâts létaux, même avec le malus de -4.\n\
+    \nLe ninja doit avoir une bonne visibilité sur sa cible (assez pour repérer un\
+    \ point vital) et doit pouvoir l’atteindre. Un ninja ne peut pas faire une attaque\
+    \ sournoise contre une créature qui bénéficie d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Attaque_sournoise_2
+  
+- Nom: 'Astuce de ninja #10'
+  Classe: Ninja
+  Source: AG
+  Niveau: 20
+  Auto: true
+  Description: "Alors que le ninja évolue, il apprend de nouvelles astuces qui lui\
+    \ permettent de tromper ses ennemis et d’obtenir des pouvoirs surnaturels. \n\n\
+    À partir du niveau 2, il apprend une astuce et une de plus tous les deux niveaux.\
+    \ Sauf indication contraire, il ne peut pas choisir la même astuce à plusieurs\
+    \ reprises.\n\nVoir la liste des astuces de ninja.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx#Astuces_de_ninja_4
   
