@@ -44417,7 +44417,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9dium.ashx#Guide_astral_Sur_17
   
-- Nom: Maîtrise d'une école instrumentale (Sur)
+- Nom: Maîtrise d'une école instrumentale
   Classe: Occultiste
   Source: AO
   Niveau: 20
@@ -53193,7 +53193,7 @@
     \ des niveaux appropriés.\n\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Sorts_1
   
-- Nom: Pouvoir de focalisation (Sur)
+- Nom: Pouvoir de focalisation
   Classe: Occultiste
   Source: AO
   Niveau: 1
@@ -53215,7 +53215,7 @@
     \ pouvoirs de focalisation.\n\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
   
-- Nom: Instruments (Sur)
+- Nom: Instruments 2
   Classe: Occultiste
   Source: AO
   Niveau: 1
@@ -53264,7 +53264,7 @@
 - Nom: Astuces
   Classe: Occultiste
   Source: AO
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: 'Un occultiste apprend une astuce, ou sort psychique
 
@@ -53288,7 +53288,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Astuces_4
   
-- Nom: Focalisation mentale (Sur)
+- Nom: Focalisation mentale
   Classe: Occultiste
   Source: AO
   Niveau: 1
@@ -53391,7 +53391,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Focalisation_mentale_Sur_5
   
-- Nom: Expert des objets magiques (Ext)
+- Nom: Expert des objets magiques
   Classe: Occultiste
   Source: AO
   Niveau: 2
@@ -53399,10 +53399,10 @@
   Description: "\n Au niveau 2, un occultiste connaît\nparticulièrement bien les\
     \ objets magiques, ce qui lui confère un\nbonus quand il tente de les utiliser.\
     \ Il gagne un bonus égal à la\nmoitié de son niveau d’occultiste aux tests d’Utilisation\
-    \ d’objets\nmagiques.\n\n\n\n"
+    \ d’objets\nmagiques.\n\n\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Expert_des_objets_magiques_Ext_6
   
-- Nom: Lecture d'objet (Sur)
+- Nom: Lecture d'objets
   Classe: Occultiste
   Source: AO
   Niveau: 2
@@ -53427,7 +53427,7 @@
     \ à volonté.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Lecture_dobjet_Sur_7
   
-- Nom: Transfert de focalisation (Sur)
+- Nom: Transfert de focalisation
   Classe: Occultiste
   Source: AO
   Niveau: 4
@@ -53472,7 +53472,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Transfert_de_focalisation_Sur_8
   
-- Nom: Vision des auras (Sur)
+- Nom: Vision des auras
   Classe: Occultiste
   Source: AO
   Niveau: 5
@@ -53490,7 +53490,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Vision_des_auras_Sur_9
   
-- Nom: Cercles magiques (Sur)
+- Nom: Cercles magiques
   Classe: Occultiste
   Source: AO
   Niveau: 8
@@ -53544,7 +53544,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Cercles_magiques_Sur_10
   
-- Nom: Appel d'Extérieur (Sur)
+- Nom: Appel d'Extérieur 1
   Classe: Occultiste
   Source: AO
   Niveau: 8
@@ -53650,7 +53650,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Appel_dExtérieur_Sur_11
   
-- Nom: Cercle d'entrave (Sur)
+- Nom: Cercle d'entrave
   Classe: Occultiste
   Source: AO
   Niveau: 12
@@ -53709,10 +53709,11 @@
 
 
 
+
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Cercle_dentrave_Sur_12
   
-- Nom: Traçage des cercles accéléré (Sur)
+- Nom: Tracé des cercles accéléré
   Classe: Occultiste
   Source: AO
   Niveau: 16
@@ -72297,4 +72298,750 @@
     \ de niveau 1 bénéficie d’un bonus spirituel de +1 ; ce bonus augmente de 1 au\
     \ niveau 4 et tous les 4 niveaux par la suite. \n\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9dium.ashx#Bonus_spirituel_Sur_4
+  
+- Nom: Instruments 3
+  Classe: Occultiste
+  Source: AO
+  Niveau: 2
+  Auto: true
+  Description: "\nAu niveau 1, un occultiste apprend à utiliser deux écoles instrumentales.\
+    \ Au niveau 2 et tous les 4 niveaux d’occultiste par la suite, il apprend l’utilisation\
+    \ d’une école instrumentale supplémentaire, jusqu’à un maximum de sept écoles\
+    \ au niveau 18. \n\nChaque école  instrumentale permet d’ajouter un sort par niveau\
+    \ de sort à la liste des sorts de l'occultiste. Aucun des sorts issus des autres\
+    \ écoles n’est considéré comme faisant partie de la liste des sorts de l'occultiste\
+    \ tant que celui-ci n’a pas choisi l’école instrumentale. L’occultiste ne peut\
+    \ pas utiliser les objets magiques à potentiel magique et à fin d’incantation\
+    \ des écoles qu’il ne connaît pas, à moins qu’il ne réussisse un test d’Utilisation\
+    \ d’objets magiques approprié. Un occultiste peut choisir une école instrumentale\
+    \ plusieurs fois afin d’apprendre des sorts supplémentaires de cette école.\n\n\
+    Une courte liste d’objets représente chaque école instrumentale.\nChaque jour,\
+    \ l’occultiste choisit un objet de la liste de chaque école instrumentale qu’il\
+    \ connaît. Ces objets seront ses instruments pour la  journée. L’occultiste a\
+    \ besoin d’un seul de ces objets pour lancer les sorts de l’école correspondante.\
+    \ S’il a choisi plusieurs fois une même école instrumentale, il doit choisir un\
+    \ objet pour chaque ensemble de sorts conférés par cette école instrumentale.\
+    \ Les instruments ne sont pas nécessairement des objets magiques  et les instruments\
+    \ non magiques n’occupent aucun emplacement d’objet magique, même s’ils sont portés.\
+    \ Les instruments non magiques, tels que le doigt squelettique d’un saint, le\
+    \ sceptre brisé d’un roi mort depuis longtemps, le crâne du familier d’un mentor\
+    \ ou l’oeil de verre d’un mystérieux ancêtre, sont souvent importants pour l’occultiste\
+    \ d’un point de vue historique ou personnel.\n\nChaque fois qu’un occultiste lance\
+    \ un sort, il doit posséder l’instrument correspondant et le pointer vers la cible\
+    \ ou la zone d’effet du sort. Ce geste fait partie de l’incantation du sort et\
+    \ ne nécessite aucune action supplémentaire. Si l’occultiste ne possède pas l’instrument\
+    \ correspondant, il peut tout de même lancer le sort s’il réussit un test de concentration\
+    \ (DD = 20 + le niveau du sort). Les sorts lancés par un occultiste sans l’instrument\
+    \ approprié sont toujours considérés comme étant lancés au niveau de lanceur de\
+    \ sorts minimum (niveau de lanceur de sorts de 1 pour les sorts de niveau 1, niveau\
+    \ de lanceur de sorts de 4 pour les sorts de niveau 2, etc.).\n\nChaque école\
+    \ instrumentale confère également un pouvoir de focalisation de base. Ce pouvoir\
+    \ est ajouté à la liste de pouvoirs de focalisation possédés par l’occultiste\
+    \ (voir Focalisation mentale, plus bas). En outre, chaque école instrumentale\
+    \ propose un certain nombre de pouvoirs de focalisation supplémentaires que l’occultiste\
+    \ peut sélectionner en utilisant son aptitude de classe de focalisation mentale.\
+    \ \n\nVoir la section Écoles instrumentales, à partir de la page 49, pour obtenir\
+    \ la liste complète des instruments et des pouvoirs de focalisation qui leur sont\
+    \ associés.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Instruments_Sur_3
+  
+- Nom: 'Pouvoir de focalisation #2'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 3
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: 'Pouvoir de focalisation #3'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 5
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Instruments 4
+  Classe: Occultiste
+  Source: AO
+  Niveau: 6
+  Auto: true
+  Description: "\nAu niveau 1, un occultiste apprend à utiliser deux écoles instrumentales.\
+    \ Au niveau 2 et tous les 4 niveaux d’occultiste par la suite, il apprend l’utilisation\
+    \ d’une école instrumentale supplémentaire, jusqu’à un maximum de sept écoles\
+    \ au niveau 18. \n\nChaque école  instrumentale permet d’ajouter un sort par niveau\
+    \ de sort à la liste des sorts de l'occultiste. Aucun des sorts issus des autres\
+    \ écoles n’est considéré comme faisant partie de la liste des sorts de l'occultiste\
+    \ tant que celui-ci n’a pas choisi l’école instrumentale. L’occultiste ne peut\
+    \ pas utiliser les objets magiques à potentiel magique et à fin d’incantation\
+    \ des écoles qu’il ne connaît pas, à moins qu’il ne réussisse un test d’Utilisation\
+    \ d’objets magiques approprié. Un occultiste peut choisir une école instrumentale\
+    \ plusieurs fois afin d’apprendre des sorts supplémentaires de cette école.\n\n\
+    Une courte liste d’objets représente chaque école instrumentale.\nChaque jour,\
+    \ l’occultiste choisit un objet de la liste de chaque école instrumentale qu’il\
+    \ connaît. Ces objets seront ses instruments pour la  journée. L’occultiste a\
+    \ besoin d’un seul de ces objets pour lancer les sorts de l’école correspondante.\
+    \ S’il a choisi plusieurs fois une même école instrumentale, il doit choisir un\
+    \ objet pour chaque ensemble de sorts conférés par cette école instrumentale.\
+    \ Les instruments ne sont pas nécessairement des objets magiques  et les instruments\
+    \ non magiques n’occupent aucun emplacement d’objet magique, même s’ils sont portés.\
+    \ Les instruments non magiques, tels que le doigt squelettique d’un saint, le\
+    \ sceptre brisé d’un roi mort depuis longtemps, le crâne du familier d’un mentor\
+    \ ou l’oeil de verre d’un mystérieux ancêtre, sont souvent importants pour l’occultiste\
+    \ d’un point de vue historique ou personnel.\n\nChaque fois qu’un occultiste lance\
+    \ un sort, il doit posséder l’instrument correspondant et le pointer vers la cible\
+    \ ou la zone d’effet du sort. Ce geste fait partie de l’incantation du sort et\
+    \ ne nécessite aucune action supplémentaire. Si l’occultiste ne possède pas l’instrument\
+    \ correspondant, il peut tout de même lancer le sort s’il réussit un test de concentration\
+    \ (DD = 20 + le niveau du sort). Les sorts lancés par un occultiste sans l’instrument\
+    \ approprié sont toujours considérés comme étant lancés au niveau de lanceur de\
+    \ sorts minimum (niveau de lanceur de sorts de 1 pour les sorts de niveau 1, niveau\
+    \ de lanceur de sorts de 4 pour les sorts de niveau 2, etc.).\n\nChaque école\
+    \ instrumentale confère également un pouvoir de focalisation de base. Ce pouvoir\
+    \ est ajouté à la liste de pouvoirs de focalisation possédés par l’occultiste\
+    \ (voir Focalisation mentale, plus bas). En outre, chaque école instrumentale\
+    \ propose un certain nombre de pouvoirs de focalisation supplémentaires que l’occultiste\
+    \ peut sélectionner en utilisant son aptitude de classe de focalisation mentale.\
+    \ \n\nVoir la section Écoles instrumentales, à partir de la page 49, pour obtenir\
+    \ la liste complète des instruments et des pouvoirs de focalisation qui leur sont\
+    \ associés.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Instruments_Sur_3
+  
+- Nom: 'Pouvoir de focalisation #4'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 7
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: 'Pouvoir de focalisation #5'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 9
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Instruments 5
+  Classe: Occultiste
+  Source: AO
+  Niveau: 10
+  Auto: true
+  Description: "\nAu niveau 1, un occultiste apprend à utiliser deux écoles instrumentales.\
+    \ Au niveau 2 et tous les 4 niveaux d’occultiste par la suite, il apprend l’utilisation\
+    \ d’une école instrumentale supplémentaire, jusqu’à un maximum de sept écoles\
+    \ au niveau 18. \n\nChaque école  instrumentale permet d’ajouter un sort par niveau\
+    \ de sort à la liste des sorts de l'occultiste. Aucun des sorts issus des autres\
+    \ écoles n’est considéré comme faisant partie de la liste des sorts de l'occultiste\
+    \ tant que celui-ci n’a pas choisi l’école instrumentale. L’occultiste ne peut\
+    \ pas utiliser les objets magiques à potentiel magique et à fin d’incantation\
+    \ des écoles qu’il ne connaît pas, à moins qu’il ne réussisse un test d’Utilisation\
+    \ d’objets magiques approprié. Un occultiste peut choisir une école instrumentale\
+    \ plusieurs fois afin d’apprendre des sorts supplémentaires de cette école.\n\n\
+    Une courte liste d’objets représente chaque école instrumentale.\nChaque jour,\
+    \ l’occultiste choisit un objet de la liste de chaque école instrumentale qu’il\
+    \ connaît. Ces objets seront ses instruments pour la  journée. L’occultiste a\
+    \ besoin d’un seul de ces objets pour lancer les sorts de l’école correspondante.\
+    \ S’il a choisi plusieurs fois une même école instrumentale, il doit choisir un\
+    \ objet pour chaque ensemble de sorts conférés par cette école instrumentale.\
+    \ Les instruments ne sont pas nécessairement des objets magiques  et les instruments\
+    \ non magiques n’occupent aucun emplacement d’objet magique, même s’ils sont portés.\
+    \ Les instruments non magiques, tels que le doigt squelettique d’un saint, le\
+    \ sceptre brisé d’un roi mort depuis longtemps, le crâne du familier d’un mentor\
+    \ ou l’oeil de verre d’un mystérieux ancêtre, sont souvent importants pour l’occultiste\
+    \ d’un point de vue historique ou personnel.\n\nChaque fois qu’un occultiste lance\
+    \ un sort, il doit posséder l’instrument correspondant et le pointer vers la cible\
+    \ ou la zone d’effet du sort. Ce geste fait partie de l’incantation du sort et\
+    \ ne nécessite aucune action supplémentaire. Si l’occultiste ne possède pas l’instrument\
+    \ correspondant, il peut tout de même lancer le sort s’il réussit un test de concentration\
+    \ (DD = 20 + le niveau du sort). Les sorts lancés par un occultiste sans l’instrument\
+    \ approprié sont toujours considérés comme étant lancés au niveau de lanceur de\
+    \ sorts minimum (niveau de lanceur de sorts de 1 pour les sorts de niveau 1, niveau\
+    \ de lanceur de sorts de 4 pour les sorts de niveau 2, etc.).\n\nChaque école\
+    \ instrumentale confère également un pouvoir de focalisation de base. Ce pouvoir\
+    \ est ajouté à la liste de pouvoirs de focalisation possédés par l’occultiste\
+    \ (voir Focalisation mentale, plus bas). En outre, chaque école instrumentale\
+    \ propose un certain nombre de pouvoirs de focalisation supplémentaires que l’occultiste\
+    \ peut sélectionner en utilisant son aptitude de classe de focalisation mentale.\
+    \ \n\nVoir la section Écoles instrumentales, à partir de la page 49, pour obtenir\
+    \ la liste complète des instruments et des pouvoirs de focalisation qui leur sont\
+    \ associés.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Instruments_Sur_3
+  
+- Nom: 'Pouvoir de focalisation #6'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 11
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Appel d'Extérieur 2
+  Classe: Occultiste
+  Source: AO
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    Au niveau 8, l’occultiste apprend le véritable
+
+    nom d’un Extérieur précis. Cet Extérieur ne peut pas avoir plus de
+
+    3 Dés de Vie. Chaque fois que l’occultiste crée un cercle magique, il
+
+    peut dépenser 1 point de focalisation mentale supplémentaire pour
+
+    diriger l’énergie du cercle vers l’intérieur afin d’obliger cet Extérieur à
+
+    y pénétrer (comme lorsqu’on utilise un sort de contrat). L’Extérieur reste
+
+    enfermé pendant un maximum de 10 minutes. Pendant cette période,
+
+    l’occultiste peut négocier une information avec lui. Cette négociation
+
+    nécessite un paiement d’au moins 20 po (ou un don d’objet d’une
+
+    valeur totale équivalente et susceptible d’intéresser l’Extérieur). Durant
+
+    cette négociation, l’occultiste doit effectuer un test de Diplomatie ou
+
+    d’Intimidation opposé au résultat du test de Psychologie de l’Extérieur.
+
+
+    Une réussite de 5 points ou plus à ce test réduit le paiement à 10 po.
+
+    Un échec l’augmente à 30 po, tandis qu’un échec de 5 points ou plus
+
+    permet à l’Extérieur de s’échapper en ne révélant aucune information
+
+    (et sans recevoir le paiement). L’information obtenue équivaut à celles
+
+    que l’on peut apprendre grâce à un sort de divination. Elle est toujours
+
+    correcte mais souvent énigmatique. L’Extérieur met généralement
+
+    1d3 heures pour obtenir l’information. Au terme de cette période, il
+
+    revient de lui-même pour la transmettre comme promis. L’Extérieur
+
+    n’apprécie jamais cette méthode de contrainte forcée, même si son
+
+    alignement est proche de celui de l’occultiste. Une fois l’échange conclu,
+
+    le cercle magique perd tout pouvoir et l’Extérieur retourne vers son plan
+
+    d’origine.
+
+
+    Au niveau 12 et tous les 4 niveaux par la suite, l’occultiste apprend
+
+    à appeler un Extérieur de plus, d’un type identique ou différent. Il ne
+
+    peut appeler qu’un seul Extérieur en même temps avec cette méthode
+
+    mais il peut désormais lui poser une question supplémentaire par
+
+    appel tous les 4 niveaux d’occultiste possédés au-delà du 8ème (jusqu’à un
+
+    maximum de quatre questions au niveau 20), sans modifier le paiement
+
+    de la négociation. Les questions doivent toutes avoir un rapport les unes
+
+    avec les autres.
+
+
+    Au niveau 16, au lieu de poser des questions, l’occultiste peut
+
+    exiger de l’Extérieur qu’il délivre un message à une créature amicale
+
+    de sa connaissance. L’occultiste peut également exiger de l’Extérieur
+
+    qu’il remette à cette créature un objet dont le poids ne dépasse pas
+
+    250 grammes. L’une ou l’autre de ces exigences nécessite la réussite d’un
+
+    test opposé comme décrit plus haut. La livraison prend généralement
+
+    1d4 heures mais cette période est réduite à 1d6 minutes si le destinataire
+
+    se situe à 1,5 kilomètre ou moins de l’occultiste (et l’Extérieur prend
+
+    moins de temps encore si le destinataire est à portée de vue). L’occultiste
+
+    doit être capable de fournir le nom et une description physique
+
+    précise du destinataire. Cette aptitude ne peut pas être utilisée pour
+
+    livrer quelque chose à un endroit, ou à des ennemis ou des créatures
+
+    inamicales envers l’occultiste.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Appel_dExtérieur_Sur_11
+  
+- Nom: 'Pouvoir de focalisation #7'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 13
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Instruments 6
+  Classe: Occultiste
+  Source: AO
+  Niveau: 14
+  Auto: true
+  Description: "\nAu niveau 1, un occultiste apprend à utiliser deux écoles instrumentales.\
+    \ Au niveau 2 et tous les 4 niveaux d’occultiste par la suite, il apprend l’utilisation\
+    \ d’une école instrumentale supplémentaire, jusqu’à un maximum de sept écoles\
+    \ au niveau 18. \n\nChaque école  instrumentale permet d’ajouter un sort par niveau\
+    \ de sort à la liste des sorts de l'occultiste. Aucun des sorts issus des autres\
+    \ écoles n’est considéré comme faisant partie de la liste des sorts de l'occultiste\
+    \ tant que celui-ci n’a pas choisi l’école instrumentale. L’occultiste ne peut\
+    \ pas utiliser les objets magiques à potentiel magique et à fin d’incantation\
+    \ des écoles qu’il ne connaît pas, à moins qu’il ne réussisse un test d’Utilisation\
+    \ d’objets magiques approprié. Un occultiste peut choisir une école instrumentale\
+    \ plusieurs fois afin d’apprendre des sorts supplémentaires de cette école.\n\n\
+    Une courte liste d’objets représente chaque école instrumentale.\nChaque jour,\
+    \ l’occultiste choisit un objet de la liste de chaque école instrumentale qu’il\
+    \ connaît. Ces objets seront ses instruments pour la  journée. L’occultiste a\
+    \ besoin d’un seul de ces objets pour lancer les sorts de l’école correspondante.\
+    \ S’il a choisi plusieurs fois une même école instrumentale, il doit choisir un\
+    \ objet pour chaque ensemble de sorts conférés par cette école instrumentale.\
+    \ Les instruments ne sont pas nécessairement des objets magiques  et les instruments\
+    \ non magiques n’occupent aucun emplacement d’objet magique, même s’ils sont portés.\
+    \ Les instruments non magiques, tels que le doigt squelettique d’un saint, le\
+    \ sceptre brisé d’un roi mort depuis longtemps, le crâne du familier d’un mentor\
+    \ ou l’oeil de verre d’un mystérieux ancêtre, sont souvent importants pour l’occultiste\
+    \ d’un point de vue historique ou personnel.\n\nChaque fois qu’un occultiste lance\
+    \ un sort, il doit posséder l’instrument correspondant et le pointer vers la cible\
+    \ ou la zone d’effet du sort. Ce geste fait partie de l’incantation du sort et\
+    \ ne nécessite aucune action supplémentaire. Si l’occultiste ne possède pas l’instrument\
+    \ correspondant, il peut tout de même lancer le sort s’il réussit un test de concentration\
+    \ (DD = 20 + le niveau du sort). Les sorts lancés par un occultiste sans l’instrument\
+    \ approprié sont toujours considérés comme étant lancés au niveau de lanceur de\
+    \ sorts minimum (niveau de lanceur de sorts de 1 pour les sorts de niveau 1, niveau\
+    \ de lanceur de sorts de 4 pour les sorts de niveau 2, etc.).\n\nChaque école\
+    \ instrumentale confère également un pouvoir de focalisation de base. Ce pouvoir\
+    \ est ajouté à la liste de pouvoirs de focalisation possédés par l’occultiste\
+    \ (voir Focalisation mentale, plus bas). En outre, chaque école instrumentale\
+    \ propose un certain nombre de pouvoirs de focalisation supplémentaires que l’occultiste\
+    \ peut sélectionner en utilisant son aptitude de classe de focalisation mentale.\
+    \ \n\nVoir la section Écoles instrumentales, à partir de la page 49, pour obtenir\
+    \ la liste complète des instruments et des pouvoirs de focalisation qui leur sont\
+    \ associés.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Instruments_Sur_3
+  
+- Nom: 'Pouvoir de focalisation #8'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 15
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Appel d'Extérieur 3
+  Classe: Occultiste
+  Source: AO
+  Niveau: 16
+  Auto: true
+  Description: '
+
+    Au niveau 8, l’occultiste apprend le véritable
+
+    nom d’un Extérieur précis. Cet Extérieur ne peut pas avoir plus de
+
+    3 Dés de Vie. Chaque fois que l’occultiste crée un cercle magique, il
+
+    peut dépenser 1 point de focalisation mentale supplémentaire pour
+
+    diriger l’énergie du cercle vers l’intérieur afin d’obliger cet Extérieur à
+
+    y pénétrer (comme lorsqu’on utilise un sort de contrat). L’Extérieur reste
+
+    enfermé pendant un maximum de 10 minutes. Pendant cette période,
+
+    l’occultiste peut négocier une information avec lui. Cette négociation
+
+    nécessite un paiement d’au moins 20 po (ou un don d’objet d’une
+
+    valeur totale équivalente et susceptible d’intéresser l’Extérieur). Durant
+
+    cette négociation, l’occultiste doit effectuer un test de Diplomatie ou
+
+    d’Intimidation opposé au résultat du test de Psychologie de l’Extérieur.
+
+
+    Une réussite de 5 points ou plus à ce test réduit le paiement à 10 po.
+
+    Un échec l’augmente à 30 po, tandis qu’un échec de 5 points ou plus
+
+    permet à l’Extérieur de s’échapper en ne révélant aucune information
+
+    (et sans recevoir le paiement). L’information obtenue équivaut à celles
+
+    que l’on peut apprendre grâce à un sort de divination. Elle est toujours
+
+    correcte mais souvent énigmatique. L’Extérieur met généralement
+
+    1d3 heures pour obtenir l’information. Au terme de cette période, il
+
+    revient de lui-même pour la transmettre comme promis. L’Extérieur
+
+    n’apprécie jamais cette méthode de contrainte forcée, même si son
+
+    alignement est proche de celui de l’occultiste. Une fois l’échange conclu,
+
+    le cercle magique perd tout pouvoir et l’Extérieur retourne vers son plan
+
+    d’origine.
+
+
+    Au niveau 12 et tous les 4 niveaux par la suite, l’occultiste apprend
+
+    à appeler un Extérieur de plus, d’un type identique ou différent. Il ne
+
+    peut appeler qu’un seul Extérieur en même temps avec cette méthode
+
+    mais il peut désormais lui poser une question supplémentaire par
+
+    appel tous les 4 niveaux d’occultiste possédés au-delà du 8ème (jusqu’à un
+
+    maximum de quatre questions au niveau 20), sans modifier le paiement
+
+    de la négociation. Les questions doivent toutes avoir un rapport les unes
+
+    avec les autres.
+
+
+    Au niveau 16, au lieu de poser des questions, l’occultiste peut
+
+    exiger de l’Extérieur qu’il délivre un message à une créature amicale
+
+    de sa connaissance. L’occultiste peut également exiger de l’Extérieur
+
+    qu’il remette à cette créature un objet dont le poids ne dépasse pas
+
+    250 grammes. L’une ou l’autre de ces exigences nécessite la réussite d’un
+
+    test opposé comme décrit plus haut. La livraison prend généralement
+
+    1d4 heures mais cette période est réduite à 1d6 minutes si le destinataire
+
+    se situe à 1,5 kilomètre ou moins de l’occultiste (et l’Extérieur prend
+
+    moins de temps encore si le destinataire est à portée de vue). L’occultiste
+
+    doit être capable de fournir le nom et une description physique
+
+    précise du destinataire. Cette aptitude ne peut pas être utilisée pour
+
+    livrer quelque chose à un endroit, ou à des ennemis ou des créatures
+
+    inamicales envers l’occultiste.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Appel_dExtérieur_Sur_11
+  
+- Nom: 'Pouvoir de focalisation #9'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 17
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Instruments 7
+  Classe: Occultiste
+  Source: AO
+  Niveau: 18
+  Auto: true
+  Description: "\nAu niveau 1, un occultiste apprend à utiliser deux écoles instrumentales.\
+    \ Au niveau 2 et tous les 4 niveaux d’occultiste par la suite, il apprend l’utilisation\
+    \ d’une école instrumentale supplémentaire, jusqu’à un maximum de sept écoles\
+    \ au niveau 18. \n\nChaque école  instrumentale permet d’ajouter un sort par niveau\
+    \ de sort à la liste des sorts de l'occultiste. Aucun des sorts issus des autres\
+    \ écoles n’est considéré comme faisant partie de la liste des sorts de l'occultiste\
+    \ tant que celui-ci n’a pas choisi l’école instrumentale. L’occultiste ne peut\
+    \ pas utiliser les objets magiques à potentiel magique et à fin d’incantation\
+    \ des écoles qu’il ne connaît pas, à moins qu’il ne réussisse un test d’Utilisation\
+    \ d’objets magiques approprié. Un occultiste peut choisir une école instrumentale\
+    \ plusieurs fois afin d’apprendre des sorts supplémentaires de cette école.\n\n\
+    Une courte liste d’objets représente chaque école instrumentale.\nChaque jour,\
+    \ l’occultiste choisit un objet de la liste de chaque école instrumentale qu’il\
+    \ connaît. Ces objets seront ses instruments pour la  journée. L’occultiste a\
+    \ besoin d’un seul de ces objets pour lancer les sorts de l’école correspondante.\
+    \ S’il a choisi plusieurs fois une même école instrumentale, il doit choisir un\
+    \ objet pour chaque ensemble de sorts conférés par cette école instrumentale.\
+    \ Les instruments ne sont pas nécessairement des objets magiques  et les instruments\
+    \ non magiques n’occupent aucun emplacement d’objet magique, même s’ils sont portés.\
+    \ Les instruments non magiques, tels que le doigt squelettique d’un saint, le\
+    \ sceptre brisé d’un roi mort depuis longtemps, le crâne du familier d’un mentor\
+    \ ou l’oeil de verre d’un mystérieux ancêtre, sont souvent importants pour l’occultiste\
+    \ d’un point de vue historique ou personnel.\n\nChaque fois qu’un occultiste lance\
+    \ un sort, il doit posséder l’instrument correspondant et le pointer vers la cible\
+    \ ou la zone d’effet du sort. Ce geste fait partie de l’incantation du sort et\
+    \ ne nécessite aucune action supplémentaire. Si l’occultiste ne possède pas l’instrument\
+    \ correspondant, il peut tout de même lancer le sort s’il réussit un test de concentration\
+    \ (DD = 20 + le niveau du sort). Les sorts lancés par un occultiste sans l’instrument\
+    \ approprié sont toujours considérés comme étant lancés au niveau de lanceur de\
+    \ sorts minimum (niveau de lanceur de sorts de 1 pour les sorts de niveau 1, niveau\
+    \ de lanceur de sorts de 4 pour les sorts de niveau 2, etc.).\n\nChaque école\
+    \ instrumentale confère également un pouvoir de focalisation de base. Ce pouvoir\
+    \ est ajouté à la liste de pouvoirs de focalisation possédés par l’occultiste\
+    \ (voir Focalisation mentale, plus bas). En outre, chaque école instrumentale\
+    \ propose un certain nombre de pouvoirs de focalisation supplémentaires que l’occultiste\
+    \ peut sélectionner en utilisant son aptitude de classe de focalisation mentale.\
+    \ \n\nVoir la section Écoles instrumentales, à partir de la page 49, pour obtenir\
+    \ la liste complète des instruments et des pouvoirs de focalisation qui leur sont\
+    \ associés.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Instruments_Sur_3
+  
+- Nom: 'Pouvoir de focalisation #10'
+  Classe: Occultiste
+  Source: AO
+  Niveau: 19
+  Auto: true
+  Description: "Au niveau 1, un occultiste apprend le pouvoir de focalisation de\
+    \ base conféré par chacune de ses deux écoles instrumentales (voir Instruments)\
+    \ et peut choisir un pouvoir de focalisation supplémentaire dans la liste de ceux\
+    \ qui lui sont disponibles grâce à ces écoles. Chaque fois que l’occultiste apprend\
+    \ une nouvelle école instrumentale, il obtient le pouvoir de base de cette école.\
+    \ \n\nDe plus, au niveau 3 et tous les 2 niveaux par la suite, il apprend un nouveau\
+    \ pouvoir de focalisation choisi parmi les options proposées par toutes les écoles\
+    \ instrumentales qu’il connaît. L’occultiste peut utiliser les pouvoirs de focalisation\
+    \ uniquement en dépensant de la focalisation mentale (voir Focalisation mentale).\
+    \ \n\nSauf indication contraire, le DD des jets de sauvegarde effectués pour résister\
+    \ aux pouvoirs de focalisation est égal à 10 + la moitié du niveau d’occultiste\
+    \ + le modificateur d’Intelligence de l’occultiste. \nL’occultiste ne peut pas\
+    \ choisir plusieurs fois le même pouvoir de focalisation. L’occultiste doit avoir\
+    \ atteint un niveau spécifique d’occultiste avant de pouvoir choisir certains\
+    \ pouvoirs de focalisation.\n\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Pouvoir_de_focalisation_Sur_2
+  
+- Nom: Appel d'Extérieur 4
+  Classe: Occultiste
+  Source: AO
+  Niveau: 20
+  Auto: true
+  Description: '
+
+    Au niveau 8, l’occultiste apprend le véritable
+
+    nom d’un Extérieur précis. Cet Extérieur ne peut pas avoir plus de
+
+    3 Dés de Vie. Chaque fois que l’occultiste crée un cercle magique, il
+
+    peut dépenser 1 point de focalisation mentale supplémentaire pour
+
+    diriger l’énergie du cercle vers l’intérieur afin d’obliger cet Extérieur à
+
+    y pénétrer (comme lorsqu’on utilise un sort de contrat). L’Extérieur reste
+
+    enfermé pendant un maximum de 10 minutes. Pendant cette période,
+
+    l’occultiste peut négocier une information avec lui. Cette négociation
+
+    nécessite un paiement d’au moins 20 po (ou un don d’objet d’une
+
+    valeur totale équivalente et susceptible d’intéresser l’Extérieur). Durant
+
+    cette négociation, l’occultiste doit effectuer un test de Diplomatie ou
+
+    d’Intimidation opposé au résultat du test de Psychologie de l’Extérieur.
+
+
+    Une réussite de 5 points ou plus à ce test réduit le paiement à 10 po.
+
+    Un échec l’augmente à 30 po, tandis qu’un échec de 5 points ou plus
+
+    permet à l’Extérieur de s’échapper en ne révélant aucune information
+
+    (et sans recevoir le paiement). L’information obtenue équivaut à celles
+
+    que l’on peut apprendre grâce à un sort de divination. Elle est toujours
+
+    correcte mais souvent énigmatique. L’Extérieur met généralement
+
+    1d3 heures pour obtenir l’information. Au terme de cette période, il
+
+    revient de lui-même pour la transmettre comme promis. L’Extérieur
+
+    n’apprécie jamais cette méthode de contrainte forcée, même si son
+
+    alignement est proche de celui de l’occultiste. Une fois l’échange conclu,
+
+    le cercle magique perd tout pouvoir et l’Extérieur retourne vers son plan
+
+    d’origine.
+
+
+    Au niveau 12 et tous les 4 niveaux par la suite, l’occultiste apprend
+
+    à appeler un Extérieur de plus, d’un type identique ou différent. Il ne
+
+    peut appeler qu’un seul Extérieur en même temps avec cette méthode
+
+    mais il peut désormais lui poser une question supplémentaire par
+
+    appel tous les 4 niveaux d’occultiste possédés au-delà du 8ème (jusqu’à un
+
+    maximum de quatre questions au niveau 20), sans modifier le paiement
+
+    de la négociation. Les questions doivent toutes avoir un rapport les unes
+
+    avec les autres.
+
+
+    Au niveau 16, au lieu de poser des questions, l’occultiste peut
+
+    exiger de l’Extérieur qu’il délivre un message à une créature amicale
+
+    de sa connaissance. L’occultiste peut également exiger de l’Extérieur
+
+    qu’il remette à cette créature un objet dont le poids ne dépasse pas
+
+    250 grammes. L’une ou l’autre de ces exigences nécessite la réussite d’un
+
+    test opposé comme décrit plus haut. La livraison prend généralement
+
+    1d4 heures mais cette période est réduite à 1d6 minutes si le destinataire
+
+    se situe à 1,5 kilomètre ou moins de l’occultiste (et l’Extérieur prend
+
+    moins de temps encore si le destinataire est à portée de vue). L’occultiste
+
+    doit être capable de fournir le nom et une description physique
+
+    précise du destinataire. Cette aptitude ne peut pas être utilisée pour
+
+    livrer quelque chose à un endroit, ou à des ennemis ou des créatures
+
+    inamicales envers l’occultiste.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Occultiste.ashx#Appel_dExtérieur_Sur_11
   
