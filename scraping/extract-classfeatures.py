@@ -28,13 +28,11 @@ with open("../data/classes.yml", 'r') as stream:
         exit(1)
 
 liste = []
-listeDescr = []
-listeNames = {}
 
 print("Extraction des aptitude...")
 
 def addClassFeature(name, link, level):
-    if name == "—":
+    if name == "—" or name == "-":
         return
     if "#" in link:
         link = "#" + link.split("#")[1]
@@ -64,6 +62,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
     descr = ""
 
     altLink = []
+    classfeature = None
     for s in section:
         if s.name == 'h3':
             if newObj:
@@ -86,18 +85,22 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
         else:
             descr += html2text(s)
     
+    if not classfeature:
+        return
+    
     ## last element
     classfeature['Description'] = descr
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
     listeDescr.append(classfeature)
     
     
-
-idx = 0
 for cl in classes:
-    idx+=1
-    if idx != 10:
-        continue
+
+    #if cl['Nom'] != "Rôdeur":
+    #    continue
+
+    listeDescr = []
+    listeNames = {}
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
 
@@ -169,13 +172,13 @@ for cl in classes:
         curHref = ""
         
         for c in tds[column].children:
-            if c.name == "a":
+            if c.name == "a" and len(curHref) == 0:
                 curHref = c['href']
             elif c.name is None and "," in c.string :
                 val = c.string.split(',')
                 curName += val[0]
                 addClassFeature(curName, curHref, level)
-                curName = ""
+                curName = val[1]
                 curHref = ""
                 continue
             elif c.name == "br":
@@ -189,7 +192,6 @@ for cl in classes:
     
     if MOCK_CF:
         break
-    break
 
 print("Fusion avec fichier YAML existant...")
 

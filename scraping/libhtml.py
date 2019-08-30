@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import urllib.parse
 import yaml
 import re
 
@@ -61,6 +62,8 @@ def findProperty(html, propName, removeEndDot = True):
 # cette fonction convertit un tableau en texte
 #
 def table2text(table):
+    if table is None:
+        return ""
     text = ""
     first = True
     for tr in table.find_all('tr'):
@@ -368,11 +371,12 @@ def cleanName(name):
 
 def cleanNameForMatch(name):
     name = cleanText(name)
-    m = re.search('(.*)\([a-zA-Z]+\)', name)
-    if m:
-        return m.group(1).strip()
-    else:
-        return name
+    #m = re.search('(.*)\([a-zA-Z]+\)', name)
+    #if m:
+    #    return m.group(1).strip()
+    #else:
+    #    return name
+    return name
 
 #
 # cette fonction extait une propriété (format BD type 2)
@@ -478,19 +482,25 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
             match = True
             # s'assurer que tous les champs correspondent
             for m in matchOn:
+                # hotfix (automatch)
+                #if urllib.parse.unquote(el['Référence']) == urllib.parse.unquote(elOrig['Référence']) and not 'first' in elOrig:
+                #    break
                 val1 = cleanNameForMatch(el[m]) if m in el else ""
                 val2 = cleanNameForMatch(elOrig[m]) if m in elOrig else ""
                 if val1 != val2:
                     match = False
                     break
             if match:
+                #print("Match found for %s with %s" % (el['Nom'], liste[idx]['Nom']))
                 liste[idx] = el
+                liste[idx]['first'] = True
                 found = True
                 break
             idx += 1
         
         if not found:
             print("Élément '%s' ajouté" % el['Nom'])
+            el['first'] = True
             liste.append(el)
     
     # préparer la liste finale (tri, retour de ligne, etc.)
@@ -500,6 +510,8 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
         
         # change field keys to apply sorting
         for k in el.keys():
+            if k == 'first':
+                continue
             if k in FIELDS.keys():
                 newEl[FIELDS[k]]=el[k]
             else:
