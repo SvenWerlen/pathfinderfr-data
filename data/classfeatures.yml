@@ -44272,7 +44272,7 @@
     \ animal est décédé).\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur.ashx#Maître_chasseur_Ext_21
   
-- Nom: Inspiration suprême (Ext)
+- Nom: Inspiration suprême
   Classe: Enquêteur
   Source: MCA
   Niveau: 20
@@ -50327,7 +50327,7 @@
     \ boucliers.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Armes_et_armures_0
   
-- Nom: Alchimie (Sur)
+- Nom: Alchimie
   Classe: Enquêteur
   Source: MCA
   Niveau: 1
@@ -50385,7 +50385,7 @@
     \ les recopier.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Alchimie_Sur_1
   
-- Nom: Inspiration (Ext)
+- Nom: Inspiration
   Classe: Enquêteur
   Source: MCA
   Niveau: 1
@@ -50420,7 +50420,7 @@
     \ Sabotage pour désarmer des pièges magiques. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Recherche_des_pièges_3
   
-- Nom: Connaissance des poisons (Ext)
+- Nom: Connaissance des poisons
   Classe: Enquêteur
   Source: MCA
   Niveau: 2
@@ -50441,7 +50441,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Connaissance_des_poisons_Ext_4
   
-- Nom: Résistance au poison (Ext)
+- Nom: Résistance aux poisons +2
   Classe: Enquêteur
   Source: MCA
   Niveau: 2
@@ -50455,7 +50455,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Résistance_au_poison_Ext_5
   
-- Nom: Talents d’enquêteur (Ext ou Sur)
+- Nom: Talent d’enquêteur
   Classe: Enquêteur
   Source: MCA
   Niveau: 3
@@ -50485,7 +50485,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Souvenir_précis_7
   
-- Nom: Sens des pièges (Ext)
+- Nom: Sens des pièges +1
   Classe: Enquêteur
   Source: MCA
   Niveau: 3
@@ -50503,10 +50503,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
   
-- Nom: Combat étudié (Ext)
+- Nom: Combat étudié
   Classe: Enquêteur
   Source: MCA
-  Niveau: 1
+  Niveau: 4
   Auto: true
   Description: "Grâce à son oeil perçant et son esprit calculateur, l’enquêteur\
     \ jauge son adversaire pour tirer parti des lacunes de son entraînement et de\
@@ -50525,7 +50525,7 @@
     \ action de mouvement pour la réutiliser.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Combat_étudié_Ext_9
   
-- Nom: Frappe étudiée (Ext)
+- Nom: Frappe étudiée +1d6
   Classe: Enquêteur
   Source: MCA
   Niveau: 4
@@ -50548,7 +50548,7 @@
     \ contre une cible disposant d’un camouflage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
   
-- Nom: Alchimie rapide (Ext)
+- Nom: Alchimie rapide
   Classe: Enquêteur
   Source: MCA
   Niveau: 4
@@ -66881,4 +66881,456 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur.ashx#Tours_supplémentaires_Ext_14
+  
+- Nom: 'Talent d’enquêteur #2'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 5
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Résistance aux poisons +4
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 5
+  Auto: true
+  Description: 'Au niveau 2, l’enquêteur gagne un bonus de résistance de +2 aux
+    jets de sauvegarde contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au
+    niveau 8. Au niveau 11, l’enquêteur est complètement immunisé contre le poison.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Résistance_au_poison_Ext_5
+  
+- Nom: Frappe étudiée +2d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: Sens des pièges +2
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: 'Au niveau 3, l’intuition de l’enquêteur l’avertit en présence de
+    piège, ce qui lui confère un bonus de +1 aux jets de Réflexes pour éviter les
+    pièges et un bonus d’esquive de +1 à la CA contre les attaques des pièges. Au
+    niveau 6 puis
+
+    tous les trois niveaux, ces bonus augmentent de 1 (pour un maximum de +6 au niveau
+    18).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
+  
+- Nom: 'Talent d’enquêteur #3'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 7
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Résistance aux poisons +6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 2, l’enquêteur gagne un bonus de résistance de +2 aux
+    jets de sauvegarde contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au
+    niveau 8. Au niveau 11, l’enquêteur est complètement immunisé contre le poison.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Résistance_au_poison_Ext_5
+  
+- Nom: Frappe étudiée +3d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: 'Talent d’enquêteur #4'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Sens des pièges +3
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 3, l’intuition de l’enquêteur l’avertit en présence de
+    piège, ce qui lui confère un bonus de +1 aux jets de Réflexes pour éviter les
+    pièges et un bonus d’esquive de +1 à la CA contre les attaques des pièges. Au
+    niveau 6 puis
+
+    tous les trois niveaux, ces bonus augmentent de 1 (pour un maximum de +6 au niveau
+    18).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
+  
+- Nom: Frappe étudiée +4d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: 'Talent d’enquêteur #5'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Immunité aux poisons
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: 'Au niveau 2, l’enquêteur gagne un bonus de résistance de +2 aux
+    jets de sauvegarde contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au
+    niveau 8. Au niveau 11, l’enquêteur est complètement immunisé contre le poison.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Résistance_au_poison_Ext_5
+  
+- Nom: Frappe étudiée +5d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: Sens des pièges +4
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 3, l’intuition de l’enquêteur l’avertit en présence de
+    piège, ce qui lui confère un bonus de +1 aux jets de Réflexes pour éviter les
+    pièges et un bonus d’esquive de +1 à la CA contre les attaques des pièges. Au
+    niveau 6 puis
+
+    tous les trois niveaux, ces bonus augmentent de 1 (pour un maximum de +6 au niveau
+    18).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
+  
+- Nom: 'Talent d’enquêteur #6'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 13
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Frappe étudiée +6d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: 'Talent d’enquêteur #7'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Sens des pièges +5
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3, l’intuition de l’enquêteur l’avertit en présence de
+    piège, ce qui lui confère un bonus de +1 aux jets de Réflexes pour éviter les
+    pièges et un bonus d’esquive de +1 à la CA contre les attaques des pièges. Au
+    niveau 6 puis
+
+    tous les trois niveaux, ces bonus augmentent de 1 (pour un maximum de +6 au niveau
+    18).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
+  
+- Nom: Frappe étudiée +7d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: 'Talent d’enquêteur #8'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Frappe étudiée +8d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: Sens des pièges +6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 3, l’intuition de l’enquêteur l’avertit en présence de
+    piège, ce qui lui confère un bonus de +1 aux jets de Réflexes pour éviter les
+    pièges et un bonus d’esquive de +1 à la CA contre les attaques des pièges. Au
+    niveau 6 puis
+
+    tous les trois niveaux, ces bonus augmentent de 1 (pour un maximum de +6 au niveau
+    18).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Sens_des_pièges_Ext_8
+  
+- Nom: 'Talent d’enquêteur #9'
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: 'Au niveau 3 puis tous les deux niveaux, le personnage gagne un talent
+    d’enquêteur. Il ne peut pas choisir un même talent plusieurs fois, sauf indication
+    contraire.
+
+
+    Voir les talents d''enquêteur
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Talents_d’enquêteur_Ext_ou_Sur_6
+  
+- Nom: Frappe étudiée +9d6
+  Classe: Enquêteur
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "Au niveau 4, l’enquêteur peut porter une frappe étudiée contre la\
+    \ cible de son combat étudié par une action libre, quand il réussit à toucher\
+    \ cette cible lors d’une attaque de corps à corps. Il lui inflige alors des dégâts\
+    \ supplémentaires : 1d6 de plus au niveau 4 et encore 1d6 de plus tous les deux\
+    \ niveaux, pour un maximum de 9d6 au niveau 20. \n\nLes dégâts de la frappe étudiée\
+    \ sont des dégâts de précision non multipliés en cas de coup critique. \n\nLes\
+    \ créatures immunisées contre les attaques sournoises sont aussi immunisées contre\
+    \ la frappe étudiée.\n\nSi l’enquêteur attaque avec une arme qui inflige des dégâts\
+    \ non-létaux (comme une matraque, un fouet ou à mains nues), il peut convertir\
+    \ les dégâts supplémentaires de la frappe étudiée en dégâts non-létaux au lieu\
+    \ de létaux. Si l’enquêteur porte une attaque avec une arme létale mais choisit\
+    \ d’infliger des dégâts non-létaux (avec le malus habituel de –4), les dégâts\
+    \ de la frappe étudiée peuvent aussi être de type non-létaux. \n\nL’enquêteur\
+    \ doit voir la cible assez clairement pour repérer un point vital et il doit être\
+    \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
+    \ contre une cible disposant d’un camouflage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
   
