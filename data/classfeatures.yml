@@ -44374,7 +44374,7 @@
     \ souterraine) et Escalade à la liste de ses compétences de classe.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cin%c3%a9tiste.ashx#Terre_21
   
-- Nom: Suprématie mentale (Sur)
+- Nom: Suprématie mentale
   Classe: Hypnotiseur
   Source: AO
   Niveau: 20
@@ -52477,7 +52477,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Menteur_accompli_2
   
-- Nom: Regard hypnotique (Sur)
+- Nom: Regard hypnotique
   Classe: Hypnotiseur
   Source: AO
   Niveau: 1
@@ -52508,7 +52508,7 @@
 - Nom: Astuces
   Classe: Hypnotiseur
   Source: AO
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: "Les hypnotiseurs apprennent un certain nombre d’astuces, ou sorts\
     \ de niveau 0, comme indiqué dans la table ci-contre. Ces sorts se lancent normalement\
@@ -52518,7 +52518,7 @@
     \ ces emplacements comme à l’accoutumée.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Astuces_4
   
-- Nom: Inductions d’hypnotiseur (Sur)
+- Nom: Induction d’hypnotiseur
   Classe: Hypnotiseur
   Source: AO
   Niveau: 1
@@ -52557,7 +52557,7 @@
     \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
   
-- Nom: Regard douloureux (Sur)
+- Nom: Regard douloureux
   Classe: Hypnotiseur
   Source: AO
   Niveau: 1
@@ -52579,7 +52579,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_douloureux_Sur_6
   
-- Nom: Ego imposant (Sur)
+- Nom: Ego imposant
   Classe: Hypnotiseur
   Source: AO
   Niveau: 2
@@ -52594,7 +52594,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Ego_imposant_Sur_7
   
-- Nom: Regard impudent (Sur)
+- Nom: Regard impudent
   Classe: Hypnotiseur
   Source: AO
   Niveau: 3
@@ -52643,7 +52643,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_impudent_Sur_8
   
-- Nom: Palpation curative (Sur)
+- Nom: Palpation curative (mineure)
   Classe: Hypnotiseur
   Source: AO
   Niveau: 3
@@ -52669,7 +52669,7 @@
     \ les autres restrictions de la palpation curative.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Palpation_curative_Sur_9
   
-- Nom: Inductions multiples (Sur)
+- Nom: Inductions multiples (2)
   Classe: Hypnotiseur
   Source: AO
   Niveau: 5
@@ -52688,7 +52688,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_multiples_Sur_10
   
-- Nom: Puissance mentale (Ext)
+- Nom: Puissance mentale
   Classe: Hypnotiseur
   Source: AO
   Niveau: 5
@@ -52708,7 +52708,7 @@
     \ 20.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Puissance_mentale_Ext_11
   
-- Nom: Mensonge désinvolte (Sur)
+- Nom: Mensonge désinvolte
   Classe: Hypnotiseur
   Source: AO
   Niveau: 11
@@ -52726,7 +52726,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Mensonge_désinvolte_Sur_12
   
-- Nom: Inductions de maître hypnotiseur (Sur)
+- Nom: Inductions de maître hypnotiseur
   Classe: Hypnotiseur
   Source: AO
   Niveau: 12
@@ -71149,4 +71149,753 @@
     \ Il ne peut pas remplacer un talent sauvage qui satisfait les conditions d’obtention\
     \ d’un ou plusieurs de ses autres talents sauvages.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cin%c3%a9tiste.ashx#Talents_sauvages_2
+  
+- Nom: 'Induction d’hypnotiseur #2'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 2
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: 'Induction d’hypnotiseur #3'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 4
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: 'Induction d’hypnotiseur #4'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 6
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Palpation curative (modérée)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 3, l’hypnotiseur peut aider ses alliés en soignant les\
+    \ états préjudiciables dont ils sont affublés, surtout ceux qui affectent l’esprit,\
+    \ en canalisant de l’énergie psychique et curative dans ses mains. Il peut utiliser\
+    \ la palpation curative un nombre de fois par jour égal à 3 + son modificateur\
+    \ de Charisme. Il lui faut accomplir une action simple pour utiliser cette aptitude\
+    \ (ou une action rapide si l’hypnotiseur l’utilise sur lui-même) et l’hypnotiseur\
+    \ doit pouvoir toucher sa cible. Il peut supprimer un état préjudiciable dont\
+    \ est affublée sa cible chaque fois qu’il utilise cette aptitude. \n\nAu niveau\
+    \ 3, il peut soigner un des états indiqués dans la liste des états préjudiciables\
+    \ mineurs. \n\nAu niveau 6, il peut soigner un des états indiqués dans la liste\
+    \ des états préjudiciables mineurs et modérés. \n\nAu niveau 10, il peut soigner\
+    \ un des états indiqués dans la liste des états préjudiciables mineurs, modérés\
+    \ et critiques.\n\n• États préjudiciables mineurs : fasciné, secoué.\n• États\
+    \ préjudiciables modérés : confus, effrayé, fiévreux, hébété.\n• États préjudiciables\
+    \ critiques : étourdi, nauséeux, paniqué, recroquevillé sur soi-même.\n\nAu niveau\
+    \ 14, l’hypnotiseur peut dépenser, à la place, une utilisation de la palpation\
+    \ curative pour produire les effets d’une annulation d’enchantement. Ceci permet\
+    \ de cibler une seule créature touchée par l’hypnotiseur en respectant toutes\
+    \ les autres restrictions de la palpation curative.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Palpation_curative_Sur_9
+  
+- Nom: 'Regard impudent #2'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 7
+  Auto: true
+  Description: 'Au niveau 3 et tous les 4 niveaux par la suite, le regard hypnotique
+    de l’hypnotiseur produit plus d’effet sur la créature ciblée. L’hypnotiseur choisit
+    une des options suivantes chaque fois qu’il acquiert une nouvelle amélioration
+    de regard impudent. Ce choix est définitif. Sauf indication contraire, l’hypnotiseur
+    ne peut pas choisir plusieurs fois la même amélioration. Toutes les améliorations
+    de regard impudent affectent la cible tant que celle-ci est également affectée
+    par le regard hypnotique de l’hypnotiseur.
+
+
+    • Charme. Le malus du regard hypnotique s’applique également aux tests d’initiative
+    et de Perception.
+
+    • Désorientation. Le malus du regard hypnotique s’applique également aux jets
+    d’attaque.
+
+    • Frémissement psychique. Le regard hypnotique et le malus associé peuvent affecter
+    les créatures dénuées d’intelligence ou immunisées aux effets mentaux (comme les
+    morts-vivants ou la vermine). L’hypnotiseur peut également affecter, quoique partiellement,
+    une créature de ce type avec ses sorts et ses pouvoirs mentaux à condition qu’elle
+    soit sous l’effet de son regard hypnotique. Elle bénéficie tout de même d’un bonus
+    de +2 à son jet de sauvegarde (le cas échéant) et, si elle est affectée, elle
+    a 50 % de chances chaque round d’ignorer l’effet. Ignorer l’effet de cette façon
+    ne met pas fin à cet effet mais permet simplement à la créature d’agir normalement
+    pendant le round en cours.
+
+    • Indolence. La cible du regard hypnotique voit sa vitesse de déplacement réduite
+    de 1,50 mètre (jusqu’à un minimum de 1,50 mètre) et le malus du regard hypnotique
+    s’applique également à ses jets de Réflexes.
+
+    • Magie affaiblie. Le malus du regard hypnotique s’applique également aux DD des
+    sorts et des pouvoirs magiques utilisés par la cible, ainsi qu’à son éventuelle
+    résistance à la magie.
+
+    • Susceptibilité. Le malus du regard hypnotique s’applique également aux tests
+    de Psychologie de la cible lorsqu’ils sont opposés aux tests de Bluff, ainsi qu’aux
+    DD des tests de Diplomatie et d’Intimidation effectués contre la cible.
+
+    • Timidité. Le malus du regard hypnotique s’applique également aux jets de dégâts.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_impudent_Sur_8
+  
+- Nom: 'Induction d’hypnotiseur #5'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 8
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Regard hypnotique (-3)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 8
+  Auto: true
+  Description: "Par une action rapide, un hypnotiseur peut river son regard sur\
+    \ une créature située à 9 mètres (6 c) ou moins. Cette créature subit un malus\
+    \ de -2 aux jets de Volonté. Ce malus passe à -3 au niveau 8. Un hypnotiseur peut\
+    \ fixer du regard une seule créature à la fois et les effets persistent jusqu’à\
+    \ ce qu’il décide de river son regard sur une autre créature, si la créature ciblée\
+    \ meurt, si elle s’éloigne à plus de 9 mètres de l’hypnotiseur ou si ce dernier\
+    \ meurt ou tombe inconscient. \n\nL’hypnotiseur peut effacer de l’esprit de la\
+    \ cible le souvenir de son regard ; la créature ne se souvient pas du moment où\
+    \ le regard l’a affectée (elle n’a pas plus conscience qu’elle est actuellement\
+    \ sous son emprise) à moins que l’hypnotiseur ne l’y autorise. Le regard hypnotique\
+    \ produit un effet psychique qui repose plus sur la concentration de l’hypnotiseur\
+    \ que sur la perception de son regard par la cible. Il est donc impossible de\
+    \ l’éviter en appliquant les mêmes méthodes que celles appliquées pour éviter\
+    \ une attaque de regard. \n\nL’hypnotiseur peut utiliser cette aptitude même aveuglé\
+    \ mais, le cas échéant, il doit réussir un test de concentration contre un DD\
+    \ 20. River son regard sur une créature nécessite une certaine concentration et,\
+    \ s’il utilise une attaque de regard ou un pouvoir similaire, il doit cibler la\
+    \ créature qu’il fixe du regard. Dans le cas contraire, il met volontairement\
+    \ fin au regard hypnotique. Les malus infligés par les regards de plusieurs hypnotiseurs\
+    \ ou les maléfices de mauvais oeil des sorcières ne se cumulent pas. C’est un\
+    \ effet mental.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_hypnotique_Sur_3
+  
+- Nom: Inductions multiples (3)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 5, l’hypnotiseur peut maintenir deux inductions implantées
+    en même temps. Ce nombre d’inductions implantées augmente de 1 tous les 4 niveaux
+    d’hypnotiseur possédés au-delà du cinquième. Comme pour l’induction d’hypnotiseur,
+    chaque créature ne peut être le sujet que d’une induction à la fois. Si l’hypnotiseur
+    implante une nouvelle induction alors qu’il maintient déjà son nombre maximum
+    d’inductions implantées, il doit choisir celle qu’il annule sans la déclencher
+    (l’induction annulée dépense tout de même une utilisation quotidienne des inductions
+    d’hypnotiseur).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_multiples_Sur_10
+  
+- Nom: 'Induction d’hypnotiseur #6'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 10
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Palpation curative (critique)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 3, l’hypnotiseur peut aider ses alliés en soignant les\
+    \ états préjudiciables dont ils sont affublés, surtout ceux qui affectent l’esprit,\
+    \ en canalisant de l’énergie psychique et curative dans ses mains. Il peut utiliser\
+    \ la palpation curative un nombre de fois par jour égal à 3 + son modificateur\
+    \ de Charisme. Il lui faut accomplir une action simple pour utiliser cette aptitude\
+    \ (ou une action rapide si l’hypnotiseur l’utilise sur lui-même) et l’hypnotiseur\
+    \ doit pouvoir toucher sa cible. Il peut supprimer un état préjudiciable dont\
+    \ est affublée sa cible chaque fois qu’il utilise cette aptitude. \n\nAu niveau\
+    \ 3, il peut soigner un des états indiqués dans la liste des états préjudiciables\
+    \ mineurs. \n\nAu niveau 6, il peut soigner un des états indiqués dans la liste\
+    \ des états préjudiciables mineurs et modérés. \n\nAu niveau 10, il peut soigner\
+    \ un des états indiqués dans la liste des états préjudiciables mineurs, modérés\
+    \ et critiques.\n\n• États préjudiciables mineurs : fasciné, secoué.\n• États\
+    \ préjudiciables modérés : confus, effrayé, fiévreux, hébété.\n• États préjudiciables\
+    \ critiques : étourdi, nauséeux, paniqué, recroquevillé sur soi-même.\n\nAu niveau\
+    \ 14, l’hypnotiseur peut dépenser, à la place, une utilisation de la palpation\
+    \ curative pour produire les effets d’une annulation d’enchantement. Ceci permet\
+    \ de cibler une seule créature touchée par l’hypnotiseur en respectant toutes\
+    \ les autres restrictions de la palpation curative.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Palpation_curative_Sur_9
+  
+- Nom: 'Regard impudent #3'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 11
+  Auto: true
+  Description: 'Au niveau 3 et tous les 4 niveaux par la suite, le regard hypnotique
+    de l’hypnotiseur produit plus d’effet sur la créature ciblée. L’hypnotiseur choisit
+    une des options suivantes chaque fois qu’il acquiert une nouvelle amélioration
+    de regard impudent. Ce choix est définitif. Sauf indication contraire, l’hypnotiseur
+    ne peut pas choisir plusieurs fois la même amélioration. Toutes les améliorations
+    de regard impudent affectent la cible tant que celle-ci est également affectée
+    par le regard hypnotique de l’hypnotiseur.
+
+
+    • Charme. Le malus du regard hypnotique s’applique également aux tests d’initiative
+    et de Perception.
+
+    • Désorientation. Le malus du regard hypnotique s’applique également aux jets
+    d’attaque.
+
+    • Frémissement psychique. Le regard hypnotique et le malus associé peuvent affecter
+    les créatures dénuées d’intelligence ou immunisées aux effets mentaux (comme les
+    morts-vivants ou la vermine). L’hypnotiseur peut également affecter, quoique partiellement,
+    une créature de ce type avec ses sorts et ses pouvoirs mentaux à condition qu’elle
+    soit sous l’effet de son regard hypnotique. Elle bénéficie tout de même d’un bonus
+    de +2 à son jet de sauvegarde (le cas échéant) et, si elle est affectée, elle
+    a 50 % de chances chaque round d’ignorer l’effet. Ignorer l’effet de cette façon
+    ne met pas fin à cet effet mais permet simplement à la créature d’agir normalement
+    pendant le round en cours.
+
+    • Indolence. La cible du regard hypnotique voit sa vitesse de déplacement réduite
+    de 1,50 mètre (jusqu’à un minimum de 1,50 mètre) et le malus du regard hypnotique
+    s’applique également à ses jets de Réflexes.
+
+    • Magie affaiblie. Le malus du regard hypnotique s’applique également aux DD des
+    sorts et des pouvoirs magiques utilisés par la cible, ainsi qu’à son éventuelle
+    résistance à la magie.
+
+    • Susceptibilité. Le malus du regard hypnotique s’applique également aux tests
+    de Psychologie de la cible lorsqu’ils sont opposés aux tests de Bluff, ainsi qu’aux
+    DD des tests de Diplomatie et d’Intimidation effectués contre la cible.
+
+    • Timidité. Le malus du regard hypnotique s’applique également aux jets de dégâts.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_impudent_Sur_8
+  
+- Nom: 'Induction d’hypnotiseur #7'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 12
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Inductions multiples (4)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 13
+  Auto: true
+  Description: 'Au niveau 5, l’hypnotiseur peut maintenir deux inductions implantées
+    en même temps. Ce nombre d’inductions implantées augmente de 1 tous les 4 niveaux
+    d’hypnotiseur possédés au-delà du cinquième. Comme pour l’induction d’hypnotiseur,
+    chaque créature ne peut être le sujet que d’une induction à la fois. Si l’hypnotiseur
+    implante une nouvelle induction alors qu’il maintient déjà son nombre maximum
+    d’inductions implantées, il doit choisir celle qu’il annule sans la déclencher
+    (l’induction annulée dépense tout de même une utilisation quotidienne des inductions
+    d’hypnotiseur).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_multiples_Sur_10
+  
+- Nom: 'Induction d’hypnotiseur #8'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 14
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Palpation curative (annulation d’enchantement)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 3, l’hypnotiseur peut aider ses alliés en soignant les\
+    \ états préjudiciables dont ils sont affublés, surtout ceux qui affectent l’esprit,\
+    \ en canalisant de l’énergie psychique et curative dans ses mains. Il peut utiliser\
+    \ la palpation curative un nombre de fois par jour égal à 3 + son modificateur\
+    \ de Charisme. Il lui faut accomplir une action simple pour utiliser cette aptitude\
+    \ (ou une action rapide si l’hypnotiseur l’utilise sur lui-même) et l’hypnotiseur\
+    \ doit pouvoir toucher sa cible. Il peut supprimer un état préjudiciable dont\
+    \ est affublée sa cible chaque fois qu’il utilise cette aptitude. \n\nAu niveau\
+    \ 3, il peut soigner un des états indiqués dans la liste des états préjudiciables\
+    \ mineurs. \n\nAu niveau 6, il peut soigner un des états indiqués dans la liste\
+    \ des états préjudiciables mineurs et modérés. \n\nAu niveau 10, il peut soigner\
+    \ un des états indiqués dans la liste des états préjudiciables mineurs, modérés\
+    \ et critiques.\n\n• États préjudiciables mineurs : fasciné, secoué.\n• États\
+    \ préjudiciables modérés : confus, effrayé, fiévreux, hébété.\n• États préjudiciables\
+    \ critiques : étourdi, nauséeux, paniqué, recroquevillé sur soi-même.\n\nAu niveau\
+    \ 14, l’hypnotiseur peut dépenser, à la place, une utilisation de la palpation\
+    \ curative pour produire les effets d’une annulation d’enchantement. Ceci permet\
+    \ de cibler une seule créature touchée par l’hypnotiseur en respectant toutes\
+    \ les autres restrictions de la palpation curative.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Palpation_curative_Sur_9
+  
+- Nom: 'Regard impudent #4'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3 et tous les 4 niveaux par la suite, le regard hypnotique
+    de l’hypnotiseur produit plus d’effet sur la créature ciblée. L’hypnotiseur choisit
+    une des options suivantes chaque fois qu’il acquiert une nouvelle amélioration
+    de regard impudent. Ce choix est définitif. Sauf indication contraire, l’hypnotiseur
+    ne peut pas choisir plusieurs fois la même amélioration. Toutes les améliorations
+    de regard impudent affectent la cible tant que celle-ci est également affectée
+    par le regard hypnotique de l’hypnotiseur.
+
+
+    • Charme. Le malus du regard hypnotique s’applique également aux tests d’initiative
+    et de Perception.
+
+    • Désorientation. Le malus du regard hypnotique s’applique également aux jets
+    d’attaque.
+
+    • Frémissement psychique. Le regard hypnotique et le malus associé peuvent affecter
+    les créatures dénuées d’intelligence ou immunisées aux effets mentaux (comme les
+    morts-vivants ou la vermine). L’hypnotiseur peut également affecter, quoique partiellement,
+    une créature de ce type avec ses sorts et ses pouvoirs mentaux à condition qu’elle
+    soit sous l’effet de son regard hypnotique. Elle bénéficie tout de même d’un bonus
+    de +2 à son jet de sauvegarde (le cas échéant) et, si elle est affectée, elle
+    a 50 % de chances chaque round d’ignorer l’effet. Ignorer l’effet de cette façon
+    ne met pas fin à cet effet mais permet simplement à la créature d’agir normalement
+    pendant le round en cours.
+
+    • Indolence. La cible du regard hypnotique voit sa vitesse de déplacement réduite
+    de 1,50 mètre (jusqu’à un minimum de 1,50 mètre) et le malus du regard hypnotique
+    s’applique également à ses jets de Réflexes.
+
+    • Magie affaiblie. Le malus du regard hypnotique s’applique également aux DD des
+    sorts et des pouvoirs magiques utilisés par la cible, ainsi qu’à son éventuelle
+    résistance à la magie.
+
+    • Susceptibilité. Le malus du regard hypnotique s’applique également aux tests
+    de Psychologie de la cible lorsqu’ils sont opposés aux tests de Bluff, ainsi qu’aux
+    DD des tests de Diplomatie et d’Intimidation effectués contre la cible.
+
+    • Timidité. Le malus du regard hypnotique s’applique également aux jets de dégâts.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_impudent_Sur_8
+  
+- Nom: 'Induction d’hypnotiseur #9'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 16
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: Inductions multiples (5)
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 17
+  Auto: true
+  Description: 'Au niveau 5, l’hypnotiseur peut maintenir deux inductions implantées
+    en même temps. Ce nombre d’inductions implantées augmente de 1 tous les 4 niveaux
+    d’hypnotiseur possédés au-delà du cinquième. Comme pour l’induction d’hypnotiseur,
+    chaque créature ne peut être le sujet que d’une induction à la fois. Si l’hypnotiseur
+    implante une nouvelle induction alors qu’il maintient déjà son nombre maximum
+    d’inductions implantées, il doit choisir celle qu’il annule sans la déclencher
+    (l’induction annulée dépense tout de même une utilisation quotidienne des inductions
+    d’hypnotiseur).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_multiples_Sur_10
+  
+- Nom: 'Induction d’hypnotiseur #10'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 18
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
+  
+- Nom: 'Regard impudent #5'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 19
+  Auto: true
+  Description: 'Au niveau 3 et tous les 4 niveaux par la suite, le regard hypnotique
+    de l’hypnotiseur produit plus d’effet sur la créature ciblée. L’hypnotiseur choisit
+    une des options suivantes chaque fois qu’il acquiert une nouvelle amélioration
+    de regard impudent. Ce choix est définitif. Sauf indication contraire, l’hypnotiseur
+    ne peut pas choisir plusieurs fois la même amélioration. Toutes les améliorations
+    de regard impudent affectent la cible tant que celle-ci est également affectée
+    par le regard hypnotique de l’hypnotiseur.
+
+
+    • Charme. Le malus du regard hypnotique s’applique également aux tests d’initiative
+    et de Perception.
+
+    • Désorientation. Le malus du regard hypnotique s’applique également aux jets
+    d’attaque.
+
+    • Frémissement psychique. Le regard hypnotique et le malus associé peuvent affecter
+    les créatures dénuées d’intelligence ou immunisées aux effets mentaux (comme les
+    morts-vivants ou la vermine). L’hypnotiseur peut également affecter, quoique partiellement,
+    une créature de ce type avec ses sorts et ses pouvoirs mentaux à condition qu’elle
+    soit sous l’effet de son regard hypnotique. Elle bénéficie tout de même d’un bonus
+    de +2 à son jet de sauvegarde (le cas échéant) et, si elle est affectée, elle
+    a 50 % de chances chaque round d’ignorer l’effet. Ignorer l’effet de cette façon
+    ne met pas fin à cet effet mais permet simplement à la créature d’agir normalement
+    pendant le round en cours.
+
+    • Indolence. La cible du regard hypnotique voit sa vitesse de déplacement réduite
+    de 1,50 mètre (jusqu’à un minimum de 1,50 mètre) et le malus du regard hypnotique
+    s’applique également à ses jets de Réflexes.
+
+    • Magie affaiblie. Le malus du regard hypnotique s’applique également aux DD des
+    sorts et des pouvoirs magiques utilisés par la cible, ainsi qu’à son éventuelle
+    résistance à la magie.
+
+    • Susceptibilité. Le malus du regard hypnotique s’applique également aux tests
+    de Psychologie de la cible lorsqu’ils sont opposés aux tests de Bluff, ainsi qu’aux
+    DD des tests de Diplomatie et d’Intimidation effectués contre la cible.
+
+    • Timidité. Le malus du regard hypnotique s’applique également aux jets de dégâts.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Regard_impudent_Sur_8
+  
+- Nom: 'Induction d’hypnotiseur #11'
+  Classe: Hypnotiseur
+  Source: AO
+  Niveau: 20
+  Auto: true
+  Description: "Un hypnotiseur peut créer des liaisons hypnotiques vers ses alliés\
+    \ en implantant dans leur esprit des suggestions magiques qu’il peut activer ultérieurement.\
+    \ Chaque jour, il peut implanter un nombre d’inductions égal à la moitié de son\
+    \ niveau d’hypnotiseur (1 au minimum) plus son éventuel bonus de Charisme. Il\
+    \ ne peut maintenir qu’une seule induction implantée à la fois et l’implantation\
+    \ d’une nouvelle induction met fin à la précédente (l’hypnotiseur perd quand même\
+    \ l’utilisation de cette aptitude dépensée pour implanter l’induction précédente).\n\
+    \ \nL’hypnotiseur doit effectuer une action simple pour implanter une induction\
+    \ et soit toucher une créature consentante, soit l’implanter en lui-même. Une\
+    \ créature peut être le sujet d’une seule induction d’hypnotiseur en même temps.\n\
+    \nL’hypnotiseur peut activer l’induction par une action libre quand les conditions\
+    \ de déclenchement sont remplies (telles qu’elles sont définies dans la description\
+    \ de chaque induction) et ce, même en dehors de son tour. Le sujet doit être situé\
+    \ à une portée moyenne (30 mètres + 3 mètres par niveau) pour que l’hypnotiseur\
+    \ puisse la déclencher. \n\nL’hypnotiseur surveille les possibilités de déclenchement\
+    \ de l’induction par le biais d’une discrète liaison télépathique et n’a donc\
+    \ pas besoin d’avoir une ligne de mire sur son sujet. Toutefois, tout ce qui bloque\
+    \ la liaison télépathique l’empêche de déclencher ses inductions. Une induction\
+    \ implantée le reste jusqu’au prochain moment où l’hypnotiseur récupérera ses\
+    \ sorts.\n\n\nUne induction n’est plus implantée une fois déclenchée. Elle ne\
+    \ peut donc pas être déclenchée une deuxième fois tant que l’hypnotiseur ne l’a\
+    \ pas implantée à nouveau. La durée de l’effet produit par une induction déclenchée\
+    \ est soit instantanée soit indiquée dans sa description.\n\nLe DD pour résister\
+    \ à une induction d’hypnotiseur ou de maître hypnotiseur qui nécessite un jet\
+    \ de sauvegarde ou un test de compétence est égal à 10 + la moitié du niveau d’hypnotiseur\
+    \ + le modificateur de Charisme de l’hypnotiseur.\n\n\nL’hypnotiseur connaît une\
+    \ induction au niveau 1. Il en apprend une nouvelle au niveau 2 puis tous les\
+    \ 2 niveaux par la suite (jusqu’à un maximum de 11 inductions au niveau 20).\n\
+    \nChaque utilisation quotidienne des inductions d’hypnotiseur peut être utilisée\
+    \ pour implanter une des inductions que le personnage connaît. Sauf indication\
+    \ clairement spécifiée dans la description, un hypnotiseur ne peut pas choisir\
+    \ plusieurs fois une même induction.\n\n\nVoir la liste des inductions\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypnotiseur.ashx#Inductions_d’hypnotiseur_Sur_5
   
