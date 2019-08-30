@@ -44288,7 +44288,7 @@
     \ et conserve le meilleur résultat.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Inspiration_suprême_Ext_12
   
-- Nom: Science du coup fabuleux (Ext)
+- Nom: Science du coup fabuleux
   Classe: Lutteur
   Source: MCA
   Niveau: 20
@@ -50577,7 +50577,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Armes_et_armures_0
   
-- Nom: Entraînement martial (Ext)
+- Nom: Entrainement martial
   Classe: Lutteur
   Source: MCA
   Niveau: 1
@@ -50592,7 +50592,7 @@
     \ étourdissant.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Entraînement_martial_Ext_1
   
-- Nom: Flexibilité martiale (Ext)
+- Nom: Flexibilité martiale
   Classe: Lutteur
   Source: MCA
   Niveau: 1
@@ -50648,7 +50648,7 @@
     \n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Combat_à_mains_nues_3
   
-- Nom: Ruse du lutteur (Ext)
+- Nom: Ruse du lutteur
   Classe: Lutteur
   Source: MCA
   Niveau: 1
@@ -50661,7 +50661,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Ruse_du_lutteur_Ext_4
   
-- Nom: Dons de combat supplémentaires
+- Nom: Don de combat supplémentaire
   Classe: Lutteur
   Source: MCA
   Niveau: 2
@@ -50687,7 +50687,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
   
-- Nom: Déluge de coups du lutteur (Ext)
+- Nom: Déluge de coup du lutteur (combat à deux armes)
   Classe: Lutteur
   Source: MCA
   Niveau: 2
@@ -50721,7 +50721,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Déluge_de_coups_du_lutteur_Ext_6
   
-- Nom: Entraînement aux manoeuvres offensives (Ext)
+- Nom: Entrainement aux manoeuvres 1
   Classe: Lutteur
   Source: MCA
   Niveau: 3
@@ -50762,7 +50762,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Bonus_à_la_CA_Ext_8
   
-- Nom: KO (Ext)
+- Nom: KO 1/jour
   Classe: Lutteur
   Source: MCA
   Niveau: 4
@@ -50781,7 +50781,7 @@
     \ 16.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#KO_Ext_9
   
-- Nom: Frappe du lutteur (Ext)
+- Nom: Frappe du lutteur (magique)
   Classe: Lutteur
   Source: MCA
   Niveau: 5
@@ -50808,7 +50808,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Frappe_du_lutteur_Ext_10
   
-- Nom: Maîtrise des armes de proximité (Ext)
+- Nom: Maitrise des armes de proximité
   Classe: Lutteur
   Source: MCA
   Niveau: 5
@@ -50828,7 +50828,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Maîtrise_des_armes_de_proximité_Ext_11
   
-- Nom: Coup fabuleux (Ext)
+- Nom: Coup fabuleux
   Classe: Lutteur
   Source: MCA
   Niveau: 16
@@ -67333,4 +67333,579 @@
     \ en mesure de l’atteindre.\n\nL’enquêteur ne peut pas utiliser la frappe étudiée\
     \ contre une cible disposant d’un camouflage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur.ashx#Frappe_étudiée_Ext_10
+  
+- Nom: 'Don de combat supplémentaire #2'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 5
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Flexibilité martiale (action rapide)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: "Le lutteur peut accomplir une action de mouvement pour profiter\
+    \ d’un don de combat qu’il ne possède pas. Cet effet dure une minute et le lutteur\
+    \ doit remplir les conditions requises par le don. \n\nChaque jour, il peut utiliser\
+    \ ce pouvoir un nombre de fois égal à 3 + 1/2 niveau de lutteur (1 au minimum).\
+    \ Le lutteur peut utiliser de nouveau ce pouvoir avant la fin de sa durée s’il\
+    \ veut remplacer le don de combat choisi par un autre. Si le don de combat a un\
+    \ nombre d’utilisations limité (comme Coup étourdissant), à chaque fois que le\
+    \ lutteur utilise ce don grâce à ce pouvoir, il décompte l’utilisation de la limite\
+    \ quotidienne.\n\nAu niveau 6, le lutteur peut utiliser cette aptitude pour profiter\
+    \ de deux dons de combat à la fois. Il peut choisir un don par une action rapide\
+    \ ou deux dons par une action de mouvement. Il peut utiliser le premier don pour\
+    \ remplir les conditions requises par le deuxième. En revanche, il ne peut pas\
+    \ remplacer un don remplissant une condition requise par un autre à moins de remplacer\
+    \ aussi cet autre don. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 10, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier de trois dons de combat à la fois. Il peut en choisir\
+    \ un par une action libre, deux par une action rapide et trois par une action\
+    \ de mouvement. Il peut utiliser le premier pour remplir les conditions requises\
+    \ du deuxième ou du troisième et le deuxième pour remplir les conditions requises\
+    \ du troisième. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\nAu niveau 12, le lutteur peut utiliser cette aptitude pour\
+    \ bénéficier d’un don de combat par une action immédiate ou de trois dons de combat\
+    \ par une action rapide. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 20, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier d’autant de dons de combat qu’il le désire par une\n\
+    action rapide. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Flexibilité_martiale_Ext_2
+  
+- Nom: Entrainement aux manoeuvres 2
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 7
+  Auto: true
+  Description: 'Au niveau 3, le lutteur peut développer sa maîtrise d’une manoeuvre
+    offensive. Il gagne un bonus de +1 lors de ses tests quand il effectue cette manoeuvre
+    et un bonus de +1 à son DMD quand il se défend contre elle.
+
+
+    Au niveau 7, puis tous les quatre niveaux, il perfectionne son entraînement dans
+    une autre manoeuvre offensive et gagne les bonus au test de manoeuvre et au DMD
+    précédemment cités. De plus, les bonus des manoeuvres déjà améliorées augmentent
+    tous de 1 (par exemple, si un lutteur choisit la lutte au niveau 3 et la destruction
+    d’arme au niveau 7, ses bonus à la lutte sont de +2 et de +1 à la destruction
+    d’armes. S’il choisit la bousculade en arrivant au niveau 11, ses bonus à la lutte
+    passent à +3, ses bonus à la destruction d’armes à +2 et son bonus à la bousculade
+    est de +1).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Entraînement_aux_manoeuvres_offensives_Ext_7
+  
+- Nom: 'Don de combat supplémentaire #3'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Déluge de coup du lutteur (science du combat à deux armes)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: 'À partir du niveau 2, le lutteur peut effectuer un déluge de coups
+    du lutteur par une action complexe. Il dispose alors du don Combat à deux armes
+    tant qu’il attaque avec une combinaison de frappes à mains nues, d’armes du groupe
+    d’armes de proximité du guerrier ou d’armes dites « de moine. » Il n’a pas besoin
+    d’utiliser deux armes différentes pour se servir de ce pouvoir.
+
+
+    Le lutteur applique la totalité de son modificateur de Force à ses jets de dégâts
+    pour toutes les attaques du déluge de coups du lutteur, qu’il les porte avec une
+    arme dans la main secondaire ou une arme dans chaque main. Lors d''un déluge de
+    coups, il peut remplacer ses attaques à mains nues par des manœuvres de désarmement,
+    de destruction d’arme et de croc-en-jambe. Un lutteur doté d’armes naturelles
+    ne peut pas les utiliser lors d’un déluge de coup du lutteur. Il ne peut pas non
+    plus s’en servir pour faire des attaques en plus de ses attaques de déluge de
+    coup du lutteur.
+
+
+    Au niveau 8, le lutteur gagne le don Science du combat à deux armes quand il utilise
+    le déluge de coups du lutteur.
+
+
+    Au niveau 15, il gagne Combat à deux armes supérieur quand il se sert de cette
+    aptitude.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Déluge_de_coups_du_lutteur_Ext_6
+  
+- Nom: Frappe du lutteur (fer-froid et argent)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 5, les coups que le lutteur porte à mains nues sont considérés
+    comme des armes magiques quand il s’agit de surmonter la réduction de dégâts.
+
+
+    Au niveau 9, ils sont également considérés comme des armes en fer froid et en
+    argent pour surmonter cette réduction.
+
+
+    Au niveau 12, le lutteur choisit une composante d’alignement : Chaos, Mal, Bien
+    ou Loi. Ses coups sont considérés comme étant de cet alignement vis-à-vis de la
+    réduction de dégâts (cet alignement ne peut s’opposer à celui du lutteur, un lutteur
+    Bon ne peut donc pas choisir des frappes Mauvaises).
+
+
+    Au niveau 17, ses coups sont considérés comme des armes en adamantium quand il
+    s’agit d’ignorer la réduction de dégâts et la solidité.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Frappe_du_lutteur_Ext_10
+  
+- Nom: Flexibilité martiale (action libre)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Le lutteur peut accomplir une action de mouvement pour profiter\
+    \ d’un don de combat qu’il ne possède pas. Cet effet dure une minute et le lutteur\
+    \ doit remplir les conditions requises par le don. \n\nChaque jour, il peut utiliser\
+    \ ce pouvoir un nombre de fois égal à 3 + 1/2 niveau de lutteur (1 au minimum).\
+    \ Le lutteur peut utiliser de nouveau ce pouvoir avant la fin de sa durée s’il\
+    \ veut remplacer le don de combat choisi par un autre. Si le don de combat a un\
+    \ nombre d’utilisations limité (comme Coup étourdissant), à chaque fois que le\
+    \ lutteur utilise ce don grâce à ce pouvoir, il décompte l’utilisation de la limite\
+    \ quotidienne.\n\nAu niveau 6, le lutteur peut utiliser cette aptitude pour profiter\
+    \ de deux dons de combat à la fois. Il peut choisir un don par une action rapide\
+    \ ou deux dons par une action de mouvement. Il peut utiliser le premier don pour\
+    \ remplir les conditions requises par le deuxième. En revanche, il ne peut pas\
+    \ remplacer un don remplissant une condition requise par un autre à moins de remplacer\
+    \ aussi cet autre don. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 10, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier de trois dons de combat à la fois. Il peut en choisir\
+    \ un par une action libre, deux par une action rapide et trois par une action\
+    \ de mouvement. Il peut utiliser le premier pour remplir les conditions requises\
+    \ du deuxième ou du troisième et le deuxième pour remplir les conditions requises\
+    \ du troisième. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\nAu niveau 12, le lutteur peut utiliser cette aptitude pour\
+    \ bénéficier d’un don de combat par une action immédiate ou de trois dons de combat\
+    \ par une action rapide. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 20, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier d’autant de dons de combat qu’il le désire par une\n\
+    action rapide. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Flexibilité_martiale_Ext_2
+  
+- Nom: KO 2/jour
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 4, le lutteur peut, une fois par jour, porter une attaque\
+    \ dévastatrice qui met immédiatement sa cible KO. Il doit annoncer son intention\
+    \ avant de lancer l’attaque. S’il touche et que la cible subit des dégâts suite\
+    \ à son coup, elle doit réussir un jet de Vigueur (DD = 10 + 1/2 niveau de lutteur\
+    \ + le plus élevé entre le modificateur de Dextérité ou de Force du lutteur).\
+    \ Si elle échoue, elle tombe inconsciente pendant 1d6 rounds.\n\nÀ chaque round,\
+    \ la cible évanouie peut, à son tour, effectuer un nouveau jet de sauvegarde pour\
+    \ mettre un terme à l’effet par une action complexe qui ne provoque pas d’attaque\
+    \ d’opportunité. Les créatures immunisées contre les coups critiques et les dégâts\
+    \ non-létaux sont aussi immunisées contre cette aptitude. \n\nAu niveau 10, le\
+    \ lutteur peut utiliser cette aptitude deux fois par jour et trois fois au niveau\
+    \ 16.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#KO_Ext_9
+  
+- Nom: 'Don de combat supplémentaire #4'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Entrainement aux manoeuvres 3
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: 'Au niveau 3, le lutteur peut développer sa maîtrise d’une manoeuvre
+    offensive. Il gagne un bonus de +1 lors de ses tests quand il effectue cette manoeuvre
+    et un bonus de +1 à son DMD quand il se défend contre elle.
+
+
+    Au niveau 7, puis tous les quatre niveaux, il perfectionne son entraînement dans
+    une autre manoeuvre offensive et gagne les bonus au test de manoeuvre et au DMD
+    précédemment cités. De plus, les bonus des manoeuvres déjà améliorées augmentent
+    tous de 1 (par exemple, si un lutteur choisit la lutte au niveau 3 et la destruction
+    d’arme au niveau 7, ses bonus à la lutte sont de +2 et de +1 à la destruction
+    d’armes. S’il choisit la bousculade en arrivant au niveau 11, ses bonus à la lutte
+    passent à +3, ses bonus à la destruction d’armes à +2 et son bonus à la bousculade
+    est de +1).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Entraînement_aux_manoeuvres_offensives_Ext_7
+  
+- Nom: Flexibilité martiale (action immédiate)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Le lutteur peut accomplir une action de mouvement pour profiter\
+    \ d’un don de combat qu’il ne possède pas. Cet effet dure une minute et le lutteur\
+    \ doit remplir les conditions requises par le don. \n\nChaque jour, il peut utiliser\
+    \ ce pouvoir un nombre de fois égal à 3 + 1/2 niveau de lutteur (1 au minimum).\
+    \ Le lutteur peut utiliser de nouveau ce pouvoir avant la fin de sa durée s’il\
+    \ veut remplacer le don de combat choisi par un autre. Si le don de combat a un\
+    \ nombre d’utilisations limité (comme Coup étourdissant), à chaque fois que le\
+    \ lutteur utilise ce don grâce à ce pouvoir, il décompte l’utilisation de la limite\
+    \ quotidienne.\n\nAu niveau 6, le lutteur peut utiliser cette aptitude pour profiter\
+    \ de deux dons de combat à la fois. Il peut choisir un don par une action rapide\
+    \ ou deux dons par une action de mouvement. Il peut utiliser le premier don pour\
+    \ remplir les conditions requises par le deuxième. En revanche, il ne peut pas\
+    \ remplacer un don remplissant une condition requise par un autre à moins de remplacer\
+    \ aussi cet autre don. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 10, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier de trois dons de combat à la fois. Il peut en choisir\
+    \ un par une action libre, deux par une action rapide et trois par une action\
+    \ de mouvement. Il peut utiliser le premier pour remplir les conditions requises\
+    \ du deuxième ou du troisième et le deuxième pour remplir les conditions requises\
+    \ du troisième. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\nAu niveau 12, le lutteur peut utiliser cette aptitude pour\
+    \ bénéficier d’un don de combat par une action immédiate ou de trois dons de combat\
+    \ par une action rapide. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 20, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier d’autant de dons de combat qu’il le désire par une\n\
+    action rapide. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Flexibilité_martiale_Ext_2
+  
+- Nom: Frappe du lutteur (alignement)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 5, les coups que le lutteur porte à mains nues sont considérés
+    comme des armes magiques quand il s’agit de surmonter la réduction de dégâts.
+
+
+    Au niveau 9, ils sont également considérés comme des armes en fer froid et en
+    argent pour surmonter cette réduction.
+
+
+    Au niveau 12, le lutteur choisit une composante d’alignement : Chaos, Mal, Bien
+    ou Loi. Ses coups sont considérés comme étant de cet alignement vis-à-vis de la
+    réduction de dégâts (cet alignement ne peut s’opposer à celui du lutteur, un lutteur
+    Bon ne peut donc pas choisir des frappes Mauvaises).
+
+
+    Au niveau 17, ses coups sont considérés comme des armes en adamantium quand il
+    s’agit d’ignorer la réduction de dégâts et la solidité.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Frappe_du_lutteur_Ext_10
+  
+- Nom: 'Don de combat supplémentaire #5'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Entrainement aux manoeuvres 4
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3, le lutteur peut développer sa maîtrise d’une manoeuvre
+    offensive. Il gagne un bonus de +1 lors de ses tests quand il effectue cette manoeuvre
+    et un bonus de +1 à son DMD quand il se défend contre elle.
+
+
+    Au niveau 7, puis tous les quatre niveaux, il perfectionne son entraînement dans
+    une autre manoeuvre offensive et gagne les bonus au test de manoeuvre et au DMD
+    précédemment cités. De plus, les bonus des manoeuvres déjà améliorées augmentent
+    tous de 1 (par exemple, si un lutteur choisit la lutte au niveau 3 et la destruction
+    d’arme au niveau 7, ses bonus à la lutte sont de +2 et de +1 à la destruction
+    d’armes. S’il choisit la bousculade en arrivant au niveau 11, ses bonus à la lutte
+    passent à +3, ses bonus à la destruction d’armes à +2 et son bonus à la bousculade
+    est de +1).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Entraînement_aux_manoeuvres_offensives_Ext_7
+  
+- Nom: Déluge de coup du lutteur (Combat à deux armes supérieur)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: 'À partir du niveau 2, le lutteur peut effectuer un déluge de coups
+    du lutteur par une action complexe. Il dispose alors du don Combat à deux armes
+    tant qu’il attaque avec une combinaison de frappes à mains nues, d’armes du groupe
+    d’armes de proximité du guerrier ou d’armes dites « de moine. » Il n’a pas besoin
+    d’utiliser deux armes différentes pour se servir de ce pouvoir.
+
+
+    Le lutteur applique la totalité de son modificateur de Force à ses jets de dégâts
+    pour toutes les attaques du déluge de coups du lutteur, qu’il les porte avec une
+    arme dans la main secondaire ou une arme dans chaque main. Lors d''un déluge de
+    coups, il peut remplacer ses attaques à mains nues par des manœuvres de désarmement,
+    de destruction d’arme et de croc-en-jambe. Un lutteur doté d’armes naturelles
+    ne peut pas les utiliser lors d’un déluge de coup du lutteur. Il ne peut pas non
+    plus s’en servir pour faire des attaques en plus de ses attaques de déluge de
+    coup du lutteur.
+
+
+    Au niveau 8, le lutteur gagne le don Science du combat à deux armes quand il utilise
+    le déluge de coups du lutteur.
+
+
+    Au niveau 15, il gagne Combat à deux armes supérieur quand il se sert de cette
+    aptitude.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Déluge_de_coups_du_lutteur_Ext_6
+  
+- Nom: KO 3/jour
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "Au niveau 4, le lutteur peut, une fois par jour, porter une attaque\
+    \ dévastatrice qui met immédiatement sa cible KO. Il doit annoncer son intention\
+    \ avant de lancer l’attaque. S’il touche et que la cible subit des dégâts suite\
+    \ à son coup, elle doit réussir un jet de Vigueur (DD = 10 + 1/2 niveau de lutteur\
+    \ + le plus élevé entre le modificateur de Dextérité ou de Force du lutteur).\
+    \ Si elle échoue, elle tombe inconsciente pendant 1d6 rounds.\n\nÀ chaque round,\
+    \ la cible évanouie peut, à son tour, effectuer un nouveau jet de sauvegarde pour\
+    \ mettre un terme à l’effet par une action complexe qui ne provoque pas d’attaque\
+    \ d’opportunité. Les créatures immunisées contre les coups critiques et les dégâts\
+    \ non-létaux sont aussi immunisées contre cette aptitude. \n\nAu niveau 10, le\
+    \ lutteur peut utiliser cette aptitude deux fois par jour et trois fois au niveau\
+    \ 16.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#KO_Ext_9
+  
+- Nom: 'Don de combat supplémentaire #6'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Frappe du lutteur (adamantium)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: 'Au niveau 5, les coups que le lutteur porte à mains nues sont considérés
+    comme des armes magiques quand il s’agit de surmonter la réduction de dégâts.
+
+
+    Au niveau 9, ils sont également considérés comme des armes en fer froid et en
+    argent pour surmonter cette réduction.
+
+
+    Au niveau 12, le lutteur choisit une composante d’alignement : Chaos, Mal, Bien
+    ou Loi. Ses coups sont considérés comme étant de cet alignement vis-à-vis de la
+    réduction de dégâts (cet alignement ne peut s’opposer à celui du lutteur, un lutteur
+    Bon ne peut donc pas choisir des frappes Mauvaises).
+
+
+    Au niveau 17, ses coups sont considérés comme des armes en adamantium quand il
+    s’agit d’ignorer la réduction de dégâts et la solidité.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Frappe_du_lutteur_Ext_10
+  
+- Nom: Entrainement aux manoeuvres 5
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: 'Au niveau 3, le lutteur peut développer sa maîtrise d’une manoeuvre
+    offensive. Il gagne un bonus de +1 lors de ses tests quand il effectue cette manoeuvre
+    et un bonus de +1 à son DMD quand il se défend contre elle.
+
+
+    Au niveau 7, puis tous les quatre niveaux, il perfectionne son entraînement dans
+    une autre manoeuvre offensive et gagne les bonus au test de manoeuvre et au DMD
+    précédemment cités. De plus, les bonus des manoeuvres déjà améliorées augmentent
+    tous de 1 (par exemple, si un lutteur choisit la lutte au niveau 3 et la destruction
+    d’arme au niveau 7, ses bonus à la lutte sont de +2 et de +1 à la destruction
+    d’armes. S’il choisit la bousculade en arrivant au niveau 11, ses bonus à la lutte
+    passent à +3, ses bonus à la destruction d’armes à +2 et son bonus à la bousculade
+    est de +1).
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Entraînement_aux_manoeuvres_offensives_Ext_7
+  
+- Nom: 'Don de combat supplémentaire #7'
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: 'Au niveau 2 puis tous les trois niveaux, le lutteur gagne un don
+    de combat supplémentaire, en plus de ceux obtenus lors de sa progression normale.
+    Il doit impérativement les choisir parmi ceux qui améliorent ses défenses ou son
+    attaque au corps à corps. Il doit remplir les conditions requises par les dons
+    choisis.
+
+
+    Au niveau 5 puis tous les trois niveaux, le lutteur peut apprendre un nouveau
+    don de combat à la place d’un don qu’il
+
+    connaît déjà. Il perd donc le don qu’il connaissait et acquiert le nouveau. L’ancien
+    don ne devait pas servir de condition requise pour un autre don, une classe de
+    prestige ou une aptitude. Le lutteur ne peut changer qu’un don à chaque fois que
+    son niveau le lui permet. Il doit choisir de l’échanger au moment où il obtient
+    son nouveau don de combat pour le niveau.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Dons_de_combat_supplémentaires_5
+  
+- Nom: Flexibilité martiale (autant que possible)
+  Classe: Lutteur
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "Le lutteur peut accomplir une action de mouvement pour profiter\
+    \ d’un don de combat qu’il ne possède pas. Cet effet dure une minute et le lutteur\
+    \ doit remplir les conditions requises par le don. \n\nChaque jour, il peut utiliser\
+    \ ce pouvoir un nombre de fois égal à 3 + 1/2 niveau de lutteur (1 au minimum).\
+    \ Le lutteur peut utiliser de nouveau ce pouvoir avant la fin de sa durée s’il\
+    \ veut remplacer le don de combat choisi par un autre. Si le don de combat a un\
+    \ nombre d’utilisations limité (comme Coup étourdissant), à chaque fois que le\
+    \ lutteur utilise ce don grâce à ce pouvoir, il décompte l’utilisation de la limite\
+    \ quotidienne.\n\nAu niveau 6, le lutteur peut utiliser cette aptitude pour profiter\
+    \ de deux dons de combat à la fois. Il peut choisir un don par une action rapide\
+    \ ou deux dons par une action de mouvement. Il peut utiliser le premier don pour\
+    \ remplir les conditions requises par le deuxième. En revanche, il ne peut pas\
+    \ remplacer un don remplissant une condition requise par un autre à moins de remplacer\
+    \ aussi cet autre don. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 10, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier de trois dons de combat à la fois. Il peut en choisir\
+    \ un par une action libre, deux par une action rapide et trois par une action\
+    \ de mouvement. Il peut utiliser le premier pour remplir les conditions requises\
+    \ du deuxième ou du troisième et le deuxième pour remplir les conditions requises\
+    \ du troisième. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\nAu niveau 12, le lutteur peut utiliser cette aptitude pour\
+    \ bénéficier d’un don de combat par une action immédiate ou de trois dons de combat\
+    \ par une action rapide. Chaque don choisi est décompté du nombre d’utilisations\
+    \ quotidiennes de ce pouvoir.\n\nAu niveau 20, le lutteur peut utiliser cette\
+    \ aptitude pour bénéficier d’autant de dons de combat qu’il le désire par une\n\
+    action rapide. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
+    \ de ce pouvoir.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Flexibilité_martiale_Ext_2
   
