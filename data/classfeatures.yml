@@ -44638,7 +44638,7 @@
     \r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20du%20savoir.ashx#Savoir_divin_Ext_6
   
-- Nom: Ordres complexes (Ext)
+- Nom: Ordres complexes
   Classe: Héraut
   Source: MJRA
   Niveau: 10
@@ -56279,7 +56279,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Armes_et_armures_0
   
-- Nom: Ordre exaltant (Ext)
+- Nom: 1er ordre exaltant (+1)
   Classe: Héraut
   Source: MJRA
   Niveau: 1
@@ -56337,7 +56337,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
   
-- Nom: Science du prestige (Ext)
+- Nom: Science du prestige
   Classe: Héraut
   Source: MJRA
   Niveau: 1
@@ -56350,7 +56350,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Science_du_prestige_Ext_2
   
-- Nom: Voix de l’autorité (Ext)
+- Nom: Voix de l’autorité
   Classe: Héraut
   Source: MJRA
   Niveau: 1
@@ -56369,7 +56369,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Voix_de_l’autorité_Ext_3
   
-- Nom: Marche aisée (Ext)
+- Nom: Marche aisée
   Classe: Héraut
   Source: MJRA
   Niveau: 2
@@ -56384,7 +56384,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Marche_aisée_Ext_4
   
-- Nom: Inspiration glorieuse (Ext)
+- Nom: Inspiration glorieuse
   Classe: Héraut
   Source: MJRA
   Niveau: 4
@@ -56399,7 +56399,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Inspiration_glorieuse_Ext_5
   
-- Nom: Bannière (Ext)
+- Nom: Bannière
   Classe: Héraut
   Source: MJRA
   Niveau: 5
@@ -56430,10 +56430,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Don_de_travail_en_équipe_7
   
-- Nom: Défi éprouvant (Ext)
+- Nom: Défi éprouvant
   Classe: Héraut
   Source: MJRA
-  Niveau: 12
+  Niveau: 7
   Auto: true
   Description: 'Ce pouvoir fonctionne comme le pouvoir de chevalier niveau 12 du
     même nom.
@@ -56443,7 +56443,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Défi_éprouvant_Ext_8
   
-- Nom: Ordres persistants (Ext)
+- Nom: Ordres persistants
   Classe: Héraut
   Source: MJRA
   Niveau: 8
@@ -56462,7 +56462,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordres_persistants_Ext_9
   
-- Nom: Baroud d’honneur (Ext)
+- Nom: Baroud d’honneur
   Classe: Héraut
   Source: MJRA
   Niveau: 9
@@ -75238,4 +75238,352 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20du%20savoir.ashx#Secret_2
+  
+- Nom: 2e ordre exaltant
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 3
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
+  
+- Nom: Ordre exaltant (+2)
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 4
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
+  
+- Nom: 3e ordre exaltant
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 5
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
+  
+- Nom: 4e ordre exaltant (+3)
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 7
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
+  
+- Nom: 5e ordre exaltant
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 9
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
+  
+- Nom: Ordre exaltant (+4)
+  Classe: Héraut
+  Source: MJRA
+  Niveau: 10
+  Auto: true
+  Description: 'Le héraut utilise son sens tactique et son jugement éclairé pour
+    mener les autres à la victoire. Il recourt également à son don pour le commandement
+    pour apporter de l’aide à ses alliés et à sa personne lors des combats.
+
+
+    Tous les hérauts peuvent utiliser l’ordre exaltant pour inspirer (comme l’inspiration
+    vaillante du barde) leurs alliés, les niveaux de barde et de héraut se cumulant
+    pour déterminer les bonus de l’inspiration vaillante.
+
+
+    Au niveau 1 et tous les deux niveaux par la suite, le héraut choisit d’apprendre
+    un ordre exaltant. Sauf indication contraire, ces aptitudes offrent un bonus de
+    compétence aux alliés situés à moins de 18 mètres (12 cases) du personnage et
+    à lui-même, tant qu’ils peuvent le voir ou l’entendre. Ce bonus est égal au bonus
+    d’ordre exaltant du personnage. Les ordres marqués d’un astérisque (*) ont la
+    même portée mais n’affectent qu’un certain nombre d’alliés (qui peut inclure le
+    héraut).
+
+
+    L’ordre exaltant est une action de mouvement. Au niveau 5, il devient une action
+    rapide et au niveau 10 une action immédiate. Le personnage peut maintenir son
+    ordre par une action libre que l’on ne peut pas interrompre, mais ses effets se
+    terminent immédiatement s’il se fait tuer ou s’il ne peut plus agir (s’il est
+    hébété, sans défense ou étourdi par exemple). Le héraut ne peut pas donner plus
+    d’un ordre à la fois. Il peut utiliser ce pouvoir pendant un nombre de rounds
+    par jour égal à 4 + modificateur de Charisme plus 2 rounds supplémentaires par
+    niveau après le niveau 1. Il peut utiliser des rounds de représentation bardique
+    pour donner un ordre exaltant mais pas l’inverse. Ces ordres sont des effets mentaux
+    qui dépendent du langage. Le héraut ne peut pas à la fois donner un ordre exaltant
+    et une représentation bardique (ce qui n’empêche pas d’utiliser une aptitude comme
+    ordre persistant ou un don de Représentation obsédante qui fait durer l’ordre
+    ou la représentation bardique après que le héraut a fini de la maintenir).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9raut.ashx#Ordre_exaltant_Ext_1
   
