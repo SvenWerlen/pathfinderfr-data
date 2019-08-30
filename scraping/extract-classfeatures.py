@@ -39,7 +39,7 @@ def addClassFeature(name, link, level):
     if "#" in link:
         link = "#" + link.split("#")[1]
     for el in listeDescr:
-        if el['RéférenceAlt'] and el['RéférenceAlt'] == link:
+        if len(el['RéférenceAlt'])>0 and link in el['RéférenceAlt']:
             add = dict(el)
             add['Nom'] = name.strip()
             add['Nom'] = add['Nom'][0].upper() + add['Nom'][1:]
@@ -63,27 +63,26 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
     newObj = False
     descr = ""
 
-    altLink = None
+    altLink = []
     for s in section:
         if s.name == 'h3':
             if newObj:
                 classfeature['Description'] = descr
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
                 listeDescr.append(classfeature)
-                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
-                altLink = None
-                descr = ""
-            else:
-                classfeature = {'Auto': True, 'RéférenceAlt': altLink }
-                
+
+            classfeature = {'Auto': True, 'RéférenceAlt': altLink }
+            descr = ""
             newObj = True
+            altLink = []
             classfeature['Nom'] = cleanSectionName(s.text)
             classfeature['Classe'] = cl['Nom']
             classfeature['Source'] = cl['Source']
             classfeature['Référence'] = baseURL + s.find('a')['href']
 
         elif s.name == 'div' and s.has_attr('class') and (s['class'][0] == 'ref'):
-            altLink = s.find('a')['href']
+            for a in s.find_all('a'):
+                altLink.append(a['href'])
         else:
             descr += html2text(s)
     
@@ -97,7 +96,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 8:
+    if idx != 10:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])

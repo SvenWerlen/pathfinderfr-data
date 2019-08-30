@@ -7401,7 +7401,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Armes_et_armures_0
   
-- Nom: Ennemis jurés (Ext)
+- Nom: 1er ennemi juré
   Classe: Rôdeur
   Source: MJ
   Niveau: 1
@@ -7458,7 +7458,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
   
-- Nom: Pistage (Ext)
+- Nom: Pistage
   Classe: Rôdeur
   Source: MJ
   Niveau: 1
@@ -7471,7 +7471,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Pistage_Ext_2
   
-- Nom: Empathie sauvage (Ext)
+- Nom: Empathie sauvage
   Classe: Rôdeur
   Source: MJ
   Niveau: 1
@@ -7499,7 +7499,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Empathie_sauvage_Ext_3
   
-- Nom: Style de combat (Ext)
+- Nom: Don de style de combat
   Classe: Rôdeur
   Source: MJ
   Niveau: 2
@@ -7568,7 +7568,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Endurance_5
   
-- Nom: Environnements de prédilection (Ext)
+- Nom: Environnement de prédilection
   Classe: Rôdeur
   Source: MJ
   Niveau: 3
@@ -7596,7 +7596,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Environnements_de_prédilection_Ext_6
   
-- Nom: Pacte du chasseur (Ext)
+- Nom: Pacte du chasseur
   Classe: Rôdeur
   Source: MJ
   Niveau: 4
@@ -7665,7 +7665,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Sorts_8
   
-- Nom: Déplacement facilité (Ext)
+- Nom: Déplacement facilité
   Classe: Rôdeur
   Source: MJ
   Niveau: 7
@@ -7683,7 +7683,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Déplacement_facilité_Ext_9
   
-- Nom: Pistage accéléré (Ext)
+- Nom: Pistage accéléré
   Classe: Rôdeur
   Source: MJ
   Niveau: 8
@@ -7698,7 +7698,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Pistage_accéléré_Ext_10
   
-- Nom: Esquive totale (Ext)
+- Nom: Esquive totale
   Classe: Rôdeur
   Source: MJ
   Niveau: 9
@@ -7716,7 +7716,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Esquive_totale_Ext_11
   
-- Nom: Proie du chasseur (Ext)
+- Nom: Proie du chasseur
   Classe: Rôdeur
   Source: MJ
   Niveau: 11
@@ -7738,7 +7738,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Proie_du_chasseur_Ext_12
   
-- Nom: Camouflage (Ext)
+- Nom: Camouflage
   Classe: Rôdeur
   Source: MJ
   Niveau: 12
@@ -7752,7 +7752,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Camouflage_Ext_13
   
-- Nom: Esquive surnaturelle (Ext)
+- Nom: Esquive surnaturelle
   Classe: Rôdeur
   Source: MJ
   Niveau: 16
@@ -7768,7 +7768,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Esquive_surnaturelle_Ext_14
   
-- Nom: Discrétion totale (Ext)
+- Nom: Discrétion totale
   Classe: Rôdeur
   Source: MJ
   Niveau: 17
@@ -7781,7 +7781,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Discrétion_totale_Ext_15
   
-- Nom: Proie du maître chasseur (Ext)
+- Nom: Proie du maître chasseur
   Classe: Rôdeur
   Source: MJ
   Niveau: 19
@@ -7798,7 +7798,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Proie_du_maître_chasseur_Ext_16
   
-- Nom: Maître chasseur (Ext)
+- Nom: Maître chasseur
   Classe: Rôdeur
   Source: MJ
   Niveau: 20
@@ -61275,4 +61275,540 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 2e ennemi juré
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 5
+  Auto: true
+  Description: '
+
+    Au niveau 1, le rôdeur choisit un type de créatures sur la table des ennemis jurés
+    du rôdeur. Il bénéficie d’un bonus de +2 aux tests de Bluff, Connaissances, Perception,
+    Psychologie et Survie lorsqu’il les utilise contre des créatures de ce type. Il
+    bénéficie également d’un bonus de +2 aux jets d’attaque et de dégâts lorsqu’il
+    utilise une arme contre elles. Enfin, il peut tenter d’utiliser la compétence
+    de Connaissances pour identifier ces créatures et ce, même s’il ne possède aucun
+    rang dans celle-ci.
+
+
+    Au niveau 5 et tous les cinq niveaux par la suite (aux niveaux 10, 15 et 20),
+    le rôdeur peut choisir un nouvel ennemi juré. En même temps, il peut augmenter
+    de +2 le bonus dont il bénéficie contre l’un de ses ennemis jurés (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Lorsqu’un rôdeur choisit les Extérieurs ou les humanoïdes comme ennemis jurés,
+    il doit aussi sélectionner un sous-type associé, comme l’indique la table (notez
+    que les sous-types d’humanoïdes cités dans la table ne sont que les plus communs,
+    d’autres sous-types, que le rôdeur peut également choisir, sont présentés dans
+    le Bestiaire Pathfinder). Si une créature appartient à deux familles d’ennemis
+    jurés, les bonus ne se cumulent pas : le rôdeur ne profite que du plus élevé des
+    deux.
+
+
+
+
+    Aberration, Extérieur (Air), Humanoïde (autre sous-type),  Humanoïde (humain)
+
+    • Animal, Extérieur (Bien), Humanoïde monstrueux, Humanoïde (nain)
+
+    • Créature artificielle, Extérieur (Eau), Humanoïde (aquatique), Humanoïde (géant)
+
+    • Créature magique, Extérieur (Chaos), Humanoïde (elfe), Humanoïde (orque)
+
+    • Dragon, Extérieur (Feu), Humanoïde (gnoll), Humanoïde (gobelinoïde)
+
+    • Fée, Extérieur (Loi), Humanoïde (gnome), Humanoïde (reptilien)
+
+    • Mort-vivant, Extérieur (natif), Humanoïde (halfelin),  
+
+    • Plante, Extérieur (Mal),  ,  
+
+    • Vermine, Extérieur (Terre),  ,  
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
+  
+- Nom: 'Don de style de combat #2'
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 2, un rôdeur choisit de se spécialiser dans un des deux\
+    \ styles de combat suivants : combat à deux armes ou combat à distance. \n\nIl\
+    \ peut également choisir de se spécialiser dans un des styles de combat suivants\
+    \ : arbalète, arme à deux mains, arme et bouclier, arme naturelle ou combat monté.\n\
+    \nCette spécialisation se traduit par des dons supplémentaires gagnés aux niveaux\
+    \ 2, 6, 10, 14 et 18. Le rôdeur choisit ces dons supplémentaires dans la liste\
+    \ appropriée. Il peut sélectionner un don même s’il ne remplit pas les conditions\
+    \ qui lui sont associées.\n\nSi le rôdeur choisit le style de COMBAT À DISTANCE,\
+    \ il peut choisir un des dons suivants chaque fois qu’il gagne un don de style\
+    \ de combat : Tir à bout portant, Tir de loin, Tir de précision et Tir rapide.\
+    \ Au niveau 6, les dons Feu nourri,Maîtrise du tir à bout portant, Science du\
+    \ tir de précision et Tir avec concentration s’ajoutent à la liste. Au niveau\
+    \ 10, les dons Tir en mouvement et Viser juste s’ajoutent à la liste.\n\nSi le\
+    \ rôdeur choisit le style de COMBAT À DEUX ARMES, il peut choisir un des dons\
+    \ suivants chaque fois qu’il gagne un don de style de combat : Arme en main, Combat\
+    \ à deux armes, Double frappe et Science du coup de bouclier. Au niveau 6, les\
+    \ dons Défense à deux armes et Science du combat à deux armes s’ajoutent à la\
+    \ liste. Au niveau 10, les dons Éventration à deux armes et Combat à deux armes\
+    \ supérieur viennent s’ajouter à la liste.\n\n Si le rôdeur choisit le style de\
+    \ combat ARBALÈTE, il peut choisir un des dons suivants chaque fois qu’il gagne\
+    \ un don de style de combat : Rechargement rapide, Tir avec concentration, Tir\
+    \ de précision ou Viser. Au niveau 6, les dons Maîtrise des arbalètes et Science\
+    \ du tir de précision s'ajoutent à la liste. Au niveau 10, les dons Tir en mouvement\
+    \ et Viser juste viennent s'ajouter à la liste.\n\nSi le rôdeur choisit le style\
+    \ de combat ARME À DEUX MAINS, il peut choisir un des dons suivants chaque fois\
+    \ qu’il gagne un don de style de combat : Assaut repoussant, Attaque en puissance,\
+    \ Coups protecteurs ou Enchaînement. Au niveau 6, les dons Concentration malgré\
+    \ la fureur et Succession d’enchaînements s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Carnage effroyable et Science de la destruction viennent s'ajouter\
+    \ à la liste.\n\nSi le rôdeur choisit le style de combat ARME ET BOUCLIER, il\
+    \ peut choisir un des dons suivants chaque fois qu’il gagne un don de style de\
+    \ combat : Art du bouclier, Frappe du bouclier, Combat à deux armes ou Science\
+    \ du coup de bouclier. Au niveau 6, les dons Bouclier salvateur et Maîtrise du\
+    \ bouclier s'ajoutent à la liste. Au niveau 10, les dons Art du bouclier supérieur\
+    \ et Coup de bouclier opportuniste viennent s'ajouter à la liste.\n\nSi le rôdeur\
+    \ choisit le style de combat ARME NATURELLE, il peut choisir un des dons suivants\
+    \ chaque fois qu’il gagne un don de style de combat : Arme de prédilection, Arme\
+    \ naturelle supérieure, Aspect bestial ou Griffes coupantes. Au niveau 6, les\
+    \ dons Frappe décisive et Griffes magiques s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Attaques multiples et Science de la frappe décisive viennent s'ajouter\
+    \ à la liste. \n\nSi le rôdeur choisit le style de combat COMBAT MONTÉ, il peut\
+    \ choisir un des dons suivants chaque fois qu’il gagne un don de style de combat\
+    \ : Astuce d’équitation, Attaque au galop, Combat monté ou Tir monté. Au niveau\
+    \ 6, les dons Bouclier pour la monture et Charge dévastatrice s'ajoutent à la\
+    \ liste. Au niveau 10, les dons Désarçonner et Tirailleur monté viennent s'ajouter\
+    \ à la liste.\n\nLe rôdeur ne bénéficie de ses dons de style de combat que s’il\
+    \ porte une armure légère, une armure intermédiaire ou s’il ne porte aucune armure.\
+    \ Il perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur\
+    \ a opté pour un style de combat, ce choix ne peut plus être modifié.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Style_de_combat_Ext_4
+  
+- Nom: 'Environnement de prédilection #2'
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 3, un rôdeur choisit un type d’environnement sur la table
+    des environnements de prédilection du rôdeur. Il bénéficie d’un bonus de +2 aux
+    jets d’initiative et aux tests de Connaissances (géographie), Discrétion, Perception
+    et Survie lorsqu’il se trouve dans cet environnement. De plus, lorsqu’il voyage
+    dans son environnement de prédilection, le rôdeur ne laisse aucune trace et ne
+    peut être suivi (il peut cependant laisser des traces s’il le désire).
+
+
+    Au niveau 8 et tous les cinq niveaux par la suite, le rôdeur peut choisir un nouvel
+    environnement de prédilection. En même temps, il peut augmenter de +2 le bonus
+    dont il bénéficie dans l’un de ses environnements de prédilection (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Si l’endroit où le rôdeur se trouve entre dans plusieurs catégories d’environnements
+    de prédilection, les bonus ne se cumulent pas : le rôdeur ne bénéficie que du
+    bonus le plus élevé.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Environnements_de_prédilection_Ext_6
+  
+- Nom: 3e ennemi juré
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    Au niveau 1, le rôdeur choisit un type de créatures sur la table des ennemis jurés
+    du rôdeur. Il bénéficie d’un bonus de +2 aux tests de Bluff, Connaissances, Perception,
+    Psychologie et Survie lorsqu’il les utilise contre des créatures de ce type. Il
+    bénéficie également d’un bonus de +2 aux jets d’attaque et de dégâts lorsqu’il
+    utilise une arme contre elles. Enfin, il peut tenter d’utiliser la compétence
+    de Connaissances pour identifier ces créatures et ce, même s’il ne possède aucun
+    rang dans celle-ci.
+
+
+    Au niveau 5 et tous les cinq niveaux par la suite (aux niveaux 10, 15 et 20),
+    le rôdeur peut choisir un nouvel ennemi juré. En même temps, il peut augmenter
+    de +2 le bonus dont il bénéficie contre l’un de ses ennemis jurés (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Lorsqu’un rôdeur choisit les Extérieurs ou les humanoïdes comme ennemis jurés,
+    il doit aussi sélectionner un sous-type associé, comme l’indique la table (notez
+    que les sous-types d’humanoïdes cités dans la table ne sont que les plus communs,
+    d’autres sous-types, que le rôdeur peut également choisir, sont présentés dans
+    le Bestiaire Pathfinder). Si une créature appartient à deux familles d’ennemis
+    jurés, les bonus ne se cumulent pas : le rôdeur ne profite que du plus élevé des
+    deux.
+
+
+
+
+    Aberration, Extérieur (Air), Humanoïde (autre sous-type),  Humanoïde (humain)
+
+    • Animal, Extérieur (Bien), Humanoïde monstrueux, Humanoïde (nain)
+
+    • Créature artificielle, Extérieur (Eau), Humanoïde (aquatique), Humanoïde (géant)
+
+    • Créature magique, Extérieur (Chaos), Humanoïde (elfe), Humanoïde (orque)
+
+    • Dragon, Extérieur (Feu), Humanoïde (gnoll), Humanoïde (gobelinoïde)
+
+    • Fée, Extérieur (Loi), Humanoïde (gnome), Humanoïde (reptilien)
+
+    • Mort-vivant, Extérieur (natif), Humanoïde (halfelin),  
+
+    • Plante, Extérieur (Mal),  ,  
+
+    • Vermine, Extérieur (Terre),  ,  
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
+  
+- Nom: 'Don de style de combat #3'
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 2, un rôdeur choisit de se spécialiser dans un des deux\
+    \ styles de combat suivants : combat à deux armes ou combat à distance. \n\nIl\
+    \ peut également choisir de se spécialiser dans un des styles de combat suivants\
+    \ : arbalète, arme à deux mains, arme et bouclier, arme naturelle ou combat monté.\n\
+    \nCette spécialisation se traduit par des dons supplémentaires gagnés aux niveaux\
+    \ 2, 6, 10, 14 et 18. Le rôdeur choisit ces dons supplémentaires dans la liste\
+    \ appropriée. Il peut sélectionner un don même s’il ne remplit pas les conditions\
+    \ qui lui sont associées.\n\nSi le rôdeur choisit le style de COMBAT À DISTANCE,\
+    \ il peut choisir un des dons suivants chaque fois qu’il gagne un don de style\
+    \ de combat : Tir à bout portant, Tir de loin, Tir de précision et Tir rapide.\
+    \ Au niveau 6, les dons Feu nourri,Maîtrise du tir à bout portant, Science du\
+    \ tir de précision et Tir avec concentration s’ajoutent à la liste. Au niveau\
+    \ 10, les dons Tir en mouvement et Viser juste s’ajoutent à la liste.\n\nSi le\
+    \ rôdeur choisit le style de COMBAT À DEUX ARMES, il peut choisir un des dons\
+    \ suivants chaque fois qu’il gagne un don de style de combat : Arme en main, Combat\
+    \ à deux armes, Double frappe et Science du coup de bouclier. Au niveau 6, les\
+    \ dons Défense à deux armes et Science du combat à deux armes s’ajoutent à la\
+    \ liste. Au niveau 10, les dons Éventration à deux armes et Combat à deux armes\
+    \ supérieur viennent s’ajouter à la liste.\n\n Si le rôdeur choisit le style de\
+    \ combat ARBALÈTE, il peut choisir un des dons suivants chaque fois qu’il gagne\
+    \ un don de style de combat : Rechargement rapide, Tir avec concentration, Tir\
+    \ de précision ou Viser. Au niveau 6, les dons Maîtrise des arbalètes et Science\
+    \ du tir de précision s'ajoutent à la liste. Au niveau 10, les dons Tir en mouvement\
+    \ et Viser juste viennent s'ajouter à la liste.\n\nSi le rôdeur choisit le style\
+    \ de combat ARME À DEUX MAINS, il peut choisir un des dons suivants chaque fois\
+    \ qu’il gagne un don de style de combat : Assaut repoussant, Attaque en puissance,\
+    \ Coups protecteurs ou Enchaînement. Au niveau 6, les dons Concentration malgré\
+    \ la fureur et Succession d’enchaînements s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Carnage effroyable et Science de la destruction viennent s'ajouter\
+    \ à la liste.\n\nSi le rôdeur choisit le style de combat ARME ET BOUCLIER, il\
+    \ peut choisir un des dons suivants chaque fois qu’il gagne un don de style de\
+    \ combat : Art du bouclier, Frappe du bouclier, Combat à deux armes ou Science\
+    \ du coup de bouclier. Au niveau 6, les dons Bouclier salvateur et Maîtrise du\
+    \ bouclier s'ajoutent à la liste. Au niveau 10, les dons Art du bouclier supérieur\
+    \ et Coup de bouclier opportuniste viennent s'ajouter à la liste.\n\nSi le rôdeur\
+    \ choisit le style de combat ARME NATURELLE, il peut choisir un des dons suivants\
+    \ chaque fois qu’il gagne un don de style de combat : Arme de prédilection, Arme\
+    \ naturelle supérieure, Aspect bestial ou Griffes coupantes. Au niveau 6, les\
+    \ dons Frappe décisive et Griffes magiques s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Attaques multiples et Science de la frappe décisive viennent s'ajouter\
+    \ à la liste. \n\nSi le rôdeur choisit le style de combat COMBAT MONTÉ, il peut\
+    \ choisir un des dons suivants chaque fois qu’il gagne un don de style de combat\
+    \ : Astuce d’équitation, Attaque au galop, Combat monté ou Tir monté. Au niveau\
+    \ 6, les dons Bouclier pour la monture et Charge dévastatrice s'ajoutent à la\
+    \ liste. Au niveau 10, les dons Désarçonner et Tirailleur monté viennent s'ajouter\
+    \ à la liste.\n\nLe rôdeur ne bénéficie de ses dons de style de combat que s’il\
+    \ porte une armure légère, une armure intermédiaire ou s’il ne porte aucune armure.\
+    \ Il perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur\
+    \ a opté pour un style de combat, ce choix ne peut plus être modifié.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Style_de_combat_Ext_4
+  
+- Nom: 3e environnement de prédilection
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 13
+  Auto: true
+  Description: 'Au niveau 3, un rôdeur choisit un type d’environnement sur la table
+    des environnements de prédilection du rôdeur. Il bénéficie d’un bonus de +2 aux
+    jets d’initiative et aux tests de Connaissances (géographie), Discrétion, Perception
+    et Survie lorsqu’il se trouve dans cet environnement. De plus, lorsqu’il voyage
+    dans son environnement de prédilection, le rôdeur ne laisse aucune trace et ne
+    peut être suivi (il peut cependant laisser des traces s’il le désire).
+
+
+    Au niveau 8 et tous les cinq niveaux par la suite, le rôdeur peut choisir un nouvel
+    environnement de prédilection. En même temps, il peut augmenter de +2 le bonus
+    dont il bénéficie dans l’un de ses environnements de prédilection (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Si l’endroit où le rôdeur se trouve entre dans plusieurs catégories d’environnements
+    de prédilection, les bonus ne se cumulent pas : le rôdeur ne bénéficie que du
+    bonus le plus élevé.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Environnements_de_prédilection_Ext_6
+  
+- Nom: 'Don de style de combat #4'
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 2, un rôdeur choisit de se spécialiser dans un des deux\
+    \ styles de combat suivants : combat à deux armes ou combat à distance. \n\nIl\
+    \ peut également choisir de se spécialiser dans un des styles de combat suivants\
+    \ : arbalète, arme à deux mains, arme et bouclier, arme naturelle ou combat monté.\n\
+    \nCette spécialisation se traduit par des dons supplémentaires gagnés aux niveaux\
+    \ 2, 6, 10, 14 et 18. Le rôdeur choisit ces dons supplémentaires dans la liste\
+    \ appropriée. Il peut sélectionner un don même s’il ne remplit pas les conditions\
+    \ qui lui sont associées.\n\nSi le rôdeur choisit le style de COMBAT À DISTANCE,\
+    \ il peut choisir un des dons suivants chaque fois qu’il gagne un don de style\
+    \ de combat : Tir à bout portant, Tir de loin, Tir de précision et Tir rapide.\
+    \ Au niveau 6, les dons Feu nourri,Maîtrise du tir à bout portant, Science du\
+    \ tir de précision et Tir avec concentration s’ajoutent à la liste. Au niveau\
+    \ 10, les dons Tir en mouvement et Viser juste s’ajoutent à la liste.\n\nSi le\
+    \ rôdeur choisit le style de COMBAT À DEUX ARMES, il peut choisir un des dons\
+    \ suivants chaque fois qu’il gagne un don de style de combat : Arme en main, Combat\
+    \ à deux armes, Double frappe et Science du coup de bouclier. Au niveau 6, les\
+    \ dons Défense à deux armes et Science du combat à deux armes s’ajoutent à la\
+    \ liste. Au niveau 10, les dons Éventration à deux armes et Combat à deux armes\
+    \ supérieur viennent s’ajouter à la liste.\n\n Si le rôdeur choisit le style de\
+    \ combat ARBALÈTE, il peut choisir un des dons suivants chaque fois qu’il gagne\
+    \ un don de style de combat : Rechargement rapide, Tir avec concentration, Tir\
+    \ de précision ou Viser. Au niveau 6, les dons Maîtrise des arbalètes et Science\
+    \ du tir de précision s'ajoutent à la liste. Au niveau 10, les dons Tir en mouvement\
+    \ et Viser juste viennent s'ajouter à la liste.\n\nSi le rôdeur choisit le style\
+    \ de combat ARME À DEUX MAINS, il peut choisir un des dons suivants chaque fois\
+    \ qu’il gagne un don de style de combat : Assaut repoussant, Attaque en puissance,\
+    \ Coups protecteurs ou Enchaînement. Au niveau 6, les dons Concentration malgré\
+    \ la fureur et Succession d’enchaînements s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Carnage effroyable et Science de la destruction viennent s'ajouter\
+    \ à la liste.\n\nSi le rôdeur choisit le style de combat ARME ET BOUCLIER, il\
+    \ peut choisir un des dons suivants chaque fois qu’il gagne un don de style de\
+    \ combat : Art du bouclier, Frappe du bouclier, Combat à deux armes ou Science\
+    \ du coup de bouclier. Au niveau 6, les dons Bouclier salvateur et Maîtrise du\
+    \ bouclier s'ajoutent à la liste. Au niveau 10, les dons Art du bouclier supérieur\
+    \ et Coup de bouclier opportuniste viennent s'ajouter à la liste.\n\nSi le rôdeur\
+    \ choisit le style de combat ARME NATURELLE, il peut choisir un des dons suivants\
+    \ chaque fois qu’il gagne un don de style de combat : Arme de prédilection, Arme\
+    \ naturelle supérieure, Aspect bestial ou Griffes coupantes. Au niveau 6, les\
+    \ dons Frappe décisive et Griffes magiques s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Attaques multiples et Science de la frappe décisive viennent s'ajouter\
+    \ à la liste. \n\nSi le rôdeur choisit le style de combat COMBAT MONTÉ, il peut\
+    \ choisir un des dons suivants chaque fois qu’il gagne un don de style de combat\
+    \ : Astuce d’équitation, Attaque au galop, Combat monté ou Tir monté. Au niveau\
+    \ 6, les dons Bouclier pour la monture et Charge dévastatrice s'ajoutent à la\
+    \ liste. Au niveau 10, les dons Désarçonner et Tirailleur monté viennent s'ajouter\
+    \ à la liste.\n\nLe rôdeur ne bénéficie de ses dons de style de combat que s’il\
+    \ porte une armure légère, une armure intermédiaire ou s’il ne porte aucune armure.\
+    \ Il perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur\
+    \ a opté pour un style de combat, ce choix ne peut plus être modifié.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Style_de_combat_Ext_4
+  
+- Nom: 4e ennemi juré
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Au niveau 1, le rôdeur choisit un type de créatures sur la table des ennemis jurés
+    du rôdeur. Il bénéficie d’un bonus de +2 aux tests de Bluff, Connaissances, Perception,
+    Psychologie et Survie lorsqu’il les utilise contre des créatures de ce type. Il
+    bénéficie également d’un bonus de +2 aux jets d’attaque et de dégâts lorsqu’il
+    utilise une arme contre elles. Enfin, il peut tenter d’utiliser la compétence
+    de Connaissances pour identifier ces créatures et ce, même s’il ne possède aucun
+    rang dans celle-ci.
+
+
+    Au niveau 5 et tous les cinq niveaux par la suite (aux niveaux 10, 15 et 20),
+    le rôdeur peut choisir un nouvel ennemi juré. En même temps, il peut augmenter
+    de +2 le bonus dont il bénéficie contre l’un de ses ennemis jurés (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Lorsqu’un rôdeur choisit les Extérieurs ou les humanoïdes comme ennemis jurés,
+    il doit aussi sélectionner un sous-type associé, comme l’indique la table (notez
+    que les sous-types d’humanoïdes cités dans la table ne sont que les plus communs,
+    d’autres sous-types, que le rôdeur peut également choisir, sont présentés dans
+    le Bestiaire Pathfinder). Si une créature appartient à deux familles d’ennemis
+    jurés, les bonus ne se cumulent pas : le rôdeur ne profite que du plus élevé des
+    deux.
+
+
+
+
+    Aberration, Extérieur (Air), Humanoïde (autre sous-type),  Humanoïde (humain)
+
+    • Animal, Extérieur (Bien), Humanoïde monstrueux, Humanoïde (nain)
+
+    • Créature artificielle, Extérieur (Eau), Humanoïde (aquatique), Humanoïde (géant)
+
+    • Créature magique, Extérieur (Chaos), Humanoïde (elfe), Humanoïde (orque)
+
+    • Dragon, Extérieur (Feu), Humanoïde (gnoll), Humanoïde (gobelinoïde)
+
+    • Fée, Extérieur (Loi), Humanoïde (gnome), Humanoïde (reptilien)
+
+    • Mort-vivant, Extérieur (natif), Humanoïde (halfelin),  
+
+    • Plante, Extérieur (Mal),  ,  
+
+    • Vermine, Extérieur (Terre),  ,  
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
+  
+- Nom: 4e environnement de prédilection
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 3, un rôdeur choisit un type d’environnement sur la table
+    des environnements de prédilection du rôdeur. Il bénéficie d’un bonus de +2 aux
+    jets d’initiative et aux tests de Connaissances (géographie), Discrétion, Perception
+    et Survie lorsqu’il se trouve dans cet environnement. De plus, lorsqu’il voyage
+    dans son environnement de prédilection, le rôdeur ne laisse aucune trace et ne
+    peut être suivi (il peut cependant laisser des traces s’il le désire).
+
+
+    Au niveau 8 et tous les cinq niveaux par la suite, le rôdeur peut choisir un nouvel
+    environnement de prédilection. En même temps, il peut augmenter de +2 le bonus
+    dont il bénéficie dans l’un de ses environnements de prédilection (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Si l’endroit où le rôdeur se trouve entre dans plusieurs catégories d’environnements
+    de prédilection, les bonus ne se cumulent pas : le rôdeur ne bénéficie que du
+    bonus le plus élevé.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Environnements_de_prédilection_Ext_6
+  
+- Nom: 'Don de style de combat #5'
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: "Au niveau 2, un rôdeur choisit de se spécialiser dans un des deux\
+    \ styles de combat suivants : combat à deux armes ou combat à distance. \n\nIl\
+    \ peut également choisir de se spécialiser dans un des styles de combat suivants\
+    \ : arbalète, arme à deux mains, arme et bouclier, arme naturelle ou combat monté.\n\
+    \nCette spécialisation se traduit par des dons supplémentaires gagnés aux niveaux\
+    \ 2, 6, 10, 14 et 18. Le rôdeur choisit ces dons supplémentaires dans la liste\
+    \ appropriée. Il peut sélectionner un don même s’il ne remplit pas les conditions\
+    \ qui lui sont associées.\n\nSi le rôdeur choisit le style de COMBAT À DISTANCE,\
+    \ il peut choisir un des dons suivants chaque fois qu’il gagne un don de style\
+    \ de combat : Tir à bout portant, Tir de loin, Tir de précision et Tir rapide.\
+    \ Au niveau 6, les dons Feu nourri,Maîtrise du tir à bout portant, Science du\
+    \ tir de précision et Tir avec concentration s’ajoutent à la liste. Au niveau\
+    \ 10, les dons Tir en mouvement et Viser juste s’ajoutent à la liste.\n\nSi le\
+    \ rôdeur choisit le style de COMBAT À DEUX ARMES, il peut choisir un des dons\
+    \ suivants chaque fois qu’il gagne un don de style de combat : Arme en main, Combat\
+    \ à deux armes, Double frappe et Science du coup de bouclier. Au niveau 6, les\
+    \ dons Défense à deux armes et Science du combat à deux armes s’ajoutent à la\
+    \ liste. Au niveau 10, les dons Éventration à deux armes et Combat à deux armes\
+    \ supérieur viennent s’ajouter à la liste.\n\n Si le rôdeur choisit le style de\
+    \ combat ARBALÈTE, il peut choisir un des dons suivants chaque fois qu’il gagne\
+    \ un don de style de combat : Rechargement rapide, Tir avec concentration, Tir\
+    \ de précision ou Viser. Au niveau 6, les dons Maîtrise des arbalètes et Science\
+    \ du tir de précision s'ajoutent à la liste. Au niveau 10, les dons Tir en mouvement\
+    \ et Viser juste viennent s'ajouter à la liste.\n\nSi le rôdeur choisit le style\
+    \ de combat ARME À DEUX MAINS, il peut choisir un des dons suivants chaque fois\
+    \ qu’il gagne un don de style de combat : Assaut repoussant, Attaque en puissance,\
+    \ Coups protecteurs ou Enchaînement. Au niveau 6, les dons Concentration malgré\
+    \ la fureur et Succession d’enchaînements s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Carnage effroyable et Science de la destruction viennent s'ajouter\
+    \ à la liste.\n\nSi le rôdeur choisit le style de combat ARME ET BOUCLIER, il\
+    \ peut choisir un des dons suivants chaque fois qu’il gagne un don de style de\
+    \ combat : Art du bouclier, Frappe du bouclier, Combat à deux armes ou Science\
+    \ du coup de bouclier. Au niveau 6, les dons Bouclier salvateur et Maîtrise du\
+    \ bouclier s'ajoutent à la liste. Au niveau 10, les dons Art du bouclier supérieur\
+    \ et Coup de bouclier opportuniste viennent s'ajouter à la liste.\n\nSi le rôdeur\
+    \ choisit le style de combat ARME NATURELLE, il peut choisir un des dons suivants\
+    \ chaque fois qu’il gagne un don de style de combat : Arme de prédilection, Arme\
+    \ naturelle supérieure, Aspect bestial ou Griffes coupantes. Au niveau 6, les\
+    \ dons Frappe décisive et Griffes magiques s'ajoutent à la liste. Au niveau 10,\
+    \ les dons Attaques multiples et Science de la frappe décisive viennent s'ajouter\
+    \ à la liste. \n\nSi le rôdeur choisit le style de combat COMBAT MONTÉ, il peut\
+    \ choisir un des dons suivants chaque fois qu’il gagne un don de style de combat\
+    \ : Astuce d’équitation, Attaque au galop, Combat monté ou Tir monté. Au niveau\
+    \ 6, les dons Bouclier pour la monture et Charge dévastatrice s'ajoutent à la\
+    \ liste. Au niveau 10, les dons Désarçonner et Tirailleur monté viennent s'ajouter\
+    \ à la liste.\n\nLe rôdeur ne bénéficie de ses dons de style de combat que s’il\
+    \ porte une armure légère, une armure intermédiaire ou s’il ne porte aucune armure.\
+    \ Il perd leurs avantages s’il porte une armure lourde. Une fois qu’un rôdeur\
+    \ a opté pour un style de combat, ce choix ne peut plus être modifié.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Style_de_combat_Ext_4
+  
+- Nom: 5e ennemi juré
+  Classe: Rôdeur
+  Source: MJ
+  Niveau: 20
+  Auto: true
+  Description: '
+
+    Au niveau 1, le rôdeur choisit un type de créatures sur la table des ennemis jurés
+    du rôdeur. Il bénéficie d’un bonus de +2 aux tests de Bluff, Connaissances, Perception,
+    Psychologie et Survie lorsqu’il les utilise contre des créatures de ce type. Il
+    bénéficie également d’un bonus de +2 aux jets d’attaque et de dégâts lorsqu’il
+    utilise une arme contre elles. Enfin, il peut tenter d’utiliser la compétence
+    de Connaissances pour identifier ces créatures et ce, même s’il ne possède aucun
+    rang dans celle-ci.
+
+
+    Au niveau 5 et tous les cinq niveaux par la suite (aux niveaux 10, 15 et 20),
+    le rôdeur peut choisir un nouvel ennemi juré. En même temps, il peut augmenter
+    de +2 le bonus dont il bénéficie contre l’un de ses ennemis jurés (y compris celui
+    qu’il vient de choisir, s’il le désire).
+
+
+    Lorsqu’un rôdeur choisit les Extérieurs ou les humanoïdes comme ennemis jurés,
+    il doit aussi sélectionner un sous-type associé, comme l’indique la table (notez
+    que les sous-types d’humanoïdes cités dans la table ne sont que les plus communs,
+    d’autres sous-types, que le rôdeur peut également choisir, sont présentés dans
+    le Bestiaire Pathfinder). Si une créature appartient à deux familles d’ennemis
+    jurés, les bonus ne se cumulent pas : le rôdeur ne profite que du plus élevé des
+    deux.
+
+
+
+
+    Aberration, Extérieur (Air), Humanoïde (autre sous-type),  Humanoïde (humain)
+
+    • Animal, Extérieur (Bien), Humanoïde monstrueux, Humanoïde (nain)
+
+    • Créature artificielle, Extérieur (Eau), Humanoïde (aquatique), Humanoïde (géant)
+
+    • Créature magique, Extérieur (Chaos), Humanoïde (elfe), Humanoïde (orque)
+
+    • Dragon, Extérieur (Feu), Humanoïde (gnoll), Humanoïde (gobelinoïde)
+
+    • Fée, Extérieur (Loi), Humanoïde (gnome), Humanoïde (reptilien)
+
+    • Mort-vivant, Extérieur (natif), Humanoïde (halfelin),  
+
+    • Plante, Extérieur (Mal),  ,  
+
+    • Vermine, Extérieur (Terre),  ,  
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%b4deur.ashx#Ennemis_jurés_Ext_1
   
