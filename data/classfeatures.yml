@@ -44333,7 +44333,7 @@
     \n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Rage_de_maître_sanguin_Sur_14
   
-- Nom: Maître scalde (Sur)
+- Nom: Maître scalde
   Classe: Scalde
   Source: MCA
   Niveau: 20
@@ -51476,7 +51476,7 @@
     \n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Armes_et_armures_0
   
-- Nom: Savoir bardique (Ext)
+- Nom: Savoir bardique
   Classe: Scalde
   Source: MCA
   Niveau: 1
@@ -51489,10 +51489,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Savoir_bardique_Ext_1
   
-- Nom: Tours de magie.
+- Nom: Tours de magie
   Classe: Scalde
   Source: MCA
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: 'Un scalde connaît un certain nombre de tours de magie (ou sorts
     de niveau 0) comme indiqué dans la table des sorts connus de scalde ci-contre.
@@ -51552,7 +51552,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Sorts_3
   
-- Nom: Chant de rage (Sur).
+- Nom: Chant de rage
   Classe: Scalde
   Source: MCA
   Niveau: 1
@@ -51597,7 +51597,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Écriture_de_parchemins_5
   
-- Nom: Versatilité artistique (Ext)
+- Nom: Versatilité artistique
   Classe: Scalde
   Source: MCA
   Niveau: 2
@@ -51615,7 +51615,7 @@
     \ (Dressage, Intimidation).\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Versatilité_artistique_Ext_6
   
-- Nom: Érudition (Ext).
+- Nom: Érudition
   Classe: Scalde
   Source: MCA
   Niveau: 2
@@ -51625,7 +51625,7 @@
     \ les effets dépendant du son ou du langage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Érudition_Ext_7
   
-- Nom: Pouvoirs de rage (Ext)
+- Nom: Pouvoir de rage
   Classe: Scalde
   Source: MCA
   Niveau: 3
@@ -51661,7 +51661,7 @@
     \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
   
-- Nom: Esquive instinctive (Ext)
+- Nom: Esquive instinctive
   Classe: Scalde
   Source: MCA
   Niveau: 4
@@ -51676,7 +51676,7 @@
     \ plus bas) à la place de celle-ci. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Esquive_instinctive_Ext_9
   
-- Nom: Compréhension des sorts (Sur).
+- Nom: Compréhension des sorts 1/jr
   Classe: Scalde
   Source: MCA
   Niveau: 5
@@ -51692,7 +51692,7 @@
     \ 11 et trois fois par jour au niveau 17. \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Compréhension_des_sorts_Sur_10
   
-- Nom: Maître du savoir (Ext).
+- Nom: Maître du savoir 1/jr
   Classe: Scalde
   Source: MCA
   Niveau: 7
@@ -51706,7 +51706,7 @@
     \ \n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Maître_du_savoir_Ext_11
   
-- Nom: Esquive instinctive supérieure (Ext).
+- Nom: Esquive instinctive supérieure
   Classe: Scalde
   Source: MCA
   Niveau: 8
@@ -51727,7 +51727,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Esquive_instinctive_supérieure_Ext_12
   
-- Nom: Réduction de dégâts (Ext)
+- Nom: RD1/-
   Classe: Scalde
   Source: MCA
   Niveau: 9
@@ -69182,4 +69182,590 @@
     \ un lignage. Si le MJ accepte, le sanguin peut changer son ancien lignage pour\
     \ le rendre conforme au nouveau.\n\nVoir les lignages du sanguin\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sanguin.ashx#Lignage_1
+  
+- Nom: Rage inspirée +1 (+2 For/Con)
+  Classe: Scalde
+  Source: MCA
+  Niveau: 1
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: Chant de marche
+  Classe: Scalde
+  Source: MCA
+  Niveau: 3
+  Auto: true
+  Description: "Au niveau 3, le scalde utilise son chant de rage pour aider ses\
+    \ alliés à se déplacer plus vite sans être fatigués. En dépensant 1 round de chant\
+    \ de rage, il revigore les alliés situés dans un rayon de 18 mètres et leur permet\
+    \ de courir en footing pendant l’heure qui suit (Manuel des Joueurs page 170).\
+    \ Ce déplacement est assimilé à une marche (et non un footing) quand il s’agit\
+    \ de déterminer la fatigue et les dégâts non-létaux. Le scalde doit continuer\
+    \ de chanter pendant toute l’heure, sinon, l’effet se dissipe mais cette heure\
+    \ de chant ne consomme qu’un round de chant de rage utilisé pour l’activer. \n\
+    \n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Chant_de_marche_Sur_1
+  
+- Nom: Rage inspirée +2
+  Classe: Scalde
+  Source: MCA
+  Niveau: 4
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: Chant de force
+  Classe: Scalde
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: 'Au niveau 6, le scalde utilise le chant de rage pour inspirer ses
+    alliés et les pousser à accomplir des tours de force surhumains. Une fois par
+    round, tant que le scalde utilise ce chant, les alliés qui l’entendent et se trouvent
+    à 18 mètres ou moins peuvent ajouter la moitié du niveau du scalde à un test de
+    Force ou de compétence basée sur la Force.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Chant_de_force_Sur_2
+  
+- Nom: 'Pouvoir de rage #2'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: "Au niveau 3 puis tous les trois niveaux, le scalde apprend un pouvoir\
+    \ de rage qui affecte sa personne et les alliés sous l’influence de sa rage inspirée.\
+    \ \n\nIl ne peut pas apprendre un pouvoir de rage qui s’active par une action\
+    \ simple ou par une dépense en rounds de rage. Par exemple, il ne peut pas apprendre\
+    \ hurlement terrifiant (puisqu’il faut l’activer par une action simple), en revanche,\
+    \ il peut choisir repousser l'ennemi (qui remplace une attaque au corps à corps).\
+    \ Sauf indication contraire, le scalde ne peut pas choisir un même pouvoir de\
+    \ rage à plusieurs reprises.\n\nLe scalde choisit les éventuels pouvoirs de rage\
+    \ qu’il ajoute à son chant quand il entame le chant de rage. Tous les alliés affectés\
+    \ bénéficient de ces pouvoirs de rage, en utilisant le niveau du scalde comme\
+    \ niveau de barbare effectif. Le scalde utilise son niveau de classe en guise\
+    \ de niveau de barbare quand il choisit un pouvoir de rage qui nécessite un niveau\
+    \ de barbare minimum. \n\nSi l’effet du pouvoir de rage dépend du modificateur\
+    \ de caractéristique du scalde (comme totem spirituel inférieur), les alliés affectés\
+    \ utilisent aussi le modificateur de caractéristique du scalde au lieu du leur.\
+    \ Si un pouvoir de rage en exige un autre (comme perturbateur qui nécessite superstition),\
+    \ le scalde ne peut pas accorder ce pouvoir à ses alliés, à moins qu’il ne leur\
+    \ accorde aussi sa condition requise. Grâce à cette aptitude, il peut ajouter\
+    \ plusieurs pouvoirs de rage à la fois à sa rage inspirée (et donc offrir simultanément\
+    \ superstition et perturbateur). \n\nSi un pouvoir de rage s’utilise seulement\
+    \ un certain nombre de fois par jour ou par rage (comme nouvelle vigueur), chaque\
+    \ allié affecté par le chant de rage inspirée est soumis à cette limitation (les\
+    \ pouvoirs limités à une utilisation par rage étant limités à une utilisation\
+    \ par rage inspirée). Si le scalde possède des pouvoirs de rage provenant d’une\
+    \ autre source, il peut les utiliser durant sa rage inspirée mais ses alliés n’en\
+    \ disposent pas. Il ne peut pas choisir un pouvoir de rage en double, à moins\
+    \ qu’un personnage ne puisse choisir ce pouvoir à plusieurs reprises.\n\nSi le\
+    \ personnage peut devenir enragé grâce à une autre source, il peut utiliser ses\
+    \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
+  
+- Nom: 'Versatilité artistique #2'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 7
+  Auto: true
+  Description: "Au niveau 2, le scalde choisit un type de représentation associé\
+    \ à sa classe. Il peut utiliser le bonus qu’il possède dans cette compétence à\
+    \ la place du bonus dans la compétence associée indiquée plus loin. Dans ce cas,\
+    \ il utilise la totalité de son bonus de Représentation, y compris son bonus de\
+    \ compétence de classe, au lieu du bonus de compétence remplacé, qu’il ait investi\
+    \ ou non des rangs dans cette compétence et que celle-ci soit ou non une compétence\
+    \ de classe. \n\nIl choisit un type de Représentation de remplacement au niveau\
+    \ 7 puis, tous les cinq niveaux par la suite.\n\nVoici les types de Représentation\
+    \ et les compétences qu’elles remplacent : Chant (Bluff, Psychologie), déclamation\
+    \ (Diplomatie, Psychologie), instruments à cordes (Bluff, Diplomatie) et Percussions\
+    \ (Dressage, Intimidation).\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Versatilité_artistique_Ext_6
+  
+- Nom: Rage inspirée +3 (+4 For/Con)
+  Classe: Scalde
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: 'Pouvoir de rage #3'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: "Au niveau 3 puis tous les trois niveaux, le scalde apprend un pouvoir\
+    \ de rage qui affecte sa personne et les alliés sous l’influence de sa rage inspirée.\
+    \ \n\nIl ne peut pas apprendre un pouvoir de rage qui s’active par une action\
+    \ simple ou par une dépense en rounds de rage. Par exemple, il ne peut pas apprendre\
+    \ hurlement terrifiant (puisqu’il faut l’activer par une action simple), en revanche,\
+    \ il peut choisir repousser l'ennemi (qui remplace une attaque au corps à corps).\
+    \ Sauf indication contraire, le scalde ne peut pas choisir un même pouvoir de\
+    \ rage à plusieurs reprises.\n\nLe scalde choisit les éventuels pouvoirs de rage\
+    \ qu’il ajoute à son chant quand il entame le chant de rage. Tous les alliés affectés\
+    \ bénéficient de ces pouvoirs de rage, en utilisant le niveau du scalde comme\
+    \ niveau de barbare effectif. Le scalde utilise son niveau de classe en guise\
+    \ de niveau de barbare quand il choisit un pouvoir de rage qui nécessite un niveau\
+    \ de barbare minimum. \n\nSi l’effet du pouvoir de rage dépend du modificateur\
+    \ de caractéristique du scalde (comme totem spirituel inférieur), les alliés affectés\
+    \ utilisent aussi le modificateur de caractéristique du scalde au lieu du leur.\
+    \ Si un pouvoir de rage en exige un autre (comme perturbateur qui nécessite superstition),\
+    \ le scalde ne peut pas accorder ce pouvoir à ses alliés, à moins qu’il ne leur\
+    \ accorde aussi sa condition requise. Grâce à cette aptitude, il peut ajouter\
+    \ plusieurs pouvoirs de rage à la fois à sa rage inspirée (et donc offrir simultanément\
+    \ superstition et perturbateur). \n\nSi un pouvoir de rage s’utilise seulement\
+    \ un certain nombre de fois par jour ou par rage (comme nouvelle vigueur), chaque\
+    \ allié affecté par le chant de rage inspirée est soumis à cette limitation (les\
+    \ pouvoirs limités à une utilisation par rage étant limités à une utilisation\
+    \ par rage inspirée). Si le scalde possède des pouvoirs de rage provenant d’une\
+    \ autre source, il peut les utiliser durant sa rage inspirée mais ses alliés n’en\
+    \ disposent pas. Il ne peut pas choisir un pouvoir de rage en double, à moins\
+    \ qu’un personnage ne puisse choisir ce pouvoir à plusieurs reprises.\n\nSi le\
+    \ personnage peut devenir enragé grâce à une autre source, il peut utiliser ses\
+    \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
+  
+- Nom: Chant funèbre
+  Classe: Scalde
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: 'Au niveau 10, un scalde suscite un sentiment de crainte grandissant
+    chez ses ennemis qui sont secoués à condition de l’entendre et de se trouver à
+    9 mètres ou moins de lui. L’effet persiste tant que les ennemis restent dans cette
+    zone et que le scalde continue sa représentation. Ce pouvoir ne rend pas les cibles
+    effrayées ni paniquées, même si elles étaient déjà secouées à cause d’un autre
+    effet. C’est un effet mental sonore de terreur reposant sur des composantes auditives.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Chant_funèbre_Sur_3
+  
+- Nom: Compréhension des sorts 2/jr
+  Classe: Scalde
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: "Au niveau 5, le scalde connaît bien la magie des autres lanceurs\
+    \ de sorts et peut utiliser la sienne pour reproduire leurs sorts. Une fois par\
+    \ jour, le scalde peut lancer un sort issu de la liste du barde, du prêtre ou\
+    \ de l’ensorceleur/magicien comme s’il faisait partie de ses sorts de scalde connus.\
+    \ \n\nPour cela, il doit dépenser un emplacement de sort de scalde du même niveau\
+    \ que le sort lancé. L’incantation d’un sort issu de la compréhension des sorts\
+    \ exige toujours une action complexe, quelle que soit la durée d’incantation normale\
+    \ du sort.\n\nLe scalde peut utiliser ce pouvoir deux fois par jour au niveau\
+    \ 11 et trois fois par jour au niveau 17. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Compréhension_des_sorts_Sur_10
+  
+- Nom: 'Pouvoir de rage #4'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Au niveau 3 puis tous les trois niveaux, le scalde apprend un pouvoir\
+    \ de rage qui affecte sa personne et les alliés sous l’influence de sa rage inspirée.\
+    \ \n\nIl ne peut pas apprendre un pouvoir de rage qui s’active par une action\
+    \ simple ou par une dépense en rounds de rage. Par exemple, il ne peut pas apprendre\
+    \ hurlement terrifiant (puisqu’il faut l’activer par une action simple), en revanche,\
+    \ il peut choisir repousser l'ennemi (qui remplace une attaque au corps à corps).\
+    \ Sauf indication contraire, le scalde ne peut pas choisir un même pouvoir de\
+    \ rage à plusieurs reprises.\n\nLe scalde choisit les éventuels pouvoirs de rage\
+    \ qu’il ajoute à son chant quand il entame le chant de rage. Tous les alliés affectés\
+    \ bénéficient de ces pouvoirs de rage, en utilisant le niveau du scalde comme\
+    \ niveau de barbare effectif. Le scalde utilise son niveau de classe en guise\
+    \ de niveau de barbare quand il choisit un pouvoir de rage qui nécessite un niveau\
+    \ de barbare minimum. \n\nSi l’effet du pouvoir de rage dépend du modificateur\
+    \ de caractéristique du scalde (comme totem spirituel inférieur), les alliés affectés\
+    \ utilisent aussi le modificateur de caractéristique du scalde au lieu du leur.\
+    \ Si un pouvoir de rage en exige un autre (comme perturbateur qui nécessite superstition),\
+    \ le scalde ne peut pas accorder ce pouvoir à ses alliés, à moins qu’il ne leur\
+    \ accorde aussi sa condition requise. Grâce à cette aptitude, il peut ajouter\
+    \ plusieurs pouvoirs de rage à la fois à sa rage inspirée (et donc offrir simultanément\
+    \ superstition et perturbateur). \n\nSi un pouvoir de rage s’utilise seulement\
+    \ un certain nombre de fois par jour ou par rage (comme nouvelle vigueur), chaque\
+    \ allié affecté par le chant de rage inspirée est soumis à cette limitation (les\
+    \ pouvoirs limités à une utilisation par rage étant limités à une utilisation\
+    \ par rage inspirée). Si le scalde possède des pouvoirs de rage provenant d’une\
+    \ autre source, il peut les utiliser durant sa rage inspirée mais ses alliés n’en\
+    \ disposent pas. Il ne peut pas choisir un pouvoir de rage en double, à moins\
+    \ qu’un personnage ne puisse choisir ce pouvoir à plusieurs reprises.\n\nSi le\
+    \ personnage peut devenir enragé grâce à une autre source, il peut utiliser ses\
+    \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
+  
+- Nom: Rage inspirée +4
+  Classe: Scalde
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: 'Versatilité artistique #3'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "Au niveau 2, le scalde choisit un type de représentation associé\
+    \ à sa classe. Il peut utiliser le bonus qu’il possède dans cette compétence à\
+    \ la place du bonus dans la compétence associée indiquée plus loin. Dans ce cas,\
+    \ il utilise la totalité de son bonus de Représentation, y compris son bonus de\
+    \ compétence de classe, au lieu du bonus de compétence remplacé, qu’il ait investi\
+    \ ou non des rangs dans cette compétence et que celle-ci soit ou non une compétence\
+    \ de classe. \n\nIl choisit un type de Représentation de remplacement au niveau\
+    \ 7 puis, tous les cinq niveaux par la suite.\n\nVoici les types de Représentation\
+    \ et les compétences qu’elles remplacent : Chant (Bluff, Psychologie), déclamation\
+    \ (Diplomatie, Psychologie), instruments à cordes (Bluff, Diplomatie) et Percussions\
+    \ (Dressage, Intimidation).\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Versatilité_artistique_Ext_6
+  
+- Nom: Maître du savoir 2/jour
+  Classe: Scalde
+  Source: MCA
+  Niveau: 13
+  Auto: true
+  Description: " \nAu niveau 7, le scalde maîtrise de nombreux savoirs et peut faire\
+    \ 10 à n’importe quel test de Connaissances tant qu’il possède des rangs dans\
+    \ cette compétence. Une fois par jour, il peut faire 20 sur un test de Connaissances\
+    \ par une action simple au lieu d’y passer le temps habituellement requis. Il\
+    \ peut utiliser cette aptitude pour faire 20 à un test de Connaissances deux fois\
+    \ par jour à partir du niveau 13 et trois fois par jour à partir du niveau 19.\
+    \ \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Maître_du_savoir_Ext_11
+  
+- Nom: Chant des défunts
+  Classe: Scalde
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 14, le scalde ramène temporairement un allié à la vie\
+    \ pour qu’il reprenne le combat, avec les mêmes limitations qu’un rappel à la\
+    \ vie. Le scalde choisit un allié décédé présent dans un rayon de 18 mètres et\
+    \ dépense 1 round de chant de rage pour le ramener à la vie. L’allié ressuscité\
+    \ est vivant mais chancelant. Chaque round, le scalde peut dépenser 1 round de\
+    \ chant de rage pour le maintenir en vie un round de plus. L’allié meurt dès que\
+    \ le scalde arrête sa représentation ou se fait interrompre. Le scalde peut ramener\
+    \ ainsi plusieurs alliés à la vie (en même temps ou lors de rounds successifs)\
+    \ mais il doit dépenser 1 round de chant de rage par allié ressuscité à chaque\
+    \ round où il les maintient en vie.\n\r\n\t"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Chant_des_défunts_Sur_4
+  
+- Nom: RD 2/-
+  Classe: Scalde
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: 'Au niveau 9, le scalde gagne une réduction de dégâts. À chaque fois
+    qu’il subit des dégâts infligée par une attaque naturelle ou une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point aux niveaux 14 et 19. Elle peut réduire les dégâts à 0 mais jamais
+    les faire passer en dessous de 0. De plus, le scalde confère la même RD aux alliés
+    sous l’effet de sa rage inspirée.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Réduction_de_dégâts_Ext_13
+  
+- Nom: 'Pouvoir de rage #5'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: "Au niveau 3 puis tous les trois niveaux, le scalde apprend un pouvoir\
+    \ de rage qui affecte sa personne et les alliés sous l’influence de sa rage inspirée.\
+    \ \n\nIl ne peut pas apprendre un pouvoir de rage qui s’active par une action\
+    \ simple ou par une dépense en rounds de rage. Par exemple, il ne peut pas apprendre\
+    \ hurlement terrifiant (puisqu’il faut l’activer par une action simple), en revanche,\
+    \ il peut choisir repousser l'ennemi (qui remplace une attaque au corps à corps).\
+    \ Sauf indication contraire, le scalde ne peut pas choisir un même pouvoir de\
+    \ rage à plusieurs reprises.\n\nLe scalde choisit les éventuels pouvoirs de rage\
+    \ qu’il ajoute à son chant quand il entame le chant de rage. Tous les alliés affectés\
+    \ bénéficient de ces pouvoirs de rage, en utilisant le niveau du scalde comme\
+    \ niveau de barbare effectif. Le scalde utilise son niveau de classe en guise\
+    \ de niveau de barbare quand il choisit un pouvoir de rage qui nécessite un niveau\
+    \ de barbare minimum. \n\nSi l’effet du pouvoir de rage dépend du modificateur\
+    \ de caractéristique du scalde (comme totem spirituel inférieur), les alliés affectés\
+    \ utilisent aussi le modificateur de caractéristique du scalde au lieu du leur.\
+    \ Si un pouvoir de rage en exige un autre (comme perturbateur qui nécessite superstition),\
+    \ le scalde ne peut pas accorder ce pouvoir à ses alliés, à moins qu’il ne leur\
+    \ accorde aussi sa condition requise. Grâce à cette aptitude, il peut ajouter\
+    \ plusieurs pouvoirs de rage à la fois à sa rage inspirée (et donc offrir simultanément\
+    \ superstition et perturbateur). \n\nSi un pouvoir de rage s’utilise seulement\
+    \ un certain nombre de fois par jour ou par rage (comme nouvelle vigueur), chaque\
+    \ allié affecté par le chant de rage inspirée est soumis à cette limitation (les\
+    \ pouvoirs limités à une utilisation par rage étant limités à une utilisation\
+    \ par rage inspirée). Si le scalde possède des pouvoirs de rage provenant d’une\
+    \ autre source, il peut les utiliser durant sa rage inspirée mais ses alliés n’en\
+    \ disposent pas. Il ne peut pas choisir un pouvoir de rage en double, à moins\
+    \ qu’un personnage ne puisse choisir ce pouvoir à plusieurs reprises.\n\nSi le\
+    \ personnage peut devenir enragé grâce à une autre source, il peut utiliser ses\
+    \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
+  
+- Nom: Rage inspirée +5 (+6 For/Con)
+  Classe: Scalde
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
+  
+- Nom: Compréhension des sorts 3/jr
+  Classe: Scalde
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: "Au niveau 5, le scalde connaît bien la magie des autres lanceurs\
+    \ de sorts et peut utiliser la sienne pour reproduire leurs sorts. Une fois par\
+    \ jour, le scalde peut lancer un sort issu de la liste du barde, du prêtre ou\
+    \ de l’ensorceleur/magicien comme s’il faisait partie de ses sorts de scalde connus.\
+    \ \n\nPour cela, il doit dépenser un emplacement de sort de scalde du même niveau\
+    \ que le sort lancé. L’incantation d’un sort issu de la compréhension des sorts\
+    \ exige toujours une action complexe, quelle que soit la durée d’incantation normale\
+    \ du sort.\n\nLe scalde peut utiliser ce pouvoir deux fois par jour au niveau\
+    \ 11 et trois fois par jour au niveau 17. \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Compréhension_des_sorts_Sur_10
+  
+- Nom: 'Versatilité artistique #4'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: "Au niveau 2, le scalde choisit un type de représentation associé\
+    \ à sa classe. Il peut utiliser le bonus qu’il possède dans cette compétence à\
+    \ la place du bonus dans la compétence associée indiquée plus loin. Dans ce cas,\
+    \ il utilise la totalité de son bonus de Représentation, y compris son bonus de\
+    \ compétence de classe, au lieu du bonus de compétence remplacé, qu’il ait investi\
+    \ ou non des rangs dans cette compétence et que celle-ci soit ou non une compétence\
+    \ de classe. \n\nIl choisit un type de Représentation de remplacement au niveau\
+    \ 7 puis, tous les cinq niveaux par la suite.\n\nVoici les types de Représentation\
+    \ et les compétences qu’elles remplacent : Chant (Bluff, Psychologie), déclamation\
+    \ (Diplomatie, Psychologie), instruments à cordes (Bluff, Diplomatie) et Percussions\
+    \ (Dressage, Intimidation).\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Versatilité_artistique_Ext_6
+  
+- Nom: 'Pouvoir de rage #6'
+  Classe: Scalde
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: "Au niveau 3 puis tous les trois niveaux, le scalde apprend un pouvoir\
+    \ de rage qui affecte sa personne et les alliés sous l’influence de sa rage inspirée.\
+    \ \n\nIl ne peut pas apprendre un pouvoir de rage qui s’active par une action\
+    \ simple ou par une dépense en rounds de rage. Par exemple, il ne peut pas apprendre\
+    \ hurlement terrifiant (puisqu’il faut l’activer par une action simple), en revanche,\
+    \ il peut choisir repousser l'ennemi (qui remplace une attaque au corps à corps).\
+    \ Sauf indication contraire, le scalde ne peut pas choisir un même pouvoir de\
+    \ rage à plusieurs reprises.\n\nLe scalde choisit les éventuels pouvoirs de rage\
+    \ qu’il ajoute à son chant quand il entame le chant de rage. Tous les alliés affectés\
+    \ bénéficient de ces pouvoirs de rage, en utilisant le niveau du scalde comme\
+    \ niveau de barbare effectif. Le scalde utilise son niveau de classe en guise\
+    \ de niveau de barbare quand il choisit un pouvoir de rage qui nécessite un niveau\
+    \ de barbare minimum. \n\nSi l’effet du pouvoir de rage dépend du modificateur\
+    \ de caractéristique du scalde (comme totem spirituel inférieur), les alliés affectés\
+    \ utilisent aussi le modificateur de caractéristique du scalde au lieu du leur.\
+    \ Si un pouvoir de rage en exige un autre (comme perturbateur qui nécessite superstition),\
+    \ le scalde ne peut pas accorder ce pouvoir à ses alliés, à moins qu’il ne leur\
+    \ accorde aussi sa condition requise. Grâce à cette aptitude, il peut ajouter\
+    \ plusieurs pouvoirs de rage à la fois à sa rage inspirée (et donc offrir simultanément\
+    \ superstition et perturbateur). \n\nSi un pouvoir de rage s’utilise seulement\
+    \ un certain nombre de fois par jour ou par rage (comme nouvelle vigueur), chaque\
+    \ allié affecté par le chant de rage inspirée est soumis à cette limitation (les\
+    \ pouvoirs limités à une utilisation par rage étant limités à une utilisation\
+    \ par rage inspirée). Si le scalde possède des pouvoirs de rage provenant d’une\
+    \ autre source, il peut les utiliser durant sa rage inspirée mais ses alliés n’en\
+    \ disposent pas. Il ne peut pas choisir un pouvoir de rage en double, à moins\
+    \ qu’un personnage ne puisse choisir ce pouvoir à plusieurs reprises.\n\nSi le\
+    \ personnage peut devenir enragé grâce à une autre source, il peut utiliser ses\
+    \ pouvoirs de rage de scalde lorsqu’il déchaîne son autre rage.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Pouvoirs_de_rage_Ext_8
+  
+- Nom: Maître du savoir 3/jr
+  Classe: Scalde
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: " \nAu niveau 7, le scalde maîtrise de nombreux savoirs et peut faire\
+    \ 10 à n’importe quel test de Connaissances tant qu’il possède des rangs dans\
+    \ cette compétence. Une fois par jour, il peut faire 20 sur un test de Connaissances\
+    \ par une action simple au lieu d’y passer le temps habituellement requis. Il\
+    \ peut utiliser cette aptitude pour faire 20 à un test de Connaissances deux fois\
+    \ par jour à partir du niveau 13 et trois fois par jour à partir du niveau 19.\
+    \ \n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Maître_du_savoir_Ext_11
+  
+- Nom: RD 3/-
+  Classe: Scalde
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: 'Au niveau 9, le scalde gagne une réduction de dégâts. À chaque fois
+    qu’il subit des dégâts infligée par une attaque naturelle ou une attaque portée
+    avec une arme, soustrayez un point aux dégâts reçus. Cette réduction augmente
+    d’un point aux niveaux 14 et 19. Elle peut réduire les dégâts à 0 mais jamais
+    les faire passer en dessous de 0. De plus, le scalde confère la même RD aux alliés
+    sous l’effet de sa rage inspirée.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scalde.ashx#Réduction_de_dégâts_Ext_13
+  
+- Nom: Rage inspirée +6
+  Classe: Scalde
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: 'Au niveau 1, les alliés affectés gagnent un bonus de moral de +2
+    à la Force et la Constitution et un bonus de moral de +1 aux jets de Volonté mais
+    ils subissent également un malus de –1 à la CA. Les alliés (autres que le scalde)
+    sous l’effet de la rage inspirée ne peuvent pas utiliser de compétences basées
+    sur le Charisme, la Dextérité ou l’Intelligence (sauf Acrobaties, Intimidation,
+    Équitation et Vol) ni d’aptitude qui demande patience ou concentration. Au niveau
+    4 puis tous les quatre niveaux, le bonus aux jets de Volonté augmente de 1 mais
+    le malus à la CA ne change pas. Le bonus à la Force et à la Constitution augmente
+    de 2 aux niveaux 8 et 16 (contrairement à l’aptitude de rage du barbare, celui-ci
+    ne fatigue pas ses bénéficiaires une fois le chant terminé.)
+
+
+    Si un allié possède sa propre aptitude de rage (comme la rage du barbare, la rage
+    sanguine du sanguin ou la rage inspirée du scalde), il peut utiliser ses propres
+    bonus à la Force, à la Constitution et au jet de Volonté, ainsi que ses malus
+    à la CA, en fonction de son aptitude et de son niveau plutôt que ceux du scalde
+    (qui n’inflige aucune fatigue par la suite). En revanche, l’allié ne peut pas
+    profiter de la rage inspirée pour activer un de ses propres pouvoirs qui dépendent
+    de l’aptitude de classe de rage, comme les pouvoirs de rage, l’incantation sanguine
+    ou les lignages du sanguin. Pour cela, l’allié doit activer sa propre aptitude
+    de rage.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chants%20de%20rage.ashx#Rage_inspirée_Sur_0
   
