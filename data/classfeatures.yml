@@ -30502,7 +30502,7 @@
     \ ce pouvoir fonctionne comme la découverte grand mutagène et la remplace."
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brasseur%20d%c3%a9pines%20(alchimiste).ashx#Mutagène_de_la_dendrite_Sur_1
   
-- Nom: Grande découverte (Sur)
+- Nom: Grande découverte
   Classe: Alchimiste
   Source: MJRA
   Niveau: 20
@@ -46284,7 +46284,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Armes_et_armures_0
   
-- Nom: Alchimie (Sur)
+- Nom: Alchimie
   Classe: Alchimiste
   Source: MJRA
   Niveau: 1
@@ -46369,7 +46369,7 @@
     \ les écrits magiques avant de les recopier.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Extraits_2
   
-- Nom: Bombes (Sur)
+- Nom: Bombes 1d6
   Classe: Alchimiste
   Source: MJRA
   Niveau: 1
@@ -46416,7 +46416,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
   
-- Nom: Préparation de potions (Ext)
+- Nom: Préparation de potions
   Classe: Alchimiste
   Source: MJRA
   Niveau: 1
@@ -46433,7 +46433,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Préparation_de_potions_Ext_4
   
-- Nom: Mutagènes (Sur)
+- Nom: Mutagène
   Classe: Alchimiste
   Source: MJRA
   Niveau: 1
@@ -46473,7 +46473,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Mutagènes_Sur_5
   
-- Nom: Lancer improvisé (Ext)
+- Nom: Lancer improvisé
   Classe: Alchimiste
   Source: MJRA
   Niveau: 1
@@ -46488,7 +46488,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Lancer_improvisé_Ext_6
   
-- Nom: Découvertes (Sur)
+- Nom: Découverte
   Classe: Alchimiste
   Source: MJRA
   Niveau: 2
@@ -46510,7 +46510,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
   
-- Nom: Résistance au poison (Ext)
+- Nom: Résistance au poison +2
   Classe: Alchimiste
   Source: MJRA
   Niveau: 2
@@ -46524,7 +46524,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Résistance_au_poison_Ext_8
   
-- Nom: Utilisation des poisons (Ext)
+- Nom: Utilisation du poison
   Classe: Alchimiste
   Source: MJRA
   Niveau: 2
@@ -46538,7 +46538,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Utilisation_des_poisons_Ext_9
   
-- Nom: Alchimie rapide (Ext)
+- Nom: Alchimie rapide
   Classe: Alchimiste
   Source: MJRA
   Niveau: 3
@@ -46553,7 +46553,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Alchimie_rapide_Ext_10
   
-- Nom: Empoisonnement rapide
+- Nom: Poison rapide
   Classe: Alchimiste
   Source: MJRA
   Niveau: 6
@@ -46566,7 +46566,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Empoisonnement_rapide_11
   
-- Nom: Mutagène persistant (Sur)
+- Nom: Mutagène persistant
   Classe: Alchimiste
   Source: MJRA
   Niveau: 14
@@ -46578,7 +46578,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Mutagène_persistant_Sur_12
   
-- Nom: Alchimie instantanée (Ext)
+- Nom: Alchimie instantanée
   Classe: Alchimiste
   Source: MJRA
   Niveau: 18
@@ -62423,4 +62423,645 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roublard.ashx#Talents_de_maître_roublard_8
+  
+- Nom: Bombes 2d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 3
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #2'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 4
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 3d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 5
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: Résistance au poison +4
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 5
+  Auto: true
+  Description: 'Au niveau 2, l’alchimiste gagne un bonus de +2 aux jets de sauvegarde
+    contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au niveau 8. Au niveau
+    10, l’alchimiste est complètement immunisé contre les poisons.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Résistance_au_poison_Ext_8
+  
+- Nom: 'Découverte #3'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 6
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 4d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 7
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #4'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Résistance au poison +6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 8
+  Auto: true
+  Description: 'Au niveau 2, l’alchimiste gagne un bonus de +2 aux jets de sauvegarde
+    contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au niveau 8. Au niveau
+    10, l’alchimiste est complètement immunisé contre les poisons.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Résistance_au_poison_Ext_8
+  
+- Nom: Bombes 5d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 9
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #5'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 10
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Immunité au poison
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 10
+  Auto: true
+  Description: 'Au niveau 2, l’alchimiste gagne un bonus de +2 aux jets de sauvegarde
+    contre le poison. Ce bonus passe à +4 au niveau 5 et à +6 au niveau 8. Au niveau
+    10, l’alchimiste est complètement immunisé contre les poisons.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Résistance_au_poison_Ext_8
+  
+- Nom: Bombes 6d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 11
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #6'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 7d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 13
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #7'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 14
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 8d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 15
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #8'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 16
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 9d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 17
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
+  
+- Nom: 'Découverte #9'
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 2 et tous les deux niveaux par la suite (jusqu’au niveau
+    18), l’alchimiste fait une incroyable découverte alchimique. Sauf indication contraire,
+    il ne peut pas choisir une même découverte à plusieurs reprises. Certaines découvertes
+    nécessitent des prérequis, par exemple des découvertes précédentes. Les découvertes
+    qui améliorent les bombes et sont marquées d’un astérisque (*) ne se cumulent
+    pas. Seule une de ces découvertes s’applique à chaque bombe créée. Le DD des jets
+    de sauvegarde lié à une découverte est de 10 + 1/2 niveau de l’alchimiste + modificateur
+    d’Intelligence de l’alchimiste.
+
+
+    Voir la liste des découvertes d''alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Découvertes_Sur_7
+  
+- Nom: Bombes 10d6
+  Classe: Alchimiste
+  Source: MJRA
+  Niveau: 19
+  Auto: true
+  Description: 'En plus des extraits magiques, les alchimistes sont capables de
+    mélanger rapidement diverses composantes chimiques volatiles et de les imprégner
+    de leur essence magique pour créer de puissantes bombes qu’ils lancent sur leurs
+    ennemis. Chaque jour, l’alchimiste peut utiliser un nombre de bombes égal à son
+    niveau de classe + modificateur d’Intelligence. Les bombes sont instables, et
+    s’il ne les utilise pas dans le round qui suit leur création, elles se dégradent
+    et deviennent inertes. Leur méthode de fabrication empêche de créer et de stocker
+    de grosses quantités d’explosifs. Pour créer une bombe, l’alchimiste doit disposer
+    d’une petite fiole qui contient une once de liquide catalyseur. Il crée ce dernier
+    à partir de quelques produits chimiques en travaillant dans un laboratoire et
+    il peut se réapprovisionner aussi facilement que les magiciens et leur sacoche
+    à composantes. En début de journée, la plupart des alchimistes créent un nombre
+    de fioles de catalyseur égal au nombre de bombes qu’ils peuvent lancer chaque
+    jour. Une fois créée, la fiole de catalyseur est utilisable pendant des années.
+
+
+    Saisir les composantes d''une bombe, la créer et lancer la bombe est une action
+    simple qui provoque une attaque d’opportunité. Les bombes lancées ont une portée
+    de 6 mètres (4 cases) et utilisent l’attaque spéciale lancer une arme à impact.
+    Les bombes sont assimilées à des armes et s’utilisent avec des dons comme Tir
+    à bout portant et Arme de prédilection. Si la bombe touche directement, elle inflige
+    1d6 points de dégâts de feu + des dégâts supplémentaires égaux au modificateur
+    d’Intelligence de l’alchimiste. Les dégâts de la bombe augmentent de 1d6 points
+    de dégâts à chaque niveau impair d’alchimiste (ces dégâts supplémentaires ne sont
+    pas doublés en cas de coup critique ni à l’aide d’un don comme Frappe décisive).
+    Les dégâts d’aspersion de la bombe sont toujours égaux à ses dégâts minimums (une
+    bombe qui inflige 2d6+4 points de dégâts de feu en cas de coup direct inflige
+    donc également 6 points de dégâts d’aspersion de feu). Une créature prise dans
+    la zone d’aspersion peut effectuer un jet de Réflexes pour réduire ces dégâts
+    de moitié. Le DD de ce jet est égal à 10 + la moitié du niveau de l’alchimiste
+    + modificateur d’Intelligence de l’alchimiste.
+
+
+    Les alchimistes peuvent apprendre de nouveaux types de bombes sous forme de «
+    découvertes » quand ils passent des niveaux. Comme les extraits, les bombes deviennent
+    inertes si elles ne se trouvent plus en possession de l’alchimiste.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alchimiste.ashx#Bombes_Sur_3
   
