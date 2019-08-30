@@ -44699,7 +44699,7 @@
     \ créature.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20espion.ashx#Vol_d’identité_Sur_16
   
-- Nom: Sorts surprise (Sur)
+- Nom: Sorts surprise
   Classe: Mystificateur profane
   Source: MJ
   Niveau: 10
@@ -57199,10 +57199,10 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Prestidigitation_à_distance_2
   
-- Nom: Attaque sournoise
+- Nom: Attaque sournoise +1d6
   Classe: Mystificateur profane
   Source: MJ
-  Niveau: 1
+  Niveau: 2
   Auto: true
   Description: 'Cette aptitude est en tout point semblable à l’aptitude d''attaque
     sournoise du roublard. Les dégâts supplémentaires augmentent de +1d6 tous les
@@ -57215,7 +57215,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_sournoise_3
   
-- Nom: Attaque imprévisible
+- Nom: Attaque imprévisible 1/jour
   Classe: Mystificateur profane
   Source: MJ
   Niveau: 3
@@ -57237,7 +57237,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_imprévisible_4
   
-- Nom: Sorts vicieux (Sur)
+- Nom: Sorts vicieux 3/jour
   Classe: Mystificateur profane
   Source: MJ
   Niveau: 5
@@ -57255,7 +57255,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Sorts_vicieux_Sur_5
   
-- Nom: Voleur invisible (Sur)
+- Nom: Voleur invisible
   Classe: Mystificateur profane
   Source: MJ
   Niveau: 9
@@ -75933,4 +75933,126 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20espion.ashx#Attaque_sournoise_Ext_3
+  
+- Nom: Attaque sournoise +2d6
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 4
+  Auto: true
+  Description: 'Cette aptitude est en tout point semblable à l’aptitude d''attaque
+    sournoise du roublard. Les dégâts supplémentaires augmentent de +1d6 tous les
+    niveaux pairs (niveaux 2, 4, 6, 8 et 10). Si le mystificateur profane bénéficie
+    également d''un bonus sur son attaque sournoise par un autre biais, les bonus
+    sur les dégâts se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_sournoise_3
+  
+- Nom: Attaque sournoise +3d6
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: 'Cette aptitude est en tout point semblable à l’aptitude d''attaque
+    sournoise du roublard. Les dégâts supplémentaires augmentent de +1d6 tous les
+    niveaux pairs (niveaux 2, 4, 6, 8 et 10). Si le mystificateur profane bénéficie
+    également d''un bonus sur son attaque sournoise par un autre biais, les bonus
+    sur les dégâts se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_sournoise_3
+  
+- Nom: Attaque imprévisible 2/jour
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: 'À partir du niveau 3 et une fois par jour, le mystificateur profane
+    peut faire de n’importe laquelle de ses attaques au corps à corps ou à distance
+    une attaque sournoise. Dans le cas d’une attaque à distance, la cible doit se
+    trouver à neuf mètres ou moins. La cible perd son éventuel bonus de Dextérité
+    à la CA, mais uniquement contre cette attaque. Ce pouvoir peut être utilisé contre
+    n’importe quelle créature, mais celles qui sont immunisées contre les coups critiques
+    ne subissent pas les dégâts supplémentaires (bien qu’elles perdent tout de même
+    leur bonus de Dextérité à la CA).
+
+
+    Un mystificateur profane de niveau 7 peut utiliser ce pouvoir deux fois par jour.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_imprévisible_4
+  
+- Nom: Sorts vicieux 4/jour
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: 'À partir du niveau 5, un mystificateur profane peut lancer ses sorts
+    sans leurs composantes gestuelles ou verbales, comme s''il avait les dons Incantation
+    statique et Incantation silencieuse. Cela ne change ni le temps d''incantation,
+    ni le niveau du sort. Le personnage peut utiliser ce pouvoir trois fois par jour
+    au niveau 5, puis une fois de plus tous les deux niveaux, jusqu''à un maximum
+    de cinq fois par jour au niveau 9. Le mystificateur profane choisit d''en faire
+    usage au moment où il lance son sort.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Sorts_vicieux_Sur_5
+  
+- Nom: Attaque sournoise +4d6
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 8
+  Auto: true
+  Description: 'Cette aptitude est en tout point semblable à l’aptitude d''attaque
+    sournoise du roublard. Les dégâts supplémentaires augmentent de +1d6 tous les
+    niveaux pairs (niveaux 2, 4, 6, 8 et 10). Si le mystificateur profane bénéficie
+    également d''un bonus sur son attaque sournoise par un autre biais, les bonus
+    sur les dégâts se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_sournoise_3
+  
+- Nom: Sorts vicieux 5/jour
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: 'À partir du niveau 5, un mystificateur profane peut lancer ses sorts
+    sans leurs composantes gestuelles ou verbales, comme s''il avait les dons Incantation
+    statique et Incantation silencieuse. Cela ne change ni le temps d''incantation,
+    ni le niveau du sort. Le personnage peut utiliser ce pouvoir trois fois par jour
+    au niveau 5, puis une fois de plus tous les deux niveaux, jusqu''à un maximum
+    de cinq fois par jour au niveau 9. Le mystificateur profane choisit d''en faire
+    usage au moment où il lance son sort.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Sorts_vicieux_Sur_5
+  
+- Nom: Attaque sournoise +5d6
+  Classe: Mystificateur profane
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: 'Cette aptitude est en tout point semblable à l’aptitude d''attaque
+    sournoise du roublard. Les dégâts supplémentaires augmentent de +1d6 tous les
+    niveaux pairs (niveaux 2, 4, 6, 8 et 10). Si le mystificateur profane bénéficie
+    également d''un bonus sur son attaque sournoise par un autre biais, les bonus
+    sur les dégâts se cumulent.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mystificateur%20profane.ashx#Attaque_sournoise_3
   
