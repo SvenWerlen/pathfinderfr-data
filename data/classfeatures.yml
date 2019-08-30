@@ -44472,7 +44472,7 @@
     \ par sort.\n\n\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Manipulation_du_soi_Mag_10
   
-- Nom: Conscience autonome (Sur)
+- Nom: Conscience autonome
   Classe: Spirite
   Source: AO
   Niveau: 20
@@ -54006,7 +54006,7 @@
 - Nom: Astuces
   Classe: Spirite
   Source: AO
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: '
 
@@ -54100,7 +54100,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Fantôme_5
   
-- Nom: Partage de conscience (Sur)
+- Nom: Partage de conscience
   Classe: Spirite
   Source: AO
   Niveau: 1
@@ -54131,7 +54131,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Partage_de_conscience_Sur_6
   
-- Nom: Laisse éthérée (Sur)
+- Nom: Laisse éthérée
   Classe: Spirite
   Source: AO
   Niveau: 1
@@ -54178,7 +54178,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Laisse_éthérée_Sur_7
   
-- Nom: Partage des sens (Sur)
+- Nom: Partage des sens
   Classe: Spirite
   Source: AO
   Niveau: 2
@@ -54200,7 +54200,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Partage_des_sens_Sur_8
   
-- Nom: Manifestation interne (Sur)
+- Nom: Manifestation interne
   Classe: Spirite
   Source: AO
   Niveau: 3
@@ -54280,7 +54280,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Manifestation_interne_Sur_9
   
-- Nom: Interférence spirituelle (Ext ou Sur)
+- Nom: Interférence Spirituelle
   Classe: Spirite
   Source: AO
   Niveau: 4
@@ -54302,7 +54302,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Interférence_spirituelle_Ext_ou_Sur_10
   
-- Nom: Détection des morts-vivants (Mag)
+- Nom: Détection des morts-vivants
   Classe: Spirite
   Source: AO
   Niveau: 5
@@ -54319,7 +54319,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Détection_des_morts-vivants_Mag_11
   
-- Nom: Rappel du fantôme (Sur)
+- Nom: Rappel du fantôme 1/jour
   Classe: Spirite
   Source: AO
   Niveau: 6
@@ -54346,7 +54346,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Rappel_du_fantôme_Sur_12
   
-- Nom: Apaisement des esprits (Mag)
+- Nom: Apaisement des esprits 1/jour
   Classe: Spirite
   Source: AO
   Niveau: 7
@@ -54364,7 +54364,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Apaisement_des_esprits_Mag_13
   
-- Nom: Détection de l’invisibilité (Mag)
+- Nom: Détection de l’invisibilité
   Classe: Spirite
   Source: AO
   Niveau: 9
@@ -54381,7 +54381,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Détection_de_l’invisibilité_Mag_14
   
-- Nom: Conscience unifiée (Sur)
+- Nom: Conscience unifiée
   Classe: Spirite
   Source: AO
   Niveau: 10
@@ -54403,7 +54403,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Conscience_unifiée_Sur_15
   
-- Nom: Interférence spirituelle supérieure (Ext ou Sur)
+- Nom: Interférence spirituelle supérieure
   Classe: Spirite
   Source: AO
   Niveau: 12
@@ -54426,7 +54426,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Interférence_spirituelle_supérieure_Ext_ou_Sur_16
   
-- Nom: Complicité spirituelle (Sur)
+- Nom: Complicité spirituelle
   Classe: Spirite
   Source: AO
   Niveau: 14
@@ -54449,7 +54449,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Complicité_spirituelle_Sur_17
   
-- Nom: Appel d’un esprit (Mag)
+- Nom: Appel d’un esprit
   Classe: Spirite
   Source: AO
   Niveau: 16
@@ -54465,7 +54465,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Appel_d’un_esprit_Mag_18
   
-- Nom: Manifestation durable (Sur)
+- Nom: Manifestation durable
   Classe: Spirite
   Source: AO
   Niveau: 17
@@ -73471,4 +73471,379 @@
     \ d’en changer. Le psychiste doit dépenser un ou plusieurs points de sa réserve\
     \ phrénique pour activer ses amplifications.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychiste.ashx#Amplification_phrénique_4
+  
+- Nom: Manifestation interne augmentation
+  Classe: Spirite
+  Source: AO
+  Niveau: 8
+  Auto: true
+  Description: '
+
+    Au niveau 3, par une action rapide, le spirite peut puiser dans la conscience
+    de son fantôme et la substance du plan Éthéré pour partiellement les manifester
+    dans son propre corps. Ce faisant, il exploite cette manifestation interne pour
+    améliorer ses propres capacités pendant que le fantôme est toujours à l’intérieur
+    de sa conscience. Le fantôme doit être confiné dans la conscience du spirite pour
+    que celui-ci puisse utiliser cette aptitude ; le spirite ne peut donc pas le manifester
+    d’une quelconque autre façon.
+
+
+    Pendant une manifestation interne, le fantôme ne peut être blessé, renvoyé ou
+    banni. Un spirite peut utiliser la manifestation interne pendant un nombre quotidien
+    de rounds égal à 3 + son niveau de spirite. Ces rounds ne sont pas nécessairement
+    consécutifs. Il peut mettre fin aux effets d’une manifestation interne par une
+    action libre mais, même s’il met fin à une telle manifestation lors du round pendant
+    lequel il l’utilise, il défalque quand même un round de son nombre d’utilisations
+    quotidiennes.
+
+
+    Quand un spirite utilise cette aptitude, il doit choisir la forme ectoplasmique
+    ou intangible. Une fois ce choix effectué, il bénéficie de l’ensemble des pouvoirs
+    basés sur la forme choisie et son niveau de spirite.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme ectoplasmique, il
+    bénéficie d’un bouclier ectoplasmique qui le protège sans restreindre ses mouvements
+    ou ses actions. Il bénéficie d’un bonus de bouclier de +4 à la Classe d’Armure
+    qui s’applique même contre les attaques de contact intangible. Le bouclier ectoplasmique
+    n’impose aucun malus d’armure aux tests ou risque d’échec des sorts profanes.
+    Au niveau 8, le spirite peut faire surgir deux vrilles ectoplasmiques de son corps.
+    Une fois par round par une action simple ou rapide (au choix du spirite), le spirite
+    peut utiliser une de ses vrilles ou les deux pour attaquer les créatures à portée
+    de son allonge au corps à corps (en appliquant le bonus d’attaque et les dés de
+    dégâts de son fantôme manifesté sous forme ectoplasmique) ou pour manipuler des
+    objets. Il peut même utiliser cette action pour effectuer une attaque avec une
+    vrille et manipuler un objet avec l’autre, tant que cet objet peut être manipulé
+    à une main. Au niveau 13, l’ectoplasme du fantôme colle à la peau du spirite comme
+    une armure. Il lui confère un bonus d’armure de +6 à la CA sans imposer aucun
+    malus d’armure aux tests, risque d’échec des sorts profanes ou réduction de sa
+    vitesse de déplacement. Au niveau 18, le spirite peut attaquer toutes les créatures
+    à portée de son allonge au corps à corps avec ses vrilles par une action complexe
+    (en appliquant le bonus d’attaque et les dés de dégâts de son fantôme manifesté
+    sous forme ectoplasmique). Ce faisant, il effectue deux jets d’attaque, conserve
+    le meilleur résultat et l’applique contre toutes les créatures situées à portée
+    de son allonge au corps à corps. Si le meilleur des deux résultats aboutit à une
+    probabilité de coup critique, le spirite choisit une cible contre laquelle il
+    effectue son jet de confirmation de coup critique. Les autres attaques qui touchent
+    sont considérées comme des coups normaux et non comme des probabilités de coup
+    critique.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme intangible, il provoque
+    l’apparition d’une brume éthérée autour de lui qui lui confère un camouflage contre
+    les attaques à distance. Au niveau 8, ses attaques au corps à corps contre les
+    créatures intangibles deviennent plus efficaces. En effet, on considère que ses
+    attaques à mains nues ou avec des armes de corps à corps bénéficient de la propriété
+    spéciale d’arme magique spectrale. Au niveau 13, le spirite peut accomplir une
+    action simple pour devenir invisible (comme avec le sort d’invisibilité) jusqu’au
+    début de son prochain tour. Au niveau 18, le spirite acquiert le sous-type intangible
+    et une vitesse de déplacement en vol de 9 mètres (bonne) lorsqu’il prend cette
+    forme de manifestation interne.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Manifestation_interne_Sur_9
+  
+- Nom: Rappel du fantôme 2/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 10
+  Auto: true
+  Description: '
+
+    Au niveau 6, par une action rapide ou immédiate, un spirite peut rappeler son
+    fantôme manifesté à ses côtés ou dans sa conscience. Cette aptitude fonctionne
+    comme une porte dimensionnelle, en appliquant le niveau de spirite en guise de
+    niveau de lanceur de sorts. Quand le spirite rappelle son fantôme de cette façon,
+    celui-ci apparaît dans un emplacement adjacent à son maître (ou le plus près possible
+    si toutes les cases adjacentes sont occupées).
+
+
+    Quand un spirite utilise cette aptitude pour rappeler un fantôme dans sa conscience,
+    il peut activer la manifestation interne au cours de la même action, mais cette
+    activation provoque la dépense d’un round d’utilisation supplémentaire de la manifestation
+    interne. Le spirite peut utiliser cette aptitude une fois par jour au niveau 6,
+    plus une fois quotidienne supplémentaire tous les 4 niveaux de spiritiste accumulés
+    par le personnage après le sixième.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Rappel_du_fantôme_Sur_12
+  
+- Nom: Apaisement des esprits 2/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 11
+  Auto: true
+  Description: '
+
+    Au niveau 7, un spirite peut utiliser apaisement des esprits une fois par jour
+    comme un pouvoir magique. Au niveau 11 et tous les 4 niveaux par la suite, le
+    spirite peut utiliser cette aptitude une fois de plus par jour (jusqu’à un maximum
+    de 4 utilisations quotidiennes au niveau 19).
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Apaisement_des_esprits_Mag_13
+  
+- Nom: 'Manifestation interne augmentation #2'
+  Classe: Spirite
+  Source: AO
+  Niveau: 13
+  Auto: true
+  Description: '
+
+    Au niveau 3, par une action rapide, le spirite peut puiser dans la conscience
+    de son fantôme et la substance du plan Éthéré pour partiellement les manifester
+    dans son propre corps. Ce faisant, il exploite cette manifestation interne pour
+    améliorer ses propres capacités pendant que le fantôme est toujours à l’intérieur
+    de sa conscience. Le fantôme doit être confiné dans la conscience du spirite pour
+    que celui-ci puisse utiliser cette aptitude ; le spirite ne peut donc pas le manifester
+    d’une quelconque autre façon.
+
+
+    Pendant une manifestation interne, le fantôme ne peut être blessé, renvoyé ou
+    banni. Un spirite peut utiliser la manifestation interne pendant un nombre quotidien
+    de rounds égal à 3 + son niveau de spirite. Ces rounds ne sont pas nécessairement
+    consécutifs. Il peut mettre fin aux effets d’une manifestation interne par une
+    action libre mais, même s’il met fin à une telle manifestation lors du round pendant
+    lequel il l’utilise, il défalque quand même un round de son nombre d’utilisations
+    quotidiennes.
+
+
+    Quand un spirite utilise cette aptitude, il doit choisir la forme ectoplasmique
+    ou intangible. Une fois ce choix effectué, il bénéficie de l’ensemble des pouvoirs
+    basés sur la forme choisie et son niveau de spirite.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme ectoplasmique, il
+    bénéficie d’un bouclier ectoplasmique qui le protège sans restreindre ses mouvements
+    ou ses actions. Il bénéficie d’un bonus de bouclier de +4 à la Classe d’Armure
+    qui s’applique même contre les attaques de contact intangible. Le bouclier ectoplasmique
+    n’impose aucun malus d’armure aux tests ou risque d’échec des sorts profanes.
+    Au niveau 8, le spirite peut faire surgir deux vrilles ectoplasmiques de son corps.
+    Une fois par round par une action simple ou rapide (au choix du spirite), le spirite
+    peut utiliser une de ses vrilles ou les deux pour attaquer les créatures à portée
+    de son allonge au corps à corps (en appliquant le bonus d’attaque et les dés de
+    dégâts de son fantôme manifesté sous forme ectoplasmique) ou pour manipuler des
+    objets. Il peut même utiliser cette action pour effectuer une attaque avec une
+    vrille et manipuler un objet avec l’autre, tant que cet objet peut être manipulé
+    à une main. Au niveau 13, l’ectoplasme du fantôme colle à la peau du spirite comme
+    une armure. Il lui confère un bonus d’armure de +6 à la CA sans imposer aucun
+    malus d’armure aux tests, risque d’échec des sorts profanes ou réduction de sa
+    vitesse de déplacement. Au niveau 18, le spirite peut attaquer toutes les créatures
+    à portée de son allonge au corps à corps avec ses vrilles par une action complexe
+    (en appliquant le bonus d’attaque et les dés de dégâts de son fantôme manifesté
+    sous forme ectoplasmique). Ce faisant, il effectue deux jets d’attaque, conserve
+    le meilleur résultat et l’applique contre toutes les créatures situées à portée
+    de son allonge au corps à corps. Si le meilleur des deux résultats aboutit à une
+    probabilité de coup critique, le spirite choisit une cible contre laquelle il
+    effectue son jet de confirmation de coup critique. Les autres attaques qui touchent
+    sont considérées comme des coups normaux et non comme des probabilités de coup
+    critique.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme intangible, il provoque
+    l’apparition d’une brume éthérée autour de lui qui lui confère un camouflage contre
+    les attaques à distance. Au niveau 8, ses attaques au corps à corps contre les
+    créatures intangibles deviennent plus efficaces. En effet, on considère que ses
+    attaques à mains nues ou avec des armes de corps à corps bénéficient de la propriété
+    spéciale d’arme magique spectrale. Au niveau 13, le spirite peut accomplir une
+    action simple pour devenir invisible (comme avec le sort d’invisibilité) jusqu’au
+    début de son prochain tour. Au niveau 18, le spirite acquiert le sous-type intangible
+    et une vitesse de déplacement en vol de 9 mètres (bonne) lorsqu’il prend cette
+    forme de manifestation interne.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Manifestation_interne_Sur_9
+  
+- Nom: Rappel du fantôme 3/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 14
+  Auto: true
+  Description: '
+
+    Au niveau 6, par une action rapide ou immédiate, un spirite peut rappeler son
+    fantôme manifesté à ses côtés ou dans sa conscience. Cette aptitude fonctionne
+    comme une porte dimensionnelle, en appliquant le niveau de spirite en guise de
+    niveau de lanceur de sorts. Quand le spirite rappelle son fantôme de cette façon,
+    celui-ci apparaît dans un emplacement adjacent à son maître (ou le plus près possible
+    si toutes les cases adjacentes sont occupées).
+
+
+    Quand un spirite utilise cette aptitude pour rappeler un fantôme dans sa conscience,
+    il peut activer la manifestation interne au cours de la même action, mais cette
+    activation provoque la dépense d’un round d’utilisation supplémentaire de la manifestation
+    interne. Le spirite peut utiliser cette aptitude une fois par jour au niveau 6,
+    plus une fois quotidienne supplémentaire tous les 4 niveaux de spiritiste accumulés
+    par le personnage après le sixième.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Rappel_du_fantôme_Sur_12
+  
+- Nom: Apaisement des esprits 3/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Au niveau 7, un spirite peut utiliser apaisement des esprits une fois par jour
+    comme un pouvoir magique. Au niveau 11 et tous les 4 niveaux par la suite, le
+    spirite peut utiliser cette aptitude une fois de plus par jour (jusqu’à un maximum
+    de 4 utilisations quotidiennes au niveau 19).
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Apaisement_des_esprits_Mag_13
+  
+- Nom: 'Manifestation interne augmentation #3'
+  Classe: Spirite
+  Source: AO
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 3, par une action rapide, le spirite peut puiser dans la conscience
+    de son fantôme et la substance du plan Éthéré pour partiellement les manifester
+    dans son propre corps. Ce faisant, il exploite cette manifestation interne pour
+    améliorer ses propres capacités pendant que le fantôme est toujours à l’intérieur
+    de sa conscience. Le fantôme doit être confiné dans la conscience du spirite pour
+    que celui-ci puisse utiliser cette aptitude ; le spirite ne peut donc pas le manifester
+    d’une quelconque autre façon.
+
+
+    Pendant une manifestation interne, le fantôme ne peut être blessé, renvoyé ou
+    banni. Un spirite peut utiliser la manifestation interne pendant un nombre quotidien
+    de rounds égal à 3 + son niveau de spirite. Ces rounds ne sont pas nécessairement
+    consécutifs. Il peut mettre fin aux effets d’une manifestation interne par une
+    action libre mais, même s’il met fin à une telle manifestation lors du round pendant
+    lequel il l’utilise, il défalque quand même un round de son nombre d’utilisations
+    quotidiennes.
+
+
+    Quand un spirite utilise cette aptitude, il doit choisir la forme ectoplasmique
+    ou intangible. Une fois ce choix effectué, il bénéficie de l’ensemble des pouvoirs
+    basés sur la forme choisie et son niveau de spirite.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme ectoplasmique, il
+    bénéficie d’un bouclier ectoplasmique qui le protège sans restreindre ses mouvements
+    ou ses actions. Il bénéficie d’un bonus de bouclier de +4 à la Classe d’Armure
+    qui s’applique même contre les attaques de contact intangible. Le bouclier ectoplasmique
+    n’impose aucun malus d’armure aux tests ou risque d’échec des sorts profanes.
+    Au niveau 8, le spirite peut faire surgir deux vrilles ectoplasmiques de son corps.
+    Une fois par round par une action simple ou rapide (au choix du spirite), le spirite
+    peut utiliser une de ses vrilles ou les deux pour attaquer les créatures à portée
+    de son allonge au corps à corps (en appliquant le bonus d’attaque et les dés de
+    dégâts de son fantôme manifesté sous forme ectoplasmique) ou pour manipuler des
+    objets. Il peut même utiliser cette action pour effectuer une attaque avec une
+    vrille et manipuler un objet avec l’autre, tant que cet objet peut être manipulé
+    à une main. Au niveau 13, l’ectoplasme du fantôme colle à la peau du spirite comme
+    une armure. Il lui confère un bonus d’armure de +6 à la CA sans imposer aucun
+    malus d’armure aux tests, risque d’échec des sorts profanes ou réduction de sa
+    vitesse de déplacement. Au niveau 18, le spirite peut attaquer toutes les créatures
+    à portée de son allonge au corps à corps avec ses vrilles par une action complexe
+    (en appliquant le bonus d’attaque et les dés de dégâts de son fantôme manifesté
+    sous forme ectoplasmique). Ce faisant, il effectue deux jets d’attaque, conserve
+    le meilleur résultat et l’applique contre toutes les créatures situées à portée
+    de son allonge au corps à corps. Si le meilleur des deux résultats aboutit à une
+    probabilité de coup critique, le spirite choisit une cible contre laquelle il
+    effectue son jet de confirmation de coup critique. Les autres attaques qui touchent
+    sont considérées comme des coups normaux et non comme des probabilités de coup
+    critique.
+
+
+
+
+
+    Quand un spirite utilise cette aptitude et choisit la forme intangible, il provoque
+    l’apparition d’une brume éthérée autour de lui qui lui confère un camouflage contre
+    les attaques à distance. Au niveau 8, ses attaques au corps à corps contre les
+    créatures intangibles deviennent plus efficaces. En effet, on considère que ses
+    attaques à mains nues ou avec des armes de corps à corps bénéficient de la propriété
+    spéciale d’arme magique spectrale. Au niveau 13, le spirite peut accomplir une
+    action simple pour devenir invisible (comme avec le sort d’invisibilité) jusqu’au
+    début de son prochain tour. Au niveau 18, le spirite acquiert le sous-type intangible
+    et une vitesse de déplacement en vol de 9 mètres (bonne) lorsqu’il prend cette
+    forme de manifestation interne.
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Manifestation_interne_Sur_9
+  
+- Nom: Rappel du fantôme 4/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 6, par une action rapide ou immédiate, un spirite peut rappeler son
+    fantôme manifesté à ses côtés ou dans sa conscience. Cette aptitude fonctionne
+    comme une porte dimensionnelle, en appliquant le niveau de spirite en guise de
+    niveau de lanceur de sorts. Quand le spirite rappelle son fantôme de cette façon,
+    celui-ci apparaît dans un emplacement adjacent à son maître (ou le plus près possible
+    si toutes les cases adjacentes sont occupées).
+
+
+    Quand un spirite utilise cette aptitude pour rappeler un fantôme dans sa conscience,
+    il peut activer la manifestation interne au cours de la même action, mais cette
+    activation provoque la dépense d’un round d’utilisation supplémentaire de la manifestation
+    interne. Le spirite peut utiliser cette aptitude une fois par jour au niveau 6,
+    plus une fois quotidienne supplémentaire tous les 4 niveaux de spiritiste accumulés
+    par le personnage après le sixième.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Rappel_du_fantôme_Sur_12
+  
+- Nom: Apaisement des esprits 4/jour
+  Classe: Spirite
+  Source: AO
+  Niveau: 19
+  Auto: true
+  Description: '
+
+    Au niveau 7, un spirite peut utiliser apaisement des esprits une fois par jour
+    comme un pouvoir magique. Au niveau 11 et tous les 4 niveaux par la suite, le
+    spirite peut utiliser cette aptitude une fois de plus par jour (jusqu’à un maximum
+    de 4 utilisations quotidiennes au niveau 19).
+
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spirite.ashx#Apaisement_des_esprits_Mag_13
   
