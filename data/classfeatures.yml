@@ -44302,7 +44302,7 @@
     \ un obstacle, les dégâts de collision sont eux aussi doublés.\n\r\n\t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Science_du_coup_fabuleux_Ext_13
   
-- Nom: Aspect de la guerre (Sur)
+- Nom: Aspect de la Guerre
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 20
@@ -50892,7 +50892,7 @@
 - Nom: Oraisons
   Classe: Prêtre combattant
   Source: MCA
-  Niveau: 0
+  Niveau: 1
   Auto: true
   Description: 'Les prêtres combattants préparent un certain nombre d’oraisons (ou
     sorts de niveau 0), comme indiqué dans la table ci-dessus. Ces oraisons se lancent
@@ -50903,7 +50903,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Oraisons_2
   
-- Nom: Aura (Ext)
+- Nom: Aura
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 1
@@ -50917,7 +50917,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Aura_Ext_3
   
-- Nom: Bénédictions (Sur)
+- Nom: Bénédictions (mineures)
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 1
@@ -50944,7 +50944,7 @@
     \nVoir les Bénédictions du prêtre combattant\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Bénédictions_Sur_4
   
-- Nom: Arme de prédilection.
+- Nom: Arme de prédilection
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 1
@@ -50958,7 +50958,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_de_prédilection_5
   
-- Nom: Arme sacrée (Sur)
+- Nom: Arme sacrée
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 1
@@ -51053,7 +51053,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Langues_supplémentaires_9
   
-- Nom: Ferveur (Sur)
+- Nom: Ferveur 1d6
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 2
@@ -51088,7 +51088,7 @@
     \ lancer ainsi son sort.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
   
-- Nom: Dons supplémentaires.
+- Nom: Don supplémentaire
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 3
@@ -51107,7 +51107,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
   
-- Nom: Canalisation d’énergie (Sur).
+- Nom: Canalisation d'énergie
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 4
@@ -51148,7 +51148,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Canalisation_d’énergie_Sur_12
   
-- Nom: Armure sacrée (Sur)
+- Nom: Armure sacrée +1
   Classe: Prêtre combattant
   Source: MCA
   Niveau: 7
@@ -67908,4 +67908,719 @@
     action rapide. Chaque don choisi est décompté du nombre d’utilisations quotidiennes\
     \ de ce pouvoir.\n\n\n"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur.ashx#Flexibilité_martiale_Ext_2
+  
+- Nom: Arme sacrée +1;
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 4
+  Auto: true
+  Description: "\nDès le niveau 1, les armes du prêtre combattant sont imprégnées\
+    \ de la puissance de sa foi. Cela s’applique à l’arme de prédilection du prêtre\
+    \ combattant mais aussi à toutes celles qui bénéficient du don Arme de prédilection.\
+    \ Si le prêtre combattant a pris ce don à plusieurs reprises, toutes les armes\
+    \ associées sont sacrées pour lui. \n\nQuand le prêtre combattant touche un adversaire\
+    \ avec une arme sacrée, les dégâts se basent sur le niveau du prêtre combattant\
+    \ et non sur le type de l’arme. Les dégâts des armes sacrées des prêtres combattants\
+    \ de taille M figurent dans la table de la classe, ceux des prêtres de taille\
+    \ P et G se trouvent dans la table ci-contre. Le prêtre combattant peut choisir\
+    \ d’appliquer les dégâts de base de son arme au lieu des dégâts de l’arme sacrée\
+    \ mais il doit l’annoncer avant de faire son jet (si les dégâts de base de l’arme\
+    \ excèdent ceux de l’arme sacrée, ils ne changent pas). \n\nL’augmentation de\
+    \ dégâts n’affecte pas les autres aspects de l’arme et ne s’applique pas aux objets\
+    \ alchimiques, aux bombes et autres armes infligeant des dégâts d’énergie destructive.\n\
+    \nAu niveau 4, le prêtre combattant apprend à améliorer une arme sacrée en l’imprégnant\
+    \ de la puissance divine par une action rapide. L’arme bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les quatre niveaux après le 4, ce bonus augmente de\
+    \ 1, pour un maximum de +5 au niveau 20. Si le prêtre combattant possède plusieurs\
+    \ armes sacrées, il peut en améliorer une autre au round suivant par une nouvelle\
+    \ action rapide. \n\nChaque jour, le prêtre combattant peut utiliser ce pouvoir\
+    \ un nombre de rounds égal à son niveau de classe, ces rounds n’étant pas forcément\
+    \ consécutifs. Ces bonus se cumulent avec ceux que l’arme possède peut-être déjà,\
+    \ sans jamais dépasser +5 au total. \n\nLe prêtre combattant peut améliorer une\
+    \ arme en la dotant des propriétés spéciales d’arme suivantes : acérée, de destruction,\
+    \ de feu, de froid, de lumière, gardienne ou de foudre. \n• S’il est Chaotique,\
+    \ il peut aussi ajouter anarchique et vicieuse.\n• S’il est Mauvais, il peut aussi\
+    \ ajouter d’enchaînement et impie.\n• S’il est Bon, il peut aussi ajouter spectrale\
+    \ et sainte.\n• S’il est Loyal, il peut aussi ajouter axiomatique et miséricordieuse.\n\
+    • S’il est Neutre (sans autre composante d’alignement), il peut aussi ajouter\
+    \ de stockage de sorts et de tonnerre.Ces propriétés coûtent et remplacent un\
+    \ bonus d’altération de valeur équivalente. Les propriétés en double ne se cumulent\
+    \ pas. L’arme doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir\
+    \ bénéficier de propriétés spéciales.\n\nSi le prêtre combattant améliore plusieurs\
+    \ armes, elles consomment des rounds de pouvoir indépendamment les unes des autres.\n\
+    \nLe bonus d’altération et les propriétés spéciales sont à déterminer quand le\
+    \ prêtre combattant utilise ce pouvoir pour la première fois de la journée. Il\
+    \ ne peut plus en changer jusqu’au lendemain. \n\nCes bonus ne s’appliquent pas\
+    \ si une créature autre que le prêtre combattant manie l’arme mais ils restent\
+    \ actifs si l’arme quitte sa main (s’il la lance, par exemple). Le prêtre combattant\
+    \ peut mettre fin à cette aptitude par une action libre au début de son tour (ce\
+    \ round n’est pas décompté de sa limite d’utilisations quotidiennes, à moins qu’il\
+    \ ne réactive le pouvoir au cours du même round). Si le prêtre combattant utilise\
+    \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
+    \ seulement.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
+  
+- Nom: Ferveur 2d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 5
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: 'Don supplémentaire #2'
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 6
+  Auto: true
+  Description: 'Au niveau 3 puis tous les trois niveaux, le prêtre combattant gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Il doit les choisir parmi les dons de combat. Il doit remplir les conditions requises
+    mais considère ses niveaux de prêtre combattant comme le bonus de base à l’attaque
+    (qu’il ajoute aux bonus de base à l’attaque obtenus grâce aux autres classes et
+    DV raciaux). Enfin, vis-à-vis de ces dons, le prêtre combattant peut choisir des
+    dons nécessitant un nombre minimum de niveaux de guerrier, en considérant son
+    niveau de prêtre combattant comme le niveau de guerrier.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
+  
+- Nom: Ferveur 3d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: Arme sacrée +2
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 8
+  Auto: true
+  Description: "\nDès le niveau 1, les armes du prêtre combattant sont imprégnées\
+    \ de la puissance de sa foi. Cela s’applique à l’arme de prédilection du prêtre\
+    \ combattant mais aussi à toutes celles qui bénéficient du don Arme de prédilection.\
+    \ Si le prêtre combattant a pris ce don à plusieurs reprises, toutes les armes\
+    \ associées sont sacrées pour lui. \n\nQuand le prêtre combattant touche un adversaire\
+    \ avec une arme sacrée, les dégâts se basent sur le niveau du prêtre combattant\
+    \ et non sur le type de l’arme. Les dégâts des armes sacrées des prêtres combattants\
+    \ de taille M figurent dans la table de la classe, ceux des prêtres de taille\
+    \ P et G se trouvent dans la table ci-contre. Le prêtre combattant peut choisir\
+    \ d’appliquer les dégâts de base de son arme au lieu des dégâts de l’arme sacrée\
+    \ mais il doit l’annoncer avant de faire son jet (si les dégâts de base de l’arme\
+    \ excèdent ceux de l’arme sacrée, ils ne changent pas). \n\nL’augmentation de\
+    \ dégâts n’affecte pas les autres aspects de l’arme et ne s’applique pas aux objets\
+    \ alchimiques, aux bombes et autres armes infligeant des dégâts d’énergie destructive.\n\
+    \nAu niveau 4, le prêtre combattant apprend à améliorer une arme sacrée en l’imprégnant\
+    \ de la puissance divine par une action rapide. L’arme bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les quatre niveaux après le 4, ce bonus augmente de\
+    \ 1, pour un maximum de +5 au niveau 20. Si le prêtre combattant possède plusieurs\
+    \ armes sacrées, il peut en améliorer une autre au round suivant par une nouvelle\
+    \ action rapide. \n\nChaque jour, le prêtre combattant peut utiliser ce pouvoir\
+    \ un nombre de rounds égal à son niveau de classe, ces rounds n’étant pas forcément\
+    \ consécutifs. Ces bonus se cumulent avec ceux que l’arme possède peut-être déjà,\
+    \ sans jamais dépasser +5 au total. \n\nLe prêtre combattant peut améliorer une\
+    \ arme en la dotant des propriétés spéciales d’arme suivantes : acérée, de destruction,\
+    \ de feu, de froid, de lumière, gardienne ou de foudre. \n• S’il est Chaotique,\
+    \ il peut aussi ajouter anarchique et vicieuse.\n• S’il est Mauvais, il peut aussi\
+    \ ajouter d’enchaînement et impie.\n• S’il est Bon, il peut aussi ajouter spectrale\
+    \ et sainte.\n• S’il est Loyal, il peut aussi ajouter axiomatique et miséricordieuse.\n\
+    • S’il est Neutre (sans autre composante d’alignement), il peut aussi ajouter\
+    \ de stockage de sorts et de tonnerre.Ces propriétés coûtent et remplacent un\
+    \ bonus d’altération de valeur équivalente. Les propriétés en double ne se cumulent\
+    \ pas. L’arme doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir\
+    \ bénéficier de propriétés spéciales.\n\nSi le prêtre combattant améliore plusieurs\
+    \ armes, elles consomment des rounds de pouvoir indépendamment les unes des autres.\n\
+    \nLe bonus d’altération et les propriétés spéciales sont à déterminer quand le\
+    \ prêtre combattant utilise ce pouvoir pour la première fois de la journée. Il\
+    \ ne peut plus en changer jusqu’au lendemain. \n\nCes bonus ne s’appliquent pas\
+    \ si une créature autre que le prêtre combattant manie l’arme mais ils restent\
+    \ actifs si l’arme quitte sa main (s’il la lance, par exemple). Le prêtre combattant\
+    \ peut mettre fin à cette aptitude par une action libre au début de son tour (ce\
+    \ round n’est pas décompté de sa limite d’utilisations quotidiennes, à moins qu’il\
+    \ ne réactive le pouvoir au cours du même round). Si le prêtre combattant utilise\
+    \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
+    \ seulement.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
+  
+- Nom: 'Don supplémentaire #3'
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 9
+  Auto: true
+  Description: 'Au niveau 3 puis tous les trois niveaux, le prêtre combattant gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Il doit les choisir parmi les dons de combat. Il doit remplir les conditions requises
+    mais considère ses niveaux de prêtre combattant comme le bonus de base à l’attaque
+    (qu’il ajoute aux bonus de base à l’attaque obtenus grâce aux autres classes et
+    DV raciaux). Enfin, vis-à-vis de ces dons, le prêtre combattant peut choisir des
+    dons nécessitant un nombre minimum de niveaux de guerrier, en considérant son
+    niveau de prêtre combattant comme le niveau de guerrier.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
+  
+- Nom: Bénédictions (majeures)
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "La divinité du prêtre combattant influe sur son alignement, sur\
+    \ sa magie, ses valeurs et la manière dont les autres le considèrent. Chaque prêtre\
+    \ choisit deux bénédictions parmi celles qu’accorde son dieu (chaque divinité\
+    \ confère des bénédictions liées à ses domaines). Le prêtre combattant ne peut\
+    \ pas choisir une bénédiction d’alignement (Chaos, Mal, Bien ou Loi) si son alignement\
+    \ ne correspond pas à celui du domaine associé. Si le prêtre combattant ne vénère\
+    \ pas une divinité particulière, il choisit tout de même deux bénédictions représentant\
+    \ ses inclinaisons spirituelles et ses capacités, à faire approuver par le MJ.\
+    \ La restriction sur les domaines d’alignement s’applique toujours.\n\nChaque\
+    \ bénédiction accorde un pouvoir mineur au niveau 1 et un pouvoir majeur au niveau\
+    \ 10. \n\nChaque jour, le prêtre combattant peut faire appel au pouvoir de ses\
+    \ bénédictions un nombre total de fois égal à 3 + 1/2 niveau de prêtre combattant\
+    \ (pour un maximum de 13 fois au niveau 20). Chaque fois que le prêtre combattant\
+    \ utilise une de ses bénédictions, une utilisation est décomptée de ce quota quotidien.\n\
+    \nLe DD du jet de sauvegarde contre une bénédiction est de 10 + 1/2 niveau du\
+    \ prêtre combattant + son modificateur de Sagesse. Si le prêtre combattant possède\
+    \ des niveaux dans une autre classe offrant des domaines de prêtres, ses bénédictions\
+    \ doivent être issues des mêmes domaines. Si le MJ accepte, le prêtre combattant\
+    \ peut changer ses bénédictions ou ses domaines pour les mettre en conformité.\n\
+    \nVoir les Bénédictions du prêtre combattant\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Bénédictions_Sur_4
+  
+- Nom: Armure sacrée +2
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 10
+  Auto: true
+  Description: "Au niveau 7, le prêtre combattant peut améliorer son armure grâce\
+    \ à la puissance divine par une action rapide. L’armure bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les trois niveaux après le 7ème, ce bonus augmente\
+    \ de 1 (pour un maximum de +5 au niveau 19). Chaque jour, le prêtre combattant\
+    \ peut utiliser ce pouvoir un nombre de minutes égal à son niveau de classe. Cette\
+    \ durée se découpe en périodes d’une minute au minimum mais n’est pas forcément\
+    \ consécutive. Ces bonus se cumulent avec ceux que l’armure possède déjà, jusqu’à\
+    \ un maximum de +5 au total. Le prêtre combattant peut doter son armure des propriétés\
+    \ suivantes : de défense (lourde, intermédiaire ou légère), de mimétisme, de résistance\
+    \ à la magie (13, 15, 17 ou 19), de résistance aux énergies (normale, supérieure\
+    \ ou suprême). Ces propriétés coûtent et remplacent un bonus d’altération de valeur\
+    \ équivalente . Dans ce cas, la propriété spéciale d’armure de mimétisme compte\
+    \ comme un bonus de +1, de résistance aux énergies comme un bonus de +2, de résistance\
+    \ aux énergies supérieure comme un bonus de +4 et de résistance aux énergies suprême\
+    \ comme un bonus de +5. Les propriétés en double ne se cumulent pas. L’armure\
+    \ doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir bénéficier\
+    \ de propriétés spéciales. \n\nLe bonus d’altération et les propriétés spéciales\
+    \ sont à déterminer quand le prêtre combattant utilise cette aptitude pour la\
+    \ première fois de la journée. Il ne peut plus en changer jusqu’au lendemain.\
+    \ Ces bonus s’appliquent uniquement tant que le prêtre combattant porte l’armure\
+    \ et se dissipent s’il l’ôte ou ne se trouve plus en sa possession. Le prêtre\
+    \ combattant peut mettre fin à cette aptitude par une action libre au début de\
+    \ son tour. Cette aptitude ne fonctionne pas sur les boucliers. \n\nQuand le prêtre\
+    \ combattant utilise cette aptitude, il peut aussi utiliser son aptitude d’arme\
+    \ sacrée par une action libre, en dépensant une utilisation de ferveur.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Armure_sacrée_Sur_13
+  
+- Nom: Ferveur 4d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 11
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: 'Don supplémentaire #4'
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: 'Au niveau 3 puis tous les trois niveaux, le prêtre combattant gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Il doit les choisir parmi les dons de combat. Il doit remplir les conditions requises
+    mais considère ses niveaux de prêtre combattant comme le bonus de base à l’attaque
+    (qu’il ajoute aux bonus de base à l’attaque obtenus grâce aux autres classes et
+    DV raciaux). Enfin, vis-à-vis de ces dons, le prêtre combattant peut choisir des
+    dons nécessitant un nombre minimum de niveaux de guerrier, en considérant son
+    niveau de prêtre combattant comme le niveau de guerrier.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
+  
+- Nom: Arme sacrée +3
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 12
+  Auto: true
+  Description: "\nDès le niveau 1, les armes du prêtre combattant sont imprégnées\
+    \ de la puissance de sa foi. Cela s’applique à l’arme de prédilection du prêtre\
+    \ combattant mais aussi à toutes celles qui bénéficient du don Arme de prédilection.\
+    \ Si le prêtre combattant a pris ce don à plusieurs reprises, toutes les armes\
+    \ associées sont sacrées pour lui. \n\nQuand le prêtre combattant touche un adversaire\
+    \ avec une arme sacrée, les dégâts se basent sur le niveau du prêtre combattant\
+    \ et non sur le type de l’arme. Les dégâts des armes sacrées des prêtres combattants\
+    \ de taille M figurent dans la table de la classe, ceux des prêtres de taille\
+    \ P et G se trouvent dans la table ci-contre. Le prêtre combattant peut choisir\
+    \ d’appliquer les dégâts de base de son arme au lieu des dégâts de l’arme sacrée\
+    \ mais il doit l’annoncer avant de faire son jet (si les dégâts de base de l’arme\
+    \ excèdent ceux de l’arme sacrée, ils ne changent pas). \n\nL’augmentation de\
+    \ dégâts n’affecte pas les autres aspects de l’arme et ne s’applique pas aux objets\
+    \ alchimiques, aux bombes et autres armes infligeant des dégâts d’énergie destructive.\n\
+    \nAu niveau 4, le prêtre combattant apprend à améliorer une arme sacrée en l’imprégnant\
+    \ de la puissance divine par une action rapide. L’arme bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les quatre niveaux après le 4, ce bonus augmente de\
+    \ 1, pour un maximum de +5 au niveau 20. Si le prêtre combattant possède plusieurs\
+    \ armes sacrées, il peut en améliorer une autre au round suivant par une nouvelle\
+    \ action rapide. \n\nChaque jour, le prêtre combattant peut utiliser ce pouvoir\
+    \ un nombre de rounds égal à son niveau de classe, ces rounds n’étant pas forcément\
+    \ consécutifs. Ces bonus se cumulent avec ceux que l’arme possède peut-être déjà,\
+    \ sans jamais dépasser +5 au total. \n\nLe prêtre combattant peut améliorer une\
+    \ arme en la dotant des propriétés spéciales d’arme suivantes : acérée, de destruction,\
+    \ de feu, de froid, de lumière, gardienne ou de foudre. \n• S’il est Chaotique,\
+    \ il peut aussi ajouter anarchique et vicieuse.\n• S’il est Mauvais, il peut aussi\
+    \ ajouter d’enchaînement et impie.\n• S’il est Bon, il peut aussi ajouter spectrale\
+    \ et sainte.\n• S’il est Loyal, il peut aussi ajouter axiomatique et miséricordieuse.\n\
+    • S’il est Neutre (sans autre composante d’alignement), il peut aussi ajouter\
+    \ de stockage de sorts et de tonnerre.Ces propriétés coûtent et remplacent un\
+    \ bonus d’altération de valeur équivalente. Les propriétés en double ne se cumulent\
+    \ pas. L’arme doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir\
+    \ bénéficier de propriétés spéciales.\n\nSi le prêtre combattant améliore plusieurs\
+    \ armes, elles consomment des rounds de pouvoir indépendamment les unes des autres.\n\
+    \nLe bonus d’altération et les propriétés spéciales sont à déterminer quand le\
+    \ prêtre combattant utilise ce pouvoir pour la première fois de la journée. Il\
+    \ ne peut plus en changer jusqu’au lendemain. \n\nCes bonus ne s’appliquent pas\
+    \ si une créature autre que le prêtre combattant manie l’arme mais ils restent\
+    \ actifs si l’arme quitte sa main (s’il la lance, par exemple). Le prêtre combattant\
+    \ peut mettre fin à cette aptitude par une action libre au début de son tour (ce\
+    \ round n’est pas décompté de sa limite d’utilisations quotidiennes, à moins qu’il\
+    \ ne réactive le pouvoir au cours du même round). Si le prêtre combattant utilise\
+    \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
+    \ seulement.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
+  
+- Nom: Armure sacrée +3
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 13
+  Auto: true
+  Description: "Au niveau 7, le prêtre combattant peut améliorer son armure grâce\
+    \ à la puissance divine par une action rapide. L’armure bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les trois niveaux après le 7ème, ce bonus augmente\
+    \ de 1 (pour un maximum de +5 au niveau 19). Chaque jour, le prêtre combattant\
+    \ peut utiliser ce pouvoir un nombre de minutes égal à son niveau de classe. Cette\
+    \ durée se découpe en périodes d’une minute au minimum mais n’est pas forcément\
+    \ consécutive. Ces bonus se cumulent avec ceux que l’armure possède déjà, jusqu’à\
+    \ un maximum de +5 au total. Le prêtre combattant peut doter son armure des propriétés\
+    \ suivantes : de défense (lourde, intermédiaire ou légère), de mimétisme, de résistance\
+    \ à la magie (13, 15, 17 ou 19), de résistance aux énergies (normale, supérieure\
+    \ ou suprême). Ces propriétés coûtent et remplacent un bonus d’altération de valeur\
+    \ équivalente . Dans ce cas, la propriété spéciale d’armure de mimétisme compte\
+    \ comme un bonus de +1, de résistance aux énergies comme un bonus de +2, de résistance\
+    \ aux énergies supérieure comme un bonus de +4 et de résistance aux énergies suprême\
+    \ comme un bonus de +5. Les propriétés en double ne se cumulent pas. L’armure\
+    \ doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir bénéficier\
+    \ de propriétés spéciales. \n\nLe bonus d’altération et les propriétés spéciales\
+    \ sont à déterminer quand le prêtre combattant utilise cette aptitude pour la\
+    \ première fois de la journée. Il ne peut plus en changer jusqu’au lendemain.\
+    \ Ces bonus s’appliquent uniquement tant que le prêtre combattant porte l’armure\
+    \ et se dissipent s’il l’ôte ou ne se trouve plus en sa possession. Le prêtre\
+    \ combattant peut mettre fin à cette aptitude par une action libre au début de\
+    \ son tour. Cette aptitude ne fonctionne pas sur les boucliers. \n\nQuand le prêtre\
+    \ combattant utilise cette aptitude, il peut aussi utiliser son aptitude d’arme\
+    \ sacrée par une action libre, en dépensant une utilisation de ferveur.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Armure_sacrée_Sur_13
+  
+- Nom: Ferveur 5d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 14
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: 'Don supplémentaire #5'
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 15
+  Auto: true
+  Description: 'Au niveau 3 puis tous les trois niveaux, le prêtre combattant gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Il doit les choisir parmi les dons de combat. Il doit remplir les conditions requises
+    mais considère ses niveaux de prêtre combattant comme le bonus de base à l’attaque
+    (qu’il ajoute aux bonus de base à l’attaque obtenus grâce aux autres classes et
+    DV raciaux). Enfin, vis-à-vis de ces dons, le prêtre combattant peut choisir des
+    dons nécessitant un nombre minimum de niveaux de guerrier, en considérant son
+    niveau de prêtre combattant comme le niveau de guerrier.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
+  
+- Nom: Armure sacrée +4
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "Au niveau 7, le prêtre combattant peut améliorer son armure grâce\
+    \ à la puissance divine par une action rapide. L’armure bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les trois niveaux après le 7ème, ce bonus augmente\
+    \ de 1 (pour un maximum de +5 au niveau 19). Chaque jour, le prêtre combattant\
+    \ peut utiliser ce pouvoir un nombre de minutes égal à son niveau de classe. Cette\
+    \ durée se découpe en périodes d’une minute au minimum mais n’est pas forcément\
+    \ consécutive. Ces bonus se cumulent avec ceux que l’armure possède déjà, jusqu’à\
+    \ un maximum de +5 au total. Le prêtre combattant peut doter son armure des propriétés\
+    \ suivantes : de défense (lourde, intermédiaire ou légère), de mimétisme, de résistance\
+    \ à la magie (13, 15, 17 ou 19), de résistance aux énergies (normale, supérieure\
+    \ ou suprême). Ces propriétés coûtent et remplacent un bonus d’altération de valeur\
+    \ équivalente . Dans ce cas, la propriété spéciale d’armure de mimétisme compte\
+    \ comme un bonus de +1, de résistance aux énergies comme un bonus de +2, de résistance\
+    \ aux énergies supérieure comme un bonus de +4 et de résistance aux énergies suprême\
+    \ comme un bonus de +5. Les propriétés en double ne se cumulent pas. L’armure\
+    \ doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir bénéficier\
+    \ de propriétés spéciales. \n\nLe bonus d’altération et les propriétés spéciales\
+    \ sont à déterminer quand le prêtre combattant utilise cette aptitude pour la\
+    \ première fois de la journée. Il ne peut plus en changer jusqu’au lendemain.\
+    \ Ces bonus s’appliquent uniquement tant que le prêtre combattant porte l’armure\
+    \ et se dissipent s’il l’ôte ou ne se trouve plus en sa possession. Le prêtre\
+    \ combattant peut mettre fin à cette aptitude par une action libre au début de\
+    \ son tour. Cette aptitude ne fonctionne pas sur les boucliers. \n\nQuand le prêtre\
+    \ combattant utilise cette aptitude, il peut aussi utiliser son aptitude d’arme\
+    \ sacrée par une action libre, en dépensant une utilisation de ferveur.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Armure_sacrée_Sur_13
+  
+- Nom: Arme sacrée +4
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 16
+  Auto: true
+  Description: "\nDès le niveau 1, les armes du prêtre combattant sont imprégnées\
+    \ de la puissance de sa foi. Cela s’applique à l’arme de prédilection du prêtre\
+    \ combattant mais aussi à toutes celles qui bénéficient du don Arme de prédilection.\
+    \ Si le prêtre combattant a pris ce don à plusieurs reprises, toutes les armes\
+    \ associées sont sacrées pour lui. \n\nQuand le prêtre combattant touche un adversaire\
+    \ avec une arme sacrée, les dégâts se basent sur le niveau du prêtre combattant\
+    \ et non sur le type de l’arme. Les dégâts des armes sacrées des prêtres combattants\
+    \ de taille M figurent dans la table de la classe, ceux des prêtres de taille\
+    \ P et G se trouvent dans la table ci-contre. Le prêtre combattant peut choisir\
+    \ d’appliquer les dégâts de base de son arme au lieu des dégâts de l’arme sacrée\
+    \ mais il doit l’annoncer avant de faire son jet (si les dégâts de base de l’arme\
+    \ excèdent ceux de l’arme sacrée, ils ne changent pas). \n\nL’augmentation de\
+    \ dégâts n’affecte pas les autres aspects de l’arme et ne s’applique pas aux objets\
+    \ alchimiques, aux bombes et autres armes infligeant des dégâts d’énergie destructive.\n\
+    \nAu niveau 4, le prêtre combattant apprend à améliorer une arme sacrée en l’imprégnant\
+    \ de la puissance divine par une action rapide. L’arme bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les quatre niveaux après le 4, ce bonus augmente de\
+    \ 1, pour un maximum de +5 au niveau 20. Si le prêtre combattant possède plusieurs\
+    \ armes sacrées, il peut en améliorer une autre au round suivant par une nouvelle\
+    \ action rapide. \n\nChaque jour, le prêtre combattant peut utiliser ce pouvoir\
+    \ un nombre de rounds égal à son niveau de classe, ces rounds n’étant pas forcément\
+    \ consécutifs. Ces bonus se cumulent avec ceux que l’arme possède peut-être déjà,\
+    \ sans jamais dépasser +5 au total. \n\nLe prêtre combattant peut améliorer une\
+    \ arme en la dotant des propriétés spéciales d’arme suivantes : acérée, de destruction,\
+    \ de feu, de froid, de lumière, gardienne ou de foudre. \n• S’il est Chaotique,\
+    \ il peut aussi ajouter anarchique et vicieuse.\n• S’il est Mauvais, il peut aussi\
+    \ ajouter d’enchaînement et impie.\n• S’il est Bon, il peut aussi ajouter spectrale\
+    \ et sainte.\n• S’il est Loyal, il peut aussi ajouter axiomatique et miséricordieuse.\n\
+    • S’il est Neutre (sans autre composante d’alignement), il peut aussi ajouter\
+    \ de stockage de sorts et de tonnerre.Ces propriétés coûtent et remplacent un\
+    \ bonus d’altération de valeur équivalente. Les propriétés en double ne se cumulent\
+    \ pas. L’arme doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir\
+    \ bénéficier de propriétés spéciales.\n\nSi le prêtre combattant améliore plusieurs\
+    \ armes, elles consomment des rounds de pouvoir indépendamment les unes des autres.\n\
+    \nLe bonus d’altération et les propriétés spéciales sont à déterminer quand le\
+    \ prêtre combattant utilise ce pouvoir pour la première fois de la journée. Il\
+    \ ne peut plus en changer jusqu’au lendemain. \n\nCes bonus ne s’appliquent pas\
+    \ si une créature autre que le prêtre combattant manie l’arme mais ils restent\
+    \ actifs si l’arme quitte sa main (s’il la lance, par exemple). Le prêtre combattant\
+    \ peut mettre fin à cette aptitude par une action libre au début de son tour (ce\
+    \ round n’est pas décompté de sa limite d’utilisations quotidiennes, à moins qu’il\
+    \ ne réactive le pouvoir au cours du même round). Si le prêtre combattant utilise\
+    \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
+    \ seulement.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
+  
+- Nom: Ferveur 6d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 17
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: 'Don supplémentaire #6'
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 18
+  Auto: true
+  Description: 'Au niveau 3 puis tous les trois niveaux, le prêtre combattant gagne
+    un don supplémentaire, en plus de ceux obtenus grâce à son évolution normale.
+    Il doit les choisir parmi les dons de combat. Il doit remplir les conditions requises
+    mais considère ses niveaux de prêtre combattant comme le bonus de base à l’attaque
+    (qu’il ajoute aux bonus de base à l’attaque obtenus grâce aux autres classes et
+    DV raciaux). Enfin, vis-à-vis de ces dons, le prêtre combattant peut choisir des
+    dons nécessitant un nombre minimum de niveaux de guerrier, en considérant son
+    niveau de prêtre combattant comme le niveau de guerrier.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Dons_supplémentaires_11
+  
+- Nom: Armure sacrée +5
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 19
+  Auto: true
+  Description: "Au niveau 7, le prêtre combattant peut améliorer son armure grâce\
+    \ à la puissance divine par une action rapide. L’armure bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les trois niveaux après le 7ème, ce bonus augmente\
+    \ de 1 (pour un maximum de +5 au niveau 19). Chaque jour, le prêtre combattant\
+    \ peut utiliser ce pouvoir un nombre de minutes égal à son niveau de classe. Cette\
+    \ durée se découpe en périodes d’une minute au minimum mais n’est pas forcément\
+    \ consécutive. Ces bonus se cumulent avec ceux que l’armure possède déjà, jusqu’à\
+    \ un maximum de +5 au total. Le prêtre combattant peut doter son armure des propriétés\
+    \ suivantes : de défense (lourde, intermédiaire ou légère), de mimétisme, de résistance\
+    \ à la magie (13, 15, 17 ou 19), de résistance aux énergies (normale, supérieure\
+    \ ou suprême). Ces propriétés coûtent et remplacent un bonus d’altération de valeur\
+    \ équivalente . Dans ce cas, la propriété spéciale d’armure de mimétisme compte\
+    \ comme un bonus de +1, de résistance aux énergies comme un bonus de +2, de résistance\
+    \ aux énergies supérieure comme un bonus de +4 et de résistance aux énergies suprême\
+    \ comme un bonus de +5. Les propriétés en double ne se cumulent pas. L’armure\
+    \ doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir bénéficier\
+    \ de propriétés spéciales. \n\nLe bonus d’altération et les propriétés spéciales\
+    \ sont à déterminer quand le prêtre combattant utilise cette aptitude pour la\
+    \ première fois de la journée. Il ne peut plus en changer jusqu’au lendemain.\
+    \ Ces bonus s’appliquent uniquement tant que le prêtre combattant porte l’armure\
+    \ et se dissipent s’il l’ôte ou ne se trouve plus en sa possession. Le prêtre\
+    \ combattant peut mettre fin à cette aptitude par une action libre au début de\
+    \ son tour. Cette aptitude ne fonctionne pas sur les boucliers. \n\nQuand le prêtre\
+    \ combattant utilise cette aptitude, il peut aussi utiliser son aptitude d’arme\
+    \ sacrée par une action libre, en dépensant une utilisation de ferveur.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Armure_sacrée_Sur_13
+  
+- Nom: Ferveur 7d6
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "Au niveau 2, le prêtre combattant puise dans sa foi pour soigner\
+    \ les blessures ou blesser ses ennemis. Il peut aussi se servir de cette aptitude\
+    \ pour lancer rapidement un sort susceptible de l’aider dans sa lutte. Chaque\
+    \ jour, il peut utiliser cette aptitude un nombre de fois égal à 1/2 niveau de\
+    \ prêtre combattant + son modificateur de Sagesse. \n\nEn dépensant une utilisation\
+    \ de cette aptitude, un prêtre combattant Bon (ou vénérant une divinité Bonne)\
+    \ touche une créature pour la guérir de 1d6 points de dégâts, plus 1d6 points\
+    \ tous les trois niveaux de prêtre combattant après le deuxième (pour un maximum\
+    \ de 7d6 au niveau 20). Cette aptitude s’utilise par une action simple (à moins\
+    \ que le prêtre ne se prenne pour cible, auquel cas c’est une action rapide).\
+    \ Le prêtre combattant peut aussi utiliser cette aptitude pour blesser un mort-vivant\
+    \ et lui infliger alors, par une attaque de contact au corps à corps, le même\
+    \ montant de dégâts que celui qu’il aurait soigné. Utilisée ainsi, la ferveur\
+    \ demande une action simple et provoque des attaques d’opportunité. Les morts-vivants\
+    \ n’ont pas droit à un jet de sauvegarde contre ces dégâts assimilés à de l’énergie\
+    \ positive. \n\nUn prêtre combattant Mauvais (ou vénérant une divinité Mauvaise)\
+    \ peut utiliser ce pouvoir pour blesser des créatures vivantes avec une attaque\
+    \ de contact au corps à corps ou pour soigner des morts-vivants en contact avec\
+    \ lui. C’est une manipulation d’énergie négative.\n\nUn prêtre combattant Neutre\
+    \ (ou qui ne vénère pas de divinité particulière) utilise ce pouvoir comme un\
+    \ prêtre combattant Bon s’il a choisi de lancer spontanément des sorts de soins\
+    \ ou comme un prêtre combattant Mauvais s’il a choisi les sorts de blessure.\n\
+    \nLe prêtre combattant peut accomplir une action rapide pour lancer n’importe\
+    \ quel sort de prêtre combattant qu’il a préparé.\nUn sort ainsi lancé affecte\
+    \ uniquement le prêtre combattant, même s’il devrait normalement affecter plusieurs\
+    \ cibles. Ce genre de sort ignore les composantes gestuelles et ne provoque pas\
+    \ d’attaque d’opportunité. Le prêtre n’a pas besoin d’avoir une main libre pour\
+    \ lancer ainsi son sort.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Ferveur_Sur_10
+  
+- Nom: Arme sacrée +5
+  Classe: Prêtre combattant
+  Source: MCA
+  Niveau: 20
+  Auto: true
+  Description: "\nDès le niveau 1, les armes du prêtre combattant sont imprégnées\
+    \ de la puissance de sa foi. Cela s’applique à l’arme de prédilection du prêtre\
+    \ combattant mais aussi à toutes celles qui bénéficient du don Arme de prédilection.\
+    \ Si le prêtre combattant a pris ce don à plusieurs reprises, toutes les armes\
+    \ associées sont sacrées pour lui. \n\nQuand le prêtre combattant touche un adversaire\
+    \ avec une arme sacrée, les dégâts se basent sur le niveau du prêtre combattant\
+    \ et non sur le type de l’arme. Les dégâts des armes sacrées des prêtres combattants\
+    \ de taille M figurent dans la table de la classe, ceux des prêtres de taille\
+    \ P et G se trouvent dans la table ci-contre. Le prêtre combattant peut choisir\
+    \ d’appliquer les dégâts de base de son arme au lieu des dégâts de l’arme sacrée\
+    \ mais il doit l’annoncer avant de faire son jet (si les dégâts de base de l’arme\
+    \ excèdent ceux de l’arme sacrée, ils ne changent pas). \n\nL’augmentation de\
+    \ dégâts n’affecte pas les autres aspects de l’arme et ne s’applique pas aux objets\
+    \ alchimiques, aux bombes et autres armes infligeant des dégâts d’énergie destructive.\n\
+    \nAu niveau 4, le prêtre combattant apprend à améliorer une arme sacrée en l’imprégnant\
+    \ de la puissance divine par une action rapide. L’arme bénéficie alors d’un bonus\
+    \ d’altération de +1. Tous les quatre niveaux après le 4, ce bonus augmente de\
+    \ 1, pour un maximum de +5 au niveau 20. Si le prêtre combattant possède plusieurs\
+    \ armes sacrées, il peut en améliorer une autre au round suivant par une nouvelle\
+    \ action rapide. \n\nChaque jour, le prêtre combattant peut utiliser ce pouvoir\
+    \ un nombre de rounds égal à son niveau de classe, ces rounds n’étant pas forcément\
+    \ consécutifs. Ces bonus se cumulent avec ceux que l’arme possède peut-être déjà,\
+    \ sans jamais dépasser +5 au total. \n\nLe prêtre combattant peut améliorer une\
+    \ arme en la dotant des propriétés spéciales d’arme suivantes : acérée, de destruction,\
+    \ de feu, de froid, de lumière, gardienne ou de foudre. \n• S’il est Chaotique,\
+    \ il peut aussi ajouter anarchique et vicieuse.\n• S’il est Mauvais, il peut aussi\
+    \ ajouter d’enchaînement et impie.\n• S’il est Bon, il peut aussi ajouter spectrale\
+    \ et sainte.\n• S’il est Loyal, il peut aussi ajouter axiomatique et miséricordieuse.\n\
+    • S’il est Neutre (sans autre composante d’alignement), il peut aussi ajouter\
+    \ de stockage de sorts et de tonnerre.Ces propriétés coûtent et remplacent un\
+    \ bonus d’altération de valeur équivalente. Les propriétés en double ne se cumulent\
+    \ pas. L’arme doit disposer d’un bonus d’altération d’au moins +1 avant de pouvoir\
+    \ bénéficier de propriétés spéciales.\n\nSi le prêtre combattant améliore plusieurs\
+    \ armes, elles consomment des rounds de pouvoir indépendamment les unes des autres.\n\
+    \nLe bonus d’altération et les propriétés spéciales sont à déterminer quand le\
+    \ prêtre combattant utilise ce pouvoir pour la première fois de la journée. Il\
+    \ ne peut plus en changer jusqu’au lendemain. \n\nCes bonus ne s’appliquent pas\
+    \ si une créature autre que le prêtre combattant manie l’arme mais ils restent\
+    \ actifs si l’arme quitte sa main (s’il la lance, par exemple). Le prêtre combattant\
+    \ peut mettre fin à cette aptitude par une action libre au début de son tour (ce\
+    \ round n’est pas décompté de sa limite d’utilisations quotidiennes, à moins qu’il\
+    \ ne réactive le pouvoir au cours du même round). Si le prêtre combattant utilise\
+    \ ce pouvoir sur une arme double, l’effet s’applique sur l’une des têtes de l’arme\
+    \ seulement.\n\n\n"
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aatre%20combattant.ashx#Arme_sacrée_Sur_6
   
