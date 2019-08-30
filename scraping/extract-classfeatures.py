@@ -97,7 +97,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 6:
+    if idx != 7:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
@@ -158,11 +158,17 @@ for cl in classes:
         if column == 0:
             print("Incapable de trouver la liste des aptitudes dans le tableau!")
             exit(1)
-            
+        
         tds = r.find_all('td')
+        
+        # ignore footers
+        if len(tds) <= column:
+            continue
+        
         # extraire chaque aptitude
         curName = ""
         curHref = ""
+        
         for c in tds[column].children:
             if c.name == "a":
                 curHref = c['href']
