@@ -5688,7 +5688,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Armes_et_armures_0
   
-- Nom: Aura de Bien (Ext)
+- Nom: Aura du bien
   Classe: Paladin
   Source: MJ
   Niveau: 1
@@ -5703,7 +5703,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_Bien_Ext_1
   
-- Nom: Détection du Mal (Mag)
+- Nom: Détection du mal
   Classe: Paladin
   Source: MJ
   Niveau: 1
@@ -5722,7 +5722,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Détection_du_Mal_Mag_2
   
-- Nom: Châtiment du Mal (Sur)
+- Nom: Châtiment du mal 1/jour
   Classe: Paladin
   Source: MJ
   Niveau: 1
@@ -5755,7 +5755,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
   
-- Nom: Grâce divine (Sur)
+- Nom: Grâce divine
   Classe: Paladin
   Source: MJ
   Niveau: 2
@@ -5770,7 +5770,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_divine_Sur_4
   
-- Nom: Imposition des mains (Sur)
+- Nom: Imposition des mains
   Classe: Paladin
   Source: MJ
   Niveau: 2
@@ -5798,7 +5798,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Imposition_des_mains_Sur_5
   
-- Nom: Aura de bravoure (Sur)
+- Nom: Aura de courage
   Classe: Paladin
   Source: MJ
   Niveau: 3
@@ -5816,7 +5816,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_bravoure_Sur_6
   
-- Nom: Santé divine (Ext)
+- Nom: Santé divine
   Classe: Paladin
   Source: MJ
   Niveau: 3
@@ -5831,7 +5831,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Santé_divine_Ext_7
   
-- Nom: Grâce (Sur)
+- Nom: Grâce
   Classe: Paladin
   Source: MJ
   Niveau: 3
@@ -5908,7 +5908,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
   
-- Nom: Canalisation d’énergie positive (Sur)
+- Nom: Canalisation d'énergie positive
   Classe: Paladin
   Source: MJ
   Niveau: 4
@@ -5971,7 +5971,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Sorts_10
   
-- Nom: Pacte divin (Mag)
+- Nom: Pacte divin
   Classe: Paladin
   Source: MJ
   Niveau: 5
@@ -5993,7 +5993,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Pacte_divin_Mag_11
   
-- Nom: Aura de fermeté (Sur)
+- Nom: Aura de fermeté
   Classe: Paladin
   Source: MJ
   Niveau: 8
@@ -6013,7 +6013,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_fermeté_Sur_12
   
-- Nom: Aura de justice (Sur)
+- Nom: Aura de justice
   Classe: Paladin
   Source: MJ
   Niveau: 11
@@ -6032,7 +6032,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_justice_Sur_13
   
-- Nom: Aura de foi (Sur)
+- Nom: Aura de foi
   Classe: Paladin
   Source: MJ
   Niveau: 14
@@ -6054,7 +6054,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_foi_Sur_14
   
-- Nom: Aura de droiture (Sur)
+- Nom: Aura de droiture
   Classe: Paladin
   Source: MJ
   Niveau: 17
@@ -6074,7 +6074,7 @@
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Aura_de_droiture_Sur_15
   
-- Nom: Champion sacré (Sur)
+- Nom: Champion sacré
   Classe: Paladin
   Source: MJ
   Niveau: 20
@@ -60692,4 +60692,587 @@
 
     '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moine.ashx#Chute_ralentie_Ext_11
+  
+- Nom: Châtiment du mal 2/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 4
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 'Grâce #2'
+  Classe: Paladin
+  Source: MJ
+  Niveau: 6
+  Auto: true
+  Description: '
+
+    Au niveau 3 et tous les trois niveaux par la suite, un paladin peut choisir une
+    grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.
+
+
+    Au niveau 3, le paladin peut sélectionner une des grâces suivantes :
+
+    • Fatigué : la cible n’est plus fatiguée.
+
+    • Fiévreux : la cible n’est plus fiévreuse.
+
+    • Secoué : la cible n’est plus secouée.
+
+
+    Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Chancelant : la cible n’est plus chancelante, sauf si elle a exactement 0 point
+    de vie.
+
+    • Guérison de la maladie : l’imposition des mains du paladin agit également comme
+    un sort de guérison des maladies avec un NLS égal au niveau du paladin.
+
+    • Hébété : la cible n’est plus hébétée.
+
+
+    Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Délivrance de la malédiction : l’imposition des mains du paladin agit également
+    comme un sort de délivrance des malédictions avec un NLS égal au niveau du paladin.
+
+    • Effrayé : la cible n’est plus effrayée (le paladin doit posséder la grâce Secoué
+    avant de pouvoir choisir cette option).
+
+    • Épuisé : la cible n’est plus épuisée (le paladin doit posséder la grâce Fatigué
+    avant de pouvoir choisir cette option).
+
+    • Guérison du poison : l’imposition des mains du paladin agit également comme
+    un sort de neutralisation du poison avec un NLS égal au niveau du paladin.
+
+    • Nauséeux : la cible n’est plus nauséeuse (le paladin doit posséder la grâce
+    Fiévreux avant de pouvoir choisir cette option).
+
+
+    Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.
+
+    • Aveugle : la cible n’est plus aveugle.
+
+    • Assourdi : la cible n’est plus assourdie.
+
+    • Étourdi : la cible n’est plus étourdie.
+
+    • Paralysé : la cible n’est plus paralysée.
+
+
+    Ces effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les
+    mains, il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
+  
+- Nom: Châtiment du mal 3/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 7
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 'Grâce #3'
+  Classe: Paladin
+  Source: MJ
+  Niveau: 9
+  Auto: true
+  Description: '
+
+    Au niveau 3 et tous les trois niveaux par la suite, un paladin peut choisir une
+    grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.
+
+
+    Au niveau 3, le paladin peut sélectionner une des grâces suivantes :
+
+    • Fatigué : la cible n’est plus fatiguée.
+
+    • Fiévreux : la cible n’est plus fiévreuse.
+
+    • Secoué : la cible n’est plus secouée.
+
+
+    Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Chancelant : la cible n’est plus chancelante, sauf si elle a exactement 0 point
+    de vie.
+
+    • Guérison de la maladie : l’imposition des mains du paladin agit également comme
+    un sort de guérison des maladies avec un NLS égal au niveau du paladin.
+
+    • Hébété : la cible n’est plus hébétée.
+
+
+    Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Délivrance de la malédiction : l’imposition des mains du paladin agit également
+    comme un sort de délivrance des malédictions avec un NLS égal au niveau du paladin.
+
+    • Effrayé : la cible n’est plus effrayée (le paladin doit posséder la grâce Secoué
+    avant de pouvoir choisir cette option).
+
+    • Épuisé : la cible n’est plus épuisée (le paladin doit posséder la grâce Fatigué
+    avant de pouvoir choisir cette option).
+
+    • Guérison du poison : l’imposition des mains du paladin agit également comme
+    un sort de neutralisation du poison avec un NLS égal au niveau du paladin.
+
+    • Nauséeux : la cible n’est plus nauséeuse (le paladin doit posséder la grâce
+    Fiévreux avant de pouvoir choisir cette option).
+
+
+    Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.
+
+    • Aveugle : la cible n’est plus aveugle.
+
+    • Assourdi : la cible n’est plus assourdie.
+
+    • Étourdi : la cible n’est plus étourdie.
+
+    • Paralysé : la cible n’est plus paralysée.
+
+
+    Ces effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les
+    mains, il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
+  
+- Nom: Châtiment du mal 4/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 10
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 'Grâce #4'
+  Classe: Paladin
+  Source: MJ
+  Niveau: 12
+  Auto: true
+  Description: '
+
+    Au niveau 3 et tous les trois niveaux par la suite, un paladin peut choisir une
+    grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.
+
+
+    Au niveau 3, le paladin peut sélectionner une des grâces suivantes :
+
+    • Fatigué : la cible n’est plus fatiguée.
+
+    • Fiévreux : la cible n’est plus fiévreuse.
+
+    • Secoué : la cible n’est plus secouée.
+
+
+    Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Chancelant : la cible n’est plus chancelante, sauf si elle a exactement 0 point
+    de vie.
+
+    • Guérison de la maladie : l’imposition des mains du paladin agit également comme
+    un sort de guérison des maladies avec un NLS égal au niveau du paladin.
+
+    • Hébété : la cible n’est plus hébétée.
+
+
+    Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Délivrance de la malédiction : l’imposition des mains du paladin agit également
+    comme un sort de délivrance des malédictions avec un NLS égal au niveau du paladin.
+
+    • Effrayé : la cible n’est plus effrayée (le paladin doit posséder la grâce Secoué
+    avant de pouvoir choisir cette option).
+
+    • Épuisé : la cible n’est plus épuisée (le paladin doit posséder la grâce Fatigué
+    avant de pouvoir choisir cette option).
+
+    • Guérison du poison : l’imposition des mains du paladin agit également comme
+    un sort de neutralisation du poison avec un NLS égal au niveau du paladin.
+
+    • Nauséeux : la cible n’est plus nauséeuse (le paladin doit posséder la grâce
+    Fiévreux avant de pouvoir choisir cette option).
+
+
+    Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.
+
+    • Aveugle : la cible n’est plus aveugle.
+
+    • Assourdi : la cible n’est plus assourdie.
+
+    • Étourdi : la cible n’est plus étourdie.
+
+    • Paralysé : la cible n’est plus paralysée.
+
+
+    Ces effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les
+    mains, il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
+  
+- Nom: Châtiment du mal 5/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 13
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 'Grâce #5'
+  Classe: Paladin
+  Source: MJ
+  Niveau: 15
+  Auto: true
+  Description: '
+
+    Au niveau 3 et tous les trois niveaux par la suite, un paladin peut choisir une
+    grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.
+
+
+    Au niveau 3, le paladin peut sélectionner une des grâces suivantes :
+
+    • Fatigué : la cible n’est plus fatiguée.
+
+    • Fiévreux : la cible n’est plus fiévreuse.
+
+    • Secoué : la cible n’est plus secouée.
+
+
+    Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Chancelant : la cible n’est plus chancelante, sauf si elle a exactement 0 point
+    de vie.
+
+    • Guérison de la maladie : l’imposition des mains du paladin agit également comme
+    un sort de guérison des maladies avec un NLS égal au niveau du paladin.
+
+    • Hébété : la cible n’est plus hébétée.
+
+
+    Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Délivrance de la malédiction : l’imposition des mains du paladin agit également
+    comme un sort de délivrance des malédictions avec un NLS égal au niveau du paladin.
+
+    • Effrayé : la cible n’est plus effrayée (le paladin doit posséder la grâce Secoué
+    avant de pouvoir choisir cette option).
+
+    • Épuisé : la cible n’est plus épuisée (le paladin doit posséder la grâce Fatigué
+    avant de pouvoir choisir cette option).
+
+    • Guérison du poison : l’imposition des mains du paladin agit également comme
+    un sort de neutralisation du poison avec un NLS égal au niveau du paladin.
+
+    • Nauséeux : la cible n’est plus nauséeuse (le paladin doit posséder la grâce
+    Fiévreux avant de pouvoir choisir cette option).
+
+
+    Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.
+
+    • Aveugle : la cible n’est plus aveugle.
+
+    • Assourdi : la cible n’est plus assourdie.
+
+    • Étourdi : la cible n’est plus étourdie.
+
+    • Paralysé : la cible n’est plus paralysée.
+
+
+    Ces effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les
+    mains, il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
+  
+- Nom: Châtiment du mal 6/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 16
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
+  
+- Nom: 'Grâce #6'
+  Classe: Paladin
+  Source: MJ
+  Niveau: 18
+  Auto: true
+  Description: '
+
+    Au niveau 3 et tous les trois niveaux par la suite, un paladin peut choisir une
+    grâce. Chaque grâce ajoute un effet supplémentaire à sa capacité d’imposition
+    des mains. Chaque fois que le paladin impose les mains pour soigner les blessures
+    d’une créature, celle-ci bénéficie également des effets supplémentaires relatifs
+    à toutes les grâces que le paladin a choisies. Une grâce peut annuler un état
+    préjudiciable infligé par une maladie, une malédiction ou un poison sans pour
+    autant soigner l’affliction elle-même. L’état préjudiciable en question réapparaît
+    après une heure, à moins que la grâce ait effectivement supprimé l’affliction
+    qui le causait.
+
+
+    Au niveau 3, le paladin peut sélectionner une des grâces suivantes :
+
+    • Fatigué : la cible n’est plus fatiguée.
+
+    • Fiévreux : la cible n’est plus fiévreuse.
+
+    • Secoué : la cible n’est plus secouée.
+
+
+    Au niveau 6, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Chancelant : la cible n’est plus chancelante, sauf si elle a exactement 0 point
+    de vie.
+
+    • Guérison de la maladie : l’imposition des mains du paladin agit également comme
+    un sort de guérison des maladies avec un NLS égal au niveau du paladin.
+
+    • Hébété : la cible n’est plus hébétée.
+
+
+    Au niveau 9, les choix suivants s’ajoutent à la liste des grâces disponibles :
+
+    • Délivrance de la malédiction : l’imposition des mains du paladin agit également
+    comme un sort de délivrance des malédictions avec un NLS égal au niveau du paladin.
+
+    • Effrayé : la cible n’est plus effrayée (le paladin doit posséder la grâce Secoué
+    avant de pouvoir choisir cette option).
+
+    • Épuisé : la cible n’est plus épuisée (le paladin doit posséder la grâce Fatigué
+    avant de pouvoir choisir cette option).
+
+    • Guérison du poison : l’imposition des mains du paladin agit également comme
+    un sort de neutralisation du poison avec un NLS égal au niveau du paladin.
+
+    • Nauséeux : la cible n’est plus nauséeuse (le paladin doit posséder la grâce
+    Fiévreux avant de pouvoir choisir cette option).
+
+
+    Au niveau 12, les choix suivants s’ajoutent à la liste des grâces disponibles.
+
+    • Aveugle : la cible n’est plus aveugle.
+
+    • Assourdi : la cible n’est plus assourdie.
+
+    • Étourdi : la cible n’est plus étourdie.
+
+    • Paralysé : la cible n’est plus paralysée.
+
+
+    Ces effets se cumulent. Par exemple, lorsqu’un paladin de niveau 12 impose les
+    mains, il guérit 6d6 points de dégâts et peut également supprimer les états préjudiciables
+    fatigué et épuisé en plus de soigner les maladies et de neutraliser les poisons.
+    Une fois qu’une grâce a été sélectionnée, ce choix ne peut plus être modifié.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Grâce_Sur_8
+  
+- Nom: Châtiment du mal 7/jour
+  Classe: Paladin
+  Source: MJ
+  Niveau: 19
+  Auto: true
+  Description: ' Une fois par jour, un paladin peut faire appel aux pouvoirs du
+    bien dans son combat contre le mal. Par une action rapide, le paladin désigne
+    comme cible de son châtiment du Mal un ennemi qu’il peut voir. Si la cible est
+    d’alignement Mauvais, le paladin ajoute son bonus de Charisme (s’il en a un) à
+    ses jets d’attaque et son niveau de paladin à tous les jets de dégâts à l’encontre
+    de sa cible. Si la cible est un Extérieur du sous-type Mal, un dragon d’alignement
+    Mauvais ou un mort-vivant, le bonus aux dégâts passe à 2 points de dégâts par
+    niveau du paladin pour la première attaque qui touche l''adversaire. Dans tous
+    les cas, le châtiment du mal ignore toutes les réductions de dégâts de la cible.
+
+
+    De plus, lorsqu’un châtiment du Mal est en cours, le paladin gagne un bonus de
+    parade à sa CA égal à son bonus de Charisme (s’il en a un) contre les attaques
+    portées par la cible du châtiment du Mal. Si le paladin désigne une créature qui
+    n’est pas d’alignement Mauvais, le châtiment est dépensé mais n’a aucun effet.
+
+
+    L’effet du châtiment du Mal persiste jusqu’à ce que la cible soit morte ou jusqu’à
+    ce que le paladin se repose et récupère son quota d’utilisations de cette capacité.
+    Au niveau 4 et tous les trois niveaux par la suite, le paladin obtient une utilisation
+    quotidienne supplémentaire de ce pouvoir, comme indiqué dans la Table "Le Paladin",
+    avec un maximum de sept utilisations quotidiennes au niveau 19.
+
+
+
+    '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Paladin.ashx#Châtiment_du_Mal_Sur_3
   

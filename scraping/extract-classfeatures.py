@@ -97,7 +97,7 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
 idx = 0
 for cl in classes:
     idx+=1
-    if idx != 7:
+    if idx != 8:
         continue
 
     print("Extraction des aptitudes de '%s' ..." % cl['Nom'])
