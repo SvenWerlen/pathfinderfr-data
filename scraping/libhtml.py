@@ -239,13 +239,15 @@ def getValidSource(src):
     for v in VALID:
         if src == v:
             return src
+    if src == "M" or src == "F":
+        return "MJ"
     if src == "UM":
         return "AM"
     if src == "UC":
         return "AG"
     if src == "APG":
         return "MJRA"
-    if src == "MJ-UC":
+    if src == "MJ-UC" or src == "MDJ-CA":
         return "MJ"
     if src == "partagé":
         return None
@@ -376,7 +378,7 @@ def cleanNameForMatch(name):
     #    return m.group(1).strip()
     #else:
     #    return name
-    return name
+    return name.lower()
 
 #
 # cette fonction extait une propriété (format BD type 2)
@@ -443,7 +445,7 @@ def extractBD_Type2(html):
 # - aucune suppression
 # - modification des existantes (merge) sur la base du nom
 #
-def mergeYAML(origPath, matchOn, order, header, yaml2merge):
+def mergeYAML(origPath, matchOn, order, header, yaml2merge, ignoreFields = []):
     
     liste = []
     
@@ -492,7 +494,10 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge):
                     break
             if match:
                 #print("Match found for %s with %s" % (el['Nom'], liste[idx]['Nom']))
+                old = liste[idx]
                 liste[idx] = el
+                for f in ignoreFields:
+                    liste[idx][f] = old[f]
                 liste[idx]['first'] = True
                 found = True
                 break

@@ -15,14 +15,17 @@ from libhtml import jumpTo, html2text, getValidSource, mergeYAML
 MOCK_LIST = None
 MOCK_SORT = None
 #MOCK_LIST = "mocks/sortsListeA.html" # décommenter pour tester avec une liste pré-téléchargée
+MOCK_LIST = "mocks/sorts-chaman.html" # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_SORT = "mocks/sort1.html"       # décommenter pour tester avec un sort pré-téléchargé
 
-URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts.ashx",
-       "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx",
-       "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx"]
+URLs = [#{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts.ashx", 'list': False},
+        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(suite).ashx", 'list': False},
+        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20(fin).ashx", 'list': False},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.liste%20des%20sorts%20de%20chaman.ashx", 'list': True}]
 
 FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
-MATCH = ['Nom']
+MATCH = ['Référence']
+IGNORE = ['Source']
 
 
 
@@ -30,15 +33,19 @@ liste = []
 
 print("Extraction des sorts...")
 
-list = []
-if MOCK_LIST:
-    parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml")
-    list = parsed_html.body.find(id='PageContentDiv').find_all('li')
-else:
-    list = []
-    for u in URLs:
-        parsed_html = BeautifulSoup(urllib.request.urlopen(u).read(),features="lxml")
-        list += parsed_html.body.find(id='PageContentDiv').find_all('li')
+listSorts = []    
+for u in URLs:
+    if MOCK_LIST:
+        parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml").find(id='PageContentDiv')
+    else:
+        parsed_html = BeautifulSoup(urllib.request.urlopen(u['URL']).read(),features="lxml").find(id='PageContentDiv')
+    
+    if u['list']:
+        for el in parsed_html.children:
+            if el.name == "ul":
+                listSorts += el.find_all('li')
+    else:
+        listSorts += parsed_html.find_all('li')
 
 #
 # cette fonction se charge d'extraire le texte de la partie HTML
@@ -52,22 +59,20 @@ def extractText(list):
     return text
 
 # itération sur chaque page
-for l in list:
+for l in listSorts:
     sort = {}
     
     element = l.find_next('a')
     title = element.get('title')
     link  = element.get('href')
     
-    source = None
-    sourceEl = element.find_next('i')
-    if sourceEl.string:
-        source_search = re.search('\((.*)\)', sourceEl.string, re.IGNORECASE)
-        if source_search:
-            source = getValidSource(source_search.group(1))
+    linkText = element.text
+    restText = l.text[len(linkText):]
     
-    if not source:
-        source = "MJ"
+    source = "MJ"
+    source_search = re.search('\(([a-zA-Z-]+?)\)', restText, re.IGNORECASE)
+    if source_search:
+        source = getValidSource(source_search.group(1))
     
     print("Sort %s (%s)" % (title, source))
     pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
@@ -112,11 +117,11 @@ for l in list:
     # ajouter sort
     liste.append(sort)
     
-    if MOCK_SORT:
-        break
+    #if MOCK_SORT:
+    #    break
 
 print("Fusion avec fichier YAML existant...")
 
 HEADER = ""
 
-mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, liste)
+mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, liste, IGNORE)
