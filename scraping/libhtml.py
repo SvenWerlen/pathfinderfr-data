@@ -233,7 +233,7 @@ def extractLevel(text, maxdist):
 #
 # check source
 #
-def getValidSource(src):
+def getValidSource(src, exitOnInvalid = True):
     src = src.upper()
     VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "CMY", "FF", "CM"];
     for v in VALID:
@@ -263,7 +263,8 @@ def getValidSource(src):
         return "FF"
 
     print('Source invalide: ' + src)
-    exit(1)
+    if exitOnInvalid:
+        exit(1)
 
 #
 # extrait la source
