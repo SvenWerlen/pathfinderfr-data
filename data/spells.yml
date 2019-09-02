@@ -119,7 +119,7 @@
     Si le rayon touche un mort-vivant, ce dernier gagne 2d4x5 points de vie temporaires
     pendant une heure.'
   Source: MJ
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20Absorption%20d%c3%a9nergie.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Absorption%20d%c3%a9nergie.ashx
   
 - Nom: Absorption de toxine
   École: Nécromancie ;
@@ -2487,7 +2487,7 @@
     sur son doigt ou pour que l’anneau reprenne sa forme d’arme directement dans sa
     main.'
   Source: AM
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.arme%20dombre.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20dombre.ashx
   
 - Nom: Arme improvisée raffinée
   École: transmutation ;
@@ -23816,7 +23816,7 @@
 
     Malédiction contre délivrance des malédictions.'
   Source: MJ
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20mal%c3%a9diction.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Mal%c3%a9diction.ashx
   
 - Nom: Malédiction de dégoût
   École: enchantement (coercition) [émotion, malédiction, mental] ;
@@ -29567,13 +29567,13 @@
   Jet de sauvegarde: Vigueur partielle ;
   Résistance à la magie: oui
   Description: 'Ce sort charge les mains du personnage de force télékinétique. Par
-    une attaque de contact réussie le personnage infligent 1d4 points de force par
-    niveau (10d4 au maximum) et repoussent la cible en ligne droite sur 1,50 mètre
-    par tranche de deux niveaux de lanceur de sorts. Il faut réduire la distance sur
-    laquelle la cible est repoussée pour chaque catégorie de taille au-dessus de M
-    (-1,50 mètre pour une créature G, -3 pour une T, -4,50 pour une Gig et -6 pour
-    une Col), avec un minimum de 0 mètre. Un jet de Vigueur réussi annule le mouvement
-    mais pas les dégâts.
+    une attaque de contact réussie le personnage inflige 1d4 points de force par niveau
+    (10d4 au maximum) et repoussent la cible en ligne droite sur 1,50 mètre par tranche
+    de deux niveaux de lanceur de sorts. Il faut réduire la distance sur laquelle
+    la cible est repoussée pour chaque catégorie de taille au-dessus de M (-1,50 mètre
+    pour une créature G, -3 pour une T, -4,50 pour une Gig et -6 pour une Col), avec
+    un minimum de 0 mètre. Un jet de Vigueur réussi annule le mouvement mais pas les
+    dégâts.
 
 
     MYTHIQUE
@@ -45218,4 +45218,2210 @@
     a 16 points de vie.'
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20de%20fourmis.ashx
+  
+- Nom: Frissonnement du temps
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 2, conjurateur 2, magus 2
+  Portée: 9 m (6 c)
+  Cible ou zone d'effet: émanation de 9 m de rayon centrée sur le lanceur
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (un tout petit sablier)
+  Durée: 1 round
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: Le personnage génère une onde temporelle qui affecte toutes les créatures
+    dans la zone. Au début du tour de chaque créature, il y a 50% de chances qu’elles
+    soient soumises à un effet de rapidité. Sinon, elles sont soumises à un effet
+    de lenteur.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frissonnement%20du%20temps.ashx
+  
+- Nom: Glace insidieuse
+  École: évocation [froid] ;
+  Niveau: druide 4, ensorceleur/magicien 4, conjurateur 3
+  Portée: moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)
+  Cible ou zone d'effet: un plan de glace ancré, faisant au maximum 3 m de côté/niveau
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 10 minutes/niveau
+  Jet de sauvegarde: Réflexes pour annuler (cf. texte) ;
+  Résistance à la magie: oui
+  Description: 'Ce sort couvre le sol, la terre ou toute autre surface horizontale
+    calme (comme un lac tranquille ou une rivière placide) d’une pellicule de glace
+    qui s’étend lentement. La pellicule de glace initiale ne peut pas se former dans
+    une zone occupée par des objets ou des créatures physiques. Sa surface doit être
+    lisse et sans rupture quand elle se crée. La glace est dure, solide et opaque,
+    faisant 2,5 centimètres d’épaisseur par niveau de lanceur. La glace est suffisamment
+    solide pour supporter le poids d’un cheval ordinaire, ce qui permet aux créatures
+    de traverser une étendue d’eau.
+
+    Chaque case de glace de 3 mètres (2 c) de côté a 3 points de vie par tranche de
+    2,5 centimètres d’épaisseur. Les créatures peuvent automatiquement toucher la
+    glace. Une portion de glace dont les points de vie sont réduits à 0 est détruite,
+    laissant une zone constituée de morceaux de glace, de neige fondue et de neige
+    solide qui compte comme un environnement difficile. Si une créature essaye de
+    briser la glace sur une seule attaque, le DD du test de Force est égal à 15 +
+    le niveau de lanceur du personnage.
+
+
+    Chaque round, lors du tour du personnage, la pellicule de glace s’étend de 30
+    centimètres dans toutes les directions, sauf celle du personnage. Cette croissance
+    est suffisamment lente pour que toutes les créatures présentes dans la zone aient
+    le temps de la quitter ou de monter sur la glace. Si la glace qui s’étend recouvre
+    complètement la case d’une créature, cette dernière doit décider si elle se place
+    sur la pellicule de glace, si elle tombe sur la pellicule de glace ou si elle
+    est repoussée dans une case adjacente.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glace%20insidieuse.ashx
+  
+- Nom: Transport danimal
+  École: Invocation (téléportation) ;
+  Niveau: Dru 3, Ens/Mag 3, Hyp 3, Conj 3, Méd 3, Psy 3, Rôd 3, Sor 3
+  Cible ou zone d'effet: un animal touché de taille TP ou inférieure
+  Jet de sauvegarde: annule ;
+  Résistance à la magie: oui
+  Description: 'Ce sort fonctionne comme transport d’objet mais prend un animal
+
+    pour cible. Il affecte uniquement les créatures normales, non
+
+    magiques, de type animal.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transport%20danimal.ashx
+  
+- Nom: Cercle thaumaturgique
+  École: abjuration ;
+  Niveau: Ens/Mag 4, Inq 4, Conj 4, Méd 3, Occ 3, Prê 4
+  Composantes: V, G, M (un cercle de poudre d’argent de 90 cm de diamètre)
+  Description: 'Ce cercle fonctionne comme cercle magique contre le Bien,
+
+    le Chaos, la Loi ou le Mal mais le lanceur désigne un sous-type
+
+    d’extérieur au lieu d’un alignement, par exemple air, terre, feu ou
+
+    eau, ou bien une race d’extérieurs comme les anges ou les diables.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cercle%20thaumaturgique.ashx
+  
+- Nom: Passager clandestin
+  École: Nécromancie ;
+  Niveau: 'Ens/Mag 4, Hyp 4, Conj 4, Méd 2, Occ 3, Psy 4, Sor 4,
+
+    Spi 3'
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 h/niveau (D) ; voir texte
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Le personnage projette discrètement son âme dans le corps
+
+    de son hôte, afin d’observer ce qui l’entoure. Cela lui permet de
+
+    l’affecter modérément. Le sort fonctionne comme une possession
+
+    spirituelle mais l’hôte conserve le contrôle absolu de son corps et
+
+    ignore qu’il est victime d’une possession. Le personnage ne peut
+
+    pas communiquer directement avec son hôte mais il peut lui lancer
+
+    des sorts à effet mental ou de nouveau passager clandestin tant
+
+    qu’il peut lancer ces sorts sous forme d’action purement mentale.
+
+    Même s’il lance un sort qui affecte normalement plusieurs cibles
+
+    ou une zone, il n’affecte que l’hôte. Si ce dernier réussit un jet de
+
+    sauvegarde contre un sort ainsi lancé, il comprend immédiatement
+
+    qu’il est possédé et s’il le savait déjà, il a droit à un nouveau jet de
+
+    sauvegarde contre le passager clandestin. Protection contre le Mal et
+
+    les effets similaires ne chassent pas le personnage de son hôte mais
+
+    ils l’empêchent de lancer de nouveaux sorts depuis l’hôte tant que
+
+    leur durée n’a pas expiré.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Passager%20clandestin.ashx
+  
+- Nom: Échange d'esprits
+  École: enchantement (coercition) (effet mental) ;
+  Niveau: Ens/Mag 6, Hyp 5, Conj 5, Méd 3, Occ 4, Psy 5, Sor 6, Spi 4
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 round
+  Composantes: V, G
+  Durée: 1 h/niveau (D)
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Ce sort fonctionne comme possession spirituelle mais le personnage
+
+    échange son esprit avec celui de sa cible. Cette dernière ne
+
+    partage pas son corps avec le personnage, se retrouvant dans l’impossibilité
+
+    d’agir, elle gagne le corps du personnage et le contrôle,
+
+    comme si les deux protagonistes avaient chacun lancé possession
+
+    spirituelle sur l’autre.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20desprits.ashx
+  
+- Nom: Possession spirituelle
+  École: Nécromancie ;
+  Niveau: Ens/Mag 5, Hyp 5, Conj 5, Méd 3, Occ 4, Psy 5, Sor 5, Spi 4
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 h/niveau (D)
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Le personnage tente de prendre possession d’une créature en
+
+    projetant son âme dans le corps de celle-ci. La cible doit se trouver
+
+    dans le rayon d’action du sort et le personnage doit savoir où
+
+    elle se trouve, bien qu’il n’ait pas besoin de la voir ni d’avoir une
+
+    ligne d’effet jusqu’à elle. Quand le personnage termine l’incantation
+
+    et transfère son âme, son corps semble mort. S’il n’arrive pas à
+
+    prendre possession de son hôte, le sort se termine.
+
+
+    Si le personnage réussit, sa force vitale occupe le corps de l’hôte
+
+    tandis que l’âme de ce dernier est emprisonnée dans le corps du
+
+    personnage, bien qu’elle reste en mesure d’utiliser ses propres
+
+    sens (mais qu’elle soit incapable d’exercer la moindre influence ni
+
+    même de recourir à des capacités purement mentales). Le personnage
+
+    peut communiquer par télépathie avec son hôte comme
+
+    s’ils partageaient un langage commun, mais cette communication
+
+    fonctionne seulement si le personnage donne son accord. Le personnage
+
+    conserve son Intelligence, sa Sagesse, son Charisme, ses
+
+    niveaux, ses classes, son bonus de base à l’attaque, ses bonus aux
+
+    jets de sauvegarde, son alignement et ses capacités mentales. Le
+
+    corps conserve sa Force, sa Dextérité, sa Constitution, ses points
+
+    de vie ainsi que ses capacités naturelles et automatiques. Un corps
+
+    doté de membres supplémentaires ne permet pas au personnage
+
+    de porter plus d’attaques que d’habitude (ni de porter des attaques
+
+    à deux armes plus avantageuses). Le personnage ne peut pas activer
+
+    les pouvoirs extraordinaires, surnaturels ou magiques du corps ni
+
+    lancer ses sorts.
+
+
+    Le personnage peut regagner son corps librement, par une action
+
+    simple, quelle que soit la distance qui l’en sépare, tant qu’il
+
+    se trouve sur le même plan. Si le corps de l’hôte se fait tuer, le
+
+    personnage réintègre son propre corps et la force vitale de l’hôte
+
+    le quitte (il meurt). Si le corps du personnage se fait tuer, le personnage
+
+    succombe quand le sort expire ou quand le corps de son
+
+    hôte se fait tuer. Le personnage peut lancer ce sort sur une autre
+
+    cible alors qu’il se trouve dans le corps de la première. La durée du
+
+    sort se réinitialise alors. Il retourne tout de même dans son corps
+
+    d’origine (et non dans un corps intermédiaire) quand il utilise une
+
+    action simple pour mettre fin au sort ou quand ce dernier expire.
+
+    Le retour dans le corps d’origine met fin au sort. Les créatures dont
+
+    l’âme sert aussi de corps (comme les morts-vivants intangibles ou
+
+    les extérieurs non natifs) utilisent les effets de la possession spirituelle
+
+    suprême.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Possession%20spirituelle%20(sort).ashx
+  
+- Nom: Bond dimensionnel
+  École: invocation (téléportation) ;
+  Niveau: ensorceleur/magicien 7, conjurateur 6, sorcière 7
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: ''
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau ou jusqu’à déchargement
+  Jet de sauvegarde: aucun et Volonté pour annuler (objet) ;
+  Résistance à la magie: non et oui (objet)
+  Description: 'Le personnage désigne deux endroits à portée et crée un lien dimensionnel
+    entre eux : il doit disposer d’une ligne d’effet vers les deux endroits quand
+    il lance ce sort. Par une action rapide, il peut se téléporter de sa position
+    actuelle à l’un des endroits désignés comme s’il avait lancé porte dimensionnelle.
+    Le sort est déchargé quand le personnage l’a utilisé pour se téléporter un nombre
+    de fois égal à un quart de son niveau de lanceur (5 fois au maximum).'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bond%20dimensionnel%20(sort).ashx
+  
+- Nom: Dard de nausée
+  École: invocation (création) [poison] ;
+  Niveau: druide 1, sorcière 1
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: un dard empoisonné
+  Temps d'incantation: 1 action simple
+  Composantes: G, FD
+  Durée: instantanée
+  Jet de sauvegarde: Vigueur pour dégâts partiels (cf. texte) ;
+  Résistance à la magie: non
+  Description: Le personnage crache un dard empoisonné de la taille d’une plume
+    sur une créature à portée, comme s’il avait tiré une fléchette avec une sarbacane.
+    Le personnage doit réussir une attaque à distance pour toucher sa cible. Le dard
+    inflige 1d2 points de dégâts perforants et de poison à la cible, la rendant nauséeuse
+    pendant 1 round à moins qu’elle ne réussisse un jet de Vigueur.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dard%20de%20naus%c3%a9e.ashx
+  
+- Nom: Sabot du tonnerre
+  École: évocation [terre] ;
+  Niveau: druide 1, ensorceleur/magicien 1, magus 1, rôdeur 1, sanguin 1
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: une créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: Le personnage tape du pied ou frappe son arme contre la terre ou
+    le sol, créant une onde de puissance dont il peut se servir pour faire un croc-en-jambe
+    à une créature. Il fait un test de manœuvre offensive de croc-en-jambe contre
+    la cible mais, plutôt que d’utiliser son bonus de base à l’attaque, il peut utiliser
+    son niveau de lanceur de sorts et, plutôt que son modificateur de Force, il peut
+    utiliser le modificateur de sa valeur de caractéristique de lancement de sorts
+    (Intelligence pour les magi et les magiciens ; Sagesse pour les druides et les
+    rôdeurs ; Charisme pour les ensorceleurs et les sanguins). Ceci ne provoque pas
+    d’attaque d’opportunité. Ce sort n’a aucun effet si le personnage ne peut toucher
+    la terre ou le sol ou si sa cible n’est pas en contact avec la terre ou le sol.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sabot%20du%20tonnerre.ashx
+  
+- Nom: Disque de pierre
+  École: invocation (création) [terre] ;
+  Niveau: druide 2, ensorceleur/magicien 2, magus 2, sanguin 2, sorcière 2
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: un ou plusieurs disques de pierre
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une pincée de terre ou de métal)
+  Durée: instantanée
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Le personnage crée un disque de pierre qui vole en direction d’un
+    ennemi. Il peut créer un disque, puis un de plus aux niveaux de lanceur 7 et 11.
+    Pour chaque disque qu’il crée, il décide si son bord est émoussé (infligeant des
+    dégâts contondants) ou acéré (infligeant des dégâts tranchants). Pour toucher
+    et infliger 4d6 points de dégâts, il faut effectuer une attaque à distance avec
+    chaque disque. Il est possible de lancer les disques sur plus d’une cible, mais
+    aucune cible ne doit se trouver à plus de 9 mètres (6 c) des autres et les disques
+    doivent être lancés simultanément.
+
+    Au niveau de lanceur 5, les disques comptent comme des armes magiques en argent.
+    Au niveau de lanceur 10, ils comptent également comme des armes en fer froid.
+    Au niveau de lanceur 15, ils comptent également comme des armes en adamantium.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Disque%20de%20pierre.ashx
+  
+- Nom: Haricot magique
+  École: invocation (création) ;
+  Niveau: druide 2, sorcière 2
+  Portée: courte (7,5 m + 1,5 m/2niveaux)
+  Cible ou zone d'effet: case de 1,5 m de côté de tiges de haricot possibles à escalader
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, FD
+  Durée: instantanée
+  Description: 'Le personnage fait surgir du sol une tige de haricot épaisse et
+    solide et la fait pousser à une hauteur maximale de 3 mètres + 1,5 mètre par tranche
+    de 2 niveaux de lanceur. La tige qui pousse s’ancre d’elle-même aux objets solides
+    comme les murs ou les plafonds et se développe autour des objets qui n’obstruent
+    pas complètement la case où elle se trouve (comme les branches d’arbre), mais
+    elle est arrêtée par les obstacles solides. La tige du haricot offre de nombreuses
+    prises pour les pieds et les mains. Le DD pour l’escalader est de 5. Elle peut
+    supporter un poids maximal de 100 kg plus 25 kg par niveau de lanceur, ou le double
+    de ce poids si son extrémité supérieure est ancrée. Si elle s’ancre d’elle-même
+    à un solide objet mobile (comme un navire ou un engin de siège), il faut réussir
+    un test de Force DD 23 ou trancher la tige (solidité 2, 40 pv) pour libérer cet
+    objet.
+
+    Si le sol est capable de supporter la vie végétale, la tige continue de croître
+    comme une plante normale et produit des haricots nourrissants (à défaut d’être
+    appétissants). Autrement, la plante meurt après 1d6 heures et son enveloppe reste
+    aussi durable qu’un petit arbre.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Haricot%20magique.ashx
+  
+- Nom: Nuage euphorisant
+  École: invocation (création) [poison] ;
+  Niveau: druide 2, ensorceleur/magicien 2, magus 2, sorcière 2
+  Portée: moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)
+  Cible ou zone d'effet: brume dans une étendue de 6 m de rayon et de 6 m de hauteur
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (des champignons rares d’une valeur de 5 po)
+  Durée: 1 round/niveau
+  Jet de sauvegarde: Volonté pour annuler (cf. texte) ;
+  Résistance à la magie: non
+  Description: 'Le personnage crée un banc de brume similaire à ce que ferait une
+    brume de dissimulation, à la seule différence que ses vapeurs sont enivrantes.
+    Les créatures vivantes présentes dans le nuage sont fascinées.
+
+    Cet état dure tant que les créatures sont dans le nuage et pendant 1d4+1 rounds
+    après qu’elles en sont sorties. Toute créature qui réussit son jet de sauvegarde
+    mais reste dans le nuage doit continuer de faire un jet de sauvegarde à chaque
+    round lors du tour du personnage.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuage%20euphorisant.ashx
+  
+- Nom: Violent nuage d'orage
+  École: évocation [électricité] ;
+  Niveau: druide 2, ensorceleur/magicien 2, magus 2, sorcière 2
+  Portée: moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)
+  Cible ou zone d'effet: sphère de 1,5 m de diamètre
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M/FD (un morceau d’arbre frappé par la foudre)
+  Durée: 1 round/niveau
+  Jet de sauvegarde: Réflexes pour annuler ;
+  Résistance à la magie: oui
+  Description: 'Un nuage de tempête sphérique et crépitant vole dans la direction
+    indiquée par le personnage et inflige des dégâts d’électricité à ceux qui le touchent.
+    Il a une vitesse de vol de 6 mètres avec une manœuvrabilité parfaite. Si l’orage
+    entre dans un espace qui accueille une créature, il arrête de se déplacer pour
+    le round et inflige 3d6 points de dégâts d’électricité à cette créature, mais
+    un jet de Réflexes réussi annule ces dégâts. Le nuage offre un camouflage (20%
+    de chances de rater) à tout ce qui s’y trouve et sa lumière vacillante illumine
+    la même zone que le ferait une bougie.
+
+    La sphère se déplace tant que le personnage la dirige activement (ce qui requiert
+    une action de mouvement de sa part). Sinon, elle reste en place et crépite d’éclairs.
+    Les effets de vent permettent de la déplacer et elle compte comme une créature
+    de taille P quand il s’agit de déterminer la manière dont les vents l’affectent.
+    La sphère n’a pas de substance physique et ne peut exercer aucune force sur les
+    créatures tangibles ou les objets. Elle se disperse si elle sort de la portée
+    du sort.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Violent%20nuage%20dorage.ashx
+  
+- Nom: Grand pas suprême
+  École: transmutation ;
+  Niveau: druide 3, rôdeur 3
+  Portée: personnelle
+  Durée: 1 heure/niveau (T)
+  Description: 'Ce sort fonctionne comme grand pas, à la seule différence qu’il
+    donne au personnage un bonus d’altération de +6 mètres à sa vitesse de base et
+    un bonus d’altération de +3 mètres (2 c) à ses autres modes de déplacement (creusement,
+    escalade, vol, nage, etc.). Ce sort n’affecte pas les modes de déplacement qu’il
+    ne possède pas : par exemple, s’il n’a pas de vitesse de nage, ce sort ne lui
+    en accorde pas.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grand%20pas%20supr%c3%aame.ashx
+  
+- Nom: Sabot du tonnerre suprême
+  École: évocation [terre] ;
+  Niveau: druide 3, ensorceleur/magicien 3, magus 3, rôdeur 3, sanguin 3
+  Portée: 18 m (12 c)
+  Cible ou zone d'effet: ligne de 18 m (12 c)
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: Ce sort fonctionne comme sabot du tonnerre, aux seules différences
+    indiquées ci-dessus. Il permet au personnage de cibler plusieurs créatures, y
+    compris celles qui sont plus grandes que lui d’une catégorie de taille. Quand
+    le personnage fait son test de manœuvre offensive, il applique le résultat à chacune
+    des créatures présentes dans la zone.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sabot%20du%20tonnerre%20supr%c3%aame.ashx
+  
+- Nom: Forme du nuage
+  École: Transmutation [air] ;
+  Niveau: Druide 4, Rôdeur 4, ensorceleur/magicien 4
+  Portée: personelle
+  Cible ou zone d'effet: lanceur de sort
+  Temps d'incantation: 1 action simple
+  Composantes: G, M/FD (un morceau de gaze et une volute de fumée)
+  Durée: 10 minutes/niveau (T)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: Non
+  Description: Ce sort fonctionne comme état gazeux, à la seule différence que le
+    lanceur prend la forme d’un nuage de taille C occupant un espace de 9 mètres.
+    Le lanceur de sorts choisit l’apparence générale du nuage (blanc, orageux, cotonneux,
+    plat, etc.), après quoi il ne peut plus en changer. Même un examen minutieux ne
+    peut révéler que le nuage en question est en réalité une créature magiquement
+    dissimulée. Pour tous les tests normaux, le lanceur de sorts est en réalité un
+    nuage, bien qu’un sort de détection de la magie révèle une aura de transmutation
+    modérée sur le nuage. La vitesse de vol du lanceur sous forme de nuage est de
+    9 mètres.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20du%20nuage.ashx
+  
+- Nom: Sphère de feu suprême
+  École: évocation feu ;
+  Niveau: druide 4, ensorceleur/magicien 4, magus 4, sanguin 4
+  Jet de sauvegarde: Réflexes pour annuler (cf. texte) ;
+  Résistance à la magie: oui
+  Description: Ce sort fonctionne comme sphère de feu, à la seule différence qu’il
+    inflige 6d6 points de dégâts de feu à toutes les créatures qu’il touche. Toutes
+    les créatures qui ratent leur jet de sauvegarde contre la sphère s’enflamment
+    (cf. p. 451 du Manuel du Joueur). Si une créature s’enflamme, le DD pour éteindre
+    le feu est égal au DD de ce sort.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sph%c3%a8re%20de%20feu%20supr%c3%aame.ashx
+  
+- Nom: Violent nuage dorage suprême
+  École: Évocation (électricité, son) ; Niveau druide 4, ensorceleur/magicien 4,
+    magus 4, sorcière 4
+  Jet de sauvegarde: Réflexes pour annuler et Vigueur pour annuler (cf. texte) ;
+  Résistance à la magie: oui
+  Description: Ce sort fonctionne comme violent nuage d’orage, à la seule différence
+    qu’il inflige 6d6 points de dégâts d’électricité à toutes les créatures qu’il
+    touche. La première créature blessée par le nuage est également étourdie pendant
+    1 round (Vigueur annule). Il s’agit d’un effet de son.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Violent%20nuage%20dorage%20supr%c3%aame.ashx
+  
+- Nom: Lames de vent
+  École: Transmutation [air] ;
+  Niveau: Druide 5, Magus 5, ensorceleur/magicien 5, sorcière 5
+  Portée: contact
+  Cible ou zone d'effet: Créature touchée
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau
+  Jet de sauvegarde: Volonté pour annuler ;
+  Résistance à la magie: Oui
+  Description: Le lanceur de sorts densifie l’air autour de la cible, le transformant
+    en lames dentées invisibles qui infligent un certain nombre de dégâts en fonction
+    de la vitesse de déplacement de la cible. Lors de son tour, la cible reçoit 1d6
+    points de dégâts tranchants si elle se déplace de 1,5 mètre au moins, plus 1d6
+    points de dégâts tranchants supplémentaires par tranche supplémentaires de 3 mètres
+    de mouvement. Les déplacements qui ne se font pas par l’air (comme le creusement,
+    la nage ou la téléportation) ne provoquent pas ces dégâts. Dans les zones de vent
+    violent, la cible reçoit les dégâts lors de son tour, même si elle ne se déplace
+    pas. Le vent inflige 1d8 points de dégâts tranchants quand il est important, plus
+    1d8 pour chaque catégorie de vent dépassant le vent important. Ces dégâts supplémentaires
+    ne sont pas infligés par des effets de vent instantanés (comme bourrasque), seulement
+    par des effets de vent durant au moins 1 round.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lames%20de%20vent.ashx
+  
+- Nom: Arc-en-ciel embrasé
+  École: évocation [lumière] ;
+  Niveau: druide 6
+  Portée: 0 m ou 3 m/niveau
+  Cible ou zone d'effet: un arc ou un pont de lumière
+  Temps d'incantation: 1 round
+  Composantes: V, G, M (une goutte d’eau de pluie)
+  Durée: 1 minute/niveau ou jusqu’à déchargement (cf. texte)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: "Le personnage crée un spectre de lumière solide multicolore qu’il\
+    \ peut utiliser pour l’un de ces deux effets. \n• Arc. Le sort crée un arc long\
+    \ ou court adapté à la taille du personnage. Celui-ci sait le manier comme s’il\
+    \ y était formé. Quand il bande son arc, l’arme crée automatiquement une flèche\
+    \ traqueuse de lumière +1 : il ne peut pas tirer d’autres flèches. Une créature\
+    \ touchée par l’une de ces flèches est entourée d’une lueur féerique et éblouie\
+    \ pendant 1 minute. Cette version du sort se termine quand le personnage a tiré\
+    \ un nombre de flèches égal à son niveau de lanceur de sorts.\n• Pont. La lumière\
+    \ forme un pont ou une rampe de 1,5 mètre de large et d’une longueur maximale\
+    \ de 3 mètres (2 c) par niveau de lanceur de sorts. Les créatures situées sur\
+    \ le pont sont éblouies. Les alliés bénéficient d’un bonus égal au modificateur\
+    \ de Sagesse du personnage (1 au minimum) aux tests, aux jets de sauvegarde et\
+    \ au DMD pour résister contre ceux qui cherchent à les sortir du pont contre leur\
+    \ gré. Les ennemis reçoivent un malus égal au modificateur de Sagesse du personnage\
+    \ (1 au minimum) aux tests, aux jets de sauvegarde et au DMD pour résister contre\
+    \ ceux qui cherchent à les déloger du pont contre leur gré."
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arc-en-ciel%20embras%c3%a9.ashx
+  
+- Nom: Brise-destructeur
+  École: Abjuration (force) ;
+  Niveau: ensorceleur/magicien 1, magus 1, Psy 1
+  Portée: contact
+  Cible ou zone d'effet: la créature touchée
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (T) ou jusqu’à déchargement
+  Jet de sauvegarde: Volonté pour annuler (inoffensif) et cf. texte ;
+  Résistance à la magie: oui (inoffensif) et cf. texte
+  Description: 'Le personnage place un sceau invisible sur la cible. La prochaine
+    fois qu’une créature réussira une manoeuvre offensive de destruction contre la
+    cible, l’arme de l’attaquant recevra 1d6 points de dégâts par niveau de lanceur
+    (10d6 au maximum). Si l’attaquant utilise une arme naturelle pour la destruction,
+    il reçoit la moitié de ces dégâts. La résistance à la magie s’applique à ces dégâts.
+    L’attaquant doit réussir un jet de Vigueur pour réduire ces dégâts de moitié.
+
+    La protection placée sur la cible compte comme un piège magique et peut être détectée
+    et désamorcée comme tel.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brise-destructeur.ashx
+  
+- Nom: Limite infranchissable
+  École: abjuration ;
+  Niveau: ensorceleur/magicien 1, magus 1, sanguin 1
+  Portée: 1,5 m
+  Cible ou zone d'effet: rayonnement de 1,5 m centrée sur le lanceur
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau
+  Description: Le personnage crée une ligne écarlate brillante autour de la zone.
+    Contre les créatures situées dans la zone, le personnage peut tenter un nombre
+    d’attaques d’opportunité supplémentaires par round égal au modificateur de sa
+    caractéristique de lancement de sorts (Intelligence pour les magi et les magiciens,
+    Charisme pour les sanguins et les ensorceleurs), même si cela ne lui permet pas
+    de faire plus d’une attaque contre une créature par action provoquant une attaque
+    d’opportunité.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Limite%20infranchissable.ashx
+  
+- Nom: Guérison des morts-vivants
+  École: nécromancie ;
+  Niveau: ensorceleur/magicien 1
+  Portée: contact
+  Cible ou zone d'effet: une créature morte-vivante touchée (cf. texte)
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: Volonté pour 1/2 dégâts (inoffensif) ;
+  Résistance à la magie: oui (inoffensif)
+  Description: Quand le personnage touche une créature morte-vivante, il canalise
+    l’énergie négative, qui soigne 1d8 points de dégâts, + 1 point par niveau de lanceur
+    (+5 au maximum). Ce sort n’a aucun effet sur les créatures vivantes, sauf sur
+    celles que l’énergie négative soigne, qui sont elles aussi soignées par ce sort.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20des%20morts-vivants.ashx
+  
+- Nom: Bricolage alchimique
+  École: Transmutation ;
+  Niveau: Prê 2, Ens/Mag 1, Sor 1
+  Portée: contact
+  Cible ou zone d'effet: arme à feu ou objet alchimique touché
+  Temps d'incantation: 1 action simple
+  Composantes: V,G
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: Vigueur pour annuler ;
+  Résistance à la magie: oui
+  Description: Le lanceur de sorts transforme un objet alchimique ou une arme à
+    feu en un autre objet alchimique ou en une autre arme à feu de coût égal ou moindre.
+    Les objets magiques ne sont pas affectés par ce sort. Quand la durée du sort se
+    termine, les objets alchimiques utilisés alors qu’ils étaient transformés sont
+    détruits et ne retrouvent pas un état fonctionnel, tandis que les armes à feu
+    retrouvent leur type d’origine.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bricolage%20alchimique.ashx
+  
+- Nom: Brillance miroir
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 1, sorcière 1
+  Portée: contact
+  Cible ou zone d'effet: un objet en métal d’un maximum de 30 cm de côté
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (un chiffon doux)
+  Durée: instantanée
+  Jet de sauvegarde: oui (objet) ;
+  Résistance à la magie: oui (objet)
+  Description: Le personnage polit un objet jusqu’à lui donner suffisamment d’éclat
+    pour que l’on puisse l’utiliser comme un miroir. Ceci ne protège pas l’objet contre
+    les dégâts et la corrosion futurs qui pourraient abîmer sa surface polie. Le sort
+    ne peut être lancé que sur un objet en métal présentant une surface relativement
+    lisse et contiguë, comme une cuirasse, un casque, un bouclier ou une épée, mais
+    pas une masse d’armes, une cotte de mailles ou une armure d’écailles.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brillance%20miroir.ashx
+  
+- Nom: Éclats déchirants
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 1, magus 1, sanguin 1, sorcière 1
+  Portée: contact
+  Cible ou zone d'effet: l’arme de corps à corps touchée
+  Temps d'incantation: 1 action simple
+  Composantes: V
+  Durée: 1 heure/niveau ou jusqu’à déchargement
+  Jet de sauvegarde: Réflexes pour annuler (cf. texte) ;
+  Résistance à la magie: oui
+  Description: Le personnage canalise de la puissance dans une arme de corps à corps.
+    Si le manieur de l’arme détruit un objet sur un test réussi de manœuvre offensive
+    de destruction, il peut libérer la puissance supplémentaire de l’arme, faisant
+    exploser l’objet détruit et créant des éclats acérés qui infligent 1d6 points
+    de dégâts perforants et tranchants à la créature qui portait, avait sur elle ou
+    maniait l’objet détruit. Toute créature (autre que le manieur de l’arme ciblée
+    par le sort) adjacente à cette créature doit réussir un jet de Réflexes pour ne
+    pas recevoir 1d6 points de dégâts perforants et tranchants à cause des éclats
+    qui volent. Ces éclats comptent également comme n’importe quel matériau spécial
+    dans lequel était fait l’objet détruit (par exemple, les éclats d’une arme en
+    fer froid seront en fer froid). Une fois que la puissance supplémentaire de l’arme
+    a été libérée, le sort est déchargé.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clats%20d%c3%a9chirants.ashx
+  
+- Nom: Confession écarlate
+  École: abjuration ;
+  Niveau: ensorceleur/magicien 2, sorcière 2
+  Portée: contact
+  Cible ou zone d'effet: ou zone l’objet touché ou une zone maximale de 30 cm de
+    côté
+  Temps d'incantation: 10 minutes
+  Composantes: V, G
+  Durée: permanente et 1 heure/niveau (cf. texte)
+  Jet de sauvegarde: Vigueur pour annuler ;
+  Résistance à la magie: oui
+  Description: 'Le personnage protège un objet ou une zone avec sa rune ou sa marque
+    personnelle. Il peut décider de rendre l’inscription visible ou invisible, et
+    celle-ci n’endommage pas le matériau sur lequel elle est placée. Un sort de détection
+    de la magie permet de faire briller et de rendre visible une marque invisible.
+    Si une créature autre que le personnage touche l’objet ou la zone protégé(e) et
+    rate un jet de Vigueur, sa peau devient rouge vif pendant 1 heure par niveau.
+    Il est impossible de se débarrasser de cette coloration en se lavant, mais elle
+    peut être dissipée.
+
+
+    Détection de l’invisibilité, vision lucide, une gemme de vision ou une robe de
+    vision totale permettent également à leur utilisateur de voir une marque invisible.
+    Un sort de lecture de la magie révèle les mots, le cas échéant. La protection
+    ne peut pas être dissipée mais le lanceur peut l’annuler, tout comme le fait un
+    sort d’effacement.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Confession%20%c3%a9carlate.ashx
+  
+- Nom: Fouet fantôme
+  École: évocation ;
+  Niveau: Ens/Mag 2, Inq 2, Magus 2, Occ 2, Prê 2, Psy 2, Sor 2, Spi 2
+  Portée: 0 m
+  Cible ou zone d'effet: fouet d’ectoplasme flexible
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau (D)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: 'Un fouet blanc de 4,50 mètres de long, d’une pâleur fantomatique,
+
+    apparaît dans la main du personnage. Il fonctionne comme
+
+    un fouet spectral sans bonus d’altération. Le personnage l’utilise
+
+    comme s’il était formé à son maniement. Les attaques avec le fouet
+
+    fantôme se résolvent comme des attaques intangibles. Le fouet
+
+    affecte uniquement les créatures attaquées, traversant les objets
+
+    et les autres créatures se trouvant sur son chemin, ce qui permet
+
+    au personnage d’ignorer le camouflage situé entre lui et sa cible.
+
+    Quand un fouet fantôme traverse un abri total, la cible est considérée
+
+    comme bénéficiant d’un camouflage total (50 % de chances de
+
+    rater). Le fouet inflige des dégâts létaux aux créatures intangibles
+
+    et aux morts-vivants et peut servir à effectuer des manoeuvres offensives
+
+    d’entraînement ou de repositionnement (en plus des manoeuvres
+
+    de désarmement et de croc-en-jambe habituelles pour un
+
+    fouet). Il est impossible de détruire un fouet fantôme ou de désarmer
+
+    son utilisateur.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20fant%c3%b4me.ashx
+  
+- Nom: Sphère de bourrasques
+  École: Évocation [air] ;
+  Niveau: druide 2, magus 2, ensorceleur/magicien 2
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: sphère d’air de 1,5 mètre de diamètre
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau
+  Jet de sauvegarde: Vigueur pour annuler (objet) ou Réflexes pour annuler ;
+  Résistance à la magie: Oui
+  Description: Une boule de vent tourbillonnante roule dans la direction indiquée
+    par le lanceur de sorts, projetant tous ceux qu’elle touche avec une force exceptionnelle.
+    La sphère est traitée de toute façon comme une zone de vent violent, imposant
+    un malus de -4 à toutes les attaques avec des armes à distance qui la traversent.
+    La sphère se déplace de 9 mètres par round. Lors de ce déplacement, elle peut
+    s’élever ou sauter jusqu’à 9 mètres pour frapper une cible. Si elle entre dans
+    un espace occupé par une créature de taille M ou plus petite, elle interrompt
+    son déplacement pour ce round et génère un violent coup de vent pour bousculer
+    la créature. Le BMO de la sphère pour les manœuvres offensives de bousculade utilise
+    le niveau de lanceur de sorts du lanceur plutôt que son bonus de base à l’attaque,
+    avec un bonus de +2 à son score de Force (14). Que la bousculade soit réussie
+    ou non, la créature reçoit 1d6 points de dégâts contondants non létaux de cette
+    attaque. Si la bousculade échoue, la créature est toujours sujette aux vents violents
+    de la sphère tant qu’elle reste sur la même case qu’elle. Une sphère de bourrasques
+    roule sur les objets ou obstacles qui font moins de 1,2 mètre de haut. La sphère
+    continue d’avancer tant que le lanceur la dirige activement (ce qui lui coûte
+    une action de mouvement) ; sinon, elle reste simplement où elle est. Une sphère
+    de bourrasques se dissipe immédiatement si elle dépasse la portée du sort.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sph%c3%a8re%20de%20bourrasques.ashx
+  
+- Nom: Brume crépusculaire
+  École: illusion (ombre) [ténèbres] ;
+  Niveau: ensorceleur/magicien 2, sorcière 2
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: brume qui s’étend sur 6 m de rayon (4 c)
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: Le personnage crée une brume grise qui obscurcit la vision (comme
+    nappe de brouillard) et diminue la luminosité d’un niveau (comme ténèbres). Étant
+    donné que le sort génère une illusion et non un véritable brouillard physique,
+    il n’est pas affecté par le vent et peut être lancé sous l’eau.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume%20cr%c3%a9pusculaire.ashx
+  
+- Nom: Fouet de la rivière
+  École: invocation (création) [eau] ;
+  Niveau: ensorceleur/magicien 2, magus 2, sorcière 2
+  Portée: 0 m
+  Cible ou zone d'effet: fouet d’eau
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (T) ou jusqu’à déchargement (cf. texte)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Le personnage crée une lanière d’eau claire qui fonctionne comme
+    un fouet adapté à sa taille, à la seule différence qu’il effectue une attaque
+    de contact au corps à corps plutôt qu’une attaque normale. Tout ce que touche
+    le personnage avec le fouet reçoit des dégâts et se fait imbiber d’un demi-litre
+    d’eau. Une créature de sous-type feu reçoit 1d6 points de dégâts supplémentaires.
+    Si la cible est en feu, elle bénéficie d’un bonus de +2 à son prochain jet de
+    sauvegarde pour éteindre les flammes.
+
+    Après que le personnage a réussi des attaques au fouet et touché une créature
+    un nombre de fois égal à son niveau de lanceur, l’eau est épuisée et le sort est
+    déchargé. L’eau créée par ce sort est, outre cela, identique à celle que crée
+    un sort de création d’eau.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet%20de%20la%20rivi%c3%a8re.ashx
+  
+- Nom: Cachette-miroir
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 2, sorcière 2
+  Portée: contact
+  Cible ou zone d'effet: un miroir
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une bille en verre ou en métal et une boucle de parchemin
+    tordue)
+  Durée: 1 heure/niveau (T)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: "Le personnage transforme un miroir en un portail menant à un espace\
+    \ extradimensionnel. Cet espace peut accueillir huit créatures de taille M. Les\
+    \ créatures qui entrent dans cet espace sont cachées et hors de portée des sorts\
+    \ (même des sorts de divination) à moins que ces sorts ne fonctionnent à travers\
+    \ les plans. Si le miroir est couvert (par un drap ou s’il est placé face contre\
+    \ terre ou contre un mur), le portail devient inactif. Si le miroir est brisé\
+    \ ou déplacé de plus de 1,5 mètre par rapport à l’endroit où il se trouvait quand\
+    \ le personnage a lancé le sort, le sort se termine et toutes les créatures présentes\
+    \ dans l’espace extradimensionnel en sont expulsées (cf. plus bas) et sont nauséeuses\
+    \ pendant 1d6 rounds.\n\nIl est impossible de lancer des sorts par cette interface\
+    \ dimensionnelle et les effets de zone ne peuvent pas la traverser. Ceux qui se\
+    \ trouvent dans l’espace dimensionnel peuvent voir et entendre l’autre côté comme\
+    \ s’ils regardaient par une fenêtre ouverte de la même taille que le miroir. Les\
+    \ créatures extérieures à l’espace extradimensionnel ne voient que ce qu’elles\
+    \ verraient normalement se refléter dans le miroir. \n\nToute créature dans l’espace\
+    \ dimensionnel peut se rendre visible dans le reflet du miroir pendant 1 round\
+    \ à la fois, mais les créatures à l’extérieur de cet espace ne peuvent entendre\
+    \ aucun des sons provenant de l’intérieur.\n\nTout ce qui se trouve à l’intérieur\
+    \ de l’espace extradimensionnel est expulsé quand le sort se termine (même si\
+    \ le miroir est couvert). Seule une créature à la fois peut entrer dans le miroir\
+    \ et il ne lui est possible d’y entrer que si elle peut passer par une ouverture\
+    \ de la même taille que le miroir. Par exemple, un miroir de poche n’est pas suffisamment\
+    \ grand pour que les créatures de taille P ou plus grandes puissent l’utiliser\
+    \ comme portail. Les objets ne peuvent entrer dans l’espace extradimensionnel\
+    \ que si une créature capable de passer complètement par le miroir les y emmène."
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cachette-miroir.ashx
+  
+- Nom: Orbe en fusion
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 2, magus 2, sanguin 2, sorcière 2
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: attaque à distance
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: Le personnage crée une boule de métal en fusion rougeoyante de la
+    taille d’un poing, qu’il projette aussitôt comme une arme à aspersion. Un coup
+    direct inflige 2d6 points de dégâts. Toutes les créatures situées dans un rayon
+    de 1,5 mètre autour de l’endroit où la boule a frappé reçoivent 1d6 points de
+    dégâts de feu d’aspersion (Réflexes 1/2 dégâts). Chacune de ces créatures reçoit
+    1d6 points de dégâts de feu supplémentaires à son tour pendant les 1d3 rounds
+    qui suivent, à moins de s’être refroidie (avec de l’eau, de la neige ou tout autre
+    effet infligeant 5 points de dégâts de froid ou plus).
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Orbe%20en%20fusion.ashx
+  
+- Nom: Détection de paysage mental
+  École: divination ;
+  Niveau: Ens/Mag 3, Hyp 2, Méd 2, psychique 2
+  Portée: 18 m
+  Cible ou zone d'effet: émanation en cône
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: concentration, jusqu’à 1 minute/niveau (D)
+  Jet de sauvegarde: Volonté annule ; voir texte ;
+  Résistance à la magie: non
+  Description: 'Ce sort fonctionne comme détection des pensées et permet au
+
+    personnage de sentir quand la conscience d’une ou plusieurs créatures
+
+    se trouve dans un paysage mental (voir page 234). La quantité
+
+    d’informations révélées dépend de la durée d’étude du sujet.
+
+    Premier round. Le personnage sent la présence ou l’absence de
+
+    paysage mental. Pour qu’il détecte le paysage, il faut qu’au moins
+
+    une des créatures présentes en son sein se trouve aussi dans le cône
+
+    d’effet du sort.
+
+
+    Deuxième round. Le personnage compte le nombre de
+
+    consciences qui se trouvent dans le paysage mental. Pour cela, il
+
+    n’est pas nécessaire qu’elles se trouvent toutes physiquement dans
+
+    le cône d’effet du sort mais il faut qu’une d’elles au moins s’y trouve.
+
+    Cependant, il ne peut pas déterminer l’emplacement des créatures
+
+    qu’il ne voit pas, il sent leur présence de manière abstraite.
+
+    Troisième round. Le personnage obtient une image mentale de
+
+    ce qu’il se passe dans le paysage mental. La créature qui contrôle
+
+    ce paysage perçoit ses efforts et, si elle ne veut pas lui révéler son
+
+    paysage, elle peut l’empêcher d’obtenir cette image en réussissant
+
+    un jet de Volonté. Sinon, il voit le paysage mental de loin, comme
+
+    s’il regardait par une fenêtre. Si une créature s’est déguisée, il ne
+
+    voit que son masque mental, pas sa forme véritable.
+
+
+    À chaque round, le personnage peut se tourner pour détecter les
+
+    paysages mentaux présents dans une nouvelle zone. Le sort permet
+
+    de franchir de nombreuses barrières mais il se laisse arrêter
+
+    par 30 centimètres de pierre, 2,50 centimètres de métal ordinaire,
+
+    une mince couche de plomb ou 90 centimètres de bois ou de terre.
+
+    Si le personnage se trouve dans un paysage mental au moment
+
+    où il lance ce sort, il prend conscience de se trouver dans un tel
+
+    environnement. Au deuxième round, il peut détecter le nombre
+
+    de consciences présentes en son sein mais il n’obtient pas d’image
+
+    mentale au troisième.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9tection%20de%20paysage%20mental.ashx
+  
+- Nom: Fléchettes dargent
+  École: invocation (création) ;
+  Niveau: ensorceleur/magicien 3, magus 3, sanguin 3, sorcière 3
+  Portée: 4,5 m (3 c)
+  Cible ou zone d'effet: rayonnement en cône
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une aiguille en argent)
+  Durée: instantanée
+  Jet de sauvegarde: Réflexes pour 1/2 dégâts ;
+  Résistance à la magie: oui
+  Description: 'Un cône de fléchettes d’argent surgit de la main du personnage.
+    Ces fléchettes fonctionnent comme une arme en argent infligeant 1d6 points de
+    dégâts perforants par niveau de lanceur (10d6 au maximum).
+
+    Toute créature possédant un bonus d’armure supérieur à +4 ou un bonus d’armure
+    naturelle supérieur à +4 reçoit 50% des dégâts en moins.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fl%c3%a9chettes%20dargent.ashx
+  
+- Nom: Aura de cannibalisme
+  École: Nécromancie (Mal) ;
+  Niveau: Ens/Mag 3, Prê 3, Sor 3
+  Portée: personnelle
+  Cible ou zone d'effet: Aura émanation de 6 m de rayon centrée sur le lanceur
+  Temps d'incantation: 1 action simple
+  Composantes: 'V, G, M (un morceau de chair d’une autre créature de
+
+    l’espèce du lanceur de sorts)'
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: Vigueur pour annuler (voir description) ;
+  Résistance à la magie: oui
+  Description: "Le personnage dégage une aura qui sape la force des autres membres\
+    \ de son espèce et la lui transfère. À chaque fois qu’une créature possédant le\
+    \ même type et au moins un même sous-type (le cas échéant) que le personnage commence\
+    \ son tour au sein de son aura, elle doit réussir un jet de Vigueur ou subir 1d4\
+    \ points de dégâts. Le personnage gagne un nombre de points de vie temporaires\
+    \ égal à la quantité de dégâts infligés par le sort (au maximum 10 + niveau de\
+    \ lanceur de sorts). Ces points de vie temporaires se dissipent dès que le sort\
+    \ se termine. \n\nTant que le sort est actif et que le personnage a au moins 5\
+    \ points de vie temporaires, il gagne un bonus de compétence de +1 aux jets d’attaque,\
+    \ aux jets de sauvegarde et aux tests de compétence. S’il a 15 points de vie temporaires\
+    \ ou plus, ce bonus passe à +2."
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aura%20de%20cannibalisme.ashx
+  
+- Nom: Brouillard des tertres
+  École: nécromancie ;
+  Niveau: ensorceleur/magicien 3, sorcière 3
+  Portée: moyenne (30 m + 3 m/niveau) (20 c) + 2c/niveau)
+  Cible ou zone d'effet: étendue de brouillard sur une zone de 6 m de rayon et de
+    6 m de hauteur
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Brouillard des tertres crée un banc de brume semblable à celui que
+    crée nappe de brouillard, à la seule différence que ses vapeurs sont noires et
+    présentent un lien nécromantique avec le personnage. Ces vapeurs ne gênent pas
+    la vision du personnage. En raison du lien que celui-ci entretient avec le brouillard,
+    si la moindre partie de ce brouillard se trouve à moins de 9 mètres du personnage,
+    toutes les créatures présentes dans le brouillard sont considérées comme à portée
+    quand le personnage utilise n’importe lesquels de ses maléfices ayant une portée
+    maximale de 9 mètres.
+
+    Supposons, par exemple, que le personnage possède le maléfice sommeil, qu’il se
+    trouve à 7,5 mètres de la lisière du brouillard et qu’un adversaire se trouve
+    à 12 mètres à l’autre extrémité du brouillard. Le personnage peut utiliser son
+    maléfice de sommeil sur cet adversaire, même si ce dernier se trouve en réalité
+    à 19,5 mètres du personnage.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brouillard%20des%20tertres.ashx
+  
+- Nom: Coeur du métal
+  École: transmutation [terre] ;
+  Niveau: ensorceleur/magicien 3, magus 3, sorcière 3
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: une arme par niveau
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (un morceau d’adamantium d’une valeur de 100 po ou un morceau
+    de fer froid ou d’argent d’une valeur de 20 po)
+  Durée: 1 minute/niveau (cf. texte)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Le personnage dote les armes ciblées des propriétés de l’adamantium,
+    du fer froid ou de l’argent, avec les effets suivants.
+
+    • Adamantium. Les armes passent la RD/adamantium et ignorent les solidités inférieures
+    à 20.
+
+    • Argent. Les armes passent la RD/argent.
+
+    • Fer froid. Les armes passent la RD/fer froid.
+
+
+    Aucun des autres avantages ou inconvénients de ces types de métaux ne s’applique.
+    Par exemple, une arme qui se voit octroyer les propriétés de l’adamantium ne sera
+    pas automatiquement de maître. Ce sort est capable d’affecter les armes qui ne
+    sont pas en métal. Si le personnage accorde aux armes ciblées la propriété de
+    fer froid, le sort dure moitié moins longtemps que la normale.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coeur%20du%20m%c3%a9tal.ashx
+  
+- Nom: Effacement de l'esprit
+  École: enchantement (coercition) (effet mental) ;
+  Niveau: Ens/Mag 4, Hyp 4, Méd 4, Occ 4, Psy 4, Spi 4
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: V
+  Durée: instantanée ; voir texte
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Le personnage efface une partie de l’esprit et des expériences
+
+    de la cible, lui imposant deux niveaux négatifs pendant 1 jour par
+
+    niveau de lanceur de sorts. Si la cible est un mage choisissant et
+
+    préparant ses sorts à l’avance, chaque niveau négatif issu d’effacement
+
+    de l’esprit lui fait perdre un sort préparé du plus haut niveau
+
+    de sort de sa connaissance dans chacune de ses classes de lanceur
+
+    de sorts nécessitant une préparation. On considère que la cible ne
+
+    connaît plus ces sorts tant qu’elle ne s’est pas débarrassée des niveaux
+
+    négatifs correspondants.
+
+
+    Si la cible est un lanceur de sorts spontanés, chaque niveau
+
+    négatif résultant d’effacement de l’esprit lui fait perdre un emplacement
+
+    de sort du plus haut niveau à disposition dans chacune de
+
+    ses classes de lanceur de sorts spontanés. De plus, il oublie un sort
+
+    connu aléatoire de ce niveau (ou du précédent s’il a déjà oublié tous
+
+    les sorts connus de ce niveau, etc.) La cible ne peut plus utiliser les
+
+    emplacements de sorts perdus ni les sorts oubliés tant qu’elle est
+
+    dotée de ces niveaux négatifs. Quand elle oublie un sort connu, il
+
+    reste sur sa liste de classe mais elle ne peut plus le préparer ni le
+
+    lancer.
+
+
+    Si, à cause d’effacement de l’esprit, le nombre de niveaux négatifs
+
+    de la cible égale ou excède son niveau de personnage, elle ne se
+
+    retrouve pas à l’agonie, elle tombe en catatonie tant que les niveaux
+
+    négatifs du sort égalent ou surpassent ses niveaux de personnage.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Effacement%20de%20lesprit.ashx
+  
+- Nom: Symbole de fou-rire
+  École: enchantement (charme) [effet mental] ;
+  Niveau: ensorceleur/magicien 4, sorcière 4
+  Composantes: V, G, M (mercure et phosphore, plus poudre de diamant et d’opale
+    d’une valeur totale de 1 000 po)
+  Jet de sauvegarde: Volonté pour annuler ;
+  Résistance à la magie: oui
+  Description: 'Ce sort fonctionne comme symbole de mort, à la seule différence
+    que toutes les créatures situées dans un rayon de 18 mètres sont prises d’un fou
+    rire incontrôlable (comme fou rire) pendant 1 round par niveau de lanceur.
+
+    Contrairement à symbole de mort, symbole de fou-rire n’a pas de limite de points
+    de vie : une fois déclenché, symbole de fou-rire reste actif pendant 1 minute
+    par niveau de lanceur.
+
+    Symbole de fou-rire peut être rendu permanent par un sort de permanence lancé
+    par un lanceur de niveau 10 ou supérieur pour un coût de 5 000 po.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Symbole%20de%20fou-rire.ashx
+  
+- Nom: Porte sur un paysage mental
+  École: Illusion (fantasme) (effet mental) ;
+  Niveau: Ens/Mag 4, Hyp 3, Méd 3, Psy 3
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: 1 portail illusoire
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 10 minutes/niveau
+  Jet de sauvegarde: Volonté annule (voir texte) ;
+  Résistance à la magie: non
+  Description: 'Le personnage ou d’autres créatures entrent dans un paysage
+
+    mental (voir page 234) ou s’en échappent par une porte imaginaire.
+
+    Cette dernière prend la forme que désire le personnage, mais elle
+
+    ne peut pas être plus large qu’un cube de 1,50 mètre. Ce sort a
+
+    différents effets selon que le personnage se trouve dans un paysage
+
+    mental ou non au moment où il le lance.
+
+
+    Quand il le lance alors qu’il ne se tient pas dans un paysage mental,
+
+    la porte donne sur un paysage habité par une créature de son
+
+    choix située à courte portée (7,50 m + 1,50 m/2 niveaux) de la porte.
+
+    La créature devient le conduit de la porte et peut tenter un jet de
+
+    Volonté pour refuser l’entrée dans son paysage mental. Le personnage
+
+    doit être conscient de l’existence du paysage s’il veut y relier
+
+    une porte. S’il arrive à se lier au paysage mental, il désigne autant de
+
+    créatures qu’il désire : elles sont alors capables de voir la porte et de
+
+    la franchir comme s’il s’agissait d’une porte réelle. Il peut nommer
+
+    des créatures précises, des catégories de créatures ou donner accès
+
+    à toutes. Les créatures autres que celles désignées ne perçoivent
+
+    pas la porte et ne peuvent pas l’utiliser, de même que les créatures
+
+    dépourvues d’intelligence ou immunisées contre les effets mentaux.
+
+    Une fois que quelqu’un est entré dans le paysage mental par la
+
+    porte, un double de cette porte apparaît dans le paysage, à côté de
+
+    la créature qui a servi de conduit. Toute personne se trouvant dans
+
+    un paysage mental perçoit la porte qui s’y trouve et peut l’utiliser.
+
+    Toute personne qui entre dans le paysage est soumise à ses règles
+
+    mais sait qu’elle se trouve dans un paysage mental si le personnage
+
+    lui a dit où le portail menait.
+
+
+    Quand le personnage lance ce sort au sein d’un paysage mental,
+
+    un double de la porte apparaît à côté de son corps dans le monde
+
+    réel. Si le créateur du paysage mental se trouve dedans, il peut faire
+
+    un jet de Volonté pour empêcher le personnage d’y créer une porte.
+
+    Les deux portes fonctionnent comme si le personnage avait lancé
+
+    le sort depuis l’extérieur. Il désigne toujours les cibles autorisées à
+
+    utiliser la porte depuis le monde réel mais il ne peut pas empêcher
+
+    les créatures du paysage mental de sortir dans le monde réel.
+
+    En général, une porte sur un paysage mental fonctionne dans les
+
+    deux sens mais le personnage peut créer une porte à sens unique
+
+    s’il le désire. Contrairement aux autres sorts, il peut lancer celui-ci
+
+    par une action complexe alors qu’il est en plein duel psychique. Il
+
+    peut s’en servir pour quitter un paysage mental binaire mais pas
+
+    pour entrer dans un tel paysage. S’il réussit à lancer le sort dans un
+
+    paysage mental voilé, il apprend qu’il se trouve dans un tel paysage
+
+    mais les autres créatures qui voient la porte ne le comprennent pas
+
+    automatiquement.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Porte%20sur%20un%20paysage%20mental.ashx
+  
+- Nom: Chasser les esprits
+  École: nécromancie ;
+  Niveau: Ens/Mag 4, Méd 2, Occ 2, Psy 3, Sor 4, Spi 2
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: 1 créature ou apparition
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: Volonté partiel ;
+  Résistance à la magie: oui
+  Description: 'Ce sort déchire la substance spirituelle de la cible et l’éparpille
+
+    dans une large zone, gênant le processus de reconstruction. La
+
+    cible subit 1d6 points de dégâts par niveau de lanceur de sorts (10d6
+
+    au maximum) et se trouve chancelante pendant 1 round. Sur un jet
+
+    de sauvegarde réussi, la cible reçoit seulement la moitié des dégâts
+
+    et n’est pas chancelante. Ce sort affecte les créatures sujettes à une
+
+    projection astrale, les apparitions, les créatures intangibles, les
+
+    médiums canalisant un esprit et les fantômes. Si le MJ le désire, il
+
+    peut aussi fonctionner sur d’autres esprits et créatures faites d’ectoplasme.
+
+    Les créatures intangibles subissent la totalité des dégâts
+
+    du sort'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasser%20les%20esprits.ashx
+  
+- Nom: Possession spirituelle d'objet inférieure
+  École: Nécromancie ;
+  Niveau: 'Ens/Mag 4, Hyp 3,
+
+    Méd 2, Occ 2, Psy 3, Sor 4, Spi 3'
+  Portée: contact
+  Cible ou zone d'effet: objet abandonné de taille TP ou P
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (D)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Ce sort fonctionne comme possession spirituelle mais le personnage
+
+    possède un objet au lieu d’une créature.
+
+    Une fois possédé, l’objet s’anime et gagne les statistiques d’un
+
+    objet animé de sa taille (dont 1 point de construction pour ses pouvoirs,
+
+    voir le Bestiaire Pathfinder p. 229). Le personnage ne peut pas
+
+    utiliser de sorts ni de pouvoirs tant qu’il possède un objet.
+
+    Un lien spirituel relie le corps du personnage à l’objet qu’il possède,
+
+    à la manière d’une corde d’argent (voir page 243). Si le corps
+
+    et l’objet s’éloignent de plus d’une courte portée (7,50 m + 1,50 m/2
+
+    niveaux), ce lien se brise et ramène la conscience du personnage
+
+    dans son corps.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Possession%20spirituelle%20dobjet%20inf%c3%a9rieure.ashx
+  
+- Nom: Manoeuvre télékinétique
+  École: Transmutation ;
+  Niveau: 'Ens/Mag 4, Magus 4,
+
+    Psy 3, Spi 4'
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: concentration (jusqu’à 1 round/niveau)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: 'Ce sort fonctionne comme télékinésie mais sert seulement à effectuer
+
+    une manoeuvre offensive de bousculade, de désarmement,
+
+    d’entraînement, de lutte (y compris d’immobilisation), de repositionnement,
+
+    de subtilisation ou de croc-en-jambe.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manoeuvre%20t%c3%a9l%c3%a9kin%c3%a9tique.ashx
+  
+- Nom: Miroir de déplacement
+  École: transmutation ;
+  Niveau: ensorceleur/magicien 4, sorcière 4
+  Portée: contact
+  Cible ou zone d'effet: un miroir
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une bille en verre ou en métal et une boucle de parchemin
+    tordue)
+  Durée: 1 heure/niveau (T)
+  Jet de sauvegarde: oui (objet) ;
+  Résistance à la magie: oui (objet)
+  Description: Ce sort fonctionne comme cachette-miroir, à la seule différence que
+    toutes les créatures qui entrent dans le miroir-cible peuvent dépenser une action
+    rapide pour sortir par un autre miroir situé dans un rayon de 1 500 mètres, comme
+    si elles utilisaient porte dimensionnelle. Il s’agit d’un voyage à sens unique.
+    La créature ne peut sortir par un miroir que si elle passe par une ouverture de
+    la même taille que le miroir. Chaque transport par le miroir-cible réduit la durée
+    du sort de 1 heure.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Miroir%20de%20d%c3%a9placement.ashx
+  
+- Nom: Perception des pensées
+  École: Divination (effet mental) ; Niveau Ens/Mag 5, Hyp 4, Méd 4, Psy 4, Spi
+    4
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, M (un morceau de tissu cérébral séché)
+  Durée: 1 minute/niveau
+  Description: 'Le personnage détecte et repère automatiquement les créatures
+
+    conscientes situées dans un rayon de 18 mètres, comme s’il possédait
+
+    le pouvoir vision aveugle. Antidétection, esprit indétectable et les
+
+    effets similaires bloquent cet effet. Le sort permet de différencier
+
+    les créatures douées d’une intelligence conséquente (Intelligence
+
+    de 3 ou plus) et celles dotées d’une intelligence relative (Intelligence
+
+    de 1 à 2) mais, en dehors de cela, il n’offre aucune information sur
+
+    elles.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perception%20des%20pens%c3%a9es.ashx
+  
+- Nom: Sonde mentale
+  École: Divination (effet mental) ;
+  Niveau: 'Ens/Mag 5,
+
+    Hyp 4, Méd 3, Occ 4, Psy 4'
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 minute
+  Composantes: V, G
+  Durée: 1 round/niveau (D)
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Le personnage accède
+
+    aux souvenirs et connaissances
+
+    de la cible. Il peut
+
+    tenter de découvrir la réponse
+
+    à une question par round. Un
+
+    jet de Volonté réussi met fin au
+
+    sort, sinon, la créature peut tenter un
+
+    test de Bluff DD 11 + modificateur de
+
+    Psychologie du personnage. Si elle rate le
+
+    test, le personnage obtient l’information désirée, si elle le réussit,
+
+    il n’obtient aucune information. Si elle le réussit de 5 ou plus, elle
+
+    donne la réponse qu’elle veut et le personnage est persuadé d’avoir
+
+    obtenu le bon renseignement. Les questions du personnage se
+
+    posent entièrement par télépathie et les réponses arrivent directement
+
+    dans son esprit, le personnage et la cible n’ont donc pas
+
+    besoin de partager un même langage, bien que les créatures à l’intelligence
+
+    limitée puissent n’offrir que des images
+
+    sensorielles en réponse aux questions posées.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sonde%20mentale.ashx
+  
+- Nom: Mur ectoplasmique
+  École: Évocation ;
+  Niveau: Ens/Mag 5, Prê 5, Psy 5, Spi 5
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: une feuille d’ectoplasme opaque de maximum 90 cm²/niveau
+    ou une sphère ou un hémisphère d’un rayon d’au maximum 3 m/niveau
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (un morceau de gaze)
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: aucun et Volonté annule ; voir texte ;
+  Résistance à la magie: oui
+  Description: "Le personnage déroule un énorme voile d’ectoplasme où s’agitent\n\
+    des esprits sans repos. Une fois formé, le mur ectoplasmique ne\nbouge plus. \n\
+    Il mesure 2,5 centimètres d’épaisseur par niveau de lanceur\nde sorts et couvre\
+    \ une zone d’au maximum 9 mètres carrés\npar niveau de lanceur de sorts (un magicien\
+    \ de niveau 10 est donc\nen mesure de créer un mur ectoplasmique de 30 mètres\
+    \ de long sur\n3 de large ou bien de 7,5 mètres de long sur 12 de haut, ou toute\n\
+    autre combinaison de longueur et de hauteur ne dépassant pas les\n9 mètres carrés).\
+    \ Cette surface peut s’orienter de n’importe quelle\nfaçon et n’a pas besoin d’être\
+    \ ancrée quelque part, mais elle doit\nêtre continue et sans faille. Le mur ne\
+    \ peut pas occuper de case\naccueillant déjà des créatures, même si elles se trouvent\
+    \ sur le plan\nÉthéré. Le mur existe sur le plan Matériel et sur le plan Éthéré\
+    \ et\nempêche les créatures éthérées et intangibles de le traverser.\nUn coté\
+    \ du mur, au choix du personnage, émet une aura particulièrement\ninquiétante\
+    \ et menaçante, à cause des fantômes qui\ntournoient en son sein. Cet effet de\
+    \ terreur affecte une zone de\n3 mètres au-delà de la surface du mur. Les créatures\
+    \ qui se trouvent\ndans cette zone lorsque le mur apparaît ou y pénètrent plus\
+    \ tard\ndoivent réussir un jet de Volonté ou se trouver secouées (ou paniquées\n\
+    si elles ont 4 DV ou moins) pendant 1 round par niveau de\nlanceur de sorts.\n\
+    \nChaque section de 9 mètres carrés de mur possède 2 pv par\ntranche de 2,5 centimètres\
+    \ d’épaisseur. Si une section de mur tombe\nà 0 point de vie, une brèche s’ouvre,\
+    \ mais dans ce cas, le reste du\nmur comble le trou, réduisant la taille totale\
+    \ du mur de 9 mètres\ncarrés afin de toujours former une barrière continue. Le\
+    \ mur peut\naussi prendre la forme d’une sphère ou d’un hémisphère d’un rayon\n\
+    maximal de 30 centimètres par niveau de lanceur de sorts. Il est\naussi difficile\
+    \ à briser que sa version plane."
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur%20ectoplasmique.ashx
+  
+- Nom: Création de paysage mental
+  École: illusion (fantasme) (effet mental) ;
+  Niveau: Ens/Mag 5, Hyp 4, Méd 4, Psy 4
+  Portée: longue (120 m + 12 m/niveau)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 round
+  Composantes: V, G
+  Durée: 10 minutes/niveau
+  Jet de sauvegarde: Volonté annule ; voir texte ;
+  Résistance à la magie: oui
+  Description: 'Le personnage crée un paysage mental immersif (voir page 235)
+
+    où pénètrent son esprit et celui de sa cible. À lui de choisir si ce
+
+    paysage est évident ou voilé, inoffensif ou nuisible. Il peut choisir
+
+    n’importe quelle forme et taille, ainsi que n’importe quel type de
+
+    gravité (mais il ne peut pas faire en sorte qu’elle soit si forte qu’elle
+
+    blesse les créatures présentes). Ce paysage a un écoulement temporel
+
+    normal, pas d’alignement et une magie normale.
+
+
+    Le personnage désigne le lieu d’apparition de sa cible et de luimême.
+
+    Il n’a pas besoin de voir sa cible pour l’entraîner dans son
+
+    paysage mental mais il doit savoir qu’elle se trouve à portée. Si le
+
+    personnage vise une zone comportant plus d’une créature vivante
+
+    et qu’il ne les a jamais vues auparavant (par exemple s’il sait qu’un
+
+    groupe de soldats se trouve dans un baraquement mais qu’il ne les
+
+    voit pas à travers la porte), la cible du sort est désignée au hasard.
+
+    Si le personnage a vu la créature qu’il a choisie comme cible (pour
+
+    reprendre l’exemple précédent, s’il a vu le sergent entrer dans la
+
+    pièce un instant plus tôt), il peut la sélectionner sans risque d’erreur,
+
+    même en présence des autres. Le personnage doit apparaître
+
+    quelque part dans son paysage mental bien qu’il puisse sans mal
+
+    se cacher aux yeux de sa cible si elle ignore qu’elle se trouve dans
+
+    un tel paysage. Le personnage doit aussi créer une méthode pour
+
+    sortir du paysage mental au moment où il lance le sort. Elle doit
+
+    être applicable au vu des caractéristiques de l’environnement, mais
+
+    elle peut être cachée ou difficile à mettre en oeuvre. C’est au MJ
+
+    de décider si l’échappatoire est raisonnable ou non. Toute méthode
+
+    raisonnable permettant de s’éveiller d’un rêve lors d’un sommeil
+
+    profond permet aussi de quitter un paysage mental.
+
+
+    De nouvelles créatures peuvent pénétrer dans le paysage mental,
+
+    en plus des deux premières, généralement via une porte dimensionnelle.
+
+    Le personnage peut ajouter des créatures illusoires à son
+
+    paysage mental mais il ne peut en diriger qu’une à la fois ou se
+
+    concentrer sur une seule à la fois. Seule celle-ci sera alors crédible,
+
+    les autres resteront silencieuses ou prononceront seulement des
+
+    phrases génériques et répétitives.
+
+    Comme pour tous les paysages mentaux, les créatures qui se
+
+    trouvent dans celui-ci sont incapables d’entreprendre la moindre
+
+    action dans le monde réel et leur corps perd son bonus de Dextérité
+
+    à la CA.
+
+    Si le personnage choisit de créer un paysage voilé, la première
+
+    fois que l’autre créature interagit avec, elle a droit à un jet de
+
+    Volonté pour percer l’illusion à jour. Elle comprend alors qu’elle se
+
+    trouve dans un paysage mental et découvre la méthode à employer
+
+    pour le quitter mais cela ne la libère pas. Par exemple, si le personnage
+
+    crée un paysage mental prenant la forme d’un salon dans un
+
+    manoir et que sa cible réussit son jet de Volonté, elle comprend qu’il
+
+    lui suffit de franchir la porte d’entrée du manoir pour regagner son
+
+    corps physique mais il lui faudra tout de même traverser le paysage
+
+    mental du manoir pour gagner cette porte et la franchir afin de
+
+    s’échapper. Si le paysage est évident, la créature devine automatiquement
+
+    comment sortir si elle le désire.
+
+
+    Le sort se termine dès que le personnage décide de quitter son
+
+    paysage mental, libérant sa cible. Une créature qui tombe à moins
+
+    de 0 point de vie alors qu’elle se trouve dans le paysage mental
+
+    retourne dans son corps. Si cela arrive au personnage, le sort se
+
+    termine et libère toutes les créatures qu’il retenait.
+
+    La création de paysage mental peut devenir permanente avec un
+
+    sort de permanence, si le lanceur est de niveau 12 ou plus et dépense
+
+    10 000 po. Le personnage et d’autres créatures au courant de l’existence
+
+    d’un paysage mental permanent peuvent aller et venir via une
+
+    porte sur un paysage mental.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20de%20paysage%20mental.ashx
+  
+- Nom: Bouclier d'ombre vampirique
+  École: nécromancie ;
+  Niveau: ensorceleur/magicien 5, magus 5
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau (T)
+  Description: Ce sort enveloppe le personnage d’une sombre énergie et blesse ceux
+    qui portent des attaques au corps à corps contre lui. Toute créature qui frappe
+    le personnage avec son propre corps ou des armes tenues en main inflige les dégâts
+    normaux mais reçoit également 1d6 points de dégâts d’énergie négative + 1 point
+    de dégâts par niveau de lanceur (+15 au maximum). Si l’attaquant a une résistance
+    à la magie, elle s’applique à cet effet. Les créatures qui manient des armes de
+    corps à corps avec une allonge ne sont pas sujettes à ces dégâts. Quand un attaquant
+    reçoit des dégâts à cause de ce sort, le personnage se soigne d’un nombre de points
+    de vie égal à 25% des dégâts infligés par le sort.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bouclier%20dombre%20vampirique.ashx
+  
+- Nom: Guérison des morts-vivants de groupe
+  École: nécromancie ;
+  Niveau: ensorceleur/magicien 5
+  Portée: courte (7,5 m + 1,5 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: une créature morte-vivante/niveau, chacune ne devant pas
+    être à plus de 9 m des autres
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée
+  Jet de sauvegarde: Volonté pour 1/2 dégâts (inoffensif) ;
+  Description: 'à la magie oui (inoffensif)
+
+
+    Ce sort fonctionne comme guérison des morts-vivants, aux quelques exceptions indiquées
+    ci-dessus et soigne 1d8 points de dégâts, + 1 point par niveau de lanceur (+20
+    au maximum) à chaque créature désignée.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9rison%20des%20morts-vivants%20de%20groupe.ashx
+  
+- Nom: Possession spirituelle d'objet
+  École: Nécromancie ;
+  Niveau: Ens/Mag 5, Hyp 5, Méd 4, Occ 4, Psy 5, Sor 5, Spi 5
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: objet abandonné de taille G ou inférieure (TP au minimum)
+  Durée: 10 minutes/niveau (D)
+  Description: "Ce sort fonctionne comme possession spirituelle d’objet inférieure,\
+    \ en dehors des modifications notées ci-dessous. \n\nL’objet animé possédé a un\
+    \ nombre de points de construction adapté à sa taille (jusqu’à 3 pour les objets\
+    \ de taille G). Le personnage peut ramener sa conscience dans son corps par une\
+    \ action simple. À son tour suivant, il peut tenter de prendre possession d’un\
+    \ autre objet par une action simple au lieu de mettre fin au sort."
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Possession%20spirituelle%20dobjet.ashx
+  
+- Nom: Éther condensé
+  École: transmutation ;
+  Niveau: Ens/Mag 5, Psy 4, Spi 3
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: étendue 6 m de rayon
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (ambre broyé)
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Le personnage condense la substance du plan Éthéré quand elle
+
+    pénètre sur le plan Matériel. Cet épaississement ralentit fortement
+
+    les déplacements dans la zone affectée. Les créatures (même intangibles)
+
+    qui se déplacent dans l’éther condensé bougent à la moitié de
+
+    leur vitesse de base et ne peuvent pas faire de pas de 1,50 mètre.
+
+    Ce ralentissement ne se cumule pas avec un brouillard dense ou un
+
+    effet similaire. Les créatures situées dans la zone d’effet subissent
+
+    un malus de –2 à la CA et aux jets de Réflexes et sont gênées dans
+
+    leurs attaques à distance. Même les rayons magiques et attaques à
+
+    distance similaires souffrent de 20 % de chances d’échec quand ils
+
+    viennent de l’éther condensé ou le traversent. Ces chances de rater
+
+    ne dépendent pas d’un camouflage : le Combat en aveugle, la vision
+
+    lucide et autres effets similaires ne les réduisent donc pas.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89ther%20condens%c3%a9.ashx
+  
+- Nom: Nuée de papier
+  École: Transmutation ;
+  Niveau: Ens/Mag 5, Magus 5, Occ 4
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: G, M (un parchemin vierge ou magique ; voir texte)
+  Durée: instantanée
+  Jet de sauvegarde: Réflexes 1/2 ; voir texte ;
+  Résistance à la magie: oui
+  Description: 'Quand le personnage lance ce sort, il réduit rapidement un parchemin
+
+    en lambeaux et envoie les morceaux virevolter autour de
+
+    sa cible, lui infligeant un millier de petites coupures. Si le personnage
+
+    utilise un parchemin ordinaire, le sort inflige 1d6 points de
+
+    dégâts tranchants magiques par niveau de lanceur de sorts (15d6
+
+    au maximum).
+
+
+    S’il utilise un parchemin magique comme composante matérielle,
+
+    il choisit l’un des sorts stockés dedans. Si c’est un sort de niveau 1,
+
+    il peut appliquer son effet à la cible de la nuée de papiers si elle rate
+
+    son jet de Réflexes (si le sort du parchemin possède son propre jet
+
+    de sauvegarde, la cible le tente ensuite normalement). Si le parchemin
+
+    contient un sort de niveau 2 ou supérieur, le personnage peut choisir d’affecter
+    une étendue de 6 mètres de rayon au lieu d’une
+
+    cible unique avec la nuée de papiers.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nu%c3%a9e%20de%20papier.ashx
+  
+- Nom: Télépathie (sort)
+  École: Divination (effet mental) ;
+  Niveau: 'Ens/Mag 6,
+
+    Hyp 4, Méd 4, Psy 5, Spi 6'
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau
+  Description: 'Le personnage communique mentalement avec une autre créature
+
+    disposant d’un langage et située dans un rayon de 30 mètres.
+
+    Il peut s’adresser à plusieurs créatures à la fois mais il est aussi difficile
+
+    de suivre une conversation télépathique avec plus d’un interlocuteur
+
+    que de parler et d’écouter plusieurs personnes à la fois.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9l%c3%a9pathie%20(sort).ashx
+  
+- Nom: Tête explosive
+  École: Évocation ;
+  Niveau: Ens/Mag 6, Magus 6, psychiste 5
+  Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: Une créature corporelle vivante
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: Instantanée
+  Jet de sauvegarde: Special; Voir le texte ;
+  Résistance à la magie: oui
+  Description: 'Vous créez une pression incroyable dans la tête de la cible; Ce
+    sort ne fonctionne que sur une créature qui a une tête et qui mourra de la perte
+    de celle-ci. Le sortilège tue instantanément une cible qui a 20 points de vie
+    ou moins, en explosant sa tête et projetant des débris dans un rayon de 3m.
+
+
+    Chaque créature dans la zone doit réussir un jet de Reflexe ou prendre 2d6 points
+    de dégâts causés par les débris volants.
+
+
+    Une cible avec plus de 20 points de vie prend 1d6 points de dégât par niveau de
+    lanceur de sort (maximum 20d6), mais peut tenter un jet de Vigueur pour ne prendre
+    que la moitié des dégâts. Si ces dégâts entraînent la mort de la cible ou la rendent
+    mourante, la cible disparaît et sa tête explose comme décrit ci-dessus.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%aate%20explosive.ashx
+  
+- Nom: Asile psychique
+  École: illusion (fantasme) (effet mental) ;
+  Niveau: Ens/Mag 6, Hyp 5, psy 5
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 action rapide
+  Composantes: V, G
+  Durée: instantanée ; voir texte
+  Jet de sauvegarde: aucun ;
+  Description: 'à la magie non
+
+
+
+
+    Le personnage se retire dans un paysage mental de sa conception
+
+    (voir page 234) afin d’accomplir une longue tâche mentale en un instant.
+
+
+    Son paysage mental lui apporte du calme et de l’aide, par exemple
+
+    sous la forme d’une bibliothèque, d’un salon, d’un jardin ou de la cabane
+
+    dans l’arbre de son enfance. Il peut passer jusqu’à 15 minutes dans
+
+    cet asile psychique. Tant qu’il s’y trouve, le temps ne s’écoule pas pour
+
+    son corps et, quand il en sort, il continue son tour. Le paysage mental
+
+    est évident, fini et doté d’un passage du temps rapide.
+
+
+    Tant que le personnage se trouve dans son asile, il peut consulter
+
+    n’importe quel texte et se souvenir de n’importe quelle conversation
+
+    ou de n’importe quelle image issue de son passé avec une précision
+
+    parfaite, comme s’il possédait une mémoire eidétique. Il doit avoir
+
+    vu ou entendu l’objet de son souvenir depuis une semaine ou moins
+
+    par niveau. Par exemple, le personnage peut examiner de nouveau
+
+    un passage d’un ancien manuscrit qu’il a rapidement parcouru dans
+
+    une bibliothèque il y a deux semaines. Tant qu’il se trouve dans l’asile
+
+    psychique, il se souvient précisément de la disposition du texte dans
+
+    l’ouvrage et peut le relire mot pour mot. Une fois qu’il émerge de son
+
+    asile, il se rappelle en détails de ce qu’il vient d’étudier, comme s’il venait
+
+    juste de consulter le volume réel, mais il ne se souvient plus de la
+
+    teneur exacte du matériel utilisé.
+
+
+    Si le personnage est capable de préparer des sorts, il peut utiliser ce
+
+    laps de temps pour en préparer un. Par exemple, s’il a été empoisonné,
+
+    il peut dépenser une action rapide pour lancer asile psychique, prier et
+
+    méditer pendant les 15 minutes pour obtenir neutralisation du poison,
+
+    émerger du paysage mental et lancer de suite le sort sur lui, par une
+
+    action simple.
+
+
+    Un sort mental qui affecte le personnage avant qu’il lance l’asile
+
+    psychique continue de l’affecter et sa durée de s’écouler pendant qu’il
+
+    se trouve dans l’asile, le personnage peut donc lancer ce sort pour attendre
+
+    la fin d’un tel effet. Les effets qui touchent le corps ne voient pas
+
+    leur durée s’écouler pendant que le personnage est dans son asile mais
+
+    il ne les subit pas tant qu’il s’y trouve.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Asile%20psychique.ashx
+  
+- Nom: Souffle de la banshie
+  École: nécromancie [effet mental, mort, son, terreur] ;
+  Niveau: ensorceleur/magicien 6, sorcière 6
+  Portée: 9 m (6 c)
+  Cible ou zone d'effet: rayonnement en cône
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: instantanée et 1 round/niveau (cf. texte)
+  Jet de sauvegarde: Réflexes pour 1/2 dégâts et Volonté pour annuler (cf. texte)
+    ;
+  Résistance à la magie: oui
+  Description: Le personnage crée un cône d’énergie spectrale qui ressemble à des
+    fantômes elfiques hurlants et qui inflige 1d4 points de dégâts par niveau de lanceur
+    (15d4 au maximum). Un jet de Réflexes réussi permet de réduire ces dégâts de moitié.
+    Toute créature qui rate son jet de Réflexes doit réussir un jet de Volonté pour
+    ne pas être paniquée pendant 1 round/niveau.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20de%20la%20banshie.ashx
+  
+- Nom: Rétrocognition
+  École: Divination ;
+  Niveau: 'Ens/Mag 7, Méd 3, Occ
+
+    3, Psy 5'
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 minute
+  Composantes: V, G
+  Durée: concentration, jusqu’à 1 minute/niveau
+  Description: 'Ce sort permet au personnage d’obtenir des impressions psychiques
+
+    issues des évènements qui se sont déroulés là où il se
+
+    trouve. Pendant la première minute de concentration, le sort révèle
+
+    les impressions psychiques laissées par les évènements s’étant
+
+    déroulés dans l’heure précédente. Pendant la minute de concentration
+
+    suivante, il révèle ceux s’étant déroulés pendant l’heure d’avant,
+
+    etc. Si un évènement particulièrement traumatisant ou perturbant
+
+    d’un point de vue psychique s’est déroulé dans ce laps de temps, le
+
+    personnage doit réussir un test de concentration (DD = 20, 30 ou
+
+    40 selon la sévérité de la perturbation psychique), sinon il perd sa
+
+    concentration.
+
+
+    À partir du niveau 13, le personnage peut récolter les impressions
+
+    psychiques issues d’une période plus étendue qu’une heure par minute
+
+    de concentration, à savoir une semaine par minute de concentration
+
+    ou plus (voir la table suivante). La quantité de détails appris
+
+    diminue, il est donc difficile de percevoir tout ce qui ne résulte pas
+
+    d’un évènement majeur.
+
+    NLS Période de temps
+
+    13-15 1 semaine/minute
+
+    16-18 1 an/minute
+
+    19+ 1 siècle/minute'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9trocognition.ashx
+  
+- Nom: Création de paysage mental suprême
+  École: illusion (fantasme) (effet mental) ;
+  Niveau: Ens/Mag 7, Hip 6, Psy 6
+  Cible ou zone d'effet: 1 créature/niveau
+  Durée: 1 jour/niveau
+  Description: 'Ce sort fonctionne comme création de paysage mental mais il
+
+    affecte plus de créatures, dure plus longtemps et peut revêtir la
+
+    caractéristique magique. De plus, le personnage peut gérer en
+
+    même temps un nombre de créatures crédibles égal à son niveau
+
+    de lanceur de sorts.
+
+    La création de paysage mental suprême peut devenir permanente
+
+    avec un sort de permanence, à condition d’être un lanceur de sorts
+
+    de niveau 15 ou plus et de dépenser 17 500 po. Le personnage et
+
+    d’autres créatures au courant de l’existence d’un paysage mental
+
+    permanent peuvent aller et venir via une porte sur un paysage mental'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20de%20paysage%20mental%20supr%c3%aame.ashx
+  
+- Nom: Bond dimensionnel
+  École: invocation (convocation) ;
+  Niveau: barde 3, conjurateur 3, magus 3, ensorceleur/magicien 3, sorcière 3
+  Cible ou zone d'effet: choisi
+  Durée: instantanée
+  Jet de sauvegarde: Volonté annule (inoffensif) ;
+  Résistance à la magie: oui (inoffensif)
+  Description: Un sort incluant ce mot effet téléporte les cibles volontaires vers
+    un autre lieu dans la ligne de vue du lanceur et à portée du sort.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bond%20dimensionnel.ashx
+  
+- Nom: Possession spirituelle d'objet suprême
+  École: Nécromancie ;
+  Niveau: 'Ens/Mag 7, Occ 5,
+
+    Psy 6, Sor 7, Spi 6'
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: objet abandonné de taille Gig ou inférieure (TP au minimum)
+  Durée: 10 minutes/niveau (D)
+  Description: 'Ce sort fonctionne comme possession spirituelle d’objet inférieure,
+
+    en dehors des modifications notées ci-dessus . L’objet animé possédé
+
+    a un nombre de points de construction adapté à sa taille (jusqu’à
+
+    5 pour les objets de taille Gig). La corde d’argent du personnage a
+
+    une portée moyenne (30 m + 3 m/niveau).
+
+    Le personnage peut tenter de prendre possession d’une créature
+
+    artificielle au lieu d’un objet abandonné lorsqu’il choisit la première
+
+    cible du sort. Dans ce cas, le sort fonctionne comme contrôle des
+
+    créatures artificielles AM, en dehors des modifications indiquées cidessus
+
+    .'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Possession%20spirituelle%20dobjet%20supr%c3%aame.ashx
+  
+- Nom: Corps d'ombre
+  École: transmutation (métamorphose) ;
+  Niveau: Ens/Mag 7, Sor 7, Spi 5
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (D)
+  Description: 'Le personnage échange la matière grossière de son corps physique
+
+    contre l’essence immatérielle du plan de l’Ombre, devenant
+
+    une ombre vivante. Sous une lumière vive ou normale, il apparaît
+
+    comme une ombre indépendante mais en cas de faible lumière ou
+
+    d’obscurité, il gagne un camouflage total. Ce camouflage est seulement
+
+    normal et non total contre les créatures dotées de vision dans
+
+    le noir. Le corps d’ombre est intangible mais ne permet pas de voler
+
+    ni de traverser des objets ou des créatures solides. En revanche,
+
+    le personnage peut se déplacer à sa vitesse sur n’importe quelle
+
+    surface, horizontale, verticale ou liquide, et le terrain difficile ne le
+
+    ralentit pas. Sa taille ne change pas.
+
+
+    Il peut parler, lancer des sorts et accomplir des actions mentales
+
+    mais, comme il est dépourvu de substance physique, il ne peut pas
+
+    manipuler d’objet ni porter d’attaque physique. Il peut livrer un sort
+
+    ou un effet de contact comme s’il effectuait une attaque de contact
+
+    intangible. L’équipement du personnage fusionne avec son corps
+
+    d’ombre, il est donc dans l’incapacité de lancer des sorts à composante
+
+    matérielle, à moins de les avoir préparés avec Dispense de
+
+    composante matérielle.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Corps%20dombre.ashx
+  
+- Nom: Possession spirituelle suprême
+  École: Nécromancie ;
+  Niveau: 'Ens/Mag 8, Occ 6,
+
+    Psy 6, Sor 8'
+  Portée: moyenne (30 m + 3 m/niveau)
+  Cible ou zone d'effet: 1 créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 h/niveau (D)
+  Jet de sauvegarde: Volonté annule ;
+  Résistance à la magie: oui
+  Description: 'Ce sort fonctionne comme possession spirituelle mais, quand le
+
+    personnage prend possession du corps de son hôte, il entre dans
+
+    ce dernier tandis que son propre corps disparaît. Quand le sort se
+
+    termine ou que le corps de l’hôte meurt, le personnage est propulsé
+
+    dans l’espace libre le plus proche.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Possession%20spirituelle%20supr%c3%aame.ashx
+  
+- Nom: Bilocation
+  École: invocation (création) ;
+  Niveau: Ens/Mag 9, Psy 8
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)
+  Cible ou zone d'effet: un double
+  Temps d'incantation: 1 action simple
+  Composantes: V
+  Durée: 1 round/niveau (D)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non
+  Description: 'Le sort crée un double du personnage, parfaitement identique,
+
+    y compris au niveau de ce qu’il porte et transporte. Il apparaît où
+
+    le personnage le désire, dans les limites de portée du sort. Le personnage
+
+    existe alors à deux endroits à la fois jusqu’à la fin du sort.
+
+    Son double et lui utilisent les mêmes statistiques et partagent les
+
+    mêmes ressources. Par exemple, si le double subit des dégâts, le personnage
+
+    les soustrait de son propre total de points de vie. De même,
+
+    si le double dépense une charge ou une utilisation quotidienne d’un
+
+    objet magique qu’ils manient tous deux, la charge ou l’utilisation est
+
+    aussi dépensée au niveau de l’objet que tient le personnage. Si le
+
+    personnage ou le double lâche ou donne un objet qu’il transporte,
+
+    l’objet disparaît aussi des possessions de l’autre. Le sort ne permet
+
+    pas de dupliquer des artefacts, ces derniers restent uniquement sur
+
+    le personnage.
+
+
+    Le personnage perçoit simultanément les informations sensorielles
+
+    émanant de son corps et de son double mais le sort lui permet
+
+    de les assimiler sans être désorienté.
+
+
+    Quand le personnage entreprend une action, il choisit le corps qui
+
+    l’accomplit mais les deux corps partagent la même réserve d’actions.
+
+    Par exemple, si le personnage dépense une action simple pour lancer
+
+    un sort, il peut choisir n’importe lequel de ses deux corps pour
+
+    le faire mais l’autre ne pourra pas faire d’action simple au cours du
+
+    même round. De même, si le double effectue une action complexe,
+
+    le personnage ne peut pas faire une action simple ni de mouvement.
+
+    Comme d’habitude, les deux corps ont droit à autant d’actions libres
+
+    qu’ils veulent : ils peuvent par exemple dire des choses différentes
+
+    et tous deux lâcher un objet différent. Si aucun corps ne se déplace
+
+    au cours du round, un corps peut faire un pas de 1,50 mètre ou se
+
+    déplacer une fois de sa vitesse par une action libre.
+
+
+    Les deux corps sont affectés par les attaques, les sorts et les effets
+
+    comme s’ils étaient une seule et même entité et subissent le pire effet
+
+    le cas échéant (par exemple s’ils sont sujets à des effets différents
+
+    parce qu’ils se trouvent à des distances différentes). Si les deux corps
+
+    se trouvent dans la zone d’effet d’une boule de feu, le personnage fait
+
+    un seul jet de sauvegarde et subit les dégâts une fois seulement. Si un
+
+    corps est victime d’une immobilisation de personne, les deux sont paralysés
+
+    en cas d’échec au jet de sauvegarde. Les deux corps comptent
+
+    comme une seule et même créature vis-à-vis de sorts affectant un
+
+    nombre de cibles limitées et un sort ne peut pas les choisir plus
+
+    d’une fois s’il inflige un tel effet. Le personnage considère son double
+
+    comme une autre créature vis-à-vis de la plupart des effets de combat
+
+    comme la prise en tenaille ou la détermination d’un abri, mais pas
+
+    pour les dons de travail en équipe ni pour les effets qui visent uniquement
+
+    une créature autre que le lanceur.
+
+
+    Tout effet magique doté d’une durée limitée affectant le personnage
+
+    la voit réduite de moitié quand il se bilocalise. Par exemple,
+
+    le sort immobilisation de personne mentionné précédemment perd
+
+    2 rounds de durée par round réellement écoulé jusqu’à ce que le
+
+    double disparaisse. Si le personnage lance bilocation alors qu’il est
+
+    sous l’effet d’une splendeur de l’aigle avec 60 secondes restantes, l’effet
+
+    se termine au bout de 5 rounds au lieu de 10. Un effet ainsi raccourci
+
+    dure 1 round au minimum et si un effet disposant d’un nombre de
+
+    rounds impair n’a plus qu’un round d’action, il affecte le corps et le
+
+    double pendant ce round.
+
+    Quand le sort se termine, le personnage décide si son corps disparaît
+
+    ou si c’est son double. Si c’est son corps, le personnage devient
+
+    son double. S’il portait des artefacts à cet instant, ils se transfèrent en
+
+    même temps que sa conscience.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bilocation.ashx
   
