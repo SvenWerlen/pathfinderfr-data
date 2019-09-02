@@ -6350,7 +6350,7 @@
     créature immédiatement ou seulement au réveil. Le sort intégré affecte une créature
     seulement, même s’il affecte normalement plusieurs créatures ou une zone.'
   Source: MJ
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20Cauchemar.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20cauchemar.ashx
   
 - Nom: Cécité/surdité
   École: Nécromancie [malédiction] ;
@@ -33865,7 +33865,7 @@
   Description: L’individu touché acquiert une résistance à la magie égale à 12 +
     niveau de lanceur de sorts.
   Source: MJ
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sort%20R%c3%a9sistance%20%c3%a0%20la%20magie.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20r%c3%a9sistance%20%c3%a0%20la%20magie.ashx
   
 - Nom: Résistance aux énergies destructives (partagé)
   École: Abjuration ;
@@ -43439,4 +43439,456 @@
     \ plan situé au-delà."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anneau%20de%20repli%20f%c3%a9%c3%a9rique.ashx
+  
+- Nom: Bras long
+  École: Transmutation ;
+  Niveau: alchimiste 1, conjurateur 1, ensorceleur/magicien 1, magus 1, sanguin
+    1, sorcière 1
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (T)
+  Description: Les bras du personnage s’allongent temporairement, augmentant son
+    allonge de 1,5 mètre avec ces membres.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bras%20long.ashx
+  
+- Nom: Capacitance corporelle
+  École: transmutation [électricité] ;
+  Niveau: alchimiste 1, ensorceleur/magicien 1
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une bobine en fer)
+  Durée: 1 minute/niveau ou jusqu’à déchargement (cf. texte)
+  Description: "Si le personnage reçoit des dégâts d’électricité alors que ce sort\
+    \ est actif, une partie de l’énergie est stockée dans sa peau, comme on maintient\
+    \ la charge pour un sort de contact. Le personnage peut libérer cette électricité\
+    \ stockée en effectuant une attaque de contact au corps à corps. \n\nIl bénéficie\
+    \ d’un bonus de +3 au jet d’attaque si son adversaire porte une armure en métal,\
+    \ manie une arme en métal ou est constitué de métal. La cible de cette attaque\
+    \ de contact reçoit un nombre de dégâts d’électricité égal à la moitié du nombre\
+    \ de dégâts d’électricité que le personnage a reçu après avoir lancé ce sort (par\
+    \ exemple, s’il a réussi un jet de sauvegarde pour réduire de moitié les dégâts\
+    \ d’un éclair et a reçu 15 points de dégâts d’électricité, il inflige 7 points\
+    \ de dégâts d’électricité sur son attaque de contact suivante). Ce sort est déchargé\
+    \ quand le personnage touche sa cible avec une attaque de contact au corps à corps\
+    \ et inflige les dégâts. S’il reçoit des dégâts d’électricité plusieurs fois alors\
+    \ que ce sort est actif, utilisez le nombre de dégâts d’électricité le plus important\
+    \ pour déterminer les dégâts de l’attaque de contact au corps à corps."
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Capacitance%20corporelle.ashx
+  
+- Nom: Crachat adhésif
+  École: invocation (création) ;
+  Niveau: alchimiste 1, ensorceleur/magicien 1, sorcière 1
+  Portée: 4,5 m (3 c)
+  Cible ou zone d'effet: une créature
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau ou jusqu’à déchargement (cf. texte)
+  Jet de sauvegarde: Réflexes pour dégâts partiels ;
+  Résistance à la magie: non
+  Description: Pendant la durée du sort, le personnage peut cracher un liquide visqueux
+    une seule fois par une action simple. Ce liquide fonctionne comme une sacoche
+    immobilisante, à la seule différence que le personnage n’a pas besoin de réussir
+    de jet d’attaque pour toucher sa cible. Le DD pour contrer cet adhésif (pour éviter
+    d’être collé au sol, pour voler, pour briser l’adhésif ou pour lancer un sort)
+    est égal au DD du sort plutôt qu’au DD normal de la sacoche immobilisante. L’adhésif
+    persiste pendant 2d4 rounds après que le personnage l’a craché.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20adh%c3%a9sif.ashx
+  
+- Nom: Mouvement flou
+  École: illusion (hallucination) ;
+  Niveau: alchimiste 1, barde 1, ensorceleur/magicien 1, conjurateur 1, magus 1,
+    sanguin 1
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau (T)
+  Description: Ce sort fonctionne comme flou, à la seule différence que le flou
+    ne survient que lorsque le personnage se déplace d’au moins 3 mètres (2 c) à son
+    tour et cesse de faire effet à la fin du déplacement. De ce fait, il est principalement
+    utilisé pour contrecarrer les attaques lors du tour du personnage, comme les attaques
+    d’opportunité. Si le personnage se déplace au moins à deux fois sa vitesse lors
+    de son tour, le flou dure jusqu’au début de son tour suivant.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mouvement%20flou.ashx
+  
+- Nom: Sang fantôme
+  École: nécromancie ;
+  Niveau: alchimiste 1, ensorceleur/magicien 1, magus 1, sanguin 1
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 10 minutes/niveau
+  Description: Le personnage renforce son énergie vitale. Si la perte de points
+    de vie subie à la fin d’un effet temporaire modifiant sa Constitution (comme rage
+    du barbare ou rage sanguine du sanguin) devait le faire tomber inconscient ou
+    le tuer, le personnage gagne un nombre de points de vie temporaires égal à son
+    niveau de lanceur (10 au maximum). Chaque incantation du sort ne lui accorde qu’une
+    seule fois des points de vie temporaires.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sang%20fant%c3%b4me.ashx
+  
+- Nom: Armure de sang
+  École: transmutation ;
+  Niveau: alchimiste 2, ensorceleur/magicien 2, conjurateur 2, sanguin 2, sorcière
+    2
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau
+  Description: 'Au contact de l’air, le sang du personnage devient aussi dur que
+    du fer. Chaque fois qu’il reçoit au moins 5 points de dégâts perforants ou tranchants,
+    son armure gagne un bonus d’altération de +1 à la CA.
+
+    Des vêtements ordinaires comptent comme une armure n’accordant aucun bonus à la
+    CA quand il s’agit de ce sort. Ce bonus d’altération se cumule avec lui-même jusqu’à
+    un bonus d’altération maximum de +5. Ce sort n’a aucun effet sous l’eau ou dans
+    les environnements sans air.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure%20de%20sang.ashx
+  
+- Nom: Catatonie
+  École: nécromancie ;
+  Niveau: Alchi 2, Barde 2, Ens/Mag 3, Hyp 2, Méd 2, Prê 3, Psy 3, Sor 3, Spi 2
+  Portée: contact
+  Cible ou zone d'effet: créature consentante touchée
+  Temps d'incantation: 1 action simple
+  Composantes: G
+  Durée: 1 h/niveau (D)
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: oui
+  Description: 'Le personnage touche la cible et la plonge dans un état semblable
+
+    à la mort pendant toute la durée du sort. La cible semble morte et
+
+    toutes les créatures qui interagissent avec elle doivent réussir un
+
+    test de Premiers secours DD 20 pour se rendre compte qu’elle est
+
+    vivante.
+
+
+    Tant que le sort agit, la cible est considérée comme morte vis-àvis
+
+    des effets visant les créatures vivantes seulement mais elle ne
+
+    compte pas comme un mort-vivant. La cible est sans défense et l’on
+
+    peut la tuer normalement.
+
+
+    Tout effet visant à ramener la cible à la vie ou à l’animer sous
+
+    forme de mort-vivant échoue et met un terme à la catatonie. La
+
+    cible peut être affectée par des sorts qui affectent uniquement les
+
+    objets, comme animation d’objet (si la créature est de taille P) et
+
+    téléportation d’objet. En revanche, tout effet cherchant à changer sa
+
+    forme (comme réduction d’objet) échoue et met fin à la catatonie. Le
+
+    sort n’empêche pas les effets qui infligent simplement des dégâts
+
+    ou détruisent les objets.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Catatonie.ashx
+  
+- Nom: Esprit investigateur
+  École: enchantement (coercition) [effet mental] ;
+  Niveau: alchimiste 2, barde 2, ensorceleur/magicien 2, sorcière 2
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 10 minutes/niveau ou jusqu’à déchargement
+  Description: 'L’esprit du personnage est capable de corréler les informations
+    avec beaucoup d’efficacité. Quand il tente un test d’Art de la magie, de Connaissances,
+    d’Estimation ou de Linguistique, il peut faire deux jets et garder le meilleur
+    résultat. S’il a un pouvoir qui lui permet de relancer une deuxième fois, il ne
+    peut pas utiliser ce pouvoir et cet avantage sur le même jet.
+
+    Le sort est déchargé quand le personnage a utilisé son avantage un nombre de fois
+    égal à son niveau de lanceur.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20investigateur.ashx
+  
+- Nom: Flexibilité extrême
+  École: transmutation ;
+  Niveau: 'alchimiste 2, ensorceleur/magicien 2,
+
+    magus 2, sanguin 2, sorcière 2'
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau
+  Description: Le personnage gagne un bonus d’esquive de +1 à la CA, un bonus de
+    circonstances de +4 aux tests d’Évasion et de manœuvre offensive de lutte, et
+    un bonus de circonstances de +4 au DMD contre les tentatives de lutte.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flexibilit%c3%a9%20extr%c3%aame.ashx
+  
+- Nom: Sang adhésif
+  École: transmutation ;
+  Niveau: alchimiste 2, ensorceleur/magicien 2, sanguin 2, sorcière 2
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: Réflexes pour annuler (cf. texte) ;
+  Résistance à la magie: non
+  Description: Au contact de l’air, le sang du personnage s’épaissit, se transformant
+    en une substance similaire à de la colle. Les armes perforantes ou tranchantes
+    qui infligent des points de dégâts au personnage se retrouvent très vite collées
+    à lui, à moins que le manieur ne réussisse un jet de Réflexes. Une créature peut
+    récupérer une arme collée en l’arrachant, lors de son tour, par une action simple
+    et en réussissant un test de Force contre le DD du sort. Les alcools forts et
+    le solvant universel dissolvent la substance adhésive. La colle se décompose 5
+    rounds après la mort du personnage ou quand la durée du sort expire. Cette colle
+    n’a aucun effet sous l’eau ou dans les environnements sans air.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sang%20adh%c3%a9sif.ashx
+  
+- Nom: Déguisement ajustable
+  École: illusion (hallucination) ;
+  Niveau: alchimiste 3, antipaladin 3, barde 3, ensorceleur/magicien 3, inquisiteur
+    3, sorcière 3
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 10 minutes/niveau (T)
+  Description: Ce sort fonctionne comme déguisement, à la seule différence que le
+    personnage peut changer de déguisement par une action rapide (dans les limites
+    de ce qu’autorise déguisement). Par exemple, le personnage pourrait s’arranger
+    pour ressembler à un jeune garde urbain, puis à un vieux magicien elfique de sexe
+    opposé, puis à un voleur halfelin, etc. Il peut changer de déguisement un nombre
+    de fois égal à son niveau de lanceur de sorts.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9guisement%20ajustable.ashx
+  
+- Nom: Hypercognition
+  École: Divination ;
+  Niveau: "Alchimiste 3, Barde 3,\n Ens/Mag 4, Méd 2, Psy 2"
+  Portée: personnelle
+  Cible ou zone d'effet: lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V
+  Durée: voir texte
+  Description: 'Le personnage récolte et catalogue rapidement toutes les
+
+    données disponibles sur une personne, un lieu, une chose ou un
+
+    évènement. Des bribes de souvenirs et des indices s’assemblent
+
+    dans son esprit dans un ordre logique et systématique. Dès la fin de
+
+    l’incantation, le personnage commence à dépenser le temps nécessaire
+
+    à un test d’Intelligence ou de Linguistique pour détecter un
+
+    faux ou déchiffrer un message codé ou à un test de Connaissances.
+
+    Si le test exige au moins 3 rounds, il peut le faire cinq fois plus rapidement
+
+    (1 round au minimum). Si le test prend moins de rounds il
+
+    peut le faire instantanément. Quoi qu’il en soit, il gagne un bonus
+
+    d’intuition sur le test égal à son niveau de lanceur de sorts (+10
+
+    au maximum). Cependant, ce bonus ne permet pas de dépasser le
+
+    résultat que le personnage obtiendrait avec un 20 naturel.'
+  Source: AO
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hypercognition.ashx
+  
+- Nom: Sabotage de créature artificielle
+  École: transmutation ;
+  Niveau: alchimiste 3, ensorceleur/magicien 3, sorcière 3
+  Portée: contact
+  Cible ou zone d'effet: la créature artificielle touchée
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau (T)
+  Jet de sauvegarde: Volonté pour annuler ;
+  Résistance à la magie: non
+  Description: Le personnage peut effectuer une attaque de contact au corps à corps
+    pour envoyer une impulsion à la cible, interférant avec la magie qui lui a insufflé
+    la vie. Si la créature artificielle rate son jet de sauvegarde, elle est sans
+    défense pendant toute la durée du sort.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sabotage%20de%20cr%c3%a9ature%20artificielle.ashx
+  
+- Nom: Sentinelle de sang
+  École: transmutation ;
+  Niveau: alchimiste 3, ensorceleur/magicien 3
+  Portée: contact
+  Cible ou zone d'effet: une sculpture animale
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une sculpture animale de taille réelle représentant un familier
+    et faite en argile, en tissu ou en bois, plus une racine de mandragore d’une valeur
+    de 25 po)
+  Durée: 10 minutes/niveau
+  Jet de sauvegarde: aucun ;
+  Résistance à la magie: non (inoffensif)
+  Description: Après avoir lancé ce sort, le personnage verse quelques gouttes de
+    son sang et de sa salive dans la gueule de la composante matérielle qu’est la
+    sculpture animale, lui insufflant temporairement la vie. L’animal est lié au personnage
+    comme si c’était son familier (le personnage utilise son niveau de lanceur de
+    sorts comme niveau effectif de magicien pour déterminer les pouvoirs du familier)
+    mais n’accorde pas le don Vigilance au personnage ni le pouvoir spécial lié à
+    son type d’animal. Si sa sentinelle de sang est tuée, le personnage subit une
+    diminution permanente de 2 points d’Intelligence et le corps de la sentinelle
+    de sang n’est plus qu’une statue détruite. Ce sort n’a aucun effet si le personnage
+    a déjà un familier ou une autre sentinelle de sang.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sentinelle%20de%20sang.ashx
+  
+- Nom: Éclat intenable
+  École: évocation [lumière] ;
+  Niveau: alchimiste 4, ensorceleur/magicien 4, sorcière 4
+  Portée: personnelle et 9 m (cf. texte)
+  Cible ou zone d'effet: émanation de 9 m de rayon centrée sur le lanceur
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau
+  Jet de sauvegarde: aucun et Réflexes pour dégâts partiels (cf. texte) ;
+  Résistance à la magie: non et oui (cf. texte)
+  Description: Le corps du personnage brille d’une terrible lumière. Les créatures
+    dans un rayon de 9 mètres autour de lui et qui peuvent le voir sont éblouies (pas
+    de jet de sauvegarde). Les créatures sensibles à la lumière doivent réussir un
+    jet de Réflexes pour ne pas devenir aveugles. La lumière compte comme une lumière
+    du jour quand il s’agit d’affecter les effets de ténèbres (et inversement). Si
+    l’émanation pénètre dans une zone affectée par des ténèbres magiques (ou inversement),
+    les deux effets s’annulent temporairement, les zones d’effet superposées étant
+    dominées par les conditions lumineuses annexes les plus importantes. Les états
+    ébloui et aveuglé dus à la lumière du personnage se terminent quand le sort se
+    termine ou quand le personnage n’est plus dans le champ de vision de la victime.
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89clat%20intenable.ashx
+  
+- Nom: Forme miasmatique
+  École: Transmutation [air, poison] ;
+  Niveau: alchimiste 4, ensorceleur/magicien 4
+  Portée: contact
+  Cible ou zone d'effet: créature tangible et consentante touchée
+  Temps d'incantation: 1 action simple
+  Composantes: G, M (poison de contact ou à inhaler d’une valeur de 100 po)
+  Durée: 1 minute/niveau
+  Jet de sauvegarde: aucun ; voir description ;
+  Résistance à la magie: Non
+  Description: Ce sort fonctionne comme état gazeux, à la seule différence que le
+    corps vaporeux de la cible est dangereux pour les créatures qui le touchent. Une
+    créature peut faire un jet de Vigueur (DD 14 + modificateur d’Intelligence du
+    lanceur) lors de son tour pour résister aux vapeurs. Lorsqu’il lance ce sort,
+    le personnage choisit l’une des options suivantes. Nuage empoisonné. Le corps
+    de la cible est un poison mortel provoquant un affaiblissement temporaire de 1d2
+    points de Constitution aux créatures qui ratent leur jet de sauvegarde (Vigueur
+    pour 1/2 dégâts). Cette forme du sort nécessite une composante matérielle. Nuage
+    nauséabond. Le corps de la cible rend nauséeuses les créatures qui ratent leur
+    jet de sauvegarde, comme un nuage nauséabond (Vigueur pour annuler, voir description).
+    Cette forme du sort ne requiert pas de composante matérielle.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20miasmatique.ashx
+  
+- Nom: Inhalation absorbante
+  École: Transmutation [air] ;
+  Niveau: Alchimiste 4, Druide 4, ensorceleur/magicien 4
+  Portée: courte (7,50 m + 1,50 m/2 niveaux)/(5 c + 1 c/2 niveaux)
+  Cible ou zone d'effet: un effet de nuage occupant un maximum de 3 m par niveau
+  Temps d'incantation: 1 action simple
+  Composantes: V, G
+  Durée: 1 round/niveau; voir description
+  Jet de sauvegarde: voir description ;
+  Résistance à la magie: Non
+  Description: Le lanceur de sorts donne à ses poumons une force et une capacité
+    surhumaine lui permettant d’inhaler complètement et sans danger un effet de gaz,
+    de brouillard, de fumée, de brume ou autre effet similaire semblable à un nuage.
+    Si le nuage ciblé est un effet magique, le lanceur de sorts doit réussir un test
+    de lanceur de sorts (DD 11 + niveau de lanceur de l’effet) pour l’inhaler. L’inhalation
+    du nuage le fait disparaître de la zone, et laisse l’air normal tel quel. Si le
+    nuage est trop grand pour que le lanceur de sorts l’affecte en ne lançant ce sort
+    qu’une seule fois, le lanceur peut alors n’en inhaler qu’une partie, mais doit
+    inhaler la partie la plus proche de lui. Ce sort n’a aucun effet sur les créatures
+    gazeuses. Il peut affecter un nuage de durée instantanée (comme une arme de souffle)
+    seulement si le lanceur de sorts se réserve une action pour y réagir et lancer
+    le sort. Le nuage inhalé ne blesse pas le lanceur de sorts qui peut le contenir
+    en lui jusqu’à 1 round par niveau, mais qui doit retenir sa respiration pour ce
+    faire (même s’il n’a normalement pas besoin de respirer). Si le nuage a une durée,
+    le temps que le lanceur le garde en lui est décompté de cette durée. Par une action
+    simple, le lanceur peut relâcher le nuage stocké en une arme de souffle qui remplit
+    un cône de 18 mètres de long (ou la zone originellement occupée par le nuage s’il
+    est plus petit qu’un cône de 18 mètres de long). Toutes les créatures présentes
+    dans la zone de souffle sont sujettes à ses effets normaux, faisant les jets de
+    sauvegarde et les tests de résistance appropriés contre le DD original du nuage.
+    Le nuage exhalé reste en place pour la durée restante, s’il en a une. L’exhalation
+    du nuage contenu met fin à ce sort. Si le lanceur ne recrache pas le nuage avant
+    que la durée du sort n’expire, il souffre de ses effets et échoue automatiquement
+    à tous les jets de sauvegarde pour y résister.
+  Source: null
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inhalation%20absorbante.ashx
+  
+- Nom: Regard du vide
+  École: transmutation ;
+  Niveau: alchimiste 4, antipaladin 4, ensorceleur/magicien 4
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une pincée de carottes séchées ou une agate)
+  Durée: 10 minutes/niveau
+  Description: Le personnage gagne vision dans le noir, la capacité à voir à 18
+    mètres (12 c) même dans les ténèbres complètes, y compris dans celles que créent
+    ténèbres profondes. La vision dans le noir ne se fait qu’en noir et blanc mais,
+    outre cela, offre une vue normale. Lorsque le personnage est affecté, ses yeux
+    deviennent complètement noirs (mais apparaissent blancs à quiconque le voit grâce
+    à vision dans le noir).
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Regard%20du%20vide.ashx
+  
+- Nom: Forme sonique
+  École: transmutation (métamorphose) [son] ;
+  Niveau: alchimiste 6, barde 6, ensorceleur/magicien 6
+  Portée: personnelle
+  Cible ou zone d'effet: le lanceur de sorts
+  Temps d'incantation: 1 action simple
+  Composantes: V, G, M (une pincée de poussière récupérée sur une pierre tombale
+    ou dans un sanctuaire sacré)
+  Durée: 1 round/niveau
+  Description: 'Quand il lance ce sort, le personnage conserve sa silhouette globale
+    mais lui et son équipement sont transformés en son semi-solide. Lorsqu’il est
+    sous forme sonique, le personnage ne reçoit aucun malus pour se faufiler et peut
+    traverser les cases sans malus comme s’il était plus petit de trois catégories
+    de taille. Une fois par round, il peut effectuer une attaque de contact au corps
+    à corps qui inflige 1d6 points de dégâts de son + 1 point par niveau de lanceur.
+    Le personnage est considéré comme intangible (mais ne peut pas traverser les objets
+    solides). Toute attaque non-magique qu’il effectue n’inflige que la moitié des
+    dégâts. Les attaques magiques ne sont pas affectées et le personnage peut utiliser
+    les objets magiques et autres pièces d’équipement normalement.
+
+
+    Le personnage ne peut pas entrer dans une zone de silence. S’il se trouve dans
+    la zone d’un sort de silence, il reçoit 1d6 points de dégâts de son par niveau
+    de lanceur du sort de silence lors du round où celui-ci a été lancé et à chaque
+    round où il termine son tour dans sa zone d’effet. Le personnage peut tenter de
+    faire un jet de Vigueur chaque round pour ne recevoir que la moitié des dégâts.
+
+
+    Si la durée du sort se termine alors que le personnage est sur une case qu’une
+    créature de sa taille ne peut normalement pas occuper, il reçoit 3d6 points de
+    dégâts et il est déplacé jusqu’à l’espace ouvert le plus proche qu’il peut normalement
+    occuper.'
+  Source: MJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20sonique.ashx
   
