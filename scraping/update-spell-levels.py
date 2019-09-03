@@ -19,19 +19,19 @@ URLs = [{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20conjurateurs.ashx", 'classe': 'Con'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20druides.ashx", 'classe': 'Dru'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20densorceleursmagiciens.ashx", 'classe': 'Ens/Mag'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.liste%20des%20sorts%20dhypnotiseur.ashx", 'classe': 'Hyp'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.liste%20des%20sorts%20dhypnotiseur.ashx", 'classe': 'Hyp'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20dinquisiteur.ashx", 'classe': 'Inq'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx", 'classe': '},
+        ##{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20d%c3%a9l%c3%a9mentaliste.ashx", 'classe': '},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20magus.ashx", 'classe': 'Mgs'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx", 'classe': 'Med'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20doccultiste.ashx", 'classe': 'Occ'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx", 'classe': 'Med'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20doccultiste.ashx", 'classe': 'Occ'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx", 'classe': 'Pal'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx", 'classe': 'Prê'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20psychiste.ashx", 'classe': 'Psy'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20psychiste.ashx", 'classe': 'Psy'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx", 'classe': 'Rôd'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx", 'classe': 'San'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20sorci%c3%a8re.ashx", 'classe': 'Sor'},
-        #{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20spirite.ashx", 'classe': 'Spi'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20spirite.ashx", 'classe': 'Spi'},
         ]
 
 FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
@@ -71,7 +71,8 @@ def addSpellLevel(classe, level, spell):
         if el['Class'] == classe:
             if el['Level'] != level:
                 print("Something wrong with spell %s" % spell['Nom'])
-                exit(1)
+                #exit(1)
+                
             return
     spell['Niveau'].append({'Class': classe, 'Level': level})
 
@@ -119,6 +120,11 @@ for data in URLs:
             elif s.name == "ul":
                 for li in s.find_all("li"):
                     ref = li.find("a")['href']
+                    
+                    if "pagelink" not in li.find("a").attrs['class']:
+                        print("Skipping unkown link: %s" % li.find("a").text)
+                        continue
+                    
                     spell = findSpell(ref)
                     addSpellLevel(data['classe'], lvl, spell)
                     
@@ -127,12 +133,19 @@ for data in URLs:
     if MOCK_SL:
         break
 
+# Hot fixes for special cases
+spell = findSpell("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20de%20vase%20I.ashx")
+addSpellLevel("Ens/Mag", 5, spell)
+spell = findSpell("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20de%20vase%20II.ashx")
+addSpellLevel("Ens/Mag", 6, spell)
+spell = findSpell("http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forme%20de%20vase%20III.ashx")
+addSpellLevel("Ens/Mag", 7, spell)
+
 # initialiser les niveaux
 for s in sorts:
     s['Niveau'] = levelToString(s['Niveau'])
     #print(s['Niveau'])
     
-
 print("Fusion avec fichier YAML existant...")
 HEADER = ""
 mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, sorts)

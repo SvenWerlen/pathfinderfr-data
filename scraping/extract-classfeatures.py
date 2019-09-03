@@ -96,8 +96,8 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
     
 for cl in classes:
 
-    #if cl['Nom'] != "Rôdeur":
-    #    continue
+    if cl['Nom'] != "Enquêteur":
+        continue
 
     listeDescr = []
     listeNames = {}
@@ -177,6 +177,7 @@ for cl in classes:
             elif c.name is None and "," in c.string :
                 val = c.string.split(',')
                 curName += val[0]
+                print(curName)
                 addClassFeature(curName, curHref, level)
                 curName = val[1]
                 curHref = ""
@@ -192,9 +193,10 @@ for cl in classes:
     
     if MOCK_CF:
         break
+    break
 
 print("Fusion avec fichier YAML existant...")
 
 HEADER = ""
 
-mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)
+#mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)
