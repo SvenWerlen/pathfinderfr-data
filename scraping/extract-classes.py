@@ -7,6 +7,7 @@ import sys
 import html
 from bs4 import BeautifulSoup
 from lxml import html
+import re
 
 from libhtml import jumpTo, findAfter, findProperty, mergeYAML
 
@@ -17,7 +18,7 @@ MOCK_CLASS = None
 #MOCK_CLASS = "mocks/classe-inquisiteur.html"       # décommenter pour tester avec une classe pré-téléchargée
 #MOCK_CLASS = "mocks/classe-arpenteur.html"       # décommenter pour tester avec une classe pré-téléchargée
 
-FIELDS = ['Nom', 'Prestige', 'CompétencesDeClasse', 'DésDeVie', 'Alignement', 'Progression', 'Description', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'Prestige', 'CompétencesDeClasse', 'DésDeVie', 'Alignement', 'RangsParNiveau', 'Progression', 'Description', 'Source', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -102,7 +103,7 @@ def extractName(name):
 liste = []
 
 # itération sur chaque page
-for data in URLs:
+for data in URLs:    
     cl = {}
     
     link = data['link']
@@ -142,6 +143,22 @@ for data in URLs:
     if desVie == None:
         desVie = findProperty(content.find(id='PageContentDiv'), "dé de vie");
     cl['DésDeVie'] = desVie
+    
+    # points de compétence
+    LABELS = ["Points de compétence par niveau", "Rangs de compétence par niveau", "Points de compétence à chaque niveau", "Nombre de rangs par niveau"]
+    ptsComp = None
+    for L in LABELS:
+        ptsComp = findProperty(content.find(id='PageContentDiv'), L);
+        if ptsComp:
+            break
+    if not ptsComp:
+        print("Points de compétence non-trouvé pour classe: %s" % name)
+        exit(1)
+    m = re.search('(\d) \\+ modificateur d[\'’]Intelligence', ptsComp)
+    if not m:
+        print("Points de compétence n'a pas pu être extrait!")
+        exit(1)
+    cl['RangsParNiveau'] = int(m.group(1))
 
     # compétences de classe
     cl['CompétencesDeClasse'] = []
