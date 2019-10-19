@@ -8894,14 +8894,13 @@
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx
   
-- Nom: Touche d'ombre
-  Résumé: peut se déplacer à sa vitesse maximale
+- Nom: Touche d’ombre
   Conditions: wayang
   Avantage: Quand le wayang est dans une zone de faible lumière ou de ténèbres,
     il peut se déplacer à sa vitesse maximale en utilisant Discrétion sans subir le
     malus normal de -5. Quand il se déplace à une vitesse allant de la moitié de sa
     vitesse normale à sa vitesse normale, le wayang subit un malus de -5 à ses tests
-    de Discrétion
+    de Discrétion.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx
   
@@ -16423,4 +16422,971 @@
     que le sort normal'
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20traumatisant.ashx
+  
+- Nom: Esprit elfique
+  Conditions: Demi-elfe.
+  Avantage: Le personnage possède le trait racial des elfes magie elfique, qui lui
+    donne un bonus racial de +2 aux tests de niveau de lanceur de sorts pour vaincre
+    la résistance à la magie. De plus, il reçoit un bonus racial de +2 aux tests d’Art
+    de la magie pour identifier les objets magiques. Le personnage peut choisir un
+    autre trait, que les elfes peuvent échanger contre magie elfique, à la place de
+    celui-ci.
+  Spécial: Le personnage peut choisir ce don au niveau 1 uniquement et, dans ce
+    cas, il ne peut pas choisir Esprit humain.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20elfique.ashx
+  
+- Nom: Esprit humain
+  Conditions: Demi-elfe.
+  Avantage: Le personnage reçoit un rang de compétence supplémentaire. Il en obtient
+    un autre dès qu’il gagne un nouveau dé de vie, mais il ne peut pas gagner plus
+    de quatre rangs de compétence de cette manière.
+  Spécial: Le personnage peut choisir ce don au niveau 1 uniquement et, dans ce
+    cas, il ne peut pas choisir Esprit elfique.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20humain.ashx
+  
+- Nom: Maîtrise des talents multiples
+  Conditions: Personnage de niveau 5, demi-elfe, trait racial talents multiples.
+  Avantage: Le personnage considère toutes ses classes comme des classes de prédilection.
+    Quand il gagne un niveau dans l’une d’elles, il gagne soit un point de vie, soit
+    un point de compétence. Ces bonus s’appliquent de façon rétroactive à tous les
+    niveaux de classe qui n’en avaient pas encore bénéficié.
+  Normal: Un demi-elfe avec le trait racial talents multiples a deux classes de
+    prédilection.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetrise%20des%20talents%20multiples.ashx
+  
+- Nom: Manipulation partagée
+  Conditions: Cha 13, demi-elfe.
+  Avantage: Par une action de mouvement, le personnage donne un bonus de +2 aux
+    tests de Bluff ou d’Intimidation (choisir la compétence à chaque utilisation)
+    de tous les alliés qui se trouvent à moins de 9 m (6 c) et peuvent le voir ou
+    l’entendre. L’effet dure un nombre de rounds égal au modificateur de Charisme
+    du personnage (1 round au minimum).
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manipulation%20partag%c3%a9e.ashx
+  
+- Nom: Parangon demi-drow
+  Conditions: demi-elfe, traits raciaux sang de drow et magie drow.
+  Avantage: Le personnage est assimilé à un drow vis-à-vis de tous les effets liés
+    à la race. De plus, les pouvoirs magiques du trait racial magie drow comptent
+    comme des pouvoirs magiques drows quand il s’agit de remplir des conditions requises.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parangon%20demi-drow.ashx
+  
+- Nom: Regard perspicace
+  Conditions: Elfe ou demi-elfe, sens aiguisés.
+  Avantage: Le personnage reçoit un bonus racial de +2 aux jets de sauvegarde contre
+    les sorts et effets d’illusion et un bonus de +2 aux tests de Linguistique pour
+    repérer un faux. Il peut utiliser la compétence Linguistique pour détecter un
+    faux même s’il n’est pas entraîné.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Regard%20perspicace.ashx
+  
+- Nom: Voie de l'exilé
+  Conditions: Demi-elfe.
+  Avantage: Une fois par jour, quand le personnage rate un jet de Volonté contre
+    un effet ou un sort  d’enchantement, il peut le refaire, mais il doit conserver
+    le second résultat, même s’il est pire que le premier.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voie%20de%20lexil%c3%a9.ashx
+  
+- Nom: Visible et invisible
+  Conditions: Voie de l’exilé, personnage de niveau 5, demi-elfe.
+  Avantage: Le personnage gagne un bonus de +2 à tous les jets de sauvegarde contre
+    les effets de scrutation et de divination. De plus, il gagne un bonus de +2 à
+    tous les tests de Discrétion et les elfes, les demi-elfes et les humains subissent
+    un malus de -4 quand ils tentent de suivre sa piste avec la compétence Survie.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Visible%20et%20invisible.ashx
+  
+- Nom: Ni elfe ni humain
+  Conditions: Voie de l’exilé, Visible et invisible, personnage de niveau 11, demi-elfe.
+  Avantage: Le personnage n’est pas considéré comme un humain ni comme un elfe vis-à-vis
+    de tous les sorts et effets néfastes basés sur le type, comme une arme tueuse
+    ou le pouvoir de classe de rôdeur ennemi juré.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ni%20elfe%20ni%20humain.ashx
+  
+- Nom: Bénédiction du destructeur
+  Catégorie: Combat
+  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker
+  Avantage: Lorsque le personnage est en rage et qu’il réussit une tentative de
+    destruction, il récupère un round de rage. Si la tentative de destruction casse
+    effectivement l’objet, le personnage récupère 1 point de vie.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20destructeur.ashx
+  
+- Nom: Brute résiliente
+  Conditions: Demi-orque ou orque.
+  Avantage: Une fois par jour, quand une créature confirme un coup critique contre
+    le personnage, il peut considérer la moitié des dégâts comme des dégâts non létaux.
+    Il ne peut pas utiliser ce don s’il est immunisé contre les dégâts létaux. Quand
+    le BBA du personnage atteint +10, il peut utiliser ce don une fois de plus par
+    jour.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brute%20r%c3%a9siliente.ashx
+  
+- Nom: Cavalier des bêtes
+  Conditions: ', Demi-orque ou orque, Compagnon animal ou monture comme capacité
+    de classe, personnage de niveau 7'
+  Avantage: 'Le personnage choisit l’un des types de créature suivant : éléphant,
+    ptéranodon, rhinocéros, stégosaure ou tricératops. Il l’ajoute à sa liste de compagnons
+    animaux ou de montures disponibles. Quand le personnage choisit une créature de
+    ce type pour lui servir de monture ou de compagnon animal, il rajoute deux niveaux
+    à son niveau de druide effectif (pour un niveau maximum égal au niveau du personnage).
+    Si la créature est assez grande pour que le personnage la monte, elle gagne gratuitement
+    monture de combat (voir Dressage).'
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cavalier%20des%20b%c3%aates.ashx
+  
+- Nom: Charge de la horde
+  Catégorie: Équipe
+  Conditions: Demi-orque ou orque, BBA+1
+  Avantage: Quand le personnage charge au cours du même round qu’un allié qui possède
+    ce don, il gagne un bonus de +2 aux jets d’attaque et de dégâts, en plus des bonus
+    habituels de la charge. S’il a droit à plusieurs attaques par charge, ce bonus
+    s’applique uniquement à la première.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20de%20la%20horde.ashx
+  
+- Nom: Convocations féroces
+  Conditions: Demi-orque ou orque, Amélioration des créatures convoquées, École
+    renforcée (invocation)
+  Avantage: Les créatures que le personnage invoque gagnent le pouvoir universel
+    de monstre férocité.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Convocations%20f%c3%a9roces.ashx
+  
+- Nom: Enchaînement surprise
+  Catégorie: Combat
+  Conditions: Demi-orque ou orque, For 13, Attaque en puissance, Enchaînement, BBA+1.
+  Avantage: Quand le personnage utilise Enchaînement ou Succession d’enchaînements,
+    le second adversaire qu’il attaque à son tour est privé de son bonus de Dextérité
+    contre lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Encha%c3%aenement%20surprise.ashx
+  
+- Nom: Science de l'enchaînement surprise
+  Catégorie: Combat
+  Conditions: Demi-orque ou orque, For 13, Attaque en puissance, Enchaînement, Succession
+    d’enchaînements, Enchaînement surprise, BBA+8.
+  Avantage: Quand le personnage utilise Succession d’enchaînements, tous les adversaires
+    qu’il attaque à son tour (à part le premier) sont privés de leur bonus de Dextérité
+    contre lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20lencha%c3%aenement%20surprise.ashx
+  
+- Nom: Fiélon sanguinaire
+  Conditions: Demi-orque ou orque, pouvoir de classe rage.
+  Avantage: Quand le personnage est enragé et confirme un coup critique avec une
+    arme de corps à corps ou que quelqu’un confirme un coup critique contre lui (avec
+    une arme de corps à corps, un sort ou une arme à distance), il récupère un round
+    de rage (dans la limite de son maximum quotidien). Il profite de cet avantage
+    une fois par round seulement.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fi%c3%a9lon%20sanguinaire.ashx
+  
+- Nom: Frisson de la mort
+  Conditions: Demi-orque ou orque, pouvoir de classe rage.
+  Avantage: Quand le personnage est enragé et que ses attaques font tomber un ennemi
+    en dessous de 0 point de vie ou le tuent, il récupère 1 round de rage. En revanche,
+    il peut utiliser ce don uniquement si son ennemi a au moins autant de DV que lui.
+    Il ne peut bénéficier de ce don qu’une fois par round.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frisson%20de%20la%20mort.ashx
+  
+- Nom: Rage empathique
+  Catégorie: Combat
+  Conditions: Demi-orque ou orque, autre que Loyal.
+  Avantage: Quand le personnage est adjacent à un allié enragé, il peut utiliser
+    une action libre, à son tour, pour entrer dans un état similaire, mais moins efficace.
+    Cette forme de rage plus faible lui donne tous les avantages et tous les malus
+    de la rage de barbare, sauf que le bonus de moral à la Force et la Constitution
+    est seulement de +2. Le personnage peut rester enragé aussi longtemps qu’il le
+    désire tant qu’il reste adjacent à un allié enragé (par exemple, il peut faire
+    un pas de 1,50 m (1 c) pour s’éloigner d’un allié enragé et se placer à côté d’un
+    autre allié enragé tout en maintenant sa rage). Une fois que cette rage amoindrie
+    se termine, le personnage est fatigué, comme avec la rage de barbare. Le personnage
+    ne peut pas utiliser ce don s’il est fatigué.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20empathique.ashx
+  
+- Nom: Résolution féroce
+  Conditions: Con 13, demi-orque, trait racial férocité orque.
+  Avantage: Le personnage gagne le pouvoir de monstre universel férocité, qui lui
+    permet de continuer à se battre même s’il est en dessous de 0 point de vie. Quand
+    il utilise ce pouvoir, il gagne un bonus de +2 aux tests d’Intimidation.
+  Normal: Un demi-orque qui possède le trait racial férocité orque peut se battre
+    pendant un round après être tombé en dessous de 0 point de vie.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9solution%20f%c3%a9roce.ashx
+  
+- Nom: Survivant tenace
+  Conditions: Demi-orque ou orque, Con 13, Dur à cuire, Endurance
+  Avantage: Quand le personnage se fait tuer parce qu’il reçoit trop de points de
+    dégâts, son esprit s’attarde dans son corps un nombre de rounds égal à son bonus
+    de Constitution. Il est bien mort, mais si une créature fait un test de Premiers
+    secours DD 10, par une action simple, elle se rend compte qu’elle peut encore
+    le sauver. Elle peut le soigner par magie comme s’il était encore vivant. Si cela
+    fait repasser ses points de vie au-dessus du seuil de la mort, il revient parmi
+    les vivants, mais il gagne un niveau négatif permanent.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Survivant%20tenace.ashx
+  
+- Nom: Ténacité féroce
+  Catégorie: Combat
+  Conditions: Demi-orque ou orque, trait racial férocité, pouvoir de classe rage.
+  Avantage: 'Une fois par jour, quand le personnage est enragé et qu’il se fait
+    toucher par une attaque qui devrait le tuer (en faisant passer son total de points
+    de vie négatifs à une valeur égale à sa valeur de Constitution), il peut dépenser
+    1 round de rage ou plus, par une action immédiate, pour annuler une partie de
+    ces dégâts et rester en vie. Chaque round de rage sacrifié annule 1 point de dégâts,
+    mais ce pouvoir ne permet pas de réduire les dégâts subits en dessous de 1 point.
+
+    Par exemple, si le personnage est enragé, qu’il a une valeur de Constitution de
+    18 avec la rage et qu’il se trouve actuellement à 2 pv alors qu’il reçoit un coup
+    à 20 points de dégâts (qui suffit donc à le faire passer à -18 pv et à le tuer),
+    il peut dépenser 1 round de rage pour réduire ces dégâts de 1 (ce qui le laisse
+    dangereusement proche de la mort, à -17 pv). S’il dépense 19 rounds de rage, il
+    réduit les dégâts reçus à 1 point et se retrouve donc avec 1 pv.
+
+    NOTE Si les dégâts font tomber le personnage inconscient, sa rage se termine normalement,
+    ce qui ramène sa Constitution à sa valeur normale et réduit aussi son total de
+    points de vie. Il se peut donc que le personnage utilise ce don pour ne pas mourir
+    sur-le-champ, mais qu’il succombe quand même parce que ses points de vie négatifs
+    dépassent sa valeur de Constitution normale. Le personnage doit tenir compte de
+    sa valeur normale de Constitution quand il décide du nombre de rounds de rage
+    à sacrifier avec ce don.'
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%a9nacit%c3%a9%20f%c3%a9roce.ashx
+  
+- Nom: Vengeance sanguinaire
+  Conditions: Demi-orque ou orque, autre que Loyal.
+  Avantage: Quand le personnage voit un de ses alliés mourir ou passer en dessous
+    de 0 point de vie, il peut, à son tour et par une action libre, entrer dans un
+    état de rage similaire à celui du barbare, en moins puissant. Si le personnage
+    possède déjà la rage comme pouvoir de classe et qu’il est déjà en rage, ses bonus
+    de moral à la Force et à la Constitution augmentent de +2 pendant le reste de
+    sa rage. S’il n’a pas le pouvoir de classe de rage ou s’il ne lui reste plus de
+    rounds quotidiens, cette forme de rage amoindrie lui donne les mêmes bonus et
+    les mêmes malus que la rage du barbare, sauf que ses bonus de moral à la Force
+    et à la Constitution ne sont que de +2. Dans tous les cas, ce pouvoir fait effet
+    pendant 4 rounds. Comme avec la rage de barbare, quand celle-ci se termine, le
+    personnage est fatigué, mais si un autre allié tombe avant que la rage se dissipe,
+    celle-ci se prolonge de 4 rounds. Ce don ne lui permet pas d’entrer en rage quand
+    il est fatigué. Le personnage peut utiliser ce pouvoir uniquement si l’allié tombé
+    a au moins autant de DV que lui (à l’exclusion des alliés invoqués ou convoqués).
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeance%20sanguinaire.ashx
+  
+- Nom: Entraînement guerrier elfique
+  Catégorie: combat
+  Conditions: BBA +1, elfe.
+  Avantage: Le personnage est formé au maniement des armes traditionnelles elfiques
+    (arc long, arc long composite, épée longue, rapière, arc court, arc court composite
+    et toutes les armes qui contiennent l’adjectif « elfique » dans leur nom). Il
+    reçoit un bonus de +2 au DMD contre les manoeuvres de désarmement et de destruction
+    qui visent ces armes. De plus, s’il manie l’une des armes de corps à corps de
+    la liste, il a droit à une attaque d’opportunité de plus par round (ce bonus se
+    cumule avec Attaques réflexes).
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Entra%c3%aenement%20guerrier%20elfique.ashx
+  
+- Nom: Harmonie Sauvage
+  Conditions: Elfe.
+  Avantage: Le personnage choisit un type d’environnement de prédilection issu de
+    la liste du rôdeur (à l'exception de l'environnement urbain). Tant qu’il se trouve
+    dans l’environnement choisi, son rythme de guérison naturel est doublé (il s’agit
+    du montant de points de vie et d’affaiblissement de caractéristique qu’il soigne
+    après une nuit de repos complet).
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, mais il s’applique
+    à chaque fois à un environnement différent.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Harmonie%20Sauvage.ashx
+  
+- Nom: Gardien des étendues sauvages
+  Conditions: Harmonie sauvage, elfe.
+  Avantage: Quand le personnage se trouve dans l’environnement choisi pour le don
+    Harmonie sauvage, il gagne un bonus d’esquive de +2 à la CA. S’il se trouve dans
+    une zone qui compte comme plusieurs environnements, les bonus ne se cumulent pas.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gardien%20des%20%c3%a9tendues%20sauvages.ashx
+  
+- Nom: Esprit des étendues sauvages
+  Conditions: Elfe, Harmonie sauvage, Gardien des étendues sauvages
+  Avantage: Quand le personnage se trouve dans un environnement choisi pour le don
+    Harmonie sauvage, il gagne un bonus de +4 aux tests de Perception qui lui permettent
+    d’agir pendant le round de surprise. S’il agit pendant ce round de surprise, il
+    gagne perception aveugle dans un rayon de 9 mètres (6 c) pendant le round de surprise.
+    S’il se trouve dans une zone qui compte comme plusieurs environnements, les bonus
+    ne se cumulent pas.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20des%20%c3%a9tendues%20sauvages.ashx
+  
+- Nom: Mage des étendues sauvages
+  Conditions: elfe, Harmonie sauvage
+  Avantage: Quand le personnage se trouve dans un environnement choisi pour le don
+    Harmonie sauvage, il gagne un bonus de +2 aux tests de niveau de lanceur de sorts,
+    de Concentration de Connaissances(mystères) et d’Art de la magie. S’il se trouve
+    dans une zone qui compte comme plusieurs environnements, les bonus ne se cumulent
+    pas.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage%20des%20%c3%a9tendues%20sauvages.ashx
+  
+- Nom: Arme de prédilection gnome
+  Catégorie: Combat
+  Conditions: BBA +1, gnome, maniement de toutes les armes de guerre.
+  Avantage: Le personnage gagne un bonus de +1 aux jets d’attaque avec les armes
+    gnomes (toutes les armes qui comportent l’adjectif « gnome » dans leur nom).
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection%20gnome.ashx
+  
+- Nom: Grande haine
+  Catégorie: combat
+  Conditions: gnome, trait racial haine.
+  Avantage: Le personnage gagne un bonus supplémentaire de +1 aux jets d’attaque
+    des armes de corps à corps et de jet contre les cibles de sa haine.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grande%20haine.ashx
+  
+- Nom: Illusionniste amateur
+  Conditions: gnome, trait racial magie gnome.
+  Avantage: 'Tant que le personnage n’a pas utilisé tous ses pouvoirs magiques quotidiens
+    issus du trait racial magie gnome, il gagne un bonus racial de +2 aux tests de
+    Bluff, de Déguisement et d’Escamotage. Au niveau 10, ces bonus
+
+    passent à +4.'
+  Spécial: Ce don compte comme Fourberie en ce qui concerne toutes les conditions.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Illusionniste%20amateur.ashx
+  
+- Nom: Immense haine
+  Catégorie: combat
+  Conditions: gnome, trait racial haine.
+  Avantage: Le personnage choisit deux types de créatures (et leur sous-type si
+    besoin) issus de la liste des ennemis jurés du rôdeur et leur applique son bonus
+    d’attaque de +1 issu de son trait racial haine.
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, ses effets ne
+    se cumulent pas, ils s’appliquent à chaque fois à deux types de créatures supplémentaires.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Immense%20haine.ashx
+  
+- Nom: Résistance étendue
+  Conditions: gnome, trait racial résistance aux illusions.
+  Avantage: Le personnage choisit une école de magie autre que l’illusion et gagne
+    un bonus racial de +2 aux jets de sauvegarde contre les sorts et effets de cette
+    école.
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, ses effets ne
+    se cumulent pas, ils s’appliquent à chaque fois à une école de magie différente.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9sistance%20%c3%a9tendue.ashx
+  
+- Nom: Adroit et rapide
+  Conditions: halfelin, trait racial pieds rapides
+  Avantage: Le personnage gagne un bonus racial de +2 en Acrobaties et en Escalade.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adroit%20et%20rapide.ashx
+  
+- Nom: Combattant prudent
+  Conditions: Halfelin
+  Avantage: Quand le personnage se bat sur la défensive ou utilise la défense totale,
+    son bonus d’esquive à la CA augmente de 2.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combattant%20prudent.ashx
+  
+- Nom: Coup désespéré
+  Catégorie: Combat
+  Conditions: halfelin, Combattant prudent, BBA+1
+  Avantage: Une fois par jour, le personnage peut faire une unique attaque de corps
+    à corps alors qu’il est en défense totale. Il gagne aussi un bonus de +4 aux confirmations
+    de coup critique quand il se bat sur la défensive ou qu’il fait une attaque d’opportunité
+    à l’aide de ce don.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20d%c3%a9sesp%c3%a9r%c3%a9.ashx
+  
+- Nom: Frappe surprenante
+  Catégorie: combat
+  Conditions: halfelin, Combattant prudent, Coup désespéré, BBA+6
+  Avantage: Une fois par jour, quand le personnage se bat sur la défensive ou fait
+    une attaque d’opportunité en défense totale avec le don Coup désespéré, il ne
+    subit pas de malus au jet d’attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20surprenante.ashx
+  
+- Nom: Défense instinctive
+  Catégorie: combat
+  Conditions: halfelin, Combattant prudent, BBA+3
+  Avantage: Quand le personnage se bat sur la défensive ou se met en défense totale,
+    il gagne un bonus aux jets de Réflexes et au DMD égal à 1/2 bonus d’esquive que
+    l’action donne à la CA.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fense%20instinctive.ashx
+  
+- Nom: Défense maladroite
+  Catégorie: combat
+  Conditions: halfelin, Combattant prudent
+  Avantage: Quand le personnage se bat sur la défensive ou utilise l’action défense
+    totale, ses alliés gagnent un bonus de chance à la CA et au DMD égal à 1/2 bonus
+    d’esquive que le personnage gagne par son action. Les alliés bénéficient de ce
+    bonus uniquement s’ils sont adjacents au personnage.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fense%20maladroite.ashx
+  
+- Nom: Frappe chanceuse
+  Catégorie: combat
+  Conditions: halfelin, trait racial chance adaptable, BBA+5
+  Avantage: Le personnage dépense une utilisation de sa chance adaptable pour relancer
+    les dégâts d’une unique attaque avec une arme. Il inflige des dégâts égaux au
+    meilleur des deux jets, le premier ou le deuxième.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20chanceuse.ashx
+  
+- Nom: Frappe risquée
+  Catégorie: combat
+  Conditions: halfelin, BBA+1
+  Avantage: Le personnage peut choisir de recevoir un malus de -1 à la CA pour bénéficier
+    d’un bonus de +2 aux jets de dégâts contre les créatures de deux catégories de
+    taille de plus que lui ou plus. Quand son BBA passe à +4 et, par la suite, tous
+    les quatre niveaux, le malus augmente de 1 et ces dégâts augmentent de 2. Ces
+    dégâts supplémentaires sont multipliés en cas de coup critique. Le personnage
+    peut utiliser ce don seulement quand il annonce qu’il fait une attaque (à outrance
+    ou non) avec une arme de corps à corps. Cet effet se prolonge jusqu’à son prochain
+    tour.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20risqu%c3%a9e.ashx
+  
+- Nom: Guérisseur chanceux
+  Conditions: halfelin, trait racial chance adaptable
+  Avantage: Le personnage peut dépenser une utilisation de sa chance adaptable pour
+    relancer les dés d’un unique effet de guérison magique (comme un sort de soins
+    ou une canalisation d’énergie). Il se guérit d’un nombre de points de vie égal
+    au montant du meilleur jet, le premier ou le second. Les autres créatures soignées
+    par cet effet ne profitent pas de cet avantage.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9risseur%20chanceux.ashx
+  
+- Nom: Individu chanceux
+  Conditions: halfelin, trait racial chance adaptable
+  Avantage: Le personnage peut utiliser chance adaptable une fois de plus par jour.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Individu%20chanceux.ashx
+  
+- Nom: Chance adaptative
+  Conditions: halfelin, Individu chanceux, trait racial chance adaptable, personnage
+    de niveau 10
+  Avantage: Le personnage peut utiliser la chance adaptable une fois de plus par
+    jour. De plus, quand il l’utilise, le bonus de chance augmente de 2.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chance%20adaptative.ashx
+  
+- Nom: Résolution courageuse
+  Conditions: halfelin, trait racial veule ou sans peur
+  Avantage: Si le personnage a le trait racial sans peur, son bonus racial aux jets
+    de sauvegarde contre les effets de terreur passe à +4. S’il a le trait veule,
+    il subit toujours un malus de -2 à ces mêmes jets de sauvegarde, mais il peut
+    profiter des bonus de moral aux jets de sauvegarde contre les effets de terreur.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9solution%20courageuse.ashx
+  
+- Nom: Science du coup sous la ceinture
+  Catégorie: combat
+  Conditions: halfelin, trait racial coup bas, BBA+4
+  Avantage: Le bonus pour confirmer les coups critiques contre les adversaires plus
+    grands que le personnage passe à +2. De plus, il peut, une fois par jour, relancer
+    le jet de confirmation de coup critique s’il rate le premier. Il doit conserver
+    le second résultat, même s’il est pire que le premier.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20coup%20sous%20la%20ceinture.ashx
+  
+- Nom: Apprentissage rapide
+  Conditions: humain, Int 13
+  Avantage: Quand le personnage gagne un niveau dans une classe de prédilection,
+    il gagne +1 pv et +1 point de compétence au lieu de devoir choisir l’un ou l’autre.
+    Il peut choisir une récompense de classe alternative à la place de l’un ou de
+    l’autre.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Apprentissage%20rapide.ashx
+  
+- Nom: Improvisation
+  Conditions: humain, Int 13, Apprentissage rapide
+  Avantage: Le personnage gagne un bonus de +2 aux tests quand il utilise une compétence
+    pour laquelle il ne possède aucun rang. De plus, il peut utiliser toutes les compétences
+    sans formation.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Improvisation.ashx
+  
+- Nom: Science de l'improvisation
+  Conditions: humain, Int 13, Apprentissage rapide, Improvisation.
+  Avantage: Le personnage réduit de moitié le malus lié à l’absence de formation
+    dans le maniement d’une arme ou d’un bouclier ou le port d’une armure. Son bonus
+    aux tests quand il utilise une compétence pour laquelle il ne possède aucun rang
+    passe de +2 à +4.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20limprovisation.ashx
+  
+- Nom: Chance insolente
+  Conditions: humain.
+  Avantage: Une fois par jour, une fois que le personnage a fait 1 à un jet de sauvegarde
+    ou que quelqu’un a confirmé un critique contre lui, il peut refaire son jet de
+    sauvegarde ou obliger la créature qui a confirmé le critique à refaire son jet
+    de confirmation. Cet effet ne se cumule pas avec d’autres effets qui permettent
+    de refaire un jet de sauvegarde ou un jet d’attaque. Le personnage ne peut relancer
+    le dé qu’une seule fois.
+  Spécial: Si le personnage utilise le système de points héroïques, il peut aussi
+    dépenser 1 point d’héroïsme pour obliger un adversaire à relancer son jet de confirmation
+    de coup critique contre lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chance%20insolente.ashx
+  
+- Nom: Chance inexplicable
+  Conditions: humain, Chance insolente
+  Avantage: Une fois par jour, le personnage peut gagner un bonus de +8 à un unique
+    jet de d20 par une action libre, à faire avant de lancer le dé. Il peut aussi
+    le faire après, mais dans ce cas, le bonus est réduit à +4.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chance%20inexplicable.ashx
+  
+- Nom: Transmettre sa chance
+  Conditions: humain, Chance insolente, Chance inexplicable
+  Avantage: Le personnage peut utiliser la Chance insolente une fois de plus par
+    jour. Par une action immédiate, il peut aussi faire bénéficier un allié qui le
+    voit et l’entend de sa Chance inexplicable.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transmettre%20sa%20chance.ashx
+  
+- Nom: Critiques divers
+  Catégorie: combat
+  Conditions: humain, Guerrier de niveau 11
+  Avantage: Une fois par jour, le personnage peut passer une heure à répéter des
+    mouvements pour gagner un don de critique dont il remplit les conditions. Il gagne
+    les avantages de ce don de critique jusqu’à ce qu’il s’entraîne à effectuer d’autres
+    mouvements pour en obtenir un autre.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Critiques%20divers.ashx
+  
+- Nom: Curiosité intrépide
+  Conditions: humain, Cha 13
+  Avantage: Le personnage gagne un bonus de +1 aux jets de sauvegarde contre les
+    effets du registre des émotions. De plus, à chaque fois qu’il commence un round
+    sous l’emprise d’un effet de terreur, il a droit à un nouveau jet de sauvegarde
+    au début de son tour pour diminuer la sévérité de l’effet (de paniqué à effrayé,
+    d’effrayé à secoué et de secoué à rien).
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Curiosit%c3%a9%20intr%c3%a9pide.ashx
+  
+- Nom: Assurance intimidante
+  Conditions: humain, Cha 13, Curiosité intrépide, 5 rangs en Intimidation
+  Avantage: Le personnage gagne un bonus de +1 aux jets de sauvegarde contre les
+    effets du registre des émotions. Ce bonus se cumule avec celui de la Curiosité
+    intrépide. Quand le personnage confirme un coup critique, il peut dépenser une
+    action libre pour faire un test d’Intimidation afin de démoraliser une créature
+    qu’il menace. S’il possède le don Démonstration, il peut faire des tests d’Intimidation
+    pour démoraliser toutes les créatures qu’il menace. Il gagne un bonus de +2 au
+    test si son arme a une zone de critique possible de ×3 et un bonus de +4 si elle
+    a un modificateur de ×4.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assurance%20intimidante.ashx
+  
+- Nom: Destin intrépide
+  Conditions: humain, Cha 13, Curiosité intrépide, 10 rangs en Intimidation
+  Avantage: Le personnage gagne un bonus de +1 aux jets de sauvegarde contre les
+    effets du registre des émotions. Ce bonus se cumule avec celui des dons Curiosité
+    intrépide et Assurance intimidante. De plus, une fois par jour, le personnage
+    peut refaire un jet de sauvegarde ou d’attaque s’il a obtenu un 1 naturel. Si
+    ce deuxième jet se traduit par une attaque ou une sauvegarde réussie, il peut
+    faire un test d’Intimidation, par une action libre, pour démoraliser la cible
+    de son attaque ou la créature qui l’a obligé à faire le jet de sauvegarde, tant
+    que cette créature ou cette cible se trouve à moins de 9 m (6 c) de lui et qu’elle
+    le voit et l’entend. Cet effet ne s’applique pas aux jets de sauvegarde contre
+    les pièges et autres objets. Il ne se cumule pas avec d’autres effets qui permettent
+    de refaire un jet de sauvegarde ou un jet d’attaque. Le personnage ne peut relancer
+    le dé qu’une seule fois.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Destin%20intr%c3%a9pide.ashx
+  
+- Nom: Grand veneur
+  Conditions: humain, 1 rang en Dressage, pouvoir de classe compagnon animal ou
+    pacte divin (monture)
+  Avantage: 'Si le personnage possède le pouvoir compagnon animal, il choisit quel
+    type d’animal affecter parmi les suivants : oiseaux, chiens, petits félins ou
+    chevaux. S’il possède le pouvoir pacte divin (monture) ou monture, le don affecte
+    toujours les chevaux.Le personnage gagne un bonus de +2 aux tests de Dressage
+    et de Connaissances (nature) quand ils concernent les créatures du type choisi.
+    De plus, il est considéré comme étant d’un niveau de plus qu’en réalité quand
+    il détermine les aptitudes de son compagnon animal ou de sa monture, tant qu’il
+    est du type choisi.'
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grand%20veneur.ashx
+  
+- Nom: Polyvalence martiale
+  Catégorie: Combat
+  Conditions: humain, Guerrier de niveau 4.
+  Avantage: Le personnage choisit un don de combat qui s’applique à une arme spécifique
+    seulement (comme Arme de prédilection) et peut à présent l’utiliser avec toutes
+    les armes du même groupe)).
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, il s’applique
+    à chaque fois à un don différent.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Polyvalence%20martiale.ashx
+  
+- Nom: Maîtrise martiale
+  Catégorie: combat
+  Conditions: humain, Polyvalence martiale, guerrier de niveau 16
+  Avantage: Chaque don de combat que le personnage possède et qui s’applique à une
+    arme spécifique seulement (comme Arme de prédilection) s’applique à présent à
+    toutes les armes du même groupe.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetrise%20martiale.ashx
+  
+- Nom: Succès éclatant
+  Conditions: Humain
+  Avantage: Quand le personnage confirme un coup critique ou qu’il fait un 20 naturel
+    sur un jet de sauvegarde, il gagne un bonus de circonstances de +2 à un unique
+    jet d’attaque, jet de sauvegarde, test de compétence ou test de caractéristique
+    avant la fin de son prochain tour. Le personnage doit annoncer qu’il utilise le
+    bonus avant de faire le jet ou le test associé.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Succ%c3%a8s%20%c3%a9clatant.ashx
+  
+- Nom: Volonté héroïque
+  Conditions: humain, Volonté de fer, jet de Volonté de base +4
+  Avantage: Une fois par jour, par une action simple, le personnage peut faire un
+    nouveau jet de sauvegarde contre une condition néfaste qui l’affecte actuellement
+    et à laquelle il aurait pu résister en réussissant un jet de Volonté. Si le personnage
+    est dominé, contrôlé ou s’il ne peut pas faire d’action à cause de l’effet contre
+    lequel il veut tenter un nouveau jet de sauvegarde, il peut faire ce nouveau jet
+    au début de son tour, sans dépenser d’action. En cas de succès, son tour se termine
+    immédiatement. Il ne peut pas utiliser ce don pour se débarrasser d’un effet instantané
+    ou d’un effet qui ne nécessite pas de jet de Volonté ou n’autorise pas de jet
+    de sauvegarde.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Volont%c3%a9%20h%c3%a9ro%c3%afque.ashx
+  
+- Nom: Acrobate des corniches
+  Conditions: nain, Dex 13, montagnard ou stabilité comme trait racial.
+  Avantage: Le personnage peut se déplacer à sa vitesse maximale quand il utilise
+    Acrobaties pour garder l’équilibre sur une surface étroite. De plus, il bénéficie
+    d’un bonus de +4 aux tests d’Escalade pour se rattraper ou rattraper une autre
+    créature en cas de chute. Il gagne aussi un bonus de +4 aux jets de sauvegarde
+    contre les effets susceptibles de le faire tomber (comme un tremblement de terre).
+    Ce bonus ne s’applique pas au DMD contre les tentatives de bousculade ou de croc-en-jambe.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acrobate%20des%20corniches.ashx
+  
+- Nom: Brisesort
+  Catégorie: combat
+  Conditions: nain, Perturbateur, Briseur de sorts, guerrier de niveau 10
+  Avantage: Par une action simple], le personnage peut tenter de dissiper un effet
+    de sort actif comme s’il possédait le pouvoir de rage destruction de sort. Le
+    personnage peut utiliser ce don une fois par jour puis une fois de plus pour chaque
+    tranche de 5 points de BBA au-dessus de +10.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brisesort.ashx
+  
+- Nom: Éliminer les toxines
+  Conditions: nain, trait racial robuste.
+  Avantage: Quand le personnage réussit un jet de sauvegarde contre le poison, il
+    guérit 1 point d’affaiblissement de caractéristique infligé par ce même poison.
+    Quand il soigne des affaiblissements de caractéristiques (naturellement ou par
+    magie) il guérit toujours de 1 point de plus. Ce don n’a aucun effet sur les malus
+    aux valeurs de caractéristiques ni sur les diminutions permanentes.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89liminer%20les%20toxines.ashx
+  
+- Nom: Enchaînement élargi
+  Catégorie: combat
+  Conditions: nain, For 13, Attaque en puissance, Enchaînement, BBA +11
+  Avantage: Quand le personnage utilise Enchaînement ou Succession d’enchaînements,
+    tant que sa première attaque touche, il peut faire un pas de 1,50 m (1 c), par
+    une action libre, avant de porter les attaques suivantes. Si ce déplacement le
+    place à portée d’une créature, cette dernière devient une cible valide pour la
+    ou les attaques d’Enchaînements supplémentaires, tant qu’elle répond aux autres
+    conditions requises.
+  Normal: Les attaques supplémentaires que le personnage porte avec Enchaînement
+    se limitent aux créatures qu’il menace lors de sa première attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Encha%c3%aenement%20%c3%a9largi.ashx
+  
+- Nom: Enchaîner les gobelins
+  Catégorie: combat
+  Conditions: nain, For 13, Attaque en puissance, Enchaînement
+  Avantage: Quand le personnage utilise Enchaînement ou Succession d’enchaînements,
+    tant que sa première attaque touche, il peut porter ses attaques supplémentaires
+    contre n’importe quelle créature plus petite que lui qu’il menace, même si ses
+    cibles ne sont pas adjacentes l’une à l’autre. Les attaques supplémentaires portées
+    contre les humanoïdes (gobelinoïdes) bénéficient d’un bonus de circonstances de
+    +2 aux jets d’attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Encha%c3%aener%20les%20gobelins.ashx
+  
+- Nom: Débiter les orques
+  Catégorie: combat
+  Conditions: nain, For 13, Attaque en puissance, Enchaînement, Enchaîner les gobelins
+  Avantage: Ce don fonctionne comme Enchaîner les gobelins, mais les attaques supplémentaires
+    sont valables contre des adversaires de la taille du personnage ou moins. Les
+    attaques supplémentaires portées contre les humanoïdes (orques) bénéficient d’un
+    bonus de circonstances de +2 aux jets d’attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9biter%20les%20orques.ashx
+  
+- Nom: Tueur de géants
+  Catégorie: Combat
+  Conditions: nain, For 13, Attaque en puissance, Enchaînement, Enchaîner les gobelins,
+    Débiter les orques, Riposte, BBA +11
+  Avantage: Ce don fonctionne comme Enchaîner les gobelins, mais les attaques supplémentaires
+    s’effectuent contre des adversaires d’une catégorie de taille de plus que le personnage
+    ou moins. De plus, si ces attaques visent des humanoïdes (géant), elles bénéficient
+    d’un bonus de circonstances de +2 au jet d’attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur%20de%20g%c3%a9ants.ashx
+  
+- Nom: Maître brasseur
+  Conditions: nain, 1 rang en Artisanat (alchimie) et en Profession (brasseur)
+  Avantage: Le personnage gagne un bonus de +2 aux tests d’Artisanat (alchimie)
+    et de profession (brasseur) et ajoute 1 au DD de tous les poisons ingérés qu’il
+    crée.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20brasseur.ashx
+  
+- Nom: Tête dure
+  Catégorie: Combat
+  Conditions: nain, BBA+1
+  Avantage: Le personnage gagne un bonus de +1 aux jets d’attaque et aux tests de
+    manoeuvre de combat quand il utilise un casque. Il reçoit un bonus de +2 aux jets
+    de sauvegarde contre les sorts et les pouvoirs magiques qui rendent chancelant
+    ou étourdi.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.T%c3%aate%20dure.ashx
+  
+- Nom: Casque bosselé
+  Catégorie: combat
+  Conditions: nain, Tête dure, BBA+6
+  Avantage: Quand le personnage porte un casque, il ajoute +1 à sa CA contre les
+    confirmations de coup critique. Si quelqu’un confirme un critique contre lui,
+    il peut, par une action immédiate, appliquer la moitié des dégâts de l’attaque
+    à son casque au lieu de les appliquer à sa personne. La solidité de l’objet s’applique
+    normalement. Si les dégâts détruisent le casque, les dégâts excédentaires s’appliquent
+    au propriétaire du casque. Si le personnage utilise ce don, il est chancelant
+    jusqu’à la fin de son prochain tour. Il ne peut pas utiliser ce don si son casque
+    est brisé ou si l’attaque ignore les bonus d’armure à la CA.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Casque%20bossel%c3%a9.ashx
+  
+- Nom: Casque fendu
+  Catégorie: combat
+  Conditions: nain, Tête dure, Casque bosselé, BBA+11
+  Avantage: Quand le personnage porte un casque, il ajoute +1 à sa CA contre les
+    confirmations de coup critique. Cet avantage se cumule avec le Casque bosselé.
+    Quand le personnage utilise Casque bosselé pour détourner un coup critique, il
+    peut appliquer tous les dégâts du critique au casque avant de les appliquer à
+    sa personne. Si cela lui évite de subir le moindre dégât, tous les effets supplémentaires
+    comme les dons de critique ou le poison sont annulés.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Casque%20fendu.ashx
+  
+- Nom: Don de la mère
+  Conditions: Changelin.
+  Avantage: 'Le sombre héritage du personnage se manifeste de l’une des façons suivantes.
+    Il en choisit la manifestation lorsqu’il choisit ce don : une fois qu’il a fait
+    son choix, il ne peut plus en changer.'
+  Spécial: "Vous bénéficiez d’un bonus de +1 à vos jets d’attaque et de dégâts avec\
+    \ vos griffes.\n Vous gagnez une résistance aux sorts égale à 6 + le niveau de\
+    \ votre personnage.\n Votre bonus d’armure naturelle augmente de +1. Le personnage\
+    \ peut prendre ce don trois fois. Ses effets ne se cumulent pas. Chaque fois qu’il\
+    \ le prend, il doit choisir une nouvelle manifestation."
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don%20de%20la%20m%c3%a8re.ashx
+  
+- Nom: Dur comme le fer
+  Conditions: Robustesse, duergar
+  Avantage: Quand le personnage gagne un bonus d’altération à l’armure naturelle,
+    ce bonus augmente de 2. Cela n’a aucun effet si le personnage a un bonus d’armure
+    naturelle de +0 ou s’il n’a pas de bonus d’altération améliorant son armure naturelle.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dur%20comme%20le%20fer.ashx
+  
+- Nom: Flexibilité innée
+  Conditions: Duergar, deux pouvoirs magiques raciaux utilisables une fois par jour.
+  Avantage: Chaque jour, le personnage gagne des utilisations supplémentaires de
+    ses pouvoirs magiques raciaux normalement utilisables une fois par jour. Ce nombre
+    d’utilisations supplémentaires est égal au nombre de pouvoirs magiques de ce type
+    qu’il maîtrise. Il peut dépenser ses utilisations supplémentaires selon n’importe
+    quelle combinaison. Ce don prend en compte les pouvoirs magiques habituels des
+    duergars et ceux issus de traits raciaux.Par exemple, un duergar ordinaire possède
+    deux pouvoirs magiques raciaux utilisables une fois par jour (agrandissement et
+    invisibilité). S’il choisit ce don, il a droit à deux utilisations supplémentaires
+    de ses pouvoirs magiques (qui étaient auparavant utilisables une seule fois par
+    jour). Chaque jour, il peut lancer agrandissement deux fois de plus ou invisibilité
+    deux fois de plus ou l’un et l’autre une fois de plus.
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises. Ses effets se
+    cumulent.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Flexibilit%c3%a9%20inn%c3%a9e.ashx
+  
+- Nom: Invisibilité prolongée
+  Conditions: Duergar.
+  Avantage: 'Lorsque son invisibilité se termine, le personnage bénéficie d’un camouflage
+    pendant 1 round par minute qu’a
+
+    duré l’effet d’invisibilité (minimum 1 round). Ceci n’est possible que si l’invisibilité
+    provient d’un pouvoir magique
+
+    racial ou d’un sort que le personnage a lancé. Les effets annulant l’invisibilité
+    annulent le camouflage.'
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Invisibilit%c3%a9%20prolong%c3%a9e.ashx
+  
+- Nom: Magie des nains gris
+  Conditions: Duergar
+  Avantage: Le personnage choisit un pouvoir magique utilisable une fois par jour
+    accordé par un trait racial duergar qu’il ne possède pas. Il peut l’utiliser une
+    fois par jour, en prenant son niveau de personnage comme niveau de lanceur de
+    sorts.
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, il s’applique
+    à chaque fois à un pouvoir magique utilisable une fois par jour issu d’un trait
+    racial duergar différent.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magie%20des%20nains%20gris.ashx
+  
+- Nom: Pas de géant
+  Conditions: Duergar, trait racial lentement mais sûrement.
+  Avantage: Lorsque sa taille augmente à G ou plus, la vitesse de base de la créature
+    augmente de 6 mètres (4 c). Cette augmentation ne s’applique que si l’effet qui
+    a modifié sa taille n’altère pas sa vitesse.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pas%20de%20g%c3%a9ant.ashx
+  
+- Nom: Langue agile
+  Conditions: Grippli.
+  Avantage: "Le grippli a une langue préhensile ayant une portée de 3 mètres (2\
+    \ c). Avec elle, il peut saisir des objets ne pesant \npas plus de 2,5 kg, faire\
+    \ des tests d’Escamotage, effectuer les manœuvres offensives de subtilisation\
+    \ ou de désarmement, ou faire des attaques de contact au corps à corps."
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Langue%20agile.ashx
+  
+- Nom: Chasseur des mers
+  Conditions: Expertise du combat, homme-poisson.
+  Avantage: Lorsque l’homme-poisson réussit une attaque de corps à corps contre
+    une cible en train de nager, il peut tenter, par une action libre, de déséquilibrer
+    celle-ci. Considérez ceci comme une manœuvre offensive de croc-en-jambe. Si l’homme-poisson
+    réussit, la cible est considérée comme étant déséquilibrée (voir la table Ajustement
+    de combat sous l’eau) jusqu’à ce qu’elle retrouve son équilibre, généralement
+    en effectuant un test de Natation quand vient son tour. Ce don n’a aucun effet
+    sur les créatures qui ont une vitesse de nage, qui utilisent une magie telle que
+    liberté de mouvement et les créatures contre lesquelles le croc-en-jambe est impossible.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20des%20mers.ashx
+  
+- Nom: Portrait craché
+  Conditions: Kitsune
+  Avantage: Le kitsune peut imiter précisément les traits physiques de tout individu
+    qu’il rencontre. Quand il utilise sa capacité raciale de changement de forme,
+    il peut essayer de prendre la forme d’un individu, ce qui lui accorde un bonus
+    de circonstances de +10 à ses tests de Déguisement pour faire croire aux autres
+    qu’il est vraiment cette personne.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portrait%20crach%c3%a9.ashx
+  
+- Nom: Queue magique
+  Conditions: Kitsune
+  Avantage: 'Le kitsune gagne un nouveau pouvoir magique, utilisable deux fois par
+    jour, choisi dans l’ordre parmi cette liste : déguisement, charme-personne, détection
+    faussée, invisibilité, suggestion, déplacement, confusion, domination. Par exemple,
+    la première fois qu’il choisit ce don, le kitsune gagne déguisement 2/jour ; la
+    deuxième fois qu’il le choisit, il gagne charme-personne 2/jour. Son niveau de
+    lanceur de sorts pour ces sorts est égal à ses dés de vie. Le DD de ces capacités
+    est basé sur le Charisme.'
+  Spécial: Le kitsune peut choisir ce don jusqu’à huit fois. Chaque fois qu’il le
+    prend, il gagne une capacité supplémentaire, comme indiqué ci-dessus.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Queue%20magique.ashx
+  
+- Nom: Crachat venimeux (combat)
+  Conditions: Nagaji.
+  Avantage: Par une action complexe, le nagaji peut cracher son venin jusqu’à 3
+    mètres (2 c) en une attaque de contact à distance. S’il touche sa cible, celle-ci
+    doit réussir un jet de Vigueur ou être aveuglée pendant 1d6 rounds. Le DD du jet
+    de sauvegarde est égal à 10+ 1/2 du total de dés de vie du nagaji + son modificateur
+    de Constitution. Il peut utiliser cette capacité une fois par jour et une fois
+    de plus par jour par tranche de trois dés de vie qu’il a.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux%20(combat).ashx
+  
+- Nom: Sang de la vie
+  Conditions: Samsaran.
+  Avantage: Par une action complexe, à volonté, le samsaran peut effectuer un rituel
+    de sang spécial au cours duquel il sacrifie une partie de sa force vitale pour
+    guérir une autre créature. Lorsqu’il utilise ce don, il reçoit 1d4 points de dégâts
+    et applique son sang sur les blessures d’une créature vivante, la soignant d’un
+    nombre de points de vie égal au nombre de dégâts qu’il a reçus du rituel. Il s’agit
+    d’une capacité surnaturelle. Seul le samsaran peut réaliser cette saignée. Il
+    n’est pas possible de soigner une créature grâce à cette capacité plus d’une fois
+    par jour.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sang%20de%20la%20vie.ashx
+  
+- Nom: Ailes rallongées
+  Conditions: For 13, Talent (Vol), strix, trait racial ailes tailladées.
+  Avantage: La vitesse de vol du strix passe à 18 mètres (moyenne). Le strix ignore
+    le test de Vol qu’impose le trait ailes tailladées pour prendre son envol.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ailes%20rallong%c3%a9es.ashx
+  
+- Nom: Assaut élémentaire différentiel
+  Conditions: Suli
+  Avantage: Le suli utilise sa capacité d’assaut élémentaire par segments de 1 round,
+    jusqu’à un nombre de rounds par jour maximum égal à son niveau. Ces rounds ne
+    doivent pas nécessairement être consécutifs. L’activation de cette capacité demande
+    une action rapide ; sa désactivation est une action libre.
+  Normal: Le suli peut prendre son assaut élémentaire une fois par jour. Il dure
+    un nombre de rounds égal à son niveau de classe.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut%20%c3%a9l%c3%a9mentaire%20diff%c3%a9rentiel.ashx
+  
+- Nom: Assaut élémentaire supplémentaire
+  Conditions: Suli
+  Avantage: L’assaut élémentaire du Suli  dure 2 rounds par jour supplémentaire.
+  Spécial: Le Suli peut prendre ce don plusieurs fois. Ses effets se cumulent.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut%20%c3%a9l%c3%a9mentaire%20suppl%c3%a9mentaire.ashx
+  
+- Nom: Pose stoïque
+  Conditions: Svirfneblin.
+  Avantage: En passant 5 rounds à chercher un endroit convenable, le svirfneblin
+    peut se tenir tellement immobile qu’il apparaît comme un objet de taille P, tel
+    un tas de pierres. Ceci lui permet de faire un test de Discrétion sans avoir ni
+    abri ni camouflage, tant qu’il ne bouge pas ni n’entreprend aucune autre action.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pose%20sto%c3%afque.ashx
+  
+- Nom: Trapéziste des arbres
+  Conditions: 1 rang en Acrobaties, vanara.
+  Avantage: Le vanara gagne un bonus de +2 au DMD contre toutes les attaques de
+    croc-en-jambe. Si la case qu’il occupe accueille une branche ou un autre gros
+    objet solide auquel il peut s’accrocher, il peut, par une action rapide, effectuer
+    un test d’Acrobaties DD 15 pour s’élancer et utiliser sa queue afin de s’accrocher
+    à cet objet. Tandis qu’il est suspendu, il ne peut pas être pris pour cible d’un
+    croc-en-jambe, il ignore les effets du terrain difficile de sa case et bénéficie
+    d’un bonus de +2 au DMD contre les attaques de bousculade, d'entraînement et de
+    repositionnement. S’il quitte sa case (même s’il est déplacé contre sa volonté),
+    il perd sa prise sur l’objet, n’y étant plus accroché. Tandis qu’il est suspendu,
+    il ne peut pas utiliser sa queue pour quoi que ce soit d’autre.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trap%c3%a9ziste%20des%20arbres.ashx
+  
+- Nom: Venin de sommeil
+  Conditions: Vishkanya.
+  Avantage: 'Par une action rapide, le vishkanya peut altérer les effets de son
+    venin afin que sa cible tombe inconsciente.
+
+    Il modifie ainsi les effets principal et secondaire de son venin pour donner ceci
+    : effet principal chancelant pendant 1d4 rounds ; effet secondaire inconscient
+    pendant 1 minute. Il doit prendre la décision d’altérer son venin avant de l’appliquer
+    à son arme.'
+  Normal: Le venin de vishkanya inflige des dégâts de Dextérité.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20de%20sommeil.ashx
   
