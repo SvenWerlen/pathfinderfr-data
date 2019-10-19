@@ -93,12 +93,14 @@ CONN = ('Connaissances (exploration souterraine)','Connaissances (folklore local
 # cette fonction convertit le nom 'Le barbare' => 'Barbare'
 #
 def extractName(name):
+    idx = name.find("(")
+    if idx > 0:
+        name = name[0:idx-1]
     if name.lower().startswith(u"le ") or name.lower().startswith(u"la "):
         name = name[3:]
     elif name.lower().startswith(u"l'"):
         name = name[2:]
     return name[:1].upper() + name[1:].lower()
-
 
 liste = []
 
@@ -117,7 +119,7 @@ for data in URLs:
         content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body
 
     # titre
-    name = extractName(content.find_next('caption').string.strip())
+    name = extractName(content.find('h1', {"class": ["pagetitle"]}).string.strip())
     cl['Nom'] = name
 
     # référence

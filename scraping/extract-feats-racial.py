@@ -17,33 +17,28 @@ MOCK_DON = None
 #MOCK_LIST = "mocks/don-aasimar.html" # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_DON  = "mocks/don3.html"        # décommenter pour tester avec un sort pré-téléchargé
 
-URLs = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.aasimar%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dhampir%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.drow%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.fetchelin%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gobelin%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.hobgobelin%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-f%c3%a9lin%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.homme-rat%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ifrit%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.kobold%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ondin%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.orque%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.or%c3%a9ade%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.sylphe%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tieffelin%20(race).ashx"
-        ]
-
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
 
 FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
 MATCH = ['Nom']
 
+
+races = []
+with open("../data/races.yml", 'r') as stream:
+    try:
+        races = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+        exit(1)
+
+
 liste = []
 
+for r in races:
 
-for u in URLs:
+    u = r['Référence']
+    
+    print("Dons de races (%s)" % r['Nom'])
 
     if MOCK_LIST:
         html = BeautifulSoup(open(MOCK_LIST),features="lxml")
@@ -53,6 +48,7 @@ for u in URLs:
     feats = html.find('table',{'class':'tablo autoalt toutgauche'})
     if not feats:
         print("No section feats found for %s" % u)
+        continue
 
     # itération sur chaque page
     for r in feats.find_all('tr'):
