@@ -30,8 +30,10 @@ URLS = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capit
 
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
 
-FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'ConditionsRefs', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
 MATCH = ['Nom']
+
+FEAT_REFS = []
 
 for URL in URLS:
     
@@ -69,11 +71,13 @@ for URL in URLS:
         
         print("Don %s" % title)
         pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
+        FEAT_REFS.append(link)
         
         don['Nom']=cleanName(title)
         don['Référence']=pageURL
         don['Source']=source
         don['Résumé']=cleanProperty(avantageShort)
+        don['ConditionsRefs']=[]
         
         if not avantageShort:
             print("Résumé n'a pas été trouvé pour %s" % title)
@@ -97,28 +101,37 @@ for URL in URLS:
             if key.endswith(' :'):
                 key = key[:-2]
             
+            refs = []
             for s in attr.next_siblings:
                 #print "%s %s" % (key,s.name)
                 if s.name == 'b':
                     break
                 else:
+                    # keep links (href) to build dependency tables
+                    if s.name == 'a':
+                        refs.append(s['href'])
                     text += html2text(s)
 
             if key in PROPERTIES:
-                if key == u"Condition" or key == u"Conditions requises":
-                    key = u"Conditions"
-                elif key == u"Avantages":
-                    key = u"Avantage"
-                elif key == u"Catégories":
-                    key = u"Catégorie"
-                elif key == u"À noter":
-                    key = u"Spécial"
+                if key == "Condition" or key == "Conditions requises":
+                    key = "Conditions"
+                elif key == "Avantages":
+                    key = "Avantage"
+                elif key == "Catégories":
+                    key = "Catégorie"
+                elif key == "À noter":
+                    key = "Spécial"
                 
                 don[key]=cleanProperty(text)
                 descr = s.next_siblings
                 text = ""
             else:
                 print("- Skipping unknown property %s" % key)
+        
+            if key == "Conditions":
+                for r in refs:
+                    if r in FEAT_REFS:
+                        don['ConditionsRefs'].append("http://www.pathfinder-fr.org/Wiki/" + r)
         
         # ajouter don
         liste.append(don)
