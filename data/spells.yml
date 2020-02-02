@@ -3222,7 +3222,7 @@
   
 - Nom: Assistance divine
   École: Divination ;
-  Niveau: Chm 0, Con 0, Dru 0, Inq 0, Méd 0, Occ 0, Sor 0, Spi 0
+  Niveau: Chm 0, Con 0, Dru 0, Inq 0, Méd 0, Occ 0, Prê 0, Sor 0, Spi 0
   Portée: contact
   Cible ou zone d'effet: créature touchée
   Temps d'incantation: 1 action simple
@@ -11551,7 +11551,7 @@
   
 - Nom: Création d'eau
   École: Invocation (création) (eau) ;
-  Niveau: Chm 0, Dru 0, Inq 0, Occ 0, Pal 1
+  Niveau: Chm 0, Dru 0, Inq 0, Occ 0, Pal 1, Prê 0
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Cible ou zone d'effet: jusqu’à 8 litres d’eau/niveau
   Temps d'incantation: 1 action simple
@@ -13073,7 +13073,7 @@
 - Nom: Détection de la magie
   École: Divination ;
   Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Hyp 0, Inq 0, Mgs 0, Méd 0, Occ
-    0, Psy 0, Sor 0, Spi 0
+    0, Prê 0, Psy 0, Sor 0, Spi 0
   Portée: 18 m (12 c)
   Cible ou zone d'effet: émanation en forme de cône
   Temps d'incantation: 1 action simple
@@ -13794,8 +13794,8 @@
   
 - Nom: Détection du poison
   École: Divination ;
-  Niveau: Ant 1, Chm 0, Dru 0, Ens/Mag 0, Hyp 0, Inq 0, Occ 0, Pal 1, Psy 0, Sor
-    0
+  Niveau: Ant 1, Chm 0, Dru 0, Ens/Mag 0, Hyp 0, Inq 0, Occ 0, Pal 1, Prê 0, Psy
+    0, Sor 0
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Cible ou zone d'effet: 1 créature, 1 objet ou 1 cube de 1,50 m (1 c) d’arête
   Temps d'incantation: 1 action simple
@@ -16281,7 +16281,7 @@
   
 - Nom: Étincelles
   École: Évocation (feu) ;
-  Niveau: Bar 0, Dru 0, Ens/Mag 0, Mgs 0, Occ 0, Sor 0
+  Niveau: Bar 0, Dru 0, Ens/Mag 0, Mgs 0, Occ 0, Prê 0, Sor 0
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Cible ou zone d'effet: un objet infime
   Temps d'incantation: 1 action simple
@@ -22313,7 +22313,7 @@
 - Nom: Lecture de la magie
   École: Divination ;
   Niveau: Ant 1, Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Hyp 0, Inq 0, Mgs 0, Méd
-    0, Occ 0, Pal 1, Psy 0, Rôd 1, Sor 0, Spi 0
+    0, Occ 0, Pal 1, Prê 0, Psy 0, Rôd 1, Sor 0, Spi 0
   Portée: personnelle
   Cible ou zone d'effet: le jeteur de sorts
   Temps d'incantation: 1 action simple
@@ -23243,7 +23243,7 @@
 - Nom: Lumière
   École: Évocation (lumière) ;
   Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Hyp 0, Inq 0, Mgs 0, Méd 0, Occ
-    0, Psy 0, Sor 0, Spi 0
+    0, Prê 0, Psy 0, Sor 0, Spi 0
   Portée: contact
   Cible ou zone d'effet: objet touché
   Temps d'incantation: 1 action simple
@@ -31493,7 +31493,7 @@
   
 - Nom: Purification de nourriture et d'eau
   École: Transmutation ;
-  Niveau: Chm 0, Dru 0, Occ 0
+  Niveau: Chm 0, Dru 0, Occ 0, Prê 0
   Portée: 3 m
   Cible ou zone d'effet: 30 dm³/niveau d’eau et de nourriture impropres à la consommation
   Temps d'incantation: 1 action simple
@@ -33398,7 +33398,8 @@
   
 - Nom: Réparation
   École: Transmutation ;
-  Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Occ 0, Psy 0, Sor 0, Spi 0
+  Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Occ 0, Prê 0, Psy 0, Sor 0, Spi
+    0
   Portée: 3 m
   Cible ou zone d'effet: 1 objet pesant jusqu’à 500 g/niveau
   Temps d'incantation: 10 minutes
@@ -33724,8 +33725,8 @@
   
 - Nom: Résistance
   École: Abjuration ;
-  Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Inq 0, Méd 0, Occ 0, Pal 1, Psy
-    0, Sor 0, Spi 0
+  Niveau: Bar 0, Chm 0, Con 0, Dru 0, Ens/Mag 0, Inq 0, Méd 0, Occ 0, Pal 1, Prê
+    0, Psy 0, Sor 0, Spi 0
   Portée: contact
   Cible ou zone d'effet: créature touchée
   Temps d'incantation: 1 action simple
@@ -34561,7 +34562,8 @@
   
 - Nom: Saignement
   École: Nécromancie ;
-  Niveau: Chm 0, Ens/Mag 0, Hyp 0, Inq 0, Méd 0, Occ 0, Psy 0, Sor 0, Spi 0
+  Niveau: Chm 0, Ens/Mag 0, Hyp 0, Inq 0, Méd 0, Occ 0, Prê 0, Psy 0, Sor 0, Spi
+    0
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Cible ou zone d'effet: une créature vivante
   Temps d'incantation: 1 action simple
@@ -36930,7 +36932,7 @@
   
 - Nom: Stabilisation
   École: Invocation (guérison) ;
-  Niveau: Chm 0, Dru 0, Inq 0, Méd 0, Occ 0, Psy 0, Sor 0, Spi 0
+  Niveau: Chm 0, Dru 0, Inq 0, Méd 0, Occ 0, Prê 0, Psy 0, Sor 0, Spi 0
   Portée: courte (7,50 m + 1,50 m/2 niveaux) (5 c + 1 c/2 niveaux)
   Cible ou zone d'effet: une créature vivante
   Temps d'incantation: 1 action simple
@@ -36970,7 +36972,7 @@
   
 - Nom: Stimulant
   École: Transmutation ;
-  Niveau: Chm 0, Dru 0, Inq 0, Méd 0, Pal 1, Psy 0, Spi 0
+  Niveau: Chm 0, Dru 0, Inq 0, Méd 0, Pal 1, Prê 0, Psy 0, Spi 0
   Portée: contact
   Cible ou zone d'effet: créature touchée
   Temps d'incantation: 1 action simple
