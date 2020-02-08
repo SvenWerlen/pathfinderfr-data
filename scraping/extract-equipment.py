@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, cleanSectionName, mergeYAML
+from libhtml import jumpTo, cleanSectionName, extractSource, mergeYAML
 
 ## Configurations pour le lancement
 URLs = [
@@ -181,19 +181,9 @@ for data in URLs:
         elif e.name == 'i':
             descr += e.text
         elif e.name == 'div':
-            for c in e.children:
-                if c.name == 'img':
-                    if('logoAPG' in c['src']):
-                        source = 'MJRA'
-                    elif('logoUC' in c['src']):
-                        source = 'AG'
-                    elif('logoMCA' in c['src']):
-                        source = 'MCA'
-                    elif('logoAE' in c['src']):
-                        source = 'AE'
-                    else:
-                        print(c['src'])
-                        exit(1)
+            src = extractSource(e)
+            if src:
+                source = src
 
     addInfos(liste, name, descr, sourceNext)
 
