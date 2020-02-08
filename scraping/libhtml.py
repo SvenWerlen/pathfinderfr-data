@@ -133,7 +133,7 @@ def cleanProperty(text):
     
     if text.endswith('.') or text.endswith(';'):
         text = text[:-1].strip()
-    return text
+    return text.replace("\n", " ")
 
 #
 # vérifie chaque propriété pour savoir si elle est valide
@@ -374,7 +374,7 @@ def cleanDescription(descr):
     return cleanText(descr).replace("\n\n•","\n•").strip()
 
 def cleanName(name):
-    return cleanText(name)
+    return cleanText(name).replace("\n", " ");
 
 def cleanNameForMatch(name):
     name = cleanText(name)
