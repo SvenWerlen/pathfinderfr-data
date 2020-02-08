@@ -4201,11 +4201,11 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souplesse%20du%20serpent.ashx
   Avantage: En une action complexe, le personnage peut se déplacer à sa vitesse
     de base et faire une attaque de corps à corps sans provoquer d’attaque d’opportunité
-    de la part de sa cible. Il peut se déplacer avant et après l’attaque mais il doit
-    parcourir au moins trois mètres avant d’attaquer et la distance parcourue au total
-    ne doit pas dépasser sa vitesse de base. Le personnage ne peut pas utiliser ce
-    don pour attaquer un ennemi qui se trouve sur une case adjacente à la sienne au
-    début du tour
+    de la part de sa cible. Il peut se déplacer avant et après l’attaque, mais il
+    doit parcourir au moins trois mètres avant d’attaquer et la distance parcourue
+    au total ne doit pas dépasser sa vitesse de base. Le personnage ne peut pas utiliser
+    ce don pour attaquer un ennemi qui se trouve sur une case adjacente à la sienne
+    au début du tour
   Normal: Le personnage ne peut pas se déplacer avant et après une attaque
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20%c3%a9clair.ashx
@@ -19468,4 +19468,169 @@
   Normal: Le venin de vishkanya inflige des dégâts de Dextérité.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Venin%20de%20sommeil.ashx
+  
+- Nom: Attaque d'encerclement
+  Résumé: Aux côtés d’un allié, le personnage sait engager le combat contre des
+    ennemis de grande taille qui éprouveront alors des difficultés à répliquer contre
+    ces deux assaillants
+  Catégorie: combat, équipe
+  Conditions: Esquive, Souplesse du serpent, BBA +3
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esquive.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souplesse%20du%20serpent.ashx
+  Avantage: Le personnage reçoit un bonus d’esquive de +1 à la CA contre les attaques
+    d’opportunité provoquées par un déplacement effectué dans la zone d’allonge d’une
+    créature, si celle-ci est d’une catégorie de taille supérieure à celle du personnage
+    et si au moins un allié possédant Attaque d’encerclement est également présent
+    dans la zone d’allonge de la créature. Si une créature contre laquelle le personnage
+    reçoit ce bonus d’esquive l’attaque et le rate, elle provoque des attaques d’opportunité
+    de la part des alliés du personnage possédant Attaque d’encerclement
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20dencerclement.ashx
+  
+- Nom: Compagnon animal vampirique
+  Résumé: Le personnage obtient un compagnon animal doté de capacités du vampire
+  Conditions: Vampire, Charisme 18, aptitude de classe de compagnon animal, niveau
+    suffisant (cf. ci-dessous)
+  ConditionsRefs: []
+  Avantage: "Un vampire ayant ce don peut décider d’utiliser sa capacité création\
+    \ de rejetons sur un animal invoqué au moyen de la capacité enfant de la nuit\
+    \ (une chauve-souris sanguinaire, un rat sanguinaire ou un loup) afin de créer\
+    \ un compagnon animal vampirique. \n\nCette décision doit être prise par une action\
+    \ libre au moment où le vampire tue l’animal avec sa capacité absorption de sang\
+    \ ou absorption d’énergie. L’animal se relève d’entre les morts en 1d4 jours sous\
+    \ forme de compagnon animal vampirique lié au vampire qui l’a engendré. Ensuite,\
+    \ l’animal vampirique progresse dans ses capacités comme un compagnon animal normal,\
+    \ à mesure que le vampire gagne des niveaux dans la classe qui lui a accordé le\
+    \ compagnon animal.\n\nPour transformer un rat sanguinaire en compagnon vampirique,\
+    \ le niveau de druide réel du vampire doit être de 4. Pour transformer un loup\
+    \ en compagnon vampirique, le niveau de druide réel du vampire doit être de 6.\
+    \ Pour transformer une chauve-souris sanguinaire, le niveau de druide réel du\
+    \ vampire doit être de 9. Si vous le souhaitez, d’autres animaux peuvent être\
+    \ ajoutés à cette liste : servez-vous de ces exemples pour définir les niveaux\
+    \ minimums.\n\nLes compagnons animaux vampiriques comptent dans le nombre total\
+    \ de dés de vie que le vampire peut asservir et dans\nle nombre limite de compagnons\
+    \ animaux qu’il peut posséder en même temps. Tout compagnon animal vampirique\
+    \ créé par\nle vampire et dépassant ces limites devient un mort-vivant doté de\
+    \ son libre arbitre. Un vampire peut également libérer un compagnon vampirique\
+    \ afin d’en asservir un autre, mais le précédent ne peut alors plus être asservi.\n\
+    \nLes caractéristiques de l’animal vampirique sont identiques à celles de l’animal\
+    \ original, à quelques exceptions près :\n• Son type change et devient mort-vivant\
+    \ avec le sous-type animal altéré.\n• Il gagne un bonus d’armure naturelle de\
+    \ +4.\n• Il gagne une attaque d’absorption d’énergie (1 niveau, DD égal à 10 +\
+    \ 1/2 DV raciaux du compagnon animal + modificateurde Charisme du compagnon animal).\n\
+    • Il gagne l’attaque spéciale de domination identique à celle des vampires, mais\
+    \ uniquement utilisable sur les animaux de sontype.\n• Il gagne une résistance\
+    \ à la canalisation de +2, une RD de 5/argent, une résistance au froid et à l’électricité\
+    \ de 10, uneguérison accélérée à 2, et les particularités des vampires état gazeux\
+    \ et absence d’ombre.\n• Il gagne toutes les faiblesses standards des vampires.\n\
+    • Il gagne +2 en For, +2 en Dex +2 et +4 en Cha.\n• Il ne gagne pas les capacités\
+    \ de vampire enfants de la nuit et création de rejetons"
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Compagnon%20animal%20vampirique.ashx
+  
+- Nom: Fouet-serpent
+  Résumé: Le personnage peut utiliser son fouet pour désarmer ou faire tomber plusieurs
+    cibles à portée et les rapprocher de lui
+  Catégorie: combat
+  Conditions: Attaque en finesse, maniement du fouet
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20finesse.ashx
+  Avantage: 'En une action simple, le personnage peut effectuer une manoeuvre de
+    désarmement ou de croc-en-jambe avec son fouet. S’il réussit, il peut tenter une
+    manoeuvre supplémentaire de désarmement ou de croc-en-jambe avec le même bonus
+    contre une cible adjacente à la première et située à portée d’allonge de son fouet.
+
+
+    En outre, il peut utiliser son fouet pour effectuer des manoeuvres de repositionnement,
+    mais il subit un malus de -4 au
+
+    BMO et ne peut déplacer sa cible qu’en la rapprochant de lui'
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet-serpent.ashx
+  
+- Nom: Fouet-serpent supérieur
+  Résumé: Le personnage qui réussit une manoeuvre avec Fouet-serpent peut repositionner
+    son adversaire à portée d'allonge
+  Catégorie: combat
+  Conditions: Fouet-serpent, BBA +4
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet-serpent.ashx
+  Avantage: "Lorsque le personnage réussit une manoeuvre de désarmement ou de croc-en-jambe\
+    \ avec son don Fouet-serpent, il peut tenter une manoeuvre supplémentaire de ce\
+    \ type contre n’importe quelle cible à portée d’allonge de son fouet. \n\nAvec\
+    \ une manoeuvre de repositionnement, il peut déplacer la créature sur n’importe\
+    \ quelle position à portée d’allonge de son fouet"
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet-serpent%20sup%c3%a9rieur.ashx
+  
+- Nom: Héritage chacal
+  Résumé: bonus racial de +2 aux jets de sauvegarde contre les effets mentaux et
+    aux tests de Perception
+  Conditions: Humanoïde, doit être choisi au niveau 1
+  ConditionsRefs: []
+  Avantage: Le personnage gagne un bonus racial de +2 aux jets de sauvegarde contre
+    les effets mentaux et un bonus racial de +2 aux tests de Perception
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9ritage%20chacal.ashx
+  
+- Nom: Placage
+  Résumé: Les alliés du personnage l'aident à faire tomber un adversaire plus grand
+    que lui
+  Catégorie: combat, équipe
+  Conditions: Expertise du combat, Science du croc-en-jambe
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx
+  Avantage: "Si le personnage tente de faire un croc-en-jambe à un ennemi plus grand\
+    \ que lui, il gagne un bonus de +1 à son test de BMO si un allié possédant aussi\
+    \ ce don prend la cible en tenaille. \n\nSi plusieurs alliés possédant Placage\
+    \ remplissent cette condition, le personnage gagne un bonus supplémentaire de\
+    \ +2 à son test de BMO pour chaque allié supplémentaire. \n\nLes bonus accordés\
+    \ par ce don se cumulent avec ceux qu’accordent Science du croc-en-jambe et Croc-en-jambe\
+    \ supérieur. \n\nChaque fois que le personnage tente de réaliser un croc-en-jambe\
+    \ sur le même ennemi au cours des rounds suivants, le bonus accordé augmente de\
+    \ +1 par allié, jusqu’à un maximum de +4 si 4 alliés prennent la cible en tenaille\
+    \ au 4e round consécutif de croc-en-jambe"
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Placage.ashx
+  
+- Nom: Sprint tueur
+  Résumé: Le personnage peut se déplacer de la moitié de sa vitesse pour infliger
+    un coup de grâce sans provoquer d'attaque d'opportunité
+  Catégorie: combat
+  Conditions: Attaque éclair, Esquive, Souplesse du serpent, BBA+13
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20%c3%a9clair.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esquive.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souplesse%20du%20serpent.ashx
+  Avantage: 'Le personnage peut se déplacer à la moitié de sa vitesse de base plutôt
+    que d’effectuer un pas de placement lorsqu’il entreprend une action complexe pour
+    porter un coup de grâce. Porter un coup de grâce ne provoque pas d’attaque d’opportunité.
+
+
+    Il peut utiliser ce don lorsqu’il manie une arme légère ou à une main'
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sprint%20tueur.ashx
+  
+- Nom: Trancheur de pied
+  Résumé: Par une action simple, le personnage qui blesse un adversaire plus grand
+    que lui réduit sa vitesse de moitié
+  Catégorie: combat
+  ConditionsRefs: []
+  Avantage: "Si le personnage blesse un ennemi d’une catégorie de taille supérieure\
+    \ à la sienne avec une arme infligeant des dégâts perforants ou tranchants, il\
+    \ peut tenter de blesser les pieds de la créature de façon à gêner ses mouvements.\
+    \ Il faut réaliser une action simple d’attaquer ainsi un ennemi (le personnage\
+    \ ne peut pas utiliser Trancheur de pieds lors d'une action complexe).\n\nLorsqu’il\
+    \ utilise Trancheur de pieds, le personnage reçoit un malus de -2 à son jet d’attaque,\
+    \ mais s’il touche et inflige au moins 1 point de dégâts, la cible est affectée\
+    \ comme par des chausse-trappes : sa vitesse de déplacement est donc réduite de\
+    \ moitié. \n\nCe malus dure 24 heures ou jusqu’à ce que la créature soit soignée\
+    \ par un test de Premiers secours DD 15 ou bénéficie d’au moins 1 point de soins\
+    \ magiques. Les effets de ce don ne se cumulent pas : une fois un ennemi blessé\
+    \ par cette attaque, sa vitesse ne peut plus être davantage réduite par des attaques\
+    \ identiques ultérieures (ou par des dégâts de chausse-trappes)"
+  Source: MPNJ
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trancheur%20de%20pied.ashx
   
