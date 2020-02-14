@@ -6,6 +6,7 @@ import yaml
 import sys
 import html
 import re
+import os
 from bs4 import BeautifulSoup
 from lxml import html
 
@@ -149,3 +150,6 @@ for s in sorts:
 print("Fusion avec fichier YAML existant...")
 HEADER = ""
 mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, sorts)
+
+# Update heroic spells
+os.system("./extract-heroic.py")

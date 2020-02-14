@@ -31,37 +31,37 @@ spells = map(
 )
 
 
-#liste = []
-#for content in feats:
-    #don = {}
-    #don['Nom']=cleanName(content.find("div", class_="BDtitre").text)
-    #don['Référence']=URL
-    #don['Source']="MJRA"
-    #don["Catégorie"]="Points héroïques"
+liste = []
+for content in feats:
+    don = {}
+    don['Nom']=cleanName(content.find("div", class_="BDtitre").text)
+    don['Référence']=URL
+    don['Source']="MJRA"
+    don["Catégorie"]="Points héroïques"
     
-    #for key in PROPERTIES:
-        #attribute = content.find("b", text=key)
-        #if attribute is not None:
-            #text = ""
-            #for s in attribute.next_siblings:
-                #if s.string is not None:
-                    #text += " " + s.string
-            #if text.startswith(" . "):
-                #text = text[3:]
+    for key in PROPERTIES:
+        attribute = content.find("b", text=key)
+        if attribute is not None:
+            text = ""
+            for s in attribute.next_siblings:
+                if s.string is not None:
+                    text += " " + s.string
+            if text.startswith(" . "):
+                text = text[3:]
             
-            #if key == "Condition":
-                #key = "Conditions"
+            if key == "Condition":
+                key = "Conditions"
             
-            #don[key]=cleanProperty(text)
+            don[key]=cleanProperty(text)
 
-    #liste.append(don)
+    liste.append(don)
 
 
-#print("Fusion avec fichier YAML existant...")
+print("Fusion avec fichier YAML existant...")
 
-#HEADER = ""
+HEADER = ""
 
-#mergeYAML("../data/dons.yml", MATCH, FIELDS, HEADER, liste)
+mergeYAML("../data/dons.yml", MATCH, FIELDS, HEADER, liste)
 
 
 PROPERTIES = ['École', 'Niveau', 'Portée', 'Portée courte', 'Cible', 'Temps d’incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie' ]
