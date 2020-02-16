@@ -13,15 +13,16 @@ from libhtml import cleanName, cleanSectionName, cleanDescription, html2text, ge
 
 ## Configurations pour le lancement
 MOCK_ARCHLIST = None
-#MOCK_ARCHLIST = "mocks/archetypes.html"             # décommenter pour tester avec archetypes pré-téléchargés
+#MOCK_ARCHLIST = "mocks/archetypes-test.html"             # décommenter pour tester avec archetypes pré-téléchargés
 MOCK_ARCH = None
 #MOCK_ARCH = "mocks/archetype-spirite-hanté.html"
 #MOCK_ARCH = u"mocks/archetype-barbare-balafré.html" # décommenter pour tester avec un archetype pré-téléchargé
 #MOCK_ARCH = u"mocks/archetype-bretteur.html" # décommenter pour tester avec un archetype pré-téléchargé
 #MOCK_ARCH = u"mocks/archetype-ens-tatoué.html" # décommenter pour tester avec un archetype pré-téléchargé
+#MOCK_ARC = "mocks/archetype-pilleur.html" # décommenter pour tester avec un archetype pré-téléchargé
 
 FIELDS_ARCHETYPE = ['Nom', 'Classe', 'Source', 'Description', 'Référence' ]
-MATCH_ARCHETYPE  = ['Nom','Classe']
+MATCH_ARCHETYPE  = ['Référence']
 FIELDS_CLASSFEATURES = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
 MATCH_CLASSFEATURES  = ['Nom','Classe', 'Archétype']
 
@@ -89,7 +90,7 @@ for el in list:
             print("Extraction du nom de l'archetype impossible: %s" % a.text)
             continue
         
-        if source == "classe de base" or "(classe de base)" in nom:
+        if source == "classe de base" or "(classe de base)" in nom or "(classe alternative)" in nom:
             continue
         elif source == "MJRA,AG,AM":
             continue ## cas spécial - doit être fait à la main
@@ -114,6 +115,10 @@ for el in list:
         else:
             content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
         
+        ## page not found? ignore
+        if not content:
+            continue
+        
         descr = ""
         for e in content.children:
             if e.name == "h2" or e.name == "h3":
@@ -135,7 +140,6 @@ for el in list:
         classfeature = {'Source':'MJ','Niveau':1,'Auto': True}
         newObj = False
         descr = ""
-        
         
         for s in content.children:
             if s.name == 'h3':
@@ -180,8 +184,11 @@ for el in list:
             print(classfeature)
             exit(1)
 
-print("Fusion avec fichier YAML existant...")
+print("Fusion avec fichier YAML existant (archétypes)...")
 HEADER = ""
 
 mergeYAML("../data/class-archetypes.yml", MATCH_ARCHETYPE, FIELDS_ARCHETYPE, HEADER, liste)
+
+print("Fusion avec fichier YAML existant (features)...")
+
 mergeYAML("../data/classfeatures.yml", MATCH_CLASSFEATURES, FIELDS_CLASSFEATURES, HEADER, classfeatures)
