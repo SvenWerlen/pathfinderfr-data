@@ -83,7 +83,7 @@ def html2text(htmlEl, skipDiv = True):
         if htmlEl.string is None:
             return ""
         else:
-            return htmlEl.string
+            return htmlEl.string.replace("\n"," ")
     # ignore <sup>
     elif htmlEl.name == 'sup':
         return ""
