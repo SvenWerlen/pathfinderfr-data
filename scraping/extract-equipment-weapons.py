@@ -12,8 +12,10 @@ from lxml import html
 from libhtml import extractSource, jumpTo, cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
-URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx"
-URLDET = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx"
+URLS = [ "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx",
+        "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%C3%A9capitulatif%20des%20armes%20orientales.ashx" ]
+URLDETS = [ "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx",
+            "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Description%20des%20armes%20orientales.ashx" ]
 MOCK_W = None
 #MOCK_W = "mocks/weapons.html"           # décommenter pour tester avec les armes pré-téléchargées
 MOCK_WD = None
@@ -26,73 +28,73 @@ MATCH = ['Nom']
 
 liste = []
 
+for URL in URLS:
+    if MOCK_W:
+        content = BeautifulSoup(open(MOCK_W),features="lxml").body
+    else:
+        content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
-if MOCK_W:
-    content = BeautifulSoup(open(MOCK_W),features="lxml").body
-else:
-    content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
+    sections = content.find_all('h2',{'class':'separator'})
 
-sections = content.find_all('h2',{'class':'separator'})
+    type1 = []
 
-type1 = []
-
-# extraction des types
-for s in sections:
-    if s.text.startswith("Accès rapide"):
-        continue
-    section = cleanSectionName(s.text)
-    section = section.replace("Les armes", "Arme").replace("s","")
-    type1.append(section)
-
-tables = content.find_all('table',{'class':'tablo'})
-
-weapon = {}
-type2 = ""
-
-print("Extraction des armes...")
-
-idx = 0
-for t in tables:
-    rows = t.find_all('tr')
-    for r in rows:
-        cols = r.find_all('td')
-        if 'class' in r.attrs and 'titre' in r.attrs['class']:
+    # extraction des types
+    for s in sections:
+        if s.text.startswith("Accès rapide"):
             continue
-        if len(cols) == 1 and 'class' in r.attrs and 'premier' in r.attrs['class']:
-            type2 = r.text.strip()
-            type2 = type2[0].upper() + type2[1:].lower()
-            type2 = type2.replace('Armes','Arme')
-            print("Extraction %s ..." % type2)
-            continue
-        if len(cols) == 9:
-            # Name & Reference
-            nameLink = cols[0].find('a')
-            weapon['Nom'] = cols[0].text.strip()
-            if weapon['Nom'].endswith(" (3)"):
-                weapon['Nom'] = weapon['Nom'][:-4]
-            if not nameLink is None:
-                weapon['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
-            else:
-                weapon['Référence'] = URL
-            # Others
-            weapon['Nom'] = weapon['Nom'].replace('’','\'')
-            weapon['Catégorie'] = type1[idx]
-            weapon['Sous-catégorie'] = type2
-            weapon['Prix'] = cols[1].text.strip()
-            weapon['DégâtsP'] = cols[2].text.strip()
-            weapon['DégâtsM'] = cols[3].text.strip()
-            weapon['Critique'] = cols[4].text.strip()
-            weapon['Portée'] = cols[5].text.strip()
-            weapon['Poids'] = cols[6].text.strip()
-            weapon['Type'] = cols[7].text.strip()
-            weapon['Spécial'] = cols[8].text.strip()
-            weapon['Complete'] = False
+        section = cleanSectionName(s.text)
+        section = section.replace("Les armes", "Arme").replace("s","")
+        type1.append(section)
 
-            weapon['Source'] = "MJ"
-            liste.append(weapon)
-            weapon = {}
-    
-    idx+=1
+    tables = content.find_all('table',{'class':'tablo'})
+
+    weapon = {}
+    type2 = ""
+
+    print("Extraction des armes...")
+
+    idx = 0
+    for t in tables:
+        rows = t.find_all('tr')
+        for r in rows:
+            cols = r.find_all('td')
+            if 'class' in r.attrs and 'titre' in r.attrs['class']:
+                continue
+            if len(cols) == 1 and 'class' in r.attrs and 'premier' in r.attrs['class']:
+                type2 = r.text.strip()
+                type2 = type2[0].upper() + type2[1:].lower()
+                type2 = type2.replace('Armes','Arme')
+                print("Extraction %s ..." % type2)
+                continue
+            if len(cols) == 9:
+                # Name & Reference
+                nameLink = cols[0].find('a')
+                weapon['Nom'] = cols[0].text.strip()
+                if weapon['Nom'].endswith(" (3)"):
+                    weapon['Nom'] = weapon['Nom'][:-4]
+                if not nameLink is None:
+                    weapon['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
+                else:
+                    weapon['Référence'] = URL
+                # Others
+                weapon['Nom'] = weapon['Nom'].replace('’','\'')
+                weapon['Catégorie'] = type1[idx]
+                weapon['Sous-catégorie'] = type2
+                weapon['Prix'] = cols[1].text.strip()
+                weapon['DégâtsP'] = cols[2].text.strip()
+                weapon['DégâtsM'] = cols[3].text.strip()
+                weapon['Critique'] = cols[4].text.strip()
+                weapon['Portée'] = cols[5].text.strip()
+                weapon['Poids'] = cols[6].text.strip()
+                weapon['Type'] = cols[7].text.strip()
+                weapon['Spécial'] = cols[8].text.strip()
+                weapon['Complete'] = False
+
+                weapon['Source'] = "MJ"
+                liste.append(weapon)
+                weapon = {}
+        
+        idx+=1
 
 
 #
@@ -140,10 +142,30 @@ def addInfos(liste, name, source):
         names = [u"Bâton de jet halfelin".lower()]
     elif(name == u"Bolas bohémiens ou tribaux"):
         names = [u"Bolas tribaux".lower()]
+    elif(name == u"Fléchettes wushu"):
+        names = [u"Fléchettes wushu (5)".lower()]
+    elif(name == u"Lungchuan tamo (dagues cachées)"):
+        names = [u"Lungchuan tamo".lower()]
+    elif(name == u"Épée à trois pointes et double tranchant"):
+        names = [u"Épée à triple pointe et double tranchant".lower()]
+    elif(name == u"Sansetsukon (bâton en trois parties)"):
+        names = [u"Sansetsukon".lower()]
+    elif(name == u"Lance-flèche"):
+        names = [u"Tube à flèches".lower()]
+    elif(name == u"Flèches de longue distance à tête de fer"):
+        names = [u"Flèches de longue distance à tête de fer (20)".lower()]
+    elif(name == u"Flèches sifflantes"):
+        names = [u"Flèches sifflantes (20)".lower()]
+    elif(name == u"Tube de sable empoisonné"):
+        names = [u"Sable empoisonné".lower()]
+    elif(name == u"Tekko-kagi"):
+        names = [u"Tekko-kagi (griffe de fer)".lower()]
+    elif(name == u"Kusarigama"):
+        names = [u"Kusarigama (kama et chaîne)".lower()]
     else:
         names = [name.lower()]
 
-    # add infos to existing weapong in list
+    # add infos to existing weapon in list
     found = False
     for l in liste:
         if l['Nom'].lower() in names:
@@ -152,49 +174,57 @@ def addInfos(liste, name, source):
             if not source is None:
                 l['Source'] = source
             found = True
-    if not found:
-        print("- une description existe pour '" + name + "' mais pas le sommaire!");
+    #if not found:
+    #    print("- une description existe pour '" + name + "' mais pas le sommaire!");
 
 
-if MOCK_WD:
-    content = BeautifulSoup(open(MOCK_WD),features="lxml").body
-else:
-    content = BeautifulSoup(urllib.request.urlopen(URLDET).read(),features="lxml").body
+for URLDET in URLDETS:
 
-section = jumpTo(content, 'h1',{'class':'separator'}, u"À mains nues")
-newObj = True
-name = ""
-descr = ""
-source = None
-sourceNext = None
-for s in section:
-    if s.name == 'div':
-        for e in s.children:
-            if e.name == 'h2' or e.name == 'b':
-                if not newObj:
-                    addInfos(liste, name, sourceNext)
+    if MOCK_WD:
+        content = BeautifulSoup(open(MOCK_WD),features="lxml").body
+    else:
+        content = BeautifulSoup(urllib.request.urlopen(URLDET).read(),features="lxml").body
 
-                sourceNext = source
-                if e.name == 'h2':
-                    newObj = True
-                else:
-                    name = e.text.strip()
-                    descr = ""
-                    source = None
-                    newObj = False
-            elif e.name == 'br':
-                descr += "\n"
-            elif e.name is None or e.name == 'a':
-                if e.string:
-                    descr += e.string.replace('\n',' ')
-            elif e.name == 'i':
-                descr += e.text
-            elif e.name == 'div':
-                sourceFound = extractSource(e)
-                if sourceFound:
-                    source = sourceFound
+    section = jumpTo(content, 'h1',{'class':'separator'}, u"À mains nues")
+    if not section: 
+        section = jumpTo(content, 'h1',{'class':'separator'}, u"Description individuelle des armes orientales")
+        
+    newObj = True
+    name = ""
+    descr = ""
+    source = None
+    sourceNext = None
+    for s in section:
+        if s.name == 'div':
+            for e in s.children:
+                if e.name == 'h2' or e.name == 'b':
+                    if not newObj:
+                        addInfos(liste, name, sourceNext)
 
-addInfos(liste, name, sourceNext)
+                    sourceNext = source
+                    if e.name == 'h2':
+                        newObj = True
+                    else:
+                        name = e.text.strip()
+                        if name.endswith('.'):
+                            name = name[:-1].strip()
+                        descr = ""
+                        source = None
+                        newObj = False
+                elif e.name == 'br':
+                    descr += "\n"
+                elif e.name is None or e.name == 'a':
+                    if e.string:
+                        descr += e.string.replace('\n',' ')
+                elif e.name == 'i':
+                    descr += e.text
+                elif e.name == 'div':
+                    sourceFound = extractSource(e)
+                    if sourceFound:
+                        source = sourceFound
+
+    addInfos(liste, name, sourceNext)
+
 
 for l in liste:
     if not l['Complete']:
