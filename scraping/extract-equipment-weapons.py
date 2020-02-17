@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import extractSource, jumpTo, cleanSectionName, mergeYAML
+from libhtml import extractSource, jumpTo, html2text, cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
 URLS = [ "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx",
@@ -211,17 +211,12 @@ for URLDET in URLDETS:
                         descr = ""
                         source = None
                         newObj = False
-                elif e.name == 'br':
-                    descr += "\n"
-                elif e.name is None or e.name == 'a':
-                    if e.string:
-                        descr += e.string.replace('\n',' ')
-                elif e.name == 'i':
-                    descr += e.text
                 elif e.name == 'div':
                     sourceFound = extractSource(e)
                     if sourceFound:
                         source = sourceFound
+                else:
+                    descr += html2text(e)
 
     addInfos(liste, name, sourceNext)
 
