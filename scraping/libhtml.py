@@ -288,6 +288,8 @@ def extractSource(div):
                 return 'MC'
             elif('logoOA' in c['src']):
                 return 'AO'
+            elif('logoMMI' in c['src']):
+                return 'MMI'
             elif('logoPMI' in c['src']):
                 return 'PMI'
             elif('logoAE' in c['src']):
