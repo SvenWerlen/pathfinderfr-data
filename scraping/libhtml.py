@@ -216,7 +216,7 @@ def cleanSectionName(nom):
 # cette fonction nettoie une description
 #
 def cleanInlineDescription(desc):
-    return desc.replace('\n', ' ').strip()
+    return desc.replace('\n', ' ').replace('\t', ' ').replace('\r', '').strip()
 
 #
 # recherche dans le texte "... niveau XX"
