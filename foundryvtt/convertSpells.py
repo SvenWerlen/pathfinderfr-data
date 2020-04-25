@@ -144,12 +144,12 @@ for s in data:
         },
         "sort": 100001,
         "flags": {},
-        "img": "systems/pf1/icons/spell.png"
+        "img": "systems/pf1-fr/icons/spell.png"
     }
     
     
     list.append(el)
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("spells.json", "w")
+outFile = open("data/spells.json", "w")
 outFile.write(json.dumps(list, indent=3))

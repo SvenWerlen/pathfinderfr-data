@@ -151,12 +151,12 @@ for w in data:
     },
     "sort": 300001,
     "flags": {},
-    "img": "systems/pf1/icons/weapon.png"
+    "img": "systems/pf1-fr/icons/weapon.png"
     }
     
     
     list.append(el)
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("weapons.json", "w")
+outFile = open("data/weapons.json", "w")
 outFile.write(json.dumps(list, indent=3))

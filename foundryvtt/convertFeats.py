@@ -93,12 +93,12 @@ for d in data:
         },
         "sort": 1300000,
         "flags": {},
-        "img": "systems/pf1/icons/feat.png"
+        "img": "systems/pf1-fr/icons/feat.png"
     }
     
     
     list.append(el)
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("feats.json", "w")
+outFile = open("data/feats.json", "w")
 outFile.write(json.dumps(list, indent=3))

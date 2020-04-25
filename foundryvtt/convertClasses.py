@@ -134,11 +134,11 @@ for c in data:
         },
         'sort': 100001,
         'flags':  {},
-        #'img': "systems/pf1/icons/items/weapons/throwingknives.jpg"
+        #'img': "systems/pf1-fr/icons/items/weapons/throwingknives.jpg"
     }
     list.append(el)
 
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("classes.json", "w")
+outFile = open("data/classes.json", "w")
 outFile.write(json.dumps(list, indent=3))
