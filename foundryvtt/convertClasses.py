@@ -23,6 +23,17 @@ def isClassSkill(cl, name):
     return False
 
 
+#
+# retourne le tableau des niveaux
+#
+def generateTable(data):
+    buf = "<table><tr><th style=\"text-align:left\">Niveau</th><th style=\"text-align:left\">BBA</th><th style=\"text-align:left\">Ref</th><th style=\"text-align:left\">Vig</th><th style=\"text-align:left\">Vol</th></tr>"
+    for lvl in data:
+        buf = buf + "<tr><td>" + str(lvl['Niveau']) + "</td><td>" + lvl['BBA'] + "</td><td>" + lvl['Réflexes'] + "</td><td>" + lvl['Vigueur'] + "</td><td>" + lvl['Volonté'] + "</td></tr>"
+    buf = buf + "</table>"
+    return buf
+
+
 list = []
 for c in data:
     el = {
@@ -32,10 +43,18 @@ for c in data:
         'data': {
             'source': c['Source'],
             'description': {
-                "value": ("<p>{}</p>" +
+                "value": ("<p><i>{}</i></p>" +
+                        "<p><b>Dé de vie: </b>{}<br/>" +
+                        "<b>Alignement: </b>{}<br/>" +
+                        "<b>Rangs/niveau: </b>{}</p>" +
+                        "<p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                     c['Description'].replace('\n','<br/>'),
-                    c['Référence']),
+                    c['DésDeVie'],
+                    c['Alignement'],
+                    c['RangsParNiveau'],
+                    generateTable(c['Progression']),
+                    c['Référence']),       
                 "chat":"",
                 "unidentified":""
             },
@@ -51,16 +70,16 @@ for c in data:
                 "mediumArmorFullSpeed": False,
                 "heavyArmorFullSpeed": False 
             },
-            "classType": "base",
+            "classType": "base" if not 'Prestige' in c else 'prestige',
             "levels": 1,
-            "hd": 8, #c['DésDeVie'], # valeur numérique??
-            "hp": 8, #c['DésDeVie'], # valeur numérique??
-            "bab": "med",
+            "hd": int(c['DésDeVie'][1:]), 
+            "hp": int(c['DésDeVie'][1:]), 
+            "bab": None,
             "skillsPerLevel": c['RangsParNiveau'],
             "savingThrows": { 
-                "fort": { "value":"low" }, 
-                "ref":{ "value":"high" },
-                "will":{"value":"low" } 
+                #"fort": { "value":"low" }, 
+                #"ref":{ "value":"high" },
+                #"will":{"value":"low" } 
             },
             "fc":{
                 "hp":{ "value":0 },
