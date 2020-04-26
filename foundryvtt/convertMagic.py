@@ -47,7 +47,13 @@ def getType(type):
         return None
 
 list = []
+duplicates = []
 for m in data:
+    if m['Nom'] in duplicates:
+        print("Ignoring duplicate: " + m['Nom'])
+        continue
+    duplicates.append(m['Nom'])
+    
     el = {
         "name": m['Nom'],
         "permission": {

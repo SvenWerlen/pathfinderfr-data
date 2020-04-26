@@ -15,7 +15,13 @@ with open("../data/dons.yml", 'r') as stream:
 
 
 list = []
+duplicates = []
 for d in data:
+    if d['Nom'] in duplicates:
+        print("Ignoring duplicate: " + d['Nom'])
+        continue
+    duplicates.append(d['Nom'])
+  
     el = {
         "name": d['Nom'],
         "permission": {

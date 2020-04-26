@@ -23,7 +23,13 @@ def getLevel(level):
         return 0
 
 list = []
+duplicates = []
 for s in data:
+    if s['Nom'] in duplicates:
+        print("Ignoring duplicate: " + s['Nom'])
+        continue
+    duplicates.append(s['Nom'])
+  
     el = {
         "name": s['Nom'],
         "permission": {

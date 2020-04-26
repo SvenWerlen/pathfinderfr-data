@@ -47,7 +47,13 @@ def getBAB(data):
         return "high"
 
 list = []
+duplicates = []
 for c in data:
+    if c['Nom'] in duplicates:
+      print("Ignoring duplicate: " + c['Nom'])
+      continue
+    duplicates.append(c['Nom'])
+    
     el = {
         'name': c['Nom'],
         'permission': { "default": 0 },
