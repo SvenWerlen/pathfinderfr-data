@@ -151,7 +151,7 @@ for w in data:
     },
     "sort": 300001,
     "flags": {},
-    "img": "systems/pf1-fr/icons/weapon.png"
+    "img": "modules/pf1-fr/icons/weapon.png"
     }
     
     

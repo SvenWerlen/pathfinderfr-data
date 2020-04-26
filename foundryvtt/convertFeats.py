@@ -93,7 +93,7 @@ for d in data:
         },
         "sort": 1300000,
         "flags": {},
-        "img": "systems/pf1-fr/icons/feat.png"
+        "img": "modules/pf1-fr/icons/feat.png"
     }
     
     

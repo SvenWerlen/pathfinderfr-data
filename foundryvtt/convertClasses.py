@@ -5,6 +5,8 @@ import yaml
 import json
 import typing
 import sys
+import re
+import math
 
 data = None
 with open("../data/classes.yml", 'r') as stream:
@@ -33,6 +35,16 @@ def generateTable(data):
     buf = buf + "</table>"
     return buf
 
+def getSavingThrows(data, key):
+    return "low" if int(data[0][key]) == 0 else "high"
+
+def getBAB(data):
+    if int(data[0]["BBA"]) == 0 and int(data[1]["BBA"]) == 1:
+        return "low"
+    elif int(data[0]["BBA"]) == 0:
+        return "med"
+    else:
+        return "high"
 
 list = []
 for c in data:
@@ -74,12 +86,12 @@ for c in data:
             "levels": 1,
             "hd": int(c['DésDeVie'][1:]), 
             "hp": int(c['DésDeVie'][1:]), 
-            "bab": None,
+            "bab": getBAB(c['Progression']),
             "skillsPerLevel": c['RangsParNiveau'],
             "savingThrows": { 
-                #"fort": { "value":"low" }, 
-                #"ref":{ "value":"high" },
-                #"will":{"value":"low" } 
+                "fort": { "value": getSavingThrows(c['Progression'], 'Vigueur') }, 
+                "ref": { "value": getSavingThrows(c['Progression'], 'Réflexes') }, 
+                "will": { "value": getSavingThrows(c['Progression'], 'Volonté') }
             },
             "fc":{
                 "hp":{ "value":0 },
@@ -134,7 +146,7 @@ for c in data:
         },
         'sort': 100001,
         'flags':  {},
-        #'img': "systems/pf1-fr/icons/items/weapons/throwingknives.jpg"
+        #'img': "modules/pf1-fr/icons/items/weapons/throwingknives.jpg"
     }
     list.append(el)
 

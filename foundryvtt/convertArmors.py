@@ -137,7 +137,7 @@ for a in data:
         },
         "sort": 1200001,
         "flags": {},
-        "img": "systems/pf1-fr/icons/shield.png" if getType(a['Catégorie']) == "shield" else "systems/pf1-fr/icons/armor.png"
+        "img": "modules/pf1-fr/icons/shield.png" if getType(a['Catégorie']) == "shield" else "modules/pf1-fr/icons/armor.png"
     }
     
     list.append(el)

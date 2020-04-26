@@ -128,7 +128,7 @@ for m in data:
         },
         "sort": 100001,
         "flags": {},
-        "img": "systems/pf1-fr/icons/magic.png"
+        "img": "modules/pf1-fr/icons/magic.png"
     }
     
     list.append(el)

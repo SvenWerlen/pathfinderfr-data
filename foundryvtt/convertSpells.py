@@ -144,7 +144,7 @@ for s in data:
         },
         "sort": 100001,
         "flags": {},
-        "img": "systems/pf1-fr/icons/spell.png"
+        "img": "modules/pf1-fr/icons/spell.png"
     }
     
     
