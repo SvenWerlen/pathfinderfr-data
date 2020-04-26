@@ -39,7 +39,7 @@ def getSavingThrows(data, key):
     return "low" if int(data[0][key]) == 0 else "high"
 
 def getBAB(data):
-    if int(data[0]["BBA"]) == 0 and int(data[1]["BBA"]) == 1:
+    if int(data[0]["BBA"]) == 0 and int(data[2]["BBA"]) == 1:
         return "low"
     elif int(data[0]["BBA"]) == 0:
         return "med"
