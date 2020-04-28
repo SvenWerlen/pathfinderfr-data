@@ -22,6 +22,35 @@ def getLevel(level):
     else:
         return 0
 
+
+def getActivation(time):
+    if not time:
+        return None
+    
+    m = re.search('^([0-9]+) (.*)$', time)
+    if m:
+        value = int(m.group(1))
+        type = m.group(2)
+        if type.startswith("minute"):
+            return { "cost": value, "type": "minute" }
+        elif type.startswith("heure"):
+            return { "cost": value, "type": "hour" }
+        elif type.startswith("round"):
+            return { "cost": value, "type": "round" }
+        elif "complexe" in type: 
+            return { "cost": value, "type": "full" }
+        elif "immédiate" in type: 
+            return { "cost": value, "type": "immediate" }
+        elif "simple" in type:
+            return { "cost": value, "type": "standard" }
+        elif "rapide" in type:
+            return { "cost": value, "type": "swift" }
+        
+        print(time)
+    
+    return { "cost": 0, "type": "special" }
+
+
 list = []
 duplicates = []
 for s in data:
@@ -64,10 +93,7 @@ for s in data:
                 "unidentified": ""                    
             },
             "source": s['Source'],
-            "activation": {
-                "cost": 1,
-                "type": "standard"
-            },
+            "activation": getActivation(s['Temps d\'incantation']) if 'Temps d\'incantation' in s else None,
             "duration": {
                 "value": None,
                 "units": ""
