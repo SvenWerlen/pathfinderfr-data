@@ -93,7 +93,53 @@ def getTypes(school):
       return m.group(1).lower()
     else:
       return ""
+
+def getComponents(comp):
+    idx = comp.find('(')
+    if idx > 0:
+      comp = comp[0:idx].strip()
     
+    # ugly fixes
+    idx = comp.find('une goutte de sang du lanceur')
+    if idx > 0:
+      comp = comp[0:idx].strip()
+    comp = comp.replace('ou', ',').replace('/',',')
+    
+    # parse elements
+    comps = []
+    for el in comp.split(','):
+      comps.append(el.strip())
+    return comps
+
+def getComponentsFD(comps):
+    fd = "FD" in comps
+    m = "M" in comps
+    f = "F" in comps
+    if fd and m:
+      return 2 # M/FD
+    elif fd and f:
+      return 3 # F/FD
+    elif fd:
+      return 1 # FD
+    else:
+      return 0
+
+def getComponentsValue(comp):
+    idx = comp.find('(')
+    if idx > 0:
+      comp = comp[idx+1:].strip()
+    else:
+      return ""
+    
+    if comp.endswith(')'):
+      comp = comp[:-1]
+    # ugly fixes
+    idx = comp.find('une goutte de sang du lanceur')
+    if idx > 0:
+      return comp[idx].strip()
+    else:
+      return comp
+      
 
 SCHOOLS = { 'abjuration': 'abj', 'divination': 'div', 'enchantement': 'enc', 'évocation': 'evo', 'illusion': 'ill', 
            'invocation': 'con', 'nécromancie': 'nec', 'transmutation': 'trs', 'universel': 'uni' }
@@ -106,6 +152,9 @@ for s in data:
         continue
     duplicates.append(s['Nom'])
         
+    comps = getComponents(s['Composantes']) if 'Composantes' in s else []
+    divineFocus = getComponentsFD(comps)
+    
     el = {
         "name": s['Nom'],
         "permission": {
@@ -184,13 +233,13 @@ for s in data:
             "types": getTypes(s['École']) if 'École' in s else "",
             "components": {
                 "value": "",
-                "verbal": False,
-                "somatic": False,
-                "material": False,
-                "focus": False,
-                "divineFocus": 0
+                "verbal": 'V' in comps,
+                "somatic": 'G' in comps or 'S' in comps,
+                "material": 'M' in comps,
+                "focus": 'F' in comps or 'FD' in comps,
+                "divineFocus": divineFocus
             },
-            "castTime": "abc",
+            "castTime": s['Temps d\'incantation'] if 'Temps d\'incantation' in s else '-',
             "materials": {
                 "value": "",
                 "consumed": False,
