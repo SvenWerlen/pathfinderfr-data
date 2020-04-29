@@ -49,7 +49,54 @@ def getActivation(time):
         print(time)
     
     return { "cost": 0, "type": "special" }
+  
+def getRange(range):
+    if not range:
+        return None
+    range = range.lower()
+    
+    if "contact" in range:
+        return { "units": "touch" }
+    elif "courte" in range:
+        return { "units": "close" }
+    elif "moyenne" in range:
+        return { "units": "medium" }
+    elif "longue" in range:
+        return { "units": "long" }
+    elif "personelle" in range:
+        return { "units": "personal" }
+    else:
+        return { "units": "seeText" }    
 
+
+def getSchool(school):
+    if not school:
+        return None
+    school = school.lower()
+    
+    m = re.search('^(\w+)', school)
+    if m:
+        return m.group(1)
+    else:
+        print(school)
+
+def getSubSchool(school):
+    m = re.search('\((\w+)\)', school)
+    if m:
+      return m.group(1).lower()
+    else:
+      return ""
+
+def getTypes(school):
+    m = re.search('\[(\w+)\]', school)
+    if m:
+      return m.group(1).lower()
+    else:
+      return ""
+    
+
+SCHOOLS = { 'abjuration': 'abj', 'divination': 'div', 'enchantement': 'enc', 'évocation': 'evo', 'illusion': 'ill', 
+           'invocation': 'con', 'nécromancie': 'nec', 'transmutation': 'trs', 'universel': 'uni' }
 
 list = []
 duplicates = []
@@ -58,7 +105,7 @@ for s in data:
         print("Ignoring duplicate: " + s['Nom'])
         continue
     duplicates.append(s['Nom'])
-  
+        
     el = {
         "name": s['Nom'],
         "permission": {
@@ -101,11 +148,7 @@ for s in data:
             "target": {
                 "value": s['Cible ou zone d\'effet'] if 'Cible ou zone d\'effet' in s else '-'
             },
-            "range": {
-                "value": None,
-                "units": "touch",
-                "long": None
-            },
+            "range": getRange(s['Portée']) if 'Portée' in s else None,
             "uses": {
                 "value": 0,
                 "max": 0,
@@ -136,9 +179,9 @@ for s in data:
             "level": getLevel(s['Niveau']),
             "clOffset": 0,
             "slOffset": 0,
-            "school": "",
-            "subschool": "",
-            "types": "",
+            "school": SCHOOLS[getSchool(s['École'])] if 'École' in s else "",
+            "subschool": getSubSchool(s['École']) if 'École' in s else "",
+            "types": getTypes(s['École']) if 'École' in s else "",
             "components": {
                 "value": "",
                 "verbal": False,
