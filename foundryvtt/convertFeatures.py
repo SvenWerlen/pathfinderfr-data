@@ -18,7 +18,7 @@ def getAbbr(name):
         return "Brb"
     elif name == "Prêtre combattant":
         return "Prc"
-    elif name == "Archer mage":
+    elif name == "Archer-mage":
         return "ArM"
     elif name == "Champion occultiste":
         return "Chp"
