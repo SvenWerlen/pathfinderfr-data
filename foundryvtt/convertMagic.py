@@ -56,9 +56,6 @@ for m in data:
     
     el = {
         "name": m['Nom'],
-        "permission": {
-            "default": 0
-        },
         "type": "equipment",
         "data": {
             "description": {
@@ -79,61 +76,16 @@ for m in data:
                     m['NLS'] if 'NLS' in m else '-',
                     m['Conditions'] if 'Conditions' in m else '-',
                     m['Description'].replace('\n','<br/>') if 'Description' in m else "",
-                    m['Référence']),
-                "chat": "",
-                "unidentified": ""
+                    m['Référence'])
             },
             "source": m['Source'],
             "quantity": 1,
             "weight": getWeight(m['Poids']) if 'Poids' in m else 0,
             "price": getPrice(m['Prix']) if 'Prix' in m else 0,
             "identified": True,
-            #"hp": {
-            #    "max": 10,
-            #    "value": 10
-            #},
-            #"hardness": 0,
-            "carried": False,
-            #"changes": [
-            #[
-            #    "1",
-            #    "ac",
-            #    "ac",
-            #    "deflection"
-            #]
-            #],
-            "changeFlags": {
-                "loseDexToAC": False,
-                "noStr": False,
-                "noDex": False,
-                "oneInt": False,
-                "oneWis": False,
-                "oneCha": False
-            },
-            "contextNotes": [],
-            "equipped": False,
-            #"armor": {
-            #    "type": "misc",
-            #    "value": 0,
-            #    "dex": null,
-            #    "acp": 0,
-            #    "enh": 0
-            #},
-            #"spellFailure": 0,
-            #"slot": "ring",
-            "activation": {
-                "cost": "",
-                "type": ""
-            },
-            "damage": {
-                "parts": []
-            },
-            "attack": {
-                "parts": []
-            }
+            "carried": True,
+            "equipped": False
         },
-        "sort": 100001,
-        "flags": {},
         "img": "modules/pf1-fr/icons/magic.png"
     }
     

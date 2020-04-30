@@ -81,14 +81,14 @@ def getSchool(school):
         print(school)
 
 def getSubSchool(school):
-    m = re.search('\((\w+)\)', school)
+    m = re.search('\((.+?)\)', school)
     if m:
       return m.group(1).lower()
     else:
       return ""
 
 def getTypes(school):
-    m = re.search('\[(\w+)\]', school)
+    m = re.search('\[(.+?)\]', school)
     if m:
       return m.group(1).lower()
     else:

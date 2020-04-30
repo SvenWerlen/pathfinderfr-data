@@ -11,4 +11,6 @@ echo "Convert spells..."
 ./convertSpells.py
 echo "Convert weapons..."
 ./convertWeapons.py
+echo "Convert equipment..."
+./convertEquipment.py
 echo "Done."

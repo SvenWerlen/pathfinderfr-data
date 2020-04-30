@@ -72,9 +72,6 @@ for a in data:
     
     el = {
         "name": a['Nom'],
-        "permission": {
-            "default": 0
-        },
         "type": "equipment",
         "data": {
             "description": {
@@ -95,31 +92,14 @@ for a in data:
                     a['ÉchecProfane'] if 'ÉchecProfane' in a else '-',
                     a['Poids'] if 'Poids' in a else '-',
                     a['Description'].replace('\n','<br/>') if 'Description' in a else "",
-                    a['Référence']),
-                "chat": "",
-                "unidentified": ""
+                    a['Référence'])
             },
             "source": a['Source'],
             "quantity": 1,
             "weight": getWeight(a['Poids']),
             "price": getPrice(a['Prix']),
             "identified": True,
-            #"hp": {
-            #    "max": 5,
-            #    "value": 5
-            #},
-            #"hardness": 10,
-            "carried": False,
-            "changes": [],
-            "changeFlags": {
-                "loseDexToAC": False,
-                "noStr": False,
-                "noDex": False,
-                "oneInt": False,
-                "oneWis": False,
-                "oneCha": False
-            },
-            "contextNotes": [],
+            "carried": True,
             "equipped": False,
             "armor": {
                 "type": getType(a['Catégorie']),
@@ -129,20 +109,8 @@ for a in data:
                 "enh": 0
             },
             "spellFailure": getSpellFailure(a['ÉchecProfane']),
-            "slot": "armor" if getType(a['Catégorie']) in ["medium", "light", "heavy"] else "slotless",
-            "activation": {
-                "cost": None,
-                "type": ""
-            },
-            "damage": {
-                "parts": []
-            },
-            "attack": {
-                "parts": []
-            }
+            "slot": "armor" if getType(a['Catégorie']) in ["medium", "light", "heavy"] else "slotless"
         },
-        "sort": 1200001,
-        "flags": {},
         "img": "modules/pf1-fr/icons/shield.png" if getType(a['Catégorie']) == "shield" else "modules/pf1-fr/icons/armor.png"
     }
     

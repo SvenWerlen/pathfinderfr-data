@@ -68,96 +68,55 @@ for w in data:
     duplicates.append(w['Nom'])
     
     el = {
-    "name": w['Nom'],
-    "permission": {
-        "default": 0
-    },
-    "type": "weapon",
-    "data": {
-        "description": {
-            "value": ("<p><b>Catégorie: </b>{}<br/>" +
-                        "<b>Sous-catégorie: </b>{}<br/>" +
-                        "<b>Prix: </b>{}<br/>" +
-                        "<b>Dégâts (P): </b>{}<br/>" +
-                        "<b>Dégâts (M): </b>{}<br/>" +
-                        "<b>Critique: </b>{}<br/>" +
-                        "<b>Portée: </b>{}<br/>" +
-                        "<b>Poids: </b>{}<br/>" +
-                        "<b>Type: </b>{}<br/>" +
-                        "<b>Spécial: </b>{}<br/></p>" +
-                        "<h3>Description:</h3><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
-                    w['Catégorie'] if 'Catégorie' in w else '-',
-                    w['Sous-catégorie'] if 'Sous-catégorie' in w else '-',
-                    w['Prix'] if 'Prix' in w else '-',
-                    w['DégâtsP'] if 'DégâtsP' in w else '-',
-                    w['DégâtsM'] if 'DégâtsM' in w else '-',
-                    w['Critique'] if 'Critique' in w else '-',
-                    w['Portée'] if 'Portée' in w else '-',
-                    w['Poids'] if 'Poids' in w else '-',
-                    w['Type'] if 'Type' in w else '-',
-                    w['Spécial'] if 'Spécial' in w else '-',
-                    w['Description'].replace('\n','<br/>') if 'Description' in w else "",
-                    w['Référence']),
-            "chat": "",
-            "unidentified": ""
-        },
-        "source": w['Source'],
-        "quantity": 1,
-        "weight": getWeight(w['Poids']),
-        "price": getPrice(w['Prix']),
-        "identified": True,
-        #"hp": {
-        #    "max": 2,
-        #    "value": 2
-        #},
-        #"hardness": 10,
-        "carried": False,
-        "changes": [],
-        "changeFlags": {
-            "loseDexToAC": False,
-            "noStr": False,
-            "noDex": False,
-            "oneInt": False,
-            "oneWis": False,
-            "oneCha": False
-        },
-        "contextNotes": [],
-        "equipped": True,
-        "masterwork": False,
-        "weaponType": getType(w['Catégorie']), 
-        "properties": {
-            "blc": False,
-            "brc": False,
-            "dbl": False,
-            "dis": False,
-            "fin": False,
-            "frg": False,
-            "imp": False,
-            "lgt": False,
-            "mnk": False,
-            "prf": False,
-            "rch": False,
-            "thr": False,
-            "trp": False,
-            "two": False
-        },
-        "enh": "",
-        "weaponData": {
-            "damageRoll": w['DégâtsM'],
-            "damageType": w['Type'],
-            "critRange":  getCritRange(w['Critique']),
-            "critMult": getCritMult(w['Critique']),
-            "isMelee": (w['Portée'] == "—"),
-            "range": getRange(w['Portée']),
-        },
-        "damage": {
-            "parts": []
-        }
-    },
-    "sort": 300001,
-    "flags": {},
-    "img": "modules/pf1-fr/icons/weapon.png"
+      "name": w['Nom'],
+      "type": "weapon",
+      "data": {
+          "description": {
+              "value": ("<p><b>Catégorie: </b>{}<br/>" +
+                          "<b>Sous-catégorie: </b>{}<br/>" +
+                          "<b>Prix: </b>{}<br/>" +
+                          "<b>Dégâts (P): </b>{}<br/>" +
+                          "<b>Dégâts (M): </b>{}<br/>" +
+                          "<b>Critique: </b>{}<br/>" +
+                          "<b>Portée: </b>{}<br/>" +
+                          "<b>Poids: </b>{}<br/>" +
+                          "<b>Type: </b>{}<br/>" +
+                          "<b>Spécial: </b>{}<br/></p>" +
+                          "<h3>Description:</h3><p>{}</p>" +
+                          "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
+                      w['Catégorie'] if 'Catégorie' in w else '-',
+                      w['Sous-catégorie'] if 'Sous-catégorie' in w else '-',
+                      w['Prix'] if 'Prix' in w else '-',
+                      w['DégâtsP'] if 'DégâtsP' in w else '-',
+                      w['DégâtsM'] if 'DégâtsM' in w else '-',
+                      w['Critique'] if 'Critique' in w else '-',
+                      w['Portée'] if 'Portée' in w else '-',
+                      w['Poids'] if 'Poids' in w else '-',
+                      w['Type'] if 'Type' in w else '-',
+                      w['Spécial'] if 'Spécial' in w else '-',
+                      w['Description'].replace('\n','<br/>') if 'Description' in w else "",
+                      w['Référence'])
+          },
+          "source": w['Source'],
+          "quantity": 1,
+          "weight": getWeight(w['Poids']),
+          "price": getPrice(w['Prix']),
+          "identified": True,
+          "carried": True,
+          "equipped": True,
+          "masterwork": False,
+          "weaponType": getType(w['Catégorie']), 
+          "enh": "",
+          "weaponData": {
+              "damageRoll": w['DégâtsM'],
+              "damageType": w['Type'],
+              "critRange":  getCritRange(w['Critique']),
+              "critMult": getCritMult(w['Critique']),
+              "isMelee": (w['Portée'] == "—"),
+              "range": getRange(w['Portée']),
+          }
+      },
+      "img": "modules/pf1-fr/icons/weapon.png"
     }
     
     
