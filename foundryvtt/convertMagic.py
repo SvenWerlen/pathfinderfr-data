@@ -56,7 +56,7 @@ for m in data:
     
     el = {
         "name": m['Nom'],
-        "type": "equipment",
+        "type": "loot",
         "data": {
             "description": {
                 "value": ("<p><b>Type: </b>{}<br/>" +
@@ -84,7 +84,8 @@ for m in data:
             "price": getPrice(m['Prix']) if 'Prix' in m else 0,
             "identified": True,
             "carried": True,
-            "equipped": False
+            "equipped": False,
+            "subType": "gear"
         },
         "img": "modules/pf1-fr/icons/magic.png"
     }
