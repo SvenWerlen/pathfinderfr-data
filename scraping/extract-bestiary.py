@@ -15,7 +15,7 @@ from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
-FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 
+FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'Init',
           'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
           'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
           'Référence']
@@ -107,11 +107,20 @@ for page in pages:
           ##
           if part == "general":
             
-            field = 'px'
+            field = 'PX'
             if 'px' in data:
               setValue(b, 'PX', parseNumber(data['px'].replace("px","")))
             if 'xp' in data:
               setValue(b, 'PX', parseNumber(data['xp'].replace("xp","")))
+            
+            field = 'Init'
+            if 'init' in data:
+              # ugly fix
+              if data['init'].endswith('M'):
+                data['init'] = data['init'][:-1]
+              num = extractNumberWithSpecial(data['init'])
+              setValue(b, 'Init', num['num'])
+            
             
             field = 'FP'
             if 'fp' in data:

@@ -16,6 +16,7 @@
   - Souterrain
   - Extraplanaire
   PX: 600
+  Init: 1
   CA:
     calcul: armure +5, Dex +1, naturelle +2
     contact: 11
@@ -45,6 +46,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: 4
   CA:
     calcul: naturelle +11
     contact: 10
@@ -76,6 +78,7 @@
   - Ciel
   - Extraplanaire
   PX: 19200
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Déva monadique.ashx
   
 - Nom: Hippopotame Béhémoth (Gorgops)
@@ -85,6 +88,7 @@
   - Aquatique
   - Tropical
   PX: 9600
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +16, taille -2
     contact: 7
@@ -117,6 +121,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +5
     contact: 11
@@ -147,6 +152,7 @@
   - Ville
   - Extraplanaire
   PX: 3200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +7
     contact: 13
@@ -176,6 +182,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: naturelle +6, taille -1
     contact: 9
@@ -205,6 +212,7 @@
   - Marais
   - Tempéré
   PX: 4800
+  Init: -4
   CA:
     calcul: Dex -4, naturelle +16, taille -2
     contact: 4
@@ -242,6 +250,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +11, taille -1
     contact: 10
@@ -272,6 +281,7 @@
   - Aquatique
   - Tempéré
   PX: 25600
+  Init: 0
   CA:
     calcul: naturelle +20, taille -2
     contact: 8
@@ -302,6 +312,7 @@
   - Aquatique
   - Tempéré
   PX: 153600
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +32, taille -4
     contact: 5
@@ -332,6 +343,7 @@
   - Ville
   - Extraplanaire
   PX: 19200
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +12
     contact: 14
@@ -369,6 +381,7 @@
   - Désert
   - Froid
   PX: 3200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +11, taille -2
     contact: 9
@@ -400,6 +413,7 @@
   - Collines
   - Tempéré
   PX: 76800
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon dépines.ashx
   
 - Nom: Marut
@@ -409,6 +423,7 @@
   - Ville
   - Extraplanaire
   PX: 51200
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, naturelle +17, taille –1
     contact: 13
@@ -438,6 +453,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 600
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +1
     contact: 14
@@ -476,6 +492,7 @@
   - Dragon
   - Ciel
   - Extraplanaire
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Dragon temporel adulte
@@ -484,6 +501,7 @@
   - Dragon
   - Ciel
   - Extraplanaire
+  Init: 11
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Vénérable dragon temporel
@@ -492,11 +510,13 @@
   - Dragon
   - Ciel
   - Extraplanaire
+  Init: 14
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Sépide
   FP: '14'
   PX: 38400
+  Init: 9
   CA:
     calcul: Dex +5, naturelle +18, taille -1
     contact: 14
@@ -526,6 +546,7 @@
   - Plaines
   - Tempéré
   PX: 25600
+  Init: 0
   CA:
     calcul: taille –8
     contact: 2
@@ -556,6 +577,7 @@
   - Créature magique
   - aquatique
   - Tropical
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +14, taille -2
     contact: 11
@@ -587,6 +609,7 @@
   - Marais
   - Extraplanaire
   PX: 12800
+  Init: 4
   CA:
     calcul: naturelle +16, taille -1
     contact: 9
@@ -613,6 +636,7 @@
 - Nom: Rat
   FP: 1/4
   PX: 100
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -643,6 +667,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -672,6 +697,7 @@
   - Plaines
   - Tempéré
   PX: 9600
+  Init: 6
   CA:
     calcul: Dex +6, naturelle +9, taille -1
     contact: 15
@@ -702,6 +728,7 @@
   - Marais
   - Tempéré
   PX: 1200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +6, taille -2
     contact: 9
@@ -732,6 +759,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, parade +1
     contact: 13
@@ -764,6 +792,7 @@
   - Désert
   - Tropical
   PX: 1600
+  Init: 0
   CA:
     calcul: naturelle +10, taille -1
     contact: 9
@@ -802,6 +831,7 @@
   - Plaines
   - Tropical
   PX: 12800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +13, taille -1
     contact: 10
@@ -832,6 +862,7 @@
   - Plaines
   - Tropical
   PX: 51200
+  Init: 0
   CA:
     calcul: naturelle +22, taille -2
     contact: 8
@@ -862,6 +893,7 @@
   - Plaines
   - Tropical
   PX: 307200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +34, taille -4
     contact: 5
@@ -892,6 +924,7 @@
   - Ville
   - Extraplanaire
   PX: 400
+  Init: 0
   CA:
     calcul: naturelle +4
     contact: 10
@@ -921,6 +954,7 @@
   - Aquatique
   - Tropical
   PX: 1600
+  Init: 4
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -952,6 +986,7 @@
   - Désert
   - Tropical
   PX: 2400
+  Init: 3
   CA:
     calcul: armure +8, Dex +3, taille -2
     contact: 9
@@ -1014,6 +1049,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 2400
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tendricule.ashx
   
 - Nom: Cube gélatineux
@@ -1023,6 +1059,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: -5
   CA:
     calcul: Dex -5, taille -1
     contact: 4
@@ -1053,6 +1090,7 @@
   - Ville
   - Extraplanaire
   PX: 6400
+  Init: 9
   CA:
     calcul: Dex +5, naturelle +11, taille -1
     contact: 14
@@ -1082,6 +1120,7 @@
   - Aquatique
   - Froid
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +6, taille -2
     contact: 10
@@ -1111,6 +1150,7 @@
   - Ville
   - Extraplanaire
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +7
     contact: 12
@@ -1140,6 +1180,7 @@
   - Marais
   - Tempéré
   PX: 3200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +10, taille -1
     contact: 12
@@ -1171,6 +1212,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: 3
   CA:
     calcul: Dex +3, taille +2
     contact: 15
@@ -1200,6 +1242,7 @@
   - Aquatique
   - Tempéré
   PX: 9600
+  Init: 2
   CA:
     calcul: Dex -2, naturelle +18, taille -4
     contact: 4
@@ -1230,6 +1273,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 6
   CA:
     calcul: Dex +2, esquive +2, naturelle +6
     contact: 14
@@ -1266,6 +1310,7 @@
   - Plaines
   - Froid
   PX: 9600
+  Init: 12
   CA:
     calcul: Dex +8, esquive +2, naturelle +5
     contact: 20
@@ -1295,6 +1340,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 102400
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +18, taille -1
     contact: 14
@@ -1321,6 +1367,7 @@
   - Collines
   - Tropical
   PX: 4800
+  Init: 2
   CA:
     calcul: armure +6, Dex +2, naturelle +5, taille -1
     contact: 11
@@ -1353,6 +1400,7 @@
   - Aquatique
   - Tropical
   PX: 65
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -1382,6 +1430,7 @@
   - Créature magique
   - Montagnes
   - Tropical
+  Init: 11
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Agyra.ashx
   
 - Nom: Mante géante
@@ -1391,6 +1440,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +5, taille -1
     contact: 10
@@ -1422,6 +1472,7 @@
   - Ville
   - Extraplanaire
   PX: 19200
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +13, taille -1
     contact: 13
@@ -1452,6 +1503,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +4
     contact: 11
@@ -1483,6 +1535,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 3200
+  Init: 2
   CA:
     calcul: Dex +2, taille +8
     contact: 20
@@ -1512,6 +1565,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +1, taille +1
     contact: 14
@@ -1543,6 +1597,7 @@
   - Montagnes
   - Froid
   PX: 12800
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +12, taille -1
     contact: 13
@@ -1573,6 +1628,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue happante.ashx
   
 - Nom: Morse empereur
@@ -1582,6 +1638,7 @@
   - Aquatique
   - Froid
   PX: 4800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +15, taille -4
     contact: 5
@@ -1616,6 +1673,7 @@
   - Ville
   - Tempéré
   PX: 1600
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +6
     contact: 15
@@ -1646,6 +1704,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffe du récif.ashx
   
 - Nom: Araignée goliath
@@ -1654,6 +1713,7 @@
   - Vermine
   - Forêt-Jungle
   - Tempéré
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Araignée goliath.ashx
   
 - Nom: Zouvembi
@@ -1663,6 +1723,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +2
     contact: 13
@@ -1692,6 +1753,7 @@
   - Aquatique
   - Tropical
   PX: 400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +3, taille -1
     contact: 10
@@ -1729,6 +1791,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 6
   CA:
     calcul: armure +2, Dex +2, naturelle +2, taille +1
     contact: 13
@@ -1758,6 +1821,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 25600
+  Init: 15
   CA:
     calcul: Dex +11, esquive +1, parade +4
     contact: 26
@@ -1786,6 +1850,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Céphalophore.ashx
   
 - Nom: Naga ténébreux
@@ -1795,6 +1860,7 @@
   - Souterrain
   - Tempéré
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, naturelle +7, taille -1
     contact: 15
@@ -1826,6 +1892,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 38400
+  Init: 0
   CA:
     calcul: naturelle +22, taille -2
     contact: 8
@@ -1855,6 +1922,7 @@
   - Ciel
   - Extraplanaire
   PX: 600
+  Init: 4
   CA:
     calcul: naturelle +4, taille +1 ; parade +2 contre le Mal
     contact: 11
@@ -1885,6 +1953,7 @@
   - Plaines
   - Tropical
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +4, taille -1
     contact: 11
@@ -1915,6 +1984,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, esquive +2, naturelle +2
     contact: 14
@@ -1949,6 +2019,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 12800
+  Init: 3
   CA:
     calcul: armure +6, Dex +3, naturelle +6, taille -2
     contact: 11
@@ -1981,6 +2052,7 @@
   - Aquatique
   - Tempéré
   PX: 19200
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +8
     contact: 17
@@ -2011,6 +2083,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +1
     contact: 13
@@ -2040,6 +2113,7 @@
   - Ville
   - Extraplanaire
   PX: 6400
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +11
     contact: 14
@@ -2077,6 +2151,7 @@
   - Montagnes
   - Extraplanaire
   PX: 4800
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Dragon de magma adulte
@@ -2086,6 +2161,7 @@
   - Montagnes
   - Extraplanaire
   PX: 19200
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Dragon de magma vénérable
@@ -2095,6 +2171,7 @@
   - Montagnes
   - Extraplanaire
   PX: 102400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Aveugleur
@@ -2104,6 +2181,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +2, taille +1
     contact: 14
@@ -2133,6 +2211,7 @@
   - Plaines
   - Extraplanaire
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +9, taille -1
     contact: 11
@@ -2153,6 +2232,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 38400
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +4, maudite +5, taille -2
     contact: 21
@@ -2182,6 +2262,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +2
     contact: 13
@@ -2211,6 +2292,7 @@
   - Ciel
   - extraplanaire
   PX: 1600
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +5, taille -1
     contact: 14
@@ -2240,6 +2322,7 @@
   - Marais
   - Tropical
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1
     contact: 11
@@ -2271,6 +2354,7 @@
   - Forêt-Jungle
   - Froid
   PX: 1200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +4, taille -1
     contact: 12
@@ -2301,6 +2385,7 @@
   - Collines
   - Tempéré
   PX: 19200
+  Init: 1
   CA:
     calcul: armure +2, Dex +1, naturelle +15, taille -2
     contact: 9
@@ -2330,6 +2415,7 @@
   - Forêt-Jungle
   - Extraplanaire
   PX: 2400
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +6
     contact: 14
@@ -2359,6 +2445,7 @@
   - Plaines
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -2389,6 +2476,7 @@
   - Plaines
   - Tropical
   PX: 400
+  Init: 0
   CA:
     calcul: armure +2, bouclier +2, naturelle +1
     contact: 10
@@ -2418,6 +2506,7 @@
   - Aquatique
   - Tempéré
   PX: 1200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +9, taille -2
     contact: 10
@@ -2448,6 +2537,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 200
+  Init: 0
   CA:
     calcul: taille +4
     contact: 14
@@ -2478,6 +2568,7 @@
   - Marais
   - Tropical
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, taille +4
     contact: 15
@@ -2507,6 +2598,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 3200
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +4, taille +1
     contact: 16
@@ -2536,6 +2628,7 @@
   - Ville
   - Extraplanaire
   PX: 12800
+  Init: 6
   CA:
     calcul: Dex +6, naturelle +10
     contact: 16
@@ -2566,6 +2659,7 @@
   - Plaines
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, taille -1
     contact: 11
@@ -2596,6 +2690,7 @@
   - Ruines-donjons
   - tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: armure +4, Dex +3
     contact: 13
@@ -2626,6 +2721,7 @@
   - Souterrain
   - Extraplanaire
   PX: 3200
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bête du Chaos.ashx
   
 - Nom: Corbie sanguinaire
@@ -2635,6 +2731,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +2
     contact: 11
@@ -2664,6 +2761,7 @@
   - Ville
   - Extraplanaire
   PX: 800
+  Init: 6
   CA:
     calcul: Dex +2, esquive +1, naturelle +3, taille +1
     contact: 14
@@ -2693,6 +2791,7 @@
   - Plaines
   - Tempéré
   PX: 600
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien esquiveur.ashx
   
 - Nom: Harpie
@@ -2702,6 +2801,7 @@
   - Marais
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: armure +2, Dex +2, esquive +1, naturelle +1
     contact: 13
@@ -2731,6 +2831,7 @@
   - Plaines
   - Froid
   PX: 2400
+  Init: 0
   CA:
     calcul: naturelle +10, taille -1
     contact: 9
@@ -2761,6 +2862,7 @@
   - Plaines
   - Tempéré
   PX: 600
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forlarren.ashx
   
 - Nom: Écureuil Volant
@@ -2770,6 +2872,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -2800,6 +2903,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 3200
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chat infernal.ashx
   
 - Nom: Linnorm des cairns
@@ -2809,6 +2913,7 @@
   - Forêt-jungle
   - Froid
   PX: 153600
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +22, taille -4
     contact: 13
@@ -2840,6 +2945,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +9
     contact: 15
@@ -2870,6 +2976,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +6
     contact: 14
@@ -2899,6 +3006,7 @@
   - Aquatique
   - Tropical
   PX: 25600
+  Init: 2
   CA:
     calcul: armure +6, Dex +2, naturelle +12, taille -2
     contact: 10
@@ -2928,6 +3036,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: armure +2, Dex +2
     contact: 12
@@ -2953,6 +3062,7 @@
 - Nom: Ghawwas
   FP: '10'
   PX: 9600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +15, taille -1
     contact: 11
@@ -2982,6 +3092,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 4800
+  Init: 0
   CA:
     calcul: armure +14, taille -2
     contact: 8
@@ -3011,6 +3122,7 @@
   - Aquatique
   - Tempéré
   PX: 9600
+  Init: 9
   CA:
     calcul: Dex +9, esquive +1, parade +5
     contact: 25
@@ -3047,6 +3159,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 76800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +21, taille -2
     contact: 10
@@ -3076,6 +3189,7 @@
   - Souterrain
   - Tempéré
   PX: 25600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +15, taille -2
     contact: 10
@@ -3096,6 +3210,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 12800
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, parade +7
     contact: 25
@@ -3125,6 +3240,7 @@
   - Aquatique
   - Tropical
   PX: 4800
+  Init: -2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue immense.ashx
   
 - Nom: Golem de verre
@@ -3134,6 +3250,7 @@
   - Désert
   - Tempéré
   PX: 4800
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de verre.ashx
   
 - Nom: Mille-pattes à queue fouettante
@@ -3143,6 +3260,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 0
   CA:
     calcul: naturelle +7, taille -2
     contact: 8
@@ -3174,6 +3292,7 @@
   - Souterrain
   - Extraplanaire
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +10, taille -1
     contact: 10
@@ -3203,6 +3322,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: -1
   CA:
     calcul: armure +4, Dex -2, naturelle +8, taille -1
     contact: 7
@@ -3231,6 +3351,7 @@
   - Créature magique
   - Désert
   - Tropical
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bézravnis.ashx
   
 - Nom: Kami, toshigami
@@ -3240,6 +3361,7 @@
   - plaines
   - Tempéré
   PX: 512000
+  Init: 10
   CA:
     calcul: Dex +6, esquive +2, intuition +2, naturelle +10
     contact: 20
@@ -3269,6 +3391,7 @@
   - Ville
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -3299,6 +3422,7 @@
   - Marais
   - Tropical
   PX: 200
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grippli.ashx
   
 - Nom: Sard
@@ -3308,6 +3432,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 204800
+  Init: 8
   CA:
     calcul: Dex +8, naturelle +24, taille -8
     contact: 10
@@ -3338,6 +3463,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -3364,6 +3490,7 @@
 - Nom: Diable des contrats
   FP: '10'
   PX: 9600
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +7
     contact: 18
@@ -3393,6 +3520,7 @@
   - Plaines
   - Froid
   PX: 6400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +12, taille -2
     contact: 9
@@ -3423,6 +3551,7 @@
   - Collines
   - Extraplanaire
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +1, taille +2
     contact: 14
@@ -3454,6 +3583,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 19200
+  Init: 1
   CA:
     calcul: armure +4, Dex +1, naturelle +13 taille -2
     contact: 9
@@ -3481,6 +3611,7 @@
   Environnements:
   - Extérieur
   PX: 38400
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, naturelle +12
     contact: 18
@@ -3510,6 +3641,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 819200
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jabberwocky.ashx
   
 - Nom: Trollosse
@@ -3519,6 +3651,7 @@
   - Montagnes
   - Froid
   PX: 800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +4
     contact: 11
@@ -3548,6 +3681,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 1200
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des forêts.ashx
   
 - Nom: Dragonne
@@ -3557,6 +3691,7 @@
   - Plaines
   - Tempéré
   PX: 3200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +8, taille -1
     contact: 12
@@ -3587,6 +3722,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +10, taille -1
     contact: 10
@@ -3616,6 +3752,7 @@
   - Aquatique
   - Froid
   PX: 3200
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charda.ashx
   
 - Nom: Jorôgumo
@@ -3625,6 +3762,7 @@
   - Montagnes
   - Tempéré
   PX: 19200
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +12
     contact: 15
@@ -3654,6 +3792,7 @@
   - Aquatique
   - Tropical
   PX: 4800
+  Init: 1
   CA:
     calcul: Dex +1, esquive +1, naturelle +12, taille -4
     contact: 8
@@ -3685,6 +3824,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +6, taille -1
     contact: 12
@@ -3714,6 +3854,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 204800
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem dadamantium.ashx
   
 - Nom: Ogrelin (Demi-Ogre)
@@ -3723,6 +3864,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +3
     contact: 11
@@ -3781,6 +3923,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 0
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -3811,6 +3954,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Virebois.ashx
   
 - Nom: Mur vivant
@@ -3819,6 +3963,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: -4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur vivant.ashx
   
 - Nom: Troll de mousse
@@ -3828,6 +3973,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +2, taille -1
     contact: 13
@@ -3864,6 +4010,7 @@
   - Aquatique
   - Extraplanaire
   PX: 400
+  Init: 0
   CA:
     calcul: naturelle +6, taille +1
     contact: 11
@@ -3893,6 +4040,7 @@
   - Aquatique
   - Extraplanaire
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +6
     contact: 11
@@ -3922,6 +4070,7 @@
   - Aquatique
   - Extraplanaire
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +6, taille -1
     contact: 12
@@ -3951,6 +4100,7 @@
   - Aquatique
   - Extraplanaire
   PX: 3200
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +8, taille -2
     contact: 13
@@ -3980,6 +4130,7 @@
   - Aquatique
   - Extraplanaire
   PX: 6400
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, naturelle 9, taille -2
     contact: 14
@@ -4009,6 +4160,7 @@
   - Aquatique
   - Extraplanaire
   PX: 12800
+  Init: 6
   CA:
     calcul: Dex +6, esquive +1, naturelle +9, taille -2
     contact: 15
@@ -4038,6 +4190,7 @@
   - Montagnes
   - Froid
   PX: 1200
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +4, taille –1
     contact: 13
@@ -4066,6 +4219,7 @@
   - Créature magique
   - ville
   - Tempéré
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ratelin.ashx
   
 - Nom: Nuée de mille-pattes
@@ -4075,6 +4229,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: Dex +4, taille +4
     contact: 18
@@ -4104,6 +4259,7 @@
   - Souterrain
   - Tempéré
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +9, taille –1
     contact: 10
@@ -4140,6 +4296,7 @@
   - Désert
   - Extraplanaire
   PX: 400
+  Init: 5
   CA:
     calcul: Dex +1, esquive +1, naturelle +3, taille +1
     contact: 13
@@ -4169,6 +4326,7 @@
   - Désert
   - Extraplanaire
   PX: 800
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +3
     contact: 14
@@ -4198,6 +4356,7 @@
   - Désert
   - Extraplanaire
   PX: 1600
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +4, taille -1
     contact: 15
@@ -4227,6 +4386,7 @@
   - Désert
   - Extraplanaire
   PX: 3200
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +5, taille -2
     contact: 16
@@ -4256,6 +4416,7 @@
   - Désert
   - Extraplanaire
   PX: 6400
+  Init: 12
   CA:
     calcul: Dex +8, esquive +1, naturelle +6, taille -2
     contact: 17
@@ -4285,6 +4446,7 @@
   - Désert
   - Extraplanaire
   PX: 12800
+  Init: 13
   CA:
     calcul: Dex +9, esquive +1, naturelle +8, taille -2
     contact: 18
@@ -4318,6 +4480,7 @@
 - Nom: Asticot géant
   FP: '3'
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +3, taille +1
     contact: 12
@@ -4348,6 +4511,7 @@
   - Marais
   - Tropical
   PX: 1200
+  Init: 4
   CA:
     calcul: Dex +4, taille +4
     contact: 18
@@ -4377,6 +4541,7 @@
   - Plaines
   - Tempéré
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -4407,6 +4572,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traqueur gluant.ashx
   
 - Nom: Aoandon
@@ -4415,6 +4581,7 @@
   - Extérieur
   - Ruines-Donjons
   - Extraplanaire
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aoandon.ashx
   
 - Nom: Vague ténébreuse
@@ -4424,6 +4591,7 @@
   - Aquatique
   - Extraplanaire
   PX: 307200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +31, taille –8
     contact: 5
@@ -4455,6 +4623,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue happante géante.ashx
   
 - Nom: Érinye
@@ -4464,6 +4633,7 @@
   - Ville
   - Extraplanaire
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +6, esquive +1, naturelle +6
     contact: 17
@@ -4493,6 +4663,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 76800
+  Init: 9
   CA:
     calcul: Dex +5, naturelle +16, taille -1
     contact: 14
@@ -4522,6 +4693,7 @@
   - Ciel
   - Extraplanaire
   PX: 38400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +14 ; +2 [parade] contre le Mal
     contact: 13
@@ -4552,6 +4724,7 @@
   - Ville
   - Tempéré
   PX: 600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +1, taille +2
     contact: 16
@@ -4582,6 +4755,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -4620,6 +4794,7 @@
   - Créature magique
   - Collines
   - Tempéré
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Almiraj.ashx
   
 - Nom: Doppelganger
@@ -4629,6 +4804,7 @@
   - Ville
   - Tempéré
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, esquive +1, naturelle +4
     contact: 12
@@ -4658,6 +4834,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 9600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +16, taille -1
     contact: 8
@@ -4689,6 +4866,7 @@
   - Montagnes
   - Froid
   PX: 6400
+  Init: -1
   CA:
     calcul: armure +4, Dex -1, naturelle +9, taille -1
     contact: 8
@@ -4718,6 +4896,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +2, taille +2
     contact: 14
@@ -4746,6 +4925,7 @@
   - Plante
   - Montagnes
   - Tempéré
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moisissure esclavagiste.ashx
   
 - Nom: Babélien
@@ -4755,6 +4935,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +6
     contact: 13
@@ -4786,6 +4967,7 @@
   - Marais
   - Tempéré
   PX: 135
+  Init: 2
   CA:
     calcul: Dex +2, taille +1
     contact: 13
@@ -4815,6 +4997,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 1
   CA:
     calcul: Dex +1, taille +1
     contact: 12
@@ -4845,6 +5028,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -4874,6 +5058,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 12800
+  Init: 6
   CA:
     calcul: Dex +6, naturelle +10, taille -1
     contact: 15
@@ -4909,6 +5094,7 @@
   - Animal
   - Forêt-Jungle
   - Tempéré
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Belette géante.ashx
   
 - Nom: Dévoreur d'intellect
@@ -4918,6 +5104,7 @@
   - Souterrain
   - tempéré
   PX: 4800
+  Init: 10
   CA:
     calcul: Dex +6, naturelle +5, taille +1
     contact: 17
@@ -4948,6 +5135,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 3200
+  Init: 8
   CA:
     calcul: Dex +4, parade +4
     contact: 18
@@ -4993,6 +5181,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 2400
+  Init: 8
   CA:
     calcul: bouclier +2, Dex +4, naturelle +5
     contact: 14
@@ -5023,6 +5212,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +1, taille +2
     contact: 14
@@ -5052,11 +5242,13 @@
   - Aquatique
   - Tempéré
   PX: 1600
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hippocampe tueur.ashx
   
 - Nom: Désenchanteur
   FP: '3'
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +3, taille -1
     contact: 12
@@ -5087,6 +5279,7 @@
   - Collines
   - Tempéré
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +8, taille -2
     contact: 10
@@ -5117,6 +5310,7 @@
   - Souterrain
   - Extraplanaire
   PX: 4800
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +5
     contact: 17
@@ -5148,6 +5342,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1600
+  Init: 0
   CA:
     calcul: naturelle +10, taille -2
     contact: 8
@@ -5178,6 +5373,7 @@
   - Ciel
   - Extraplanaire
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1, taille +1
     contact: 13
@@ -5208,6 +5404,7 @@
   - Souterrain
   - Extraplanaire
   PX: 2400
+  Init: 0
   CA:
     calcul: naturelle +11
     contact: 10
@@ -5246,6 +5443,7 @@
   - Aquatique
   - Extraplanaire
   PX: 400
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5256,6 +5454,7 @@
   - Aquatique
   - Extraplanaire
   PX: 800
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5266,6 +5465,7 @@
   - Aquatique
   - Extraplanaire
   PX: 1600
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5276,6 +5476,7 @@
   - Aquatique
   - Extraplanaire
   PX: 3200
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5286,6 +5487,7 @@
   - Aquatique
   - Extraplanaire
   PX: 6400
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5296,6 +5498,7 @@
   - Aquatique
   - Extraplanaire
   PX: 12800
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -5314,6 +5517,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1, taille +2
     contact: 14
@@ -5344,6 +5548,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 0
   CA:
     calcul: armure +5
     contact: 10
@@ -5373,6 +5578,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 204800
+  Init: 7
   CA:
     calcul: armure +8, naturelle +24, taille -8
     contact: 2
@@ -5402,6 +5608,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +8, taille -1
     contact: 12
@@ -5431,6 +5638,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 3200
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arbre à pendus.ashx
   
 - Nom: Diable accusateur (Zébub)
@@ -5440,6 +5648,7 @@
   - Ruines-donjons
   - Extraplanaire
   PX: 800
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +2, taille +1
     contact: 15
@@ -5469,6 +5678,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 3200
+  Init: 7
   CA:
     calcul: Dex +3, parade +2
     contact: 15
@@ -5498,6 +5708,7 @@
   - Collines
   - Tempéré
   PX: 3200
+  Init: -1
   CA:
     calcul: armure +4, Dex -1, naturelle +9, taille -1
     contact: 8
@@ -5527,6 +5738,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 10
@@ -5557,6 +5769,7 @@
   - Plaines
   - Froid
   PX: 19200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +16, taille -2
     contact: 11
@@ -5587,6 +5800,7 @@
   - Ruines-Donjons
   - Froid
   PX: 1600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +8
     contact: 9
@@ -5623,6 +5837,7 @@
   - Ciel
   - Extraplanaire
   PX: 400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +3, taille +1
     contact: 14
@@ -5652,6 +5867,7 @@
   - Ciel
   - Extraplanaire
   PX: 800
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +3
     contact: 16
@@ -5681,6 +5897,7 @@
   - Ciel
   - Extraplanaire
   PX: 1600
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +4, taille -1
     contact: 17
@@ -5710,6 +5927,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 13
   CA:
     calcul: Dex +9, esquive +1, naturelle +4, taille -2
     contact: 18
@@ -5739,6 +5957,7 @@
   - Ciel
   - Extraplanaire
   PX: 6400
+  Init: 14
   CA:
     calcul: Dex +10, esquive +1, naturelle +6, taille -2
     contact: 19
@@ -5768,6 +5987,7 @@
   - Ciel
   - Extraplanaire
   PX: 12800
+  Init: 15
   CA:
     calcul: Dex +11, esquive +1, naturelle +8, taille -2
     contact: 20
@@ -5797,6 +6017,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +7, taille -1
     contact: 11
@@ -5826,6 +6047,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 6400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +14, taille -4
     contact: 7
@@ -5856,6 +6078,7 @@
   - Marais
   - Froid
   PX: 1200
+  Init: -5
   CA:
     calcul: Dex -5
     contact: 5
@@ -5887,6 +6110,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 6400
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +7, taille –1
     contact: 16
@@ -5924,6 +6148,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 2400
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des bois.ashx
   
 - Nom: Chevalier tombal humain
@@ -5933,6 +6158,7 @@
   - ville
   - tempéré
   PX: 12800
+  Init: 5
   CA:
     calcul: armure +10, Dex +1, naturelle +4
     contact: 11
@@ -5964,6 +6190,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Farfadet.ashx
   
 - Nom: Golem d'argile
@@ -5973,6 +6200,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 9600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +16, taille -1
     contact: 8
@@ -5998,6 +6226,7 @@
 - Nom: Demi-liche
   FP: '14'
   PX: 38400
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, malfaisance +5, naturelle +4, taille +2
     contact: 21
@@ -6026,6 +6255,7 @@
   - Animal
   - Forêt-Jungle
   - Tempéré
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Belette sanguinaire.ashx
   
 - Nom: Sorcewyrd
@@ -6035,6 +6265,7 @@
   - Ville
   - Extraplanaire
   PX: 2400
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorcewyrd.ashx
   
 - Nom: Étranger blafard
@@ -6044,6 +6275,7 @@
   - Plaines
   - Tempéré
   PX: 9600
+  Init: 9
   CA:
     calcul: armure +2, chance +3, Dex +5, esquive +1, naturelle +4
     contact: 19
@@ -6073,6 +6305,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gar.ashx
   
 - Nom: Drake du froid
@@ -6082,11 +6315,13 @@
   - Montagnes
   - Froid
   PX: 3200
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake du froid.ashx
   
 - Nom: Paradeshi (Rakshasa)
   FP: '10'
   PX: 9600
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +9
     contact: 16
@@ -6116,6 +6351,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: naturelle +6
     contact: 10
@@ -6145,6 +6381,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1638400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +35, taille -8
     contact: 5
@@ -6175,6 +6412,7 @@
   - Souterrain
   - Tempéré
   PX: 19200
+  Init: -2
   CA:
     calcul: Dex -2, naturelle +22, taille -4
     contact: 4
@@ -6206,6 +6444,7 @@
   - Ruines-donjons
   - Extraplanaire
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +6
     contact: 12
@@ -6236,6 +6475,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 25600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +20, taille -1
     contact: 8
@@ -6265,6 +6505,7 @@
   - Plaines
   - Tropical
   PX: 4800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +14, taille -2
     contact: 7
@@ -6295,6 +6536,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +5
     contact: 11
@@ -6333,6 +6575,7 @@
   - Plaines
   - Extraplanaire
   PX: 9600
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Dragon ombrageux adulte
@@ -6342,6 +6585,7 @@
   - Plaines
   - Extraplanaire
   PX: 38400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Dragon ombrageux vénérable
@@ -6351,6 +6595,7 @@
   - Plaines
   - Extraplanaire
   PX: 204800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Ravageur gris
@@ -6368,6 +6613,7 @@
   - Plaines
   - Tempéré
   PX: 1600
+  Init: 0
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -6398,6 +6644,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1200
+  Init: 0
   CA:
     calcul: naturelle +5, taille -1
     contact: 9
@@ -6427,6 +6674,7 @@
   - Aquatique
   - Tempéré
   PX: 38400
+  Init: -2
   CA:
     calcul: Dex -2, naturelle +28, taille -8
     contact: 0
@@ -6457,6 +6705,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 9600
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +8, parade +4, taille -2
     contact: 16
@@ -6486,6 +6735,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +7, taille +1
     contact: 13
@@ -6516,6 +6766,7 @@
   - Ciel
   - Extraplanaire
   PX: 19200
+  Init: 10
   CA:
     calcul: Dex +6, naturelle +9, parade +2
     contact: 18
@@ -6550,6 +6801,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 100
+  Init: 1
   CA:
     calcul: Dex +1, taille +2
     contact: 13
@@ -6579,6 +6831,7 @@
   - Souterrain
   - Tempéré
   PX: 2400
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chapeau rouge.ashx
   
 - Nom: Traqueur sans visage
@@ -6588,6 +6841,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traqueur sans visage.ashx
   
 - Nom: Dauphin
@@ -6597,6 +6851,7 @@
   - Aquatique
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -6636,6 +6891,7 @@
   - Désert
   - Tropical
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +9
     contact: 12
@@ -6666,6 +6922,7 @@
   - Désert
   - Tropical
   PX: 12800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +18, taille -1
     contact: 10
@@ -6696,6 +6953,7 @@
   - Désert
   - Tropical
   PX: 76800
+  Init: 4
   CA:
     calcul: naturelle +30, taille -2
     contact: 8
@@ -6726,6 +6984,7 @@
   - Collines
   - Tempéré
   PX: 800
+  Init: -1
   CA:
     calcul: armure +4, Dex -1, naturelle +5, taille -1
     contact: 8
@@ -6755,6 +7014,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1600
+  Init: -1
   CA:
     calcul: armure +4, Dex -1, naturelle +7, taille -1
     contact: 8
@@ -6784,6 +7044,7 @@
   - Ville
   - Extraplanaire
   PX: 76800
+  Init: 8
   CA:
     calcul: Dex +8, naturelle +18, taille -1
     contact: 17
@@ -6813,6 +7074,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, parade +2
     contact: 15
@@ -6842,6 +7104,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gryph.ashx
   
 - Nom: Ver du néant
@@ -6851,6 +7114,7 @@
   - Ciel
   - Extraplanaire
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, taille +2
     contact: 15
@@ -6880,6 +7144,7 @@
   - Mort-vivant
   - Ville
   - Tempéré
+  Init: 11
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vampire nosferatu.ashx
   
 - Nom: Dullahan
@@ -6889,6 +7154,7 @@
   - Ruines-donjons
   - Tempéré
   PX: 3200
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dullahan.ashx
   
 - Nom: Dryade
@@ -6898,6 +7164,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 800
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +3
     contact: 14
@@ -6927,6 +7194,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +4
     contact: 12
@@ -6956,6 +7224,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +4, taille -1 ; parade +2 contre le Mal
     contact: 13
@@ -6987,6 +7256,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: armure +6, bouclier +2, Dex +3
     contact: 13
@@ -7017,6 +7287,7 @@
   - Marais
   - Tropical
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2
     contact: 13
@@ -7048,6 +7319,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 1600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +8, taille -1
     contact: 10
@@ -7079,6 +7351,7 @@
   - Collines
   - Tempéré
   PX: 6400
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +8, taille +1
     contact: 15
@@ -7110,6 +7383,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 7
   CA:
     calcul: Dex +3, taille +4
     contact: 17
@@ -7140,6 +7414,7 @@
   - Tropical
   - Souterrain
   PX: 1600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +4
     contact: 14
@@ -7169,6 +7444,7 @@
   - Plaines
   - Tempéré
   PX: 1200
+  Init: 0
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -7199,6 +7475,7 @@
   - Collines
   - Froid
   PX: 38400
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +19, taille -4
     contact: 10
@@ -7230,6 +7507,7 @@
   - Désert
   - Tempéré
   PX: 12800
+  Init: 2
   CA:
     calcul: armure +4, Dex +2, naturelle +10, taille -1
     contact: 11
@@ -7262,6 +7540,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +5
     contact: 11
@@ -7300,6 +7579,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Réceptacle des âmes.ashx
   
 - Nom: Éléphant
@@ -7309,6 +7589,7 @@
   - Plaines
   - Tropical
   PX: 3200
+  Init: 0
   CA:
     calcul: naturelle +9, taille -2
     contact: 8
@@ -7339,6 +7620,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +2, taille +1
     contact: 15
@@ -7368,6 +7650,7 @@
   - Créature artificielle
   - Plaines
   - Tempéré
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Créature dosier.ashx
   
 - Nom: Gorynych
@@ -7377,6 +7660,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 51200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +18, taille -2
     contact: 10
@@ -7406,6 +7690,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +3, taille -1 ; parade +2 contre le Mal
     contact: 12
@@ -7437,6 +7722,7 @@
   - Montagnes
   - Froid
   PX: 102400
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des runes.ashx
   
 - Nom: Destrier noir
@@ -7446,6 +7732,7 @@
   - Ciel
   - Extraplanaire
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +8, taille -1
     contact: 11
@@ -7476,6 +7763,7 @@
   - Aquatique
   - Tempéré
   PX: 51200
+  Init: 4
   CA:
     calcul: naturelle +24, taille -4
     contact: 6
@@ -7506,6 +7794,7 @@
   - Plaines
   - Tropical
   PX: 2400
+  Init: 0
   CA:
     calcul: naturelle +14, taille -2
     contact: 8
@@ -7536,6 +7825,7 @@
   - Montagnes
   - Extraplanaire
   PX: 102400
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brijidine.ashx
   
 - Nom: Dragon impérial du ciel
@@ -7549,6 +7839,7 @@
 - Nom: Jeune dragon du ciel
   FP: '9'
   PX: 6400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +12, taille -1
     contact: 10
@@ -7576,6 +7867,7 @@
 - Nom: Dragon adulte du ciel
   FP: '13'
   PX: 25600
+  Init: 4
   CA:
     calcul: naturelle +21, taille -2
     contact: 8
@@ -7603,6 +7895,7 @@
 - Nom: Vénérable dragon du ciel
   FP: '18'
   PX: 153600
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +33, taille -4
     contact: 5
@@ -7663,6 +7956,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, taille +8
     contact: 20
@@ -7699,6 +7993,7 @@
   - Montagnes
   - Froid
   PX: 2400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +8
     contact: 12
@@ -7729,6 +8024,7 @@
   - Montagnes
   - Froid
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +17, taille -1
     contact: 10
@@ -7759,6 +8055,7 @@
   - Montagnes
   - Froid
   PX: 51200
+  Init: 4
   CA:
     calcul: naturelle +29, taille -2
     contact: 8
@@ -7789,6 +8086,7 @@
   - Souterrain
   - Tempéré
   PX: 76800
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serpent creux.ashx
   
 - Nom: Armure fantôme gardienne
@@ -7797,6 +8095,7 @@
   - Mort-vivant
   - Ruines-Donjons
   - Tempéré
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure fantôme.ashx
   
 - Nom: Armure fantôme géante
@@ -7805,6 +8104,7 @@
   - Mort-vivant
   - Ruines-Donjons
   - Tempéré
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure fantôme.ashx
   
 - Nom: Gardien tombal
@@ -7814,6 +8114,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +8
     contact: 12
@@ -7843,6 +8144,7 @@
   - Collines
   - Tempéré
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +9, taille -1
     contact: 10
@@ -7873,6 +8175,7 @@
   - Aquatique
   - Tempéré
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, naturelle +10
     contact: 16
@@ -7903,6 +8206,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +10, taille -2
     contact: 9
@@ -7932,6 +8236,7 @@
   - Plaines
   - Tempéré
   PX: 600
+  Init: 0
   CA:
     calcul: naturelle +4, taille -1
     contact: 9
@@ -7962,6 +8267,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +5
     contact: 10
@@ -7991,6 +8297,7 @@
   - Marais
   - Froid
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +10, taille -1
     contact: 10
@@ -8021,6 +8328,7 @@
   - Plaines
   - Tempéré
   PX: 12800
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +15, taille -4
     contact: 10
@@ -8051,6 +8359,7 @@
   - Collines
   - Tempéré
   PX: 135
+  Init: 0
   CA:
     calcul: armure +3
     contact: 10
@@ -8080,6 +8389,7 @@
   - Marais
   - Tempéré
   PX: 19200
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Catoblépas.ashx
   
 - Nom: Océanide
@@ -8088,6 +8398,7 @@
   - Fée
   - Aquatique
   - Tempéré
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Océanide.ashx
   
 - Nom: Calmar
@@ -8097,6 +8408,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -8126,6 +8438,7 @@
   - Aberration
   - Forêt-Jungle
   - Tempéré
+  Init: 12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Argus.ashx
   
 - Nom: Habitant de Leng
@@ -8143,6 +8456,7 @@
   - Souterrain
   - Tempéré
   PX: 3200
+  Init: -5
   CA:
     calcul: Dex -5, taille -2
     contact: 3
@@ -8174,6 +8488,7 @@
   - Aquatique
   - Tropical
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2
     contact: 13
@@ -8203,6 +8518,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +6
     contact: 13
@@ -8233,6 +8549,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blaireau.ashx
   
 - Nom: Derghodaémon
@@ -8242,6 +8559,7 @@
   - Ville
   - Extraplanaire
   PX: 19200
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +13, taille -1
     contact: 14
@@ -8272,6 +8590,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +9, taille -2
     contact: 11
@@ -8302,6 +8621,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +3
     contact: 11
@@ -8332,6 +8652,7 @@
   - Aquatique
   - Tempéré
   PX: 153600
+  Init: 4
   CA:
     calcul: naturelle +26, taille -4
     contact: 6
@@ -8363,6 +8684,7 @@
   - Collines
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: armure +2, bouclier +1, Dex +1, naturelle +3
     contact: 11
@@ -8392,6 +8714,7 @@
   - Marais
   - Froid
   PX: 307200
+  Init: 12
   CA:
     calcul: Dex +8, naturelle +26, taille -8
     contact: 10
@@ -8423,6 +8746,7 @@
   - Forêt-Jungle
   - Froid
   PX: 19200
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant de la taïga.ashx
   
 - Nom: Wendigo
@@ -8432,6 +8756,7 @@
   - Collines
   - Froid
   PX: 102400
+  Init: 13
   CA:
     calcul: Dex +9, naturelle +14, taille –1
     contact: 18
@@ -8462,6 +8787,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 4
   CA:
     calcul: armure +2, Dex +4, naturelle +2
     contact: 14
@@ -8491,6 +8817,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 1
   CA:
     calcul: armure +9, Dex +1, naturelle +3 ; parade +2 contre le Mal
     contact: 11
@@ -8521,6 +8848,7 @@
   - Aquatique
   - Extraplanaire
   PX: 6400
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +9, taille -1
     contact: 14
@@ -8549,6 +8877,7 @@
   - Créature artificielle
   - Plaines
   - Tempéré
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pantin des âmes.ashx
   
 - Nom: Mite  (ou Xvart, Xivort, Svart)
@@ -8558,6 +8887,7 @@
   - Souterrain
   - Tempéré
   PX: 100
+  Init: 1
   CA:
     calcul: Dex +1, taille +1
     contact: 12
@@ -8586,6 +8916,7 @@
   - Extérieur
   - Ciel
   - Extraplanaire
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +15 ; parade +4 contre le Mal
     contact: 14
@@ -8616,6 +8947,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1,naturelle +2, taille +2
     contact: 16
@@ -8644,11 +8976,13 @@
   - Créature artificielle
   - Aquatique
   - Tempéré
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tibérolithe.ashx
   
 - Nom: Thoqqua
   FP: '2'
   PX: 600
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Thoqqua.ashx
   
 - Nom: Homme-lézard
@@ -8658,6 +8992,7 @@
   - Marais
   - Tempéré
   PX: 400
+  Init: 0
   CA:
     calcul: bouclier +2, naturelle +5
     contact: 10
@@ -8687,6 +9022,7 @@
   - Ville
   - Extraplanaire
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, naturelle +1, taille +2
     contact: 16
@@ -8716,6 +9052,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3
     contact: 13
@@ -8749,6 +9086,7 @@
 - Nom: Jeune dragon chtonien
   FP: '7'
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +10
     contact: 11
@@ -8775,6 +9113,7 @@
 - Nom: Dragon adulte chtonien
   FP: '11'
   PX: 12800
+  Init: 4
   CA:
     calcul: naturelle +19, taille -1
     contact: 9
@@ -8801,6 +9140,7 @@
 - Nom: Vénérable dragon chtonien
   FP: '16'
   PX: 76800
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +31, taille -2
     contact: 7
@@ -8831,6 +9171,7 @@
   - Marais
   - Tropical
   PX: 400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +3
     contact: 11
@@ -8861,6 +9202,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 4800
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +8
     contact: 15
@@ -8891,6 +9233,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +10, taille -1
     contact: 11
@@ -8921,6 +9264,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 4800
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +6
     contact: 15
@@ -8950,6 +9294,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +1, taille +2
     contact: 15
@@ -8980,6 +9325,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +6
     contact: 9
@@ -9009,6 +9355,7 @@
   - forêt-jungle
   - tempéré
   PX: 307200
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +20, taille -4
     contact: 14
@@ -9040,6 +9387,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -9066,6 +9414,7 @@
 - Nom: Spinosaure
   FP: '11'
   PX: 12800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +16, taille -4
     contact: 8
@@ -9096,6 +9445,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: armure +1, Dex +3
     contact: 13
@@ -9126,6 +9476,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 400
+  Init: -2
   CA:
     calcul: Dex -2, Naturelle +2, taille +2
     contact: 10
@@ -9156,6 +9507,7 @@
   - Aquatique
   - Tempéré
   PX: 200
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grindylow.ashx
   
 - Nom: Chauve-souris
@@ -9165,6 +9517,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 50
+  Init: 2
   CA:
     calcul: Dex +2, taille +4
     contact: 16
@@ -9194,6 +9547,7 @@
   - Marais
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3
     contact: 13
@@ -9224,6 +9578,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +5
     contact: 10
@@ -9254,6 +9609,7 @@
   - Aquatique
   - Tempéré
   PX: 2400
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des mers.ashx
   
 - Nom: Coloxe
@@ -9263,6 +9619,7 @@
   - Ruines-donjons
   - Extraplanaire
   PX: 19200
+  Init: 13
   CA:
     calcul: Dex +9, naturelle +7
     contact: 19
@@ -9291,12 +9648,14 @@
   - Vase
   - Ruines-Donjons
   - Tempéré
+  Init: 12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Couleur tombée du
     ciel.ashx
   
 - Nom: Démodande hirsute
   FP: '18'
   PX: 153600
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +15
     contact: 17
@@ -9327,6 +9686,7 @@
   - Plaines
   - Tropical
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +12, taille -2
     contact: 10
@@ -9357,6 +9717,7 @@
   - Aquatique
   - Tempéré
   PX: 100
+  Init: 0
   CA:
     calcul: taille +1
     contact: 11
@@ -9386,6 +9747,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +7
     contact: 11
@@ -9416,6 +9778,7 @@
   - Ville
   - Tempéré
   PX: 135
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +1, taille +1
     contact: 12
@@ -9446,6 +9809,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: -5
   CA:
     calcul: Dex -5, taille -1
     contact: 4
@@ -9477,6 +9841,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 6400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem alchimique.ashx
   
 - Nom: Grodair
@@ -9486,6 +9851,7 @@
   - Aquatique
   - Tempéré
   PX: 1600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +7
     contact: 9
@@ -9516,6 +9882,7 @@
   - Ville
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -9545,6 +9912,7 @@
   - Ciel
   - Extraplanaire
   PX: 9600
+  Init: 5
   CA:
     calcul: +2 parade contre le Mal
     contact: 10
@@ -9576,6 +9944,7 @@
   - Désert
   - Tropical
   PX: 1200
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enfouisseur des sables.ashx
   
 - Nom: Norne
@@ -9614,6 +9983,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, intuition +1, taille +2
     contact: 16
@@ -9644,6 +10014,7 @@
   - Plaines
   - Tempéré
   PX: 200
+  Init: 1
   CA:
     calcul: Dex +1
     contact: 11
@@ -9674,6 +10045,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -9704,6 +10076,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +4, taille -1
     contact: 13
@@ -9734,6 +10107,7 @@
   - Aquatique
   - Tempéré
   PX: 2400
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +8, taille -2
     contact: 11
@@ -9764,6 +10138,7 @@
   - Forêt-jungle
   - Froid
   PX: 204800
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +25, taille -8
     contact: 9
@@ -9795,6 +10170,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuglub.ashx
   
 - Nom: Astradaémon
@@ -9804,6 +10180,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 76800
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, naturelle +12, taille -1
     contact: 17
@@ -9833,6 +10210,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +15, taille -4
     contact: 8
@@ -9865,6 +10243,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut.ashx
   
 - Nom: Corbeau
@@ -9874,6 +10253,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 65
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -9903,6 +10283,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 135
+  Init: 6
   CA:
     calcul: armure +2, Dex +2, naturelle +2
     contact: 12
@@ -9932,6 +10313,7 @@
   - Souterrain
   - Tempéré
   PX: 19200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +17, taille -1
     contact: 10
@@ -9970,6 +10352,7 @@
   - Ville
   - Tempéré
   PX: 1200
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chuchoteur du grenier.ashx
   
 - Nom: Gorille
@@ -9979,6 +10362,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -10008,6 +10392,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3, taille +1
     contact: 14
@@ -10037,6 +10422,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 9600
+  Init: 8
   CA:
     calcul: Dex +5, esquive +1, naturelle +9, taille -1
     contact: 15
@@ -10067,6 +10453,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 1
   CA:
     calcul: armure +5, Dex +2
     contact: 12
@@ -10096,6 +10483,7 @@
   - Ciel
   - Extraplanaire
   PX: 1200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +7, taille -1
     contact: 12
@@ -10126,6 +10514,7 @@
   - Plaines
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: Dex +3, taille +1
     contact: 14
@@ -10156,6 +10545,7 @@
   - Ville
   - Extraplanaire
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +1, taille +2
     contact: 15
@@ -10185,6 +10575,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blaireau sanguinaire.ashx
   
 - Nom: Nuée d'amibes
@@ -10194,6 +10585,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: -5
   CA:
     calcul: Dex -5, taille +8
     contact: 13
@@ -10223,6 +10615,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +7, taille -1
     contact: 12
@@ -10253,6 +10646,7 @@
   - Plaines
   - Tempéré
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2, taille -1
     contact: 12
@@ -10282,6 +10676,7 @@
   - Ville
   - Extraplanaire
   PX: 800
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dziriak.ashx
   
 - Nom: Buggane
@@ -10291,6 +10686,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +10, taille -1
     contact: 8
@@ -10316,6 +10712,7 @@
 - Nom: Doru
   FP: '2'
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +3, taille +2
     contact: 15
@@ -10346,6 +10743,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +5
     contact: 15
@@ -10383,6 +10781,7 @@
   - Ciel
   - Tempéré
   PX: 614400
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +32, taille -8
     contact: 8
@@ -10412,6 +10811,7 @@
   - Ciel
   - Extraplanaire
   PX: 9600
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Déva movanique.ashx
   
 - Nom: Vargouille
@@ -10421,6 +10821,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +3, taille +1
     contact: 12
@@ -10450,6 +10851,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 100
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -10479,6 +10881,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 25600
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +13
     contact: 14
@@ -10508,6 +10911,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -10538,6 +10942,7 @@
   - ruines-donjons
   - tempéré
   PX: 1200
+  Init: 3
   CA:
     calcul: armure +8, naturelle +1
     contact: 10
@@ -10567,6 +10972,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 2400
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fumigon.ashx
   
 - Nom: Scorpion des cavernes
@@ -10576,6 +10982,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scorpion des cavernes.ashx
   
 - Nom: Âme-en-peine
@@ -10585,6 +10992,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1600
+  Init: 7
   CA:
     calcul: Dex +3, parade +5
     contact: 18
@@ -10614,6 +11022,7 @@
   - Plaines
   - Tropical
   PX: 19200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +21, taille -8
     contact: 6
@@ -10645,6 +11054,7 @@
   - Ville
   - Extraplanaire
   PX: 2400
+  Init: 7
   CA:
     calcul: armure +4, Dex +3, naturelle +4
     contact: 13
@@ -10674,6 +11084,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +6
     contact: 13
@@ -10706,6 +11117,7 @@
   - Collines
   - Froid
   PX: 4800
+  Init: 7
   CA:
     calcul: armure +4, Dex +3, naturelle +5, taille -1
     contact: 12
@@ -10735,6 +11147,7 @@
   - Ciel
   - Tempéré
   PX: 4800
+  Init: 9
   CA:
     calcul: Dex +5
     contact: 15
@@ -10765,6 +11178,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +4, taille -1
     contact: 10
@@ -10794,6 +11208,7 @@
   - Montagnes
   - Tropical
   PX: 6400
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +4
     contact: 15
@@ -10823,6 +11238,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boisvivant.ashx
   
 - Nom: Garou-chacal
@@ -10832,6 +11248,7 @@
   - Désert
   - Tropical
   PX: 600
+  Init: 3
   CA:
     calcul: armure +2, Dex +3, esquive +1, naturelle +1
     contact: 14
@@ -10861,6 +11278,7 @@
   - Marais
   - Tempéré
   PX: 25600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +19, taille -2
     contact: 9
@@ -10891,6 +11309,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 0
   CA:
     calcul: naturelle +4
     contact: 10
@@ -10920,6 +11339,7 @@
   - Désert
   - Tropical
   PX: 200
+  Init: -1
   CA:
     calcul: Dex -1
     contact: 9
@@ -10950,6 +11370,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +1, taille +1
     contact: 14
@@ -10979,6 +11400,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 102400
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +20, taille -4
     contact: 13
@@ -11010,6 +11432,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 1200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +5
     contact: 12
@@ -11040,6 +11463,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 25600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +17, taille -1
     contact: 10
@@ -11071,6 +11495,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -11101,6 +11526,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +6
     contact: 13
@@ -11131,6 +11557,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +10, taille -1
     contact: 8
@@ -11161,6 +11588,7 @@
   - Plaines
   - Froid
   PX: 2400
+  Init: 3
   CA:
     calcul: armure +2, Dex -1, naturelle +8, taille -1
     contact: 8
@@ -11190,6 +11618,7 @@
   - Montagnes
   - Tropical
   PX: 6400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +14, taille -4
     contact: 8
@@ -11220,6 +11649,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 100
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +1, taille +2
     contact: 17
@@ -11250,6 +11680,7 @@
   - Désert
   - Tempéré
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +11, taille -1
     contact: 10
@@ -11279,6 +11710,7 @@
   - Aquatique
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2, taille +4
     contact: 16
@@ -11312,6 +11744,7 @@
   - Aquatique
   - Froid
   PX: 204800
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +18, taille -2
     contact: 15
@@ -11343,6 +11776,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +5, taille -1
     contact: 10
@@ -11374,6 +11808,7 @@
   - Désert
   - Tropical
   PX: 51200
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scorpion noir.ashx
   
 - Nom: Liane meurtrière
@@ -11383,6 +11818,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +6, taille -1
     contact: 9
@@ -11422,6 +11858,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 6
   CA:
     calcul: Dex +4, esquive +1, naturelle +6, taille -1
     contact: 14
@@ -11452,6 +11889,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1
     contact: 13
@@ -11481,6 +11919,7 @@
   - Plaines
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +5, taille -1
     contact: 12
@@ -11511,6 +11950,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +8
     contact: 9
@@ -11541,6 +11981,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 120400
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +16, taille -1
     contact: 15
@@ -11569,6 +12010,7 @@
   - Créature artificielle
   - Ciel
   - Tempéré
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon mécanique.ashx
   
 - Nom: Tertre errant
@@ -11578,6 +12020,7 @@
   - Marais
   - Tempéré
   PX: 2400
+  Init: 0
   CA:
     calcul: naturelle +10, taille -1
     contact: 9
@@ -11608,6 +12051,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +5
     contact: 11
@@ -11638,6 +12082,7 @@
   - Créature artificielle
   - Plaines
   - Tempéré
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colosse de fer.ashx
   
 - Nom: Moisissure vaseuse
@@ -11647,6 +12092,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: -1
   CA:
     calcul: Dex _1, taille -1
     contact: 8
@@ -11677,6 +12123,7 @@
   - Ville
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, taille +4
     contact: 16
@@ -11706,6 +12153,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Solifuge albinos
     des cavernes.ashx
   
@@ -11716,6 +12164,7 @@
   - Plaines
   - Tempéré
   PX: 4800
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fleur de lune.ashx
   
 - Nom: Démon, Vrock
@@ -11725,6 +12174,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 6400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +11, taille -1
     contact: 11
@@ -11754,6 +12204,7 @@
   - Montagnes
   - Tropical
   PX: 6400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +11, taille -1
     contact: 12
@@ -11783,6 +12234,7 @@
   - Désert
   - Tropical
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6
     contact: 12
@@ -11812,6 +12264,7 @@
   - Aquatique
   - Tempéré
   PX: 204800
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serpent des profondeurs.ashx
   
 - Nom: Grig
@@ -11821,6 +12274,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grig.ashx
   
 - Nom: Ghaéle
@@ -11830,6 +12284,7 @@
   - Forêt-Jungle
   - Extraplanaire
   PX: 25600
+  Init: 5
   CA:
     calcul: Dex +1, esquive +1, naturelle +12, parade +4
     contact: 16
@@ -11859,6 +12314,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 100
+  Init: 3
   CA:
     calcul: Dex +3, taille +2
     contact: 15
@@ -11889,6 +12345,7 @@
   - Plaines
   - Tropical
   PX: 600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +1
     contact: 14
@@ -11919,6 +12376,7 @@
   - Désert
   - Tropical
   PX: 400
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Solifuge géant.ashx
   
 - Nom: Lion
@@ -11928,6 +12386,7 @@
   - Plaines
   - Tropical
   PX: 800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +3, taille -1
     contact: 12
@@ -11959,6 +12418,7 @@
   - Ciel
   - Tempéré
   PX: 6400
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cheval draconique.ashx
   
 - Nom: Sphinx, hiéracosphinx
@@ -11968,6 +12428,7 @@
   - Collines
   - Tropical
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -11998,6 +12459,7 @@
   - Plaines
   - Tempéré
   PX: 1200
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Épouvantail.ashx
   
 - Nom: Guenaude verte
@@ -12007,6 +12469,7 @@
   - Marais
   - Tempéré
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +8
     contact: 11
@@ -12036,6 +12499,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 100
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -12065,6 +12529,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +2
     contact: 11
@@ -12093,6 +12558,7 @@
   - Créature magique
   - Souterrain
   - Tempéré
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bhole.ashx
   
 - Nom: Kech
@@ -12102,6 +12568,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +3
     contact: 13
@@ -12131,6 +12598,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 4800
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bodak.ashx
   
 - Nom: Jube-jube
@@ -12170,6 +12638,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +4, taille -1
     contact: 10
@@ -12199,6 +12668,7 @@
   - Plaines
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +2, taille +2
     contact: 13
@@ -12228,6 +12698,7 @@
   - Marais
   - Tropical
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3, taille +1
     contact: 13
@@ -12258,6 +12729,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 1228800
+  Init: 6
   CA:
     calcul: armure +8, Dex +2, naturelle +30, taille -8
     contact: 4
@@ -12287,6 +12759,7 @@
   - Ville
   - Extraplanaire
   PX: 1200
+  Init: 4
   CA:
     calcul: naturelle +9 ; parade +2 contre le Mal
     contact: 10
@@ -12317,6 +12790,7 @@
   - Ville
   - Extraplanaire
   PX: 25600
+  Init: 9
   CA:
     calcul: Dex +5, naturelle +18, taille -1
     contact: 14
@@ -12346,6 +12820,7 @@
   - Aquatique
   - Extraplanaire
   PX: 19200
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +10
     contact: 18
@@ -12379,6 +12854,7 @@
   - Montagnes
   - Tempéré
   PX: 153600
+  Init: -2
   CA:
     calcul: Dex -2, naturelle +35, taille -8
     contact: 0
@@ -12413,6 +12889,7 @@
 - Nom: Jeune dragon souverain
   FP: '11'
   PX: 12800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +13, taille -1
     contact: 10
@@ -12439,6 +12916,7 @@
 - Nom: Dragon adulte souverain
   FP: '15'
   PX: 51200
+  Init: 4
   CA:
     calcul: naturelle +22, taille -2
     contact: 8
@@ -12465,6 +12943,7 @@
 - Nom: Vénérable dragon souverain
   FP: '20'
   PX: 307200
+  Init: 4
   CA:
     calcul: Dex -1, naturelle +34, taille -4
     contact: 5
@@ -12495,6 +12974,7 @@
   - Aquatique
   - Froid
   PX: 25600
+  Init: 6
   CA:
     calcul: Dex +2, esquive +1, naturelle +19, taille -2
     contact: 11
@@ -12526,6 +13006,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tentamort.ashx
   
 - Nom: Zélékhut
@@ -12535,6 +13016,7 @@
   - Ville
   - Extraplanaire
   PX: 6400
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +9, taille –1
     contact: 15
@@ -12565,6 +13047,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: 3
   CA:
     calcul: Dex +3, taille +4
     contact: 17
@@ -12594,6 +13077,7 @@
   - Ciel
   - Extraplanaire
   PX: 307200
+  Init: 6
   CA:
     calcul: parade +4 contre le Mal
     contact: 18
@@ -12621,6 +13105,7 @@
 - Nom: Incube
   FP: '6'
   PX: 2400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6
     contact: 12
@@ -12649,6 +13134,7 @@
   - Créature artificielle
   - Plaines
   - Tempéré
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cheval mécanique.ashx
   
 - Nom: Satyre
@@ -12658,6 +13144,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +5
     contact: 13
@@ -12687,6 +13174,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 4
   CA:
     calcul: naturelle +5
     contact: 10
@@ -12717,6 +13205,7 @@
   - Plaines
   - Tempéré
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +12, taille -2
     contact: 10
@@ -12755,6 +13244,7 @@
   - Souterrain
   - Extraplanaire
   PX: 400
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +7, taille +1
     contact: 10
@@ -12785,6 +13275,7 @@
   - Souterrain
   - Extraplanaire
   PX: 800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +9
     contact: 9
@@ -12815,6 +13306,7 @@
   - Souterrain
   - Extraplanaire
   PX: 1600
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +10, taille -1
     contact: 8
@@ -12845,6 +13337,7 @@
   - Souterrain
   - Extraplanaire
   PX: 3200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +12, taille -2
     contact: 7
@@ -12875,6 +13368,7 @@
   - Souterrain
   - Extraplanaire
   PX: 6400
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +14, taille -2
     contact: 7
@@ -12905,6 +13399,7 @@
   - Souterrain
   - Extraplanaire
   PX: 12800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +16, taille -2
     contact: 7
@@ -12935,6 +13430,7 @@
   - Aquatique
   - Tempéré
   PX: 1600
+  Init: -5
   CA:
     calcul: Dex -5, naturelle +12, taille -1
     contact: 4
@@ -12966,6 +13462,7 @@
   - Souterrain
   - Tempéré
   PX: 1200
+  Init: 0
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -12996,6 +13493,7 @@
   - Aquatique
   - Tempéré
   PX: 1200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +4
     contact: 13
@@ -13026,6 +13524,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +2
     contact: 11
@@ -13056,6 +13555,7 @@
   - Plaines
   - Tropical
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -2
     contact: 10
@@ -13086,6 +13586,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +6, taille -1
     contact: 12
@@ -13115,6 +13616,7 @@
   - Aquatique
   - Tempéré
   PX: 3200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +10, taille -2
     contact: 10
@@ -13147,6 +13649,7 @@
   - Ciel
   - Extraplanaire
   PX: 38400
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +17, taille -2
     contact: 12
@@ -13176,6 +13679,7 @@
   - Aquatique
   - Extraplanaire
   PX: 51200
+  Init: 8
   CA:
     calcul: parade +4 contre le Mal
     contact: 15
@@ -13207,6 +13711,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 9600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +14
     contact: 11
@@ -13237,6 +13742,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 19200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +17, taille -2
     contact: 9
@@ -13266,6 +13772,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: Dex +3
     contact: 13
@@ -13295,6 +13802,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 5
   CA:
     calcul: armure +6, bouclier +2, Dex +1, naturelle +2
     contact: 11
@@ -13324,6 +13832,7 @@
   - Aquatique
   - Tempéré
   PX: 1200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +5, taille -1
     contact: 12
@@ -13355,6 +13864,7 @@
   - Aquatique
   - Tempéré
   PX: 1200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +3
     contact: 13
@@ -13384,6 +13894,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 6
   CA:
     calcul: Dex +2, esquive +1, naturelle +12, taille -1
     contact: 12
@@ -13411,6 +13922,7 @@
 - Nom: Goliath Mécanique
   FP: '19'
   PX: 204800
+  Init: 9
   CA:
     calcul: Dex +5, esquive +2, naturelle +22, taille -4
     contact: 13
@@ -13445,6 +13957,7 @@
   - Ville
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: armure +3, Dex +2, esquive +1
     contact: 13
@@ -13474,6 +13987,7 @@
   - Ville
   - Tempéré
   PX: 600
+  Init: 3
   CA:
     calcul: armure +3, Dex +3, esquive +1, naturelle +2
     contact: 14
@@ -13503,6 +14017,7 @@
   - Ville
   - Extraplanaire
   PX: 3200
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien de Tindalos.ashx
   
 - Nom: Ver ténébreux
@@ -13512,6 +14027,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 4800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +8
     contact: 13
@@ -13542,6 +14058,7 @@
   - Ciel
   - Extraplanaire
   PX: 204800
+  Init: 8
   CA:
     calcul: +2 parade contre le Mal
     contact: 11
@@ -13572,6 +14089,7 @@
   - Désert
   - Tropical
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +10, taille -1
     contact: 11
@@ -13601,6 +14119,7 @@
   - Forêt-Jungle
   - Froid
   PX: 1200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +6, taille -1
     contact: 10
@@ -13628,6 +14147,7 @@
 - Nom: Démodande goudronneux
   FP: '13'
   PX: 25600
+  Init: 9
   CA:
     calcul: armure +6, Dex +3, naturelle +7
     contact: 13
@@ -13659,6 +14179,7 @@
   - Souterrain
   - Tempéré
   PX: 100
+  Init: 1
   CA:
     calcul: armure +2, Dex +1, naturelle +1, taille +1
     contact: 12
@@ -13688,6 +14209,7 @@
   - Collines
   - Tempéré
   PX: 2400
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, naturelle +7, taille -1
     contact: 13
@@ -13718,6 +14240,7 @@
   - Forêt-Jungle
   - Extraplanaire
   PX: 1200
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, naturelle +2, taille +1
     contact: 15
@@ -13747,6 +14270,7 @@
   - Plaines
   - Tempéré
   PX: 2400
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glyptodonte.ashx
   
 - Nom: Drake des rivières
@@ -13756,6 +14280,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +3
     contact: 13
@@ -13785,6 +14310,7 @@
   - Montagnes
   - Froid
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +5, taille -1
     contact: 11
@@ -13814,6 +14340,7 @@
   - Ruines-donjons
   - Extraplanaire
   PX: 76800
+  Init: 10
   CA:
     calcul: Dex +6, naturelle +18, taille -1
     contact: 15
@@ -13845,6 +14372,7 @@
   - Ville
   - Tempéré
   PX: 135
+  Init: 3
   CA:
     calcul: Dex +3, taille +1
     contact: 14
@@ -13875,6 +14403,7 @@
   - Plaines
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, taille +1
     contact: 13
@@ -13904,6 +14433,7 @@
   - Plaines
   - Tropical
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +9, taille -1
     contact: 10
@@ -13934,6 +14464,7 @@
   - Souterrain
   - Tempéré
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +1, esquive +1, naturelle +8, taille -1
     contact: 11
@@ -13962,6 +14493,7 @@
   - Vase
   - Souterrain
   - Tempéré
+  Init: -5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle du chaudron.ashx
   
 - Nom: Bythos
@@ -13971,6 +14503,7 @@
   - Ciel
   - Extraplanaire
   PX: 76800
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +13, parade +4, taille -1
     contact: 18
@@ -14001,6 +14534,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 2400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +6
     contact: 12
@@ -14030,6 +14564,7 @@
   - Forêt-jungle
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -14060,6 +14595,7 @@
   - Ruines-Donjons
   - Tropical
   PX: 1600
+  Init: 0
   CA:
     calcul: naturelle +10
     contact: 10
@@ -14089,6 +14625,7 @@
   - Aquatique
   - Tropical
   PX: 3200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +9, taille -2
     contact: 11
@@ -14119,6 +14656,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coléoptère tranchoir.ashx
   
 - Nom: Flumph
@@ -14128,6 +14666,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +4, taille +1
     contact: 14
@@ -14156,6 +14695,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de sang.ashx
   
 - Nom: Oléthrodaémon
@@ -14165,6 +14705,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 307200
+  Init: 12
   CA:
     calcul: Dex +8, naturelle +20, parade +4, taille -4
     contact: 18
@@ -14195,6 +14736,7 @@
   - Aberration
   - Ciel
   - Tempéré
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bréthédien.ashx
   
 - Nom: Nécrophidius
@@ -14204,6 +14746,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2
     contact: 13
@@ -14233,6 +14776,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage mécanique.ashx
   
 - Nom: Charybde
@@ -14242,6 +14786,7 @@
   - Aquatique
   - Tempéré
   PX: 25600
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charybde.ashx
   
 - Nom: Archelon
@@ -14251,6 +14796,7 @@
   - Aquatique
   - Tropical
   PX: 1600
+  Init: 5
   CA:
     calcul: armure +10, Dex +1, taille -2
     contact: 9
@@ -14281,6 +14827,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 6400
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, intuition +3, naturelle +3
     contact: 21
@@ -14312,6 +14859,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille -1
     contact: 11
@@ -14350,6 +14898,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 12800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +13, taille -1
     contact: 12
@@ -14378,6 +14927,7 @@
   - Créature artificielle
   - Plaines
   - Tempéré
+  Init: 11
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colosse de pierre.ashx
   
 - Nom: Vampire
@@ -14387,6 +14937,7 @@
   - Ville
   - Tempéré
   PX: 6400
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +6, parade +2
     contact: 17
@@ -14416,6 +14967,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -14445,6 +14997,7 @@
   - Désert
   - Tropical
   PX: 800
+  Init: 0
   CA:
     calcul: armure +7, taille -1
     contact: 9
@@ -14476,6 +15029,7 @@
   - Plaines
   - Tropical
   PX: 1200
+  Init: 0
   CA:
     calcul: naturelle +7, taille -1
     contact: 9
@@ -14506,6 +15060,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 4
   CA:
     calcul: Dex +4, taille +1
     contact: 15
@@ -14535,6 +15090,7 @@
   - Ruines-donjons
   - Extraplanaire
   PX: 600
+  Init: 0
   CA:
     calcul: naturelle +3, taille +1
     contact: 11
@@ -14564,6 +15120,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 38400
+  Init: 13
   CA:
     calcul: Dex +9, naturelle +12, taille -2
     contact: 17
@@ -14594,6 +15151,7 @@
   - Aquatique
   - Tempéré
   PX: 6400
+  Init: 4
   CA:
     calcul: naturelle +15, taille -2
     contact: 8
@@ -14631,6 +15189,7 @@
   - Montagnes
   - Tropical
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +12, taille -1
     contact: 10
@@ -14661,6 +15220,7 @@
   - Montagnes
   - Tropical
   PX: 38400
+  Init: 4
   CA:
     calcul: naturelle +21, taille -2
     contact: 8
@@ -14691,6 +15251,7 @@
   - Montagnes
   - Tropical
   PX: 204800
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +33, taille -4
     contact: 5
@@ -14721,6 +15282,7 @@
   - Souterrain
   - Tempéré
   PX: 6400
+  Init: 0
   CA:
     calcul: naturelle +19, taille -8
     contact: 2
@@ -14758,6 +15320,7 @@
   - Désert
   - Tropical
   PX: 6400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +11, taille -1
     contact: 10
@@ -14788,6 +15351,7 @@
   - Désert
   - Tropical
   PX: 25600
+  Init: 4
   CA:
     calcul: naturelle +20, taille -2
     contact: 8
@@ -14818,6 +15382,7 @@
   - Désert
   - Tropical
   PX: 153600
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +32, taille -4
     contact: 5
@@ -14848,6 +15413,7 @@
   - marais
   - Tropical
   PX: 200
+  Init: 4
   CA:
     calcul: Dex +4, taille +2
     contact: 16
@@ -14879,6 +15445,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 51200
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +12
     contact: 17
@@ -14909,6 +15476,7 @@
   - Forêt-Jungle
   - Froid
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -14939,6 +15507,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 19200
+  Init: 2
   CA:
     calcul: armure +4, Dex +2, naturelle +5, parade +2
     contact: 14
@@ -14968,6 +15537,7 @@
   - ruines-donjons
   - Extraplanaire
   PX: 204800
+  Init: 8
   CA:
     calcul: Dex +8, naturelle +19, taille -1
     contact: 17
@@ -14997,6 +15567,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bunyip.ashx
   
 - Nom: Totenmaske
@@ -15006,6 +15577,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 3200
+  Init: 10
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Totenmaske.ashx
   
 - Nom: Nuée de méduses
@@ -15015,6 +15587,7 @@
   - Aquatique
   - Tempéré
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, taille +2
     contact: 13
@@ -15044,6 +15617,7 @@
   - Aquatique
   - Tempéré
   PX: 9600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +13, taille -2
     contact: 11
@@ -15075,6 +15649,7 @@
   - Collines
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -15112,6 +15687,7 @@
   - Souterrain
   - Extraplanaire
   PX: 2400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +8
     contact: 12
@@ -15142,6 +15718,7 @@
   - Souterrain
   - Extraplanaire
   PX: 9600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +17, taille -1
     contact: 10
@@ -15172,6 +15749,7 @@
   - Souterrain
   - Extraplanaire
   PX: 51200
+  Init: 4
   CA:
     calcul: naturelle +29, taille -2
     contact: 8
@@ -15202,6 +15780,7 @@
   - Ciel
   - Extraplanaire
   PX: 6400
+  Init: 6
   CA:
     calcul: Dex +6, esquive +1, naturelle +8
     contact: 17
@@ -15232,6 +15811,7 @@
   - Ruines-Donjons
   - extraplanaire
   PX: 19200
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +4
     contact: 17
@@ -15262,6 +15842,7 @@
   - Souterrain
   - Tempéré
   PX: 9600
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gug.ashx
   
 - Nom: Tieffelin
@@ -15271,6 +15852,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: armure +3, Dex +3
     contact: 13
@@ -15300,6 +15882,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, taille +2
     contact: 15
@@ -15329,6 +15912,7 @@
   - Souterrain
   - Extraplanaire
   PX: 1600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2, taille +4
     contact: 17
@@ -15359,6 +15943,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 65
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -15389,6 +15974,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 19200
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enfant lumineux.ashx
   
 - Nom: Fourmi géante
@@ -15398,6 +15984,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 0
   CA:
     calcul: naturelle +5
     contact: 10
@@ -15429,6 +16016,7 @@
   - Plaines
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +7, taille -1
     contact: 9
@@ -15460,6 +16048,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cafard géant.ashx
   
 - Nom: Loup
@@ -15469,6 +16058,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -15499,6 +16089,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 600
+  Init: 4
   CA:
     calcul: naturelle +4, taille +2
     contact: 12
@@ -15528,6 +16119,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +14, taille -2
     contact: 7
@@ -15557,6 +16149,7 @@
   - Marais
   - Tropical
   PX: 2400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +9, taille -2
     contact: 10
@@ -15587,6 +16180,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: -5
   CA:
     calcul: Dex -5, taille +1
     contact: 6
@@ -15618,6 +16212,7 @@
   - Collines
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +8, taille -1
     contact: 11
@@ -15648,6 +16243,7 @@
   - Désert
   - Tropical
   PX: 51200
+  Init: 11
   CA:
     calcul: Dex +7, esquive +1, naturelle +14, taille -4
     contact: 14
@@ -15677,6 +16273,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -15710,31 +16307,37 @@
 - Nom: Élémentaire du magma de taille P
   FP: '1'
   PX: 400
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille M
   FP: '3'
   PX: 800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille G
   FP: '5'
   PX: 1600
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille TG
   FP: '7'
   PX: 3200
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma noble
   FP: '9'
   PX: 6400
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Seigneur Élémentaire du magma
   FP: '11'
   PX: 12800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Oxydeur
@@ -15744,6 +16347,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +5
     contact: 13
@@ -15774,6 +16378,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 12800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +14, taille -2
     contact: 11
@@ -15805,6 +16410,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 5
   CA:
     calcul: Dex +2, naturelle +2, taille +1
     contact: 13
@@ -15834,6 +16440,7 @@
   - Marais
   - Tempéré
   PX: 800
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume vampirique.ashx
   
 - Nom: Seigneur félin
@@ -15843,6 +16450,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 12800
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Seigneur félin.ashx
   
 - Nom: Attrape-mouches géant
@@ -15852,6 +16460,7 @@
   - Marais
   - Tempéré
   PX: 9600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +10, taille -2
     contact: 12
@@ -15912,6 +16521,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +4, taille -1
     contact: 11
@@ -15945,6 +16555,7 @@
   - Ville
   - Extraplanaire
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +4, taille -1
     contact: 12
@@ -15974,6 +16585,7 @@
   - Marais
   - Tropical
   PX: 200
+  Init: 1
   CA:
     calcul: Dex +1, taille +2
     contact: 13
@@ -16004,6 +16616,7 @@
   - Ciel
   - Extraplanaire
   PX: 76800
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +19, taille -1 ; parade +4 contre le Mal
     contact: 13
@@ -16034,6 +16647,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grick.ashx
   
 - Nom: Zombi juju humain
@@ -16043,6 +16657,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 600
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +3
     contact: 15
@@ -16072,6 +16687,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, taille +1
     contact: 13
@@ -16102,6 +16718,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 3
   CA:
     calcul: armure +2, Dex +3, taille +1
     contact: 14
@@ -16131,6 +16748,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +4, taille -1
     contact: 11
@@ -16160,6 +16778,7 @@
   - Ciel
   - Extraplanaire
   PX: 307200
+  Init: 12
   CA:
     calcul: Dex +8, esquive +1, naturelle +12, parade +6, taille -1
     contact: 24
@@ -16189,6 +16808,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de cire.ashx
   
 - Nom: Serpent de mer
@@ -16198,6 +16818,7 @@
   - Aquatique
   - Tempéré
   PX: 19200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +17, taille -4
     contact: 8
@@ -16229,6 +16850,7 @@
   - Collines
   - Extraplanaire
   PX: 204800
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +19, taille -1
     contact: 16
@@ -16258,6 +16880,7 @@
   - Marais
   - Tempéré
   PX: 2400
+  Init: 13
   CA:
     calcul: Dex +9, esquive +1, parade +5, taille +1
     contact: 26
@@ -16287,6 +16910,7 @@
   - Ville
   - Extraplanaire
   PX: 1200
+  Init: 6
   CA:
     calcul: Dex +6
     contact: 16
@@ -16316,6 +16940,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 307200
+  Init: 12
   CA:
     calcul: Dex +8, esquive +1, intuition +3, naturelle +10, taille -2, parade +5
     contact: 25
@@ -16347,6 +16972,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 6400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille +8
     contact: 20
@@ -16391,6 +17017,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 307200
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +16, parade +4, taille -1
     contact: 20
@@ -16420,6 +17047,7 @@
   - Ciel
   - Extraplanaire
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, esquive +1, naturelle +1, taille +2
     contact: 15
@@ -16450,6 +17078,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: 6
   CA:
     calcul: armure +2, bouclier +1, Dex +2, taille +1
     contact: 13
@@ -16479,6 +17108,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: -3
   CA:
     calcul: Dex -3, taille -2
     contact: 5
@@ -16505,6 +17135,7 @@
 - Nom: Akvan
   FP: '20'
   PX: 307200
+  Init: 12
   CA:
     calcul: armure +13, Dex +4, naturelle +15, taille -4
     contact: 10
@@ -16534,6 +17165,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 50
+  Init: 1
   CA:
     calcul: Dex +1, taille +4
     contact: 15
@@ -16564,6 +17196,7 @@
   - Collines
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: armure +3, bouclier +1, Dex +2
     contact: 12
@@ -16593,6 +17226,7 @@
   - Souterrain
   - Tempéré
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, esquive +1, parade +5
     contact: 17
@@ -16621,6 +17255,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chose de peaux recousues.ashx
   
 - Nom: Tigre sanguinaire (ou Smilodon)
@@ -16630,6 +17265,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -16657,6 +17293,7 @@
 - Nom: Bec-de-hache
   FP: '2'
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +2, taille -1
     contact: 12
@@ -16686,6 +17323,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 2400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +8, taille -1
     contact: 11
@@ -16716,6 +17354,7 @@
   - Aquatique
   - Tempéré
   PX: 100
+  Init: 1
   CA:
     calcul: Dex +1, taille +2
     contact: 13
@@ -16746,6 +17385,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +5
     contact: 11
@@ -16775,6 +17415,7 @@
   - Marais
   - Tempéré
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -16804,6 +17445,7 @@
   - Montagnes
   - Tempéré
   PX: 4800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +11, taille -1
     contact: 11
@@ -16833,6 +17475,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 4800
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, taille +4
     contact: 21
@@ -16864,6 +17507,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: armure +4, Dex +2
     contact: 12
@@ -16893,6 +17537,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: armure +4, Dex +2, naturelle +2
     contact: 12
@@ -16923,6 +17568,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 3200
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, naturelle +6
     contact: 14
@@ -16956,6 +17602,7 @@
   - Aquatique
   - Tropical
   PX: 200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +1
     contact: 11
@@ -16985,6 +17632,7 @@
   - Montagnes
   - Tempéré
   PX: 12800
+  Init: 1
   CA:
     calcul: armure +4, Dex +1, naturelle +12, taille -2
     contact: 9
@@ -17030,6 +17678,7 @@
   - Ciel
   - Extraplanaire
   PX: 6400
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Dragon des nuages adulte
@@ -17039,6 +17688,7 @@
   - Ciel
   - Extraplanaire
   PX: 25600
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Dragon des nuages vénérable
@@ -17048,6 +17698,7 @@
   - Ciel
   - Extraplanaire
   PX: 153600
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Alpluachre
@@ -17056,6 +17707,7 @@
   - Fée
   - Aquatique
   - Tempéré
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alpluachre.ashx
   
 - Nom: Zombi humain
@@ -17065,6 +17717,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 200
+  Init: 0
   CA:
     calcul: naturelle +2
     contact: 10
@@ -17094,6 +17747,7 @@
   - Collines
   - Tropical
   PX: 1600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -17124,6 +17778,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +4
     contact: 11
@@ -17153,6 +17808,7 @@
   - Aquatique
   - Extraplanaire
   PX: 4800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +9, taille -1
     contact: 11
@@ -17183,6 +17839,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 6400
+  Init: 6
   CA:
     calcul: armure +6, Dex +2, naturelle +7, taille -1
     contact: 11
@@ -17213,6 +17870,7 @@
   - Plaines
   - Extraplanaire
   PX: 19200
+  Init: 7
   CA:
     calcul: parade +4 contre le Mal
     contact: 14
@@ -17244,6 +17902,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 1
   CA:
     calcul: Dex +1, taille +4
     contact: 15
@@ -17273,6 +17932,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +13, taille -2
     contact: 9
@@ -17303,6 +17963,7 @@
   - Désert
   - Tropical
   PX: 4800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +12, taille -2
     contact: 9
@@ -17341,6 +18002,7 @@
   - Désert
   - Tempéré
   PX: 400
+  Init: -2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue géante.ashx
   
 - Nom: Axiomite
@@ -17350,6 +18012,7 @@
   - Ville
   - Extraplanaire
   PX: 4800
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +6
     contact: 15
@@ -17382,6 +18045,7 @@
   - Souterrain
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +4
     contact: 13
@@ -17412,6 +18076,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 7
   CA:
     calcul: armure +4, Dex +3, naturelle +3
     contact: 13
@@ -17441,6 +18106,7 @@
   - Plaines
   - Froid
   PX: 400
+  Init: 3
   CA:
     calcul: Dex +3
     contact: 13
@@ -17471,6 +18137,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 4800
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +8
     contact: 14
@@ -17500,6 +18167,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 5
   CA:
     calcul: armure +6, Dex +1
     contact: 11
@@ -17530,6 +18198,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: armure +6, Dex +2, naturelle +4
     contact: 12
@@ -17560,6 +18229,7 @@
   - Montagnes
   - Froid
   PX: 102400
+  Init: 10
   CA:
     calcul: Dex +6, naturelle +24, taille -8
     contact: 8
@@ -17591,6 +18261,7 @@
   - Marais
   - Tempéré
   PX: 600
+  Init: -1
   CA:
     calcul: armure +2, Dex -1, naturelle +3
     contact: 9
@@ -17620,6 +18291,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, esquive +2, taille +1
     contact: 15
@@ -17649,6 +18321,7 @@
   - Montagnes
   - Tempéré
   PX: 1600
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des flammes.ashx
   
 - Nom: Kirin
@@ -17658,6 +18331,7 @@
   - Ciel
   - Tempéré
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +6, naturelle +5, taille -1
     contact: 15
@@ -17688,6 +18362,7 @@
   - Marais
   - Tropical
   PX: 6400
+  Init: 4
   CA:
     calcul: naturelle +15, taille -4
     contact: 6
@@ -17719,6 +18394,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hippocampe géant.ashx
   
 - Nom: Lilende
@@ -17728,6 +18404,7 @@
   - Forêt-Jungle
   - Extraplanaire
   PX: 3200
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +8, taille -1
     contact: 12
@@ -17758,6 +18435,7 @@
   - Aquatique
   - Tropical
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +2, taille +1
     contact: 13
@@ -17788,6 +18466,7 @@
   - Souterrain
   - Tempéré
   PX: 3200
+  Init: 2
   CA:
     calcul: Dex +2, esquive +1, naturelle +8, taille -1
     contact: 12
@@ -17818,6 +18497,7 @@
   - Aquatique
   - Tempéré
   PX: 600
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Draugr.ashx
   
 - Nom: Nécrophage des glaces
@@ -17827,6 +18507,7 @@
   - Ruines-Donjons
   - Froid
   PX: 102400
+  Init: 10
   CA:
     calcul: Dex +6, naturelle +16
     contact: 16
@@ -17856,6 +18537,7 @@
   - Marais
   - Tempéré
   PX: 6400
+  Init: 10
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorcière de feu.ashx
   
 - Nom: Mégalocéros
@@ -17865,6 +18547,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +5, taille -1
     contact: 10
@@ -17895,6 +18578,7 @@
   - Ciel
   - Extraplanaire
   PX: 600
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cassisien.ashx
   
 - Nom: Dibbouk
@@ -17904,6 +18588,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 51200
+  Init: 15
   CA:
     calcul: Dex +11, parade +7
     contact: 28
@@ -17932,6 +18617,7 @@
   - Ruines-Donjons
   - extraplanaire
   PX: 25600
+  Init: 0
   CA:
     calcul: naturelle +20, taille -2
     contact: 8
@@ -17961,6 +18647,7 @@
   - Forêt-Jungle
   - Froid
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +8, taille -1
     contact: 10
@@ -17992,6 +18679,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 4800
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +12
     contact: 14
@@ -18022,6 +18710,7 @@
   - Aquatique
   - Tempéré
   PX: 3200
+  Init: 2
   CA:
     calcul: Dex +2, taille -1
     contact: 11
@@ -18052,6 +18741,7 @@
   - Marais
   - Tempéré
   PX: 3200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +12
     contact: 9
@@ -18082,6 +18772,7 @@
   - Aquatique
   - Tempéré
   PX: 400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +2, taille +2
     contact: 13
@@ -18111,6 +18802,7 @@
   - Ville
   - Extraplanaire
   PX: 38400
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +14
     contact: 17
@@ -18142,6 +18834,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 76800
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de mithral.ashx
   
 - Nom: Chouette
@@ -18151,6 +18844,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 135
+  Init: 3
   CA:
     calcul: Dex +3, taille +2
     contact: 15
@@ -18179,6 +18873,7 @@
   - Vase
   - Ruines-Donjons
   - Tempéré
+  Init: -3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chair affamée.ashx
   
 - Nom: Zuishin
@@ -18188,6 +18883,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 9600
+  Init: 9
   CA:
     calcul: armure +6, Dex +3, naturelle +4
     contact: 13
@@ -18218,6 +18914,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 38400
+  Init: 8
   CA:
     calcul: amrmure +6, Dex +4, esquive +1, intuition +2
     contact: 17
@@ -18252,6 +18949,7 @@
 - Nom: Jeune dragon des forêts
   FP: '10'
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +12, taille -1
     contact: 10
@@ -18279,6 +18977,7 @@
 - Nom: Dragon adulte des forêts
   FP: '14'
   PX: 38400
+  Init: 4
   CA:
     calcul: naturelle +22, taille -2
     contact: 8
@@ -18306,6 +19005,7 @@
 - Nom: Vénérable dragon des forêts
   FP: '19'
   PX: 204800
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +34, taille -4
     contact: 5
@@ -18336,6 +19036,7 @@
   - Plante
   - Ruines-Donjons
   - Tempéré
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mi-go.ashx
   
 - Nom: Yéti
@@ -18345,6 +19046,7 @@
   - Montagnes
   - Froid
   PX: 1200
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +7, taille -1
     contact: 10
@@ -18378,6 +19080,7 @@
   - Montagnes
   - Tempéré
   PX: 1200
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +4
     contact: 13
@@ -18408,6 +19111,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, taille +4
     contact: 16
@@ -18437,6 +19141,7 @@
   - Aquatique
   - Tempéré
   PX: 307200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +36, taille -8
     contact: 1
@@ -18467,6 +19172,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 1200
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de charogne.ashx
   
 - Nom: Salamandre
@@ -18476,6 +19182,7 @@
   - Souterrain
   - Extraplanaire
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +7
     contact: 11
@@ -18507,6 +19214,7 @@
   - Désert
   - Tropical
   PX: 6400
+  Init: 0
   CA:
     calcul: naturelle +14, taille -1
     contact: 9
@@ -18536,6 +19244,7 @@
   - Créature artificielle
   - Aquatique
   - Tropical
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de corail.ashx
   
 - Nom: Golem de chair
@@ -18545,6 +19254,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 3200
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +12, taille -1
     contact: 8
@@ -18574,6 +19284,7 @@
   - Aquatique
   - Tropical
   PX: 76800
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +20, taille -4
     contact: 11
@@ -18604,6 +19315,7 @@
   - Aquatique
   - Tropical
   PX: 2400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +7, taille -1
     contact: 12
@@ -18630,6 +19342,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2, taille +2
     contact: 14
@@ -18664,6 +19377,7 @@
 - Nom: Jeune dragon des mers
   FP: '8'
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +11, taille -1
     contact: 10
@@ -18691,6 +19405,7 @@
 - Nom: Dragon adulte des mers
   FP: '12'
   PX: 19200
+  Init: 4
   CA:
     calcul: naturelle +20, taille -2
     contact: 8
@@ -18718,6 +19433,7 @@
 - Nom: Vénérable dragon des mers
   FP: '17'
   PX: 102400
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +32, taille -4
     contact: 5
@@ -18745,6 +19461,7 @@
 - Nom: Augure (Kyton)
   FP: '2'
   PX: 600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +2, taille +2
     contact: 15
@@ -18775,6 +19492,7 @@
   - Désert
   - extraplanaire
   PX: 4800
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +8, taille -1
     contact: 13
@@ -18804,6 +19522,7 @@
   - Plaines
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, esquive +1, taille +1
     contact: 15
@@ -18833,6 +19552,7 @@
   - Aquatique
   - Froid
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +8, taille -1
     contact: 9
@@ -18863,6 +19583,7 @@
   - Marais
   - Tempéré
   PX: 4800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des marais.ashx
   
 - Nom: Slurk
@@ -18872,6 +19593,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Slurk.ashx
   
 - Nom: Thélétos
@@ -18881,6 +19603,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, esquive +1, naturelle +5, parade +2
     contact: 15
@@ -18911,6 +19634,7 @@
   - Souterrain
   - Tempéré
   PX: 409600
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spore de mu.ashx
   
 - Nom: Nuckelavee
@@ -18920,6 +19644,7 @@
   - Marais
   - Froid
   PX: 6400
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, naturelle +6, taille -1
     contact: 17
@@ -18950,6 +19675,7 @@
   - Montagnes
   - Tempéré
   PX: 800
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +3, taille -1
     contact: 12
@@ -18979,6 +19705,7 @@
   - Aquatique
   - Tropical
   PX: 1600
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +4
     contact: 14
@@ -19010,6 +19737,7 @@
   - Désert
   - Tropical
   PX: 400
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dromadaire.ashx
   
 - Nom: Akata
@@ -19019,6 +19747,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -19049,6 +19778,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: armure +2, Dex +3, esquive +1
     contact: 14
@@ -19078,11 +19808,13 @@
   - Collines
   - Tempéré
   PX: 800
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spriggan.ashx
   
 - Nom: Spriggan (Taille G)
   FP: '3'
   PX: 800
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spriggan.ashx
   
 - Nom: Ver mortel
@@ -19092,6 +19824,7 @@
   - Désert
   - Tropical
   PX: 2400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +9, taille -1
     contact: 10
@@ -19121,6 +19854,7 @@
   - Collines
   - Tempéré
   PX: 102400
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Thrasfyr.ashx
   
 - Nom: Kyton, ermite
@@ -19160,6 +19894,7 @@
   - Aquatique
   - Tempéré
   PX: 135
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +2
     contact: 11
@@ -19190,6 +19925,7 @@
   - Désert
   - Tropical
   PX: 153600
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +24, taille -4
     contact: 10
@@ -19249,6 +19985,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 2400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +8
     contact: 11
@@ -19278,6 +20015,7 @@
   - Collines
   - Tropical
   PX: 1600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +5, taille -1
     contact: 12
@@ -19309,6 +20047,7 @@
   - Ciel
   - Extraplanaire
   PX: 6400
+  Init: 5
   CA:
     calcul: armure +4, Dex +5, esquive +1, naturelle +4
     contact: 16
@@ -19339,6 +20078,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 1200
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, naturelle +1, taille +1
     contact: 17
@@ -19368,6 +20108,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tique géante.ashx
   
 - Nom: Naga corrupteur
@@ -19377,6 +20118,7 @@
   - Marais
   - Tempéré
   PX: 6400
+  Init: 5
   CA:
     calcul: Dex +5, naturelle +9, taille -1
     contact: 14
@@ -19407,6 +20149,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 2400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +6, taille -1
     contact: 12
@@ -19436,6 +20179,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 76800
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +20, taille -4
     contact: 11
@@ -19472,6 +20216,7 @@
   - Marais
   - Tropical
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +9
     contact: 12
@@ -19502,6 +20247,7 @@
   - Marais
   - Tropical
   PX: 12800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +18, taille -1
     contact: 10
@@ -19532,6 +20278,7 @@
   - Marais
   - Tropical
   PX: 76800
+  Init: 4
   CA:
     calcul: naturelle +30, taille -2
     contact: 8
@@ -19558,6 +20305,7 @@
 - Nom: Shira
   FP: '12'
   PX: 19200
+  Init: 11
   CA:
     calcul: Dex +7, naturelle +11, taille -1
     contact: 16
@@ -19588,6 +20336,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 2400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +8, taille -1
     contact: 11
@@ -19618,6 +20367,7 @@
   - Montagnes
   - Extraplanaire
   PX: 614400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Titan thanatotique.ashx
   
 - Nom: Moustique géant
@@ -19627,6 +20377,7 @@
   - Marais
   - Tempéré
   PX: 2400
+  Init: 7
   CA:
     calcul: Dex +7, naturelle +2
     contact: 17
@@ -19657,6 +20408,7 @@
   - Mort-vivant
   - Aquatique
   - Tempéré
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bakekujira.ashx
   
 - Nom: Vase de magma
@@ -19666,6 +20418,7 @@
   - Montagnes
   - Tempéré
   PX: 3200
+  Init: -5
   CA:
     calcul: Dex -5, taille -5
     contact: 4
@@ -19697,6 +20450,7 @@
   - Aquatique
   - Tempéré
   PX: 19200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +20, taille -4
     contact: 7
@@ -19726,6 +20480,7 @@
   - Souterrain
   - tempéré
   PX: 135
+  Init: 2
   CA:
     calcul: armure +2, bouclier +1, Dex +2
     contact: 12
@@ -19756,6 +20511,7 @@
   - Collines
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1, taille +2
     contact: 14
@@ -19786,6 +20542,7 @@
   - Collines
   - Tropical
   PX: 2400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +9, taille -1
     contact: 10
@@ -19816,6 +20573,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +1
     contact: 14
@@ -19845,6 +20603,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +4, taille -1
     contact: 11
@@ -19874,6 +20633,7 @@
   - Ville
   - Extraplanaire
   PX: 9600
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +13, taille -1
     contact: 12
@@ -19905,6 +20665,7 @@
   - Désert
   - Tropical
   PX: 4800
+  Init: 6
   CA:
     calcul: armure +2, Dex +2, esquive +1, naturelle +8, taille -1
     contact: 12
@@ -19936,6 +20697,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 7
   CA:
     calcul: Dex +7, esquive +1, naturelle +1, taille +1
     contact: 19
@@ -19965,6 +20727,7 @@
   - Forêt-Jungle
   - Froid
   PX: 1600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +7, taille -1
     contact: 10
@@ -19995,6 +20758,7 @@
   - Montagnes
   - Extraplanaire
   PX: 409600
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Titan de lÉlysée.ashx
   
 - Nom: Tengu
@@ -20004,6 +20768,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 3
   CA:
     calcul: armure +2, Dex +3
     contact: 13
@@ -20033,6 +20798,7 @@
   - Ville
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -20062,6 +20828,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 400
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bâtard.ashx
   
 - Nom: Golem canon
@@ -20071,6 +20838,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 51200
+  Init: 7
   CA:
     calcul: Dex +7, naturelle +15, taille -1
     contact: 16
@@ -20100,6 +20868,7 @@
   - Souterrain
   - Tempéré
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +7, taille -1
     contact: 10
@@ -20130,6 +20899,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +4, taille –1
     contact: 11
@@ -20159,6 +20929,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 12800
+  Init: -7
   CA:
     calcul: Dex +3, esquive +1, naturelle +12, taille -1
     contact: 13
@@ -20188,6 +20959,7 @@
   - Montagnes
   - Tropical
   PX: 9600
+  Init: -1
   CA:
     calcul: armure +8, Dex -1, naturelle +8, taille -1
     contact: 8
@@ -20217,6 +20989,7 @@
   - Souterrain
   - Tempéré
   PX: 25600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +14, taille -1
     contact: 12
@@ -20246,6 +21019,7 @@
   - Plaines
   - Tropical
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -20276,6 +21050,7 @@
   - Montagnes
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1, taille +1
     contact: 13
@@ -20301,6 +21076,7 @@
 - Nom: Démodande visqueux
   FP: '16'
   PX: 76800
+  Init: 4
   CA:
     calcul: armure +6, Dex +3, naturelle +11
     contact: 13
@@ -20332,6 +21108,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 102400
+  Init: 4
   CA:
     calcul: Dex +4, naturelle +15, parade +4, taille -1
     contact: 17
@@ -20363,6 +21140,7 @@
   - Ville
   - Tempéré
   PX: 100
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -20393,6 +21171,7 @@
   - aquatique
   - Tempéré
   PX: 600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +1, Taille +1
     contact: 14
@@ -20423,6 +21202,7 @@
   - Souterrain
   - Tempéré
   PX: 135
+  Init: -1
   CA:
     calcul: armure +6, bouclier +2, Dex -1
     contact: 9
@@ -20453,6 +21233,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 12800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +15, taille -2
     contact: 11
@@ -20484,6 +21265,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +9, taille -1
     contact: 11
@@ -20514,6 +21296,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, parade +7
     contact: 23
@@ -20543,6 +21326,7 @@
   - Ciel
   - Extraplanaire
   PX: 819200
+  Init: 9
   CA:
     calcul: armure +14, Dex +1, esquive +1, naturelle +19, taille -1 ; parade +4 contre
       le Mal
@@ -20574,6 +21358,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -20603,6 +21388,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 65
+  Init: -2
   CA:
     calcul: Dex -2, naturelle +1, taille +2
     contact: 10
@@ -20633,6 +21419,7 @@
   - Ville
   - Tempéré
   PX: 200
+  Init: 1
   CA:
     calcul: armure +6, Dex +1
     contact: 11
@@ -20662,6 +21449,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 1600
+  Init: 3
   CA:
     calcul: Dex +3, naturelle +6, taille -1
     contact: 12
@@ -20691,6 +21479,7 @@
   - Souterrain
   - Tempéré
   PX: 51200
+  Init: 2
   CA:
     calcul: Dex -2, naturelle +26, taille -4
     contact: 4
@@ -20722,6 +21511,7 @@
   - Aquatique
   - Extraplanaire
   PX: 9600
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +10
     contact: 14
@@ -20752,6 +21542,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +2, taille +1
     contact: 13
@@ -20783,6 +21574,7 @@
   - Souterrain
   - Tempéré
   PX: 2400
+  Init: 0
   CA:
     calcul: armure +4, naturelle +6, taille -1
     contact: 9
@@ -20812,6 +21604,7 @@
   - Plaines
   - Tempéré
   PX: 4800
+  Init: 4
   CA:
     calcul: naturelle +11, taille -1
     contact: 9
@@ -20841,6 +21634,7 @@
   - Désert
   - Tropical
   PX: 1200
+  Init: 6
   CA:
     calcul: armure +6, Dex +2, esquive +1, naturelle +1
     contact: 13
@@ -20870,6 +21664,7 @@
   - Plaines
   - Tropical
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +4, taille -1
     contact: 11
@@ -20908,6 +21703,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +10, taille -1
     contact: 10
@@ -20938,6 +21734,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 19200
+  Init: 0
   CA:
     calcul: naturelle +19, taille -2
     contact: 8
@@ -20968,6 +21765,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 102400
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +31, taille -4
     contact: 5
@@ -20998,6 +21796,7 @@
   - Plaines
   - Tempéré
   PX: 3200
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arsinoithérium.ashx
   
 - Nom: Neh-thalggu
@@ -21007,6 +21806,7 @@
   - Montagnes
   - Tempéré
   PX: 4800
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +2, intuition +7, taille –1
     contact: 19
@@ -21037,6 +21837,7 @@
   - Forêt-Jungle
   - tempéré
   PX: 1600
+  Init: 5
   CA:
     calcul: Dex +2, naturelle +8, taille -2
     contact: 10
@@ -21066,6 +21867,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -21098,6 +21900,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -21127,6 +21930,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 19200
+  Init: 8
   CA:
     calcul: Dex +4, esquive +2, naturelle +14, taille -2
     contact: 14
@@ -21163,6 +21967,7 @@
   - Souterrain
   - Tempéré
   PX: 135
+  Init: 0
   CA:
     calcul: naturelle +1, taille +1
     contact: 11
@@ -21193,6 +21998,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 6400
+  Init: 10
   CA:
     calcul: Dex +6, esquive +1, naturelle +7
     contact: 17
@@ -21222,6 +22028,7 @@
   - Aquatique
   - Tropical
   PX: 1600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +8, taille -1
     contact: 11
@@ -21253,6 +22060,7 @@
   - Plaines
   - Tempéré
   PX: 800
+  Init: 6
   CA:
     calcul: armure +6, bouclier +2, Dex +2, naturelle +1, taille -1
     contact: 11
@@ -21283,6 +22091,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 4800
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coléoptère goliath.ashx
   
 - Nom: Élémentaire de la boue
@@ -21300,6 +22109,7 @@
   - Souterrain
   - Extraplanaire
   PX: 400
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21310,6 +22120,7 @@
   - Souterrain
   - Extraplanaire
   PX: 800
+  Init: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21320,6 +22131,7 @@
   - Souterrain
   - Extraplanaire
   PX: 1600
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21330,6 +22142,7 @@
   - Souterrain
   - Extraplanaire
   PX: 3200
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21340,6 +22153,7 @@
   - Souterrain
   - Extraplanaire
   PX: 6400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21350,6 +22164,7 @@
   - Souterrain
   - Extraplanaire
   PX: 12800
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -21367,6 +22182,7 @@
   - Ciel
   - Extraplanaire
   PX: 400
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de Taille M
@@ -21376,6 +22192,7 @@
   - Ciel
   - Extraplanaire
   PX: 800
+  Init: 8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de Taille G
@@ -21385,6 +22202,7 @@
   - Ciel
   - Extraplanaire
   PX: 1600
+  Init: 10
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de taille TG
@@ -21394,6 +22212,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair Noble
@@ -21403,6 +22222,7 @@
   - Ciel
   - Extraplanaire
   PX: 6400
+  Init: 13
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Seigneur Élémentaire de l’éclair
@@ -21412,6 +22232,7 @@
   - Ciel
   - Extraplanaire
   PX: 12800
+  Init: 14
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Gar géant
@@ -21421,6 +22242,7 @@
   - Aquatique
   - Tempéré
   PX: 2400
+  Init: 4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gar géant.ashx
   
 - Nom: Stymphalide
@@ -21430,6 +22252,7 @@
   - Plaines
   - Tropical
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +11, taille -1
     contact: 11
@@ -21459,6 +22282,7 @@
   - Montagnes
   - Tempéré
   PX: 400
+  Init: 2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bélier.ashx
   
 - Nom: Dévoreur draconique - Dracosire Rouge
@@ -21468,6 +22292,7 @@
   - Montagnes
   - Tempéré
   PX: 614400
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +36, parade +4, taille -4
     contact: 9
@@ -21499,6 +22324,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +6
     contact: 9
@@ -21528,6 +22354,7 @@
   - Aquatique
   - Tempéré
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +11, taille -2
     contact: 9
@@ -21558,6 +22385,7 @@
   - Marais
   - Tempéré
   PX: 400
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +1
     contact: 11
@@ -21589,6 +22417,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 400
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +1
     contact: 12
@@ -21618,6 +22447,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, parade +2
     contact: 18
@@ -21647,6 +22477,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 19200
+  Init: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem mécanique.ashx
   
 - Nom: Végépygmée
@@ -21656,6 +22487,7 @@
   - souterrain
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3, taille +1
     contact: 13
@@ -21692,6 +22524,7 @@
   - Montagnes
   - Tempéré
   PX: 9600
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +12, taille -1
     contact: 10
@@ -21722,6 +22555,7 @@
   - Montagnes
   - Tempéré
   PX: 38400
+  Init: 4
   CA:
     calcul: naturelle +21, taille -2
     contact: 8
@@ -21752,6 +22586,7 @@
   - Montagnes
   - Tempéré
   PX: 204800
+  Init: 3
   CA:
     calcul: Dex -1, naturelle +33, taille -4
     contact: 5
@@ -21782,6 +22617,7 @@
   - Aquatique
   - Tempéré
   PX: 3200
+  Init: 6
   CA:
     calcul: Dex +6, naturelle +5, taille -1
     contact: 15
@@ -21819,6 +22655,7 @@
   - Collines
   - Tropical
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +10
     contact: 12
@@ -21849,6 +22686,7 @@
   - Collines
   - Tropical
   PX: 19200
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +19, taille -1
     contact: 10
@@ -21879,6 +22717,7 @@
   - Collines
   - Tropical
   PX: 102400
+  Init: 4
   CA:
     calcul: naturelle +31, taille -2
     contact: 8
@@ -21909,6 +22748,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 4800
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +14, taille -4
     contact: 7
@@ -21939,6 +22779,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 600
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +3
     contact: 12
@@ -21970,6 +22811,7 @@
   - Souterrain
   - Tempéré
   PX: 38400
+  Init: 7
   CA:
     calcul: Dex +3, naturelle +18, taille -2
     contact: 11
@@ -22001,6 +22843,7 @@
   - Désert
   - Tropical
   PX: 6400
+  Init: 3
   CA:
     calcul: armure +2, Dex +3, esquive +1, naturelle +9, taille -1
     contact: 13
@@ -22031,6 +22874,7 @@
   - Collines
   - Tropical
   PX: 800
+  Init: 7
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chupacabra.ashx
   
 - Nom: Pachycéphalosaure
@@ -22040,6 +22884,7 @@
   - Plaines
   - Tropical
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6, taille -1
     contact: 11
@@ -22069,6 +22914,7 @@
   - Collines
   - Tropical
   PX: 200
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugwampi.ashx
   
 - Nom: Nalfeshnie
@@ -22078,6 +22924,7 @@
   - Ruines-Donjons
   - Extraplanaire
   PX: 38400
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +16, parade +4, taille -2
     contact: 13
@@ -22107,6 +22954,7 @@
   - Ciel
   - Tropical
   PX: 800
+  Init: 8
   CA:
     calcul: Dex +4, esquive +1, naturelle +2, taille -1
     contact: 14
@@ -22136,6 +22984,7 @@
   - Forêt-Jungle
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, taille +2
     contact: 14
@@ -22166,6 +23015,7 @@
   - Plaines
   - Tropical
   PX: 9600
+  Init: 0
   CA:
     calcul: naturelle +12, taille -4
     contact: 6
@@ -22196,6 +23046,7 @@
   - Souterrain
   - Tempéré
   PX: 400
+  Init: 4
   CA:
     calcul: Dex +4, esquive +1, naturelle +1, taille +2
     contact: 17
@@ -22225,6 +23076,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aallip.ashx
   
 - Nom: Anaconda géant
@@ -22234,6 +23086,7 @@
   - Marais
   - Tropical
   PX: 9600
+  Init: 6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anaconda géant.ashx
   
 - Nom: Xacarba
@@ -22243,6 +23096,7 @@
   - Ville
   - Extraplanaire
   PX: 51200
+  Init: 9
   CA:
     calcul: Dex +5, esquive +1, naturelle +19, taille –4
     contact: 12
@@ -22274,6 +23128,7 @@
   - Souterrain
   - Tempéré
   PX: 600
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +4, taille +1
     contact: 13
@@ -22304,6 +23159,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +4
     contact: 10
@@ -22333,6 +23189,7 @@
   - Forêt-Jungle
   - Extraplanaire
   PX: 19200
+  Init: 8
   CA:
     calcul: Dex +4, naturelle +12, taille -1
     contact: 13
@@ -22363,6 +23220,7 @@
   - Désert
   - Tropical
   PX: 4800
+  Init: 5
   CA:
     calcul: Dex +1, naturelle +11, taille -1
     contact: 10
@@ -22393,6 +23251,7 @@
   - Ville
   - Extraplanaire
   PX: 307200
+  Init: 13
   CA:
     calcul: Dex +9, naturelle +20, taille -1
     contact: 18
@@ -22423,6 +23282,7 @@
   - Aquatique
   - Tempéré
   PX: 4800
+  Init: 6
   CA:
     calcul: Dex +2, naturelle +7, taille -1
     contact: 11
@@ -22454,6 +23314,7 @@
   - Aquatique
   - Tempéré
   PX: 800
+  Init: 0
   CA:
     calcul: naturelle +4
     contact: 10
@@ -22483,6 +23344,7 @@
   - Souterrain
   - Tempéré
   PX: 200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +2
     contact: 12
@@ -22513,6 +23375,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 12800
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +17, taille -1
     contact: 11
@@ -22544,6 +23407,7 @@
   - Ville
   - Extraplanaire
   PX: 200
+  Init: 3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fetchelin.ashx
   
 - Nom: Golem de pacotille
@@ -22552,6 +23416,7 @@
   - Créature artificielle
   - Ruines-donjons
   - Tempéré
+  Init: -1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de pacotille.ashx
   
 - Nom: Golem de pierre
@@ -22561,6 +23426,7 @@
   - Ruines-Donjons
   - Tempéré
   PX: 12800
+  Init: -1
   CA:
     calcul: Dex -1, naturelle +18, taille -1
     contact: 8
@@ -22590,6 +23456,7 @@
   - Ciel
   - Extraplanaire
   PX: 3200
+  Init: 5
   CA:
     calcul: Dex +5, esquive +1, naturelle +4
     contact: 16
@@ -22618,6 +23485,7 @@
   - Plante
   - Forêt-Jungle
   - Tempéré
+  Init: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barometz.ashx
   
 - Nom: Iku-turso
@@ -22627,6 +23495,7 @@
   - Aquatique
   - Froid
   PX: 4800
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +7
     contact: 14
@@ -22656,6 +23525,7 @@
   - forêt-jungle
   - tempéré
   PX: 1600
+  Init: 1
   CA:
     calcul: Dex +1, esquive +2, naturelle +4, taille +1
     contact: 14
@@ -22685,6 +23555,7 @@
   - Forêt-Jungle
   - Tropical
   PX: 9600
+  Init: 7
   CA:
     calcul: Dex +3, esquive +1, naturelle +9, taille -1
     contact: 13
@@ -22716,6 +23587,7 @@
   - Désert
   - Tropical
   PX: 6400
+  Init: 7
   CA:
     calcul: Dex +1, intuition +6, naturelle +8, taille -1
     contact: 16
@@ -22743,6 +23615,7 @@
 - Nom: Païraka
   FP: '7'
   PX: 3200
+  Init: 9
   CA:
     calcul: Dex +5, naturelle +8
     contact: 15
@@ -22768,6 +23641,7 @@
 - Nom: Aghash
   FP: '4'
   PX: 1200
+  Init: 2
   CA:
     calcul: Dex +2, naturelle +6
     contact: 12
@@ -22805,6 +23679,7 @@
   - Marais
   - Tropical
   PX: 600
+  Init: 1
   CA:
     calcul: Dex +1, naturelle +4, taille -1
     contact: 10

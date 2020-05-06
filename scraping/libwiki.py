@@ -58,7 +58,7 @@ def cleanValue(value):
 # +3 => 3, 1.000 => 1000, '-' => None
 #
 def parseNumber(number):
-  number =  number.replace(',','').replace('.','').replace(' ','').strip()
+  number =  number.replace(',','').replace('.','').replace(' ','').replace('–','-').strip()
   if number == '-' or number == '—':
     return 0
   else:
