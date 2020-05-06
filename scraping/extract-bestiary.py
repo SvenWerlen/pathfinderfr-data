@@ -17,6 +17,7 @@ PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
 FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'Init',
           'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
+          'VD',
           'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
           'Référence']
 MATCH = ['Nom']
@@ -186,8 +187,12 @@ for page in pages:
           ## ATTAQUE
           ##
           elif part == "attaque":
-            # nothing
-            bob = 1
+            
+            field = 'VD'
+            if 'vd' in data:
+              vd = re.search('^(\d+) m +\((\d+) \{s:c\}\)', data['vd'])
+              if vd:
+                setValue(b, 'VD', { 'mètres': float(vd.group(1)), 'cases': int(vd.group(2)) })
           
           ##
           ## CARACTÉRISTIQUES
