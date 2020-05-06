@@ -123,12 +123,12 @@ for page in pages:
               ca = data['ca']
               # Variant 1 (isolated)
               if ca.find('contact') < 0:
-                setValue(b, 'CA', { 'value' : parseNumber(ca) })
+                setValue(b, 'CA', { 'valeur' : parseNumber(ca) })
               # Variant 2: CA 17, contact 9, pris au dépourvu 17 (naturelle +8, taille -1) 
               else:
                 el = re.search("(\d+).*contact +(\d+).*dépourvu +(\d+).*\((.*)\)", ca)
                 if el:
-                  setValue(b, 'CA', { 'value' : parseNumber(el.group(1)), 'contact': parseNumber(el.group(2)), 'dépourvu': parseNumber(el.group(3)), 'calcul': el.group(4).strip() });
+                  setValue(b, 'CA', { 'valeur' : parseNumber(el.group(1)), 'contact': parseNumber(el.group(2)), 'dépourvu': parseNumber(el.group(3)), 'calcul': el.group(4).strip() });
             # Variant 1 (isolated)
             if 'contact' in data:
               setValue(b['CA'], 'contact', parseNumber(data['contact']) )
@@ -143,7 +143,7 @@ for page in pages:
               parts = data['pv'].split(';')
               el = re.search("(\d+).+\((.*)\)", parts[0])
               if el:
-                setValue(b, 'PV', { 'value' : parseNumber(el.group(1)), 'calcul' : cleanText(el.group(2)) });
+                setValue(b, 'PV', { 'valeur' : parseNumber(el.group(1)), 'calcul' : cleanText(el.group(2)) });
               else:
                 print("[E] Invalid PV format '%s' (%s)" % (parts[0], b['Nom']));
               #print(data['pv'])
