@@ -147,6 +147,15 @@ for page in pages:
                 el = re.search("(\d+).*contact +(\d+).*dépourvu +(\d+).*\((.*)\)", ca)
                 if el:
                   setValue(b, 'CA', { 'value' : parseNumber(el.group(1)), 'contact': parseNumber(el.group(2)), 'dépourvu': parseNumber(el.group(3)), 'calcul': el.group(4).strip() });
+            # Variant 1 (isolated)
+            if 'contact' in data:
+              setValue(b['CA'], 'contact', parseNumber(data['contact']) )
+            if 'pris au dépourvu' in data:
+              el = re.search("(\d+).*\((.*)\)", data['pris au dépourvu'].strip())
+              if el:
+                setValue(b['CA'], 'dépourvu', parseNumber(el.group(1)))
+                setValue(b['CA'], 'calcul', el.group(2).strip())
+            
           
           ##
           ## ATTAQUE
