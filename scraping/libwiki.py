@@ -26,19 +26,28 @@ def parseWiki(data):
 def parseData(data):
   regex = re.compile("'''(.+?)'''([^']+)")
   matches = regex.findall(data.strip())
-  data = {}
-  for m in matches:
-    key = m[0].strip()
-    value = m[1].strip()
-    
-    # clean value
-    if value.endswith(',') or value.endswith(';') or value.endswith('.'):
-      value = value[:-1].strip()
-    
-    data[key.lower()] = value
+  result = {}
+  while True:
+    el = re.search("'''(.+?)'''(.+)", data)
+    if el:
+      key = el.group(1).strip()
+      hasMore = el.group(2).find("'''")
+      if hasMore > 0:
+        result[key.lower()] = cleanValue(el.group(2)[0:hasMore].strip())
+        data = el.group(2)[hasMore:]
+      else:
+        result[key.lower()] = cleanValue(el.group(2).strip())
+        return result
+    else:
+      return result
 
-  return data
-
+#
+# nettoie la valeur de certaines particularités
+#
+def cleanValue(value):
+  if value.endswith(',') or value.endswith(';') or value.endswith('.'):
+    value = value[:-1].strip()
+  return value
 
 #
 # cette fonction récupère et convertit une valeur en chiffre

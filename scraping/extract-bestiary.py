@@ -10,12 +10,12 @@ from lxml import html
 import re
 import xml.etree.ElementTree as ET
 
-from libwiki import parseWiki, parseData, parseNumber, setValue, extractNumberWithSpecial
+from libwiki import parseWiki, parseData, parseNumber, setValue, extractNumberWithSpecial, cleanText
 from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
-FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'CA', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 'Référence']
+FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 'Référence']
 MATCH = ['Nom']
 
 pages = os.listdir(PATH)
@@ -118,24 +118,6 @@ for page in pages:
           ## DÉFENSE
           ##
           elif part == "défense":
-            field = 'Réf'
-            if 'réf' in data:
-              num = extractNumberWithSpecial(data['réf'])
-              setValue(b, 'Réf', num['num'])
-              if 'special' in num:
-                setValue(b, 'RéfSpécial', num['special'])
-            field = 'Vig'
-            if 'vig' in data:
-              num = extractNumberWithSpecial(data['vig'])
-              setValue(b, 'Vig', num['num'])
-              if 'special' in num:
-                setValue(b, 'VigSpécial', num['special'])
-            field = 'Vol'
-            if 'vol' in data:
-              num = extractNumberWithSpecial(data['vol'])
-              setValue(b, 'Vol', num['num'])
-              if 'special' in num:
-                setValue(b, 'VolSpécial', num['special'])
             field = 'CA'
             if 'ca' in data:
               ca = data['ca']
@@ -155,6 +137,37 @@ for page in pages:
               if el:
                 setValue(b['CA'], 'dépourvu', parseNumber(el.group(1)))
                 setValue(b['CA'], 'calcul', el.group(2).strip())
+            
+            field = 'pv'
+            if 'pv' in data:
+              parts = data['pv'].split(';')
+              el = re.search("(\d+).+\((.*)\)", parts[0])
+              if el:
+                setValue(b, 'PV', { 'value' : parseNumber(el.group(1)), 'calcul' : cleanText(el.group(2)) });
+              else:
+                print("[E] Invalid PV format '%s' (%s)" % (parts[0], b['Nom']));
+              #print(data['pv'])
+            
+            
+            field = 'Réf'
+            if 'réf' in data:
+              num = extractNumberWithSpecial(data['réf'])
+              setValue(b, 'Réf', num['num'])
+              if 'special' in num:
+                setValue(b, 'RéfSpécial', num['special'])
+            field = 'Vig'
+            if 'vig' in data:
+              num = extractNumberWithSpecial(data['vig'])
+              setValue(b, 'Vig', num['num'])
+              if 'special' in num:
+                setValue(b, 'VigSpécial', num['special'])
+            field = 'Vol'
+            if 'vol' in data:
+              num = extractNumberWithSpecial(data['vol'])
+              setValue(b, 'Vol', num['num'])
+              if 'special' in num:
+                setValue(b, 'VolSpécial', num['special'])
+            
             
           
           ##
@@ -196,6 +209,7 @@ for page in pages:
 
       except Exception as e:
         print("Exception: %s (%s) - %s" % (b['Nom'], field, str(e)))
+        #raise e
     
       # vérifier tous les champs
       isValid = True
