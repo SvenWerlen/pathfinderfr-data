@@ -101,16 +101,29 @@ def setValue(dictObj, key, value):
 # 
 def extractAttacks(text):
   text = cleanText(text)
-  regex = re.compile('.*? [\+-][\+0-9/]+ \(.*?\)')
+  
   liste = []
-  for match in regex.findall(text):
-    attack = re.search('(.*)? ([\+-][\+0-9/]+?) \((.*?)\)', match)
+  if text.startswith('nuée'):
+    attack = re.search('(.*)? \((.*?)\)', text)
     if attack:
       nom = attack.group(1).replace(',','').strip()
-      if nom.startswith('et') or nom.startswith('ou'):
-        nom = nom[2:].strip()
-      bon = attack.group(2)
-      dmg = attack.group(3)
-      liste.append( { 'attaque': nom, 'bonus': bon, 'dommages': dmg } )
-  
+      dmg = attack.group(2)
+      liste.append( { 'attaque': nom, 'dommages': dmg } )
+    else:
+      raise ValueError("Invalid attack format '%s'" % text)
+    
+  else:
+    regex = re.compile('.*? [\+-][\+0-9/]+ \(.*?\)')
+    for match in regex.findall(text):
+      attack = re.search('(.*)? ([\+-][\+0-9/]+?) \((.*?)\)', match)
+      if attack:
+        nom = attack.group(1).replace(',','').strip()
+        if nom.startswith('et') or nom.startswith('ou'):
+          nom = nom[2:].strip()
+        bon = attack.group(2)
+        dmg = attack.group(3)
+        liste.append( { 'attaque': nom, 'bonus': bon, 'dommages': dmg } )
+      else:
+        raise ValueError("Invalid attack format '%s'" % match)
+    
   return liste

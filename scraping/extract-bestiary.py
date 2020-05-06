@@ -197,6 +197,9 @@ for page in pages:
             filed = 'cac'
             if 'corps à corps' in data:
               setValue(b, 'AttaqueCàC', extractAttacks(data['corps à corps']))
+              
+              if len(b['AttaqueCàC']) == 0:
+                print("[E] Invalid càc format '%s' (%s)" % (data['corps à corps'], b['Nom']))
           
           ##
           ## CARACTÉRISTIQUES
