@@ -82,7 +82,7 @@ def extractNumberWithSpecial(number):
 # nettoie le texte de certaines particularités
 #
 def cleanText(text):
-  return text.replace("[[", "").replace("]]", "").strip()
+  return text.replace("[[", "").replace("]]", "").replace("''", "").replace("'''", "").strip()
 
 #
 # cette fonction tente d'ajouter une clé/valeur sur un dict
@@ -93,4 +93,24 @@ def setValue(dictObj, key, value):
     raise ValueError("'%s' already exist!" % key)
   
   dictObj[key] = value
+
+#
+# cette fonction tente d'extraire une attaque et la converture sous une forme structurées
+# morsure, +16 (2d6+7), 2 griffes, +15 (1d8+5)
+# => [ { 'nom': "morsure", 'attaque': "+16", 'dommages': "2d6+7" }, ...]
+# 
+def extractAttacks(text):
+  text = cleanText(text)
+  regex = re.compile('.*? [\+-][\+0-9/]+ \(.*?\)')
+  liste = []
+  for match in regex.findall(text):
+    attack = re.search('(.*)? ([\+-][\+0-9/]+?) \((.*?)\)', match)
+    if attack:
+      nom = attack.group(1).replace(',','').strip()
+      if nom.startswith('et') or nom.startswith('ou'):
+        nom = nom[2:].strip()
+      bon = attack.group(2)
+      dmg = attack.group(3)
+      liste.append( { 'attaque': nom, 'bonus': bon, 'dommages': dmg } )
   
+  return liste

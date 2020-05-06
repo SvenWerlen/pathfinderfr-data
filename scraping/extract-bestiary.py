@@ -10,14 +10,14 @@ from lxml import html
 import re
 import xml.etree.ElementTree as ET
 
-from libwiki import parseWiki, parseData, parseNumber, setValue, extractNumberWithSpecial, cleanText
+from libwiki import parseWiki, parseData, parseNumber, setValue, extractNumberWithSpecial, cleanText, extractAttacks
 from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
 FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'Init',
           'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
-          'VD',
+          'VD', 'AttaqueCàC',
           'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
           'Référence']
 MATCH = ['Nom']
@@ -193,6 +193,10 @@ for page in pages:
               vd = re.search('^(\d+) m +\((\d+) \{s:c\}\)', data['vd'])
               if vd:
                 setValue(b, 'VD', { 'mètres': float(vd.group(1)), 'cases': int(vd.group(2)) })
+                
+            filed = 'cac'
+            if 'corps à corps' in data:
+              setValue(b, 'AttaqueCàC', extractAttacks(data['corps à corps']))
           
           ##
           ## CARACTÉRISTIQUES

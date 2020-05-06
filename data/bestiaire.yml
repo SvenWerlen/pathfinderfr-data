@@ -31,6 +31,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: marteau de guerre de maître
+    bonus: '+4'
+    dommages: 1d8+1/x3 plus 1d6 feu
   For: 13
   Dex: 12
   Con: 15
@@ -61,6 +65,13 @@
   Réf: 6
   Vig: 9
   Vol: 10
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d6+3
+  - attaque: 8 tentacules
+    bonus: '+11'
+    dommages: 1d4+1 plus étreinte et attirer
   For: 17
   Dex: 10
   Con: 17
@@ -107,6 +118,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 4d8+13 / 19-20 plus étreinte
   For: 29
   Dex: 8
   Con: 20
@@ -142,6 +157,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+1 et 1d6 feu
   For: 13
   Dex: 13
   Con: 15
@@ -176,6 +195,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6+1
   For: 13
   Dex: 17
   Con: 20
@@ -206,6 +229,10 @@
   Réf: 4
   Vig: 7
   Vol: 2
+  AttaqueCàC:
+  - attaque: défenses
+    bonus: '+8'
+    dommages: 2d6+9
   For: 23
   Dex: 10
   Con: 17
@@ -239,6 +266,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: langue
+    bonus: '+15'
+    dommages: 2d10+12 et 2d8 acide
   For: 27
   Dex: 2
   Con: 18
@@ -280,6 +311,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+7
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: 2 ailes
+    bonus: '+12'
+    dommages: 1d6+2
+  - attaque: queue
+    bonus: '+12'
+    dommages: 1d8+7
   For: 21
   Dex: 12
   Con: 17
@@ -314,6 +358,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d8+12
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d6+8
+  - attaque: 2 ailes
+    bonus: '+20'
+    dommages: 1d8+4
+  - attaque: coup de queue
+    bonus: '+20'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 21
@@ -348,6 +405,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 4d6+18/19-20
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+12/19-20
+  - attaque: 2 ailes
+    bonus: '+30'
+    dommages: 2d6+6
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 2d8+18
   For: 35
   Dex: 8
   Con: 25
@@ -382,6 +452,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée bâtarde +2
+    bonus: +20/+15/+10
+    dommages: 1d10+8/19-20
+  - attaque: coup +13(2d6+3) ou 2 coups
+    bonus: '+18'
+    dommages: 2d6+6
   For: 22
   Dex: 19
   Con: 23
@@ -423,6 +500,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 3d6+9 et étreinte
   For: 22
   Dex: 13
   Con: 21
@@ -468,6 +549,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+27'
+    dommages: 2d6+12 plus 3d6 électricité/son et cécité/surdité
   For: 35
   Dex: 16
   Con: 23
@@ -501,6 +586,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+3 et étreinte
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d3+3
   For: 16
   Dex: 19
   Con: 15
@@ -567,6 +659,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: cimeterre à deux mains +1
+    bonus: +23/+18/+13
+    dommages: 2d6+11/15- 20
+  - attaque: 2 griffes
+    bonus: '+21'
+    dommages: 1d6+7
   For: 25
   Dex: 20
   Con: 27
@@ -600,6 +699,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+17'
+    dommages: 8d6+19 et étreinte
   For: 36
   Dex: 11
   Con: 24
@@ -634,6 +737,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 3d6+8/19-20 plus étreinte
+  - attaque: coup de queue
+    bonus: '+15'
+    dommages: 2d6+4 plus étreinte
   For: 26
   Dex: 16
   Con: 21
@@ -669,6 +779,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 4d4+8 et étreinte
+  - attaque: 2 griffes
+    bonus: '+17'
+    dommages: 1d8+8 et étreinte
   For: 27
   Dex: 11
   Con: 29
@@ -696,6 +813,10 @@
   Réf: 4
   Vig: 2
   Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4
   For: 2
   Dex: 15
   Con: 11
@@ -730,6 +851,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+4
   For: 17
   Dex: 15
   Con: 13
@@ -763,6 +888,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+7 et poison
   For: 21
   Dex: 23
   Con: 20
@@ -797,6 +926,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 5 morsures
+    bonus: '+6'
+    dommages: 1d8+3
   For: 17
   Dex: 12
   Con: 18
@@ -828,6 +961,10 @@
   Réf: 4
   Vig: 3
   Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d4+1
   For: 12
   Dex: 15
   Con: 12
@@ -864,6 +1001,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d8+7 plus étreinte
   For: 20
   Dex: 11
   Con: 17
@@ -906,6 +1047,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 2d6+10
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d8+7/19-20
+  - attaque: 2 ailes
+    bonus: '+16'
+    dommages: 1d6+3
+  - attaque: queue
+    bonus: '+16'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 19
@@ -940,6 +1094,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+26'
+    dommages: 2d8+15/19-20
+  - attaque: 2 griffes
+    bonus: '+26'
+    dommages: 2d6+10/19-20
+  - attaque: 2 ailes
+    bonus: '+24'
+    dommages: 1d8+5
+  - attaque: queue
+    bonus: '+24'
+    dommages: 2d6+15
   For: 31
   Dex: 10
   Con: 23
@@ -974,6 +1141,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+36'
+    dommages: 4d6+21/19-20
+  - attaque: 2 griffes
+    bonus: '+36'
+    dommages: 2d8+14/19-20
+  - attaque: 2 ailes
+    bonus: '+34'
+    dommages: 2d6+7/19- 20
+  - attaque: queue
+    bonus: '+34'
+    dommages: 2d8+21/19-20
   For: 39
   Dex: 8
   Con: 27
@@ -1008,6 +1188,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+2'
+    dommages: 1d4
   For: 11
   Dex: 10
   Con: 12
@@ -1042,6 +1226,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 2d8+6
   For: 19
   Dex: 10
   Con: 16
@@ -1076,6 +1264,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 2d8+10
   For: 24
   Dex: 16
   Con: 19
@@ -1110,6 +1302,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d6+3
+  - attaque: 2 pinces
+    bonus: '+9'
+    dommages: 1d6+3
   For: 16
   Dex: 13
   Con: 17
@@ -1152,6 +1351,10 @@
   Réf: -4
   Vig: 9
   Vol: -4
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+2'
+    dommages: 1d6 et 1d6 acide
   For: 10
   Dex: 1
   Con: 26
@@ -1186,6 +1389,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+5
+  - attaque: dard
+    bonus: '+14'
+    dommages: 3d4+5 et poison
   For: 21
   Dex: 21
   Con: 20
@@ -1216,6 +1429,10 @@
   Réf: 8
   Vig: 9
   Vol: 5
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+12
   For: 27
   Dex: 15
   Con: 16
@@ -1249,6 +1466,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: coutille
+    bonus: +11/+6
+    dommages: 1d10+6 et blessure infernale
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d6+4
   For: 19
   Dex: 15
   Con: 19
@@ -1282,6 +1506,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 2d6+7 et étreinte
   For: 25
   Dex: 16
   Con: 18
@@ -1317,6 +1545,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+5'
+    dommages: 1d4-2
   For: 6
   Dex: 17
   Con: 11
@@ -1347,6 +1579,13 @@
   Réf: 7
   Vig: 17
   Vol: 7
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+21'
+    dommages: 4d6+21
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 4d6+21
   For: 38
   Dex: 6
   Con: 23
@@ -1381,6 +1620,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hallebarde +1
+    bonus: +18/+13
+    dommages: 1d10+13/×3
   For: 28
   Dex: 15
   Con: 0
@@ -1421,6 +1664,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: lance +1
+    bonus: +17/+12/+7
+    dommages: 1d8+7/×3
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+2 plus 1d6 froid
   For: 18
   Dex: 26
   Con: 18
@@ -1482,6 +1732,13 @@
   Vig: 13
   Vol: 10
   VolSpécial: +2 contre les effets de terreur et de chagrin
+  AttaqueCàC:
+  - attaque: épée longue +1
+    bonus: +18/+13/+8
+    dommages: 2d6+11/17-20
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 1d6+7
   For: 25
   Dex: 15
   Con: 18
@@ -1517,6 +1774,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: aiguillon
+    bonus: '+4'
+    dommages: 1d3-4 plus poison
   For: 2
   Dex: 14
   Con: 8
@@ -1560,6 +1821,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d6+3 et étreinte
   For: 16
   Dex: 13
   Con: 16
@@ -1595,6 +1860,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 4 griffes
+    bonus: '+20'
+    dommages: 1d8+7/19-20 plus saignement
   For: 24
   Dex: 17
   Con: 21
@@ -1629,6 +1898,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d4+3
   For: 17
   Dex: 12
   Con: 17
@@ -1697,6 +1970,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d3+1 et poison
+  - attaque: tentacules
+    bonus: '+3'
+    dommages: étreinte
   For: 12
   Dex: 17
   Con: 14
@@ -1732,6 +2012,13 @@
   VD:
     cases: 16
     mètres: 24.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 1d8+6
+  - attaque: 4 sabots
+    bonus: '+17'
+    dommages: 1d8+3
   For: 22
   Dex: 18
   Con: 21
@@ -1776,6 +2063,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 4d6+15/19-20
+  - attaque: coup
+    bonus: '+15'
+    dommages: 2d6+15 et croc-en-jambe
   For: 31
   Dex: 9
   Con: 22
@@ -1811,6 +2105,13 @@
   Réf: 5
   Vig: 4
   Vol: 7
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+4 plus maladie
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d4+4 plus étreinte et dessèchement
   For: 18
   Dex: 18
   Con: 0
@@ -1864,6 +2165,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hache d'armes
+    bonus: '+4'
+    dommages: 1d8+1/x3
+  - attaque: griffe
+    bonus: '-1'
+    dommages: 1d4
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d4+1
   For: 13
   Dex: 14
   Con: 0
@@ -1894,6 +2205,10 @@
   Réf: 4
   Vig: 5
   Vol: 2
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+4'
+    dommages: 1d6+4
   For: 16
   Dex: 13
   Con: 15
@@ -1935,6 +2250,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+5'
+    dommages: 1d4
+  - attaque: aclys
+    bonus: '+5'
+    dommages: 1d6
   For: 11
   Dex: 15
   Con: 18
@@ -1965,6 +2287,10 @@
   Réf: 19
   Vig: 10
   Vol: 18
+  AttaqueCàC:
+  - attaque: toucher intangible
+    bonus: '+26'
+    dommages: 14d6 d’énergie négative plus terreur
   For: 0
   Dex: 32
   Con: 0
@@ -2008,6 +2334,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d4+2
+  - attaque: dard
+    bonus: '+8'
+    dommages: 2d4+2 et poison
   For: 14
   Dex: 21
   Con: 18
@@ -2042,6 +2375,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: cimeterre à deux mains en cuivre
+    bonus: '+29'
+    dommages: 3d6+11/18-20 plus 2d6 feu
+  - attaque: coup
+    bonus: '+29'
+    dommages: 2d6+11 plus 2d6 feu
   For: 32
   Dex: 11
   Con: 0
@@ -2106,6 +2446,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 2d6+6 et croc-en-jambe
   For: 18
   Dex: 15
   Con: 15
@@ -2140,6 +2484,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d4+6
   For: 19
   Dex: 14
   Con: 0
@@ -2176,6 +2524,13 @@
   Vig: 15
   Vol: 11
   VolSpécial: +2 contre les sorts d’enchantement
+  AttaqueCàC:
+  - attaque: 2 cimeterres de maître
+    bonus: '+26'
+    dommages: 2d6+12/15-20 plus poison
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d8+6 plus étreinte et poison
   For: 34
   Dex: 17
   Con: 23
@@ -2245,6 +2600,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+3 plus poison
   For: 15
   Dex: 17
   Con: 12
@@ -2278,6 +2637,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d4+5
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+5 et maladie
   For: 21
   Dex: 19
   Con: 22
@@ -2349,6 +2715,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d4+1
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d3+1
   For: 13
   Dex: 15
   Con: 16
@@ -2382,6 +2755,13 @@
   VD:
     cases: 12
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+4
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d6+4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Achaïéraï.ashx
   
 - Nom: Demiliche
@@ -2436,6 +2816,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+2 et poison
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d4+2
   For: 14
   Dex: 17
   Con: 17
@@ -2469,6 +2856,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+10'
+    dommages: 1d8+4
+  - attaque: cimeterre de maître
+    bonus: +11/+6
+    dommages: 1d8+4/18-20
   For: 18
   Dex: 19
   Con: 14
@@ -2499,6 +2893,10 @@
   Réf: 2
   Vig: 5
   Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6 et fixation
   For: 11
   Dex: 12
   Con: 14
@@ -2534,6 +2932,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d8+4
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+4
   For: 19
   Dex: 17
   Con: 17
@@ -2568,6 +2973,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 coup
+    bonus: '+19'
+    dommages: 1d8+11
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d6+11 plus poison
+  - attaque: masse d'armes lourde
+    bonus: +19/+14
+    dommages: 3d6+11
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 2d6+5 plus poison
   For: 32
   Dex: 13
   Con: 25
@@ -2601,6 +3019,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: cimeterre +1
+    bonus: +13/+8
+    dommages: 1d6+8/18-20
+  - attaque: coup
+    bonus: '+12'
+    dommages: 1d6+7
   For: 20
   Dex: 18
   Con: 19
@@ -2634,6 +3059,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+2'
+    dommages: 1d4 et poison
   For: 11
   Dex: 14
   Con: 13
@@ -2668,6 +3097,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: lance
+    bonus: '+3'
+    dommages: 1d8+3/x3
   For: 15
   Dex: 10
   Con: 13
@@ -2698,6 +3131,10 @@
   Réf: 6
   Vig: 10
   Vol: 4
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 2d8+10 et saignement
   For: 25
   Dex: 14
   Con: 19
@@ -2732,6 +3169,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: griffe
+    bonus: '+5'
+    dommages: 1d1+1 plus étreinte
   For: 13
   Dex: 11
   Con: 0
@@ -2763,6 +3204,7 @@
   Réf: 3
   Vig: 5
   Vol: 3
+  AttaqueCàC: []
   For: 1
   Dex: 13
   Con: 10
@@ -2796,6 +3238,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d4+2 plus poison
   For: 14
   Dex: 18
   Con: 19
@@ -2829,6 +3275,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 2d8+6/19-20 et terreur et étreinte
   For: 23
   Dex: 23
   Con: 22
@@ -2863,6 +3313,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '-2'
+    dommages: 1d4+1
   For: 16
   Dex: 14
   Con: 17
@@ -2898,6 +3352,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: rapière
+    bonus: '+4'
+    dommages: 1d6+1/18–20
   For: 13
   Dex: 17
   Con: 10
@@ -2941,6 +3399,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+3'
+    dommages: 1d4+1
   For: 13
   Dex: 12
   Con: 15
@@ -2974,6 +3436,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d3+1
   For: 13
   Dex: 15
   Con: 12
@@ -3017,6 +3483,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morgenstern
+    bonus: +8/+3
+    dommages: 1d8+1
+  - attaque: 2 serres
+    bonus: '+3'
+    dommages: 1d6
   For: 12
   Dex: 15
   Con: 10
@@ -3050,6 +3523,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+14'
+    dommages: 2d8+13
   For: 28
   Dex: 10
   Con: 21
@@ -3094,6 +3571,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4
   For: 3
   Dex: 15
   Con: 8
@@ -3138,6 +3619,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+29'
+    dommages: 3d8+13/19-20 plus poison
+  - attaque: 2 griffes
+    bonus: '+29'
+    dommages: 2d6+13
+  - attaque: queue
+    bonus: '+24'
+    dommages: 3d6+6 plus étreinte
   For: 37
   Dex: 24
   Con: 26
@@ -3170,6 +3661,10 @@
   Réf: 12
   Vig: 14
   Vol: 7
+  AttaqueCàC:
+  - attaque: 4 morsures
+    bonus: '+16'
+    dommages: 1d6+3/19–20 plus 1d4 acide
   For: 16
   Dex: 21
   Con: 24
@@ -3204,6 +3699,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 2d6+4
   For: 18
   Dex: 19
   Con: 22
@@ -3237,6 +3736,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: épée à deux mains de maître
+    bonus: +27/+22/+17
+    dommages: 4d6+21/17-20
+  - attaque: 2 coups
+    bonus: '+26'
+    dommages: 2d6+14
   For: 39
   Dex: 14
   Con: 23
@@ -3270,6 +3776,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: '+3'
+    dommages: 1d8+3/19-20
   For: 15
   Dex: 15
   Con: 14
@@ -3299,6 +3809,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+20'
+    dommages: 1d6+7 plus poison
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d6+7
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 1d8+7/19-20
+  - attaque: lance
+    bonus: +20/+15/+10
+    dommages: 2d6+7/×3 plus poison
   For: 24
   Dex: 15
   Con: 23
@@ -3332,6 +3855,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '+16'
+    dommages: 2d8+9
   For: 29
   Dex: 10
   Con: 21
@@ -3365,6 +3892,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 11
   Dex: 29
   Con: 24
@@ -3405,6 +3933,10 @@
   VD:
     cases: 6
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+28'
+    dommages: 3d6+15/19–20 plus 4d6 froid
   For: 35
   Dex: 14
   Con: 0
@@ -3438,6 +3970,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+21'
+    dommages: 1d10+11
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 2d6+11
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Azruverda.ashx
   
 - Nom: Bhuta
@@ -3459,6 +3998,10 @@
   Réf: 11
   Vig: 10
   Vol: 10
+  AttaqueCàC:
+  - attaque: 2 griffes intangibles
+    bonus: '+17'
+    dommages: 5d8 plus saignement
   For: 0
   Dex: 25
   Con: 0
@@ -3512,6 +4055,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 2d6+7 et poison
+  - attaque: queue
+    bonus: '+3'
+    dommages: 1d3 non létal plus croc-en-jambe
   For: 25
   Dex: 11
   Con: 21
@@ -3547,6 +4097,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 2d6+5
+  - attaque: cimeterre de maître
+    bonus: +14/+9
+    dommages: 1d8+7/18-20
   For: 20
   Dex: 13
   Con: 19
@@ -3580,15 +4137,10 @@
   VD:
     cases: 6
     mètres: 9.0
-  For: 23
-  Dex: 6
-  Con: 0
-  Int: 0
-  Sag: 10
-  Cha: 10
-  BBA: 4
-  BMO: 11
-  DMD: 19
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+9'
+    dommages: 1d8+9
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Zombi ogre.ashx
   
 - Nom: Bézravnis
@@ -3655,6 +4207,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+3 et croc-en-jambe
   For: 15
   Dex: 15
   Con: 15
@@ -3699,6 +4255,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+25'
+    dommages: 4d10+16/19-20 plus 4d6 électricité
   For: 42
   Dex: 27
   Con: 30
@@ -3733,6 +4293,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+7/19-20
   For: 20
   Dex: 15
   Con: 18
@@ -3763,6 +4327,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cornes
+    bonus: '+11'
+    dommages: 2d6+3
+  - attaque: entrave contractuelle (fouet)
+    bonus: +20/+15/+10
+    dommages: 1d4+7 plus saignement
   For: 17
   Dex: 25
   Con: 20
@@ -3796,6 +4367,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: défenses
+    bonus: '+21'
+    dommages: 2d8+12
+  - attaque: coup
+    bonus: '+20'
+    dommages: 2d6+12
   For: 34
   Dex: 12
   Con: 21
@@ -3831,6 +4409,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d3-4
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d2-4
   For: 3
   Dex: 15
   Con: 12
@@ -3865,6 +4450,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+17'
+    dommages: 1d8+6
+  - attaque: massue de maître
+    bonus: +24/+19/+14
+    dommages: 3d8+19
+  - attaque: corne
+    bonus: '+23'
+    dommages: 1d8+13
+  - attaque: 2 coups
+    bonus: '+23'
+    dommages: 2d6+13
   For: 36
   Dex: 13
   Con: 25
@@ -3896,6 +4494,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre de feu intense +2
+    bonus: +27/+22/+17/+12
+    dommages: 1d6+8/18+20 plus 1d6 feu
+  - attaque: 2 ailes
+    bonus: '+20'
+    dommages: 1d6+3 plus combustion
   For: 22
   Dex: 24
   Con: 19
@@ -3939,6 +4544,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d10+6 plus maladie et croc-en-jambe
   For: 18
   Dex: 13
   Con: 15
@@ -3979,6 +4588,13 @@
   Réf: 9
   Vig: 9
   Vol: 4
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+5
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+5
   For: 21
   Dex: 17
   Con: 17
@@ -4013,6 +4629,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 2d6+4
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6+4
   For: 18
   Dex: 13
   Con: 16
@@ -4053,6 +4676,13 @@
   Réf: 13
   Vig: 10
   Vol: 14
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 1d4+6/19-20 plus poison
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d6+6
   For: 22
   Dex: 19
   Con: 22
@@ -4086,6 +4716,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d8+18 plus étreinte
   For: 34
   Dex: 13
   Con: 22
@@ -4121,6 +4755,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d8+5
+  - attaque: 2 pinces
+    bonus: '+4'
+    dommages: 1d6+2
+  - attaque: dard
+    bonus: '+9'
+    dommages: 1d6+5 plus poison
   For: 21
   Dex: 14
   Con: 21
@@ -4164,6 +4808,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épieu
+    bonus: '+7'
+    dommages: 1d6+5
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4+2
   For: 21
   Dex: 13
   Con: 18
@@ -4196,6 +4847,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: mains nues
+    bonus: +24/+19/+14/+9
+    dommages: 2d6+7/19-20
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 1d8+3
   For: 24
   Dex: 16
   Con: 25
@@ -4229,6 +4887,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d8+4 et maladie
+  - attaque: 2 tentacules
+    bonus: '+3'
+    dommages: 1d6+2 et étreinte
   For: 18
   Dex: 10
   Con: 13
@@ -4282,6 +4947,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d4+3
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d4+3
   For: 16
   Dex: 19
   Con: 16
@@ -4322,6 +4994,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d6+3
   For: 14
   Dex: 10
   Con: 13
@@ -4355,6 +5031,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d8+4
   For: 16
   Dex: 12
   Con: 15
@@ -4388,6 +5068,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 1d8+5
   For: 20
   Dex: 14
   Con: 17
@@ -4421,6 +5105,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 2d6+7
   For: 24
   Dex: 18
   Con: 19
@@ -4454,6 +5142,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 2d8+9
   For: 28
   Dex: 20
   Con: 19
@@ -4487,6 +5179,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+24'
+    dommages: 2d10+10/19-20
   For: 30
   Dex: 22
   Con: 19
@@ -4520,6 +5216,22 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hache d’armes
+    bonus: '+7'
+    dommages: 2d6+4
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+2
+  - attaque: griffe
+    bonus: '+2'
+    dommages: 1d4+2
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+4
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d4+4
   For: 19
   Dex: 18
   Con: 16
@@ -4562,6 +5274,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 1
   Dex: 19
   Con: 8
@@ -4595,6 +5308,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d8+7
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d6+7
   For: 25
   Dex: 12
   Con: 24
@@ -4635,6 +5355,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d4 et combustion
   For: 10
   Dex: 13
   Con: 10
@@ -4668,6 +5392,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d6+1 et combustion
   For: 12
   Dex: 17
   Con: 14
@@ -4701,6 +5429,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 1d8+2 et combustion
   For: 14
   Dex: 21
   Con: 14
@@ -4734,6 +5466,10 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 2d6+4 et combustion
   For: 18
   Dex: 25
   Con: 16
@@ -4767,6 +5503,10 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 2d8+7 et combustion
   For: 24
   Dex: 27
   Con: 18
@@ -4800,6 +5540,10 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+23'
+    dommages: 2d8+8 et combustion
   For: 26
   Dex: 29
   Con: 18
@@ -4837,6 +5581,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+3 plus poison et étreinte
   For: 14
   Dex: 12
   Con: 18
@@ -4868,6 +5616,7 @@
   Réf: 6
   Vig: 7
   Vol: 2
+  AttaqueCàC: []
   For: 1
   Dex: 18
   Con: 15
@@ -4901,6 +5650,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d3+4
+  - attaque: 2 sabots
+    bonus: '+2'
+    dommages: 1d6+2
   For: 18
   Dex: 15
   Con: 16
@@ -4951,6 +5707,13 @@
   Réf: 16
   Vig: 18
   Vol: 25
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+35'
+    dommages: 5d10+22/19–20 plus 4d6 froid, absorption d’énergie et étreinte
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 4d8+12/19–20 plus 4d6 froid
   For: 49
   Dex: 16
   Con: 0
@@ -4996,6 +5759,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue +1
+    bonus: +15/+10
+    dommages: 1d8+8/19-20
   For: 20
   Dex: 23
   Con: 21
@@ -5029,6 +5796,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+27'
+    dommages: 3d6+11/19-20
   For: 32
   Dex: 20
   Con: 0
@@ -5063,6 +5834,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée à deux mains +4
+    bonus: +23/+18/+13
+    dommages: 2d6+11/19–20
   For: 20
   Dex: 17
   Con: 25
@@ -5093,6 +5868,13 @@
   Réf: 7
   Vig: 2
   Vol: 4
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d4-2
+  - attaque: corne
+    bonus: '+9'
+    dommages: 1d4-2 plus poison
   For: 6
   Dex: 19
   Con: 12
@@ -5127,6 +5909,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d8+6 et étreinte
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 2d6+6 et étreinte
   For: 23
   Dex: 15
   Con: 17
@@ -5179,6 +5968,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+8'
+    dommages: 1d8+4
   For: 18
   Dex: 13
   Con: 12
@@ -5212,6 +6005,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 2d6+8 plus étreinte
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 1d6+8
   For: 26
   Dex: 8
   Con: 0
@@ -5247,6 +6047,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: grande hache
+    bonus: +18/+13
+    dommages: 3d6+13
+  - attaque: 2 coups
+    bonus: '+18'
+    dommages: 1d8+9
   For: 29
   Dex: 9
   Con: 21
@@ -5280,6 +6087,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d3-1 et poison
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d4-1
   For: 8
   Dex: 14
   Con: 11
@@ -5322,6 +6136,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 6 morsures
+    bonus: '+7'
+    dommages: 1d4 et étreinte
   For: 10
   Dex: 17
   Con: 24
@@ -5357,6 +6175,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d4
+  - attaque: 2 ailes
+    bonus: '-4'
+    dommages: 1d3
   For: 10
   Dex: 15
   Con: 12
@@ -5387,6 +6212,10 @@
   Réf: 1
   Vig: 6
   Vol: 1
+  AttaqueCàC:
+  - attaque: 2 dards
+    bonus: '+0'
+    dommages: 1d3–1 plus 1d2 acide
   For: 8
   Dex: 13
   Con: 19
@@ -5421,6 +6250,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+1 et maladie et paralysie
+  - attaque: 2 griffes
+    bonus: '+3'
+    dommages: 1d6+1 et paralysie
   For: 13
   Dex: 15
   Con: 0
@@ -5454,6 +6290,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d8+6/19–20 plus maladie
+  - attaque: 2 griffes
+    bonus: '+19'
+    dommages: 2d6+6 plus faim
   For: 22
   Dex: 22
   Con: 21
@@ -5500,6 +6343,10 @@
   Réf: 8
   Vig: 7
   Vol: 8
+  AttaqueCàC:
+  - attaque: 4 griffes
+    bonus: '+13'
+    dommages: 1d4+1
   For: 12
   Dex: 23
   Con: 21
@@ -5531,6 +6378,7 @@
   Réf: 11
   Vig: 5
   Vol: 7
+  AttaqueCàC: []
   For: 0
   Dex: 18
   Con: 17
@@ -5580,6 +6428,22 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épées courtes
+    bonus: +13/+13/+8
+    dommages: 1d6+3/19-20
+  - attaque: griffe
+    bonus: '+13'
+    dommages: 1d4+3 et étreinte
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d3+1 et paralysie
+  - attaque: 4 griffes
+    bonus: '+13'
+    dommages: 1d4+3 et étreinte
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d3+3 et paralysie
   For: 17
   Dex: 18
   Con: 14
@@ -5614,6 +6478,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d3–1 plus poison
   For: 8
   Dex: 15
   Con: 14
@@ -5653,6 +6521,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '+2'
+    dommages: 1d6+2
   For: 19
   Dex: 17
   Con: 14
@@ -5687,6 +6559,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 2d8+7 plus poison
   For: 21
   Dex: 15
   Con: 16
@@ -5721,6 +6597,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 4 tentacules
+    bonus: '+14'
+    dommages: 1d4+1 plus étreinte
   For: 12
   Dex: 23
   Con: 23
@@ -5756,6 +6636,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d8+7 plus croc-en-jambe
   For: 25
   Dex: 10
   Con: 19
@@ -5787,6 +6671,10 @@
   Réf: 3
   Vig: 4
   Vol: 6
+  AttaqueCàC:
+  - attaque: coups
+    bonus: '+3'
+    dommages: 1d3-1 plus 1d6 électricité
   For: 8
   Dex: 14
   Con: 9
@@ -5821,6 +6709,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 4d6+3
+  - attaque: 3 griffes
+    bonus: '+10'
+    dommages: 1d4+3
   For: 17
   Dex: 10
   Con: 17
@@ -5937,6 +6832,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-1
   For: 8
   Dex: 15
   Con: 11
@@ -5971,6 +6870,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: masse d'arme lourde
+    bonus: '-1'
+    dommages: 1d8-1
   For: 8
   Dex: 10
   Con: 14
@@ -6004,6 +6907,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: +29/+24/+19/+14
+    dommages: 6d6+15/17-20
+  - attaque: 2 coups
+    bonus: '+29'
+    dommages: 2d8+15
   For: 41
   Dex: 16
   Con: 30
@@ -6037,6 +6947,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: coup de queue
+    bonus: '+11'
+    dommages: 1d6+2 plus étreinte
+  - attaque: 2 tentacules
+    bonus: '+11'
+    dommages: 1d6+2 plus confusion
   For: 20
   Dex: 17
   Con: 20
@@ -6080,6 +7000,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6 plus 1d6 acide et maladie
   For: 11
   Dex: 18
   Con: 14
@@ -6110,6 +7034,10 @@
   Réf: 5
   Vig: 4
   Vol: 9
+  AttaqueCàC:
+  - attaque: toucher intangible
+    bonus: '+10'
+    dommages: 1d8 et absorption d'énergie
   For: 0
   Dex: 16
   Con: 0
@@ -6143,6 +7071,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: massue
+    bonus: +14/+9
+    dommages: 2d8+10
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 1d8+7
   For: 25
   Dex: 8
   Con: 19
@@ -6173,6 +7108,10 @@
   Réf: 3
   Vig: 8
   Vol: 1
+  AttaqueCàC:
+  - attaque: tentacules
+    bonus: '+3'
+    dommages: 2d6+1 plus étreinte et poison
   For: 12
   Dex: 15
   Con: 18
@@ -6207,6 +7146,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 4d10+15 plus 4d6 froid
   For: 31
   Dex: 16
   Con: 21
@@ -6241,6 +7184,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+9'
+    dommages: 1d6+3 et 1d6 froid
   For: 16
   Dex: 9
   Con: 0
@@ -6278,6 +7225,10 @@
   Réf: 6
   Vig: 4
   Vol: 0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d4+1
   For: 12
   Dex: 17
   Con: 12
@@ -6308,6 +7259,10 @@
   Réf: 9
   Vig: 6
   Vol: 1
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+9'
+    dommages: 1d6+3
   For: 14
   Dex: 21
   Con: 14
@@ -6338,6 +7293,10 @@
   Réf: 13
   Vig: 9
   Vol: 2
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+14'
+    dommages: 1d8+4
   For: 18
   Dex: 25
   Con: 16
@@ -6368,6 +7327,10 @@
   Réf: 16
   Vig: 11
   Vol: 5
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 2d6+6
   For: 22
   Dex: 29
   Con: 18
@@ -6398,6 +7361,10 @@
   Réf: 18
   Vig: 12
   Vol: 6
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+21'
+    dommages: 2d8+7
   For: 24
   Dex: 31
   Con: 18
@@ -6428,6 +7395,10 @@
   Réf: 21
   Vig: 14
   Vol: 7
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+25'
+    dommages: 2d8+9
   For: 28
   Dex: 33
   Con: 18
@@ -6461,6 +7432,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: queue
+    bonus: '+8'
+    dommages: 2d6+9
   For: 23
   Dex: 14
   Con: 17
@@ -6494,6 +7469,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 4d6+22/19-20 et étreinte
   For: 32
   Dex: 13
   Con: 19
@@ -6528,6 +7507,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d6+4 et 1d6 acide et étreinte
   For: 16
   Dex: 1
   Con: 26
@@ -6563,6 +7546,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 1d8+7
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d6+7
   For: 25
   Dex: 24
   Con: 23
@@ -6615,6 +7605,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée à deux mains +1
+    bonus: +25/+20
+    dommages: 2d6+19 plus 2d6 acide
   For: 27
   Dex: 12
   Con: 0
@@ -6659,6 +7653,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 2d10+7 et blessure maudite
   For: 24
   Dex: 9
   Con: 0
@@ -6786,6 +7784,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: kukri +1
+    bonus: +16/+11
+    dommages: 1d4+4/15-20
+  - attaque: griffe
+    bonus: '+10'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+1
   For: 16
   Dex: 20
   Con: 22
@@ -6816,6 +7824,10 @@
   Réf: 1
   Vig: 7
   Vol: 4
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+3 plus maladie
   For: 17
   Dex: 11
   Con: 16
@@ -6849,6 +7861,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+37'
+    dommages: 4d8+15/15-20/x3 et étreinte
+  - attaque: 2 griffes
+    bonus: '+37'
+    dommages: 1d12+15
+  - attaque: 2 cornes
+    bonus: '+37'
+    dommages: 1d10+15
+  - attaque: coup de queue
+    bonus: '+32'
+    dommages: 3d8+7
   For: 41
   Dex: 16
   Con: 34
@@ -6883,6 +7908,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 4d8+12/19-20 et étreinte
+  - attaque: dard
+    bonus: '+25'
+    dommages: 2d8+12 et poison
   For: 35
   Dex: 6
   Con: 25
@@ -6918,6 +7950,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+6 plus croc-en-jambe
+  - attaque: coup de queue
+    bonus: '+5'
+    dommages: 1d6+3
   For: 19
   Dex: 15
   Con: 17
@@ -6952,6 +7991,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+28'
+    dommages: 2d10+16/19-20
   For: 32
   Dex: 9
   Con: 0
@@ -6985,6 +8028,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+17'
+    dommages: 2d10+12/19-20
   For: 26
   Dex: 9
   Con: 19
@@ -7019,6 +8066,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+10'
+    dommages: 1d8+6 et substance adhésive
   For: 19
   Dex: 12
   Con: 17
@@ -7099,6 +8150,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+8'
+    dommages: 1d8+6 et poison
   For: 19
   Dex: 11
   Con: 18
@@ -7133,6 +8188,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: grande hache
+    bonus: +9/+4
+    dommages: 3d6+6/x3
+  - attaque: corne
+    bonus: '+4'
+    dommages: 1d6+2
   For: 19
   Dex: 10
   Con: 15
@@ -7163,6 +8225,13 @@
   Réf: 9
   Vig: 21
   Vol: 8
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 6d6+20/19-20
+  - attaque: coup de queue
+    bonus: '+20'
+    dommages: 3d6+10
   For: 50
   Dex: 6
   Con: 27
@@ -7197,6 +8266,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 2d6+8
   For: 26
   Dex: 19
   Con: 19
@@ -7230,6 +8303,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+1 et poison
   For: 12
   Dex: 15
   Con: 0
@@ -7264,6 +8341,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 4 griffes
+    bonus: '+16'
+    dommages: 1d4+5 plus étreinte
   For: 21
   Dex: 23
   Con: 26
@@ -7302,6 +8383,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+2'
+    dommages: 1d3
   For: 11
   Dex: 12
   Con: 12
@@ -7352,6 +8437,10 @@
   Réf: 5
   Vig: 4
   Vol: 1
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+3'
+    dommages: 1d4+1
   For: 12
   Dex: 15
   Con: 13
@@ -7395,6 +8484,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d8+6
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d6+4
+  - attaque: 2 ailes
+    bonus: '+7'
+    dommages: 1d4+2
   For: 19
   Dex: 14
   Con: 17
@@ -7429,6 +8528,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d6+10
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d8+7
+  - attaque: 2 ailes
+    bonus: '+15'
+    dommages: 1d6+3
+  - attaque: coup de queue
+    bonus: '+15'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 21
@@ -7463,6 +8575,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+31'
+    dommages: 2d8+16
+  - attaque: 2 griffes
+    bonus: '+31'
+    dommages: 2d6+11
+  - attaque: 2 ailes
+    bonus: '+29'
+    dommages: 1d8+5
+  - attaque: coup de queue
+    bonus: '+29'
+    dommages: 2d6+16
   For: 33
   Dex: 10
   Con: 25
@@ -7494,6 +8619,10 @@
   Réf: 0
   Vig: 6
   Vol: 3
+  AttaqueCàC:
+  - attaque: massue
+    bonus: '+7'
+    dommages: 2d8+7
   For: 21
   Dex: 8
   Con: 15
@@ -7527,6 +8656,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: grande hache
+    bonus: +11/+6
+    dommages: 3d6+7/x3
   For: 21
   Dex: 8
   Con: 15
@@ -7560,6 +8693,25 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: chaîne cloutée maudite +1
+    bonus: +26/+21/+16
+    dommages: 2d6+11 et étourdissement
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d8+5
+  - attaque: queue
+    bonus: '+22'
+    dommages: 2d6+5 et blessure infernale
+  - attaque: 2 griffes
+    bonus: '+24'
+    dommages: 2d6+10
+  - attaque: morsure
+    bonus: '+24'
+    dommages: 2d8+10
+  - attaque: queue
+    bonus: '+22'
+    dommages: 2d6+5 et blessure infernale
   For: 31
   Dex: 27
   Con: 28
@@ -7590,6 +8742,10 @@
   Réf: 3
   Vig: 3
   Vol: 4
+  AttaqueCàC:
+  - attaque: contact intangible
+    bonus: '+4'
+    dommages: affaiblissement temporaire de Force
   For: 0
   Dex: 14
   Con: 0
@@ -7633,6 +8789,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d3-2
+  - attaque: coup de queue
+    bonus: '+3'
+    dommages: 1d3-2 plus confusion
   For: 7
   Dex: 17
   Con: 10
@@ -7686,6 +8849,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+7'
+    dommages: 1d4
   For: 10
   Dex: 19
   Con: 13
@@ -7719,6 +8886,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d6+2
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d4+2
+  - attaque: corne
+    bonus: '+7'
+    dommages: 1d4+2
   For: 15
   Dex: 14
   Con: 16
@@ -7753,6 +8930,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+10'
+    dommages: 1d8+6
+  - attaque: 2 sabots
+    bonus: '+7'
+    dommages: 1d3+3
   For: 22
   Dex: 19
   Con: 20
@@ -7788,6 +8972,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: rapière de maître
+    bonus: '+4'
+    dommages: 1d6+1/18-20
   For: 12
   Dex: 17
   Con: 12
@@ -7821,6 +9009,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d4+4 et étreinte
   For: 17
   Dex: 17
   Con: 12
@@ -7856,6 +9048,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 2d6+5
+  - attaque: queue
+    bonus: '+4'
+    dommages: 1d8+2
   For: 21
   Dex: 13
   Con: 19
@@ -7891,6 +9090,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 1d6+5 plus étreinte
+  - attaque: 4 griffes
+    bonus: '+18'
+    dommages: 1d4+5 plus étreinte
   For: 21
   Dex: 18
   Con: 18
@@ -7923,6 +9129,10 @@
   Réf: 6
   Vig: 1
   Vol: 5
+  AttaqueCàC:
+  - attaque: rapière
+    bonus: '+8'
+    dommages: 1d2-2/18-20
   For: 6
   Dex: 17
   Con: 13
@@ -7957,6 +9167,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+3 plus saignement
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d6+3 plus étreinte
   For: 16
   Dex: 18
   Con: 15
@@ -7990,6 +9207,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+10'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 19
@@ -8024,6 +9245,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 2d8+12/19-20 et poison
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 1d8+12
+  - attaque: queue
+    bonus: '+18'
+    dommages: 2d6+6 et étreinte
   For: 34
   Dex: 18
   Con: 25
@@ -8059,6 +9290,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+15'
+    dommages: 1d8+5 plus maladie
+  - attaque: gourdin de taille TG
+    bonus: +20/+15
+    dommages: 2d6+11 plus maladie
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 1d8+11 plus maladie
   For: 33
   Dex: 14
   Con: 23
@@ -8095,6 +9336,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d4+2 et étreinte
   For: 15
   Dex: 13
   Con: 14
@@ -8147,6 +9392,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: défenses
+    bonus: '+16'
+    dommages: 2d8+10
+  - attaque: coup
+    bonus: '+16'
+    dommages: 2d6+10
   For: 30
   Dex: 10
   Con: 19
@@ -8181,6 +9433,13 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6+2 plus étreinte
+  - attaque: 2 coups
+    bonus: '+8'
+    dommages: 1d4+2 plus poison
   For: 15
   Dex: 18
   Con: 17
@@ -8224,6 +9483,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 1d8+8
+  - attaque: 3 morsures
+    bonus: '+24'
+    dommages: 2d8+8
   For: 27
   Dex: 15
   Con: 22
@@ -8258,6 +9524,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+8'
+    dommages: 1d8+4
+  - attaque: 2 sabots
+    bonus: '+5'
+    dommages: 1d3+2
   For: 18
   Dex: 17
   Con: 16
@@ -8302,6 +9575,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d4+4
+  - attaque: 2 sabots
+    bonus: '+4'
+    dommages: 1d6+2 et 1d4 feu
   For: 18
   Dex: 15
   Con: 16
@@ -8336,6 +9616,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+22'
+    dommages: 4d10+15
   For: 30
   Dex: 11
   Con: 0
@@ -8370,6 +9654,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: queue
+    bonus: '+14'
+    dommages: 3d6+12 et étourdissement
   For: 27
   Dex: 10
   Con: 17
@@ -8418,6 +9706,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+14'
+    dommages: 1d8+7
+  - attaque: coup de queue
+    bonus: '+12'
+    dommages: 1d8+7
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+7
   For: 21
   Dex: 12
   Con: 17
@@ -8449,6 +9750,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+22'
+    dommages: 2d6+12
+  - attaque: coup de queue
+    bonus: '+20'
+    dommages: 2d6+12
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d6+8
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d8+12/19-20
   For: 27
   Dex: 10
   Con: 21
@@ -8480,6 +9794,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+31'
+    dommages: 2d8+18
+  - attaque: coup de queue
+    bonus: '+29'
+    dommages: 2d8+18
+  - attaque: 2 griffes
+    bonus: '+31'
+    dommages: 2d8+12
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 4d6+18/19-20
   For: 35
   Dex: 8
   Con: 25
@@ -8511,6 +9838,16 @@
   Réf: 7
   Vig: 5
   Vol: 6
+  AttaqueCàC:
+  - attaque: bâton de maître
+    bonus: '+7'
+    dommages: 1d6+2
+  - attaque: bâton de maître
+    bonus: '+7'
+    dommages: 1d6+1
+  - attaque: coup
+    bonus: '+2'
+    dommages: 1d6+1
   For: 14
   Dex: 17
   Con: 18
@@ -8544,6 +9881,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 1
   Dex: 15
   Con: 10
@@ -8584,6 +9922,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d8+6
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6+4
+  - attaque: 2 ailes
+    bonus: '+6'
+    dommages: 1d4+2
   For: 19
   Dex: 14
   Con: 17
@@ -8618,6 +9966,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d6+10/19-20
+  - attaque: 2 griffes
+    bonus: '+19'
+    dommages: 1d8+7
+  - attaque: 2 ailes
+    bonus: '+14'
+    dommages: 1d6+3
+  - attaque: coup de queue
+    bonus: '+14'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 21
@@ -8652,6 +10013,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+31'
+    dommages: 2d8+16/19-20
+  - attaque: 2 griffes
+    bonus: '+30'
+    dommages: 2d6+11
+  - attaque: 2 ailes
+    bonus: '+25'
+    dommages: 1d8+5
+  - attaque: coup de queue
+    bonus: '+25'
+    dommages: 2d6+16
   For: 33
   Dex: 10
   Con: 25
@@ -8714,6 +10088,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: cimeterre acéré +1
+    bonus: +10/+5
+    dommages: 1d6+5/15-20 plus saignement
+  - attaque: coup
+    bonus: '+9'
+    dommages: 1d6+4
   For: 16
   Dex: 15
   Con: 0
@@ -8747,6 +10128,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 2d6+4
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d8+4
+  - attaque: corne
+    bonus: '+12'
+    dommages: 1d8+4
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d6+4
   For: 19
   Dex: 12
   Con: 17
@@ -8781,6 +10175,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 1d6+9/19-20 plus étreinte
+  - attaque: coup de queue
+    bonus: '+14'
+    dommages: 1d6+4 plus décharge étourdissante
   For: 28
   Dex: 21
   Con: 22
@@ -8815,6 +10216,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+8/19–20 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+8
   For: 26
   Dex: 13
   Con: 19
@@ -8848,6 +10256,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+7'
+    dommages: 1d8+9
   For: 23
   Dex: 10
   Con: 17
@@ -8882,6 +10294,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 épieux
+    bonus: '+8'
+    dommages: 1d6+3
+  - attaque: 2 coups
+    bonus: '+7'
+    dommages: 1d4+3
   For: 17
   Dex: 10
   Con: 15
@@ -8915,6 +10334,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+7 plus étreinte
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d6+7
   For: 25
   Dex: 12
   Con: 18
@@ -8949,6 +10375,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 2d6+8/19-20 plus étreinte
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 2d8+8/19-20
   For: 26
   Dex: 17
   Con: 21
@@ -8983,6 +10416,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre à deux mains
+    bonus: '+5'
+    dommages: 2d4+4/18-20
   For: 17
   Dex: 11
   Con: 12
@@ -9032,6 +10469,13 @@
   Réf: 7
   Vig: 3
   Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3+2
+  - attaque: tentacules
+    bonus: '+2'
+    dommages: 1d4+1 et étreinte
   For: 15
   Dex: 15
   Con: 11
@@ -9083,6 +10527,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+8'
+    dommages: 2d6+4 et 2d6 acide et étreinte
   For: 16
   Dex: 1
   Con: 22
@@ -9118,6 +10566,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: lance
+    bonus: '+8'
+    dommages: 1d8+4/×3 plus poison
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+3
   For: 16
   Dex: 17
   Con: 14
@@ -9151,6 +10606,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 2d6+4
   For: 18
   Dex: 17
   Con: 0
@@ -9195,6 +10654,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 5 griffes
+    bonus: '+21'
+    dommages: 1d6+8/19–20
   For: 27
   Dex: 20
   Con: 22
@@ -9226,6 +10689,16 @@
   Réf: 13
   Vig: 14
   Vol: 5
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+7
+  - attaque: 2 bras
+    bonus: '+14'
+    dommages: 1d6+7
+  - attaque: tentacules
+    bonus: '+12'
+    dommages: 4d6+3/19–20 et étreinte
   For: 25
   Dex: 17
   Con: 19
@@ -9260,6 +10733,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d4+3
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d6+3 plus ingestion des cadavres
   For: 17
   Dex: 13
   Con: 0
@@ -9294,6 +10774,16 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 bras
+    bonus: '+26'
+    dommages: 2d6+10/19-20 et étreinte
+  - attaque: 8 tentacules
+    bonus: '+24'
+    dommages: 1d8+5 et étreinte
+  - attaque: morsure
+    bonus: '+26'
+    dommages: 2d8+10
   For: 30
   Dex: 10
   Con: 29
@@ -9329,6 +10819,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morgenstern
+    bonus: '+5'
+    dommages: 1d8+3
   For: 16
   Dex: 13
   Con: 13
@@ -9362,6 +10856,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+30'
+    dommages: 3d8+16/19-20 et poison
+  - attaque: 2 griffes
+    bonus: '+30'
+    dommages: 2d6+16
+  - attaque: queue
+    bonus: '+25'
+    dommages: 3d6+8 et étreinte
   For: 42
   Dex: 26
   Con: 32
@@ -9404,6 +10908,13 @@
   Réf: 22
   Vig: 21
   Vol: 11
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+26'
+    dommages: 2d8+9/19–20 plus 4d6 froid et étreinte
+  - attaque: 2 griffes
+    bonus: '+26'
+    dommages: 2d6+9/19–20 plus 4d6 froid
   For: 29
   Dex: 29
   Con: 31
@@ -9438,6 +10949,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 épées courtes
+    bonus: +6/+6
+    dommages: 1d6+2 et poison/19-20
   For: 14
   Dex: 18
   Con: 14
@@ -9472,6 +10987,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée à deux mains de feu intense +1
+    bonus: +13/+8
+    dommages: 2d6+5/17-20 plus 1d6 feu
   For: 16
   Dex: 12
   Con: 19
@@ -9505,6 +11024,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 2d6+6
+  - attaque: trident de maître
+    bonus: +18/+13/+8
+    dommages: 2d6+9
   For: 23
   Dex: 19
   Con: 18
@@ -9547,6 +11073,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+0'
+    dommages: 1d3-1/19-20
   For: 8
   Dex: 13
   Con: 11
@@ -9577,6 +11107,13 @@
   Vig: 16
   Vol: 11
   VolSpécial: +4 contre le poison, +4 (résistance) contre le Mal
+  AttaqueCàC:
+  - attaque: marteau de guerre de destruction +2
+    bonus: +26/+21/+16
+    dommages: 1d8+14/x3 et étourdissement
+  - attaque: coup
+    bonus: '+23'
+    dommages: 1d8+12
   For: 26
   Dex: 19
   Con: 21
@@ -9610,6 +11147,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-1
   For: 9
   Dex: 17
   Con: 13
@@ -9658,6 +11199,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morgenstern
+    bonus: '+2'
+    dommages: 1d8+1
+  - attaque: morsure
+    bonus: '+0'
+    dommages: 1d4
+  - attaque: griffe
+    bonus: '+2'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4+1
   For: 13
   Dex: 10
   Con: 13
@@ -9691,6 +11245,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+8'
+    dommages: 1d4 et poison
   For: 10
   Dex: 17
   Con: 10
@@ -9724,6 +11282,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: bois
+    bonus: '+2'
+    dommages: 1d6+1
+  - attaque: 2 sabots
+    bonus: '-3'
+    dommages: 1d4
   For: 13
   Dex: 17
   Con: 16
@@ -9761,6 +11326,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+13'
+    dommages: 1d6+5
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+5/19-20
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+5
   For: 21
   Dex: 12
   Con: 17
@@ -9791,6 +11366,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+21'
+    dommages: 1d8+12
+  - attaque: coup de queue
+    bonus: '+16'
+    dommages: 1d8+12
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 1d8+8/19-20
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 21
@@ -9821,6 +11409,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+29'
+    dommages: 2d6+12
+  - attaque: coup de queue
+    bonus: '+24'
+    dommages: 2d6+12
+  - attaque: 2 griffes
+    bonus: '+29'
+    dommages: 2d6+8/19-20
+  - attaque: morsure
+    bonus: '+30'
+    dommages: 2d8+12
   For: 35
   Dex: 8
   Con: 25
@@ -9855,6 +11456,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4-1 et poison
   For: 8
   Dex: 13
   Con: 14
@@ -9889,6 +11494,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 2d8+5 et étreinte
+  - attaque: langue
+    bonus: '+10'
+    dommages: contact, paralysie
   For: 21
   Dex: 19
   Con: 0
@@ -9923,6 +11535,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+14'
+    dommages: 2d6+4
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+4
   For: 18
   Dex: 15
   Con: 0
@@ -9957,6 +11576,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+14'
+    dommages: 1d6+6 plus malchance
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+6 plus malchance
   For: 22
   Dex: 18
   Con: 0
@@ -9990,6 +11616,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d2-2 et poison
   For: 4
   Dex: 17
   Con: 8
@@ -10024,6 +11654,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 4 tentacules
+    bonus: '+4'
+    dommages: 1d4+1 et putréfaction
   For: 12
   Dex: 8
   Con: 16
@@ -10057,6 +11691,16 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: bâton +5
+    bonus: +30/+25/+20/+15
+    dommages: 3d6+14
+  - attaque: bâton +5
+    bonus: '+30'
+    dommages: 3d6+9
+  - attaque: 2 coups
+    bonus: '+29'
+    dommages: 2d10+9
   For: 28
   Dex: 25
   Con: 28
@@ -10092,6 +11736,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 2d6+4 et morsure sinistre et croc-en-jambe
   For: 17
   Dex: 15
   Con: 15
@@ -10122,6 +11770,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 2d6+12
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 2d8+12/19-20 plus étreinte
   For: 34
   Dex: 15
   Con: 18
@@ -10156,6 +11811,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6 et poison
   For: 11
   Dex: 17
   Con: 12
@@ -10190,6 +11849,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d3–3
   For: 5
   Dex: 7
   Con: 12
@@ -10231,6 +11894,10 @@
   Réf: 4
   Vig: 0
   Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d3-4
   For: 1
   Dex: 15
   Con: 6
@@ -10264,6 +11931,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+1 plus maladie
   For: 12
   Dex: 17
   Con: 16
@@ -10298,6 +11969,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+3
   For: 15
   Dex: 10
   Con: 16
@@ -10342,6 +12017,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+25'
+    dommages: 1d4+4
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 1d6+4 plus siphon
   For: 19
   Dex: 28
   Con: 20
@@ -10382,6 +12064,22 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: griffe
+    bonus: '+32'
+    dommages: 1d6+4
+  - attaque: morgenstern maudit +2
+    bonus: +36/+31/+26/+21
+    dommages: 1d8+11
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d6+4
+  - attaque: 2 griffes
+    bonus: '+34'
+    dommages: 1d6+9
+  - attaque: morsure
+    bonus: '+34'
+    dommages: 2d6+9
   For: 29
   Dex: 24
   Con: 21
@@ -10415,6 +12113,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: queue
+    bonus: '+16'
+    dommages: 4d6+12 et croc-en-jambe
   For: 27
   Dex: 14
   Con: 17
@@ -10449,6 +12151,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d3-4
   For: 3
   Dex: 11
   Con: 14
@@ -10482,6 +12188,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+10'
+    dommages: 1d8+7 et spores
   For: 20
   Dex: 13
   Con: 16
@@ -10516,6 +12226,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4+1
   For: 13
   Dex: 13
   Con: 15
@@ -10550,6 +12264,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 2d4+3 et 1d4 acide et étreinte
   For: 14
   Dex: 1
   Con: 22
@@ -10595,6 +12313,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d8+4
+  - attaque: 2 tentacules
+    bonus: '+6'
+    dommages: 1d4+2 plus croc-en-jambe
   For: 18
   Dex: 8
   Con: 19
@@ -10626,6 +12351,7 @@
   Réf: 5
   Vig: 4
   Vol: 2
+  AttaqueCàC: []
   For: 2
   Dex: 15
   Con: 13
@@ -10660,6 +12386,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épieu +3
+    bonus: +16/+11
+    dommages: 1d8+10
   For: 20
   Dex: 13
   Con: 25
@@ -10737,6 +12467,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+8'
+    dommages: 1d4-1 plus poison
   For: 8
   Dex: 14
   Con: 12
@@ -10770,6 +12504,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '-3'
+    dommages: 1d3
   For: 13
   Dex: 13
   Con: 14
@@ -10801,6 +12539,10 @@
   Réf: 3
   Vig: 6
   Vol: 1
+  AttaqueCàC:
+  - attaque: filament
+    bonus: '+5'
+    dommages: 1d4+4
   For: 17
   Dex: 15
   Con: 16
@@ -10835,6 +12577,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+4 plus étreinte
   For: 19
   Dex: 18
   Con: 17
@@ -10869,6 +12615,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d8+7 plus étreinte
   For: 25
   Dex: 16
   Con: 23
@@ -10903,6 +12653,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+29'
+    dommages: 3d8+16/19-20 plus poison
+  - attaque: 2 griffes
+    bonus: '+29'
+    dommages: 2d6+16
+  - attaque: queue
+    bonus: '+24'
+    dommages: 3d6+8 plus étreinte
   For: 43
   Dex: 25
   Con: 30
@@ -10948,6 +12708,13 @@
   VD:
     cases: 18
     mètres: 27.0
+  AttaqueCàC:
+  - attaque: morsure +23 (2d6+5 plus absorption d’énergie et étreinte) et 2 griffes
+    bonus: '+23'
+    dommages: 1d8+5 plus absorption d’énergie
+  - attaque: queue
+    bonus: '+18'
+    dommages: 1d12+2 plus absorption d’énergie
   For: 21
   Dex: 25
   Con: 24
@@ -10978,6 +12745,10 @@
   Réf: 13
   Vig: 14
   Vol: 8
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 4d10+15/19-20 et étreinte
   For: 30
   Dex: 15
   Con: 17
@@ -11024,6 +12795,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4
   For: 2
   Dex: 15
   Con: 8
@@ -11057,6 +12832,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre brisé
+    bonus: '+0'
+    dommages: 1d6
+  - attaque: griffe
+    bonus: '-3'
+    dommages: 1d4+1
+  - attaque: 2 griffes
+    bonus: '+2'
+    dommages: 1d4+2
   For: 15
   Dex: 14
   Con: 0
@@ -11090,6 +12875,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 4d8+18/19-20
   For: 34
   Dex: 13
   Con: 29
@@ -11142,6 +12931,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+3'
+    dommages: 1d6+2
   For: 15
   Dex: 15
   Con: 14
@@ -11175,6 +12968,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+5'
+    dommages: 1d4-2/19-20
   For: 7
   Dex: 16
   Con: 13
@@ -11242,6 +13039,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: trident
+    bonus: '+0'
+    dommages: 1d8
   For: 11
   Dex: 14
   Con: 8
@@ -11275,6 +13076,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d8+2
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+2
   For: 15
   Dex: 17
   Con: 15
@@ -11309,6 +13117,10 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+1'
+    dommages: 1d4
   For: 10
   Dex: 17
   Con: 14
@@ -11343,6 +13155,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+7'
+    dommages: 1d3/19-20
   For: 11
   Dex: 16
   Con: 14
@@ -11386,6 +13202,7 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC: []
   For: 1
   Dex: 1
   Con: 10
@@ -11419,6 +13236,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6+5
+  - attaque: coup de queue
+    bonus: '+3'
+    dommages: 1d8+2
   For: 21
   Dex: 16
   Con: 19
@@ -11453,6 +13277,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+6
   For: 18
   Dex: 17
   Con: 16
@@ -11493,6 +13321,13 @@
   Réf: 4
   Vig: 7
   Vol: 6
+  AttaqueCàC:
+  - attaque: griffes x2
+    bonus: '+11'
+    dommages: 1d8+6
+  - attaque: défense
+    bonus: '+11'
+    dommages: 1d8+6
   For: 22
   Dex: 9
   Con: 17
@@ -11522,6 +13357,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d4-1 plus poison
   For: 8
   Dex: 17
   Con: 10
@@ -11556,6 +13395,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: griffes
+    bonus: '+9'
+    dommages: 1d6+3 plus paralysie
+  - attaque: 1 morsure
+    bonus: '+10'
+    dommages: 1d6+3 plus paralysie
+  - attaque: contact intangible
+    bonus: '+10'
+    dommages: 1d4 points affaiblissement de Constitution
   For: 17
   Dex: 19
   Con: 0
@@ -11597,6 +13446,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: ailes
+    bonus: '+36'
+    dommages: 8d8+8
+  - attaque: morsure
+    bonus: '+41'
+    dommages: 4d6+16/19-20 plus saignement
   For: 43
   Dex: 21
   Con: 26
@@ -11637,6 +13493,10 @@
   Réf: 4
   Vig: 4
   Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d4 et poison
   For: 10
   Dex: 13
   Con: 13
@@ -11670,6 +13530,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4
   For: 3
   Dex: 15
   Con: 10
@@ -11703,6 +13567,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: bâton +2
+    bonus: +22/+17/+12
+    dommages: 1d6+9 plus absorption d’énergie
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d4+5 plus absorption d’énergie
   For: 21
   Dex: 16
   Con: 23
@@ -11736,6 +13607,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6
   For: 11
   Dex: 14
   Con: 13
@@ -11770,6 +13645,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: massue de maître
+    bonus: '+10'
+    dommages: 1d10+6
+  - attaque: 2 griffes
+    bonus: '+9'
+    dommages: 1d6+6
   For: 18
   Dex: 17
   Con: 16
@@ -11820,6 +13702,10 @@
   Réf: 4
   Vig: 6
   Vol: 6
+  AttaqueCàC:
+  - attaque: contact intangible
+    bonus: '+6'
+    dommages: 1d6 énergie négative et Con
   For: 0
   Dex: 16
   Con: 0
@@ -11853,6 +13739,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 fouets caudaux
+    bonus: '+22'
+    dommages: 4d6+15/19-20
   For: 40
   Dex: 14
   Con: 21
@@ -11888,6 +13778,10 @@
   VD:
     cases: 6
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 4 chaînes
+    bonus: '+11'
+    dommages: 2d4+2
   For: 15
   Dex: 17
   Con: 14
@@ -11918,6 +13812,16 @@
   Réf: 5
   Vig: 2
   Vol: 2
+  AttaqueCàC:
+  - attaque: longue
+    bonus: +10/+5
+    dommages: 1d8+3/19-20
+  - attaque: épée courte
+    bonus: '+10'
+    dommages: 1d6+1/19-20
+  - attaque: 2 coups
+    bonus: '+11'
+    dommages: 1d6+3
   For: 16
   Dex: 16
   Con: 0
@@ -11954,6 +13858,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée à deux mains
+    bonus: +14/+9
+    dommages: 3d6+10
   For: 24
   Dex: 17
   Con: 23
@@ -11987,6 +13895,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: défenses
+    bonus: '+15'
+    dommages: 1d6+2
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d4+2
   For: 14
   Dex: 21
   Con: 18
@@ -12021,6 +13936,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+6'
+    dommages: 1d8+6 et poison
   For: 18
   Dex: 12
   Con: 18
@@ -12054,6 +13973,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 ailes
+    bonus: '+11'
+    dommages: 1d4+1
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d4+3
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 1d6+3
+  - attaque: 2 serres
+    bonus: '+16'
+    dommages: 1d4+3
   For: 16
   Dex: 21
   Con: 20
@@ -12097,6 +14029,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hache d'armes de maître
+    bonus: '+6'
+    dommages: 1d8+2/x3
+  - attaque: morsure
+    bonus: '+0'
+    dommages: 1d6+1
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+3
   For: 15
   Dex: 17
   Con: 15
@@ -12130,6 +14072,16 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d6+10/19-20 et étreinte
+  - attaque: 4 tentacules
+    bonus: '+18'
+    dommages: 1d8+5 et étreinte
+  - attaque: langue
+    bonus: '+18'
+    dommages: 1d4+5 et étreinte
   For: 30
   Dex: 13
   Con: 24
@@ -12164,6 +14116,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: défenses
+    bonus: '+4'
+    dommages: 1d8+4
   For: 17
   Dex: 10
   Con: 17
@@ -12197,6 +14153,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+0'
+    dommages: 1d6
   For: 10
   Dex: 8
   Con: 16
@@ -12231,6 +14191,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d4+1
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+1/19-20
   For: 13
   Dex: 17
   Con: 17
@@ -12264,6 +14231,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d6+13/19-20
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d8+13 plus étreinte
   For: 36
   Dex: 25
   Con: 27
@@ -12299,6 +14273,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+4
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d4+4
   For: 19
   Dex: 15
   Con: 15
@@ -12333,6 +14314,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 4 lianes
+    bonus: '+20'
+    dommages: 1d10+7 plus étreinte et saignement
   For: 24
   Dex: 13
   Con: 22
@@ -12365,6 +14350,10 @@
   Réf: 5
   Vig: 4
   Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 2d8+3
   For: 15
   Dex: 14
   Con: 13
@@ -12399,6 +14388,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: griffe
+    bonus: '+11'
+    dommages: 1d6+7 plus étreinte
   For: 21
   Dex: 15
   Con: 0
@@ -12433,6 +14426,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 4 coups
+    bonus: '+7'
+    dommages: 1d4+3
   For: 16
   Dex: 8
   Con: 14
@@ -12467,6 +14464,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 fléaux
+    bonus: +12/+7
+    dommages: 2d6+6
   For: 23
   Dex: 8
   Con: 15
@@ -12500,6 +14501,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+18'
+    dommages: 2d6+9/19-20 et étreinte
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 2d8+9
   For: 28
   Dex: 15
   Con: 17
@@ -12534,6 +14542,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d3-4 et poison
   For: 3
   Dex: 21
   Con: 10
@@ -12568,6 +14580,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+6
+  - attaque: 2 ailes
+    bonus: '+9'
+    dommages: 1d6+3
   For: 23
   Dex: 12
   Con: 21
@@ -12601,6 +14620,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 1
   Dex: 14
   Con: 13
@@ -12638,6 +14658,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 4 coups
+    bonus: '+30'
+    dommages: 3d6+15/19-20 et étreinte
   For: 40
   Dex: 24
   Con: 31
@@ -12673,6 +14697,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+8'
+    dommages: 1d6+4 et étreinte
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6+4
   For: 19
   Dex: 12
   Con: 18
@@ -12715,6 +14746,10 @@
   Réf: 1
   Vig: 7
   Vol: 2
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d8+7 et étreinte
   For: 20
   Dex: 10
   Con: 16
@@ -12758,6 +14793,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 2d6+3 plus poison
   For: 14
   Dex: 19
   Con: 18
@@ -12792,6 +14831,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '-1'
+    dommages: 1d4-1
+  - attaque: bâton de maître
+    bonus: '-5'
+    dommages: 1d6-1
   For: 8
   Dex: 15
   Con: 8
@@ -12822,6 +14868,16 @@
   Réf: 6
   Vig: 7
   Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+3
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d3+3
+  - attaque: serpents
+    bonus: '+2'
+    dommages: 1d4+1
   For: 17
   Dex: 15
   Con: 16
@@ -12856,6 +14912,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+4
   For: 16
   Dex: 8
   Con: 15
@@ -12890,6 +14950,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: faux axiomatique +3
+    bonus: +30/+25/+20/+15
+    dommages: 2d6+10/×4
+  - attaque: 2 ailes
+    bonus: '+21'
+    dommages: 1d8+2
   For: 21
   Dex: 20
   Con: 24
@@ -12932,6 +14999,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+11'
+    dommages: 2d6+5 et étreinte
   For: 21
   Dex: 10
   Con: 17
@@ -12966,6 +15037,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+3
+  - attaque: tentacules
+    bonus: '+8'
+    dommages: 2d4+3 plus étreinte
   For: 16
   Dex: 13
   Con: 15
@@ -13010,6 +15088,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d6+4 plus maladie
   For: 16
   Dex: 8
   Con: 21
@@ -13044,6 +15126,7 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC: []
   For: 1
   Dex: 15
   Con: 14
@@ -13098,6 +15181,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 2d6+5
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+5
+  - attaque: 2 serres
+    bonus: '+13'
+    dommages: 1d6+5
   For: 21
   Dex: 15
   Con: 25
@@ -13131,6 +15224,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+12'
+    dommages: 1d10+3 plus croc-en-jambe
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 2d8+10/19-20 plus saignement
   For: 25
   Dex: 17
   Con: 20
@@ -13164,6 +15264,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d4+6 plus saignement
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+6
   For: 22
   Dex: 15
   Con: 0
@@ -13217,6 +15324,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: épée à deux mains sainte +2
+    bonus: +22/+17/+12
+    dommages: 2d6+12
   For: 25
   Dex: 12
   Con: 20
@@ -13250,6 +15361,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d3-4
   For: 3
   Dex: 16
   Con: 10
@@ -13284,6 +15399,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+3 et croc-en-jambe
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d3+3
   For: 17
   Dex: 19
   Con: 15
@@ -13328,6 +15450,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d8+5 et étreinte
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d4+5
   For: 21
   Dex: 17
   Con: 15
@@ -13373,6 +15502,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d10+4
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6+4
   For: 19
   Dex: 14
   Con: 15
@@ -13417,6 +15553,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d4+4 et faiblesse
   For: 19
   Dex: 12
   Con: 12
@@ -13447,6 +15587,10 @@
   Réf: 4
   Vig: 2
   Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4-4
   For: 3
   Dex: 15
   Con: 10
@@ -13480,6 +15624,16 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: trident
+    bonus: '+4'
+    dommages: 1d8+2
+  - attaque: griffe
+    bonus: '+2'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+1
   For: 15
   Dex: 13
   Con: 17
@@ -13522,6 +15676,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+1
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d4+1
   For: 13
   Dex: 15
   Con: 12
@@ -13595,6 +15756,10 @@
   Réf: 5
   Vig: 7
   Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+4
   For: 17
   Dex: 12
   Con: 13
@@ -13628,6 +15793,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: arme improvisée
+    bonus: '+4'
+    dommages: 1d4+2/×3
   For: 8
   Dex: 13
   Con: 12
@@ -13661,6 +15830,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4
   For: 10
   Dex: 15
   Con: 13
@@ -13695,6 +15868,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: arme +3
+    bonus: +38/+33/+28/+23
+    dommages: 6d6+22 plus tourbillon centimane
+  - attaque: coup
+    bonus: '+37'
+    dommages: 4d8+21 plus étourdissement
   For: 48
   Dex: 15
   Con: 43
@@ -13729,6 +15909,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+3
+  - attaque: coup
+    bonus: '+8'
+    dommages: 1d4+1
+  - attaque: épée à deux mains de maître
+    bonus: +9/+4
+    dommages: 2d6+3
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d8+2
   For: 15
   Dex: 10
   Con: 13
@@ -13762,6 +15955,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: lance de froid +1
+    bonus: +21/+16/+11
+    dommages: 2d6+10/x3 et 1d6 froid et ralentissement
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+6
+  - attaque: queue
+    bonus: '+14'
+    dommages: 3d6+3 et ralentissement
   For: 23
   Dex: 21
   Con: 22
@@ -13795,6 +15998,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+21'
+    dommages: 1d6+8 plus 3d6 acide et étreinte
   For: 26
   Dex: 25
   Con: 24
@@ -13832,6 +16039,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cornes
+    bonus: '+33'
+    dommages: 4d6+16
+  - attaque: morsure
+    bonus: '+33'
+    dommages: 4d6+16 plus étreinte
+  - attaque: 2 sabots
+    bonus: '+28'
+    dommages: 2d8+8 plus croc-en-jambe
   For: 43
   Dex: 6
   Con: 26
@@ -13870,6 +16087,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+18'
+    dommages: 1d8+10
+  - attaque: coup de queue
+    bonus: '+16'
+    dommages: 1d8+10
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d8+7
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d6+10
   For: 25
   Dex: 12
   Con: 19
@@ -13900,6 +16130,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+26'
+    dommages: 2d6+15
+  - attaque: coup de queue
+    bonus: '+24'
+    dommages: 2d6+15
+  - attaque: 2 griffes
+    bonus: '+26'
+    dommages: 2d6+10
+  - attaque: morsure
+    bonus: '+27'
+    dommages: 2d8+15/19-20
   For: 31
   Dex: 10
   Con: 23
@@ -13930,6 +16173,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+36'
+    dommages: 2d8+21
+  - attaque: coup de queue
+    bonus: '+34'
+    dommages: 2d8+21
+  - attaque: 2 griffes
+    bonus: '+37'
+    dommages: 2d8+14/19-20
+  - attaque: morsure
+    bonus: '+37'
+    dommages: 4d6+21/19-20
   For: 39
   Dex: 8
   Con: 27
@@ -13964,6 +16220,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+27'
+    dommages: 4d8+15/15-20 plus 4d6 froid et étreinte
   For: 31
   Dex: 15
   Con: 20
@@ -14009,6 +16269,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 chaînes
+    bonus: '+17'
+    dommages: 2d6+7 plus 1d6 électricité et croc-en-jambe
   For: 25
   Dex: 20
   Con: 16
@@ -14040,6 +16304,10 @@
   Réf: 5
   Vig: 0
   Vol: 2
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+0'
+    dommages: 1d2-4/19-20
   For: 3
   Dex: 17
   Con: 10
@@ -14074,6 +16342,13 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+36'
+    dommages: 2d6+13 plus 1d6 énergie
+  - attaque: 2 griffes
+    bonus: '+31'
+    dommages: 1d8+6 plus 1d6 énergie
   For: 36
   Dex: 15
   Con: 27
@@ -14104,6 +16379,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre de maître
+    bonus: +14/+9
+    dommages: 1d6+5/18-20
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 1d4+5
   For: 20
   Dex: 15
   Con: 18
@@ -14146,6 +16428,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+6'
+    dommages: 1d4+2/19-20
+  - attaque: cornes
+    bonus: '+1'
+    dommages: 1d6+1
   For: 14
   Dex: 15
   Con: 15
@@ -14179,6 +16468,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 appendices
+    bonus: '+3'
+    dommages: 1d4+1 plus attirer
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+2
   For: 14
   Dex: 11
   Con: 16
@@ -14213,6 +16509,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d8+9/19-20
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 2d6+6
   For: 23
   Dex: 15
   Con: 20
@@ -14255,6 +16558,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d6+4
   For: 16
   Dex: 8
   Con: 13
@@ -14289,6 +16596,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+9'
+    dommages: 1d8+7
   For: 20
   Dex: 8
   Con: 17
@@ -14323,6 +16634,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+14'
+    dommages: 2d6+7
   For: 24
   Dex: 8
   Con: 17
@@ -14357,6 +16672,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 2d8+9
   For: 28
   Dex: 8
   Con: 19
@@ -14391,6 +16710,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+21'
+    dommages: 2d10+10
   For: 30
   Dex: 8
   Con: 21
@@ -14425,6 +16748,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+26'
+    dommages: 2d10+12/19-20
   For: 34
   Dex: 8
   Con: 21
@@ -14459,6 +16786,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+9'
+    dommages: 2d6+9 plus étreinte et nausées
   For: 16
   Dex: 1
   Con: 20
@@ -14494,6 +16825,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 2d8+6
   For: 19
   Dex: 10
   Con: 15
@@ -14528,6 +16863,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+6'
+    dommages: 1d6+2 plus étreinte
   For: 15
   Dex: 16
   Con: 15
@@ -14562,6 +16901,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+5'
+    dommages: 2d6+3
   For: 17
   Dex: 12
   Con: 16
@@ -14596,6 +16939,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '+6'
+    dommages: 1d8+5
+  - attaque: coup
+    bonus: '+1'
+    dommages: 1d8+2
   For: 20
   Dex: 15
   Con: 16
@@ -14630,6 +16980,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d8+7 plus maladie et paralysie
   For: 21
   Dex: 17
   Con: 0
@@ -14663,6 +17017,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+13'
+    dommages: 1d8+9 plus étreinte
   For: 29
   Dex: 14
   Con: 22
@@ -14699,6 +17057,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 4d8+18/19–20 plus 4d6 froid et absorption de magie
   For: 31
   Dex: 18
   Con: 0
@@ -14733,6 +17095,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: épieu de foudre intense +1
+    bonus: +28/+23/+18/+13
+    dommages: 1d6+10 plus 1d6 électricité
+  - attaque: coup de queue
+    bonus: '+22'
+    dommages: 1d6+4 plus repousser et étourdissement
   For: 29
   Dex: 19
   Con: 24
@@ -14767,6 +17136,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 1d6+6
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d8+6
+  - attaque: cornes
+    bonus: '+16'
+    dommages: 2d6+6
   For: 22
   Dex: 13
   Con: 24
@@ -14801,6 +17180,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+20'
+    dommages: 6d6+7 plus pétrification
   For: 25
   Dex: 13
   Con: 0
@@ -14834,6 +17217,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre
+    bonus: '+0'
+    dommages: 1d6/18-20
   For: 10
   Dex: 16
   Con: 12
@@ -14867,6 +17254,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue de maître
+    bonus: '+7'
+    dommages: 1d8+3/19-20
   For: 17
   Dex: 13
   Con: 0
@@ -14900,6 +17291,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: tentacule
+    bonus: '+7'
+    dommages: 3d6+4 plus étreinte
   For: 17
   Dex: 17
   Con: 16
@@ -14935,6 +17330,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+8'
+    dommages: 1d6+4
   For: 19
   Dex: 16
   Con: 18
@@ -14968,6 +17367,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 2d8+7 plus étreinte
   For: 25
   Dex: 14
   Con: 20
@@ -14999,6 +17402,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 4 coups
+    bonus: '+41'
+    dommages: 3d6+17
   For: 45
   Dex: 20
   Con: 0
@@ -15037,6 +17444,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+3'
+    dommages: 1d6+1/19-20
   For: 13
   Dex: 15
   Con: 14
@@ -15070,6 +17481,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+4'
+    dommages: 1d6+2/19-20
+  - attaque: morsure
+    bonus: '-1'
+    dommages: 1d4+1 et maladie et lycanthropie; DC 15
   For: 15
   Dex: 17
   Con: 16
@@ -15113,6 +17531,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+4 plus 6d6 acide
   For: 17
   Dex: 16
   Con: 20
@@ -15148,6 +17570,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: lame étoile sainte +5
+    bonus: +29/+24/+19/+14
+    dommages: 1d8+12/x3
   For: 24
   Dex: 19
   Con: 31
@@ -15181,6 +17607,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+9'
+    dommages: 1d8+3 plus repousser
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+9/19-20 plus 1d10 électricité
   For: 22
   Dex: 15
   Con: 21
@@ -15214,6 +17647,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d6+5 et étreinte
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+5
   For: 21
   Dex: 13
   Con: 19
@@ -15246,6 +17686,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée courte de maître
+    bonus: +26/+21/+16/+11
+    dommages: 1d6+9/19-20
+  - attaque: épée courte de maître
+    bonus: +26/+21/+16
+    dommages: 1d6+4/19-20
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 1d8+4
   For: 28
   Dex: 21
   Con: 18
@@ -15280,6 +17730,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: lance
+    bonus: '+1'
+    dommages: 1d6-1
   For: 9
   Dex: 13
   Con: 10
@@ -15313,6 +17767,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: dague +1
+    bonus: +13/+8
+    dommages: 1d4+4/19-20
+  - attaque: contact
+    bonus: '+7'
+    dommages: 1d4 diminution permanente 1d4 Sagesse
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d4+2
   For: 18
   Dex: 16
   Con: 14
@@ -15347,6 +17811,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: gourdin
+    bonus: '+8'
+    dommages: 1d4+6
   For: 19
   Dex: 17
   Con: 14
@@ -15390,6 +17858,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+2'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 2d4+3
   For: 17
   Dex: 16
   Con: 15
@@ -15423,6 +17898,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+5
+  - attaque: 2 griffes
+    bonus: '+8'
+    dommages: 1d6+5
   For: 21
   Dex: 14
   Con: 23
@@ -15456,6 +17938,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 4d8+7
+  - attaque: 3 langues
+    bonus: '+23'
+    dommages: 2d6+7/19–20 plus étreinte
   For: 24
   Dex: 23
   Con: 25
@@ -15491,6 +17980,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d4 et maladie
   For: 10
   Dex: 17
   Con: 13
@@ -15525,6 +18018,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '-1'
+    dommages: 1d3-2 plus piège
   For: 6
   Dex: 15
   Con: 14
@@ -15558,6 +18055,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+11'
+    dommages: 2d8+9
   For: 22
   Dex: 13
   Con: 17
@@ -15592,6 +18093,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 2d6+4
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d8+4
   For: 18
   Dex: 13
   Con: 16
@@ -15631,6 +18139,10 @@
   Réf: 12
   Vig: 18
   Vol: 20
+  AttaqueCàC:
+  - attaque: 4 coups
+    bonus: '+23'
+    dommages: 1d6+6 plus 1d6 froid et coup vieillissant
   For: 22
   Dex: 19
   Con: 21
@@ -15665,6 +18177,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 3 morsures
+    bonus: '+11'
+    dommages: 1d6+4 plus mâchoires de cerbère
   For: 16
   Dex: 14
   Con: 19
@@ -15732,6 +18248,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+14'
+    dommages: 1d8+10 et putréfaction de la momie
   For: 24
   Dex: 10
   Con: 0
@@ -15765,6 +18285,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d8+12
   For: 26
   Dex: 15
   Con: 20
@@ -15806,6 +18330,10 @@
   Réf: 3
   Vig: 0
   Vol: 5
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+5'
+    dommages: 1d4 plus piqûre d’acide
   For: 10
   Dex: 16
   Con: 11
@@ -15848,6 +18376,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+28'
+    dommages: 2d8+12/19–20 plus étreinte
+  - attaque: 4 griffes
+    bonus: '+28'
+    dommages: 2d6+12 plus étreinte
+  - attaque: cornes
+    bonus: '+28'
+    dommages: 2d8+12
   For: 35
   Dex: 26
   Con: 37
@@ -15892,6 +18430,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d8+4 plus paralysie
   For: 16
   Dex: 17
   Con: 0
@@ -15942,6 +18484,10 @@
   Réf: 6
   Vig: 9
   Vol: 5
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d8+9
   For: 22
   Dex: 13
   Con: 19
@@ -15976,6 +18522,19 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: épée longue de maître
+    bonus: +20/+15/+10
+    dommages: 1d8+6/19-20
+  - attaque: kukri de maître
+    bonus: '+19'
+    dommages: 1d4+6/18-20
+  - attaque: lance de maître
+    bonus: '+19'
+    dommages: 1d8+6/×3
+  - attaque: 6 coups
+    bonus: '+18'
+    dommages: 1d4+6
   For: 22
   Dex: 24
   Con: 19
@@ -16011,6 +18570,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d8+6 et croc-en-jambe
   For: 19
   Dex: 15
   Con: 17
@@ -16053,6 +18616,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d8+9 et absorption d'énergie
   For: 28
   Dex: 16
   Con: 0
@@ -16095,6 +18662,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+8'
+    dommages: 1d4+4 et absorption d'énergie
   For: 16
   Dex: 18
   Con: 0
@@ -16128,6 +18699,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: grande hache
+    bonus: +11/+6
+    dommages: 3d6+9/x3
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d8+3
+  - attaque: corne
+    bonus: '+6'
+    dommages: 1d6+3
   For: 23
   Dex: 14
   Con: 19
@@ -16161,6 +18742,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+4 et poison
   For: 19
   Dex: 10
   Con: 16
@@ -16196,6 +18781,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+8'
+    dommages: 2d6+9
   For: 22
   Dex: 10
   Con: 19
@@ -16230,6 +18819,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: kukri
+    bonus: '+8'
+    dommages: 1d3–1/18–20 plus traînée noire [poison]
   For: 9
   Dex: 18
   Con: 12
@@ -16263,6 +18856,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+1
   For: 12
   Dex: 10
   Con: 14
@@ -16296,16 +18896,13 @@
   VD:
     cases: 8
     mètres: 12.0
-  For: 26
-  Dex: 29
-  Con: 26
-  Int: 21
-  Sag: 17
-  Cha: 22
-  BBA: 15
-  BMO: 25
-  DMD: 44
-  DMDSpécial: 54 contre le croc-en-jambe
+  AttaqueCàC:
+  - attaque: fléau de maître
+    bonus: +22/+17/+12
+    dommages: 3d6+8
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 2d6+4 plus poison
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Araignée de Leng.ashx
   
 - Nom: Dragon-tortue
@@ -16330,6 +18927,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 3d6+8
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 2d6+8
   For: 27
   Dex: 10
   Con: 19
@@ -16371,6 +18975,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 2d6+10
+  - attaque: 2 griffes
+    bonus: '+17'
+    dommages: 1d8+7
+  - attaque: 2 ailes
+    bonus: '+12'
+    dommages: 1d6+3
+  - attaque: coup de queue
+    bonus: '+12'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 19
@@ -16405,6 +19022,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 2d8+15
+  - attaque: 2 griffes
+    bonus: '+25'
+    dommages: 2d6+10
+  - attaque: 2 ailes
+    bonus: '+23'
+    dommages: 1d8+5
+  - attaque: coup de queue
+    bonus: '+23'
+    dommages: 2d6+15
   For: 31
   Dex: 10
   Con: 23
@@ -16439,6 +19069,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+35'
+    dommages: 4d6+21/19-20
+  - attaque: 2 griffes
+    bonus: '+35'
+    dommages: 2d8+14
+  - attaque: 2 ailes
+    bonus: '+33'
+    dommages: 2d6+7
+  - attaque: coup de queue
+    bonus: '+33'
+    dommages: 2d8+21
   For: 39
   Dex: 8
   Con: 27
@@ -16473,6 +19116,10 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 4d6+24 plus poison
   For: 43
   Dex: 11
   Con: 29
@@ -16514,6 +19161,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+7
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: 2 ailes
+    bonus: '+12'
+    dommages: 1d6+2
+  - attaque: coup de queue
+    bonus: '+12'
+    dommages: 1d8+7
   For: 21
   Dex: 12
   Con: 17
@@ -16548,6 +19208,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 2d8+12
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d6+8
+  - attaque: 2 ailes
+    bonus: '+20'
+    dommages: 1d8+4
+  - attaque: coup de queue
+    bonus: '+20'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 21
@@ -16582,6 +19255,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+33'
+    dommages: 4d6+18/19-20
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+12
+  - attaque: 2 ailes
+    bonus: '+30'
+    dommages: 2d6+6
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 2d8+18
   For: 35
   Dex: 8
   Con: 25
@@ -16616,6 +19302,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: contact
+    bonus: '+7'
+    dommages: fixation
   For: 3
   Dex: 19
   Con: 10
@@ -16651,6 +19341,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 2d6+6 plus diminution permanente 1d4 Cha
+  - attaque: 2 serres
+    bonus: '+25'
+    dommages: 1d6+6 plus étreinte et fièvre popobala
+  - attaque: 2 ailes
+    bonus: '+20'
+    dommages: 1d6+3
   For: 23
   Dex: 22
   Con: 22
@@ -16685,6 +19385,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d6+2
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+2
   For: 15
   Dex: 15
   Con: 15
@@ -16711,7 +19418,7 @@
     dépourvu: 21
     valeur: 23
   PV:
-    calcul: 11d6+55 plus 15 de ''simulacre de vie''
+    calcul: 11d6+55 plus 15 de simulacre de vie
     valeur: 111
   Réf: 7
   Vig: 6
@@ -16719,6 +19426,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: contact
+    bonus: '+5'
+    dommages: 1d8+5 et toucher paralysant
   For: 10
   Dex: 14
   Con: 0
@@ -16752,6 +19463,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+29'
+    dommages: 2d6+12 plus combustion
+  - attaque: 2 griffes
+    bonus: '+29'
+    dommages: 1d8+12 plus combustion
+  - attaque: cornes
+    bonus: '+29'
+    dommages: 2d8+12 plus combustion
+  - attaque: 2 ailes
+    bonus: '+27'
+    dommages: 1d8+6
   For: 34
   Dex: 26
   Con: 35
@@ -16802,6 +19526,7 @@
   Réf: 5
   Vig: 8
   Vol: 4
+  AttaqueCàC: []
   For: 1
   Dex: 13
   Con: 10
@@ -16835,6 +19560,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 4d6+18/19-20 plus étreinte
+  - attaque: coup de queue
+    bonus: '+14'
+    dommages: 2d8+4
   For: 26
   Dex: 16
   Con: 21
@@ -16870,6 +19602,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6+3
+  - attaque: 2 serres
+    bonus: '+7'
+    dommages: 1d6+3
   For: 16
   Dex: 15
   Con: 16
@@ -16911,6 +19650,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+4
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 1d6+3
+  - attaque: 2 ailes
+    bonus: '+5'
+    dommages: 1d4+1
   For: 17
   Dex: 14
   Con: 17
@@ -16945,6 +19694,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d6+9/19–20
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d8+6
+  - attaque: coup de queue
+    bonus: '+16'
+    dommages: 1d8+9
+  - attaque: 2 ailes
+    bonus: '+16'
+    dommages: 1d6+3
   For: 23
   Dex: 12
   Con: 21
@@ -16979,6 +19741,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure +30 (2d8+15/19–20) et 2 griffes
+    bonus: '+29'
+    dommages: 2d6+10
+  - attaque: coup de queue
+    bonus: '+27'
+    dommages: 2d6+15
+  - attaque: 2 ailes
+    bonus: '+27'
+    dommages: 1d8+5
   For: 31
   Dex: 10
   Con: 25
@@ -17014,6 +19786,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes+16 (2d6+3) et 2 ailes
+    bonus: '+10'
+    dommages: 2d6+1
   For: 17
   Dex: 23
   Con: 20
@@ -17047,6 +19823,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d6+1/19–20 plus affaiblissement temporaire 1d6 Sagesse
   For: 13
   Dex: 22
   Con: 14
@@ -17091,6 +19871,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+3'
+    dommages: 1d6+1/19-20
   For: 13
   Dex: 17
   Con: 14
@@ -17124,6 +19908,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 7
   Dex: 16
   Con: 17
@@ -17154,6 +19939,7 @@
   Réf: 9
   Vig: 7
   Vol: 2
+  AttaqueCàC: []
   For: 7
   Dex: 17
   Con: 16
@@ -17188,6 +19974,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4-4
   For: 3
   Dex: 15
   Con: 8
@@ -17232,6 +20022,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+2 et étreinte
+  - attaque: dard
+    bonus: '+3'
+    dommages: 1d4+2 et poison
   For: 14
   Dex: 10
   Con: 17
@@ -17267,6 +20064,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 2d6+4 et 1d4 acide et étreinte
   For: 16
   Dex: 10
   Con: 17
@@ -17312,6 +20113,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+1 et croc-en-jambe
   For: 13
   Dex: 15
   Con: 15
@@ -17343,6 +20148,10 @@
   Réf: 5
   Vig: 2
   Vol: 4
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d4+1 plus maladie
   For: 12
   Dex: 11
   Con: 13
@@ -17376,6 +20185,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+17'
+    dommages: 2d6+9/19-20
   For: 29
   Dex: 8
   Con: 21
@@ -17409,6 +20222,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d8+8/×3
   For: 27
   Dex: 14
   Con: 19
@@ -17443,6 +20260,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+3'
+    dommages: 1d3+1 plus 1d3 acide et étreinte
   For: 12
   Dex: 1
   Con: 16
@@ -17478,6 +20299,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+8'
+    dommages: 1d8+2 plus poison
   For: 14
   Dex: 15
   Con: 13
@@ -17512,6 +20337,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+24'
+    dommages: 2d6+8/19-20 et 1d6 feu
+  - attaque: morsure
+    bonus: '+24'
+    dommages: 2d8+8 et 1d6 feu
   For: 27
   Dex: 25
   Con: 20
@@ -17545,6 +20377,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+4 et croc-en-jambe
   For: 17
   Dex: 15
   Con: 13
@@ -17622,6 +20458,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d3
   For: 10
   Dex: 17
   Con: 13
@@ -17656,6 +20496,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 1d8+6 et étreinte
+  - attaque: 4 griffes
+    bonus: '+19'
+    dommages: 2d6+6/19-20
   For: 22
   Dex: 16
   Con: 0
@@ -17688,6 +20535,10 @@
   Réf: 4
   Vig: 3
   Vol: 2
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+3'
+    dommages: 1d4-1
   For: 8
   Dex: 15
   Con: 13
@@ -17741,6 +20592,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 4 morsures
+    bonus: '+15'
+    dommages: 1d8+7 et étreinte
   For: 25
   Dex: 18
   Con: 25
@@ -17775,6 +20630,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d4-2 plus poison
   For: 7
   Dex: 16
   Con: 15
@@ -17808,6 +20667,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d8+6 plus poison
   For: 19
   Dex: 15
   Con: 16
@@ -17845,6 +20708,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: grand cimeterre à deux mains de maître
+    bonus: +8/+3
+    dommages: 2d6+3/18–20
   For: 15
   Dex: 14
   Con: 16
@@ -17878,6 +20745,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1 et poison
   For: 2
   Dex: 12
   Con: 11
@@ -17913,6 +20784,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée à deux mains sainte +3
+    bonus: +27/+22/+17
+    dommages: 3d6+15/19-20
+  - attaque: coup
+    bonus: '+24'
+    dommages: 2d8+12
   For: 27
   Dex: 19
   Con: 24
@@ -17956,6 +20834,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée courte de maître
+    bonus: '+6'
+    dommages: 1d6+4/19–20
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d6+6
   For: 18
   Dex: 19
   Con: 0
@@ -17989,6 +20874,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4 plus poison
   For: 10
   Dex: 15
   Con: 12
@@ -18023,6 +20912,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+6'
+    dommages: 1d3/19-20 et poison
   For: 11
   Dex: 17
   Con: 14
@@ -18056,6 +20949,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 2d6+4
   For: 17
   Dex: 15
   Con: 16
@@ -18086,6 +20983,10 @@
   Réf: 18
   Vig: 24
   Vol: 26
+  AttaqueCàC:
+  - attaque: toucher
+    bonus: '+25'
+    dommages: 20d8 énergie
   For: 24
   Dex: 27
   Con: 26
@@ -18129,6 +21030,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 4d8+22/19–20 et étreinte
+  - attaque: coup de queue
+    bonus: '+18'
+    dommages: 3d6+6 et étreinte
   For: 34
   Dex: 14
   Con: 25
@@ -18194,6 +21102,10 @@
   Réf: 12
   Vig: 3
   Vol: 9
+  AttaqueCàC:
+  - attaque: choc
+    bonus: '+16'
+    dommages: contact, 2d8 électricité
   For: 1
   Dex: 29
   Con: 10
@@ -18227,6 +21139,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre à deux mains de maître
+    bonus: '+8'
+    dommages: 2d4+4/18-20 plus 1d6 froid
+  - attaque: contact
+    bonus: '+7'
+    dommages: 1d6 froid
   For: 16
   Dex: 22
   Con: 18
@@ -18261,6 +21180,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 6 griffes
+    bonus: '+33'
+    dommages: 2d6+13 plus malédiction
+  - attaque: morsure
+    bonus: '+28'
+    dommages: 2d6+6 plus étreinte et poison
   For: 36
   Dex: 26
   Con: 34
@@ -18295,6 +21221,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 1
   Dex: 14
   Con: 16
@@ -18343,6 +21270,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée longue vorpale maudite +1
+    bonus: +31/+26/+21/+16
+    dommages: 2d6+13
+  - attaque: fouet vorpal de feu +1
+    bonus: +30/+25/+20
+    dommages: 1d4+7 et 1d6 feu et enchevêtrement
+  - attaque: 2 coups
+    bonus: '+31'
+    dommages: 1d10+12
   For: 35
   Dex: 25
   Con: 36
@@ -18374,6 +21311,10 @@
   Vig: 1
   Vol: 4
   VolSpécial: +4 contre le poison
+  AttaqueCàC:
+  - attaque: 3 lames
+    bonus: '+4'
+    dommages: 1d4-1
   For: 6
   Dex: 15
   Con: 11
@@ -18407,6 +21348,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+2'
+    dommages: 1d4/19-20
   For: 11
   Dex: 15
   Con: 12
@@ -18437,6 +21382,10 @@
   Réf: -1
   Vig: 6
   Vol: -3
+  AttaqueCàC:
+  - attaque: contact
+    bonus: '+5'
+    dommages: 6d6 d'énergie négative
   For: 0
   Dex: 4
   Con: 18
@@ -18467,6 +21416,16 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 2d10+6
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d6+12
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d8+12 plus étreinte/19-20
   For: 35
   Dex: 26
   Con: 30
@@ -18531,6 +21490,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: '+4'
+    dommages: 1d8+2/19-20
   For: 15
   Dex: 15
   Con: 16
@@ -18561,6 +21524,10 @@
   Réf: 5
   Vig: 7
   Vol: 7
+  AttaqueCàC:
+  - attaque: toucher corrupteur
+    bonus: '+6'
+    dommages: 7d6, Vig DD 18, 1/2 dégâts
   For: 0
   Dex: 12
   Con: 0
@@ -18603,6 +21570,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 2d4+8 et étreinte
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 2d6+8/19-20 et étreinte
   For: 27
   Dex: 15
   Con: 17
@@ -18634,6 +21608,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d8+6
   For: 18
   Dex: 17
   Con: 16
@@ -18667,6 +21645,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d8+12
   For: 26
   Dex: 14
   Con: 0
@@ -18701,6 +21683,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d3-4 plus fixation
   For: 2
   Dex: 13
   Con: 12
@@ -18735,6 +21721,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: trident
+    bonus: '+4'
+    dommages: 1d8+3
+  - attaque: morsure
+    bonus: '-1'
+    dommages: 1d4+1
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d4+2
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+2
   For: 14
   Dex: 13
   Con: 14
@@ -18768,6 +21767,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: +10/+5
+    dommages: 1d4/19-20
+  - attaque: morsure de serpent
+    bonus: '+5'
+    dommages: 1d4 et poison
   For: 10
   Dex: 15
   Con: 18
@@ -18801,6 +21807,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: massue
+    bonus: +16/+11
+    dommages: 2d8+12
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 1d8+8
   For: 27
   Dex: 15
   Con: 19
@@ -18831,6 +21844,7 @@
   Réf: 10
   Vig: 10
   Vol: 7
+  AttaqueCàC: []
   For: 1
   Dex: 22
   Con: 14
@@ -18866,6 +21880,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hache d'armes de maître
+    bonus: '+9'
+    dommages: 1d8+4/x3
   For: 16
   Dex: 14
   Con: 13
@@ -18899,6 +21917,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: hache d’armes de maître
+    bonus: '+10'
+    dommages: 1d8+4/×3
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+2 plus transmission de la lycanthropie
+  - attaque: griffe
+    bonus: '+3'
+    dommages: 1d6+4 plus étreinte
   For: 18
   Dex: 14
   Con: 15
@@ -18934,6 +21962,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+9'
+    dommages: 1d4+2
+  - attaque: 2 kukris de maître
+    bonus: +15/+10
+    dommages: 1d4+5/18-20
   For: 20
   Dex: 17
   Con: 17
@@ -18967,6 +22002,10 @@
   Réf: 4
   Vig: 5
   Vol: 1
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+1'
+    dommages: 1d4 plus poison
   For: 10
   Dex: 13
   Con: 15
@@ -19000,6 +22039,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morgenstern
+    bonus: +22/+17/+12
+    dommages: 4d6+18
+  - attaque: 2 coups
+    bonus: '+22'
+    dommages: 2d6+12
   For: 35
   Dex: 13
   Con: 23
@@ -19088,6 +22134,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d6+4
   For: 17
   Dex: 10
   Con: 0
@@ -19121,6 +22171,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+5
+  - attaque: 2 griffes
+    bonus: '+10'
+    dommages: 2d4+5
   For: 20
   Dex: 15
   Con: 18
@@ -19155,6 +22212,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d4+1 et absorption d'énergie
   For: 12
   Dex: 12
   Con: 0
@@ -19188,6 +22249,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+4 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+4
   For: 18
   Dex: 15
   Con: 18
@@ -19222,6 +22290,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d6+12/19-20 et 2d6 feu
   For: 27
   Dex: 15
   Con: 21
@@ -19254,6 +22326,10 @@
   Vig: 14
   Vol: 6
   VolSpécial: +4 contre le poison, +4 (résistance) contre le Mal
+  AttaqueCàC:
+  - attaque: morsure+23 (1d8+8 plus étreinte) et 2 griffes
+    bonus: '+23'
+    dommages: 1d6+8
   For: 27
   Dex: 17
   Con: 20
@@ -19285,6 +22361,7 @@
   Réf: 3
   Vig: 5
   Vol: 3
+  AttaqueCàC: []
   For: 1
   Dex: 13
   Con: 10
@@ -19318,6 +22395,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d6+9 et putréfaction
+  - attaque: 2 griffes
+    bonus: '+19'
+    dommages: 2d4+9/19-20
   For: 28
   Dex: 12
   Con: 24
@@ -19352,6 +22436,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+9 et étreinte
   For: 23
   Dex: 12
   Con: 21
@@ -19404,6 +22492,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue +1
+    bonus: +16/+11
+    dommages: 1d8+8/19-20
   For: 21
   Dex: 19
   Con: 16
@@ -19437,6 +22529,10 @@
   Réf: 7
   Vig: 3
   Vol: 5
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+6'
+    dommages: 1d6+2 plus étreinte
   For: 14
   Dex: 16
   Con: 15
@@ -19471,6 +22567,10 @@
   VD:
     cases: 12
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6 plus poison
   For: 11
   Dex: 17
   Con: 14
@@ -19504,6 +22604,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: bois
+    bonus: '+3'
+    dommages: 1d6+2
+  - attaque: 2 sabots
+    bonus: '-2'
+    dommages: 1d3+1
   For: 14
   Dex: 17
   Con: 16
@@ -19538,6 +22645,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d6+6
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 1d8+6
   For: 22
   Dex: 17
   Con: 22
@@ -19572,6 +22686,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: '+5'
+    dommages: 1d8+4/19-20
   For: 17
   Dex: 13
   Con: 14
@@ -19606,6 +22724,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: '+6'
+    dommages: 1d8+6/19-20
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d6+1 et croc-en-jambe et lycanthropie
   For: 19
   Dex: 15
   Con: 17
@@ -19639,6 +22764,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+24'
+    dommages: 3d8+14/19-20 et poison
+  - attaque: 2 griffes
+    bonus: '+24'
+    dommages: 2d6+14
+  - attaque: queue
+    bonus: '+19'
+    dommages: 3d6+7 et étreinte
   For: 38
   Dex: 22
   Con: 29
@@ -19674,6 +22809,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morgenstern
+    bonus: '+5'
+    dommages: 1d8+3
+  - attaque: langue
+    bonus: '-1'
+    dommages: contact, langue gluante
   For: 15
   Dex: 9
   Con: 14
@@ -19707,6 +22849,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: pic de guerre lourd
+    bonus: '+3'
+    dommages: 1d4+1/x4
   For: 13
   Dex: 15
   Con: 14
@@ -19747,6 +22893,13 @@
   Réf: 12
   Vig: 10
   Vol: 10
+  AttaqueCàC:
+  - attaque: bois
+    bonus: '+14'
+    dommages: 1d8+5
+  - attaque: 2 sabots
+    bonus: '+8'
+    dommages: 1d6+2
   For: 20
   Dex: 23
   Con: 18
@@ -19781,6 +22934,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 3d6+13/19-20 et étreinte
+  - attaque: coup de queue
+    bonus: '+13'
+    dommages: 4d8+6
   For: 37
   Dex: 10
   Con: 25
@@ -19826,6 +22986,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue +1
+    bonus: +12/+7
+    dommages: 2d6+8/19-20
+  - attaque: coup de queue
+    bonus: '+6'
+    dommages: 2d6+2 et étreinte
   For: 20
   Dex: 17
   Con: 21
@@ -19857,6 +23024,13 @@
   Réf: 5
   Vig: 7
   Vol: 0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+1
+  - attaque: queue
+    bonus: '-2'
+    dommages: contact, 1d6 électricité
   For: 13
   Dex: 14
   Con: 19
@@ -19891,6 +23065,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: masse d'arme lourde de maître
+    bonus: +9/+4
+    dommages: 1d8+3
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d4+1 et poison
   For: 15
   Dex: 15
   Con: 18
@@ -19935,6 +23116,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+30'
+    dommages: 2d8+15 plus feu sombre
+  - attaque: 2 griffes
+    bonus: '+30'
+    dommages: 2d6+15 plus feu sombre
   For: 40
   Dex: 23
   Con: 0
@@ -19978,6 +23166,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: bois
+    bonus: '+7'
+    dommages: 2d6+5
+  - attaque: 2 sabots
+    bonus: '+2'
+    dommages: 1d4+2
   For: 20
   Dex: 15
   Con: 18
@@ -20019,6 +23214,7 @@
   Réf: 17
   Vig: 13
   Vol: 17
+  AttaqueCàC: []
   For: 0
   Con: 0
   Int: 15
@@ -20051,6 +23247,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+20'
+    dommages: 2d8+10/19-20
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d6+10
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 1d8+10
   For: 31
   Dex: 11
   Con: 31
@@ -20084,6 +23290,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+7 et étreinte
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+7
   For: 25
   Dex: 13
   Con: 21
@@ -20119,6 +23332,19 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+14'
+    dommages: 1d6+3 plus 1d6 électricité
+  - attaque: coup
+    bonus: '+14'
+    dommages: 1d8+3 plus 1d6 électricité
+  - attaque: coup de queue
+    bonus: '+12'
+    dommages: 1d6+1 plus 1d6 électricité
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d6+3 plus 1d6 électricité
   For: 16
   Dex: 19
   Con: 14
@@ -20150,6 +23376,10 @@
   Réf: 5
   Vig: 12
   Vol: 3
+  AttaqueCàC:
+  - attaque: 4 tentacules
+    bonus: '+9'
+    dommages: 1d6+4 plus poison
   For: 18
   Dex: 15
   Con: 22
@@ -20184,6 +23414,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+7
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d4+7
   For: 24
   Dex: 8
   Con: 21
@@ -20218,6 +23455,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+3'
+    dommages: 1d3-2
   For: 7
   Dex: 13
   Con: 12
@@ -20251,6 +23492,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d8+7/19–20/×3
+  - attaque: 2 tentacules
+    bonus: '+20'
+    dommages: 1d6+3 plus étreinte
   For: 24
   Dex: 25
   Con: 25
@@ -20296,6 +23544,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+5'
+    dommages: 1d4-2
   For: 6
   Dex: 17
   Con: 11
@@ -20335,6 +23587,10 @@
   Réf: 13
   Vig: 8
   Vol: 14
+  AttaqueCàC:
+  - attaque: hallebarde sainte +1
+    bonus: +18/+13/+8
+    dommages: 1d10+7/×3
   For: 18
   Dex: 21
   Con: 18
@@ -20369,6 +23625,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+10'
+    dommages: 1d4–1 plus étreinte
   For: 8
   Dex: 18
   Con: 17
@@ -20407,6 +23667,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+16'
+    dommages: 1d8+9
+  - attaque: coup de queue
+    bonus: '+14'
+    dommages: 1d8+9
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d8+6
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 2d6+9
   For: 23
   Dex: 12
   Con: 18
@@ -20438,6 +23711,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+24'
+    dommages: 2d6+13
+  - attaque: coup de queue
+    bonus: '+22'
+    dommages: 2d6+13
+  - attaque: 2 griffes
+    bonus: '+24'
+    dommages: 2d6+9
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 2d8+13
   For: 29
   Dex: 10
   Con: 22
@@ -20469,6 +23755,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+34'
+    dommages: 2d8+19
+  - attaque: coup de queue
+    bonus: '+32'
+    dommages: 2d8+19
+  - attaque: 2 griffes
+    bonus: '+34'
+    dommages: 2d8+13
+  - attaque: morsure
+    bonus: '+36'
+    dommages: 4d6+19/19-20
   For: 37
   Dex: 8
   Con: 26
@@ -20510,6 +23809,10 @@
   Réf: 6
   Vig: 6
   Vol: 6
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+9'
+    dommages: 1d6+4 et 1d6 froid
   For: 19
   Dex: 12
   Con: 15
@@ -20547,6 +23850,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: bois
+    bonus: '+9'
+    dommages: 1d6+3/18-20
+  - attaque: 2 sabots
+    bonus: '+3'
+    dommages: 1d4+1
   For: 17
   Dex: 16
   Con: 17
@@ -20578,6 +23888,7 @@
   Réf: 7
   Vig: 3
   Vol: 3
+  AttaqueCàC: []
   For: 3
   Dex: 15
   Con: 11
@@ -20611,6 +23922,16 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+39'
+    dommages: 3d6+18
+  - attaque: morsure
+    bonus: '+39'
+    dommages: 6d6+18/19-20 plus étreinte
+  - attaque: queue
+    bonus: '+34'
+    dommages: 4d6+9 plus croc-en-jambe
   For: 47
   Dex: 8
   Con: 27
@@ -20655,6 +23976,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: lance
+    bonus: +11/+6
+    dommages: 1d8+4/x3 et 1d6 feu
+  - attaque: coup de queue
+    bonus: '+6'
+    dommages: 2d6+1 et 1d6 feu et étreinte
   For: 16
   Dex: 13
   Con: 18
@@ -20690,6 +24018,10 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 2d6+8/19-20 plus étreinte
   For: 27
   Dex: 10
   Con: 18
@@ -20733,6 +24065,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 2d8+5
   For: 20
   Dex: 9
   Con: 0
@@ -20766,6 +24102,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+25'
+    dommages: 2d6+6
+  - attaque: morsure
+    bonus: '+30'
+    dommages: 4d8+13/19-20
+  - attaque: 2 pieds d’éléphant
+    bonus: '+25'
+    dommages: 2d6+6
   For: 36
   Dex: 19
   Con: 26
@@ -20800,6 +24146,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 2d6+5
+  - attaque: griffe
+    bonus: '+12'
+    dommages: 1d8+5/19-20 plus étreinte
   For: 20
   Dex: 17
   Con: 17
@@ -20827,6 +24180,13 @@
   Réf: 5
   Vig: 4
   Vol: 4
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+6'
+    dommages: 1d3-2 et poison
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d2-2
   For: 7
   Dex: 15
   Con: 13
@@ -20865,6 +24225,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+13'
+    dommages: 1d8+7
+  - attaque: coup de queue
+    bonus: '+11'
+    dommages: 1d8+7
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d8+5
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+7
   For: 21
   Dex: 12
   Con: 17
@@ -20896,6 +24269,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+21'
+    dommages: 2d6+12
+  - attaque: coup de queue
+    bonus: '+19'
+    dommages: 2d6+12
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d6+8
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d8+12
   For: 27
   Dex: 10
   Con: 21
@@ -20927,6 +24313,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+32'
+    dommages: 2d8+18
+  - attaque: coup de queue
+    bonus: '+29'
+    dommages: 2d8+18
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+12
+  - attaque: morsure
+    bonus: '+33'
+    dommages: 4d6+18
   For: 35
   Dex: 8
   Con: 25
@@ -20958,6 +24357,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: lame
+    bonus: '+4'
+    dommages: 1d4-1 plus saignement
   For: 8
   Dex: 17
   Con: 12
@@ -20992,6 +24395,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 1d8+6 et 1d6 feu
+  - attaque: cimeterre à deux mains de maître
+    bonus: +16/+11
+    dommages: 2d6+9/18-20
   For: 23
   Dex: 17
   Con: 18
@@ -21025,6 +24435,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d4-2 et pétrification
   For: 6
   Dex: 17
   Con: 11
@@ -21058,6 +24472,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+7
   For: 21
   Dex: 11
   Con: 16
@@ -21112,6 +24530,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 1d6+4
+  - attaque: 2 tentacules
+    bonus: '+8'
+    dommages: 1d4+2 plus absorption du destin
   For: 18
   Dex: 14
   Con: 17
@@ -21190,6 +24615,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+7'
+    dommages: 1d8+4
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+4
   For: 18
   Dex: 17
   Con: 12
@@ -21223,17 +24655,13 @@
   VD:
     cases: 6
     mètres: 9.0
-  For: 16
-  Dex: 19
-  Con: 14
-  Int: 9
-  Sag: 12
-  Cha: 11
-  BBA: 6
-  BMO: 9
-  BMOSpécial: +13 lutte
-  DMD: 23
-  DMDSpécial: croc-en-jambe impossible
+  AttaqueCàC:
+  - attaque: lance de maître
+    bonus: +11/+6
+    dommages: 1d8+4/x3
+  - attaque: 2 tentacules
+    bonus: '+5'
+    dommages: 1d4+1 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cécaëlia.ashx
   
 - Nom: Dromadaire
@@ -21268,6 +24696,13 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+1 plus morsure du néant
+  - attaque: 2 tentacules
+    bonus: '-3'
+    dommages: 1d3
   For: 12
   Dex: 15
   Con: 16
@@ -21302,6 +24737,7 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC: []
   For: 8
   Dex: 17
   Con: 10
@@ -21351,6 +24787,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 2d8+6 plus poison
   For: 18
   Dex: 13
   Con: 16
@@ -21424,6 +24864,10 @@
   Réf: 1
   Vig: 4
   Vol: -1
+  AttaqueCàC:
+  - attaque: trident
+    bonus: '+2'
+    dommages: 1d8+1
   For: 13
   Dex: 13
   Con: 14
@@ -21458,6 +24902,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d8+12 plus 2d6 feu
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+12 plus 2d6 feu
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 1d4+6 plus frappe de bannissement
   For: 34
   Dex: 16
   Con: 27
@@ -21521,6 +24975,19 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d6+5
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d6+5
+  - attaque: pique
+    bonus: +12/+7
+    dommages: 1d8+7/x3
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d6+2
   For: 21
   Dex: 13
   Con: 20
@@ -21554,6 +25021,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+7 et poison et étreinte
   For: 20
   Dex: 17
   Con: 16
@@ -21590,6 +25061,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: lance +1
+    bonus: +14/+9/+4
+    dommages: 1d6+4/x3 plus 1d6 feu
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d6+1 plus 1d6 feu
   For: 14
   Dex: 20
   Con: 19
@@ -21623,6 +25101,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+8'
+    dommages: 1d4-2/19-20
   For: 7
   Dex: 21
   Con: 12
@@ -21666,6 +25148,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+6 et poison
   For: 18
   Dex: 20
   Con: 21
@@ -21700,6 +25186,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d6+4
+  - attaque: 4 griffes
+    bonus: '+10'
+    dommages: 1d4+4 et éventration
   For: 19
   Dex: 17
   Con: 18
@@ -21733,6 +25226,19 @@
   VD:
     cases: 9
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 2d6+12 plus diminution permanente 2d4 Force
+  - attaque: 2 griffes
+    bonus: '+25'
+    dommages: 2d6+12
+  - attaque: 2 pinces
+    bonus: '+23'
+    dommages: 1d12+6
+  - attaque: coup de queue
+    bonus: '+23'
+    dommages: 2d6+6
   For: 35
   Dex: 19
   Con: 29
@@ -21773,6 +25279,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+6
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d6+4
+  - attaque: 2 ailes
+    bonus: '+7'
+    dommages: 1d4+2
   For: 19
   Dex: 14
   Con: 17
@@ -21807,6 +25323,19 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 2d6+10
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 1d8+7
+  - attaque: 2 ailes
+    bonus: '+15'
+    dommages: 1d6+3
+  - attaque: queue
+    bonus: '+15'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 21
@@ -21841,6 +25370,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d8+16 et 4d6 acide
+  - attaque: 2 griffes
+    bonus: '+31'
+    dommages: 2d6+11
+  - attaque: 2 ailes
+    bonus: '+29'
+    dommages: 1d8+5
+  - attaque: queue
+    bonus: '+29'
+    dommages: 2d6+16
   For: 33
   Dex: 10
   Con: 25
@@ -21871,6 +25413,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+21'
+    dommages: 1d8+9 plus étreinte
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 1d8+9/19-20
   For: 28
   Dex: 25
   Con: 25
@@ -21905,6 +25454,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup de queue
+    bonus: '+11'
+    dommages: 1d4+4
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6+4
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d8+4
   For: 19
   Dex: 14
   Con: 15
@@ -21949,6 +25508,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+6 plus étreinte, maladie et saignement
   For: 18
   Dex: 25
   Con: 17
@@ -21993,6 +25556,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+14'
+    dommages: 2d6+13 plus 2d6 feu, étreinte et combustion
   For: 28
   Dex: 1
   Con: 21
@@ -22056,6 +25623,10 @@
   Vig: 2
   Vol: -1
   VolSpécial: +2 contre les enchantements
+  AttaqueCàC:
+  - attaque: rapière
+    bonus: '+3'
+    dommages: 1d6/18-20
   For: 11
   Dex: 15
   Con: 10
@@ -22089,6 +25660,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4 et fixation
   For: 3
   Dex: 15
   Con: 10
@@ -22123,6 +25698,16 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+10'
+    dommages: 1d6+4 et poison
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+4 et étreinte
+  - attaque: 2 ailes
+    bonus: '+5'
+    dommages: 1d6+2
   For: 19
   Dex: 12
   Con: 18
@@ -22157,6 +25742,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: gourdin
+    bonus: '+5'
+    dommages: 1d6+2
+  - attaque: morsure
+    bonus: '+0'
+    dommages: 1d4+1
   For: 14
   Dex: 19
   Con: 15
@@ -22190,6 +25782,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d6+4
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d4+4
   For: 19
   Dex: 15
   Con: 16
@@ -22223,6 +25822,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d6+7
+  - attaque: 2 griffes
+    bonus: '+19'
+    dommages: 1d8+7
+  - attaque: queue
+    bonus: '+17'
+    dommages: 1d8+3 plus étreinte
   For: 24
   Dex: 17
   Con: 18
@@ -22258,6 +25867,16 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+9'
+    dommages: 1d6+2 plus poison
+  - attaque: lance de maître
+    bonus: +15/+10
+    dommages: 1d8+7/×3
+  - attaque: 2 pinces
+    bonus: '+9'
+    dommages: 1d6+2 plus étreinte
   For: 20
   Dex: 15
   Con: 21
@@ -22293,6 +25912,10 @@
   VD:
     cases: 24
     mètres: 36.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+10'
+    dommages: 1d4–1/19–20
   For: 8
   Dex: 24
   Con: 13
@@ -22326,6 +25949,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+7 et 1d6 froid et croc-en-jambe
   For: 20
   Dex: 13
   Con: 18
@@ -22370,6 +25997,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+3'
+    dommages: 1d4+1/19-20
+  - attaque: morsure
+    bonus: '-2'
+    dommages: 1d3
   For: 12
   Dex: 17
   Con: 12
@@ -22403,6 +26037,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 1 morsure
+    bonus: '+3'
+    dommages: 1d4-1 et poison
   For: 8
   Dex: 15
   Con: 0
@@ -22446,6 +26084,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+29'
+    dommages: 2d10+10
   For: 30
   Dex: 24
   Con: 0
@@ -22476,6 +26118,10 @@
   Réf: 3
   Vig: 8
   Vol: 2
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+8'
+    dommages: 2d8+6
   For: 18
   Dex: 13
   Con: 17
@@ -22510,6 +26156,13 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+4
+  - attaque: piquants
+    bonus: '+3'
+    dommages: 1d4+2 et douleur
   For: 18
   Dex: 15
   Con: 15
@@ -22543,6 +26196,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d6+6
+  - attaque: 4 tentacules
+    bonus: '+11'
+    dommages: 1d6+3
   For: 22
   Dex: 17
   Con: 20
@@ -22576,6 +26236,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée à deux mains
+    bonus: +21/+16/+11
+    dommages: 3d6+15
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 1d8+10
   For: 31
   Dex: 9
   Con: 21
@@ -22609,6 +26276,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d8+6
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 2d6+6
+  - attaque: 4 tentacules
+    bonus: '+14'
+    dommages: 1d6+3 plus étreinte
   For: 22
   Dex: 17
   Con: 26
@@ -22642,6 +26319,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+3 et croc-en-jambe
   For: 14
   Dex: 15
   Con: 15
@@ -22676,6 +26357,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+3'
+    dommages: 1d4
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d4
   For: 10
   Dex: 15
   Con: 12
@@ -22706,6 +26394,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+30'
+    dommages: 2d6+13/19-20 plus 2d6 acide et étreinte
+  - attaque: morsure
+    bonus: '+30'
+    dommages: 1d10+9 plus 2d6 acide
   For: 28
   Dex: 18
   Con: 23
@@ -22740,6 +26435,22 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée longue +1
+    bonus: +24/+19/+14/+9
+    dommages: 2d6+8/17-20
+  - attaque: 5 épée longues +1
+    bonus: '+24'
+    dommages: 2d6+4/17-20
+  - attaque: coup de queue
+    bonus: '+17'
+    dommages: 2d6+3 et étreinte
+  - attaque: 6 coups
+    bonus: '+22'
+    dommages: 1d8+7
+  - attaque: coup de queue
+    bonus: '+17'
+    dommages: 2d6+3 et étreinte
   For: 25
   Dex: 19
   Con: 32
@@ -22775,6 +26486,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d2-4
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d3-4
   For: 3
   Dex: 15
   Con: 8
@@ -22809,6 +26527,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+5'
+    dommages: 1d3+1 plus étreinte
   For: 12
   Dex: 17
   Con: 13
@@ -22844,6 +26566,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: marteau de guerre
+    bonus: '+3'
+    dommages: 1d8+1/x3
   For: 12
   Dex: 9
   Con: 15
@@ -22877,6 +26603,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 5 morsures
+    bonus: '+14'
+    dommages: 2d6+6 plus saignement
   For: 23
   Dex: 17
   Con: 21
@@ -22909,6 +26639,13 @@
   Réf: 10
   Vig: 9
   Vol: 10
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+6
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+6
   For: 23
   Dex: 15
   Con: 19
@@ -22943,6 +26680,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague de maître
+    bonus: '+10'
+    dommages: 1d4/19-20
   For: 10
   Dex: 21
   Con: 18
@@ -22978,6 +26719,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: épée à deux mains dansante +5
+    bonus: +35/+30/+25/+20
+    dommages: 3d6+18
+  - attaque: coup
+    bonus: '+30'
+    dommages: 2d8+13
   For: 28
   Dex: 20
   Con: 30
@@ -23011,6 +26759,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: gourdin
+    bonus: '+8'
+    dommages: 1d6+9
+  - attaque: coup
+    bonus: '+8'
+    dommages: 1d4+9
   For: 22
   Dex: 15
   Con: 16
@@ -23041,6 +26796,10 @@
   Réf: 0
   Vig: 3
   Vol: 1
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '-1'
+    dommages: 1d2-3
   For: 5
   Dex: 7
   Con: 12
@@ -23075,6 +26834,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: cimeterre
+    bonus: '+4'
+    dommages: 1d6+2/18-20
   For: 15
   Dex: 12
   Con: 11
@@ -23108,6 +26871,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre de maître à deux mains
+    bonus: +12/+7
+    dommages: 2d6+7/18-20
+  - attaque: 2 coups
+    bonus: '+11'
+    dommages: 1d6+5
   For: 21
   Dex: 16
   Con: 17
@@ -23141,6 +26911,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 4 langues
+    bonus: '+21'
+    dommages: 3d6+10/19-20 et étreinte
   For: 30
   Dex: 7
   Con: 24
@@ -23176,6 +26950,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+18'
+    dommages: 2d6+7/18-20/×3 plus étreinte et 1d6 saignement
+  - attaque: tentacules
+    bonus: '+16'
+    dommages: 1d10+3 plus poison
   For: 25
   Dex: 18
   Con: 24
@@ -23210,6 +26991,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+3'
+    dommages: 1d4 et étreinte
   For: 11
   Dex: 15
   Con: 14
@@ -23245,6 +27030,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: hache d’armes
+    bonus: +12/+7
+    dommages: 2d6+9/×3
+  - attaque: 2 coups
+    bonus: '+11'
+    dommages: 1d8+6
   For: 23
   Dex: 10
   Con: 17
@@ -23278,6 +27070,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+14'
+    dommages: 2d8+7
+  - attaque: 2 sabots
+    bonus: '+9'
+    dommages: 1d6+3
   For: 24
   Dex: 10
   Con: 24
@@ -23311,6 +27110,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cimeterre
+    bonus: +9/+4
+    dommages: 1d6+4/18-20
   For: 16
   Dex: 15
   Con: 12
@@ -23344,6 +27147,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d8+7 et étreinte
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+7
   For: 25
   Dex: 15
   Con: 17
@@ -23386,6 +27196,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+7
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d8+5
+  - attaque: 2 ailes
+    bonus: '+8'
+    dommages: 1d6+2
+  - attaque: coup de queue
+    bonus: '+8'
+    dommages: 1d8+7
   For: 21
   Dex: 12
   Con: 17
@@ -23420,6 +27243,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 2d8+12/19-20
+  - attaque: 2 griffes
+    bonus: '+21'
+    dommages: 2d6+8/19-20
+  - attaque: 2 ailes
+    bonus: '+16'
+    dommages: 1d8+4
+  - attaque: coup de queue
+    bonus: '+16'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 21
@@ -23454,6 +27290,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+31'
+    dommages: 4d6+18/19-20
+  - attaque: 2 griffes
+    bonus: '+31'
+    dommages: 2d8+12/19-20
+  - attaque: 2 ailes
+    bonus: '+29'
+    dommages: 2d6+6
+  - attaque: coup de queue
+    bonus: '+29'
+    dommages: 2d8+18
   For: 35
   Dex: 8
   Con: 25
@@ -23498,6 +27347,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+7 plus poison
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+7
   For: 24
   Dex: 16
   Con: 23
@@ -23532,6 +27388,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+9'
+    dommages: '2d6+5 '
   For: 20
   Dex: 15
   Con: 18
@@ -23565,6 +27425,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d6+1 et maladie
   For: 13
   Dex: 14
   Con: 0
@@ -23601,6 +27465,16 @@
   VD:
     cases: 12
     mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 serres
+    bonus: '+5'
+    dommages: 1d8+2
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+2
+  - attaque: griffes avant
+    bonus: '+0'
+    dommages: 1d4+1
   For: 15
   Dex: 15
   Con: 19
@@ -23634,6 +27508,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+25'
+    dommages: 1d8+11 plus étreinte
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 2d6+11
   For: 33
   Dex: 18
   Con: 0
@@ -23674,6 +27555,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d4
   For: 10
   Dex: 11
   Con: 11
@@ -23708,6 +27593,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+3
   For: 17
   Dex: 22
   Con: 0
@@ -23738,6 +27627,10 @@
   Réf: 9
   Vig: 8
   Vol: 3
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 2d6+9 et étreinte
   For: 22
   Dex: 14
   Con: 16
@@ -23773,6 +27666,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: '+5'
+    dommages: 1d8+2/19-20
+  - attaque: 2 sabots
+    bonus: '+0'
+    dommages: 1d6+1
   For: 15
   Dex: 14
   Con: 15
@@ -23968,6 +27868,16 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+6 plus saignement
+  - attaque: 2 serres
+    bonus: '+14'
+    dommages: 1d6+6
+  - attaque: 2 ailes
+    bonus: '+9'
+    dommages: 1d6+3 plus saignement
   For: 22
   Dex: 15
   Con: 20
@@ -24011,6 +27921,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+40'
+    dommages: 4d6+24/17–20
+  - attaque: 2 griffes
+    bonus: '+40'
+    dommages: 2d8+16/19–20
+  - attaque: coup de queue
+    bonus: '+38'
+    dommages: 2d8+24/19–20
+  - attaque: 2 ailes
+    bonus: '+38'
+    dommages: 2d6+8/19–20
   For: 45
   Dex: 8
   Con: 0
@@ -24046,6 +27969,22 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: gourdin
+    bonus: '+2'
+    dommages: 1d6+1
+  - attaque: griffe
+    bonus: '-3'
+    dommages: 1d4
+  - attaque: morsure
+    bonus: '-3'
+    dommages: 1d4
+  - attaque: 2 griffes
+    bonus: '+2'
+    dommages: 1d4+1
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4+1
   For: 12
   Dex: 9
   Con: 14
@@ -24079,6 +28018,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: 4 tentacules
+    bonus: '+10'
+    dommages: 1d6+5 et mucus
   For: 20
   Dex: 12
   Con: 22
@@ -24113,6 +28056,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+2 et étreinte
   For: 15
   Dex: 13
   Con: 16
@@ -24148,6 +28095,10 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6+3 et réaction allergique
   For: 15
   Dex: 14
   Con: 15
@@ -24178,6 +28129,10 @@
   Réf: 8
   Vig: 5
   Vol: 7
+  AttaqueCàC:
+  - attaque: toucher intangible
+    bonus: '+11'
+    dommages: affaiblissement temporaire de Force
   For: 0
   Dex: 20
   Con: 0
@@ -24221,6 +28176,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+1'
+    dommages: 1d4
+  - attaque: grande pique
+    bonus: '+1'
+    dommages: 1d6
   For: 11
   Dex: 14
   Con: 12
@@ -24261,6 +28223,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 2d6+7
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d8+5
+  - attaque: 2 ailes
+    bonus: '+13'
+    dommages: 1d6+2
+  - attaque: queue
+    bonus: '+13'
+    dommages: 1d8+7
   For: 21
   Dex: 12
   Con: 17
@@ -24295,6 +28270,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+24'
+    dommages: 2d8+12
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 2d6+8
+  - attaque: 2 ailes
+    bonus: '+21'
+    dommages: 1d8+4
+  - attaque: coup de queue
+    bonus: '+21'
+    dommages: 2d6+12
   For: 27
   Dex: 10
   Con: 21
@@ -24329,6 +28317,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+34'
+    dommages: 4d6+18/19-20
+  - attaque: 2 griffes
+    bonus: '+33'
+    dommages: 2d8+12
+  - attaque: 2 ailes
+    bonus: '+31'
+    dommages: 2d6+6
+  - attaque: coup de queue
+    bonus: '+31'
+    dommages: 2d8+18
   For: 35
   Dex: 8
   Con: 25
@@ -24363,6 +28364,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+5 et poison
+  - attaque: coup de queue
+    bonus: '+5'
+    dommages: 1d8+2
   For: 20
   Dex: 23
   Con: 20
@@ -24404,6 +28412,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+6/19-20
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+4
+  - attaque: 2 ailes
+    bonus: '+8'
+    dommages: 1d4+2
   For: 19
   Dex: 14
   Con: 17
@@ -24438,6 +28456,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+21'
+    dommages: 2d6+10/19-20
+  - attaque: 2 griffes
+    bonus: '+21'
+    dommages: 1d8+7/19-20
+  - attaque: 2 ailes
+    bonus: '+16'
+    dommages: 1d6+3
+  - attaque: queue
+    bonus: '+16'
+    dommages: 1d8+10
   For: 25
   Dex: 12
   Con: 21
@@ -24472,6 +28503,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 2d8+16/19-20
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d6+11/19-20
+  - attaque: 2 ailes
+    bonus: '+27'
+    dommages: 1d8+5
+  - attaque: coup de queue
+    bonus: '+27'
+    dommages: 2d6+16
   For: 33
   Dex: 10
   Con: 25
@@ -24506,6 +28550,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 3d6+18 plus poison
   For: 35
   Dex: 13
   Con: 24
@@ -24540,6 +28588,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+4 et étreinte et poison
   For: 17
   Dex: 15
   Con: 17
@@ -24575,6 +28627,16 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d6+11
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 1d8+11 plus étreinte
+  - attaque: 3 tentacules
+    bonus: '+19'
+    dommages: 1d6+5 plus étreinte
   For: 32
   Dex: 17
   Con: 23
@@ -24610,6 +28672,13 @@
   VD:
     cases: 10
     mètres: 15.0
+  AttaqueCàC:
+  - attaque: cimeterres de maître
+    bonus: +16/+16/+11/+11
+    dommages: 1d8+8/15-20
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 1d8+8
   For: 26
   Dex: 17
   Con: 21
@@ -24654,6 +28723,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+8'
+    dommages: 2d6+9
   For: 22
   Dex: 15
   Con: 17
@@ -24697,6 +28770,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 3d8+11/19-20
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 2d6+11
   For: 32
   Dex: 13
   Con: 29
@@ -24730,6 +28810,10 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 2d6+4
   For: 16
   Dex: 19
   Con: 15
@@ -24763,6 +28847,13 @@
   VD:
     cases: 2
     mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d4-1
+  - attaque: tentacule
+    bonus: '+1'
+    dommages: 1d4-1
   For: 8
   Dex: 15
   Con: 17
@@ -24797,6 +28888,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: queue
+    bonus: '+23'
+    dommages: 4d6+19
   For: 37
   Dex: 10
   Con: 21
@@ -24831,6 +28926,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+6'
+    dommages: 1d3-4/19-20
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d2-4
   For: 3
   Dex: 19
   Con: 11
@@ -24884,6 +28986,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+25'
+    dommages: 3d8+9 plus poison
+  - attaque: 3 coups de queue
+    bonus: '+20'
+    dommages: 2d8+4 plus étreinte
   For: 29
   Dex: 21
   Con: 21
@@ -24919,6 +29028,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 tentacules
+    bonus: '+6'
+    dommages: 1d4+3 et étreinte
   For: 16
   Dex: 14
   Con: 13
@@ -24953,6 +29066,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d6+3
   For: 14
   Dex: 10
   Con: 0
@@ -24986,6 +29103,13 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: cornes
+    bonus: '+18'
+    dommages: 1d6+8
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 1d10+8 plus étreinte
   For: 26
   Dex: 19
   Con: 20
@@ -25020,6 +29144,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+17'
+    dommages: 2d6+6/19-20
   For: 22
   Dex: 13
   Con: 16
@@ -25054,6 +29182,19 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+13
+  - attaque: 2 ailes
+    bonus: '+30'
+    dommages: 2d6+6
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 4d6+13 et poison et maladie
+  - attaque: coup de queue
+    bonus: '+30'
+    dommages: 2d8+6 et étreinte
   For: 37
   Dex: 29
   Con: 35
@@ -25088,6 +29229,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+5 et poison
+  - attaque: 8 tentacules
+    bonus: '+11'
+    dommages: 1d4+2 et étreinte
   For: 20
   Dex: 15
   Con: 17
@@ -25120,6 +29268,10 @@
   Réf: 1
   Vig: 4
   Vol: 4
+  AttaqueCàC:
+  - attaque: trident de maître
+    bonus: '+5'
+    dommages: 1d8+1
   For: 12
   Dex: 10
   Con: 12
@@ -25153,6 +29305,10 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d6-1 et poison
   For: 9
   Dex: 15
   Con: 12
@@ -25187,6 +29343,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 1d8+10 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 1d6+10 plus étreinte
   For: 30
   Dex: 15
   Con: 0
@@ -25241,6 +29404,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+22'
+    dommages: 2d10+9
   For: 28
   Dex: 9
   Con: 0
@@ -25274,6 +29441,13 @@
   VD:
     cases: 8
     mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d6+3 plus 1d6 énergie négative et absorption d’énergie
+  - attaque: 2 ailes
+    bonus: '+9'
+    dommages: 1d6+1 plus 1d6 énergie négative
   For: 17
   Dex: 20
   Con: 18
@@ -25316,6 +29490,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 1d8+7 plus maladie
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 1d6+7
   For: 24
   Dex: 16
   Con: 19
@@ -25349,6 +29530,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+9'
+    dommages: 1d3+2
   For: 14
   Dex: 13
   Con: 16
@@ -25382,6 +29567,10 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+16'
+    dommages: 1d8+7 et étreinte et poison
   For: 20
   Dex: 16
   Con: 20
@@ -25417,6 +29606,16 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+17'
+    dommages: 2d8+7/19-20
+  - attaque: 2 sabots
+    bonus: '+12'
+    dommages: 1d6+3
+  - attaque: 2 ailes
+    bonus: '+12'
+    dommages: 1d6+3
   For: 24
   Dex: 13
   Con: 20
@@ -25448,6 +29647,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+3 plus maladie
   For: 17
   Dex: 20
   Con: 16
@@ -25477,6 +29680,10 @@
   VD:
     cases: 6
     mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+8'
+    dommages: 1d6+2
   For: 14
   Dex: 15
   Con: 16
@@ -25518,6 +29725,13 @@
   VD:
     cases: 4
     mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+4 et étreinte
+  - attaque: coup de queue
+    bonus: '+0'
+    dommages: 1d12+2
   For: 19
   Dex: 12
   Con: 17
