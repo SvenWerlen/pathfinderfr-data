@@ -15,7 +15,7 @@ from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
-FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 'Référence']
+FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence']
 MATCH = ['Nom']
 
 pages = os.listdir(PATH)
