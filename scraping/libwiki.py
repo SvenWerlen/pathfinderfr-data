@@ -119,10 +119,10 @@ def extractAttacks(text):
       if nom.startswith('et') or nom.startswith('ou'):
         nom = nom[2:].strip()
       bon = match[1]
-      type = match[2].strip()
+      typ = match[2].strip()
       dmg = match[3]
       newEl = { 'attaque': nom, 'bonus': bon, 'dommages': dmg }
-      if len(type) > 0:
+      if len(typ) > 0:
         newEl['type'] = 'contact'
       liste.append( newEl )
     
