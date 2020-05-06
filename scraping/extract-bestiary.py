@@ -15,7 +15,10 @@ from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
-FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence']
+FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 
+          'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
+          'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
+          'Référence']
 MATCH = ['Nom']
 
 pages = os.listdir(PATH)
@@ -199,6 +202,22 @@ for page in pages:
             field = 'cha'
             if 'cha' in data:
               setValue(b, 'Cha', parseNumber(data['cha']))  
+            
+            field = 'BBA'
+            if 'bba' in data:
+              setValue(b, 'BBA', parseNumber(data['bba']))  
+            field = 'BMO'
+            if 'bmo' in data:
+              num = extractNumberWithSpecial(data['bmo'])
+              setValue(b, 'BMO', num['num'])
+              if 'special' in num:
+                setValue(b, 'BMOSpécial', num['special'])  
+            field = 'DMD'
+            if 'dmd' in data:
+              num = extractNumberWithSpecial(data['dmd'])
+              setValue(b, 'DMD', num['num'])
+              if 'special' in num:
+                setValue(b, 'DMDSpécial', num['special'])
             
             
           #field = 'CA'

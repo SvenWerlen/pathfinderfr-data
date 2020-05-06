@@ -10,6 +10,12 @@ import re
 # et produit une structure { 's': 'BDTitre', 'data': ["Tigre", "FP 4"] }
 #
 def parseWiki(data):
+  # clean links before processing
+  regex = re.compile('\[\[.*?\|.*?\]\]')
+  for match in regex.findall(data):
+    el = re.search('\[\[.*?\|(.*?)\]\]', match)
+    data = data.replace(match, el.group(1))
+  
   el = re.search('^{s:(\w+)\|(.*)}$', data.strip())
   if el:
     return { 's': el.group(1), 'data': el.group(2).split('|') }
@@ -24,8 +30,6 @@ def parseWiki(data):
 # => { 'Réf' : "+7", 'Vig' : "+8", 'Vol' : "+3" }
 #
 def parseData(data):
-  regex = re.compile("'''(.+?)'''([^']+)")
-  matches = regex.findall(data.strip())
   result = {}
   while True:
     el = re.search("'''(.+?)'''(.+)", data)
