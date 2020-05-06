@@ -113,17 +113,17 @@ def extractAttacks(text):
       raise ValueError("Invalid attack format '%s'" % text)
     
   else:
-    regex = re.compile('.*? [\+-][\+0-9/]+ \(.*?\)')
-    for match in regex.findall(text):
-      attack = re.search('(.*)? ([\+-][\+0-9/]+?) \((.*?)\)', match)
-      if attack:
-        nom = attack.group(1).replace(',','').strip()
-        if nom.startswith('et') or nom.startswith('ou'):
-          nom = nom[2:].strip()
-        bon = attack.group(2)
-        dmg = attack.group(3)
-        liste.append( { 'attaque': nom, 'bonus': bon, 'dommages': dmg } )
-      else:
-        raise ValueError("Invalid attack format '%s'" % match)
+    regex = re.compile('(.*?) ([\+-][\+0-9/]+) (contact )?\((.*?)\)')
+    for match in regex.findall(text):      
+      nom = match[0].replace(',','').strip()
+      if nom.startswith('et') or nom.startswith('ou'):
+        nom = nom[2:].strip()
+      bon = match[1]
+      type = match[2].strip()
+      dmg = match[3]
+      newEl = { 'attaque': nom, 'bonus': bon, 'dommages': dmg }
+      if len(type) > 0:
+        newEl['type'] = 'contact'
+      liste.append( newEl )
     
   return liste

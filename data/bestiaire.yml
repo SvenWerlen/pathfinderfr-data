@@ -3897,7 +3897,11 @@
   VD:
     cases: 6
     mètres: 9.0
-  AttaqueCàC: []
+  AttaqueCàC:
+  - attaque: toucher
+    bonus: '+10'
+    dommages: poison
+    type: contact
   For: 11
   Dex: 29
   Con: 24
@@ -6387,7 +6391,15 @@
   Réf: 11
   Vig: 5
   Vol: 7
-  AttaqueCàC: []
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+11'
+    dommages: 1d6 et 1d6 froid
+    type: contact
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 1d8 et 1d6 froid
+    type: contact
   For: 0
   Dex: 18
   Con: 17
@@ -6534,6 +6546,10 @@
   - attaque: 2 sabots
     bonus: '+2'
     dommages: 1d6+2
+  - attaque: trompe
+    bonus: '+7'
+    dommages: désenchantement
+    type: contact
   For: 19
   Dex: 17
   Con: 14
@@ -20496,6 +20512,10 @@
   - attaque: morsure
     bonus: '+6'
     dommages: 1d3
+  - attaque: antennes
+    bonus: '+6'
+    dommages: corrosion
+    type: contact
   For: 10
   Dex: 17
   Con: 13
@@ -23257,7 +23277,11 @@
   Réf: 17
   Vig: 13
   Vol: 17
-  AttaqueCàC: []
+  AttaqueCàC:
+  - attaque: toucher de la douleur
+    bonus: '+19'
+    dommages: 7d6
+    type: contact
   For: 0
   Con: 0
   Int: 15
@@ -28105,6 +28129,10 @@
   - attaque: morsure
     bonus: '+3'
     dommages: 1d6+2 et étreinte
+  - attaque: langue
+    bonus: '+3'
+    dommages: étreinte
+    type: contact
   For: 15
   Dex: 13
   Con: 16
