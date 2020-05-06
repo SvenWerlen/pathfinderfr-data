@@ -456,7 +456,10 @@
   - attaque: épée bâtarde +2
     bonus: +20/+15/+10
     dommages: 1d10+8/19-20
-  - attaque: coup +13(2d6+3) ou 2 coups
+  - attaque: coup
+    bonus: '+13'
+    dommages: 2d6+3
+  - attaque: 2 coups
     bonus: '+18'
     dommages: 2d6+6
   For: 22
@@ -12709,7 +12712,10 @@
     cases: 18
     mètres: 27.0
   AttaqueCàC:
-  - attaque: morsure +23 (2d6+5 plus absorption d’énergie et étreinte) et 2 griffes
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 2d6+5 plus absorption d’énergie et étreinte
+  - attaque: 2 griffes
     bonus: '+23'
     dommages: 1d8+5 plus absorption d’énergie
   - attaque: queue
@@ -19742,7 +19748,10 @@
     cases: 12
     mètres: 18.0
   AttaqueCàC:
-  - attaque: morsure +30 (2d8+15/19–20) et 2 griffes
+  - attaque: morsure
+    bonus: '+30'
+    dommages: 2d8+15/19–20
+  - attaque: 2 griffes
     bonus: '+29'
     dommages: 2d6+10
   - attaque: coup de queue
@@ -19787,7 +19796,10 @@
     cases: 9
     mètres: 12.0
   AttaqueCàC:
-  - attaque: 2 griffes+16 (2d6+3) et 2 ailes
+  - attaque: 2 griffes
+    bonus: '+16'
+    dommages: 2d6+3
+  - attaque: 2 ailes
     bonus: '+10'
     dommages: 2d6+1
   For: 17
@@ -22327,7 +22339,10 @@
   Vol: 6
   VolSpécial: +4 contre le poison, +4 (résistance) contre le Mal
   AttaqueCàC:
-  - attaque: morsure+23 (1d8+8 plus étreinte) et 2 griffes
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 1d8+8 plus étreinte
+  - attaque: 2 griffes
     bonus: '+23'
     dommages: 1d6+8
   For: 27
