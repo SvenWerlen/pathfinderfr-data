@@ -10,7 +10,7 @@ from lxml import html
 import re
 import xml.etree.ElementTree as ET
 
-from libwiki import parseWiki, parseData, parseNumber, setValue, extractNumberWithSpecial, cleanText, extractAttacks
+from libwiki import *
 from libhtml import mergeYAML
 
 PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
@@ -19,6 +19,7 @@ FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'Init',
           'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
           'VD', 'AttaqueCàC', 'AttaqueDistance',
           'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
+          'Description',
           'Référence']
 MATCH = ['Nom']
 
@@ -62,11 +63,12 @@ for page in pages:
       b = {} 
       b['Nom'] = metadata['Title']
       b['Référence'] = "https://www.pathfinder-fr.org/Wiki/" + metadata['Name'] + ".ashx"
+      html = s.text
       
       field = None
       try:
         PARTS = [ 'défense', 'attaque', 'caractéristiques', 'caractéristiques de base', 'statistiques', 'statistiques de base', 'capacités spéciales', 'écologie', 'pouvoirs spéciaux', 'construction', 'rituel', 'particularités' ]
-        part = "general"
+        part = "statistiques de base"
         
         rows = s.text.split('\n')
         for r in rows:
@@ -106,7 +108,7 @@ for page in pages:
           ##
           ## GENERAL
           ##
-          if part == "general":
+          if part == "statistiques de base":
             
             field = 'PX'
             if 'px' in data:
@@ -249,25 +251,24 @@ for page in pages:
               if 'special' in num:
                 setValue(b, 'DMDSpécial', num['special'])
             
-            
-          #field = 'CA'
-          #if 'ca' in data:
-          # setValue(b, 'CA', parseNumber(data['ca']))
-          
-
 
       except Exception as e:
         print("Exception: %s (%s) - %s" % (b['Nom'], field, str(e)))
         #raise e
     
+      # generate HTML for description
+      #b['Description'] = toHTML(html)
+    
       # vérifier tous les champs
       isValid = True
       #for field in {'Nom', 'FP', 'PX', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence'}:
       #  if field not in b:
-      #    print("[W] Incomplete field '%s' for: %s\n%s" % (field, b['Nom'], b));
+      #    print("[W] Incomplete field '%s' for: %s" % (field, b['Nom']));
+      #    print(b)
       #    isValid = False
+      #    exit(1)
       #    break
-          
+         
       if isValid:
         liste.append(b)
       #break  

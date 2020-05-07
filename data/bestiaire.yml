@@ -97,6 +97,25 @@
   - Extraplanaire
   PX: 19200
   Init: 8
+  CA:
+    calcul: parade +4 contre le Mal
+    contact: 14
+    dépourvu: 23
+    valeur: 27
+  PV:
+    calcul: 14d10+70
+    valeur: 147
+  Réf: 13
+  Vig: 15
+  Vol: 10
+  VolSpécial: +4 contre le poison ; +4 (résistance) contre le Mal
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morgenstern +3
+    bonus: +22/+17/+12
+    dommages: 1d8+10 plus coup percutant
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Déva monadique.ashx
   
 - Nom: Hippopotame Béhémoth (Gorgops)
@@ -291,6 +310,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Limace géante.ashx
   
 - Nom: Dragon métallique de bronze
+  FP: 5
   Environnements:
   - Dragon
   - Aquatique
@@ -536,6 +556,30 @@
   - Tempéré
   PX: 76800
   Init: 2
+  CA:
+    calcul: Dex +2, esquive +1, naturelle +22, taille –4
+    contact: 9
+    dépourvu: 28
+    valeur: 32
+  PV:
+    calcul: 28d12+144
+    valeur: 248
+  Réf: 12
+  Vig: 29
+  Vol: 28
+  AttaqueDistance:
+  - attaque: 4 épines
+    bonus: '+14'
+    dommages: 2d8+11
+  For: 32
+  Dex: 25
+  Con: 29
+  Int: 16
+  Sag: 22
+  Cha: 19
+  BBA: 16
+  BMO: 32
+  DMD: 44
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon dépines.ashx
   
 - Nom: Marut
@@ -632,6 +676,21 @@
   - Ciel
   - Extraplanaire
   Init: 9
+  CA:
+    calcul: Dex +2, naturelle +10, taille -1
+    contact: 11
+    dépourvu: 19
+    valeur: 21
+  PV:
+    calcul: 13d12+65
+    valeur: 149
+  Réf: 10
+  Vig: 13
+  Vol: 10
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d6+10
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Dragon temporel adulte
@@ -641,6 +700,21 @@
   - Ciel
   - Extraplanaire
   Init: 11
+  CA:
+    calcul: Dex +1, naturelle +19, taille -2
+    contact: 9
+    dépourvu: 27
+    valeur: 28
+  PV:
+    calcul: 19d12+133
+    valeur: 256
+  Réf: 12
+  Vig: 18
+  Vol: 15
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+28'
+    dommages: 2d8+15
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Vénérable dragon temporel
@@ -650,6 +724,21 @@
   - Ciel
   - Extraplanaire
   Init: 14
+  CA:
+    calcul: naturelle +31, taille -4
+    contact: 6
+    dépourvu: 37
+    valeur: 37
+  PV:
+    calcul: 27d12+243
+    valeur: 418
+  Réf: 17
+  Vig: 24
+  Vol: 21
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+38'
+    dommages: 4d6+21
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon temporel.ashx
   
 - Nom: Sépide
@@ -1035,6 +1124,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fourmilion géant.ashx
   
 - Nom: Dragon métallique d'or
+  FP: 7
   Environnements:
   - Dragon
   - Plaines
@@ -1346,6 +1436,27 @@
   - Tempéré
   PX: 2400
   Init: 3
+  CA:
+    calcul: Dex –1, naturelle +12, taille –2
+    contact: 7
+    dépourvu: 19
+    valeur: 19
+  PV:
+    calcul: 9d8+36
+    valeur: 76
+  Réf: 4
+  Vig: 10
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+11'
+    dommages: 2d6+7 plus étreinte
+  - attaque: 2 tentacules
+    bonus: '+6'
+    dommages: 1d6+3 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tendricule.ashx
   
 - Nom: Cube gélatineux
@@ -1817,6 +1928,27 @@
   - Montagnes
   - Tropical
   Init: 11
+  CA:
+    calcul: Dex +7, naturelle +36, taille -8
+    contact: 9
+    dépourvu: 38
+    valeur: 45
+  PV:
+    calcul: 32d10+480
+    valeur: 656
+  Réf: 25
+  Vig: 33
+  Vol: 21
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+41'
+    dommages: 6d6+17/19-20
+  - attaque: 2 serres
+    bonus: '+41'
+    dommages: 3d8+17
+  - attaque: coup de queue
+    bonus: '+36'
+    dommages: 10d6+8/19-20 plus saignement
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Agyra.ashx
   
 - Nom: Mante géante
@@ -2066,6 +2198,24 @@
   - Tempéré
   PX: 135
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +1, taille +2
+    contact: 11
+    dépourvu: 12
+    valeur: 12
+  PV:
+    calcul: 1d8+1
+    valeur: 5
+  Réf: 1
+  Vig: 3
+  Vol: 1
+  VD:
+    cases: 2
+    mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d3–3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue happante.ashx
   
 - Nom: Morse empereur
@@ -2159,6 +2309,32 @@
   - Tempéré
   PX: 400
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +2, taille +1
+    contact: 12
+    dépourvu: 13
+    valeur: 14
+  PV:
+    calcul: 2d8+4
+    valeur: 13
+  Réf: 1
+  Vig: 2
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+2'
+    dommages: 1d4 plus étreinte et poison
+  For: 10
+  Dex: 13
+  Con: 14
+  Int: 5
+  Sag: 12
+  Cha: 13
+  BBA: 1
+  BMO: 0
+  BMOSpécial: +8 lutte
+  DMD: 11
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffe du récif.ashx
   
 - Nom: Araignée goliath
@@ -2168,6 +2344,21 @@
   - Forêt-Jungle
   - Tempéré
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +22, taille -8
+    contact: 3
+    dépourvu: 24
+    valeur: 25
+  PV:
+    calcul: 14d8+84
+    valeur: 147
+  Réf: 5
+  Vig: 15
+  Vol: 4
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 6d8+22 et poison
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Araignée goliath.ashx
   
 - Nom: Zouvembi
@@ -2343,6 +2534,21 @@
   - Ruines-donjons
   - Tempéré
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +12, taille -1
+    contact: 11
+    dépourvu: 21
+    valeur: 23
+  PV:
+    calcul: 12d10+30
+    valeur: 96
+  Réf: 6
+  Vig: 4
+  Vol: 5
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+18'
+    dommages: 2d6+7 plus frappe hébétante
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Céphalophore.ashx
   
 - Nom: Naga ténébreux
@@ -2713,6 +2919,40 @@
   - Extraplanaire
   PX: 4800
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +10
+    contact: 12
+    dépourvu: 20
+    valeur: 22
+  PV:
+    calcul: 9d12+27
+    valeur: 85
+  Réf: 8
+  Vig: 11
+  Vol: 10
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+7 plus 3 feu
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+5
+  - attaque: 2 ailes
+    bonus: '+9'
+    dommages: 1d4+2
+  For: 21
+  Dex: 14
+  Con: 17
+  Int: 14
+  Sag: 14
+  Cha: 13
+  BBA: 9
+  BMO: 17
+  DMD: 29
+  DMDSpécial: 33 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Dragon de magma adulte
@@ -2723,6 +2963,43 @@
   - Extraplanaire
   PX: 19200
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +19, taille -1
+    contact: 11
+    dépourvu: 28
+    valeur: 29
+  PV:
+    calcul: 15d12+75
+    valeur: 172
+  Réf: 10
+  Vig: 16
+  Vol: 15
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d6+12/19–20 plus 6 feu
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 1d8+8/19–20
+  - attaque: coup de queue
+    bonus: '+17'
+    dommages: 1d8+12
+  - attaque: 2 ailes
+    bonus: '+17'
+    dommages: 1d6+4
+  For: 27
+  Dex: 12
+  Con: 21
+  Int: 18
+  Sag: 18
+  Cha: 17
+  BBA: 15
+  BMO: 24
+  DMD: 35
+  DMDSpécial: 39 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Dragon de magma vénérable
@@ -2733,6 +3010,43 @@
   - Extraplanaire
   PX: 102400
   Init: 4
+  CA:
+    calcul: naturelle +31, taille -2
+    contact: 8
+    dépourvu: 39
+    valeur: 39
+  PV:
+    calcul: 23d12+161
+    valeur: 310
+  Réf: 13
+  Vig: 22
+  Vol: 21
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+33'
+    dommages: 2d8+18/19–20 plus 10 feu
+  - attaque: 2 griffes
+    bonus: '+33'
+    dommages: 2d6+12/19–20
+  - attaque: coup de queue
+    bonus: '+31'
+    dommages: 2d6+18
+  - attaque: 2 ailes
+    bonus: '+31'
+    dommages: 1d8+6
+  For: 35
+  Dex: 10
+  Con: 25
+  Int: 22
+  Sag: 22
+  Cha: 21
+  BBA: 23
+  BMO: 37
+  DMD: 47
+  DMDSpécial: 51 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon de magma.ashx
   
 - Nom: Aveugleur
@@ -3435,6 +3749,34 @@
   - Extraplanaire
   PX: 3200
   Init: 6
+  CA:
+    calcul: Dex +2, esquive +1, naturelle +7
+    contact: 13
+    dépourvu: 17
+    valeur: 20
+  PV:
+    calcul: 9d10+36
+    valeur: 85
+  Réf: 8
+  Vig: 9
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 4 griffes
+    bonus: '+13'
+    dommages: 1d6+3 plus instabilité matérielle
+  For: 17
+  Dex: 15
+  Con: 16
+  Int: 10
+  Sag: 12
+  Cha: 11
+  BBA: 9
+  BMO: 12
+  DMD: 25
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bête du Chaos.ashx
   
 - Nom: Corbie sanguinaire
@@ -3519,6 +3861,24 @@
   - Tempéré
   PX: 600
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +2
+    contact: 12
+    dépourvu: 12
+    valeur: 14
+  PV:
+    calcul: 3d10+6
+    valeur: 22
+  Réf: 5
+  Vig: 5
+  Vol: 4
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d6+1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien esquiveur.ashx
   
 - Nom: Harpie
@@ -3607,6 +3967,33 @@
   - Tempéré
   PX: 600
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +3
+    contact: 12
+    dépourvu: 13
+    valeur: 15
+  PV:
+    calcul: 4d6+4
+    valeur: 18
+  Réf: 6
+  Vig: 2
+  Vol: 5
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d6+1
+  For: 12
+  Dex: 15
+  Con: 12
+  Int: 4
+  Sag: 13
+  Cha: 9
+  BBA: 2
+  BMO: 3
+  DMD: 15
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Forlarren.ashx
   
 - Nom: Écureuil Volant
@@ -3655,6 +4042,27 @@
   - Extraplanaire
   PX: 3200
   Init: 9
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +6, taille –1
+    contact: 15
+    dépourvu: 15
+    valeur: 21
+  PV:
+    calcul: 9d10+36
+    valeur: 85
+  Réf: 13
+  Vig: 10
+  Vol: 5
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+5
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+5/19–20 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chat infernal.ashx
   
 - Nom: Linnorm des cairns
@@ -4109,6 +4517,24 @@
   - Tropical
   PX: 4800
   Init: -2
+  CA:
+    calcul: Dex -2, naturelle +25, taille -8
+    contact: 0
+    dépourvu: 25
+    valeur: 25
+  PV:
+    calcul: 11d8+77
+    valeur: 126
+  Réf: 5
+  Vig: 16
+  Vol: 3
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 4d6+22/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue immense.ashx
   
 - Nom: Golem de verre
@@ -4119,6 +4545,30 @@
   - Tempéré
   PX: 4800
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +13, taille –1
+    contact: 8
+    dépourvu: 21
+    valeur: 21
+  PV:
+    calcul: 12d10+30
+    valeur: 96
+  Réf: 3
+  Vig: 4
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 2d8+5 plus saignement
+  For: 20
+  Dex: 9
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 12
+  BMO: 18
+  DMD: 27
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de verre.ashx
   
 - Nom: Mille-pattes à queue fouettante
@@ -4254,6 +4704,24 @@
   - Désert
   - Tropical
   Init: 9
+  CA:
+    calcul: Dex +5, naturelle +37, taille -8
+    contact: 7
+    dépourvu: 39
+    valeur: 44
+  PV:
+    calcul: 30d10+450
+    valeur: 615
+  Réf: 24
+  Vig: 32
+  Vol: 20
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+40'
+    dommages: 4d6+18/19-20 plus étreinte
+  - attaque: 3 dards
+    bonus: '+40'
+    dommages: 3d6+18/19-20 plus 2d6 points de dégâts de feu et poison
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bézravnis.ashx
   
 - Nom: Kami, toshigami
@@ -4335,6 +4803,37 @@
   - Tropical
   PX: 200
   Init: 3
+  CA:
+    calcul: armure +2, Dex +3, taille +1
+    contact: 14
+    dépourvu: 13
+    valeur: 16
+  PV:
+    calcul: 1d10+1
+    valeur: 11
+  Réf: 5
+  Vig: 3
+  Vol: 1
+  AttaqueCàC:
+  - attaque: épée courte
+    bonus: '+3'
+    dommages: 1d4+1/19–20
+  AttaqueDistance:
+  - attaque: dard
+    bonus: '+5'
+    dommages: 1d3+1
+  - attaque: filet
+    bonus: '+5'
+    dommages: spécial
+  For: 12
+  Dex: 17
+  Con: 13
+  Int: 12
+  Sag: 12
+  Cha: 8
+  BBA: 1
+  BMO: 1
+  DMD: 14
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grippli.ashx
   
 - Nom: Sard
@@ -4632,6 +5131,27 @@
   - Tempéré
   PX: 819200
   Init: 5
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +26, taille –2
+    contact: 14
+    dépourvu: 34
+    valeur: 40
+  PV:
+    calcul: 26d12+312
+    valeur: 481
+  Réf: 20
+  Vig: 27
+  Vol: 24
+  For: 37
+  Dex: 20
+  Con: 33
+  Int: 12
+  Sag: 29
+  Cha: 26
+  BBA: 26
+  BMO: 41
+  BMOSpécial: +45 lutte
+  DMD: 57
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jabberwocky.ashx
   
 - Nom: Trollosse
@@ -4679,6 +5199,27 @@
   - Tempéré
   PX: 1200
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +6, taille –1
+    contact: 11
+    dépourvu: 15
+    valeur: 17
+  PV:
+    calcul: 5d12+10
+    valeur: 42
+  Réf: 6
+  Vig: 6
+  Vol: 4
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+4
+  - attaque: coup de queue
+    bonus: '+3'
+    dommages: 1d8+2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des forêts.ashx
   
 - Nom: Dragonne
@@ -4767,6 +5308,27 @@
   - Froid
   PX: 3200
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +7, taille +1
+    contact: 13
+    dépourvu: 18
+    valeur: 20
+  PV:
+    calcul: 9d10+36
+    valeur: 85
+  Réf: 10
+  Vig: 7
+  Vol: 7
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d6+3 plus 1d6 froid
+  - attaque: 4 griffes
+    bonus: '+14'
+    dommages: 1d4+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charda.ashx
   
 - Nom: Jorôgumo
@@ -4896,6 +5458,34 @@
   - Tempéré
   PX: 204800
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +26, taille –2
+    contact: 7
+    dépourvu: 33
+    valeur: 33
+  PV:
+    calcul: 30d10+40
+    valeur: 205
+  Réf: 9
+  Vig: 10
+  Vol: 10
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+41'
+    dommages: 6d10+13/19–20
+  AttaqueDistance:
+  - attaque: bombe
+    bonus: '+15'
+    dommages: 8d6 énergie
+  For: 36
+  Dex: 9
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 30
+  BMO: 45
+  DMD: 54
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem dadamantium.ashx
   
 - Nom: Ogrelin (Demi-Ogre)
@@ -5026,6 +5616,26 @@
   - Ruines-donjons
   - Tempéré
   Init: 3
+  CA:
+    calcul: armure +2, Dex +3, taille +1
+    contact: 14
+    dépourvu: 13
+    valeur: 16
+  PV:
+    calcul: 1d8+10
+    valeur: 18
+  Réf: 5
+  RéfSpécial: +1 contre les pièges
+  Vig: 0
+  Vol: 1
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+3'
+    dommages: 1d3+2/19-20
+  AttaqueDistance:
+  - attaque: dague
+    bonus: '+4'
+    dommages: 1d3+2/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Virebois.ashx
   
 - Nom: Mur vivant
@@ -5035,6 +5645,21 @@
   - Ruines-donjons
   - Tempéré
   Init: -4
+  CA:
+    calcul: Dex -4, naturelle +7, taille -1
+    contact: 5
+    dépourvu: 12
+    valeur: 12
+  PV:
+    calcul: 3d10+30
+    valeur: 46
+  Réf: -3
+  Vig: 1
+  Vol: 1
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+6'
+    dommages: 1d8+4 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mur vivant.ashx
   
 - Nom: Troll de mousse
@@ -5362,6 +5987,21 @@
   - ville
   - Tempéré
   Init: 2
+  CA:
+    calcul: Dex +2, esquive +1, naturelle +1, taille +2
+    contact: 15
+    dépourvu: 13
+    valeur: 16
+  PV:
+    calcul: 3d10+3
+    valeur: 19
+  Réf: 5
+  Vig: 4
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d3-2 et saignement 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ratelin.ashx
   
 - Nom: Nuée de mille-pattes
@@ -5793,6 +6433,23 @@
   - Tempéré
   PX: 1200
   Init: 4
+  CA:
+    calcul: Dex +4, taille +1
+    contact: 15
+    dépourvu: 11
+    valeur: 15
+  PV:
+    calcul: 4d8+24
+    valeur: 42
+  Réf: 5
+  Vol: 1
+  VD:
+    cases: 2
+    mètres: 3.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+7'
+    dommages: 1d6+4 plus étreinte et paralysie
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traqueur gluant.ashx
   
 - Nom: Aoandon
@@ -5802,6 +6459,22 @@
   - Ruines-Donjons
   - Extraplanaire
   Init: 7
+  CA:
+    calcul: Dex +7, esquive +1, parade +6
+    contact: 24
+    dépourvu: 16
+    valeur: 24
+  PV:
+    calcul: 16d10+64
+    valeur: 152
+  Réf: 12
+  Vig: 14
+  Vol: 12
+  AttaqueCàC:
+  - attaque: toucher du dément
+    bonus: '+19'
+    dommages: 10d6
+    type: contact
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aoandon.ashx
   
 - Nom: Vague ténébreuse
@@ -5851,6 +6524,21 @@
   - Tempéré
   PX: 6400
   Init: 2
+  CA:
+    calcul: Dex –2, naturelle +19, taille –4
+    contact: 4
+    dépourvu: 23
+    valeur: 23
+  PV:
+    calcul: 11d8+66
+    valeur: 115
+  Réf: 5
+  Vig: 12
+  Vol: 6
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC: []
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue happante géante.ashx
   
 - Nom: Érinye
@@ -6067,6 +6755,22 @@
   - Collines
   - Tempéré
   Init: 2
+  CA:
+    calcul: Dex +2, taille +1
+    contact: 13
+    dépourvu: 11
+    valeur: 13
+  PV:
+    calcul: 2d10+2
+    valeur: 13
+  Réf: 5
+  Vig: 4
+  Vol: 0
+  VolSpécial: -2 contre les maléfices de sorcière
+  AttaqueCàC:
+  - attaque: corne +1
+    bonus: '+6'
+    dommages: 2d4-1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Almiraj.ashx
   
 - Nom: Doppelganger
@@ -6239,6 +6943,21 @@
   - Montagnes
   - Tempéré
   Init: 7
+  CA:
+    calcul: Dex +3, esquive +1, taille +1
+    contact: 15
+    dépourvu: 11
+    valeur: 15
+  PV:
+    calcul: 4d8+12
+    valeur: 30
+  Réf: 4
+  Vig: 7
+  Vol: 2
+  AttaqueCàC:
+  - attaque: cosse de spores attaque de contact
+    bonus: '+7'
+    dommages: spores
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moisissure esclavagiste.ashx
   
 - Nom: Babélien
@@ -6449,6 +7168,21 @@
   - Forêt-Jungle
   - Tempéré
   Init: 4
+  CA:
+    calcul: Dex +4, naturelle +1
+    contact: 14
+    dépourvu: 11
+    valeur: 15
+  PV:
+    calcul: 2d8
+    valeur: 9
+  Réf: 7
+  Vig: 3
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6+3 et étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Belette géante.ashx
   
 - Nom: Dévoreur d'intellect
@@ -6640,6 +7374,33 @@
   - Tempéré
   PX: 1600
   Init: 1
+  CA:
+    calcul: armure +8, Dex +1, taille -2
+    contact: 9
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 6d8+36
+    valeur: 63
+  Réf: 6
+  Vig: 10
+  Vol: 3
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 1d8+8 et saignement
+  - attaque: coup de queue
+    bonus: '+5'
+    dommages: 1d6+4 et étreinte
+  For: 26
+  Dex: 12
+  Con: 21
+  Int: 1
+  Sag: 12
+  Cha: 7
+  BBA: 4
+  BMO: 14
+  DMD: 25
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hippocampe tueur.ashx
   
 - Nom: Désenchanteur
@@ -6887,6 +7648,24 @@
   - Extraplanaire
   PX: 400
   Init: -1
+  CA:
+    calcul: Dex -1, naturelle +6, taille +1
+    contact: 10
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 2d10+2
+    valeur: 13
+  Réf: 2
+  Vig: 4
+  Vol: 0
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d4+1 plus 1d3 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -6898,6 +7677,24 @@
   - Extraplanaire
   PX: 800
   Init: 0
+  CA:
+    calcul: naturelle +6
+    contact: 10
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 4d10+8
+    valeur: 30
+  Réf: 4
+  Vig: 6
+  Vol: 1
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d6+4 plus 1d4 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -6909,6 +7706,24 @@
   - Extraplanaire
   PX: 1600
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +7, taille -1
+    contact: 10
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 8d10+24
+    valeur: 68
+  Réf: 7
+  Vig: 9
+  Vol: 2
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 1d8+5 plus 1d6 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -6920,6 +7735,24 @@
   - Extraplanaire
   PX: 3200
   Init: 7
+  CA:
+    calcul: Dex +3, esquive +1, naturelle +8, taille -2
+    contact: 12
+    dépourvu: 16
+    valeur: 20
+  PV:
+    calcul: 10d10+40
+    valeur: 95
+  Réf: 10
+  Vig: 10
+  Vol: 3
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 2d6+7 plus 1d8 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -6931,6 +7764,24 @@
   - Extraplanaire
   PX: 6400
   Init: 8
+  CA:
+    calcul: Dex +4, esquive +1, naturelle +10, taille -2
+    contact: 13
+    dépourvu: 18
+    valeur: 23
+  PV:
+    calcul: 13d10+52
+    valeur: 123
+  Réf: 14
+  Vig: 12
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 2d10+9 plus 2d6 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -6942,6 +7793,24 @@
   - Extraplanaire
   PX: 12800
   Init: 9
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +10, taille -2
+    contact: 14
+    dépourvu: 18
+    valeur: 24
+  PV:
+    calcul: 16d10+64
+    valeur: 152
+  Réf: 17
+  Vig: 14
+  Vol: 5
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+24'
+    dommages: 2d10+10/19-20 plus 2d8 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     glace.ashx
   
@@ -7127,6 +7996,31 @@
   - Tempéré
   PX: 3200
   Init: 3
+  CA:
+    calcul: Dex –1, naturelle +13, taille –2
+    contact: 7
+    dépourvu: 20
+    valeur: 20
+  PV:
+    calcul: 8d8+48
+    valeur: 84
+  Réf: 3
+  Vig: 12
+  Vol: 5
+  AttaqueCàC:
+  - attaque: 3 lianes
+    bonus: '+11'
+    dommages: 1d6+7 plus étreinte et attirer
+  For: 25
+  Dex: 8
+  Con: 23
+  Int: 7
+  Sag: 12
+  Cha: 10
+  BBA: 6
+  BMO: 15
+  BMOSpécial: +19 en lutte
+  DMD: 24
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arbre à pendus.ashx
   
 - Nom: Diable accusateur (Zébub)
@@ -7736,6 +8630,40 @@
   - Tempéré
   PX: 2400
   Init: 5
+  CA:
+    calcul: armure +2, Dex +5, naturelle +4, taille -1
+    contact: 14
+    dépourvu: 25
+    valeur: 20
+  PV:
+    calcul: 9d8+27
+    valeur: 67
+  Réf: 8
+  Vig: 9
+  Vol: 7
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée longue
+    bonus: +10/+5
+    dommages: 2d6+5/19–20
+  - attaque: 2 coups
+    bonus: '+10'
+    dommages: 1d6+5
+  AttaqueDistance:
+  - attaque: arc long de maître
+    bonus: +9/+9/+4
+    dommages: 2d6+5/×3
+  For: 20
+  Dex: 21
+  Con: 17
+  Int: 14
+  Sag: 15
+  Cha: 12
+  BBA: 6
+  BMO: 12
+  DMD: 27
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des bois.ashx
   
 - Nom: Chevalier tombal humain
@@ -7789,6 +8717,33 @@
   - Tempéré
   PX: 600
   Init: 7
+  CA:
+    calcul: Dex +3, taille +1
+    contact: 14
+    dépourvu: 11
+    valeur: 14
+  PV:
+    calcul: 4d6+4
+    valeur: 18
+  Réf: 7
+  Vig: 2
+  Vol: 6
+  VD:
+    cases: 9
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: gourdin +1
+    bonus: '+7'
+    dommages: 1d8-1
+  For: 7
+  Dex: 16
+  Con: 13
+  Int: 14
+  Sag: 15
+  Cha: 16
+  BBA: 2
+  BMO: -1
+  DMD: 12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Farfadet.ashx
   
 - Nom: Golem d'argile
@@ -7861,6 +8816,21 @@
   - Forêt-Jungle
   - Tempéré
   Init: 3
+  CA:
+    calcul: Dex +3, naturelle +5, taille -1
+    contact: 12
+    dépourvu: 14
+    valeur: 17
+  PV:
+    calcul: 5d8+10
+    valeur: 32
+  Réf: 7
+  Vig: 6
+  Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 1d8+7 et étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Belette sanguinaire.ashx
   
 - Nom: Sorcewyrd
@@ -7871,6 +8841,30 @@
   - Extraplanaire
   PX: 2400
   Init: 6
+  CA:
+    calcul: armure +4, Dex +2, naturelle +3
+    contact: 12
+    dépourvu: 17
+    valeur: 19
+  PV:
+    calcul: 8d10+24
+    valeur: 68
+  Réf: 8
+  Vig: 7
+  Vol: 9
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: corsèque
+    bonus: +11/+6
+    dommages: 2d4+4/×3
+  - attaque: 2 coups
+    bonus: '+6'
+    dommages: 1d4+1 plus étreinte
+  - attaque: 4 coups
+    bonus: '+11'
+    dommages: 1d4+3 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorcewyrd.ashx
   
 - Nom: Étranger blafard
@@ -7915,6 +8909,32 @@
   - Tempéré
   PX: 400
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +1
+    contact: 11
+    dépourvu: 11
+    valeur: 13
+  PV:
+    calcul: 2d8+4
+    valeur: 13
+  Réf: 5
+  Vig: 5
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+3 plus étreinte
+  For: 14
+  Dex: 14
+  Con: 15
+  Int: 1
+  Sag: 13
+  Cha: 2
+  BBA: 1
+  BMO: 3
+  BMOSpécial: +7 lutte
+  DMD: 15
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gar.ashx
   
 - Nom: Drake du froid
@@ -7925,6 +8945,27 @@
   - Froid
   PX: 3200
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +10, taille –1
+    contact: 10
+    dépourvu: 19
+    valeur: 20
+  PV:
+    calcul: 8d12+32
+    valeur: 84
+  Réf: 7
+  Vig: 10
+  Vol: 5
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+6 plus 1d6 froid
+  - attaque: coup de queue
+    bonus: '+8'
+    dommages: 1d8+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake du froid.ashx
   
 - Nom: Paradeshi (Rakshasa)
@@ -8263,6 +9304,43 @@
   - Extraplanaire
   PX: 9600
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +12, taille -1
+    contact: 10
+    dépourvu: 21
+    valeur: 22
+  PV:
+    calcul: 11d12+33
+    valeur: 104
+  Réf: 8
+  Vig: 10
+  Vol: 10
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+7/19–20
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d8+5
+  - attaque: 2 ailes
+    bonus: '+13'
+    dommages: 1d6+2
+  - attaque: coup de queue
+    bonus: '+13'
+    dommages: 1d8+7
+  For: 21
+  Dex: 12
+  Con: 17
+  Int: 16
+  Sag: 17
+  Cha: 16
+  BBA: 11
+  BMO: 17
+  DMD: 28
+  DMDSpécial: 32 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Dragon ombrageux adulte
@@ -8273,6 +9351,43 @@
   - Extraplanaire
   PX: 38400
   Init: 4
+  CA:
+    calcul: naturelle +21, taille -2
+    contact: 8
+    dépourvu: 29
+    valeur: 29
+  PV:
+    calcul: 17d12+85
+    valeur: 195
+  Réf: 10
+  Vig: 15
+  Vol: 15
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+23'
+    dommages: 2d8+12/19–20
+  - attaque: 2 griffes
+    bonus: '+23'
+    dommages: 2d6+8
+  - attaque: coup de queue
+    bonus: '+21'
+    dommages: 2d6+12
+  - attaque: 2 ailes
+    bonus: '+21'
+    dommages: 1d8+4
+  For: 27
+  Dex: 10
+  Con: 21
+  Int: 20
+  Sag: 21
+  Cha: 20
+  BBA: 17
+  BMO: 27
+  DMD: 37
+  DMDSpécial: 41 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Dragon ombrageux vénérable
@@ -8283,6 +9398,40 @@
   - Extraplanaire
   PX: 204800
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +33, taille -4
+    contact: 5
+    dépourvu: 38
+    valeur: 38
+  PV:
+    calcul: 25d12+175
+    valeur: 337
+  Réf: 13
+  Vig: 21
+  Vol: 21
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure +33 (4d6+18/19–20) et 2 griffes
+    bonus: '+33'
+    dommages: 2d8+12
+  - attaque: coup de queue
+    bonus: '+31'
+    dommages: 2d8+18
+  - attaque: 2 ailes
+    bonus: '+31'
+    dommages: 2d6+6
+  For: 35
+  Dex: 8
+  Con: 25
+  Int: 24
+  Sag: 25
+  Cha: 24
+  BBA: 25
+  BMO: 41
+  DMD: 50
+  DMDSpécial: 54 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon Umbral.ashx
   
 - Nom: Ravageur gris
@@ -8571,6 +9720,27 @@
   - Tempéré
   PX: 2400
   Init: 8
+  CA:
+    calcul: armure +2, Dex +4, naturelle +3, taille +1
+    contact: 15
+    dépourvu: 16
+    valeur: 20
+  PV:
+    calcul: 8d6+32
+    valeur: 60
+  Réf: 10
+  Vig: 6
+  Vol: 7
+  VD:
+    cases: 12
+    mètres: 18.0
+  AttaqueCàC:
+  - attaque: faux de taille M
+    bonus: '+10'
+    dommages: 2d4+10/×4
+  - attaque: coup de pied
+    bonus: '+4'
+    dommages: 1d4+6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chapeau rouge.ashx
   
 - Nom: Traqueur sans visage
@@ -8581,6 +9751,27 @@
   - Tempéré
   PX: 1200
   Init: 7
+  CA:
+    calcul: Dex +3, naturelle +4
+    contact: 13
+    dépourvu: 14
+    valeur: 17
+  PV:
+    calcul: 5d8+20
+    valeur: 42
+  Réf: 4
+  Vig: 5
+  Vol: 6
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue de maître
+    bonus: '+8'
+    dommages: 1d8+4/19–20
+  - attaque: coup
+    bonus: '+2'
+    dommages: 1d6+2 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traqueur sans visage.ashx
   
 - Nom: Dauphin
@@ -8621,6 +9812,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liche, archétype.ashx
   
 - Nom: Dragon métallique d'airain
+  FP: 3
   Environnements:
   - Dragon
   - Désert
@@ -8938,6 +10130,35 @@
   - Tempéré
   PX: 400
   Init: 2
+  CA:
+    calcul: Dex +2, taille +1
+    contact: 13
+    dépourvu: 11
+    valeur: 13
+  PV:
+    calcul: 2d10+4
+    valeur: 15
+  Réf: 5
+  Vig: 5
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d6/×3
+  - attaque: griffe
+    bonus: '+5'
+    dommages: étreinte
+  For: 11
+  Dex: 15
+  Con: 14
+  Int: 2
+  Sag: 12
+  Cha: 7
+  BBA: 2
+  BMO: 1
+  BMOSpécial: +5 pour agripper, +9 pour maintenir une prise
+  DMD: 13
+  DMDSpécial: 21 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gryph.ashx
   
 - Nom: Ver du néant
@@ -8988,6 +10209,22 @@
   - Ville
   - Tempéré
   Init: 11
+  CA:
+    calcul: armure +4, parade +1, Dex +6, esquive +1, naturelle +8
+    contact: 18
+    dépourvu: 23
+    valeur: 30
+  PV:
+    calcul: 9d8+27
+    valeur: 71
+  Réf: 16
+  Vig: 7
+  Vol: 7
+  VolSpécial: +3 contre les pièges
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d6+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vampire nosferatu.ashx
   
 - Nom: Dullahan
@@ -8998,6 +10235,24 @@
   - Tempéré
   PX: 3200
   Init: 2
+  CA:
+    calcul: armure +10, Dex +1
+    contact: 11
+    dépourvu: 20
+    valeur: 21
+  PV:
+    calcul: 10d8+40
+    valeur: 85
+  Réf: 5
+  Vig: 7
+  Vol: 12
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: épée longue acérée +1
+    bonus: +14/+9
+    dommages: 1d8+6/17–20 plus 1d6 froid
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dullahan.ashx
   
 - Nom: Dryade
@@ -9549,6 +10804,21 @@
   - Ruines-donjons
   - Tempéré
   Init: 1
+  CA:
+    calcul: armure +4, Dex +1, naturelle +11
+    contact: 11
+    dépourvu: 25
+    valeur: 26
+  PV:
+    calcul: 15d10+50
+    valeur: 132
+  Réf: 6
+  Vig: 5
+  Vol: 7
+  AttaqueCàC:
+  - attaque: dague de maître
+    bonus: +17/+12/+7
+    dommages: 1d4+1/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Réceptacle des âmes.ashx
   
 - Nom: Éléphant
@@ -9640,6 +10910,25 @@
   - Plaines
   - Tempéré
   Init: 3
+  CA:
+    calcul: Dex +3, naturelle +15, taille -8
+    contact: 5
+    dépourvu: 17
+    valeur: 20
+  PV:
+    calcul: 14d10+80
+    valeur: 157
+  Réf: 7
+  Vig: 4
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 2d8+13 et combustion et étreinte
+  AttaqueDistance:
+  - attaque: brandon ardent
+    bonus: '+9'
+    dommages: 4d6+13 et combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Créature dosier.ashx
   
 - Nom: Gorynych
@@ -9732,6 +11021,37 @@
   - Froid
   PX: 102400
   Init: 0
+  CA:
+    calcul: armure +9, naturelle +15, taille –4
+    contact: 6
+    dépourvu: 30
+    valeur: 30
+  PV:
+    calcul: 20d8+180
+    valeur: 270
+  Réf: 6
+  Vig: 15
+  Vol: 20
+  AttaqueCàC:
+  - attaque: épée longue de maître
+    bonus: +27/+22/+17
+    dommages: 4d6+22/17–20
+  - attaque: 2 coups
+    bonus: '+26'
+    dommages: 2d6+15
+  AttaqueDistance:
+  - attaque: lance de maître
+    bonus: +12/+7/+2
+    dommages: 4d6+15/×3
+  For: 41
+  Dex: 11
+  Con: 28
+  Int: 14
+  Sag: 23
+  Cha: 18
+  BBA: 15
+  BMO: 34
+  DMD: 44
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des runes.ashx
   
 - Nom: Destrier noir
@@ -9859,9 +11179,38 @@
   - Extraplanaire
   PX: 102400
   Init: 5
+  CA:
+    calcul: Dex +5, naturelle +13, parade +4
+    contact: 19
+    dépourvu: 27
+    valeur: 32
+  PV:
+    calcul: 19d10+152
+    valeur: 256
+  Réf: 15
+  Vig: 22
+  Vol: 21
+  AttaqueCàC:
+  - attaque: épée longue acérée de feu intense +1
+    bonus: +25/+20/+15/+10
+    dommages: 1d8+8/17–20 plus 1d6 feu et combustion
+  AttaqueDistance:
+  - attaque: éclaboussure de lave
+    bonus: '+24'
+    dommages: 16d6 feu plus combustion et entrave
+  For: 20
+  Dex: 21
+  Con: 24
+  Int: 15
+  Sag: 18
+  Cha: 23
+  BBA: 19
+  BMO: 24
+  DMD: 43
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brijidine.ashx
   
 - Nom: Dragon impérial du ciel
+  FP: 5
   Environnements:
   - Dragon
   - Ciel
@@ -10229,6 +11578,24 @@
   - Tempéré
   PX: 76800
   Init: 9
+  CA:
+    calcul: Dex +9, esquive +1, naturelle +12, taille –1
+    contact: 19
+    dépourvu: 21
+    valeur: 31
+  PV:
+    calcul: 20d8+140
+    valeur: 230
+  Réf: 17
+  Vig: 14
+  Vol: 18
+  VD:
+    cases: 9
+    mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+23'
+    dommages: 4d10+10 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serpent creux.ashx
   
 - Nom: Armure fantôme gardienne
@@ -10238,6 +11605,21 @@
   - Ruines-Donjons
   - Tempéré
   Init: 5
+  CA:
+    calcul: armure +9, bouclier +1, Dex +1
+    contact: 11
+    dépourvu: 20
+    valeur: 21
+  PV:
+    calcul: 3d8
+    valeur: 13
+  Réf: 2
+  Vig: 1
+  Vol: 3
+  AttaqueCàC:
+  - attaque: épée longue de maître
+    bonus: '+5'
+    dommages: 1d8+2/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure fantôme.ashx
   
 - Nom: Armure fantôme géante
@@ -10247,6 +11629,21 @@
   - Ruines-Donjons
   - Tempéré
   Init: 4
+  CA:
+    calcul: armure +9, taille -1
+    contact: 9
+    dépourvu: 18
+    valeur: 18
+  PV:
+    calcul: 5d8+15
+    valeur: 37
+  Réf: 1
+  Vig: 3
+  Vol: 4
+  AttaqueCàC:
+  - attaque: fléau d’armes lourd
+    bonus: '+7'
+    dommages: 2d8+7/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armure fantôme.ashx
   
 - Nom: Gardien tombal
@@ -10627,6 +12024,30 @@
   - Tempéré
   PX: 19200
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +19, taille –1
+    contact: 8
+    dépourvu: 27
+    valeur: 27
+  PV:
+    calcul: 14d10+84
+    valeur: 161
+  Réf: 8
+  Vig: 15
+  Vol: 8
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+18'
+    dommages: 3d6+5
+  - attaque: cornes
+    bonus: '+18'
+    dommages: 2d8+5/19–20
+  - attaque: 2 sabots
+    bonus: '+16'
+    dommages: 1d8+2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Catoblépas.ashx
   
 - Nom: Océanide
@@ -10636,6 +12057,25 @@
   - Aquatique
   - Tempéré
   Init: 8
+  CA:
+    calcul: Dex +4, esquive +1, naturelle +6
+    contact: 15
+    dépourvu: 16
+    valeur: 21
+  PV:
+    calcul: 9d6+45
+    valeur: 76
+  Réf: 10
+  Vig: 8
+  Vol: 10
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d4+3
+  AttaqueDistance:
+  - attaque: jet d’eau
+    bonus: '+8'
+    dommages: 7d6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Océanide.ashx
   
 - Nom: Calmar
@@ -10683,6 +12123,28 @@
   - Forêt-Jungle
   - Tempéré
   Init: 12
+  CA:
+    calcul: Dex +2, intuition +4, naturelle +18, taille -4
+    contact: 12
+    dépourvu: 28
+    valeur: 30
+  PV:
+    calcul: 13d8+126
+    valeur: 184
+  Réf: 6
+  Vig: 10
+  Vol: 9
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 3d6+14 plus étreinte
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 2d8+14
+  AttaqueDistance:
+  - attaque: rocher
+    bonus: '+8'
+    dommages: 3d6+14
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Argus.ashx
   
 - Nom: Habitant de Leng
@@ -10822,6 +12284,34 @@
   - Tempéré
   PX: 200
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +1, taille +1
+    contact: 12
+    dépourvu: 12
+    valeur: 13
+  PV:
+    calcul: 1d8+5
+    valeur: 9
+  Réf: 3
+  Vig: 4
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d3
+  - attaque: 2 griffes
+    bonus: '+1'
+    dommages: 1d2
+  For: 10
+  Dex: 13
+  Con: 15
+  Int: 2
+  Sag: 12
+  Cha: 6
+  BBA: 0
+  BMO: -1
+  DMD: 10
+  DMDSpécial: 14 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blaireau.ashx
   
 - Nom: Derghodaémon
@@ -11083,6 +12573,43 @@
   - Froid
   PX: 19200
   Init: 2
+  CA:
+    calcul: armure +4, parade +4, Dex +2, naturelle +8, taille -2
+    contact: 14
+    dépourvu: 24
+    valeur: 26
+  PV:
+    calcul: 15d8+90
+    valeur: 157
+  Réf: 9
+  Vig: 15
+  Vol: 10
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: lance
+    bonus: +19/+14/+9
+    dommages: 3d6+15/×3
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 1d8+10
+  AttaqueDistance:
+  - attaque: rocher
+    bonus: '+11'
+    dommages: 2d6+15
+  - attaque: lance
+    bonus: '+11'
+    dommages: 3d6+10/×3
+  For: 31
+  Dex: 14
+  Con: 22
+  Int: 12
+  Sag: 17
+  Cha: 15
+  BBA: 11
+  BMO: 23
+  DMD: 39
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant de la taïga.ashx
   
 - Nom: Wendigo
@@ -11249,6 +12776,21 @@
   - Plaines
   - Tempéré
   Init: 7
+  CA:
+    calcul: Dex +3, naturelle +6
+    contact: 13
+    dépourvu: 16
+    valeur: 19
+  PV:
+    calcul: 10d10+30
+    valeur: 85
+  Réf: 6
+  Vig: 3
+  Vol: 3
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d8+4 et étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pantin des âmes.ashx
   
 - Nom: Mite  (ou Xvart, Xivort, Svart)
@@ -11373,12 +12915,45 @@
   - Aquatique
   - Tempéré
   Init: 0
+  CA:
+    calcul: naturelle +16, taille -2
+    contact: 8
+    dépourvu: 24
+    valeur: 24
+  PV:
+    calcul: 13d10+40
+    valeur: 111
+  Réf: 4
+  Vig: 4
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 3d8+8
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tibérolithe.ashx
   
 - Nom: Thoqqua
   FP: '2'
   PX: 600
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +4
+    contact: 11
+    dépourvu: 14
+    valeur: 15
+  PV:
+    calcul: 3d10+6
+    valeur: 22
+  Réf: 4
+  Vig: 5
+  Vol: 2
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d6+1 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Thoqqua.ashx
   
 - Nom: Homme-lézard
@@ -11510,6 +13085,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cerf.ashx
   
 - Nom: Dragon impérial chtonien
+  FP: 3
   Environnements:
   - Dragon
   - Souterrain
@@ -12081,6 +13657,35 @@
   - Tempéré
   PX: 200
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +2, taille +1
+    contact: 13
+    dépourvu: 13
+    valeur: 15
+  PV:
+    calcul: 1d8+1
+    valeur: 5
+  Réf: 2
+  Vig: 1
+  Vol: 2
+  AttaqueCàC:
+  - attaque: lance
+    bonus: '+3'
+    dommages: 1d6+1/×3
+  AttaqueDistance:
+  - attaque: lance
+    bonus: '+3'
+    dommages: 1d6+1/×3
+  For: 12
+  Dex: 14
+  Con: 13
+  Int: 9
+  Sag: 10
+  Cha: 9
+  BBA: 0
+  BMO: 0
+  DMD: 12
+  DMDSpécial: 18 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grindylow.ashx
   
 - Nom: Chauve-souris
@@ -12201,6 +13806,27 @@
   - Tempéré
   PX: 2400
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +8, taille –1
+    contact: 11
+    dépourvu: 17
+    valeur: 19
+  PV:
+    calcul: 7d12+28
+    valeur: 73
+  Réf: 9
+  Vig: 9
+  Vol: 5
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+12'
+    dommages: 1d8+6 plus 1d6 électricité
+  - attaque: coup de queue
+    bonus: '+7'
+    dommages: 1d8+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des mers.ashx
   
 - Nom: Coloxe
@@ -12250,6 +13876,21 @@
   - Ruines-Donjons
   - Tempéré
   Init: 12
+  CA:
+    calcul: Dex +8, esquive +1, parade +6, taille -2
+    contact: 23
+    dépourvu: 14
+    valeur: 23
+  PV:
+    calcul: 12d8+72
+    valeur: 126
+  Réf: 14
+  Vig: 10
+  Vol: 10
+  AttaqueCàC:
+  - attaque: contact désintégrant
+    bonus: '+15'
+    dommages: 6d6 ; DD 22
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Couleur tombée du
     ciel.ashx
   
@@ -12497,6 +14138,34 @@
   - Tempéré
   PX: 6400
   Init: 4
+  CA:
+    calcul: Dex +4, naturelle +10, taille –1
+    contact: 13
+    dépourvu: 19
+    valeur: 23
+  PV:
+    calcul: 12d10+30
+    valeur: 96
+  Réf: 8
+  Vig: 4
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+19'
+    dommages: 2d8+8 plus alchimie
+  AttaqueDistance:
+  - attaque: bombe
+    bonus: '+15'
+    dommages: 8d6 énergie
+  For: 27
+  Dex: 18
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 12
+  BMO: 21
+  DMD: 35
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem alchimique.ashx
   
 - Nom: Grodair
@@ -12620,6 +14289,27 @@
   - Tropical
   PX: 1200
   Init: 4
+  CA:
+    calcul: naturelle +7, taille –1
+    contact: 9
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 5d8+20
+    valeur: 42
+  Réf: 1
+  Vig: 5
+  Vol: 4
+  VD:
+    cases: 2
+    mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+5'
+    dommages: 1d8+3 plus étreinte
+  - attaque: 5 tentacules
+    bonus: '+3'
+    dommages: 1d4+1 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enfouisseur des sables.ashx
   
 - Nom: Norne
@@ -12902,6 +14592,34 @@
   - Tempéré
   PX: 600
   Init: 4
+  CA:
+    calcul: Dex +4, naturelle +3, taille +1
+    contact: 15
+    dépourvu: 14
+    valeur: 18
+  PV:
+    calcul: 3d6+9
+    valeur: 19
+  Réf: 7
+  Vig: 3
+  Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d4+1 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d3+1 plus croc-en-jambe
+  For: 13
+  Dex: 18
+  Con: 15
+  Int: 8
+  Sag: 9
+  Cha: 12
+  BBA: 1
+  BMO: 1
+  BMOSpécial: +5 lutte et croc-en-jambe
+  DMD: 15
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nuglub.ashx
   
 - Nom: Astradaémon
@@ -12992,6 +14710,21 @@
   - Ruines-donjons
   - Tempéré
   Init: 0
+  CA:
+    calcul: naturelle +20, taille -4
+    contact: 6
+    dépourvu: 26
+    valeur: 26
+  PV:
+    calcul: 15d10+60
+    valeur: 142
+  Réf: 5
+  Vig: 5
+  Vol: 9
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+24'
+    dommages: 4d6+19 plus sanglante
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Juggernaut.ashx
   
 - Nom: Corbeau
@@ -13133,6 +14866,24 @@
   - Tempéré
   PX: 1200
   Init: 8
+  CA:
+    calcul: Dex +4, esquive +1, naturelle +3, taille +1
+    contact: 16
+    dépourvu: 14
+    valeur: 19
+  PV:
+    calcul: 6d8+18
+    valeur: 45
+  Réf: 6
+  Vig: 5
+  Vol: 8
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+9'
+    dommages: 1d4–1 plus vol de souffle
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chuchoteur du grenier.ashx
   
 - Nom: Gorille
@@ -13412,6 +15163,34 @@
   - Tempéré
   PX: 600
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +2
+    contact: 12
+    dépourvu: 12
+    valeur: 14
+  PV:
+    calcul: 3d8+9
+    valeur: 22
+  Réf: 5
+  Vig: 6
+  Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+2
+  - attaque: 2 griffes
+    bonus: '+4'
+    dommages: 1d3+2
+  For: 14
+  Dex: 15
+  Con: 17
+  Int: 2
+  Sag: 12
+  Cha: 9
+  BBA: 2
+  BMO: 4
+  DMD: 16
+  DMDSpécial: 20 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Blaireau sanguinaire.ashx
   
 - Nom: Nuée d'amibes
@@ -13536,6 +15315,24 @@
   - Extraplanaire
   PX: 800
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +4
+    contact: 12
+    dépourvu: 14
+    valeur: 16
+  PV:
+    calcul: 4d10+4
+    valeur: 26
+  Réf: 6
+  Vig: 2
+  Vol: 6
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+1 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dziriak.ashx
   
 - Nom: Buggane
@@ -13708,6 +15505,25 @@
   - Extraplanaire
   PX: 9600
   Init: 7
+  CA:
+    calcul: parade +4 contre le Mal
+    contact: 13
+    dépourvu: 21
+    valeur: 24
+  PV:
+    calcul: 12d10+60
+    valeur: 126
+  Réf: 11
+  Vig: 12
+  Vol: 9
+  VolSpécial: +4 contre le poison, +4 (résistance) contre le Mal
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: épée à deux mains de feu +1
+    bonus: +17/+12/+7
+    dommages: 2d6+7/19–20 plus 1d6 feu
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Déva movanique.ashx
   
 - Nom: Vargouille
@@ -13911,6 +15727,30 @@
   - Extraplanaire
   PX: 2400
   Init: 5
+  CA:
+    calcul: Dex +5, naturelle +6, taille -1
+    contact: 14
+    dépourvu: 15
+    valeur: 20
+  PV:
+    calcul: 8d10+24
+    valeur: 68
+  Réf: 11
+  Vig: 9
+  Vol: 2
+  VD:
+    cases: 6
+    mètres: 9.0
+  For: 14
+  Dex: 21
+  Con: 17
+  Int: 6
+  Sag: 11
+  Cha: 10
+  BBA: 8
+  BMO: 11
+  DMD: 26
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fumigon.ashx
   
 - Nom: Scorpion des cavernes
@@ -13921,6 +15761,27 @@
   - Tempéré
   PX: 400
   Init: 0
+  CA:
+    calcul: naturelle +2
+    contact: 10
+    dépourvu: 12
+    valeur: 12
+  PV:
+    calcul: 3d8+3
+    valeur: 16
+  Réf: 1
+  Vig: 4
+  Vol: 1
+  VD:
+    cases: 12
+    mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+2'
+    dommages: 1d4
+  - attaque: dard
+    bonus: '+2'
+    dommages: 1d4 plus poison
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scorpion des cavernes.ashx
   
 - Nom: Âme-en-peine
@@ -14249,6 +16110,34 @@
   - Tempéré
   PX: 4800
   Init: 3
+  CA:
+    calcul: Dex –1, naturelle +12, taille –2
+    contact: 7
+    dépourvu: 19
+    valeur: 19
+  PV:
+    calcul: 10d8+50
+    valeur: 95
+  Réf: 2
+  Vig: 12
+  Vol: 5
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+9
+  - attaque: 3 racines
+    bonus: '+12'
+    dommages: 1d6+4 plus attirer
+  For: 29
+  Dex: 8
+  Con: 21
+  Int: 12
+  Sag: 15
+  Cha: 12
+  BBA: 7
+  BMO: 18
+  DMD: 27
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Boisvivant.ashx
   
 - Nom: Garou-chacal
@@ -14975,6 +16864,24 @@
   - Tropical
   PX: 51200
   Init: 0
+  CA:
+    calcul: naturelle +28, taille –8
+    contact: 2
+    dépourvu: 30
+    valeur: 30
+  PV:
+    calcul: 24d8+120
+    valeur: 228
+  Réf: 8
+  Vig: 19
+  Vol: 8
+  AttaqueCàC:
+  - attaque: 2 pinces
+    bonus: '+23'
+    dommages: 2d8+13 plus étreinte
+  - attaque: dard
+    bonus: '+23'
+    dommages: 2d6+13 plus poison
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Scorpion noir.ashx
   
 - Nom: Liane meurtrière
@@ -15225,6 +17132,21 @@
   - Ciel
   - Tempéré
   Init: 8
+  CA:
+    calcul: Dex +4, esquive +2, naturelle +20, taille -2
+    contact: 14
+    dépourvu: 28
+    valeur: 34
+  PV:
+    calcul: 25d10+40
+    valeur: 177
+  Réf: 14
+  Vig: 8
+  Vol: 8
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+35'
+    dommages: 4d6+12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon mécanique.ashx
   
 - Nom: Tertre errant
@@ -15314,6 +17236,25 @@
   - Plaines
   - Tempéré
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +38, taille -8
+    contact: 1
+    dépourvu: 39
+    valeur: 39
+  PV:
+    calcul: 23d10+183
+    valeur: 309
+  Réf: 6
+  Vig: 9
+  Vol: 7
+  AttaqueCàC:
+  - attaque: fléau d’armes
+    bonus: +35/+30/+25/+20
+    dommages: 6d6+20/19-20
+  AttaqueDistance:
+  - attaque: 2 balistes lourdes
+    bonus: '+14'
+    dommages: 4d8/17-20/×3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colosse de fer.ashx
   
 - Nom: Moisissure vaseuse
@@ -15398,6 +17339,27 @@
   - Tempéré
   PX: 1200
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +6
+    contact: 11
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 6d8+18
+    valeur: 45
+  Réf: 3
+  Vig: 8
+  Vol: 2
+  VD:
+    cases: 10
+    mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d8+3
+  - attaque: 2 pinces
+    bonus: '+7'
+    dommages: 1d4+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Solifuge albinos
     des cavernes.ashx
   
@@ -15409,6 +17371,38 @@
   - Tempéré
   PX: 4800
   Init: 4
+  CA:
+    calcul: naturelle +13, taille -2
+    contact: 8
+    dépourvu: 21
+    valeur: 21
+  PV:
+    calcul: 11d8+55
+    valeur: 104
+  Réf: 3
+  Vig: 12
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+9 plus étreinte
+  - attaque: 2 tentacules
+    bonus: '+13'
+    dommages: 1d8+4
+  For: 28
+  Dex: 10
+  Con: 21
+  Int: 5
+  Sag: 12
+  Cha: 17
+  BBA: 8
+  BMO: 19
+  BMOSpécial: +23 lutte
+  DMD: 29
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fleur de lune.ashx
   
 - Nom: Démon, Vrock
@@ -15542,6 +17536,27 @@
   - Tempéré
   PX: 204800
   Init: 9
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +22, taille –4
+    contact: 12
+    dépourvu: 28
+    valeur: 34
+  PV:
+    calcul: 23d10+207
+    valeur: 333
+  Réf: 20
+  Vig: 22
+  Vol: 12
+  VD:
+    cases: 2
+    mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+33'
+    dommages: 6d10+14/19-20 plus étreinte
+  - attaque: coup de queue
+    bonus: '+33'
+    dommages: 6d8+14/19-20 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Serpent des profondeurs.ashx
   
 - Nom: Grig
@@ -15552,6 +17567,32 @@
   - Tempéré
   PX: 400
   Init: 4
+  CA:
+    calcul: Dex +4, esquive +1, taille +2
+    contact: 17
+    dépourvu: 12
+    valeur: 17
+  PV:
+    calcul: 1d6+1
+    valeur: 4
+  Réf: 6
+  Vig: 1
+  Vol: 3
+  AttaqueCàC: []
+  AttaqueDistance:
+  - attaque: arc long
+    bonus: '+6'
+    dommages: 1d4–3/×3
+  For: 5
+  Dex: 18
+  Con: 13
+  Int: 10
+  Sag: 13
+  Cha: 14
+  BBA: 0
+  BMO: 2
+  DMD: 10
+  DMDSpécial: 16 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grig.ashx
   
 - Nom: Ghaéle
@@ -15682,6 +17723,27 @@
   - Tropical
   PX: 400
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +1, taille +1
+    contact: 13
+    dépourvu: 12
+    valeur: 14
+  PV:
+    calcul: 2d8+4
+    valeur: 13
+  Réf: 2
+  Vig: 5
+  Vol: 0
+  VD:
+    cases: 10
+    mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+3'
+    dommages: 1d6+1
+  - attaque: 2 pinces
+    bonus: '+3'
+    dommages: 1d3+1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Solifuge géant.ashx
   
 - Nom: Lion
@@ -15734,6 +17796,24 @@
   - Tempéré
   PX: 6400
   Init: 7
+  CA:
+    calcul: Dex +3, esquive +1, naturelle +10, taille –1
+    contact: 13
+    dépourvu: 19
+    valeur: 23
+  PV:
+    calcul: 10d10+50
+    valeur: 105
+  Réf: 10
+  Vig: 12
+  Vol: 9
+  VD:
+    cases: 12
+    mètres: 18.0
+  AttaqueCàC:
+  - attaque: 2 sabots
+    bonus: '+16'
+    dommages: 2d6+7 plus 1d6 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cheval draconique.ashx
   
 - Nom: Sphinx, hiéracosphinx
@@ -15785,6 +17865,24 @@
   - Tempéré
   PX: 1200
   Init: 0
+  CA:
+    calcul: naturelle +6
+    contact: 10
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 5d10+20
+    valeur: 47
+  Réf: 1
+  Vig: 1
+  Vol: 1
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+8'
+    dommages: 1d8+3 plus terreur
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Épouvantail.ashx
   
 - Nom: Guenaude verte
@@ -15912,6 +18010,24 @@
   - Souterrain
   - Tempéré
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +32, taille -8
+    contact: 1
+    dépourvu: 33
+    valeur: 33
+  PV:
+    calcul: 20d10+180
+    valeur: 290
+  Réf: 13
+  Vig: 21
+  Vol: 11
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+29'
+    dommages: 6d6+25/19-20 plus étreinte
+  - attaque: coup
+    bonus: '+29'
+    dommages: 3d8+25/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bhole.ashx
   
 - Nom: Kech
@@ -15962,6 +18078,30 @@
   - Extraplanaire
   PX: 4800
   Init: 6
+  CA:
+    calcul: Dex +2, esquive +1, naturelle +8
+    contact: 13
+    dépourvu: 18
+    valeur: 21
+  PV:
+    calcul: 10d8+40
+    valeur: 85
+  Réf: 5
+  Vig: 6
+  Vol: 8
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+9'
+    dommages: 1d8+1
+  For: 13
+  Dex: 15
+  Con: 0
+  Int: 6
+  Sag: 13
+  Cha: 16
+  BBA: 7
+  BMO: 8
+  DMD: 21
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bodak.ashx
   
 - Nom: Jube-jube
@@ -16335,6 +18475,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Béhémoth du tonnerre.ashx
   
 - Nom: Dragon impérial souverain
+  FP: 7
   Environnements:
   - Dragon
   - Montagnes
@@ -16517,6 +18658,27 @@
   - Tempéré
   PX: 1200
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +6
+    contact: 11
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 6d8+12
+    valeur: 39
+  Réf: 5
+  Vig: 4
+  Vol: 7
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: dard
+    bonus: '+6'
+    dommages: 1d6+2 plus poison
+  - attaque: tentacule
+    bonus: '+2'
+    dommages: 1d6+1 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tentamort.ashx
   
 - Nom: Zélékhut
@@ -16680,6 +18842,24 @@
   - Plaines
   - Tempéré
   Init: 5
+  CA:
+    calcul: Dex +1, esquive +2, naturelle +8, taille -1
+    contact: 12
+    dépourvu: 17
+    valeur: 20
+  PV:
+    calcul: 8d10+30
+    valeur: 74
+  Réf: 5
+  Vig: 2
+  Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 1d8+7
+  - attaque: 2 sabots
+    bonus: '+9'
+    dommages: 1d6+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cheval mécanique.ashx
   
 - Nom: Satyre
@@ -17799,6 +19979,27 @@
   - Extraplanaire
   PX: 3200
   Init: 9
+  CA:
+    calcul: Dex +5, naturelle +5
+    contact: 15
+    dépourvu: 15
+    valeur: 20
+  PV:
+    calcul: 10d10+30
+    valeur: 85
+  Réf: 12
+  Vig: 10
+  Vol: 8
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 2d6+3
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d8+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chien de Tindalos.ashx
   
 - Nom: Ver ténébreux
@@ -18134,6 +20335,34 @@
   - Tempéré
   PX: 2400
   Init: 0
+  CA:
+    calcul: naturelle +12, taille –1
+    contact: 9
+    dépourvu: 21
+    valeur: 21
+  PV:
+    calcul: 9d8+27
+    valeur: 67
+  Réf: 6
+  Vig: 11
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+12'
+    dommages: 1d10+7
+  For: 25
+  Dex: 10
+  Con: 17
+  Int: 2
+  Sag: 13
+  Cha: 6
+  BBA: 6
+  BMO: 14
+  DMD: 24
+  DMDSpécial: 28 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Glyptodonte.ashx
   
 - Nom: Drake des rivières
@@ -18422,6 +20651,21 @@
   - Souterrain
   - Tempéré
   Init: -5
+  CA:
+    calcul: Dex -5, taille +2
+    contact: 7
+    dépourvu: 7
+    valeur: 7
+  PV:
+    calcul: 2d8+6
+    valeur: 15
+  Réf: -5
+  Vig: 3
+  Vol: -4
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d2+1 plus maladie
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bulle du chaudron.ashx
   
 - Nom: Bythos
@@ -18613,6 +20857,24 @@
   - Tempéré
   PX: 1200
   Init: 0
+  CA:
+    calcul: naturelle +8, taille –1
+    contact: 9
+    dépourvu: 17
+    valeur: 17
+  PV:
+    calcul: 6d8+12
+    valeur: 39
+  Réf: 2
+  Vig: 7
+  Vol: 2
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+8'
+    dommages: 2d6+7/19–20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coléoptère tranchoir.ashx
   
 - Nom: Flumph
@@ -18656,6 +20918,21 @@
   - Ruines-donjons
   - Tempéré
   Init: 4
+  CA:
+    calcul: Dex +4, naturelle +6
+    contact: 14
+    dépourvu: 16
+    valeur: 20
+  PV:
+    calcul: 8d10+20
+    valeur: 64
+  Réf: 6
+  Vig: 2
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+10'
+    dommages: 2d6+2 plus saignement et étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de sang.ashx
   
 - Nom: Oléthrodaémon
@@ -18710,6 +20987,21 @@
   - Ciel
   - Tempéré
   Init: 0
+  CA:
+    calcul: naturelle +8, taille -1
+    contact: 9
+    dépourvu: 17
+    valeur: 17
+  PV:
+    calcul: 7d8+35
+    valeur: 66
+  Réf: 2
+  Vig: 7
+  Vol: 9
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+9'
+    dommages: 1d6+4 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bréthédien.ashx
   
 - Nom: Nécrophidius
@@ -18757,6 +21049,21 @@
   - Ruines-donjons
   - Tempéré
   Init: 9
+  CA:
+    calcul: Dex +5, esquive +2, naturelle +8
+    contact: 17
+    dépourvu: 18
+    valeur: 25
+  PV:
+    calcul: 15d10+20
+    valeur: 102
+  Réf: 12
+  Vig: 5
+  Vol: 7
+  AttaqueCàC:
+  - attaque: 4 coups
+    bonus: '+18'
+    dommages: 1d4+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mage mécanique.ashx
   
 - Nom: Charybde
@@ -18767,6 +21074,27 @@
   - Tempéré
   PX: 25600
   Init: 3
+  CA:
+    calcul: Dex –1, naturelle +23, taille –4
+    contact: 5
+    dépourvu: 28
+    valeur: 28
+  PV:
+    calcul: 16d8+112
+    valeur: 184
+  Réf: 6
+  Vig: 12
+  Vol: 14
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+20'
+    dommages: 2d8+12/19–20 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+20'
+    dommages: 2d6+12
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charybde.ashx
   
 - Nom: Archelon
@@ -18942,6 +21270,25 @@
   - Plaines
   - Tempéré
   Init: 11
+  CA:
+    calcul: naturelle +29, taille -8
+    contact: 2
+    dépourvu: 31
+    valeur: 31
+  PV:
+    calcul: 21d10+150
+    valeur: 265
+  Réf: 7
+  Vig: 7
+  Vol: 7
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+32'
+    dommages: 3d10+19/19-20
+  AttaqueDistance:
+  - attaque: baliste légère
+    bonus: '+13'
+    dommages: 3d8/×3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Colosse de pierre.ashx
   
 - Nom: Vampire
@@ -19268,6 +21615,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon-tortue.ashx
   
 - Nom: Dragon rouge
+  FP: 6
   Environnements:
   - Dragon
   - Montagnes
@@ -19816,6 +22164,30 @@
   - Tempéré
   PX: 800
   Init: 3
+  CA:
+    calcul: Dex +3, naturelle +2
+    contact: 13
+    dépourvu: 12
+    valeur: 15
+  PV:
+    calcul: 5d10+5
+    valeur: 32
+  Réf: 7
+  Vig: 5
+  Vol: 1
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+7'
+    dommages: 1d8+1/19–20 plus saignement
+  For: 13
+  Dex: 16
+  Con: 13
+  Int: 2
+  Sag: 11
+  Cha: 7
+  BBA: 5
+  BMO: 6
+  DMD: 19
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bunyip.ashx
   
 - Nom: Totenmaske
@@ -19826,6 +22198,27 @@
   - Tempéré
   PX: 3200
   Init: 10
+  CA:
+    calcul: Dex +6, naturelle +4
+    contact: 16
+    dépourvu: 14
+    valeur: 20
+  PV:
+    calcul: 10d8+40
+    valeur: 85
+  Réf: 9
+  Vig: 7
+  Vol: 9
+  VD:
+    cases: 10
+    mètres: 15.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 1d8+4 plus diminution permanente 1d4 Cha
+  - attaque: 2 griffes
+    bonus: '+13'
+    dommages: 1d6+4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Totenmaske.ashx
   
 - Nom: Nuée de méduses
@@ -19945,6 +22338,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffon.ashx
   
 - Nom: Dragon primaire de cristal
+  FP: 2
   Environnements:
   - Dragon
   - Souterrain
@@ -20176,6 +22570,33 @@
   - Tempéré
   PX: 9600
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +14, taille –1
+    contact: 10
+    dépourvu: 23
+    valeur: 24
+  PV:
+    calcul: 15d8+60
+    valeur: 127
+  Réf: 6
+  Vig: 9
+  Vol: 12
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 1d8+7
+  - attaque: 4 griffes
+    bonus: '+17'
+    dommages: 1d6+7
+  For: 25
+  Dex: 12
+  Con: 18
+  Int: 11
+  Sag: 16
+  Cha: 11
+  BBA: 11
+  BMO: 19
+  DMD: 30
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gug.ashx
   
 - Nom: Tieffelin
@@ -20335,6 +22756,29 @@
   - Extraplanaire
   PX: 19200
   Init: 7
+  CA:
+    calcul: Dex +3, esquive +1, naturelle +7, parade +7
+    contact: 21
+    dépourvu: 24
+    valeur: 28
+  PV:
+    calcul: 16d10+64
+    valeur: 152
+  Réf: 10
+  Vig: 14
+  Vol: 10
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 touchers
+    bonus: '+19'
+    dommages: 4d10 feu plus toucher brûlant
+  AttaqueDistance:
+  - attaque: rayon brûlant
+    bonus: '+19'
+    dommages: 10d6 feu
+    type: contact
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enfant lumineux.ashx
   
 - Nom: Fourmi géante
@@ -20426,6 +22870,24 @@
   - Tempéré
   PX: 200
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +2, taille +1
+    contact: 12
+    dépourvu: 13
+    valeur: 14
+  PV:
+    calcul: 1d8+4
+    valeur: 8
+  Réf: 1
+  Vig: 6
+  Vol: 0
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cafard géant.ashx
   
 - Nom: Loup
@@ -20745,36 +23207,144 @@
   FP: '1'
   PX: 400
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +5, taille +1
+    contact: 10
+    dépourvu: 15
+    valeur: 15
+  PV:
+    calcul: 2d10
+    valeur: 11
+  Réf: 2
+  Vig: 3
+  Vol: 0
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+3'
+    dommages: 1d3 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille M
   FP: '3'
   PX: 800
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +7
+    contact: 9
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 4d10+8
+    valeur: 30
+  Réf: 3
+  Vig: 6
+  Vol: 1
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d6+3 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille G
   FP: '5'
   PX: 1600
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +8, taille -1
+    contact: 8
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 8d10+16
+    valeur: 60
+  Réf: 5
+  Vig: 8
+  Vol: 2
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+11'
+    dommages: 1d8+4 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma de taille TG
   FP: '7'
   PX: 3200
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +10, taille -2
+    contact: 7
+    dépourvu: 17
+    valeur: 17
+  PV:
+    calcul: 10d10+30
+    valeur: 85
+  Réf: 6
+  Vig: 10
+  Vol: 3
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+14'
+    dommages: 2d6+6 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Élémentaire du magma noble
   FP: '9'
   PX: 6400
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +16, taille -2
+    contact: 7
+    dépourvu: 23
+    valeur: 23
+  PV:
+    calcul: 13d10+52
+    valeur: 123
+  Réf: 7
+  Vig: 12
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+18'
+    dommages: 2d8+7 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Seigneur Élémentaire du magma
   FP: '11'
   PX: 12800
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +18, taille -2
+    contact: 7
+    dépourvu: 25
+    valeur: 25
+  PV:
+    calcul: 16d10+64
+    valeur: 152
+  Réf: 4
+  Vig: 14
+  Vol: 10
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+22'
+    dommages: 3d6+8 plus combustion
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire du magma.ashx
   
 - Nom: Oxydeur
@@ -20903,6 +23473,31 @@
   - Tempéré
   PX: 800
   Init: 8
+  CA:
+    calcul: Dex +4
+    contact: 14
+    dépourvu: 10
+    valeur: 14
+  PV:
+    calcul: 4d8+12
+    valeur: 30
+  Réf: 5
+  Vig: 4
+  Vol: 5
+  AttaqueCàC:
+  - attaque: toucher
+    bonus: '+7'
+    dommages: saignement et absorption de sang
+    type: contact
+  For: 0
+  Dex: 19
+  Con: 16
+  Int: 7
+  Sag: 13
+  Cha: 10
+  BBA: 3
+  BMO: 0
+  DMD: 0
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Brume vampirique.ashx
   
 - Nom: Seigneur félin
@@ -20913,6 +23508,27 @@
   - Tropical
   PX: 12800
   Init: 7
+  CA:
+    calcul: armure +3, Dex +6, esquive +1, naturelle +4, parade +1
+    contact: 18
+    dépourvu: 18
+    valeur: 25
+  PV:
+    calcul: 10d10+80
+    valeur: 139
+  Réf: 14
+  Vig: 13
+  Vol: 7
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+15'
+    dommages: 1d3+5
+  - attaque: morsure
+    bonus: '+15'
+    dommages: 1d6+5 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Seigneur félin.ashx
   
 - Nom: Attrape-mouches géant
@@ -21155,6 +23771,31 @@
   - Tempéré
   PX: 800
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +3
+    contact: 12
+    dépourvu: 13
+    valeur: 15
+  PV:
+    calcul: 5d8+5
+    valeur: 27
+  Réf: 3
+  Vig: 2
+  Vol: 6
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+1
+  For: 12
+  Dex: 14
+  Con: 13
+  Int: 3
+  Sag: 14
+  Cha: 5
+  BBA: 3
+  BMO: 4
+  DMD: 16
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Grick.ashx
   
 - Nom: Zombi juju humain
@@ -21351,6 +23992,21 @@
   - Ruines-donjons
   - Tempéré
   Init: -1
+  CA:
+    calcul: Dex -1, naturelle +6
+    contact: 9
+    dépourvu: 15
+    valeur: 15
+  PV:
+    calcul: 4d10+20
+    valeur: 42
+  Réf: 0
+  Vig: 1
+  Vol: 1
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+6'
+    dommages: 1d6+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de cire.ashx
   
 - Nom: Serpent de mer
@@ -21901,6 +24557,15 @@
   - Ruines-donjons
   - Tempéré
   Init: 0
+  CA:
+    calcul: naturelle +7, taille -1
+    contact: 9
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 4d10+30
+    valeur: 52
+  Réf: 1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chose de peaux recousues.ashx
   
 - Nom: Tigre sanguinaire (ou Smilodon)
@@ -22459,6 +25124,43 @@
   - Extraplanaire
   PX: 6400
   Init: 0
+  CA:
+    calcul: naturelle +11, taille -1
+    contact: 9
+    dépourvu: 20
+    valeur: 20
+  PV:
+    calcul: 10d12+30
+    valeur: 95
+  Réf: 7
+  Vig: 10
+  Vol: 10
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+13'
+    dommages: 2d6+6
+  - attaque: 2 griffes
+    bonus: '+14'
+    dommages: 1d8+4
+  - attaque: 2 ailes
+    bonus: '+11'
+    dommages: 1d6+2
+  - attaque: coup de queue
+    bonus: '+11'
+    dommages: 1d8+6
+  For: 18
+  Dex: 11
+  Con: 17
+  Int: 12
+  Sag: 16
+  Cha: 15
+  BBA: 10
+  BMO: 15
+  DMD: 25
+  DMDSpécial: 29 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Dragon des nuages adulte
@@ -22469,6 +25171,43 @@
   - Extraplanaire
   PX: 25600
   Init: 3
+  CA:
+    calcul: Dex -1, naturelle +22, taille -2
+    contact: 7
+    dépourvu: 29
+    valeur: 29
+  PV:
+    calcul: 16d12+80
+    valeur: 184
+  Réf: 9
+  Vig: 15
+  Vol: 15
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+22'
+    dommages: 2d8+10/19–20
+  - attaque: 2 griffes
+    bonus: '+22'
+    dommages: 2d6+7
+  - attaque: coup de queue
+    bonus: '+19'
+    dommages: 2d6+10
+  - attaque: 2 ailes
+    bonus: '+19'
+    dommages: 1d8+3
+  For: 24
+  Dex: 9
+  Con: 21
+  Int: 16
+  Sag: 20
+  Cha: 19
+  BBA: 16
+  BMO: 25
+  DMD: 34
+  DMDSpécial: 38 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Dragon des nuages vénérable
@@ -22479,6 +25218,43 @@
   - Extraplanaire
   PX: 153600
   Init: 2
+  CA:
+    calcul: Dex -2, naturelle +32, taille -4
+    contact: 4
+    dépourvu: 36
+    valeur: 36
+  PV:
+    calcul: 24d12+168
+    valeur: 324
+  Réf: 12
+  Vig: 21
+  Vol: 21
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 4d6+16/19–20 plus 2d6 son
+  - attaque: 2 griffes
+    bonus: '+32'
+    dommages: 2d8+11
+  - attaque: coup de queue
+    bonus: '+29'
+    dommages: 2d8+16
+  - attaque: 2 ailes
+    bonus: '+29'
+    dommages: 2d6+5
+  For: 32
+  Dex: 7
+  Con: 25
+  Int: 20
+  Sag: 24
+  Cha: 23
+  BBA: 24
+  BMO: 39
+  DMD: 47
+  DMDSpécial: 51 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dragon des nuages.ashx
   
 - Nom: Alpluachre
@@ -22488,6 +25264,21 @@
   - Aquatique
   - Tempéré
   Init: 1
+  CA:
+    calcul: Dex +1, taille +4
+    contact: 15
+    dépourvu: 14
+    valeur: 15
+  PV:
+    calcul: 1d6+2
+    valeur: 5
+  Réf: 3
+  Vig: 2
+  Vol: 2
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+1'
+    dommages: 1d2-3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alpluachre.ashx
   
 - Nom: Zombi humain
@@ -22859,6 +25650,24 @@
   - Tempéré
   PX: 400
   Init: -2
+  CA:
+    calcul: Dex -2, naturelle +8
+    contact: 8
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 3d8+9
+    valeur: 22
+  Réf: 1
+  Vig: 8
+  Vol: 2
+  VD:
+    cases: 2
+    mètres: 3.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d6+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tortue géante.ashx
   
 - Nom: Axiomite
@@ -23275,6 +26084,27 @@
   - Tempéré
   PX: 1600
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +8, taille –1
+    contact: 10
+    dépourvu: 17
+    valeur: 18
+  PV:
+    calcul: 6d12+18
+    valeur: 57
+  Réf: 6
+  Vig: 8
+  Vol: 6
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+10'
+    dommages: 2d6+5 plus 1d6 feu
+  - attaque: coup de queue
+    bonus: '+5'
+    dommages: 1d6+2
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Drake des flammes.ashx
   
 - Nom: Kirin
@@ -23365,6 +26195,30 @@
   - Tempéré
   PX: 800
   Init: 2
+  CA:
+    calcul: armure +4, Dex +2, taille -1
+    contact: 11
+    dépourvu: 13
+    valeur: 15
+  PV:
+    calcul: 4d8+12
+    valeur: 30
+  Réf: 6
+  Vig: 7
+  Vol: 2
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d6+7
+  For: 20
+  Dex: 14
+  Con: 17
+  Int: 1
+  Sag: 12
+  Cha: 7
+  BBA: 3
+  BMO: 9
+  DMD: 21
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Hippocampe géant.ashx
   
 - Nom: Lilende
@@ -23499,6 +26353,27 @@
   - Tempéré
   PX: 600
   Init: 0
+  CA:
+    calcul: armure +2, naturelle +2
+    contact: 10
+    dépourvu: 14
+    valeur: 14
+  PV:
+    calcul: 3d8+6
+    valeur: 19
+  Réf: 1
+  Vig: 2
+  Vol: 3
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: grande hache
+    bonus: '+5'
+    dommages: 1d12+4/×3 plus nausées
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d10+4 plus nausées
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Draugr.ashx
   
 - Nom: Nécrophage des glaces
@@ -23549,6 +26424,25 @@
   - Tempéré
   PX: 6400
   Init: 10
+  CA:
+    calcul: parade +7, Dex +6, esquive +1
+    contact: 24
+    dépourvu: 17
+    valeur: 24
+  PV:
+    calcul: 10d8+70
+    valeur: 115
+  Réf: 11
+  Vig: 10
+  Vol: 10
+  AttaqueCàC:
+  - attaque: contact intangible
+    bonus: '+13'
+    dommages: 8d6 feu plus flammes ensorcelées
+  AttaqueDistance:
+  - attaque: trait de flammes ensorcelées
+    bonus: '+13'
+    dommages: 8d6 feu plus flammes ensorcelées
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorcière de feu.ashx
   
 - Nom: Mégalocéros
@@ -23600,6 +26494,22 @@
   - Extraplanaire
   PX: 600
   Init: 0
+  CA:
+    calcul: parade +2 contre le Mal
+    contact: 11
+    dépourvu: 14
+    valeur: 14
+  PV:
+    calcul: 2d10+2
+    valeur: 13
+  Réf: 3
+  Vig: 4
+  Vol: 2
+  VolSpécial: +4 contre le poison ; +2 (résistance) contre le Mal
+  AttaqueCàC:
+  - attaque: coups
+    bonus: '-1'
+    dommages: 1d3-4
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cassisien.ashx
   
 - Nom: Dibbouk
@@ -23935,6 +26845,30 @@
   - Tempéré
   PX: 76800
   Init: 7
+  CA:
+    calcul: Dex +7, naturelle +16, taille –2
+    contact: 15
+    dépourvu: 24
+    valeur: 31
+  PV:
+    calcul: 24d10+40
+    valeur: 172
+  Réf: 15
+  Vig: 8
+  Vol: 8
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+33'
+    dommages: 4d10+11
+  For: 33
+  Dex: 24
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 24
+  BMO: 37
+  DMD: 54
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de mithral.ashx
   
 - Nom: Chouette
@@ -23981,6 +26915,21 @@
   - Ruines-Donjons
   - Tempéré
   Init: -3
+  CA:
+    calcul: Dex -3, naturelle +2, taille -1
+    contact: 6
+    dépourvu: 8
+    valeur: 8
+  PV:
+    calcul: 5d8+25
+    valeur: 47
+  Réf: -2
+  Vig: 6
+  Vol: -4
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d6+4 plus maladie et étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chair affamée.ashx
   
 - Nom: Zuishin
@@ -24057,6 +27006,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ver-qui-marche.ashx
   
 - Nom: Dragon impérial des forêts
+  FP: 6
   Environnements:
   - Dragon
   - Forêt-Jungle
@@ -24203,6 +27153,21 @@
   - Ruines-Donjons
   - Tempéré
   Init: 5
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +4
+    contact: 16
+    dépourvu: 14
+    valeur: 20
+  PV:
+    calcul: 7d8+35
+    valeur: 66
+  Réf: 7
+  Vig: 10
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 4 griffes
+    bonus: '+10'
+    dommages: 1d4+3 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mi-go.ashx
   
 - Nom: Yéti
@@ -24369,6 +27334,30 @@
   - Tempéré
   PX: 1200
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +6
+    contact: 11
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 4d10+20
+    valeur: 42
+  Réf: 2
+  Vig: 1
+  Vol: 1
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+7'
+    dommages: 1d8+3 plus maladie
+  For: 17
+  Dex: 12
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 4
+  BMO: 7
+  DMD: 18
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de charogne.ashx
   
 - Nom: Salamandre
@@ -24458,6 +27447,21 @@
   - Aquatique
   - Tropical
   Init: 0
+  CA:
+    calcul: naturelle +12, taille -1
+    contact: 9
+    dépourvu: 21
+    valeur: 21
+  PV:
+    calcul: 12d10+30
+    valeur: 96
+  Réf: 4
+  Vig: 4
+  Vol: 4
+  AttaqueCàC:
+  - attaque: 2 griffes
+    bonus: '+18'
+    dommages: 1d6+10/19-20 plus saignement
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de corail.ashx
   
 - Nom: Golem de chair
@@ -24617,6 +27621,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pseudo-dragon.ashx
   
 - Nom: Dragon impérial des mers
+  FP: 4
   Environnements:
   - Dragon
   - Aquatique
@@ -24913,6 +27918,40 @@
   - Tempéré
   PX: 4800
   Init: 3
+  CA:
+    calcul: Dex +3, naturelle +9, taille -1
+    contact: 12
+    dépourvu: 18
+    valeur: 21
+  PV:
+    calcul: 12d8+48
+    valeur: 102
+  Réf: 7
+  Vig: 12
+  Vol: 8
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: gaffe
+    bonus: +16/+11
+    dommages: 2d6+12
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 1d6+8
+  AttaqueDistance:
+  - attaque: rocher
+    bonus: '+12'
+    dommages: 2d6+9
+  For: 27
+  Dex: 17
+  Con: 19
+  Int: 8
+  Sag: 15
+  Cha: 12
+  BBA: 9
+  BMO: 18
+  DMD: 31
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Géant des marais.ashx
   
 - Nom: Slurk
@@ -24923,6 +27962,25 @@
   - Tempéré
   PX: 600
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +3
+    contact: 12
+    dépourvu: 13
+    valeur: 15
+  PV:
+    calcul: 2d10+6
+    valeur: 17
+  Réf: 5
+  Vig: 6
+  Vol: 0
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 2d6+3
+  AttaqueDistance: []
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Slurk.ashx
   
 - Nom: Thélétos
@@ -24974,6 +28032,27 @@
   - Tempéré
   PX: 409600
   Init: 3
+  CA:
+    calcul: Dex –1, naturelle +36, taille –8
+    contact: 1
+    dépourvu: 37
+    valeur: 37
+  PV:
+    calcul: 31d8+279
+    valeur: 418
+  Réf: 11
+  Vig: 26
+  Vol: 19
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+32'
+    dommages: 6d6+16/19–20 plus étreinte
+  - attaque: 4 tentacules
+    bonus: '+27'
+    dommages: 3d8+8/19–20 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spore de mu.ashx
   
 - Nom: Nuckelavee
@@ -25104,6 +28183,21 @@
   - Tropical
   PX: 400
   Init: 3
+  CA:
+    calcul: Dex +3, naturelle +1, taille –1
+    contact: 12
+    dépourvu: 10
+    valeur: 13
+  PV:
+    calcul: 2d8+4
+    valeur: 13
+  Réf: 6
+  Vig: 5
+  Vol: 0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+4'
+    dommages: 1d4+6
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dromadaire.ashx
   
 - Nom: Akata
@@ -25193,12 +28287,56 @@
   - Tempéré
   PX: 800
   Init: 4
+  CA:
+    calcul: armure +2, Dex +4, taille +1
+    contact: 15
+    dépourvu: 13
+    valeur: 17
+  PV:
+    calcul: 4d8+4
+    valeur: 22
+  Réf: 5
+  Vig: 5
+  Vol: 1
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morgenstern de maître
+    bonus: '+5'
+    dommages: 1d6–1
+  AttaqueDistance:
+  - attaque: arbalète légère
+    bonus: '+8'
+    dommages: 1d6/19–20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spriggan.ashx
   
 - Nom: Spriggan (Taille G)
   FP: '3'
   PX: 800
   Init: 3
+  CA:
+    calcul: armure +2, Dex +3, taille -1
+    contact: 12
+    dépourvu: 11
+    valeur: 14
+  PV:
+    calcul: 4d8+16
+    valeur: 34
+  Réf: 4
+  Vig: 8
+  Vol: 1
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morgenstern de maître
+    bonus: '+9'
+    dommages: 2d6+5
+  AttaqueDistance:
+  - attaque: arbalète légère
+    bonus: '+5'
+    dommages: 2d6/19–20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spriggan.ashx
   
 - Nom: Ver mortel
@@ -25247,6 +28385,30 @@
   - Tempéré
   PX: 102400
   Init: 5
+  CA:
+    calcul: Dex +1, naturelle +23, taille –2
+    contact: 9
+    dépourvu: 31
+    valeur: 32
+  PV:
+    calcul: 18d10+180
+    valeur: 279
+  Réf: 14
+  Vig: 21
+  Vol: 15
+  VD:
+    cases: 10
+    mètres: 15.0
+  AttaqueCàC:
+  - attaque: 2 morsures
+    bonus: '+26'
+    dommages: 2d6+10
+  - attaque: 4 griffes
+    bonus: '+26'
+    dommages: 1d8+10
+  - attaque: cornes
+    bonus: '+26'
+    dommages: 2d6+10
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Thrasfyr.ashx
   
 - Nom: Kyton, ermite
@@ -25571,6 +28733,24 @@
   - Tempéré
   PX: 400
   Init: 0
+  CA:
+    calcul: naturelle +5, taille +1
+    contact: 11
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 2d8+4
+    valeur: 13
+  Réf: 0
+  Vig: 5
+  Vol: 0
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+2'
+    dommages: 1d4 plus étreinte, fixation et maladie
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tique géante.ashx
   
 - Nom: Naga corrupteur
@@ -25698,6 +28878,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Shemhazian.ashx
   
 - Nom: Dragon chromatique noir
+  FP: 3
   Environnements:
   - Dragon
   - Marais
@@ -25931,6 +29112,35 @@
   - Extraplanaire
   PX: 614400
   Init: 4
+  CA:
+    calcul: armure +12, naturelle +24, taille –8
+    contact: 2
+    dépourvu: 38
+    valeur: 38
+  PV:
+    calcul: 23d10+345
+    valeur: 471
+  Réf: 15
+  Vig: 22
+  Vol: 20
+  VolSpécial: +8 résistance contre les effets mentaux
+  VD:
+    cases: 12
+    mètres: 18.0
+  AttaqueCàC:
+  - attaque: hache d’armes impie +3
+    bonus: +37/+32/+27/+22
+    dommages: 6d6+22/19–20/×3
+  - attaque: griffe
+    bonus: '+29'
+    dommages: 2d8+9
+  - attaque: 2 griffes
+    bonus: '+34'
+    dommages: 2d8+19
+  AttaqueDistance:
+  - attaque: rocher
+    bonus: +15/+10/+5/+0
+    dommages: 2d6+19
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Titan thanatotique.ashx
   
 - Nom: Moustique géant
@@ -25979,6 +29189,21 @@
   - Aquatique
   - Tempéré
   Init: 4
+  CA:
+    calcul: naturelle +30, taille -8
+    contact: 2
+    dépourvu: 32
+    valeur: 32
+  PV:
+    calcul: 25d8+150
+    valeur: 262
+  Réf: 10
+  Vig: 14
+  Vol: 14
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+27'
+    dommages: 6d6+16/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bakekujira.ashx
   
 - Nom: Vase de magma
@@ -26424,6 +29649,28 @@
   - Extraplanaire
   PX: 409600
   Init: 7
+  CA:
+    calcul: armure +9, Dex +3, naturelle +23, taille –8
+    contact: 5
+    dépourvu: 34
+    valeur: 37
+  PV:
+    calcul: 21d10+294
+    valeur: 409
+  Réf: 15
+  Vig: 21
+  Vol: 21
+  VolSpécial: +8 résistance contre les effets mentaux
+  VD:
+    cases: 12
+    mètres: 18.0
+  AttaqueCàC:
+  - attaque: maillet des titans
+    bonus: +33/+28/+23/+18
+    dommages: 6d8+28/17–20
+  - attaque: 2 coups
+    bonus: '+30'
+    dommages: 2d8+17
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Titan de lÉlysée.ashx
   
 - Nom: Tengu
@@ -26515,6 +29762,33 @@
   - Tempéré
   PX: 400
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +2
+    contact: 11
+    dépourvu: 12
+    valeur: 13
+  PV:
+    calcul: 2d10+4
+    valeur: 15
+  Réf: 4
+  Vig: 2
+  Vol: 4
+  AttaqueCàC:
+  - attaque: gourdin
+    bonus: '+4'
+    dommages: 1d6+3
+  - attaque: coup
+    bonus: '+4'
+    dommages: 1d4+3
+  For: 14
+  Dex: 13
+  Con: 15
+  Int: 10
+  Sag: 12
+  Cha: 7
+  BBA: 2
+  BMO: 4
+  DMD: 15
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bâtard.ashx
   
 - Nom: Golem canon
@@ -27643,6 +30917,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lion sanguinaire.ashx
   
 - Nom: Dragon chromatique vert
+  FP: 4
   Environnements:
   - Dragon
   - Forêt-Jungle
@@ -27798,6 +31073,34 @@
   - Tempéré
   PX: 3200
   Init: 0
+  CA:
+    calcul: naturelle +11, taille –1
+    contact: 9
+    dépourvu: 20
+    valeur: 20
+  PV:
+    calcul: 9d8+45
+    valeur: 85
+  Réf: 6
+  Vig: 13
+  Vol: 4
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: cornes
+    bonus: '+14'
+    dommages: 4d8+13
+  For: 28
+  Dex: 10
+  Con: 21
+  Int: 2
+  Sag: 13
+  Cha: 3
+  BBA: 6
+  BMO: 16
+  DMD: 26
+  DMDSpécial: 30 contre croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arsinoithérium.ashx
   
 - Nom: Neh-thalggu
@@ -28172,6 +31475,24 @@
   - Tropical
   PX: 4800
   Init: 0
+  CA:
+    calcul: naturelle +13, taille –2
+    contact: 8
+    dépourvu: 21
+    valeur: 21
+  PV:
+    calcul: 11d8+55
+    valeur: 104
+  Réf: 3
+  Vig: 12
+  Vol: 3
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+17'
+    dommages: 3d8+16
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coléoptère goliath.ashx
   
 - Nom: Élémentaire de la boue
@@ -28190,6 +31511,24 @@
   - Extraplanaire
   PX: 400
   Init: -1
+  CA:
+    calcul: Dex –1, naturelle +6, taille +1
+    contact: 10
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 2d10+2
+    valeur: 13
+  Réf: 2
+  Vig: 4
+  Vol: 0
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d6+3 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28201,6 +31540,24 @@
   - Extraplanaire
   PX: 800
   Init: 0
+  CA:
+    calcul: naturelle +6
+    contact: 10
+    dépourvu: 16
+    valeur: 16
+  PV:
+    calcul: 4d10+8
+    valeur: 30
+  Réf: 4
+  Vig: 6
+  Vol: 1
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+7'
+    dommages: 1d8+4 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28212,6 +31569,24 @@
   - Extraplanaire
   PX: 1600
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +7, taille -1
+    contact: 10
+    dépourvu: 16
+    valeur: 17
+  PV:
+    calcul: 8d10+24
+    valeur: 68
+  Réf: 7
+  Vig: 9
+  Vol: 2
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+12'
+    dommages: 1d8+5 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28223,6 +31598,24 @@
   - Extraplanaire
   PX: 3200
   Init: 3
+  CA:
+    calcul: Dex +3, esquive +1, naturelle +8, taille -2
+    contact: 12
+    dépourvu: 16
+    valeur: 20
+  PV:
+    calcul: 10d10+40
+    valeur: 95
+  Réf: 10
+  Vig: 11
+  Vol: 3
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+15'
+    dommages: 2d6+7 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28234,6 +31627,24 @@
   - Extraplanaire
   PX: 6400
   Init: 4
+  CA:
+    calcul: Dex +4, esquive +1, naturelle +9, taille -2
+    contact: 13
+    dépourvu: 17
+    valeur: 22
+  PV:
+    calcul: 13d10+52
+    valeur: 123
+  Réf: 14
+  Vig: 12
+  Vol: 4
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 2d8+9 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28245,6 +31656,24 @@
   - Extraplanaire
   PX: 12800
   Init: 5
+  CA:
+    calcul: Dex +5, esquive +1, naturelle +9, taille -2
+    contact: 14
+    dépourvu: 17
+    valeur: 23
+  PV:
+    calcul: 16d10+64
+    valeur: 152
+  Réf: 17
+  Vig: 14
+  Vol: 5
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+24'
+    dommages: 2d10+10/19-20 plus entrave
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de la
     boue.ashx
   
@@ -28263,6 +31692,21 @@
   - Extraplanaire
   PX: 400
   Init: 6
+  CA:
+    calcul: Dex +2, naturelle +1, taille +1
+    contact: 13
+    dépourvu: 12
+    valeur: 14
+  PV:
+    calcul: 2d10
+    valeur: 11
+  Réf: 5
+  Vig: 3
+  Vol: 0
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+5'
+    dommages: 1d4 plus 1d3 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de Taille M
@@ -28273,6 +31717,21 @@
   - Extraplanaire
   PX: 800
   Init: 8
+  CA:
+    calcul: Dex +4, esquive +1, naturelle +1
+    contact: 15
+    dépourvu: 11
+    valeur: 16
+  PV:
+    calcul: 4d10+4
+    valeur: 26
+  Réf: 8
+  Vig: 5
+  Vol: 1
+  AttaqueCàC:
+  - attaque: coup
+    bonus: '+8'
+    dommages: 1d6+3 plus 1d4 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de Taille G
@@ -28283,6 +31742,21 @@
   - Extraplanaire
   PX: 1600
   Init: 10
+  CA:
+    calcul: Dex +6, esquive +1, naturelle +2, taille –1
+    contact: 16
+    dépourvu: 11
+    valeur: 18
+  PV:
+    calcul: 8d10+16
+    valeur: 60
+  Réf: 12
+  Vig: 8
+  Vol: 2
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+13'
+    dommages: 1d8+3 plus 1d6 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair de taille TG
@@ -28293,6 +31767,21 @@
   - Extraplanaire
   PX: 3200
   Init: 12
+  CA:
+    calcul: Dex +8, esquive +1, naturelle +2, taille –2
+    contact: 17
+    dépourvu: 10
+    valeur: 19
+  PV:
+    calcul: 10d10+30
+    valeur: 85
+  Réf: 15
+  Vig: 10
+  Vol: 5
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+16'
+    dommages: 2d6+5 plus 1d8 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Élémentaire de l’éclair Noble
@@ -28303,6 +31792,21 @@
   - Extraplanaire
   PX: 6400
   Init: 13
+  CA:
+    calcul: Dex +9, esquive +1, naturelle +4, taille –2
+    contact: 18
+    dépourvu: 12
+    valeur: 22
+  PV:
+    calcul: 13d10+39
+    valeur: 110
+  Réf: 17
+  Vig: 11
+  Vol: 6
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+20'
+    dommages: 2d8+6 plus 2d6 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Seigneur Élémentaire de l’éclair
@@ -28313,6 +31817,21 @@
   - Extraplanaire
   PX: 12800
   Init: 14
+  CA:
+    calcul: Dex +10, esquive +1, naturelle +6, taille –2
+    contact: 19
+    dépourvu: 14
+    valeur: 25
+  PV:
+    calcul: 16d10+48
+    valeur: 136
+  Réf: 20
+  Vig: 13
+  Vol: 7
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+24'
+    dommages: 2d8+8 plus 2d8 électricité
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Élémentaire de léclair.ashx
   
 - Nom: Gar géant
@@ -28323,6 +31842,32 @@
   - Tempéré
   PX: 2400
   Init: 4
+  CA:
+    calcul: naturelle +11, taille -2
+    contact: 8
+    dépourvu: 19
+    valeur: 19
+  PV:
+    calcul: 7d8+42
+    valeur: 73
+  Réf: 7
+  Vig: 11
+  Vol: 5
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+14'
+    dommages: 2d6+15 plus étreinte
+  For: 30
+  Dex: 10
+  Con: 23
+  Int: 1
+  Sag: 13
+  Cha: 2
+  BBA: 5
+  BMO: 17
+  BMOSpécial: +21 lutte
+  DMD: 27
+  DMDSpécial: croc-en-jambe impossible
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gar géant.ashx
   
 - Nom: Stymphalide
@@ -28380,6 +31925,21 @@
   - Tempéré
   PX: 400
   Init: 2
+  CA:
+    calcul: Dex +2, naturelle +1
+    contact: 12
+    dépourvu: 11
+    valeur: 13
+  PV:
+    calcul: 2d8+2
+    valeur: 11
+  Réf: 5
+  Vig: 4
+  Vol: 2
+  AttaqueCàC:
+  - attaque: cornes
+    bonus: '+3'
+    dommages: 1d4+3
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bélier.ashx
   
 - Nom: Dévoreur draconique - Dracosire Rouge
@@ -28643,6 +32203,31 @@
   - Tempéré
   PX: 19200
   Init: 1
+  CA:
+    calcul: Dex +1, naturelle +16, taille –1
+    contact: 10
+    dépourvu: 25
+    valeur: 26
+  PV:
+    calcul: 16d10+30
+    valeur: 118
+  Réf: 6
+  Vig: 5
+  Vol: 5
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+23'
+    dommages: 2d10+8 plus étreinte
+  For: 27
+  Dex: 12
+  Con: 0
+  Int: 0
+  Sag: 11
+  Cha: 1
+  BBA: 16
+  BMO: 25
+  BMOSpécial: +29 lutte
+  DMD: 36
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem mécanique.ashx
   
 - Nom: Végépygmée
@@ -28686,6 +32271,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Végépygmée.ashx
   
 - Nom: Dragon métallique d'argent
+  FP: 6
   Environnements:
   - Dragon
   - Montagnes
@@ -28875,6 +32461,7 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Naga aquatique.ashx
   
 - Nom: Dragon métallique de cuivre
+  FP: 4
   Environnements:
   - Dragon
   - Collines
@@ -29195,6 +32782,27 @@
   - Tropical
   PX: 800
   Init: 7
+  CA:
+    calcul: Dex +3, naturelle +2, taille +1
+    contact: 14
+    dépourvu: 13
+    valeur: 16
+  PV:
+    calcul: 4d10+8
+    valeur: 30
+  Réf: 7
+  Vig: 6
+  Vol: 3
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+6'
+    dommages: 1d4+1 plus étreinte
+  - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d3+1
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chupacabra.ashx
   
 - Nom: Pachycéphalosaure
@@ -29242,6 +32850,34 @@
   - Tropical
   PX: 200
   Init: 5
+  CA:
+    calcul: Dex +1, taille +2
+    contact: 13
+    dépourvu: 12
+    valeur: 13
+  PV:
+    calcul: 1d6+3
+    valeur: 6
+  Réf: 3
+  Vig: 0
+  Vol: 4
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+3'
+    dommages: 1d2–4/19–20
+  AttaqueDistance:
+  - attaque: arc court
+    bonus: '+3'
+    dommages: 1d3–4/×3
+  For: 3
+  Dex: 13
+  Con: 11
+  Int: 10
+  Sag: 14
+  Cha: 6
+  BBA: 0
+  BMO: -1
+  DMD: 5
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pugwampi.ashx
   
 - Nom: Nalfeshnie
@@ -29458,6 +33094,24 @@
   - Tropical
   PX: 9600
   Init: 6
+  CA:
+    calcul: Dex +2, esquive +1, naturelle +16, taille –4
+    contact: 9
+    dépourvu: 22
+    valeur: 25
+  PV:
+    calcul: 12d8+72
+    valeur: 126
+  Réf: 10
+  Vig: 14
+  Vol: 5
+  VD:
+    cases: 4
+    mètres: 6.0
+  AttaqueCàC:
+  - attaque: morsure
+    bonus: '+19'
+    dommages: 4d6+19/19–20 plus étreinte
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anaconda géant.ashx
   
 - Nom: Xacarba
@@ -29871,6 +33525,33 @@
   - Extraplanaire
   PX: 200
   Init: 3
+  CA:
+    calcul: armure +4, Dex +3
+    contact: 13
+    dépourvu: 13
+    valeur: 17
+  PV:
+    calcul: 1d8+2
+    valeur: 6
+  Réf: 5
+  Vig: 2
+  Vol: -1
+  VD:
+    cases: 6
+    mètres: 9.0
+  AttaqueCàC:
+  - attaque: dague
+    bonus: '+3'
+    dommages: 1d4+1/19-20
+  For: 13
+  Dex: 17
+  Con: 14
+  Int: 8
+  Sag: 8
+  Cha: 14
+  BBA: 0
+  BMO: 1
+  DMD: 14
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fetchelin.ashx
   
 - Nom: Golem de pacotille
@@ -29880,6 +33561,21 @@
   - Ruines-donjons
   - Tempéré
   Init: -1
+  CA:
+    calcul: Dex -1, naturelle +10
+    contact: 9
+    dépourvu: 19
+    valeur: 19
+  PV:
+    calcul: 4d10+20
+    valeur: 42
+  Réf: 0
+  Vig: 1
+  Vol: 1
+  AttaqueCàC:
+  - attaque: 2 coups
+    bonus: '+8'
+    dommages: 1d6+4 plus maladie
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Golem de pacotille.ashx
   
 - Nom: Golem de pierre
@@ -29966,6 +33662,24 @@
   - Forêt-Jungle
   - Tempéré
   Init: 5
+  CA:
+    calcul: Dex +5, naturelle +20, taille -4
+    contact: 11
+    dépourvu: 26
+    valeur: 31
+  PV:
+    calcul: 22d8+154
+    valeur: 253
+  Réf: 12
+  Vig: 20
+  Vol: 11
+  VD:
+    cases: 8
+    mètres: 12.0
+  AttaqueCàC:
+  - attaque: corne
+    bonus: '+23'
+    dommages: 5d10+15/19-20
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Barometz.ashx
   
 - Nom: Iku-turso

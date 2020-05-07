@@ -17,14 +17,21 @@ def parseWiki(data):
     el = re.search('\[\[[^\[]*?\|(.*?)\]\]', match)
     data = data.replace(match, el.group(1))
   
+  # first format: {s:BD...|Some text}
   el = re.search('^{s:(\w+)\|(.*)}$', data.strip())
   if el:
     return { 's': el.group(1), 'data': el.group(2).split('|') }
+  
+  # second format for subtitles: (((Subtitle)))
+  el = re.search('^\(\(\((.*)\)\)\)$', data.strip())
+  if el:
+    return { 's': 'BDSousTitre', 'data': [el.group(1).strip()] }
+  # second format for texts: (((Subtitle)))
   el = re.search('^\*(.*)$', data.strip())
   if el:
-    return { 's': 'BDTexte', 'data': el.group(1).split('|') }
-  else:
-    return None
+    return { 's': 'BDTexte', 'data': [el.group(1).strip()] }
+
+  return None
 
 #
 # cette fonction sépare les éléments en se fiant sur les éléments en gras: "'''Réf''' +7, '''Vig''' +8, '''Vol''' +3"
@@ -66,12 +73,10 @@ def parseNumber(number):
     return int(number)
   
 def extractNumberWithSpecial(number):
-  values = number.split(';')
+  idx = number.find(';')
   # ex: ; +5 contre les poisons
-  if len(values) > 2:
-    exit(1)
-  if len(values) > 1:
-    return { 'num': parseNumber(values[0]), 'special': cleanText(values[1]) }
+  if idx > 0:
+    return { 'num': parseNumber(number[0:idx]), 'special': cleanText(number[idx+1:]) }
   # ex: (+12 contre les maladies non magiques)
   el = re.search('(.*)\((.*)\)', number.strip())
   if el:
@@ -128,3 +133,28 @@ def extractAttacks(text):
       liste.append( newEl )
     
   return liste
+
+
+#
+# cette fonction génère du HTML à partir du wiki
+# 
+def toHTML(text):
+  regex = re.compile('{s:(\w+)\|(.*)}')
+  elements = regex.findall(text)
+  html = ""
+  
+  for el in elements:
+    data = el[1]
+    data = re.sub(r"'''([^']*?)'''", r"<b>\1</b>", data) # bold
+    data = re.sub(r"''([^']*?)''", r"<i>\1</i>", data) # italic
+    data = re.sub(r"\[\[([^\[]*?)\|([^\]]*?)\]\]", r'<a class="link" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.\1.ashx">\2</a>', data) # link with different text
+    data = re.sub(r"\[\[([^\[]*?[^\]]*?)\]\]", r'<a class="link" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.\1.ashx">\1</a>', data) # link with different text
+    
+    if el[0] == "BDTitre":
+      html += ('<div class="titre">%s</div>' % data)
+    elif el[0] == "pucem":
+      continue
+    elif el[0] == "BDTexte":
+      html += ('<div class="texte">%s</div>' % data)
+    
+  return html
