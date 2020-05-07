@@ -3939,7 +3939,9 @@
   Cha: 6
   BBA: 9
   BMO: 20
-  BMOSpécial: +22 croc-en-jambe
+  BMOSpécial: +22 bousculade
+  DMD: 30
+  DMDSpécial: 32 contre la bousculade, 34 contre le croc-en-jambe
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Baluchithérium.ashx
   
 - Nom: Néréide
@@ -13943,7 +13945,7 @@
   AttaqueCàC:
   - attaque: contact intangible
     bonus: '+6'
-    dommages: 1d6 énergie négative et Con
+    dommages: 1d6 énergie négative et diminution permanente 1d6 Con
   For: 0
   Dex: 16
   Con: 0
@@ -19046,6 +19048,9 @@
     mètres: 15.0
   AttaqueCàC:
   - attaque: 2 griffes
+    bonus: '+6'
+    dommages: 1d6+4 et étreinte
+  - attaque: dard
     bonus: '+6'
     dommages: 1d6+4 et poison
   For: 19
@@ -27185,7 +27190,7 @@
     bonus: '+30'
     dommages: 2d8+13
   AttaqueDistance:
-  - attaque: arc long composite +5 For +9]
+  - attaque: arc long composite +5 [For +9]
     bonus: +31/+26/+21/+16
     dommages: 2d6+14 et flèche tueuse
   For: 28
