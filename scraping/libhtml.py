@@ -466,6 +466,8 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge, ignoreFields = []):
     with open(origPath, 'r') as stream:
         try:
             liste = yaml.safe_load(stream)
+            if not liste:
+              liste = []
         except yaml.YAMLError as exc:
             print(exc)
             exit(1)
