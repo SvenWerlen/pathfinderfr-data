@@ -17,7 +17,7 @@ PATH = "../../pf1-screwturnwiki/Pathfinder-RPG/"
 
 FIELDS = ['Nom', 'FP', 'Environnements', 'PX', 'Init',
           'CA', 'PV', 'Réf', 'RéfSpécial', 'Vig', 'VigSpécial', 'Vol', 'VolSpécial', 
-          'VD', 'AttaqueCàC',
+          'VD', 'AttaqueCàC', 'AttaqueDistance',
           'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'BBA', 'BMO', 'BMOSpécial', 'DMD', 'DMDSpécial',
           'Référence']
 MATCH = ['Nom']
@@ -194,12 +194,21 @@ for page in pages:
               if vd:
                 setValue(b, 'VD', { 'mètres': float(vd.group(1)), 'cases': int(vd.group(2)) })
                 
-            filed = 'cac'
+            field = 'cac'
             if 'corps à corps' in data:
               if 'AttaqueCàC' in b:
                 b['AttaqueCàC'].extend(extractAttacks(data['corps à corps']))
               else:
                 setValue(b, 'AttaqueCàC', extractAttacks(data['corps à corps']))
+                
+            field = 'distance'
+            if 'distance' in data or 'à distance' in data:
+              text = data['distance'] if 'distance' in data else data['à distance']
+              if 'AttaqueDistance' in b:
+                b['AttaqueDistance'].extend(extractAttacks(text))
+              else:
+                setValue(b, 'AttaqueDistance', extractAttacks(text))
+                
           
           ##
           ## CARACTÉRISTIQUES
