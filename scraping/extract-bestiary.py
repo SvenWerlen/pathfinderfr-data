@@ -256,7 +256,7 @@ for page in pages:
         #raise e
     
       # generate HTML for description
-      #b['Description'] = toHTML(html)
+      b['Description'] = toHTML(html)
     
       # vérifier tous les champs
       isValid = True
@@ -264,9 +264,7 @@ for page in pages:
         for field in {'Nom', 'FP', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence'}:
           if field not in b:
             print("[W] Incomplete field '%s' for: %s" % (field, b['Nom']));
-            print(b)
             isValid = False
-            exit(1)
             break
          
       if isValid:
