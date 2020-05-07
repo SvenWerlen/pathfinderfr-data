@@ -73,7 +73,6 @@ for page in pages:
         rows = s.text.split('\n')
         for r in rows:
           data = parseWiki(r)
-          
           if not data:
             continue
           
@@ -132,7 +131,7 @@ for page in pages:
           ##
           ## DÉFENSE
           ##
-          elif part == "défense":
+          if part == "défense":
             field = 'CA'
             if 'ca' in data:
               ca = data['ca']
@@ -188,7 +187,7 @@ for page in pages:
           ##
           ## ATTAQUE
           ##
-          elif part == "attaque":
+          if part == "attaque":
             
             field = 'VD'
             if 'vd' in data:
@@ -215,7 +214,7 @@ for page in pages:
           ##
           ## CARACTÉRISTIQUES
           ##
-          elif part == "caractéristiques" or part == "statistiques":
+          if part == "caractéristiques" or part == "statistiques" or part == "statistiques de base":
             field = 'for'
             if 'for' in data:
               setValue(b, 'For', parseNumber(data['for']))
@@ -261,13 +260,14 @@ for page in pages:
     
       # vérifier tous les champs
       isValid = True
-      #for field in {'Nom', 'FP', 'PX', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence'}:
-      #  if field not in b:
-      #    print("[W] Incomplete field '%s' for: %s" % (field, b['Nom']));
-      #    print(b)
-      #    isValid = False
-      #    exit(1)
-      #    break
+      if False:
+        for field in {'Nom', 'FP', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'Référence'}:
+          if field not in b:
+            print("[W] Incomplete field '%s' for: %s" % (field, b['Nom']));
+            print(b)
+            isValid = False
+            exit(1)
+            break
          
       if isValid:
         liste.append(b)
