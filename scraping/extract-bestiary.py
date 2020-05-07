@@ -126,7 +126,7 @@ for page in pages:
             
             field = 'FP'
             if 'fp' in data:
-              setValue(b, 'FP', parseNumber(data['fp']))
+              setValue(b, 'FP', data['fp'].strip())
           
           ##
           ## DÉFENSE

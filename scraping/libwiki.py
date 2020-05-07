@@ -96,7 +96,8 @@ def cleanText(text):
 #
 def setValue(dictObj, key, value):
   if key in dictObj:
-    raise ValueError("'%s' already exist!" % key)
+    if str(dictObj[key]) != str(value):
+      raise ValueError("'%s' already exist!" % key)
   
   dictObj[key] = value
 
