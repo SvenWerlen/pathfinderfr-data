@@ -215,7 +215,7 @@ for page in pages:
           ##
           ## CARACTÉRISTIQUES
           ##
-          elif part == "caractéristiques":
+          elif part == "caractéristiques" or part == "statistiques":
             field = 'for'
             if 'for' in data:
               setValue(b, 'For', parseNumber(data['for']))
