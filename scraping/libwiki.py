@@ -150,9 +150,16 @@ def toHTML(text):
     data = re.sub(r"''([^']*?)''", r"<i>\1</i>", data) # italic
     data = re.sub(r"\[\[([^\[]*?)\|([^\]]*?)\]\]", r'<a class="link" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.\1.ashx">\2</a>', data) # link with different text
     data = re.sub(r"\[\[([^\[]*?[^\]]*?)\]\]", r'<a class="link" href="https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.\1.ashx">\1</a>', data) # link with different text
+    data = re.sub(r"\{s:(.*?)\}", r"\1", data) # bold
     
     if el[0] == "BDTitre":
-      html += ('<div class="titre">%s</div>' % data)
+      parts = data.split('|')
+      if len(parts) == 1:
+        html += ('<div class="titre">%s</div>' % data)
+      else:
+        html += ('<div class="titre">%s <span class="fp">%s</span></div>' % (parts[0],parts[1]))
+    elif el[0] == "BDSousTitre":
+      html += ('<div class="soustitre">%s</div>' % data)
     elif el[0] == "pucem":
       continue
     elif el[0] == "BDTexte":
