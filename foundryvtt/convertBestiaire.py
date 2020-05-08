@@ -51,7 +51,15 @@ def getSavesNotes(b):
   if len(value) > 2:
     value = value[:-2]
   return value
-  
+
+# tente d'extraire le bonus naturel
+def getNaturalBonus(calcul):
+  num = re.search('naturelle \+(\d+)', calcul.lower())
+  if num:
+    return int(num.group(1))
+  return 0
+
+
 
 list = []
 duplicates = []
@@ -87,6 +95,7 @@ for b in data:
               "touch": { "total": b['CA']['contact'] },
               "flatFooted": { "total": b['CA']['dépourvu'] }
             },
+            "naturalAC": getNaturalBonus(b['CA']['calcul']),
             "acNotes": b['CA']['calcul'],
             "cmdNotes": b['DMDSpécial'] if 'DMDSpécial' in b else '',
             "cmbNotes": b['BMOSpécial'] if 'BMOSpécial' in b else '',
