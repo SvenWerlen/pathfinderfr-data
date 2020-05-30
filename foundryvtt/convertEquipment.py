@@ -14,6 +14,7 @@ with open("../data/equipement.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
+img = json.load(open('data/equipment-img.json', 'r'))
 
 def getWeight(weight):
     m = re.search('([\d,]+?) kg', weight)
@@ -66,7 +67,7 @@ for m in data:
         },
         "sort": 100001,
         "flags": {},
-        "img": "modules/pf1-fr/icons/equipment.png"
+        "img": img[m['Nom']] if m['Nom'] in img and "pf1-fr" not in img[m['Nom']] else "systems/pf1/icons/items/inventory/backpack.jpg"
     }
     
     list.append(el)
