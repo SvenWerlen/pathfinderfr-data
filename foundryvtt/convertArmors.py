@@ -50,15 +50,15 @@ def getSpellFailure(failure):
 
 def getType(type):
     if type == "Armure intermédiaire": 
-        return "medium"
+        return "mediumArmor"
     elif type == "Armure légère":
-        return "light"
+        return "lightArmor"
     elif type == "Armure lourde":
-        return "heavy"
+        return "heavyArmor"
     elif type == "Bouclier":
-        return "shield"
+        return "lightShield"
     elif type == "Supplément":
-        return "misc"
+        return "other"
     else:
         return None
 
@@ -101,15 +101,16 @@ for a in data:
             "identified": True,
             "carried": True,
             "equipped": False,
+            "equipmentType": "shield" if getType(a['Catégorie']) in ["lightShield", "other"] else "armor",
+            "equipmentSubtype": getType(a['Catégorie']),
             "armor": {
-                "type": getType(a['Catégorie']),
                 "value": getBonus(a['Bonus']),
                 "dex": getBonus(a['BonusDexMax']),
                 "acp": getMalus(a['Malus']),
                 "enh": 0
             },
             "spellFailure": getSpellFailure(a['ÉchecProfane']),
-            "slot": "armor" if getType(a['Catégorie']) in ["medium", "light", "heavy"] else "slotless"
+            "slot": "slotless"
         },
         "img": "modules/pf1-fr/icons/shield.png" if getType(a['Catégorie']) == "shield" else "modules/pf1-fr/icons/armor.png"
     }
