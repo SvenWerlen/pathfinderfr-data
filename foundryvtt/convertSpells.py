@@ -267,10 +267,28 @@ for s in data:
             }
         },
         "sort": 100001,
-        "flags": {},
-        "img": "modules/pf1-fr/icons/spell.png"
+        "flags": {}
     }
     
+    school = SCHOOLS[getSchool(s['École'])] if 'École' in s else "",
+    if school == "abj":
+      el["img"] = "systems/pf1/icons/spells/protect-sky-2.jpg"
+    elif school == "con":
+      el["img"] = "systems/pf1/icons/spells/wild-orange-2.jpg"
+    elif school == "div":
+      el["img"] = "systems/pf1/icons/spells/evil-eye-eerie-1.jpg"
+    elif school == "enc":
+      el["img"] = "systems/pf1/icons/spells/wind-grasp-air-3.jpg"
+    elif school == "evo":
+      el["img"] = "systems/pf1/icons/spells/fire-arrows-2.jpg"
+    elif school == "ill":
+      el["img"] = "systems/pf1/icons/spells/fog-blue-3.jpg"
+    elif school == "nec":
+      el["img"] = "systems/pf1/icons/spells/horror-eerie-2.jpg"
+    elif school == "trs":
+      el["img"] = "systems/pf1/icons/spells/vines-eerie-1.jpg"
+    else:
+      el["img"] = "systems/pf1/icons/spells/air-burst-air-2.jpg"
     
     list.append(el)
 
