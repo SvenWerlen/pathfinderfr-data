@@ -86,9 +86,24 @@ for m in data:
             "carried": True,
             "equipped": False,
             "subType": "gear"
-        },
-        "img": "modules/pf1-fr/icons/magic.png"
+        }
     }
+                        
+    type = m['Type'] if 'Type' in m else '-';
+    if type == "Anneau":
+      el["img"] = "systems/pf1/icons/items/ring-iron.jpg"
+    elif type == "Arme":
+      el["img"] = "systems/pf1/icons/items/weapons/estoc.PNG"
+    elif type == "Armure/Bouclier":
+      el["img"] = "systems/pf1/icons/items/armor/hide-armor.PNG"
+    elif type == "Bâton":
+      el["img"] = "systems/pf1/icons/items/weapons/quarterstaff.png"
+    elif type == "Objet merveilleux":
+      el["img"] = "systems/pf1/icons/items/jewelry/amulet-blue.jpg"
+    elif type == "Sceptre":
+      el["img"] = "systems/pf1/icons/items/weapons/sling-staff.png"
+    else:
+      el["img"] = "systems/pf1/icons/items/inventory/crystal-purple.jpg"
     
     list.append(el)
 

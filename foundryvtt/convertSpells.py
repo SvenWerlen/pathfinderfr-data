@@ -270,7 +270,7 @@ for s in data:
         "flags": {}
     }
     
-    school = SCHOOLS[getSchool(s['École'])] if 'École' in s else "",
+    school = SCHOOLS[getSchool(s['École'])] if 'École' in s else ""
     if school == "abj":
       el["img"] = "systems/pf1/icons/spells/protect-sky-2.jpg"
     elif school == "con":
@@ -278,7 +278,7 @@ for s in data:
     elif school == "div":
       el["img"] = "systems/pf1/icons/spells/evil-eye-eerie-1.jpg"
     elif school == "enc":
-      el["img"] = "systems/pf1/icons/spells/wind-grasp-air-3.jpg"
+      el["img"] = "systems/pf1/icons/spells/wind-grasp-air-2.jpg"
     elif school == "evo":
       el["img"] = "systems/pf1/icons/spells/fire-arrows-2.jpg"
     elif school == "ill":
