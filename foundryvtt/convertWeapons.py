@@ -14,6 +14,7 @@ with open("../data/armes.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
+img = json.load(open('data/weapons-img.json', 'r'))
 
 def getWeight(weight):
     m = re.search('(.*) kg', weight)
@@ -116,7 +117,7 @@ for w in data:
               "range": getRange(w['Portée']),
           }
       },
-      "img": "modules/pf1-fr/icons/weapon.png"
+      "img": img[w['Nom']] if w['Nom'] in img and "pf1-fr" not in img[w['Nom']] else "systems/pf1/icons/items/weapons/quarterstaff.png"
     }
     
     
