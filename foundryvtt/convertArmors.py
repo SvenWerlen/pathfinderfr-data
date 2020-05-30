@@ -14,6 +14,7 @@ with open("../data/armures.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
+img = json.load(open('data/armors-img.json', 'r'))
 
 def getWeight(weight):
     m = re.search('(.*) kg', weight)
@@ -112,7 +113,7 @@ for a in data:
             "spellFailure": getSpellFailure(a['ÉchecProfane']),
             "slot": "slotless"
         },
-        "img": "modules/pf1-fr/icons/shield.png" if getType(a['Catégorie']) == "shield" else "modules/pf1-fr/icons/armor.png"
+        "img": img[a['Nom']] if a['Nom'] in img and "pf1-fr" not in img[a['Nom']] else "systems/pf1/icons/items/armor/banded-mail.PNG"
     }
     
     list.append(el)
