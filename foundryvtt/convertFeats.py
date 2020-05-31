@@ -98,10 +98,25 @@ for d in data:
             }
         },
         "sort": 1300000,
-        "flags": {},
-        "img": "modules/pf1-fr/icons/feat.png"
+        "flags": {}
     }
     
+    
+    category = d['Catégorie'].lower() if 'Catégorie' in d else '-',
+    if "équipe" in category:
+      el["img"] = "systems/pf1/icons/feats/quick-draw.jpg"
+    elif "création" in category:
+      el["img"] = "systems/pf1/icons/feats/master-craftsman.jpg"
+    elif "métamagie" in category:
+      el["img"] = "systems/pf1/icons/feats/empower-spell.jpg"
+    elif "monstre" in category:
+      el["img"] = "systems/pf1/icons/feats/natural-spell.jpg"
+    elif "héroïques" in category:
+      el["img"] = "systems/pf1/icons/feats/extra-mercy.jpg"
+    elif "combat" in category:
+      el["img"] = "systems/pf1/icons/feats/improved-two-weapon-fighting.jpg"
+    else:
+      el["img"] = "systems/pf1/icons/feats/athletic.jpg"
     
     list.append(el)
 
