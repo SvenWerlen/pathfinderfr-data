@@ -64,11 +64,11 @@ for d in data:
     
     level = d['Niveau']
     if level <= 5:
-      el["img"] = "systems/pf1/icons/skills/affliction_22.jpg"
+      el["img"] = "systems/pf1/icons/skills/nature_07.jpg"
     elif level <= 10:
       el["img"] = "systems/pf1/icons/skills/ice_13.jpg"
     elif level <= 15:
-      el["img"] = "systems/pf1/icons/skills/nature_07.jpg"
+      el["img"] = "systems/pf1/icons/skills/affliction_22.jpg"
     else:
       el["img"] = "systems/pf1/icons/skills/shadow_10.jpg"
     
