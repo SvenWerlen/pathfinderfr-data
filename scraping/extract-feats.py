@@ -17,15 +17,15 @@ MOCK_DON = None
 #MOCK_LIST = "mocks/donsListe.html"   # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_DON  = "mocks/don7.html"        # décommenter pour tester avec un sort pré-téléchargé
 
-URLS = ["http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20daudace.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20cr%c3%a9ation%20dobjets.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9cole.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9quipe.ashx",
+URLS = [#"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ash"x,
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20daudace.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20cr%c3%a9ation%20dobjets.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9cole.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9quipe.ashx",
         "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20m%c3%a9tamagie.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20spectacle.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20dons%20mythiques.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20issus%20du%20cadre%20de%20campagne.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20spectacle.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20dons%20mythiques.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20issus%20du%20cadre%20de%20campagne.ashx",
         ]
 
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
@@ -50,11 +50,22 @@ for URL in URLS:
         list = parsed_html.body.find(id='PageContentDiv').find_all('tr')
     
     # itération sur chaque page
+    idxAvantages = -1
     for tr in list:
         don = {}
         
         if 'class' in tr.attrs and 'titre' in tr.attrs['class']:
+            idx = 0
+            for td in tr.find_all('td'):
+                if td.text == "Avantages":
+                    idxAvantages = idx
+                    break
+                idx+=1
             continue
+        
+        if idxAvantages < 0:
+            print("Colonne 'Avantages' n'a pas pu être trouvée!!")
+            exit(1)
         
         element = tr.find_next('a')
         title = element.text
@@ -67,7 +78,7 @@ for URL in URLS:
         avantageShort = None
         columnIdx = 0
         tds = tr.find_all('td')
-        avantageShort = tds[len(tds)-1].text
+        avantageShort = tds[idxAvantages].text
         
         print("Don %s" % title)
         pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
@@ -122,7 +133,7 @@ for URL in URLS:
                 elif key == "À noter":
                     key = "Spécial"
                 
-                don[key]=cleanProperty(text)
+                don[key]=cleanProperty(text, False)
                 descr = s.next_siblings
                 text = ""
             else:
@@ -137,7 +148,8 @@ for URL in URLS:
         liste.append(don)
         
         if MOCK_DON:
-            break
+          print(liste)
+          break
 
 
     print("Fusion avec fichier YAML existant...")

@@ -124,7 +124,7 @@ def html2text(htmlEl, skipDiv = True):
 #
 # cette fonction nettoie la valeur d'une propriété
 # 
-def cleanProperty(text):  
+def cleanProperty(text, noReturn = True):  
     text = text.strip()
     if text.startswith(':'):
         text = text[1:].strip()
@@ -133,7 +133,10 @@ def cleanProperty(text):
     
     if text.endswith('.') or text.endswith(';'):
         text = text[:-1].strip()
-    return text.replace("\n", " ")
+    if noReturn:
+      return text.replace("\n", " ")
+    else:
+      return text
 
 #
 # vérifie chaque propriété pour savoir si elle est valide
@@ -235,7 +238,7 @@ def extractLevel(text, maxdist):
 #
 def getValidSource(src, exitOnInvalid = True):
     src = src.upper()
-    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "FF", "CM", "AE", "MPNJ", "MM", "AA", "HOTS" ];
+    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "FF", "CM", "AE", "MPNJ", "MM", "AA", "HOTS", "RSE" ];
     for v in VALID:
         if src == v:
             return src

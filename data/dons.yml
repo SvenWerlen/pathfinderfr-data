@@ -10112,15 +10112,13 @@
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx
   
-- Nom: Touche d'ombre
-  Résumé: peut se déplacer à sa vitesse maximale
+- Nom: Touche d’ombre
   Conditions: wayang
-  ConditionsRefs: []
   Avantage: Quand le wayang est dans une zone de faible lumière ou de ténèbres,
     il peut se déplacer à sa vitesse maximale en utilisant Discrétion sans subir le
     malus normal de -5. Quand il se déplace à une vitesse allant de la moitié de sa
     vitesse normale à sa vitesse normale, le wayang subit un malus de -5 à ses tests
-    de Discrétion
+    de Discrétion.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx
   
@@ -10933,7 +10931,7 @@
     des ombres pour utiliser celui de porte dimensionnelle. Sa position de départ
     et sa position d’arrivée pour cette capacité doivent être dans une zone de faible
     luminosité ou de ténèbres.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arpenteur%20des%20ombres.ashx
   
 - Nom: Fantôme d’ombre
@@ -10941,7 +10939,7 @@
   Avantage: Le fetchelin gagne la capacité à utiliser traversée des ombres une fois
     de plus par jour.
   Spécial: Le fetchelin peut prendre ce don plusieurs fois. Ses effets se cumulent.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fant%c3%b4me%20dombre.ashx
   
 - Nom: Frappe obscure
@@ -10950,28 +10948,28 @@
   Avantage: Lorsqu’il est dans une zone de faible luminosité ou de ténèbres, le
     fetchelin gagne un bonus de +1 à ses jets d’attaque contre les ennemis qui sont
     également dans une zone de faible luminosité ou de ténèbres.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20obscure.ashx
   
 - Nom: Vision obscure
   Conditions: Fetchelin
   Avantage: Le fetchelin gagne vision dans le noir à 27 mètres (18 c), mais gagne
     la faiblesse sensibilité à la lumière.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20obscure.ashx
   
 - Nom: Vision ténébreuse
   Conditions: Fetchelin, Vision obscure
   Avantage: Le fetchelin gagne la capacité de voir clairement jusqu’à 4,5 mètres
     dans les ténèbres magiques telles que celles que crée le sort ténèbres profondes.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20t%c3%a9n%c3%a9breuse.ashx
   
 - Nom: Vision ténébreuse supérieure
   Conditions: Fetchelin, Vision obscure, Vision ténébreuse
   Avantage: Le fetchelin gagne la capacité vision dans les ténèbres et perd sa faiblesse
     sensibilité à la lumière mais gagne la faiblesse aveuglé par la lumière.
-  Source: AM
+  Source: UM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20t%c3%a9n%c3%a9breuse%20sup%c3%a9rieure.ashx
   
 - Nom: Dompteur de feu
@@ -11328,8 +11326,9 @@
     morte. Lorsqu’il ralentit ainsi sa chute, il peut faire un autre test de Vol DD
     15 pour planer, se déplaçant latéralement de 1,5 mètre par tranche de 6 mètres
     de hauteur de chute.
-  Spécial: S’il a le trait racial ailes de planeur, les capacités ci-dessus sont
-    remplacées par une vitesse de base augmentée à 9 mètres.
+  Spécial: S’il a le trait racial ailes de planeur, le kobold n'a pas besoin de
+    faire de test de Vol pour planer et peut se déplacer latéralement de 3 mètres
+    par tranche de 6 mètres de hauteur de chute.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Plan%c3%a9%20draconique.ashx
   
@@ -11358,8 +11357,8 @@
     VERT (SUR) Le kobold crache un cône d’acide de 4,5 m de long infligeant 2d6 points
     de dégâts d’acide.'
   Spécial: Les ensorceleurs kobolds de lignage draconique ou kobold peuvent utiliser
-    leur modificateur de Charisme plutôt que de Constitution pour déterminer le nombre
-    de fois par jour où ils peuvent utiliser leur souffle et le DD de ce souffle.
+    leur modificateur de Charisme plutôt que de Constitution pour déterminer le DD
+    de ce souffle.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20draconique.ashx
   
@@ -11451,8 +11450,9 @@
   Avantage: Une fois par jour, l’ondin peut dépenser sa capacité raciale de poussée
     hydraulique pour lancer le pouvoir magique de convocation d’alliés naturels III
     avec un niveau de lanceur de sorts égal à son niveau de personnage. Cette utilisation
-    de la capacité ne permet de convoquer qu’un élémentaire de l’Eau de taille P ou
-    1d3 dauphins. L’utilisation de cette capacité coûte une action complexe.
+    de la capacité ne permet de convoquer que 1d3 élémentaire de l’Eau de taille P,
+    1d4+1 dauphins, un requin ou une anguille electrique. L’utilisation de cette capacité
+    coûte une action complexe.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20triton.ashx
   
@@ -11530,9 +11530,9 @@
     FILOU L’orque gagne un bonus de +2 sur un seul type de test de manœuvre offensive
     qu’il peut effectuer avec cette arme.
 
-    PERTURBATEUR L’orque rajoute +3 aux tests de Concentration des adversaires qui
-    lancent un sort dans la zone qu’il menace. Ceci ne s’applique que s’il est conscient
-    de la position de l’ennemi et est en mesure de porter une attaque d’opportunité.
+    PERTURBATEUR L’orque rajoute +3 au DD des tests de Concentration des adversaires
+    qui lancent un sort dans la zone qu’il menace. Ceci ne s’applique que s’il est
+    conscient de la position de l’ennemi et est en mesure de porter une attaque d’opportunité.
     S’il a déjà effectué toutes ses attaques d’opportunité pour le round, cette augmentation
     ne s’applique pas.
 
@@ -14190,8 +14190,8 @@
     la gêne pendant une courte période.
 
 
-    La créature qui reçoit des dégâts de froid de la part d’un sort gelé est enchevêtrée
-    pendant un nombre de rounds égal au niveau originel du sort.
+    Les créatures qui reçoivent des dégâts de froid de la part d’un sort gelé sont
+    enchevêtrées pendant un nombre de rounds égal au niveau originel du sort.
 
 
     Ce don affecte uniquement les sorts du registre du froid.
@@ -14306,16 +14306,17 @@
   Catégorie: métamagie
   Conditions: Art de la magie 10 rangs
   ConditionsRefs: []
-  Avantage: "Lorsque le personnage lance un sort de zone sélectif, il peut choisir\
-    \ un nombre de cibles situées dans la zone égal au modificateur de la caractéristique\
-    \ qu’il utilise pour déterminer combien de sorts supplémentaires il reçoit chaque\
-    \ jour (pour la classe à laquelle le sort sélectif est associé) : le Charisme\
-    \ pour les bardes, les conjurateurs, les ensorceleurs, les oracles et les paladins\
-    \ ; l’Intelligence pour les magiciens et les sorcières ; la Sagesse pour les druides,\
-    \ les inquisiteurs, les prêtres et les rôdeurs. Les cibles choisies échappent\
-    \ aux effets du sort. Un sort sélectif occupe un emplacement de sort d’un niveau\
-    \ de plus que le niveau normal du sort. \n\nLes sorts qui n’ont pas de zone d’effet\
-    \ ou dont la durée n’est pas instantanée ne peuvent pas être modifiés par ce don"
+  Avantage: "Lorsque le personnage lance un sort à zone d'effet et à durée instantanée,\
+    \ il peut choisir un nombre de cibles situées dans la zone égal au modificateur\
+    \ de la caractéristique qu’il utilise pour déterminer combien de sorts supplémentaires\
+    \ il reçoit chaque jour (pour la classe à laquelle le sort sélectif est associé)\
+    \ : le Charisme pour les bardes, les conjurateurs, les ensorceleurs, les oracles\
+    \ et les paladins ; l’Intelligence pour les magiciens et les sorcières ; la Sagesse\
+    \ pour les druides, les inquisiteurs, les prêtres et les rôdeurs. Les cibles choisies\
+    \ échappent aux effets du sort. Un sort sélectif occupe un emplacement de sort\
+    \ d’un niveau de plus que le niveau normal du sort. \n\nLes sorts qui n’ont pas\
+    \ de zone d’effet ou dont la durée n’est pas instantanée ne peuvent pas être modifiés\
+    \ par ce don"
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20s%c3%a9lectif.ashx
   
@@ -14343,8 +14344,7 @@
     fonctionnent sur les morts-vivants
   Catégorie: métamagie
   Conditions: 6 rangs en Connaissances (religion), École renforcée (nécromancie)
-  ConditionsRefs:
-  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
+  ConditionsRefs: []
   Avantage: 'Un sort thanatopique franchit les défenses et les immunités qui protègent
     contre les effets de mort, l’énergie négative et les absorptions d’énergie, qui
     affectent alors la cible comme si sa barrière protectrice n’existait pas.
@@ -14378,8 +14378,7 @@
     vivants
   Catégorie: métamagie
   Conditions: 6 rangs en Connaissances (religion), École renforcée (nécromancie)
-  ConditionsRefs:
-  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
+  ConditionsRefs: []
   Avantage: 'Ce don fonctionne uniquement sur les sorts mentaux. Il affecte les
     morts-vivants (même s’ils sont dépourvus d’Intelligence) comme s’ils n’étaient
     pas immunisés contre les effets mentaux mais il n’a aucun effet sur les créatures
@@ -18426,23 +18425,13 @@
     sorts de même type
   Catégorie: métamagie
   ConditionsRefs: []
-  Avantage: 'Quand une créature rate son jet de sauvegarde
-
-    contre un sort marquant, elle subit un malus de –2 aux jets
-
-    de sauvegarde contre les effets d’émotion et de terreur du
-
-    personnage et un malus de –1 contre les autres effets d’émotion
-
-    et de peur pendant 24 heures. Les malus issus de plusieurs sorts
-
-    marquants ne se cumulent pas. Ce don de métamagie s’applique
-
-    uniquement aux sorts du registre de l’émotion ou de la terreur.
-
-    Un sort marquant utilise un emplacement de sort d’un niveau de
-
-    plus que le sort ordinaire'
+  Avantage: Quand une créature rate son jet de sauvegarde contre un sort marquant,
+    elle subit un malus de –2 aux jets de sauvegarde contre les effets d’émotion et
+    de terreur du personnage et un malus de –1 contre les autres effets d’émotion
+    et de peur pendant 24 heures. Les malus issus de plusieurs sorts marquants ne
+    se cumulent pas. Ce don de métamagie s’applique uniquement aux sorts du registre
+    de l’émotion ou de la terreur. Un sort marquant utilise un emplacement de sort
+    d’un niveau de plus que le sort ordinaire
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20marquant.ashx
   
@@ -18450,25 +18439,15 @@
   Résumé: Les dégâts des sorts rendent secoué
   Catégorie: métamagie
   ConditionsRefs: []
-  Avantage: 'Quand une créature subit des dégâts à cause d’un
-
-    sort terrifiant, si elle rate son jet de sauvegarde, elle est secouée
-
-    pendant un nombre de rounds égal au niveau originel du sort.
-
-    Si le sort n’autorise pas de jet de sauvegarde, la victime a droit à
-
-    un jet de Volonté pour annuler l’effet secoué (contre le DD que
-
-    le sort aurait eu s’il avait autorisé un jet de sauvegarde). Si le sort
-
-    rend déjà sa cible secouée, en cas d’échec au jet de sauvegarde, la
-
-    durée du don de métamagie vient s’ajouter à celle du sort. Un sort terrifiant
-    ne peut pas effrayer une créature, même si elle est déjà secouée. Un sort terrifiant
-    occupe un emplacement de sort d’un
-
-    niveau de plus que son niveau normal'
+  Avantage: Quand une créature subit des dégâts à cause d’un sort terrifiant, si
+    elle rate son jet de sauvegarde, elle est secouée pendant un nombre de rounds
+    égal au niveau originel du sort. Si le sort n’autorise pas de jet de sauvegarde,
+    la victime a droit à un jet de Volonté pour annuler l’effet secoué (contre le
+    DD que le sort aurait eu s’il avait autorisé un jet de sauvegarde). Si le sort
+    rend déjà sa cible secouée, en cas d’échec au jet de sauvegarde, la durée du don
+    de métamagie vient s’ajouter à celle du sort. Un sort terrifiant ne peut pas effrayer
+    une créature, même si elle est déjà secouée. Un sort terrifiant occupe un emplacement
+    de sort d’un niveau de plus que son niveau normal
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20terrifiant.ashx
   
@@ -18476,29 +18455,15 @@
   Résumé: Les sorts d’émotion ou de terreur provoquent des cauchemars
   Catégorie: métamagie
   ConditionsRefs: []
-  Avantage: 'Un sort traumatisant laisse des souvenirs persistants
-
-    de la douleur qu’il a provoquée. Quand une créature rate un jet
-
-    de sauvegarde contre un sort traumatisant, elle doit réussir un
-
-    jet de Volonté la prochaine fois qu’elle s’endort, contre un DD
-
-    égal au DD du sort originel. Si elle échoue, elle est affectée par
-
-    un cauchemar. À chaque fois qu’elle rate son jet de sauvegarde,
-
-    elle doit en faire un nouveau la nuit suivante ou être victime
-
-    d’un nouveau cauchemar, bien que le DD diminue de 2 par nuit,
-
-    après la première. Ce don de métamagie s’applique uniquement
-
-    aux sorts du registre des émotions ou de la terreur. Un sort
-
-    traumatisant occupe un emplacement de deux niveaux de plus
-
-    que le sort normal'
+  Avantage: Un sort traumatisant laisse des souvenirs persistants de la douleur
+    qu’il a provoquée. Quand une créature rate un jet de sauvegarde contre un sort
+    traumatisant, elle doit réussir un jet de Volonté la prochaine fois qu’elle s’endort,
+    contre un DD égal au DD du sort originel. Si elle échoue, elle est affectée par
+    un cauchemar. À chaque fois qu’elle rate son jet de sauvegarde, elle doit en faire
+    un nouveau la nuit suivante ou être victime d’un nouveau cauchemar, bien que le
+    DD diminue de 2 par nuit, après la première. Ce don de métamagie s’applique uniquement
+    aux sorts du registre des émotions ou de la terreur. Un sort traumatisant occupe
+    un emplacement de deux niveaux de plus que le sort normal
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20traumatisant.ashx
   
@@ -18928,8 +18893,8 @@
   Avantage: Le personnage peut choisir de recevoir un malus de -1 à la CA pour bénéficier
     d’un bonus de +2 aux jets de dégâts contre les créatures de deux catégories de
     taille de plus que lui ou plus. Quand son BBA passe à +4 et, par la suite, tous
-    les quatre niveaux, le malus augmente de 1 et ces dégâts augmentent de 2. Ces
-    dégâts supplémentaires sont multipliés en cas de coup critique. Le personnage
+    les quatre niveaux, le malus augmente de -1 et ces dégâts supplémentaires augmentent
+    de 2. Ces dégâts supplémentaires sont multipliés en cas de coup critique. Le personnage
     peut utiliser ce don seulement quand il annonce qu’il fait une attaque (à outrance
     ou non) avec une arme de corps à corps. Cet effet se prolonge jusqu’à son prochain
     tour.
@@ -18938,11 +18903,11 @@
   
 - Nom: Guérisseur chanceux
   Conditions: halfelin, trait racial chance adaptable
-  Avantage: Le personnage peut dépenser une utilisation de sa chance adaptable pour
-    relancer les dés d’un unique effet de guérison magique (comme un sort de soins
-    ou une canalisation d’énergie). Il se guérit d’un nombre de points de vie égal
-    au montant du meilleur jet, le premier ou le second. Les autres créatures soignées
-    par cet effet ne profitent pas de cet avantage.
+  Avantage: Quand un effet magique de soin (comme un sort de soins ou une canalisation
+    d’énergie), le personnage peut dépenser une utilisation de sa chance adaptable
+    pour relancer les dés. Il se guérit d’un nombre de points de vie égal au montant
+    du meilleur jet, le premier ou le second. Les autres créatures soignées par cet
+    effet ne profitent pas de cet avantage.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9risseur%20chanceux.ashx
   
@@ -19662,4 +19627,15 @@
     au lieu d’un seul
   Source: MJRA
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Points%20h%c3%a9ro%c3%afques.ashx
+  
+- Nom: Crachat venimeux (nagaji)
+  Conditions: Nagaji.
+  Avantage: Par une action complexe, le nagaji peut cracher son venin jusqu’à 3
+    mètres (2 c) en une attaque de contact à distance. S’il touche sa cible, celle-ci
+    doit réussir un jet de Vigueur ou être aveuglée pendant 1d6 rounds. Le DD du jet
+    de sauvegarde est égal à 10+ 1/2 du total de dés de vie du nagaji + son modificateur
+    de Constitution. Il peut utiliser cette capacité une fois par jour et une fois
+    de plus par jour par tranche de trois dés de vie qu’il a.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux%20(nagaji).ashx
   
