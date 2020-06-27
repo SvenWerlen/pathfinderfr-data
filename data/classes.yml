@@ -5906,8 +5906,8 @@
   DésDeVie: d10
   Alignement: Les archers-mages peuvent choisir n'importe quel alignement Cependant,
     les elfes et les demi-elfes, en général des esprits libres, sont rarement Loyaux
-    et tout aussi rarement Mauvais La voie de l'archer-mage est donc plus généralement
-    l'affaire de personnages Bons ou Neutres
+    et tout aussi rarement Mauvais La voie de l'archer-mage est plus souvent l'affaire
+    de personnages Bons ou Neutres
   RangsParNiveau: 4
   Progression:
   - BBA: '+1'
@@ -5970,20 +5970,19 @@
     SortMax: 0
     Vigueur: '+5'
     Volonté: '+3'
-  Description: Les elfes et les demi-elfes cherchant à parfaire leur maîtrise de
-    l'arc embrassent parfois la voie de l'archer-mage. Ce sont des maîtres du combat
-    à distance, frappant infailliblement leurs adversaires et imprégnant leurs traits
-    de sorts puissants. Les flèches tirées par un archer-mage sont capables de tourner
-    dans un couloir pour toucher leur cible, ou bien de traverser des objets solides
-    pour atteindre ceux qui se pensent bien à l'abri derrière. Au zénith de leur puissance,
-    les archers-mages peuvent abattre l'ennemi le plus redoutable d'un unique trait
-    mortel.  Les personnages qui ont une carrière de rôdeur et de magicien excellent
-    dans la voie de l'archer-mage, mais il est tout à fait possible de rencontrer
-    d'autres personnages multiclassés. Les archers-mages sont présents partout où
-    l'on trouve des elfes, mais ils ne sont pas tous leurs alliés. Nombreux sont ceux,
-    en particulier parmi les demi-elfes, qui utilisent les traditions elfiques uniquement
-    pour leur profit personnel, ou pire encore, contre les elfes avec qui ils les
-    partagent.
+  Description: Nombre de ceux qui cherchent à parfaire leur maîtrise de l'arc embrassent
+    parfois la voie de l'archer-mage. Ce sont des maîtres du combat à distance, frappant
+    infailliblement leurs adversaires et imprégnant leurs traits de sorts puissants.
+    Les flèches tirées par un archer-mage sont capables de tourner dans un couloir
+    pour toucher leur cible, ou bien de traverser des objets solides pour atteindre
+    ceux qui se pensent bien à l'abri derrière. Au zénith de leur puissance, les archers-mages
+    peuvent abattre l'ennemi le plus redoutable d'un unique trait mortel.  Les personnages
+    qui ont une carrière de rôdeur et de magicien excellent dans la voie de l'archer-mage,
+    mais il est tout à fait possible de rencontrer d'autres personnages multiclassés.
+    Les archers-mages sont présents partout où l'on trouve des elfes, mais ils ne
+    sont pas tous leurs alliés. Nombreux sont ceux, en particulier parmi les demi-elfes,
+    qui utilisent les traditions elfiques uniquement pour leur profit personnel, ou
+    pire encore, contre les elfes avec qui ils les partagent.
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Archer-mage.ashx
   
@@ -7668,4 +7667,477 @@
     et de le mêler à la puissance de leur ministère.
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx
+  
+- Nom: Justicier
+  CompétencesDeClasse:
+  - Compétence: Acrobaties
+  - Compétence: Artisanat
+  - Compétence: Bluff
+  - Compétence: Connaissances (exploration souterraine)
+  - Compétence: Connaissances (ingénierie)
+  - Compétence: Connaissances (folklore local)
+  - Compétence: Déguisement
+  - Compétence: Diplomatie
+  - Compétence: Discrétion
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Escamotage
+  - Compétence: Estimation
+  - Compétence: Évasion
+  - Compétence: Intimidation
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Profession
+  - Compétence: Psychologie
+  - Compétence: Représentation
+  - Compétence: Sabotage
+  - Compétence: Survie
+  - Compétence: Utilisation d'objets magiques
+  DésDeVie: D8
+  Alignement: Tous
+  RangsParNiveau: 6
+  Progression:
+  - BBA: '+0'
+    Niveau: 1
+    Réflexes: '+2'
+    SortMax: 0
+    Vigueur: '+0'
+    Volonté: '+2'
+  - BBA: '+1'
+    Niveau: 2
+    Réflexes: '+3'
+    SortMax: 0
+    Vigueur: '+0'
+    Volonté: '+3'
+  - BBA: '+2'
+    Niveau: 3
+    Réflexes: '+3'
+    SortMax: 0
+    Vigueur: '+1'
+    Volonté: '+3'
+  - BBA: '+3'
+    Niveau: 4
+    Réflexes: '+4'
+    SortMax: 0
+    Vigueur: '+1'
+    Volonté: '+4'
+  - BBA: '+3'
+    Niveau: 5
+    Réflexes: '+4'
+    SortMax: 0
+    Vigueur: '+1'
+    Volonté: '+4'
+  - BBA: '+4'
+    Niveau: 6
+    Réflexes: '+5'
+    SortMax: 0
+    Vigueur: '+2'
+    Volonté: '+5'
+  - BBA: '+5'
+    Niveau: 7
+    Réflexes: '+5'
+    SortMax: 0
+    Vigueur: '+2'
+    Volonté: '+5'
+  - BBA: +6/+1
+    Niveau: 8
+    Réflexes: '+6'
+    SortMax: 0
+    Vigueur: '+2'
+    Volonté: '+6'
+  - BBA: +6/+1
+    Niveau: 9
+    Réflexes: '+6'
+    SortMax: 0
+    Vigueur: '+3'
+    Volonté: '+6'
+  - BBA: +7/+2
+    Niveau: 10
+    Réflexes: '+7'
+    SortMax: 0
+    Vigueur: '+3'
+    Volonté: '+7'
+  - BBA: +8/+3
+    Niveau: 11
+    Réflexes: '+7'
+    SortMax: 0
+    Vigueur: '+3'
+    Volonté: '+7'
+  - BBA: +9/+4
+    Niveau: 12
+    Réflexes: '+8'
+    SortMax: 0
+    Vigueur: '+4'
+    Volonté: '+8'
+  - BBA: +9/+4
+    Niveau: 13
+    Réflexes: '+8'
+    SortMax: 0
+    Vigueur: '+4'
+    Volonté: '+8'
+  - BBA: +10/+5
+    Niveau: 14
+    Réflexes: '+9'
+    SortMax: 0
+    Vigueur: '+4'
+    Volonté: '+9'
+  - BBA: +11/+6/+1
+    Niveau: 15
+    Réflexes: '+9'
+    SortMax: 0
+    Vigueur: '+5'
+    Volonté: '+9'
+  - BBA: +12/+7/+2
+    Niveau: 16
+    Réflexes: '+10'
+    SortMax: 0
+    Vigueur: '+5'
+    Volonté: '+10'
+  - BBA: +12/+7/+2
+    Niveau: 17
+    Réflexes: '+10'
+    SortMax: 0
+    Vigueur: '+5'
+    Volonté: '+10'
+  - BBA: +13/+8/+3
+    Niveau: 18
+    Réflexes: '+11'
+    SortMax: 0
+    Vigueur: '+6'
+    Volonté: '+11'
+  - BBA: +14/+9/+4
+    Niveau: 19
+    Réflexes: '+11'
+    SortMax: 0
+    Vigueur: '+6'
+    Volonté: '+11'
+  - BBA: +15/+10/+5
+    Niveau: 20
+    Réflexes: '+12'
+    SortMax: 0
+    Vigueur: '+6'
+    Volonté: '+12'
+  Description: La vie peut être injuste. Pensez aux paysans affamés qui travaillent
+    pour le baron local, aux ouvriers ordinaires chargés de construire le nouveau
+    palais du roi ou à toutes les personnes qui n’obtiennent qu’une pièce de cuivre
+    chaque semaine. Il y a d’abord ceux qui voient ces injustices et ne font rien.
+    Ensuite il y a ceux qui profitent de la souffrance des autres pour empocher du
+    profit. Et finalement, il y a ceux qui voient ces inégalités et qui se sentent
+    obligés d'agir, en dehors des lois si nécessaire. Ces justiciers opèrent à la
+    vue de tous, se cachant derrière une personnalité respectable le jour, mais revêtant
+    une autre identité la nuit, afin de punir les torts qu’ils constatent tout autour
+    d’eux.  Malgré cela, tous les justiciers ne travaillent pas à rendre le monde
+    meilleur. Certains criminels se cachent derrière leur apparence de villageois
+    ordinaires, pour devenir des terreurs de l'ombre, volant et tuant pour accomplir
+    leur sombre dessein. Dans tous les cas, le justicier est une personne à deux facettes,
+    celle que tout le monde connaît et celle qui inspire la peur.
+  Source: UI
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Justicier.ashx
+  
+- Nom: Métamorphe
+  CompétencesDeClasse:
+  - Compétence: Acrobaties
+  - Compétence: Connaissances (nature)
+  - Compétence: Discrétion
+  - Compétence: Dressage
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Survie
+  - Compétence: Vol
+  DésDeVie: d10
+  Alignement: N'importe quel alignement neutre
+  RangsParNiveau: 4
+  Progression:
+  - BBA: '+1'
+    Niveau: 1
+    Réflexes: '+2'
+    SortMax: 0
+    Vigueur: '+2'
+    Volonté: '+0'
+  - BBA: '+2'
+    Niveau: 2
+    Réflexes: '+3'
+    SortMax: 0
+    Vigueur: '+3'
+    Volonté: '+0'
+  - BBA: '+3'
+    Niveau: 3
+    Réflexes: '+3'
+    SortMax: 0
+    Vigueur: '+3'
+    Volonté: '+1'
+  - BBA: '+4'
+    Niveau: 4
+    Réflexes: '+4'
+    SortMax: 0
+    Vigueur: '+4'
+    Volonté: '+1'
+  - BBA: '+5'
+    Niveau: 5
+    Réflexes: '+4'
+    SortMax: 0
+    Vigueur: '+4'
+    Volonté: '+1'
+  - BBA: +6/+1
+    Niveau: 6
+    Réflexes: '+5'
+    SortMax: 0
+    Vigueur: '+5'
+    Volonté: '+2'
+  - BBA: +7/+2
+    Niveau: 7
+    Réflexes: '+5'
+    SortMax: 0
+    Vigueur: '+5'
+    Volonté: '+2'
+  - BBA: +8/+3
+    Niveau: 8
+    Réflexes: '+6'
+    SortMax: 0
+    Vigueur: '+6'
+    Volonté: '+2'
+  - BBA: +9/+4
+    Niveau: 9
+    Réflexes: '+6'
+    SortMax: 0
+    Vigueur: '+6'
+    Volonté: '+3'
+  - BBA: +10/+5
+    Niveau: 10
+    Réflexes: '+7'
+    SortMax: 0
+    Vigueur: '+7'
+    Volonté: '+3'
+  - BBA: +11/+6/+1
+    Niveau: 11
+    Réflexes: '+7'
+    SortMax: 0
+    Vigueur: '+7'
+    Volonté: '+3'
+  - BBA: +12/+7/+2
+    Niveau: 12
+    Réflexes: '+8'
+    SortMax: 0
+    Vigueur: '+8'
+    Volonté: '+4'
+  - BBA: +13/+8/+3
+    Niveau: 13
+    Réflexes: '+8'
+    SortMax: 0
+    Vigueur: '+8'
+    Volonté: '+4'
+  - BBA: +14/+9/+4
+    Niveau: 14
+    Réflexes: '+9'
+    SortMax: 0
+    Vigueur: '+9'
+    Volonté: '+4'
+  - BBA: +15/+10/+5
+    Niveau: 15
+    Réflexes: '+9'
+    SortMax: 0
+    Vigueur: '+9'
+    Volonté: '+5'
+  - BBA: +16/+11/+6/+1
+    Niveau: 16
+    Réflexes: '+10'
+    SortMax: 0
+    Vigueur: '+10'
+    Volonté: '+5'
+  - BBA: +17/+12/+7/+2
+    Niveau: 17
+    Réflexes: '+10'
+    SortMax: 0
+    Vigueur: '+10'
+    Volonté: '+5'
+  - BBA: +18/+13/+8/+3
+    Niveau: 18
+    Réflexes: '+11'
+    SortMax: 0
+    Vigueur: '+11'
+    Volonté: '+6'
+  - BBA: +19/+14/+9/+4
+    Niveau: 19
+    Réflexes: '+11'
+    SortMax: 0
+    Vigueur: '+11'
+    Volonté: '+6'
+  - BBA: +20/+15/+10/+5
+    Niveau: 20
+    Réflexes: '+12'
+    SortMax: 0
+    Vigueur: '+12'
+    Volonté: '+6'
+  Description: Que ce soit poussé par le vent comme un faucon ou en se cachant dans
+    une tourbière à l'affût avant de frapper, le métamorphe est un véritable maître
+    des milieux sauvages. À la fois un dévoué défenseur des cercles druidiques et
+    un féroce prédateur, le métamorphe peut emprunter les formes de la nature et même
+    les fusionner pour obtenir un effet dévastateur et une sauvagerie débridée. Par
+    le biais de la discipline druidique du changement de forme, ils deviennent des
+    aspects vivants des milieux sauvages. Au début, ils ne sont capables que d'en
+    emprunter un aspect mineur, mais avec le temps et la pratique, ils peuvent pleinement
+    se transformer et prendre des formes de plus en plus puissantes
+  Source: UW
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9tamorphe.ashx
+  
+- Nom: Chasseur de vampire
+  CompétencesDeClasse:
+  - Compétence: Art de la magie
+  - Compétence: Artisanat
+  - Compétence: Bluff
+  - Compétence: Connaissances (mystères)
+  - Compétence: Connaissances (géographie)
+  - Compétence: Connaissances (folklore local)
+  - Compétence: Connaissances (religion)
+  - Compétence: Discrétion
+  - Compétence: Dressage
+  - Compétence: Équitation
+  - Compétence: Escalade
+  - Compétence: Intimidation
+  - Compétence: Natation
+  - Compétence: Perception
+  - Compétence: Premiers secours
+  - Compétence: Profession
+  - Compétence: Psychologie
+  - Compétence: Survie
+  DésDeVie: d8
+  Alignement: Tous
+  RangsParNiveau: 6
+  Progression:
+  - BBA: '+1'
+    Niveau: 1
+    Réflexes: '+0'
+    SortMax: 4
+    Vigueur: '+2'
+    Volonté: '+2'
+  - BBA: '+2'
+    Niveau: 2
+    Réflexes: '+0'
+    SortMax: 4
+    Vigueur: '+3'
+    Volonté: '+3'
+  - BBA: '+3'
+    Niveau: 3
+    Réflexes: '+1'
+    SortMax: 4
+    Vigueur: '+3'
+    Volonté: '+3'
+  - BBA: '+4'
+    Niveau: 4
+    Réflexes: '+1'
+    SortMax: 4
+    Vigueur: '+4'
+    Volonté: '+4'
+  - BBA: '+5'
+    Niveau: 5
+    Réflexes: '+1'
+    SortMax: 4
+    Vigueur: '+4'
+    Volonté: '+4'
+  - BBA: +6/+1
+    Niveau: 6
+    Réflexes: '+2'
+    SortMax: 4
+    Vigueur: '+5'
+    Volonté: '+5'
+  - BBA: +7/+2
+    Niveau: 7
+    Réflexes: '+2'
+    SortMax: 4
+    Vigueur: '+5'
+    Volonté: '+5'
+  - BBA: +8/+3
+    Niveau: 8
+    Réflexes: '+2'
+    SortMax: 4
+    Vigueur: '+6'
+    Volonté: '+6'
+  - BBA: +9/+4
+    Niveau: 9
+    Réflexes: '+3'
+    SortMax: 4
+    Vigueur: '+6'
+    Volonté: '+6'
+  - BBA: +10/+5
+    Niveau: 10
+    Réflexes: '+3'
+    SortMax: 4
+    Vigueur: '+7'
+    Volonté: '+7'
+  - BBA: +11/+6/+1
+    Niveau: 11
+    Réflexes: '+3'
+    SortMax: 4
+    Vigueur: '+7'
+    Volonté: '+7'
+  - BBA: +12/+7/+2
+    Niveau: 12
+    Réflexes: '+4'
+    SortMax: 4
+    Vigueur: '+8'
+    Volonté: '+8'
+  - BBA: +13/+8/+3
+    Niveau: 13
+    Réflexes: '+4'
+    SortMax: 4
+    Vigueur: '+8'
+    Volonté: '+8'
+  - BBA: +14/+9/+4
+    Niveau: 14
+    Réflexes: '+4'
+    SortMax: 4
+    Vigueur: '+9'
+    Volonté: '+9'
+  - BBA: +15/+10/+5
+    Niveau: 15
+    Réflexes: '+5'
+    SortMax: 4
+    Vigueur: '+9'
+    Volonté: '+9'
+  - BBA: +16/+11/+6/+1
+    Niveau: 16
+    Réflexes: '+5'
+    SortMax: 4
+    Vigueur: '+10'
+    Volonté: '+10'
+  - BBA: +17/+12/+7/+2
+    Niveau: 17
+    Réflexes: '+5'
+    SortMax: 4
+    Vigueur: '+10'
+    Volonté: '+10'
+  - BBA: +18/+13/+8/+3
+    Niveau: 18
+    Réflexes: '+6'
+    SortMax: 4
+    Vigueur: '+11'
+    Volonté: '+11'
+  - BBA: +19/+14/+9/+4
+    Niveau: 19
+    Réflexes: '+6'
+    SortMax: 4
+    Vigueur: '+11'
+    Volonté: '+11'
+  - BBA: +20/+15/+10/+5
+    Niveau: 20
+    Réflexes: '+6'
+    SortMax: 4
+    Vigueur: '+12'
+    Volonté: '+12'
+  Description: 'Tous ceux qui errent la nuit ne chassent pas des proies mortelles.
+    Déshonoré, désespéré ou répondant à un profond besoin, le chasseur de vampire
+    ne déploie pas uniquement ses capacités à l''encontre des créatures de la nuit
+    mais surtout contre les terrifiants seigneurs morts-vivants : les vampires. La
+    plupart des chasseurs de vampire ne survivent pas à leur première rencontre avec
+    l’engeance vampire car aucun niveau d’étude ou d’entraînement ne peut véritablement
+    les préparer à faire face à ces Nobles de la nuit. Les rares qui survivent à celle-ci
+    et qui s’obligent à poursuivre leur quête, finissent par l’apprécier, devenant
+    des porteurs de mort, tout de noir vêtus, terrifiant autant les vivants que les
+    morts eux-mêmes. Le chasseur de vampire appréhende son devoir avec une sombre
+    mais inébranlable résolution, si forte qu’elle ressemble même à la foi d’un prêtre
+    en sa divinité et c’est de ce mystérieux dévouement qu’il tire ses pouvoirs divins.'
+  Source: WOV
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire.ashx
   

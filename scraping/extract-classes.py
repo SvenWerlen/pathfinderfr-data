@@ -46,6 +46,9 @@ URLs = [
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ninja.ashx", 'source': 'AG', 'spellLvl': 0},
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier.ashx", 'source': 'AG', 'spellLvl': 0},
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Samoura%c3%af.ashx", 'source': 'AG', 'spellLvl': 0},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Justicier.ashx", 'source': 'UI', 'spellLvl': 0},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9tamorphe.ashx", 'source': 'UW', 'spellLvl': 0},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chasseur%20de%20vampire.ashx", 'source': 'WOV', 'spellLvl': 4},
     
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arcaniste.ashx", 'source': 'MCA', 'spellLvl': 9},
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur.ashx", 'source': 'MCA', 'spellLvl': 0},
