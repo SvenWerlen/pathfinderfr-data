@@ -147,7 +147,7 @@
       humanoïdes des sous-types reptilien et gobelinoïde grâce à un entraînement spécial
       contre ces ennemis qu'ils haïssent.
     Nom: Haine
-  - Description: 'Les gnomes ajoutent +1 aux DD des jets de sauvegarde des illusions
+  - Description: 'Les gnomes ajoutent +1 aux DD des jets de sauvegarde des sorts d''illusion
       qu’ils lancent. Les gnomes qui possèdent un Charisme égal ou supérieur à 11
       possèdent également les pouvoirs magiques suivants : 1/jour – communication
       avec les animaux, lumières dansantes, prestidigitation, et son imaginaire. Le
@@ -582,8 +582,8 @@
     Nom: Vitesse normale
   - Description: Les ifrits voient dans le noir à 18 mètres (12 c).
     Nom: Vision dans le noir
-  - Description: Mains brûlantes 1/jour (niveau de lanceur de sorts égal au niveau
-      de l’ifrit).
+  - Description: 'Mains brûlantes 1/jour (niveau de lanceur de sorts égal au niveau
+      de l’ifrit, DD : 11+modificateur de charisme).'
     Nom: Pouvoir magique
   - Description: Les ifrits ont une résistance au feu de 5.
     Nom: Résistance élémentaire
@@ -712,7 +712,7 @@
   - Description: Les oréades voient dans le noir à 18 mètres.
     Nom: Vision dans le noir
   - Description: Pierre magique 1/jour (niveau de lanceur de sorts égal au niveau
-      total de l’oréade).
+      total de l’oréade); DD11+ modificateur de charisme.
     Nom: Pouvoir magique
   - Description: Les oréades gagnent une résistance à l’acide de 5.
     Nom: Résistance élémentaire
@@ -1020,7 +1020,7 @@
       un bonus racial de +10 à ses tests de Déguisement pour apparaître humain. Il
       lui faut une action simple pour changer de forme. Cette capacité fonctionne
       comme modification d’apparence, à la seule différence que le kitsune ne peut
-      pas ajuster ses scores de caractéristiques.
+      pas ajuster ses scores de caractéristiques et peut rester sous cette forme indéfiniment.
     Nom: Changement de forme (Sur)
   - Description: Les kitsune peuvent voir deux fois plus loin que les humains à faible
       luminosité.
@@ -1029,7 +1029,8 @@
     Nom: Agile (Ext)
   - Description: 'Le kitsune ajoute +1 au DD de tous les jets de sauvegarde contre
       les sorts d’enchantement qu’il lance. Un kitsune avec un score de Charisme de
-      11 ou plus reçoit ce pouvoir magique : 3/jour – lumières dansantes.'
+      11 ou plus reçoit ce pouvoir magique : 3/jour – lumières dansantes avec un NLS
+      egal au niveau du kitsune.'
     Nom: Magie kitsune (Ext/Sur)
   - Description: Sous sa forme naturelle, le kitsune a une attaque de morsure qui
       inflige 1d4 points de dégâts.
@@ -1221,8 +1222,9 @@
     Nom: Résistance à la magie
   - Description: 'Les svirfneblins ajoutent +1 au DD de tous les sorts d’illusion
       qu’ils lancent. Ils gagnent également les pouvoirs magiques suivants : Constant
-      – antidétection ; 1/jour – cécité/surdité, flou, déguisement ; le niveau de
-      lanceur de sorts est égal au niveau de classe du svirfneblin.'
+      – antidétection ; 1/jour – cécité/surdité (DD12 + modificateur de charisme),
+      flou, déguisement ; le niveau de lanceur de sorts est égal au niveau de classe
+      du svirfneblin.'
     Nom: Magie des svirfneblins
   - Description: 'Les svirfneblins commencent le jeu en sachant parler le gnome et
       le commun des profondeurs. Les svirfneblins ayant un haut score d’Intelligence
@@ -1243,7 +1245,7 @@
   - Description: Les vanara sont des humanoïdes de sous-types vanara.
     Nom: Vanara
   - Description: Les vanaras ont une vitesse de base de 9 mètres et une vitesse d'Escalade
-      de 9 mètres.
+      de 6 mètres.
     Nom: Vitesse normale
   - Description: Les vanaras peuvent voir deux fois plus loin que les humains à faible
       luminosité.
