@@ -15654,7 +15654,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.esc.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "esc",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.esc.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "ste",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -50025,14 +50040,14 @@
       "img": "systems/pf1/icons/feats/improved-two-weapon-fighting.jpg"
    },
    {
-      "name": "Touche d'ombre",
+      "name": "Touche d\u2019ombre",
       "permission": {
          "default": 0
       },
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> peut se d\u00e9placer \u00e0 sa vitesse maximale</i></p><p><b>Pr\u00e9requis: </b>wayang<p/><p><b>Avantage: </b>Quand le wayang est dans une zone de faible lumi\u00e8re ou de t\u00e9n\u00e8bres, il peut se d\u00e9placer \u00e0 sa vitesse maximale en utilisant Discr\u00e9tion sans subir le malus normal de -5. Quand il se d\u00e9place \u00e0 une vitesse allant de la moiti\u00e9 de sa vitesse normale \u00e0 sa vitesse normale, le wayang subit un malus de -5 \u00e0 ses tests de Discr\u00e9tion<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>wayang<p/><p><b>Avantage: </b>Quand le wayang est dans une zone de faible lumi\u00e8re ou de t\u00e9n\u00e8bres, il peut se d\u00e9placer \u00e0 sa vitesse maximale en utilisant Discr\u00e9tion sans subir le malus normal de -5. Quand il se d\u00e9place \u00e0 une vitesse allant de la moiti\u00e9 de sa vitesse normale \u00e0 sa vitesse normale, le wayang subit un malus de -5 \u00e0 ses tests de Discr\u00e9tion.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -54986,7 +55001,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -55061,7 +55076,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -55136,7 +55151,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -55211,7 +55226,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -55286,7 +55301,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -55361,7 +55376,7 @@
             "chat": "",
             "unidentified": ""
          },
-         "source": "AM",
+         "source": "UM",
          "activation": {
             "cost": 1,
             "type": ""
@@ -58432,7 +58447,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>Niveau 5, pouvoir magique de pouss\u00e9e hydraulique, ondin.<p/><p><b>Avantage: </b>Une fois par jour, l\u2019ondin peut d\u00e9penser sa capacit\u00e9 raciale de pouss\u00e9e hydraulique pour lancer le pouvoir magique de convocation d\u2019alli\u00e9s naturels III avec un niveau de lanceur de sorts \u00e9gal \u00e0 son niveau de personnage. Cette utilisation de la capacit\u00e9 ne permet de convoquer qu\u2019un \u00e9l\u00e9mentaire de l\u2019Eau de taille P ou 1d3 dauphins. L\u2019utilisation de cette capacit\u00e9 co\u00fbte une action complexe.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20triton.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>Niveau 5, pouvoir magique de pouss\u00e9e hydraulique, ondin.<p/><p><b>Avantage: </b>Une fois par jour, l\u2019ondin peut d\u00e9penser sa capacit\u00e9 raciale de pouss\u00e9e hydraulique pour lancer le pouvoir magique de convocation d\u2019alli\u00e9s naturels III avec un niveau de lanceur de sorts \u00e9gal \u00e0 son niveau de personnage. Cette utilisation de la capacit\u00e9 ne permet de convoquer que 1d3 \u00e9l\u00e9mentaire de l\u2019Eau de taille P, 1d4+1 dauphins, un requin ou une anguille electrique. L\u2019utilisation de cette capacit\u00e9 co\u00fbte une action complexe.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Portail%20triton.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -58957,7 +58972,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>BBA +1, orque.<p/><p><b>Avantage: </b>Lorsqu\u2019il prend ce don, l\u2019orque choisit l\u2019un des avantages ci-dessous. Lorsqu\u2019il manie une arme ayant le mot \u00ab orque \u00bb dans son nom, il b\u00e9n\u00e9ficie de l\u2019avantage qu\u2019il a choisi tant qu\u2019il ma\u00eetrise vraiment cette arme.\nD\u00c9FENSEUR L\u2019orque gagne un bonus de bouclier de +1 \u00e0 la CA (ou de +2 s\u2019il manie une arme \u00e0 deux mains).\nFILOU L\u2019orque gagne un bonus de +2 sur un seul type de test de man\u0153uvre offensive qu\u2019il peut effectuer avec cette arme.\nPERTURBATEUR L\u2019orque rajoute +3 aux tests de Concentration des adversaires qui lancent un sort dans la zone qu\u2019il menace. Ceci ne s\u2019applique que s\u2019il est conscient de la position de l\u2019ennemi et est en mesure de porter une attaque d\u2019opportunit\u00e9. S\u2019il a d\u00e9j\u00e0 effectu\u00e9 toutes ses attaques d\u2019opportunit\u00e9 pour le round, cette augmentation ne s\u2019applique pas.\nTUEUR L\u2019orque gagne un bonus de comp\u00e9tence de +2 \u00e0 ses jets d\u2019attaque pour confirmer les coups critiques.\nTYRAN L\u2019orque gagne un bonus de +1 \u00e0 ses jets de d\u00e9g\u00e2ts contre les cr\u00e9atures plus petites que lui d\u2019au moins une taille.\nVOYOU L\u2019orque inflige +1 point de d\u00e9g\u00e2ts non l\u00e9taux avec son arme.Ce don n\u2019a aucun effet si l\u2019orque ne manie pas l\u2019arme qu\u2019il utilise.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20martiale%20orque.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>BBA +1, orque.<p/><p><b>Avantage: </b>Lorsqu\u2019il prend ce don, l\u2019orque choisit l\u2019un des avantages ci-dessous. Lorsqu\u2019il manie une arme ayant le mot \u00ab orque \u00bb dans son nom, il b\u00e9n\u00e9ficie de l\u2019avantage qu\u2019il a choisi tant qu\u2019il ma\u00eetrise vraiment cette arme.\nD\u00c9FENSEUR L\u2019orque gagne un bonus de bouclier de +1 \u00e0 la CA (ou de +2 s\u2019il manie une arme \u00e0 deux mains).\nFILOU L\u2019orque gagne un bonus de +2 sur un seul type de test de man\u0153uvre offensive qu\u2019il peut effectuer avec cette arme.\nPERTURBATEUR L\u2019orque rajoute +3 au DD des tests de Concentration des adversaires qui lancent un sort dans la zone qu\u2019il menace. Ceci ne s\u2019applique que s\u2019il est conscient de la position de l\u2019ennemi et est en mesure de porter une attaque d\u2019opportunit\u00e9. S\u2019il a d\u00e9j\u00e0 effectu\u00e9 toutes ses attaques d\u2019opportunit\u00e9 pour le round, cette augmentation ne s\u2019applique pas.\nTUEUR L\u2019orque gagne un bonus de comp\u00e9tence de +2 \u00e0 ses jets d\u2019attaque pour confirmer les coups critiques.\nTYRAN L\u2019orque gagne un bonus de +1 \u00e0 ses jets de d\u00e9g\u00e2ts contre les cr\u00e9atures plus petites que lui d\u2019au moins une taille.\nVOYOU L\u2019orque inflige +1 point de d\u00e9g\u00e2ts non l\u00e9taux avec son arme.Ce don n\u2019a aucun effet si l\u2019orque ne manie pas l\u2019arme qu\u2019il utilise.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20martiale%20orque.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -71182,7 +71197,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> Les sorts du registre du froid enchev\u00eatrent les cr\u00e9atures qu'ils blessent</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Le givre des sorts de froid du personnage s\u2019accroche \u00e0 la cible et la g\u00eane pendant une courte p\u00e9riode.\n\nLa cr\u00e9ature qui re\u00e7oit des d\u00e9g\u00e2ts de froid de la part d\u2019un sort gel\u00e9 est enchev\u00eatr\u00e9e pendant un nombre de rounds \u00e9gal au niveau originel du sort.\n\nCe don affecte uniquement les sorts du registre du froid.\n\nUn sort gel\u00e9 utilise un emplacement de sort d\u2019un niveau de plus que le niveau r\u00e9el du sort<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20gel%c3%a9.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> Les sorts du registre du froid enchev\u00eatrent les cr\u00e9atures qu'ils blessent</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Le givre des sorts de froid du personnage s\u2019accroche \u00e0 la cible et la g\u00eane pendant une courte p\u00e9riode.\n\nLes cr\u00e9atures qui re\u00e7oivent des d\u00e9g\u00e2ts de froid de la part d\u2019un sort gel\u00e9 sont enchev\u00eatr\u00e9es pendant un nombre de rounds \u00e9gal au niveau originel du sort.\n\nCe don affecte uniquement les sorts du registre du froid.\n\nUn sort gel\u00e9 utilise un emplacement de sort d\u2019un niveau de plus que le niveau r\u00e9el du sort<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20gel%c3%a9.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -71707,7 +71722,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> Exclut certaines cibles de la zone d\u2019effet d\u2019un sort</i></p><p><b>Pr\u00e9requis: </b>Art de la magie 10 rangs<p/><p><b>Avantage: </b>Lorsque le personnage lance un sort de zone s\u00e9lectif, il peut choisir un nombre de cibles situ\u00e9es dans la zone \u00e9gal au modificateur de la caract\u00e9ristique qu\u2019il utilise pour d\u00e9terminer combien de sorts suppl\u00e9mentaires il re\u00e7oit chaque jour (pour la classe \u00e0 laquelle le sort s\u00e9lectif est associ\u00e9) : le Charisme pour les bardes, les conjurateurs, les ensorceleurs, les oracles et les paladins ; l\u2019Intelligence pour les magiciens et les sorci\u00e8res ; la Sagesse pour les druides, les inquisiteurs, les pr\u00eatres et les r\u00f4deurs. Les cibles choisies \u00e9chappent aux effets du sort. Un sort s\u00e9lectif occupe un emplacement de sort d\u2019un niveau de plus que le niveau normal du sort. \n\nLes sorts qui n\u2019ont pas de zone d\u2019effet ou dont la dur\u00e9e n\u2019est pas instantan\u00e9e ne peuvent pas \u00eatre modifi\u00e9s par ce don<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20s%c3%a9lectif.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> Exclut certaines cibles de la zone d\u2019effet d\u2019un sort</i></p><p><b>Pr\u00e9requis: </b>Art de la magie 10 rangs<p/><p><b>Avantage: </b>Lorsque le personnage lance un sort \u00e0 zone d'effet et \u00e0 dur\u00e9e instantan\u00e9e, il peut choisir un nombre de cibles situ\u00e9es dans la zone \u00e9gal au modificateur de la caract\u00e9ristique qu\u2019il utilise pour d\u00e9terminer combien de sorts suppl\u00e9mentaires il re\u00e7oit chaque jour (pour la classe \u00e0 laquelle le sort s\u00e9lectif est associ\u00e9) : le Charisme pour les bardes, les conjurateurs, les ensorceleurs, les oracles et les paladins ; l\u2019Intelligence pour les magiciens et les sorci\u00e8res ; la Sagesse pour les druides, les inquisiteurs, les pr\u00eatres et les r\u00f4deurs. Les cibles choisies \u00e9chappent aux effets du sort. Un sort s\u00e9lectif occupe un emplacement de sort d\u2019un niveau de plus que le niveau normal du sort. \n\nLes sorts qui n\u2019ont pas de zone d\u2019effet ou dont la dur\u00e9e n\u2019est pas instantan\u00e9e ne peuvent pas \u00eatre modifi\u00e9s par ce don<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20s%c3%a9lectif.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -92257,7 +92272,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> Les sorts de terreur ou d\u2019\u00e9motion donnent des malus contre les prochains sorts de m\u00eame type</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Quand une cr\u00e9ature rate son jet de sauvegarde\ncontre un sort marquant, elle subit un malus de \u20132 aux jets\nde sauvegarde contre les effets d\u2019\u00e9motion et de terreur du\npersonnage et un malus de \u20131 contre les autres effets d\u2019\u00e9motion\net de peur pendant 24 heures. Les malus issus de plusieurs sorts\nmarquants ne se cumulent pas. Ce don de m\u00e9tamagie s\u2019applique\nuniquement aux sorts du registre de l\u2019\u00e9motion ou de la terreur.\nUn sort marquant utilise un emplacement de sort d\u2019un niveau de\nplus que le sort ordinaire<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20marquant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> Les sorts de terreur ou d\u2019\u00e9motion donnent des malus contre les prochains sorts de m\u00eame type</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Quand une cr\u00e9ature rate son jet de sauvegarde contre un sort marquant, elle subit un malus de \u20132 aux jets de sauvegarde contre les effets d\u2019\u00e9motion et de terreur du personnage et un malus de \u20131 contre les autres effets d\u2019\u00e9motion et de peur pendant 24 heures. Les malus issus de plusieurs sorts marquants ne se cumulent pas. Ce don de m\u00e9tamagie s\u2019applique uniquement aux sorts du registre de l\u2019\u00e9motion ou de la terreur. Un sort marquant utilise un emplacement de sort d\u2019un niveau de plus que le sort ordinaire<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20marquant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -92332,7 +92347,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> Les d\u00e9g\u00e2ts des sorts rendent secou\u00e9</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Quand une cr\u00e9ature subit des d\u00e9g\u00e2ts \u00e0 cause d\u2019un\nsort terrifiant, si elle rate son jet de sauvegarde, elle est secou\u00e9e\npendant un nombre de rounds \u00e9gal au niveau originel du sort.\nSi le sort n\u2019autorise pas de jet de sauvegarde, la victime a droit \u00e0\nun jet de Volont\u00e9 pour annuler l\u2019effet secou\u00e9 (contre le DD que\nle sort aurait eu s\u2019il avait autoris\u00e9 un jet de sauvegarde). Si le sort\nrend d\u00e9j\u00e0 sa cible secou\u00e9e, en cas d\u2019\u00e9chec au jet de sauvegarde, la\ndur\u00e9e du don de m\u00e9tamagie vient s\u2019ajouter \u00e0 celle du sort. Un sort terrifiant ne peut pas effrayer une cr\u00e9ature, m\u00eame si elle est d\u00e9j\u00e0 secou\u00e9e. Un sort terrifiant occupe un emplacement de sort d\u2019un\nniveau de plus que son niveau normal<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20terrifiant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> Les d\u00e9g\u00e2ts des sorts rendent secou\u00e9</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Quand une cr\u00e9ature subit des d\u00e9g\u00e2ts \u00e0 cause d\u2019un sort terrifiant, si elle rate son jet de sauvegarde, elle est secou\u00e9e pendant un nombre de rounds \u00e9gal au niveau originel du sort. Si le sort n\u2019autorise pas de jet de sauvegarde, la victime a droit \u00e0 un jet de Volont\u00e9 pour annuler l\u2019effet secou\u00e9 (contre le DD que le sort aurait eu s\u2019il avait autoris\u00e9 un jet de sauvegarde). Si le sort rend d\u00e9j\u00e0 sa cible secou\u00e9e, en cas d\u2019\u00e9chec au jet de sauvegarde, la dur\u00e9e du don de m\u00e9tamagie vient s\u2019ajouter \u00e0 celle du sort. Un sort terrifiant ne peut pas effrayer une cr\u00e9ature, m\u00eame si elle est d\u00e9j\u00e0 secou\u00e9e. Un sort terrifiant occupe un emplacement de sort d\u2019un niveau de plus que son niveau normal<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20terrifiant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -92407,7 +92422,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> Les sorts d\u2019\u00e9motion ou de terreur provoquent des cauchemars</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Un sort traumatisant laisse des souvenirs persistants\nde la douleur qu\u2019il a provoqu\u00e9e. Quand une cr\u00e9ature rate un jet\nde sauvegarde contre un sort traumatisant, elle doit r\u00e9ussir un\njet de Volont\u00e9 la prochaine fois qu\u2019elle s\u2019endort, contre un DD\n\u00e9gal au DD du sort originel. Si elle \u00e9choue, elle est affect\u00e9e par\nun cauchemar. \u00c0 chaque fois qu\u2019elle rate son jet de sauvegarde,\nelle doit en faire un nouveau la nuit suivante ou \u00eatre victime\nd\u2019un nouveau cauchemar, bien que le DD diminue de 2 par nuit,\napr\u00e8s la premi\u00e8re. Ce don de m\u00e9tamagie s\u2019applique uniquement\naux sorts du registre des \u00e9motions ou de la terreur. Un sort\ntraumatisant occupe un emplacement de deux niveaux de plus\nque le sort normal<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20traumatisant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> Les sorts d\u2019\u00e9motion ou de terreur provoquent des cauchemars</i></p><p><b>Pr\u00e9requis: </b>-<p/><p><b>Avantage: </b>Un sort traumatisant laisse des souvenirs persistants de la douleur qu\u2019il a provoqu\u00e9e. Quand une cr\u00e9ature rate un jet de sauvegarde contre un sort traumatisant, elle doit r\u00e9ussir un jet de Volont\u00e9 la prochaine fois qu\u2019elle s\u2019endort, contre un DD \u00e9gal au DD du sort originel. Si elle \u00e9choue, elle est affect\u00e9e par un cauchemar. \u00c0 chaque fois qu\u2019elle rate son jet de sauvegarde, elle doit en faire un nouveau la nuit suivante ou \u00eatre victime d\u2019un nouveau cauchemar, bien que le DD diminue de 2 par nuit, apr\u00e8s la premi\u00e8re. Ce don de m\u00e9tamagie s\u2019applique uniquement aux sorts du registre des \u00e9motions ou de la terreur. Un sort traumatisant occupe un emplacement de deux niveaux de plus que le sort normal<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20traumatisant.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -95482,7 +95497,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>halfelin, BBA+1<p/><p><b>Avantage: </b>Le personnage peut choisir de recevoir un malus de -1 \u00e0 la CA pour b\u00e9n\u00e9ficier d\u2019un bonus de +2 aux jets de d\u00e9g\u00e2ts contre les cr\u00e9atures de deux cat\u00e9gories de taille de plus que lui ou plus. Quand son BBA passe \u00e0 +4 et, par la suite, tous les quatre niveaux, le malus augmente de 1 et ces d\u00e9g\u00e2ts augmentent de 2. Ces d\u00e9g\u00e2ts suppl\u00e9mentaires sont multipli\u00e9s en cas de coup critique. Le personnage peut utiliser ce don seulement quand il annonce qu\u2019il fait une attaque (\u00e0 outrance ou non) avec une arme de corps \u00e0 corps. Cet effet se prolonge jusqu\u2019\u00e0 son prochain tour.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20risqu%c3%a9e.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>halfelin, BBA+1<p/><p><b>Avantage: </b>Le personnage peut choisir de recevoir un malus de -1 \u00e0 la CA pour b\u00e9n\u00e9ficier d\u2019un bonus de +2 aux jets de d\u00e9g\u00e2ts contre les cr\u00e9atures de deux cat\u00e9gories de taille de plus que lui ou plus. Quand son BBA passe \u00e0 +4 et, par la suite, tous les quatre niveaux, le malus augmente de -1 et ces d\u00e9g\u00e2ts suppl\u00e9mentaires augmentent de 2. Ces d\u00e9g\u00e2ts suppl\u00e9mentaires sont multipli\u00e9s en cas de coup critique. Le personnage peut utiliser ce don seulement quand il annonce qu\u2019il fait une attaque (\u00e0 outrance ou non) avec une arme de corps \u00e0 corps. Cet effet se prolonge jusqu\u2019\u00e0 son prochain tour.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20risqu%c3%a9e.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -95557,7 +95572,7 @@
       "type": "feat",
       "data": {
          "description": {
-            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>halfelin, trait racial chance adaptable<p/><p><b>Avantage: </b>Le personnage peut d\u00e9penser une utilisation de sa chance adaptable pour relancer les d\u00e9s d\u2019un unique effet de gu\u00e9rison magique (comme un sort de soins ou une canalisation d\u2019\u00e9nergie). Il se gu\u00e9rit d\u2019un nombre de points de vie \u00e9gal au montant du meilleur jet, le premier ou le second. Les autres cr\u00e9atures soign\u00e9es par cet effet ne profitent pas de cet avantage.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9risseur%20chanceux.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>halfelin, trait racial chance adaptable<p/><p><b>Avantage: </b>Quand un effet magique de soin (comme un sort de soins ou une canalisation d\u2019\u00e9nergie), le personnage peut d\u00e9penser une utilisation de sa chance adaptable pour relancer les d\u00e9s. Il se gu\u00e9rit d\u2019un nombre de points de vie \u00e9gal au montant du meilleur jet, le premier ou le second. Les autres cr\u00e9atures soign\u00e9es par cet effet ne profitent pas de cet avantage.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gu%c3%a9risseur%20chanceux.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
             "chat": "",
             "unidentified": ""
          },
@@ -100041,6 +100056,81 @@
          "contextNotes": [],
          "featType": "feat",
          "requirements": "Points h\u00e9ro\u00efques",
+         "attack": {
+            "parts": []
+         }
+      },
+      "sort": 1300000,
+      "flags": {},
+      "img": "systems/pf1/icons/feats/athletic.jpg"
+   },
+   {
+      "name": "Crachat venimeux (nagaji)",
+      "permission": {
+         "default": 0
+      },
+      "type": "feat",
+      "data": {
+         "description": {
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>Nagaji.<p/><p><b>Avantage: </b>Par une action complexe, le nagaji peut cracher son venin jusqu\u2019\u00e0 3 m\u00e8tres (2 c) en une attaque de contact \u00e0 distance. S\u2019il touche sa cible, celle-ci doit r\u00e9ussir un jet de Vigueur ou \u00eatre aveugl\u00e9e pendant 1d6 rounds. Le DD du jet de sauvegarde est \u00e9gal \u00e0 10+ 1/2 du total de d\u00e9s de vie du nagaji + son modificateur de Constitution. Il peut utiliser cette capacit\u00e9 une fois par jour et une fois de plus par jour par tranche de trois d\u00e9s de vie qu\u2019il a.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux%20(nagaji).ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>",
+            "chat": "",
+            "unidentified": ""
+         },
+         "source": "MR",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "duration": {
+            "value": null,
+            "units": ""
+         },
+         "target": {
+            "value": ""
+         },
+         "range": {
+            "value": null,
+            "units": "",
+            "long": null
+         },
+         "uses": {
+            "value": 0,
+            "max": 0,
+            "per": null
+         },
+         "actionType": "",
+         "attackBonus": "",
+         "critConfirmBonus": "",
+         "damage": {
+            "parts": []
+         },
+         "attackParts": [],
+         "formula": "",
+         "ability": {
+            "attack": null,
+            "damage": null,
+            "damageMult": 1,
+            "critRange": 20,
+            "critMult": 2
+         },
+         "save": {
+            "dc": 0,
+            "type": ""
+         },
+         "effectNotes": "",
+         "attackNotes": "",
+         "changes": [],
+         "changeFlags": {
+            "loseDexToAC": false,
+            "noStr": false,
+            "noDex": false,
+            "oneInt": false,
+            "oneWis": false,
+            "oneCha": false
+         },
+         "contextNotes": [],
+         "featType": "feat",
+         "requirements": "-",
          "attack": {
             "parts": []
          }
