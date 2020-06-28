@@ -1779,7 +1779,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.spl.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.spl",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.umd.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.umd",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -4104,7 +4119,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "1",
+               "priority": 0,
+               "target": "ac",
+               "subTarget": "nac",
+               "modifier": "enh"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -4629,7 +4652,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.hea.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.hea",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.sur.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.sur",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -4704,7 +4742,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.clm.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.clm",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.swm.rank>=10?4:2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.swm",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -15659,14 +15712,14 @@
                "formula": "@skills.esc.rank>=10?4:2",
                "priority": 0,
                "target": "skill",
-               "subTarget": "esc",
+               "subTarget": "skill.esc",
                "modifier": "competence"
             },
             {
-               "formula": "@skills.esc.rank>=10?4:2",
+               "formula": "@skills.ste.rank>=10?4:2",
                "priority": 0,
                "target": "skill",
-               "subTarget": "ste",
+               "subTarget": "skill.ste",
                "modifier": "competence"
             }
          ],
@@ -34569,7 +34622,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "1",
+               "priority": 0,
+               "target": "ac",
+               "subTarget": "sac",
+               "modifier": "enh"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -34644,7 +34705,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "1",
+               "priority": 0,
+               "target": "ac",
+               "subTarget": "sac",
+               "modifier": "enh"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -58269,7 +58338,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "3",
+               "priority": 0,
+               "target": "speed",
+               "subTarget": "swimSpeed",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -60519,7 +60596,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "2",
+               "priority": 0,
+               "target": "ac",
+               "subTarget": "nac",
+               "modifier": "enh"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -61719,7 +61804,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.blf",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -72894,7 +72987,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.spl.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.spl",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.umd.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.umd",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -73119,7 +73227,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "1",
+               "priority": 0,
+               "target": "ac",
+               "subTarget": "sac",
+               "modifier": "enh"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -73419,7 +73535,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.clm.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.clm",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.swm.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.swm",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -73944,7 +74075,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "@skills.hea.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.hea",
+               "modifier": "competence"
+            },
+            {
+               "formula": "@skills.sur.rank>=10?6:4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.sur",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -95019,7 +95165,22 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.acr",
+               "modifier": "competence"
+            },
+            {
+               "formula": "2",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.clm",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
