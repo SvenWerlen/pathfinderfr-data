@@ -48,25 +48,6 @@ MATCH = ['Référence']
 IGNORE = ['Source']
 
 
-
-liste = []
-
-print("Extraction des sorts...")
-
-listSorts = []    
-for u in URLs:
-    if MOCK_LIST:
-        parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml").find(id='PageContentDiv')
-    else:
-        parsed_html = BeautifulSoup(urllib.request.urlopen(u['URL']).read(),features="lxml").find(id='PageContentDiv')
-    
-    if u['list']:
-        for el in parsed_html.children:
-            if el.name == "ul":
-                listSorts += el.find_all('li')
-    else:
-        listSorts += parsed_html.find_all('li')
-
 #
 # cette fonction se charge d'extraire le texte de la partie HTML
 # en explorant certaines balises. Malheureusement, le format des
@@ -77,75 +58,103 @@ def extractText(list):
     for el in list:
         text += html2text(el)
     return text
+  
 
-# itération sur chaque page
-for l in listSorts:
-    sort = {}
-    
-    element = l.find_next('a')
-    title = element.get('title')
-    link  = element.get('href')
+visited = []
 
-    if "pagelink" not in element.attrs['class']:
-        print("Skipping unkown link: %s" % link)
-        continue
-    
-    linkText = element.text
-    restText = l.text[len(linkText):]
-    
-    source = "MJ"
-    source_search = re.search('\(([a-zA-Z-]+?)\)', restText, re.IGNORECASE)
-    if source_search:
-        source = getValidSource(source_search.group(1), False)
-    
-    print("Sort %s (%s)" % (title, source))
-    pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
-    
-    sort[u'Nom']=title
-    sort[u'Référence']=pageURL.lower()
-    sort[u'Source']=source
-    
-    if MOCK_SORT:
-        content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
+for u in URLs:
+    if MOCK_LIST:
+        parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml").find(id='PageContentDiv')
     else:
-        content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
+        parsed_html = BeautifulSoup(urllib.request.urlopen(u['URL']).read(),features="lxml").find(id='PageContentDiv')
+
+    listSorts = []
     
-    # lire les attributs
-    text = ""
-    for attr in content.find_all('b'):
-        key = attr.text.strip()
+    print("Extraction des sorts: %s" % u['URL'])
+    
+    if u['list']:
+        for el in parsed_html.children:
+            if el.name == "ul":
+                listSorts += el.find_all('li')
+    else:
+        listSorts += parsed_html.find_all('li')
+
+    liste = []
+
+    # itération sur chaque page
+    for l in listSorts:
+      
+        sort = {}
         
-        for s in attr.next_siblings:
-            #print "%s %s" % (key,s.name)
-            if s.name == 'b' or  s.name == 'br':
-                break
-            elif s.string:
-                text += s.string
+        element = l.find_next('a')
+        title = element.get('title')
+        link  = element.get('href')
 
-        # convertir les propriétés qui sont similaires
-        if "cible" in key.lower() or "effet" in key.lower() or "cible" in key.lower() or "zone" in key.lower():
-            key = "Cible ou zone d'effet"
-        key = key.replace("’","'")
-
-        if key in FIELDS:
-            sort[key]=text.strip()
-            descr = s.next_siblings
-            text = ""
+        if "pagelink" not in element.attrs['class']:
+            print("Skipping unkown link: %s" % link)
+            continue
+        
+        linkText = element.text
+        restText = l.text[len(linkText):]
+        
+        source = "MJ"
+        source_search = re.search('\(([a-zA-Z-]+?)\)', restText, re.IGNORECASE)
+        if source_search:
+            source = getValidSource(source_search.group(1), False)
+        
+        print("Sort %s (%s)" % (title, source))
+        pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
+        
+        if pageURL in visited:
+          continue
+        
+        visited.append(pageURL)
+        
+        sort[u'Nom']=title
+        sort[u'Référence']=pageURL.lower()
+        sort[u'Source']=source
+        
+        if MOCK_SORT:
+            content = BeautifulSoup(open(MOCK_SORT),features="lxml").body.find(id='PageContentDiv')
         else:
-            print("- Skipping unknown property %s" % key)
+            content = BeautifulSoup(urllib.request.urlopen(pageURL).read(),features="lxml").body.find(id='PageContentDiv')
+        
+        # lire les attributs
+        text = ""
+        for attr in content.find_all('b'):
+            key = attr.text.strip()
+            
+            for s in attr.next_siblings:
+                #print "%s %s" % (key,s.name)
+                if s.name == 'b' or  s.name == 'br':
+                    break
+                elif s.string:
+                    text += s.string
 
-    # lire la description
-    text = extractText(descr)
-    sort['Description']=text.strip()
-    
-    # ajouter sort
-    liste.append(sort)
-    
-    #if MOCK_SORT:
-    #    break
+            # convertir les propriétés qui sont similaires
+            if "cible" in key.lower() or "effet" in key.lower() or "cible" in key.lower() or "zone" in key.lower():
+                key = "Cible ou zone d'effet"
+            key = key.replace("’","'")
 
-print("Fusion avec fichier YAML existant...")
+            if key in FIELDS:
+                sort[key]=text.strip()
+                descr = s.next_siblings
+                text = ""
+            else:
+                print("- Skipping unknown property %s" % key)
 
-HEADER = ""
+        # lire la description
+        text = extractText(descr)
+        sort['Description']=text.strip()
+        
+        # ajouter sort
+        liste.append(sort)
+        
+        #if MOCK_SORT:
+        #    break
 
-mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, liste, IGNORE)
+    print("Fusion avec fichier YAML existant...")
+
+    HEADER = ""
+
+    mergeYAML("../data/spells.yml", MATCH, FIELDS, HEADER, liste, IGNORE)
