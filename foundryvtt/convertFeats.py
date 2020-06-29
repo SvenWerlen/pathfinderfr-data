@@ -17,6 +17,8 @@ with open("../data/dons.yml", 'r') as stream:
         print(exc)
 
 buffs = {}
+buffsTemp = {}
+
 with open('data/buffs-feats.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile)
     idx = -1
@@ -24,17 +26,21 @@ with open('data/buffs-feats.csv', 'r') as csvfile:
         idx+=1
         if idx == 0:
             continue
-        
         bList = []
-        if row[0] and row[4]:
-          bList.append(createChange(row[4], row[1], row[2], row[3]))
-        if row[0] and row[8]:
-          bList.append(createChange(row[8], row[5], row[6], row[7]))
+        if row[0] and row[5]:
+          bList.append(createChange(row[5], row[2], row[3], row[4]))
+        if row[0] and row[9]:
+          bList.append(createChange(row[9], row[6], row[7], row[8]))
         if len(bList) > 0:
-          buffs[row[0]] = bList
+          if row[1] == "TRUE":
+            buffsTemp[row[0]] = bList
+          else:
+            buffs[row[0]] = bList
 
 
 list = []
+listBuffs = []
+
 duplicates = []
 for d in data:
   if d['Nom'] in duplicates:
@@ -122,7 +128,6 @@ for d in data:
     "flags": {}
   }
   
-  
   category = d['Catégorie'].lower() if 'Catégorie' in d else '-',
   if "équipe" in category:
     el["img"] = "systems/pf1/icons/feats/quick-draw.jpg"
@@ -138,9 +143,30 @@ for d in data:
     el["img"] = "systems/pf1/icons/feats/improved-two-weapon-fighting.jpg"
   else:
     el["img"] = "systems/pf1/icons/feats/athletic.jpg"
+    
+  # Independent buff
+  if d['Nom'] in buffsTemp:
+    elBuff = {
+      "name":  el['name'],
+      "type": "buff",
+      "data": {
+        "description": {
+          "value": el['data']['description']['value'],
+        },
+        "changes": buffsTemp[el['name']],
+        "buffType": "temp",
+        "active": False
+      },
+      "img": el["img"],
+    }
+    listBuffs.append(elBuff)        
   
   list.append(el)
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/feats.json", "w")
 outFile.write(json.dumps(list, indent=3))
+
+# écrire le résultat dans le fichier d'origine
+outFile = open("data/featsBuffs.json", "w")
+outFile.write(json.dumps(listBuffs, indent=3))

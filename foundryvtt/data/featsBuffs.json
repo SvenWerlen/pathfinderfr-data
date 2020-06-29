@@ -1,0 +1,30 @@
+[
+   {
+      "name": "Acrobate des corniches",
+      "type": "buff",
+      "data": {
+         "description": {
+            "value": "<p><i> </i></p><p><b>Pr\u00e9requis: </b>nain, Dex 13, montagnard ou stabilit\u00e9 comme trait racial.<p/><p><b>Avantage: </b>Le personnage peut se d\u00e9placer \u00e0 sa vitesse maximale quand il utilise Acrobaties pour garder l\u2019\u00e9quilibre sur une surface \u00e9troite. De plus, il b\u00e9n\u00e9ficie d\u2019un bonus de +4 aux tests d\u2019Escalade pour se rattraper ou rattraper une autre cr\u00e9ature en cas de chute. Il gagne aussi un bonus de +4 aux jets de sauvegarde contre les effets susceptibles de le faire tomber (comme un tremblement de terre). Ce bonus ne s\u2019applique pas au DMD contre les tentatives de bousculade ou de croc-en-jambe.<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acrobate%20des%20corniches.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "changes": [
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.clm",
+               "modifier": "competence"
+            },
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows",
+               "modifier": "competence"
+            }
+         ],
+         "buffType": "temp",
+         "active": false
+      },
+      "img": "systems/pf1/icons/feats/athletic.jpg"
+   }
+]
