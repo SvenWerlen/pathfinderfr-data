@@ -13,7 +13,7 @@ print("Opening and parsing file...")
 #with open("../data/bestiaire-mini.yml", 'r') as stream:
 with open("../data/bestiaire.yml", 'r') as stream:
     try:
-        data = yaml.load(stream)
+        data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 print("File parsed!")

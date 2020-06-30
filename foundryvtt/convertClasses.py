@@ -11,9 +11,11 @@ import math
 data = None
 with open("../data/classes.yml", 'r') as stream:
     try:
-        data = yaml.load(stream)
+        data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
+
+img = json.load(open('data/classes-img.json', 'r'))
 
 #
 # retourne True si c'est une compétence de classe
@@ -152,7 +154,7 @@ for c in data:
         },
         'sort': 100001,
         'flags':  {},
-        #'img': "modules/pf1-fr/icons/items/weapons/throwingknives.jpg"
+        "img": img[c['Nom']] if c['Nom'] in img and "pf1-fr" not in img[c['Nom']] else "icons/svg/mystery-man.svg"
     }
     list.append(el)
 

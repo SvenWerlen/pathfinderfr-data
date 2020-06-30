@@ -10,7 +10,7 @@ import re
 data = None
 with open("../data/spells.yml", 'r') as stream:
     try:
-        data = yaml.load(stream)
+        data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
@@ -142,7 +142,7 @@ def getComponentsValue(comp):
       
 
 SCHOOLS = { 'abjuration': 'abj', 'divination': 'div', 'enchantement': 'enc', 'évocation': 'evo', 'illusion': 'ill', 
-           'invocation': 'con', 'nécromancie': 'nec', 'transmutation': 'trs', 'universel': 'uni' }
+           'invocation': 'con', 'nécromancie': 'nec', 'transmutation': 'trs', 'universel': 'uni', 'ultimate': 'trs' }
 
 list = []
 duplicates = []

@@ -1,5 +1,33 @@
 [
    {
+      "name": "Balancement du serpent",
+      "type": "buff",
+      "data": {
+         "description": {
+            "value": "<p><i> Bonus pour ne pas tomber \u00e0 terre, test de Psychologie pour confirmer un critique</i></p><p><b>Pr\u00e9requis: </b>Science du combat \u00e0 mains nues, \u00c9cole du serpent, 3 rangs en Acrobaties , 6 rangs en Psychologie<p/><p><b>Avantage: </b>Le personnage gagne un bonus de +4 au DMD contre les man\u0153uvres de croc-en-jambe et aux tests d\u2019Acrobaties et aux Jets de sauvegarde pour \u00e9viter de tomber.\n\nTant qu\u2019il utilise cette \u00e9cole, quand il menace de faire un coup critique \u00e0 mains nues, il peut faire un test de Psychologie pour le confirmer, au lieu d\u2019un jet d\u2019attaque. Quand il r\u00e9ussit un coup critique \u00e0 mains nues, il peut d\u00e9penser une action imm\u00e9diate pour faire un pas de 1,50 m (1 c), m\u00eame s\u2019il a d\u00e9j\u00e0 boug\u00e9 pendant le round<p/><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balancement%20du%20serpent.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "changes": [
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "misc",
+               "subTarget": "cmd",
+               "modifier": "competence"
+            },
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "skill",
+               "subTarget": "skill.acr",
+               "modifier": "competence"
+            }
+         ],
+         "buffType": "temp",
+         "active": false
+      },
+      "img": "systems/pf1/icons/feats/athletic.jpg"
+   },
+   {
       "name": "Acrobate des corniches",
       "type": "buff",
       "data": {

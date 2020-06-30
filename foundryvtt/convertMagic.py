@@ -10,7 +10,7 @@ import re
 data = None
 with open("../data/magic.yml", 'r') as stream:
     try:
-        data = yaml.load(stream)
+        data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 

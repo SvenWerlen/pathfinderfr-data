@@ -9,7 +9,7 @@ import sys
 data = None
 with open("../data/classfeatures.yml", 'r') as stream:
     try:
-        data = yaml.load(stream)
+        data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
 
