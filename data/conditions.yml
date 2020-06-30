@@ -29,9 +29,9 @@
     malus de -2 à ses jets d’attaque et à ses manœuvres de combat, à l’exception des
     mouvements faits pour agripper ou se libérer d’une prise. D'autre part, une créature
     agrippée ne peut entreprendre aucune action qui nécessite l'utilisation de ses
-    deux mains. S’il tente de lancer un sort, le personnage doit réussir un test de
-    Concentration (DD 10 + le BMO de son adversaire + le niveau du sort). Il lui est
-    de plus impossible de porter des attaques d’opportunité.
+    deux mains. S’il tente de lancer un sort ou un pouvoir magique, le personnage
+    doit réussir un test de Concentration (DD 10 + le BMO de son adversaire + le niveau
+    du sort). Il lui est de plus impossible de porter des attaques d’opportunité.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Agrippé_1
   
 - Nom: Assourdi
@@ -62,7 +62,7 @@
   Source: MJ
   Description: "Lorsqu’un objet subit des dégâts supérieurs à la moitié de ses points\
     \ de vie, il est brisé et n’est plus aussi efficace dans sa tâche. Appliquez les\
-    \ effets suivants.\n• Si c’est une arme, toute attaque faite par son intermédiaire\
+    \ effets suivants. \n• Si c’est une arme, toute attaque faite par son intermédiaire\
     \ subira un malus de -2 aux jets d’attaque et de dégâts. Un coup critique n’est\
     \ possible que sur un 20 naturel, et il n’infligera que le double des dommages\
     \ s’il est confirmé.\n• Si c’est une armure ou un bouclier, le bonus conféré à\
@@ -71,7 +71,7 @@
     \ effectué avec lui subit un malus de -2.\n• Si c’est une baguette ou un bâton,\
     \ il consomme le double de charges.\n• S’il n’appartient à aucune des catégories\
     \ précédentes, cela n’a aucun effet sur son utilisation, mais il perd 25% de sa\
-    \ valeur.\n\nSi c’est un objet magique, seuls les sorts réparation ou réparation\
+    \ valeur.\n\n Si c’est un objet magique, seuls les sorts réparation ou réparation\
     \ intégrale pourront lui rendre son intégrité, et ce uniquement si le niveau de\
     \ lanceur de sorts du personnage qui souhaite le réparer est égal ou supérieur\
     \ à celui de l’objet. Cet état préjudiciable disparaît lorsque l’objet retrouve\
@@ -89,7 +89,7 @@
     de dégâts non-létaux qu’il a au même moment de points de vie. L’activité d’un
     personnage chancelant est restreinte à une action simple ou de mouvement chaque
     round (mais ni les deux, ni une action complexe). Il peut cependant entreprendre
-    des actions rapides et instantanées.
+    des actions rapides, libres et immédiates.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant_5
   
 - Nom: Confus
@@ -241,10 +241,10 @@
     tenter de se libérer en utilisant un test de manœuvre de combat ou la compétence
     Évasion, ses actions sont également limitées. Elle ne peut lancer aucun sort qui
     exige une composante somatique ou matérielle, mais elle est capable de parler
-    ou d’entreprendre des actions mentales. Si elle veut lancer un sort, il lui faut
-    réussir un test de Concentration (DD 10 + BMO de son adversaire + niveau du sort)
-    ou le sort est perdu. Immobilisé est une version plus puissante d’agrippé et leurs
-    effets ne se cumulent pas.
+    ou d’entreprendre des actions mentales. Si elle veut lancer un sort ou utiliser
+    un pouvoir magique, il lui faut réussir un test de Concentration (DD 10 + BMO
+    de son adversaire + niveau du sort) ou le sort est perdu. Immobilisé est une version
+    plus puissante d’agrippé et leurs effets ne se cumulent pas.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashxPathfinder-RPG.lutte.ashx
   
 - Nom: Inconscient
@@ -327,11 +327,14 @@
   
 - Nom: Paralysé
   Source: MJ
-  Description: Incapable de bouger ou d’agir, figé sur place, le personnage a une
+  Description: 'Incapable de bouger ou d’agir, figé sur place, le personnage a une
     valeur effective de Force et de Dextérité de 0, mais peut tenter des actions mentales.
     Une créature en vol à ce moment ne peut plus battre des ailes et tombe. Un personnage
     qui nage peut se noyer. Il est possible d’entrer dans le même espace qu’une créature
     paralysée, alliée ou non, mais le traverser compte comme deux cases de déplacement.
+
+
+    Un personnage paralysé est sans défense.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Paralysé_25
   
 - Nom: Pétrifié

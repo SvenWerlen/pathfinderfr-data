@@ -38,7 +38,7 @@ descr = ""
 
 for s in section:
     if s.name == 'h2':
-        condition['Description'] = descr.replace('\n','').strip()
+        condition['Description'] = descr.strip()
         liste.append(condition)
         
         # avantages
@@ -65,7 +65,7 @@ for s in section:
         descr += html2text(s)
 
 ## last element
-condition['Description'] = descr.replace('\n','').strip()
+condition['Description'] = descr.strip()
 liste.append(condition)
             
 print("Fusion avec fichier YAML existant...")

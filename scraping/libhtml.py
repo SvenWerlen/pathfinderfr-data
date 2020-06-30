@@ -107,7 +107,7 @@ def html2text(htmlEl, skipDiv = True):
         text = ""
         for li in htmlEl.find_all('li'):
             text += "• " + li.text + "\n"
-        return text
+        return "\n" + text + "\n"
     elif htmlEl.name == "td":
         text = ""
         for c in htmlEl.children:
