@@ -100,7 +100,7 @@ TARGETS = {
     "Vit. Vol": "flySpeed"
   }},
   "Div.": { 'id': "misc", "subtargets": {
-    "BBA": "cmb",
+    "BMO": "cmb",
     "DMD": "cmd",
     "Initiative": "init",
     "Points de vie": "mhp",
