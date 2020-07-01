@@ -52,7 +52,6 @@ with open('data/buffs-feats.csv', 'r') as csvfile:
         if len(notesList) > 0:
           buffNotes[name] = notesList
 
-print(buffNotes)
 
 list = []
 #listBuffs = []
