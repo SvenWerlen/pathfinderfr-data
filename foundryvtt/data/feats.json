@@ -213,7 +213,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+rounds de rage si r\u00e9ussite contre <b>sort profane</b> \u00e0 d\u00e9g\u00e2ts",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -288,7 +294,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "sp\u00e9cial pour <b>contondant</b> et attaque sournoise non-l\u00e9tale",
+               "target": "attacks",
+               "subTarget": "effect"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -1338,7 +1350,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 contre <b>sorts</b> et <b>pourvoirs magiques</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -5366,7 +5384,9 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            null
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -8891,7 +8911,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 pour <b>identifier/contrer les sorts adverses</b>",
+               "target": "skill",
+               "subTarget": "skill.spl"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -9266,7 +9292,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 contre les <b>effets rendant fi\u00e9vreux/naus\u00e9eux & poison ing\u00e9r\u00e9</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            },
+            {
+               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>",
+               "target": "skill",
+               "subTarget": "skill.sur"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -20756,7 +20793,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 jet d'attaque si r\u00e9ussite <b>traverse zone contr\u00f4le</b>",
+               "target": "skill",
+               "subTarget": "skill.acr"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -60005,7 +60048,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 effets de type <b>air</b> ou <b>\u00e9lectricit\u00e9</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -63696,7 +63745,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 au corps-\u00e0-corps lorsque <b>combat sur la d\u00e9fensive</b>",
+               "target": "misc",
+               "subTarget": "ac"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -67007,7 +67062,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "r\u00e9sultat de <b>l'alli\u00e9</b> (puis au sol/chancelant)",
+               "target": "savingThrows",
+               "subTarget": "fort"
+            },
+            {
+               "text": "+2 CA <b>\u00e0 distance</b> si alli\u00e9 porte bouclier",
+               "target": "misc",
+               "subTarget": "ac"
+            }
+         ],
          "featType": "feat",
          "requirements": "\u00e9quipe",
          "attack": {
@@ -84910,7 +84976,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 contre sorts et effets <b>n\u00e9gatifs/absorption/malus</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -88077,7 +88149,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+1 contre les <b>sorts de sa discipline</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -88152,7 +88230,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 contre effets <b>mort/absorption/possession</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            },
+            {
+               "text": "d\u00e9river l'effet si rate jet contre <b>mort/possession/niveau n\u00e9g.</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -97327,7 +97416,7 @@
          },
          "contextNotes": [
             {
-               "text": "+4 pour se rattraper ou rattraper une autre cr\u00e9ature <b>en cas de chute</b>",
+               "text": "+4 pour se rattraper ou rattraper qqun <b>en cas de chute</b>",
                "target": "skill",
                "subTarget": "skill.clm"
             }

@@ -130,23 +130,67 @@ TYPES = {
   "Taille": "size"
 }
 
+TARGETS_CONTEXT = {
+  "CA": { 'id': "misc", "subtargets": {
+    "Générique": "ac",
+  }},
+  "Jets d'attaque": { 'id': "attacks", "subtargets": {
+    "Tous": "attack",
+  }},
+  "Dégâts": { 'id': "attacks","subtargets": {
+    "Tous": "effect",
+    "Dégâts de l'arme": "effect",
+    "Dégâts du sort": "effect"
+  }},
+  "Jets de sauvegarde": TARGETS["Jets de sauvegarde"],
+  "Compétences": TARGETS["Compétences"],
+  "Compétence spécifique": TARGETS["Compétence spécifique"],
+  "Tests de caractéristique": TARGETS["Tests de caractéristique"],
+  "Div.": { 'id': "misc", "subtargets": {
+    "BBA": "cmb",
+    "DMD": "cmd",
+  }}
+}
+
+TYPES = {
+  "Non-typé": "untyped",
+  "Alchimique": "alchemical",
+  "Altération": "enh",
+  "Altération à l'armure": "enh",
+  "Altération à l'armure naturelle": "enh",
+  "Altération au bouclier": "enh",
+  "Aptitude": "competence",
+  "Armure": "base",
+  "Armure naturelle": "base",
+  "Bouclier": "base",
+  "Chance": "luck",
+  "Esquive": "dodge",
+  "Inné": "inherent",
+  "Intuition": "insight",
+  "Moral": "morale",
+  "Parade": "deflection",
+  "Résistance": "resist",
+  "Taille": "size"
+}
+
+
 
 #
 # cette fonction crée un nouveau "buff" basé sur la structure de pf1
 #
-def createChange(formula, target, subtarget, type):
+def createChange(name, formula, target, subtarget, type):
   if not target in TARGETS:
-    print("Invalid target '%s'" % target)
+    print("Invalid target '%s' for %s" % (target, name))
     exit(1)
   target = TARGETS[target]
   
   if not subtarget in target["subtargets"]:
-    print("Invalid subtarget '%s'" % subtarget)
+    print("Invalid subtarget '%s' for %s" % (subtarget, name))
     exit(1)
   subtarget = target["subtargets"][subtarget]
   
   if not type in TYPES:
-    print("Invalid bonus type '%s'" % type)
+    print("Invalid bonus type '%s' for %s" % (type, name))
     exit(1)
   type = TYPES[type]
   
@@ -163,16 +207,16 @@ def createChange(formula, target, subtarget, type):
 #
 # cette fonction crée un nouveau "buff" conditionnel basé sur la structure de pf1
 #
-def createContextNotes(notes, target, subtarget):
+def createContextNotes(name, notes, target, subtarget):
   
-  if not target in TARGETS:
-    print("Invalid target '%s'" % target)
-    exit(1)
-  target = TARGETS[target]
+  if not target in TARGETS_CONTEXT:
+    print("Invalid target '%s' for %s" % (target, name))
+    return None
+  target = TARGETS_CONTEXT[target]
   
   if not subtarget in target["subtargets"]:
-    print("Invalid subtarget '%s'" % subtarget)
-    exit(1)
+    print("Invalid subtarget '%s' for %s" % (subtarget, name))
+    return None
   subtarget = target["subtargets"][subtarget]
   
   contextNotes = {

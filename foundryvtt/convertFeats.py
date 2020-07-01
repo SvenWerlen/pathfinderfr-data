@@ -42,9 +42,11 @@ with open('data/buffs-feats.csv', 'r') as csvfile:
           notes     = row[col+4]
           if name and target:
             if notes:
-              notesList.append(createContextNotes(notes, target, subtarget))
+              notesList.append(createContextNotes(name, notes, target, subtarget))
             else:
-              buffsList.append(createChange(formula, target, subtarget, type))
+              change = createChange(name, formula, target, subtarget, type)
+              if change:
+                buffsList.append(change)
           
         
         if len(buffsList) > 0:
