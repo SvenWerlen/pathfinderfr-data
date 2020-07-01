@@ -65271,7 +65271,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 contre les man\u0153uvres de <b>croc-en-jambe</b>",
+               "target": "misc",
+               "subTarget": "cmd"
+            },
+            {
+               "text": "+4 pour <b>\u00e9viter de tomber</b>",
+               "target": "skill",
+               "subTarget": "skill.acr"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat, \u00e9cole",
          "attack": {
@@ -84974,7 +84985,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 contre les <b>effets \u00e9lectriques</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            },
+            {
+               "text": "malus <b>dus au vent</b> r\u00e9duits de moiti\u00e9",
+               "target": "skill",
+               "subTarget": "skill.per"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -85049,7 +85071,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "contre les <b>effets de mort</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -97280,7 +97308,15 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows",
+               "modifier": "competence"
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -97289,7 +97325,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 pour se rattraper ou rattraper une autre cr\u00e9ature <b>en cas de chute</b>",
+               "target": "skill",
+               "subTarget": "skill.clm"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {

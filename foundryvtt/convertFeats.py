@@ -9,6 +9,9 @@ import csv
 
 from libBuffs import *
 
+COL = 5 # number of columns in sheet for 1 feat
+NUM = 3 # number of buffs
+
 data = None
 with open("../data/dons.yml", 'r') as stream:
     try:
@@ -17,7 +20,7 @@ with open("../data/dons.yml", 'r') as stream:
         print(exc)
 
 buffs = {}
-buffsTemp = {}
+buffNotes = {}
 
 with open('data/buffs-feats.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile)
@@ -26,20 +29,33 @@ with open('data/buffs-feats.csv', 'r') as csvfile:
         idx+=1
         if idx == 0:
             continue
-        bList = []
-        if row[0] and row[5]:
-          bList.append(createChange(row[5], row[2], row[3], row[4]))
-        if row[0] and row[9]:
-          bList.append(createChange(row[9], row[6], row[7], row[8]))
-        if len(bList) > 0:
-          if row[1] == "TRUE":
-            buffsTemp[row[0]] = bList
-          else:
-            buffs[row[0]] = bList
+        buffsList = []
+        notesList = []
+        
+        name      = row[0]
+        for c in range(0, NUM):
+          col = 1 + c*COL
+          target    = row[col]
+          subtarget = row[col+1]
+          type      = row[col+2]
+          formula   = row[col+3]
+          notes     = row[col+4]
+          if name and target:
+            if notes:
+              notesList.append(createContextNotes(notes, target, subtarget))
+            else:
+              buffsList.append(createChange(formula, target, subtarget, type))
+          
+        
+        if len(buffsList) > 0:
+          buffs[name] = buffsList
+        if len(notesList) > 0:
+          buffNotes[name] = notesList
 
+print(buffNotes)
 
 list = []
-listBuffs = []
+#listBuffs = []
 
 duplicates = []
 for d in data:
@@ -117,7 +133,7 @@ for d in data:
           "oneWis": False,
           "oneCha": False
       },
-      "contextNotes": [],
+      "contextNotes": buffNotes[d['Nom']] if d['Nom'] in buffNotes else [],
       "featType": "feat",
       "requirements": d['Catégorie'] if 'Catégorie' in d else '-',
       "attack": {
@@ -145,21 +161,21 @@ for d in data:
     el["img"] = "systems/pf1/icons/feats/athletic.jpg"
     
   # Independent buff
-  if d['Nom'] in buffsTemp:
-    elBuff = {
-      "name":  el['name'],
-      "type": "buff",
-      "data": {
-        "description": {
-          "value": el['data']['description']['value'],
-        },
-        "changes": buffsTemp[el['name']],
-        "buffType": "temp",
-        "active": False
-      },
-      "img": el["img"],
-    }
-    listBuffs.append(elBuff)        
+  #if d['Nom'] in buffsTemp:
+    #elBuff = {
+      #"name":  el['name'],
+      #"type": "buff",
+      #"data": {
+        #"description": {
+          #"value": el['data']['description']['value'],
+        #},
+        #"changes": buffsTemp[el['name']],
+        #"buffType": "temp",
+        #"active": False
+      #},
+      #"img": el["img"],
+    #}
+    #listBuffs.append(elBuff)        
   
   list.append(el)
 
@@ -168,5 +184,5 @@ outFile = open("data/feats.json", "w")
 outFile.write(json.dumps(list, indent=3))
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("data/featsBuffs.json", "w")
-outFile.write(json.dumps(listBuffs, indent=3))
+#outFile = open("data/featsBuffs.json", "w")
+#outFile.write(json.dumps(listBuffs, indent=3))

@@ -157,4 +157,31 @@ def createChange(formula, target, subtarget, type):
     'subTarget': subtarget,
     'modifier': type
   }
+  
   return changes;
+
+#
+# cette fonction crée un nouveau "buff" conditionnel basé sur la structure de pf1
+#
+def createContextNotes(notes, target, subtarget):
+  
+  if not target in TARGETS:
+    print("Invalid target '%s'" % target)
+    exit(1)
+  target = TARGETS[target]
+  
+  if not subtarget in target["subtargets"]:
+    print("Invalid subtarget '%s'" % subtarget)
+    exit(1)
+  subtarget = target["subtargets"][subtarget]
+  
+  contextNotes = {
+    'text': notes,
+    'target': target['id'],
+    'subTarget': subtarget
+  }
+  
+  return contextNotes
+
+
+

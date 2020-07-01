@@ -20,6 +20,13 @@
                "target": "skill",
                "subTarget": "skill.acr",
                "modifier": "competence"
+            },
+            {
+               "formula": "4",
+               "priority": 0,
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows",
+               "modifier": "competence"
             }
          ],
          "buffType": "temp",
