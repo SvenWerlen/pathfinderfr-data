@@ -133,9 +133,14 @@ TYPES = {
 TARGETS_CONTEXT = {
   "CA": { 'id': "misc", "subtargets": {
     "Générique": "ac",
+    "Armure": "ac",
+    "Bouclier": "ac",
+    "Armure naturelle": "ac"
   }},
   "Jets d'attaque": { 'id': "attacks", "subtargets": {
     "Tous": "attack",
+    "Corps-à-corps": "attack",
+    "Distance": "attack"
   }},
   "Dégâts": { 'id': "attacks","subtargets": {
     "Tous": "effect",
@@ -147,7 +152,7 @@ TARGETS_CONTEXT = {
   "Compétence spécifique": TARGETS["Compétence spécifique"],
   "Tests de caractéristique": TARGETS["Tests de caractéristique"],
   "Div.": { 'id': "misc", "subtargets": {
-    "BBA": "cmb",
+    "BMO": "cmb",
     "DMD": "cmd",
   }}
 }
@@ -181,11 +186,13 @@ TYPES = {
 def createChange(name, formula, target, subtarget, type):
   if not target in TARGETS:
     print("Invalid target '%s' for %s" % (target, name))
+    print("Please fix!")
     exit(1)
   target = TARGETS[target]
   
   if not subtarget in target["subtargets"]:
     print("Invalid subtarget '%s' for %s" % (subtarget, name))
+    print("Please fix!")
     exit(1)
   subtarget = target["subtargets"][subtarget]
   
@@ -211,19 +218,25 @@ def createContextNotes(name, notes, target, subtarget):
   
   if not target in TARGETS_CONTEXT:
     print("Invalid target '%s' for %s" % (target, name))
-    return None
-  target = TARGETS_CONTEXT[target]
+    target = None
+  else:
+    target = TARGETS_CONTEXT[target]
   
-  if not subtarget in target["subtargets"]:
+  if not target or not subtarget in target["subtargets"]:
     print("Invalid subtarget '%s' for %s" % (subtarget, name))
-    return None
-  subtarget = target["subtargets"][subtarget]
+    target = None
+    subtarget = None
+  else:
+    subtarget = target["subtargets"][subtarget]
   
   contextNotes = {
-    'text': notes,
-    'target': target['id'],
-    'subTarget': subtarget
+    'text': notes
   }
+  
+  if target:
+    contextNotes['target'] = target['id']
+  if subtarget:
+    contextNotes['subTarget'] = subtarget
   
   return contextNotes
 

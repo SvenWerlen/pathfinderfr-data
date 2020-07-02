@@ -21,6 +21,8 @@ with open("../data/dons.yml", 'r') as stream:
 
 buffs = {}
 buffNotes = {}
+countBuffs = 0
+countNotes = 0
 
 with open('data/buffs-feats.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile)
@@ -51,8 +53,12 @@ with open('data/buffs-feats.csv', 'r') as csvfile:
         
         if len(buffsList) > 0:
           buffs[name] = buffsList
+          countBuffs += 1
         if len(notesList) > 0:
           buffNotes[name] = notesList
+          countNotes += 1
+          
+print("#buffs/notes = %d/%d" % (countBuffs, countNotes))
 
 
 list = []
