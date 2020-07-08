@@ -606,7 +606,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "pas chass\u00e9/porte dimensionnelle possible apr\u00e8s <b>attaque \u00e0 outrance</b>",
+               "target": "attacks",
+               "subTarget": "attack"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -906,7 +912,11 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "consid\u00e8re 3 cases de <b>terrain difficile comme ordinaire</b>"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -1056,7 +1066,11 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "peut se d\u00e9placer normalement dans <b>la v\u00e9g\u00e9tation enchant\u00e9e</b>"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -50528,7 +50542,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "croc-en-jambe possible contre <b>g\u00e9ant TG max</b>",
+               "target": "misc",
+               "subTarget": "cmb"
+            },
+            {
+               "text": "+2 contre <b>g\u00e9ant</b>",
+               "target": "attacks",
+               "subTarget": "effect"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -52628,7 +52653,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "peut d\u00e9sarmer <b>\u00e0 distance</b>",
+               "target": "misc",
+               "subTarget": "cmb"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -54758,7 +54789,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+4 contre <b>toile d'araign\u00e9e et similaire</b>",
+               "target": "savingThrows",
+               "subTarget": "allSavingThrows"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -57850,7 +57887,14 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "creuse \u00e0 1/2 sa vitesse de base <b>sans laisser de trace</b>"
+            },
+            {
+               "text": "ne peut pas creuser dans <b>la roche solide</b>"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -65721,7 +65765,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+1d6 de saignement si <b>\u00e9cole du sanglier utilis\u00e9</b>",
+               "target": "attacks",
+               "subTarget": "effect"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -67238,7 +67288,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "peut faire 1 pas de placement si <b>\u00e9cole du boxeur utilis\u00e9e</b>",
+               "target": "attacks",
+               "subTarget": "attack"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat, \u00e9cole",
          "attack": {
@@ -76857,7 +76913,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+ la plus haute alt\u00e9ration d'arme si <b>arme double / deux armes</b>",
+               "target": "misc",
+               "subTarget": "ac"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -96302,7 +96364,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>",
+               "target": "savingThrows",
+               "subTarget": "fort"
+            },
+            {
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>",
+               "target": "misc",
+               "subTarget": "cmd"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -98513,7 +98586,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "text": "+2 contre <b>orques</b>",
+               "target": "attacks",
+               "subTarget": "attack"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
