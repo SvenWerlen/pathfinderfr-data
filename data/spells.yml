@@ -289,7 +289,7 @@
   Résistance à la magie: oui
   Description: "Le personnage interdit à sa cible d’entreprendre une action particulière\
     \ et elle fait de son mieux pour obéir. Il peut lui interdire les actions qui\
-    \ correspondent à l’une des options suivantes. • Attaque. La cible ne peut pas\
+    \ correspondent à l’une des options suivantes. \n• Attaque. La cible ne peut pas\
     \ faire la moindre action qui implique un jet d’attaque ni utiliser un sort ou\
     \ un pouvoir qui vise un ennemi ou une zone qui comprend un ennemi.\n• Communiquer.\
     \ La cible ne peut pas entreprendre la moindre action qui lui permette de communiquer\
@@ -304,7 +304,7 @@
     \ zone. Elle ne résiste pas si quelqu’un d’autre essaye de la déplacer (on peut\
     \ donc la porter ou la tirer ou la faire flotter sur un radeau) mais elle ne peut\
     \ pas tenter de se déplacer volontairement (et ne peut pas indiquer à sa monture\
-    \ de bouger).\n La cible peut entreprendre librement toute action qui n’a pas\
+    \ de bouger).\n\n La cible peut entreprendre librement toute action qui n’a pas\
     \ été interdite par le lanceur de sorts. Par exemple, une cible qui a interdiction\
     \ de bouger peut lancer des sorts, attaquer ou crier à l’aide."
   Source: AM
@@ -324,7 +324,7 @@
   Description: "Le personnage interdit à ses cibles d’entreprendre une action particulière\
     \ et elles font de leur mieux pour obéir. Toutes les créatures affectées sont\
     \ soumises à la même interdiction. Il peut leur interdire les actions qui correspondent\
-    \ à l’une des options suivantes. • Attaque. La cible ne peut pas faire la moindre\
+    \ à l’une des options suivantes. \n• Attaque. La cible ne peut pas faire la moindre\
     \ action qui implique un jet d’attaque ni utiliser un sort ou un pouvoir qui vise\
     \ un ennemi ou une zone qui comprend un ennemi.\n• Communiquer. La cible ne peut\
     \ pas entreprendre la moindre action qui lui permette de communiquer avec qui\
@@ -339,7 +339,7 @@
     \ ne résiste pas si quelqu’un d’autre essaye de la déplacer (on peut donc la porter\
     \ ou la tirer ou la faire flotter sur un radeau) mais elle ne peut pas tenter\
     \ de se déplacer volontairement (et ne peut pas indiquer à sa monture de bouger).\n\
-    \ Les cibles peuvent entreprendre librement toute action qui n’a pas été interdite\
+    \n Les cibles peuvent entreprendre librement toute action qui n’a pas été interdite\
     \ par le lanceur de sorts. Par exemple, une cible qui a interdiction de bouger\
     \ peut lancer des sorts, attaquer ou crier à l’aide."
   Source: AM
@@ -1041,11 +1041,11 @@
   Résistance à la magie: oui (Objet)
   Description: "Quand le sort est lancé, le piège affecté voit un de ses aspects,\
     \ choisi au moment du lancement, amélioré. Le lanceur peut choisir de lui conférer\
-    \ n'importe quel de ces bonus (chacun augmentant le FP du piège de 1) : • Augmente\
+    \ n'importe quel de ces bonus (chacun augmentant le FP du piège de 1) : \n• Augmente\
     \ de +5 le DD des jets de Perception pour repérer le piège.\n• Augmente de +5\
     \ le DD des jets de Sabotage pour désamorcer le piège\n• Accorde un bonus de +2\
-    \ aux jets d'attaque ou au DD des effets du piège.\n Pour lancer ce sort, il faut\
-    \ être conscient de l'existence du piège et connaître sa localisation précise.\
+    \ aux jets d'attaque ou au DD des effets du piège.\n\n Pour lancer ce sort, il\
+    \ faut être conscient de l'existence du piège et connaître sa localisation précise.\
     \ Un seul bonus peut être appliqué à la fois, et si le sort est lancé sur un piège\
     \ déjà affecté par une amélioration des pièges, le bonus précédent est annulé."
   Source: MJ
@@ -1155,27 +1155,23 @@
   Composantes: V, G, M (un bout de la créature dont le personnage compte prendre
     l’apparence)
   Durée: 1 minute/niveau (T)
-  Description: 'Quand le personnage lance ce sort, il prend la forme de n’importe
-    quel mort-vivant tangible P ou M à condition qu’il ait une forme vaguement humanoïde
-    (comme une goule, un squelette ou un zombi). Il gagne une attaque de morsure (1d6
-    pour une forme M, 1d4 pour une P), deux attaques de griffe ou de coup (1d6 pour
-    une forme M, 1d4 pour une P) et la vision dans le noir à 18 mètres (12 c). Si
-    la forme choisie possède l’un des pouvoirs suivants, le personnage en dispose
-    également : escalade 9 m, vol 9 m (manœuvrabilité moyenne), nage 9 m, vision nocturne
-    et odorat.
-
-
-    Sous cette forme le personnage est détecté comme une créature morte-vivante (avec
-    détection des morts-vivants par exemple mais pas avec une magie qui révèle les
-    vraies formes comme vision lucide). Il est considéré comme un mort-vivant en ce
-    qui concerne la canalisation d’énergie, les sorts de soins, de blessure mais pas
-    les autres effets qui visent spécifiquement les morts-vivants ou réagissent différemment
-    sur eux (comme lumière brûlante). • Mort-vivant P. Si le personnage prend la forme
-    d’un mort-vivant P, il gagne un bonus de taille de +2 à la Dextérité et de +1
-    à l’armure naturelle.
-
-    • Mort-vivant M. Si le personnage prend la forme d’un mort-vivant M, il gagne
-    un bonus de taille de +2 à la Force et de +2 à l’armure naturelle.'
+  Description: "Quand le personnage lance ce sort, il prend la forme de n’importe\
+    \ quel mort-vivant tangible P ou M à condition qu’il ait une forme vaguement humanoïde\
+    \ (comme une goule, un squelette ou un zombi). Il gagne une attaque de morsure\
+    \ (1d6 pour une forme M, 1d4 pour une P), deux attaques de griffe ou de coup (1d6\
+    \ pour une forme M, 1d4 pour une P) et la vision dans le noir à 18 mètres (12\
+    \ c). Si la forme choisie possède l’un des pouvoirs suivants, le personnage en\
+    \ dispose également : escalade 9 m, vol 9 m (manœuvrabilité moyenne), nage 9 m,\
+    \ vision nocturne et odorat.\n\nSous cette forme le personnage est détecté comme\
+    \ une créature morte-vivante (avec détection des morts-vivants par exemple mais\
+    \ pas avec une magie qui révèle les vraies formes comme vision lucide). Il est\
+    \ considéré comme un mort-vivant en ce qui concerne la canalisation d’énergie,\
+    \ les sorts de soins, de blessure mais pas les autres effets qui visent spécifiquement\
+    \ les morts-vivants ou réagissent différemment sur eux (comme lumière brûlante).\
+    \ \n• Mort-vivant P. Si le personnage prend la forme d’un mort-vivant P, il gagne\
+    \ un bonus de taille de +2 à la Dextérité et de +1 à l’armure naturelle.\n• Mort-vivant\
+    \ M. Si le personnage prend la forme d’un mort-vivant M, il gagne un bonus de\
+    \ taille de +2 à la Force et de +2 à l’armure naturelle."
   Source: AM
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.anatomie%20morte-vivante%20i.ashx
   
@@ -1201,6 +1197,7 @@
     mentaux, l’étourdissement, la maladie, le poison et le sommeil. Si la forme est
     vulnérable à une attaque (comme la lumière du soleil), le personnage le devient
     aussi.
+
 
 
     • Mort-vivant TP. Si le personnage prend la forme d’un mort-vivant TP, il gagne
@@ -1238,6 +1235,7 @@
     gagne un bonus de +8 aux jets de sauvegarde contre les effets mentaux, l’étourdissement,
     la maladie, le poison et le sommeil. Si la forme est vulnérable à une attaque
     (comme la lumière du soleil), le personnage le devient aussi.
+
 
 
     • Mort-vivant Min. Si le personnage prend la forme d’un mort-vivant Min, il gagne
@@ -1283,6 +1281,7 @@
     contre les effets mentaux, l’étourdissement, la maladie, le poison et le sommeil.
     Si la forme est vulnérable à une attaque (comme la lumière du soleil), le personnage
     le devient aussi.
+
 
 
     • Mort-vivant TP. Si le personnage prend la forme d’un mort-vivant TP, il gagne
@@ -2850,7 +2849,7 @@
     \ de sa nouvelle apparence pour la durée du sort. Quand il lance aspect animal,\
     \ il choisit l’un des animaux de la liste et bénéficie des avantages associés.\
     \ Il ne peut avoir qu’un aspect animal ou aspect animal supérieur actif à la fois.\n\
-    \n• Gorille. Les bras du personnage deviennent aussi longs, flexibles et puissants\
+    \n\n• Gorille. Les bras du personnage deviennent aussi longs, flexibles et puissants\
     \ que ceux d’un primate. Les dés de dégâts qu’il inflige avec les attaques à mains\
     \ nues augmentent d’une catégorie et il gagne un bonus de compétence de +4 aux\
     \ tests de manœuvres offensives quand il agrippe quelqu’un ou le repositionne.\n\
@@ -2872,7 +2871,7 @@
     \ bonus de compétence de +2 aux tests de Discrétion, d’Escamotage et de Sabotage.\n\
     • Singe. Les mains et les bras du personnage deviennent aussi agiles que ceux\
     \ d’un singe. Il gagne un bonus de compétence de +4 aux tests d’Escalade et il\
-    \ peut lancer des objets comme s’il disposait du don Lancer improvisé.\n MYTHIQUE\
+    \ peut lancer des objets comme s’il disposait du don Lancer improvisé.\n\n MYTHIQUE\
     \ Le personnage gagne la vision nocturne, un bonus de taille de +2 à une valeur\
     \ de caractéristique physique de son choix et un bonus d’altération de +1 à son\
     \ armure naturelle. Par ailleurs, le personnage peut lancer la version non-mythique\
@@ -2893,6 +2892,7 @@
   Description: 'Ce sort fonctionne comme aspect animal mais le personnage peut prendre
     deux aspects à la fois ou rajouter un effet à l’animal dont il a pris l’aspect,
     comme indiqué plus bas.
+
 
 
     • Gorille. Le personnage gagne un bonus de compétence de +2 aux tests de Perception
@@ -3254,18 +3254,18 @@
     \ en secret, sauf si le MJ décide que la question est suffisamment simple pour\
     \ garantir un succès automatique (ou, au contraire, qu’elle est trop vague pour\
     \ qu’il soit possible d’obtenir une réponse). En cas de succès, le personnage\
-    \ reçoit l’une des réponses suivantes :\n\n• Fortune : l’action a de bonnes chances\
-    \ d’être bénéfique.\n• Péril : l’action aura des répercussions malheureuses.\n\
+    \ reçoit l’une des réponses suivantes :\n\n\n• Fortune : l’action a de bonnes\
+    \ chances d’être bénéfique.\n• Péril : l’action aura des répercussions malheureuses.\n\
     • Péril et fortune : les deux sont possibles.\n• Rien : dans le cas où l’action\
-    \ ne devrait pas avoir de conséquences favorables ou néfastes.\n Si le sort rate,\
-    \ le résultat est automatiquement « Rien ». Quand le prêtre obtient cette réponse,\
-    \ rien ne lui permet de savoir si elle est justifiée ou si son sort a échoué.\n\
-    \nAugure ne permet de voir l’avenir que dans la demi-heure suivante. Si quelque\
-    \ chose doit se produire ultérieurement, le sort ne peut de le révéler (les répercussions\
-    \ à long terme d’une action lui échappent systématiquement). Si le même prêtre\
-    \ lance plusieurs fois le sort concernant la même action, la réponse obtenue lors\
-    \ des augures successifs ne varie pas par rapport à la première (le résultat du\
-    \ jet de dé étant lui aussi toujours le même)."
+    \ ne devrait pas avoir de conséquences favorables ou néfastes.\n\n Si le sort\
+    \ rate, le résultat est automatiquement « Rien ». Quand le prêtre obtient cette\
+    \ réponse, rien ne lui permet de savoir si elle est justifiée ou si son sort a\
+    \ échoué.\n\nAugure ne permet de voir l’avenir que dans la demi-heure suivante.\
+    \ Si quelque chose doit se produire ultérieurement, le sort ne peut de le révéler\
+    \ (les répercussions à long terme d’une action lui échappent systématiquement).\
+    \ Si le même prêtre lance plusieurs fois le sort concernant la même action, la\
+    \ réponse obtenue lors des augures successifs ne varie pas par rapport à la première\
+    \ (le résultat du jet de dé étant lui aussi toujours le même)."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.augure.ashx
   
@@ -3340,15 +3340,15 @@
     \ ou feu. Les créatures adjacentes au personnage au moment où le sort est lancé\
     \ et au début de son tour reçoivent 2d6 points de dégâts d'énergie du type sélectionné.\
     \ Cette aura a un effet supplémentaire en fonction du type d'énergie choisi.\n\
-    \ • Acide. Les créatures affectées par l'aura du personnage subissent 1 point\
+    \ \n• Acide. Les créatures affectées par l'aura du personnage subissent 1 point\
     \ de dégâts d'acide par round en continu pendant 1 round par tranche de 3 niveaux\
     \ de lanceur de sorts et sont fiévreuses tant que l'acide leur cause des dégâts.\n\
     • Froid. Les créatures affectées par l'aura du personnage sont fatiguées. Une\
     \ créature déjà fatiguée ne subit pas d'effet supplémentaire.\n• Électricité.\
     \ Les créatures affectées par l'aura du personnage sont chancelantes pendant 1\
     \ round.\n• Feu. Les créatures affectées par l'aura du personnage prennent feu.\n\
-    \ Les créatures adjacentes au personnage ont droit à un jet de Réflexes pour réduire\
-    \ les dégâts de moitié et annuler l'effet supplémentaire. Les effets supplémentaires\
+    \n Les créatures adjacentes au personnage ont droit à un jet de Réflexes pour\
+    \ réduire les dégâts de moitié et annuler l'effet supplémentaire. Les effets supplémentaires\
     \ de l'aura ne se cumulent pas si la créature subit les dégâts causés par cette\
     \ aura à plusieurs reprises. Le personnage ne peut activer qu'une aura élémentaire\
     \ à la fois. Quand le personnage lance ce sort pour causer des dégâts d'acide,\
@@ -3947,26 +3947,21 @@
   Durée: 1 round/niveau
   Jet de sauvegarde: Volonté pour annuler (objet) ;
   Résistance à la magie: oui (objet)
-  Description: 'D''un long murmure sifflant, le personnage transforme un morceau
-    de bois ordinaire en divers serpents qui attaquent immédiatement son ennemi. Tant
-    qu''ils restent en vue, le personnage peut diriger leurs actions par télépathie
-    par une action libre. Le personnage peut lancer ce sort contre un objet de bois
-    qui ne se trouve pas en possession d''une créature et qui n''appartient pas à
-    une structure ou à une plante. À chaque fois que le personnage lance ce sort,
-    il peut créer un nombre de serpents égal à son niveau de lanceur de sorts. Les
-    serpents les plus puissants équivalent à plusieurs plus petits, comme indiqué
-    plus bas.  • Serpent venimeux: Badine ou bois de cheminée. Compte comme 1 serpent.
-
-    • Serpent constricteur: Bâton ou branche d''arbre. Compte comme 2 serpents.
-
-    • Serpent venimeux évolué: Badine ou bois de cheminée. Compte comme 2 serpents.
-
-    • Serpent constricteur évolué: Bâton ou branche d''arbre. Compte comme 3 serpents.
-
-    • Serpent venimeux géant évolué: bûche ou pile de bois mort. Compte comme 4 serpents.
-
-    • Serpent constricteur géant évolué: arbre tombé ou grosse pile de bois mort.
-    Compte comme 5 serpents.'
+  Description: "D'un long murmure sifflant, le personnage transforme un morceau\
+    \ de bois ordinaire en divers serpents qui attaquent immédiatement son ennemi.\
+    \ Tant qu'ils restent en vue, le personnage peut diriger leurs actions par télépathie\
+    \ par une action libre. Le personnage peut lancer ce sort contre un objet de bois\
+    \ qui ne se trouve pas en possession d'une créature et qui n'appartient pas à\
+    \ une structure ou à une plante. À chaque fois que le personnage lance ce sort,\
+    \ il peut créer un nombre de serpents égal à son niveau de lanceur de sorts. Les\
+    \ serpents les plus puissants équivalent à plusieurs plus petits, comme indiqué\
+    \ plus bas.  \n• Serpent venimeux: Badine ou bois de cheminée. Compte comme 1\
+    \ serpent.\n• Serpent constricteur: Bâton ou branche d'arbre. Compte comme 2 serpents.\n\
+    • Serpent venimeux évolué: Badine ou bois de cheminée. Compte comme 2 serpents.\n\
+    • Serpent constricteur évolué: Bâton ou branche d'arbre. Compte comme 3 serpents.\n\
+    • Serpent venimeux géant évolué: bûche ou pile de bois mort. Compte comme 4 serpents.\n\
+    • Serpent constricteur géant évolué: arbre tombé ou grosse pile de bois mort.\
+    \ Compte comme 5 serpents."
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.b%c3%a2ton%20serpent.ashx
   
@@ -4070,19 +4065,19 @@
   Description: "Grâce à cette bénédiction, le personnage appelle ses alliés à aller\
     \ de l'avant et les encourage à vaincre et conquérir. À chaque round, pendant\
     \ toute la durée du sort, chacun de vos alliés peut choisir, au début de son tour,\
-    \ l'un des bonus suivants pour le round : • Augmentation de la vitesse de 9 mètres\
-    \ (6 c).\n• Se relever par une action rapide sans provoquer d'attaque d'opportunité.\n\
+    \ l'un des bonus suivants pour le round : \n• Augmentation de la vitesse de 9\
+    \ mètres (6 c).\n• Se relever par une action rapide sans provoquer d'attaque d'opportunité.\n\
     • Faire une attaque supplémentaire en utilisant son bonus d'attaque le plus élevé\
     \ lors d'une attaque à outrance.\n• Gagner un bonus de +2 aux jets d'attaque et\
     \ un bonus d'esquive de +2 à la CA et aux jets de Réflexes.\n• Lancer un unique\
     \ sort de niveau 2 ou moins comme s'il bénéficiait d'une incantation à extension\
-    \ de portée, à extension de durée, silencieuse ou statique.\n Ces effets ne se\
-    \ cumulent pas avec des effets similaires comme un sort de rapidité ou une arme\
-    \ rapide. De plus, ils n'accordent pas d'action supplémentaire à proprement parler,\
-    \ on ne peut donc pas s'en servir pour lancer un sort de plus ou faire une action\
-    \ de plus dans le round. Bénédiction de ferveur ne se cumule pas avec rapidité.\n\
-    \nMYTHIQUE Les créatures affectées peuvent choisir deux des bonus conférés par\
-    \ le sort chaque round au lieu d’un seul."
+    \ de portée, à extension de durée, silencieuse ou statique.\n\n Ces effets ne\
+    \ se cumulent pas avec des effets similaires comme un sort de rapidité ou une\
+    \ arme rapide. De plus, ils n'accordent pas d'action supplémentaire à proprement\
+    \ parler, on ne peut donc pas s'en servir pour lancer un sort de plus ou faire\
+    \ une action de plus dans le round. Bénédiction de ferveur ne se cumule pas avec\
+    \ rapidité.\n\nMYTHIQUE Les créatures affectées peuvent choisir deux des bonus\
+    \ conférés par le sort chaque round au lieu d’un seul."
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.b%c3%a9n%c3%a9diction%20de%20ferveur.ashx
   
@@ -4204,11 +4199,11 @@
     \ ou morts-vivants ont droit à un jet de sauvegarde pour résister au sort. Le\
     \ sort fonctionne aussi bien avec du sang frais que séché. Quand le personnage\
     \ lance le sort, la réponse à l'une des quatre questions suivantes apparaît sur\
-    \ la surface plane de son choix (un mur, un bout de papier, etc.).\n\n• Qui es-tu ?\
-    \ (Le nom sous lequel la créature est la plus connue)\n• Qu'es-tu ? (Sexe, race,\
-    \ profession/rôle)\n• Comment a-t-on versé ton sang ? (Bref résumé des évènements\
+    \ la surface plane de son choix (un mur, un bout de papier, etc.).\n\n\n• Qui\
+    \ es-tu ? (Le nom sous lequel la créature est la plus connue)\n• Qu'es-tu ? (Sexe,\
+    \ race, profession/rôle)\n• Comment a-t-on versé ton sang ? (Bref résumé des évènements\
     \ qui ont provoqué la blessure, au mieux des connaissances de la victime)\n• Quand\
-    \ ton sang a-t-il été versé ?\n Les réponses apparaissent toujours dans un langage\
+    \ ton sang a-t-il été versé ?\n\n Les réponses apparaissent toujours dans un langage\
     \ que le personnage comprend, même si la créature ne parle pas sa langue ou n'en\
     \ parle aucune."
   Source: MJRA
@@ -5979,7 +5974,7 @@
     \ 1d6 points de dégâts de ce type d'énergie et s'accompagnent d'un effet spécial\
     \ décrit plus bas. Le personnage cause également des dégâts d'énergie et un effet\
     \ connexe quand il attaque à mains nues, avec une unique attaque de griffes ou\
-    \ de coup. Ce bonus aux dégâts ne s'applique jamais à plusieurs armes.\n • Acide.\
+    \ de coup. Ce bonus aux dégâts ne s'applique jamais à plusieurs armes.\n \n• Acide.\
     \ L'attaque de contact du personnage provoque 1 point de dégâts d'acide en continu\
     \ pendant 1 round par tranche de 3 niveaux de lanceur de sorts. La cible doit\
     \ réussir un jet de Vigueur ou être fiévreuse tant que l'acide lui cause des dégâts.\n\
@@ -5987,7 +5982,7 @@
     \ pendant 1 round.\n• Feu. Les mains du personnage s'enflamment et émettent autant\
     \ de lumière qu'une torche. Elles risquent d'enflammer ce qu'elles touchent.\n\
     • Froid. La cible doit réussir un jet de Vigueur ou être fatiguée. Une créature\
-    \ déjà fatiguée ne subit pas d'effet supplémentaire.\n Les attaques suivantes\
+    \ déjà fatiguée ne subit pas d'effet supplémentaire.\n\n Les attaques suivantes\
     \ infligent des dégâts normaux mais les effets supplémentaires ne se cumulent\
     \ pas. Ce sort n'offre aucune protection à ce que le personnage porte ou tient\
     \ en main. Quand le personnage lance ce sort pour causer des dégâts d'acide, de\
@@ -7754,14 +7749,14 @@
   Durée: instantanée
   Description: "Le personnage ne fait plus qu’un avec la nature qui l’environne,\
     \ ce qui lui permet de connaître intimement les alentours. Il apprend aussitôt\
-    \ tout ce qu’il y a à savoir sur trois des thèmes suivants :  • sol ou milieu\
+    \ tout ce qu’il y a à savoir sur trois des thèmes suivants :  \n• sol ou milieu\
     \ : végétation, minéraux, étendues et cours d’eau,\n• habitants :  population\
     \ animale, présence ou non de créatures des bois, présence ou non de puissantes\
-    \ créatures surnaturelles,\n• ou encore état de la nature environnante.\n En extérieur,\
-    \ cette divination a une portée de 1,5 kilomètre par niveau de lanceur de sorts.\
-    \ Dans des lieux naturels mais souterrains (grottes, galeries, etc.), elle est\
-    \ beaucoup plus limitée (30 m par niveau de lanceur de sorts). Communion avec\
-    \ la nature ne fonctionne pas dans les endroits où la nature a été supplantée\
+    \ créatures surnaturelles,\n• ou encore état de la nature environnante.\n\n En\
+    \ extérieur, cette divination a une portée de 1,5 kilomètre par niveau de lanceur\
+    \ de sorts. Dans des lieux naturels mais souterrains (grottes, galeries, etc.),\
+    \ elle est beaucoup plus limitée (30 m par niveau de lanceur de sorts). Communion\
+    \ avec la nature ne fonctionne pas dans les endroits où la nature a été supplantée\
     \ par un nombre élevé de constructions (par exemple en ville ou au cœur d’un donjon)."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.communion%20avec%20la%20nature.ashx
@@ -8090,11 +8085,11 @@
     \  Il ne peut faire 10 à ce test. Si un tel incident se produit, il survient dès\
     \ la première question posée et le personnage n’obtient aucune réponse. \n\nSi\
     \ un contact est réussi , lancez 1d100 et référez vous à la table pour déterminer\
-    \ le type de réponse obtenue. • Réponse exacte. Le personnage obtient une réponse\
+    \ le type de réponse obtenue. \n• Réponse exacte. Le personnage obtient une réponse\
     \ exacte, d’un mot. S’il est impossible de répondre aussi concisément, la réponse\
     \ devient aléatoire.\n• Réponse inconnue. L’entité admet qu’elle ignore la réponse.\n\
     • Mensonge. L’entité ment délibérément.\n• Réponse aléatoire. L’entité ne connaît\
-    \ pas la réponse, mais essaie de duper le personnage et en invente une.\n Plan\
+    \ pas la réponse, mais essaie de duper le personnage et en invente une.\n\n Plan\
     \ contacté, Éviter diminution Int/Cha, Réponse exacte, Réponse inconnue, Mensonge,\
     \ Réponse aléatoire\n• Plan Élémentaire, DD 7/1 semaine, 01–34, 35–62, 63–83,\
     \ 84–00\n• Plan positif/négatif, DD 8/1 semaine, 01–39, 40–65, 66–86, 87–00\n\
@@ -8628,17 +8623,17 @@
     \ vingt-quatre mètres de diamètre au centre de la zone d’effet, mais également\
     \ de limiter l’effet du sort à une zone circulaire se conformant aux limites de\
     \ portée.\n\nDIRECTION DU VENT. Le jeteur de sorts peut choisir entre l’une des\
-    \ quatre options suivantes : • Une brise naissant du centre de l’effet et soufflant\
+    \ quatre options suivantes : \n• Une brise naissant du centre de l’effet et soufflant\
     \ dans toutes les directions avec une force égale.\n• Une brise provenant de toutes\
     \ les directions et soufflant vers le centre, puis vers le haut au contact de\
     \ la zone d’accalmie.\n• Des vents tourbillonnants, se mouvant autour du centre\
     \ dans le sens des aiguilles d’une montre ou le sens contraire.\n• Une rafale\
-    \ de vent soufflant dans une direction choisie et balayant la zone.\n FORCE DU\
-    \ VENT. Le personnage à la possibilité augmenter ou diminuer la force du vent\
+    \ de vent soufflant dans une direction choisie et balayant la zone.\n\n FORCE\
+    \ DU VENT. Le personnage à la possibilité augmenter ou diminuer la force du vent\
     \ d’un cran tous les trois niveaux de lanceur de sorts. Les créatures se trouvant\
     \ dans la zone concernée doivent réussir un jet de Vigueur par round si elles\
     \ ne veulent pas subir les effets du vent. Se référer au Chapitre \"Les Vents\"\
-    \ pour de plus amples détails. • Un vent important (30 km/h) rend la navigation\
+    \ pour de plus amples détails. \n• Un vent important (30 km/h) rend la navigation\
     \ à voile périlleuse.\n• S’il est violent (50 km/h), navires et bâtiments reçoivent\
     \ de légers dégâts.\n• Une tempête (80 km/h) empêche la plupart des créatures\
     \ de voler, déracine les petits arbres, démolit les bâtiments en bois léger, arrache\
@@ -10167,41 +10162,42 @@
     \ d’air, d’eau, de feu ou de terre de taille P (consultez le Bestiaire Pathfinder\
     \ RPG). Les aptitudes du personnage dépendent alors du type d’élémentaire choisi.\
     \ Les effets de celles qui dépendent de la taille, comme combustion, Vortex ou\
-    \ tourbillon, se basent sur celle de l’élémentaire.\n\n• Élémentaire d’air. si\
-    \ le personnage se transforme en élémentaire d’air de taille P, il gagne un bonus\
-    \ de taille à la Dextérité de +2 et un bonus d’armure naturelle de +2. Il dispose\
-    \ d’une capacité de vol de 18 m (parfaite), de la vision dans le noir à 18 m et\
-    \ il peut créer un tourbillon.\n• Élémentaire d’eau. si le personnage se transforme\
-    \ en élémentaire d’eau de taille P, il gagne un bonus de taille à la Constitution\
-    \ de +2 et un bonus d’armure naturelle de +4. Il dispose d’une capacité de nage\
-    \ de 18 m, du pouvoir Vortex, de la vision dans le noir à 18 m et de la respiration\
-    \ aquatique.\n• Élémentaire de feu. si le personnage se transforme en élémentaire\
-    \ de feu de taille P, il gagne un bonus de taille à la Dextérité de +2 et un bonus\
-    \ d’armure naturelle de +2. Il dispose de la vision dans le noir à 18 m, d’une\
-    \ résistance au feu 20, d’une vulnérabilité au froid et du pouvoir combustion.\n\
-    • Élémentaire de terre. si le personnage se transforme en élémentaire de terre\
-    \ de taille P, il gagne un bonus de taille à la Force de +2 et un bonus d’armure\
-    \ naturelle de +4. Il dispose de la vision dans le noir à 18 m, et des pouvoirs\
-    \ Repousser et nage dans la terre.\n MYTHIQUE Chaque sort de corps élémentaire\
-    \ mythique doit être appris séparément et le personnage doit connaitre le sort\
-    \ de corps élémentaire non-mythique correspondant pour pouvoir apprendre sa version\
-    \ mythique. Le personnage n’est pas obligé de les apprendre dans l’ordre croissant\
-    \ de leur puissance ; il n’a pas à connaitre un sort de corps élémentaire mythique\
-    \ d’un niveau inférieur avant d’apprendre ce sort à un niveau supérieur (par exemple,\
-    \ il peut apprendre corps élémentaire mythique II s’il connait corps élémentaire\
-    \ II, même s’il ne connait pas corps élémentaire mythique I). Chaque sort de corps\
-    \ élémentaire mythique ajoute les avantages suivants à sa version non-mythique\
-    \ correspondante.\n\nLes bonus conféré par le sort aux valeurs de caractéristique\
-    \ augmentent de +2, le bonus d’armure naturelle de +1 et les malus aux valeurs\
-    \ de caractéristique sont diminués de 2 (malus minimum de 0). Il y a 50% de chances\
-    \ que les coups critiques ou les attaques sournoises réalisés contre le personnage\
-    \ soient considérés comme des coups ordinaires, comme s’il portait une armure\
-    \ de défense intermédiaire.\n\nAMPLIFIÉ (3ÈME). Si le personnage dépense deux\
-    \ utilisations de pouvoir mythique, les bonus aux valeurs de caractéristique bénéficient\
-    \ d’un +2 supplémentaire. Chaque jour et un nombre de fois équivalent à son grade,\
-    \ le personnage peut également ajouter la moitié de son grade au DD d’un unique\
-    \ sort qu’il lance et doté d’un registre d’énergie destructive correspondant à\
-    \ son type d’élémentaire (air : électricité, terre : acide, feu : feu, eau : froid)."
+    \ tourbillon, se basent sur celle de l’élémentaire.\n\n\n• Élémentaire d’air.\
+    \ si le personnage se transforme en élémentaire d’air de taille P, il gagne un\
+    \ bonus de taille à la Dextérité de +2 et un bonus d’armure naturelle de +2. Il\
+    \ dispose d’une capacité de vol de 18 m (parfaite), de la vision dans le noir\
+    \ à 18 m et il peut créer un tourbillon.\n• Élémentaire d’eau. si le personnage\
+    \ se transforme en élémentaire d’eau de taille P, il gagne un bonus de taille\
+    \ à la Constitution de +2 et un bonus d’armure naturelle de +4. Il dispose d’une\
+    \ capacité de nage de 18 m, du pouvoir Vortex, de la vision dans le noir à 18\
+    \ m et de la respiration aquatique.\n• Élémentaire de feu. si le personnage se\
+    \ transforme en élémentaire de feu de taille P, il gagne un bonus de taille à\
+    \ la Dextérité de +2 et un bonus d’armure naturelle de +2. Il dispose de la vision\
+    \ dans le noir à 18 m, d’une résistance au feu 20, d’une vulnérabilité au froid\
+    \ et du pouvoir combustion.\n• Élémentaire de terre. si le personnage se transforme\
+    \ en élémentaire de terre de taille P, il gagne un bonus de taille à la Force\
+    \ de +2 et un bonus d’armure naturelle de +4. Il dispose de la vision dans le\
+    \ noir à 18 m, et des pouvoirs Repousser et nage dans la terre.\n\n MYTHIQUE Chaque\
+    \ sort de corps élémentaire mythique doit être appris séparément et le personnage\
+    \ doit connaitre le sort de corps élémentaire non-mythique correspondant pour\
+    \ pouvoir apprendre sa version mythique. Le personnage n’est pas obligé de les\
+    \ apprendre dans l’ordre croissant de leur puissance ; il n’a pas à connaitre\
+    \ un sort de corps élémentaire mythique d’un niveau inférieur avant d’apprendre\
+    \ ce sort à un niveau supérieur (par exemple, il peut apprendre corps élémentaire\
+    \ mythique II s’il connait corps élémentaire II, même s’il ne connait pas corps\
+    \ élémentaire mythique I). Chaque sort de corps élémentaire mythique ajoute les\
+    \ avantages suivants à sa version non-mythique correspondante.\n\nLes bonus conféré\
+    \ par le sort aux valeurs de caractéristique augmentent de +2, le bonus d’armure\
+    \ naturelle de +1 et les malus aux valeurs de caractéristique sont diminués de\
+    \ 2 (malus minimum de 0). Il y a 50% de chances que les coups critiques ou les\
+    \ attaques sournoises réalisés contre le personnage soient considérés comme des\
+    \ coups ordinaires, comme s’il portait une armure de défense intermédiaire.\n\n\
+    AMPLIFIÉ (3ÈME). Si le personnage dépense deux utilisations de pouvoir mythique,\
+    \ les bonus aux valeurs de caractéristique bénéficient d’un +2 supplémentaire.\
+    \ Chaque jour et un nombre de fois équivalent à son grade, le personnage peut\
+    \ également ajouter la moitié de son grade au DD d’un unique sort qu’il lance\
+    \ et doté d’un registre d’énergie destructive correspondant à son type d’élémentaire\
+    \ (air : électricité, terre : acide, feu : feu, eau : froid)."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.corps%20%c3%a9l%c3%a9mentaire%20i.ashx
   
@@ -10217,7 +10213,7 @@
     \ d’air, d’eau, de feu ou de terre de taille M. Les aptitudes du personnage dépendent\
     \ alors du type d’élémentaire choisi. Les effets de celles qui dépendent de la\
     \ taille, comme combustion, Vortex ou tourbillon, se basent sur celle de l’élémentaire.\n\
-    \n• Élémentaire d’air. si le personnage se transforme en élémentaire d’air de\
+    \n\n• Élémentaire d’air. si le personnage se transforme en élémentaire d’air de\
     \ taille M, il gagne un bonus de taille à la Dextérité de +4 et un bonus d’armure\
     \ naturelle de +3. Il dispose d’une capacité de vol de 18 m (parfaite), de la\
     \ vision dans le noir à 18 m et il peut créer un tourbillon.\n• Élémentaire d’eau.\
@@ -10231,9 +10227,9 @@
     \ au froid et du pouvoir combustion.\n• Élémentaire de terre. si le personnage\
     \ se transforme en élémentaire de terre de taille M, il gagne un bonus de taille\
     \ à la Force de +4 et un bonus d’armure naturelle de +5. Il dispose de la vision\
-    \ dans le noir à 18 m, et des pouvoirs Repousser et nage dans la terre.\n\n MYTHIQUE\
-    \ Chaque sort de corps élémentaire mythique doit être appris séparément et le\
-    \ personnage doit connaitre le sort de corps élémentaire non-mythique correspondant\
+    \ dans le noir à 18 m, et des pouvoirs Repousser et nage dans la terre.\n\n\n\
+    \ MYTHIQUE Chaque sort de corps élémentaire mythique doit être appris séparément\
+    \ et le personnage doit connaitre le sort de corps élémentaire non-mythique correspondant\
     \ pour pouvoir apprendre sa version mythique. Le personnage n’est pas obligé de\
     \ les apprendre dans l’ordre croissant de leur puissance ; il n’a pas à connaitre\
     \ un sort de corps élémentaire mythique d’un niveau inférieur avant d’apprendre\
@@ -10269,7 +10265,7 @@
     \ taille, comme combustion, Vortex ou tourbillon, se basent sur celle de l’élémentaire.\
     \ De plus, le personnage est immunisé contre les dégâts de saignement, les coups\
     \ critiques et les attaques sournoises tant qu’il est sous forme élémentaire.\n\
-    \n• Élémentaire d’air. si le personnage se transforme en élémentaire d’air de\
+    \n\n• Élémentaire d’air. si le personnage se transforme en élémentaire d’air de\
     \ taille G, il gagne un bonus de taille de +2 à la Force, de +4 à la Dextérité\
     \ et un bonus d’armure naturelle de +4. Il dispose d’une capacité de vol de 18\
     \ m (parfaite), de la vision dans le noir à 18 m et il peut créer un tourbillon.\n\
@@ -10286,7 +10282,7 @@
     \ gagne un bonus de taille +6 à Force, un malus de -2 à la Dextérité, un bonus\
     \ de +2 à la Constitution et un bonus d’armure naturelle de +6. Il dispose de\
     \ la vision dans le noir à 18 m, et des pouvoirs Repousser et nage dans la terre.\n\
-    \  MYTHIQUE Chaque sort de corps élémentaire mythique doit être appris séparément\
+    \n  MYTHIQUE Chaque sort de corps élémentaire mythique doit être appris séparément\
     \ et le personnage doit connaitre le sort de corps élémentaire non-mythique correspondant\
     \ pour pouvoir apprendre sa version mythique. Le personnage n’est pas obligé de\
     \ les apprendre dans l’ordre croissant de leur puissance ; il n’a pas à connaitre\
@@ -10323,7 +10319,7 @@
     \ taille, comme combustion, Vortex ou tourbillon, se basent sur celle de l’élémentaire.\
     \ De plus, le personnage est immunisé contre les saignements, les coups critiques\
     \ et les attaques sournoises tant qu’il est sous forme élémentaire et il gagne\
-    \ une résistance RD 5/—.\n\n• Élémentaire d’air. si le personnage se transforme\
+    \ une résistance RD 5/—.\n\n\n• Élémentaire d’air. si le personnage se transforme\
     \ en élémentaire d’air de taille TG, il gagne un bonus de taille de +4 à la Force,\
     \ de +6 à la Dextérité et un bonus d’armure naturelle de +4. Il dispose d’une\
     \ capacité de vol de 36 m (parfaite), de la vision dans le noir à 18 m et il peut\
@@ -10340,7 +10336,7 @@
     \ de taille TG, il gagne un bonus de taille de +8 à la Force, un malus de -2 à\
     \ la Dextérité, un bonus de +4 à la Constitution et un bonus d’armure naturelle\
     \ de +6. Il dispose de la vision dans le noir à 18 m, et des pouvoirs Repousser\
-    \ et nage dans la terre.\n  MYTHIQUE Chaque sort de corps élémentaire mythique\
+    \ et nage dans la terre.\n\n  MYTHIQUE Chaque sort de corps élémentaire mythique\
     \ doit être appris séparément et le personnage doit connaitre le sort de corps\
     \ élémentaire non-mythique correspondant pour pouvoir apprendre sa version mythique.\
     \ Le personnage n’est pas obligé de les apprendre dans l’ordre croissant de leur\
@@ -10451,18 +10447,18 @@
   Description: "Un cône de couleurs vives et tourbillonnantes jaillit de la main\
     \ tendue du personnage, provoquant étourdissement, cécité temporaire ou perte\
     \ de connaissance chez les créatures affectées. Le sort affecte chaque cible en\
-    \ fonction de ses DV :\n\n • Jusqu’à 2 DV. Perte de connaissance, cécité et étourdissement\
-    \ durant 2d4 rounds, puis cécité et étourdissement durant 1d4 rounds et étourdissement\
-    \ durant 1 round (seules les créatures vivantes peuvent perdre connaissance).\n\
-    • 3 ou 4 DV. Cécité et étourdissement durant 1d4 rounds, et étourdissement durant\
-    \ 1 round.\n• 5 DV ou plus. Étourdissement durant 1 round.\n Les êtres dépourvus\
-    \ de vision ne sont pas affectés par couleurs dansantes.\n\nMYTHIQUE La portée\
-    \ du sort s’élève à 9 mètres. Ajoutez la moitié du grade du personnage aux catégories\
-    \ de DV pour déterminer ses effets sur les créatures (au 3ème grade, une créature\
-    \ avec 3 DV ou moins est inconsciente, aveuglée et étourdie ; une autre avec 4\
-    \ ou 5 DV est aveuglée et étourdie et une autre avec 6 DV ou plus est étourdie).\
-    \ Les créatures qui réussissent leur jet de sauvegarde sont éblouies pendant une\
-    \ minute."
+    \ fonction de ses DV :\n\n \n• Jusqu’à 2 DV. Perte de connaissance, cécité et\
+    \ étourdissement durant 2d4 rounds, puis cécité et étourdissement durant 1d4 rounds\
+    \ et étourdissement durant 1 round (seules les créatures vivantes peuvent perdre\
+    \ connaissance).\n• 3 ou 4 DV. Cécité et étourdissement durant 1d4 rounds, et\
+    \ étourdissement durant 1 round.\n• 5 DV ou plus. Étourdissement durant 1 round.\n\
+    \n Les êtres dépourvus de vision ne sont pas affectés par couleurs dansantes.\n\
+    \nMYTHIQUE La portée du sort s’élève à 9 mètres. Ajoutez la moitié du grade du\
+    \ personnage aux catégories de DV pour déterminer ses effets sur les créatures\
+    \ (au 3ème grade, une créature avec 3 DV ou moins est inconsciente, aveuglée et\
+    \ étourdie ; une autre avec 4 ou 5 DV est aveuglée et étourdie et une autre avec\
+    \ 6 DV ou plus est étourdie). Les créatures qui réussissent leur jet de sauvegarde\
+    \ sont éblouies pendant une minute."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.couleurs%20dansantes.ashx
   
@@ -10690,20 +10686,21 @@
     \ un maximum de 30 m au niveau 10. Il peut transporter son cavalier plus 5 kg\
     \ par niveau de lanceur de sorts.\n\nLe coursier hérite de certains pouvoirs en\
     \ fonction du niveau de lanceur de sorts, toutes les facultés qui suivent étant\
-    \ cumulatives. • Niveau 8. le cheval peut avancer dans le sable, la boue ou les\
-    \ marécages sans que sa vitesse de déplacement n’en soit affectée.\n• Niveau 10.\
-    \ il utilise marche sur l’onde à volonté (comme le sort du même nom, inutile d’entreprendre\
-    \ une action pour activer ce pouvoir).\n• Niveau 12. il utilise marche dans les\
-    \ airs à volonté (comme le sort du même nom, inutile d’entreprendre une action\
-    \ pour activer ce pouvoir). Après 1 round de déplacement aérien, il chute.\n•\
-    \ Niveau 14. le coursier peut voler en conservant la même vitesse de déplacement.\
-    \ Il dispose d’un bonus à la compétence Vol égal au niveau de lanceur de sorts\
-    \ du personnage.\n MYTHIQUE La créature qui chevauche le coursier réussit automatiquement\
-    \ ses tests d’Équitation pour rester en selle. Les points de vie du coursier s’élèvent\
-    \ à 10 plus 2 par niveau de lanceur de sorts et sa vitesse à 9 mètres par tranche\
-    \ de 2 niveaux de lanceur de sorts (45 mètres maximum).\n\nAMPLIFIÉ (3ÈME). Si\
-    \ le personnage dépense deux utilisations de pouvoir mythique, le coursier fantôme\
-    \ est intangible, mais son cavalier peut interagir normalement avec lui."
+    \ cumulatives. \n• Niveau 8. le cheval peut avancer dans le sable, la boue ou\
+    \ les marécages sans que sa vitesse de déplacement n’en soit affectée.\n• Niveau\
+    \ 10. il utilise marche sur l’onde à volonté (comme le sort du même nom, inutile\
+    \ d’entreprendre une action pour activer ce pouvoir).\n• Niveau 12. il utilise\
+    \ marche dans les airs à volonté (comme le sort du même nom, inutile d’entreprendre\
+    \ une action pour activer ce pouvoir). Après 1 round de déplacement aérien, il\
+    \ chute.\n• Niveau 14. le coursier peut voler en conservant la même vitesse de\
+    \ déplacement. Il dispose d’un bonus à la compétence Vol égal au niveau de lanceur\
+    \ de sorts du personnage.\n\n MYTHIQUE La créature qui chevauche le coursier réussit\
+    \ automatiquement ses tests d’Équitation pour rester en selle. Les points de vie\
+    \ du coursier s’élèvent à 10 plus 2 par niveau de lanceur de sorts et sa vitesse\
+    \ à 9 mètres par tranche de 2 niveaux de lanceur de sorts (45 mètres maximum).\n\
+    \nAMPLIFIÉ (3ÈME). Si le personnage dépense deux utilisations de pouvoir mythique,\
+    \ le coursier fantôme est intangible, mais son cavalier peut interagir normalement\
+    \ avec lui."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.coursier%20fant%c3%b4me.ashx
   
@@ -10892,7 +10889,7 @@
     \ auquel cas le sort a une durée de 1 jour/niveau. Si le personnage lance le sort\
     \ dans son demi-plan, il peut lui ajouter (ou lui retirer) l’une des caractéristiques\
     \ suivantes lors de chaque incantation du sort, auquel cas, la durée est instantanée.\n\
-    \ • Énergie. Le plan gagne la caractéristique énergie positive ou négative (mineure).\
+    \ \n• Énergie. Le plan gagne la caractéristique énergie positive ou négative (mineure).\
     \ Un plan ne peut pas être à la fois positif et négatif.\n• Magie. Le plan a une\
     \ magie morte, améliorée, entravée ou sauvage. Si le personnage opte pour la magie\
     \ morte, il est piégé dans son plan à moins d’avoir un portail planaire permanent\
@@ -10933,7 +10930,7 @@
     \ auquel cas le sort a une durée de 1 jour/niveau. Si le personnage lance le sort\
     \ dans son demi-plan, il peut lui ajouter (ou lui retirer) l’une des caractéristiques\
     \ suivantes lors de chaque incantation du sort, auquel cas, la durée est instantanée.\n\
-    \ • Alignée. Le plan devient légèrement aligné sur le chaos, le bien, le mal,\
+    \ \n• Alignée. Le plan devient légèrement aligné sur le chaos, le bien, le mal,\
     \ la loi ou la neutralité. Le personnage ne peut pas donner à son plan une caractéristique\
     \ d’alignement qu’il ne possède pas.\n• Élémentaire. Le plan gagne une caractéristique\
     \ élémentaire dominante : air, terre, feu ou eau.\n• Façonnée. Par défaut, le\
@@ -12481,12 +12478,12 @@
     \ d’eux se trouve hors du champ de vision du lanceur de sort, le sort révèle la\
     \ direction dans laquelle il se trouve mais pas la distance à laquelle il se situe.\n\
     \nÉTAT. Dans le cadre des informations fournies par ce sort, les états des végétaux\
-    \ ou animaux recherchés sont décrits comme suit.\n\n• Normal : pas de maladie,\
+    \ ou animaux recherchés sont décrits comme suit.\n\n\n• Normal : pas de maladie,\
     \ au moins 90 % de son maximum de points de vie.\n• Correct : 30 % à 90 % de son\
     \ maximum de points de vie.\n• Faible : moins de 30 % de son maximum de points\
     \ de vie, malade ou souffrant d’une blessure handicapante.\n• Rachitique : 0 point\
     \ de vie ou moins, affecté par une maladie qui réduit une de ses valeurs de caractéristique\
-    \ à 5 ou moins ou estropié.\n Si l’état d’une créature correspond à plusieurs\
+    \ à 5 ou moins ou estropié.\n\n Si l’état d’une créature correspond à plusieurs\
     \ de ces catégories, le sort indique la plus grave d’entre elles.\n\nLe personnage\
     \ peut pivoter pour examiner une nouvelle zone chaque round. Le sort fonctionne\
     \ à travers les barrières si celles-ci ne sont pas trop épaisses : il est bloqué\
@@ -12818,12 +12815,12 @@
     \ champ de vision du lanceur de sort, le sort révèle la direction dans laquelle\
     \ elle se trouve mais pas la distance à laquelle elle se situe.\n\nÉTAT. Dans\
     \ le cadre des informations fournies par ce sort, les états des créatures de type\
-    \ aberration recherchées sont décrits comme suit.\n\n• Normal : pas de maladie,\
+    \ aberration recherchées sont décrits comme suit.\n\n\n• Normal : pas de maladie,\
     \ au moins 90 % de son maximum de points de vie.\n• Correct : 30 % à 90 % de son\
     \ maximum de points de vie.\n• Faible : moins de 30 % de son maximum de points\
     \ de vie, malade ou souffrant d’une blessure handicapante.\n• Rachitique : 0 point\
     \ de vie ou moins, affecté par une maladie qui réduit une de ses valeurs de caractéristique\
-    \ à 5 ou moins ou estropié.\n Si l’état d’une créature de type aberration correspond\
+    \ à 5 ou moins ou estropié.\n\n Si l’état d’une créature de type aberration correspond\
     \ à plusieurs de ces catégories, le sort indique la plus grave d’entre elles.\n\
     \nLe personnage peut pivoter pour examiner une nouvelle zone chaque round. Le\
     \ sort fonctionne à travers les barrières si celles-ci ne sont pas trop épaisses\
@@ -22423,6 +22420,7 @@
     Le sort a un ou plusieurs des effets suivants basés sur les jugements actifs.
 
 
+
     • Châtiment. Une lumière argentée jaillit du personnage et transforme les armes
     de tous les alliés situés dans la zone d’effet en armes magiques, alignées comme
     celle de l’inquisiteur. On considère qu’elles sont en adamantium quand il s’agit
@@ -22891,27 +22889,26 @@
   Durée: voir texte
   Jet de sauvegarde: aucun ;
   Résistance à la magie: oui (objet)
-  Description: 'Le personnage crée et contrôle une force télékinétique invisible.
-    Il la manipule avec une brusquerie surprenante ou avec délicatesse et application,
-    ce qui lui permet d’arracher un objet à un adversaire ou de manipuler un objet
-    éloigné. Il peut utiliser cette force de deux manières. • Manœuvre abrupte. Le
-    personnage tente immédiatement une manœuvre de désarmement ou de subtilisation
-    contre une cible à portée. Le personnage utilise son niveau de lanceur de sorts
-    à la place de son bonus de manœuvre offensive et y ajoute son bonus d’Intelligence
-    (dans le cas d’un magicien,  magus), de Charisme (dans le cas d’un barde, ensorceleur,
-    oracle) ou de Sagesse (prêtre) à la place de son modificateur de Force ou de Dextérité.
-    Cette manœuvre offensive ne provoque pas d’attaque d’opportunité de la part de
-    la cible, contrairement à l’incantation du sort qui peut en déclencher une. Si
-    le personnage réussit, il attire l’objet de sa cible à lui et, s’il a une main
-    libre, il peut s’en emparer. Sinon, l’objet atterrit dans sa case, comme s’il
-    venait de le lâcher.
-
-    • Manœuvre délicate. Le personnage tente un test de Sabotage ou d’Escamotage pour
-    faire les poches d’une cible à portée. Ce sort dure aussi longtemps qu’il le faut
-    pour que le personnage puisse accomplir sa tâche. Il doit se concentrer pleinement
-    pendant tout ce temps. S’il réussit son test d’Escamotage, il attire l’objet à
-    lui, comme avec un test de manœuvre abrupte. La cible gagne un bonus de +2 aux
-    tests de Perception pour remarquer une tentative réussie.'
+  Description: "Le personnage crée et contrôle une force télékinétique invisible.\
+    \ Il la manipule avec une brusquerie surprenante ou avec délicatesse et application,\
+    \ ce qui lui permet d’arracher un objet à un adversaire ou de manipuler un objet\
+    \ éloigné. Il peut utiliser cette force de deux manières. \n• Manœuvre abrupte.\
+    \ Le personnage tente immédiatement une manœuvre de désarmement ou de subtilisation\
+    \ contre une cible à portée. Le personnage utilise son niveau de lanceur de sorts\
+    \ à la place de son bonus de manœuvre offensive et y ajoute son bonus d’Intelligence\
+    \ (dans le cas d’un magicien,  magus), de Charisme (dans le cas d’un barde, ensorceleur,\
+    \ oracle) ou de Sagesse (prêtre) à la place de son modificateur de Force ou de\
+    \ Dextérité. Cette manœuvre offensive ne provoque pas d’attaque d’opportunité\
+    \ de la part de la cible, contrairement à l’incantation du sort qui peut en déclencher\
+    \ une. Si le personnage réussit, il attire l’objet de sa cible à lui et, s’il\
+    \ a une main libre, il peut s’en emparer. Sinon, l’objet atterrit dans sa case,\
+    \ comme s’il venait de le lâcher.\n• Manœuvre délicate. Le personnage tente un\
+    \ test de Sabotage ou d’Escamotage pour faire les poches d’une cible à portée.\
+    \ Ce sort dure aussi longtemps qu’il le faut pour que le personnage puisse accomplir\
+    \ sa tâche. Il doit se concentrer pleinement pendant tout ce temps. S’il réussit\
+    \ son test d’Escamotage, il attire l’objet à lui, comme avec un test de manœuvre\
+    \ abrupte. La cible gagne un bonus de +2 aux tests de Perception pour remarquer\
+    \ une tentative réussie."
   Source: AG
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.main%20vagabonde.ashx
   
@@ -22989,11 +22986,11 @@
   Jet de sauvegarde: Volonté, annule ;
   Résistance à la magie: oui
   Description: "Ce sort permet de maudire la créature touchée. Le personnage choisit\
-    \ l’effet qu’il souhaite produire parmi les trois suivants : • -6 à une valeur\
+    \ l’effet qu’il souhaite produire parmi les trois suivants : \n• -6 à une valeur\
     \ de caractéristique (1 minimum).\n• Malus de -4 aux jets d’attaque, aux jets\
     \ de sauvegarde, aux tests de caractéristique et aux tests de compétence.\n• Chaque\
     \ fois que son tour de jeu arrive, la victime a 50% de chances de pouvoir agir\
-    \ normalement. Sinon, elle ne fait rien.\n Il est possible d’ajouter d’autres\
+    \ normalement. Sinon, elle ne fait rien.\n\n Il est possible d’ajouter d’autres\
     \ types de malédictions à cette liste, mais elles ne doivent pas être plus puissantes\
     \ que celles-ci.\n\nLa malédiction ne peut pas être dissipée, mais il est possible\
     \ de s’en débarrasser à l’aide d’annulation d’enchantement, délivrance des malédictions,\
@@ -23067,11 +23064,11 @@
   Jet de sauvegarde: Volonté pour annuler;
   Résistance à la magie: oui
   Description: "Ce sort permet de maudire la créature ciblée. Le personnage choisit\
-    \ l’effet qu’il souhaite produire parmi les trois suivants : • -6 à une valeur\
+    \ l’effet qu’il souhaite produire parmi les trois suivants : \n• -6 à une valeur\
     \ de caractéristique (1 minimum).\n• Malus de -4 aux jets d’attaque, aux jets\
     \ de sauvegarde, aux tests de caractéristique et aux tests de compétence.\n• Chaque\
     \ fois que son tour de jeu arrive, la victime a 50% de chances de pouvoir agir\
-    \ normalement. Sinon, elle ne fait rien.\n Il est possible d’ajouter d’autres\
+    \ normalement. Sinon, elle ne fait rien.\n\n Il est possible d’ajouter d’autres\
     \ types de malédictions à cette liste, mais elles ne doivent pas être plus puissantes\
     \ que celles-ci.\n\nLa malédiction ne peut pas être dissipée, mais il est possible\
     \ de s’en débarrasser à l’aide d’annulation d’enchantement, délivrance des malédictions,\
@@ -24383,25 +24380,25 @@
   Résistance à la magie: oui
   Description: "On implore un miracle plus qu’on le lance. Le prêtre présente sa\
     \ requête à son dieu (ou à la puissance qui lui accorde ses sorts) et le prie\
-    \ de l’exaucer.\n\nUn miracle permet, au choix : • De reproduire l’effet de n’importe\
-    \ quel sort de prêtre jusqu’au 8e niveau.\n• De reproduire l’effet de n’importe\
-    \ quel autre sort jusqu’au 7e niveau.\n• D’annuler les effets néfastes de certains\
-    \ sorts, tels que débilité ou aliénation mentale.\n• De produire n’importe quel\
-    \ effet dont la puissance ne dépasse pas les restrictions imposées ci-dessus.\n\
-    \ Mais le personnage peut également faire une requête particulièrement importante.\
+    \ de l’exaucer.\n\nUn miracle permet, au choix : \n• De reproduire l’effet de\
+    \ n’importe quel sort de prêtre jusqu’au 8e niveau.\n• De reproduire l’effet de\
+    \ n’importe quel autre sort jusqu’au 7e niveau.\n• D’annuler les effets néfastes\
+    \ de certains sorts, tels que débilité ou aliénation mentale.\n• De produire n’importe\
+    \ quel effet dont la puissance ne dépasse pas les restrictions imposées ci-dessus.\n\
+    \n Mais le personnage peut également faire une requête particulièrement importante.\
     \ Dans ce cas, il lui en coûte 25 000 po en poudre de diamant en raison de la\
     \ puissance des énergies divines en jeu. Voici quelques exemples de miracles de\
-    \ ce type : • Inverser le cours d’une bataille en ramenant ses alliés à la vie\
+    \ ce type : \n• Inverser le cours d’une bataille en ramenant ses alliés à la vie\
     \ pour qu’ils continuent le combat.\n• Amener le prêtre et ses compagnons (ainsi\
     \ que tout leur équipement) dans un autre plan, jusqu’au lieu de leur choix, et\
     \ ce sans le moindre risque d’erreur.\n• Protéger une ville d’un tremblement de\
     \ terre, d’une éruption volcanique, d’un raz de marée ou d’une autre catastrophe\
-    \ naturelle.\n Toute requête en opposition avec la nature ou l’alignement du dieu\
-    \ est systématiquement refusée.\n\nUn sort reproduit autorise les jets de sauvegarde\
-    \ et tests de résistance à la magie normaux (sauf que le DD est calculé comme\
-    \ pour un sort du 9e niveau). Quand miracle remplace un sort s’accompagnant d’une\
-    \ composante matérielle d’une valeur supérieure à 100 po, le personnage doit la\
-    \ fournir pour que le sort prenne effet.\n\n{c:Sort} {c:Sort prêtre 9}"
+    \ naturelle.\n\n Toute requête en opposition avec la nature ou l’alignement du\
+    \ dieu est systématiquement refusée.\n\nUn sort reproduit autorise les jets de\
+    \ sauvegarde et tests de résistance à la magie normaux (sauf que le DD est calculé\
+    \ comme pour un sort du 9e niveau). Quand miracle remplace un sort s’accompagnant\
+    \ d’une composante matérielle d’une valeur supérieure à 100 po, le personnage\
+    \ doit la fournir pour que le sort prenne effet.\n\n{c:Sort} {c:Sort prêtre 9}"
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.miracle.ashx
   
@@ -24778,12 +24775,12 @@
   Résistance à la magie: oui
   Description: "Ce sort permet au barde de s’insinuer dans l’esprit de la créature\
     \ choisie et de modifier cinq minutes de sa mémoire, ce qui lui permet d’obtenir\
-    \ l’un des effets suivants : • Éliminer tous les souvenirs d’un événement auquel\
+    \ l’un des effets suivants : \n• Éliminer tous les souvenirs d’un événement auquel\
     \ la cible a assisté. Ce sort ne permet pas d’annuler des sorts tels que charme,\
     \ quête ou suggestion.\n• Permettre à la cible de se souvenir avec une clarté\
     \ absolue d’un événement auquel il a assisté.\n• Modifier les détails d’un événement\
     \ auquel la créature a assisté.\n• Implanter le souvenir d’un événement auquel\
-    \ le sujet n’a pas assisté.\n L’incantation nécessite 1 round. Si la cible rate\
+    \ le sujet n’a pas assisté.\n\n L’incantation nécessite 1 round. Si la cible rate\
     \ son jet de sauvegarde, le barde travaille sur l’esprit de celle-ci en visualisant\
     \ le souvenir qu’il cherche à modifier (ce qui lui prend jusqu’à cinq minutes,\
     \ le laps de temps exact étant égal à la durée du souvenir qu’il altère ou implante).\
@@ -26896,51 +26893,41 @@
   Temps d'incantation: 1 action simple
   Composantes: G
   Durée: voir plus bas
-  Description: 'Ce sort crée quelques effets de tours de magie liés à la santé du
-    personnage, à son bien-être et à ses divertissements. La panacée n’a pas d’effets
-    secondaires (par exemple, la panacée d’ivresse ne donne pas la gueule de bois).
-    Quand le personnage utilise la panacée universelle, il choisit l’un des effets
-    suivants. • Analgésique. Le personnage ne ressent pas les douleurs mineures comme
-    l’arthrose, le froid ou la gueule de bois pendant 1 heure. Pendant tout ce temps,
-    il gagne un bonus de résistance de +2 contre les sorts liés à la douleur.
-
-    • Clarté. Le personnage gagne un bonus de compétence de +1 sur un unique jet d’attaque,
-    de sauvegarde ou un test de compétence dans la minute qui suit. Il doit choisir
-    le type de bonus avant de faire le jet auquel il s’applique.
-
-    • Hallucination. Le personnage a d’agréables hallucinations pendant 1 heure. Il
-    voit des lumières dansantes, entend de la musique, contemple des animaux surnaturels
-    qui jouent, etc. Il sait que ces choses ne sont pas réelles mais elles le distraient
-    et il subit un malus de -2 aux tests de Perception pendant toute la durée du sort.
-
-    • Ivresse. Le personnage est agréablement ivre pendant 1 heure, comme s’il avait
-    bu de l’alcool.
-
-    • Résistance. Le personnage gagne un bonus de résistance aux jets de sauvegarde
-    de +1 pendant 1 minute.
-
-    • Rêve lucide. Si le personnage prend la panacée moins d’une heure avant d’aller
-    se coucher, il fait un rêve conscient placé sous son contrôle pendant une heure.
-
-    • Sobriété. Le personnage devient complètement sobre pendant 1 heure, ce qui annule
-    tous les malus liés à l’ivresse. Les méthodes magiques et alchimiques (comme la
-    détection du poison) considèrent toujours que le personnage est en état d’ébriété.
-    La période passée sous l’effet de cette panacée ne compte pas dans le temps nécessaire
-    pour cuver (la panacée ne fait que retarder le délai d’ivresse).
-
-    • Sommeil. Le personnage entame une plaisante sieste reposante d’au moins une
-    heure, jusqu’à ce qu’on le réveille. S’il était censé dormir à cette heure, il
-    passe à un sommeil normal une fois l’effet de la panacée passé.
-
-    • Ténacité. Le personnage gagne 1 point de vie temporaire pendant une minute.
-
-    • Veille. Le personnage reste éveillé pendant 2 heures sans avoir envie de dormir
-    et sans effets secondaires, comme un accès de nervosité. Il gagne un bonus de
-    résistance de +5 contre les sorts liés au sommeil comme berceuse et sommeil. L’utilisation
-    de cette panacée retarde simplement le besoin de sommeil du personnage et ne compte
-    pas comme une période de repos ou de sommeil. Le personnage peut l’utiliser plusieurs
-    fois à la suite mais, à chaque fois qu’un effet se dissipe, il est aussi fatigué
-    que s’il n’avait pas utilisé la panacée.'
+  Description: "Ce sort crée quelques effets de tours de magie liés à la santé du\
+    \ personnage, à son bien-être et à ses divertissements. La panacée n’a pas d’effets\
+    \ secondaires (par exemple, la panacée d’ivresse ne donne pas la gueule de bois).\
+    \ Quand le personnage utilise la panacée universelle, il choisit l’un des effets\
+    \ suivants. \n• Analgésique. Le personnage ne ressent pas les douleurs mineures\
+    \ comme l’arthrose, le froid ou la gueule de bois pendant 1 heure. Pendant tout\
+    \ ce temps, il gagne un bonus de résistance de +2 contre les sorts liés à la douleur.\n\
+    • Clarté. Le personnage gagne un bonus de compétence de +1 sur un unique jet d’attaque,\
+    \ de sauvegarde ou un test de compétence dans la minute qui suit. Il doit choisir\
+    \ le type de bonus avant de faire le jet auquel il s’applique.\n• Hallucination.\
+    \ Le personnage a d’agréables hallucinations pendant 1 heure. Il voit des lumières\
+    \ dansantes, entend de la musique, contemple des animaux surnaturels qui jouent,\
+    \ etc. Il sait que ces choses ne sont pas réelles mais elles le distraient et\
+    \ il subit un malus de -2 aux tests de Perception pendant toute la durée du sort.\n\
+    • Ivresse. Le personnage est agréablement ivre pendant 1 heure, comme s’il avait\
+    \ bu de l’alcool.\n• Résistance. Le personnage gagne un bonus de résistance aux\
+    \ jets de sauvegarde de +1 pendant 1 minute.\n• Rêve lucide. Si le personnage\
+    \ prend la panacée moins d’une heure avant d’aller se coucher, il fait un rêve\
+    \ conscient placé sous son contrôle pendant une heure.\n• Sobriété. Le personnage\
+    \ devient complètement sobre pendant 1 heure, ce qui annule tous les malus liés\
+    \ à l’ivresse. Les méthodes magiques et alchimiques (comme la détection du poison)\
+    \ considèrent toujours que le personnage est en état d’ébriété. La période passée\
+    \ sous l’effet de cette panacée ne compte pas dans le temps nécessaire pour cuver\
+    \ (la panacée ne fait que retarder le délai d’ivresse).\n• Sommeil. Le personnage\
+    \ entame une plaisante sieste reposante d’au moins une heure, jusqu’à ce qu’on\
+    \ le réveille. S’il était censé dormir à cette heure, il passe à un sommeil normal\
+    \ une fois l’effet de la panacée passé.\n• Ténacité. Le personnage gagne 1 point\
+    \ de vie temporaire pendant une minute.\n• Veille. Le personnage reste éveillé\
+    \ pendant 2 heures sans avoir envie de dormir et sans effets secondaires, comme\
+    \ un accès de nervosité. Il gagne un bonus de résistance de +5 contre les sorts\
+    \ liés au sommeil comme berceuse et sommeil. L’utilisation de cette panacée retarde\
+    \ simplement le besoin de sommeil du personnage et ne compte pas comme une période\
+    \ de repos ou de sommeil. Le personnage peut l’utiliser plusieurs fois à la suite\
+    \ mais, à chaque fois qu’un effet se dissipe, il est aussi fatigué que s’il n’avait\
+    \ pas utilisé la panacée."
   Source: AM
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.panac%c3%a9e%20universelle.ashx
   
@@ -27924,12 +27911,12 @@
     \ la forme choisie possède l’une des aptitudes suivantes, le personnage en bénéficie\
     \ aussi : escalade 9 m, nage 9 m, odorat, vision dans le noir 18 m,  vision nocturne,\
     \  vol 9 m (manœuvrabilité moyenne). Si la forme choisie est de  sous-type aquatique,\
-    \ le personnage gagne le sous-type amphibie et le sous-type aquatique.\n • Humanoïde\
+    \ le personnage gagne le sous-type amphibie et le sous-type aquatique.\n \n• Humanoïde\
     \ monstrueux de taille P. Si le personnage adopte la forme d’un Humanoïde monstrueux\
     \ de taille P, il gagne un bonus de taille de +2 à la Dextérité et de +1 à l’armure\
     \ naturelle.\n• Humanoïde monstrueux de taille M. Si le personnage adopte la forme\
     \ d’un Humanoïde monstrueux de taille M, il gagne un bonus de taille de +2 à la\
-    \ Force et de +2 à l’armure naturelle.\n MYTHIQUE Chaque sort de physique monstrueux\
+    \ Force et de +2 à l’armure naturelle.\n\n MYTHIQUE Chaque sort de physique monstrueux\
     \ mythique doit être appris séparément et le personnage doit connaitre le sort\
     \ de physique monstrueux non-mythique correspondant pour pouvoir apprendre sa\
     \ version mythique. Le personnage n’est pas obligé de les apprendre dans l’ordre\
@@ -27965,21 +27952,21 @@
     \ escalade 18 m, imitation des sons, immobilité, mimétisme, nage 18 m, odorat,\
     \ parler avec les requins, vision dans le noir 18 m, vision nocturne,  vol 18\
     \ m (bonne manœuvrabilité). Si la forme choisie dispose du pouvoir arme de taille\
-    \ inférieure, il en va de même pour le personnage.\n • Humanoïde monstrueux de\
-    \ taille TP. Si le personnage adopte la forme d’un Humanoïde monstrueux de taille\
-    \ TP, il gagne un bonus de taille de +4 à la Dextérité, un malus de -2 à la Force\
-    \ et un bonus de +1 à l’armure naturelle.\n• Humanoïde monstrueux de taille G.\
-    \ Si le personnage adopte la forme d’un Humanoïde monstrueux de taille G, il gagne\
-    \ un bonus de taille de +4 à la Force, un malus de -2 à la Dextérité et un bonus\
-    \ de +4 à l’armure naturelle.\n  MYTHIQUE Chaque sort de physique monstrueux mythique\
-    \ doit être appris séparément et le personnage doit connaitre le sort de physique\
-    \ monstrueux non-mythique correspondant pour pouvoir apprendre sa version mythique.\
-    \ Le personnage n’est pas obligé de les apprendre dans l’ordre croissant de leur\
-    \ puissance ; il n’a pas à connaitre un sort de physique monstrueux d’un niveau\
-    \ inférieur avant d’apprendre ce sort à un niveau supérieur (par exemple, il peut\
-    \ apprendre physique monstrueux mythique II s’il connait physique monstrueux II,\
-    \ même s’il ne connait pas physique monstrueux mythique I). Chaque sort de physique\
-    \ monstrueux mythique ajoute les avantages suivants à sa version non-mythique\
+    \ inférieure, il en va de même pour le personnage.\n \n• Humanoïde monstrueux\
+    \ de taille TP. Si le personnage adopte la forme d’un Humanoïde monstrueux de\
+    \ taille TP, il gagne un bonus de taille de +4 à la Dextérité, un malus de -2\
+    \ à la Force et un bonus de +1 à l’armure naturelle.\n• Humanoïde monstrueux de\
+    \ taille G. Si le personnage adopte la forme d’un Humanoïde monstrueux de taille\
+    \ G, il gagne un bonus de taille de +4 à la Force, un malus de -2 à la Dextérité\
+    \ et un bonus de +4 à l’armure naturelle.\n\n  MYTHIQUE Chaque sort de physique\
+    \ monstrueux mythique doit être appris séparément et le personnage doit connaitre\
+    \ le sort de physique monstrueux non-mythique correspondant pour pouvoir apprendre\
+    \ sa version mythique. Le personnage n’est pas obligé de les apprendre dans l’ordre\
+    \ croissant de leur puissance ; il n’a pas à connaitre un sort de physique monstrueux\
+    \ d’un niveau inférieur avant d’apprendre ce sort à un niveau supérieur (par exemple,\
+    \ il peut apprendre physique monstrueux mythique II s’il connait physique monstrueux\
+    \ II, même s’il ne connait pas physique monstrueux mythique I). Chaque sort de\
+    \ physique monstrueux mythique ajoute les avantages suivants à sa version non-mythique\
     \ correspondante.\n\nLes bonus aux valeurs de caractéristique augmentent de +2,\
     \ le bonus d’armure naturelle de +1 et les malus aux valeurs de caractéristique\
     \ sont réduits de 2 points (malus minimum de 0). Par ailleurs, le personnage peut\
@@ -28011,12 +27998,12 @@
     \ toile, vigueur accrue dans le froid, vision à 360°, vision dans le noir 18 m,\
     \ vision nocturne,  vol 27 m (bonne manœuvrabilité). Si la forme choisie dispose\
     \ du pouvoir arme de taille inférieure, il en va de même pour le personnage.\n\
-    \ • Humanoïde monstrueux de taille Min. Si le personnage adopte la forme d’un\
+    \ \n• Humanoïde monstrueux de taille Min. Si le personnage adopte la forme d’un\
     \ Humanoïde monstrueux de taille Min, il gagne un bonus de taille de +6 à la Dextérité,\
     \ un malus de -4 à la Force et un bonus de +1 à l’armure naturelle.\n• Humanoïde\
     \ monstrueux de taille TG. Si le personnage adopte la forme d’un Humanoïde monstrueux\
     \ de taille TG, il gagne un bonus de taille de +6 à la Force, un malus de -4 à\
-    \ la Dextérité et un bonus de +6 à l’armure naturelle.\n  MYTHIQUE Chaque sort\
+    \ la Dextérité et un bonus de +6 à l’armure naturelle.\n\n  MYTHIQUE Chaque sort\
     \ de physique monstrueux mythique doit être appris séparément et le personnage\
     \ doit connaitre le sort de physique monstrueux non-mythique correspondant pour\
     \ pouvoir apprendre sa version mythique. Le personnage n’est pas obligé de les\
@@ -28059,13 +28046,13 @@
     \ types d’énergie, le personnage gagne une résistance de 20 contre cette énergie.\
     \ Si la créature est vulnérable à un type d’énergie, il en va de même pour le\
     \ personnage. Si la créature est immunisée contre le poison, le personnage gagne\
-    \ un bonus de +8 aux jets de sauvegarde contre le poison.\n • Humanoïde monstrueux\
+    \ un bonus de +8 aux jets de sauvegarde contre le poison.\n \n• Humanoïde monstrueux\
     \ de taille Min. Si le personnage adopte la forme d’un Humanoïde monstrueux de\
     \ taille Min, il gagne un bonus de taille de +6 à la Dextérité, un malus de -4\
     \ à la Force et un bonus de +1 à l’armure naturelle.\n• Humanoïde monstrueux de\
     \ taille TG. Si le personnage adopte la forme d’un Humanoïde monstrueux de taille\
     \ TG, il gagne un bonus de taille de +6 à la Force, un malus de -4 à la Dextérité\
-    \ et un bonus de +6 à l’armure naturelle.\n  MYTHIQUE Chaque sort de physique\
+    \ et un bonus de +6 à l’armure naturelle.\n\n  MYTHIQUE Chaque sort de physique\
     \ monstrueux mythique doit être appris séparément et le personnage doit connaitre\
     \ le sort de physique monstrueux non-mythique correspondant pour pouvoir apprendre\
     \ sa version mythique. Le personnage n’est pas obligé de les apprendre dans l’ordre\
@@ -31544,34 +31531,35 @@
     \ sa taille normale, ce qui veut dire que les armes à projectiles et de jet font\
     \ des dégâts normaux. Ce sort ne se cumule pas avec les effets magiques qui augmentent\
     \ la taille.\n\nLe personnage gagne des pouvoirs supplémentaires comme indiqués\
-    \ :\n • Aspect anarchique. Le personnage gagne les pouvoirs suivants : bonus supplémentaire\
-    \ de +2 à la Constitution, RD 10/Loi, résistance à l'acide 10, à l'électricité\
-    \ 10 et au son 10, bonus de +4 aux jets de sauvegarde contre le poison, perception\
-    \ aveugle à 9 mètres (6 c) et vitesse de vol de 18 mètres (12 c) (bonne manœuvrabilité).\
-    \ Le personnage gagne une attaque de morsure qui inflige 2d6 points de dégâts.\
-    \ Les armes naturelles et autres du personnage sont considérées comme chaotiques\
-    \ quand il s'agit de vaincre la résistance aux dégâts.\n• Aspect axiomatique.\
-    \ Le personnage gagne les pouvoirs suivants : bonus supplémentaire de +2 à la\
-    \ Force, RD 10/Chaos, résistance au froid 10, à l'électricité 10 et au feu 10,\
-    \ bonus de +4 aux jets de sauvegarde contre le poison, vision nocturne et vitesse\
-    \ de vol de 18 mètres (12 c) (bonne manœuvrabilité). Le personnage gagne 2 attaques\
-    \ de coup qui infligent chacune 1d6 points de dégâts. Les armes naturelles et\
-    \ autres du personnage sont considérées comme loyales quand il s'agit de vaincre\
-    \ la résistance aux dégâts.\n• Aspect céleste. Le personnage gagne les pouvoirs\
-    \ suivants : bonus de +2 à la Dextérité, RD 10/Mal, résistance à l'acide 10, au\
-    \ froid 10, à l'électricité 10, bonus de +4 aux jets de sauvegarde contre le poison,\
-    \ vision nocturne et vitesse de vol de 18 mètres (12 c) (bonne manœuvrabilité).\
-    \ Le personnage gagne 2 attaques de coup qui infligent chacune 1d6 points de dégâts.\
-    \ Les armes naturelles et autres du personnage sont considérées comme bonnes quand\
-    \ il s'agit de vaincre la résistance aux dégâts.\n• Aspect démoniaque. Le personnage\
-    \ gagne les pouvoirs suivants : bonus supplémentaire de +2 à la Force, RD 10/Bien,\
-    \ résistance à l'acide 10, au froid 10 et au feu 10, bonus de +4 aux jets de sauvegarde\
-    \ contre le poison, vision dans le noir et vitesse de vol de 18 mètres (12 c)\
-    \ (bonne manœuvrabilité). Le personnage gagne 2 attaques de griffes qui infligent\
-    \ chacune 1d6 points de dégâts. Les armes naturelles et autres du personnage sont\
-    \ considérées comme Mauvaises quand il s'agit de vaincre la résistance aux dégâts.\n\
-    \ Quand le personnage prend un aspect anarchique, axiomatique, céleste ou démoniaque,\
-    \ le sort est respectivement considéré comme Chaotique, Loyal, Bon ou Mauvais."
+    \ :\n \n• Aspect anarchique. Le personnage gagne les pouvoirs suivants : bonus\
+    \ supplémentaire de +2 à la Constitution, RD 10/Loi, résistance à l'acide 10,\
+    \ à l'électricité 10 et au son 10, bonus de +4 aux jets de sauvegarde contre le\
+    \ poison, perception aveugle à 9 mètres (6 c) et vitesse de vol de 18 mètres (12\
+    \ c) (bonne manœuvrabilité). Le personnage gagne une attaque de morsure qui inflige\
+    \ 2d6 points de dégâts. Les armes naturelles et autres du personnage sont considérées\
+    \ comme chaotiques quand il s'agit de vaincre la résistance aux dégâts.\n• Aspect\
+    \ axiomatique. Le personnage gagne les pouvoirs suivants : bonus supplémentaire\
+    \ de +2 à la Force, RD 10/Chaos, résistance au froid 10, à l'électricité 10 et\
+    \ au feu 10, bonus de +4 aux jets de sauvegarde contre le poison, vision nocturne\
+    \ et vitesse de vol de 18 mètres (12 c) (bonne manœuvrabilité). Le personnage\
+    \ gagne 2 attaques de coup qui infligent chacune 1d6 points de dégâts. Les armes\
+    \ naturelles et autres du personnage sont considérées comme loyales quand il s'agit\
+    \ de vaincre la résistance aux dégâts.\n• Aspect céleste. Le personnage gagne\
+    \ les pouvoirs suivants : bonus de +2 à la Dextérité, RD 10/Mal, résistance à\
+    \ l'acide 10, au froid 10, à l'électricité 10, bonus de +4 aux jets de sauvegarde\
+    \ contre le poison, vision nocturne et vitesse de vol de 18 mètres (12 c) (bonne\
+    \ manœuvrabilité). Le personnage gagne 2 attaques de coup qui infligent chacune\
+    \ 1d6 points de dégâts. Les armes naturelles et autres du personnage sont considérées\
+    \ comme bonnes quand il s'agit de vaincre la résistance aux dégâts.\n• Aspect\
+    \ démoniaque. Le personnage gagne les pouvoirs suivants : bonus supplémentaire\
+    \ de +2 à la Force, RD 10/Bien, résistance à l'acide 10, au froid 10 et au feu\
+    \ 10, bonus de +4 aux jets de sauvegarde contre le poison, vision dans le noir\
+    \ et vitesse de vol de 18 mètres (12 c) (bonne manœuvrabilité). Le personnage\
+    \ gagne 2 attaques de griffes qui infligent chacune 1d6 points de dégâts. Les\
+    \ armes naturelles et autres du personnage sont considérées comme Mauvaises quand\
+    \ il s'agit de vaincre la résistance aux dégâts.\n\n Quand le personnage prend\
+    \ un aspect anarchique, axiomatique, céleste ou démoniaque, le sort est respectivement\
+    \ considéré comme Chaotique, Loyal, Bon ou Mauvais."
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.r%c3%a9ceptacle%20divin.ashx
   
@@ -32037,21 +32025,18 @@
   Durée: 1 round/niveau ou jusqu’à épuisement
   Jet de sauvegarde: voir description ;
   Résistance à la magie: voir description
-  Description: 'Une aura jaune et vacillante entoure le personnage et lui confère
-    les avantages suivants : • Un bonus de parade de +4 à la CA contre les attaques
-    des créatures d’alignement Loyal.
-
-    • La possibilité de chasser une créature d’alignement Loyal originaire d’un autre
-    plan avec une attaque de contact au corps à corps. Si celle-ci rate un jet de
-    Volonté (et que sa résistance à la magie est battue par le lanceur de sort), elle
-    est renvoyée dans son plan d’origine. Cela épuise toute l’énergie magique du sort
-    qui se termine immédiatement.
-
-    • La possibilité de dissiper, d’un simple contact, un sort du Loi ou un enchantement
-    lancé par une créature d’alignement Loyal (réussite automatique). Les sorts immunisés
-    contre dissipation de la magie le sont également contre rejet de la Loi. Cet effet
-    n’autorise aucun jet de sauvegarde ou de résistance à la magie. En revanche, il
-    épuise toute l’énergie magique du sort qui se termine immédiatement.'
+  Description: "Une aura jaune et vacillante entoure le personnage et lui confère\
+    \ les avantages suivants : \n• Un bonus de parade de +4 à la CA contre les attaques\
+    \ des créatures d’alignement Loyal.\n• La possibilité de chasser une créature\
+    \ d’alignement Loyal originaire d’un autre plan avec une attaque de contact au\
+    \ corps à corps. Si celle-ci rate un jet de Volonté (et que sa résistance à la\
+    \ magie est battue par le lanceur de sort), elle est renvoyée dans son plan d’origine.\
+    \ Cela épuise toute l’énergie magique du sort qui se termine immédiatement.\n\
+    • La possibilité de dissiper, d’un simple contact, un sort du Loi ou un enchantement\
+    \ lancé par une créature d’alignement Loyal (réussite automatique). Les sorts\
+    \ immunisés contre dissipation de la magie le sont également contre rejet de la\
+    \ Loi. Cet effet n’autorise aucun jet de sauvegarde ou de résistance à la magie.\
+    \ En revanche, il épuise toute l’énergie magique du sort qui se termine immédiatement."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.rejet%20de%20la%20loi.ashx
   
@@ -32067,21 +32052,18 @@
   Durée: 1 round/niveau ou jusqu’à épuisement
   Jet de sauvegarde: voir description ;
   Résistance à la magie: voir description
-  Description: 'Une aura noire et maléfique entoure le personnage et lui confère
-    les avantages suivants : • Un bonus de parade de +4 à la CA contre les attaques
-    des créatures d’alignement Bon.
-
-    • La possibilité de chasser une créature d’alignement Bon originaire d’un autre
-    plan avec une attaque de contact au corps à corps. Si celle-ci rate un jet de
-    Volonté (et que sa résistance à la magie est battue par le lanceur de sort), elle
-    est renvoyée dans son plan d’origine. Cela épuise toute l’énergie magique du sort
-    qui se termine immédiatement.
-
-    • La possibilité de dissiper, d’un simple contact, un sort du Bien ou un enchantement
-    lancé par une créature d’alignement Bon (réussite automatique). Les sorts immunisés
-    contre dissipation de la magie le sont également contre rejet du Bien. Cet effet
-    n’autorise aucun jet de sauvegarde ou de résistance à la magie. En revanche, il
-    épuise toute l’énergie magique du sort qui se termine immédiatement.'
+  Description: "Une aura noire et maléfique entoure le personnage et lui confère\
+    \ les avantages suivants : \n• Un bonus de parade de +4 à la CA contre les attaques\
+    \ des créatures d’alignement Bon.\n• La possibilité de chasser une créature d’alignement\
+    \ Bon originaire d’un autre plan avec une attaque de contact au corps à corps.\
+    \ Si celle-ci rate un jet de Volonté (et que sa résistance à la magie est battue\
+    \ par le lanceur de sort), elle est renvoyée dans son plan d’origine. Cela épuise\
+    \ toute l’énergie magique du sort qui se termine immédiatement.\n• La possibilité\
+    \ de dissiper, d’un simple contact, un sort du Bien ou un enchantement lancé par\
+    \ une créature d’alignement Bon (réussite automatique). Les sorts immunisés contre\
+    \ dissipation de la magie le sont également contre rejet du Bien. Cet effet n’autorise\
+    \ aucun jet de sauvegarde ou de résistance à la magie. En revanche, il épuise\
+    \ toute l’énergie magique du sort qui se termine immédiatement."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.rejet%20du%20bien.ashx
   
@@ -32097,21 +32079,18 @@
   Durée: 1 round/niveau ou jusqu’à épuisement
   Jet de sauvegarde: voir description ;
   Résistance à la magie: voir description
-  Description: 'Une aura bleue d''énergie loyale entoure le personnage et lui confère
-    les avantages suivants : • Un bonus de parade de +4 à la CA contre les attaques
-    des créatures d’alignement Chaotique.
-
-    • La possibilité de chasser une créature d’alignement Chaotique originaire d’un
-    autre plan avec une attaque de contact au corps à corps. Si celle-ci rate un jet
-    de Volonté (et que sa résistance à la magie est battue par le lanceur de sort),
-    elle est renvoyée dans son plan d’origine. Cela épuise toute l’énergie magique
-    du sort qui se termine immédiatement.
-
-    • La possibilité de dissiper, d’un simple contact, un sort du Chaos ou un enchantement
-    lancé par une créature d’alignement Chaotique (réussite automatique). Les sorts
-    immunisés contre dissipation de la magie le sont également contre rejet du Chaos.
-    Cet effet n’autorise aucun jet de sauvegarde ou de résistance à la magie. En revanche,
-    il épuise toute l’énergie magique du sort qui se termine immédiatement.'
+  Description: "Une aura bleue d'énergie loyale entoure le personnage et lui confère\
+    \ les avantages suivants : \n• Un bonus de parade de +4 à la CA contre les attaques\
+    \ des créatures d’alignement Chaotique.\n• La possibilité de chasser une créature\
+    \ d’alignement Chaotique originaire d’un autre plan avec une attaque de contact\
+    \ au corps à corps. Si celle-ci rate un jet de Volonté (et que sa résistance à\
+    \ la magie est battue par le lanceur de sort), elle est renvoyée dans son plan\
+    \ d’origine. Cela épuise toute l’énergie magique du sort qui se termine immédiatement.\n\
+    • La possibilité de dissiper, d’un simple contact, un sort du Chaos ou un enchantement\
+    \ lancé par une créature d’alignement Chaotique (réussite automatique). Les sorts\
+    \ immunisés contre dissipation de la magie le sont également contre rejet du Chaos.\
+    \ Cet effet n’autorise aucun jet de sauvegarde ou de résistance à la magie. En\
+    \ revanche, il épuise toute l’énergie magique du sort qui se termine immédiatement."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.rejet%20du%20chaos.ashx
   
@@ -32127,21 +32106,18 @@
   Durée: 1 round/niveau ou jusqu’à épuisement
   Jet de sauvegarde: voir description ;
   Résistance à la magie: voir description
-  Description: 'Une aura blanche et scintillante entoure le personnage et lui confère
-    les avantages suivants : • Un bonus de parade de +4 à la CA contre les attaques
-    des créatures d’alignement Mauvais.
-
-    • La possibilité de chasser une créature d’alignement Mauvais originaire d’un
-    autre plan avec une attaque de contact au corps à corps. Si celle-ci rate un jet
-    de Volonté (et que sa résistance à la magie est battue par le lanceur de sort),
-    elle est renvoyée dans son plan d’origine. Cela épuise toute l’énergie magique
-    du sort qui se termine immédiatement.
-
-    • La possibilité de dissiper, d’un simple contact, un sort du Mal ou un enchantement
-    lancé par une créature d’alignement Mauvais (réussite automatique). Les sorts
-    immunisés contre dissipation de la magie le sont également contre rejet du Mal.
-    Cet effet n’autorise aucun jet de sauvegarde ou de résistance à la magie. En revanche,
-    il épuise toute l’énergie magique du sort qui se termine immédiatement.'
+  Description: "Une aura blanche et scintillante entoure le personnage et lui confère\
+    \ les avantages suivants : \n• Un bonus de parade de +4 à la CA contre les attaques\
+    \ des créatures d’alignement Mauvais.\n• La possibilité de chasser une créature\
+    \ d’alignement Mauvais originaire d’un autre plan avec une attaque de contact\
+    \ au corps à corps. Si celle-ci rate un jet de Volonté (et que sa résistance à\
+    \ la magie est battue par le lanceur de sort), elle est renvoyée dans son plan\
+    \ d’origine. Cela épuise toute l’énergie magique du sort qui se termine immédiatement.\n\
+    • La possibilité de dissiper, d’un simple contact, un sort du Mal ou un enchantement\
+    \ lancé par une créature d’alignement Mauvais (réussite automatique). Les sorts\
+    \ immunisés contre dissipation de la magie le sont également contre rejet du Mal.\
+    \ Cet effet n’autorise aucun jet de sauvegarde ou de résistance à la magie. En\
+    \ revanche, il épuise toute l’énergie magique du sort qui se termine immédiatement."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.rejet%20du%20mal.ashx
   
@@ -35039,6 +35015,7 @@
     ou autre.
 
 
+
     • Arbre. Un arbre fait une attaque de corps à corps avec une allonge de 3 m (2
     c) au-delà de son tronc. S’il touche, il inflige 1d8 points de dégâts + modificateur
     de Sagesse. L’arbre peut tenter une manœuvre de bousculade, d’attirer ou de repositionnement
@@ -35509,7 +35486,7 @@
     \ il peut dépenser une deuxième utilisation de pouvoir mythique pour reproduire\
     \ la version mythique du sort désiré. Le personnage peut également produire l’un\
     \ des effets suivants qui modifient ou remplacent les effets indiqués dans la\
-    \ description du sort de souhait non-mythique : • S’il utilise le souhait mythique\
+    \ description du sort de souhait non-mythique : \n• S’il utilise le souhait mythique\
     \ pour soigner les blessures et les afflictions, le personnage peut dépenser un\
     \ nombre d’utilisations de pouvoir mythique égal au nombre d’afflictions supplémentaires\
     \ qu’il souhaite soigner. Cela s’applique aux afflictions supplémentaires de toutes\
@@ -35518,10 +35495,10 @@
     \ pour annuler le niveau négatif infligé à la cible par la résurrection. Changer\
     \ le cours des événements. En dépensant une deuxième utilisation de pouvoir mythique,\
     \ le personnage peut lancer un souhait mythique par une action immédiate avant\
-    \ de lancer un d20, ce qui lui permet de choisir le résultat du jet de dé.\n AMPLIFIÉ.\
-    \ Si le personnage dépense deux utilisations de pouvoir mythique, il peut lancer\
-    \ un souhait mythique statique et silencieux, même s’il est sans défense ou ne\
-    \ peut entreprendre aucune action (mais pas s’il est inconscient)."
+    \ de lancer un d20, ce qui lui permet de choisir le résultat du jet de dé.\n\n\
+    \ AMPLIFIÉ. Si le personnage dépense deux utilisations de pouvoir mythique, il\
+    \ peut lancer un souhait mythique statique et silencieux, même s’il est sans défense\
+    \ ou ne peut entreprendre aucune action (mais pas s’il est inconscient)."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.souhait.ashx
   
@@ -38334,24 +38311,22 @@
   Durée: permanente
   Jet de sauvegarde: non, voir texte ;
   Résistance à la magie: non
-  Description: 'Le personnage lance une terrible malédiction sur les terres et afflige
-    ceux qui y vivent comme ceux qui y meurent. Le personnage choisit l’un des effets
-    suivants. • Épidémie. Chaque matin, au lever du soleil, toutes les créatures de
-    la zone doivent réussir un jet de Vigueur ou attraper l’une des maladies suivantes
-    (que le personnage choisit au moment où il lance le sort) : la bouille-crâne,
-    la fièvre des marais, la fièvre gloussante, la lèpre, le mal aveuglant, la mort
-    vaseuse, la peste bubonique ou la tremblante. La maladie se déclare immédiatement,
-    sans période d’incubation. Le personnage utilise la fréquence et le DD du jet
-    de sauvegarde de la maladie pour déterminer ses effets. C’est un effet de maladie.
-
-    • Famine. Toutes les plantes ordinaires de la zone voient leur croissance et leur
-    production de nourriture réduites de moitié, comme si elles étaient affectées
-    par la croissance réduite du rabougrissement des plantes.
-
-    • Non-vie. Toutes les créatures P ou plus grandes qui se font tuer dans la région
-    se relèvent 24 heures plus tard sous forme de zombis, tout comme les cadavres
-    enterrés dans la zone. Il faut brûler ou démembrer les cadavres pour les empêcher
-    de se transformer en zombis.'
+  Description: "Le personnage lance une terrible malédiction sur les terres et afflige\
+    \ ceux qui y vivent comme ceux qui y meurent. Le personnage choisit l’un des effets\
+    \ suivants. \n• Épidémie. Chaque matin, au lever du soleil, toutes les créatures\
+    \ de la zone doivent réussir un jet de Vigueur ou attraper l’une des maladies\
+    \ suivantes (que le personnage choisit au moment où il lance le sort) : la bouille-crâne,\
+    \ la fièvre des marais, la fièvre gloussante, la lèpre, le mal aveuglant, la mort\
+    \ vaseuse, la peste bubonique ou la tremblante. La maladie se déclare immédiatement,\
+    \ sans période d’incubation. Le personnage utilise la fréquence et le DD du jet\
+    \ de sauvegarde de la maladie pour déterminer ses effets. C’est un effet de maladie.\n\
+    • Famine. Toutes les plantes ordinaires de la zone voient leur croissance et leur\
+    \ production de nourriture réduites de moitié, comme si elles étaient affectées\
+    \ par la croissance réduite du rabougrissement des plantes.\n• Non-vie. Toutes\
+    \ les créatures P ou plus grandes qui se font tuer dans la région se relèvent\
+    \ 24 heures plus tard sous forme de zombis, tout comme les cadavres enterrés dans\
+    \ la zone. Il faut brûler ou démembrer les cadavres pour les empêcher de se transformer\
+    \ en zombis."
   Source: AM
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.terre%20maudite.ashx
   
@@ -38458,6 +38433,7 @@
     en fonction de son type d’énergie.
 
 
+
     • Acide. La munition inflige la moitié de ses dégâts à toutes les créatures et
     tous les objets abandonnés dans un rayon d’aspersion de 4,50 m (3 c) autour de
     la cible directe de l’engin de siège. Les créatures peuvent réduire les dégâts
@@ -38501,6 +38477,7 @@
     ils ne changent pas. Contrairement aux autres attaques d’énergie, celle-ci inflige
     la totalité des dégâts aux objets. La munition gagne aussi l’un des effets suivants,
     en fonction de son type d’énergie.
+
 
 
     • Acide. La munition inflige la moitié de ses dégâts à toutes les créatures et
@@ -40536,12 +40513,12 @@
     \ un maximum de 24 DV de créatures et touche en premier celles qui possèdent le\
     \ moins de DV. Si plusieurs créatures ont le même nombre de DV, il affecte d’abord\
     \ celles qui sont les plus proches. L’effet dépend du nombre de DV de la créature.\n\
-    \n• 4 DV ou moins. La créature est nauséeuse tant qu’elle voit le voile, 1d4 rounds\
-    \ après qu’elle l’a vu pour la dernière fois et elle est fiévreuse pendant 2d4\
-    \ rounds après l’avoir vu pour la dernière fois.\n• 8 DV ou moins. La créature\
+    \n\n• 4 DV ou moins. La créature est nauséeuse tant qu’elle voit le voile, 1d4\
+    \ rounds après qu’elle l’a vu pour la dernière fois et elle est fiévreuse pendant\
+    \ 2d4 rounds après l’avoir vu pour la dernière fois.\n• 8 DV ou moins. La créature\
     \ est nauséeuse pendant 1d4 rounds tant qu’elle voit le voile puis fiévreuse pendant\
     \ 1d4 rounds après l’avoir vu pour la dernière fois.\n• 9 DV ou plus. La créature\
-    \ est fiévreuse tant qu’elle voit le voile.\n Une créature qui réussit son jet\
+    \ est fiévreuse tant qu’elle voit le voile.\n\n Une créature qui réussit son jet\
     \ de sauvegarde ignore les effets du voile. Les créatures aveugles ne sont pas\
     \ affectées. Les créatures affectées peuvent se détourner ou fermer les yeux pour\
     \ ne plus voir le voile, comme pour éviter une attaque de regard.\n\nOn peut rendre\
@@ -41645,12 +41622,12 @@
   Description: "Ce sort rassemble la puissance des saisons pour protéger la cible\
     \ et lui donner des bonus. Il peut avoir quatre effets. Le lanceur choisit l’un\
     \ des quatre et peut en changer par une action simple, qui réduit la durée d’effet\
-    \ d’une heure.\n • Printemps. La cible est enveloppée de plantes grimpantes qui\
-    \ forment une couronne de fleurs aux couleurs vives sur sa tête. Tant que le sort\
-    \ fait effet, la cible est immunisée contre les effets de saignement et regagne\
-    \ 1 pv par round quand elle se trouve en dessous de 0 pv, tant qu’elle est en\
-    \ vie, ce qui la stabilise. La durée du sort diminue d’une heure à chaque fois\
-    \ qu’il guérit ainsi 1 pv.\n• Été. La cible est entourée de poussières lumineuses.\
+    \ d’une heure.\n \n• Printemps. La cible est enveloppée de plantes grimpantes\
+    \ qui forment une couronne de fleurs aux couleurs vives sur sa tête. Tant que\
+    \ le sort fait effet, la cible est immunisée contre les effets de saignement et\
+    \ regagne 1 pv par round quand elle se trouve en dessous de 0 pv, tant qu’elle\
+    \ est en vie, ce qui la stabilise. La durée du sort diminue d’une heure à chaque\
+    \ fois qu’il guérit ainsi 1 pv.\n• Été. La cible est entourée de poussières lumineuses.\
     \ Tant que le sort fait effet, la vitesse de la cible augmente de 3 mètres. Si\
     \ elle décide d’augmenter sa vitesse de 9 mètres pendant 1 round, la durée du\
     \ sort diminue de 1 heure.\n• Automne. Un manteau de feuilles d’automne se drape\
@@ -43898,23 +43875,22 @@
   Durée: 1 minute/niveau ou jusqu’à déchargement (cf. texte)
   Jet de sauvegarde: aucun ;
   Résistance à la magie: non
-  Description: 'Le personnage crée un spectre de lumière solide multicolore qu’il
-    peut utiliser pour l’un de ces deux effets.  • Arc. Le sort crée un arc long ou
-    court adapté à la taille du personnage. Celui-ci sait le manier comme s’il y était
-    formé. Quand il bande son arc, l’arme crée automatiquement une flèche traqueuse
-    de lumière +1 : il ne peut pas tirer d’autres flèches. Une créature touchée par
-    l’une de ces flèches est entourée d’une lueur féerique et éblouie pendant 1 minute.
-    Cette version du sort se termine quand le personnage a tiré un nombre de flèches
-    égal à son niveau de lanceur de sorts.
-
-    • Pont. La lumière forme un pont ou une rampe de 1,5 mètre de large et d’une longueur
-    maximale de 3 mètres (2 c) par niveau de lanceur de sorts. Les créatures situées
-    sur le pont sont éblouies. Les alliés bénéficient d’un bonus égal au modificateur
-    de Sagesse du personnage (1 au minimum) aux tests, aux jets de sauvegarde et au
-    DMD pour résister contre ceux qui cherchent à les sortir du pont contre leur gré.
-    Les ennemis reçoivent un malus égal au modificateur de Sagesse du personnage (1
-    au minimum) aux tests, aux jets de sauvegarde et au DMD pour résister contre ceux
-    qui cherchent à les déloger du pont contre leur gré.'
+  Description: "Le personnage crée un spectre de lumière solide multicolore qu’il\
+    \ peut utiliser pour l’un de ces deux effets.  \n• Arc. Le sort crée un arc long\
+    \ ou court adapté à la taille du personnage. Celui-ci sait le manier comme s’il\
+    \ y était formé. Quand il bande son arc, l’arme crée automatiquement une flèche\
+    \ traqueuse de lumière +1 : il ne peut pas tirer d’autres flèches. Une créature\
+    \ touchée par l’une de ces flèches est entourée d’une lueur féerique et éblouie\
+    \ pendant 1 minute. Cette version du sort se termine quand le personnage a tiré\
+    \ un nombre de flèches égal à son niveau de lanceur de sorts.\n• Pont. La lumière\
+    \ forme un pont ou une rampe de 1,5 mètre de large et d’une longueur maximale\
+    \ de 3 mètres (2 c) par niveau de lanceur de sorts. Les créatures situées sur\
+    \ le pont sont éblouies. Les alliés bénéficient d’un bonus égal au modificateur\
+    \ de Sagesse du personnage (1 au minimum) aux tests, aux jets de sauvegarde et\
+    \ au DMD pour résister contre ceux qui cherchent à les sortir du pont contre leur\
+    \ gré. Les ennemis reçoivent un malus égal au modificateur de Sagesse du personnage\
+    \ (1 au minimum) aux tests, aux jets de sauvegarde et au DMD pour résister contre\
+    \ ceux qui cherchent à les déloger du pont contre leur gré."
   Source: MJ
   Référence: http://www.pathfinder-fr.org/wiki/pathfinder-rpg.arc-en-ciel%20embras%c3%a9.ashx
   
@@ -44346,11 +44322,11 @@
   Résistance à la magie: non
   Description: "Le personnage dote les armes ciblées des propriétés de l’adamantium,\
     \ du fer froid ou de l’argent, selon la composante matérielle utilisée, avec les\
-    \ effets suivants. • Adamantium. Les armes passent la RD/adamantium et ignorent\
+    \ effets suivants. \n• Adamantium. Les armes passent la RD/adamantium et ignorent\
     \ les solidités inférieures à 20.\n• Argent. Les armes passent la RD/argent.\n\
-    • Fer froid. Les armes passent la RD/fer froid.\n Aucun des autres avantages ou\
-    \ inconvénients de ces types de métaux ne s’applique. Par exemple, une arme qui\
-    \ se voit octroyer les propriétés de l’adamantium ne sera pas automatiquement\
+    • Fer froid. Les armes passent la RD/fer froid.\n\n Aucun des autres avantages\
+    \ ou inconvénients de ces types de métaux ne s’applique. Par exemple, une arme\
+    \ qui se voit octroyer les propriétés de l’adamantium ne sera pas automatiquement\
     \ de maître. Ce sort est capable d’affecter les armes qui ne sont pas en métal.\
     \ Si le personnage accorde aux armes ciblées la propriété de fer froid, le sort\
     \ dure moitié moins longtemps que la normale."
@@ -45569,11 +45545,11 @@
   Jet de sauvegarde: Volonté, annule ;
   Résistance à la magie: oui
   Description: "Ce sort permet de maudire la créature touchée. Le personnage choisit\
-    \ l’effet qu’il souhaite produire parmi les trois suivants : • -6 à une valeur\
+    \ l’effet qu’il souhaite produire parmi les trois suivants : \n• -6 à une valeur\
     \ de caractéristique (1 minimum).\n• Malus de -4 aux jets d’attaque, aux jets\
     \ de sauvegarde, aux tests de caractéristique et aux tests de compétence.\n• Chaque\
     \ fois que son tour de jeu arrive, la victime a 50% de chances de pouvoir agir\
-    \ normalement. Sinon, elle ne fait rien.\n Il est possible d’ajouter d’autres\
+    \ normalement. Sinon, elle ne fait rien.\n\n Il est possible d’ajouter d’autres\
     \ types de malédictions à cette liste, mais elles ne doivent pas être plus puissantes\
     \ que celles-ci.\n\nLa malédiction ne peut pas être dissipée, mais il est possible\
     \ de s’en débarrasser à l’aide d’annulation d’enchantement, délivrance des malédictions,\

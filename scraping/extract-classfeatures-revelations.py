@@ -58,7 +58,7 @@ for u in URLS:
             break
         else:
             description += html2text(el)
-            if el.name == "a":
+            if el.name == "a" or el.name == "div":
               src = extractSource(el)
               if src:
                 source = src
