@@ -122,8 +122,6 @@ for data in races:
                             altTrait = u"caractéristiques"
                         elif altTrait == u"le don supplémentaire":
                             altTrait = u"don en bonus"
-                            
-                                            
                         
                         # vérifier que le trait existe!!
                         exists = False
