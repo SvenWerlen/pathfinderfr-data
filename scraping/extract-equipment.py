@@ -9,18 +9,23 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, cleanSectionName, extractSource, mergeYAML
+from libhtml import jumpTo, cleanSectionName, extractSource, mergeYAML, removeParenthesis, html2text
 
 ## Configurations pour le lancement
 URLs = [
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20daventurier.ashx", 'category': u"Matériel d'aventurier"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Substances%20et%20objets%20sp%c3%a9ciaux.ashx", 'category': u"Substances et objets spéciaux"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Matériel de classes et de compétences"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%2c%20boisson%20et%20h%c3%a9bergement.ashx", 'category': u"Nourriture, boisson et hébergement"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Montures%20et%20harnachement.ashx", 'category': u"Montures et harnachement"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport"},
-    {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx", 'category': u"Objets récréatifs"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%C3%89quipement%20daventurier.ashx", 'category': u"Équipement d'aventurier"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20alchimiques.ashx", 'category': u"Armes alchimiques"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx", 'category': u"Outils alchimiques"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
+    
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx", 'category': u"Objets récréatifs"},  ### removed
 ]
 
 FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'Référence' ]
@@ -43,6 +48,7 @@ for data in URLs:
     else:
         content = BeautifulSoup(urllib.request.urlopen(data["URL"]).read(),features="lxml").body
 
+    print(data["URL"])
     tables = content.find_all('table',{'class':'tablo'})
 
     equipment = {'Complete': False}
@@ -73,14 +79,14 @@ for data in URLs:
                 if not cols[1].text.strip() and not cols[2].text.strip():
                     parent = {'Nom':equipment['Nom'], 'Référence': equipment['Référence']}
                     continue
-                elif cols[0].text.startswith(' ') and parent:
-                    equipment['Nom'] = parent['Nom'] + " (" + equipment['Nom'].lower() + ")"
+                elif (cols[0].text.startswith(' ') or cols[0].text.startswith(' ')) and parent:
+                    equipment['Nom'] = removeParenthesis(parent['Nom']) + " (" + equipment['Nom'].lower() + ")"
                     equipment['Référence'] = parent['Référence']
                 elif cols[0].text.startswith(' ') and not parent:
-                    print("SOMETHING STRANGE!!")
+                    print("Child without a parent??? %s" % cols[0].text)
                     exit(1)
                 else:
-                    parent = None
+                    parent = {'Nom':equipment['Nom'], 'Référence': equipment['Référence']}
 
                 # Others
                 equipment['Nom'] = equipment['Nom'].replace('’','\'')
@@ -156,6 +162,12 @@ for data in URLs:
 
 
     section = jumpTo(content, 'h2',{'class':'separator'}, u"Descriptions")
+    if not section:
+      section = jumpTo(content, 'h2',{'class':'separator'}, data["category"])
+    if not section:
+      print("No descriptions found for %s" % data["category"])
+      exit(1)
+    
     newObj = True
     name = ""
     descr = ""
@@ -173,17 +185,12 @@ for data in URLs:
                 source = None
                 newObj = False
 
-        elif e.name == 'br':
-            descr += "\n"
-        elif e.name is None or e.name == 'a':
-            if e.string:
-                descr += e.string.replace('\n',' ')
-        elif e.name == 'i':
-            descr += e.text
-        elif e.name == 'div':
-            src = extractSource(e)
-            if src:
-                source = src
+        else:
+            descr += html2text(e)
+            if e.name == 'div' or e.name == 'img':
+                src = extractSource(e)
+                if src:
+                    source = src
 
     addInfos(liste, name, descr, sourceNext)
 
