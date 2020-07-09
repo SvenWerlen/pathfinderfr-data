@@ -58,7 +58,7 @@ for m in multicol:
         nom = link.text.strip()
         
         # jump
-        #if nom == "Lunettes grossissantes":
+        #if nom == "Robe Ardente":
         #    found = True
         
         #if not found:
