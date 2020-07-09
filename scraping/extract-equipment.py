@@ -19,8 +19,10 @@ URLs = [
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
+    
+    
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
     
     
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
@@ -67,11 +69,7 @@ for data in URLs:
                 continue
 
             cols = r.find_all('td')
-            if len(cols) >= 3:
-                # Hotfix for multiple tables (http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Montures%20et%20harnachement.ashx?NoRedirect=1&NS=Pathfinder-RPG)
-                if cols[0].text.strip().startswith("12 m"):
-                    break
-
+            if len(cols) >= 2:
                 # Name & Reference
                 nameLink = cols[0].find('a')
                 if not nameLink is None:
@@ -81,7 +79,7 @@ for data in URLs:
                     equipment['Nom'] = html2text(cols[0]).strip()
                     equipment['Référence'] = data["URL"]
 
-                if not cols[1].text.strip() and not cols[2].text.strip():
+                if not cols[1].text.strip() and (len(cols) == 2 or not cols[2].text.strip()):
                     parent = {'Nom':equipment['Nom'], 'Référence': equipment['Référence']}
                     continue
                 elif (cols[0].text.startswith(' ') or cols[0].text.startswith(' ')) and parent:
@@ -97,7 +95,7 @@ for data in URLs:
                 equipment['Nom'] = equipment['Nom'].replace('’','\'')
                 equipment['Prix'] = html2text(cols[1]).strip()
                 equipment['Catégorie'] = data["category"]
-                if not 'Poids' in data or data['Poids']:
+                if len(cols) >= 3 and (not 'Poids' in data or data['Poids']):
                   equipment['Poids'] = html2text(cols[2]).strip()
                 else:
                   equipment['Poids'] = "—"
@@ -138,11 +136,11 @@ for data in URLs:
         elif name == u"Symbole sacré, en bois ou en argent":
             names = [u"Symbole sacré en argent",u"Symbole sacré en bois"]
 
+        elif name == u"Péage de route ou de pont":
+            names = [u"Péage (route ou pont)"]
+
         elif name == u"Vin":
             names = [u"Vin de table", "Bon vin"]
-
-        elif name == u"Auberge":
-            names = [u"Séjour à l'auberge"]
 
         elif name == u"Cheval":
             names = [u"Cheval",u"Poney"]
@@ -211,5 +209,4 @@ for l in liste:
 print("Fusion avec fichier YAML existant...")
 
 HEADER = ""
-
 mergeYAML("../data/equipement.yml", MATCH, FIELDS, HEADER, liste)
