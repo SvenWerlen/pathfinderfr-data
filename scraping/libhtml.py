@@ -327,7 +327,8 @@ def extractList(htmlElement):
             newObj = True
         
         elif el.name is None or el.name == 'a':
-            descr += el.string
+            descr += html2text(el)
+            
     # last element        
     liste.append({ 'Name': nom, 'Desc': cleanInlineDescription(descr) })
     
