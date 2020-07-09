@@ -13,7 +13,9 @@ from libhtml import cleanLabel, cleanSectionName, cleanInlineDescription, cleanD
 
 ## Configurations pour le lancement
 MOCK_REVELATION = None
+MOCK_REVELATION_SUB = None
 #MOCK_REVELATION = "mocks/revelations.html"       # décommenter pour tester avec les révélations pré-téléchargées
+#MOCK_REVELATION_SUB = "mocks/mysteres-hiver.html"
 
 URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Myst%c3%a8re%20des%20anc%c3%aatres.ashx"
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
@@ -21,7 +23,7 @@ MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
 
-print("Extraction des aptitude (réfélations)...")
+print("Extraction des aptitude (révélations)...")
 
 
 if MOCK_REVELATION:
@@ -40,8 +42,8 @@ for el in navigation.find_all('a'):
 
 for u in URLS:
 
-    if MOCK_REVELATION:
-        content = BeautifulSoup(open(MOCK_REVELATION),features="lxml").body
+    if MOCK_REVELATION_SUB:
+        content = BeautifulSoup(open(MOCK_REVELATION_SUB),features="lxml").body
     else:
         content = BeautifulSoup(urllib.request.urlopen(u).read(),features="lxml").body
 
@@ -54,10 +56,12 @@ for u in URLS:
     for el in content.find('div', {'id': 'PageContentDiv'}):
         if el.name == "h2":
             break
-        elif el.name == "div":
-            source = extractSource(el)
         else:
             description += html2text(el)
+            if el.name == "a" or el.name == "div":
+              src = extractSource(el)
+              if src:
+                source = src
     
     benediction = {}
     benediction['Nom'] = name
