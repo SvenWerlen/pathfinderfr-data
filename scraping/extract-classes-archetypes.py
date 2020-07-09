@@ -90,6 +90,16 @@ for el in list:
             print("Extraction du nom de l'archetype impossible: %s" % a.text)
             continue
         
+        ## ugly hack for Samouraï
+        if nom == "Le samouraï (classe alternative)":
+            nom = "Lame sainte"
+            source = "AG"
+            pageURL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lame%20sainte%20(chevalier).ashx"
+        ## ignore antipaladin (already exists as class)
+        elif nom == "Antipaladin":
+            continue
+        
+        
         if source == "classe de base" or "(classe de base)" in nom or "(classe alternative)" in nom:
             continue
         elif source == "MJRA,AG,AM":
@@ -100,15 +110,6 @@ for el in list:
             source = getValidSource(source)
         
         print("- Archétype %s..." % nom)
-        
-        ## ugly hack for Samouraï
-        if nom == "Le samouraï (classe alternative)":
-            nom = "Lame sainte"
-            source = "AG"
-            pageURL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lame%20sainte%20(chevalier).ashx"
-        ## ignore antipaladin (already exists as class)
-        elif nom == "Antipaladin":
-            continue
         
         if MOCK_ARCH:
             content = BeautifulSoup(open(MOCK_ARCH),features="lxml").body.find(id='PageContentDiv')

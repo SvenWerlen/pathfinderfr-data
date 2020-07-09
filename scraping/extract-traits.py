@@ -99,8 +99,10 @@ for s in sections:
         race = "Humain"        
     elif "nains" in s.text:
         race = "Nain"        
+    elif "ethnique" in s.text: # n'est pas supporté encore
+        continue 
     else:
-        print("Type de race inconnu")
+        print("Type de race inconnu: %s" % s.text)
         exit(1)
     
     for l in extractList(s):
