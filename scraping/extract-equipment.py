@@ -14,18 +14,25 @@ from libhtml import jumpTo, cleanSectionName, extractSource, mergeYAML, removePa
 ## Configurations pour le lancement
 URLs = [
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%C3%89quipement%20daventurier.ashx", 'category': u"Équipement d'aventurier"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx", 'category': u"Outils alchimiques"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
+    
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"}, 
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
+    
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx", 'category': u"Outils alchimiques"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
+    
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport", 'Poids': False},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
     
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20alchimiques.ashx", 'category': u"Armes alchimiques"}, ### ARMES???
-    
+    ## À FAIRE!
+    ##{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20alchimiques.ashx", 'category': u"Armes alchimiques"}, 
+    ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipements%20raciaux.ashx
+    ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx
+    ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poisons.ashx
+    ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marchandises.ashx
 ]
 
 FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'Référence' ]
