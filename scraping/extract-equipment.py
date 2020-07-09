@@ -21,9 +21,9 @@ URLs = [
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport", 'Poids': False},
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
     
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx", 'category': u"Objets récréatifs"},  ### removed
 ]
@@ -55,6 +55,9 @@ for data in URLs:
     parent = None
 
     for t in tables:
+        if "ignore" in t.attrs['class']:
+            continue;
+      
         rows = t.find_all('tr')
         for r in rows:
             # ignore some rows
@@ -92,7 +95,10 @@ for data in URLs:
                 equipment['Nom'] = equipment['Nom'].replace('’','\'')
                 equipment['Prix'] = cols[1].text.strip()
                 equipment['Catégorie'] = data["category"]
-                equipment['Poids'] = cols[2].text.strip().replace("kg1","kg")
+                if not 'Poids' in data or data['Poids']:
+                  equipment['Poids'] = cols[2].text.strip().replace("kg1","kg")
+                else:
+                  equipment['Poids'] = "—"
 
                 # Special for "Substances"
                 if len(cols) == 4:
@@ -114,49 +120,44 @@ for data in URLs:
         # ugly fix
         name = name.replace('’','\'')
         if name == u"Sifflet d'alerte":
-            names = [u"Sifflet d'alarme (ou silencieux)".lower()]
+            names = [u"Sifflet d'alarme (ou silencieux)"]
         elif name == u"Etui à parchemins":
-            names = [u"Étui à cartes ou à parchemins".lower()]
+            names = [u"Étui à cartes ou à parchemins"]
         elif name == u"Feuille de papier":
-            names = [u"Feuille de papier".lower(),u"Papier".lower()]
+            names = [u"Feuille de papier",u"Papier"]
         elif name == u"Papier de riz":
-            names = [u"Feuille de papier de riz".lower()]
+            names = [u"Feuille de papier de riz"]
         elif name == u"Menottes et menottes de qualité supérieure":
-            names = [u"Menottes".lower(),u"Menottes de qualité supérieure".lower()]
+            names = [u"Menottes",u"Menottes de qualité supérieure"]
 
         elif name == u"Instrument de musique, courants ou de maître":
-            names = [u"Instrument de musique courant".lower(),u"Instrument de musique de maître".lower()]
+            names = [u"Instrument de musique courant",u"Instrument de musique de maître"]
         elif name == u"Symbole sacré, en bois ou en argent":
-            names = [u"Symbole sacré en argent".lower(),u"Symbole sacré en bois".lower()]
+            names = [u"Symbole sacré en argent",u"Symbole sacré en bois"]
 
         elif name == u"Auberge":
-            name = u"Séjour à l'auberge"
+            name = [u"Séjour à l'auberge"]
 
-        elif name == u"Barde pour créature de taille M ou G":
-            name = u"Barde"
-        elif name == u"Bât":
-            names = [u"Selle (bât)".lower()]
-        elif name == u"Destrier":
-            names = [u"Cheval (destrier léger)".lower(),u"Cheval (destrier lourd)".lower()]
-        elif name == u"Selle d'équitation":
-            names = [u"Selle (d'équitation)".lower()]
-        elif name == u"Selle de guerre":
-            names = [u"Selle (de guerre)".lower()]
-        elif name == u"Selle spéciale":
-            name = u"Selle, spéciale"
+        elif name == u"Cheval":
+            names = [u"Cheval",u"Poney"]
+        elif name == "Mors et filet":
+            names = ["Mors et brides"]
+        elif name == "Rat-Ane":
+            names = ["Rat-âne"]
 
         else:
-            names = [name.lower()]
+            names = [name]
 
         # add infos to existing weapong in list
         found = False
         for l in liste:
-            if l['Nom'].lower() in names or l['Nom'].lower().startswith(name.lower()):
-                l['Complete'] = True
-                l['Description'] = descr.strip()
-                if not source is None:
-                    l['Source'] = source
-                found = True
+            for n in names:
+                if l['Nom'].lower() == n.lower() or l['Nom'].lower().startswith(n.lower()):
+                    l['Complete'] = True
+                    l['Description'] = descr.strip()
+                    if not source is None:
+                        l['Source'] = source
+                    found = True
         if not found:
             print("- une description existe pour '" + name + "' mais pas le sommaire!");
 
