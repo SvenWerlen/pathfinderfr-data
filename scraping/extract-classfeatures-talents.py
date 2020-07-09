@@ -13,7 +13,7 @@ from libhtml import jumpTo, html2text, cleanInlineDescription, cleanSectionName,
 
 ## Configurations pour le lancement
 MOCK_TALENT = None
-#MOCK_TALENT = "mocks/roublard-talents.html"       # décommenter pour tester avec les rages pré-téléchargées
+#MOCK_TALENT = "mocks/roublard-talents.html"       # décommenter pour tester avec les talents pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx"
 FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
@@ -37,40 +37,38 @@ for s in section:
     if s.name == 'div' and s.has_attr('class') and "article_2col" in s['class']:
         level = 2 if level == 0 else 10
 
-        rage = {'Source':'MJ','Niveau':level}
+        talent = {'Source':'MJ','Niveau':level}
         newObj = False
         brCount = 0
         descr = ""
         for e in s.children:
             if e.name == 'h3':
                 if newObj:
-                    rage['Classe'] = 'Roublard'
-                    rage['Description'] = descr.strip()
-                    liste.append(rage)
-                    rage = {'Source':'MJ','Niveau':level}
+                    talent['Classe'] = 'Roublard'
+                    talent['Description'] = descr.strip()
+                    liste.append(talent)
+                    talent = {'Source':'MJ','Niveau':level}
                     brCount = 0
                     descr = ""
-                rage['Nom'] = "Talent: " + cleanSectionName(e.text)
-                rage['Référence'] = URL + e.find_next("a")['href']
+                talent['Nom'] = "Talent: " + cleanSectionName(e.text)
+                talent['Référence'] = URL + e.find_next("a")['href']
                 newObj = True
             elif e.name == 'br':
                 brCount+=1
-                if(brCount==2 and u'Prérequis' in rage):
+                if(brCount==2 and u'Prérequis' in talent):
                     descr = ""
                     
-            elif e.name == 'div' and not e.has_attr('class'):
-                src = extractSource(e)
-                if not src is None:
-                    rage['Source'] = src
-            
             else:
                 descr += html2text(e, False)
-            
+                if e.name == 'div' or e.name == 'a':
+                    src = extractSource(e)
+                    if not src is None:
+                        talent['Source'] = src            
         
         ## last element
-        rage['Classe'] = 'Roublard'
-        rage['Description'] = descr.strip()
-        liste.append(rage)
+        talent['Classe'] = 'Roublard'
+        talent['Description'] = descr.strip()
+        liste.append(talent)
             
 print("Fusion avec fichier YAML existant...")
 
