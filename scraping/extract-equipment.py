@@ -19,9 +19,11 @@ URLs = [
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
-    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
+    
+    
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport", 'Poids': False},
     #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
     
@@ -73,10 +75,10 @@ for data in URLs:
                 # Name & Reference
                 nameLink = cols[0].find('a')
                 if not nameLink is None:
-                    equipment['Nom'] = cols[0].text.strip()
+                    equipment['Nom'] = html2text(cols[0]).strip()
                     equipment['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + nameLink['href']
                 else:
-                    equipment['Nom'] = cols[0].text.strip()
+                    equipment['Nom'] = html2text(cols[0]).strip()
                     equipment['Référence'] = data["URL"]
 
                 if not cols[1].text.strip() and not cols[2].text.strip():
@@ -93,21 +95,22 @@ for data in URLs:
 
                 # Others
                 equipment['Nom'] = equipment['Nom'].replace('’','\'')
-                equipment['Prix'] = cols[1].text.strip()
+                equipment['Prix'] = html2text(cols[1]).strip()
                 equipment['Catégorie'] = data["category"]
                 if not 'Poids' in data or data['Poids']:
-                  equipment['Poids'] = cols[2].text.strip().replace("kg1","kg")
+                  equipment['Poids'] = html2text(cols[2]).strip()
                 else:
                   equipment['Poids'] = "—"
 
                 # Special for "Substances"
                 if len(cols) == 4:
                     try:
-                        equipment['Artisanat'] = int(cols[3].text.strip())
+                        equipment['Artisanat'] = int(html2text(cols[3]).strip())
                     except:
                         pass
 
                 equipment['Source'] = "MJ"
+                
                 liste.append(equipment)
                 equipment = {'Complete': False}
 
@@ -135,8 +138,11 @@ for data in URLs:
         elif name == u"Symbole sacré, en bois ou en argent":
             names = [u"Symbole sacré en argent",u"Symbole sacré en bois"]
 
+        elif name == u"Vin":
+            names = [u"Vin de table", "Bon vin"]
+
         elif name == u"Auberge":
-            name = [u"Séjour à l'auberge"]
+            names = [u"Séjour à l'auberge"]
 
         elif name == u"Cheval":
             names = [u"Cheval",u"Poney"]

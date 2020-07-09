@@ -238,7 +238,7 @@ def extractLevel(text, maxdist):
 #
 def getValidSource(src, exitOnInvalid = True):
     src = src.upper()
-    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "FF", "CM", "AE", "MPNJ", "MM", "AA", "HOTS", "RSE" ];
+    VALID = ["MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "FF", "CM", "AE", "MPNJ", "MM", "AA", "HOTS", "RSE", "UI", "UW", "WOV" ];
     for v in VALID:
         if src == v:
             return src
@@ -393,6 +393,14 @@ def cleanNameForMatch(name):
     #else:
     #    return name
     return name.lower()
+
+
+# Returns a text without the part in parenthesis. Eg: Dé (la bouteille) => Dé
+def removeParenthesis(text):
+    match = re.search('(.*)\(.+?\).*', text)
+    if match:
+        return match.group(1).strip()
+    return text
 
 #
 # cette fonction extait une propriété (format BD type 2)
