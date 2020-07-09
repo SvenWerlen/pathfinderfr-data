@@ -2,19 +2,20 @@
 set -e
 
 echo "#####################"
-echo "       BASE"
+echo "       BASE          "
 echo "#####################"
 
-#./extract-races.py
-#./extract-classes.py
-#./extract-skills.py
-#./extract-feats.py
-#./extract-feats-racial.py
-#./extract-spells.py
+./extract-races.py
+./extract-classes.py
+./extract-skills.py
+./extract-feats.py
+./extract-feats-racial.py
+./extract-spells.py
+./update-spell-levels.py
 ./extract-conditions.py
 
 echo "#####################"
-echo "       CLASSFEATURES"
+echo "       CLASSFEATURES "
 echo "#####################"
 
 ./extract-classfeatures.py
@@ -36,15 +37,15 @@ echo "#####################"
 ./extract-classfeatures-talents.py
 
 echo "#####################"
-echo "       EQUIPMENT"
+echo "       EQUIPMENT     "
 echo "#####################"
 
 ./extract-equipment-weapons.py
 ./extract-equipment-armors.py
 ./extract-equipment.py
-
+ 
 echo "#####################"
-echo "       MAGIC ITEM"
+echo "       MAGIC ITEM    "
 echo "#####################"
 
 ./extract-magic-armors.py
@@ -55,7 +56,7 @@ echo "#####################"
 ./extract-magic-objects.py
 
 echo "#####################"
-echo "       TRAITS"
+echo "       TRAITS        "
 echo "#####################"
 
 ./extract-races-traits-alternatifs.py
