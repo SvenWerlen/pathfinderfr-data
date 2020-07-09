@@ -68,6 +68,9 @@ for el in list:
         print("Extraction du nom de classe impossible: %s" % title.text)
         exit(1)
     
+    if not classe == "Chevalier":
+      continue
+    
     found = False
     for c in classes:
         if c['Nom'] == classe:
@@ -92,6 +95,7 @@ for el in list:
         
         ## ugly hack for Samouraï
         if nom == "Le samouraï (classe alternative)":
+            classe = "Samouraï"
             nom = "Lame sainte"
             source = "AG"
             pageURL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lame%20sainte%20(chevalier).ashx"
