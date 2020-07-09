@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, mergeYAML
+from libhtml import jumpTo, html2text, extractSource, mergeYAML
 
 ## Configurations pour le lancement
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armures.ashx"
@@ -156,25 +156,12 @@ for s in section:
                     newObj = False
             elif e.name == 'br':
                 descr += "\n"
-            elif e.name is None or e.name == 'a':
-                if not e.string is None:
-                    descr += e.string.replace('\n',' ')
-            elif e.name == 'i':
-                descr += e.text
-            elif e.name == 'div':
-                for c in e.children:
-                    if c.name == 'img':
-                        if('logoAPG' in c['src']):
-                            source = 'MJRA'
-                        elif('logoUC' in c['src']):
-                            source = 'AG'
-                        elif('logoMCA' in c['src']):
-                            source = 'MCA'
-                        elif('logoAE' in c['src']):
-                            source = 'AE'
-                        else:
-                            print(c['src'])
-                            exit(1)
+            else:
+                descr += html2text(e)
+                if e.name == 'div' or e.name == 'a':
+                    src = extractSource(e)
+                    if src:
+                        source = src
 
 addInfos(liste, name, sourceNext)
 

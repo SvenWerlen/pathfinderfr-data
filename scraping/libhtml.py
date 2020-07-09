@@ -297,6 +297,8 @@ def extractSource(div):
                 return 'PMI'
             elif('logoAE' in c['src']):
                 return 'AE'
+            elif('logoref' in c['src']): # ignore
+                continue
             else:
                 print("Invalid source: " + c['src'])
                 exit(1)
