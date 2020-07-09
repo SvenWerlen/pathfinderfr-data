@@ -57,87 +57,93 @@ if MOCK_LIGNAGE:
 else:
     content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
-lignages = content.find("div", {'presentation navmenu'}).find_all("li");
-for l in lignages:
-    link = l.find("a")
-    if link is None:
-        continue;
-    
-    lignage = {}
-    lignage['Nom'] = "Lignage: " + link.text
-    lignage['Classe'] = "Ensorceleur"
-    lignage['Source'] = extractSource(l.text)
-    lignage['Niveau'] = 1
-    lignage['Description'] = ""
-    lignage['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
-    
-    print("Processing: " + link["href"])
+section = jumpTo(content, 'h2',{'class':'separator'}, "Les lignages d'ensorceleurs¶")
 
-    if MOCK_LIGNAGE_PAGE:
-        lignageHTML = BeautifulSoup(open(MOCK_LIGNAGE_PAGE),features="lxml").body
-    else:
-        lignageHTML = BeautifulSoup(urllib.request.urlopen(lignage['Référence']).read(),features="lxml").body
-    
-    # Sauter à la description
-    descr = ""
-    for t in lignageHTML.find_all('i'):
-        descr = t.text.strip()
-        if descr.startswith('*'): # Ignorer les références à la source (Ex: * Source semi-officielle)
-            continue
-        break
-    descr = descr.replace('\n','').strip()
-    
-    # additional information
-    skill = findProperty(lignageHTML.find(id='PageContentDiv'),'Compétence de classe', False)
-    if skill == None:
-        print("Skill not found")
-        exit(1)
-    spells = findProperty(lignageHTML.find(id='PageContentDiv'),'Sorts supplémentaires', False)
-    if spells == None:
-        print("Spells not found")
-        exit(1)
-    feats = findProperty(lignageHTML.find(id='PageContentDiv'),'Dons supplémentaires', False)
-    if feats == None:
-        print("Feats not found")
-        exit(1)
-    arcans = findProperty(lignageHTML.find(id='PageContentDiv'),'Arcanes de lignage', False)
-    if arcans == None:
-        print("Arcans not found")
-        exit(1)
-    
-    descr += "\n\nCOMPÉTENCE DE CLASSE: " + skill
-    descr += "\n\nSORTS SUPPLÉMENTAIRES: " + spells
-    descr += "\n\nDONS SUPPLÉMENTAIRES: " + feats
-    descr += "\n\nARCANES DE LIGNAGE: " + arcans
-    
-    lignage['Description'] = descr
-    liste.append(lignage)
-    
-    ## Pouvoirs de lignage
-    
-    pouvoirs = jumpTo(lignageHTML, 'h2',{'class':'separator'}, "Pouvoirs de lignage")
-    if pouvoirs is None:
-        print("Pouvoirs de lignages not found!")
-        exit(1)
-    for p in pouvoirs:
-        if p.name == 'h2':
+for s in section:
+  if s.name == "div" and "navmenu" in s.attrs['class']:
+    lignages = s.find_all("li");
+    for l in lignages:
+        link = l.find("a")
+        if link is None:
+            continue;
+        
+        lignage = {}
+        lignage['Nom'] = "Lignage: " + link.text
+        lignage['Classe'] = "Ensorceleur"
+        lignage['Source'] = extractSource(l.text)
+        lignage['Niveau'] = 1
+        lignage['Description'] = ""
+        lignage['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
+        
+        print("Processing: " + link["href"])
+
+        if MOCK_LIGNAGE_PAGE:
+            lignageHTML = BeautifulSoup(open(MOCK_LIGNAGE_PAGE),features="lxml").body
+        else:
+            lignageHTML = BeautifulSoup(urllib.request.urlopen(lignage['Référence']).read(),features="lxml").body
+        
+        # Sauter à la description
+        descr = ""
+        for t in lignageHTML.find_all('i'):
+            descr = t.text.strip()
+            if descr.startswith('*'): # Ignorer les références à la source (Ex: * Source semi-officielle)
+                continue
             break
-        if p.name == 'b':
-            pouvoirName = p.text[:-1]    
-            pouvoir = {}
-            pouvoir['Nom'] = "Lignage " + link.text + ": " + pouvoirName
-            pouvoir['Classe'] = "Ensorceleur"
-            pouvoir['Source'] = lignage['Source']
-            pouvoir['Niveau'] = 1
-            pouvoir['Description'] = findProperty(jumpTo(lignageHTML, 'h2',{'class':'separator'}, "Pouvoirs de lignage"), pouvoirName, False)
-            pouvoir['Référence'] = lignage['Référence']
-            pouvoir['Niveau'] = extractLevel(pouvoir['Description'], 30)
-            
-            if pouvoir['Description'] == None:
-                print("Invalid description for pouvoir de lignage")
-                exit(1)
-            
-            listePouvoirs.append(pouvoir)
+        descr = descr.replace('\n','').strip()
+        
+        # additional information
+        skill = findProperty(lignageHTML.find(id='PageContentDiv'),'Compétence de classe', False)
+        if skill == None:
+            print("Skill not found")
+            exit(1)
+        spells = findProperty(lignageHTML.find(id='PageContentDiv'),'Sorts supplémentaires', False)
+        if spells == None:
+            print("Spells not found")
+            exit(1)
+        feats = findProperty(lignageHTML.find(id='PageContentDiv'),'Dons supplémentaires', False)
+        if feats == None:
+            feats = findProperty(lignageHTML.find(id='PageContentDiv'),'Don supplémentaire', False)
+        if feats == None:
+            print("Feats not found")
+            exit(1)
+        arcans = findProperty(lignageHTML.find(id='PageContentDiv'),'Arcanes de lignage', False)
+        if arcans == None:
+            print("Arcans not found")
+            exit(1)
+        
+        descr += "\n\nCOMPÉTENCE DE CLASSE: " + skill
+        descr += "\n\nSORTS SUPPLÉMENTAIRES: " + spells
+        descr += "\n\nDONS SUPPLÉMENTAIRES: " + feats
+        descr += "\n\nARCANES DE LIGNAGE: " + arcans
+        
+        lignage['Description'] = descr
+        liste.append(lignage)
+        
+        ## Pouvoirs de lignage
+        
+        pouvoirs = jumpTo(lignageHTML, 'h2',{'class':'separator'}, "Pouvoirs de lignage")
+        if pouvoirs is None:
+            print("Pouvoirs de lignages not found!")
+            exit(1)
+        for p in pouvoirs:
+            if p.name == 'h2':
+                break
+            if p.name == 'b':
+                pouvoirName = p.text[:-1]    
+                pouvoir = {}
+                pouvoir['Nom'] = "Lignage " + link.text + ": " + pouvoirName
+                pouvoir['Classe'] = "Ensorceleur"
+                pouvoir['Source'] = lignage['Source']
+                pouvoir['Niveau'] = 1
+                pouvoir['Description'] = findProperty(jumpTo(lignageHTML, 'h2',{'class':'separator'}, "Pouvoirs de lignage"), pouvoirName, False)
+                pouvoir['Référence'] = lignage['Référence']
+                pouvoir['Niveau'] = extractLevel(pouvoir['Description'], 30)
+                
+                if pouvoir['Description'] == None:
+                    print("Invalid description for pouvoir de lignage")
+                    exit(1)
+                
+                listePouvoirs.append(pouvoir)
 
 #exit(1)
 
