@@ -67,14 +67,12 @@ for s in section:
                 brCount+=1
                 if(brCount==2 and 'Prérequis' in rage):
                     descr = ""
-            elif e.name is None or e.name == 'a':
-                descr += e.string
-
-            elif e.name == 'div':
-                src = extractSource(e)
-                if not src is None:
-                    source = src
-            
+            else:
+                descr += html2text(e)
+                if e.name == 'a':
+                    src = extractSource(e)
+                    if src:
+                        source = src
             
         ## last element
         rage['Classe'] = 'Barbare'
