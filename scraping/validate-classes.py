@@ -26,13 +26,13 @@ COMPS = (u'Acrobaties',u'Art de la magie',u'Artisanat',u'Bluff',u'Connaissances 
 for d in data:
     if d[u'Nom'] is None or len(d[u'Nom']) < 5:
         print(u"Nom de classe invalide: %s" % d[u'Nom'])
-    if d[u'Source'] is None or d[u'Source'] not in ('AG','AM','ISWG','MCA','AO','MJ','MJRA','MR','PAIZO'):
+    if d[u'Source'] is None or d[u'Source'] not in ("MJ", "MJRA", "MCA", "MR", "B1", "AG", "AM", "AO", "CCMI", "PAIZO", "RTT", "PMI", "MMI", "FF", "CM", "AE", "MPNJ", "MM", "AA", "HOTS", "RSE", "UI", "UW", "WOV"): ## see libhtml.py
         print(u"Nom de source invalide: %s pour %s" % (d[u'Source'],d[u'Nom']))
     if d[u'Alignement'] is None or len(d[u'Alignement']) < 4:
         print(u"Alignement invalide: %s pour %s" % (d[u'Alignement'],d[u'Nom']))
     if d[u'DésDeVie'] is None or len(d[u'DésDeVie']) < 2:
         print(u"Alignement invalide: %s pour %s" % (d[u'Alignement'],d[u'Nom']))
-    if d[u'Référence'] is None or not d[u'Référence'].startswith('http://www.pathfinder-fr.org'):
+    if d[u'Référence'] is None or (not d[u'Référence'].startswith('http://www.pathfinder-fr.org') and not d[u'Référence'].startswith('https://www.pathfinder-fr.org')):
         print(u"Référence invalide: %s pour %s" % (d[u'Référence'],d[u'Nom']))
     
     if not isinstance(d[u'CompétencesDeClasse'], typing.List):
