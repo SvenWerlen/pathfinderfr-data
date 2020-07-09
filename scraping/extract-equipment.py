@@ -13,23 +13,19 @@ from libhtml import jumpTo, cleanSectionName, extractSource, mergeYAML, removePa
 
 ## Configurations pour le lancement
 URLs = [
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%C3%89quipement%20daventurier.ashx", 'category': u"Équipement d'aventurier"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20alchimiques.ashx", 'category': u"Armes alchimiques"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx", 'category': u"Outils alchimiques"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"},
-    
-    
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%C3%89quipement%20daventurier.ashx", 'category': u"Équipement d'aventurier"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx", 'category': u"Outils alchimiques"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx", 'category': u"Remèdes alchimiques"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx", 'category': u"Trousses d’outils et de compétences"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx", 'category': u"Vêtements"}, 
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx", 'category': u"Nourriture et Boissons"},
     {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.H%c3%a9bergement%20et%20services.ashx", 'category': u"Hébergement et services"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport", 'Poids': False},
+    {'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
     
+    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20alchimiques.ashx", 'category': u"Armes alchimiques"}, ### ARMES???
     
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx", 'category': u"Animaux, montures et leur équipement"},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Moyens%20de%20transport.ashx", 'category': u"Moyens de transport", 'Poids': False},
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx", 'category': u"Jeux"},
-    
-    #{'URL': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Objets%20r%c3%a9cr%c3%a9atifs.ashx", 'category': u"Objets récréatifs"},  ### removed
 ]
 
 FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'Référence' ]
@@ -120,22 +116,9 @@ for data in URLs:
         names = []
         # ugly fix
         name = name.replace('’','\'')
-        if name == u"Sifflet d'alerte":
-            names = [u"Sifflet d'alarme (ou silencieux)"]
-        elif name == u"Etui à parchemins":
-            names = [u"Étui à cartes ou à parchemins"]
-        elif name == u"Feuille de papier":
-            names = [u"Feuille de papier",u"Papier"]
-        elif name == u"Papier de riz":
-            names = [u"Feuille de papier de riz"]
-        elif name == u"Menottes et menottes de qualité supérieure":
-            names = [u"Menottes",u"Menottes de qualité supérieure"]
-
-        elif name == u"Instrument de musique, courants ou de maître":
-            names = [u"Instrument de musique courant",u"Instrument de musique de maître"]
-        elif name == u"Symbole sacré, en bois ou en argent":
-            names = [u"Symbole sacré en argent",u"Symbole sacré en bois"]
-
+        if name == u"Blanchis pour arme":
+            names = [u"Blanchis"]
+            
         elif name == u"Péage de route ou de pont":
             names = [u"Péage (route ou pont)"]
 

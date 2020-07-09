@@ -259,9 +259,25 @@
   Prix: 5 po
   Poids: —
   Catégorie: Équipement d'aventurier
-  Description: Cet anneau présente un motif en relief, généralement des armoiries
-    familiales ou un sigle officiel. Le personnage presse la chevalière sur de la
-    cire fondue pour y imprimer ce symbole.
+  Description: "Ce quadrupède de taille G est utilisé comme monture et animal de\
+    \ bât. Les chevaux peuvent être entraînés pour la guerre mais, sinon, les champs\
+    \ de batailles les rendent nerveux. Beaucoup de cultures mènent des programmes\
+    \ d’élevage et considèrent souvent leur cheval comme étant le meilleur pour la\
+    \ tâche pour laquelle il a été dressé.\n\nCheval léger. Ces chevaux peuvent être\
+    \ montés mais servent souvent de chevaux de bât ou d’attelage. \n Cheval léger\
+    \ (entraîné au combat). Ces chevaux de guerre légers sont dressés pour la guerre.\
+    \ ils sont très appréciés dans la cavalerie légère et rapide et chez les éclaireurs\
+    \ et les chevaliers téméraires.\n (Voir le cheval)\n Cheval lourd. Ces chevaux\
+    \ sont souvent utilisés comme animaux de bât, portant des charges importantes\
+    \ sur de grandes distances.\n Cheval lourd (entraîné au combat). Les chevaux de\
+    \ guerre lourds sont élevés et dressés pour le combat. Ils sont souvent équipés\
+    \ d’une barde lourde mais se battent tout aussi férocement sans armure.\n  (Voir\
+    \ le cheval lourd)\n Poney. Ces créatures sont généralement utilisées pour transporter\
+    \ des marchandises sur des chemins de montagne étroits ou comme coursier pour\
+    \ les jeunes cavaliers ou les cavaliers de taille P.\n Poney (entraîné au combat).\
+    \ On peut entraîner les poneys pour la guerre tout aussi efficacement que leurs\
+    \ frères de plus grade taille. Ces coursiers servent souvent aux cavaliers de\
+    \ taille P qui prévoient de se battre.\n (Voir le poney)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chevalière
   
 - Nom: Chope
@@ -940,11 +956,10 @@
   Prix: 5 pa
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: Le prix est indiqué pour une journée de vivres. Cette nourriture
-    insipide se compose généralement d’aliments durs, de boeuf séché et de fruits
-    secs mais le contenu varie d’une région à l’autre et en fonction de la race qui
-    la prépare. Tant que la nourriture reste au sec, elle peut se conserver pendant
-    des mois sans se gâter.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie
   
@@ -1688,26 +1703,27 @@
     éternelle
   
 - Nom: Abaque
-  Source: MJRA
+  Source: MJ
   Prix: 2 po
   Poids: 1 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Cet outil permet d’effectuer des calculs mathématiques.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#ABAQUE
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cet instrument facilite les calculs mathématiques.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Abaque
   
 - Nom: Album de portraits
-  Source: MJRA
+  Source: MJ
   Prix: 10 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce livre de 100 pages contient des dessins de visages de nains, d’elfes,
-    de gnomes, de demi-elfes, de demi-orques, de halfelins et d’humains mâles et femelles.
-    En choisissant le portrait approprié et en lui ajoutant des cheveux, une barbe
-    ou d’autres éléments caractéristiques comme une mouche ou une cicatrice, même
-    un artiste peu talentueux peut préparer rapidement le portrait-robot d’une personne
-    spécifique (comme par exemple un inquisiteur fabriquant des affiches pour retrouver
-    une sorcière demi-elfe).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#ALBUMEDEPORTRAITS
+  Catégorie: Trousses d’outils et de compétences
+  Description: 'Cet album de 100 pages contient les portraits d’hommes et de femmes
+    nains, elfes, gnomes, demi-elfes, demi-orques, halfelins et humains. En choisissant
+    le portrait qui convient et en lui rajoutant des cheveux, une barbe ou d’autres
+    caractéristiques comme des grains de beauté ou des cicatrices, même un piètre
+    artiste peut rapidement créer un portrait ressemblant à une personne spécifique
+    : par exemple, un inquisiteur peut faire le portrait d’une sorcière demi-elfe
+    recherchée.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Album
+    de portraits
   
 - Nom: Astrolabe
   Source: MJ
@@ -1726,15 +1742,17 @@
     éviter de se perdre.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Astrolabe
   
-- Nom: Balance
+- Nom: Balance de marchand
   Source: MJ
   Prix: 2 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette balance offre un bonus de circonstances de +2 aux tests d’Estimation
-    si l’on s’en sert pour déterminer la valeur des objets ou des substances qui se
-    vendent au poids, comme c’est le cas pour les métaux précieux.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Balance
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: La balance de marchand est un simple levier posé sur un pivot auquel
+    sont accrochés deux plateaux. Elle accorde un bonus de circonstances de +2 aux
+    tests d’Estimation impliquant les objets que l’on évalue au poids, y compris tout
+    ce qui se compose de métaux précieux.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Balance
+    de marchand
   
 - Nom: Boussole
   Source: MJ
@@ -1747,182 +1765,215 @@
     à ses tests de Connaissances (exploration souterraine) pour se repérer sous terre.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Boussole
   
-- Nom: Chaudron
-  Source: MJRA
+- Nom: Chaudron (standard)
+  Source: MJ
   Prix: 1 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces marmites de fer comportent parfois un crochet pour les suspendre
-    au-dessus du feu mais les versions de voyage sont plus souvent dotées de trois
-    ou quatre pieds permettant de les placer au-dessus d’un feu. Un chaudron peut
-    contenir approximativement 4 litres. On peut l’utiliser pour cuisiner, fabriquer
-    des potions ou pour d’autres activités similaires.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#CHAUDRON
+  Catégorie: Équipement d'aventurier
+  Description: Cette version plus grande de la marmite en fer a une contenance d’environ
+    4,5 litres — ce qui est suffisant pour un repas nourrissant pleinement quatre
+    humains affamés. Ce chaudron peut également servir à fabriquer des potions ou
+    à d’autres activités similaires.  Chaudron en mithral. Le chaudron en mithral
+    est plus léger et accroche rarement à la cuisson.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chaudron
   
 - Nom: Enclume
-  Source: MJRA
+  Source: MJ
   Prix: 5 po
   Poids: 5-50 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: La taille d’une enclume dépend du type de travail pour lequel on
-    désire l’utiliser mais toutes les enclumes ont à peu près la même forme et sont
-    fabriquées de la même manière. Les enclumes de forgeron sont généralement beaucoup
-    plus grandes et lourdes (50 kg) que celles de maréchal-ferrant (25 kg) qui, à
-    leur tour, sont plus imposantes que celles des orfèvres travaillant l’argent ou
-    l’or (5 kg). De nombreuses tâches relatives au travail du métal sont impossibles
-    à réaliser sans enclume.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#ENCLUME
+  Catégorie: Trousses d’outils et de compétences
+  Description: Si les enclumes peuvent être de tailles différentes en fonction l’usage
+    pour lequel elles sont prévues, elles présentent toutes la même forme de base
+    et la même construction. Les enclumes de forgerons sont beaucoup plus grosses
+    et plus lourdes (50 kg) que les enclumes de maréchal-ferrant (25 kg), elles-mêmes
+    plus grosses que les enclumes d’orfèvres (5 kg). Beaucoup de travaux de métallurgie
+    sont irréalisables sans enclume adaptée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Enclume
   
 - Nom: Foreuse
-  Source: MJRA
+  Source: MJ
   Prix: 5 pa
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
   Description: Une foreuse permet de créer un trou de 2,5 cm de diamètre dans la
     pierre, le bois ou le métal par une action simple. Plus le matériau est dur et
     plus la foreuse s’use ou se brise rapidement. Un test de Perception de DD 15 permet
     d’entendre le son produit par un individu utilisant une foreuse.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#FOREUSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Foreuse
   
-- Nom: Grimoire (vierge)
+- Nom: Grimoire
   Source: MJ
   Prix: 15 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce livre contient cent pages de parchemin, chaque sort occupant une
-    page par niveau de sort (une page pour un sort de niveau 0).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Grimoire
+  Catégorie: Trousses d’outils et de compétences
+  Description: Un grimoire se compose de 100 pages de parchemin. Chaque sort prend
+    une page par niveau de sort (1 page pour chaque sort de niveau 0). Un grimoire
+    tout neuf ne contient aucun sort. Les magiciens commencent le jeu avec un grimoire
+    contenant les sorts qu’ils connaissent.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Grimoire
   
-- Nom: Grimoire de voyage (vierge)
-  Source: MJRA
+- Nom: Grimoire de voyage
+  Source: MJ
   Prix: 10 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Un tel grimoire est plus léger et moins encombrant qu’un grimoire
-    normal. Il ne comporte que 50 pages.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#GRIMOIREDEVOYAGE
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Le grimoire de voyage est moins encombrant que le grimoire normal
+    mais contient moins de sorts. Il se compose de 50 pages. Certains magiciens préfèrent
+    voyager avec un grimoire plus petit, omettant les sorts spécialisés qu’ils utilisent
+    rarement quand ils partent à l’aventure. D’autres cachent un grimoire de voyage
+    contenant leurs sorts les plus importants, juste au cas où.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Grimoire
+    de voyage
   
 - Nom: Houx et gui
   Source: MJ
   Prix: —
   Poids: —
-  Catégorie: Matériel de classes et de compétences
+  Catégorie: Trousses d’outils et de compétences
   Description: Les druides utilisent généralement ces plantes comme focalisateur
     divin pour lancer leurs sorts.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Houxetgui
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Houx
+    et gui
   
-- Nom: Instrument de musique courant
+- Nom: Instrument de musique (standard)
   Source: MJ
   Prix: 5 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Les instruments de maître confèrent un bonus de circonstances de
-    +2 aux tests de Représentation.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Instrumentdemusique
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Si le personnage veut donner un spectacle en utilisant la compétence\
+    \ Représentation associée à un instrument de musique (claviers, percussions, cordes\
+    \ ou vents), il doit avoir l’instrument de musique qui convient, sinon, il ne\
+    \ peut pas utiliser la compétence. Le coût et le poids sont indiqués pour un petit\
+    \ instrument de musique standard que le personnage peut porter à la main, comme\
+    \ un tambour, une lyre, une cloche, une harpe ou une flûte. Les instruments plus\
+    \ grands comme le violoncelle et le piano sont bien entendu plus gros et plus\
+    \ chers.\n Instrument de musique de maître. Ces instruments de qualité supérieure\
+    \ accordent un bonus de circonstances de +2 aux tests de Représentation pour jouer\
+    \ de l’instrument."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Instrument
+    de musique
   
-- Nom: Instrument de musique de maître
+- Nom: Instrument de musique (de maître)
   Source: MJ
   Prix: 100 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Les instruments de maître confèrent un bonus de circonstances de
-    +2 aux tests de Représentation.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Instrumentdemusique
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Si le personnage veut donner un spectacle en utilisant la compétence\
+    \ Représentation associée à un instrument de musique (claviers, percussions, cordes\
+    \ ou vents), il doit avoir l’instrument de musique qui convient, sinon, il ne\
+    \ peut pas utiliser la compétence. Le coût et le poids sont indiqués pour un petit\
+    \ instrument de musique standard que le personnage peut porter à la main, comme\
+    \ un tambour, une lyre, une cloche, une harpe ou une flûte. Les instruments plus\
+    \ grands comme le violoncelle et le piano sont bien entendu plus gros et plus\
+    \ chers.\n Instrument de musique de maître. Ces instruments de qualité supérieure\
+    \ accordent un bonus de circonstances de +2 aux tests de Représentation pour jouer\
+    \ de l’instrument."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Instrument
+    de musique
   
-- Nom: Jarre de sangsues
-  Source: MJRA
+- Nom: Bocal de sangsues
+  Source: MJ
   Prix: 5 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette solide jarre en céramique possède un lourd couvercle percé
-    de petits trous permettant à l’air de circuler. Elle est généralement remplie
-    d’eau à moitié et contient quatre sangsues adultes d’approximativement 15 cm de
-    long. Une jarre de sangsues donne un bonus de circonstances de +2 aux tests de
-    Premiers secours pour traiter le poison. Les sangsues utilisées pour des purges
-    de sang médicinales peuvent survivre jusqu’à 6 mois entre deux utilisations.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#JARREDESANGSUES
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce solide bocal en céramique est doté d’un lourd couvercle percé
+    de petits trous laissant passer l’air. En principe, il est à moitié rempli d’eau
+    et accueille quatre sangsues adultes mesurant environ 15 centimètres chacune.
+    Le bocal à sangsues accorde un bonus de circonstances de +2 aux tests de Premiers
+    secours pour traiter les poisons. Utilisée pour les saignées médicinales, une
+    sangsue peut survivre 6 mois sans manger.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Bocal
+    de sangsues
   
-- Nom: Jeu de tarot, commun
-  Source: MJRA
+- Nom: Tarot de voyant (standard)
+  Source: MJ
   Prix: 1 po
-  Poids: 250 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce paquet de cartes illustrées est utilisé par ceux qui communiquent
-    avec le monde des esprits afin de prédire le futur, ainsi que par les charlatans
-    désireux d’extorquer de l’argent aux naïfs et aux désespérés. La version de base
-    se réduit à de simples dessins sur des bouts de parchemins ou des plaquettes de
-    bois. La version de qualité comporte généralement des plaquettes de bois de belle
-    facture avec des images peintes en couleur. Cette version peut servir de focalisateur
-    pour un sort d’augure et donner un bonus de circonstances de +1 aux tests de Profession
-    (diseur de bonne aventure) ou de Profession (médium) et aux autres tests similaires.
-    Un tarot de maître pourrait être fabriqué en bois, en ivoire ou même en métal,
-    avec des images peintes ou sculptées et souvent rehaussées d’incrustations en
-    or ou de minuscules gemmes. Un tel tarot offre les mêmes avantages qu’un jeu de
-    qualité supérieure mais donne un bonus de +2 aux tests de compétences cités plus
-    haut.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#JEUDETAROT
+  Poids: 0,25 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Les individus en harmonie avec le monde des esprits utilisent ce\
+    \ jeu de cartes illustrées pour prédire l’avenir tandis que les charlatans s’en\
+    \ servent pour soutirer leur argent aux personnes crédules. Un jeu de cartes standard\
+    \ présente des illustrations sobres sur de simples plaques en bois.\n Tarot de\
+    \ voyant de qualité. Un tarot de voyant de qualité se compose généralement de\
+    \ plaques en bois avec des illustrations peintes en couleur, il peut servir de\
+    \ focalisateur pour le sort d’augure et accorde un bonus de circonstances de +1\
+    \ aux tests de Profession (diseuse de bonne aventure), Profession (médium) et\
+    \ autres professions similaires.\n Tarot de maître voyant. Un tarot de maître\
+    \ voyant peut être fait de bois, d’ivoire, voire même de métal, avec des illustrations\
+    \ peintes ou gravées. Il est souvent rehaussé d’incrustations en or ou de toutes\
+    \ petites pierres précieuses, il bénéficie de tous les avantages d’un tarot de\
+    \ voyant de qualité, à la seule différence qu’il accorde un bonus de circonstances\
+    \ de +2 aux tests de compétences indiqués."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Tarot
+    de voyant
   
-- Nom: Jeu de tarot, de maître
-  Source: MJRA
+- Nom: Tarot de voyant (de maître)
+  Source: MJ
   Prix: 50 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce paquet de cartes illustrées est utilisé par ceux qui communiquent
-    avec le monde des esprits afin de prédire le futur, ainsi que par les charlatans
-    désireux d’extorquer de l’argent aux naïfs et aux désespérés. La version de base
-    se réduit à de simples dessins sur des bouts de parchemins ou des plaquettes de
-    bois. La version de qualité comporte généralement des plaquettes de bois de belle
-    facture avec des images peintes en couleur. Cette version peut servir de focalisateur
-    pour un sort d’augure et donner un bonus de circonstances de +1 aux tests de Profession
-    (diseur de bonne aventure) ou de Profession (médium) et aux autres tests similaires.
-    Un tarot de maître pourrait être fabriqué en bois, en ivoire ou même en métal,
-    avec des images peintes ou sculptées et souvent rehaussées d’incrustations en
-    or ou de minuscules gemmes. Un tel tarot offre les mêmes avantages qu’un jeu de
-    qualité supérieure mais donne un bonus de +2 aux tests de compétences cités plus
-    haut.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#JEUDETAROT
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Les individus en harmonie avec le monde des esprits utilisent ce\
+    \ jeu de cartes illustrées pour prédire l’avenir tandis que les charlatans s’en\
+    \ servent pour soutirer leur argent aux personnes crédules. Un jeu de cartes standard\
+    \ présente des illustrations sobres sur de simples plaques en bois.\n Tarot de\
+    \ voyant de qualité. Un tarot de voyant de qualité se compose généralement de\
+    \ plaques en bois avec des illustrations peintes en couleur, il peut servir de\
+    \ focalisateur pour le sort d’augure et accorde un bonus de circonstances de +1\
+    \ aux tests de Profession (diseuse de bonne aventure), Profession (médium) et\
+    \ autres professions similaires.\n Tarot de maître voyant. Un tarot de maître\
+    \ voyant peut être fait de bois, d’ivoire, voire même de métal, avec des illustrations\
+    \ peintes ou gravées. Il est souvent rehaussé d’incrustations en or ou de toutes\
+    \ petites pierres précieuses, il bénéficie de tous les avantages d’un tarot de\
+    \ voyant de qualité, à la seule différence qu’il accorde un bonus de circonstances\
+    \ de +2 aux tests de compétences indiqués."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Tarot
+    de voyant
   
-- Nom: Jeu de tarot, de qualité
-  Source: MJRA
+- Nom: Tarot de voyant (de qualité)
+  Source: MJ
   Prix: 25 po
-  Poids: 250 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce paquet de cartes illustrées est utilisé par ceux qui communiquent
-    avec le monde des esprits afin de prédire le futur, ainsi que par les charlatans
-    désireux d’extorquer de l’argent aux naïfs et aux désespérés. La version de base
-    se réduit à de simples dessins sur des bouts de parchemins ou des plaquettes de
-    bois. La version de qualité comporte généralement des plaquettes de bois de belle
-    facture avec des images peintes en couleur. Cette version peut servir de focalisateur
-    pour un sort d’augure et donner un bonus de circonstances de +1 aux tests de Profession
-    (diseur de bonne aventure) ou de Profession (médium) et aux autres tests similaires.
-    Un tarot de maître pourrait être fabriqué en bois, en ivoire ou même en métal,
-    avec des images peintes ou sculptées et souvent rehaussées d’incrustations en
-    or ou de minuscules gemmes. Un tel tarot offre les mêmes avantages qu’un jeu de
-    qualité supérieure mais donne un bonus de +2 aux tests de compétences cités plus
-    haut.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#JEUDETAROT
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Les individus en harmonie avec le monde des esprits utilisent ce\
+    \ jeu de cartes illustrées pour prédire l’avenir tandis que les charlatans s’en\
+    \ servent pour soutirer leur argent aux personnes crédules. Un jeu de cartes standard\
+    \ présente des illustrations sobres sur de simples plaques en bois.\n Tarot de\
+    \ voyant de qualité. Un tarot de voyant de qualité se compose généralement de\
+    \ plaques en bois avec des illustrations peintes en couleur, il peut servir de\
+    \ focalisateur pour le sort d’augure et accorde un bonus de circonstances de +1\
+    \ aux tests de Profession (diseuse de bonne aventure), Profession (médium) et\
+    \ autres professions similaires.\n Tarot de maître voyant. Un tarot de maître\
+    \ voyant peut être fait de bois, d’ivoire, voire même de métal, avec des illustrations\
+    \ peintes ou gravées. Il est souvent rehaussé d’incrustations en or ou de toutes\
+    \ petites pierres précieuses, il bénéficie de tous les avantages d’un tarot de\
+    \ voyant de qualité, à la seule différence qu’il accorde un bonus de circonstances\
+    \ de +2 aux tests de compétences indiqués."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Tarot
+    de voyant
   
-- Nom: Laboratoire alchimique portable
-  Source: MJRA
+- Nom: Laboratoire d'alchimiste portable
+  Source: MJ
   Prix: 75 po
   Poids: 10 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette version compacte du laboratoire alchimique offre un bonus de
-    circonstances de +1 aux tests d’Artisanat (alchimie).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#LABORATOIREALCHIMIQUEPORTABLE
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette version compacte du laboratoire d’alchimiste accorde un bonus
+    de circonstances de +1 aux tests d’Artisanat (alchimie).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Laboratoire
+    d'alchimiste portable
   
-- Nom: Laboratoire d'alchimie
+- Nom: Laboratoire d'alchimiste
   Source: MJ
   Prix: 200 po
   Poids: 20 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce laboratoire est conçu pour la création de produits alchimiques
-    et offre un bonus de circonstances de +2 aux tests d’Artisanat (alchimie). Il
-    n’a aucune influence sur les prix liés à Artisanat (alchimie). Sans ce laboratoire,
-    on considère que le personnage maîtrisant cette compétence possède suffisamment
-    d’outils pour exercer ses compétences mais pas assez pour bénéficier du bonus
-    de +2 offert par le laboratoire.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Laboratoiredalchimie
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce labo sert à fabriquer des objets alchimiques et fournit un bonus
+    de circonstances de +2 aux tests d’Artisanat (alchimie). Il n’a aucune incidence
+    sur les coûts relatifs à la compétence Artisanat (alchimie). Sans ce labo, on
+    considère qu’un personnage ayant la compétence Artisanat (alchimie) a suffisamment
+    d’outils pour faire appel à sa compétence mais n’en a pas assez pour obtenir le
+    bonus de +2 qu’apporte le labo.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Laboratoire
+    d'alchimiste
   
 - Nom: Loupe
   Source: MJ
@@ -1941,137 +1992,182 @@
   Source: MJ
   Prix: 80 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces outils idéaux confèrent un bonus de circonstances de +2 aux tests
-    d’Escalade.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Matérieldescalade
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ces crampons, pitons, cordes et autres outils accordent un bonus
+    de circonstances de +2 aux tests d’Escalade.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Matériel
+    d'escalade
   
-- Nom: Outils d'artisan
+- Nom: Outils d'artisan (standard)
   Source: MJ
   Prix: 5 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces outils sont conçus pour tous les types d’artisanat. Sans eux,
-    le personnage doit utiliser des outils improvisés (malus de -2 aux tests d’Artisanat)
-    en admettant qu’il puisse exercer son art.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Outilsdartisan
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Ces outils spéciaux regroupent tout le nécessaire à la fabrication\
+    \ de n’importe quel objet. Sans eux, le personnage doit utiliser des outils improvisés\
+    \ (malus de -2 aux tests d’Artisanat), en admettant qu’il puisse fabriquer son\
+    \ objet.\n Outils de maître artisan. Ces outils ont la même fonction que les outils\
+    \ d’artisan à la seule différence que ce sont les outils parfaits accordant un\
+    \ bonus de circonstances de +2 aux tests d’Artisanat."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Outils
+    d'artisan
   
-- Nom: Outils de maître artisan
+- Nom: Outils d'artisan (de maître)
   Source: MJ
   Prix: 55 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces outils sont semblables à ceux décrits ci-dessus mais ils conviennent
-    si bien au travail à faire qu’ils offrent un bonus de circonstances de +2 aux
-    tests d’Artisanat.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Outilsdemaîtreartisan
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Ces outils spéciaux regroupent tout le nécessaire à la fabrication\
+    \ de n’importe quel objet. Sans eux, le personnage doit utiliser des outils improvisés\
+    \ (malus de -2 aux tests d’Artisanat), en admettant qu’il puisse fabriquer son\
+    \ objet.\n Outils de maître artisan. Ces outils ont la même fonction que les outils\
+    \ d’artisan à la seule différence que ce sont les outils parfaits accordant un\
+    \ bonus de circonstances de +2 aux tests d’Artisanat."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Outils
+    d'artisan
   
-- Nom: Outils de cambrioleur
+- Nom: Outils de cambrioleur (standard)
   Source: MJ
   Prix: 30 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Cet assortiment d’outils contient des crochets et autres accessoires
-    indispensables à l’utilisation de la compétence Sabotage. Sans eux, il faut se
-    rabattre sur des outils improvisés ce qui impose un malus de circonstances de
-    -2 aux tests de Sabotage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Outilsdecambrioleur
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Cette trousse comprend des crochets de serrurier et autres outils\
+    \ nécessaires à l’utilisation de la compétence Sabotage. Sans ces outils, le personnage\
+    \ doit utiliser des outils improvisés et reçoit un malus de circonstances de -2\
+    \ à ses tests de Sabotage.\n Outils de cambrioleur de qualité supérieure. Cette\
+    \ trousse comprend des outils supplémentaires et de meilleure facture accordant\
+    \ un bonus de circonstances de +2 aux tests de Sabotage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Outils
+    de cambrioleur
   
-- Nom: Outils de cambrioleur de qualité supérieure
+- Nom: Outils de cambrioleur (de qualité supérieure)
   Source: MJ
   Prix: 100 po
   Poids: 1 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Par rapport à la précédente, cette trousse contient des outils supplémentaires
-    et de qualité supérieure, ce qui offre un bonus de circonstances de +2 aux tests
-    de Sabotage.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Outilsdecambrioleurdequalitésupérieure
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Cette trousse comprend des crochets de serrurier et autres outils\
+    \ nécessaires à l’utilisation de la compétence Sabotage. Sans ces outils, le personnage\
+    \ doit utiliser des outils improvisés et reçoit un malus de circonstances de -2\
+    \ à ses tests de Sabotage.\n Outils de cambrioleur de qualité supérieure. Cette\
+    \ trousse comprend des outils supplémentaires et de meilleure facture accordant\
+    \ un bonus de circonstances de +2 aux tests de Sabotage."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Outils
+    de cambrioleur
   
-- Nom: Outil de qualité supérieure
+- Nom: Outil de maître
   Source: MJ
   Prix: 50 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Cet objet de qualité exceptionnelle remplit parfaitement sa fonction
-    et offre un bonus de circonstances de +2 au test de compétence correspondant (le
-    cas échéant). Les bonus offerts par plusieurs objets de qualité supérieure ne
-    s’additionnent pas.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Outildequalitésupérieure
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: 'Il s’agit de l’outil parfait pour la tâche prévue. Il donne un bonus
+    de circonstances de +2 au test de compétence associé (s’il y en a une). Les bonus
+    accordés par plusieurs outils de maître ne se cumulent pas. Plusieurs objets ordinaires
+    comptent déjà comme des outils de maître pour certaines compétences particulières.
+    On compte le labo d’alchimiste, le matériel d’escalade, la trousse de déguisement,
+    la trousse de premiers secours, les instruments de musique de maître et les outils
+    de cambrioleur de qualité supérieure. Il n’existe donc pas de matériel d’escalade
+    de maître, de trousse de premiers secours de maître, etc. : ces objets représentent
+    déjà le meilleur équipement pour les tests généraux de la compétence appropriée.
+
+
+    Certaines compétences n’ont pas d’outils spécifiques ou d’outils de maître : il
+    n’existe aucun objet non-magique qui accorde un bonus à la compétence en question.
+    Par exemple, ce n’est pas parce qu’un parfum est apprécié par les nobles d’une
+    région (accordant un bonus de circonstances de +2 aux tests de Diplomatie faits
+    pour les influencer) que ce parfum aura le même effet sur un membre de la guilde
+    des voleurs, un berserker étranger ou une méduse. De la même manière, ce n’est
+    pas parce qu’une fausse barbe peut accorder un bonus de circonstances de +2 aux
+    tests d’Utilisation d''objets magiques pour imiter un nain que cette barbe aura
+    un quelconque effet sur l’utilisation de cette compétence pour activer des objets
+    elfiques ou de paladins, ni pour déchiffrer un sort écrit.  Il se peut que certains
+    MJ autorisent les outils de maître pour d’autres compétences, au prix indiqué.
+    Le bonus de circonstance accordé par un tel outil ne devrait jamais être supérieur
+    à +2. L’outil devrait être limité à un certain nombre d’utilisations (comme les
+    trousses de premiers secours et de déguisement) ou ne s’appliquer qu’à certains
+    aspects de la compétence (comme le bonus du balancier aux tests d’Acrobaties pour
+    traverser une surface étroite ou le bonus de la loupe aux tests d’Estimation pour
+    les objets détaillés).'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Outil
+    de maître
   
-- Nom: Perche d'équilibriste
-  Source: MJRA
+- Nom: Balancier
+  Source: MJ
   Prix: 8 pa
   Poids: 6 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces perches flexibles mesurent entre 4,50 m et 9 m. Bien  utilisées,
-    elles aident à garder l’équilibre lorsqu’on marche sur des surfaces étroites.
-    Une perche d’équilibriste donne un bonus de circonstances de +1 aux tests d’Acrobaties
-    pour avancer sur une surface étroite.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#PERCHEDEQUILIBRISTE
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette perche souple peut mesurer de 4,50 à 9 mètres de long. Utilisée
+    correctement, elle aide le personnage à garder l’équilibre lorsqu’il franchit
+    des passages très étroits. Le balancier accorde un bonus de circonstances de +1
+    aux tests d’Acrobaties pour traverser une surface étroite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Balancier
   
 - Nom: Piège à ours
-  Source: MJRA
+  Source: MJ
   Prix: 2 po
   Poids: 5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces pièges conçus pour attraper de gros animaux fonctionnent tout
-    aussi bien contre des proies humanoïdes ou monstrueuses. Ils comportent des mâchoires
-    montées sur charnière qui sont attachées à une chaîne, elle-même reliée à un pieu
-    enfoncé dans le sol et permettant d’empêcher la victime de s’échapper en rampant.
-    Il faut un test de Force de DD 20 pour forcer les mâchoires ou pour retirer le
-    pieu du sol.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#PIEGEAOURS
+  Catégorie: Trousses d’outils et de compétences
+  Description: Bien qu’ils soient destinés à piéger des grands animaux, les pièges
+    à ours fonctionnent tout aussi bien sur les humanoïdes et les monstres. Les mâchoires
+    articulées du piège sont fixées à une chaîne, elle-même maintenue par une pointe
+    plantée dans le sol afin que la victime ne puisse pas prendre la fuite en rampant.
+    Il faut réussir un test de Force DD 20 pour faire levier sur les mâchoires et
+    les ouvrir ou pour arracher la pointe fichée dans le sol.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Piège
+    à ours
   
-- Nom: Poulie
-  Source: MJRA
-  Prix: 2 po
-  Poids: 5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Bien utilisée, cette simple poulie à palans donne un bonus de circonstances
-    de +5 aux tests de Force pour soulever des objets lourds. Il faut 1 minute pour
-    positionner la poulie.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#POULIE
+- Nom: Palan
+  Source: MJ
+  Prix: 5 po
+  Poids: 2,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Qu’il serve à remonter des trésors du fond d’une fosse ou à déplacer
+    des provisions, un simple palan à poulie correctement attaché, rajoute un bonus
+    de circonstances de +5 aux tests de Force pour soulever des objets lourds. Il
+    faut une minute pour attacher la poulie.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Palan
   
-- Nom: Recueil d'empreintes
-  Source: MJRA
+- Nom: Guide des empreintes de pas
+  Source: MJ
   Prix: 50 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ce tome de 50  pages contient des  représentations précises des empreintes
-    laissées par divers animaux, humanoïdes et monstres ainsi que des notes sur la
-    longueur des pas, la profondeur des empreintes et d’autres informations utiles
-    de même genre. Le recueil donne un bonus de circonstances de +2 pour identifier
-    une créature à partir de ses traces (mais l’utilisation de souliers rend l’identification
-    difficile ou impossible dans le cas de nombreux humanoïdes). Le livre ne permet
-    pas d’identifier des individus spécifiques mais il peut aider à distinguer une
-    empreinte d’ogre d’une empreinte de troll ou des traces laissées par un elfe de
-    celles d’un orque. Le contenu de ces recueils varie d’une région à l’autre selon
-    les créatures qu’on y rencontre le plus fréquemment.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#RECUEILDEMPREINTES
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce livre de 50 pages contient des illustrations précises qui représentent
+    les traces que laissent les animaux, les humanoïdes et les monstres courants ainsi
+    que des notes sur la longueur des empreintes, leur profondeur, et d’autres informations
+    utiles. Le livre accorde un bonus de circonstances de +2 pour identifier une créature
+    à ses traces mais, si un humanoïde porte des chaussures, il est presque impossible
+    d’identifier son espèce. Bien que le livre ne puisse pas aider à identifier des
+    individus spécifiques, il peut aider à différencier les empreintes de pas d’un
+    ogre de celles d’un troll ou celles d’un elfe de celles d’un orque. Selon la région,
+    les livres présentent des empreintes de pas différentes en fonction des créatures
+    les plus courantes que l’on trouve dans la région.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Guide
+    des empreintes de pas
   
 - Nom: Sacoche à composantes
   Source: MJ
   Prix: 5 po
   Poids: 1 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: 'On considère que tout lanceur de sorts qui possède une telle sacoche
-    dispose des composantes matérielles et des focaliseurs nécessaires à ses incantations,
-    à trois exceptions près : les composantes ou focaliseurs dont le prix est indiqué
-    dans la description du sort, les focaliseurs divins et ceux qui sont trop grands
-    pour tenir dans la sacoche.'
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Sacocheàcomposantes
+  Catégorie: Trousses d’outils et de compétences
+  Description: On considère qu’un lanceur de sorts ayant une sacoche à composantes
+    a tous les matériaux et focalisateurs nécessaires pour lancer ses sorts, à l’exception
+    des composantes ayant un coût spécifique, des focalisateurs divins et des focalisateurs
+    qui ne rentrent pas dans une sacoche. La plupart des sacoches à composantes sont
+    étanches et peuvent se porter en bandoulière ou à la ceinture.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Sacoche
+    à composantes
   
 - Nom: Sacoche de l'alchimiste
-  Source: MJRA
+  Source: MJ
   Prix: 25 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Si un alchimiste possède une sacoche d’alchimiste, on suppose qu’il
-    a à sa disposition toutes les composantes matérielles nécessaires à la fabrication
-    de ses extraits, de ses mutagènes et de ses bombes, à l’exception de ceux dont
-    le prix est spécifié. Cette sacoche ne donne aucun bonus aux tests d’Artisanat
-    (alchimie).
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#SACOCHEDELALCHIMISTE
+  Catégorie: Trousses d’outils et de compétences
+  Description: On considère qu’un alchimiste possédant une sacoche de l’alchimiste
+    a toutes les composantes matérielles qu’il faut pour créer ses extraits, ses mutagènes
+    et ses bombes, à l’exception des composantes ayant un coût spécifique. La sacoche
+    de l’alchimiste n’offre aucun bonus aux tests d’Artisanat (alchimie).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Sacoche
+    de l'alchimiste
   
 - Nom: Scie
   Source: MJ
@@ -2099,80 +2195,100 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sextant
   
 - Nom: Soufflet
-  Source: MJRA
+  Source: MJ
   Prix: 1 po
   Poids: 1,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Un soufflet aide à allumer un feu en offrant un bonus de circonstances
-    de +1 aux tests de Survie concernés.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#SOUFFLET
+  Catégorie: Trousses d’outils et de compétences
+  Description: Les soufflets sont pratiques pour démarrer les feux, accordant un
+    bonus de circonstances de +1 aux tests de Survie pour démarrer ou entretenir un
+    feu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Soufflet
   
-- Nom: Symbole sacré en argent
+- Nom: Symbole sacré (en argent)
   Source: MJ
   Prix: 25 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Un symbole sacré concentre l’énergie positive. Les prêtres et paladins
-    bienveillants s’en servent pour canaliser l’énergie positive (de même que les
-    prêtres Neutres qui veulent lancer des sorts d’alignement Bon ou canaliser de
-    l’énergie positive). Chaque religion possède son propre symbole sacré.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Symbolesacré
+  Poids: 0,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: "Un symbole sacré permet de concentrer l’énergie positive. Il sert\
+    \ aux prêtres et aux paladins d’alignement Bon (ou aux prêtres d’alignement Neutre\
+    \ qui veulent lancer des sorts d’alignement Bon ou canaliser l’énergie positive).\
+    \ Chaque religion a son propre symbole. Le matériau utilisé pour fabriquer le\
+    \ symbole sacré n’a aucun effet sur ses pouvoirs mais il arrive que certains matériaux\
+    \ aient une signification particulière pour certaines religions.\n Symboles maudits.\
+    \ Un symbole maudit équivaut à un symbole sacré, à la seule différence qu’il concentre\
+    \ l’énergie négative et sert aux les prêtres d’alignement Mauvais (ou aux prêtres\
+    \ d’alignement Neutre qui veulent lancer des sorts d’alignement Mauvais ou canaliser\
+    \ l’énergie négative)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Symbole
+    sacré
   
-- Nom: Symbole sacré en bois
+- Nom: Symbole sacré (en bois)
   Source: MJ
   Prix: 1 po
   Poids: —
-  Catégorie: Matériel de classes et de compétences
-  Description: Un symbole sacré concentre l’énergie positive. Les prêtres et paladins
-    bienveillants s’en servent pour canaliser l’énergie positive (de même que les
-    prêtres Neutres qui veulent lancer des sorts d’alignement Bon ou canaliser de
-    l’énergie positive). Chaque religion possède son propre symbole sacré.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Symbolesacré
+  Catégorie: Équipement d'aventurier
+  Description: "Un symbole sacré permet de concentrer l’énergie positive. Il sert\
+    \ aux prêtres et aux paladins d’alignement Bon (ou aux prêtres d’alignement Neutre\
+    \ qui veulent lancer des sorts d’alignement Bon ou canaliser l’énergie positive).\
+    \ Chaque religion a son propre symbole. Le matériau utilisé pour fabriquer le\
+    \ symbole sacré n’a aucun effet sur ses pouvoirs mais il arrive que certains matériaux\
+    \ aient une signification particulière pour certaines religions.\n Symboles maudits.\
+    \ Un symbole maudit équivaut à un symbole sacré, à la seule différence qu’il concentre\
+    \ l’énergie négative et sert aux les prêtres d’alignement Mauvais (ou aux prêtres\
+    \ d’alignement Neutre qui veulent lancer des sorts d’alignement Mauvais ou canaliser\
+    \ l’énergie négative)."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Symbole
+    sacré
   
 - Nom: Trousse de déguisement
   Source: MJ
   Prix: 50 po
   Poids: 4 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Ces outils idéaux offrent un bonus de circonstances de +2 aux tests
-    de Déguisement. Ces produits ne servent que dix fois.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Troussededéguisement
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette trousse comprend du matériel comme du maquillage ainsi que
+    des barbes, des moustaches et des cils postiches. Elle accorde un bonus de circonstances
+    de +2 aux tests de Déguisement. Elle est épuisée après 10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de déguisement
   
 - Nom: Trousse de premiers secours
   Source: MJ
   Prix: 50 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette trousse contenant des pansements et des herbes offre un bonus
-    de circonstances de +2 aux tests de Premiers secours. Ses produits ne servent
-    que dix fois.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#Troussedepremierssecours
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cet ensemble de bandages et d’herbes fournit un bonus de circonstances
+    de +2 aux tests de Premiers secours. Une trousse de premiers secours est épuisée
+    après 10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de premiers secours
   
-- Nom: Trousse de symptômes
-  Source: MJRA
+- Nom: Trousse à symptômes
+  Source: MJ
   Prix: 25 po
   Poids: 2,5 kg
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette petite boîte de bois contient de nombreux compartiments minuscules
-    remplis d’objets utiles pour feindre une maladie ainsi qu’un livre de références
-    pratique citant les indicateurs les plus communs des afflictions les plus virulentes
-    et les plus craintes. La trousse comporte des choses telles que de fausses pustules,
-    des pilules qui font apparaître de l’écume au coin de la bouche de celui qui les
-    mâche et des préparations conçues pour causer fièvre et vomissements. Une trousse
-    de symptômes donne un bonus de circonstances de +5 aux tests de Déguisement pour
-    simuler une maladie. Une trousse contient suffisamment de matériel pour 10 utilisations.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#TROUSSEDESYMPTOMES
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce petit coffret en bois accueille de nombreux petits compartiments
+    remplis d’objets utiles pour le personnage qui voudrait feindre une maladie, ainsi
+    qu’un manuel de références pratique présentant les signes courants de certaines
+    des maladies virulentes les plus redoutées. Cette trousse comprend des choses
+    telles que des fausses pustules, des comprimés faisant écumer celui qui les prend
+    et des décoctions d’herbes provoquant de la fièvre ou des vomissements. La trousse
+    à symptômes accorde un bonus de circonstances de +5 aux tests de Déguisement pour
+    simuler une maladie. Elle est épuisée après 10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    à symptômes
   
-- Nom: Trousse du cartographe
-  Source: MJRA
-  Prix: 25 po
-  Poids: 500 g
-  Catégorie: Matériel de classes et de compétences
-  Description: Cette petite trousse contient une simple ardoise avec une grille
-    sculptée dans sa surface et un certain nombre de morceaux de craies colorées.
-    Toute personne utilisant cette trousse pour dessiner une carte au cours d’un voyage
-    gagne un bonus de circonstances de +2 aux tests de Survie pour éviter de se perdre.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riel%20de%20classes%20et%20de%20comp%c3%a9tences.ashx#TROUSSEDUCARTOGRAPHE
+- Nom: Trousse de cartographe
+  Source: MJ
+  Prix: 10 po
+  Poids: 1 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette petite trousse comprend une simple ardoise gravée d’une grille
+    et un certain nombre de craies de couleurs différentes. Si le personnage utilise
+    cette trousse pour dessiner une carte au cours de son voyage, il reçoit un bonus
+    de circonstances de +2 à ses tests de Survie pour ne pas se perdre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de cartographe
   
 - Nom: Costume d'artiste
   Source: MJ
@@ -2600,8 +2716,8 @@
   
 - Nom: Barde (pour créature de taille m)
   Source: MJ
-  Prix: x21
-  Poids: x11
+  Prix: x2
+  Poids: x1
   Catégorie: Animaux, montures et leur équipement
   Description: "La barde est un type d’armure couvrant la tête, le cou, le poitrail,\
     \ le corps et éventuellement les jambes des chevaux ou d’autres montures. Les\
@@ -2621,8 +2737,8 @@
   
 - Nom: Barde (pour créature de taille g)
   Source: MJ
-  Prix: x41
-  Poids: x21
+  Prix: x4
+  Poids: x2
   Catégorie: Animaux, montures et leur équipement
   Description: "La barde est un type d’armure couvrant la tête, le cou, le poitrail,\
     \ le corps et éventuellement les jambes des chevaux ou d’autres montures. Les\
@@ -2829,6 +2945,25 @@
   Prix: 30 po
   Poids: 400 kg
   Catégorie: Animaux, montures et leur équipement
+  Description: "Ce quadrupède de taille G est utilisé comme monture et animal de\
+    \ bât. Les chevaux peuvent être entraînés pour la guerre mais, sinon, les champs\
+    \ de batailles les rendent nerveux. Beaucoup de cultures mènent des programmes\
+    \ d’élevage et considèrent souvent leur cheval comme étant le meilleur pour la\
+    \ tâche pour laquelle il a été dressé.\n\nCheval léger. Ces chevaux peuvent être\
+    \ montés mais servent souvent de chevaux de bât ou d’attelage. \n Cheval léger\
+    \ (entraîné au combat). Ces chevaux de guerre légers sont dressés pour la guerre.\
+    \ ils sont très appréciés dans la cavalerie légère et rapide et chez les éclaireurs\
+    \ et les chevaliers téméraires.\n (Voir le cheval)\n Cheval lourd. Ces chevaux\
+    \ sont souvent utilisés comme animaux de bât, portant des charges importantes\
+    \ sur de grandes distances.\n Cheval lourd (entraîné au combat). Les chevaux de\
+    \ guerre lourds sont élevés et dressés pour le combat. Ils sont souvent équipés\
+    \ d’une barde lourde mais se battent tout aussi férocement sans armure.\n  (Voir\
+    \ le cheval lourd)\n Poney. Ces créatures sont généralement utilisées pour transporter\
+    \ des marchandises sur des chemins de montagne étroits ou comme coursier pour\
+    \ les jeunes cavaliers ou les cavaliers de taille P.\n Poney (entraîné au combat).\
+    \ On peut entraîner les poneys pour la guerre tout aussi efficacement que leurs\
+    \ frères de plus grade taille. Ces coursiers servent souvent aux cavaliers de\
+    \ taille P qui prévoient de se battre.\n (Voir le poney)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Cheval
   
 - Nom: Poney (entraîné au combat)
@@ -2836,6 +2971,25 @@
   Prix: 45 po
   Poids: 450 kg
   Catégorie: Animaux, montures et leur équipement
+  Description: "Ce quadrupède de taille G est utilisé comme monture et animal de\
+    \ bât. Les chevaux peuvent être entraînés pour la guerre mais, sinon, les champs\
+    \ de batailles les rendent nerveux. Beaucoup de cultures mènent des programmes\
+    \ d’élevage et considèrent souvent leur cheval comme étant le meilleur pour la\
+    \ tâche pour laquelle il a été dressé.\n\nCheval léger. Ces chevaux peuvent être\
+    \ montés mais servent souvent de chevaux de bât ou d’attelage. \n Cheval léger\
+    \ (entraîné au combat). Ces chevaux de guerre légers sont dressés pour la guerre.\
+    \ ils sont très appréciés dans la cavalerie légère et rapide et chez les éclaireurs\
+    \ et les chevaliers téméraires.\n (Voir le cheval)\n Cheval lourd. Ces chevaux\
+    \ sont souvent utilisés comme animaux de bât, portant des charges importantes\
+    \ sur de grandes distances.\n Cheval lourd (entraîné au combat). Les chevaux de\
+    \ guerre lourds sont élevés et dressés pour le combat. Ils sont souvent équipés\
+    \ d’une barde lourde mais se battent tout aussi férocement sans armure.\n  (Voir\
+    \ le cheval lourd)\n Poney. Ces créatures sont généralement utilisées pour transporter\
+    \ des marchandises sur des chemins de montagne étroits ou comme coursier pour\
+    \ les jeunes cavaliers ou les cavaliers de taille P.\n Poney (entraîné au combat).\
+    \ On peut entraîner les poneys pour la guerre tout aussi efficacement que leurs\
+    \ frères de plus grade taille. Ces coursiers servent souvent aux cavaliers de\
+    \ taille P qui prévoient de se battre.\n (Voir le poney)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Cheval
   
 - Nom: Chien de garde
@@ -4623,13 +4777,10 @@
   Prix: 2 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: Les elfes préfèrent le pain mou d’avoine mélangé avec d’autres graines,
-    des baies et des noisettes et adouci de miel. Ils complètent ces rations avec
-    des fruits secs et des fruits à coques. Si un elfe se nourrit uniquement de ces
-    ration pendant au moins 1 semaine, il reçoit un bonus de +2 aux tests et aux jets
-    de sauvegarde bénéficiant du don Endurance. Cet avantage dure jusqu’à ce qu’il
-    fasse un repas contenant en autre chose que ces rations ou qu’il passe une journée
-    complète sans manger.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie elfiques
   
@@ -4638,16 +4789,10 @@
   Prix: 2 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: On trouve presque n’importe quelle nourriture en conserve dans les
-    rations de survie gnomes, qui sont prévues pour qu’un gnome en voyage n’ait pas
-    à manger le même repas deux fois dans la même semaine. Si un gnome se nourrit
-    uniquement de ces rations pendant au moins 1 semaine, on considère qu’il a un
-    dé de vie de plus vis à vis des sorts et des capacités surnaturelles ayant des
-    effets variables basés sur les dés de vie, comme couleurs dansantes et sommeil.
-    Ceci n’augmente pas son niveau de lanceur de sorts, son niveau de personnage ni
-    ses dés de vie de manière concrète. Cet avantage dure jusqu’à ce qu’il fasse un
-    repas comprenant en autre chose que ces rations ou qu’il passe une journée complète
-    sans manger.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie gnomes
   
@@ -4656,14 +4801,10 @@
   Prix: 2 po
   Poids: 0,25 kg
   Catégorie: Nourriture et Boissons
-  Description: Une journée de rations de survie halfelines représente plus que ce
-    que mange normalement un aventurier halfelin en une journée car un ventre plein
-    renforce sa volonté. La nourriture de base inclut des fruits secs sucrés, du saucisson,
-    du fromage sec et fort, du pain d’épice et un mélange de graines grillées, de
-    fruits à coques et de mélasse. Si un halfelin se nourrit uniquement de ces rations
-    pendant au moins une semaine, il fait passer le malus qu’impose l’état secoué
-    de -2 à -1. Cet avantage dure jusqu’à ce qu’il fasse un repas comportant autre
-    chose que ces rations ou qu’il passe une journée entière sans manger.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie halfelines
   
@@ -4672,13 +4813,10 @@
   Prix: 2 po
   Poids: 0,75 kg
   Catégorie: Nourriture et Boissons
-  Description: Les rations de survie naines comprennent des saucisses fumées et
-    de la viande salée que viennent compléter des biscuits secs et des légumes secs.
-    Si un nain se nourrit uniquement de ces rations pendant au moins une semaine,
-    il peut se hâter ou entreprendre une marche forcée pendant 1 heure de plus sans
-    souffrir d’effets secondaires mais il ne peut pas faire les deux dans une même
-    journée. Cet avantage dure jusqu’à ce qu’il fasse un repas comprenant autre chose
-    que ces rations ou qu’il passe une journée complète sans manger.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie naines
   
@@ -4687,13 +4825,10 @@
   Prix: 1 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: Une ration de survie orque se compose généralement de pain noir épais,
-    de petites saucisses aussi dures que le cuir qui doivent être mâchées lentement
-    afin d’être attendries, de viande séchée d’origine incertaine et de poivrons piquants.
-    Si un demi-orque se nourrit uniquement de ces rations pendant au moins une semaine,
-    il rajoute +2 au DD pour résister à ses tests d’Intimidation. Cet avantage dure
-    jusqu’à ce qu’il fasse un repas comportant autre chose que ces rations ou qu’il
-    passe une journée entière sans manger.
+  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
+    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
+    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
+    \ familiers. \n (Voir le rat)"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie orques
   
@@ -5789,18 +5924,6 @@
     à porter. La chaise peut supporter facilement jusqu’à 125 kg.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chaise
     pliante
-  
-- Nom: Chaudron (standard)
-  Source: MJ
-  Prix: 1 po
-  Poids: 2,5 kg
-  Catégorie: Équipement d'aventurier
-  Description: Cette version plus grande de la marmite en fer a une contenance d’environ
-    4,5 litres — ce qui est suffisant pour un repas nourrissant pleinement quatre
-    humains affamés. Ce chaudron peut également servir à fabriquer des potions ou
-    à d’autres activités similaires.  Chaudron en mithral. Le chaudron en mithral
-    est plus léger et accroche rarement à la cuisson.
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chaudron
   
 - Nom: Chaussures de fausses empreintes
   Source: MJ
@@ -7062,45 +7185,9 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sifflet
     à ultrasons
   
-- Nom: Symbole sacré (en bois)
-  Source: MJ
-  Prix: 1 po
-  Poids: —
-  Catégorie: Équipement d'aventurier
-  Description: "Un symbole sacré permet de concentrer l’énergie positive. Il sert\
-    \ aux prêtres et aux paladins d’alignement Bon (ou aux prêtres d’alignement Neutre\
-    \ qui veulent lancer des sorts d’alignement Bon ou canaliser l’énergie positive).\
-    \ Chaque religion a son propre symbole. Le matériau utilisé pour fabriquer le\
-    \ symbole sacré n’a aucun effet sur ses pouvoirs mais il arrive que certains matériaux\
-    \ aient une signification particulière pour certaines religions.\n Symboles maudits.\
-    \ Un symbole maudit équivaut à un symbole sacré, à la seule différence qu’il concentre\
-    \ l’énergie négative et sert aux les prêtres d’alignement Mauvais (ou aux prêtres\
-    \ d’alignement Neutre qui veulent lancer des sorts d’alignement Mauvais ou canaliser\
-    \ l’énergie négative)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Symbole
-    sacré
-  
 - Nom: Symbole sacré (en fer)
   Source: MJ
   Prix: 5 po
-  Poids: 0,5 kg
-  Catégorie: Équipement d'aventurier
-  Description: "Un symbole sacré permet de concentrer l’énergie positive. Il sert\
-    \ aux prêtres et aux paladins d’alignement Bon (ou aux prêtres d’alignement Neutre\
-    \ qui veulent lancer des sorts d’alignement Bon ou canaliser l’énergie positive).\
-    \ Chaque religion a son propre symbole. Le matériau utilisé pour fabriquer le\
-    \ symbole sacré n’a aucun effet sur ses pouvoirs mais il arrive que certains matériaux\
-    \ aient une signification particulière pour certaines religions.\n Symboles maudits.\
-    \ Un symbole maudit équivaut à un symbole sacré, à la seule différence qu’il concentre\
-    \ l’énergie négative et sert aux les prêtres d’alignement Mauvais (ou aux prêtres\
-    \ d’alignement Neutre qui veulent lancer des sorts d’alignement Mauvais ou canaliser\
-    \ l’énergie négative)."
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Symbole
-    sacré
-  
-- Nom: Symbole sacré (en argent)
-  Source: MJ
-  Prix: 25 po
   Poids: 0,5 kg
   Catégorie: Équipement d'aventurier
   Description: "Un symbole sacré permet de concentrer l’énergie positive. Il sert\
@@ -8477,10 +8564,11 @@
   Poids: —
   Artisanat: 20
   Catégorie: Outils alchimiques
-  Description: Cet objet se décline en différentes odeurs (correspondant à un animal,
-    un humanoïde ou une créature magique). Une fiole appliquée sur une créature de
-    taille M permet à celle-ci d’échanger son odeur contre celle de la créature à
-    laquelle correspond le masque-odeur pendant 8 heures.
+  Description: C’est dans les galas de la noblesse décadente que l’on peut voir
+    les masques les plus excentriques et les plus élégants mais on trouve des masques
+    plus simples partout où la culture locale le permet. Ils peuvent prendre la forme
+    de petits bouts de tissu ne couvrant qu’une partie du visage ou d’objets complexes
+    couvrant l’intégralité du visage ou de la tête.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Masque-odeur
   
 - Nom: Masque-odeur (humanoïde)
@@ -8489,10 +8577,11 @@
   Poids: —
   Artisanat: 25
   Catégorie: Outils alchimiques
-  Description: Cet objet se décline en différentes odeurs (correspondant à un animal,
-    un humanoïde ou une créature magique). Une fiole appliquée sur une créature de
-    taille M permet à celle-ci d’échanger son odeur contre celle de la créature à
-    laquelle correspond le masque-odeur pendant 8 heures.
+  Description: C’est dans les galas de la noblesse décadente que l’on peut voir
+    les masques les plus excentriques et les plus élégants mais on trouve des masques
+    plus simples partout où la culture locale le permet. Ils peuvent prendre la forme
+    de petits bouts de tissu ne couvrant qu’une partie du visage ou d’objets complexes
+    couvrant l’intégralité du visage ou de la tête.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Masque-odeur
   
 - Nom: Masque-odeur (créature magique)
@@ -8501,10 +8590,11 @@
   Poids: —
   Artisanat: 30
   Catégorie: Outils alchimiques
-  Description: Cet objet se décline en différentes odeurs (correspondant à un animal,
-    un humanoïde ou une créature magique). Une fiole appliquée sur une créature de
-    taille M permet à celle-ci d’échanger son odeur contre celle de la créature à
-    laquelle correspond le masque-odeur pendant 8 heures.
+  Description: C’est dans les galas de la noblesse décadente que l’on peut voir
+    les masques les plus excentriques et les plus élégants mais on trouve des masques
+    plus simples partout où la culture locale le permet. Ils peuvent prendre la forme
+    de petits bouts de tissu ne couvrant qu’une partie du visage ou d’objets complexes
+    couvrant l’intégralité du visage ou de la tête.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Masque-odeur
   
 - Nom: Mousse amortissante
@@ -9043,12 +9133,10 @@
   Poids: —
   Artisanat: 20
   Catégorie: Remèdes alchimiques
-  Description: Ce thé trouble a un effet apaisant et permet d’éclaircir les pensées.
-    Pendant 10 minutes après ingestion, le personnage gagne un bonus alchimique de
-    +2 contre les effets mentaux. S’il boit du thé de méditation alors qu’il souffre
-    d’un effet mental, il peut aussitôt refaire un jet de sauvegarde (avec le bonus
-    de +2) contre cet effet. Il ne peut bénéficier de cet avantage particulier qu’une
-    fois par jour.
+  Description: Boisson populaire dans de nombreuses régions, le thé peut être vert
+    ou noir, en fonction de la période à laquelle on cueille les feuilles et de la
+    façon dont elles sont préparées. Il peut être servi nature ou avec du lait, du
+    sucre, du citron ou des épices.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Thé
     de méditation
   
@@ -9080,4 +9168,180 @@
     de +2 aux jets de sauvegarde contre la terreur. L’utilisation de plus d’une dose
     en l’espace de 24 heures rend le personnage nauséeux pendant 1 heure.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Tonique
+  
+- Nom: Autel portable
+  Source: MJ
+  Prix: 250 po
+  Poids: 20 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Les autels portables sont généralement faits en bois et sont ornés
+    de gravures et d’icônes religieuses associées à une religion spécifique. La partie
+    supérieure de l’autel se soulève. On peut y ranger des objets tels que des bougies,
+    de l’encens et de l’huile. Ce sont des autels modestes mais ils offrent aux prêtres
+    itinérants une base à partir de laquelle dire leurs prières quotidiennes, effectuer
+    des rituels mineurs ou prêcher devant une foule.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Autel
+    portable
+  
+- Nom: Civière
+  Source: MJ
+  Prix: 1 po
+  Poids: 5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: La civière permet à deux personnes de transporter un objet lourd
+    et de s’en partager le fardeau. Le personnage peut également l’utiliser pour traîner
+    un chargement qu’il ne peut pas porter seul. La civière supporte jusqu’à 150 kg.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Civière
+  
+- Nom: Instruments de chirurgien
+  Source: MJ
+  Prix: 20 po
+  Poids: 2,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Lorsqu’ils sont utilisés en conjonction avec une trousse de premiers
+    secours, les instruments de chirurgien montent le bonus de circonstances de la
+    trousse à +3 pour les tests de Premiers secours faits pour traiter les blessures
+    et les blessures mortelles.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Instruments
+    de chirurgien
+  
+- Nom: Ombrelle
+  Source: MJ
+  Prix: 1 po
+  Poids: 1 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Cette ombrelle pliable est translucide et non-étanche. Elle protège\
+    \ de la chaleur directe du soleil. Dans les environnements très chauds où le soleil\
+    \ est un facteur important (comme dans le désert), elle accorde un bonus de circonstances\
+    \ de +1 aux jets de Vigueur que le personnage doit faire toutes les heures contre\
+    \ la chaleur et réduit les dégâts subis en cas de jet raté de 1 point de vie (minimum\
+    \ de 1). Elle fournit une protection insuffisante dans les environnements de forte\
+    \ ou d’extrême chaleur. Le personnage doit tenir l’ombrelle d’une main et l’utiliser\
+    \ pour s’abriter du soleil. Sinon, il peut la tenir d’une main et l’utiliser pour\
+    \ protéger une autre créature de sa taille ou plus petite. Le prix est indiqué\
+    \ pour une ombrelle simple et fonctionnelle faite en toile ou en papier laqué.\
+    \ L’ombrelle utilisée comme accessoire de mode peut être bien plus chère, en fonction\
+    \ des matériaux qui la composent, allant de 1 po à 10 po.\n Parapluie. Le parapluie\
+    \ est une ombrelle plus lourde et étanche faite en toile huilée ou cirée. Il sert\
+    \ à rester au sec quand il pleut ou quand il neige mais il peut également protéger\
+    \ du soleil comme une ombrelle standard."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Ombrelle
+  
+- Nom: Ombrelle (parapluie)
+  Source: MJ
+  Prix: 2 po
+  Poids: 1,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Cette ombrelle pliable est translucide et non-étanche. Elle protège\
+    \ de la chaleur directe du soleil. Dans les environnements très chauds où le soleil\
+    \ est un facteur important (comme dans le désert), elle accorde un bonus de circonstances\
+    \ de +1 aux jets de Vigueur que le personnage doit faire toutes les heures contre\
+    \ la chaleur et réduit les dégâts subis en cas de jet raté de 1 point de vie (minimum\
+    \ de 1). Elle fournit une protection insuffisante dans les environnements de forte\
+    \ ou d’extrême chaleur. Le personnage doit tenir l’ombrelle d’une main et l’utiliser\
+    \ pour s’abriter du soleil. Sinon, il peut la tenir d’une main et l’utiliser pour\
+    \ protéger une autre créature de sa taille ou plus petite. Le prix est indiqué\
+    \ pour une ombrelle simple et fonctionnelle faite en toile ou en papier laqué.\
+    \ L’ombrelle utilisée comme accessoire de mode peut être bien plus chère, en fonction\
+    \ des matériaux qui la composent, allant de 1 po à 10 po.\n Parapluie. Le parapluie\
+    \ est une ombrelle plus lourde et étanche faite en toile huilée ou cirée. Il sert\
+    \ à rester au sec quand il pleut ou quand il neige mais il peut également protéger\
+    \ du soleil comme une ombrelle standard."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Ombrelle
+  
+- Nom: Recueil de formules
+  Source: MJ
+  Prix: 15 po
+  Poids: 1,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Un recueil de formules compte 100 pages de parchemins et chaque formule
+    d’extrait alchimique prend une page par niveau de l’extrait. Un recueil de formules
+    tout neuf ne contient aucune formule d’extrait. Les alchimistes commencent le
+    jeu avec un recueil de formules contenant les formules d’extraits qu’ils connaissent.
+    Il s’agit de l’équivalent pour l’alchimiste du grimoire des magiciens (ce sont
+    des objets similaires).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Recueil
+    de formules
+  
+- Nom: Recueil de formules de voyage
+  Source: MJ
+  Prix: 10 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Il s’agit de l’équivalent pour l’alchimiste du grimoire de voyage
+    des magiciens (le recueil de formules de voyage et le grimoire de voyage sont
+    pratiquement similaires).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Recueil
+    de formules de voyage
+  
+- Nom: Trousse d'antidotes
+  Source: MJ
+  Prix: 100 po
+  Poids: 1,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette petite boîte contient une grande variété de remèdes et de traitements
+    contre les poisons spécifiques mais aussi contre leurs méthodes d’application
+    les plus courantes (elle comprend par exemple des purgatifs pour éliminer les
+    toxines ingérées). La trousse accorde un bonus de circonstances de +3 aux tests
+    de Premiers secours pour traiter le poison. Une trousse d’antidotes est épuisée
+    après 10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    d'antidotes
+  
+- Nom: Trousse de faussaire
+  Source: MJ
+  Prix: 200 po
+  Poids: 3 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cet ensemble d’encres, de feuilles, de modèles d’attestations et
+    d’outils pour modifier ou reproduire des sceaux officiels facilite la contrefaçon
+    de documents. Il accorde un bonus de circonstances de +2 aux tests de Linguistique
+    pour fabriquer des faux.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de faussaire
+  
+- Nom: Trousse de jongleur
+  Source: MJ
+  Prix: 15 po
+  Poids: 5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette trousse contient plusieurs ensembles d’objets parfaitement
+    équilibrés tels que des balles, des gourdins, des couteaux, des anneaux et des
+    torches. Elle accorde un bonus de +1 aux tests de Représentation (scène ou farce)
+    et aux tests impliquant le jonglage.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de jongleur
+  
+- Nom: Trousse de sage-femme
+  Source: MJ
+  Prix: 10 po
+  Poids: 1 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette trousse est utilisée par les sages-femmes qui s’occupent des
+    femmes enceintes et les aider à accoucher. Chaque trousse comprend des herbes
+    pour traiter les situations courantes liées à la grossesse, des baumes pour soulager
+    la douleur et la peau distendue, des langes, un petit couteau tranchant pour le
+    cordon ombilical, du talc pour nettoyer le nouveau-né, des bandages, une aiguille
+    et du fil. Cette trousse accorde un bonus de circonstances de +4 aux tests de
+    Premiers secours pour traiter les grossesses et les accouchements d’humanoïdes.
+    Le personnage peut l’utiliser pour la grossesse et l’accouchement d’autres créatures
+    (comme les animaux ou les humanoïdes monstrueux) mais elle n’accorde qu’un bonus
+    de +2 aux tests de Premiers secours. La trousse de sage-femme est épuisée après
+    10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de sage-femme
+  
+- Nom: Trousse de vétérinaire
+  Source: MJ
+  Prix: 25 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette trousse équivaut à la trousse de premiers secours mais elle
+    contient surtout du matériel permettant de traiter les animaux les plus répandus
+    (chats, chiens, chèvres, boeufs, moutons, etc.). Elle accorde un bonus de circonstances
+    de +3 aux tests de Premiers secours pour traiter les animaux mais seulement un
+    bonus de circonstances de +1 aux tests de Premiers secours pour traiter les autres
+    créatures. La trousse de vétérinaire est épuisée après 10 utilisations.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
+    de vétérinaire
   
