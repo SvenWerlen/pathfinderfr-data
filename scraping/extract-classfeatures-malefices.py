@@ -60,17 +60,8 @@ for s in section:
                     source = "MJRA"
                     newObj = True
                 
-                elif el.name is None or el.name == 'a':
-                    descr += el.string
-                elif el.name == 'i':
-                    descr += el.text.replace("\n"," ")
-                elif el.name == 'b':
-                    descr += "\n\n" + el.text.replace("\n"," ").upper()
-                elif el.name == 'ul':
-                    for li in el.find_all("li"):
-                        descr += "\n*) " + li.text.replace("\n"," ")
-                elif el.name == 'div':
-                    descr += "\n" + el.text.replace("\n", " ") + "\n"
+                else:
+                    descr += html2text(el)
     
 
 # last element        
