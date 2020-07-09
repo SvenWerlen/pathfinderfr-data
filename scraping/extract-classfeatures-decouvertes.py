@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import jumpTo, html2text, cleanLabel, cleanInlineDescription, mergeYAML
+from libhtml import jumpTo, html2text, cleanLabel, cleanInlineDescription, mergeYAML, extractSource
 
 ## Configurations pour le lancement
 MOCK_DECOUVERTE = None
@@ -53,30 +53,15 @@ for s in section:
             source = "MJRA"
             newObj = True
         
-        elif el.name is None or el.name == 'a':
-            descr += el.string
-        elif el.name == 'div':
-            for c in el.children:
-                if c.name == 'img':
-                    if('logoAPG' in c['src']):
-                        source = 'MJRA'
-                    elif('logoUC' in c['src']):
-                        source = 'AG'
-                    elif('logoMR' in c['src']):
-                        source = 'MR'
-                    elif('logoMCA' in c['src']):
-                        source = 'MCA'
-                    elif('logoUM' in c['src']):
-                        source = 'AM'
-                    elif('logoMC' in c['src']):
-                        source = 'MC'
-                    elif('logoOA' in c['src']):
-                        source = 'AO'
-                    else:
-                        print("Invalid source: " + c['src'])
-                        exit(1)
-                elif c.name == 'a':
-                    reference=URL + c['href']
+        else:
+            descr += html2text(el)
+            if el.name == 'div' or not el.string:
+                src = extractSource(el)
+                if src:
+                  source = src
+                for c in el.children:
+                    if c.name == 'a':
+                        reference=URL + c['href']
 
 # last element        
 decouverte['Classe'] = 'Alchimiste'
