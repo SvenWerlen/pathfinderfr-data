@@ -12,10 +12,10 @@ from lxml import html
 from libhtml import extractSource, jumpTo, html2text, cleanSectionName, mergeYAML
 
 ## Configurations pour le lancement
-URLS = [ "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx",
-        "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%C3%A9capitulatif%20des%20armes%20orientales.ashx" ]
-URLDETS = [ "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx",
-            "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Description%20des%20armes%20orientales.ashx" ]
+URLS = [ "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20armes.ashx"]
+        #"https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%C3%A9capitulatif%20des%20armes%20orientales.ashx" 
+URLDETS = [ "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx"]
+            #"https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Description%20des%20armes%20orientales.ashx" 
 MOCK_W = None
 #MOCK_W = "mocks/weapons.html"           # décommenter pour tester avec les armes pré-téléchargées
 MOCK_WD = None
@@ -77,7 +77,7 @@ for URL in URLS:
                 else:
                     weapon['Référence'] = URL
                 # Others
-                weapon['Nom'] = weapon['Nom'].replace('’','\'')
+                weapon['Nom'] = weapon['Nom'].replace('’','\'').replace('*','')
                 weapon['Catégorie'] = type1[idx]
                 weapon['Sous-catégorie'] = type2
                 weapon['Prix'] = cols[1].text.strip()
@@ -179,6 +179,8 @@ def addInfos(liste, name, source):
 
 
 for URLDET in URLDETS:
+
+    print(URLDET)
 
     if MOCK_WD:
         content = BeautifulSoup(open(MOCK_WD),features="lxml").body
