@@ -19,7 +19,7 @@ CATEGORIES = {
   "Outils alchimiques": "alchTools",
   "Remèdes alchimiques": "alchCures",
   "Substances et objets spéciaux": None,
-  "Trousses d’outils et de compétences": "its",
+  "Trousses d’outils et de compétences": "tools",
   "Vêtements": "clothes"
 }
 
