@@ -40,12 +40,19 @@ for m in data:
         print("Ignoring duplicate: " + m['Nom'])
         continue
     duplicates.append(m['Nom'])
+
+    qData = extractQuantity(m['Nom'])
+    name = qData[1]
+    quantity = qData[0]
+    weight = getWeight(m['Poids'])
+    if weight:
+      weight = round(weight / quantity, 3)
     
     if not m['Catégorie'] in list:
       list[m['Catégorie']] = []
     
     el = {
-        "name": m['Nom'],
+        "name": name,
         "type": "loot",
         "data": {
             "description": {
@@ -61,8 +68,8 @@ for m in data:
                     m['Référence'])
             },
             "source": m['Source'],
-            "quantity": 1,
-            "weight": getWeight(m['Poids']) if 'Poids' in m else 0,
+            "quantity": quantity,
+            "weight": weight,
             "price": getPrice(m['Prix']) if 'Prix' in m else 0,
             "identified": True,
             "carried": True,

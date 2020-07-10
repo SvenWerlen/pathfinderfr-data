@@ -46,12 +46,6 @@ def getType(type):
     else:
         return None
 
-def extractQuantity(name):
-    m = re.search('(.*)\((\d+?)\)(.*)', name)
-    if m:
-        name = m.group(1) + m.group(3)
-        return [int(m.group(2)), name.replace("  ", " ").strip()]
-    return [1, name]
 
 list = []
 duplicates = []
@@ -66,7 +60,7 @@ for w in data:
     quantity = qData[0]
     weight = getWeight(w['Poids'])
     if weight:
-      weight /= quantity
+      weight = round(weight / quantity, 3)
     
     el = {
       "name": name,
