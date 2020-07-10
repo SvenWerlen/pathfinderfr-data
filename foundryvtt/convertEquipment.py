@@ -7,6 +7,23 @@ import typing
 import sys
 import re
 
+from libData import *
+
+CATEGORIES = {
+  "Animaux, montures et leur équipement": "animals",
+  "Équipement d'aventurier": "adventurer",
+  "Hébergement et services": None,
+  "Jeux": "games",
+  "Moyens de transport": "transport",
+  "Nourriture et Boissons": "food",
+  "Outils alchimiques": "alchTools",
+  "Remèdes alchimiques": "alchCures",
+  "Substances et objets spéciaux": None,
+  "Trousses d’outils et de compétences": "its",
+  "Vêtements": "clothes"
+}
+
+
 data = None
 with open("../data/equipement.yml", 'r') as stream:
     try:
@@ -16,29 +33,16 @@ with open("../data/equipement.yml", 'r') as stream:
 
 img = json.load(open('data/equipment-img.json', 'r'))
 
-def getWeight(weight):
-    m = re.search('([\d,]+?) kg', weight)
-    if m:
-        return float(m.group(1).replace(",","."))
-    m = re.search('([\d,]+?) g', weight)
-    if m:
-        return float(m.group(1).replace(",","."))/1000
-    return None
-
-def getPrice(price):
-    m = re.search('([\d ]+?) po', price.replace('.',''))
-    if m:
-        return int(m.group(1).replace(' ', ''))
-    return None
-
-
-list = []
+list = {}
 duplicates = []
 for m in data:
     if m['Nom'] in duplicates:
         print("Ignoring duplicate: " + m['Nom'])
         continue
     duplicates.append(m['Nom'])
+    
+    if not m['Catégorie'] in list:
+      list[m['Catégorie']] = []
     
     el = {
         "name": m['Nom'],
@@ -52,7 +56,7 @@ for m in data:
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                     m['Prix'] if 'Prix' in m else '-',
                     m['Poids'] if 'Poids' in m else '-',
-                    m['Catégorie'] if 'Catégorie' in m else "0",
+                    m['Catégorie'],
                     m['Description'].replace('\n','<br/>') if 'Description' in m else "",
                     m['Référence'])
             },
@@ -70,8 +74,12 @@ for m in data:
         "img": img[m['Nom']] if m['Nom'] in img and "pf1-fr" not in img[m['Nom']] else "systems/pf1/icons/items/inventory/backpack.jpg"
     }
     
-    list.append(el)
+    list[m['Catégorie']].append(el)
 
-# écrire le résultat dans le fichier d'origine
-outFile = open("data/equipment.json", "w")
-outFile.write(json.dumps(list, indent=3))
+for cat in list:
+  if not cat in CATEGORIES or not CATEGORIES[cat]:
+    continue;
+
+  # écrire le résultat dans le fichier d'origine
+  outFile = open("data/equip_%s.json" % CATEGORIES[cat], "w")
+  outFile.write(json.dumps(list[cat], indent=3))

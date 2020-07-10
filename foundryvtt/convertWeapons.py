@@ -7,6 +7,8 @@ import typing
 import sys
 import re
 
+from libData import *
+
 data = None
 with open("../data/armes.yml", 'r') as stream:
     try:
@@ -15,38 +17,6 @@ with open("../data/armes.yml", 'r') as stream:
         print(exc)
 
 img = json.load(open('data/weapons-img.json', 'r'))
-
-def getWeight(weight):
-    weight = weight.replace(",",".")
-    
-    try :  
-      return float(weight) 
-    except : 
-      # just ignore
-      weight
-        
-    m = re.search('(.*) kg', weight)
-    if m:
-        return float(m.group(1))
-    m = re.search('(.*) g', weight)
-    if m:
-        return float(m.group(1))/1000
-    
-    return None
-
-def getPrice(price):
-    price = price.replace(",",".")
-    
-    try :  
-      return float(price) 
-    except : 
-      # just ignore
-      price
-    
-    m = re.search('(.*) po', price)
-    if m:
-        return int(m.group(1))
-    return None
 
 def getCritRange(crit):
     m = re.search('(\d\d)-20/×', crit)
@@ -76,6 +46,12 @@ def getType(type):
     else:
         return None
 
+def extractQuantity(name):
+    m = re.search('(.*)\((\d+?)\)(.*)', name)
+    if m:
+        name = m.group(1) + m.group(3)
+        return [int(m.group(2)), name.replace("  ", " ").strip()]
+    return [1, name]
 
 list = []
 duplicates = []
@@ -85,8 +61,15 @@ for w in data:
         continue
     duplicates.append(w['Nom'])
     
+    qData = extractQuantity(w['Nom'])
+    name = qData[1]
+    quantity = qData[0]
+    weight = getWeight(w['Poids'])
+    if weight:
+      weight /= quantity
+    
     el = {
-      "name": w['Nom'],
+      "name": name,
       "type": "weapon",
       "data": {
           "description": {
@@ -116,8 +99,8 @@ for w in data:
                       w['Référence'])
           },
           "source": w['Source'],
-          "quantity": 1,
-          "weight": getWeight(w['Poids']),
+          "quantity": quantity,
+          "weight": weight,
           "price": getPrice(w['Prix']),
           "identified": True,
           "carried": True,
