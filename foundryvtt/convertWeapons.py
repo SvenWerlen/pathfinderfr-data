@@ -17,15 +17,32 @@ with open("../data/armes.yml", 'r') as stream:
 img = json.load(open('data/weapons-img.json', 'r'))
 
 def getWeight(weight):
+    weight = weight.replace(",",".")
+    
+    try :  
+      return float(weight) 
+    except : 
+      # just ignore
+      weight
+        
     m = re.search('(.*) kg', weight)
     if m:
-        return float(m.group(1).replace(",","."))
+        return float(m.group(1))
     m = re.search('(.*) g', weight)
     if m:
-        return float(m.group(1).replace(",","."))/1000
+        return float(m.group(1))/1000
+    
     return None
 
 def getPrice(price):
+    price = price.replace(",",".")
+    
+    try :  
+      return float(price) 
+    except : 
+      # just ignore
+      price
+    
     m = re.search('(.*) po', price)
     if m:
         return int(m.group(1))
