@@ -97,6 +97,71 @@
     \ bonus normal de +2) et d’un bonus d’esquive de +6 à la CA lorsqu’il décide de\
     \ se mettre en défense totale (au lieu du bonus normal de +4). Un personnage possédant\
     \ le don Voltigeur obtient un bonus aux tests d’Acrobaties."
+  DescriptionHTML: '<br/>Le personnage peut garder son équilibre lorsqu’il marche
+    sur des surfaces étroites ou un sol traître. Il peut également se baisser, se
+    retourner, sauter ou effectuer un roulé-boulé pour éviter les coups ou traverser
+    certains obstacles.<br/><br/><h2>Test de compétence</h2> <b>Éviter les chutes.</b>
+    Le personnage peut utiliser la compétence d’Acrobaties pour éviter de tomber lorsqu’il
+    se déplace sur une surface étroite ou sur un sol irrégulier. Un test réussi lui
+    permet de se déplacer à mi-vitesse ; un seul test suffit pour chaque round. Reportez-vous
+    à la table suivante pour déterminer le DD de base, qui sera ensuite modifié par
+    les modificateurs aux tests d’Acrobaties. Lorsque le personnage utilise la compétences
+    d’Acrobaties de cette manière, il est considéré comme pris au dépourvu et il perd
+    son bonus de Dextérité à la CA (s’il en a un). S’il subit des dégâts alors qu’il
+    utilise cette compétence, il doit immédiatement réaliser un nouveau test de compétence
+    contre le DD initial pour éviter de chuter ou de tomber à terre.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Éviter
+    une attaque d''opportunité.</b> Le personnage peut également utiliser la compétence
+    d’Acrobaties pour traverser l’espace contrôlé par un ennemi sans provoquer d’attaque
+    d''opportunité de la part de celui-ci. Ce mouvement s’accomplit normalement à
+    mi-vitesse, mais le personnage peut choisir de se déplacer à sa vitesse entière
+    en augmentant le DD du test de 10. Les personnages dont la vitesse est réduite
+    parce qu’ils portent une charge ou une armure intermédiaire ou lourde ne peuvent
+    pas utiliser la compétence d’Acrobaties de cette manière. Cette restriction ne
+    s’applique que si la vitesse du personnage est effectivement réduite : si une
+    capacité lui permet de conserver sa vitesse entière, le personnage peut alors
+    utiliser la compétence d’Acrobaties pour se faufiler à côté d’ennemis sans provoquer
+    d’attaque d’opportunité. Un personnage à terre peut également utiliser la compétence
+    d’Acrobaties de cette manière mais il lui faut alors une action complexe pour
+    se déplacer de 1,50 m (1 case) et le DD est augmenté de 5. Si le personnage tente
+    de se déplacer à travers l''espace occupé par un ennemi et échoue à son test d''Acrobaties,
+    son action de mouvement est perdue et il provoque une attaque d''opportunité.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Sauter.</b>
+    Enfin, le personnage peut utiliser la compétence d’Acrobaties pour sauter ou pour
+    amortir une chute. Pour calculer le DD de base, on divise la distance à traverser
+    par 1,50 cm (dans le cas d’un saut horizontal) ou la hauteur à atteindre par 30
+    cm (dans le cas d’un saut vertical). Ces DD sont doublés si le personnage ne dispose
+    pas d’au moins 3 m (2 cases) d’élan. Les seuls modificateurs d’Acrobaties qui
+    s’appliquent pour ces tests sont ceux qui se rapportent à la surface à partir
+    de laquelle le personnage effectue le saut. Si le test échoue de 4 points ou moins,
+    le personnage peut tenter un jet de Réflexes de DD 20 pour se rattraper au bord.
+    Si le test échoue de 5 points ou plus, le personnage ne parvient pas à sauter
+    assez loin/haut et il chute ou tombe à terre (dans le cas d’un saut vertical).
+    Les créatures qui possèdent une vitesse de déplacement au sol de plus de 9 m (6
+    cases) bénéficient d’un bonus racial aux tests d’Acrobaties relatifs à des sauts
+    ; ce bonus est de +4 pour chaque tranche de 3 m (2 cases) de vitesse au-delà de
+    9 m (6 cases). Les créatures qui possèdent une vitesse de déplacement au sol de
+    moins de 9 m (6 cases) reçoivent quant à elles un malus racial aux tests d’Acrobaties
+    relatifs à des sauts ; ce malus vaut -4 pour chaque tranche de 3 m (2 cases) de
+    vitesse au-dessous de 9 m (6 cases). Un saut ne permet pas de se déplacer au-delà
+    de la distance maximale qu’il est possible de parcourir en un round. Dans le cas
+    d’un saut avec élan, le résultat du test d’Acrobaties indique la distance parcourue
+    (en unités de 30 cm) et, dans le cas d’un échec, la distance à laquelle le personnage
+    est retombé. Cette distance est divisée par deux dans le cas d’un saut en longueur
+    sans élan.<br/><br/>Lorsque le personnage se laisse tomber d’une certaine hauteur
+    (ou en cas d’une chute résultant d’un saut raté), un test d’Acrobaties de DD 15
+    lui permet d’ignorer les trois premiers mètres de la hauteur de chute, mais il
+    se retrouve quand même à terre si la chute lui inflige des dégâts. Les règles
+    relatives à la chute se trouvent ici.<br/><br/><br/> <h2>Modificateurs</h2> De
+    nombreuses circonstances peuvent modifier les chances de réussite d’un test d’Acrobaties.
+    Les modificateurs suivants s’appliquent aux DD de tous les tests d’Acrobaties.
+    Ils se cumulent entre eux mais, pour chaque type de circonstances, seul le modificateur
+    le plus important s’applique.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>
+    <b>Sans objet.</b> Les tests d’Acrobaties font partie d’une autre action (comme
+    un mouvement) ou se font en réaction à une situation.<br/><br/><h2>Spécial</h2>
+    Un personnage possédant un rang de 3 ou plus en Acrobaties bénéficie d’un bonus
+    d’esquive de +3 à la CA lorsqu’il combat sur la défensive (au lieu du bonus normal
+    de +2) et d’un bonus d’esquive de +6 à la CA lorsqu’il décide de se mettre en
+    défense totale (au lieu du bonus normal de +4). Un personnage possédant le don
+    Voltigeur obtient un bonus aux tests d’Acrobaties.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acrobaties.ashx
   
 - Nom: Art de la magie
@@ -167,6 +232,41 @@
 
     Un personnage disposant du don Aptitude magique bénéficie d’un bonus aux tests
     d’Art de la magie.'
+  DescriptionHTML: "<br/>L’art de lancer des sorts n’a pas beaucoup de secrets pour\
+    \ le personnage. Il sait identifier les objets magiques, les fabriquer et reconnaître\
+    \ les sorts que d’autres personnes lancent.<br/><br/><h2>Test de compétence</h2>\
+    \ On utilise cette compétence chaque fois qu’il est question des connaissances\
+    \ ou du savoir-faire du personnage dans le domaine de l’incantation des sorts\
+    \ ou de la création d’objets magiques. Elle permet également d’identifier les\
+    \ propriétés des objets magiques à l’aide de sorts tels que détection de la magie\
+    \ ou identification. Le DD du test dépend de la tâche tentée.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ Identifier un sort au moment où il est lancé ne requiert aucune action mais\
+    \ le personnage doit être capable de voir l’incantation. Cela signifie que les\
+    \ malus dus à la distance, à de mauvaises conditions de visibilité ou à d’autres\
+    \ facteurs associés à la compétence de Perception s’appliquent également à ce\
+    \ test. Apprendre un sort à partir d’un grimoire prend une heure par niveau du\
+    \ sort (les sorts de niveau 0 requièrent trente minutes). Préparer un sort à partir\
+    \ d’un grimoire emprunté n’allonge pas le temps nécessaire à la préparation des\
+    \ sorts. Les jets d’Art de la magie réalisés dans le cadre de la fabrication d’un\
+    \ objet sont intégrés au procédé de création. Tenter de déterminer les propriétés\
+    \ d’un objet magique prend trois rounds par objet à identifier et n’est possible\
+    \ que si le personnage peut examiner l’objet en question sous toutes les coutures.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Les tests visant à identifier un sort ne peuvent pas être répétés.\
+    \ Si le test échoue lorsque le personnage tente d’apprendre un sort à partir d’un\
+    \ grimoire ou d’un parchemin, il doit patienter au moins une semaine avant de\
+    \ pouvoir réessayer. En cas d’échec lorsque le personnage tente de préparer un\
+    \ sort à partir d’un grimoire emprunté, il ne peut réessayer avant le lendemain.\
+    \ Lorsque le personnage utilise un sort de détection de la magie ou d’identification\
+    \ pour apprendre les propriétés d’objets magiques, il ne peut examiner chaque\
+    \ objet qu’une seule fois par jour. Les tentatives supplémentaires apportent toujours\
+    \ les mêmes réponses.<br/><br/><h2>Spécial</h2> Les magiciens spécialisés dans\
+    \ une école gagnent un bonus de +2 aux tests d’Art de la magie visant à identifier,\
+    \ apprendre ou préparer des sorts de leur école de spécialisation. Ils subissent\
+    \ également un malus de -5 aux mêmes tests lorsque ceux-ci portent sur des sorts\
+    \ des écoles opposées du spécialiste.<br/><br/>Les elfes bénéficient d’un bonus\
+    \ racial de +2 aux tests d’Art de la magie pour identifier les propriétés des\
+    \ objets magiques.<br/><br/>Un personnage disposant du don Aptitude magique bénéficie\
+    \ d’un bonus aux tests d’Art de la magie. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Art%20de%20la%20magie.ashx
   
 - Nom: Artisanat
@@ -261,6 +361,79 @@
     \ le personnage travaille dans des conditions parfaites mais le coût à acquitter\
     \ pour utiliser la compétence n’est pas réduit pour autant.\n\nLes gnomes reçoivent\
     \ un bonus de +2 à une compétence d’Artisanat ou de Profession de leur choix."
+  DescriptionHTML: "<br/>Le personnage est entraîné à créer un type spécifique d’objets\
+    \ (comme les armures ou les armes).<br/><br/>Comme Connaissances, Profession ou\
+    \ Représentation, la compétence d’Artisanat regroupe en fait plusieurs compétences\
+    \ distinctes. Chaque personnage peut posséder plusieurs compétences d’Artisanat\
+    \ et investir des points de compétences séparément dans chacune d’elles. Les compétences\
+    \ d’Artisanat les plus courantes sont les suivantes : <br/><br/>alchimie, arcs,\
+    \ armes, armures, bijoux, calligraphie, constructions en bois (ou menuiserie),\
+    \ constructions en pierre, engins de siège, étoffes, joaillerie, livres, mécanique\
+    \ (ou mécanismes à engrenages), navires, paniers, peintures, pièges, poteries,\
+    \ sculptures, serrures, souliers, travail du cuir, travail de la forge (ou ferronnerie),\
+    \ travail du verre et vêtements.<br/><br/>Chaque forme de la compétence d’Artisanat\
+    \ vise à créer quelque chose. Si un travail n’a pas pour résultat final la production\
+    \ de quelque chose, c’est sans doute plutôt une forme de Profession.<br/><br/><h2>Test\
+    \ de compétence</h2> Le personnage peut vivre de son artisanat, auquel cas il\
+    \ gagne un nombre de pièces d’or égal à la moitié du résultat de son test de compétence\
+    \ pour chaque semaine entièrement consacrée au travail. Il sait comment utiliser\
+    \ au mieux les outils de sa spécialité, accomplir les tâches habituelles, superviser\
+    \ le travail de la main-d’œuvre et régler les problèmes courants (les assistants\
+    \ et ouvriers non-qualifiés sont payés en moyenne 1 pa par jour).<br/><br/>Mais\
+    \ l’utilité principale de cette compétence est de permettre au personnage de fabriquer\
+    \ un objet correspondant à la branche d’artisanat choisie. Le DD dépend de la\
+    \ complexité de l’objet créé. Le temps nécessaire à la fabrication est déterminé\
+    \ par le DD, le résultat du test de compétence et le prix de l’objet (ce dernier\
+    \ indique également le prix des matières premières nécessaires à la fabrication\
+    \ de l’objet).<br/><br/>Dans certains cas, il est possible d’utiliser le sort\
+    \ fabrication pour obtenir le même résultat que si on avait utilisé la compétence\
+    \ d’Artisanat, mais sans qu’aucun test soit nécessaire. Dans le cas d’objets requérant\
+    \ une grande maîtrise, il reste cependant nécessaire de réussir un test d’Artisanat.<br/><br/>Lorsqu’il\
+    \ est utilisé en conjonction avec une forme d’Artisanat liée au travail du bois\
+    \ (et que le test de compétence est réussi), le sort bois de fer permet de créer\
+    \ des objets en bois aussi résistants que l’acier.<br/><br/>Le sort création mineure\
+    \ requiert un test d’Artisanat réussi (utilisant la forme d’artisanat adéquate)\
+    \ pour créer un objet complexe.<br/><br/>Quelle que soit la spécialité choisie,\
+    \ il est conseillé d’utiliser les outils d’artisan appropriés. Dans le cas où\
+    \ le personnage se sert d’outils improvisés ou de qualité inférieure, il subit\
+    \ un malus de circonstances de -2 au test de compétence. À l’inverse, s’il dispose\
+    \ d’outils de maître artisan, il bénéficie d’un bonus de circonstances de +2.<br/><br/>Pour\
+    \ déterminer le temps et le coût de fabrication d’un objet, il faut suivre les\
+    \ étapes suivantes :<br/><br/><br/><br/><br/><br/><br/><b>Progression quotidienne.</b>\
+    \ Il est possible de déterminer le travail accompli chaque jour plutôt que chaque\
+    \ semaine. Dans ce cas, le total (résultat du test de compétence × DD) doit être\
+    \ divisé par le nombre de jours d’une semaine.<br/><br/> <b>Fabrication d’objets\
+    \ de maître ou de qualité supérieure.</b> Le personnage peut fabriquer un objet\
+    \ de maître (c’est-à-dire une arme de maître, une armure de maître, un bouclier\
+    \ de maître ou des outils si bien réalisés qu’ils procurent un bonus à leur utilisateur).\
+    \ Pour ce faire, le personnage crée l’aspect « de maître » à part, comme s’il\
+    \ s’agissait d’un objet distinct. Cet aspect possède son propre prix (300 po pour\
+    \ une arme de maître, 150 po pour une armure ou un bouclier de maître ; voir la\
+    \ liste des prix des autres objets de maître ici) et son propre DD d’Artisanat,\
+    \ qui est de 20. Une fois l’objet standard et l’aspect « de maître » terminés,\
+    \ l’objet de maître est fabriqué. Le prix à acquitter pour l’aspect « de maître\
+    \ » est égal à un tiers du prix indiqué, exactement comme pour les matières premières.<br/><br/>\
+    \ <b>Réparation d’objets.</b> En règle générale, on répare un objet en réussissant\
+    \ un test de compétence dont le DD est le même que celui de la fabrication. Le\
+    \ coût de la réparation se monte à un cinquième du prix de l’objet.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ <b>Sans objet.</b> Les tests d’Artisanat se font à la semaine ou à la journée\
+    \ (voir ci-dessus).<br/><br/><h2>Nouvelles tentatives</h2> Oui, mais chaque fois\
+    \ que le test est raté d’au moins 5 points, la moitié des matières premières sont\
+    \ gâchées et il faut les racheter.<br/><br/><h2>Spécial</h2> Le personnage peut\
+    \ choisir d’ajouter +10 au DD indiqué pour créer un objet. Cela lui permet de\
+    \ le fabriquer plus rapidement (puisque le résultat du test sera multiplié par\
+    \ un DD plus élevé afin de déterminer la progression). Le personnage doit effectuer\
+    \ ce choix avant de réaliser le test hebdomadaire ou quotidien.<br/><br/>Pour\
+    \ fabriquer un objet à l’aide de la compétence Artisanat (alchimie), il faut disposer\
+    \ d’un équipement d’alchimiste. Si le travail s’effectue en ville, le coût du\
+    \ matériel est compris dans celui des ingrédients, mais il est particulièrement\
+    \ difficile, voire impossible, de se procurer l’équipement requis dans les endroits\
+    \ trop reculés. Acheter et approvisionner régulièrement un laboratoire d’alchimiste\
+    \ confère un bonus de circonstances de +2 aux tests d’Artisanat (alchimie) car\
+    \ le personnage travaille dans des conditions parfaites mais le coût à acquitter\
+    \ pour utiliser la compétence n’est pas réduit pour autant.<br/><br/>Les gnomes\
+    \ reçoivent un bonus de +2 à une compétence d’Artisanat ou de Profession de leur\
+    \ choix. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Artisanat.ashx
   
 - Nom: Bluff
@@ -337,6 +510,43 @@
     SPÉCIAL Les lanceurs de sorts ayant une vipère comme familier obtiennent un bonus
     de +3 aux tests de Bluff. Un personnage possédant le don Fourberie obtient un
     bonus aux tests de Bluff.'
+  DescriptionHTML: "<br/>Le personnage sait comment mentir.<br/><br/><h2>Test de\
+    \ compétence</h2> Cette compétence s’utilise sous la forme de tests opposés aux\
+    \ tests de Psychologie des victimes. Lorsque le personnage utilise la compétence\
+    \ de Bluff pour tromper quelqu’un, un test réussi lui permet de convaincre sa\
+    \ victime qu’il lui dit la vérité. Les résultats des tests de Bluff sont modifiés\
+    \ selon la crédibilité du mensonge. Les modificateurs suivants s’appliquent aux\
+    \ résultats du jet de dé de la créature qui tente de mentir. Il est important\
+    \ de noter que certains mensonges sont si incroyables qu’il est impossible de\
+    \ convaincre qui que ce soit qu’il s’agit de la vérité (ces cas sont laissés à\
+    \ l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Feinter\
+    \ en combat.</b> Le personnage peut également utiliser la compétence de Bluff\
+    \ pour tromper son adversaire lors d’un combat et lui enlever le bénéfice de son\
+    \ bonus de Dextérité à la CA jusqu’à sa prochaine attaque. Le DD de ce test est\
+    \ égal à 10 + le bonus de base à l’attaque de l’adversaire + le modificateur de\
+    \ Sagesse de l’adversaire. Si l’adversaire possède une formation dans la compétence\
+    \ de Psychologie, le DD du test vaut 10 + le bonus de Psychologie de l’adversaire,\
+    \ si ce résultat est plus élevé. Pour plus d’informations sur les feintes en combat,\
+    \ reportez-vous ici.<br/><br/><b>Transmettre un message secret.</b> Un personnage\
+    \ peut utiliser la compétence de Bluff pour transmettre à une autre personne un\
+    \ message à mots couverts sans que les autres individus présents puissent le comprendre.\
+    \ Le DD du test est de 15 pour les messages simples et de 20 pour les messages\
+    \ complexes. En cas de réussite, la cible comprend automatiquement le message\
+    \ (pour autant que le personnage utilise un langage qu’elle connaît). En cas d’échec\
+    \ de 5 points ou plus, un message erroné est transmis ou compris. Les autres individus\
+    \ qui perçoivent le message peuvent tenter de le comprendre en réussissant un\
+    \ test de Psychologie opposé au résultat du test de Bluff du personnage.<br/><br/><h2>Action</h2>\
+    \ Tenter de bluffer une personne nécessite au moins 1 round mais cela peut prendre\
+    \ plus longtemps en cas de mensonge complexe (selon l’appréciation du MJ). Feinter\
+    \ en combat prend une action simple. Il faut deux fois plus de temps pour transmettre\
+    \ un message secret grâce à la compétence de Bluff que pour le déclamer normalement.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> En cas d’échec lors d’une tentative de mensonge, les tests de\
+    \ Bluff qui suivent subissent un malus de -10 ou peuvent même être impossibles\
+    \ (selon l’appréciation du MJ). Par contre, on peut multiplier les feintes au\
+    \ combat sans limite. Et il est également possible de tenter de transmettre un\
+    \ message plusieurs fois.<br/><br/><h2>Spécial</h2> Les lanceurs de sorts ayant\
+    \ une vipère comme familier obtiennent un bonus de +3 aux tests de Bluff. Un personnage\
+    \ possédant le don Fourberie obtient un bonus aux tests de Bluff. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bluff.ashx
   
 - Nom: Connaissances (exploration souterraine)
@@ -415,6 +625,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (folklore local)
@@ -493,6 +743,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (géographie)
@@ -571,6 +861,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (histoire)
@@ -649,6 +979,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (ingénierie)
@@ -727,6 +1097,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (mystères)
@@ -805,6 +1215,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (nature)
@@ -883,6 +1333,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (noblesse)
@@ -961,6 +1451,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (plans)
@@ -1039,6 +1569,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (religion)
@@ -1117,6 +1687,46 @@
     \ recherche passe à 1d4 heures. Dans le cas de bibliothèques très complètes, le\
     \ personnage pourrait même bénéficier d’un bonus aux tests de Connaissances pour\
     \ les domaines d’étude qui y sont représentés."
+  DescriptionHTML: "<br/>Le personnage possède des connaissances dans un domaine\
+    \ spécifique, qui lui permettent de répondre à des questions simples ou complexes.\
+    \ Comme les compétences d’Artisanat, de Profession et de Représentation, cette\
+    \ compétence regroupe plusieurs spécialisations. Les plus courantes sont reprises\
+    \ ci-dessous.<br/><br/><ul><li>Mystères (créatures artificielles, créatures magiques,\
+    \ dragons, mystères anciens, symboles ésotériques, traditions magiques)</li><li>Exploration\
+    \ souterraine (aberrations, cavernes, spéléologie, vases)</li><li>Ingénierie (aqueducs,\
+    \ bâtiments, fortifications, ponts)</li><li>Géographie (climat, pays, peuples,\
+    \ types de terrain)</li><li>Histoire (colonies, guerres, histoire des villes,\
+    \ migrations)</li><li>Folklore local (coutumes, habitants, humanoïdes, légendes,\
+    \ lois et traditions, personnalités)</li><li>Nature (animaux, climat, cycles et\
+    \ saisons, fées, humanoïdes monstrueux, plantes, vermines)</li><li>Noblesse (lignées,\
+    \ héraldique, personnalités, familles royales)</li><li>Plans (Extérieurs, magie\
+    \ des plans, plan Astral, plan Éthéré, plans Extérieurs, plans Intérieurs)</li><li>Religion\
+    \ (dieux et déesses, morts-vivants, mythologie, symboles sacrés, tradition ecclésiastique)</li></ul>\
+    \ <h2>Test de compétence</h2> Le personnage parvient à répondre à une question\
+    \ ayant trait à sa spécialité s’il réussit un test de compétence d’un DD de 10\
+    \ (pour une question basique), 15 (pour une question facile) ou 20, voire 30 (pour\
+    \ une question difficile ou très difficile).<br/><br/>Le personnage peut également\
+    \ utiliser cette compétence pour reconnaître un monstre et identifier ses particularités\
+    \ ou ses points faibles. En général, le DD du test vaut 10 + le FP du monstre.\
+    \ Dans le cas de monstres communs (comme des gobelins), le DD de ce test vaut\
+    \ 5 + le FP du monstre. Pour des monstres spécialement rares (comme la tarrasque),\
+    \ le DD de ce test vaut 15 + le FP du monstre ou plus encore. Un test réussi permet\
+    \ au personnage de se souvenir d’une information utile se rapportant au monstre.\
+    \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
+    \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
+    \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
+    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
+    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
+    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
+    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
+    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
+    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
+    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
+    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
+    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
+    \ qui y sont représentés. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Déguisement
@@ -1215,6 +1825,47 @@
 
 
     Un personnage possédant le don Fourberie obtient un bonus aux tests de Déguisement.'
+  DescriptionHTML: "<br/> Le personnage sait comment changer d’apparence.<br/><br/><h2>Test\
+    \ de compétence</h2> C’est le résultat du test de compétence qui détermine si\
+    \ le déguisement est bon ou pas. Il est opposé au test de Perception des observateurs.\
+    \ Si le personnage ne fait rien pour attirer l’attention, les autres ne bénéficient\
+    \ pas d’un test de Perception. Par contre, s’il se fait remarquer par des individus\
+    \ soupçonneux (comme un garde observant les gens qui entrent par la porte de la\
+    \ ville), on peut considérer que ces derniers vont faire 10 sur leur test de Perception.<br/><br/>Le\
+    \ personnage n’effectue qu’un seul test de Déguisement, même s’il se retrouve\
+    \ face à plusieurs individus (qui, eux, ont droit à un test de Perception chacun).\
+    \ Le test de compétence est effectué en secret pour que le joueur ignore si son\
+    \ personnage a réussi à bien se déguiser ou non.<br/><br/>L’efficacité du déguisement\
+    \ dépend en grande partie des modifications que le personnage apporte à son apparence\
+    \ normale. Il peut se déguiser en une créature qui a au plus une catégorie de\
+    \ taille de plus ou de moins que sa taille normale. Si le personnage se retrouve\
+    \ en situation de combat alors qu’il est déguisé, il continue d’utiliser sa taille\
+    \ et son allonge normales.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr><br/><br/>Si\
+    \ l’aventurier tente de se faire passer pour un individu spécifique, ceux qui\
+    \ connaissent ce dernier bénéficient d’un bonus supplémentaire à leur test de\
+    \ Perception, comme indiqué dans la table suivante. De plus, on considère qu’ils\
+    \ se montrent automatiquement soupçonneux à l’égard du personnage, ce qui justifie\
+    \ systématiquement un test opposé.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Les\
+    \ observateurs reçoivent un test de Perception pour percer le déguisement du personnage\
+    \ dès qu’ils le rencontrent, puis chaque heure par la suite. Si le personnage\
+    \ croise un grand nombre d’individus différents sans s’attarder auprès d’eux,\
+    \ un test de Perception global par heure (ou par jour) est amplement suffisant,\
+    \ en utilisant la moyenne des modificateurs de Perception des individus du groupe.<br/><br/><h2>Action</h2>\
+    \ Créer un déguisement demande 1d3 x 10 minutes de travail. La magie (un sort\
+    \ comme déguisement par exemple) peut réduire le temps nécessaire à l’action permettant\
+    \ de lancer le sort ou d’activer l’effet utilisé.<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Oui. Il est possible d’améliorer un déguisement imparfait, mais les cibles sont\
+    \ plus prudentes quand elles savent qu’on a déjà tenté de les abuser.<br/><br/><h2>Spécial</h2>\
+    \ Tout sort modifiant les traits du sujet, comme changement de forme, déguisement,\
+    \ métamorphose ou modification d’apparence confère un bonus de +10 au test de\
+    \ Déguisement (consultez la description de chacun de ces sorts pour plus d’informations).\
+    \ Les sorts de divination permettant de percer les illusions (comme vision lucide)\
+    \ sont inefficaces contre les déguisements normaux. Par contre, ils permettent\
+    \ de repérer les composantes magiques venant éventuellement perfectionner un déguisement\
+    \ normal.<br/><br/>Il faut effectuer un test de Déguisement chaque fois que l’on\
+    \ lance simulacre pour savoir si la copie est bien conforme à l’original.<br/><br/>Un\
+    \ personnage possédant le don Fourberie obtient un bonus aux tests de Déguisement.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9guisement.ashx
   
 - Nom: Diplomatie
@@ -1321,6 +1972,56 @@
 
     SPÉCIAL Un personnage possédant le don Persuasion obtient un bonus aux tests de
     Diplomatie.'
+  DescriptionHTML: "<br/>Le personnage peut utiliser cette compétence pour persuader\
+    \ quelqu’un de se ranger à son avis, pour résoudre un conflit ou encore pour récolter\
+    \ des informations ou se tenir au courant des rumeurs. Elle est également utile\
+    \ pour mener à bien des négociations tout en respectant l’étiquette et en adoptant\
+    \ les manières qui conviennent à une situation donnée.<br/><br/><h2>Test de compétence</h2>\
+    \ Le personnage peut modifier l’attitude des PNJ en réussissant un test de Diplomatie.\
+    \ Le DD du test dépend de l’attitude initiale et du modificateur de Charisme du\
+    \ PNJ. Si le test réussit, l’attitude du PNJ s’améliore d’une catégorie. Son attitude\
+    \ s’améliore d’une catégorie en plus par tranche de 5 points dans la différence\
+    \ entre le résultat et le DD du test. Un test de Diplomatie ne peut généralement\
+    \ pas provoquer un changement d’attitude de plus de deux catégories mais le MJ\
+    \ peut ignorer cette règle dans certaines situations. Si le test échoue de 4 points\
+    \ ou moins, l’attitude du PNJ reste inchangée. Mais s’il échoue de 5 points ou\
+    \ plus, elle se détériore d’une catégorie.<br/><br/>Un personnage ne peut pas\
+    \ utiliser la compétence de Diplomatie contre une créature qui ne le comprend\
+    \ pas ou qui possède une Intelligence inférieure ou égale à 3. En règle générale,\
+    \ cette compétence n’a aucun effet en combat, ni contre des créatures qui ont\
+    \ l’intention de nuire au personnage ou à ses alliés dans les quelques secondes\
+    \ à venir. Les modifications d’attitude résultant d’un test de Diplomatie persistent\
+    \ en moyenne pendant 1d4 heures mais elles peuvent durer plus ou moins longtemps\
+    \ selon les situations (à l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Le\
+    \ personnage peut tenter de demander un service à une créature dont l’attitude\
+    \ est indifférente, amicale ou serviable. Cela nécessite un nouveau test de Diplomatie\
+    \ dont on détermine le DD comme suit : on part du DD correspondant à l’attitude\
+    \ de la créature et on lui applique les modificateurs qui suivent. Une créature\
+    \ à l’attitude serviable acceptera généralement toutes les requêtes du personnage\
+    \ sans qu’un test soit nécessaire, à moins qu'on lui demande de faire quelque\
+    \ chose de contraire à sa nature ou de se mettre en grave danger. Certaines demandes\
+    \ qui vont à l’encontre des valeurs de la créature ou de sa nature échouent automatiquement\
+    \ (à l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Renseignements.\
+    \ Le personnage peut également utiliser la compétence de Diplomatie pour recueillir\
+    \ des informations sur un sujet ou un individu spécifique. Pour ce faire, il doit\
+    \ visiter les tavernes locales, les marchés et les autres lieux de rencontre pendant\
+    \ 1d4 heures. Le DD de ce test dépend de l’accessibilité des informations recherchées.\
+    \ Pour les faits ou les rumeurs bien connus, le DD est généralement de 10. Lorsqu’il\
+    \ s’agit de secrets ou de choses peu connues, le DD peut grimper à 20 ou plus\
+    \ encore. Le MJ est également à même de décider que certains sujets sont tout\
+    \ simplement inconnus des gens du peuple.<br/><br/><h2>Action</h2> Modifier l’attitude\
+    \ d’une créature par un test de Diplomatie prend généralement une minute de dialogue.\
+    \ Présenter une requête à un PNJ nécessite au moins 1 round de dialogue (la durée\
+    \ totale dépend de la complexité de la requête). Recueillir des informations par\
+    \ un test de Diplomatie requiert 1d4 heures pendant lesquelles le personnage doit\
+    \ rechercher des rumeurs et des informateurs.<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Il n’est pas possible d’utiliser la compétence de Diplomatie pour influencer\
+    \ l’attitude d’une créature donnée plus d’une fois par période de vingt-quatre\
+    \ heures. Si un PNJ refuse d’accéder à une requête, des tests de Diplomatie supplémentaires\
+    \ ne modifieront pas sa réponse, mais il reste possible de lui adresser d’autres\
+    \ requêtes. Les tests de Diplomatie visant à recueillir des informations peuvent\
+    \ être tentés à nouveau.<br/><br/><h2>Spécial</h2> Un personnage possédant le\
+    \ don Persuasion obtient un bonus aux tests de Diplomatie. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Diplomatie.ashx
   
 - Nom: Discrétion
@@ -1387,6 +2088,48 @@
 
 
     Un personnage possédant le don Discret obtient un bonus aux tests de Discrétion.'
+  DescriptionHTML: "<br/>Le personnage sait comment éviter de se faire repérer,\
+    \ ce qui lui permet de tromper la surveillance des gardes ou encore de se cacher\
+    \ et de se déplacer en silence pour pouvoir ensuite attaquer par surprise.<br/><br/><h2>Test\
+    \ de compétence</h2> Le test de Discrétion du personnage est opposé aux tests\
+    \ de Perception de tous ceux qui pourraient le remarquer. Si une créature ne parvient\
+    \ pas à battre le résultat du test du personnage, elle traite ce dernier comme\
+    \ s'il bénéficiait d'un camouflage total. S’il avance lentement (pas plus vite\
+    \ que la moitié de sa vitesse de déplacement normale), il ne subit aucun malus.\
+    \ S’il tente d’aller plus vite (sans toutefois dépasser sa vitesse de déplacement\
+    \ normale), il subit un malus de -5. Il est impossible d’attaquer, de courir ou\
+    \ de charger en restant discret.<br/><br/>Les tests de Discrétion des créatures\
+    \ d’une autre catégorie de taille que M s’accompagnent des modificateurs suivants\
+    \ : infime +16, minuscule +12, très petit +8, petit +4, moyenne +0, grand -4,\
+    \ très grand -8, gigantesque -12, colossal -16.<br/><br/>Lorsque des créatures\
+    \ observent le personnage (quel que soit le sens employé mais généralement en\
+    \ utilisant leur vue), celui-ci ne peut pas utiliser cette compétence : il doit\
+    \ tout d’abord trouver un abri ou un camouflage. Si les observateurs sont momentanément\
+    \ distraits (par un test de Bluff réussi par exemple), le personnage peut alors\
+    \ tenter d’utiliser la compétence de Discrétion à condition de parvenir à atteindre\
+    \ une cachette (un endroit où il ne peut être observé) avant que leur attention\
+    \ se reporte sur lui mais, dans ce cas, le personnage subit un malus de -10 au\
+    \ test de Discrétion, car il doit se déplacer rapidement.<br/><br/><b>Quitter\
+    \ une cachette.</b> Quand, au début de son tour de jeu, un personnage bénéficie\
+    \ de l'effet de la compétence de Discrétion, il peut choisir d'abandonner son\
+    \ abri ou son camouflage sans se faire repérer à condition de réussir un test\
+    \ de Discrétion et de bénéficier d'un abri ou d'un camouflage à la fin de son\
+    \ tour de jeu. Le personnage perd immédiatement le bénéfice de la discrétion s'il\
+    \ réalise un jet d'attaque (que celui-ci soit réussi ou non), sauf s'il s'agit\
+    \ d'un tir embusqué (voir ci-dessous).<br/><br/><b>Tir embusqué.</b> Si un personnage\
+    \ est caché à 3 m (2 cases) ou plus de sa cible, il peut porter une attaque à\
+    \ distance puis se cacher à nouveau dans le même round. Il subit cependant un\
+    \ malus de -20 au test de Discrétion après son tir.<br/><br/><b>Créer une diversion\
+    \ pour se cacher.</b> La compétence Bluff peut aider à se cacher. Avec un test\
+    \ de Bluff réussi, le personnage peut créer une diversion suffisante pour détourner\
+    \ l’attention de ceux qui l’observent, ce qui lui donne l’occasion d’utiliser\
+    \ la compétence de Discrétion.<br/><br/><h2>Action</h2> Généralement aucune. Les\
+    \ tests de Discrétion font normalement partie d’un déplacement et sont donc inclus\
+    \ dans une autre action. Cependant, se cacher après avoir tiré (voir « Tir embusqué\
+    \ » ci-dessus) est une action de mouvement.<br/><br/><h2>Spécial</h2> Un personnage\
+    \ invisible bénéficie d’un bonus de +40 aux tests de Discrétion s’il reste immobile\
+    \ ou d’un bonus de +20 s’il se déplace.<br/><br/>Un personnage possédant le don\
+    \ Discret obtient un bonus aux tests de Discrétion. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Discr%c3%a9tion.ashx
   
 - Nom: Dressage
@@ -1580,6 +2323,71 @@
     ne peut ni dresser, ni élever d’animaux. Un druide ou un rôdeur ayant un rang
     nul en Dressage peut effectuer un test de Charisme pour diriger ou pousser son
     compagnon animal mais il ne peut ni dresser, ni élever d’autres animaux non-domestiqués.'
+  DescriptionHTML: "<br/>Le personnage sait comment s’y prendre avec les animaux\
+    \ et peut leur enseigner des tours, les faire obéir à des ordres simples ou même\
+    \ les apprivoiser.<br/><br/><h2>Test de compétence</h2> Le DD du test dépend du\
+    \ résultat que le personnage désire obtenir.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Diriger\
+    \ un animal.</b> Cela consiste à ordonner à un animal d’effectuer une tâche ou\
+    \ un tour de son répertoire. Si l’animal est blessé ou s’il a subi des dégâts\
+    \ non létaux ou un affaiblissement de caractéristique, le DD est augmenté de +2.\
+    \ Si le personnage réussit son test, l’animal exécute la tâche ou le tour demandé\
+    \ lors de sa prochaine action.<br/><br/><b>Pousser un animal.</b> Cela permet\
+    \ de pousser un animal à accomplir une tâche ou un tour auquel il n’est pas entraîné\
+    \ mais dont il est physiquement capable. Cela inclut aussi la marche forcée ou\
+    \ le footing pendant plus d’une heure entre deux cycles de sommeil. Si l’animal\
+    \ est blessé ou s’il a subi des dégâts non létaux ou un affaiblissement de caractéristique,\
+    \ le DD est augmenté de +2. Si le personnage réussit son test, l’animal exécute\
+    \ la tâche ou le tour demandé lors de sa prochaine action.<br/><br/><b>Enseigner\
+    \ des tours à un animal.</b> Un personnage a besoin d’une semaine de travail (et\
+    \ d’un test de Dressage) pour apprendre un tour spécifique à un animal. Les animaux\
+    \ ayant une valeur d’Intelligence de 1 peuvent apprendre jusqu’à trois tours au\
+    \ maximum, tandis que les animaux ayant une valeur d’Intelligence de 2 peuvent\
+    \ assimiler jusqu’à six tours. Voici les tours les plus courants (et le DD qui\
+    \ leur est associé).<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><b>Enseigner\
+    \ une fonction à un animal.</b> Plutôt que d’apprendre des tours un par un, il\
+    \ est possible d’entraîner un animal à remplir une fonction particulière. Chaque\
+    \ fonction regroupe une série de tours qui correspondent à un thème donné, comme\
+    \ monter la garde ou participer au travail. L’animal doit remplir toutes les conditions\
+    \ des tours regroupés par cette la fonction. Si une fonction comprend plus de\
+    \ trois tours, elle est réservée aux animaux ayant une valeur d’Intelligence égale\
+    \ ou supérieure à 2.<br/><br/>On ne peut apprendre qu’une seule fonction à un\
+    \ animal, mais il peut apprendre des tours supplémentaires (en plus de ceux compris\
+    \ dans sa fonction) s’il est assez intelligent pour cela. Entraîner un animal\
+    \ à une fonction demande moins de tests de Dressage, mais autant de temps que\
+    \ de lui apprendre les tours qui la composent un par un.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><b>Élever\
+    \ un animal sauvage.</b> Il s’agit d’élever une créature sauvage qui vient de\
+    \ naître pour en faire un animal domestique. Au maximum, le personnage peut s’occuper\
+    \ de trois animaux du même type à la fois.<br/><br/>Si le test de compétence est\
+    \ réussi, l’animal peut apprendre des tours (soit en même temps pendant qu’il\
+    \ grandit, soit plus tard comme un animal domestique).<br/><br/><h2>Action</h2>\
+    \ Variable. Diriger un animal est une action de mouvement et pousser un animal\
+    \ est une action complexe (un druide ou un rôdeur peut diriger son compagnon animal\
+    \ par une action libre et le pousser par une action de mouvement). Dans le cas\
+    \ des tâches pour lesquelles une durée est indiquée, le personnage doit passer\
+    \ la moitié du temps indiqué (à raison de trois heures par jour et par animal\
+    \ entraîné) avant d’effectuer son test de compétence. En cas d’échec, il ne parvient\
+    \ pas à dresser ou à mater l’animal, ni à lui enseigner le moindre tour, mais\
+    \ il n’a pas à finir le dressage ou l’élevage. Si le test est réussi, il faut\
+    \ encore accorder à l’animal le reste du temps nécessaire pour que le dressage\
+    \ (ou autre) soit couronné de succès. En cas d’interruption ou si le personnage\
+    \ n’achève pas la tâche fixée, toute tentative faite par la suite pour dresser,\
+    \ mater ou apprendre des tours à l’animal échoue automatiquement.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Oui, sauf pour élever un animal sauvage.<br/><br/><h2>Spécial</h2>\
+    \ On peut utiliser cette compétence sur une créature ayant une valeur d’Intelligence\
+    \ de 1 ou 2 et qui n’est pas un animal, mais le DD de la tâche augmente de +5.\
+    \ Le nombre de tours que ces créatures peuvent apprendre est limité de la même\
+    \ façon que pour les animaux.<br/><br/>Un druide ou un rôdeur obtient un bonus\
+    \ de circonstances de +4 aux tests de Dressage liés à son compagnon animal.<br/><br/>De\
+    \ plus, le compagnon animal d’un druide ou d’un rôdeur connaît un (ou plusieurs)\
+    \ tours supplémentaires, qui ne comptent pas dans la limite normale des tours\
+    \ qu’un animal peut apprendre et qui ne nécessitent aucun temps de dressage.<br/><br/>Un\
+    \ personnage possédant le don Fraternité animale obtient un bonus aux tests de\
+    \ Dressage.<br/><br/><h2>Utilisation sans formation</h2> Un personnage ayant un\
+    \ rang nul en Dressage peut diriger ou pousser les animaux domestiques en réussissant\
+    \ un test de Charisme, mais il ne peut ni dresser, ni élever d’animaux. Un druide\
+    \ ou un rôdeur ayant un rang nul en Dressage peut effectuer un test de Charisme\
+    \ pour diriger ou pousser son compagnon animal mais il ne peut ni dresser, ni\
+    \ élever d’autres animaux non-domestiqués. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dressage.ashx
   
 - Nom: Équitation
@@ -1701,6 +2509,70 @@
 
     Il est nécessaire de maîtriser la compétence Équitation pour pouvoir choisir les
     dons Attaque au galop, Charge dévastatrice, Combat monté, Piétinement ou Tir monté.'
+  DescriptionHTML: "<br/>Le personnage sait monter à cheval ou utiliser d’autres\
+    \ montures plus exotiques comme un griffon ou un pégase. Si le personnage tente\
+    \ de chevaucher une créature qui n’est pas faite pour cela, il subit un malus\
+    \ de -5 sur ses tests d’Équitation.<br/><br/><h2>Test de compétence</h2> Les actions\
+    \ d’équitation classiques n’exigent pas de test de compétence. Le personnage peut\
+    \ ainsi seller sa monture, monter en selle, avancer au pas, trotter, galoper et\
+    \ descendre de sa monture sans le moindre problème. Les tâches suivantes requièrent\
+    \ un test de compétence.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Guider\
+    \ sa monture avec les genoux.</b> Le personnage sait guider sa monture à l’aide\
+    \ de ses seuls genoux, ce qui lui laisse les mains libres en cas de combat. Le\
+    \ test d’Équitation s’effectue au début de chaque tour de jeu. En cas d’échec,\
+    \ l’aventurier ne peut se servir que d’une main au cours du round, l’autre étant\
+    \ nécessaire pour contrôler sa monture. Utiliser cette option ne nécessite pas\
+    \ d’action.<br/><br/><b>Rester en selle.</b> Quand le personnage est blessé ou\
+    \ quand sa monture se cabre ou s’affole, il peut tenter de réagir instantanément\
+    \ et éviter de tomber. Utiliser cette option ne nécessite pas d’action.<br/><br/><b>Combattre\
+    \ sur un destrier.</b> Le cavalier peut faire attaquer sa monture et, en plus,\
+    \ placer sa ou ses attaques normalement. Utiliser cette option est une action\
+    \ libre.<br/><br/><b>Utiliser sa monture pour s’abriter.</b> Le personnage peut\
+    \ sauter de selle et se cacher derrière sa monture, qui lui procure alors un abri.\
+    \ Il ne peut ni attaquer ni lancer de sorts lorsqu’il est dans cette position.\
+    \ S’il rate son test de compétence, il n’est pas considéré comme étant à l’abri.\
+    \ Utiliser cette option est une action immédiate, mais une action de mouvement\
+    \ est nécessaire pour se remettre en selle (ce qui ne requiert aucun test).<br/><br/><b>Amortir\
+    \ sa chute.</b> Le personnage a appris à amortir sa chute si sa monture tombe\
+    \ ou se fait tuer sous lui. En cas de test de compétence raté, il subit 1d6 points\
+    \ de dégâts de chute et se retrouve à terre. Utiliser cette option ne nécessite\
+    \ pas d’action.<br/><br/><b>Sauter un obstacle.</b> Le personnage peut encourager\
+    \ sa monture à sauter un obstacle au cours de son déplacement. Si le test d'Équitation\
+    \ est réussi, faites un test en utilisant votre modificateur d'Équitation ou le\
+    \ modificateur de saut de la monture (le moins élevé des deux) pour déterminer\
+    \ la distance franchie par la créature. Si le personnage rate son test d’Équitation,\
+    \ il tombe lorsque sa monture quitte le sol et subit au moins 1d6 points de dégâts\
+    \ de chute. Utiliser cette option n’est pas une action mais fait partie d’une\
+    \ action de mouvement.<br/><br/><b>Éperonner sa monture.</b> Le personnage peut\
+    \ inciter sa monture à aller plus vite en utilisant une action de mouvement. Un\
+    \ test d’Équitation réussi augmente la vitesse de la monture de 3 m pendant 1\
+    \ round, mais celle-ci subit 1d3 point de dégâts. On peut utiliser cette option\
+    \ plusieurs rounds de suite, mais la monture devient fatiguée après un nombre\
+    \ de rounds égal à sa valeur de Constitution. Il n’est pas possible d’utiliser\
+    \ cette option lorsque la monture est fatiguée.<br/><br/><b>Contrôler sa monture\
+    \ au combat.</b> Lors d’une bataille, le personnage peut utiliser une action de\
+    \ mouvement pour contrôler un poney, un cheval léger, un cheval lourd ou une autre\
+    \ monture qui n’est pas entraînée au combat. En cas d’échec au test de compétence,\
+    \ il ne peut rien faire d’autre de tout le round. Aucun test n’est nécessaire\
+    \ pour les chevaux ou poneys entraînés au combat.<br/><br/><b>Monter en selle\
+    \ ou descendre de selle rapidement.</b> Le personnage peut tenter de monter en\
+    \ selle ou de sauter au sol rapidement, pour autant que sa monture ne possède\
+    \ pas plus d’une catégorie de taille de plus que lui. Si le personnage dispose\
+    \ encore d’une action de mouvement pour ce round, un test de compétence réussi\
+    \ lui permet de réaliser ce mouvement par une action libre. Si son test de compétence\
+    \ échoue, il utilise une action de mouvement pour monter en selle ou descendre\
+    \ de selle. Il est impossible d’utiliser cette option si la monture possède plus\
+    \ d’une catégorie de taille de plus que le personnage.<br/><br/><h2>Action</h2><b>Variable.</b>\
+    \ Monter en selle ou descendre de selle est habituellement une action de mouvement.\
+    \ Les autres tests sont des actions de mouvement, des actions libres ou ne sont\
+    \ pas des actions, selon les cas.<br/><br/><h2>Spécial</h2> Monter à cru (sans\
+    \ selle) entraîne un malus de -5 aux tests d’Équitation.<br/><br/>Un personnage\
+    \ possédant le don Fraternité animale obtient un bonus aux tests d’Équitation.<br/><br/>Si\
+    \ la monture du personnage est équipée d’une selle de guerre, il bénéficie d’un\
+    \ bonus de circonstances de +2 à tous les tests visant à déterminer s’il parvient\
+    \ à se maintenir en selle.<br/><br/>Il est nécessaire de maîtriser la compétence\
+    \ Équitation pour pouvoir choisir les dons Attaque au galop, Charge dévastatrice,\
+    \ Combat monté, Piétinement ou Tir monté. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quitation.ashx
   
 - Nom: Escalade
@@ -1834,6 +2706,71 @@
 
 
     Un personnage possédant le don Athlétisme obtient un bonus aux tests d’Escalade.'
+  DescriptionHTML: "<br/>Le personnage s’est entraîné à escalader toutes sortes\
+    \ de parois verticales, des murs relativement lisses de la ville jusqu’aux falaises\
+    \ rocailleuses.<br/><br/><h2>Test de compétence</h2> Un test d’Escalade réussi\
+    \ permet de progresser (vers le haut, le bas ou les côtés) le long d’une pente\
+    \ fortement inclinée ou d’un mur (voire d’un plafond muni de prises) au quart\
+    \ de sa vitesse normale. Dans le cadre de cette compétence, on considère comme\
+    \ pente toute paroi inclinée de moins de 60° et comme mur toute paroi inclinée\
+    \ de 60° ou plus.<br/><br/>Un test de compétence raté de 1 à 4 points indique\
+    \ que le personnage ne parvient pas à progresser, alors qu’un test raté de 5 points\
+    \ ou plus implique une chute sur toute la hauteur déjà parcourue.<br/><br/>Le\
+    \ DD du test dépend des conditions dans lesquelles l’escalade s’effectue, qui\
+    \ sont à comparer à celles de la table ci-après.<br/><br/>Il est nécessaire d’avoir\
+    \ les deux mains libres lors d’une escalade, mais on peut se tenir à un mur d’une\
+    \ main le temps de lancer un sort ou d’effectuer une autre action réalisable d’une\
+    \ seule main. Il est impossible d’esquiver les coups tout en grimpant, ce qui\
+    \ signifie que le personnage perd son bonus de Dextérité à la CA (s’il en a un).\
+    \ Il est également impossible d’utiliser un bouclier en grimpant. Chaque fois\
+    \ qu’un personnage subit des dégâts alors qu’il escalade une paroi, il doit réussir\
+    \ un test d’Escalade contre le DD de la paroi pour éviter de tomber. En cas d’échec,\
+    \ les dégâts sont proportionnels à la hauteur de chute.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Escalade\
+    \ accélérée.</b> Le personnage peut grimper plus vite que d’habitude. Il peut\
+    \ avancer à la moitié de sa vitesse de déplacement (au lieu du quart) en acceptant\
+    \ un malus de -5 au test.<br/><br/><b>Créer ses propres prises.</b> Le personnage\
+    \ peut créer ses propres prises en plantant des pitons dans un mur. Cela prend\
+    \ une minute par piton et un piton par mètre cinquante. Un mur pitonné se transforme\
+    \ en surface présentant suffisamment de prises (DD 15). De même, un personnage\
+    \ muni d’une hachette ou d’un pic peut tailler des prises dans un mur de glace.<br/><br/><b>Stopper\
+    \ sa chute.</b> Il est quasiment impossible d’arrêter sa chute en se retenant\
+    \ à un mur. Pour parvenir à réussir un tel exploit, le personnage doit réussir\
+    \ un test d’Escalade contre un DD de 20 + le DD de la paroi. C’est un peu plus\
+    \ facile quand on glisse le long d’une pente (le DD vaut alors 10 + le DD de la\
+    \ pente).<br/><br/><b>Stopper la chute d’une autre personne.</b> Un grimpeur peut\
+    \ tenter de rattraper une autre personne qui tombe au-dessus ou à côté de lui\
+    \ si elle passe à sa portée. Pour cela, il doit réussir une attaque de contact\
+    \ au corps à corps contre la personne qui tombe (qui peut décider de ne pas appliquer\
+    \ son bonus de Dextérité à la CA si elle le désire). Si l’attaque réussit, le\
+    \ grimpeur doit effectuer immédiatement un nouveau test d’Escalade (avec un DD\
+    \ égal à celui de la surface + 10). En cas de réussite, le grimpeur arrive à rattraper\
+    \ la personne. Cependant, si le poids de celle-ci et de son équipement est supérieur\
+    \ à la limite d’une charge lourde pour le grimpeur, celui-ci est emporté à son\
+    \ tour et les deux chutent. Si le test d’Escalade échoue de 1 à 4 points, le grimpeur\
+    \ n’arrive pas à rattraper la personne, mais il conserve sa propre prise sur la\
+    \ surface. Si le test d’Escalade échoue de 5 points ou plus, non seulement le\
+    \ grimpeur n’arrive pas à interrompre la chute, mais il perd également pied et\
+    \ chute lui aussi.<br/><br/><h2>Action</h2> Comme l’escalade s’effectue au cours\
+    \ d’un déplacement, les tests d’Escalade sont donc généralement intégrés dans\
+    \ des actions de mouvement (une action de mouvement peut combiner plusieurs formes\
+    \ de déplacement). Un test d’Escalade distinct est nécessaire pour chaque action\
+    \ de mouvement comprenant une part d’escalade. Stopper sa chute ou celle d’une\
+    \ autre personne ne nécessite pas une action.<br/><br/><h2>Spécial</h2> Il est\
+    \ possible de soulever quelqu’un (ou de le faire descendre) à l’aide d’une corde,\
+    \ pour peu qu’on dispose de la force physique nécessaire. Doublez la charge maximale\
+    \ du personnage pour savoir combien il peut porter de la sorte.<br/><br/>Une créature\
+    \ possédant une vitesse d’escalade bénéficie d’un bonus racial de +8 aux tests\
+    \ d’Escalade. Elle doit effectuer un test d’Escalade chaque fois qu’elle tente\
+    \ de grimper un mur ou une pente dont le DD est supérieur à 0, mais elle peut\
+    \ toujours faire 10 sur ses tests d’Escalade, même si elle est menacée ou si elle\
+    \ se presse. Si elle choisit de réaliser une escalade accélérée (voir plus haut),\
+    \ elle peut se déplacer au double de sa vitesse d’escalade (mais jamais plus vite\
+    \ que sa vitesse de déplacement normal) et n’a besoin d’effectuer qu’un seul test\
+    \ d’Escalade avec un malus de -5. Lorsqu’elle réalise une escalade, elle conserve\
+    \ son bonus de Dextérité à la CA et ses adversaires ne bénéficient d’aucun bonus\
+    \ spécial lorsqu’ils lui portent une attaque. Il lui est cependant toujours impossible\
+    \ de courir pendant son escalade.<br/><br/>Un personnage possédant le don Athlétisme\
+    \ obtient un bonus aux tests d’Escalade. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Escalade.ashx
   
 - Nom: Escamotage
@@ -1913,6 +2850,49 @@
 
     SPÉCIAL Un personnage possédant le don Doigts de fée obtient un bonus aux tests
     d’Escamotage.'
+  DescriptionHTML: "<br/>Le personnage s’est entraîné à agir comme un pickpocket,\
+    \ à dissimuler des armes et à faire toute une série d’autres choses sans se faire\
+    \ remarquer.<br/><br/><h2>Test de compétence</h2> Un test d’Escamotage réussi\
+    \ contre un DD de 10 permet au personnage d’empocher discrètement un objet auquel\
+    \ personne ne fait attention, pour autant que ce dernier ne soit pas plus gros\
+    \ qu’une pièce de monnaie. Les tours de passe-passe mineurs (comme faire disparaître\
+    \ une pièce) donnent également lieu à un test de DD 10, sauf si un observateur\
+    \ attentif surveille l’objet en question.<br/><br/>Si l’aventurier doit déjouer\
+    \ la surveillance d’un observateur, son test d’Escamotage doit l’emporter sur\
+    \ le test de Perception de cet observateur. En cas d’échec, le personnage peut\
+    \ quand même réaliser l’action prévue mais l’observateur le remarque.<br/><br/>Cette\
+    \ compétence sert aussi à cacher sur sa personne un objet de taille réduite (y\
+    \ compris une arme légère ou une arme à distance facile à cacher, comme un dard,\
+    \ une fronde ou une arbalète de poing). Le test d’Escamotage est opposé aux tests\
+    \ de Perception des individus qui observent ou fouillent le personnage. Dans ce\
+    \ dernier cas, les examinateurs obtiennent un bonus de +4 aux tests de Perception,\
+    \ puisqu’il est généralement plus simple de trouver un objet de ce type que de\
+    \ le cacher. Une dague se dissimule plus facilement que la plupart des autres\
+    \ armes légères et elle peut être cachée avec un bonus de +2 au test d’Escamotage.\
+    \ Un objet particulièrement petit, comme une pièce de monnaie, un shuriken ou\
+    \ un anneau, peut être dissimulé avec un bonus de +4 au test d’Escamotage. Enfin,\
+    \ un personnage portant des habits épais ou amples (comme une cape) obtient un\
+    \ bonus de +2 aux tests d’Escamotage visant à dissimuler des objets.<br/><br/>Dégainer\
+    \ une arme dissimulée est une action simple qui ne provoque pas d’attaque d’opportunité.<br/><br/>Il\
+    \ faut réussir un test d’Escamotage contre un DD de 20 pour dérober quelque chose\
+    \ à quelqu’un. La victime a droit à un test de Perception opposé au test d’Escamotage\
+    \ du personnage. Si elle réussit, elle s’aperçoit qu’on cherche à la voler, que\
+    \ le personnage ait réussi sa tentative ou non. Le personnage ne peut pas utiliser\
+    \ cette compétence au cours d’un combat pour dérober un objet à une créature qui\
+    \ est au courant de sa présence.<br/><br/>On peut aussi utiliser la compétence\
+    \ d’Escamotage pour distraire une audience (comme avec la compétence de Représentation).\
+    \ Dans ce cas, le personnage jongle, fait des tours de passe-passe et ainsi de\
+    \ suite.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ Les tests d’Escamotage nécessitent généralement des actions simples, mais une\
+    \ action de mouvement peut suffire si on accepte un malus de -20 au test.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Oui, mais un second test d’Escamotage contre la même cible après\
+    \ un échec (ou face à un observateur qui vient de déceler la tentative précédente)\
+    \ voit son DD augmenté de +10.<br/><br/><h2>Utilisation sans formation</h2> Un\
+    \ test d’Escamotage sans formation est simplement un test de Dextérité. Sans entraînement\
+    \ particulier, il est impossible de réussir une tâche dont le DD est supérieur\
+    \ à 10, à l’exception de la dissimulation d’objet sur sa personne.<br/><br/><h2>Spécial</h2>\
+    \ Un personnage possédant le don Doigts de fée obtient un bonus aux tests d’Escamotage.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Escamotage.ashx
   
 - Nom: Estimation
@@ -1946,6 +2926,23 @@
 
     SPÉCIAL Les lanceurs de sorts possédant un corbeau comme familier obtiennent un
     bonus de +3 aux tests d’Estimation.'
+  DescriptionHTML: "<br/>Le personnage sait estimer la valeur monétaire des objets.<br/><br/><h2>Test\
+    \ de compétence</h2> Le personnage est capable d’évaluer les objets courants grâce\
+    \ à un test d’Estimation de DD 20. Si le test réussit de 5 points ou plus, le\
+    \ personnage détermine également si l’objet possède des propriétés magiques, mais\
+    \ le test n’en révèle pas les capacités exactes. En cas d’échec de moins de 5\
+    \ points, l’estimation du personnage se situe entre 80% et 120% du prix exact.\
+    \ Si le test échoue de 5 points ou plus, l’estimation est très inexacte (à l’appréciation\
+    \ du MJ). Dans le cas d’objets rares ou exotiques, le DD du test pourrait être\
+    \ augmenté de 5 ou plus.<br/><br/>Le personnage peut également utiliser cette\
+    \ compétence pour repérer l’objet visible le plus précieux au sein d’un trésor.\
+    \ Le DD du test est généralement 20 mais il peut aller jusqu’à 30 dans le cas\
+    \ d’un trésor particulièrement vaste.<br/><br/><h2>Action</h2> Il faut 1 action\
+    \ simple pour estimer la valeur d’un objet. Repérer l’objet le plus précieux dans\
+    \ un trésor prend 1 action complexe.<br/><br/><h2>Nouvelles tentatives</h2> De\
+    \ nouvelles tentatives d’estimation sur un même objet donnent toujours le même\
+    \ résultat.<br/><br/><h2>Spécial</h2> Les lanceurs de sorts possédant un corbeau\
+    \ comme familier obtiennent un bonus de +3 aux tests d’Estimation. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Estimation.ashx
   
 - Nom: Évasion
@@ -1982,6 +2979,34 @@
     \ le DD pour se libérer de liens est supérieur à 20 + le bonus d’Évasion du personnage,\
     \ celui-ci ne peut pas s’en libérer grâce à cette compétence.\n\nSPÉCIAL Un personnage\
     \ possédant le don Discret obtient un bonus aux tests d'Évasion."
+  DescriptionHTML: "<br/>Le personnage s’est entraîné pour pouvoir se libérer de\
+    \ liens et se soustraire aux étreintes lors d’une lutte.<br/><br/><h2>Test de\
+    \ compétence</h2> La table suivante indique les DD associés aux différentes formes\
+    \ d’entraves.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Cordes.</b>\
+    \ Le DD du test d’Évasion du personnage est égal à 20 + le bonus de manœuvre offensive\
+    \ de l’individu qui l’a ligoté.<br/><br/><b>Menottes et menottes de qualité supérieure.</b>\
+    \ Le DD des menottes est déterminé par leur qualité (voir la table).<br/><br/><b>Conduit\
+    \ étroit.</b> Le DD indiqué concerne les passages dans lesquels le personnage\
+    \ peut engager la tête, mais pas les épaules (il lui faut donc se faufiler pour\
+    \ pouvoir entrer). Si le passage est suffisamment long, plusieurs tests de compétence\
+    \ peuvent être nécessaires. Il est impossible de se faufiler dans un passage où\
+    \ on ne peut pas passer la tête.<br/><br/><b>Situation de lutte.</b> Au cours\
+    \ d’une lutte, le personnage peut choisir de faire un test d’Évasion au lieu d’un\
+    \ test de manœuvre offensive pour se libérer d’une étreinte ou encore pour se\
+    \ dégager d’une situation où il est immobilisé ou agrippé.<br/><br/> <h2>Action</h2>Il\
+    \ faut une minute de travail pour tenter de se libérer de liens, de menottes ou\
+    \ d’entraves d’une autre sorte (à l’exception d’une lutte). Échapper à un filet\
+    \ ou un sort de contrôle des plantes, corde animée, empire végétal ou enchevêtrement\
+    \ nécessite une action complexe. Tenter de se libérer lors d’une lutte est une\
+    \ action simple. Se faufiler par un conduit étroit prend au moins une minute,\
+    \ peut-être plus en fonction de la longueur du passage.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2><b>Variable.</b> Le personnage peut multiplier les tests de compétence\
+    \ s’il progresse dans un passage étroit. Si la situation le permet, il peut effectuer\
+    \ de nouveaux tests et même faire 20 tant que personne ne s’oppose activement\
+    \ à ses efforts. Si le DD pour se libérer de liens est supérieur à 20 + le bonus\
+    \ d’Évasion du personnage, celui-ci ne peut pas s’en libérer grâce à cette compétence.<br/><br/><h2>Spécial</h2>\
+    \ Un personnage possédant le don Discret obtient un bonus aux tests d'Évasion.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89vasion.ashx
   
 - Nom: Intimidation
@@ -2016,6 +3041,36 @@
     \ de -4 aux tests d’Intimidation.\n\nUn personnage possédant le don Persuasion\
     \ obtient un bonus aux tests d’Intimidation.\n\nLes demi-orques bénéficient d’un\
     \ bonus racial de +2 aux tests d’Intimidation."
+  DescriptionHTML: "<br/>Cette compétence permet au personnage d’effrayer ses adversaires\
+    \ ou de les contraindre à agir à son avantage grâce à des menaces verbales et\
+    \ à des démonstrations de force.<br/><br/><h2>Test de compétence</h2> Le personnage\
+    \ peut utiliser la compétence d’Intimidation pour forcer un adversaire à se montrer\
+    \ amical envers lui pendant 1d6 × 10 minutes en réussissant un test dont le DD\
+    \ vaut 10 + le nombre de DV de la cible + le modificateur de Sagesse de la cible.\
+    \ En cas de réussite, la cible donne au personnage l’information qu’il désire,\
+    \ lui rend des services (tant que cela ne la met pas en danger) ou lui apporte\
+    \ une aide limitée. Au terme de cette période, la cible adopte une attitude inamicale\
+    \ envers le personnage et peut même le dénoncer aux autorités locales. En cas\
+    \ de test raté de 5 points ou plus, la cible tente de tromper le personnage ou\
+    \ de lui mettre des bâtons dans les roues d’une manière ou d’une autre.<br/><br/><b>Démoraliser\
+    \ un adversaire.</b> La compétence Intimidation peut aussi servir en plein combat\
+    \ pour rendre un adversaire secoué. Dans ce cas, le DD du test est de 10 + le\
+    \ nombre de DV de la cible + le modificateur de Sagesse de la cible. En cas de\
+    \ réussite, la cible est secouée pendant 1 round. Cette durée augmente de +1 round\
+    \ par tranche de 5 points entre le résultat et le DD du test. Seuls un adversaire\
+    \ situé à 9 m (6 cases) ou moins du personnage et qui peut le voir et l’entendre\
+    \ clairement peut être affecté. <br/><br/>Démoraliser la même créature ne fait\
+    \ qu'étendre le durée de l'effet ; cela ne crée pas une condition de peur plus\
+    \ forte. <h2>Action</h2> Modifier l’attitude de quelqu’un prend une minute de\
+    \ discussion. Démoraliser un adversaire en combat nécessite une action simple.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Il est possible d’intimider un adversaire donné plusieurs fois\
+    \ mais le DD augmente de +5 à chaque test supplémentaire. Il faut laisser une\
+    \ heure s’écouler pour revenir au DD initial.<br/><br/><h2>Spécial</h2> Si le\
+    \ personnage est plus grand que sa cible, il obtient un bonus de +4. Inversement,\
+    \ s’il est plus petit, il subit un malus de -4 aux tests d’Intimidation.<br/><br/>Un\
+    \ personnage possédant le don Persuasion obtient un bonus aux tests d’Intimidation.<br/><br/>Les\
+    \ demi-orques bénéficient d’un bonus racial de +2 aux tests d’Intimidation. \r\
+    \ \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Intimidation.ashx
   
 - Nom: Linguistique
@@ -2078,6 +3133,62 @@
     \ écrits dans une forme archaïque ou étrange d’une des langues qu’il connaît automatiquement\
     \ grâce à sa race. De plus, il est également toujours possible de tenter de repérer\
     \ une contrefaçon."
+  DescriptionHTML: "<br/>Le personnage s’est entraîné à bien manier les mots, à\
+    \ la fois oralement et par écrit. Il peut parler plusieurs langages et déchiffrer\
+    \ pratiquement n’importe quelle langue s’il dispose d’assez de temps. Il peut\
+    \ également contrefaire des documents écrits et repérer les faux en écriture.<br/><br/><h2>Test\
+    \ de compétence</h2> Le personnage peut décrypter les textes incomplets, mais\
+    \ aussi ceux qui sont rédigés dans une langue inconnue ou archaïque. Le DD de\
+    \ base est égal à 20 pour les messages simples, 25 pour les textes de difficulté\
+    \ normale et 30 pour ceux qui sont particulièrement complexes, exotiques ou anciens.\
+    \ En cas de réussite, le personnage comprend une page (ou son équivalent) du texte\
+    \ qu’il vient de lire. En cas d’échec, le personnage doit faire un test de Sagesse\
+    \ (DD 5). Si ce second test est également raté, le personnage tire de mauvaises\
+    \ conclusions sur la teneur du texte.<br/><br/>Le MJ effectue les deux tests (celui\
+    \ de Linguistique et, si besoin, celui de Sagesse) en secret, pour que le joueur\
+    \ ne sache pas si les informations découvertes par son personnage sont fiables\
+    \ ou non.<br/><br/><b>Créer ou détecter des contrefaçons.</b> L’art de la contrefaçon\
+    \ nécessite des matériaux et des ingrédients correspondant à ceux utilisés pour\
+    \ le document à contrefaire. Si le personnage cherche à contrefaire un document\
+    \ sur lequel l’écriture utilisée n’est pas spécifique à un individu donné, il\
+    \ lui suffit d’avoir déjà vu un tel document et il bénéficie d’un bonus de +8\
+    \ au test de compétence. Pour reproduire une signature, il doit travailler à partir\
+    \ d’un exemple et le bonus s’élève à +4. Pour contrefaire un long document écrit\
+    \ par un individu spécifique, il est nécessaire d’avoir accès à de longues pages\
+    \ manuscrites de sa main.<br/><br/>Le test de compétence est réalisé en secret,\
+    \ ce qui signifie que le personnage ne connaît jamais avec certitude la qualité\
+    \ de son faux. Tout comme pour la compétence de Déguisement, aucun test n’est\
+    \ nécessaire tant que personne n’examine le document. Lorsque cela se produit,\
+    \ le test de Linguistique de l’individu qui examine le document pour en vérifier\
+    \ l’authenticité est opposé à celui du personnage qui a créé la contrefaçon. Le\
+    \ test de l’individu qui observe le document prend en compte les modificateurs\
+    \ suivants si les conditions indiquées sont remplies.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ <b>Apprendre une langue.</b> Chaque fois que le personnage investit un point\
+    \ dans cette compétence, il apprend à parler et à écrire une nouvelle langue.\
+    \ Les langues plus courantes (et les créatures qui les parlent) sont indiquées\
+    \ ci-après.<br/><br/><h3>Les langues courantes</h3><ul><li>Abyssal (démons et\
+    \ autres Extérieurs d’alignement Chaotique Mauvais)</li><li>Aklo (derros, monstres\
+    \ inhumains ou provenant d’autres mondes, fées maléfiques)</li><li>Aquatique (créatures\
+    \ aquatiques, créatures de l’Eau)</li><li>Aérien (créatures volantes, créatures\
+    \ de l’Air)</li><li>Céleste (anges et autres  Extérieurs d’alignement Bon)</li><li>Commun\
+    \ (humains, ainsi que les races de base)</li><li>Commun des profondeurs (drows,\
+    \ duergars, morlocks, svirfneblins)</li><li>Draconien (dragons et humanoïdes reptiliens)</li><li>Druidique\
+    \ (uniquement les druides)</li><li>Elfe (elfes)</li><li>Géant (cyclopes, ettins,\
+    \  géants, ogres, trolls)</li><li>Gnoll (gnolls)</li><li>Gnome (gnomes)</li><li>Gobelin\
+    \ (gobelins, gobelours et hobgobelins)</li><li>Halfelin (halfelins)</li><li>Igneux\
+    \ (créatures du Feu)</li><li>Infernal (diables et autres Extérieurs d’alignement\
+    \ Loyal Mauvais)</li><li>Nain (nains)</li><li>Orque (orques, demi-orques)</li><li>Sylvestre/Lashunta\
+    \ (centaures, créatures du type plante, fées, licornes)</li><li>Terreux (créatures\
+    \ de la Terre)</li></ul> <br/><h2>Action</h2> Variable. Déchiffrer l’équivalent\
+    \ d’une page de texte prend une minute (dix actions complexes successives). Pour\
+    \ créer une contrefaçon, il faut entre une minute et 1d4 minutes par page. Détecter\
+    \ une contrefaçon en utilisant la compétence de Linguistique prend 1 round d’observation\
+    \ par page.<br/><br/><h2>Nouvelles tentatives</h2> Oui<br/><br/><h2>Spécial</h2>\
+    \ Cette compétence ne peut pas s’utiliser sans formation mais le personnage peut\
+    \ toujours tenter de déchiffrer les textes écrits dans une forme archaïque ou\
+    \ étrange d’une des langues qu’il connaît automatiquement grâce à sa race. De\
+    \ plus, il est également toujours possible de tenter de repérer une contrefaçon.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Linguistique.ashx
   
 - Nom: Natation
@@ -2140,6 +3251,40 @@
 
 
     Un personnage possédant le don Athlétisme obtient un bonus aux tests de Natation.'
+  DescriptionHTML: "<br/>Le personnage a appris à nager et peut même le faire dans\
+    \ des eaux agitées.<br/><br/><h2>Test de compétence</h2> Un personnage doit effectuer\
+    \ un test de Natation une fois par round tant qu'il est dans l'eau. En cas de\
+    \ réussite, il peut nager sur une distance égale à la moitié de sa vitesse de\
+    \ déplacement normale (par une action complexe) ou à son quart (par une action\
+    \ de mouvement). En cas d’échec de 4 points ou moins, il barbote sans parvenir\
+    \ à avancer. En cas d’échec d’au moins 5 points, il coule.<br/><br/>Une fois qu’un\
+    \ personnage se trouve sous l’eau, soit parce qu’il a coulé, soit parce qu’il\
+    \ s’y trouve intentionnellement, il doit retenir sa respiration. Un personnage\
+    \ qui n’effectue que des actions de mouvement ou des actions libres peut retenir\
+    \ sa respiration pendant un nombre de rounds égal au double de sa valeur de Constitution.\
+    \ Si le personnage entreprend une action simple ou complexe (comme une attaque),\
+    \ le temps pendant lequel il peut encore retenir sa respiration est réduit d’un\
+    \ round (dans les faits, un personnage qui combat peut retenir sa respiration\
+    \ deux fois moins longtemps). Une fois arrivé au terme de cette période, le personnage\
+    \ doit réaliser un test de Constitution de DD 10 pour savoir s’il parvient à continuer\
+    \ de retenir sa respiration. Chaque round, un autre test de Constitution, dont\
+    \ le DD augmente de +1, est nécessaire. Dès qu’il rate un test de Constitution,\
+    \ le personnage commence à se noyer. Le DD du test de Natation dépend du courant,\
+    \ comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/>À\
+    \ la fin de chaque heure passée à nager, le personnage doit réussir un test de\
+    \ Natation contre un DD de 20 pour éviter de subir 1d6 points de dégâts non létaux\
+    \ causés par la fatigue. <h2>Action</h2> Un test de Natation réussi permet de\
+    \ nager sur une distance égale au quart de sa vitesse de déplacement par une action\
+    \ de mouvement ou à la moitié de sa vitesse par une action complexe.<br/><br/><h2>Spécial</h2>\
+    \ Les créatures qui possèdent une vitesse de nage peuvent se déplacer sur ou dans\
+    \ l’eau sans effectuer de test de Natation. Elles bénéficient de la capacité retenir\
+    \ son souffle (sauf aquatiques et amphibiens) et d’un bonus de +8 aux tests de\
+    \ Natation visant à accomplir des tâches particulières ou à éviter des dangers.\
+    \ Elles peuvent toujours choisir de faire 10 sur leurs tests de Natation, même\
+    \ si elles sont distraites ou menacées. Enfin, elles peuvent utiliser l’action\
+    \ de course en nageant, à condition de se déplacer en ligne droite.<br/><br/>Un\
+    \ personnage possédant le don Athlétisme obtient un bonus aux tests de Natation.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Natation.ashx
   
 - Nom: Perception
@@ -2198,6 +3343,33 @@
     \ possédant un faucon ou une chouette comme familier gagne un bonus de +3 aux\
     \ tests de Perception. Un personnage possédant le don Vigilance bénéficie d’un\
     \ bonus aux tests de Perception."
+  DescriptionHTML: "<br/>Les sens du personnage lui permettent de repérer certains\
+    \ détails et le préviennent des dangers imminents. La compétence de Perception\
+    \ regroupe les cinq sens : la vue, l’ouïe, le toucher, le goût et l’odorat.<br/><br/><h2>Test\
+    \ de compétence</h2> La compétence de Perception peut s’utiliser de différentes\
+    \ manières. Le plus souvent, il s’agit d’un test opposé au test de Discrétion\
+    \ d’un adversaire et visant à repérer celui-ci avant qu’il puisse surprendre le\
+    \ personnage. En cas de réussite, le personnage peut réagir à la présence de cet\
+    \ adversaire. En cas d’échec, l’adversaire peut accomplir diverses actions, comme\
+    \ se faufiler discrètement ou attaquer le personnage.<br/><br/>La compétence de\
+    \ Perception permet également de remarquer certains détails dans l’environnement\
+    \ du personnage. Le DD du test dépend alors de la distance, de l’environnement\
+    \ et de la difficulté à percevoir le détail en question. La table qui suit donne\
+    \ quelques indications pour déterminer le DD du test.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr>\
+    \ <h2>Action</h2> La plupart des tests de Perception sont faits en réaction à\
+    \ un stimulus observable. Chercher activement un tel stimulus est une action de\
+    \ mouvement.<br/><br/><h2>Nouvelles tentatives</h2> Oui. Un personnage peut essayer\
+    \ de percevoir un détail qu’il a raté la première fois, pour autant que le détail\
+    \ en question soit toujours présent.<br/><br/><h2>Spécial</h2> Les demi-elfes,\
+    \ les elfes, les gnomes et les halfelins bénéficient d’un bonus racial de +2 aux\
+    \ tests de Perception. Les créatures qui possèdent la particularité odorat reçoivent\
+    \ un bonus de +8 aux tests de Perception visant à repérer une odeur. Celles qui\
+    \ possèdent la particularité perception des vibrations reçoivent un bonus de +8\
+    \ aux tests de Perception contre les créatures qui touchent le sol et réussissent\
+    \ automatiquement ces tests lorsque ceux-ci se déroulent dans la portée de cette\
+    \ capacité.<br/><br/>Un lanceur de sorts possédant un faucon ou une chouette comme\
+    \ familier gagne un bonus de +3 aux tests de Perception. Un personnage possédant\
+    \ le don Vigilance bénéficie d’un bonus aux tests de Perception. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perception.ashx
   
 - Nom: Premiers secours
@@ -2315,6 +3487,74 @@
 
     Une trousse de premiers secours confère un bonus de circonstances de +2 aux tests
     de Premiers secours.'
+  DescriptionHTML: "<br/>Le personnage sait comment soigner les blessures et les\
+    \ autres maux.<br/><br/><h2>Test de compétence</h2> Le DD et les effets du test\
+    \ de Premiers secours dépendent de la tâche que le personnage tente d’accomplir.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Premiers\
+    \ secours.</b> Ce terme, qui donne son nom à la compétence, signifie généralement\
+    \ que le personnage intervient rapidement afin de sauver un compagnon mourant.\
+    \ Lorsque quelqu’un est tombé en dessous de 0 point de vie et perd 1 point de\
+    \ vie (par round, par heure ou par jour), le personnage peut stabiliser l’état\
+    \ de celui-ci. Une fois stabilisé, le blessé ne récupère aucun point de vie mais\
+    \ il cesse au moins d’en perdre. Cette utilisation de la compétence Premiers secours\
+    \ permet également de mettre fin aux pertes de points de vie causées par un saignement\
+    \ .<br/><br/><b>Soins suivis.</b> Le personnage s’occupe de son patient pendant\
+    \ un jour ou plus. En cas de succès au test de compétence, le blessé récupère\
+    \ les points de vie ou les points de caractéristiques perdus suite à un affaiblissement\
+    \ temporaire deux fois plus vite que la normale : 2 points de vie par niveau chaque\
+    \ jour où le blessé se repose pendant huit heures entières ou 4 points de vie\
+    \ par niveau pour chaque journée de repos complet, 2 points de caractéristique\
+    \ affaiblie chaque jour où le blessé se repose pendant huit heures entières ou\
+    \ 4 points de caractéristique affaiblie pour chaque journée de repos complet au\
+    \ lit.<br/><br/>On peut ainsi soigner jusqu’à six patients à la fois. Le personnage\
+    \ a besoin d’un peu de matériel (bandages, pommades, etc.) qui se trouve aisément\
+    \ dans les contrées civilisées. Assurer des soins suivis correspond à une activité\
+    \ réduite de la part du personnage (qui ne peut en aucun cas se soigner de la\
+    \ sorte lui-même).<br/><br/><b>Soigner une blessure de chausse-trappe, de croissance\
+    \ d’épines ou de pierres acérées.</b> Une créature blessée pour avoir marché sur\
+    \ une chausse-trappe voit sa vitesse de déplacement réduite de moitié. Un test\
+    \ de Premiers secours réussi soigne la plaie et fait disparaître la pénalité de\
+    \ déplacement.<br/><br/>De même, quiconque est blessé par les sorts de croissance\
+    \ d’épines ou de pierres acérées doit réussir un jet de sauvegarde sous peine\
+    \ de voir sa vitesse de déplacement réduite d’un tiers. Le personnage peut s’occuper\
+    \ d’un compagnon blessé de la sorte (mais pas se soigner lui-même) en prenant\
+    \ dix minutes pour panser les blessures et en réussissant un test de compétence\
+    \ contre le DD du jet de sauvegarde du sort.<br/><br/><b>Soigner des blessures\
+    \ mortelles.</b> Le personnage peut soigner les blessures mortelles d’une créature\
+    \ blessée et lui faire regagner des points de vie. Un test réussi permet de restaurer\
+    \ 1 point de vie par niveau de la créature. Si le résultat du test dépasse le\
+    \ DD de 5 points ou plus, le personnage peut ajouter son modificateur de Sagesse\
+    \ (si celui-ci est positif) au nombre de points de vie guéris. Une créature donnée\
+    \ ne peut bénéficier de ce genre de soins qu’une seule fois par jour et les soins\
+    \ doivent être prodigués dans les vingt-quatre heures suivant le moment où les\
+    \ points de vie ont été perdus. Soigner les blessures mortelles d’une créature\
+    \ nécessite deux fois plus de matériel que des soins normaux (deux utilisations\
+    \ d’une trousse de premiers secours). Le test de compétence subit une pénalité\
+    \ de -2 si le personnage ne dispose que de la moitié du matériel nécessaire (une\
+    \ seule utilisation de la trousse de premiers secours), et cette pénalité passe\
+    \ à -4 si le personnage n’utilise pas de trousse de premiers secours.<br/><br/><b>Soigner\
+    \ un empoisonnement.</b> Un personnage peut s’occuper de quelqu’un qui est empoisonné\
+    \ et qui n’a pas fini de subir les effets du poison (perte de points de vie, affaiblissement\
+    \ de caractéristique ou autre). Chaque fois que la personne empoisonnée doit faire\
+    \ un jet de sauvegarde pour se défendre contre le poison, le soigneur effectue\
+    \ un test de Premiers secours. Si le résultat de ce test dépasse le DD du poison,\
+    \ le personnage reçoit un bonus de compétence de +4 à son jet de sauvegarde contre\
+    \ le poison.<br/><br/><b>Soigner une maladie.</b> Le personnage peut également\
+    \ s’occuper d’un malade. Chaque fois que celui-ci reçoit un jet de sauvegarde\
+    \ pour résister aux effets d’une maladie, le soigneur effectue un test de Premiers\
+    \ secours. Si le résultat de ce test dépasse le DD de la maladie, le personnage\
+    \ bénéficie d’un bonus de compétence de +4 à son jet de sauvegarde contre cette\
+    \ dernière.<br/><br/><h2>Action</h2> Donner les premiers secours, soigner une\
+    \ blessure ou un empoisonnement est une action simple. Soigner une maladie ou\
+    \ une blessure de croissance d'épines ou de pierres acérées nécessite dix minutes\
+    \ de travail. Traiter des blessures mortelles requiert une heure de travail. Donner\
+    \ des soins suivis prend huit heures d’activité réduite.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Variable. En règle générale, il est impossible de tenter un\
+    \ nouveau test de Premiers secours sans avoir une preuve de l’échec du premier\
+    \ test. Il est toujours possible de tenter à nouveau de stabiliser un compagnon\
+    \ mourant, à condition que celui-ci soit toujours vivant.<br/><br/><h2>Spécial</h2>\
+    \ Un personnage possédant le don Autonome obtient un bonus aux tests de Premiers\
+    \ secours.<br/><br/>Une trousse de premiers secours confère un bonus de circonstances\
+    \ de +2 aux tests de Premiers secours. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Premiers%20secours.ashx
   
 - Nom: Profession
@@ -2350,6 +3590,37 @@
     \ nul dans la compétence de Profession) gagnent en moyenne 1 pa par jour.\n\n\
     SPÉCIAL Les gnomes reçoivent un bonus racial de +2 à une compétence d’Artisanat\
     \ ou de Profession de leur choix."
+  DescriptionHTML: "<br/>Le personnage connaît les ficelles d’une profession en\
+    \ particulier. <br/><br/>Tout comme les compétences d’Artisanat, de Connaissances\
+    \ et de Représentation, la compétence de Profession regroupe plusieurs spécialisations\
+    \ différentes. Le personnage peut posséder plusieurs professions et investir des\
+    \ points de compétence séparément dans chacune d’elles. Alors que les formes d’Artisanat\
+    \ permettent de fabriquer des objets, celles de Profession représentent les aptitudes\
+    \ du personnage dans des domaines nécessitant des connaissances plus variées mais\
+    \ moins spécialisées. Les formes de Profession les plus courantes sont les suivantes\
+    \ :<br/><br/> architecte, avocat, berger, bibliothécaire, boucher, boulanger,\
+    \ brasseur, bûcheron, clerc, conducteur d’attelage, courtisan, cuisinier, fermier,\
+    \ gladiateur, herboriste, ingénieur, jardinier, joueur, maître d’écurie, marchand,\
+    \ marin, meunier, mineur, pêcheur, porteur, sage-femme, scribe, soldat, tanneur,\
+    \ tavernier et trappeur.<br/><br/><h2>Test de compétence</h2> Le personnage peut\
+    \ utiliser son métier pour vivre, auquel cas il gagne un nombre de pièces d’or\
+    \ égal à la moitié du résultat de son test de compétence pour une pleine semaine\
+    \ de travail. Il sait comment utiliser au mieux les outils de sa spécialité, accomplir\
+    \ les tâches habituelles, superviser le travail de la main d’œuvre et régler les\
+    \ problèmes ne sortant pas de l’ordinaire. Il peut également répondre aux questions\
+    \ relatives à sa Profession. Les questions simples ont un DD de 10 alors que les\
+    \ questions plus complexes ont un DD de 15 ou plus.<br/><br/><h2>Action</h2> Sans\
+    \ objet. Les tests de Profession représentent généralement une semaine de travail.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Variable. Lorsque le personnage utilise sa profession pour gagner\
+    \ sa vie, il ne peut pas tenter sa chance à nouveau : il doit se contenter du\
+    \ résultat indiqué par le dé. Il aura droit à un nouvel essai dès la semaine suivante.\
+    \ Dans le cas de tentatives pour accomplir une tâche spécifique, il est généralement\
+    \ possible de faire un nouveau test en cas d’échec.<br/><br/><h2>Utilisation sans\
+    \ formation</h2> Les ouvriers non-qualifiés et les assistants (comme par exemple\
+    \ les personnages avec un rang nul dans la compétence de Profession) gagnent en\
+    \ moyenne 1 pa par jour.<br/><br/><h2>Spécial</h2> Les gnomes reçoivent un bonus\
+    \ racial de +2 à une compétence d’Artisanat ou de Profession de leur choix. \r\
+    \ \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Profession.ashx
   
 - Nom: Psychologie
@@ -2414,6 +3685,37 @@
 
 
     Un personnage possédant le don Vigilance obtient un bonus aux tests de Psychologie.'
+  DescriptionHTML: "<br/>Le personnage sait comment repérer les mensonges et percevoir\
+    \ les intentions véritables des individus qu’il croise.<br/><br/><h2>Test de compétence</h2>\
+    \ Un test de Psychologie réussi permet de ne pas se faire bluffer (voir la compétence\
+    \ de Bluff). Il est également possible d’utiliser cette compétence pour sentir\
+    \ quand quelque chose de louche se prépare ou pour déterminer si quelqu’un est\
+    \ digne de confiance.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Pressentiment.</b>\
+    \ En analysant une situation, le personnage est capable de sentir que quelque\
+    \ chose cloche. Il peut par exemple éprouver une sensation de malaise lorsqu’il\
+    \ discute avec un imposteur, ou bien au contraire sentir que quelqu’un est digne\
+    \ de confiance.<br/><br/><b>Perception d’enchantement.</b> Le personnage se rend\
+    \ compte que le comportement d’un individu qu’il observe est influencé par un\
+    \ effet d’enchantement, même si la victime n’a pas elle-même conscience de son\
+    \ état. Le DD habituel est de 25, mais si la cible est dominée (voir le sort domination),\
+    \ le DD n’est que de 15 car son éventail d’activités est relativement réduit.<br/><br/><b>Intercepter\
+    \ un message secret.</b> La compétence de Psychologie peut permettre de se rendre\
+    \ compte que deux personnes mêlent un message secret à une conversation anodine\
+    \ en utilisant la compétence de Bluff. Dans ce cas, le test de Psychologie est\
+    \ opposé au test de Bluff de la personne qui émet le message. Le test de Psychologie\
+    \ du personnage subit un malus de -2 pour chacune des informations relatives au\
+    \ message qui lui manque. Si le test est réussi de 4 points ou moins, le personnage\
+    \ sait qu’un message a été transmis, mais en ignore la teneur. S’il est réussi\
+    \ de 5 points ou plus, le personnage comprend le message. En cas d’échec de 4\
+    \ points ou moins, le personnage ne perçoit aucune communication secrète. Et enfin,\
+    \ en cas d’échec de 5 points ou plus, il déduit des informations erronées.<br/><br/><h2>Action</h2>\
+    \ Il faut au moins une minute pour tenter d’obtenir la moindre information à l’aide\
+    \ de cette compétence, mais le personnage peut éventuellement passer une soirée\
+    \ entière à essayer de comprendre ce que pensent les gens qui l’entourent.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Non, mais chaque tentative de Bluff dont on fait l’objet permet\
+    \ un test de Psychologie.<br/><br/><h2>Spécial</h2> Les rôdeurs gagnent un bonus\
+    \ aux tests de Psychologie contre leurs ennemis jurés.<br/><br/>Un personnage\
+    \ possédant le don Vigilance obtient un bonus aux tests de Psychologie. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Psychologie.ashx
   
 - Nom: Représentation
@@ -2455,6 +3757,32 @@
     \ plus difficile à contenter (le DD du test augmente de +2 par échec).\n\nSPÉCIALUn\
     \ barde doit disposer de rangs dans certaines catégories spécifiques de Représentation\
     \ pour pouvoir utiliser sa capacité de représentation bardique."
+  DescriptionHTML: "<br/>Le personnage connaît un ou plusieurs arts du spectacle\
+    \ (tels que chant, théâtre, instrument de musique). <br/><br/>Comme les compétences\
+    \ d’Artisanat, de Connaissances et de Profession, la compétence de Représentation\
+    \ regroupe plusieurs compétences correspondant à des formes de spectacle distinctes.\
+    \ Le personnage peut connaître plusieurs formes de Représentation et investir\
+    \ des points de compétences séparément dans chacune d’elles.<br/><br/>Chacune\
+    \ des neuf formes de Représentation inclut une grande variété de méthodes, d’instruments\
+    \ et de techniques, dont seule une petite partie est présente dans la liste ci-dessous.\
+    \ <ul><li>Chant (ballades, chorale, mélodie)</li><li>Danse (ballet, gigue, valse)</li><li>Déclamation\
+    \ (odes, sagas épiques, talent de conteur)</li><li>Farce (bouffonnerie, boutades,\
+    \ humour)</li><li>Instruments à clavier (clavecin, orgue, piano)</li><li>Instruments\
+    \ à cordes (harpe, luth, mandoline, violon)</li><li>Instruments à vent (bombardon,\
+    \ flûte, flûte à bec, flûte de Pan, trompette)</li><li>Percussions (carillons,\
+    \ cloches, tambours, gong)</li><li>Scène (comédie, drame, mime)</li></ul> <h2>Test\
+    \ de compétence</h2>Le talent du personnage lui permet de divertir son public\
+    \ et d’en vivre.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Un\
+    \ instrument de musique de maître confère un bonus de circonstances de +2 aux\
+    \ tests de Représentation chaque fois que le personnage l’utilise.<br/><br/><h2>Action</h2>Variable.\
+    \ Il faut entre une soirée et une journée entière pour gagner de l’argent en jouant\
+    \ en public. Les pouvoirs du barde fondés sur la compétence de Représentation\
+    \ sont détaillés dans la description de cette classe.<br/><br/><h2>Nouvelles tentatives</h2><b>Oui.</b>\
+    \ Cependant, les nouvelles tentatives ne font pas oublier les échecs précédents\
+    \ et un public ayant eu une mauvaise impression d’un artiste sera par la suite\
+    \ plus difficile à contenter (le DD du test augmente de +2 par échec).<br/><br/><h2>Spécial</h2>Un\
+    \ barde doit disposer de rangs dans certaines catégories spécifiques de Représentation\
+    \ pour pouvoir utiliser sa capacité de représentation bardique. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Repr%c3%a9sentation.ashx
   
 - Nom: Sabotage
@@ -2548,6 +3876,45 @@
     À l’inverse, la compétence de Sabotage se révèle inutile face aux sorts croissance
     d’épines et pierres acérées qui créent des obstacles magiques. Consultez les descriptions
     de chacun de ces sorts pour plus de détails.'
+  DescriptionHTML: "<br/>Le personnage sait comment désamorcer les pièges et crocheter\
+    \ les serrures. Cette compétence lui permet également de saboter des objets mécaniques\
+    \ simples comme les catapultes, les roues d’un chariot et les portes.<br/><br/><h2>Test\
+    \ de compétence</h2> Lorsqu’il s’agit de désamorcer un piège ou un mécanisme similaire,\
+    \ le test de Sabotage est effectué en secret, afin que le joueur ne sache pas\
+    \ si son personnage a réussi ou non.<br/><br/>Le DD du test dépend de la complexité\
+    \ du mécanisme. En cas de succès, le personnage mène l’opération à bien. En cas\
+    \ d’échec de 1 à 4 points, la tentative ne réussit pas mais le personnage peut\
+    \ réessayer. Si le test est raté d’au moins 5 points, un incident se produit :\
+    \ si le personnage tente de désamorcer un piège, il le déclenche accidentellement\
+    \ ; s’il se livre à une tentative de sabotage, il est persuadé d’avoir mis l’objet\
+    \ hors service, mais celui-ci continue de fonctionner parfaitement.<br/><br/>Il\
+    \ est également possible de saboter des objets simples comme une selle ou la roue\
+    \ d’un chariot, de telle façon qu’ils fonctionnent normalement pendant un certain\
+    \ temps, puis se cassent, se détachent ou tombent en panne un peu plus tard (généralement\
+    \ après 1d4 rounds ou minutes d’utilisation).<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Crocheter\
+    \ une serrure.</b> Le DD pour crocheter une serrure dépend de la qualité de celle-ci.\
+    \ Si le personnage ne possède pas d’outils de cambrioleur, les DD suivants augmentent\
+    \ de +10.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ Le temps nécessaire pour faire un test de Sabotage dépend de la tâche que le\
+    \ personnage tente d’accomplir. Mettre un mécanisme simple hors-service prend\
+    \ 1 round et constitue une action complexe. Les objets plus complexes prennent\
+    \ 1d4 ou 2d4 rounds. Crocheter une serrure requiert une action complexe.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Variable. Le personnage peut réessayer de mettre un mécanisme\
+    \ hors-service si sa tentative a échoué de moins de 5 points. Lorsqu’il tente\
+    \ de crocheter une serrure, il peut faire autant d’essais qu’il le désire.<br/><br/><h2>Spécial</h2>\
+    \ Un personnage possédant le don Doigts de fée obtient un bonus aux tests de Sabotage.<br/><br/>Un\
+    \ roublard dépassant de 10 points ou plus le DD d’un piège peut l’étudier, comprendre\
+    \ son fonctionnement et le contourner sans avoir besoin de le désamorcer. Il est\
+    \ également à même de le bloquer pour que ses compagnons puissent passer sans\
+    \ risque.<br/><br/><b>Restriction.</b> Les personnages qui possèdent la capacité\
+    \ de recherche des pièges (les roublards par exemple) peuvent désamorcer les pièges\
+    \ magiques. En règle générale, les pièges magiques ont un DD de 25 + le niveau\
+    \ du sort utilisé pour les créer.<br/><br/>Les sorts cercle de téléportation,\
+    \ glyphe de garde, piège à feu et symbole créent eux aussi des pièges qu’un roublard\
+    \ peut désarmer à l’aide de cette compétence. À l’inverse, la compétence de Sabotage\
+    \ se révèle inutile face aux sorts croissance d’épines et pierres acérées qui\
+    \ créent des obstacles magiques. Consultez les descriptions de chacun de ces sorts\
+    \ pour plus de détails. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sabotage.ashx
   
 - Nom: Survie
@@ -2630,6 +3997,57 @@
     \ tests de Survie visant à trouver ou à suivre les traces laissées par leurs ennemis\
     \ jurés.\n\nUn personnage possédant le don Autonome obtient un bonus aux tests\
     \ de Survie.\n\nRetour vers les Compétences"
+  DescriptionHTML: '<br/>Le personnage sait comment survivre et se diriger dans
+    les régions sauvages. Il est également entraîné à suivre les pistes ou les traces
+    laissées par d’autres créatures.<br/><br/><h2>Test de compétence</h2> En pleine
+    nature, le personnage est capable d’assurer sa propre sécurité et sa subsistance
+    ainsi que celles de ses compagnons. La table suivante indique le DD de différentes
+    tâches associées à la compétence de Survie.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>
+    <b>Suivre des traces.</b> Un test de Survie permet de repérer des traces ou de
+    les suivre sur une distance de 1,5 km. Un nouveau test est nécessaire chaque fois
+    que la piste devient difficile à suivre. Si le personnage ne possède aucune formation
+    dans cette compétence, il peut quand même tenter de suivre des traces mais son
+    test échoue automatiquement si le DD de la tâche est supérieur à 10. Un personnage
+    peut également choisir d’utiliser la compétence de Perception (contre le même
+    DD) pour repérer une empreinte ou un autre signe du passage de la créature suivie.
+    Cependant, la compétence de Perception ne permet pas de suivre les traces, même
+    si quelqu’un d’autre les a déjà repérées.<br/><br/>Lorsque le personnage suit
+    une piste, il se déplace à la moitié de sa vitesse de déplacement normale (il
+    peut choisir de se déplacer à sa vitesse normale en acceptant un malus de -5 ou
+    au double de sa vitesse normale avec un malus de -20). Le DD du test dépend du
+    type de sol et des conditions en vigueur, comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Sol
+    très mou.</b> Toute surface dans laquelle les empreintes sont profondes et particulièrement
+    visibles (neige, boue, épaisse couche de poussière, etc.).<br/><br/><b>Sol mou.</b>
+    Toute surface assez élastique pour s’enfoncer sous le poids d’un individu, mais
+    plus ferme que la boue ou la neige. Les traces y sont nombreuses mais peu profondes.<br/><br/><b>Sol
+    ferme.</b> La plupart des sols en extérieur (pelouse, champ, bois, etc.) et les
+    surfaces extrêmement molles ou sales à l’intérieur (épais tapis, sol crasseux,
+    etc.). La créature suivie peut laisser quelques traces (brindilles cassées, touffes
+    de poils, etc.), mais les empreintes, elles, sont extrêmement rares.<br/><br/><b>Sol
+    dur.</b> Toute surface n’imprimant pas la moindre empreinte (roche naturelle,
+    sol en pierre, etc.). La plupart des lits de cours d’eau entrent dans cette catégorie
+    car les traces laissées sont généralement effacées par le courant. La créature
+    suivie ne laisse que quelques indices de son passage (cailloux déplacés, marques
+    de griffures, etc.).<br/><br/>Divers modificateurs s’appliquent au test de Survie,
+    comme indiqué dans la table ci-dessous.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>
+    Variable. Un test de Survie peut représenter une durée allant de plusieurs heures
+    à une journée d’activité. Un test de Survie destiné à trouver une piste nécessite
+    toujours au moins une action complexe, peut-être bien plus.<br/><br/><h2>Nouvelles
+    tentatives</h2> Variable. Pour se débrouiller dans les contrées sauvages ou obtenir
+    le bonus aux jets de Vigueur (comme indiqué dans la première table de la page
+    107), le personnage effectue un test de Survie toutes les vingt-quatre heures
+    et le résultat s’applique chaque fois jusqu’au test suivant. Pour ne pas se perdre
+    ou pour repérer les dangers naturels, le personnage effectue un test chaque fois
+    que nécessaire, mais chacun de ces tests ne peut être tenté qu’une seule fois.
+    Lorsqu’il s’agit de trouver une piste et que le test échoue, le personnage doit
+    poursuivre sa recherche pendant une heure (dans la nature) ou dix minutes (en
+    intérieur) avant de pouvoir tenter un nouveau test.<br/><br/><h2>Spécial</h2>
+    Toute personne possédant une formation (un rang non-nul) dans la compétence de
+    Survie peut déterminer la direction du nord sans devoir faire de test.<br/><br/>Les
+    rôdeurs bénéficient d’un bonus à leurs tests de Survie visant à trouver ou à suivre
+    les traces laissées par leurs ennemis jurés.<br/><br/>Un personnage possédant
+    le don Autonome obtient un bonus aux tests de Survie.<br/><br/>Retour vers les
+    Compétences '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Survie.ashx
   
 - Nom: Utilisation d'objets magiques
@@ -2766,6 +4184,84 @@
 
     Un personnage possédant le don Aptitude magique obtient un bonus aux tests d’Utilisation
     d’objets magiques.'
+  DescriptionHTML: "<br/>Le personnage sait comment activer des objets magiques,\
+    \ sans nécessairement être capable d’utiliser la magie par ailleurs.<br/><br/><h2>Test\
+    \ de compétence</h2> Le personnage peut utiliser cette compétence pour lire un\
+    \ sort ou activer un objet magique. Elle lui permet d’utiliser un objet magique\
+    \ comme s’il possédait les capacités magiques ou les aptitudes d’une classe autre\
+    \ que la sienne ou comme s’il appartenait à une race ou possédait un alignement\
+    \ différant des siens.<br/><br/>Le personnage réalise un test d’Utilisation d’objets\
+    \ magiques chaque fois qu’il active un objet tel qu’une baguette. S’il se sert\
+    \ de la compétence pour simuler un alignement ou un autre facteur de manière continue,\
+    \ il doit effectuer un test par heure.<br/><br/>Le personnage doit choisir sciemment\
+    \ le facteur qu’il souhaite simuler. Il doit donc savoir ce qu’il veut simuler\
+    \ avant d’effecteur le test d’Utilisation d’objets magiques. Les DD des différentes\
+    \ tâches relatives à cette compétence sont repris dans la table ci-dessous.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Activer\
+    \ un objet par chance.</b> Certains objets magiques sont activés par une pensée,\
+    \ un mot de commande ou un geste spécifique. Le personnage peut s’en servir comme\
+    \ s’il respectait la procédure à suivre, bien qu’il l’ignore. Pour obtenir un\
+    \ résultat, il doit simuler cette procédure : prononcer quelques mots et agiter\
+    \ l’objet, par exemple. Le personnage bénéficie d’un bonus de +2 au test de compétence\
+    \ s’il est déjà parvenu à activer l’objet par le passé. Si le test d’Utilisation\
+    \ d’objets magiques échoue de 9 points ou moins, rien ne se passe. S’il échoue\
+    \ d’au moins 10 points, un incident se produit. Dans ce cas, l’énergie magique\
+    \ est bien libérée, mais elle n’a pas l’effet que le personnage souhaitait. Les\
+    \ possibilités par défaut sont que le sort affecte une cible autre que celle choisie\
+    \ par le personnage ou que ce dernier reçoit une décharge d’énergie incontrôlée\
+    \ lui infligeant 2d6 points de dégâts. Cet incident vient en plus de celui que\
+    \ encouru en utilisant un parchemin pour lancer un sort qu’on ne serait normalement\
+    \ pas capable de lancer soi-même.<br/><br/><b>Déchiffrer un sort écrit.</b> Cette\
+    \ utilisation de la compétence d’Utilisation d’objets magiques fonctionne comme\
+    \ l’usage du même nom de la compétence d’Art de la magie, sauf que le DD est plus\
+    \ élevé de 5 points. Tenter de déchiffrer un sort écrit nécessite une minute de\
+    \ concentration.<br/><br/><b>Simuler un alignement.</b> Certains objets magiques\
+    \ ont des effets positifs ou négatifs en fonction de l’alignement de leur utilisateur.\
+    \ Grâce à cette compétence, le personnage peut s’en servir comme s’il avait l’alignement\
+    \ de son choix. On ne peut simuler qu’un seul alignement à la fois.<br/><br/><b>Simuler\
+    \ une aptitude de classe.</b> Il arrive parfois qu’une aptitude de classe soit\
+    \ nécessaire à l’activation d’un objet. Dans ce cas, le niveau virtuel du personnage\
+    \ dans la classe imitée est égal au résultat de son test de compétence -20. La\
+    \ compétence ne permet pas d’utiliser l’aptitude en question, mais seulement d’activer\
+    \ l’objet comme si le personnage la possédait. Si la classe dont l’aventurier\
+    \ simule l’aptitude s’accompagne de restrictions en matière d’alignement, le personnage\
+    \ doit s’assurer que son alignement est bien conforme (dans le cas contraire,\
+    \ il doit simuler un alignement autorisé ; voir ci-dessus).<br/><br/><b>Simuler\
+    \ une race.</b> Certains objets magiques fonctionnent uniquement (ou mieux) pour\
+    \ les membres d’une race donnée. Dans ce cas, le personnage peut simuler la race\
+    \ de son choix pour bénéficier du plein potentiel de l’objet. On ne peut simuler\
+    \ qu’une seule race à la fois.<br/><br/><b>Simuler une valeur de caractéristique.</b>\
+    \ Pour lancer un sort à partir d’un parchemin, il faut posséder une valeur suffisamment\
+    \ élevée dans une caractéristique spécifique (l’Intelligence pour les sorts de\
+    \ magicien, la Sagesse pour les sorts de druide et de prêtre et le Charisme pour\
+    \ les sorts de barde, d’ensorceleur ou de paladin). La valeur de la caractéristique\
+    \ virtuelle du personnage (correspondant à la classe qu’il cherche à reproduire\
+    \ pour lire son parchemin) est égale au résultat de son test de compétence -15.\
+    \ Si le personnage possède déjà une valeur suffisante dans la caractéristique\
+    \ concernée, ce test n’est pas nécessaire.<br/><br/><b>Utiliser un parchemin.</b>\
+    \ Pour qu’un personnage puisse lancer un sort à partir d’un parchemin, il faut\
+    \ normalement que le sort concerné fasse partie de la liste de sorts correspondant\
+    \ à sa classe. Avec cet aspect de la compétence, le personnage peut se servir\
+    \ de l’objet comme si c’était le cas. Le DD du test est égal à 20 + le niveau\
+    \ de lanceur de sorts du parchemin. De plus, pour lancer un sort depuis un parchemin,\
+    \ il faut posséder une valeur suffisante (10 + niveau du sort) dans la caractéristique\
+    \ correspondant au sort. Si le personnage ne remplit pas cette condition, il peut\
+    \ la simuler en effectuant un deuxième test d’Utilisation d’objets magiques (voir\
+    \ ci-dessus). Cet aspect de la compétence fonctionne également pour les autres\
+    \ types d’objets magiques à fin d’incantation.<br/><br/><b>Utiliser une baguette,\
+    \ un bâton ou un autre objet à potentiel magique.</b> Pour qu’un personnage puisse\
+    \ utiliser une baguette, il faut normalement que le sort concerné fasse partie\
+    \ de la liste de sorts correspondant à sa classe. Avec cet aspect de la compétence,\
+    \ le personnage peut se servir de l’objet comme si c’était le cas. Rater le test\
+    \ de compétence ne dépense pas de charge.<br/><br/><h2>Action</h2> Aucune. Les\
+    \ tests d’Utilisation d’objets magiques font partie de l’action permettant d’activer\
+    \ l’objet magique (si une action est nécessaire).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Oui, mais si le personnage rate son test de compétence en obtenant un 1 naturel\
+    \ au dé, il ne peut plus tenter d’activer l’objet dans les vingt-quatre heures\
+    \ qui suivent.<br/><br/><h2>Spécial</h2> Il est impossible de faire 10 avec cette\
+    \ compétence. Il est impossible d’aider quelqu'un pour un test d’Utilisation d’objets\
+    \ magiques. L’utilisateur de l’objet est le seul qui puisse se servir de cette\
+    \ compétence.<br/><br/>Un personnage possédant le don Aptitude magique obtient\
+    \ un bonus aux tests d’Utilisation d’objets magiques. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Utilisation%20dObjets%20magiques.ashx
   
 - Nom: Vol
@@ -2837,5 +4333,62 @@
     \ ou de planer ou encore d’une capacité fiable (un sort ou une aptitude spéciale)\
     \ qu’elle peut utiliser quotidiennement.\n\nUn personnage possédant le don Voltigeur\
     \ obtient un bonus aux tests de Vol."
+  DescriptionHTML: "<br/>Lorsque le personnage vole (grâce à des ailes ou par magie),\
+    \ il sait le faire avec agilité. Il peut réaliser des manœuvres aériennes complexes\
+    \ ou dangereuses. Cette compétence ne lui donne cependant pas la capacité de voler.<br/><br/><h2>Test\
+    \ de compétence</h2> En règle générale, un test de Vol n’est requis que pour des\
+    \ manœuvres complexes. Une créature volante ne doit pas faire de test pour rester\
+    \ en vol à la fin de son tour, pour autant qu’elle se soit déplacée d’une distance\
+    \ au moins égale à la moitié de sa vitesse. Elle peut également virer à 45° en\
+    \ sacrifiant 1,50 m de mouvement, voler vers le haut selon un angle de 45° à la\
+    \ moitié de sa vitesse ou voler vers le bas (selon n’importe quel angle) à sa\
+    \ vitesse normale. Ces restrictions s’appliquent uniquement aux déplacements effectués\
+    \ au cours d’un tour en combat. Dès le début du tour suivant, la créature peut\
+    \ se déplacer dans une direction différente de celle suivie lors du tour précédent\
+    \ sans devoir faire un test de compétence. Toutes les actions qui violent ces\
+    \ règles nécessitent un test de Vol. Le DD de ce test dépend de la manœuvre que\
+    \ la créature volante tente, comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Être\
+    \ attaqué en vol.</b> Une créature volante n’est pas forcément considérée comme\
+    \ prise au dépourvu lorsqu’elle vole. Si elle utilise des ailes et qu’elle subit\
+    \ des dégâts en vol, elle doit réussir un test de Vol (DD 10) pour éviter de perdre\
+    \ 3 m d’altitude. Ce mouvement vers le bas ne provoque pas d’attaque d’opportunité\
+    \ et ne compte pas dans la limite de mouvement que la créature peut effectuer\
+    \ chaque round.<br/><br/><b>Collision en vol.</b> Si une créature utilise des\
+    \ ailes pour voler et entre en collision avec un objet de même taille qu’elle\
+    \ ou plus grand qu’elle, elle doit immédiatement réussir un test de Vol (DD 25)\
+    \ pour éviter de plonger vers le sol et de subir des dégâts en conséquence.<br/><br/><b>Éviter\
+    \ les dégâts dus à une chute.</b> Si une créature capable de voler tombe, elle\
+    \ peut tenter d’annuler les dégâts dus à la chute en réussissant un test de Vol\
+    \ (DD 10). Cette option n’est pas disponible si la chute résulte d’un test de\
+    \ Vol raté ou d’une collision.<br/><br/><b>Vents forts.</b> Les vents forts imposent\
+    \ des malus aux tests de Vol, comme indiqué dans la table ci-dessous. Les créatures\
+    \ dont la taille est inférieure ou égale à celle indiquée dans la colonne « Créatures\
+    \ stoppées » doivent réussir un test de Vol (DD 20) pour pouvoir se déplacer et\
+    \ ce aussi longtemps que les vents persistent. Les créatures dont la taille est\
+    \ inférieure ou égale à celle indiquée dans la colonne « Créatures emportées »\
+    \ doivent réussir un test de Vol (DD 25) pour éviter d’être emportées par le vent\
+    \ sur 2d6 × 3 m et de subir 2d6 points de dégâts non-létaux. Ces tests se répètent\
+    \ chaque round où la créature reste en vol. Une créature qui est emportée doit\
+    \ également réussir un test de Vol (DD 20) pour éviter d’être stoppée par le vent.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ Aucune. Un test de Vol ne nécessite pas une action propre ; il fait partie d’une\
+    \ autre action ou se produit en réaction à un événement.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Variable. On peut tenter un test de Vol pour réaliser une manœuvre\
+    \ aérienne chaque round. Cependant, si une créature qui utilise des ailes rate\
+    \ un test de Vol de 5 points ou plus, elle s’écrase et subit des dégâts en conséquence\
+    \ (voir la section sur les chutes).<br/><br/> <h2>Spécial</h2> Un lanceur de sorts\
+    \ possédant une chauve-souris comme familier bénéficie d’un bonus de +3 aux tests\
+    \ de Vol.<br/><br/>La compétence de Vol fonctionne comme une compétence de classe\
+    \ pour les créatures qui possèdent une vitesse de vol. De plus, ces créatures\
+    \ obtiennent un bonus (ou un malus) dépendant de leur manœuvrabilité à leurs tests\
+    \ de Vol: déplorable -8, médiocre -4, moyenne +0, bonne +4, parfaite +8. Lorsqu’aucune\
+    \ manœuvrabilité en vol n’est indiquée, on suppose que la créature possède une\
+    \ manœuvrabilité moyenne.<br/><br/>Les créatures dont la taille n’est pas M reçoivent\
+    \ également un bonus (ou un malus) dépendant de leur taille aux tests de Vol :\
+    \ infime +8, minuscule +6, très petit +4, petit +2, grand -2, très grand -4, gigantesque\
+    \ -6, colossal -8.<br/><br/>Pour pouvoir investir des points de compétence dans\
+    \ la compétence de Vol, une créature doit disposer de moyens naturels lui permettant\
+    \ de voler ou de planer ou encore d’une capacité fiable (un sort ou une aptitude\
+    \ spéciale) qu’elle peut utiliser quotidiennement.<br/><br/>Un personnage possédant\
+    \ le don Voltigeur obtient un bonus aux tests de Vol. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vol.ashx
   

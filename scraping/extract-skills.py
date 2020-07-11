@@ -20,7 +20,7 @@ URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitul
 
 PROPERTIES = [ "Caractéristique associée", "caractéristique associée", "Formation nécessaire", "Formation nécesssaire", "Malus d’armure"]
 
-FIELDS = ['Nom', 'Caractéristique associée', 'Malus d’armure', 'Formation nécessaire', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Caractéristique associée', 'Malus d’armure', 'Formation nécessaire', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -42,9 +42,11 @@ else:
 #
 def extractText(list):
     text = ""
+    html = ""
     for el in list:
-        text += html2text(el)
-    return text
+        text += html2text(el, True, 1)
+        html += html2text(el, True, 2)
+    return { 'text': text, 'html': html }
 
 
 # itération sur chaque page
@@ -106,9 +108,9 @@ for l in list:
         #    print("- Skipping unknown property %s" % key)
 
     # lire la description
-    text = extractText(descr)
-    
-    sort['Description']=text.strip()
+    descriptions = extractText(descr)
+    sort['Description']=descriptions['text'].strip()
+    sort['DescriptionHTML']=descriptions['html']
     
     # ajouter sort
     liste.append(sort)
