@@ -32,19 +32,48 @@ def getPrice(price):
 
 
 
-def getType(type):
-    if type == "Armure intermédiaire": 
-        return "medium"
-    elif type == "Armure légère":
-        return "light"
-    elif type == "Armure lourde":
-        return "heavy"
-    elif type == "Bouclier":
-        return "shield"
-    elif type == "Supplément":
-        return "misc"
+def getEmplacement(emplacement):
+    m = re.search('(\w+)', emplacement)
+    if not m:
+      return "slotless"
+    emplacement = m.group(1).lower()
+    
+    if emplacement == "anneau": 
+        return "ring"
+    elif emplacement == "armure":
+        return "body"
+    elif emplacement == "bouclier":
+        return "hands"
+    elif emplacement == "ceinture":
+        return "belt"
+    elif emplacement == "corps":
+        return "body"
+    elif emplacement == "cou":
+        return "neck"
+    elif emplacement == "épaules":
+        return "shoulders"
+    elif emplacement == "front":
+        return "headband"
+    elif emplacement == "mains":
+        return "hands"
+    elif emplacement == "pied" or emplacement == "pieds" or emplacement == "sabots":
+        return "feet"
+    elif emplacement == "poignets":
+        return "wrists"
+    elif emplacement == "taille":
+        return "belt"
+    elif emplacement == "tête":
+        return "head"
+    elif emplacement == "torse":
+        return "chest"
+    elif emplacement == "yeux":
+        return "eyes"
+    elif emplacement == "aucun" or emplacement == "aucune":
+        return "slotless"
     else:
-        return None
+        print("Non-supported slot: %s" % emplacement)
+        exit(1)
+      
 
 list = []
 duplicates = []
@@ -56,7 +85,7 @@ for m in data:
     
     el = {
         "name": m['Nom'],
-        "type": "loot",
+        "type": "equipment",
         "data": {
             "description": {
                 "value": ("<p><b>Type: </b>{}<br/>" +
@@ -84,8 +113,10 @@ for m in data:
             "price": getPrice(m['Prix']) if 'Prix' in m else 0,
             "identified": True,
             "carried": True,
-            "equipped": False,
-            "subType": "gear"
+            "equipped": True,
+            "equipmentType": "misc",
+            "equipmentSubtype": "wondrous",
+            "slot": getEmplacement(m['Emplacement']) if 'Emplacement' in m else 'slotless'
         }
     }
                         
@@ -104,6 +135,8 @@ for m in data:
       el["img"] = "systems/pf1/icons/items/weapons/sling-staff.png"
     else:
       el["img"] = "systems/pf1/icons/skills/blue_01.jpg"
+
+
     
     list.append(el)
 
