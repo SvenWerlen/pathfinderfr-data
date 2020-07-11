@@ -139,7 +139,35 @@ def getComponentsValue(comp):
       return comp[idx].strip()
     else:
       return comp
+
+def getSave(save):
+    save = save.strip();
+    if save.endswith(';') or save.endswith('.'):
+      save = save[:-1].strip()
+    return save
+
+def generateLearnAt(niveau):
+    classes = []
+    regex = re.compile('[\w/]+ \d')
+    for match in regex.findall(niveau):
+      el = re.search('([\w/]+) (\d)', match)
+      casters = el.group(1)
+      level = int(el.group(2))
+      el = re.search('(\w+)/(\w+)', casters)
+      if el:
+        classes.append([el.group(1), level])
+        classes.append([el.group(2), level])
+      else:
+        classes.append([casters, level])
       
+    learnAt = {
+      "class": classes,
+      #"domain": [],
+      #"subDomain": [],
+      #"elementalSchool": [],
+      #"bloodline": []
+    }
+    return learnAt;
 
 SCHOOLS = { 'abjuration': 'abj', 'divination': 'div', 'enchantement': 'enc', 'évocation': 'evo', 'illusion': 'ill', 
            'invocation': 'con', 'nécromancie': 'nec', 'transmutation': 'trs', 'universel': 'uni', 'ultimate': 'trs' }
@@ -220,11 +248,12 @@ for s in data:
             },
             "save": {
                 "dc": "0",
-                "description": s['Jet de sauvegarde'] if 'Jet de sauvegarde' in s else '-',
+                "description": getSave(s['Jet de sauvegarde']) if 'Jet de sauvegarde' in s else '-',
                 "type": None
             },
             "effectNotes": "",
             "attackNotes": "",
+            "learnedAt": generateLearnAt(s['Niveau']),
             "level": getLevel(s['Niveau']),
             "clOffset": 0,
             "slOffset": 0,
