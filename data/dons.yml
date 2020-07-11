@@ -44,7 +44,8 @@
     \ Il regagne 1 round de rage sanguine par tranche de 2 niveaux du sort contre\
     \ lequel il a réussi son jet de sauvegarde. \n\nIl ne peut pas utiliser ce don\
     \ pour regagner plus de rounds de rage sanguine que son nombre maximal de rounds\
-    \ par jour"
+    \ par jour, et ne peut pas s'en servir pour excéder son nombre maximal de rounds\
+    \ quotidien"
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Absorption%20rageuse.ashx
   
@@ -218,23 +219,20 @@
   ConditionsRefs: []
   Avantage: Le personnage peut choisir de « perdre » un sort préparé afin de lancer
     n’importe quel sort de convocation d’alliés naturels de niveau égal ou inférieur
-    plutôt que de lancer un sort de soins ou de blessure comme il le ferait normalement
+    plutôt que de lancer un sort de soins ou de blessure comme il le ferait normalement.
+    Pour l'utilisation de ce don, le sort de convocation d’alliés naturels du niveau
+    approprié compte comme faisant partie de la liste de sorts du personnage aux mêmes
+    niveaux que pour un druide
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Alli%c3%a9%20naturel%20spontan%c3%a9.ashx
   
 - Nom: Âme animale
-  Résumé: Les sorts qui affectent l’animal affectent aussi le personnage
+  Résumé: Le personnage peut ignorer les sorts qui n'affectent pas les animaux
   Conditions: Pouvoir de classe compagnon animal ou monture
   ConditionsRefs: []
-  Avantage: Le personnage peut se laisser affecter par des sorts et effets normalement
-    réservés aux animaux, aux compagnons animaux et aux montures spéciales, même si
-    ces sorts n’affectent normalement pas les créatures de son type. Il peut, par
-    exemple, lancer croissance animale ou rapetissement d’animal sur sa personne,
-    même si ces sorts n’affectent en principe que les animaux. Un allié peut lancer
-    rappel de compagnon animal sur le personnage afin de le ramener d’entre les morts.
-    Un adversaire ne peut pas lancer charme-animal ou domination d’animal sur le personnage,
-    à moins que ce dernier ne décide d’autoriser le sort à l’affecter comme s’il était
-    un animal
+  Avantage: Le personnage peut décider de ne pas être affecté par les sorts et les
+    effets qui seraient incapable d'affecter à la fois les créatures de son type et
+    les créatures de type animal
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%82me%20animale.ashx
   
@@ -278,10 +276,10 @@
     \ rapide qui lui permet de bénéficier d’un bonus d’intuition égal à son bonus\
     \ de Charisme aux tests de Diplomatie et d’Intimidation, avant la fin de son prochain\
     \ tour. Les avantages obtenus dépendent de la compétence utilisée. \n\nC’est un\
-    \ effet mental.\n\n• Diplomatie. Le personnage agace un ennemi. Pendant la minute\
+    \ effet mental.\n\n\n• Diplomatie. Le personnage agace un ennemi. Pendant la minute\
     \ qui suit, la cible subit un malus de -2 aux jets d’attaque contre toute créature\
     \ autre que le personnage et a 10% de risque d’échec des sorts quand elle ne vise\
-    \ pas le personnage ou ne l’englobe pas dans la zone d’effet.\n\n• Intimidation.\
+    \ pas le personnage ou ne l’englobe pas dans la zone d’effet.\n\n \n• Intimidation.\
     \ La créature devient folle de rage. À son prochain tour, elle doit tenter de\
     \ faire une attaque contre le personnage (que ce soit au corps à corps, à distance,\
     \ avec un sort ciblé ou un sort à zone d'effet). L’effet se termine si la créature\
@@ -290,7 +288,7 @@
     \ Si la cible ne peut pas attaquer le personnage à son tour, ce dernier peut refaire\
     \ un test par une action immédiate pour prolonger l’effet de 1 round (mais pas\
     \ plus). L’effet se termine dès que la créature a fait une attaque contre le personnage.\n\
-    \nUne fois que le personnage a utilisé ce don une fois contre une créature, il\
+    \n Une fois que le personnage a utilisé ce don une fois contre une créature, il\
     \ ne peut plus s’en servir contre elle pendant 1 jour"
   Source: AM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Antagoniste.ashx
@@ -387,9 +385,8 @@
 - Nom: Science de l'arme de l'Élu
   Résumé: Profite des avantages d’Arme de l’Élu jusqu’au début de son prochain tour
   Catégorie: combat
-  Conditions: 'Arme de prédilection (arme de prédilection
-
-    de la divinité), Arme de l’Élu'
+  Conditions: Arme de prédilection (arme de prédilection de la divinité), Arme de
+    l’Élu
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
   Avantage: Ce don fonctionne comme Arme de l’Élu, à la seule différence que le
@@ -406,7 +403,7 @@
   Résumé: Faites deux jets avec l’Arme de prédilection de votre personnage et gardez
     le meilleur
   Catégorie: combat
-  Conditions: Science de l’arme de l’Élu, Arme de prédilection(arme de prédilection
+  Conditions: Science de l’arme de l’Élu, Arme de prédilection (arme de prédilection
     de la divinité du personnage), Arme de l’Élu, le personnage doit vénérer un dieu
     et recevoir des sorts de lui
   ConditionsRefs:
@@ -414,7 +411,8 @@
   Avantage: Quand le personnage utilise l’arme de prédilection de son dieu pour
     porter une seule attaque pendant son action, il lance deux dés d’attaque et garde
     le résultat le plus élevé. Il n’a pas besoin d’utiliser son don Arme de l’Élu
-    pour profiter des avantages de ce don
+    pour profiter des avantages de ce don. Comme d'habitude, la relance ne s'applique
+    à aucun jet de confirmation critique
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20l%c3%89lu%20sup%c3%a9rieure.ashx
   
@@ -538,23 +536,15 @@
 - Nom: Démonstration décourageante
   Résumé: La démonstration accroît un effet de terreur
   Catégorie: combat
-  Conditions: 'Démonstration, Arme de prédilection,
-
-    BBA +6, maniement de l’arme choisie'
+  Conditions: Démonstration, Arme de prédilection, BBA +6, maniement de l’arme choisie
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9monstration.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
-  Avantage: 'Quand le personnage réussit à utiliser Démonstration
-
-    contre des adversaires secoués, effrayés ou paniqués, leur terreur
-
-    est accrue d’un niveau. Une créature déjà paniquée qui se retrouve
-
-    démoralisée par ce don se recroqueville sur elle-même. Une fois
-
-    affectée par ce don, la créature ne peut plus l’être à nouveau (que
-
-    ce soit par le personnage ou quelqu’un d’autre) pendant 24 heures'
+  Avantage: Quand le personnage réussit à utiliser Démonstration contre des adversaires
+    secoués, effrayés ou paniqués, leur terreur est accrue d’un niveau. Une créature
+    déjà paniquée qui se retrouve démoralisée par ce don se recroqueville sur elle-même.
+    Une fois affectée par ce don, la créature ne peut plus l’être à nouveau (que ce
+    soit par le personnage ou quelqu’un d’autre) pendant 24 heures
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9monstration%20d%c3%a9courageante.ashx
   
@@ -567,8 +557,7 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
   Avantage: Le personnage choisit une de ses armes naturelles. Quand il l’utilise,
     il peut appliquer les effets des dons qui mentionnent Science du Combat à mains
-    nues dans leurs conditions requises, ainsi que les effets qui améliorent les coups
-    à mains nues
+    nues dans leurs conditions requises
   Spécial: Si le personnage est un moine, il peut utiliser l’arme naturelle choisie
     avec le déluge de coups
   Source: AG
@@ -662,7 +651,7 @@
   Avantage: "Le personnage manie son fouet si rapidement qu’il ne risque pas de\
     \ le lâcher s’il rate une tentative de désarmement ou de croc-en-jambe. \n\nDe\
     \ plus, il peut s’en servir pour faire une lutte. La lutte suit alors les règles\
-    \ habituelles, avec les modifications suivantes :\n• Allonge. Quand le personnage\
+    \ habituelles, avec les modifications suivantes : \n• Allonge. Quand le personnage\
     \ réussit un test de lutte et qu’il veut déplacer cette lutte, il n’est pas obligé\
     \ d’attirer son adversaire à lui, il doit le garder à portée de son fouet mais\
     \ se tenir lui-même hors de portée de cet adversaire.Si la différence entre les\
@@ -737,18 +726,12 @@
   Résumé: En position couchée, le personnage améliore sa visée avec une arbalète
     ou une arme à feu
   Catégorie: combat
-  Conditions: Arme de prédilection (arbalète ou arme à feu), BBA +1
-  ConditionsRefs:
-  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
-  Avantage: Tant que le personnage est à terre, il gagne un bonus de +1 aux jets
-    d’attaque quand il utilise une arbalète ou une arme à feu pour laquelle il dispose
-    du don Arme de prédilection. De plus, quand il utilise une arbalète pour tirer
-    en utilisant la compétence Discrétion, il subit seulement un malus de -10 au test
-    et non de -20
-  Spécial: Si le personnage possède le don Tireur à la fronde couché, Arme de prédilection
-    (fronde) permet aussi de remplir les conditions requises pour ce don. Le personnage
-    peut alors appliquer les avantages de Tireur couché aux jets d’attaque s’il est
-    allongé et manie une fronde pour laquelle il possède le don Arme de prédilection
+  Conditions: BBA +1
+  ConditionsRefs: []
+  Avantage: S'il est à terre depuis la fin de son dernier tour, le malus à la CA
+    contre les attaques au corps à corps effectuées contre le personnage est passe
+    à -2. De plus, le bonus à la CA contre les attaques à distance effectuées contre
+    lui passe à +6
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tireur%20couch%c3%a9.ashx
   
@@ -957,8 +940,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20finesse.ashx
   
 - Nom: Grâce tranchante
-  Résumé: Le personnage traite une arme à une main tranchante comme une arme de
-    corps à corps perforante et applique son bonus de Dextérité aux dégâts
+  Résumé: Le personnage traite une arme tranchante comme une arme de corps à corps
+    perforante et applique son bonus de Dextérité aux dégâts
   Catégorie: combat
   Conditions: Dex 13, Attaque en finesse, Arme de prédilection (arme choisie)
   ConditionsRefs:
@@ -1787,16 +1770,15 @@
   Conditions: Sag 13, l’alignement du personnage ne doit pas s’écarter de celui
     de sa divinité de plus d’un cran
   ConditionsRefs: []
-  Avantage: Le personnage choisit un domaine qu’accorde sa divinité. Une fois par
-    jour, il peut utiliser tous les pouvoirs de domaine de niveau 1 accordés aux prêtres
-    de ce domaine. Le personnage ne gagne accès qu’à cette capacité, pas aux pouvoirs
-    de domaine de niveau supérieur, ni aux sorts de domaine ou aux compétences de
-    classe supplémentaires que le domaine peut accorder, ni à aucun des dons supplémentaires
-    indiqués dans la liste des pouvoirs accordés. Le niveau de prêtre effectif du
-    personnage au regard de ce pouvoir est de 1
+  Avantage: Le personnage choisit un domaine qu’accorde sa divinité. Il peut utiliser
+    le pouvoir de domaine de niveau 1 que les prêtres de ce domaine obtiennent un
+    nombre de fois ou de rounds par jours, mais lui ne peut s'en servir qu'une seule
+    fois par jour, ou un seul round, suivant ce qui est le plus approprié. Le niveau
+    de prêtre effectif du personnage au regard de ce pouvoir est de 1. Si le pouvoir
+    de niveau 1 du domaine ne corresponds pas à ces limitations, il n'est pas utilisable
   Spécial: "Le personnage peut prendre ce don deux fois. Quand il le prend pour\
-    \ la seconde fois, il choisit un autre domaine\naccordé par sa divinité. \n\n\
-    Si le personnage enfreint outrageusement le code de conduite imposé par sa divinité,\
+    \ la seconde fois, il choisit un autre domaine accordé par sa divinité. \n\nSi\
+    \ le personnage enfreint outrageusement le code de conduite imposé par sa divinité,\
     \ si son alignement change de telle façon qu’il s’éloigne de plus d’un cran de\
     \ celui de sa divinité ou, s’il ne vénère plus son dieu, il perd accès à ce don.\
     \ Le personnage peut le regagner en faisant pénitence pour ses méfaits à l’égard\
@@ -1911,8 +1893,8 @@
   ConditionsRefs: []
   Avantage: 'Le personnage gagne une certaine dose de panache ainsi que la capacité
     à accomplir un seul exploit de bretteur de niveau 1. Choisissez un exploit de
-    niveau 1 du pouvoir de classe de bretteur exploits : une fois choisi, cet exploit
-    ne peut plus être changé.
+    niveau 1 du pouvoir de classe de bretteur exploits (vous ne pouvez choisir l''exploit
+    parade et riposte opportune). Une fois choisi, cet exploit ne peut plus être changé.
 
 
     Chaque matin, le personnage gagne 1 point de panache. Au cours de la journée,
@@ -2405,32 +2387,19 @@
 - Nom: Enchantement dual
   Résumé: Le personnage imprègne deux armes de son pouvoir de pacte divin ou d’arme
     sacrée au lieu d’une seule
-  Conditions: 'Combat à deux armes ; pouvoir de
-
-    classe pacte divin (arme) ou arme sacrée'
+  Conditions: Combat à deux armes ; pouvoir de classe pacte divin (arme) ou arme
+    sacrée
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx
-  Avantage: 'Quand il utilise son pacte divin ou son arme sacrée
-
-    pour améliorer une arme, le personnage peut améliorer
-
-    deux armes ou les deux extrémités d’une arme double. Toutes
-
-    les armes affectées doivent être tenues en main ou maniées,
-
-    de quelque manière que ce soit. Tout bonus d’altération que le
-
-    personnage rajoute à l’une de ses deux armes se rajoute automatiquement
-
-    à la seconde mais les propriétés spéciales d’arme
-
-    doivent être appliquées séparément. Par exemple, si le personnage
-
-    peut apporter une amélioration équivalant à un bonus de
-
-    +2, il peut doter ses deux armes d’un bonus supplémentaire de +1
-
-    et appliquer la propriété spéciale d’arme acérée à l’une des deux'
+  Avantage: Quand il utilise son pacte divin ou son arme sacrée pour améliorer une
+    arme, le personnage peut améliorer deux armes ou les deux extrémités d’une arme
+    double. Toutes les armes affectées doivent être tenues en main ou maniées, de
+    quelque manière que ce soit. Tout bonus d’altération que le personnage rajoute
+    à l’une de ses deux armes se rajoute automatiquement à la seconde mais les propriétés
+    spéciales d’arme doivent être appliquées séparément. Par exemple, si le personnage
+    peut apporter une amélioration équivalant à un bonus de +2, il peut doter ses
+    deux armes d’un bonus supplémentaire de +1 et appliquer la propriété spéciale
+    d’arme acérée à l’une des deux
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enchantement%20dual.ashx
   
@@ -2476,10 +2445,11 @@
 - Nom: Science de la feinte à deux armes
   Résumé: Test de Bluff à la place de la première attaque
   Catégorie: combat
-  Conditions: Dex 17, Int 13, Combat à deux armes, Expertise du combat, Science
-    du combat à deux armes, BBA +6
+  Conditions: Dex 17, Int 13, Combat à deux armes, Expertise du combat, Feinte à
+    deux armes, Science du combat à deux armes, BBA +6
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Feinte%20%c3%a0%20deux%20armes.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20deux%20armes.ashx
   Avantage: Quand le personnage se bat au corps à corps avec deux armes, il peut
     renoncer à la première attaque de sa main directrice pour faire une feinte avec
@@ -2755,13 +2725,13 @@
   Résumé: Le compagnon gagne une évolution d’eidolon à 1 point
   Conditions: Cha 13, pouvoir de classe compagnon animal
   ConditionsRefs: []
-  Avantage: Choisissez une évolution à 1 point parmi celles accessibles aux eidolons
-    des conjurateurs. Le compagnon animal du personnage gagne cette évolution et doit
-    se conformer à toutes les limitations que celle-ci impose. Par exemple, seul un
-    compagnon animal de la taille et de la forme de base appropriées peut prendre
-    l’évolution monture. Si le personnage gagne un nouveau compagnon animal, l’ancienperd
-    cette évolution et le personnage peut choisir une nouvelle évolution à 1 point
-    pour son nouveau compagnon animal
+  Avantage: Choisissez une évolution à 1 point, autre que bond ou allonge, parmi
+    celles accessibles aux eidolons des conjurateurs. Le compagnon animal du personnage
+    gagne cette évolution et doit se conformer à toutes les limitations que celle-ci
+    impose. Par exemple, seul un compagnon animal de la taille et de la forme de base
+    appropriées peut prendre l’évolution monture. Si le personnage gagne un nouveau
+    compagnon animal, l’ancien perd cette évolution et le personnage peut choisir
+    une nouvelle évolution à 1 point pour son nouveau compagnon animal
   Spécial: Le personnage peut prendre ce don plusieurs fois, choisissant à chaque
     fois une évolution à 1 point supplémentaire pour son compagnon animal
   Source: MCA
@@ -2875,20 +2845,20 @@
   Résumé: Utilise l’énergie négative pour contrôler les morts-vivants
   Conditions: Capacité de classe permettant de canaliser de l’énergie négative
   ConditionsRefs: []
-  Avantage: Par une action simple, le personnage peut canaliser l’énergie négative
-    pour réduire en esclavage des morts-vivants situés dans un rayon de neuf mètres.
-    Les morts-vivants ont droit à un jet de Volonté pour annuler l’effet. Le DD de
-    ce jet est égal à 10 + 1/2 niveau de lanceur de sorts du personnage + modificateur
-    de Charisme. Les morts-vivants qui ratent leur jet de sauvegarde tombent sous
-    le contrôle du personnage et font de leur mieux pour lui obéir, comme s’ils étaient
-    sous l’effet d’un contrôle des morts-vivants. Les morts-vivants doués d’Intelligence
-    ont droit à un nouveau jet de sauvegarde par jour. Le personnage peut contrôler
-    n’importe quel nombre de morts-vivants tant que le total de leurs DV ne dépasse
-    pas son niveau de prêtre. Si le personnage choisit de canaliser l’énergie dans
-    ce but, elle n’a pas d’autre effet (elle ne soigne ni ne blesse les créatures
-    proches). Si un mort-vivant est sous le contrôle d’une autre créature, le personnage
-    doit faire un test de Charisme opposé à celui de celle-ci quand les ordres entrent
-    en conflit
+  Avantage: "Par une action simple, le personnage peut canaliser l’énergie négative\
+    \ pour réduire en esclavage des morts-vivants situés dans un rayon de neuf mètres.\
+    \ Les morts-vivants ont droit à un jet de Volonté pour annuler l’effet. Le DD\
+    \ de ce jet est égal à 10 + 1/2 niveau de prêtre du personnage + modificateur\
+    \ de Charisme. \n\nLes morts-vivants qui ratent leur jet de sauvegarde tombent\
+    \ sous le contrôle du personnage et font de leur mieux pour lui obéir, comme s’ils\
+    \ étaient sous l’effet d’un contrôle des morts-vivants. Les morts-vivants doués\
+    \ d’Intelligence ont droit à un nouveau jet de sauvegarde par jour. Le personnage\
+    \ peut contrôler n’importe quel nombre de morts-vivants tant que le total de leurs\
+    \ DV ne dépasse pas son niveau de prêtre. Si le personnage choisit de canaliser\
+    \ l’énergie dans ce but, elle n’a pas d’autre effet (elle ne soigne ni ne blesse\
+    \ les créatures proches). Si un mort-vivant est sous le contrôle d’une autre créature,\
+    \ le personnage doit faire un test de Charisme opposé à celui de celle-ci quand\
+    \ les ordres entrent en conflit"
   Source: MJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Contr%c3%b4le%20des%20morts-vivants.ashx
   
@@ -2941,10 +2911,11 @@
   Conditions: Rage de grand berserker
   ConditionsRefs: []
   Avantage: Le personnage gagne 1 round de rage quotidien supplémentaire à chaque
-    fois qu’il fait tomber un adversaire à -1 point de vie ou moins alors qu’il est
-    enragé. Si l’attaque était, en plus, un coup critique, il gagne un autre round
-    de plus. Il perd ces rounds de rage supplémentaires quand il se repose pour renouveler
-    son total de rounds quotidiens
+    fois qu’il fait tomber un adversaire avec un FP égal ou supérieur à son niveau
+    de personnage à -1 point de vie ou moins alors qu’il est enragé. Si l’attaque
+    était, en plus, un coup critique, il gagne un autre round de plus. Il perd ces
+    rounds de rage supplémentaires quand il se repose pour renouveler son total de
+    rounds quotidiens
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Coup%20de%20gr%c3%a2ce%20de%20lenrag%c3%a9.ashx
   
@@ -3003,11 +2974,11 @@
   ConditionsRefs: []
   Avantage: "Si le personnage a accès à une trousse d’armurier, il peut créer ou\
     \ restaurer des armes à feu, fabriquer des balles et mélanger de la poudre noire\
-    \ pour toutes les armes à feu.\nPour cela, il n’a pas besoin de faire de test\
-    \ d’Artisanat. \n• Fabriquer une arme à feu. Le personnage fabrique toutes les\
-    \ armes à feu rudimentaires pour la moitié de leur prix habituel en matériaux\
-    \ bruts. Si le MJ est d’accord, il peut également fabriquer des armes à feu évoluées\
-    \ pour la moitié de leur prix habituel en matériaux bruts. Cette méthode de fabrication\
+    \ pour toutes les armes à feu. Pour cela, il n’a pas besoin de faire de test d’Artisanat.\
+    \  \n• Fabriquer une arme à feu. Le personnage fabrique toutes les armes à feu\
+    \ rudimentaires pour la moitié de leur prix habituel en matériaux bruts. Si le\
+    \ MJ est d’accord, il peut également fabriquer des armes à feu évoluées pour la\
+    \ moitié de leur prix habituel en matériaux bruts. Cette méthode de fabrication\
     \ demande une journée de travail par tranche de 1.000 po du prix de l’arme (1\
     \ jour au minimum).\n• Fabriquer des munitions. Le personnage fabrique des balles,\
     \ des plombs et de la poudre noire pour 10% (en composantes brutes) du prix habituel.\
@@ -3030,31 +3001,18 @@
   Résumé: Le personnage pousse un cri qui accorde à ses alliés un bonus de +1 aux
     jets d’attaque et un bonus de +4 aux jets de sauvegarde contre la terreur
   Catégorie: combat
-  Conditions: 'Cha 13 ; BBA +5 ou 5 rangs en
-
-    Représentation (scène, déclamation ou chant)'
+  Conditions: Cha 13 ; BBA +5 ou 5 rangs en Représentation (scène, déclamation ou
+    chant)
   ConditionsRefs: []
-  Avantage: 'Un nombre de fois par jour égal à son modificateur
-
-    de Charisme, le personnage peut pousser un cri de guerre par
-
-    une action rapide. Ce faisant, les alliés qui se trouvent dans un
-
-    rayon de 9 mètres et qui peuvent l’entendre gagnent un bonus
-
-    de moral de +1 aux jets d’attaque et un bonus de moral de +4
-
-    aux jets de sauvegarde contre la terreur. Cet effet dure 1 minute.
-
-    Si un allié qui est sous les effets de ce don rate un jet de sauvegarde,
-
-    il peut décider de mettre un terme à l’effet du cri de
-
-    guerre sur lui-même pour relancer le jet raté. L’allié doit conserver
-
-    le résultat du second jet, même s’il est pire. Chaque allié ne
-
-    peut utiliser cet effet qu’une seule fois par utilisation de ce don'
+  Avantage: Un nombre de fois par jour égal à son modificateur de Charisme, le personnage
+    peut pousser un cri de guerre par une action rapide. Ce faisant, les alliés qui
+    se trouvent dans un rayon de 9 mètres et qui peuvent l’entendre gagnent un bonus
+    de moral de +1 aux jets d’attaque et un bonus de moral de +4 aux jets de sauvegarde
+    contre la terreur. Cet effet dure 1 minute. Si un allié qui est sous les effets
+    de ce don rate un jet de sauvegarde contre un effet de peur, il peut décider de
+    mettre un terme à l’effet du cri de guerre sur lui-même pour relancer le jet raté.
+    L’allié doit conserver le résultat du second jet, même s’il est pire. Chaque allié
+    ne peut utiliser cet effet qu’une seule fois par utilisation de ce don
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cri%20de%20guerre.ashx
   
@@ -3121,8 +3079,8 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20de%20laraign%c3%a9e.ashx
   Avantage: Par une action de mouvement, le personnage peut marcher dans les airs
     (comme le sort) sur une distance maximale égale à la moitié de sa distance de
-    chute ralentie avec un maximum de 15 mètres. Il doit atteindre une surface solide
-    et suffisamment horizontale à la fin de son tour, sous peine de tomber
+    chute ralentie avec un maximum de 15 mètres (10 c). Il doit atteindre une surface
+    solide et suffisamment horizontale à la fin de son tour, sous peine de tomber
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marche%20sur%20les%20nuages.ashx
   
@@ -3213,10 +3171,11 @@
   Conditions: Pouvoir de classe compagnon animal ou familier
   ConditionsRefs: []
   Avantage: Au début de la journée, le personnage peut décider de communier avec
-    un esprit de chaman. (Même si le chaman aurait besoin d’une heure de préparation,
-    cela ne demande pas de temps au personnage.) Pendant les prochaines 24 heures,
-    cet esprit de chaman améliore le compagnon animal ou le familier du personnage,
-    comme le permettrait son pouvoir esprit animal
+    un esprit de chaman (Même si le chaman aurait besoin d’une heure de préparation,
+    cela ne demande pas de temps au personnage). Pendant les prochaines 24 heures,
+    il peut par une action simple, conférer la capacité d'esprit animal de cet esprit
+    de chaman à son compagnon animal ou à son sorcière pendant 1 minute par niveau
+    dans la classe qui lui confère ce compagnon animal ou ce sorcière
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don%20de%20lesprit.ashx
   
@@ -3489,9 +3448,10 @@
 - Nom: Précision sournoise
   Résumé: Le personnage peut appliquer un don de critique à la deuxième attaque
     sournoise du round
-  Conditions: Attaque sournoise, Don pour les critiques, un don de critique, BBA
-    +9
-  ConditionsRefs: []
+  Conditions: Attaque sournoise +6d6, Don pour les critiques, un don de critique,
+    BBA +9
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don%20pour%20les%20critiques.ashx
   Avantage: Quand le personnage réussit une seconde attaque sournoise sur un même
     adversaire au cours du même tour, il peut dépenser une action rapide pour lui
     appliquer les effets d’un don de critique de sa connaissance
@@ -3580,13 +3540,13 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Am%c3%a9lioration%20des%20cr%c3%a9atures%20convoqu%c3%a9es.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
   Avantage: "Chaque fois que le personnage lance un sort de convocation de monstres,\
-    \ il peut choisir une évolution à 1 point parmi celles qui sont accessibles aux\
-    \ eidolons des invocateurs. La créature invoquée gagne cette évolution et doit\
-    \ se conformer à toutes les limitations que celle-ci impose. (Par exemple, seule\
-    \ une créature ayant une allonge de 3 mètres ou plus peut prendre l’évolution\
-    \ attirer). \n\nLes évolutions qui accordent des attaques supplémentaires ou améliorent\
-    \ les attaques existantes ne peuvent être appliquées qu’aux créatures invoquées\
-    \ de taille M ou plus grandes"
+    \ il peut choisir une évolution à 1 point autre que bond ou allonge parmi celles\
+    \ qui sont accessibles aux eidolons des invocateurs. La créature invoquée gagne\
+    \ cette évolution et doit se conformer à toutes les limitations que celle-ci impose.\
+    \ (Par exemple, seule une créature ayant une allonge de 3 mètres ou plus peut\
+    \ prendre l’évolution attirer). \n\nLes évolutions qui accordent des attaques\
+    \ supplémentaires ou améliorent les attaques existantes ne peuvent être appliquées\
+    \ qu’aux créatures invoquées de taille M ou plus grandes"
   Spécial: Le personnage peut prendre ce don plusieurs reprises, choisissant à chaque
     fois une évolution à 1 point supplémentaire pour l’une de ses créatures invoquées.
     S’il invoque plus d’une créature à la fois, il peut décider d’appliquer toutes
@@ -3857,29 +3817,16 @@
 - Nom: Endurance
   Résumé: +4 aux tests pour éviter des dégâts non létaux
   ConditionsRefs: []
-  Avantage: 'Le personnage bénéficie d’un bonus de +4 à chacun des tests et jets
-    de sauvegarde suivants :
-
-    • test de Natation pour résister à des dégâts temporaires dus à la fatigue,
-
-    • tests de Constitution pour continuer à courir,
-
-    • tests de Constitution pour éviter les dégâts non-létaux infligés par une marche
-    forcée,
-
-    • tests de Constitution pour retenir sa respiration,
-
-    • tests de Constitution pour éviter les dégâts non-létaux infligés par la famine
-    ou la soif,
-
-    • jets de Vigueur pour éviter les dégâts non-létaux infligés par les climats chauds
-    ou froids et
-
-    • jets de Vigueur pour résister aux dégâts infligés par l’asphyxie.
-
-
-    Le personnage peut également dormir en armure légère ou intermédiaire sans être
-    fatigué le lendemain'
+  Avantage: "Le personnage bénéficie d’un bonus de +4 à chacun des tests et jets\
+    \ de sauvegarde suivants : \n• test de Natation pour résister à des dégâts temporaires\
+    \ dus à la fatigue,\n• tests de Constitution pour continuer à courir,\n• tests\
+    \ de Constitution pour éviter les dégâts non-létaux infligés par une marche forcée,\n\
+    • tests de Constitution pour retenir sa respiration,\n• tests de Constitution\
+    \ pour éviter les dégâts non-létaux infligés par la famine ou la soif,\n• jets\
+    \ de Vigueur pour éviter les dégâts non-létaux infligés par les climats chauds\
+    \ ou froids et\n• jets de Vigueur pour résister aux dégâts infligés par l’asphyxie.\n\
+    \n Le personnage peut également dormir en armure légère ou intermédiaire sans\
+    \ être fatigué le lendemain"
   Normal: Un personnage qui ne possède pas ce don et dort en armure intermédiaire
     ou lourde est automatiquement fatigué le lendemain
   Source: MJ
@@ -4001,37 +3948,21 @@
 - Nom: Enquêteur amateur
   Résumé: Gain d’une réserve d’inspiration mineure à utiliser pour les tests de
     Connaissances, de Linguistique ou d’Art de la magie
-  Conditions: 'Int 13, 1 rang dans au moins une compétence
-
-    Connaissances, aucun niveau dans des classes possédant
-
-    le pouvoir de classe inspiration'
+  Conditions: Int 13, 1 rang dans au moins une compétence Connaissances, aucun niveau
+    dans des classes possédant le pouvoir de classe inspiration
   ConditionsRefs: []
-  Avantage: 'Comme l’enquêteur, le personnage a la possibilité
-
-    d’améliorer ses tests de Connaissances, de Linguistique et Art de la magie. Il
-    gagne une réserve d’inspiration égale à son modificateur
-
-    d’Intelligence. Il peut dépenser une utilisation d’inspiration
-
-    par une action libre pour ajouter 1d6 au résultat d’un test de
-
-    Connaissances, de Linguistique ou d’Art de la magie à partir du moment
-
-    où il est formé à la compétence (même s’il décide de faire 10
-
-    ou 20 sur ce test). Il fait son choix après avoir fait son jet mais avant
-
-    d’en connaître le résultat. Il ne peut utiliser inspiration qu’une seule
-
-    fois par test de compétence. Sa réserve d’inspiration se réinitialise
-
-    chaque jour, généralement après une bonne nuit de sommeil'
-  Spécial: 'Si le personnage gagne des niveaux dans une classe
-
-    qui possède le pouvoir de classe inspiration, il peut aussitôt
-
-    échanger ce don contre celui d’Inspiration supplémentaire'
+  Avantage: Comme l’enquêteur, le personnage a la possibilité d’améliorer ses tests
+    de Connaissances, de Linguistique et Art de la magie. Il gagne une réserve d’inspiration
+    égale à son modificateur d’Intelligence. Il peut dépenser une utilisation d’inspiration
+    par une action libre pour ajouter 1d6 au résultat d’un test de Connaissances,
+    de Linguistique ou d’Art de la magie à partir du moment où il est formé à la compétence
+    (même s’il décide de faire 10 ou 20 sur ce test). Il fait son choix après avoir
+    fait son jet mais avant d’en connaître le résultat. Il ne peut utiliser inspiration
+    qu’une seule fois par test de compétence. Sa réserve d’inspiration se réinitialise
+    chaque jour, généralement après une bonne nuit de sommeil
+  Spécial: Si le personnage gagne des niveaux dans une classe qui possède le pouvoir
+    de classe inspiration, il peut aussitôt échanger ce don contre celui d’Inspiration
+    supplémentaire
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur%20amateur.ashx
   
@@ -4042,14 +3973,13 @@
     inspiration
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Enqu%c3%aateur%20amateur.ashx
-  Avantage: 'Le personnage peut dépenser une utilisation d’inspiration
-
-    par une action de mouvement pour étudier un ennemi qu’il voit. Ce faisant, il
-    gagne un bonus d’intuition de +2 aux jets d’attaques au corps à corps et un bonus
-    de +2 aux jets de dégâts pour un nombre de rounds égal à son modificateur d’Intelligence.
-    Le bonus aux jets de dégâts correspond à des dégâts de précision et n’est pas
-    multiplié sur un coup critique. Une fois que la cible a été affectée par ce don,
-    le personnage ne peut plus l’affecter avec pendant 24 heures'
+  Avantage: Le personnage peut dépenser une utilisation d’inspiration par une action
+    de mouvement pour étudier un ennemi qu’il voit. Ce faisant, il gagne un bonus
+    d’intuition de +2 aux jets d’attaques au corps à corps et un bonus de +2 aux jets
+    de dégâts pour un nombre de rounds égal à son modificateur d’Intelligence. Le
+    bonus aux jets de dégâts correspond à des dégâts de précision et n’est pas multiplié
+    sur un coup critique. Une fois que la cible a été affectée par ce don, le personnage
+    ne peut plus l’affecter avec pendant 24 heures
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combattant%20%c3%a9tudi%c3%a9.ashx
   
@@ -4186,8 +4116,9 @@
   Avantage: Quand il utilise Acrobaties pour traverser la zone d’un adversaire ou
     l’espace qu’il menace sans provoquer d’attaque d’opportunité de la part de cet
     adversaire, le personnage gagne un bonus de circonstances de +2 à son prochain
-    jet d’attaque au corps à corps contre cet adversaire, à partir du moment où il
-    porte son attaque avant le début de son tour suivant
+    jet d’attaque au corps à corps contre cet adversaire et ce dernier ne dispose
+    pas de son bonus de dextérité à la CA, à partir du moment où il porte son attaque
+    avant le début de son tour suivant
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acrobate%20rus%c3%a9.ashx
   
@@ -4199,7 +4130,7 @@
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esquive.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souplesse%20du%20serpent.ashx
-  Avantage: En une action complexe, le personnage peut se déplacer à sa vitesse
+  Avantage: Par une action complexe, le personnage peut se déplacer à sa vitesse
     de base et faire une attaque de corps à corps sans provoquer d’attaque d’opportunité
     de la part de sa cible. Il peut se déplacer avant et après l’attaque, mais il
     doit parcourir au moins trois mètres avant d’attaquer et la distance parcourue
@@ -4416,7 +4347,7 @@
 - Nom: Étreinte fatale
   Résumé: Constriction et étreinte comme attaques spéciales
   Catégorie: combat
-  Conditions: For 13, Int 13, naga, homme-serpent ou créature possédant étreinte
+  Conditions: For 13, Int 3, naga, homme-serpent ou créature possédant constriction
     comme attaque spéciale, BBA +3
   ConditionsRefs: []
   Avantage: 'Le personnage gagne constriction et étreinte.
@@ -4448,10 +4379,8 @@
   Résumé: L’attaque de constriction inflige deux fois plus de dés de dégâts
   Catégorie: combat
   Conditions: For 17, Int 3, naga, homme-serpent ou créature possédant étreinte,
-    Attaque spéciale renforcée (constriction), Étreinte fatale, Horreur de l’étreinte
-    fatale, BBA +9
+    Étreinte fatale, Horreur de l’étreinte fatale, BBA +9
   ConditionsRefs:
-  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20sp%c3%a9ciale%20renforc%c3%a9e.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89treinte%20fatale.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Horreur%20de%20l%c3%a9treinte%20fatale.ashx
   Avantage: Le personnage double le nombre de dés de dégâts de l’attaque spéciale
@@ -4956,17 +4885,15 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20la%20bousculade.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lancer%20ki.ashx
-  Avantage: 'Quand le personnage réussit une manœuvre de croc-en-jambe contre un
+  Avantage: Quand le personnage réussit une manœuvre de croc-en-jambe contre un
     adversaire de sa taille ou plus petit, il peut dépenser une action rapide pour
     tenter une bousculade contre lui. S’il réussit, il peut le pousser dans une case
     inoccupée qu’il menace puis le pousser (sur le nombre de segments de 1,50 m (1
     c) que le test autorise). La cible tombe ensuite au sol. Si le personnage rate
-    son test de bousculade, il peut utiliser le don Lancer ki.
-
-    S’il possède le don Science du Lancer ki, il peut pousser sa cible dans une case
-    occupée par une deuxième cible quand il réussit son test de bousculade. Cet effet
-    fonctionne comme si le personnage avait utilisé le Lancer ki pour envoyer son
-    adversaire dans cette case'
+    son test de bousculade, il peut utiliser le don Lancer ki. S’il possède le don
+    Science du Lancer ki, il peut pousser sa cible dans une case occupée par une deuxième
+    cible quand il réussit son test de bousculade. Cet effet fonctionne comme si le
+    personnage avait utilisé le Lancer ki pour envoyer son adversaire dans cette case
   Spécial: Le moine peut utiliser son ki pour affecter des créatures plus grandes
     que lui avec ce don, comme avec Lancer ki
   Source: AG
@@ -5206,19 +5133,17 @@
   Catégorie: Monstre
   Conditions: Posséder un pouvoir magique lancé à un NLS supérieur ou égal à 6
   ConditionsRefs: []
-  Avantage: 'Ce don s’applique à un des pouvoirs magiques de la créature, qui doit
+  Avantage: Ce don s’applique à un des pouvoirs magiques de la créature, qui doit
     vérifier les conditions décrites ci-dessous. Trois fois par jour (ou moins souvent
     si la créature est normalement limitée à une ou deux utilisations quotidiennes
-    du pouvoir), le pouvoir choisi peut être utilisé avec des effets étendus.
-
-    Lorsque les effets d’un pouvoir sont étendus, toutes ses quantités numériques
-    variables sont augmentées de 50%. Les jets de sauvegarde et les tests opposés
-    ne sont pas concernés. Les pouvoirs magiques qui ne comportent pas de quantités
-    aléatoires ne sont pas affectés.
-
-    Le pouvoir magique choisi doit imiter un sort dont le niveau est inférieur ou
-    égal à la moitié du NLS de la créature (arrondi vers le bas) moins 2. Le tableau
-    inclus ci-dessous présente les restrictions imposées par cette condition'
+    du pouvoir), le pouvoir choisi peut être utilisé avec des effets étendus. Lorsque
+    les effets d’un pouvoir sont étendus, toutes ses quantités numériques variables
+    sont augmentées de 50%. Les jets de sauvegarde et les tests opposés ne sont pas
+    concernés. Les pouvoirs magiques qui ne comportent pas de quantités aléatoires
+    ne sont pas affectés. Le pouvoir magique choisi doit imiter un sort dont le niveau
+    est inférieur ou égal à la moitié du NLS de la créature (arrondi vers le bas)
+    moins 2. Le tableau inclus ci-dessous présente les restrictions imposées par cette
+    condition
   Spécial: 'La créature peut gagner ce don plusieurs fois, mais ses effets ne se
     cumulent pas : il s’applique chaque fois à un pouvoir magique différent.
 
@@ -5266,13 +5191,12 @@
   Résumé: Le familier reçoit de loin les sorts de contact à transmettre
   Conditions: NLS 5, pouvoir de classe familier
   ConditionsRefs: []
-  Avantage: 'Une fois par jour, le personnage peut lancer un sort de contact sans
-    être en contact physique avec
-
-    son familier et désigner ce dernier comme le « toucheur. » Il n’a pas besoin d’avoir
-    son familier en ligne de mire pour utiliser ce pouvoir mais doit se trouver dans
-    un rayon de 9 mètres quand il lance le sort et, s’il ne voit pas ou n’entend pas
-    son familier, il doit au moins être capable de communiquer avec lui'
+  Avantage: Une fois par jour, le personnage peut lancer un sort de contact sans
+    être en contact physique avec son familier et désigner ce dernier comme le « toucheur.
+    » Il n’a pas besoin d’avoir son familier en ligne de mire pour utiliser ce pouvoir
+    mais doit se trouver dans un rayon de 9 mètres quand il lance le sort et, s’il
+    ne voit pas ou n’entend pas son familier, il doit au moins être capable de communiquer
+    avec lui
   Normal: Le familier doit être en contact physique avec le personnage quand le
     sort est lancé, afin que le premier puisse délivrer le sort
   Spécial: Le personnage peut prendre ce don plusieurs fois, gagnant à chaque fois
@@ -5332,6 +5256,8 @@
 
     • Créature Magique, Zoog, Chaotique Neutre, 5
 
+    • Daémon, Cacodaémon, Neutre Mauvais, 7
+
     • Démon, Quasit, Chaotique Mauvais, 7
 
     • Diable, Diablotin, Loyal Mauvais, 7
@@ -5346,7 +5272,7 @@
 
     • Dragon, Pseudo-dragon, Neutre Bon, 7
 
-    • Élémentaire P (n’importe quel type), Neutre, 5
+    • Élémentaire de taille P (n’importe quel type), Neutre, 5
 
     • Fée, Esprit follet, Chaotique Neutre, 5
 
@@ -5355,6 +5281,8 @@
     • Fée, Pooka, Chaotique Neutre, 7
 
     • Gremlin, Haniver, Neutre, 5
+
+    • Gremlin, Nuglub, Chaotique Mauvais, 7
 
     • Gremlin, Pugwampi, Neutre Mauvais, 3
 
@@ -5647,9 +5575,8 @@
   Résumé: La cible de la Frappe décisive du personnage doit réussir un jet de sauvegarde
     pour ne pas être fatiguée
   Catégorie: combat
-  Conditions: 'Magie de la nature ou capacité à lancer
-
-    des sorts de druide ou de rôdeur ; Frappe décisive, 5 rangs en Connaissances (nature)'
+  Conditions: Magie de la nature ou capacité à lancer des sorts de druide ou de
+    rôdeur ; Frappe décisive, 5 rangs en Connaissances (nature)
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20d%c3%a9cisive.ashx
   Avantage: Chaque jour, un nombre de fois égal à son modificateur de Sagesse (1
@@ -5991,8 +5918,8 @@
   ConditionsRefs: []
   Avantage: Le personnage choisit un type de créature dans le tableau des Ennemis
     jurés du rôdeur. Quand il désigne une créature de ce type comme sa cible étudiée
-    et la touche avec une attaque au corps à corps ou à distance, son bonus aux jets
-    de dégâts est doublé
+    et la touche avec une attaque au corps à corps ou à distance, son bonus de cible
+    étudiée aux jets de dégâts est doublé
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Haine%20cinglante.ashx
   
@@ -6750,15 +6677,12 @@
   Conditions: Maîtrise des sorts, magicien niveau 1
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetrise%20des%20sorts.ashx
-  Avantage: 'Chaque jour, quand il prépare ses sorts, le personnage peut décider
-    de préparer de manière flexible un
-
-    nombre d’emplacements de sort égal à son modificateur d’Intelligence (1 au minimum).
-    Plutôt que de préparer un seul
-
-    sort pour chacun de ces emplacements, il peut partiellement préparer deux sorts.
-    Ensuite, il peut dépenser une action complexe à finaliser un emplacement, choisissant
-    de terminer et de préparer complètement l’un des deux sorts dans cet emplacement'
+  Avantage: Chaque jour, quand il prépare ses sorts, le personnage peut décider
+    de préparer de manière flexible un nombre d’emplacements de sort égal à son modificateur
+    d’Intelligence (1 au minimum). Plutôt que de préparer un seul sort pour chacun
+    de ces emplacements, il peut partiellement préparer deux sorts. Ensuite, il peut
+    dépenser une action complexe à finaliser un emplacement, choisissant de terminer
+    et de préparer complètement l’un des deux sorts dans cet emplacement
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magie%20flexible.ashx
   
@@ -6837,11 +6761,9 @@
   Résumé: Gagne un maléfice de plus
   Conditions: Aptitude de classe de maléfices
   ConditionsRefs: []
-  Avantage: 'Le personnage obtient un maléfice supplémentaire. Il doit en remplir
-    les conditions d’accès. Si le
-
-    personnage est un chaman, ce doit être un maléfice accordé par son esprit et non
-    par son esprit errant'
+  Avantage: Le personnage obtient un maléfice supplémentaire. Il doit en remplir
+    les conditions d’accès. Si le personnage est un chaman, ce doit être un maléfice
+    accordé par son esprit et non par son esprit errant
   Spécial: Le personnage peut acquérir ce don plusieurs fois gagnant à chaque fois
     un nouveau maléfice
   Source: MJRA
@@ -7009,11 +6931,12 @@
   Résumé: Pas de malus pour le combat à deux armes si le personnage attaque avec
     un bouclier
   Catégorie: combat
-  Conditions: Combat à deux armes, Frappe du bouclier, Maniement du bouclier, Science
-    du coup de bouclier, bonus de base à l’attaque +11
+  Conditions: Combat à deux armes, Frappe du bouclier, Maniement des boucliers,
+    Science du coup de bouclier, bonus de base à l’attaque +11
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combat%20%c3%a0%20deux%20armes.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20du%20bouclier.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Maniement%20des%20boucliers.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20coup%20de%20bouclier.ashx
   Avantage: Le personnage ne subit pas le moindre malus aux jets d’attaque portés
     avec un bouclier quand il manie une autre arme. Il ajoute le bonus d'altération
@@ -7416,7 +7339,8 @@
   Avantage: Une fois par jour, le personnage peut passer 10 minutes à communier
     avec un esprit de chaman de son choix. Ce faisant, il gagne l’utilisation temporaire
     d’un maléfice issu de la liste de cet esprit. Ce maléfice se rajoute à la liste
-    de maléfices accessibles au personnage pour une période de 24 heures
+    de maléfices accessibles au personnage pour une période d'une heure, après quoi
+    il perd tous les avantages de ce maléfice
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parle-esprit.ashx
   
@@ -7461,11 +7385,12 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perfection%20magique.ashx
   
 - Nom: Personnalité affirmée
-  Résumé: Gain d’un bonus d’intuition égal au modificateur de Charisme pour les
-    jets de sauvegarde contre les effets mentaux
+  Résumé: Utilisez votre modificateur de Charisme pour les jets de sauvegarde contre
+    les effets mentaux
   ConditionsRefs: []
-  Avantage: Le personnage gagne un bonus d’intuition égal à son modificateur de
-    Charisme (0 au minimum) pour les jets de Volonté contre les effets mentaux
+  Avantage: Le personnage ajoute son modificateur de Charisme au lieu de son modificateur
+    de Sagesse à ses jets de Volonté. S'il a un un modificateur de Sagesse négatif,
+    il doit y appliquer les deux modificateurs
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Personnalit%c3%a9%20affirm%c3%a9e.ashx
   
@@ -7624,7 +7549,9 @@
     faire un jet de Réflexes à la place (avec le même DD). S’il réussit son jet et
     que l’attaque a un effet réduit sur un jet réussi, il évite complètement l’effet.
     Que le jet de sauvegarde soit réussi ou non, le personnage est chancelant jusqu’à
-    la fin de son tour suivant
+    la fin de son tour suivant. Si le personnage ne peut pas être chancelant, il ne
+    peut pas utiliser ce don ni ignorer l'état chancelant imposé par ce dernier ou
+    le supprimer avant la fin de sa durée
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pivotement.ashx
   
@@ -7725,19 +7652,17 @@
   Catégorie: Monstre
   Conditions: Posséder un pouvoir magique lancé à un NLS supérieur ou égal à 10
   ConditionsRefs: []
-  Avantage: 'Ce don s’applique à un des pouvoirs magiques de la créature, qui doit
+  Avantage: Ce don s’applique à un des pouvoirs magiques de la créature, qui doit
     vérifier les conditions décrites ci-dessous. Trois fois par jour (ou moins souvent
     si la créature est normalement limitée à une ou deux utilisations quotidiennes
-    du pouvoir), le pouvoir choisi peut être utilisé de manière rapide.
-
-    Une action rapide suffit pour activer le pouvoir, et celle-ci ne provoque pas
-    d’attaque d’opportunité. La créature peut entreprendre d’autres actions au cours
-    du même round (utiliser un autre pouvoir magique par exemple, mais pas une autre
-    action rapide). Elle ne peut utiliser qu’un seul pouvoir magique rapide par round.
-
-    Le pouvoir magique choisi doit imiter un sort dont le niveau est inférieur ou
-    égal à la moitié du NLS de la créature (arrondi vers le bas) moins 4. Le tableau
-    ci-dessous présente les restrictions imposées par cette condition'
+    du pouvoir), le pouvoir choisi peut être utilisé de manière rapide. Une action
+    rapide suffit pour activer le pouvoir, et celle-ci ne provoque pas d’attaque d’opportunité.
+    La créature peut entreprendre d’autres actions au cours du même round (utiliser
+    un autre pouvoir magique par exemple, mais pas une autre action rapide). Elle
+    ne peut utiliser qu’un seul pouvoir magique rapide par round. Le pouvoir magique
+    choisi doit imiter un sort dont le niveau est inférieur ou égal à la moitié du
+    NLS de la créature (arrondi vers le bas) moins 4. Le tableau ci-dessous présente
+    les restrictions imposées par cette condition
   Spécial: 'La créature peut gagner ce don plusieurs fois, mais ses effets ne se
     cumulent pas : il s’applique chaque fois à un pouvoir magique différent.
 
@@ -7807,16 +7732,12 @@
   Résumé: Gain d’emplacements de sorts
   Conditions: Arcaniste niveau 1
   ConditionsRefs: []
-  Avantage: 'Le personnage gagne un emplacement de sort supplémentaire du plus haut
-    niveau qu’il peut lancer, qui se
-
-    rajoute au nombre d’emplacements de sorts qu’il peut normalement préparer à partir
-    de son grimoire. Le personnage peut,
-
-    à la place, ajouter deux emplacements de sort mais ces deux sorts doivent être
-    inférieurs d’au moins un niveau au plus haut niveau de sort d’arcaniste qu’il
-    peut lancer. Le personnage doit choisir l’avantage qu’il gagne quand il prend
-    ce don'
+  Avantage: Le personnage gagne un emplacement de sort supplémentaire du plus haut
+    niveau qu’il peut lancer, qui se rajoute au nombre d’emplacements de sorts qu’il
+    peut normalement préparer à partir de son grimoire. Le personnage peut, à la place,
+    ajouter deux emplacements de sort mais ces deux sorts doivent être inférieurs
+    d’au moins un niveau au plus haut niveau de sort d’arcaniste qu’il peut lancer.
+    Le personnage doit choisir l’avantage qu’il gagne quand il prend ce don
   Spécial: Le personnage peut prendre ce don trois fois, choisissant à chaque fois
     l’avantage qu’il désire
   Source: MCA
@@ -7940,13 +7861,14 @@
     ennemi réduit à 0 point de vie ou moins
   Conditions: Pouvoir de classe rage de berserker ou chant de rage
   ConditionsRefs: []
-  Avantage: Chaque fois que le personnage réduit un ennemi à 0 point de vie ou moins
-    alors qu’il est en rage ou utilise chant de rage, il regagne 1 round de rage de
-    berserker ou de chant de rage (selon son choix, s’il possède les deux pouvoirs)
-    à partir du moment où le nombre de dés de vie que possède l’adversaire est égal
-    ou supérieur à la moitié du niveau du personnage. Ce dernier ne peut pas utiliser
-    ce don pour regagner plus de rounds de rage de berserker ou de chant de rage que
-    son nombre maximal quotidien
+  Avantage: "Chaque fois que le personnage réduit un ennemi à 0 point de vie ou\
+    \ moins alors qu’il est en rage ou utilise chant de rage, il regagne 1 round de\
+    \ rage de berserker ou de chant de rage (selon son choix, s’il possède les deux\
+    \ pouvoirs) à partir du moment où le nombre de dés de vie que possède l’adversaire\
+    \ est égal ou supérieur à la moitié du niveau du personnage. \n\nIl ne peut pas\
+    \ utiliser ce don pour regagner plus de rounds de rage de berserker ou de chant\
+    \ de rage que son nombre maximal par jour, et ne peut pas s'en servir pour excéder\
+    \ son nombre maximal de rounds quotidien"
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20retrouv%c3%a9e.ashx
   
@@ -8042,8 +7964,6 @@
     autant d’attaques à l’arbalète que s’il utilisait un arc. Lorsque le personnage
     recharge une arbalète correspondant au type d’arbalète choisi pour le don Rechargement
     Rapide, il ne provoque plus d’attaque d’opportunité
-  Spécial: Dès le niveau 6, un rôdeur avec le style de combat « à distance » peut
-    choisir Maîtrise des arbalètes comme don de style de combat
   Source: MJRA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetrise%20des%20arbal%c3%a8tes.ashx
   
@@ -8377,18 +8297,15 @@
   Résumé: Pouvoirs supplémentaires lors des représentations dans une structure artificielle
   Conditions: Représentation bardique, 5 rangs en Connaissances (ingénierie)
   ConditionsRefs: []
-  Avantage: 'Quand le personnage se trouve dans une structure artificielle, il peut
-    dépenser une action libre pour faire un test de Connaissances (ingénierie) DD
-    15 au début de sa représentation bardique. S’il réussit, il a droit à l’un des
-    avantages suivants.
-
-    • Harmonisation. Le personnage profite de la réverbération acoustique pour augmenter
-    le DD de ses effets de représentation bardique de +1.
-
-    • Réverbération. Quand le personnage termine sa représentation, l’effet se poursuit
-    1 round de plus, quelle que soit la raison pour laquelle il a cessé la représentation.
-    Cela ne lui permet pas d’avoir plusieurs représentations bardiques actives à la
-    fois'
+  Avantage: "Quand le personnage se trouve dans une structure artificielle, il peut\
+    \ dépenser une action libre pour faire un test de Connaissances (ingénierie) DD\
+    \ 15 au début de sa représentation bardique. S’il réussit, il a droit à l’un des\
+    \ avantages suivants. \n• Harmonisation. Le personnage profite de la réverbération\
+    \ acoustique pour augmenter le DD de ses effets de représentation bardique de\
+    \ +1.\n• Réverbération. Quand le personnage termine sa représentation, l’effet\
+    \ se poursuit 1 round de plus, quelle que soit la raison pour laquelle il a cessé\
+    \ la représentation. Cela ne lui permet pas d’avoir plusieurs représentations\
+    \ bardiques actives à la fois"
   Normal: La représentation bardique se poursuit seulement tant que le personnage
     la maintient
   Source: AG
@@ -8463,7 +8380,9 @@
   Avantage: La portée du pouvoir de chant funèbre du personnage est étendue à 18
     mètres. En outre, si une créature est déjà secouée à cause d’un autre effet, le
     chant funèbre du personnage la rend effrayée. Cet avantage ne permet pas de rendre
-    une créature paniquée, même si elle est déjà effrayée à cause d’un autre effet
+    une créature paniquée, même si elle est déjà effrayée à cause d’un autre effet.
+    Une fois qu’une créature a été affectée par ce don, elle ne peut plus en être
+    la cible pendant 24 heures
   Normal: La portée de chant funèbre est de 9 mètres. Une créature déjà secouée
     ne peut pas être effrayée par le chant funèbre
   Source: MCA
@@ -8478,7 +8397,8 @@
   Avantage: L’effet du chant funèbre du personnage s’attarde sur la cible pendant
     2 rounds après que la créature a quitté la zone d’effet. Si le personnage utilise
     son chant funèbre sur une créature secouée, celle-ci devient effrayée. S’il l’utilise
-    sur une créature effrayée, celle-ci devient paniquée
+    sur une créature effrayée, celle-ci devient paniquée. Une fois qu’une créature
+    a été affectée par ce don, elle ne peut plus en être la cible pendant 24 heures
   Normal: Les effets de terreur sur la créature se terminent dès qu’elle quitte
     la zone d’effet du chant funèbre. Un effet de terreur ne peut pas empirer à cause
     du chant funèbre et la Science du chant funèbre ne peut lui faire dépasser le
@@ -8556,18 +8476,18 @@
     +8
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: Le personnage doit annoncer qu’il utilise ce don avant de faire son
-    jet d’attaque (la tentative échoue donc si le personnage rate son jet). L’attaque
-    inflige les dégâts habituels. De plus, le Coup étourdissant oblige tout adversaire
-    frappé par l’attaque à mains nues du personnage à faire un jet de Vigueur (DD
-    10 + 1/2 niveau du personnage + modificateur de Sagesse). S'il rate ce jet de
-    sauvegarde, il est étourdi pendant 1 round (jusqu’au début du prochain tour du
-    personnage). Un personnage étourdi ne peut pas entreprendre d’action, perd son
-    bonus de Dextérité à la CA et subit un malus de -2 à la CA. Le personnage peut
-    porter un Coup étourdissant par jour par tranche de quatre niveaux mais pas plus
-    d’une fois par round. Le personnage ne peut pas étourdir les créatures artificielles,
-    les vases, les plantes, les morts-vivants, les créatures intangibles et les créatures
-    immunisées contre les coups critiques
+  Avantage: "Le personnage doit annoncer qu’il utilise ce don avant de faire son\
+    \ jet d’attaque (la tentative échoue donc si le personnage rate son jet). L’attaque\
+    \ inflige les dégâts habituels. De plus, le Coup étourdissant oblige tout adversaire\
+    \ frappé par l’attaque à mains nues du personnage à faire un jet de Vigueur (DD\
+    \ 10 + 1/2 niveau du personnage + modificateur de Sagesse). \n\nS'il rate ce jet\
+    \ de sauvegarde, il est étourdi pendant 1 round (jusqu’au début du prochain tour\
+    \ du personnage). Un personnage étourdi lâche ce qu'il tient, ne peut pas entreprendre\
+    \ d’action, perd son bonus de Dextérité à la CA et subit un malus de -2 à la CA.\
+    \ \n\nLe personnage peut porter un Coup étourdissant par jour par tranche de quatre\
+    \ niveaux mais pas plus d’une fois par round. \n\nLe personnage ne peut pas étourdir\
+    \ les créatures artificielles, les vases, les plantes, les morts-vivants, les\
+    \ créatures intangibles et les créatures immunisées contre les coups critiques"
   Spécial: Un moine reçoit Coup étourdissant comme don supplémentaire au niveau
     1, même s’il ne remplit pas les conditions requises. Chaque jour, un moine qui
     choisit ce don peut faire un nombre de Coup étourdissants égal à son niveau de
@@ -8853,19 +8773,18 @@
   Conditions: Dex 13, Sag 13, Science du combat à mains nues, BBA +8
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: 'Le personnage doit déclarer l’utilisation de ce don avant de faire
-    son jet d’attaque (ainsi, sa tentative est perdue sur une attaque ratée). Frappe
-    drainante force un ennemi blessé par l’attaque à mains nues du personnage à faire
-    un jet de Vigueur (DD = 10 + 1/2 niveau du personnage + modificateur de Sagesse
-    du personnage) en plus de subir les dégâts normaux. Un défenseur qui rate son
-    jet de sauvegarde est fatigué pendant 1 minute ou jusqu’à ce qu’il soit sujet
-    à un sort lui infligeant une perte de points de vie. Si le personnage a un BBA
-    de +14 ou plus, la cible est épuisée pendant la même durée. Le personnage
-
-    peut utiliser Frappe drainante une fois par jour par tranche de 4 niveaux de personnage
-    qu’il possède mais ne peut pas l’utiliser plus d’une fois par round. Les créatures
-    artificielles, les créatures intangibles, les plantes, les morts-vivants et les
-    créatures immunisées contre les coups critiques ne sont pas affectés par ce pouvoir'
+  Avantage: Le personnage doit déclarer l’utilisation de ce don avant de faire son
+    jet d’attaque (ainsi, sa tentative est perdue sur une attaque ratée). Frappe drainante
+    force un ennemi blessé par l’attaque à mains nues du personnage à faire un jet
+    de Vigueur (DD = 10 + 1/2 niveau du personnage + modificateur de Sagesse du personnage)
+    en plus de subir les dégâts normaux. Un défenseur qui rate son jet de sauvegarde
+    est fatigué pendant 1 minute ou jusqu’à ce qu’il soit sujet à un sort lui soignant
+    une perte de points de vie. Si le personnage a un BBA de +14 ou plus, la cible
+    est épuisée pendant la même durée. Le personnage peut utiliser Frappe drainante
+    une fois par jour par tranche de 4 niveaux de personnage qu’il possède mais ne
+    peut pas l’utiliser plus d’une fois par round. Les créatures artificielles, les
+    créatures intangibles, les plantes, les morts-vivants et les créatures immunisées
+    contre les coups critiques ne sont pas affectés par ce pouvoir
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20drainante.ashx
   
@@ -9279,7 +9198,7 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
   Avantage: Quand le personnage utilise Lutte supérieure pour maintenir une lutte
     par une action de mouvement, il peut ensuite dépenser une action rapide pour faire
-    un test de lutte
+    un test de lutte avec un malus de -5
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur%20rapide.ashx
   
@@ -9571,24 +9490,14 @@
     puissant connu
   Conditions: Cinétiste de niveau 6
   ConditionsRefs: []
-  Avantage: 'Le personnage obtient un talent sauvage d’au moins
-
-    2 niveaux de moins que le talent sauvage le plus puissant qu’il
-
-    connaît actuellement. Il peut choisir un talent d’injection ou
-
-    non, mais pas un talent d’explosion ni de défense. S’il possède le
-
-    pouvoir d’extension élémentaire, il peut choisir un talent sauvage
-
-    de n’importe quel élément d’au moins deux niveaux de moins
-
-    que le talent sauvage de plus haut niveau qu’il peut actuellement
-
-    manier dans son élément primaire'
-  Spécial: 'Le personnage peut choisir ce don à plusieurs reprises,
-
-    il s’applique à chaque fois à un talent sauvage différent'
+  Avantage: Le personnage obtient un talent sauvage d’au moins 2 niveaux de moins
+    que le talent sauvage le plus puissant qu’il connaît actuellement. Il peut choisir
+    un talent d’injection ou non, mais pas un talent d’explosion ni de défense. S’il
+    possède le pouvoir d’extension élémentaire, il peut choisir un talent sauvage
+    de n’importe quel élément d’au moins deux niveaux de moins que le talent sauvage
+    de plus haut niveau qu’il peut actuellement manier dans son élément primaire
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, il s’applique
+    à chaque fois à un talent sauvage différent
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Talent%20sauvage%20suppl%c3%a9mentaire.ashx
   
@@ -9744,13 +9653,11 @@
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20de%20pr%c3%a9cision.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lancer%20improvis%c3%a9.ashx
-  Avantage: 'Lorsque vous touchez directement une créature avec une arme à impact
+  Avantage: Lorsque vous touchez directement une créature avec une arme à impact
     qui inflige normalement des dégâts d’aspersion, vous pouvez choisir de ne pas
     infliger ces dégâts. Si vous faites ce choix, les dégâts effectués à la cible
     direct de votre attaque augmentent de 50%. Ces dégâts sont multipliés en cas de
-    coup critique.
-
-    Ce don ne peut pas être utilisé avec les bombes de l’alchimiste'
+    coup critique. Ce don ne peut pas être utilisé avec les bombes de l’alchimiste
   Source: RTT
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aspersion%20contr%c3%b4l%c3%a9e.ashx
   
@@ -10018,7 +9925,7 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20%c3%a0%20bout%20portant.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20rapide.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tir%20soudain.ashx
-  Avantage: Le personnage peut utiliser Tir soudain à 3 m (2 c)
+  Avantage: Le personnage peut utiliser Tir soudain à 1.5 m (1 c) de plus
   Normal: Le personnage provoque une attaque d’opportunité quand il fait une attaque
     à distance
   Source: AG
@@ -10112,13 +10019,15 @@
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx
   
-- Nom: Touche d’ombre
+- Nom: Touche d'ombre
+  Résumé: peut se déplacer à sa vitesse maximale
   Conditions: wayang
+  ConditionsRefs: []
   Avantage: Quand le wayang est dans une zone de faible lumière ou de ténèbres,
     il peut se déplacer à sa vitesse maximale en utilisant Discrétion sans subir le
     malus normal de -5. Quand il se déplace à une vitesse allant de la moitié de sa
     vitesse normale à sa vitesse normale, le wayang subit un malus de -5 à ses tests
-    de Discrétion.
+    de Discrétion
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx
   
@@ -10208,11 +10117,13 @@
   Résumé: Le personnage peut faire un test de Bluff pour faire une feinte quand
     il est camouflé
   Catégorie: combat
-  Conditions: Int 13, Combat en aveugle, Expertise du combat, Traqueur du clair
-    de lune, 6 rangs en Bluff, vision dans le noir ou vision nocturne
+  Conditions: Int 13, Combat en aveugle, Expertise du combat, , Science de la feinte,
+    Traqueur au clair de lune, 6 rangs en Bluff, vision dans le noir ou vision nocturne
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Combat%20en%20aveugle.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20la%20feinte.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traqueur%20au%20clair%20de%20lune.ashx
   Avantage: Une fois par round, quand le personnage est camouflé aux yeux d’un adversaire,
     il peut utiliser une action rapide pour faire une feinte avec un test de Bluff
   Normal: La feinte est une action simple
@@ -10550,18 +10461,17 @@
   Catégorie: Monstre
   Conditions: Posséder une vitesse de vol
   ConditionsRefs: []
-  Avantage: "Une créature qui possède ce don peut arrêter son mouvement lorsqu’elle\
-    \ est en vol, ce qui lui permet de faire du sur-place sans avoir à réussir un\
-    \ test de Vol. \nSi une créature de taille supérieure ou égale à G avec ce don\
-    \ effectue un vol stationnaire à 6 m (4 c) ou moins d’un sol recouvert de nombreux\
-    \ débris, le souffle de ses ailes crée un nuage hémisphérique de 18 m (12 c) de\
-    \ rayon. Les vents ainsi engendrés peuvent éteindre les torches, les petits feux\
-    \ de camp, les lanternes exposées ainsi que les autres flammes non protégées et\
-    \ d’origine non magique. À l’intérieur du nuage, on ne voit bien qu’à 3 m (2 c).\
-    \ De 4,5 m (3 c) à 6 m (4 c), les créatures bénéficient d’un camouflage simple\
-    \ (20% de chances d’échec). À partir de 7,5 m (5 c), les créatures bénéficient\
-    \ d’un camouflage total (50% de chances d’échec et il est impossible d’utiliser\
-    \ la vision pour les repérer)"
+  Avantage: Une créature qui possède ce don peut arrêter son mouvement lorsqu’elle
+    est en vol, ce qui lui permet de faire du sur-place sans avoir à réussir un test
+    de Vol.  Si une créature de taille supérieure ou égale à G avec ce don effectue
+    un vol stationnaire à 6 m (4 c) ou moins d’un sol recouvert de nombreux débris,
+    le souffle de ses ailes crée un nuage hémisphérique de 18 m (12 c) de rayon. Les
+    vents ainsi engendrés peuvent éteindre les torches, les petits feux de camp, les
+    lanternes exposées ainsi que les autres flammes non protégées et d’origine non
+    magique. À l’intérieur du nuage, on ne voit bien qu’à 3 m (2 c). De 4,5 m (3 c)
+    à 6 m (4 c), les créatures bénéficient d’un camouflage simple (20% de chances
+    d’échec). À partir de 7,5 m (5 c), les créatures bénéficient d’un camouflage total
+    (50% de chances d’échec et il est impossible d’utiliser la vision pour les repérer)
   Normal: Sans ce don, la créature doit réussir un test de Vol pour faire du sur-place
     et elle ne crée pas de nuage de débris lorsqu’elle est en vol stationnaire
   Source: B1
@@ -12010,13 +11920,14 @@
   Conditions: NLS 3
   ConditionsRefs: []
   Avantage: 'Le personnage peut fabriquer une potion reproduisant les effets de
-    n’importe quel sort du 3 niveau maximum qu’il connaît et qui vise une ou plusieurs
-    créatures. La préparation demande deux heures si elle coûte 250 po ou moins, sinon,
-    il faut une journée par tranche de 1 000 po que coûte la potion. Le personnage
-    décide du niveau de lanceur de sorts de la potion au moment où il la fabrique
-    : il doit être suffisant pour pouvoir lancer le sort et ne doit pas dépasser le
-    niveau de lanceur de sorts du préparateur. Pour fabriquer une potion, le personnage
-    utilise des composantes qui valent la moitié du prix de base de ladite potion.
+    n’importe quel sort du 3 niveau maximum qu’il connaît, qui n''est pas à portée
+    personnelle et qui vise une ou plusieurs créatures ou objets. La préparation demande
+    deux heures si elle coûte 250 po ou moins, sinon, il faut une journée par tranche
+    de 1 000 po que coûte la potion. Le personnage décide du niveau de lanceur de
+    sorts de la potion au moment où il la fabrique : il doit être suffisant pour pouvoir
+    lancer le sort et ne doit pas dépasser le niveau de lanceur de sorts du préparateur.
+    Pour fabriquer une potion, le personnage utilise des composantes qui valent la
+    moitié du prix de base de ladite potion.
 
 
     Consultez les règles de création des objets magiques pour plus d’informations
@@ -12138,9 +12049,10 @@
   Conditions: Audace, pistolier de niveau 11
   ConditionsRefs: []
   Avantage: Le personnage choisit un exploit de sa connaissance qui nécessite une
-    dépense d’audace. Il peut l’accomplir pour 1 point d’audace de moins (0 au minimum).
-    Si cela fait passer la dépense à 0, il peut faire cet exploit en faisant uniquement
-    l’action requise tant qu’il possède encore au moins 1 point d’audace
+    dépense d’audace. Une fois par jour, il peut l’accomplir pour 1 point d’audace
+    de moins (0 au minimum). Il peut réduire le coût de cet exploit de cette façon
+    seulement s'il a au moins 1 point d'audace. Les niveaux de pistolier et de bretteur
+    se cumulent pour remplir les conditions d'accès à ce don
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exploit%20sign%c3%a9.ashx
   
@@ -12188,8 +12100,10 @@
 - Nom: Cape de duel
   Résumé: Le personnage utilise sa cape comme une targe piégée
   Catégorie: panache
-  Conditions: Esquive, 1 rang en Escamotage
+  Conditions: Bretteur amateur ou pouvoir de classe panache, Esquive, 1 rang en
+    Escamotage
   ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur%20amateur.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esquive.ashx
   Avantage: 'Par une action de mouvement, le personnage peut envelopper son bras
     d’une cape qu’il porte (la retirant si nécessaire) et la traiter comme une targe.
@@ -12542,16 +12456,14 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20de%20la%20grue.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esquive.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: 'Quand le personnage se bat sur la défensive et qu’il a au moins une
-    main libre, il gagne un bonus d''esquive à la CA de +4 uniquement contre les attaques
-    de mélées. Si une attaque de mélée vous rate de 4 ou moins vous perdez ce bonus
-    d''esquive jusqu''au début de votre prochain tour.
-
-    S’il se bat en défense totale il peut dévier une attaque de corps à corps qui
-    devrait le toucher. Une attaque ainsi déviée ne lui inflige aucun dégât et n''a
-    aucun autre effet (traitez-la comme une attaque ratée). L''utilisateur de ce don
-    ne dépense pas d’action mais il doit être conscient de l’attaque et ne pas être
-    pris au dépourvu'
+  Avantage: "Lorsqu'il combat sur la défensive avec au moins une main libre, le\
+    \ personnage gagne un bonus d'esquive de +4 à la CA contre les attaques au corps\
+    \ à corps. Si une attaque le rate de 4 ou moins, il perd ce bonus d'esquive jusqu'au\
+    \ début de son prochain tour.\n S'il utilise l'action de défense totale, il peut\
+    \ dévier une attaque au corps à corps qui aurait du le toucher. Une attaque déviée\
+    \ de cette façon n'inflige pas de dégâts et n'a pas d'autres effet (considérez\
+    \ que l'attaque est ratée). Le personnage ne dépense pas d'action en utilisant\
+    \ ce don, mais doit être conscient de l'attaque et de pas être pris au dépourvu"
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aile%20de%20la%20grue.ashx
   
@@ -12570,10 +12482,10 @@
     il se bat sur la défensive. Lorsqu'il se bat sur la défensive et qu'il utilise
     Aile de la grue pour obtenir un bonus d'esquive contre une attaque, cette attaque
     provoque une attaque d’opportunité de sa part si elle échoue. D'autre part, lorsque
-    le personnage dévie une attaque grâce à l'utilisation d'Aile de la grue en défense
-    totale, il peut effectuer une attaque d’opportunité contre cet adversaire (même
-    s'il ne devrait normalement pas pouvoir faire d'attaque d'opportunité en défense
-    totale)
+    le personnage dévie une attaque grâce à l'utilisation d'Aile de la grue parce
+    qu'une attaque l'a raté de 4 ou moins, il peut effectuer une attaque d’opportunité
+    contre cet adversaire (même s'il ne devrait normalement pas pouvoir faire d'attaque
+    d'opportunité en défense totale)
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Riposte%20de%20la%20grue.ashx
   
@@ -12637,15 +12549,13 @@
     ou religion)
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: 'Quand le personnage utilise cette école, il peut passer une action
-    rapide à faire un test de Connaissances pour identifier une unique créature (DD
-    15 + FP de la créature).
-
-    S’il réussit, tant qu’il utilise cette école, il gagne un bonus de +2 aux Jets
-    de sauvegarde contre les attaques de cette créature ainsi qu’un bonus d’esquive
-    de +2 à la CA contre ses attaques d’opportunité. Ces bonus persistent tant que
-    le personnage utilise cette école. S’il rompt le combat avec la créature et le
-    reprend plus tard, il peut refaire le test'
+  Avantage: Quand le personnage utilise cette école, il peut passer une action rapide
+    à faire un test de Connaissances pour identifier une unique créature (DD 15 +
+    FP de la créature). S’il réussit, tant qu’il utilise cette école, il gagne un
+    bonus de +2 aux Jets de sauvegarde contre les attaques de cette créature ainsi
+    qu’un bonus d’esquive de +2 à la CA contre ses attaques d’opportunité. Ces bonus
+    persistent tant que le personnage utilise cette école. S’il rompt le combat avec
+    la créature et le reprend plus tard, il peut refaire le test
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20kirin.ashx
   
@@ -12860,7 +12770,7 @@
     ses attaques à mains nues. Il change de type de dégâts par une action libre. Quand
     il utilise cette école, il peut, une fois par round, déchiqueter son adversaire
     en le touchant avec deux attaques à mains nues ou plus. L’attaque inflige alors
-    2d6 points de dommages de plus
+    2d6 points de dégâts supplémentaires
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20sanglier.ashx
   
@@ -13021,13 +12931,11 @@
     en Escalade
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: 'Le personnage ajoute sa Sagesse aux tests d’Acrobaties . Quand il utilise
+  Avantage: Le personnage ajoute sa Sagesse aux tests d’Acrobaties . Quand il utilise
     l’École du singe, il ne subit pas de malus aux jets d’attaque ni à la CA quand
-    il est à terre.
-
-    De plus, quand il est en position allongée, il peut ramper et se relever sans
-    provoquer d’attaque d’opportunité. S’il réussit un test d’Acrobaties DD 20, il
-    peut se relever par une action rapide'
+    il est à terre. De plus, quand il est en position allongée, il peut ramper et
+    se relever sans provoquer d’attaque d’opportunité. S’il réussit un test d’Acrobaties
+    DD 20, il peut se relever par une action rapide
   Normal: Le personnage subit un malus de -4 aux jets d’attaque et à la CA contre
     les attaques de corps à corps quand il est à terre. Il lui faut une action de
     mouvement pour se relever et elle provoque des attaques d’opportunité
@@ -13240,12 +13148,9 @@
     lutteur ou pouvoir de classe déluge de coups
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: Une fois par round, quand le personnage touche une seule cible avec
-    deux attaques à mains nues, il lui inflige 1d6 points de dégâts supplémentaires,
-    qui se rajoutent aux dégâts de la seconde attaque. S’il touche une seule cible
-    avec trois attaques à mains nues ou plus, il lui inflige 2d6 points de dégâts
-    supplémentaires, qui se rajoutent aux dégâts de sa dernière attaque du round contre
-    la cible
+  Avantage: Lorsque le personnage touche une créature avec une attaque à mains nues
+    alors qu'il l'a déjà touchée avec une attaque à mains nues durant le même round,
+    il lui inflige 1d6 points de dégâts supplémentaires
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20boxeur.ashx
   
@@ -13288,23 +13193,19 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20boxeur.ashx
   
 - Nom: École du cogneur
-  Résumé: Le personnage concentre toutes ses attaques à mains nues en un seul coup
-    puissant
+  Résumé: Le personnage combines ensemble ses attaques à mains nues
   Catégorie: combat, école
   Conditions: Science du combat à mains nues ; BBA +6, pouvoir de classe déluge
     du lutteur ou pouvoir de classe déluge de coup
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
-  Avantage: "Par une action complexe, le personnage peut concentrer tout son potentiel\
-    \ d’attaque dans un seul coup de poing dévastateur. Il fait un nombre de jets\
-    \ égal au nombre d’attaques qu’il peut effectuer en une attaque à outrance ou\
-    \ un déluge de coups (à lui de choisir) avec le bonus d’attaque normal pour chaque\
-    \ attaque. \n\nÀ chaque fois qu’il réussit un jet, il comptabilise le nombre normal\
-    \ de dégâts et ajoute les dégâts de tous les jets d’attaque réussis pour connaître\
-    \ les dégâts totaux de son unique coup de poing. \n\nSi l’un des jets d’attaque\
-    \ est un critique potentiel, faites un seul jet de confirmation pour toute l’attaque\
-    \ avec le plus haut bonus de base à l’attaque. S’il est réussi, toute l’attaque\
-    \ est un coup critique confirmé"
+  Avantage: 'À chaque fois que le personnage utilise une attaque à outrance ou un
+    déluge de coup pour effectuer plusieurs attaque à mains nues contre une même créature,
+    faites la somme des dégâts infligés avant d''appliquer toute réduction de dégâts.
+
+
+    Cette capacité ne fonctionnent qu''avec les attaques à mains nues, peu importe
+    les pouvoirs que le personnage possède'
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20cogneur.ashx
   
@@ -13320,9 +13221,10 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20croc-en-jambe.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20cogneur.ashx
-  Avantage: Quand le personnage touche sa cible avec une attaque de l’École du cogneur,
-    il peut faire un test de manoeuvre offensive de repositionnement ou de croc-en-jambe
-    par une action libre
+  Avantage: Quand le personnage utilise l’École du cogneur pour effectuer une attaque
+    à outrance ou un déluge de coup contre une seule créature, s'il touche avec une
+    de ces attaques, il peut faire un test de manœuvre offensive de repositionnement
+    ou de croc-en-jambe par une action libre
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cogneur%20tyrannique.ashx
   
@@ -13334,10 +13236,11 @@
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20cogneur.ashx
-  Avantage: Quand le personnage utilise École du cogneur, il peut charger et faire
-    une attaque de l’École du cogneur à la fin de sa charge au cours de son action
-    de charge
-  Normal: Il faut une action complexe pour porter une attaque de l’École du cogneur
+  Avantage: Le personnage peut charger et effectuer une attaque à outrance ou un
+    déluge de coup à la fin de sa charge dans la même action. Il peut utiliser Charge
+    du cogneur de cette façon seulement si toutes les attaques portées peuvent utiliser
+    l'École du cogneur contre une seule créature
+  Normal: Il est impossible d'effectuer une attaque à outrance pendant une charge
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20du%20cogneur.ashx
   
@@ -14344,7 +14247,8 @@
     fonctionnent sur les morts-vivants
   Catégorie: métamagie
   Conditions: 6 rangs en Connaissances (religion), École renforcée (nécromancie)
-  ConditionsRefs: []
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
   Avantage: 'Un sort thanatopique franchit les défenses et les immunités qui protègent
     contre les effets de mort, l’énergie négative et les absorptions d’énergie, qui
     affectent alors la cible comme si sa barrière protectrice n’existait pas.
@@ -14378,7 +14282,8 @@
     vivants
   Catégorie: métamagie
   Conditions: 6 rangs en Connaissances (religion), École renforcée (nécromancie)
-  ConditionsRefs: []
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
   Avantage: 'Ce don fonctionne uniquement sur les sorts mentaux. Il affecte les
     morts-vivants (même s’ils sont dépourvus d’Intelligence) comme s’ils n’étaient
     pas immunisés contre les effets mentaux mais il n’a aucun effet sur les créatures
@@ -16682,13 +16587,12 @@
   Conditions: Vision prophétique
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20proph%c3%a9tique.ashx
-  Avantage: 'Le personnage peut utiliser l’aptitude augure conférée par Vision prophétique
+  Avantage: Le personnage peut utiliser l’aptitude augure conférée par Vision prophétique
     à volonté, en plongeant dans une transe profonde pendant dix minutes. Ses chances
     de réussite augmentent de 1% par grade. Un augure réussi et réalisé par le biais
     de ce don confère également au personnage les avantages d’une assistance divine
-    mais avec un bonus égal à
-
-    son grade. Le bonus de compétence est remplacé par un bonus d’intuition'
+    mais avec un bonus égal à son grade. Le bonus de compétence est remplacé par un
+    bonus d’intuition
   Source: CM
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vision%20proph%c3%a9tique%20(mythique).ashx
   
@@ -17041,7 +16945,7 @@
     \ et considère toujours cette compétence comme une compétence de classe. \n\n\
     Quand le personnage choisit ce don, il choisit aussi un des bénéfices indiqués\
     \ ci-dessous, en accord avec l’histoire de sa famille. Il doit en discuter avec\
-    \ son MJ pour s’assurer que son choix est approprié. \n• Rejeton des arts. Le\
+    \ son MJ pour s’assurer que son choix est approprié.  \n• Rejeton des arts. Le\
     \ personnage gagne un bonus de +1 aux tests de Représentation qui sont toujours\
     \ considérés comme une compétence de classe pour lui. Si le personnage sait faire\
     \ une représentation bardique, il peut l’utiliser 3 rounds de plus par jour.\n\
@@ -17248,7 +17152,7 @@
     \ pour laquelle il possède le don École renforcée. Il lance les sorts de cette\
     \ école avec un bonus de +1 au niveau de lanceur de sorts.\n\nDe plus, il gagne\
     \ un unique pouvoir magique utilisable trois fois par jour dépendant de l'école\
-    \ choisie. Voici les pouvoirs magiques de chaque école : \n• Abjuration : résistance\n\
+    \ choisie. Voici les pouvoirs magiques de chaque école :  \n• Abjuration : résistance\n\
     • Enchantement : hébétement\n• Évocation : lumières dansantes\n• Illusion : son\
     \ imaginaire\n• Invocation : aspersion acide\n• Nécromancie : fatigue\n• Transmutation\
     \ : manipulation à distance"
@@ -17261,7 +17165,7 @@
   ConditionsRefs: []
   Avantage: "L’avantage de ce don dépend de la tribu à laquelle appartient le personnage\
     \ qui peut choisir parmi les capacités suivantes caractéristiques du totem de\
-    \ sa tribu. \n• Lune : Le personnage gagne un bonus de +1 aux jets de Volonté\
+    \ sa tribu.  \n• Lune : Le personnage gagne un bonus de +1 aux jets de Volonté\
     \ et de +2 aux tests de Perception.\n• Hache : Si le personnage possède un pouvoir\
     \ de rage, il peut l’utiliser 3 rounds de plus par jour. Il gagne aussi un bonus\
     \ de +2 aux tests d’Intimidation.\n• Aigle : Le personnage gagne un bonus de +1\
@@ -17551,20 +17455,20 @@
     \ plus du nombre de sorts connus normal pour son niveau. Voici ces sorts (ceux\
     \ marqués d’un obèle (†) sont des sorts psychiques).\n\n - Colère : 1er— montée\
     \ d’adrénaline†, 2ème— rage, 3ème— hurlement d’agonie AM, 4ème— charge télékinétique\
-    \ AG, 5ème— vengeance pour outrage AM, 6ème— transformation.\n\n - Désespoir :\
+    \ AG, 5ème— vengeance pour outrage AM, 6ème— transformation.\n  - Désespoir :\
     \ 1er— maladresse (MdJ-RA), 2ème— mise à mort, 3ème— rayon d’épuisement, 4ème—\
-    \ désespoir foudroyant, 5ème— suffocation (MdJ-RA), 6ème— mauvais oeil.\n\n -\
-    \ Dévotion : 1er— alarme d’invisibilité (MdJ-CA), 2ème— arme spirituelle, 3ème—\
-    \ soins légers, 4ème— immunité contre les sorts, 5ème— bouclier d’ombre vampirique\
-    \ (MdJ-CA), 6ème— héroïsme suprême.\n\n - Terreur : 1er— conscience accrue (MdJ-CA),\
-    \ 2ème— effroi, 3ème— terreur, 4ème— festin de terreur (MdJ-CA), 5ème— cauchemar,\
-    \ 6ème— aspect terrifiant.\n\n - Haine : 1er— ordre assassin (AM), 2ème— contact\
-    \ défigurant (AM), 3ème— malédiction, 4ème— présage débilitant(AG), 5ème— nourrir\
-    \ la haine†, 6ème— vengeance fantasmagorique (MdJ-RA).\n\n - Jalousie : 1er— hostilité\
-    \ forcée, 2ème— pacte vital, 3ème— piège ectoplasmique, 4ème— piéger un esprit,\
-    \ 5ème— domination, 6ème— bouclier involontaire (MdJ-RA).\n\n - Zèle : 1er— fierté\
-    \ illusoire (AM), 2ème— simulacre de vie, 3ème— héroïsme, 4ème— liberté de mouvement,\
-    \ 5ème— extase (AM), 6ème— héroïsme suprême"
+    \ désespoir foudroyant, 5ème— suffocation (MdJ-RA), 6ème— mauvais oeil.\n  - Dévotion\
+    \ : 1er— alarme d’invisibilité (MdJ-CA), 2ème— arme spirituelle, 3ème— soins légers,\
+    \ 4ème— immunité contre les sorts, 5ème— bouclier d’ombre vampirique (MdJ-CA),\
+    \ 6ème— héroïsme suprême.\n  - Terreur : 1er— conscience accrue (MdJ-CA), 2ème—\
+    \ effroi, 3ème— terreur, 4ème— festin de terreur (MdJ-CA), 5ème— cauchemar, 6ème—\
+    \ aspect terrifiant.\n  - Haine : 1er— ordre assassin (AM), 2ème— contact défigurant\
+    \ (AM), 3ème— malédiction, 4ème— présage débilitant(AG), 5ème— nourrir la haine†,\
+    \ 6ème— vengeance fantasmagorique (MdJ-RA).\n  - Jalousie : 1er— hostilité forcée,\
+    \ 2ème— pacte vital, 3ème— piège ectoplasmique, 4ème— piéger un esprit, 5ème—\
+    \ domination, 6ème— bouclier involontaire (MdJ-RA).\n  - Zèle : 1er— fierté illusoire\
+    \ (AM), 2ème— simulacre de vie, 3ème— héroïsme, 4ème— liberté de mouvement, 5ème—\
+    \ extase (AM), 6ème— héroïsme suprême"
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Conduit%20%c3%a9motionnel.ashx
   
@@ -17586,14 +17490,14 @@
     \ basés sur ces caractéristiques mais gagne un bonus de +2 aux tests d’Intelligence\
     \ et de compétence basés sur l’Intelligence. De plus, il peut, une fois par jour,\
     \ lancer un sort de magie psychique de sa connaissance avec un bonus de +1 au\
-    \ niveau de lanceur de sorts.\n\n - Élongation fronto-occipitale. La tête du personnage\
+    \ niveau de lanceur de sorts.\n  - Élongation fronto-occipitale. La tête du personnage\
     \ prend une forme conique, fuselée depuis le front jusqu’au sommet du crâne. Le\
     \ personnage subit un malus de –1 aux tests d’Intelligence et de Sagesse et aux\
     \ tests de compétence sur ces caractéristiques mais gagne un bonus de +2 aux tests\
     \ de Charisme et de compétence basés sur le Charisme. De plus, il peut, une fois\
     \ par jour, augmenter la durée d’un sort psychique qu’il lance de 50 % (au minimum\
     \ 0 round de plus). Cet accroissement de durée ne se cumule pas avec celui du\
-    \ don Extension de durée.\n\n - Élongation sagittale. La tête du personnage s’incline\
+    \ don Extension de durée.\n  - Élongation sagittale. La tête du personnage s’incline\
     \ délicatement vers l’arrière, selon une courbe allongée. Le personnage subit\
     \ un malus de –1 aux tests d’Intelligence et de Charisme et aux tests de compétence\
     \ basés sur ces caractéristiques mais gagne un bonus de +2 aux tests de Sagesse\
@@ -17872,17 +17776,15 @@
   Conditions: Initié du chakra, capacité à éveiller le chakra du coeur
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Initi%c3%a9%20du%20chakra.ashx
-  Avantage: 'La réserve de ki de feu-serpent passe à 4 points. Quand le personnage
+  Avantage: La réserve de ki de feu-serpent passe à 4 points. Quand le personnage
     maintient ses chakras par une action rapide sans en ouvrir de nouveaux, il peut
-    faire un jet de Vigueur ou de Volonté au lieu des deux.
-
-    De plus, quand le personnage arrête de dépenser du ki pour maintenir ses chakras,
-    l’énergie kundalini s’attarde dans son corps. Lors du premier round où le personnage
-    cesse de dépenser du ki pour maintenir ses chakras, le plus élevé se ferme et
-    le personnage peut dépenser une action rapide pour utiliser l’un des pouvoirs
-    associés aux chakras encore ouverts. Au round suivant, tous ses chakras se ferment
-    et le personnage doit dépenser un point de ki et une action rapide pour recommencer
-    à partir de son chakra racine'
+    faire un jet de Vigueur ou de Volonté au lieu des deux. De plus, quand le personnage
+    arrête de dépenser du ki pour maintenir ses chakras, l’énergie kundalini s’attarde
+    dans son corps. Lors du premier round où le personnage cesse de dépenser du ki
+    pour maintenir ses chakras, le plus élevé se ferme et le personnage peut dépenser
+    une action rapide pour utiliser l’un des pouvoirs associés aux chakras encore
+    ouverts. Au round suivant, tous ses chakras se ferment et le personnage doit dépenser
+    un point de ki et une action rapide pour recommencer à partir de son chakra racine
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adepte%20du%20chakra.ashx
   
@@ -18026,28 +17928,17 @@
   
 - Nom: Présence manipulatrice
   Résumé: Modifie les souvenirs de la créature possédée
-  Conditions: 'Int ou Cha 19, Présence cachée, capacité à
-
-    lancer possession spirituelle ou possession spirituelle suprême'
+  Conditions: Int ou Cha 19, Présence cachée, capacité à lancer possession spirituelle
+    ou possession spirituelle suprême
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sence%20cach%c3%a9e.ashx
-  Avantage: 'Une fois que le personnage a terminé sa possession,
-
-    il peut modifier jusqu’à 5 minutes de souvenirs de son hôte,
-
-    comme bon lui semble. Cela fonctionne comme le sort
-
-    modification de mémoire. Si l’hôte a conscience d’avoir été possédé,
-
-    cela ne modifie pas l’application de ce don et, si le personnage a
-
-    contrôlé son hôte pendant moins de 5 minutes, il peut lui faire
-
-    complètement oublier qu’il a été possédé. L’hôte peut résister à
-
-    cette modification de mémoire avec un jet de Volonté d’un DD
-
-    égal à l’effet de possession originel'
+  Avantage: Une fois que le personnage a terminé sa possession, il peut modifier
+    jusqu’à 5 minutes de souvenirs de son hôte, comme bon lui semble. Cela fonctionne
+    comme le sort modification de mémoire. Si l’hôte a conscience d’avoir été possédé,
+    cela ne modifie pas l’application de ce don et, si le personnage a contrôlé son
+    hôte pendant moins de 5 minutes, il peut lui faire complètement oublier qu’il
+    a été possédé. L’hôte peut résister à cette modification de mémoire avec un jet
+    de Volonté d’un DD égal à l’effet de possession originel
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9sence%20manipulatrice.ashx
   
@@ -18072,11 +17963,9 @@
   Résumé: +2 aux jets d’initiative pour les alliés dotés d’inductions implantées
   Conditions: Pouvoir de classe induction d’hypnotiseur
   ConditionsRefs: []
-  Avantage: 'Quand le personnage implante une induction, la
-
-    cible gagne un bonus de moral de +2 aux tests d’initiative jusqu’à
-
-    ce que l’induction se déclenche ou expire'
+  Avantage: Quand le personnage implante une induction, la cible gagne un bonus
+    de moral de +2 aux tests d’initiative jusqu’à ce que l’induction se déclenche
+    ou expire
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aat%20%c3%a0%20se%20battre.ashx
   
@@ -18084,13 +17973,9 @@
   Résumé: RD/— contre les dégâts non létaux pour les alliés dotés d’inductions implantées
   Conditions: Pouvoir de classe induction d’hypnotiseur
   ConditionsRefs: []
-  Avantage: 'Quand le personnage implante une induction, la
-
-    cible gagne une RD 1/— contre les dégâts non létaux jusqu’à ce
-
-    que cette induction se déclenche ou expire. Cette RD augmente
-
-    de 1 par tranche de 5 niveaux d’hypnotiseur'
+  Avantage: Quand le personnage implante une induction, la cible gagne une RD 1/—
+    contre les dégâts non létaux jusqu’à ce que cette induction se déclenche ou expire.
+    Cette RD augmente de 1 par tranche de 5 niveaux d’hypnotiseur
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%aat%20%c3%a0%20souffrir.ashx
   
@@ -18098,12 +17983,9 @@
   Résumé: Augmente la portée du regard hypnotique de 3 m
   Conditions: Pouvoir de classe regard hypnotique
   ConditionsRefs: []
-  Avantage: 'La portée du regard hypnotique du personnage
-
-    augmente de 3 mètres'
-  Spécial: 'Le personnage peut choisir ce don à plusieurs reprises,
-
-    ses effets se cumulent à chaque fois'
+  Avantage: La portée du regard hypnotique du personnage augmente de 3 mètres
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises, ses effets se
+    cumulent à chaque fois
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Regard%20%c3%a9tendu.ashx
   
@@ -18112,12 +17994,9 @@
   Catégorie: combat
   Conditions: Pouvoir de classe regard hypnotique
   ConditionsRefs: []
-  Avantage: 'Le personnage peut tenter de démoraliser la cible de
-
-    son regard hypnotique par une action rapide'
-  Normal: 'Il faut une action simple pour démoraliser un
-
-    adversaire'
+  Avantage: Le personnage peut tenter de démoraliser la cible de son regard hypnotique
+    par une action rapide
+  Normal: Il faut une action simple pour démoraliser un adversaire
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Regard%20hypnotique%20intimidant.ashx
   
@@ -18125,9 +18004,7 @@
   Résumé: 2 points de réserve phrénique de plus
   Conditions: Pouvoir de classe réserve phrénique
   ConditionsRefs: []
-  Avantage: 'La réserve phrénique totale du personnage
-
-    augmente de 2 points'
+  Avantage: La réserve phrénique totale du personnage augmente de 2 points
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9serve%20phr%c3%a9nique%20accrue.ashx
   
@@ -18135,52 +18012,31 @@
   Résumé: Amélioration du contrôle lors d’un rêve
   Conditions: Cha 13, 3 rangs en Connaissances (plans)
   ConditionsRefs: []
-  Avantage: 'Le personnage contrôle au mieux la forte qualité morphique et la magie
-    sauvage de la dimension du Rêve. Il
-
-    gagne un bonus de +4 aux tests de Charisme pour déterminer
-
-    les conditions initiales dans lesquelles son corps lucide entre dans un rêve,
-    ainsi que pour tenter un exploit
-
-    impossible dans un paysage onirique. Il bénéficie d’un bonus
-
-    de +2 aux tests de niveau de lanceur de sorts pour empêcher un
-
-    sort ou un pouvoir magique de mal tourner à cause de la magie sauvage. Si quelqu’un
-    lance conseil onirique et inclut le personnage
-
-    dans les cibles alors que ce dernier rêve, le personnage peut
-
-    entrer dans un paysage onirique partagé, comme décrit dans le
-
-    sort, sans dépenser d’incantation de songe ni de conseil onirique.
-
-    Si le corps lucide du personnage succombe dans un paysage
-
-    onirique, le personnage se réveille fatigué'
+  Avantage: Le personnage contrôle au mieux la forte qualité morphique et la magie
+    sauvage de la dimension du Rêve. Il gagne un bonus de +4 aux tests de Charisme
+    pour déterminer les conditions initiales dans lesquelles son corps lucide entre
+    dans un rêve, ainsi que pour tenter un exploit impossible dans un paysage onirique.
+    Il bénéficie d’un bonus de +2 aux tests de niveau de lanceur de sorts pour empêcher
+    un sort ou un pouvoir magique de mal tourner à cause de la magie sauvage. Si quelqu’un
+    lance conseil onirique et inclut le personnage dans les cibles alors que ce dernier
+    rêve, le personnage peut entrer dans un paysage onirique partagé, comme décrit
+    dans le sort, sans dépenser d’incantation de songe ni de conseil onirique. Si
+    le corps lucide du personnage succombe dans un paysage onirique, le personnage
+    se réveille fatigué
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%aaveur%20lucide.ashx
   
 - Nom: Saut cinétique
   Résumé: Utilisation de l’explosion pour gagner +10 aux tests d’Acrobaties pour
     sauter (+20 à 10 rangs)
-  Conditions: '3 rangs en Acrobaties, pouvoir de classe
-
-    explosion cinétique'
+  Conditions: 3 rangs en Acrobaties, pouvoir de classe explosion cinétique
   ConditionsRefs: []
-  Avantage: 'Une fois par jour et par une action rapide, le
-
-    personnage peut tirer une bouffée d’énergie de son explosion cinétique pour l’aider
-    à sauter sur une longue distance, ce qui
-
-    ajoute un bonus de +10 à son test d’Acrobaties pour sauter. S’il
-
-    possède déjà au moins 10 rangs en Acrobaties, ce bonus passe à
-
-    +20. Si le personnage accepte un point de brûlure, il peut utiliser
-
-    ce pouvoir à volonté jusqu’à ce qu’il se débarrasse de sa brûlure'
+  Avantage: Une fois par jour et par une action rapide, le personnage peut tirer
+    une bouffée d’énergie de son explosion cinétique pour l’aider à sauter sur une
+    longue distance, ce qui ajoute un bonus de +10 à son test d’Acrobaties pour sauter.
+    S’il possède déjà au moins 10 rangs en Acrobaties, ce bonus passe à +20. Si le
+    personnage accepte un point de brûlure, il peut utiliser ce pouvoir à volonté
+    jusqu’à ce qu’il se débarrasse de sa brûlure
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Saut%20cin%c3%a9tique.ashx
   
@@ -18202,18 +18058,12 @@
   Conditions: Int 11, Sensibilité psychique
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sensibilit%c3%a9%20psychique.ashx
-  Avantage: 'Le personnage peut lancer une astuce issue de la
-
-    liste de sorts de psychiste de niveau 0. Il peut lancer ce sort trois
-
-    fois par jour comme un pouvoir magique. Son NLS est égal à son
-
-    niveau de personnage et le DD du jet de sauvegarde est de 10 +
-
-    modificateur d’Intelligence'
-  Spécial: 'Le personnage peut choisir ce don à plusieurs reprises
-
-    en choisissant à chaque fois une astuce différente'
+  Avantage: Le personnage peut lancer une astuce issue de la liste de sorts de psychiste
+    de niveau 0. Il peut lancer ce sort trois fois par jour comme un pouvoir magique.
+    Son NLS est égal à son niveau de personnage et le DD du jet de sauvegarde est
+    de 10 + modificateur d’Intelligence
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises en choisissant
+    à chaque fois une astuce différente
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adepte%20psychique.ashx
   
@@ -18234,93 +18084,52 @@
   
 - Nom: Transfert longue distance
   Résumé: Le fantôme peut livrer les sorts de contact dans un rayon de 6 m de plus
-  Conditions: 'Pouvoir de classe fantôme, fantôme doté
-
-    du pouvoir livrer un sort de contact'
+  Conditions: Pouvoir de classe fantôme, fantôme doté du pouvoir livrer un sort
+    de contact
   ConditionsRefs: []
-  Avantage: 'La distance à laquelle le fantôme peut s’éloigner du
-
-    personnage pour livrer un sort de contact augmente de 6 mètres'
+  Avantage: La distance à laquelle le fantôme peut s’éloigner du personnage pour
+    livrer un sort de contact augmente de 6 mètres
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Transfert%20longue%20distance.ashx
   
 - Nom: Troisième oeil
   Résumé: Le troisième oeil permet de lire les auras et de discerner la vérité
-  Conditions: 'Sensibilité psychique ou capacité à lancer
-
-    des sorts psychiques'
+  Conditions: Sensibilité psychique ou capacité à lancer des sorts psychiques
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sensibilit%c3%a9%20psychique.ashx
-  Avantage: 'Une fois par jour, par une action simple, le
-
-    personnage peut ouvrir un troisième œil, placé sur son front, au-dessus
-
-    et entre ses yeux normaux. Il peut garder cet oeil ouvert
-
-    jusqu’à une minute par niveau de personnage. Cette durée n’est
-
-    pas forcément continue mais doit se découper en portions
-
-    d’une minute. Une fois par jour, le personnage peut utiliser
-
-    l’extension de compétence occulte lecture d’auras après une
-
-    minute de concentration intense, à condition que son troisième
-
-    oeil reste ouvert tout ce temps. Ceci vient en plus de l’utilisation
-
-    quotidienne normale de lecture de l’aura (qui prend toujours
-
-    10 minutes). Tant que le troisième oeil du personnage est ouvert,
-
-    il gagne un bonus de +4 aux tests de Perception pour lire les
-
-    auras et un bonus de +8 aux tests de Perception pour détecter les
-
-    créatures et les objets invisibles et pour percer les déguisements
-
-    magiques à jour (qu’ils soient illusoires ou viennent d’une magie
-
-    de métamorphose ou du pouvoir changement de forme). Quand
-
-    le personnage ferme son troisième oeil, volontairement ou parce
-
-    que sa durée d’utilisation arrive à son terme, il est fatigué pendant
-
-    aussi longtemps qu’il l’a gardé ouvert'
-  Normal: 'Sans ce don, le personnage doit se concentrer
-
-    intensément pendant 10 minutes pour lire l’une des quatre auras
-
-    d’une créature ou d’un objet et il ne peut le faire qu’une fois par
-
-    jour'
-  Spécial: 'Le personnage peut choisir ce don à plusieurs reprises.
-
-    Ses effets ne se cumulent pas mais, à chaque fois, il augmente le
-
-    nombre de fois où il peut ouvrir son troisième oeil (et lire une
-
-    aura) d’une par jour'
+  Avantage: Une fois par jour, par une action simple, le personnage peut ouvrir
+    un troisième œil, placé sur son front, au-dessus et entre ses yeux normaux. Il
+    peut garder cet oeil ouvert jusqu’à une minute par niveau de personnage. Cette
+    durée n’est pas forcément continue mais doit se découper en portions d’une minute.
+    Une fois par jour, le personnage peut utiliser l’extension de compétence occulte
+    lecture d’auras après une minute de concentration intense, à condition que son
+    troisième oeil reste ouvert tout ce temps. Ceci vient en plus de l’utilisation
+    quotidienne normale de lecture de l’aura (qui prend toujours 10 minutes). Tant
+    que le troisième oeil du personnage est ouvert, il gagne un bonus de +4 aux tests
+    de Perception pour lire les auras et un bonus de +8 aux tests de Perception pour
+    détecter les créatures et les objets invisibles et pour percer les déguisements
+    magiques à jour (qu’ils soient illusoires ou viennent d’une magie de métamorphose
+    ou du pouvoir changement de forme). Quand le personnage ferme son troisième oeil,
+    volontairement ou parce que sa durée d’utilisation arrive à son terme, il est
+    fatigué pendant aussi longtemps qu’il l’a gardé ouvert
+  Normal: Sans ce don, le personnage doit se concentrer intensément pendant 10 minutes
+    pour lire l’une des quatre auras d’une créature ou d’un objet et il ne peut le
+    faire qu’une fois par jour
+  Spécial: Le personnage peut choisir ce don à plusieurs reprises. Ses effets ne
+    se cumulent pas mais, à chaque fois, il augmente le nombre de fois où il peut
+    ouvrir son troisième oeil (et lire une aura) d’une par jour
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Troisi%c3%a8me%20oeil.ashx
   
 - Nom: Virtuose psychique
   Résumé: +2 aux tests d’extension de compétence occulte (+4 dès 10 rangs)
-  Conditions: 'Sensibilité psychique ou capacité à lancer
-
-    des sorts psychiques'
+  Conditions: Sensibilité psychique ou capacité à lancer des sorts psychiques
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sensibilit%c3%a9%20psychique.ashx
-  Avantage: 'Le personnage gagne un bonus de +2 aux tests pour
-
-    utiliser une extension de compétence occulte. S’il dispose de plus
-
-    de 10 rangs dans la compétence de base, ce bonus passe à +4. Ce
-
-    bonus ne s’applique pas aux autres tests utilisant la compétence
-
-    de base, seulement à ceux de la version occulte'
+  Avantage: Le personnage gagne un bonus de +2 aux tests pour utiliser une extension
+    de compétence occulte. S’il dispose de plus de 10 rangs dans la compétence de
+    base, ce bonus passe à +4. Ce bonus ne s’applique pas aux autres tests utilisant
+    la compétence de base, seulement à ceux de la version occulte
   Source: AO
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Virtuose%20psychique.ashx
   
@@ -19474,13 +19283,13 @@
     \ vampire doit être de 9. Si vous le souhaitez, d’autres animaux peuvent être\
     \ ajoutés à cette liste : servez-vous de ces exemples pour définir les niveaux\
     \ minimums.\n\nLes compagnons animaux vampiriques comptent dans le nombre total\
-    \ de dés de vie que le vampire peut asservir et dans\nle nombre limite de compagnons\
+    \ de dés de vie que le vampire peut asservir et dans le nombre limite de compagnons\
     \ animaux qu’il peut posséder en même temps. Tout compagnon animal vampirique\
-    \ créé par\nle vampire et dépassant ces limites devient un mort-vivant doté de\
+    \ créé par le vampire et dépassant ces limites devient un mort-vivant doté de\
     \ son libre arbitre. Un vampire peut également libérer un compagnon vampirique\
     \ afin d’en asservir un autre, mais le précédent ne peut alors plus être asservi.\n\
     \nLes caractéristiques de l’animal vampirique sont identiques à celles de l’animal\
-    \ original, à quelques exceptions près :\n• Son type change et devient mort-vivant\
+    \ original, à quelques exceptions près : \n• Son type change et devient mort-vivant\
     \ avec le sous-type animal altéré.\n• Il gagne un bonus d’armure naturelle de\
     \ +4.\n• Il gagne une attaque d’absorption d’énergie (1 niveau, DD égal à 10 +\
     \ 1/2 DV raciaux du compagnon animal + modificateurde Charisme du compagnon animal).\n\
@@ -19508,9 +19317,8 @@
 
 
     En outre, il peut utiliser son fouet pour effectuer des manoeuvres de repositionnement,
-    mais il subit un malus de -4 au
-
-    BMO et ne peut déplacer sa cible qu’en la rapprochant de lui'
+    mais il subit un malus de -4 au BMO et ne peut déplacer sa cible qu’en la rapprochant
+    de lui'
   Source: MPNJ
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fouet-serpent.ashx
   
@@ -19638,4 +19446,520 @@
     de plus par jour par tranche de trois dés de vie qu’il a.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Crachat%20venimeux%20(nagaji).ashx
+  
+- Nom: Aide étrange
+  Résumé: Permet de dépenser un sort préparé ou un emplacement de sort pour augmenter
+    de 2 le NLS d'un sort lancé par un allié
+  Conditions: NLS 1
+  ConditionsRefs: []
+  Avantage: Par une action simple, le personnage peut dépenser un sort préparé ou
+    un emplacement de sort de niveau 1 ou supérieur pour conférer de l’énergie magique
+    supplémentaire à un lanceur de sorts allié situé à courte portée (7,50 mètres
+    + 1,50 mètre/2 niveaux). Si cet allié lance un sort instantané d’un niveau égal
+    ou inférieur avant le début du prochain tour du personnage, tous les paramètres
+    dépendant du niveau et tous les tests de niveau de lanceur de sorts imposés par
+    le sort sont effectués comme si le NLS de l’allié était augmenté de 2. Si le niveau
+    du sort préparé ou de l’emplacement de sort que le personnage a dépensé est au
+    moins deux fois supérieur à celui du sort lancé par son allié, on considère que
+    le niveau de lanceur de sorts de l’allié est augmenté de 4. Si l’allié lance plus
+    d’un sort avant le début du tour du personnage, seul le premier bénéficie de ce
+    bonus
+  Spécial: Un arcaniste peut choisir ce don en tant qu’exploitation. Un magicien
+    peut choisir ce don en tant que don supplémentaire
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aide%20%c3%a9trange.ashx
+  
+- Nom: Animal totémique
+  Résumé: Le compagnon animal du personnage obtient les avantages d'un aspect animal
+    du chasseur
+  Conditions: Sag 13, aptitude de classe de compagnon animal
+  ConditionsRefs: []
+  Avantage: 'Choisissez un des aspects animaux proposés dans la liste de l’aptitude
+    de classe imitation animale du chasseur. Le compagnon animal du personnage est
+    doté d’une coloration naturelle qui évoque cet aspect : sur la fourrure d’un ours
+    apparaîtra une marque sombre en forme de chauve-souris et les plumes d’un faucon
+    présenteront les rayures d’un tigre, par exemple. Le compagnon animal du personnage
+    obtient les avantages de l’aspect animal choisi en considérant que son niveau
+    effectif de chasseur est égal à son nombre de DV dans le cadre de cette aptitude.
+    Ce bonus ne se cumule pas avec celui de la véritable aptitude de classe si le
+    compagnon animal bénéficie déjà des avantages du même aspect animal grâce à cette
+    aptitude.
+
+
+    Par exemple, un compagnon animal avec l’Animal totémique (serpent) et sous les
+    effets de l’aspect du serpent par le biais de son maître chasseur bénéficie d’un
+    bonus de +2, et non de +4, aux jets d’attaque quand il effectue des attaques d’opportunité'
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animal%20tot%c3%a9mique.ashx
+  
+- Nom: Escrime gracieuse
+  Résumé: Le personnage applique son modificateur de Dextérité aux dégâts des rapières
+    qu'il manie à une main
+  Catégorie: combat
+  Conditions: Dex 13, Arme de prédilection (Rapière), Attaque en finesse
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20finesse.ashx
+  Avantage: 'Quand il manie une rapière d’une seule main, le personnage peut ajouter
+    son modificateur de Dextérité aux dégâts de cette arme. La taille de la rapière
+    doit correspondre à celle du personnage. Il n''obtient pas ce bénéfice lorsqu''il
+    combat à deux armes, lorsqu''il utilise déluge de coups ou chaque fois que son
+    autre main est occupée autrement.
+
+
+    De plus, s’il possède l’aptitude de classe de panache et s’il lui reste au moins
+    1 point de panache, il gagne un bonus de +2 au DMD quand un adversaire tente de
+    le désarmer en le privant de sa rapière'
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Escrime%20gracieuse.ashx
+  
+- Nom: Assaut
+  Résumé: Si c'est une attaque en puissance, la première attaque du personnage lors
+    du round de surprise peut être une attaque sournoise
+  Catégorie: combat
+  Conditions: For 13, Attaque en puissance, bonus de base à l’attaque +1, aptitude
+    de classe d’attaque sournoise
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20puissance.ashx
+  Avantage: S’il utilise Attaque en puissance sur la première attaque au corps à
+    corps effectuée pendant un round de surprise, le personnage peut réaliser une
+    attaque sournoise même s’il ne prend pas sa cible en tenaille et qu’elle bénéficie
+    toujours de son bonus de Dextérité à la CA
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Assaut.ashx
+  
+- Nom: Compréhension approfondie des sorts
+  Résumé: Le personnage peut choisir la liste de sorts de druide ou de sorcière
+    lorsqu'il utilise sa compréhension des sorts
+  Conditions: Aptitude de classe de compréhensions des sorts
+  ConditionsRefs: []
+  Avantage: Quand le personnage utilise son aptitude de classe de compréhensions
+    des sorts, il peut choisir un sort de la liste des druides ou de celle des sorcières
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Compr%c3%a9hension%20approfondie%20des%20sorts.ashx
+  
+- Nom: Connaissances des empoisonneurs
+  Résumé: Un poison au choix devient plus efficace entre les mains du personnage
+  Conditions: Artisanat (alchimie) 5 rangs, membre de la guilde des empoisonneurs
+    de la capitale des Royaumes indépendants, aptitude de classe de connaissance des
+    poisons ou d’utilisation du poison
+  ConditionsRefs: []
+  Avantage: 'Choisissez un poison. Quand le personnage se sert de ce poison, le
+    nombre de jets de sauvegarde nécessaires pour dissiper ses effets néfastes augmente
+    de 1 et le DD pour le soigner avec neutralisation du poison augmente de 5. La
+    réussite du jet de sauvegarde initial permet toujours d’y résister.
+
+
+    De plus, si le personnage possède l’aptitude de classe connaissances des poisons,
+    on considère qu’il possède l’aptitude de classe utilisation des poisons lorsqu’il
+    s’agit de satisfaire les conditions requises par un don'
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances%20de%20Dague.ashx
+  
+- Nom: Études approfondies
+  Résumé: Le personnage ajoute les sorts de niveau 7 de sa liste mère à sa liste
+    de sorts de classe pour utiliser des objets magiques
+  Conditions: Sag 17, chasseur ou prêtre combattant de niveau 16
+  ConditionsRefs: []
+  Avantage: 'Le personnage ajoute les sorts de niveau 7 à sa liste de sorts pour
+    déterminer s’il peut utiliser les objets magiques à fin d’incantation et à potentiel
+    magique. S’il est chasseur, il ajoute les sorts de druide de niveau 7 à sa liste.
+    S’il est prêtre combattant, il ajoute les sorts de prêtre de niveau 7 à sa liste.
+    Ce don ne lui permet pas de lancer les sorts de ce niveau, juste de considérer
+    que ces sorts font partie de sa liste de sorts lorsqu’il utilise les objets magiques
+    appropriés.
+
+
+    Par exemple, un chasseur de niveau 16 a accès aux sorts de druide de niveau 1
+    à 6 uniquement. Ainsi, il ne peut pas utiliser les objets magiques à fin d’incantation
+    et à potentiel magique liés aux sorts de druide de niveau 7 et plus, à moins de
+    réussir un test d’Utilisation d’objets magiques. Si le chasseur choisit Études
+    approfondies, ce don ne lui permet pas de lancer les sorts de druide de niveau
+    7, mais il peut utiliser un parchemin de guérison suprême ou une baguette de convocation
+    d’alliés naturels VII sans avoir besoin d’effectuer un test d’Utilisation d’objets
+    magiques'
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tudes%20approfondies.ashx
+  
+- Nom: Lutteur déloyal
+  Résumé: Les luttes engagées par le personnage sont plus faciles à maintenir
+  Catégorie: dons
+  Conditions: For 13, Dex 13, Attaque en puissance, Science de la lutte, Science
+    du combat à mains nues, BBA +1
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20puissance.ashx
+  Avantage: Quand il effectue une manœuvre offensive de lutte, le personnage gagne
+    un bonus de +1 aux tests pour maintenir sa prise et les adversaires qu’il agrippe
+    subissent un malus de -1 aux tests effectués pour s’en libérer
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur%20d%c3%a9loyal.ashx
+  
+- Nom: Magie démentielle
+  Résumé: Le personnage conserve tout son potentiel magique même en rage
+  Catégorie: combat
+  Conditions: Aptitude de classe de rage sanguine ou pouvoir de rage de lucidité
+    parfaite
+  ConditionsRefs: []
+  Avantage: Le personnage peut lancer des sorts de n’importe quelle classe lorsqu’il
+    est en rage sanguine et il conserve les avantages de sa rage lorsqu’il utilise
+    moment de lucidité pendant sa rage. S’il possède l’aptitude de classe rage de
+    grand sanguin, il gagne également un bonus de +1 aux DD des jets de sauvegarde
+    des sorts qu’il lance lorsqu’il est en rage sanguine
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magie%20d%c3%a9mentielle.ashx
+  
+- Nom: Maléfice amplifié
+  Résumé: Le personnage peut renforcer les effets de ses maléfices en sacrifiant
+    des emplacements de sort
+  Conditions: Aptitude de classe de maléfice
+  ConditionsRefs: []
+  Avantage: 'Le personnage peut augmenter le pouvoir d’un maléfice en dépensant
+    un emplacement de sort ou un sort préparé de niveau 1 au moins. Si le personnage
+    veut utiliser ce don plusieurs fois dans la même journée, il doit dépenser un
+    sort préparé ou un emplacement de sort d’un niveau de plus à chaque utilisation
+    supplémentaire (un sort de niveau 2 pour la deuxième utilisation, un sort de niveau
+    3 pour la troisième utilisation, etc.). Quand il amplifie un maléfice, le personnage
+    choisit l’une des possibilités suivantes : augmenter le DD du jet de sauvegarde
+    de 1, augmenter la portée de 9 mètres (si le maléfice a déjà une portée de 9 mètres
+    au moins) ou augmenter la durée de 1 round (si le maléfice dure déjà au moins
+    1 round)'
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mal%c3%a9fice%20amplifi%c3%a9.ashx
+  
+- Nom: Sens de l'embuscade
+  Résumé: Le personnage se défend plus facilement lors des rounds de surprise
+  Catégorie: combat
+  Conditions: Int 13, aptitude de classe de sens des pièges
+  ConditionsRefs: []
+  Avantage: Si vous êtes incapable de réagir pendant le round de surprise du fait
+    d’un jet de Perception manqué vous lancez normalement l’initiative au cours du
+    round de surprise. Vous pouvez agir durant le round de surprise mais vous ne pouvez
+    qu’entreprendre l’action consistant à vous mettre en défense totale. Le personnage
+    gagne un bonus aux tests de Perception effectués pour déterminer s’il est surpris
+    ou non lors du round de surprise d’un combat, ainsi qu’un bonus d’esquive à la
+    CA lors des rounds de surprise pendant lesquels il peut agir. Ces bonus sont égaux
+    au bonus conféré par sens des pièges
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sens%20de%20lembuscade.ashx
+  
+- Nom: Tactique de la meute
+  Résumé: Le compagnon animal du personnage est considéré comme possédant tout les
+    dons d'équipe de ce dernier pour lui et ses alliés
+  Conditions: Int 13, aptitude de classe de compagnon animal
+  ConditionsRefs: []
+  Avantage: On considère que le compagnon animal du personnage possède l’ensemble
+    des dons de travail en équipe connus de ce personnage lorsqu’il s’agit de déterminer
+    si le personnage ou ses alliés bénéficient d’un bonus conféré par ce type de dons.
+    Le compagnon animal du personnage ne bénéficie pas des bonus conférés par ces
+    dons à moins qu’il ne les possède réellement. Le positionnement et les actions
+    du personnage et de tous ses alliés doivent toujours remplir les conditions indiqués
+    dans la description du don de travail en équipe afin qu’ils puissent bénéficier
+    du bonus conféré par le don utilisé
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tactique%20de%20la%20meute.ashx
+  
+- Nom: Frénésie martiale
+  Résumé: Quand un allié est proche du personnage, le malus à la CA de sa rage est
+    réduit de 2
+  Catégorie: combat, équipe
+  Conditions: Cha 13, aptitude de classe de rage
+  ConditionsRefs: []
+  Avantage: Lorsqu’il est en rage et qu’un allié qui possède ce don, qui est situé
+    à 18 mètres ou moins et est lui aussi en rage, le personnage ne subit pas le malus
+    normal de -2 à la CA infligé par la rage. Si ce malus est plus important, réduisez-le
+    de 2
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fr%c3%a9n%c3%a9sie%20martiale.ashx
+  
+- Nom: Activation mystérieuse
+  Résumé: Augmente le NLS de l'objet utilisé en dépassant le test d'UOM
+  Conditions: 12 rangs en Utilisation d’objets magiques
+  ConditionsRefs: []
+  Avantage: Si le personnage dépasse de 5 ou plus le DD exigé pour activer un objet
+    à fin d’incantation ou à potentiel magique avec un test d’Utilisation d’objets
+    magiques, il peut augmenter le NLS de l’objet de 1 quand il détermine les effets
+    du sort. S’il dépasse de 10 ou plus le DD exigé pour activer un objet magique
+    à charges avec un test d’Utilisation d’objets magiques, il peut dépenser une charge
+    de plus pour augmenter le NLS de 2. Il ne peut cependant pas faire passer le NLS
+    d’un objet au-dessus de son propre NLS
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Activation%20myst%c3%a9rieuse.ashx
+  
+- Nom: Avantage ésotérique
+  Résumé: Utilisez vos Connaissances pour traiter les capacités d'un ennemi identifié
+    comme si elles étaient moins puissantes
+  Conditions: 3 rangs en Connaissances (mystères, exploration souterraine, folklore
+    local, nature, plans ou religion)
+  ConditionsRefs: []
+  Avantage: "Une fois que le personnage a identifié une créature avec un test de\
+    \ Connaissances réussi, il peut dépenser une action de mouvement pour adapter\
+    \ sa tactique aux défenses naturelles de son ennemi. \n\nIl choisit une capacité\
+    \ qu’il a identifiée parmi les suivantes : réduction de dégâts, résistance aux\
+    \ énergies ou résistance à la magie. Pendant les 24 heures qui suivent, il considère\
+    \ la capacité choisie comme réduite de 2 points, jusqu’à un minimum de 0. Par\
+    \ exemple, une RD 5/magie devient une RD 3/magie. \n\nLe personnage bénéficie\
+    \ des effets de ce don contre une seule créature à la fois. S’il utilise ce don\
+    \ pour s’adapter à une nouvelle créature alors qu’il s’est déjà adapté à une créature\
+    \ moins de 24 heures auparavant, les avantages du don ne s’appliquent plus qu’à\
+    \ la seconde créature, plus à la première. Le personnage peut faire passer son\
+    \ adaptation de tactique d’une créature identifiée à une autre (ou d’une capacité\
+    \ d’une créature à une autre capacité de la même créature) par une action de mouvement"
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Avantage%20%c3%a9sot%c3%a9rique.ashx
+  
+- Nom: Esprit tenace
+  Résumé: Faites un test de Volonté pour conserver votre sort lorsque vous manquez
+    de concentration pour lancer un sort sur la défensive
+  Conditions: Cha 15, Int 15 ou Sag 15 (voir Spécial)
+  ConditionsRefs: []
+  Avantage: Quand le personnage rate un test de concentration alors qu’il lance
+    un sort sur la défensive et qu’il devrait perdre le sort ou l’emplacement de sort
+    concerné, il a droit à un jet de Volonté (DD = 15 + niveau du sort) pour conserver
+    le sort, comme s’il n’avait pas essayé de le lancer. L’échec du test de concentration
+    se traduit toujours par l’échec du sort, bien que celui-ci ne soit pas dépensé
+  Spécial: Pour profiter des avantages de ce don, le personnage doit remplir la
+    condition requise correspondant à la caractéristique qu’il utilise pour déterminer
+    le DD de ses jets de sauvegarde, ses sorts supplémentaires quotidiens et sa capacité
+    à lancer des sorts d’un niveau donné. S’il a des sorts grâce à plusieurs classes,
+    il doit remplir la condition requise pour chaque classe s’il veut que les sorts
+    qui en sont issus profitent des avantages du don
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20tenace.ashx
+  
+- Nom: Frappe patiente
+  Résumé: Préparez une action durant une action complexe pour bénéficier d'un bonus
+    de +2 à votre jet d'attaque
+  Catégorie: combat
+  Conditions: Int 13
+  ConditionsRefs: []
+  Avantage: Le personnage peut préparer une attaque par une action complexe au lieu
+    d’une action simple. Il gagne alors un bonus de +2 au jet d’attaque quand il déclenche
+    l’action préparée
+  Normal: La préparation d’une attaque est une action simple qui ne donne pas de
+    bonus au jet d’attaque
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frappe%20patiente.ashx
+  
+- Nom: Harmonisation d'urgence
+  Résumé: Modifiez les propriétés d'un sort d'abjuration ou de transmutation en
+    cours
+  Conditions: 7 rangs en Art de la magie
+  ConditionsRefs: []
+  Avantage: Par une action simple, le personnage peut modifier un sort d’abjuration
+    ou de transmutation actif. Ce sort doit l’affecter au moment où il utilise ce
+    don et doit proposer plusieurs options au moment de son incantation. Le personnage
+    peut alors changer l’option choisie pour une autre, indiquée dans la liste que
+    propose le sort. Pour cela, il doit réussir un test d’Art de la magie (DD = 10
+    + niveau du sort à modifier). La durée restante du sort est réduite de moitié.
+    Par exemple, un magicien de niveau 7 peut changer un effet de résistance aux énergies
+    destructives (feu) avec une durée restante de 50 minutes pour une résistance aux
+    énergies destructives (froid) qui ne dure plus que 25 minutes. Cela ne change
+    pas les effets du sort original actifs sur d’autres créatures
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Harmonisation%20durgence.ashx
+  
+- Nom: Mémoire collective
+  Résumé: Utilisez aider quelqu'un sur les tests de Connaissances d'un allié
+  Catégorie: équipe
+  ConditionsRefs: []
+  Avantage: "Quand un allié, qui dispose aussi de ce don, se trouve à 9 m du personnage\
+    \ ou moins et qu’il tente un test de Connaissances, le personnage peut utiliser\
+    \ l’action aider quelqu’un par une action libre, pour améliorer son test. \n\n\
+    Pour utiliser ce don, le personnage doit posséder au moins un rang dans la compétence\
+    \ de Connaissances que son allié utilise. \n\nS’il réussit ce test, il apprend\
+    \ automatiquement les mêmes informations que son allié, comme si c’était lui qui\
+    \ avait fait le test. À partir du moment où il a utilisé ce don, que son action\
+    \ soit réussie ou non, le personnage ne peut pas faire de test de Connaissances\
+    \ pour obtenir la même information que celle que cherchait son allié"
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.M%c3%a9moire%20collective.ashx
+  
+- Nom: Préparation rapide
+  Résumé: Préparez vos sorts en moitié moins de temps
+  Conditions: Capacité à préparer des sorts
+  ConditionsRefs: []
+  Avantage: Le personnage met moitié moins de temps que la normale pour préparer
+    ses sorts
+  Normal: Il faut une heure au personnage pour préparer tous ses sorts
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pr%c3%a9paration%20rapide.ashx
+  
+- Nom: Réduire ses pertes
+  Résumé: Ramassez des objets ou des alliés lorsque vous faites retraite, traites
+    votre Force comme de 2 points supérieurs pour calculer votre capacité de transport
+  Conditions: For 13, 1 rang en Acrobaties
+  ConditionsRefs: []
+  Avantage: Quand le personnage bat en retraite en utilisant une action complexe
+    et qu’il a au moins une main de libre, il peut attraper un objet abandonné ou
+    un allié inconscient (de sa taille ou plus petit), situé à n’importe quel point
+    de son trajet, sans provoquer d’attaque d’opportunité. S’il fait un mouvement
+    supplémentaire lors de son tour, il provoque les attaques d’opportunité habituelles.
+    De plus, le personnage considère sa Force comme supérieure de 2 points à ce qu’elle
+    est en réalité quand il détermine le poids qu’il peut porter
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.R%c3%a9duire%20ses%20pertes.ashx
+  
+- Nom: Renom
+  Résumé: Considérez votre réputation comme supérieure de 2 points à ce qu'elle
+    est dans les communautés plus importantes
+  ConditionsRefs: []
+  Avantage: Quand le personnage se trouve dans une communauté de 5000  habitants
+    ou plus, sa renommée est considérée comme supérieure de 2 points à ce qu’elle
+    est en réalité quand il s’agit de remplir les conditions requises pour obtenir
+    une récompense de prestige ou acheter de l’équipement. Ce don ne donne pas de
+    points de prestige supplémentaires
+  Normal: La renommée du personnage est égale au nombre de points de prestige qu’il
+    a gagnés au cours de sa carrière
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renom.ashx
+  
+- Nom: Science du travail alimentaire
+  Résumé: bonus de +3 sur les tests de travail alimentaire
+  Conditions: Possibilité de faire un test de travail alimentaire
+  ConditionsRefs: []
+  Avantage: Le personnage gagne un bonus de +3 aux tests de travail alimentaires
+    liés à une compétence qu’il choisit quand il prend ce don. Ce bonus se cumule
+    avec ceux des autres dons qui s’appliquent à la compétence choisie, y compris
+    Talent
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20travail%20alimentaire.ashx
+  
+- Nom: Travail en équipe sournois
+  Résumé: Augmente la durée de la pénalité liée au sale coup de votre allié d'un
+    round
+  Catégorie: combat, équipe
+  Conditions: 'Expertise du combat, Science du sale coup.
+
+
+    Avantage.'' Quand le personnage et un allié, possédant également ce don, menacent
+    un même adversaire et que l’allié effectue une manœuvre de sale coup contre lui,
+    le personnage peut dépenser une action immédiate pour augmenter d’un round la
+    durée de la condition néfaste appliquée'
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Travail%20en%20%c3%a9quipe%20sournois.ashx
+  
+- Nom: Science du travail en équipe sournois
+  Résumé: Tente un sale coup lorsqu'un allié proche en fait autant
+  Catégorie: combat, équipe
+  Conditions: Expertise du combat, Science du sale coup, Travail en équipe sournois,
+    BBA +6
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Travail%20en%20%c3%a9quipe%20sournois.ashx
+  Avantage: Quand le personnage et un allié, possédant également ce don, menacent
+    un même adversaire et que l’allié effectue une manœuvre de sale coup contre lui,
+    le personnage peut dépenser une action immédiate pour faire une manœuvre de sale
+    coup contre ce même adversaire et lui infliger une deuxième condition néfaste.
+    Si l’ennemi utilise une action pour se débarrasser de la première condition, il
+    se libère également de la condition que le personnage lui a imposée par son action
+    immédiate
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20travail%20en%20%c3%a9quipe%20sournois.ashx
+  
+- Nom: Spontanéité planifiée
+  Résumé: Augmentez vos options de sort en préparant deux sorts dans un emplacement
+  Conditions: 9 rangs en Connaissances (mystères), capacité à préparer et lancer
+    des sorts de niveau 4
+  ConditionsRefs: []
+  Avantage: Une fois par jour, quand le personnage prépare ses sorts, il peut choisir
+    un emplacement de sort dans trois niveaux au maximum, à condition que ces niveaux
+    soient inférieurs à celui du sort de plus haut niveau qu’il peut lancer. Le personnage
+    peut préparer deux sorts par emplacement choisi. Il peut lancer normalement l’un
+    ou l’autre de ces sorts, mais cela consomme les deux sorts préparés dans le même
+    emplacement
+  Spécial: Un magicien peut choisir ce don comme don supplémentaire
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spontan%c3%a9it%c3%a9%20planifi%c3%a9e.ashx
+  
+- Nom: Spontanéité polyvalente
+  Résumé: obtenez temporairement l'accès à un sort que nous ne pouvez connaître
+    autrement
+  Conditions: Int 13 ou Sag 13 (Voir Spécial), capacité à lancer des sorts spontanés
+    de niveau 2
+  ConditionsRefs: []
+  Avantage: Quand le personnage récupère ses emplacements de sorts en début de journée,
+    il peut préparer un sort qu’il ne connaît pas plutôt qu’un sort d’un niveau de
+    plus que le sort préparé. Pour cela, il doit avoir accès à une version écrite
+    du sort, que ce soit grâce à un parchemin ou à un grimoire. Ce sort doit également
+    se trouver dans sa liste de sorts de classe (même si le personnage ne le connaît
+    pas). Ce processus demande 10 minutes par niveau du sort choisi. Le personnage
+    peut lancer ce sort une seule fois, dépensant l’emplacement qu’il occupe comme
+    si c’était un sort connu. Ce type de préparation consume le parchemin mais pas
+    le grimoire. Le sort ainsi préparé fonctionne à son niveau réel, non au niveau
+    de l’emplacement qu’il occupe. Le personnage peut appliquer un don de métamagie
+    à ce sort, comme s’il s’agissait d’un sort normal, tant que son niveau réel plus
+    l’augmentation due au don restent inférieurs d’un moins un niveau au sort de plus
+    haut niveau que le personnage peut lancer. Par exemple, si un ensorceleur de niveau 12
+    possède ce don, un parchemin de boule de feu et le don de métamagie Extension
+    d’effet, il peut alors préparer une boule de feu à extension d’effet dans son
+    emplacement de sort de niveau 6
+  Spécial: Si le personnage lance spontanément des sorts profanes, il doit avoir
+    une Intelligence minimum de 13 pour choisir ce don. S’il lance spontanément des
+    sorts divins, il doit avoir une Sagesse minimum de 13. S’il appartient à des classes
+    qui lui permettent de lancer spontanément les deux types de sorts, il peut utiliser
+    ce don pour préparer un sort dans un emplacement de sort d’une classe donnée à
+    partir du moment où il remplit les conditions requises associées
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Spontan%c3%a9it%c3%a9%20polyvalente.ashx
+  
+- Nom: Voyageur de la tapisserie
+  Résumé: Lancez les sorts de téléportation avec un plus haut niveau de lanceur,
+    considérez certains lieux comme des destinations plus familières
+  Conditions: Personnage de niveau 5
+  ConditionsRefs: []
+  Avantage: Le personnage lance les sorts de la branche de téléportation comme si
+    son NLS était supérieur de 2 points à ce qu’il est en réalité et, s’il utilise
+    téléportation pour se rendre dans une loge de la Compagnie des explorateurs, il
+    se  considère comme un cran plus familier avec sa destination qu’il ne l’est en
+    réalité. Si le personnage possède un pouvoir surnaturel qui lui permet de se téléporter,
+    il considère son niveau de classe comme supérieur de 2 niveaux à ce qu’il est
+    en réalité quand il calcule la distance totale qu’il peut parcourir
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voyageur%20de%20la%20tapisserie.ashx
+  
+- Nom: Dilettante
+  Résumé: ''
+  Conditions: 2 rangs dans 5 compétences de Connaissances différentes
+  ConditionsRefs: []
+  Avantage: Vous gagnez un bonus de +2 sur les tests de Connaissances si vous avez
+    1 à 5 rangs dans cette compétence. Ce bonus ne se cumule pas avec Talent. Vous
+    pouvez faire des tests de Connaissances sans avoir la compétence avec des DD allant
+    jusqu’à 15
+  Normal: Vous ne pouvez pas faire des tests de Connaissances sans avoir la compétence,
+    uniquement pour des connaissances communes (DD égal ou inférieur à 10)
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dilettante.ashx
+  
+- Nom: Inséparables
+  Résumé: ''
+  Conditions: capacité de classe Compagnon animal ou Familier
+  ConditionsRefs: []
+  Avantage: Les capacités de votre compagnon animal ou de votre familier sont calculées
+    comme si votre classe était plus élevée de quatre niveaux, jusqu’à un bonus maximal
+    égal à votre niveau de personnage. Si vous avez plus d’un compagnon animal ou
+    familier, choisissez-en un pour qu’il reçoive ce bénéfice. Si vous perdez ou renvoyez
+    un compagnon animal ou un familier, vous pouvez appliquer ce don à la créature
+    de remplacement
+  Spécial: Vous pouvez choisir ce don plus d’une fois. Les effets ne se cumulent
+    pas. Chaque fois que vous prenez ce don, il s’applique à un compagnon animal ou
+    à un familier différent
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ins%c3%a9parables.ashx
+  
+- Nom: Inversion amicale
+  Résumé: ''
+  Conditions: BBA +1
+  ConditionsRefs: []
+  Avantage: Dans le cadre de votre mouvement ou d’un pas de placement de 1,5 mètre,
+    vous pouvez vous déplacer vers la case occupée par un allié de même taille ou
+    plus petit que vous, ce qui l’envoie dans la case que vous venez de quitter. Votre
+    allié doit être d’accord et capable de se déplacer et en mesure d’occuper la case
+    où vous étiez. Ce mouvement ne provoque pas d’attaque d’opportunité. Cela ne compte
+    pas dans le mouvement de votre allié à son prochain tour
+  Source: RSE
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inversion%20amicale.ashx
   
