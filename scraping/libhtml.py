@@ -486,6 +486,16 @@ def extractBD_Type2(html):
     props = extractProps(props)
     fabrics = extractProps(fabrics)
     
+    # hot fix for Aura(s)
+    if "auras" in props:
+      props['aura'] = props['auras']
+      del props['auras']
+    # hot fix for Aura(s)
+    if "prixAlt" in fabrics:
+      fabrics['coût'] = fabrics['prixAlt']
+      del fabrics['prixAlt']
+    
+    
     # debug (décommenter)
     #print(props)
     #print(fabrics)
