@@ -16,7 +16,7 @@ MOCK_DECOUVERTE = None
 #MOCK_DECOUVERTE = "mocks/decouvertes.html"       # décommenter pour tester avec les découvertes pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.d%c3%a9couvertes.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ section = content.find_all('td', width="49%" )
 decouverte = {'Niveau':1}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'MJRA'
 for s in section:
     for el in s.children:
@@ -43,10 +44,12 @@ for s in section:
             if newObj:
                 decouverte['Classe'] = 'Alchimiste'
                 decouverte['Description'] = cleanInlineDescription(descr)
+                decouverte['DescriptionHTML'] = cleanInlineDescription(descrHTML)
                 liste.append(decouverte)
                 decouverte = {'Niveau':1}
 
             descr = ""
+            descrHTML = ""
             decouverte['Nom'] = "Découverte: " + nom
             decouverte['Source'] = source
             decouverte['Référence'] = reference
@@ -55,6 +58,7 @@ for s in section:
         
         else:
             descr += html2text(el)
+            descrHTML += html2text(el, True, 2)
             if el.name == 'div' or not el.string:
                 src = extractSource(el)
                 if src:
@@ -66,6 +70,7 @@ for s in section:
 # last element        
 decouverte['Classe'] = 'Alchimiste'
 decouverte['Description'] = cleanInlineDescription(descr)
+decouverte['DescriptionHTML'] = cleanInlineDescription(descrHTML)
 liste.append(decouverte)
 
 
