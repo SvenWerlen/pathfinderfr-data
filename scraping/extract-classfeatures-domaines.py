@@ -17,7 +17,7 @@ MOCK_DOMAINE = None
 #MOCK_DOMAINE_PAGE = "mocks/domain-feu.html"
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.domaines.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -29,39 +29,46 @@ if MOCK_DOMAINE:
 else:
     content = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml").body
 
-domaines = content.find("div", {'presentation navmenu'}).find_all("li");
-for d in domaines:
-    link = d.find("a")
-    if link is None:
-        break;
-    
-    domain = {}
-    domain['Nom'] = link.text
-    domain['Classe'] = "Prêtre"
-    domain['Source'] = "MJ"
-    domain['Niveau'] = 1
-    domain['Description'] = ""
-    domain['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
-    
-    print("Traitement: " + link["href"])
-    if MOCK_DOMAINE:
-        domainHTML = BeautifulSoup(open(MOCK_DOMAINE_PAGE),features="lxml").body
-    else:
-        domainHTML = BeautifulSoup(urllib.request.urlopen(domain['Référence']).read(),features="lxml").body
-    
-    pouvoirs = jumpTo(domainHTML, 'h2',{'class':'separator'}, "Pouvoirs accordés")
-    if pouvoirs is None:
-        pouvoirs = jumpTo(domainHTML, 'b',{}, "Pouvoirs accordés")
-    if pouvoirs is None:
-        print("NOT FOUND!!")
-        continue
-    for p in pouvoirs:
-        if(p.name == 'h2'):
-            break
-        else:
-            domain['Description'] += html2text(p)
-        
-    liste.append(domain)
+domaines = content.find_all("div", {'presentation navmenu'})
+for dom in domaines:
+  title = dom.find('h2').text
+  if not title.startswith('Les domaines'):
+    continue
+  
+  for d in dom.find_all("li"):
+      link = d.find("a")
+      if link is None:
+          break;
+      
+      domain = {}
+      domain['Nom'] = link.text
+      domain['Classe'] = "Prêtre"
+      domain['Source'] = "MJ"
+      domain['Niveau'] = 1
+      domain['Description'] = ""
+      domain['DescriptionHTML'] = ""
+      domain['Référence'] = "http://www.pathfinder-fr.org/Wiki/" + link["href"]
+      
+      print("Traitement: " + link["href"])
+      if MOCK_DOMAINE:
+          domainHTML = BeautifulSoup(open(MOCK_DOMAINE_PAGE),features="lxml").body
+      else:
+          domainHTML = BeautifulSoup(urllib.request.urlopen(domain['Référence']).read(),features="lxml").body
+      
+      pouvoirs = jumpTo(domainHTML, 'h2',{'class':'separator'}, "Pouvoirs accordés")
+      if pouvoirs is None:
+          pouvoirs = jumpTo(domainHTML, 'b',{}, "Pouvoirs accordés")
+      if pouvoirs is None:
+          print("NOT FOUND!!")
+          continue
+      for p in pouvoirs:
+          if(p.name == 'h2'):
+              break
+          else:
+              domain['Description'] += html2text(p)
+              domain['DescriptionHTML'] += html2text(p, True, 2)
+          
+      liste.append(domain)
 
 #exit(1)
 
