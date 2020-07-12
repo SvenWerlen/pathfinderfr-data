@@ -58,12 +58,12 @@ for m in multicol:
         nom = link.text.strip()
         
         # jump
-        #if nom == "Robe Ardente":
+        #if nom == "Bandelettes de Frappes Dévastatrices":
         #    found = True
         
         #if not found:
         #    continue
-        
+
         # skip unknown links
         if('class' in link.attrs and 'unknownlink' in link['class']):
             continue
@@ -122,8 +122,31 @@ for m in multicol:
             if "coût" in data:
                 element["Coût"] = data["coût"]
             
-            liste.append(element)
-    
+            # si l'objet à plusieurs prix, alors créer les variations de l'objet
+            variations = re.split('(?<=\)),\s+|(?<=\))\s+ou\s+', element["Prix"]) 
+            if len(variations) > 1:
+                
+                added = False
+                for variation in variations:
+                    varElement = dict(element)
+                    try:
+                        price = re.search('^(.+? po) \(', variation).group(1)
+                    except:
+                        print("ERROR: Could not extract the variation detail for " + element["Nom"] + " '" + variation + "'")
+                        exit(1)
+                    try:
+                        detail = re.search('po \((.+?)\)$', variation).group(1)
+                    except:
+                        print("ERROR: Could not extract the variation detail for " + element["Nom"] + "'" + variation + "'")
+                        exit(1)
+                    varElement["Prix"] = price
+                    varElement["Nom"] = element["Nom"] + " (" + detail + ")"
+                    print("Creation de la variation " + varElement["Nom"])
+                    liste.append(varElement)
+                    
+            else:
+                liste.append(element)
+                    
 #exit(1)
 
 print("Fusion avec fichier YAML existant...")
