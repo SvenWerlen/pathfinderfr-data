@@ -43,7 +43,7 @@ URLs = [{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20spirite.ashx", 'list': True},
         ]
 
-FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'DescriptionHTML', 'Source', 'Référence' ]
 MATCH = ['Référence']
 IGNORE = ['Source']
 
@@ -55,13 +55,14 @@ IGNORE = ['Source']
 #
 def extractText(list):
     text = ""
+    html = ""
     for el in list:
         text += html2text(el)
-    return text
+        html += html2text(el, True, 2)
+    return { 'text': text, 'html': html }
   
 
 visited = []
-
 for u in URLs:
     if MOCK_LIST:
         parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml").find(id='PageContentDiv')
@@ -121,6 +122,7 @@ for u in URLs:
         
         # lire les attributs
         text = ""
+        html = ""
         for attr in content.find_all('b'):
             key = attr.text.strip()
             
@@ -144,8 +146,14 @@ for u in URLs:
                 print("- Skipping unknown property %s" % key)
 
         # lire la description
-        text = extractText(descr)
-        sort['Description']=text.strip()
+        extracts = extractText(descr)
+        plain = extracts['text']
+        html = extracts['html']
+        if html.startswith('<br/>'):
+          html = html[5:]
+
+        sort['Description']=plain.strip()
+        sort['DescriptionHTML']=html
         
         # ajouter sort
         liste.append(sort)

@@ -15,7 +15,7 @@ URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Points%20h%c3%a9ro%c3%a
 
 
 PROPERTIES = [  "Condition", "Normal", "Avantage", "Spécial"]
-FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'ConditionsRefs', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'ConditionsRefs', 'Avantage', 'AvantageHTML', 'Normal', 'Spécial', 'Source', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -65,7 +65,7 @@ mergeYAML("../data/dons.yml", MATCH, FIELDS, HEADER, liste)
 
 
 PROPERTIES = ['École', 'Niveau', 'Portée', 'Portée courte', 'Cible', 'Temps d’incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie' ]
-FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'DescriptionHTML', 'Source', 'Référence' ]
 MATCH = ['Référence']
 IGNORE = ['Source']
 

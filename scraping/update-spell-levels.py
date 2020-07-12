@@ -27,7 +27,7 @@ URLs = [{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20m%c3%a9dium.ashx", 'classe': 'Méd'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20doccultiste.ashx", 'classe': 'Occ'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20paladins.ashx", 'classe': 'Pal'},
-        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx", 'classe': 'Prê'},
+        {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20pr%c3%aatres.ashx", 'classe': 'Prê/Ora'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20psychiste.ashx", 'classe': 'Psy'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20r%c3%b4deurs.ashx", 'classe': 'Rôd'},
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20sorts%20de%20Sanguin.ashx", 'classe': 'San'},
@@ -35,7 +35,7 @@ URLs = [{'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Liste%20des%20
         {'URL': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sorts%20de%20spirite.ashx", 'classe': 'Spi'},
         ]
 
-FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'École', 'Niveau', 'Portée', 'Cible ou zone d\'effet', 'Temps d\'incantation', 'Composantes', 'Durée', 'Jet de sauvegarde', 'Résistance à la magie', 'Description', 'DescriptionHTML', 'Source', 'Référence' ]
 MATCH = ['Référence']
 
 ## Configurations pour le lancement

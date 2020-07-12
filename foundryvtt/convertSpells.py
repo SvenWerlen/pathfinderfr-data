@@ -7,6 +7,8 @@ import typing
 import sys
 import re
 
+from libData import *
+
 data = None
 with open("../data/spells.yml", 'r') as stream:
     try:
@@ -183,15 +185,17 @@ for s in data:
     comps = getComponents(s['Composantes']) if 'Composantes' in s else []
     divineFocus = getComponentsFD(comps)
     
+    description = s['DescriptionHTML'] if 'DescriptionHTML' in s else s['Description']
+    
     el = {
-        "name": s['Nom'],
+        "name": cleanTitle(s['Nom']),
         "permission": {
             "default": 0
         },
         "type": "spell",
         "data": {
             "description": {
-               "value": ("<p><b>École: </b>{}<br/>" +
+               "value": ("<div class=\"pf2frDescr\"><p><b>École: </b>{}<br/>" +
                         "<b>Niveau: </b>{}<br/>" +
                         "<b>Temps d'incantation: </b>{}<br/>" +
                         "<b>Composantes: </b>{}<br/>" +
@@ -200,8 +204,8 @@ for s in data:
                         "<b>Durée: </b>{}<br/>" +
                         "<b>Jet de sauvegarde: </b>{}<br/>" +
                         "<b>Résistance à la magie: </b>{}<br/></p>" +
-                        "<h3>Description:</h3><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
+                        "<h2>Description:</h2><p>{}</p>" +
+                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     s['École'] if 'École' in s else '-',
                     s['Niveau'],
                     s['Temps d\'incantation'] if 'Temps d\'incantation' in s else '-',
@@ -211,7 +215,7 @@ for s in data:
                     s['Durée'] if 'Durée' in s else '-',
                     s['Jet de sauvegarde'] if 'Jet de sauvegarde' in s else '-',
                     s['Résistance à la magie'] if 'Résistance à la magie' in s else '-',
-                    s['Description'].replace('\n','<br/>'),
+                    description,
                     s['Référence']),
                 "chat": "",
                 "unidentified": ""                    
