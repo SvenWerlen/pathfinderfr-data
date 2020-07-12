@@ -24,6 +24,14 @@ def getLevel(level):
     else:
         return 0
 
+#
+# nettoie la valeur de certaines particularités
+#
+def cleanValue(value):
+  value = value.strip()
+  if value.endswith(',') or value.endswith(';') or value.endswith('.'):
+    value = value[:-1].strip()
+  return value
 
 def getActivation(time):
     if not time:
@@ -142,11 +150,55 @@ def getComponentsValue(comp):
     else:
       return comp
 
-def getSave(save):
-    save = save.strip();
-    if save.endswith(';') or save.endswith('.'):
-      save = save[:-1].strip()
-    return save
+def getCasterFullName(abbr):
+  return abbr
+
+  if abbr == 'Alc':
+    return "Alchimiste"
+  elif abbr == 'Ant':
+    return "Antipaladin"
+  elif abbr == 'Bar':
+    return "Barde"
+  elif abbr == 'Chm':
+    return "Chaman"
+  elif abbr == 'Con':
+    return "Conjurateur"
+  elif abbr == 'Dru':
+    return "Druide"
+  elif abbr == 'Ens':
+    return "Ensorceleur"
+  elif abbr == 'Mag':
+    return "Magicien"
+  elif abbr == 'Mgs':
+    return "Magus"
+  elif abbr == 'Méd':
+    return "Médium"
+  elif abbr == 'Hyp':
+    return "Hypnotiseur"
+  elif abbr == 'Inq':
+    return "Inquisiteur"
+  elif abbr == 'Occ':
+    return "Occultiste"
+  elif abbr == 'Pal':
+    return "Paladin"
+  elif abbr == 'Prê':
+    return "Prêtre"
+  elif abbr == 'Ora':
+    return "Oracle"
+  elif abbr == 'Psy':
+    return "Psychiste"
+  elif abbr == 'Rôd':
+    return "Rôdeur"
+  elif abbr == 'San':
+    return "Sanguin"
+  elif abbr == 'Sor':
+    return "Sorcière"
+  elif abbr == 'Spi':
+    return "Spirite"
+  
+  print("Abbrevation not known: %s" % abbr)
+  exit(1)
+  
 
 def generateLearnAt(niveau):
     classes = []
@@ -157,10 +209,10 @@ def generateLearnAt(niveau):
       level = int(el.group(2))
       el = re.search('(\w+)/(\w+)', casters)
       if el:
-        classes.append([el.group(1), level])
-        classes.append([el.group(2), level])
+        classes.append([getCasterFullName(el.group(1)), level])
+        classes.append([getCasterFullName(el.group(2)), level])
       else:
-        classes.append([casters, level])
+        classes.append([getCasterFullName(casters), level])
       
     learnAt = {
       "class": classes,
@@ -185,7 +237,8 @@ for s in data:
     comps = getComponents(s['Composantes']) if 'Composantes' in s else []
     divineFocus = getComponentsFD(comps)
     
-    description = s['DescriptionHTML'] if 'DescriptionHTML' in s else s['Description']
+    description = s['DescriptionHTML'] if 'DescriptionHTML' in s else s['Description'].replace("\n", "<br/>")
+    description = "<div class=\"pf2frDescr\">%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, s['Référence'])
     
     el = {
         "name": cleanTitle(s['Nom']),
@@ -194,29 +247,35 @@ for s in data:
         },
         "type": "spell",
         "data": {
-            "description": {
-               "value": ("<div class=\"pf2frDescr\"><p><b>École: </b>{}<br/>" +
-                        "<b>Niveau: </b>{}<br/>" +
-                        "<b>Temps d'incantation: </b>{}<br/>" +
-                        "<b>Composantes: </b>{}<br/>" +
-                        "<b>Portée: </b>{}<br/>" +
-                        "<b>Cible ou zone d'effet: </b>{}<br/>" +
-                        "<b>Durée: </b>{}<br/>" +
-                        "<b>Jet de sauvegarde: </b>{}<br/>" +
-                        "<b>Résistance à la magie: </b>{}<br/></p>" +
-                        "<h2>Description:</h2><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
-                    s['École'] if 'École' in s else '-',
+            "description": {  ## based on PF1 spell template
+               "value": ("<div class=\"spell-description\">" +
+                         "<p>" +
+                            "<strong>École</strong>&nbsp;{}; " +
+                            "<strong>Niveau</strong>&nbsp;{}; " +
+                         "</p>" +
+                         "<p>" +
+                            "<strong>Temps d'incantation</strong>&nbsp;{}<br> " +
+                            "<strong>Composants</strong>&nbsp;{}<br/> " +
+                         "</p>" +
+                         "<p>" +
+                            "<strong>Portée</strong>&nbsp;{}<br> " +
+                            "<strong>Cibles</strong>&nbsp;{}<br> " +
+                            "<strong>Durée</strong>&nbsp;{}<br> " +
+                            "<strong>Jet de sauvegarde</strong>&nbsp;{}; " +
+                            "<strong>Résistance à la magie</strong>&nbsp;{}<br>" +
+                         "</p>" +
+                         "<h2>Description</h2>{}" +
+                         "</div>").format(
+                    cleanValue(s['École']) if 'École' in s else '-',
                     s['Niveau'],
-                    s['Temps d\'incantation'] if 'Temps d\'incantation' in s else '-',
-                    s['Composantes'] if 'Composantes' in s else '-',
-                    s['Portée'] if 'Portée' in s else '-',
-                    s['Cible ou zone d\'effet'] if 'Cible ou zone d\'effet' in s else '-',
-                    s['Durée'] if 'Durée' in s else '-',
-                    s['Jet de sauvegarde'] if 'Jet de sauvegarde' in s else '-',
-                    s['Résistance à la magie'] if 'Résistance à la magie' in s else '-',
-                    description,
-                    s['Référence']),
+                    cleanValue(s['Temps d\'incantation']) if 'Temps d\'incantation' in s else '-',
+                    cleanValue(s['Composantes']) if 'Composantes' in s else '-',
+                    cleanValue(s['Portée']) if 'Portée' in s else '-',
+                    cleanValue(s['Cible ou zone d\'effet']) if 'Cible ou zone d\'effet' in s else '-',
+                    cleanValue(s['Durée']) if 'Durée' in s else '-',
+                    cleanValue(s['Jet de sauvegarde']) if 'Jet de sauvegarde' in s else '-',
+                    cleanValue(s['Résistance à la magie']) if 'Résistance à la magie' in s else '-',
+                    description),
                 "chat": "",
                 "unidentified": ""                    
             },
@@ -252,7 +311,7 @@ for s in data:
             },
             "save": {
                 "dc": "0",
-                "description": getSave(s['Jet de sauvegarde']) if 'Jet de sauvegarde' in s else '-',
+                "description": cleanValue(s['Jet de sauvegarde']) if 'Jet de sauvegarde' in s else '-',
                 "type": None
             },
             "effectNotes": "",
@@ -286,8 +345,8 @@ for s in data:
                 "preparedAmount": 0,
                 "maxAmount": 0
             },
-            "sr": False,
-            "shortDescription": s['Description'].replace('\n','<br/>'),
+            "sr": True if 'Résistance à la magie' in s and "oui" in s['Résistance à la magie'].lower() else False,
+            "shortDescription": description,
             "spellDuration": s['Durée'] if 'Durée' in s else '-',
             "spellEffect": "",
             "spellArea": "",
