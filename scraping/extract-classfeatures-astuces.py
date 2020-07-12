@@ -16,7 +16,7 @@ MOCK_ASTUCE = None
 #MOCK_ASTUCE = "mocks/astuces.html"       # décommenter pour tester avec les astuces pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.astuces.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ LVL = 2
 astuce = {'Niveau':LVL}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'AG'
 for s in section:
     if s.name == 'h2' and "Description des astuces de maître" in s.text:
@@ -48,10 +49,12 @@ for s in section:
                     if newObj:
                         astuce['Classe'] = 'Ninja'
                         astuce['Description'] = descr.strip()
+                        astuce['DescriptionHTML'] = descrHTML
                         liste.append(astuce)
                         astuce = {'Niveau':LVL}
                         
                     descr = ""
+                    descrHTML = ""
                     astuce['Nom'] = u"Astuce: " + nom
                     astuce['Source'] = source
                     astuce['Référence'] = reference
@@ -60,6 +63,7 @@ for s in section:
                 
                 else:
                     descr += html2text(el)
+                    descrHTML += html2text(el, True, 2)
     
 
 # last element        
