@@ -8,6 +8,7 @@ import sys
 import csv
 
 from libBuffs import *
+from libData import *
 
 COL = 5 # number of columns in sheet for 1 feat
 NUM = 3 # number of buffs
@@ -71,20 +72,23 @@ for d in data:
     continue
   duplicates.append(d['Nom'])
 
+  avantage = d['AvantageHTML'] if 'AvantageHTML' in d else None
+  if not avantage:
+    print("No HTML for: %s" % d['Nom'])
+    avantage = d['Avantage'] if 'Avantage' in d else '-'
+  
+  description = "<p><i>%s</i></p><p><b>Prérequis:</b> %s<p/><p><b>Avantage: </b>%s<p/><p><b>Référence:</b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
+    % (d['Résumé'] if 'Résumé' in d else "", d['Conditions'] if 'Conditions' in d else '-', avantage, d['Référence'])
 
   el = {
-    "name": d['Nom'],
+    "name": cleanTitle(d['Nom']),
     "permission": {
         "default": 0
     },
     "type": "feat",
     "data": {
       "description": {
-          "value": "<p><i> {}</i></p><p><b>Prérequis: </b>{}<p/><p><b>Avantage: </b>{}<p/><p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>".format(
-              d['Résumé'] if 'Résumé' in d else "",
-              d['Conditions'] if 'Conditions' in d else '-',
-              d['Avantage'],
-              d['Référence']),
+          "value": "<div class=\"pf2frDescr\">%s</div>" % description,
           "chat": "",
           "unidentified": ""
       },
