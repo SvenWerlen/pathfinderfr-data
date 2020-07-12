@@ -16,7 +16,7 @@ MOCK_BENE = None
 #MOCK_BENE = "mocks/benedictions.html"       # décommenter pour tester avec les bénédictions pré-téléchargées
 
 URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20de%20lair.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -26,6 +26,7 @@ print("Extraction des aptitude (bénédictions)...")
 def extractClassFeature(name, liste, section, baseURL):
     newObj = False
     descr = ""
+    descrHTML = ""
 
     altLink = []
     classfeature = None
@@ -33,11 +34,13 @@ def extractClassFeature(name, liste, section, baseURL):
         if s.name == 'h3':
             if newObj:
                 classfeature['Description'] = cleanInlineDescription(descr)
+                classfeature['DescriptionHTML'] = cleanInlineDescription(descrHTML)
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
                 liste.append(classfeature)
 
             classfeature = {'Auto': False }
             descr = ""
+            descrHTML = ""
             newObj = True
             altLink = []
             classfeature['Nom'] = name + ": " + cleanSectionName(s.text)
@@ -47,12 +50,14 @@ def extractClassFeature(name, liste, section, baseURL):
 
         else:
             descr += html2text(s)
+            descrHTML += html2text(s, True, 2)
     
     if not classfeature:
         return
     
     ## last element
     classfeature['Description'] = cleanInlineDescription(descr)
+    classfeature['DescriptionHTML'] = cleanInlineDescription(descrHTML)
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
     liste.append(classfeature)
     
