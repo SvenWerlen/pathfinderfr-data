@@ -109,7 +109,14 @@
     d’Acrobaties de cette manière, il est considéré comme pris au dépourvu et il perd
     son bonus de Dextérité à la CA (s’il en a un). S’il subit des dégâts alors qu’il
     utilise cette compétence, il doit immédiatement réaliser un nouveau test de compétence
-    contre le DD initial pour éviter de chuter ou de tomber à terre.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Éviter
+    contre le DD initial pour éviter de chuter ou de tomber à terre.<br/><br/><table><caption>DD
+    aux test d''acrobatie en fonction de la largeur de la surface</caption><tr class="title"><td>Largeur
+    de la surface</td><td>DD de base du test d’Acrobaties</td></tr><tr><td>plus de
+    90 cm</td><td>0*</td></tr><tr><td>de 30 cm à 90 cm</td><td>5*</td></tr><tr><td>de
+    15 cm à 30 cm</td><td>10</td></tr><tr><td>de 5 cm à 15 cm</td><td>15</td></tr><tr><td>moins
+    de 5 cm</td><td>20</td></tr><tr><td colspan="2" class="note">(*) Aucun test d’Acrobaties
+    n’est nécessaire pour se déplacer  sur ces surfaces, à moins que les modificateurs
+    des  surfaces accroissent le DD au-delà de 9.</td></tr></table><br/><br/><b>Éviter
     une attaque d''opportunité.</b> Le personnage peut également utiliser la compétence
     d’Acrobaties pour traverser l’espace contrôlé par un ennemi sans provoquer d’attaque
     d''opportunité de la part de celui-ci. Ce mouvement s’accomplit normalement à
@@ -124,28 +131,36 @@
     d’Acrobaties de cette manière mais il lui faut alors une action complexe pour
     se déplacer de 1,50 m (1 case) et le DD est augmenté de 5. Si le personnage tente
     de se déplacer à travers l''espace occupé par un ennemi et échoue à son test d''Acrobaties,
-    son action de mouvement est perdue et il provoque une attaque d''opportunité.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Sauter.</b>
-    Enfin, le personnage peut utiliser la compétence d’Acrobaties pour sauter ou pour
-    amortir une chute. Pour calculer le DD de base, on divise la distance à traverser
-    par 1,50 cm (dans le cas d’un saut horizontal) ou la hauteur à atteindre par 30
-    cm (dans le cas d’un saut vertical). Ces DD sont doublés si le personnage ne dispose
-    pas d’au moins 3 m (2 cases) d’élan. Les seuls modificateurs d’Acrobaties qui
-    s’appliquent pour ces tests sont ceux qui se rapportent à la surface à partir
-    de laquelle le personnage effectue le saut. Si le test échoue de 4 points ou moins,
-    le personnage peut tenter un jet de Réflexes de DD 20 pour se rattraper au bord.
-    Si le test échoue de 5 points ou plus, le personnage ne parvient pas à sauter
-    assez loin/haut et il chute ou tombe à terre (dans le cas d’un saut vertical).
-    Les créatures qui possèdent une vitesse de déplacement au sol de plus de 9 m (6
-    cases) bénéficient d’un bonus racial aux tests d’Acrobaties relatifs à des sauts
-    ; ce bonus est de +4 pour chaque tranche de 3 m (2 cases) de vitesse au-delà de
-    9 m (6 cases). Les créatures qui possèdent une vitesse de déplacement au sol de
-    moins de 9 m (6 cases) reçoivent quant à elles un malus racial aux tests d’Acrobaties
-    relatifs à des sauts ; ce malus vaut -4 pour chaque tranche de 3 m (2 cases) de
-    vitesse au-dessous de 9 m (6 cases). Un saut ne permet pas de se déplacer au-delà
-    de la distance maximale qu’il est possible de parcourir en un round. Dans le cas
-    d’un saut avec élan, le résultat du test d’Acrobaties indique la distance parcourue
-    (en unités de 30 cm) et, dans le cas d’un échec, la distance à laquelle le personnage
-    est retombé. Cette distance est divisée par deux dans le cas d’un saut en longueur
+    son action de mouvement est perdue et il provoque une attaque d''opportunité.<br/><br/><table><caption>tests
+    d''acrobaties en espace contrôlé</caption><tr class="title"><td>Situation</td><td>DD
+    de base du test d’Acrobaties*</td></tr><tr><td>traverser une zone contrôlée par
+    un ennemi</td><td>degré de manœuvres défensives de l’ennemi</td></tr><tr><td>traverser
+    l’espace occupé par un ennemi</td><td>degré de manœuvres défensives de l’ennemi
+    + 5</td></tr><tr><td colspan="2" class="note">(*) Ce DD permet d’éviter une attaque
+    d’opportunité causée par le mouvement. Pour chaque ennemi  supplémentaire (au-delà
+    du premier) dont on tente d’éviter une attaque d’opportunité au cours du  round,
+    le DD augmente de 2.</td></tr></table><br/><br/><b>Sauter.</b> Enfin, le personnage
+    peut utiliser la compétence d’Acrobaties pour sauter ou pour amortir une chute.
+    Pour calculer le DD de base, on divise la distance à traverser par 1,50 cm (dans
+    le cas d’un saut horizontal) ou la hauteur à atteindre par 30 cm (dans le cas
+    d’un saut vertical). Ces DD sont doublés si le personnage ne dispose pas d’au
+    moins 3 m (2 cases) d’élan. Les seuls modificateurs d’Acrobaties qui s’appliquent
+    pour ces tests sont ceux qui se rapportent à la surface à partir de laquelle le
+    personnage effectue le saut. Si le test échoue de 4 points ou moins, le personnage
+    peut tenter un jet de Réflexes de DD 20 pour se rattraper au bord. Si le test
+    échoue de 5 points ou plus, le personnage ne parvient pas à sauter assez loin/haut
+    et il chute ou tombe à terre (dans le cas d’un saut vertical). Les créatures qui
+    possèdent une vitesse de déplacement au sol de plus de 9 m (6 cases) bénéficient
+    d’un bonus racial aux tests d’Acrobaties relatifs à des sauts ; ce bonus est de
+    +4 pour chaque tranche de 3 m (2 cases) de vitesse au-delà de 9 m (6 cases). Les
+    créatures qui possèdent une vitesse de déplacement au sol de moins de 9 m (6 cases)
+    reçoivent quant à elles un malus racial aux tests d’Acrobaties relatifs à des
+    sauts ; ce malus vaut -4 pour chaque tranche de 3 m (2 cases) de vitesse au-dessous
+    de 9 m (6 cases). Un saut ne permet pas de se déplacer au-delà de la distance
+    maximale qu’il est possible de parcourir en un round. Dans le cas d’un saut avec
+    élan, le résultat du test d’Acrobaties indique la distance parcourue (en unités
+    de 30 cm) et, dans le cas d’un échec, la distance à laquelle le personnage est
+    retombé. Cette distance est divisée par deux dans le cas d’un saut en longueur
     sans élan.<br/><br/>Lorsque le personnage se laisse tomber d’une certaine hauteur
     (ou en cas d’une chute résultant d’un saut raté), un test d’Acrobaties de DD 15
     lui permet d’ignorer les trois premiers mètres de la hauteur de chute, mais il
@@ -154,14 +169,26 @@
     nombreuses circonstances peuvent modifier les chances de réussite d’un test d’Acrobaties.
     Les modificateurs suivants s’appliquent aux DD de tous les tests d’Acrobaties.
     Ils se cumulent entre eux mais, pour chaque type de circonstances, seul le modificateur
-    le plus important s’applique.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>
-    <b>Sans objet.</b> Les tests d’Acrobaties font partie d’une autre action (comme
-    un mouvement) ou se font en réaction à une situation.<br/><br/><h2>Spécial</h2>
-    Un personnage possédant un rang de 3 ou plus en Acrobaties bénéficie d’un bonus
-    d’esquive de +3 à la CA lorsqu’il combat sur la défensive (au lieu du bonus normal
-    de +2) et d’un bonus d’esquive de +6 à la CA lorsqu’il décide de se mettre en
-    défense totale (au lieu du bonus normal de +4). Un personnage possédant le don
-    Voltigeur obtient un bonus aux tests d’Acrobaties.<br/><br/> '
+    le plus important s’applique.<br/><br/><table><caption>Modificateurs de circonstances
+    du test d''Acrobaties</caption><tr class="title"><td>Circonstances du test d’Acrobaties</td><td>Modificateur
+    au DD</td></tr><tr><td>surface légèrement encombrée (décombres épars, sable)</td><td>
+    +2</td></tr><tr><td>surface très encombrée (sol d’une caverne, décombres nombreux)</td><td>+5</td></tr><tr><td>surface
+    légèrement glissante (sol humide)</td><td>+2</td></tr><tr><td>surface très glissante
+    (verglas, glace)</td><td>+5</td></tr><tr><td>surface légèrement en pente (moins
+    de 45°)</td><td>+2</td></tr><tr><td>surface en pente forte (plus de 45°)</td><td>+5</td></tr><tr><td>surface
+    légèrement instable (bateau sur des eaux agitées)</td><td>+2</td></tr><tr><td>surface
+    très instable (navire pris dans une tempête)</td><td>+5</td></tr><tr><td>surface
+    extrêmement instable (tremblement de terre)</td><td>+10</td></tr><tr><td>mouvement
+    à pleine vitesse sur des surfaces étroites ou difficiles</td><td>+5*</td></tr><tr><td
+    colspan="2" class="note">(*) Ce modificateur ne s’applique pas dans le cas de
+    sauts.</td></tr></table><br/><br/><h2>Action</h2> <b>Sans objet.</b> Les tests
+    d’Acrobaties font partie d’une autre action (comme un mouvement) ou se font en
+    réaction à une situation.<br/><br/><h2>Spécial</h2> Un personnage possédant un
+    rang de 3 ou plus en Acrobaties bénéficie d’un bonus d’esquive de +3 à la CA lorsqu’il
+    combat sur la défensive (au lieu du bonus normal de +2) et d’un bonus d’esquive
+    de +6 à la CA lorsqu’il décide de se mettre en défense totale (au lieu du bonus
+    normal de +4). Un personnage possédant le don Voltigeur obtient un bonus aux tests
+    d’Acrobaties.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Acrobaties.ashx
   
 - Nom: Art de la magie
@@ -239,18 +266,27 @@
     \ ou du savoir-faire du personnage dans le domaine de l’incantation des sorts\
     \ ou de la création d’objets magiques. Elle permet également d’identifier les\
     \ propriétés des objets magiques à l’aide de sorts tels que détection de la magie\
-    \ ou identification. Le DD du test dépend de la tâche tentée.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
-    \ Identifier un sort au moment où il est lancé ne requiert aucune action mais\
-    \ le personnage doit être capable de voir l’incantation. Cela signifie que les\
-    \ malus dus à la distance, à de mauvaises conditions de visibilité ou à d’autres\
-    \ facteurs associés à la compétence de Perception s’appliquent également à ce\
-    \ test. Apprendre un sort à partir d’un grimoire prend une heure par niveau du\
-    \ sort (les sorts de niveau 0 requièrent trente minutes). Préparer un sort à partir\
-    \ d’un grimoire emprunté n’allonge pas le temps nécessaire à la préparation des\
-    \ sorts. Les jets d’Art de la magie réalisés dans le cadre de la fabrication d’un\
-    \ objet sont intégrés au procédé de création. Tenter de déterminer les propriétés\
-    \ d’un objet magique prend trois rounds par objet à identifier et n’est possible\
-    \ que si le personnage peut examiner l’objet en question sous toutes les coutures.<br/><br/><h2>Nouvelles\
+    \ ou identification. Le DD du test dépend de la tâche tentée.<br/><br/><table><caption>DD\
+    \ des tests d’Art de la magie</caption><tr class=\"title\"><td>Tâche</td><td>DD\
+    \ du test d’Art de la magie</td></tr><tr><td>Identifier un sort lorsqu’il est\
+    \ lancé</td><td>15 + niveau du sort</td></tr><tr><td>Apprendre un sort à partir\
+    \ d’un grimoire ou d’un parchemin</td><td>15 + niveau du sort</td></tr><tr><td>Préparer\
+    \ un sort à partir d’un grimoire emprunté</td><td>15 + niveau du sort</td></tr><tr><td>Identifier\
+    \ les propriétés d’un objet magique en utilisant le sort de détection de la magie</td><td>15\
+    \ + NLS de l’objet magique</td></tr><tr><td>Déchiffrer un parchemin</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Fabriquer un objet magique</td><td>Variable\
+    \ selon les objets</td></tr></table><br/><br/><h2>Action</h2> Identifier un sort\
+    \ au moment où il est lancé ne requiert aucune action mais le personnage doit\
+    \ être capable de voir l’incantation. Cela signifie que les malus dus à la distance,\
+    \ à de mauvaises conditions de visibilité ou à d’autres facteurs associés à la\
+    \ compétence de Perception s’appliquent également à ce test. Apprendre un sort\
+    \ à partir d’un grimoire prend une heure par niveau du sort (les sorts de niveau\
+    \ 0 requièrent trente minutes). Préparer un sort à partir d’un grimoire emprunté\
+    \ n’allonge pas le temps nécessaire à la préparation des sorts. Les jets d’Art\
+    \ de la magie réalisés dans le cadre de la fabrication d’un objet sont intégrés\
+    \ au procédé de création. Tenter de déterminer les propriétés d’un objet magique\
+    \ prend trois rounds par objet à identifier et n’est possible que si le personnage\
+    \ peut examiner l’objet en question sous toutes les coutures.<br/><br/><h2>Nouvelles\
     \ tentatives</h2> Les tests visant à identifier un sort ne peuvent pas être répétés.\
     \ Si le test échoue lorsque le personnage tente d’apprendre un sort à partir d’un\
     \ grimoire ou d’un parchemin, il doit patienter au moins une semaine avant de\
@@ -415,15 +451,41 @@
     \ » est égal à un tiers du prix indiqué, exactement comme pour les matières premières.<br/><br/>\
     \ <b>Réparation d’objets.</b> En règle générale, on répare un objet en réussissant\
     \ un test de compétence dont le DD est le même que celui de la fabrication. Le\
-    \ coût de la réparation se monte à un cinquième du prix de l’objet.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>\
-    \ <b>Sans objet.</b> Les tests d’Artisanat se font à la semaine ou à la journée\
-    \ (voir ci-dessus).<br/><br/><h2>Nouvelles tentatives</h2> Oui, mais chaque fois\
-    \ que le test est raté d’au moins 5 points, la moitié des matières premières sont\
-    \ gâchées et il faut les racheter.<br/><br/><h2>Spécial</h2> Le personnage peut\
-    \ choisir d’ajouter +10 au DD indiqué pour créer un objet. Cela lui permet de\
-    \ le fabriquer plus rapidement (puisque le résultat du test sera multiplié par\
-    \ un DD plus élevé afin de déterminer la progression). Le personnage doit effectuer\
-    \ ce choix avant de réaliser le test hebdomadaire ou quotidien.<br/><br/>Pour\
+    \ coût de la réparation se monte à un cinquième du prix de l’objet.<br/><br/><table><caption>Formes\
+    \ d’Artisanat</caption><tr class=\"title\"><td>Objet</td><td>Forme d’artisanat</td><td>DD\
+    \ du test d’Artisanat</td></tr><tr><td>acide</td><td>alchimie</td><td>15</td></tr><tr><td>allume-feu,\
+    \ bâton fumigène ou feu grégeois</td><td>alchimie</td><td>20</td></tr><tr><td>antitoxine,\
+    \ bâton éclairant, pierre tonnerre ou sacoche immobilisante</td><td>alchimie</td><td>25</td></tr><tr><td>armure\
+    \ ou bouclier</td><td>armures</td><td>10 + bonus de CA</td></tr><tr><td>arc long,\
+    \ arc court ou flèches</td><td>arcs</td><td>12</td></tr><tr><td>arc long composite\
+    \ ou arc court composite</td><td>arcs</td><td>15</td></tr><tr><td>arc long composite\
+    \ ou arc court composite avec une limite de Force</td><td>arcs</td><td>15 + (2\
+    \ × limite)</td></tr><tr><td>piège mécanique</td><td>pièges</td><td>variable*</td></tr><tr><td>arbalète\
+    \ ou carreaux</td><td>armes</td><td>15</td></tr><tr><td>arme courante (corps à\
+    \ corps ou à distance)</td><td>armes</td><td>12</td></tr><tr><td>arme de guerre\
+    \ (corps à corps ou à distance)</td><td>armes</td><td>15</td></tr><tr><td>arme\
+    \ exotique (corps à corps ou à distance)</td><td>armes</td><td>18</td></tr><tr><td>objet\
+    \ très simple (cuillère en bois)</td><td>variable</td><td>5</td></tr><tr><td>objet\
+    \ courant (pot de fer)</td><td>variable</td><td>10</td></tr><tr><td>objet de qualité\
+    \ (cloche)</td><td>variable</td><td>15</td></tr><tr><td>objet complexe ou de qualité\
+    \ supérieure (serrure)</td><td>variable</td><td>20</td></tr><tr><td>Arme fragile</td><td>Arme\
+    \ ou arc normal</td><td>-5</td></tr><tr><td>Arme à feu à une main</td><td>Arme\
+    \ à feu</td><td>20</td></tr><tr><td>Arme à feu à deux mains</td><td>Arme à feu</td><td>20</td></tr><tr><td>Arme\
+    \ à feu de siège lourde</td><td>Arme à feu</td><td>25</td></tr><tr><td>Arme à\
+    \ feu de siège intermédiaire</td><td>Arme à feu</td><td>30</td></tr><tr><td>Arme\
+    \ à feu de siège légère</td><td>Arme à feu</td><td>35</td></tr><tr><td>Engin de\
+    \ siège à distance lourd</td><td>Engin de siège</td><td>20</td></tr><tr><td>Engin\
+    \ de siège à distance intermédiaire</td><td>Engin de siège</td><td>25</td></tr><tr><td>Engin\
+    \ de siège à distance léger</td><td>Engin de siège</td><td>30</td></tr><tr><td\
+    \ colspan=\"3\" class=\"note\">(*) Des règles spécifiques régissent la création\
+    \ des pièges.</td></tr></table><br/><br/><h2>Action</h2> <b>Sans objet.</b> Les\
+    \ tests d’Artisanat se font à la semaine ou à la journée (voir ci-dessus).<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Oui, mais chaque fois que le test est raté d’au moins 5 points,\
+    \ la moitié des matières premières sont gâchées et il faut les racheter.<br/><br/><h2>Spécial</h2>\
+    \ Le personnage peut choisir d’ajouter +10 au DD indiqué pour créer un objet.\
+    \ Cela lui permet de le fabriquer plus rapidement (puisque le résultat du test\
+    \ sera multiplié par un DD plus élevé afin de déterminer la progression). Le personnage\
+    \ doit effectuer ce choix avant de réaliser le test hebdomadaire ou quotidien.<br/><br/>Pour\
     \ fabriquer un objet à l’aide de la compétence Artisanat (alchimie), il faut disposer\
     \ d’un équipement d’alchimiste. Si le travail s’effectue en ville, le coût du\
     \ matériel est compris dans celui des ingrédients, mais il est particulièrement\
@@ -519,7 +581,14 @@
     \ résultats du jet de dé de la créature qui tente de mentir. Il est important\
     \ de noter que certains mensonges sont si incroyables qu’il est impossible de\
     \ convaincre qui que ce soit qu’il s’agit de la vérité (ces cas sont laissés à\
-    \ l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Feinter\
+    \ l’appréciation du MJ).<br/><br/><table><caption>Tests de bluff</caption><tr\
+    \ class=\"title\"><td>Circonstances</td><td>Modificateur au test de Bluff</td></tr><tr><td>La\
+    \ cible veut croire le personnage.</td><td>+5</td></tr><tr><td>Le mensonge est\
+    \ crédible.</td><td>+0</td></tr><tr><td>Le mensonge est peu crédible.</td><td>-5</td></tr><tr><td>Le\
+    \ mensonge est très peu crédible.</td><td>-10</td></tr><tr><td>Le mensonge est\
+    \ impossible à croire.</td><td>-20</td></tr><tr><td>La cible est saoule ou ses\
+    \ capacités sont affaiblies pour une raison ou une autre.</td><td>+5</td></tr><tr><td>Le\
+    \ personnage possède une preuve convaincante.</td><td>jusqu’à +10</td></tr></table><br/><br/><b>Feinter\
     \ en combat.</b> Le personnage peut également utiliser la compétence de Bluff\
     \ pour tromper son adversaire lors d’un combat et lui enlever le bénéfice de son\
     \ bonus de Dextérité à la CA jusqu’à sa prochaine attaque. Le DD de ce test est\
@@ -653,18 +722,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (folklore local)
@@ -771,18 +880,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (géographie)
@@ -889,18 +1038,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (histoire)
@@ -1007,18 +1196,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (ingénierie)
@@ -1125,18 +1354,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (mystères)
@@ -1243,18 +1512,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (nature)
@@ -1361,18 +1670,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (noblesse)
@@ -1479,18 +1828,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (plans)
@@ -1597,18 +1986,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Connaissances (religion)
@@ -1715,18 +2144,58 @@
     \ Il se rappelle d’une information utile en plus par tranche de 5 points entre\
     \ son résultat et le DD du test. Certaines compétences de Connaissances peuvent\
     \ également être utilisées pour des tâches spécifiques, comme indiqué dans la\
-    \ table ci-après.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/>\
-    \ <h2>Action</h2> Généralement, aucune. La plupart du temps, les tests de Connaissances\
-    \ ne prennent pas d’action (voir « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles\
-    \ tentatives</h2> Non. Le test de compétence représente ce que le personnage sait\
-    \ ; réfléchir de nouveau à la question ne lui permet pas d’en apprendre davantage\
-    \ sur le sujet.<br/><br/> <h2>Utilisation sans formation</h2> Un test sans formation\
-    \ échoue automatiquement lorsque le DD est supérieur à 10. Si le personnage a\
-    \ accès à une grande bibliothèque consacrée à un domaine particulier, cette restriction\
-    \ ne s’applique pas mais le temps nécessaire pour conduire une recherche passe\
-    \ à 1d4 heures. Dans le cas de bibliothèques très complètes, le personnage pourrait\
-    \ même bénéficier d’un bonus aux tests de Connaissances pour les domaines d’étude\
-    \ qui y sont représentés. \r \t"
+    \ table ci-après.<br/><br/><table><caption>DD des tests de Connaissances</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>Domaine d’étude</td><td>DD</td></tr><tr><td>Identifier\
+    \ les auras magiques avec un sort de détection de la magie</td><td>mystères</td><td>15\
+    \ + niveau du sort</td></tr><tr><td>Identifier un effet de sort déjà actif</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Reconnaître des matériaux créés par magie</td><td>mystères</td><td>20\
+    \ + niveau du sort</td></tr><tr><td>Identifier un sort ayant pris le personnage\
+    \ pour cible</td><td>mystères</td><td>25 + niveau du sort</td></tr><tr><td>Identifier\
+    \ un sort lancé en utilisant une composante matérielle</td><td>mystères</td><td>20</td></tr><tr><td>Identifier\
+    \ un danger souterrain</td><td>exploration souterraine</td><td>15 + FP du danger</td></tr><tr><td>Identifier\
+    \ un minerai, une roche ou un métal</td><td>exploration souterraine</td><td>10</td></tr><tr><td>Déterminer\
+    \ l’inclinaison d’une pente</td><td>exploration souterraine</td><td>15</td></tr><tr><td>Déterminer\
+    \ la profondeur à laquelle le personnage se trouve (sous terre)</td><td>exploration\
+    \ souterraine</td><td>20</td></tr><tr><td>Reconnaître une construction dangereuse</td><td>ingénierie</td><td>10</td></tr><tr><td>Déterminer\
+    \ le style ou l’âge d’un édifice</td><td>ingénierie</td><td>15</td></tr><tr><td>Déterminer\
+    \ les points faibles d’un édifice</td><td>ingénierie</td><td>20</td></tr><tr><td>Reconnaître\
+    \ l’ethnie ou l’accent d’une créature</td><td>géographie</td><td>10</td></tr><tr><td>Connaître\
+    \ les caractéristiques géographiques d’une région</td><td>géographie</td><td>15</td></tr><tr><td>Connaître\
+    \ l’emplacement du lieu d’habitation ou du site important le plus proche d’un\
+    \ endroit donné</td><td>géographie</td><td>20</td></tr><tr><td>Connaître un événement\
+    \ récent ou un événement historique important</td><td>histoire</td><td>10</td></tr><tr><td>Déterminer\
+    \ la date approximative où un événement spécifique a eu lieu</td><td>histoire</td><td>15</td></tr><tr><td>Connaître\
+    \ un événement historique ancien ou mal connu</td><td>histoire</td><td>20</td></tr><tr><td>Connaître\
+    \ les lois, les dirigeants et les endroits populaires de la région</td><td>folklore\
+    \ local</td><td>10</td></tr><tr><td>Connaître une rumeur assez répandue ou une\
+    \ tradition locale</td><td>folklore local</td><td>15</td></tr><tr><td>Connaître\
+    \ une organisation secrète, ses dirigeants et savoir comment les rencontrer</td><td>folklore\
+    \ local</td><td>20</td></tr><tr><td>Identifier un danger naturel</td><td>nature</td><td>15\
+    \ + FP du danger</td></tr><tr><td>Identifier une plante ou un animal commun</td><td>nature</td><td>10</td></tr><tr><td>Identifier\
+    \ un phénomène climatique anormal</td><td>nature</td><td>15</td></tr><tr><td>Reconnaître\
+    \ la main de l’homme dans un élément qui semble naturel</td><td>nature</td><td>20</td></tr><tr><td>Connaître\
+    \ les dirigeants actuels et leurs blasons</td><td>noblesse</td><td>10</td></tr><tr><td>Connaître\
+    \ les règles de l’étiquette</td><td>noblesse</td><td>15</td></tr><tr><td>Connaître\
+    \ les prétendants au trône</td><td>noblesse</td><td>20</td></tr><tr><td>Connaître\
+    \ le nom des plans</td><td>plans</td><td>10</td></tr><tr><td>Reconnaître le plan\
+    \ sur lequel le personnage se trouve</td><td>plans</td><td>15</td></tr><tr><td>Identifier\
+    \ l’origine d’une créature provenant d’un autre plan</td><td>plans</td><td>20</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité courante ou identifier un membre de son clergé</td><td>religion</td><td>10</td></tr><tr><td>Connaître\
+    \ les grandes lignes de la mythologie et de la doctrine d’une foi</td><td>religion</td><td>15</td></tr><tr><td>Reconnaître\
+    \ le symbole d’une divinité peu connue ou identifier un membre de son clergé</td><td>religion</td><td>20</td></tr><tr><td>Connaître\
+    \ les capacités et les points faibles d’un monstre</td><td>variable</td><td>10\
+    \ + FP du monstre</td></tr></table><br/><br/> <h2>Action</h2> Généralement, aucune.\
+    \ La plupart du temps, les tests de Connaissances ne prennent pas d’action (voir\
+    \ « Utilisation sans formation », ci-dessous).<br/><br/><h2>Nouvelles tentatives</h2>\
+    \ Non. Le test de compétence représente ce que le personnage sait ; réfléchir\
+    \ de nouveau à la question ne lui permet pas d’en apprendre davantage sur le sujet.<br/><br/>\
+    \ <h2>Utilisation sans formation</h2> Un test sans formation échoue automatiquement\
+    \ lorsque le DD est supérieur à 10. Si le personnage a accès à une grande bibliothèque\
+    \ consacrée à un domaine particulier, cette restriction ne s’applique pas mais\
+    \ le temps nécessaire pour conduire une recherche passe à 1d4 heures. Dans le\
+    \ cas de bibliothèques très complètes, le personnage pourrait même bénéficier\
+    \ d’un bonus aux tests de Connaissances pour les domaines d’étude qui y sont représentés.\
+    \ \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Connaissances.ashx
   
 - Nom: Déguisement
@@ -1840,12 +2309,23 @@
     \ normale. Il peut se déguiser en une créature qui a au plus une catégorie de\
     \ taille de plus ou de moins que sa taille normale. Si le personnage se retrouve\
     \ en situation de combat alors qu’il est déguisé, il continue d’utiliser sa taille\
-    \ et son allonge normales.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr><br/><br/>Si\
+    \ et son allonge normales.<br/><br/><table><caption>Tests de déguisement</caption><tr\
+    \ class=\"title\"><td>Déguisement</td><td>Modificateur au test de Déguisement</td></tr><tr><td>Petits\
+    \ détails seulement</td><td>+5</td></tr><tr><td>Sexe différent</td><td>-2</td></tr><tr><td>Race\
+    \ différente</td><td>-2</td></tr><tr><td>Catégorie d’âge différente</td><td>-2</td></tr><tr><td>Catégorie\
+    \ de taille différente</td><td>-10</td></tr><tr><td colspan=\"2\" class=\"note\"\
+    >(1) Ces modificateurs se cumulent entre eux. Utilisez tous ceux qui s’appliquent.</td></tr><tr><td\
+    \ colspan=\"2\" class=\"note\">(2) Par catégorie de différence entre la catégorie\
+    \ d’âge du personnage et celle correspondant au déguisement. Les catégories sont\
+    \ les suivantes : jeune (avant l’âge adulte), adulte, âge moyen, grand âge, vénérable.</td></tr></table><br/><br/>Si\
     \ l’aventurier tente de se faire passer pour un individu spécifique, ceux qui\
     \ connaissent ce dernier bénéficient d’un bonus supplémentaire à leur test de\
     \ Perception, comme indiqué dans la table suivante. De plus, on considère qu’ils\
     \ se montrent automatiquement soupçonneux à l’égard du personnage, ce qui justifie\
-    \ systématiquement un test opposé.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Les\
+    \ systématiquement un test opposé.<br/><br/><table><caption>degré de familiarité</caption><tr\
+    \ class=\"title\"><td>Bonus au test de Degré de familiarité</td><td>Perception\
+    \ de l’observateur</td></tr><tr><td>connaissance, connu de vue</td><td>+4</td></tr><tr><td>ami\
+    \ ou associé</td><td>+6</td></tr><tr><td>ami proche</td><td>+8</td></tr><tr><td>intime</td><td>+10</td></tr></table><br/><br/>Les\
     \ observateurs reçoivent un test de Perception pour percer le déguisement du personnage\
     \ dès qu’ils le rencontrent, puis chaque heure par la suite. Si le personnage\
     \ croise un grand nombre d’individus différents sans s’attarder auprès d’eux,\
@@ -1992,25 +2472,40 @@
     \ l’intention de nuire au personnage ou à ses alliés dans les quelques secondes\
     \ à venir. Les modifications d’attitude résultant d’un test de Diplomatie persistent\
     \ en moyenne pendant 1d4 heures mais elles peuvent durer plus ou moins longtemps\
-    \ selon les situations (à l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Le\
-    \ personnage peut tenter de demander un service à une créature dont l’attitude\
-    \ est indifférente, amicale ou serviable. Cela nécessite un nouveau test de Diplomatie\
-    \ dont on détermine le DD comme suit : on part du DD correspondant à l’attitude\
-    \ de la créature et on lui applique les modificateurs qui suivent. Une créature\
-    \ à l’attitude serviable acceptera généralement toutes les requêtes du personnage\
-    \ sans qu’un test soit nécessaire, à moins qu'on lui demande de faire quelque\
-    \ chose de contraire à sa nature ou de se mettre en grave danger. Certaines demandes\
-    \ qui vont à l’encontre des valeurs de la créature ou de sa nature échouent automatiquement\
-    \ (à l’appréciation du MJ).<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Renseignements.\
-    \ Le personnage peut également utiliser la compétence de Diplomatie pour recueillir\
-    \ des informations sur un sujet ou un individu spécifique. Pour ce faire, il doit\
-    \ visiter les tavernes locales, les marchés et les autres lieux de rencontre pendant\
-    \ 1d4 heures. Le DD de ce test dépend de l’accessibilité des informations recherchées.\
-    \ Pour les faits ou les rumeurs bien connus, le DD est généralement de 10. Lorsqu’il\
-    \ s’agit de secrets ou de choses peu connues, le DD peut grimper à 20 ou plus\
-    \ encore. Le MJ est également à même de décider que certains sujets sont tout\
-    \ simplement inconnus des gens du peuple.<br/><br/><h2>Action</h2> Modifier l’attitude\
-    \ d’une créature par un test de Diplomatie prend généralement une minute de dialogue.\
+    \ selon les situations (à l’appréciation du MJ).<br/><br/><table><caption>Test\
+    \ de diplomatie</caption><tr class=\"title\"><td>Attitude initiale</td><td>DD\
+    \ du test de Diplomatie</td></tr><tr><td>Hostile</td><td>25 + modificateur de\
+    \ Charisme de la créature</td></tr><tr><td>Inamical</td><td>20 + modificateur\
+    \ de Charisme de la créature</td></tr><tr><td>Indifférent</td><td>15 + modificateur\
+    \ de Charisme de la créature</td></tr><tr><td>Amical</td><td>10 + modificateur\
+    \ de Charisme de la créature</td></tr><tr><td>Serviable</td><td>0 + modificateur\
+    \ de Charisme de la créature</td></tr></table><br/><br/>Le personnage peut tenter\
+    \ de demander un service à une créature dont l’attitude est indifférente, amicale\
+    \ ou serviable. Cela nécessite un nouveau test de Diplomatie dont on détermine\
+    \ le DD comme suit : on part du DD correspondant à l’attitude de la créature et\
+    \ on lui applique les modificateurs qui suivent. Une créature à l’attitude serviable\
+    \ acceptera généralement toutes les requêtes du personnage sans qu’un test soit\
+    \ nécessaire, à moins qu'on lui demande de faire quelque chose de contraire à\
+    \ sa nature ou de se mettre en grave danger. Certaines demandes qui vont à l’encontre\
+    \ des valeurs de la créature ou de sa nature échouent automatiquement (à l’appréciation\
+    \ du MJ).<br/><br/><table><caption>Modificateurs pour obtenir un service</caption><tr\
+    \ class=\"title\"><td>Requête</td><td>Modificateur au DD\n du test de Diplomatie</td></tr><tr><td>Donner\
+    \ un conseil général ou indiquer le chemin</td><td>-5</td></tr><tr><td>Donner\
+    \ des conseils précis</td><td>+0</td></tr><tr><td>Aider (par un acte simple)</td><td>+0</td></tr><tr><td>Révéler\
+    \ un secret peu important</td><td>+5</td></tr><tr><td>Aider (par un acte long\
+    \ ou complexe)</td><td>+5</td></tr><tr><td>Aider (par un acte dangereux)</td><td>+10</td></tr><tr><td>Révéler\
+    \ un secret important</td><td>+10 ou plus</td></tr><tr><td>Aider (par un acte\
+    \ qui risque d’être puni)</td><td>+15 ou plus</td></tr><tr><td>Requêtes supplémentaires</td><td>+5\
+    \ par requête</td></tr></table><br/><br/>Renseignements. Le personnage peut également\
+    \ utiliser la compétence de Diplomatie pour recueillir des informations sur un\
+    \ sujet ou un individu spécifique. Pour ce faire, il doit visiter les tavernes\
+    \ locales, les marchés et les autres lieux de rencontre pendant 1d4 heures. Le\
+    \ DD de ce test dépend de l’accessibilité des informations recherchées. Pour les\
+    \ faits ou les rumeurs bien connus, le DD est généralement de 10. Lorsqu’il s’agit\
+    \ de secrets ou de choses peu connues, le DD peut grimper à 20 ou plus encore.\
+    \ Le MJ est également à même de décider que certains sujets sont tout simplement\
+    \ inconnus des gens du peuple.<br/><br/><h2>Action</h2> Modifier l’attitude d’une\
+    \ créature par un test de Diplomatie prend généralement une minute de dialogue.\
     \ Présenter une requête à un PNJ nécessite au moins 1 round de dialogue (la durée\
     \ totale dépend de la complexité de la requête). Recueillir des informations par\
     \ un test de Diplomatie requiert 1d4 heures pendant lesquelles le personnage doit\
@@ -2326,7 +2821,13 @@
   DescriptionHTML: "<br/>Le personnage sait comment s’y prendre avec les animaux\
     \ et peut leur enseigner des tours, les faire obéir à des ordres simples ou même\
     \ les apprivoiser.<br/><br/><h2>Test de compétence</h2> Le DD du test dépend du\
-    \ résultat que le personnage désire obtenir.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Diriger\
+    \ résultat que le personnage désire obtenir.<br/><br/><table><caption>Tests de\
+    \ Dressage</caption><tr class=\"title\"><td>Tâche</td><td>DD du test de Dressage</td></tr><tr><td>diriger\
+    \ un animal</td><td>10</td></tr><tr><td>pousser un animal</td><td>25</td></tr><tr><td>enseigner\
+    \ un tour à un animal</td><td>15 ou 20*</td></tr><tr><td>enseigner une fonction\
+    \ à un animal</td><td>15 ou 20*</td></tr><tr><td>élever un animal sauvage</td><td>15\
+    \ + DV de l’animal</td></tr><tr><td colspan=\"2\" class=\"note\">(*) Reportez-vous\
+    \ à la description du tour ou de la fonction en question ci-dessous.</td></tr></table><br/><br/><b>Diriger\
     \ un animal.</b> Cela consiste à ordonner à un animal d’effectuer une tâche ou\
     \ un tour de son répertoire. Si l’animal est blessé ou s’il a subi des dégâts\
     \ non létaux ou un affaiblissement de caractéristique, le DD est augmenté de +2.\
@@ -2343,18 +2844,69 @@
     \ ayant une valeur d’Intelligence de 1 peuvent apprendre jusqu’à trois tours au\
     \ maximum, tandis que les animaux ayant une valeur d’Intelligence de 2 peuvent\
     \ assimiler jusqu’à six tours. Voici les tours les plus courants (et le DD qui\
-    \ leur est associé).<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><b>Enseigner\
-    \ une fonction à un animal.</b> Plutôt que d’apprendre des tours un par un, il\
-    \ est possible d’entraîner un animal à remplir une fonction particulière. Chaque\
-    \ fonction regroupe une série de tours qui correspondent à un thème donné, comme\
-    \ monter la garde ou participer au travail. L’animal doit remplir toutes les conditions\
-    \ des tours regroupés par cette la fonction. Si une fonction comprend plus de\
-    \ trois tours, elle est réservée aux animaux ayant une valeur d’Intelligence égale\
-    \ ou supérieure à 2.<br/><br/>On ne peut apprendre qu’une seule fonction à un\
-    \ animal, mais il peut apprendre des tours supplémentaires (en plus de ceux compris\
-    \ dans sa fonction) s’il est assez intelligent pour cela. Entraîner un animal\
-    \ à une fonction demande moins de tests de Dressage, mais autant de temps que\
-    \ de lui apprendre les tours qui la composent un par un.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><b>Élever\
+    \ leur est associé).<br/><br/><table><caption>Tours les plus courants</caption><tr><td>«\
+    \ ARRÊTE ! »</td><td>DD 15</td><td>L’animal arrête de se battre ou de faire autre\
+    \ chose. Un animal qui ne connaît pas ce tour continue à lutter jusqu’à ce qu’il\
+    \ soit contraint de fuir (à cause de blessures ou d’un effet de terreur par exemple)\
+    \ ou que son adversaire soit vaincu.</td></tr><tr><td>« ATTAQUE ! »</td><td>DD\
+    \ 20</td><td>L’animal attaque les créatures qu’il assimile à des ennemis. Le personnage\
+    \ peut indiquer du doigt une cible précise, que l’animal attaquera s’il le peut.\
+    \ Normalement, un animal n’attaque que les humanoïdes, les humanoïdes monstrueux,\
+    \ les géants et les autres animaux. Apprendre à un animal à attaquer les créatures\
+    \ de tous types (y compris des créatures surnaturelles comme les aberrations et\
+    \ les morts-vivants) équivaut à deux tours.</td></tr><tr><td>« ATTENDS ! »</td><td>DD\
+    \ 15</td><td>L’animal ne bouge pas et attend le retour de son maître. Il n’attaque\
+    \ pas les créatures qui s’approchent de lui mais se défend si nécessaire.</td></tr><tr><td>«\
+    \ AU PIED ! »</td><td>DD 15</td><td>L’animal suit fidèlement son maître, même\
+    \ si cela l’oblige à se rendre dans un lieu qui lui déplaît.</td></tr><tr><td>«\
+    \ CHERCHE ! »</td><td>DD 15</td><td>L’animal gagne l’endroit désigné et y cherche\
+    \ quelque chose de vivant ou de mobile.</td></tr><tr><td>« GARDE ! »</td><td>DD\
+    \ 20</td><td>L’animal ne bouge pas et empêche quiconque d’approcher.</td></tr><tr><td>«\
+    \ JOUE ! »</td><td>DD 15</td><td>L’animal connaît une série de tours basiques,\
+    \ comme s’asseoir, se coucher sur le dos, donner la patte, gronder, aboyer sur\
+    \ demande et ainsi de suite.</td></tr><tr><td>« PROTÈGE ! »</td><td>DD 20</td><td>L’animal\
+    \ protège son maître (ou se prépare à le défendre si aucune menace n’est visible)\
+    \ sans que celui-ci ait besoin de le lui ordonner. Il peut aussi lui demander\
+    \ de protéger quelqu’un d’autre.</td></tr><tr><td>« SUIS ! »</td><td>DD 15</td><td>L’animal\
+    \ suit la piste olfactive qu’on lui montre (cela suppose que l’animal possède\
+    \ la particularité odorat).</td></tr><tr><td>« TRAVAILLE ! »</td><td>DD 15</td><td>L’animal\
+    \ peut tracter ou pousser une charge intermédiaire ou lourde.</td></tr><tr><td>«\
+    \ VA CHERCHER ! »</td><td>DD 15</td><td>L’animal va chercher quelque chose. Si\
+    \ son maître ne lui désigne pas l’objet à rapporter, l’animal en prend un au hasard.</td></tr><tr><td>«\
+    \ VIENS ! »</td><td>DD 15</td><td>L’animal rejoint son maître, même s’il ne le\
+    \ ferait pas en temps normal.</td></tr></table><br/><br/><b>Enseigner une fonction\
+    \ à un animal.</b> Plutôt que d’apprendre des tours un par un, il est possible\
+    \ d’entraîner un animal à remplir une fonction particulière. Chaque fonction regroupe\
+    \ une série de tours qui correspondent à un thème donné, comme monter la garde\
+    \ ou participer au travail. L’animal doit remplir toutes les conditions des tours\
+    \ regroupés par cette la fonction. Si une fonction comprend plus de trois tours,\
+    \ elle est réservée aux animaux ayant une valeur d’Intelligence égale ou supérieure\
+    \ à 2.<br/><br/>On ne peut apprendre qu’une seule fonction à un animal, mais il\
+    \ peut apprendre des tours supplémentaires (en plus de ceux compris dans sa fonction)\
+    \ s’il est assez intelligent pour cela. Entraîner un animal à une fonction demande\
+    \ moins de tests de Dressage, mais autant de temps que de lui apprendre les tours\
+    \ qui la composent un par un.<br/><br/><table><caption>Fonctions les plus courantes</caption><tr><td>ANIMAL\
+    \ DE CHASSE</td><td>DD 20</td><td>Un animal entraîné pour la chasse connaît les\
+    \ tours arrête, attaque, au pied, cherche, suis et va chercher. Entraîner un animal\
+    \ pour devenir un animal de chasse prend six semaines.</td></tr><tr><td>ANIMAL\
+    \ DE COMBAT</td><td>DD 20</td><td>Un animal entraîné à se battre connaît les tours\
+    \ arrête, attaque et attends. Entraîner un animal de combat prend trois semaines.</td></tr><tr><td>ANIMAL\
+    \ DE FOIRE</td><td>DD 15</td><td>Un animal entraîné pour la foire connaît les\
+    \ tours attends, au pied, joue, va chercher et viens. Entraîner un animal un animal\
+    \ de foire prend cinq semaines.</td></tr><tr><td>ANIMAL DE GARDE</td><td>DD 20</td><td>Un\
+    \ animal entraîné à monter la garde connaît les tours arrête, attaque, garde et\
+    \ protège. Entraîner un animal de garde prend quatre semaines.</td></tr><tr><td>MONTURE</td><td>DD\
+    \ 15</td><td>Un animal entraîné à servir de monture connaît les tours attends,\
+    \ au pied et viens. Entraîner une monture prend trois semaines.</td></tr><tr><td>MONTURE\
+    \ DE COMBAT</td><td>DD 20</td><td>Un animal entraîné à servir de monture de combat\
+    \ connaît les tours arrête, attaque, au pied, garde, protège et viens. Entraîner\
+    \ une monture de combat prend six semaines. Entraîner un animal possédant déjà\
+    \ la fonction monture pour en faire une monture de combat ne prend que trois semaines\
+    \ (et un test de Dressage DD 20). La nouvelle fonction et le nouveau répertoire\
+    \ de tours remplacent les précédents. La plupart des destriers et les chiens de\
+    \ selle ont reçu ce type d’entraînement.</td></tr><tr><td>TRAVAILLEUR DE FORCE</td><td>DD\
+    \ 15</td><td>Un animal entraîné au travail connaît les tours travaille et viens.\
+    \ Entraîner un travailleur de force prend deux semaines.</td></tr></table><br/><br/><b>Élever\
     \ un animal sauvage.</b> Il s’agit d’élever une créature sauvage qui vient de\
     \ naître pour en faire un animal domestique. Au maximum, le personnage peut s’occuper\
     \ de trois animaux du même type à la fois.<br/><br/>Si le test de compétence est\
@@ -2516,53 +3068,59 @@
     \ d’équitation classiques n’exigent pas de test de compétence. Le personnage peut\
     \ ainsi seller sa monture, monter en selle, avancer au pas, trotter, galoper et\
     \ descendre de sa monture sans le moindre problème. Les tâches suivantes requièrent\
-    \ un test de compétence.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Guider\
-    \ sa monture avec les genoux.</b> Le personnage sait guider sa monture à l’aide\
-    \ de ses seuls genoux, ce qui lui laisse les mains libres en cas de combat. Le\
-    \ test d’Équitation s’effectue au début de chaque tour de jeu. En cas d’échec,\
-    \ l’aventurier ne peut se servir que d’une main au cours du round, l’autre étant\
-    \ nécessaire pour contrôler sa monture. Utiliser cette option ne nécessite pas\
-    \ d’action.<br/><br/><b>Rester en selle.</b> Quand le personnage est blessé ou\
-    \ quand sa monture se cabre ou s’affole, il peut tenter de réagir instantanément\
-    \ et éviter de tomber. Utiliser cette option ne nécessite pas d’action.<br/><br/><b>Combattre\
-    \ sur un destrier.</b> Le cavalier peut faire attaquer sa monture et, en plus,\
-    \ placer sa ou ses attaques normalement. Utiliser cette option est une action\
-    \ libre.<br/><br/><b>Utiliser sa monture pour s’abriter.</b> Le personnage peut\
-    \ sauter de selle et se cacher derrière sa monture, qui lui procure alors un abri.\
-    \ Il ne peut ni attaquer ni lancer de sorts lorsqu’il est dans cette position.\
-    \ S’il rate son test de compétence, il n’est pas considéré comme étant à l’abri.\
-    \ Utiliser cette option est une action immédiate, mais une action de mouvement\
-    \ est nécessaire pour se remettre en selle (ce qui ne requiert aucun test).<br/><br/><b>Amortir\
-    \ sa chute.</b> Le personnage a appris à amortir sa chute si sa monture tombe\
-    \ ou se fait tuer sous lui. En cas de test de compétence raté, il subit 1d6 points\
-    \ de dégâts de chute et se retrouve à terre. Utiliser cette option ne nécessite\
-    \ pas d’action.<br/><br/><b>Sauter un obstacle.</b> Le personnage peut encourager\
-    \ sa monture à sauter un obstacle au cours de son déplacement. Si le test d'Équitation\
-    \ est réussi, faites un test en utilisant votre modificateur d'Équitation ou le\
-    \ modificateur de saut de la monture (le moins élevé des deux) pour déterminer\
-    \ la distance franchie par la créature. Si le personnage rate son test d’Équitation,\
-    \ il tombe lorsque sa monture quitte le sol et subit au moins 1d6 points de dégâts\
-    \ de chute. Utiliser cette option n’est pas une action mais fait partie d’une\
-    \ action de mouvement.<br/><br/><b>Éperonner sa monture.</b> Le personnage peut\
-    \ inciter sa monture à aller plus vite en utilisant une action de mouvement. Un\
-    \ test d’Équitation réussi augmente la vitesse de la monture de 3 m pendant 1\
-    \ round, mais celle-ci subit 1d3 point de dégâts. On peut utiliser cette option\
-    \ plusieurs rounds de suite, mais la monture devient fatiguée après un nombre\
-    \ de rounds égal à sa valeur de Constitution. Il n’est pas possible d’utiliser\
-    \ cette option lorsque la monture est fatiguée.<br/><br/><b>Contrôler sa monture\
-    \ au combat.</b> Lors d’une bataille, le personnage peut utiliser une action de\
-    \ mouvement pour contrôler un poney, un cheval léger, un cheval lourd ou une autre\
-    \ monture qui n’est pas entraînée au combat. En cas d’échec au test de compétence,\
-    \ il ne peut rien faire d’autre de tout le round. Aucun test n’est nécessaire\
-    \ pour les chevaux ou poneys entraînés au combat.<br/><br/><b>Monter en selle\
-    \ ou descendre de selle rapidement.</b> Le personnage peut tenter de monter en\
-    \ selle ou de sauter au sol rapidement, pour autant que sa monture ne possède\
-    \ pas plus d’une catégorie de taille de plus que lui. Si le personnage dispose\
-    \ encore d’une action de mouvement pour ce round, un test de compétence réussi\
-    \ lui permet de réaliser ce mouvement par une action libre. Si son test de compétence\
-    \ échoue, il utilise une action de mouvement pour monter en selle ou descendre\
-    \ de selle. Il est impossible d’utiliser cette option si la monture possède plus\
-    \ d’une catégorie de taille de plus que le personnage.<br/><br/><h2>Action</h2><b>Variable.</b>\
+    \ un test de compétence.<br/><br/><table><caption>Test d'équitation</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>DD du test d’Équitation</td></tr><tr><td>Guider\
+    \ sa monture avec les genoux</td><td>5</td></tr><tr><td>Rester en selle</td><td>5</td></tr><tr><td>Combattre\
+    \ sur un destrier (monture entraînée pour le combat)</td><td>10</td></tr><tr><td>Utiliser\
+    \ sa monture pour s’abriter</td><td>15</td></tr><tr><td>Amortir sa chute</td><td>15</td></tr><tr><td>Sauter\
+    \ un obstacle</td><td>15</td></tr><tr><td>Éperonner sa monture</td><td>15</td></tr><tr><td>Contrôler\
+    \ sa monture au combat</td><td>20</td></tr><tr><td>Monter en selle ou descendre\
+    \ de selle rapidement</td><td>20</td></tr></table><br/><br/><b>Guider sa monture\
+    \ avec les genoux.</b> Le personnage sait guider sa monture à l’aide de ses seuls\
+    \ genoux, ce qui lui laisse les mains libres en cas de combat. Le test d’Équitation\
+    \ s’effectue au début de chaque tour de jeu. En cas d’échec, l’aventurier ne peut\
+    \ se servir que d’une main au cours du round, l’autre étant nécessaire pour contrôler\
+    \ sa monture. Utiliser cette option ne nécessite pas d’action.<br/><br/><b>Rester\
+    \ en selle.</b> Quand le personnage est blessé ou quand sa monture se cabre ou\
+    \ s’affole, il peut tenter de réagir instantanément et éviter de tomber. Utiliser\
+    \ cette option ne nécessite pas d’action.<br/><br/><b>Combattre sur un destrier.</b>\
+    \ Le cavalier peut faire attaquer sa monture et, en plus, placer sa ou ses attaques\
+    \ normalement. Utiliser cette option est une action libre.<br/><br/><b>Utiliser\
+    \ sa monture pour s’abriter.</b> Le personnage peut sauter de selle et se cacher\
+    \ derrière sa monture, qui lui procure alors un abri. Il ne peut ni attaquer ni\
+    \ lancer de sorts lorsqu’il est dans cette position. S’il rate son test de compétence,\
+    \ il n’est pas considéré comme étant à l’abri. Utiliser cette option est une action\
+    \ immédiate, mais une action de mouvement est nécessaire pour se remettre en selle\
+    \ (ce qui ne requiert aucun test).<br/><br/><b>Amortir sa chute.</b> Le personnage\
+    \ a appris à amortir sa chute si sa monture tombe ou se fait tuer sous lui. En\
+    \ cas de test de compétence raté, il subit 1d6 points de dégâts de chute et se\
+    \ retrouve à terre. Utiliser cette option ne nécessite pas d’action.<br/><br/><b>Sauter\
+    \ un obstacle.</b> Le personnage peut encourager sa monture à sauter un obstacle\
+    \ au cours de son déplacement. Si le test d'Équitation est réussi, faites un test\
+    \ en utilisant votre modificateur d'Équitation ou le modificateur de saut de la\
+    \ monture (le moins élevé des deux) pour déterminer la distance franchie par la\
+    \ créature. Si le personnage rate son test d’Équitation, il tombe lorsque sa monture\
+    \ quitte le sol et subit au moins 1d6 points de dégâts de chute. Utiliser cette\
+    \ option n’est pas une action mais fait partie d’une action de mouvement.<br/><br/><b>Éperonner\
+    \ sa monture.</b> Le personnage peut inciter sa monture à aller plus vite en utilisant\
+    \ une action de mouvement. Un test d’Équitation réussi augmente la vitesse de\
+    \ la monture de 3 m pendant 1 round, mais celle-ci subit 1d3 point de dégâts.\
+    \ On peut utiliser cette option plusieurs rounds de suite, mais la monture devient\
+    \ fatiguée après un nombre de rounds égal à sa valeur de Constitution. Il n’est\
+    \ pas possible d’utiliser cette option lorsque la monture est fatiguée.<br/><br/><b>Contrôler\
+    \ sa monture au combat.</b> Lors d’une bataille, le personnage peut utiliser une\
+    \ action de mouvement pour contrôler un poney, un cheval léger, un cheval lourd\
+    \ ou une autre monture qui n’est pas entraînée au combat. En cas d’échec au test\
+    \ de compétence, il ne peut rien faire d’autre de tout le round. Aucun test n’est\
+    \ nécessaire pour les chevaux ou poneys entraînés au combat.<br/><br/><b>Monter\
+    \ en selle ou descendre de selle rapidement.</b> Le personnage peut tenter de\
+    \ monter en selle ou de sauter au sol rapidement, pour autant que sa monture ne\
+    \ possède pas plus d’une catégorie de taille de plus que lui. Si le personnage\
+    \ dispose encore d’une action de mouvement pour ce round, un test de compétence\
+    \ réussi lui permet de réaliser ce mouvement par une action libre. Si son test\
+    \ de compétence échoue, il utilise une action de mouvement pour monter en selle\
+    \ ou descendre de selle. Il est impossible d’utiliser cette option si la monture\
+    \ possède plus d’une catégorie de taille de plus que le personnage.<br/><br/><h2>Action</h2><b>Variable.</b>\
     \ Monter en selle ou descendre de selle est habituellement une action de mouvement.\
     \ Les autres tests sont des actions de mouvement, des actions libres ou ne sont\
     \ pas des actions, selon les cas.<br/><br/><h2>Spécial</h2> Monter à cru (sans\
@@ -2725,7 +3283,29 @@
     \ Il est également impossible d’utiliser un bouclier en grimpant. Chaque fois\
     \ qu’un personnage subit des dégâts alors qu’il escalade une paroi, il doit réussir\
     \ un test d’Escalade contre le DD de la paroi pour éviter de tomber. En cas d’échec,\
-    \ les dégâts sont proportionnels à la hauteur de chute.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Escalade\
+    \ les dégâts sont proportionnels à la hauteur de chute.<br/><br/><table><caption>Tests\
+    \ d'escalade</caption><tr class=\"title\"><td>DD du test d’Escalade</td><td>Exemple\
+    \ de surface ou d’activité</td></tr><tr><td>0</td><td>une pente trop inclinée\
+    \ pour permettre d’avancer en marchant ou une corde à nœuds accrochée près d’un\
+    \ mur contre lequel on peut s’appuyer</td></tr><tr><td>5</td><td>une corde accrochée\
+    \ près d’un mur contre lequel on peut s’appuyer, une corde à nœuds ou encore une\
+    \ corde créée par le sort corde enchantée</td></tr><tr><td>10</td><td>une surface\
+    \ garnie de corniches où on peut se tenir ou s’accrocher, comme un mur en ruine\
+    \ ou un gréement de navire</td></tr><tr><td>15</td><td>toute surface comprenant\
+    \ suffisamment de prises (naturelles ou artificielles), comme un rocher escarpé,\
+    \ un arbre ou une corde sans nœuds ou encore tenter de grimper sur un rebord auquel\
+    \ on s’agrippe par les mains</td></tr><tr><td>20</td><td>une surface inégale comprenant\
+    \ quelques petites prises pour les mains et les pieds, comme un mur de donjon\
+    \ typique</td></tr><tr><td>25</td><td>une surface rugueuse, comme une paroi rocheuse\
+    \ naturelle ou un mur de briques</td></tr><tr><td>30</td><td>un dévers ou un plafond\
+    \ garnis de prises pour les mains mais pas pour les pieds</td></tr><tr><td>—</td><td>Une\
+    \ surface absolument plate, lisse et verticale ne peut pas être escaladée.</td></tr><tr\
+    \ class=\"title\"><td>Modificateur*</td><td>Exemple de surface ou d’activité</td></tr><tr><td>-10</td><td>une\
+    \ cheminée (naturelle ou artificielle) ou n’importe quel autre goulet dans lequel\
+    \ on peut s’appuyer contre deux parois opposées en s’arc-boutant</td></tr><tr><td>-5</td><td>un\
+    \ coin où il est possible de s’appuyer contre deux murs perpendiculaires</td></tr><tr><td>+5</td><td>surface\
+    \ glissante</td></tr><tr><td colspan=\"2\" class=\"note\">(*) Ces modificateurs\
+    \ se cumulent entre eux. Combinez tous ceux qui s’appliquent.</td></tr></table><br/><br/><b>Escalade\
     \ accélérée.</b> Le personnage peut grimper plus vite que d’habitude. Il peut\
     \ avancer à la moitié de sa vitesse de déplacement (au lieu du quart) en acceptant\
     \ un malus de -5 au test.<br/><br/><b>Créer ses propres prises.</b> Le personnage\
@@ -2882,7 +3462,10 @@
     \ est au courant de sa présence.<br/><br/>On peut aussi utiliser la compétence\
     \ d’Escamotage pour distraire une audience (comme avec la compétence de Représentation).\
     \ Dans ce cas, le personnage jongle, fait des tours de passe-passe et ainsi de\
-    \ suite.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ suite.<br/><br/><table><caption>Tests d'escamotage</caption><tr class=\"title\"\
+    ><td>DD du test d’Escamotage</td><td>Tâche</td></tr><tr><td>10</td><td>Se saisir\
+    \ discrètement d’un objet de la taille d’une pièce de monnaie, faire disparaître\
+    \ une pièce</td></tr><tr><td>20</td><td>Dérober un petit objet à une personne</td></tr></table><br/><br/><h2>Action</h2>\
     \ Les tests d’Escamotage nécessitent généralement des actions simples, mais une\
     \ action de mouvement peut suffire si on accepte un malus de -20 au test.<br/><br/><h2>Nouvelles\
     \ tentatives</h2> Oui, mais un second test d’Escamotage contre la même cible après\
@@ -2982,7 +3565,13 @@
   DescriptionHTML: "<br/>Le personnage s’est entraîné pour pouvoir se libérer de\
     \ liens et se soustraire aux étreintes lors d’une lutte.<br/><br/><h2>Test de\
     \ compétence</h2> La table suivante indique les DD associés aux différentes formes\
-    \ d’entraves.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Cordes.</b>\
+    \ d’entraves.<br/><br/><table><caption>Entraves</caption><tr class=\"title\"><td>Entraves</td><td>DD\
+    \ du test d’Évasion</td></tr><tr><td>cordes, personnage ligoté</td><td>20 + BMO\
+    \ de l’individu\n qui a ligoté le personnage</td></tr><tr><td>filet, sorts de\
+    \ contrôle des plantes, corde animée, empire végétal ou enchevêtrement</td><td>20</td></tr><tr><td>sort\
+    \ de collet</td><td>23</td></tr><tr><td>menottes</td><td>30</td></tr><tr><td>conduit\
+    \ étroit</td><td>30</td></tr><tr><td>menottes de qualité supérieure</td><td>35</td></tr><tr><td>situation\
+    \ de lutte</td><td>DMD de l’adversaire</td></tr></table><br/><br/><b>Cordes.</b>\
     \ Le DD du test d’Évasion du personnage est égal à 20 + le bonus de manœuvre offensive\
     \ de l’individu qui l’a ligoté.<br/><br/><b>Menottes et menottes de qualité supérieure.</b>\
     \ Le DD des menottes est déterminé par leur qualité (voir la table).<br/><br/><b>Conduit\
@@ -3162,7 +3751,13 @@
     \ le test de Linguistique de l’individu qui examine le document pour en vérifier\
     \ l’authenticité est opposé à celui du personnage qui a créé la contrefaçon. Le\
     \ test de l’individu qui observe le document prend en compte les modificateurs\
-    \ suivants si les conditions indiquées sont remplies.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>\
+    \ suivants si les conditions indiquées sont remplies.<br/><br/><table><caption>Modificateurs\
+    \ de contrefaçon</caption><tr class=\"title\"><td>Condition</td><td>Modificateur\
+    \ au test de Linguistique</td></tr><tr><td>Type de document inconnu du lecteur</td><td>-2</td></tr><tr><td>Type\
+    \ de document peu connu du lecteur</td><td>0</td></tr><tr><td>Type de document\
+    \ connu du lecteur</td><td>+2</td></tr><tr><td>Écriture inconnue du lecteur</td><td>-2</td></tr><tr><td>Écriture\
+    \ peu connue du lecteur</td><td>0</td></tr><tr><td>Écriture bien connue du lecteur</td><td>+2</td></tr><tr><td>Le\
+    \ lecteur ne fait que survoler le document</td><td>-2</td></tr></table><br/><br/>\
     \ <b>Apprendre une langue.</b> Chaque fois que le personnage investit un point\
     \ dans cette compétence, il apprend à parler et à écrire une nouvelle langue.\
     \ Les langues plus courantes (et les créatures qui les parlent) sont indiquées\
@@ -3270,7 +3865,12 @@
     \ de retenir sa respiration. Chaque round, un autre test de Constitution, dont\
     \ le DD augmente de +1, est nécessaire. Dès qu’il rate un test de Constitution,\
     \ le personnage commence à se noyer. Le DD du test de Natation dépend du courant,\
-    \ comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/>À\
+    \ comme indiqué dans la table suivante.<br/><br/><table><caption>tests de natation</caption><tr\
+    \ class=\"title\"><td>Courant</td><td>DD du test de Natation</td></tr><tr><td>Eaux\
+    \ calmes</td><td>10</td></tr><tr><td>Eaux agitées</td><td>15</td></tr><tr><td>Eaux\
+    \ très agitées (par tempête par exemple)</td><td>20*</td></tr><tr><td colspan=\"\
+    2\" class=\"note\">(*) Il est impossible de faire 10 sur un test de Natation dans\
+    \ des eaux très  agitées, même en l’absence de distractions et de menaces.</td></tr></table><br/><br/>À\
     \ la fin de chaque heure passée à nager, le personnage doit réussir un test de\
     \ Natation contre un DD de 20 pour éviter de subir 1d6 points de dégâts non létaux\
     \ causés par la fatigue. <h2>Action</h2> Un test de Natation réussi permet de\
@@ -3355,21 +3955,56 @@
     \ Perception permet également de remarquer certains détails dans l’environnement\
     \ du personnage. Le DD du test dépend alors de la distance, de l’environnement\
     \ et de la difficulté à percevoir le détail en question. La table qui suit donne\
-    \ quelques indications pour déterminer le DD du test.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr>\
-    \ <h2>Action</h2> La plupart des tests de Perception sont faits en réaction à\
-    \ un stimulus observable. Chercher activement un tel stimulus est une action de\
-    \ mouvement.<br/><br/><h2>Nouvelles tentatives</h2> Oui. Un personnage peut essayer\
-    \ de percevoir un détail qu’il a raté la première fois, pour autant que le détail\
-    \ en question soit toujours présent.<br/><br/><h2>Spécial</h2> Les demi-elfes,\
-    \ les elfes, les gnomes et les halfelins bénéficient d’un bonus racial de +2 aux\
-    \ tests de Perception. Les créatures qui possèdent la particularité odorat reçoivent\
-    \ un bonus de +8 aux tests de Perception visant à repérer une odeur. Celles qui\
-    \ possèdent la particularité perception des vibrations reçoivent un bonus de +8\
-    \ aux tests de Perception contre les créatures qui touchent le sol et réussissent\
-    \ automatiquement ces tests lorsque ceux-ci se déroulent dans la portée de cette\
-    \ capacité.<br/><br/>Un lanceur de sorts possédant un faucon ou une chouette comme\
-    \ familier gagne un bonus de +3 aux tests de Perception. Un personnage possédant\
-    \ le don Vigilance bénéficie d’un bonus aux tests de Perception. \r \t"
+    \ quelques indications pour déterminer le DD du test.<br/><br/><table><caption>tests\
+    \ de Perception</caption><tr class=\"title\"><td>Détail</td><td>DD du test de\
+    \ Perception</td></tr><tr><td>Entendre les bruits d’un combat</td><td>-10</td></tr><tr><td>Sentir\
+    \ l’odeur de détritus en putréfaction</td><td>-10</td></tr><tr><td>Sentir l’odeur\
+    \ de la fumée</td><td>0</td></tr><tr><td>Entendre les détails d’une conversation</td><td>0</td></tr><tr><td>Voir\
+    \ une créature visible</td><td>0</td></tr><tr><td>Déterminer si de la nourriture\
+    \ est avariée</td><td>5</td></tr><tr><td>Entendre les pas d’une créature</td><td>10</td></tr><tr><td>Entendre\
+    \ les détails d’une conversation à voix basse</td><td>15</td></tr><tr><td>Trouver\
+    \ une porte cachée de difficulté moyenne</td><td>15</td></tr><tr><td>Entendre\
+    \ le son d’une clef tournant dans une serrure</td><td>20</td></tr><tr><td>Trouver\
+    \ une porte secrète de difficulté moyenne</td><td>20</td></tr><tr><td>Entendre\
+    \ le son d’un arc dont on tend la corde</td><td>25</td></tr><tr><td>Percevoir\
+    \ les vibrations d’une créature souterraine passant sous le personnage</td><td>25</td></tr><tr><td>Remarquer\
+    \ un pickpocket</td><td>opposé au test d’Escamotage</td></tr><tr><td>Remarquer\
+    \ une créature utilisant la compétence de Discrétion</td><td>opposé au test de\
+    \ Discrétion</td></tr><tr><td>Trouver un piège caché</td><td>variable selon le\
+    \ piège</td></tr><tr><td>Identifier les effets d’une potion en la goûtant</td><td>15\
+    \ + NLS de la potion</td></tr></table><br/><br/><table><caption>modificateur des\
+    \ tests de Perception</caption><tr class=\"title\"><td>Circonstances</td><td>Modificateur\
+    \ au DD du test de Perception</td></tr><tr><td>Distance entre le personnage et\
+    \ la source/l’objet/la créature</td><td>+1 par 3 m (2 cases)</td></tr><tr><td>À\
+    \ travers une porte fermée</td><td>+5</td></tr><tr><td>À travers un mur</td><td>+10\
+    \ par 30 cm d’épaisseur</td></tr><tr><td>Conditions favorables</td><td>-2</td></tr><tr><td>Conditions\
+    \ défavorables</td><td>+2</td></tr><tr><td>Conditions exécrables</td><td>+5</td></tr><tr><td>Le\
+    \ personnage qui réalise le test de Perception est distrait</td><td>+5</td></tr><tr><td>Le\
+    \ personnage qui réalise le test de Perception est endormi</td><td>+10</td></tr><tr><td>La\
+    \ créature/l’objet est invisible</td><td>+20</td></tr><tr><td colspan=\"2\" class=\"\
+    note\">(1) Les conditions favorables et défavorables dépendent du sens qui est\
+    \ employé. Par exemple, une lumière forte peut faciliter les tests liés à la vue\
+    \ alors les tests effectués à la lueur d’une torche ou de la lune seront plus\
+    \ difficiles ; des bruits de fond peuvent augmenter le DD d’un test basé sur l’ouïe\
+    \ ; un mélange d’odeurs peut compliquer les tests relatifs à l’odorat.</td></tr><tr><td\
+    \ colspan=\"2\" class=\"note\">(2) Il s’agit de conditions plus extrêmes que les\
+    \ conditions défavorables. Par exemple, un test lié à la vue à la lueur d’une\
+    \ bougie, un test lié à l’ouïe à côté d’un dragon qui rugit ou un test lié à l’odorat\
+    \ dans une zone où règne une puanteur écrasante.</td></tr></table> <h2>Action</h2>\
+    \ La plupart des tests de Perception sont faits en réaction à un stimulus observable.\
+    \ Chercher activement un tel stimulus est une action de mouvement.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Oui. Un personnage peut essayer de percevoir un détail qu’il\
+    \ a raté la première fois, pour autant que le détail en question soit toujours\
+    \ présent.<br/><br/><h2>Spécial</h2> Les demi-elfes, les elfes, les gnomes et\
+    \ les halfelins bénéficient d’un bonus racial de +2 aux tests de Perception. Les\
+    \ créatures qui possèdent la particularité odorat reçoivent un bonus de +8 aux\
+    \ tests de Perception visant à repérer une odeur. Celles qui possèdent la particularité\
+    \ perception des vibrations reçoivent un bonus de +8 aux tests de Perception contre\
+    \ les créatures qui touchent le sol et réussissent automatiquement ces tests lorsque\
+    \ ceux-ci se déroulent dans la portée de cette capacité.<br/><br/>Un lanceur de\
+    \ sorts possédant un faucon ou une chouette comme familier gagne un bonus de +3\
+    \ aux tests de Perception. Un personnage possédant le don Vigilance bénéficie\
+    \ d’un bonus aux tests de Perception. \r \t"
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Perception.ashx
   
 - Nom: Premiers secours
@@ -3489,7 +4124,14 @@
     de Premiers secours.'
   DescriptionHTML: "<br/>Le personnage sait comment soigner les blessures et les\
     \ autres maux.<br/><br/><h2>Test de compétence</h2> Le DD et les effets du test\
-    \ de Premiers secours dépendent de la tâche que le personnage tente d’accomplir.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Premiers\
+    \ de Premiers secours dépendent de la tâche que le personnage tente d’accomplir.<br/><br/><table><caption>Premiers\
+    \ Secours</caption><tr class=\"title\"><td>Tâche</td><td>DD du test de Premiers\
+    \ secours</td></tr><tr><td>Premiers secours</td><td>15</td></tr><tr><td>Soins\
+    \ suivis</td><td>15</td></tr><tr><td>Soigner une blessure de chausse-trappe de\
+    \ croissance d'épines ou de pierres acérées</td><td> 15</td></tr><tr><td>Soigner\
+    \ des blessures mortelles</td><td>20</td></tr><tr><td>Soigner un empoisonnement</td><td>DD\
+    \ du jet de sauvegarde contre le poison</td></tr><tr><td>Soigner une maladie</td><td>DD\
+    \ du jet de sauvegarde contre la maladie</td></tr></table><br/><br/><b>Premiers\
     \ secours.</b> Ce terme, qui donne son nom à la compétence, signifie généralement\
     \ que le personnage intervient rapidement afin de sauver un compagnon mourant.\
     \ Lorsque quelqu’un est tombé en dessous de 0 point de vie et perd 1 point de\
@@ -3690,7 +4332,9 @@
     \ Un test de Psychologie réussi permet de ne pas se faire bluffer (voir la compétence\
     \ de Bluff). Il est également possible d’utiliser cette compétence pour sentir\
     \ quand quelque chose de louche se prépare ou pour déterminer si quelqu’un est\
-    \ digne de confiance.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Pressentiment.</b>\
+    \ digne de confiance.<br/><br/><table><caption>DD des tests de Psychologie</caption><tr\
+    \ class=\"title\"><td>Tâche</td><td>DD du test de Psychologie</td></tr><tr><td>Pressentiment</td><td>20</td></tr><tr><td>Perception\
+    \ d’enchantement</td><td>25 ou 15</td></tr><tr><td>Intercepter un message secret</td><td>Variable</td></tr></table><br/><br/><b>Pressentiment.</b>\
     \ En analysant une situation, le personnage est capable de sentir que quelque\
     \ chose cloche. Il peut par exemple éprouver une sensation de malaise lorsqu’il\
     \ discute avec un imposteur, ou bien au contraire sentir que quelqu’un est digne\
@@ -3772,10 +4416,23 @@
     \ flûte, flûte à bec, flûte de Pan, trompette)</li><li>Percussions (carillons,\
     \ cloches, tambours, gong)</li><li>Scène (comédie, drame, mime)</li></ul> <h2>Test\
     \ de compétence</h2>Le talent du personnage lui permet de divertir son public\
-    \ et d’en vivre.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>Un\
-    \ instrument de musique de maître confère un bonus de circonstances de +2 aux\
-    \ tests de Représentation chaque fois que le personnage l’utilise.<br/><br/><h2>Action</h2>Variable.\
-    \ Il faut entre une soirée et une journée entière pour gagner de l’argent en jouant\
+    \ et d’en vivre.<br/><br/><table><caption>Tests de représentation</caption><tr\
+    \ class=\"title\"><td>Résultat du \ntest de \nReprésentation</td><td>Qualité de\
+    \ la prestation</td></tr><tr><td>10</td><td>QUELCONQUE. Le personnage ferait tout\
+    \ aussi bien de mendier. Il gagne 1d10 pc par jour.</td></tr><tr><td>15</td><td>AGRÉABLE.\
+    \ Dans une ville prospère, le personnage gagne 1d10 pa par jour.</td></tr><tr><td>20</td><td>SUPERBE.\
+    \ Dans une ville prospère, le personnage gagne 3d10 pa par jour. Au bout d’un\
+    \ certain temps, on l’invitera peut-être à se joindre à une troupe professionnelle\
+    \ et il pourrait acquérir une réputation au niveau local.</td></tr><tr><td>25</td><td>MÉMORABLE.\
+    \ Dans une ville prospère, le personnage gagne 1d6 po par jour. Au bout d’un certain\
+    \ temps, il se fera peut- être remarquer par des mécènes nobles et il pourrait\
+    \ acquérir une réputation au niveau national.</td></tr><tr><td>30</td><td>SUBLIME.\
+    \ Dans une ville prospère, le personnage gagne 3d6 po par jour. Au bout d’un certain\
+    \ temps, il se fera peut-être remarquer par des mécènes étrangers, voire par des\
+    \ créatures provenant d’autres plans.</td></tr></table><br/><br/>Un instrument\
+    \ de musique de maître confère un bonus de circonstances de +2 aux tests de Représentation\
+    \ chaque fois que le personnage l’utilise.<br/><br/><h2>Action</h2>Variable. Il\
+    \ faut entre une soirée et une journée entière pour gagner de l’argent en jouant\
     \ en public. Les pouvoirs du barde fondés sur la compétence de Représentation\
     \ sont détaillés dans la description de cette classe.<br/><br/><h2>Nouvelles tentatives</h2><b>Oui.</b>\
     \ Cependant, les nouvelles tentatives ne font pas oublier les échecs précédents\
@@ -3891,10 +4548,20 @@
     \ est également possible de saboter des objets simples comme une selle ou la roue\
     \ d’un chariot, de telle façon qu’ils fonctionnent normalement pendant un certain\
     \ temps, puis se cassent, se détachent ou tombent en panne un peu plus tard (généralement\
-    \ après 1d4 rounds ou minutes d’utilisation).<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><b>Crocheter\
-    \ une serrure.</b> Le DD pour crocheter une serrure dépend de la qualité de celle-ci.\
-    \ Si le personnage ne possède pas d’outils de cambrioleur, les DD suivants augmentent\
-    \ de +10.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ après 1d4 rounds ou minutes d’utilisation).<br/><br/><table><caption>Tests de\
+    \ Sabotage</caption><tr class=\"title\"><td>Objet/mécanisme</td><td>Temps nécessaire</td><td>DD\
+    \ du test - Exemple de Sabotage*</td></tr><tr><td>simple</td><td>1 round</td><td>10\
+    \ — coincer une serrure</td></tr><tr><td>complexe</td><td>1d4 rounds</td><td>15\
+    \ — saboter une roue de chariot</td></tr><tr><td>très complexe</td><td>2d4 rounds</td><td>20\
+    \ — désarmer ou réarmer un piège</td></tr><tr><td>extrêmement complexe</td><td>2d4\
+    \ rounds</td><td>25 — désarmer un piège complexe, saboter un mécanisme à engrenages\
+    \ complexes</td></tr><tr><td colspan=\"4\" class=\"note\">(*) Le DD augmente de\
+    \ +5 si le personnage tente de saboter l’objet sans que cela soit immédiatement\
+    \ visible.</td></tr></table><br/><br/><b>Crocheter une serrure.</b> Le DD pour\
+    \ crocheter une serrure dépend de la qualité de celle-ci. Si le personnage ne\
+    \ possède pas d’outils de cambrioleur, les DD suivants augmentent de +10.<br/><br/><table><caption>Tests\
+    \ de Crochetage</caption><tr class=\"title\"><td>SERRURE</td><td>DD DU TEST DE\
+    \ SABOTAGE</td></tr><tr><td>simple</td><td>20</td></tr><tr><td>moyenne</td><td>25</td></tr><tr><td>bonne</td><td>30</td></tr><tr><td>excellente</td><td>40</td></tr></table><br/><br/><h2>Action</h2>\
     \ Le temps nécessaire pour faire un test de Sabotage dépend de la tâche que le\
     \ personnage tente d’accomplir. Mettre un mécanisme simple hors-service prend\
     \ 1 round et constitue une action complexe. Les objets plus complexes prennent\
@@ -3997,57 +4664,93 @@
     \ tests de Survie visant à trouver ou à suivre les traces laissées par leurs ennemis\
     \ jurés.\n\nUn personnage possédant le don Autonome obtient un bonus aux tests\
     \ de Survie.\n\nRetour vers les Compétences"
-  DescriptionHTML: '<br/>Le personnage sait comment survivre et se diriger dans
-    les régions sauvages. Il est également entraîné à suivre les pistes ou les traces
-    laissées par d’autres créatures.<br/><br/><h2>Test de compétence</h2> En pleine
-    nature, le personnage est capable d’assurer sa propre sécurité et sa subsistance
-    ainsi que celles de ses compagnons. La table suivante indique le DD de différentes
-    tâches associées à la compétence de Survie.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/>
-    <b>Suivre des traces.</b> Un test de Survie permet de repérer des traces ou de
-    les suivre sur une distance de 1,5 km. Un nouveau test est nécessaire chaque fois
-    que la piste devient difficile à suivre. Si le personnage ne possède aucune formation
-    dans cette compétence, il peut quand même tenter de suivre des traces mais son
-    test échoue automatiquement si le DD de la tâche est supérieur à 10. Un personnage
-    peut également choisir d’utiliser la compétence de Perception (contre le même
-    DD) pour repérer une empreinte ou un autre signe du passage de la créature suivie.
-    Cependant, la compétence de Perception ne permet pas de suivre les traces, même
-    si quelqu’un d’autre les a déjà repérées.<br/><br/>Lorsque le personnage suit
-    une piste, il se déplace à la moitié de sa vitesse de déplacement normale (il
-    peut choisir de se déplacer à sa vitesse normale en acceptant un malus de -5 ou
-    au double de sa vitesse normale avec un malus de -20). Le DD du test dépend du
-    type de sol et des conditions en vigueur, comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Sol
-    très mou.</b> Toute surface dans laquelle les empreintes sont profondes et particulièrement
-    visibles (neige, boue, épaisse couche de poussière, etc.).<br/><br/><b>Sol mou.</b>
-    Toute surface assez élastique pour s’enfoncer sous le poids d’un individu, mais
-    plus ferme que la boue ou la neige. Les traces y sont nombreuses mais peu profondes.<br/><br/><b>Sol
-    ferme.</b> La plupart des sols en extérieur (pelouse, champ, bois, etc.) et les
-    surfaces extrêmement molles ou sales à l’intérieur (épais tapis, sol crasseux,
-    etc.). La créature suivie peut laisser quelques traces (brindilles cassées, touffes
-    de poils, etc.), mais les empreintes, elles, sont extrêmement rares.<br/><br/><b>Sol
-    dur.</b> Toute surface n’imprimant pas la moindre empreinte (roche naturelle,
-    sol en pierre, etc.). La plupart des lits de cours d’eau entrent dans cette catégorie
-    car les traces laissées sont généralement effacées par le courant. La créature
-    suivie ne laisse que quelques indices de son passage (cailloux déplacés, marques
-    de griffures, etc.).<br/><br/>Divers modificateurs s’appliquent au test de Survie,
-    comme indiqué dans la table ci-dessous.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td></tr><tr><td>%s</td></tr><br/><br/><h2>Action</h2>
-    Variable. Un test de Survie peut représenter une durée allant de plusieurs heures
-    à une journée d’activité. Un test de Survie destiné à trouver une piste nécessite
-    toujours au moins une action complexe, peut-être bien plus.<br/><br/><h2>Nouvelles
-    tentatives</h2> Variable. Pour se débrouiller dans les contrées sauvages ou obtenir
-    le bonus aux jets de Vigueur (comme indiqué dans la première table de la page
-    107), le personnage effectue un test de Survie toutes les vingt-quatre heures
-    et le résultat s’applique chaque fois jusqu’au test suivant. Pour ne pas se perdre
-    ou pour repérer les dangers naturels, le personnage effectue un test chaque fois
-    que nécessaire, mais chacun de ces tests ne peut être tenté qu’une seule fois.
-    Lorsqu’il s’agit de trouver une piste et que le test échoue, le personnage doit
-    poursuivre sa recherche pendant une heure (dans la nature) ou dix minutes (en
-    intérieur) avant de pouvoir tenter un nouveau test.<br/><br/><h2>Spécial</h2>
-    Toute personne possédant une formation (un rang non-nul) dans la compétence de
-    Survie peut déterminer la direction du nord sans devoir faire de test.<br/><br/>Les
-    rôdeurs bénéficient d’un bonus à leurs tests de Survie visant à trouver ou à suivre
-    les traces laissées par leurs ennemis jurés.<br/><br/>Un personnage possédant
-    le don Autonome obtient un bonus aux tests de Survie.<br/><br/>Retour vers les
-    Compétences '
+  DescriptionHTML: "<br/>Le personnage sait comment survivre et se diriger dans\
+    \ les régions sauvages. Il est également entraîné à suivre les pistes ou les traces\
+    \ laissées par d’autres créatures.<br/><br/><h2>Test de compétence</h2> En pleine\
+    \ nature, le personnage est capable d’assurer sa propre sécurité et sa subsistance\
+    \ ainsi que celles de ses compagnons. La table suivante indique le DD de différentes\
+    \ tâches associées à la compétence de Survie.<br/><br/><table><caption>tests de\
+    \ survie</caption><tr class=\"title\"><td>DD du test de Survie</td><td>Tâche</td></tr><tr><td>10</td><td>Le\
+    \ personnage sait se débrouiller en pleine nature sauvage. Il avance à la moitié\
+    \ de sa vitesse de déplacement normale en chassant et en cueillant pour se nourrir\
+    \ (il peut subsister sans réserve d’eau ou de nourriture). En cas de réussite,\
+    \ il trouve suffisamment à boire et à manger pour sustenter une personne de plus\
+    \ par tranche de 2 points de différence entre le résultat du test et le DD (10).</td></tr><tr><td>15</td><td>Le\
+    \ personnage acquiert un bonus aux jets de Vigueur contre les rigueurs du climat.\
+    \ Celui-ci s’élève à +2 s’il se déplace à demi-vitesse et à +4 s’il reste stationnaire.\
+    \ En cas de réussite, il peut procurer le même bonus à une personne de plus par\
+    \ point de différence entre le résultat du test et le DD (15).</td></tr><tr><td>15</td><td>Le\
+    \ personnage ne se perd pas et remarque les dangers naturels (des sables mouvants\
+    \ par exemple).</td></tr><tr><td>15</td><td>Le personnage peut prédire les conditions\
+    \ climatiques pour les vingt-quatre heures à venir. En cas de réussite, le personnage\
+    \ peut faire des prédictions pour une journée de plus par tranche de 5 points\
+    \ entre le résultat du test et le DD (15).</td></tr></table><br/><br/> <b>Suivre\
+    \ des traces.</b> Un test de Survie permet de repérer des traces ou de les suivre\
+    \ sur une distance de 1,5 km. Un nouveau test est nécessaire chaque fois que la\
+    \ piste devient difficile à suivre. Si le personnage ne possède aucune formation\
+    \ dans cette compétence, il peut quand même tenter de suivre des traces mais son\
+    \ test échoue automatiquement si le DD de la tâche est supérieur à 10. Un personnage\
+    \ peut également choisir d’utiliser la compétence de Perception (contre le même\
+    \ DD) pour repérer une empreinte ou un autre signe du passage de la créature suivie.\
+    \ Cependant, la compétence de Perception ne permet pas de suivre les traces, même\
+    \ si quelqu’un d’autre les a déjà repérées.<br/><br/>Lorsque le personnage suit\
+    \ une piste, il se déplace à la moitié de sa vitesse de déplacement normale (il\
+    \ peut choisir de se déplacer à sa vitesse normale en acceptant un malus de -5\
+    \ ou au double de sa vitesse normale avec un malus de -20). Le DD du test dépend\
+    \ du type de sol et des conditions en vigueur, comme indiqué dans la table suivante.<br/><br/><table><caption>Pistage</caption><tr\
+    \ class=\"title\"><td>Type de Sol</td><td>DD du test de Survie</td></tr><tr><td>très\
+    \ mou</td><td>5</td></tr><tr><td>mou</td><td>10</td></tr><tr><td>ferme</td><td>15</td></tr><tr><td>dur</td><td>20</td></tr></table><br/><br/><b>Sol\
+    \ très mou.</b> Toute surface dans laquelle les empreintes sont profondes et particulièrement\
+    \ visibles (neige, boue, épaisse couche de poussière, etc.).<br/><br/><b>Sol mou.</b>\
+    \ Toute surface assez élastique pour s’enfoncer sous le poids d’un individu, mais\
+    \ plus ferme que la boue ou la neige. Les traces y sont nombreuses mais peu profondes.<br/><br/><b>Sol\
+    \ ferme.</b> La plupart des sols en extérieur (pelouse, champ, bois, etc.) et\
+    \ les surfaces extrêmement molles ou sales à l’intérieur (épais tapis, sol crasseux,\
+    \ etc.). La créature suivie peut laisser quelques traces (brindilles cassées,\
+    \ touffes de poils, etc.), mais les empreintes, elles, sont extrêmement rares.<br/><br/><b>Sol\
+    \ dur.</b> Toute surface n’imprimant pas la moindre empreinte (roche naturelle,\
+    \ sol en pierre, etc.). La plupart des lits de cours d’eau entrent dans cette\
+    \ catégorie car les traces laissées sont généralement effacées par le courant.\
+    \ La créature suivie ne laisse que quelques indices de son passage (cailloux déplacés,\
+    \ marques de griffures, etc.).<br/><br/>Divers modificateurs s’appliquent au test\
+    \ de Survie, comme indiqué dans la table ci-dessous.<br/><br/><table><caption>Modificateurs\
+    \ des tests de Pistage</caption><tr class=\"title\"><td>Conditions en vigueur</td><td>Modificateur\
+    \ au\n DD du test de Survie</td></tr><tr><td>Par trois créatures faisant partie\
+    \ du groupe pisté</td><td>-1</td></tr><tr><td colspan=\"2\">TAILLE DES CRÉATURES\
+    \ TRAQUÉES</td></tr><tr><td> Infime (I)</td><td>+8</td></tr><tr><td> Minuscule\
+    \ (Min)</td><td>+4</td></tr><tr><td> Très petite (TP)</td><td>+2</td></tr><tr><td> Petite\
+    \ (P)</td><td>+1</td></tr><tr><td> Moyenne (M)</td><td>+0</td></tr><tr><td> Grande\
+    \ (G)</td><td>-1</td></tr><tr><td> Très grande (TG)</td><td>-2</td></tr><tr><td> Gigantesque\
+    \ (Gig)</td><td>-4</td></tr><tr><td> Colossale (C)</td><td>-8</td></tr><tr><td>Par\
+    \ tranche de vingt-quatre heures écoulées depuis que la piste a été laissée</td><td>+1</td></tr><tr><td>Par\
+    \ heure de pluie depuis que la piste a été laissée</td><td>+1</td></tr><tr><td>Chute\
+    \ de neige depuis que la piste a été laissée</td><td>+10</td></tr><tr><td colspan=\"\
+    2\">MAUVAISE VISIBILITÉ</td></tr><tr><td> Ciel nocturne couvert ou nuit sans lune</td><td>+6</td></tr><tr><td> Clair\
+    \ de lune</td><td>+3</td></tr><tr><td> Brouillard ou précipitations (pluie, neige,\
+    \ etc.)</td><td>+5</td></tr><tr><td>La cible masque sa piste (ce qui réduit sa\
+    \ vitesse de déplacement de moitié)</td><td>+5</td></tr><tr><td colspan=\"2\"\
+    \ class=\"note\">(1) Si le groupe est composé de créatures de tailles diverses,\
+    \ on prend seulement en compte la taille la plus importante.</td></tr><tr><td\
+    \ colspan=\"2\" class=\"note\">(2) Ces facteurs ne s’additionnent pas ; seul le\
+    \ plus important est pris en compte.</td></tr></table><br/><br/><h2>Action</h2>\
+    \ Variable. Un test de Survie peut représenter une durée allant de plusieurs heures\
+    \ à une journée d’activité. Un test de Survie destiné à trouver une piste nécessite\
+    \ toujours au moins une action complexe, peut-être bien plus.<br/><br/><h2>Nouvelles\
+    \ tentatives</h2> Variable. Pour se débrouiller dans les contrées sauvages ou\
+    \ obtenir le bonus aux jets de Vigueur (comme indiqué dans la première table de\
+    \ la page 107), le personnage effectue un test de Survie toutes les vingt-quatre\
+    \ heures et le résultat s’applique chaque fois jusqu’au test suivant. Pour ne\
+    \ pas se perdre ou pour repérer les dangers naturels, le personnage effectue un\
+    \ test chaque fois que nécessaire, mais chacun de ces tests ne peut être tenté\
+    \ qu’une seule fois. Lorsqu’il s’agit de trouver une piste et que le test échoue,\
+    \ le personnage doit poursuivre sa recherche pendant une heure (dans la nature)\
+    \ ou dix minutes (en intérieur) avant de pouvoir tenter un nouveau test.<br/><br/><h2>Spécial</h2>\
+    \ Toute personne possédant une formation (un rang non-nul) dans la compétence\
+    \ de Survie peut déterminer la direction du nord sans devoir faire de test.<br/><br/>Les\
+    \ rôdeurs bénéficient d’un bonus à leurs tests de Survie visant à trouver ou à\
+    \ suivre les traces laissées par leurs ennemis jurés.<br/><br/>Un personnage possédant\
+    \ le don Autonome obtient un bonus aux tests de Survie.<br/><br/>Retour vers les\
+    \ Compétences "
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Survie.ashx
   
 - Nom: Utilisation d'objets magiques
@@ -4196,7 +4899,14 @@
     \ il doit effectuer un test par heure.<br/><br/>Le personnage doit choisir sciemment\
     \ le facteur qu’il souhaite simuler. Il doit donc savoir ce qu’il veut simuler\
     \ avant d’effecteur le test d’Utilisation d’objets magiques. Les DD des différentes\
-    \ tâches relatives à cette compétence sont repris dans la table ci-dessous.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Activer\
+    \ tâches relatives à cette compétence sont repris dans la table ci-dessous.<br/><br/><table><caption>tests\
+    \ d'Utilisation d'Objets Magiques</caption><tr class=\"title\"><td>Tâche</td><td>DD\
+    \ du test d’Utilisation \nd’objets magiques</td></tr><tr><td>Activer un objet\
+    \ par chance</td><td>25</td></tr><tr><td>Déchiffrer un sort écrit</td><td>25 +\
+    \ niveau du sort</td></tr><tr><td>Simuler une aptitude de classe</td><td>20</td></tr><tr><td>Simuler\
+    \ une valeur de caractéristique</td><td>voir la description</td></tr><tr><td>Simuler\
+    \ une race</td><td>25</td></tr><tr><td>Simuler un alignement</td><td>30</td></tr><tr><td>Utiliser\
+    \ un parchemin</td><td>20 + NLS</td></tr><tr><td>Utiliser une baguette</td><td>20</td></tr></table><br/><br/><b>Activer\
     \ un objet par chance.</b> Certains objets magiques sont activés par une pensée,\
     \ un mot de commande ou un geste spécifique. Le personnage peut s’en servir comme\
     \ s’il respectait la procédure à suivre, bien qu’il l’ignore. Pour obtenir un\
@@ -4347,29 +5057,43 @@
     \ se déplacer dans une direction différente de celle suivie lors du tour précédent\
     \ sans devoir faire un test de compétence. Toutes les actions qui violent ces\
     \ règles nécessitent un test de Vol. Le DD de ce test dépend de la manœuvre que\
-    \ la créature volante tente, comme indiqué dans la table suivante.<br/><br/><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td></tr><br/><br/><b>Être\
-    \ attaqué en vol.</b> Une créature volante n’est pas forcément considérée comme\
-    \ prise au dépourvu lorsqu’elle vole. Si elle utilise des ailes et qu’elle subit\
-    \ des dégâts en vol, elle doit réussir un test de Vol (DD 10) pour éviter de perdre\
-    \ 3 m d’altitude. Ce mouvement vers le bas ne provoque pas d’attaque d’opportunité\
-    \ et ne compte pas dans la limite de mouvement que la créature peut effectuer\
-    \ chaque round.<br/><br/><b>Collision en vol.</b> Si une créature utilise des\
-    \ ailes pour voler et entre en collision avec un objet de même taille qu’elle\
-    \ ou plus grand qu’elle, elle doit immédiatement réussir un test de Vol (DD 25)\
-    \ pour éviter de plonger vers le sol et de subir des dégâts en conséquence.<br/><br/><b>Éviter\
-    \ les dégâts dus à une chute.</b> Si une créature capable de voler tombe, elle\
-    \ peut tenter d’annuler les dégâts dus à la chute en réussissant un test de Vol\
-    \ (DD 10). Cette option n’est pas disponible si la chute résulte d’un test de\
-    \ Vol raté ou d’une collision.<br/><br/><b>Vents forts.</b> Les vents forts imposent\
-    \ des malus aux tests de Vol, comme indiqué dans la table ci-dessous. Les créatures\
-    \ dont la taille est inférieure ou égale à celle indiquée dans la colonne « Créatures\
-    \ stoppées » doivent réussir un test de Vol (DD 20) pour pouvoir se déplacer et\
-    \ ce aussi longtemps que les vents persistent. Les créatures dont la taille est\
-    \ inférieure ou égale à celle indiquée dans la colonne « Créatures emportées »\
-    \ doivent réussir un test de Vol (DD 25) pour éviter d’être emportées par le vent\
-    \ sur 2d6 × 3 m et de subir 2d6 points de dégâts non-létaux. Ces tests se répètent\
-    \ chaque round où la créature reste en vol. Une créature qui est emportée doit\
-    \ également réussir un test de Vol (DD 20) pour éviter d’être stoppée par le vent.<br/><br/><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr><br/><br/><h2>Action</h2>\
+    \ la créature volante tente, comme indiqué dans la table suivante.<br/><br/><table><caption>Manœuvres\
+    \ aériennes</caption><tr class=\"title\"><td>Manœuvre aérienne</td><td>DD du test\
+    \ de Vol</td></tr><tr><td>Se déplacer sur une distance inférieure à la moitié\
+    \ de sa vitesse et rester en vol</td><td>10</td></tr><tr><td>Faire du surplace/vol\
+    \ stationnaire</td><td>15</td></tr><tr><td>Virer de plus de 45° en sacrifiant\
+    \ 1,50 m de mouvement</td><td>15</td></tr><tr><td>Virer à 180° en sacrifiant 3\
+    \ m de mouvement</td><td>20</td></tr><tr><td>Voler vers le haut selon un angle\
+    \ de plus de 45°</td><td>20</td></tr></table><br/><br/><b>Être attaqué en vol.</b>\
+    \ Une créature volante n’est pas forcément considérée comme prise au dépourvu\
+    \ lorsqu’elle vole. Si elle utilise des ailes et qu’elle subit des dégâts en vol,\
+    \ elle doit réussir un test de Vol (DD 10) pour éviter de perdre 3 m d’altitude.\
+    \ Ce mouvement vers le bas ne provoque pas d’attaque d’opportunité et ne compte\
+    \ pas dans la limite de mouvement que la créature peut effectuer chaque round.<br/><br/><b>Collision\
+    \ en vol.</b> Si une créature utilise des ailes pour voler et entre en collision\
+    \ avec un objet de même taille qu’elle ou plus grand qu’elle, elle doit immédiatement\
+    \ réussir un test de Vol (DD 25) pour éviter de plonger vers le sol et de subir\
+    \ des dégâts en conséquence.<br/><br/><b>Éviter les dégâts dus à une chute.</b>\
+    \ Si une créature capable de voler tombe, elle peut tenter d’annuler les dégâts\
+    \ dus à la chute en réussissant un test de Vol (DD 10). Cette option n’est pas\
+    \ disponible si la chute résulte d’un test de Vol raté ou d’une collision.<br/><br/><b>Vents\
+    \ forts.</b> Les vents forts imposent des malus aux tests de Vol, comme indiqué\
+    \ dans la table ci-dessous. Les créatures dont la taille est inférieure ou égale\
+    \ à celle indiquée dans la colonne « Créatures stoppées » doivent réussir un test\
+    \ de Vol (DD 20) pour pouvoir se déplacer et ce aussi longtemps que les vents\
+    \ persistent. Les créatures dont la taille est inférieure ou égale à celle indiquée\
+    \ dans la colonne « Créatures emportées » doivent réussir un test de Vol (DD 25)\
+    \ pour éviter d’être emportées par le vent sur 2d6 × 3 m et de subir 2d6 points\
+    \ de dégâts non-létaux. Ces tests se répètent chaque round où la créature reste\
+    \ en vol. Une créature qui est emportée doit également réussir un test de Vol\
+    \ (DD 20) pour éviter d’être stoppée par le vent.<br/><br/><table><caption>Effet\
+    \ du vent sur les creatures volantes</caption><tr class=\"title\"><td>Force du\
+    \ vent</td><td>Vitesse du vent</td><td>Créatures stoppées</td><td>Créatures emportées</td><td>Malus\
+    \ aux tests de Vol</td></tr><tr><td>léger</td><td>0–15 km/h</td><td>—</td><td>—</td><td>—</td></tr><tr><td>modéré</td><td>15–30\
+    \ km/h</td><td>—</td><td>—</td><td>—</td></tr><tr><td>fort</td><td>30–50 km/h</td><td>TP</td><td>—</td><td>-2</td></tr><tr><td>violent</td><td>50–80\
+    \ km/h</td><td>P</td><td>TP</td><td>-4</td></tr><tr><td>tempête</td><td>80–120\
+    \ km/h</td><td>M</td><td>P</td><td>-8</td></tr><tr><td>ouragan</td><td>120–280\
+    \ km/h</td><td>G</td><td>M</td><td>-12</td></tr><tr><td>tornade</td><td>280+ km/h</td><td>TG</td><td>G</td><td>-16</td></tr></table><br/><br/><h2>Action</h2>\
     \ Aucune. Un test de Vol ne nécessite pas une action propre ; il fait partie d’une\
     \ autre action ou se produit en réaction à un événement.<br/><br/><h2>Nouvelles\
     \ tentatives</h2> Variable. On peut tenter un test de Vol pour réaliser une manœuvre\

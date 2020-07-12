@@ -17,12 +17,12 @@ MOCK_DON = None
 #MOCK_LIST = "mocks/donsListe.html"   # décommenter pour tester avec une liste pré-téléchargée
 #MOCK_DON  = "mocks/don7.html"        # décommenter pour tester avec un sort pré-téléchargé
 
-URLS = [#"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ash"x,
-        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20daudace.ashx",
+URLS = [#"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capitulatif%20des%20dons.ashx",
+        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20daudace.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20cr%c3%a9ation%20dobjets.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9cole.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20d%c3%a9quipe.ashx",
-        "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20m%c3%a9tamagie.ashx",
+        #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20m%c3%a9tamagie.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20de%20spectacle.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tableau%20r%c3%a9capitulatif%20des%20dons%20mythiques.ashx",
         #"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.dons%20issus%20du%20cadre%20de%20campagne.ashx",
@@ -30,7 +30,7 @@ URLS = [#"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tableau%20r%c3%a9capi
 
 PROPERTIES = [  "Catégorie", "Catégories", "Conditions", "Condition", "Conditions requises", "Normal", "Avantage", "Avantages", "Spécial", "À noter"]
 
-FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'ConditionsRefs', 'Avantage', 'Normal', 'Spécial', 'Source', 'Référence' ]
+FIELDS = ['Nom', 'Résumé', 'Catégorie', 'Conditions', 'ConditionsRefs', 'Avantage', 'AvantageHTML', 'Normal', 'Spécial', 'Source', 'Référence' ]
 MATCH = ['Nom']
 
 FEAT_REFS = []
@@ -105,6 +105,7 @@ for URL in URLS:
 
         # lire les attributs
         text = ""
+        html = ""
         for attr in content.find_all('b'):
             key = attr.text.strip()
             if key[-1]=='.':
@@ -122,6 +123,7 @@ for URL in URLS:
                     if s.name == 'a':
                         refs.append(s['href'])
                     text += html2text(s)
+                    html += html2text(s, True, 2)
 
             if key in PROPERTIES:
                 if key == "Condition" or key == "Conditions requises":
@@ -136,6 +138,10 @@ for URL in URLS:
                 don[key]=cleanProperty(text, False)
                 descr = s.next_siblings
                 text = ""
+                html = ""
+                
+                if key == "Avantage":
+                    don["AvantageHTML"] = html
             else:
                 print("- Skipping unknown property %s" % key)
         

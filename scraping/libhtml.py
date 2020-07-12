@@ -16,6 +16,8 @@ TYPE_FABRI = 3
 VALID_PROPS   = ["aura", "nls", "conditions", "emplacement", "poids", "prixalt"] 
 VALID_FABRICS = ["coût", "conditions"]
 
+MODE_TEXT = 1 # pure text
+MODE_HTML = 2 # clean HTML
 
 #
 # cette fonction permet de sauter à l'élément recherché et retourne les prochains éléments
@@ -61,24 +63,44 @@ def findProperty(html, propName, removeEndDot = True):
 #
 # cette fonction convertit un tableau en texte
 #
-def table2text(table):
+def table2text(table, mode = MODE_TEXT):
     if table is None:
         return ""
     text = ""
-    first = True
-    for tr in table.find_all('tr'):
-        if first:
-            first = False
-        else:
-            text += "• "
-        for td in tr.find_all('td'):
-            text += html2text(td).replace('\n','') + ", "
-        text = text[:-2] + "\n"
+    
+    if mode == MODE_TEXT:
+      first = True
+      for tr in table.find_all('tr'):
+          if first:
+              first = False
+          else:
+              text += "• "
+          for td in tr.find_all('td'):
+              text += html2text(td, True, mode).replace('\n','') + ", "
+          text = text[:-2] + "\n"
+
+    else:
+      text += "<table>"
+      caption = table.find('caption')
+      if caption:
+          text += "<caption>%s</caption>" % caption.text
+      for tr in table.find_all('tr'):
+          classes = "title" if 'class' in tr.attrs and "titre" in tr.attrs['class'] else ""
+          classes = " class=\"%s\"" % classes if len(classes) > 0 else ""
+          text += "<tr%s>" % classes
+          for td in tr.find_all('td'):
+              colspan = " colspan=\"%s\"" % td.attrs['colspan'] if 'colspan' in td.attrs else ""
+              classes = "note" if 'class' in td.attrs and "note" in td.attrs['class'] else ""
+              classes = " class=\"%s\"" % classes if len(classes) > 0 else ""
+              text += "<td%s%s>%s</td>" % (colspan, classes, html2text(td))
+          text += "</tr>"
+      text += "</table>"
 
     return text
 
 
-def html2text(htmlEl, skipDiv = True):
+
+def html2text(htmlEl, skipDiv = True, mode = MODE_TEXT):
     if htmlEl.name is None or htmlEl.name == 'a':
         if htmlEl.string is None:
             return ""
@@ -90,31 +112,47 @@ def html2text(htmlEl, skipDiv = True):
     elif htmlEl.name == 'i':
         text = ""
         for c in htmlEl.children:
-            text += html2text(c)
+            text += html2text(c, skipDiv, mode)
         return text.replace("\n"," ")
     elif htmlEl.name == 'br':
-        return "\n"
+        return "\n" if mode == MODE_TEXT else "<br/>"
     elif htmlEl.name == 'b':
-        text = ""
-        for c in htmlEl.children:
-            text += html2text(c)
-        return text.replace("\n"," ").upper()
+        if mode == MODE_TEXT:
+            text = ""
+            for c in htmlEl.children:
+                text += html2text(c, skipDiv, mode)
+            return text.replace("\n"," ").upper()
+        else:
+            text = "<b>"
+            for c in htmlEl.children:
+                text += html2text(c, skipDiv, mode)
+            return text + "</b>"
     elif htmlEl.name == 'center':
-        return table2text(htmlEl.find('table'))
+        return table2text(htmlEl.find('table'), mode)
     elif not skipDiv and htmlEl.name == 'div' and htmlEl.find('table'):
-        return table2text(htmlEl.find('table'))
+        return table2text(htmlEl.find('table'), mode)
     elif htmlEl.name == 'ul':
-        text = ""
-        for li in htmlEl.find_all('li'):
-            text += "• " + li.text + "\n"
-        return "\n" + text + "\n"
+        if mode == MODE_TEXT:
+            text = ""
+            for li in htmlEl.find_all('li'):
+                text += "• " + li.text + "\n"
+            return "\n" + text + "\n"
+        else:
+            text = "<ul>"
+            for li in htmlEl.find_all('li'):
+                text += "<li>%s</li>" % li.text
+            return text + "</ul>"
+        
     elif htmlEl.name == "td":
         text = ""
         for c in htmlEl.children:
-            text += html2text(c)
+            text += html2text(c, skipDiv, mode)
         return text
     elif htmlEl.name == "h2" or htmlEl.name == "h3":
-        return cleanSectionName(htmlEl.text).upper()
+        if mode == MODE_TEXT:
+            return cleanSectionName(htmlEl.text).upper()
+        else:
+            return "<%s>%s</%s>" % (htmlEl.name, cleanSectionName(htmlEl.text), htmlEl.name)
     elif htmlEl.name == "abbr":
         return htmlEl.text
     else:
