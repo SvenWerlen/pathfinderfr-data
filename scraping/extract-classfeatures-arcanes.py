@@ -16,7 +16,7 @@ MOCK_ARCANE = None
 #MOCK_ARCANE = "mocks/arcanes.html"       # décommenter pour tester avec les arcanes pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.arcanes.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ LVL = 3
 arcane = {'Niveau':LVL}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'AM'
 
 for s in section:
@@ -45,10 +46,12 @@ for s in section:
             if newObj:
                 arcane['Classe'] = 'Magus'
                 arcane['Description'] = cleanInlineDescription(descr)
+                arcane['DescriptionHTML'] = cleanInlineDescription(descrHTML)
                 liste.append(arcane)
                 arcane = {'Niveau':LVL}
                 
             descr = ""
+            descrHTML = ""
             arcane['Nom'] = "Arcane: " + nom
             arcane['Source'] = source
             arcane['Référence'] = reference
@@ -57,6 +60,7 @@ for s in section:
         
         else:
             descr += html2text(el)
+            descrHTML += html2text(el, True, 2)
     
 
 # last element        
