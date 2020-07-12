@@ -13,7 +13,7 @@ from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cle
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
-MOCK_MAGIC = "mocks/magic-objets.html"                  # décommenter pour tester avec les objets merveilleux pré-téléchargées
+#MOCK_MAGIC = "mocks/magic-objets.html"                  # décommenter pour tester avec les objets merveilleux pré-téléchargées
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-ailes-vol.html"      # décommenter pour tester avec détails pré-téléchargé
 #MOCK_MAGIC_ITEM = "mocks/magic-casque-comprehension.html"      # décommenter pour tester avec détails pré-téléchargé
@@ -58,7 +58,7 @@ for m in multicol:
         nom = link.text.strip()
         
         # jump
-        #if nom == "Robe Ardente":
+        #if nom == "Bandelettes de Frappes Dévastatrices":
         #    found = True
         
         #if not found:
@@ -124,9 +124,11 @@ for m in multicol:
             
             # si l'objet à plusieurs prix, alors créer les variations de l'objet
             variations = re.split('(?<=\)),\s+|(?<=\))\s+ou\s+', element["Prix"]) 
-            nomBackup = element["Nom"]
             if len(variations) > 1:
+                
+                added = False
                 for variation in variations:
+                    varElement = dict(element)
                     try:
                         price = re.search('^(.+? po) \(', variation).group(1)
                     except:
@@ -137,14 +139,14 @@ for m in multicol:
                     except:
                         print("ERROR: Could not extract the variation detail for " + element["Nom"] + "'" + variation + "'")
                         exit(1)
-                    element["Prix"] = price
-                    element["Nom"] = element["Nom"] + " (" + detail + ")"
-                    print("Creation de la variation " + element["Nom"])
-                    liste.append(element)
-                    element["Nom"] = nomBackup
+                    varElement["Prix"] = price
+                    varElement["Nom"] = element["Nom"] + " (" + detail + ")"
+                    print("Creation de la variation " + varElement["Nom"])
+                    liste.append(varElement)
+                    
             else:
                 liste.append(element)
-    
+                    
 #exit(1)
 
 print("Fusion avec fichier YAML existant...")
