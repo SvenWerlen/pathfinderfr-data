@@ -15,7 +15,7 @@ from libhtml import jumpTo, html2text, cleanSectionName, cleanInlineDescription,
 MOCK_CF = None
 #MOCK_CF = "mocks/classe-maitre-espion.html"       # décommenter pour tester avec les rages pré-téléchargées
 
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 URL = "http://www.pathfinder-fr.org/Wiki/"
 
@@ -54,12 +54,13 @@ def addClassFeature(name, link, level):
             liste.append(add)
             return
     # non-trouvé!
-    print("Aucune description correspondant à '%s'" % link)
-    exit(1)
+    print("Agit sucune description correspondant à '%s' (%s %s)" % (link, name, level))
+    return
 
 def extractDescriptions(cl, listeDescr, section, baseURL):
     newObj = False
     descr = ""
+    descrHTML = ""
 
     altLink = []
     classfeature = None
@@ -67,11 +68,13 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
         if s.name == 'h3':
             if newObj:
                 classfeature['Description'] = descr
+                classfeature['DescriptionHTML'] = descrHTML
                 classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
                 listeDescr.append(classfeature)
 
             classfeature = {'Auto': True, 'RéférenceAlt': altLink }
             descr = ""
+            descrHTML = ""
             newObj = True
             altLink = []
             classfeature['Nom'] = cleanSectionName(s.text)
@@ -84,20 +87,22 @@ def extractDescriptions(cl, listeDescr, section, baseURL):
                 altLink.append(a['href'])
         else:
             descr += html2text(s)
+            descrHTML += html2text(s, True, 2)
     
     if not classfeature:
         return
     
     ## last element
     classfeature['Description'] = descr
+    classfeature['DescriptionHTML'] = descrHTML
     classfeature['Niveau'] = extractLevel(classfeature['Description'], 150)
     listeDescr.append(classfeature)
     
     
 for cl in classes:
 
-    if cl['Nom'] != "Enquêteur":
-        continue
+    #if cl['Nom'] != "Métamorphe":
+    #    continue
 
     listeDescr = []
     listeNames = {}
@@ -177,7 +182,6 @@ for cl in classes:
             elif c.name is None and "," in c.string :
                 val = c.string.split(',')
                 curName += val[0]
-                print(curName)
                 addClassFeature(curName, curHref, level)
                 curName = val[1]
                 curHref = ""
@@ -193,10 +197,9 @@ for cl in classes:
     
     if MOCK_CF:
         break
-    break
 
 print("Fusion avec fichier YAML existant...")
 
 HEADER = ""
 
-#mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)
+mergeYAML("../data/classfeatures.yml", MATCH, FIELDS, HEADER, liste)
