@@ -16,7 +16,7 @@ MOCK_ORDRE = None
 #MOCK_ORDRE = "mocks/ordres.html"       # décommenter pour tester avec les ordres pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.ordres.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -35,6 +35,7 @@ section = jumpTo(content, 'h2',{'class':'separator'}, u"Ordres de chevalier")
 ordre = {'Niveau':1}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'MJRA'
 for el in section:
     if el.name == "h2":
@@ -47,9 +48,11 @@ for el in section:
         if newObj:
             ordre['Classe'] = 'Chevalier'
             ordre['Description'] = descr.strip()
+            ordre['DescriptionHTML'] = descrHTML
             liste.append(ordre)
             ordre = {'Niveau':1}
             descr = ""
+            descrHTML = ""
 
         ordre['Nom'] = nom
         ordre['Source'] = source
@@ -64,10 +67,12 @@ for el in section:
     
     else:
         descr += html2text(el)
+        descrHTML += html2text(el, True, 2)
         
 # last element        
 ordre['Classe'] = 'Chevalier'
 ordre['Description'] = descr.strip()
+ordre['DescriptionHTML'] = descrHTML
 liste.append(ordre)
 
 section = jumpTo(content, 'h2',{'class':'separator'}, "Ordres de Samouraï")
