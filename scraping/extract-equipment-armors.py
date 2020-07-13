@@ -19,7 +19,7 @@ MOCK_W = None
 MOCK_WD = None
 #MOCK_WD = "mocks/armors-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
-FIELDS = ['Nom', 'Catégorie', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Catégorie', 'Source', 'Prix', 'Bonus', 'BonusDexMax', 'Malus', 'ÉchecProfane', 'Vit9m', 'Vit6m', 'Poids', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -119,6 +119,7 @@ def addInfos(liste, name, source):
         if l['Nom'].lower() in names:
             l['Complete'] = True
             l['Description'] = descr.strip()
+            l['DescriptionHTML'] = descrHTML.strip()
             if not source is None:
                 l['Source'] = source
             found = True
@@ -136,6 +137,7 @@ section = jumpTo(content, 'h1',{'class':'separator'}, "Armures classiques")
 newObj = True
 name = ""
 descr = ""
+descrHTML = ""
 source = None
 sourceNext = None
 for s in section:
@@ -153,11 +155,11 @@ for s in section:
                     name = e.text.strip()
                     source = None
                     descr = ""
+                    descrHTML = ""
                     newObj = False
-            elif e.name == 'br':
-                descr += "\n"
             else:
                 descr += html2text(e)
+                descrHTML += html2text(e, True, 2)
                 if e.name == 'div' or e.name == 'a':
                     src = extractSource(e)
                     if src:
