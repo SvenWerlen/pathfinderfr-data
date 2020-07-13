@@ -16,7 +16,7 @@ MOCK_RAGE = None
 #MOCK_RAGE = "mocks/barbare-rages.html"       # décommenter pour tester avec les rages pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.pouvoirs%20de%20rage.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -38,11 +38,13 @@ for s in section:
         newObj = False
         brCount = 0
         descr = ""
+        descrHTML = ""
         for e in s.children:
             if e.name == 'h3':
                 if newObj:
                     rage['Classe'] = 'Barbare'
                     rage['Description'] = descr.strip()
+                    rage['DescriptionHTML'] = descrHTML
                     if not sourceNext is None:
                         rage['Source'] = sourceNext
                     liste.append(rage)
@@ -51,6 +53,7 @@ for s in section:
                     rage = {'Source':'MJ','Niveau':1}
                     brCount = 0
                     descr = ""
+                    descrHTML = ""
                 else:
                     sourceNext = source
                 rage['Nom'] = "Rage: " + cleanSectionName(e.text)
@@ -67,8 +70,10 @@ for s in section:
                 brCount+=1
                 if(brCount==2 and 'Prérequis' in rage):
                     descr = ""
+                    descrHTML = ""
             else:
                 descr += html2text(e)
+                descrHTML += html2text(e, True, 2)
                 if e.name == 'a':
                     src = extractSource(e)
                     if src:
@@ -77,6 +82,7 @@ for s in section:
         ## last element
         rage['Classe'] = 'Barbare'
         rage['Description'] = descr.strip()
+        rage['DescriptionHTML'] = descrHTML
         if not sourceNext is None:
             rage['Source'] = sourceNext
         liste.append(rage)
