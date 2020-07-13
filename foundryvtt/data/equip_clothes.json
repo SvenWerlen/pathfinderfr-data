@@ -524,7 +524,7 @@
       "type": "loot",
       "data": {
          "description": {
-            "value": "<p><b>Prix: </b>8 po<br/><b>Poids: </b>0,25 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Le style complexe de cette \u00e9charpe dissimule les nombreuses petites poches situ\u00e9es sur l\u2019une des faces. Elle accorde un bonus de +4 aux tests d\u2019Escamotage pour cacher des objets sur soi. Ce bonus ne se cumule pas avec les bonus qu\u2019accordent les v\u00eatements \u00e9pais mais il se cumule avec les bonus accord\u00e9s quand on essaye de dissimuler des petits objets.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#\u00c9charpe \u00e0 poches\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+            "value": "<p><b>Prix: </b>8 po<br/><b>Poids: </b>0,25 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Les artistes utilisent souvent des costumes s\u00e9duisants et de ravissants accessoires pour leurs spectacles. Les \u00e9charpes en soie transparente ou en tissu color\u00e9, souvent brod\u00e9es de sc\u00e8nes ou de motifs complexes, font partie de leurs accessoires favoris.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#\u00c9charpe \u00e0 poches\" parent=\"_blank\">pathfinder-fr.org</a></p>"
          },
          "source": "MJ",
          "quantity": 1,
@@ -790,6 +790,146 @@
          "quantity": 1,
          "weight": null,
          "price": 5,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Bottes de velours",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>25 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Ces bottes douces et tr\u00e8s fines sont faites en soie et en cuir sp\u00e9cialement trait\u00e9. Elles sont sp\u00e9cifiquement con\u00e7ues pour les pieds des hommes-f\u00e9lins et s\u2019adaptent \u00e0 leur morphologie afin d\u2019\u00e9touffer les bruits de pas et de r\u00e9duire les empreintes laiss\u00e9es derri\u00e8re eux. Lorsqu\u2019il porte ces bottes de velours, l\u2019homme-f\u00e9lin b\u00e9n\u00e9ficie d\u2019un bonus de circonstances de +1 \u00e0 ses tests de Discr\u00e9tion. En outre, le DD pour rep\u00e9rer ou suivre la piste d\u2019un homme-f\u00e9lin portant ces bottes augmente de +2.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Bottes de velours\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 25,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Cape-aile",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>1200 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Cet \u00e9trange \u00e9quipement ne fonctionne que pour les sylphes et cr\u00e9atures similaires, dont les vents peuvent porter le corps l\u00e9ger et a\u00e9rien dans les airs. Ressemblant \u00e0 une cape de voyageur en belle soie, la cape-aile est secr\u00e8tement renforc\u00e9e d\u2019un ensemble d\u2019entretoises en bois qui, maintenues en place, tendent le tissu de la cape pour former une aile rudimentaire. Le fait de disposer les entretoises pour former une aile ou d\u2019inverser le changement co\u00fbte une action de mouvement. Lorsque la cape forme une aile, le porteur peut faire un test de Vol DD 15 pour tomber sans danger de n\u2019importe quelle hauteur sans recevoir de d\u00e9g\u00e2ts de la chute, comme s\u2019il utilisait feuille morte. Lorsqu\u2019il tombe, le porteur peut faire un autre test de Vol DD 15 pour planer, avan\u00e7ant lat\u00e9ralement de 1,5 m\u00e8tre par tranche de 6 m\u00e8tres de hauteur de chute. Il faut deux mains pour pr\u00e9parer et utiliser la cape-aile et cela provoque une attaque d\u2019opportunit\u00e9. La cape-aile a une solidit\u00e9 de 0 et 5 points de vie. Si elle est cass\u00e9e, le DD du test de Vol augmente de +10.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Cape-aile\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 1200,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Cape parachute",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>100 po<br/><b>Poids: </b>2 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Cette cape en soie est faite de nombreuses couches superpos\u00e9es cousues par des fils tr\u00e8s l\u00e2ches. Quand elle est expos\u00e9e \u00e0 un influx d\u2019air soudain, comme lors d\u2019une chute, elle se d\u00e9ploie comme un parachute rudimentaire. Une cr\u00e9ature qui tombe alors qu\u2019elle porte cette cape est trait\u00e9e comme une cr\u00e9ature ayant saut\u00e9 d\u00e9lib\u00e9r\u00e9ment. En revanche, dans les zones de vent violent, la cape g\u00eane les mouvements. Dans ce cas, le propri\u00e9taire de la cape consid\u00e8re tous les terrains comme des terrains difficiles et subit un malus de -4 aux tests de Vol. La cape parachute est de conception \u00e9trange et fragile, c\u2019est pourquoi seuls les mod\u00e8les de taille P ou moins sont fonctionnels. Les capes de plus grande taille donnent seulement les malus li\u00e9s au grand vent, sans aucun avantage en cas de chute.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Cape parachute\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 2.0,
+         "price": 100,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Ceintures de cha\u00eene",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>15 po<br/><b>Poids: </b>0,125 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Si les ondins ne s\u2019habillent que l\u00e9g\u00e8rement, ils portent souvent des ceintures de 3 m\u00e8tres de long se composant d\u2019une fine cha\u00eene nou\u00e9e autour de la taille. Les ceintures sont pourvues de maillons \u00e0 charni\u00e8re auxquels le porteur peut attacher divers objets comme des outils, de petites armes et d\u2019autres objets de valeur, y compris des maillons en argent et en platine, ou de petites plaques en or martel\u00e9es incrust\u00e9es de pierres pr\u00e9cieuses. Port\u00e9e correctement, la ceinture peut soutenir jusqu\u2019\u00e0 15 kilos de petits objets. Un ondin en train de nager peut d\u00e9faire la ceinture par une action rapide s\u2019il doit l\u2019enlever pour r\u00e9duire le poids qu\u2019il porte.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Ceintures de cha\u00eene\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.125,
+         "price": 15,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Col de protection",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>10 po<br/><b>Poids: </b>0,125 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Fait de cuir bouilli renforc\u00e9 d\u2019une bande de m\u00e9tal, ce col prot\u00e8ge le porteur contre les morsures de vampire lorsqu\u2019il le porte autour du cou. Il fournit un bonus d\u2019armure de +1 \u00e0 la CA contre les morsures de vampires ou attaques similaires visant sp\u00e9cifiquement le cou du porteur. Contrairement \u00e0 la plupart des bonus d\u2019armure, le bonus de +1 du col de protection se cumule avec le bonus d\u2019armure des armures l\u00e9g\u00e8res ou interm\u00e9diaires mais n\u2019offre aucun bonus suppl\u00e9mentaire lorsqu\u2019il est port\u00e9 avec une armure lourde.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Col de protection\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.125,
+         "price": 10,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Habits de dilettante",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>20 po<br/><b>Poids: </b>4 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Les inventeurs et les voyageurs gnomes appr\u00e9cient tout particuli\u00e8rement ces v\u00eatements qui se composent de robustes bottes, d\u2019un pantalon ou d\u2019une jupe de lin robuste, d\u2019une chemise, de gants de cuir, d\u2019un chapeau, d\u2019une cape et de nombreuses ceintures, attaches et autres accessoires (comme des \u00e9charpes, une veste, des bouts de corde ou de ficelle et des cartouchi\u00e8res). Ces divers \u00e9l\u00e9ments ne sont jamais assortis et viennent tous d\u2019un autre ensemble de v\u00eatements dont ils ont \u00e9t\u00e9 extraits pour leur qualit\u00e9 \u00ab sup\u00e9rieure. \u00bb Ils regorgent de poches et de planques. Ces habits donnent un bonus de circonstances de +2 \u00e0 leur propri\u00e9taire quand il fait un test d\u2019Escamotage pour cacher un petit objet sur sa personne.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Habits de dilettante\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 4.0,
+         "price": 20,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Masque de guerre",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>V\u00eatements<br/></p><h3>Description:</h3><p>Fait en bois, en os ou en mat\u00e9riau similaire, ce masque recouvre l\u2019apparence et l\u2019identit\u00e9 v\u00e9ritables du porteur d\u2019un visage haineux et m\u00e9prisant. Du fait de l\u2019excellente facture et des d\u00e9tails parfaits du masque de guerre, le porteur gagne un bonus de +1 \u00e0 ses tests d\u2019Intimidation pour d\u00e9moraliser un adversaire.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Masque de guerre\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 50,
          "identified": true,
          "carried": true,
          "equipped": false,

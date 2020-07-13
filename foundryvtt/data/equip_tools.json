@@ -24,7 +24,7 @@
       "type": "loot",
       "data": {
          "description": {
-            "value": "<p><b>Prix: </b>10 po<br/><b>Poids: </b>1,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Cet album de 100 pages contient les portraits d\u2019hommes et de femmes nains, elfes, gnomes, demi-elfes, demi-orques, halfelins et humains. En choisissant le portrait qui convient et en lui rajoutant des cheveux, une barbe ou d\u2019autres caract\u00e9ristiques comme des grains de beaut\u00e9 ou des cicatrices, m\u00eame un pi\u00e8tre artiste peut rapidement cr\u00e9er un portrait ressemblant \u00e0 une personne sp\u00e9cifique : par exemple, un inquisiteur peut faire le portrait d\u2019une sorci\u00e8re demi-elfe recherch\u00e9e.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Album de portraits\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+            "value": "<p><b>Prix: </b>10 po<br/><b>Poids: </b>1,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p></p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Album de portraits\" parent=\"_blank\">pathfinder-fr.org</a></p>"
          },
          "source": "MJ",
          "quantity": 1,
@@ -870,6 +870,266 @@
          "quantity": 1,
          "weight": 0.5,
          "price": 25,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Carnet obsessionnel",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>25 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Les gnomes utilisent ces petits livres pour noter des informations sur l\u2019objet de leur obsession. Quand un gnome consulte son carnet obsessionnel (ce qui lui prend une minute), il gagne un bonus de circonstances de +2 au prochain test d\u2019Artisanat ou de Profession, \u00e0 condition qu\u2019il corresponde \u00e0 celui que le gnome a choisi pour son trait racial obsession.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Carnet obsessionnel\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 25,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Cartes du ciel",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>200 po<br/><b>Poids: </b>0,25 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Beaucoup de demi-elfes vivent dans de grandes villes ou des communaut\u00e9s o\u00f9 ils ont du mal \u00e0 communier avec l\u2019environnement. Certains partent faire de longues retraites dans la nature, mais d\u2019autres passent leurs soir\u00e9es sur de hauts toits isol\u00e9s, \u00e0 regarder les \u00e9toiles. Ces \u00e2mes solitaires utilisent des cartes pour suivre le mouvement des \u00e9toiles et des autres corps c\u00e9lestes. Une personne qui utilise une de ces cartes par nuit claire peut faire un test de Connaissances (g\u00e9ographie) DD 20 pour d\u00e9terminer sa position approximative et le mois de l\u2019ann\u00e9e. De plus, ces cartes donnent un bonus de circonstances de +2 aux tests de Survie pour \u00e9viter de se perdre de nuit par temps clair.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Cartes du ciel\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.25,
+         "price": 200,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Corde rugissante",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>15 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>De nombreux morceaux de m\u00e9tal creux, aux formes \u00e9tranges, sont attach\u00e9s \u00e0 cette mince longueur de corde. Par une action simple, une cr\u00e9ature peut la faire tournoyer au-dessus de sa t\u00eate pour produire toutes sortes de bruits \u00e9tranges. Pendant le round suivant, toutes les cr\u00e9atures qui se trouvent \u00e0 moins de 18 m\u00e8tres de la corde rugissante subissent un malus de -2 aux tests de Perception bas\u00e9s sur le son et un malus de -1 aux jets de sauvegarde contre les effets de terreur. Un barde peut utiliser la corde rugissante comme un instrument (\u00e0 corde) qui lui donne un bonus de +2 aux tests de Repr\u00e9sentation quand il utilise le pouvoir contre-chant.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Corde rugissante\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 15,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Encensoir c\u00e9leste",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>1,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Cet encensoir b\u00e9ni contient jusqu\u2019\u00e0 10 b\u00e2tonnets d\u2019encens et br\u00fble \u00e0 raison de 1 b\u00e2tonnet par heure. Si on ajoute un b\u00e2ton fumig\u00e8ne \u00e0 l\u2019encens alors qu\u2019il est en train de br\u00fbler, les cr\u00e9atures de sous-type Mal sont \u00e9blouies tant qu\u2019elles restent dans la zone de fum\u00e9e produite.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Encensoir c\u00e9leste\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.5,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Ensemble de pochoirs d'ombre",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>30 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Cet ensemble de 10 pochoirs en m\u00e9tal \u00e9labor\u00e9s est utilis\u00e9 dans le th\u00e9\u00e2tre de marionnettes des ombres pour projeter des ombres de silhouettes et d\u2019objets hautement stylis\u00e9es. S\u2019ils sont utilis\u00e9s pour participer \u00e0 la cr\u00e9ation de n\u2019importe quel type de sort ou d\u2019effet de l\u2019ombre (y compris les marionnettes d\u2019ombre des repr\u00e9sentations bardiques), le wayang rajoute un bonus de comp\u00e9tence de +1 au DD de son jet de sauvegarde. Il faut une main pour utiliser les pochoirs d\u2019ombre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Ensemble de pochoirs d\u2019ombre\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 30,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "\u00c9tendard tribal",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>10 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Mont\u00e9 sur un solide b\u00e2ton de 4,5 m\u00e8tres de haut, ce drapeau inspire tous les orques appartenant \u00e0 la tribu qu\u2019il repr\u00e9sente. Tant qu\u2019ils sont dans un rayon de 18 m\u00e8tres et peuvent voir l\u2019\u00e9tendard, les orques gagnent un bonus de moral de +1 \u00e0 leurs jets de sauvegarde contre les effets de terreur. L\u2019\u00e9tendard doit \u00eatre port\u00e9 dans une main par un membre de la tribu pour avoir un quelconque effet (il ne fournit aucun bonus s\u2019il est accroch\u00e9 \u00e0 un mur, drap\u00e9 sur un tr\u00f4ne, etc.) Si l\u2019\u00e9tendard est renvers\u00e9 (comme, par exemple, si son porteur le fait tomber dans la boue), ab\u00eem\u00e9, d\u00e9truit ou vol\u00e9, les membres de la tribu re\u00e7oivent un malus de -1 \u00e0 leurs jets d\u2019attaque et \u00e0 leurs jets de sauvegarde contre les effets de terreur pendant l\u2019heure qui suit. Si les orques r\u00e9cup\u00e8rent un \u00e9tendard qui leur a \u00e9t\u00e9 vol\u00e9, les malus sont annul\u00e9s et le bonus est restaur\u00e9.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#\u00c9tendard tribal\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 10.0,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Grimoire de poche",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Les magiciens elfiques ont parfois besoin de voyager avec des dizaines, voire des centaines de grimoires, ce qui les oblige souvent \u00e0 chercher comment les all\u00e9ger. Les grimoires de poche ne contiennent que 70 pages de sorts, mais ils p\u00e8sent bien moins lourd qu\u2019un grimoire ordinaire.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Grimoire de poche\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Kit de d\u00e9guisement orque",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>75<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Ce kit de d\u00e9guisement a \u00e9t\u00e9 con\u00e7u par des demi-orques pour les aider \u00e0 se faire passer pour des humains. Il comprend une cr\u00e8me pour masquer la teinte gris verd\u00e2tre de leur peau et d\u2019autres objets pour dissimuler leurs caract\u00e9ristiques orques ou attirer l\u2019attention sur une autre partie de leur personne. Un demi-orque qui utilise ce kit gagne un bonus de +3 aux tests de D\u00e9guisement pour se faire passer pour un humain. Ce kit donne seulement un bonus de +1 si c\u2019est un orque qui l\u2019utilise.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Kit de d\u00e9guisement orque\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 75.0,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Laboratoire d'artisanat portatif",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>300 po<br/><b>Poids: </b>20 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Le laboratoire d\u2019artisanat portatif contient tout le n\u00e9cessaire pour cr\u00e9er des objets magiques, m\u00eame si la plupart des ustensiles sont basiques. Il permet \u00e0 l\u2019artisan de passer chaque jour 4 heures \u00e0 fabriquer quelque chose pendant ses aventures et d\u2019obtenir les m\u00eames r\u00e9sultats qu\u2019apr\u00e8s 3 heures de travail \u00e0 la maison (au lieu de 2 heures). En revanche, les outils du laboratoire sont tous con\u00e7us pour remplir plusieurs fonctions \u00e0 la fois et le laboratoire ne fournit ni l\u2019espace ni le calme n\u00e9cessaire pour cr\u00e9er des objets magiques dans des circonstances id\u00e9ales, les tests de cr\u00e9ation d\u2019objets magiques subissent donc un malus de -5 quand ils sont effectu\u00e9s avec le laboratoire.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Laboratoire d'artisanat portatif\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 20.0,
+         "price": 300,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Lampe c\u00e9leste",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>300 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Cette lanterne polie abrite une flamme \u00e9ternelle et diffuse de la lumi\u00e8re comme une lampe normale. Si son r\u00e9servoir de cristal et de pi\u00e8ces de m\u00e9tal consacr\u00e9 est rempli d\u2019eau b\u00e9nite, la lumi\u00e8re de la lampe est sanctifi\u00e9e pendant 24 heures, rajoutant un bonus de +1 au DD] du jet de sauvegarde de la canalisation d\u2019\u00e9nergie positive ou la canalisation d\u2019\u00e9nergie pour blesser les ext\u00e9rieurs Mauvais situ\u00e9s dans un rayon de 9 m\u00e8tres.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Lampe c\u00e9leste\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 300,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Manuel d'exercices arcaniques familial",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>300 po<br/><b>Poids: </b>1,5 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Comme les elfes sont pr\u00e9dispos\u00e9s \u00e0 devenir magiciens et que ces gens b\u00e9n\u00e9ficient de nombreux avantages sociaux, beaucoup de familles elfiques \u00e9tudient la magie sur plusieurs g\u00e9n\u00e9rations. Les magiciens elfiques les plus \u00e2g\u00e9s consignent leurs d\u00e9couvertes magiques et leurs r\u00e9flexions dans des manuels d\u2019exercice que les g\u00e9n\u00e9rations futures sont appel\u00e9es \u00e0 utiliser et compl\u00e9ter. Si un elfe utilise un manuel d\u2019exercices arcaniques familial comme r\u00e9f\u00e9rence lors d\u2019un test d\u2019Art de la magie (ce qui lui demande 1d4 actions complexes \u00e0 chercher dans le texte), il b\u00e9n\u00e9ficie d\u2019un bonus de circonstances de +2 au test. Ce bonus passe \u00e0 +4 s\u2019il passe 1d4 heures \u00e0 consulter le livre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Manuel d\u2019exercices arcaniques familial\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.5,
+         "price": 300,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Roue karmique du samsaran",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>25 po<br/><b>Poids: </b>0,25 kg<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Cette petite bobine en bois tourne librement \u00e0 l\u2019int\u00e9rieur d\u2019un bo\u00eetier. Sur la face ext\u00e9rieure de la bobine sont inscrites des dizaines de pri\u00e8res samsarans, ainsi que des noms ou des symboles associ\u00e9s aux vies pass\u00e9es du samsaran. Les samsarans pensent que faire tourner la bobine pendant leurs m\u00e9ditations renforce les connexions spirituelles entre leurs anciennes vies. Si un samsaran m\u00e9dite avec sa roue pendant au moins 10 minutes en se concentrant sur une question de Connaissances (histoire) relative \u00e0 sa propre histoire ou \u00e0 celles de ses vies pass\u00e9es, il re\u00e7oit un bonus d\u2019intuition de +1 \u00e0 son test.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Roue karmique du samsaran\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.25,
+         "price": 25,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Tarot de voyant",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>||<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h3>Description:</h3><p>Les individus en harmonie avec le monde des esprits utilisent ce jeu de cartes illustr\u00e9es pour pr\u00e9dire l\u2019avenir tandis que les charlatans s\u2019en servent pour soutirer leur argent aux personnes cr\u00e9dules. Un jeu de cartes standard pr\u00e9sente des illustrations sobres sur de simples plaques en bois.<br/> Tarot de voyant de qualit\u00e9. Un tarot de voyant de qualit\u00e9 se compose g\u00e9n\u00e9ralement de plaques en bois avec des illustrations peintes en couleur, il peut servir de focalisateur pour le sort d\u2019augure et accorde un bonus de circonstances de +1 aux tests de Profession (diseuse de bonne aventure), Profession (m\u00e9dium) et autres professions similaires.<br/> Tarot de ma\u00eetre voyant. Un tarot de ma\u00eetre voyant peut \u00eatre fait de bois, d\u2019ivoire, voire m\u00eame de m\u00e9tal, avec des illustrations peintes ou grav\u00e9es. Il est souvent rehauss\u00e9 d\u2019incrustations en or ou de toutes petites pierres pr\u00e9cieuses, il b\u00e9n\u00e9ficie de tous les avantages d\u2019un tarot de voyant de qualit\u00e9, \u00e0 la seule diff\u00e9rence qu\u2019il accorde un bonus de circonstances de +2 aux tests de comp\u00e9tences indiqu\u00e9s.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Tarot de voyant\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": null,
+         "price": null,
          "identified": true,
          "carried": true,
          "equipped": false,

@@ -384,7 +384,7 @@
       "type": "loot",
       "data": {
          "description": {
-            "value": "<p><b>Prix: </b>5 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Ce quadrup\u00e8de de taille G est utilis\u00e9 comme monture et animal de b\u00e2t. Les chevaux peuvent \u00eatre entra\u00een\u00e9s pour la guerre mais, sinon, les champs de batailles les rendent nerveux. Beaucoup de cultures m\u00e8nent des programmes d\u2019\u00e9levage et consid\u00e8rent souvent leur cheval comme \u00e9tant le meilleur pour la t\u00e2che pour laquelle il a \u00e9t\u00e9 dress\u00e9.<br/><br/>Cheval l\u00e9ger. Ces chevaux peuvent \u00eatre mont\u00e9s mais servent souvent de chevaux de b\u00e2t ou d\u2019attelage. <br/> Cheval l\u00e9ger (entra\u00een\u00e9 au combat). Ces chevaux de guerre l\u00e9gers sont dress\u00e9s pour la guerre. ils sont tr\u00e8s appr\u00e9ci\u00e9s dans la cavalerie l\u00e9g\u00e8re et rapide et chez les \u00e9claireurs et les chevaliers t\u00e9m\u00e9raires.<br/> (Voir le cheval)<br/> Cheval lourd. Ces chevaux sont souvent utilis\u00e9s comme animaux de b\u00e2t, portant des charges importantes sur de grandes distances.<br/> Cheval lourd (entra\u00een\u00e9 au combat). Les chevaux de guerre lourds sont \u00e9lev\u00e9s et dress\u00e9s pour le combat. Ils sont souvent \u00e9quip\u00e9s d\u2019une barde lourde mais se battent tout aussi f\u00e9rocement sans armure.<br/>  (Voir le cheval lourd)<br/> Poney. Ces cr\u00e9atures sont g\u00e9n\u00e9ralement utilis\u00e9es pour transporter des marchandises sur des chemins de montagne \u00e9troits ou comme coursier pour les jeunes cavaliers ou les cavaliers de taille P.<br/> Poney (entra\u00een\u00e9 au combat). On peut entra\u00eener les poneys pour la guerre tout aussi efficacement que leurs fr\u00e8res de plus grade taille. Ces coursiers servent souvent aux cavaliers de taille P qui pr\u00e9voient de se battre.<br/> (Voir le poney)</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chevali\u00e8re\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+            "value": "<p><b>Prix: </b>5 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Cet anneau pr\u00e9sente un motif en relief, g\u00e9n\u00e9ralement des armoiries familiales ou un sigle officiel. Le personnage presse la chevali\u00e8re sur de la cire fondue pour y imprimer ce symbole.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chevali\u00e8re\" parent=\"_blank\">pathfinder-fr.org</a></p>"
          },
          "source": "MJ",
          "quantity": 1,
@@ -4564,7 +4564,7 @@
       "type": "loot",
       "data": {
          "description": {
-            "value": "<p><b>Prix: </b>1 pa<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Boisson populaire dans de nombreuses r\u00e9gions, le th\u00e9 peut \u00eatre vert ou noir, en fonction de la p\u00e9riode \u00e0 laquelle on cueille les feuilles et de la fa\u00e7on dont elles sont pr\u00e9par\u00e9es. Il peut \u00eatre servi nature ou avec du lait, du sucre, du citron ou des \u00e9pices.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Th\u00e9i\u00e8re\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+            "value": "<p><b>Prix: </b>1 pa<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Il s\u2019agit d\u2019un petit pot \u00e0 bec verseur pour pr\u00e9parer le th\u00e9. Il inclut un couvercle et une passoire et permet de faire 4 tasses de th\u00e9 \u00e0 la fois.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Th\u00e9i\u00e8re\" parent=\"_blank\">pathfinder-fr.org</a></p>"
          },
          "source": "MJ",
          "quantity": 1,
@@ -5670,6 +5670,266 @@
          "quantity": 1,
          "weight": null,
          "price": 100,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Encens (10 b\u00e2tonnets)",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>10 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Cette r\u00e9sine aromatique, impr\u00e9gn\u00e9e d\u2019huiles parfum\u00e9es, prend souvent la forme de b\u00e2tonnets, de c\u00f4nes ou de boules et est br\u00fbl\u00e9e lors des c\u00e9r\u00e9monies ou des s\u00e9ances de m\u00e9ditation. Une pi\u00e8ce d\u2019encens br\u00fble pendant 1 heure.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Encens\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 10,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Fers (standards)",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>15 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Les fers sont des menottes pour les chevilles plut\u00f4t que pour les poignets et r\u00e9pondent aux m\u00eames r\u00e8gles quand il s\u2019agit de les casser, de s\u2019en lib\u00e9rer et en ce qui concerne leur co\u00fbt en fonction de la taille. Une cr\u00e9ature mise aux fers est enchev\u00eatr\u00e9e et ne peut se d\u00e9placer qu\u2019\u00e0 la moiti\u00e9 de sa vitesse. En outre, une cr\u00e9ature encha\u00een\u00e9e doit r\u00e9ussir un test d\u2019Acrobaties DD 15 pour se d\u00e9placer \u00e0 plus de sa vitesse (r\u00e9duite) en un round. Si elle rate son test de 5 ou plus, elle tombe \u00e0 terre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Fers\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 15,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Fers (de ma\u00eetre)",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Les fers sont des menottes pour les chevilles plut\u00f4t que pour les poignets et r\u00e9pondent aux m\u00eames r\u00e8gles quand il s\u2019agit de les casser, de s\u2019en lib\u00e9rer et en ce qui concerne leur co\u00fbt en fonction de la taille. Une cr\u00e9ature mise aux fers est enchev\u00eatr\u00e9e et ne peut se d\u00e9placer qu\u2019\u00e0 la moiti\u00e9 de sa vitesse. En outre, une cr\u00e9ature encha\u00een\u00e9e doit r\u00e9ussir un test d\u2019Acrobaties DD 15 pour se d\u00e9placer \u00e0 plus de sa vitesse (r\u00e9duite) en un round. Si elle rate son test de 5 ou plus, elle tombe \u00e0 terre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Fers\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Gemme de chair (d\u00e9corative)",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>1 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Une aventuri\u00e8re or\u00e9ade d\u00e9couvrit ces petites gemmes vertes quand, apr\u00e8s avoir \u00e9t\u00e9 bless\u00e9e en tombant sur des pierres d\u00e9chiquet\u00e9es alors qu\u2019elle explorait une grotte, elle remarqua que de jolis morceaux de cristal verts poussaient sur sa peau. Les bijoutiers or\u00e9ades ont d\u00e9couvert que ces cristaux, appel\u00e9s gemmes de chair, semblaient se nourrir de l\u2019\u00e9nergie \u00e9l\u00e9mentaire qui impr\u00e8gne la chair des or\u00e9ades. Ils se d\u00e9veloppent et passent de l\u2019\u00e9tat de tout petits \u00e9clats de pierre \u00e0 celui de grosses gemmes ouvrag\u00e9es. Le fait d\u2019implanter des gemmes de chair, op\u00e9ration tout \u00e0 fait inoffensive, devint alors une m\u00e9thode raciale unique, parmi les or\u00e9ades, d\u2019alt\u00e9rer son corps, comme les autres humano\u00efdes se font des tatouages et des piercings. Les gemmes de chair d\u00e9coratives co\u00fbtent 1 po et sont simplement ornementales. Les gemmes de chair en pointe, quant \u00e0 elles, se d\u00e9veloppent pour former des \u00e9clats cristallins compliqu\u00e9s qui fonctionnent comme des pointes d\u2019armure, mais les or\u00e9ades qui les portent ne peuvent pas mettre d\u2019armure par-dessus les pointes, et m\u00eame les v\u00eatements normaux doivent \u00eatre sp\u00e9cialement trou\u00e9s ou cousus pour leur permettre de passer. L\u2019implantation d\u2019un ensemble de gemmes de chair en pointe prend 10 minutes, et il faut environ 1 semaine pour que les \u00e9clats qui poussent atteignent leur taille maximale. Il faut 1 minute pour retirer une gemme de chair ; la personne qui la retire doit r\u00e9ussir un test de Premiers secours DD 15 pour \u00e9viter d\u2019infliger 1d4 points de d\u00e9g\u00e2ts \u00e0 l\u2019or\u00e9ade. Les gemmes de chair en pointe peuvent \u00eatre bris\u00e9es ou d\u00e9truites comme les objets que l\u2019on porte (solidit\u00e9 1, 5 pv), mais, \u00e0 moins de retirer la racine de la gemme de chair, les \u00e9clats repoussent en 1 semaine.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Gemme de chair\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": null,
+         "price": 1,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Gemme de chair (pointes)",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>50 po<br/><b>Poids: </b>2,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Une aventuri\u00e8re or\u00e9ade d\u00e9couvrit ces petites gemmes vertes quand, apr\u00e8s avoir \u00e9t\u00e9 bless\u00e9e en tombant sur des pierres d\u00e9chiquet\u00e9es alors qu\u2019elle explorait une grotte, elle remarqua que de jolis morceaux de cristal verts poussaient sur sa peau. Les bijoutiers or\u00e9ades ont d\u00e9couvert que ces cristaux, appel\u00e9s gemmes de chair, semblaient se nourrir de l\u2019\u00e9nergie \u00e9l\u00e9mentaire qui impr\u00e8gne la chair des or\u00e9ades. Ils se d\u00e9veloppent et passent de l\u2019\u00e9tat de tout petits \u00e9clats de pierre \u00e0 celui de grosses gemmes ouvrag\u00e9es. Le fait d\u2019implanter des gemmes de chair, op\u00e9ration tout \u00e0 fait inoffensive, devint alors une m\u00e9thode raciale unique, parmi les or\u00e9ades, d\u2019alt\u00e9rer son corps, comme les autres humano\u00efdes se font des tatouages et des piercings. Les gemmes de chair d\u00e9coratives co\u00fbtent 1 po et sont simplement ornementales. Les gemmes de chair en pointe, quant \u00e0 elles, se d\u00e9veloppent pour former des \u00e9clats cristallins compliqu\u00e9s qui fonctionnent comme des pointes d\u2019armure, mais les or\u00e9ades qui les portent ne peuvent pas mettre d\u2019armure par-dessus les pointes, et m\u00eame les v\u00eatements normaux doivent \u00eatre sp\u00e9cialement trou\u00e9s ou cousus pour leur permettre de passer. L\u2019implantation d\u2019un ensemble de gemmes de chair en pointe prend 10 minutes, et il faut environ 1 semaine pour que les \u00e9clats qui poussent atteignent leur taille maximale. Il faut 1 minute pour retirer une gemme de chair ; la personne qui la retire doit r\u00e9ussir un test de Premiers secours DD 15 pour \u00e9viter d\u2019infliger 1d4 points de d\u00e9g\u00e2ts \u00e0 l\u2019or\u00e9ade. Les gemmes de chair en pointe peuvent \u00eatre bris\u00e9es ou d\u00e9truites comme les objets que l\u2019on porte (solidit\u00e9 1, 5 pv), mais, \u00e0 moins de retirer la racine de la gemme de chair, les \u00e9clats repoussent en 1 semaine.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Gemme de chair\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 2.5,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Griffes m\u00e9talliques",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>305 po<br/><b>Poids: </b>1 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Ces lames subtiles ne peuvent \u00eatre utilis\u00e9es que par les hommes-f\u00e9lins ayant le trait racial griffes du f\u00e9lin. Achet\u00e9es par lots de cinq, elles s\u2019adaptent aux griffes du porteur sur une main. Les lames accordent un bonus d\u2019alt\u00e9ration de +1 aux jets d\u2019attaque de griffe que le porteur effectue de cette main et modifient le type d\u2019arme : d\u2019arme naturelle, elle devient une arme l\u00e9g\u00e8re tranchante. Les hommes-f\u00e9lins ayant le trait racial griffes du f\u00e9lin sont form\u00e9s au maniement de cette arme. Il est possible d\u2019am\u00e9liorer les griffes m\u00e9talliques comme une arme de ma\u00eetre au prix normal. Le co\u00fbt indiqu\u00e9 pour l\u2019objet s\u2019applique \u00e0 un ensemble de cinq lames pour une main.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Griffes m\u00e9talliques\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": 305,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Manche d'arme ondin",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>+300 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Les ondins recourent \u00e0 une conception unique lorsqu\u2019ils fabriquent des armes \u00e0 manche comme les b\u00e2tons, les lances et les tridents. Plut\u00f4t que d\u2019int\u00e9grer un manche solide, l\u2019arme est construite autour d\u2019un tuyau en bois ou en m\u00e9tal, une de ses extr\u00e9mit\u00e9s \u00e9tant scell\u00e9e et l\u2019autre restant ouverte. Par une action complexe, l\u2019ondin peut effectuer une attaque de corps \u00e0 corps avec cette arme et utiliser son pouvoir magique de pouss\u00e9e hydraulique contre sa cible. En outre, l\u2019arme fonctionne comme une arme standard de son type et peut se composer de mat\u00e9riaux sp\u00e9ciaux (comme le mithral ou l\u2019adamantium) et \u00eatre une arme de ma\u00eetre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Manche d\u2019arme ondin\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": null,
+         "price": 300,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Menottes \u00e0 pointes",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>+15 po<br/><b>Poids: </b>0,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Les pointes ajout\u00e9es \u00e0 ces menottes blessent les prisonniers qui bougent autrement que lentement et prudemment. Une cr\u00e9ature attach\u00e9e avec des menottes \u00e0 pointes re\u00e7oit 1 point de d\u00e9g\u00e2ts perforants si elle entreprend plus qu\u2019une simple action de mouvement lors d\u2019un round. Les mouvements brutaux en tout genre, comme \u00eatre touch\u00e9 en combat ou tomber \u00e0 terre, infligent \u00e9galement 1 point de d\u00e9g\u00e2ts. Essayer de se lib\u00e9rer de menottes \u00e0 pointes avec un test de Force inflige 1d4 points de d\u00e9g\u00e2ts perforants au prisonnier, que sa tentative soit une r\u00e9ussite ou un \u00e9chec.<br/> Les fers peuvent \u00e9galement \u00eatre agr\u00e9ment\u00e9s de pointes, mais le porteur peut \u00e9viter les d\u00e9g\u00e2ts en n\u2019effectuant aucune action impliquant de bouger les jambes. Les hobgobelins se servent souvent de ce genre de fers pour attacher les artisans \u00e0 leurs tables de travail. Le fait d\u2019attacher un prisonnier avec plusieurs paires de menottes et/ou de fers ne provoque pas de d\u00e9g\u00e2ts suppl\u00e9mentaires.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Menottes \u00e0 pointes\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 0.5,
+         "price": 15,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Sac anti-ours",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>2 po<br/><b>Poids: </b>1,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Ce sac est muni d\u2019une corde de 6 m\u00e8tres de long qui permet de le suspendre \u00e0 un arbre ou un point d\u2019attache similaire. Les gens mettent souvent leurs r\u00e9serves de nourriture ou leurs objets fragiles dedans, une pr\u00e9caution \u00e9l\u00e9mentaire quand ils campent dans des \u00e9tendues sauvages, afin que les ours et les autres pr\u00e9dateurs ne viennent pas piller son contenu.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sac anti-ours\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.5,
+         "price": 2,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Sifflet des grottes",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>20 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Cr\u00e9\u00e9 \u00e0 partir du pied fongique d\u2019un champignon rare, ce sifflet produit un son que seuls les kobolds et les dragons peuvent entendre. Les kobolds cr\u00e9ent souvent des codes compliqu\u00e9s compos\u00e9s de notes qu\u2019ils utilisent pour coordonner leurs embuscades et leurs attaques.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sifflet des grottes\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": null,
+         "price": 20,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Sifflet du pr\u00e9v\u00f4t",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>1 po<br/><b>Poids: </b>\u2014<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Le sifflet du sh\u00e9rif sert g\u00e9n\u00e9ralement aux r\u00f4deurs et aux pr\u00e9v\u00f4ts gnomes. Il \u00e9met un son aigu que l\u2019on entend facilement \u00e0 300 m\u00e8tres de distance, dans des conditions normales. En revanche, sa fr\u00e9quence est si haute que les blaireaux, les chiens et les gnomes sont les seuls \u00e0 l\u2019entendre.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sifflet du pr\u00e9v\u00f4t\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": null,
+         "price": 1,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Tente suspendue",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>20 po<br/><b>Poids: </b>7,5 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>La tente suspendue est un abri de petite taille en forme de goutte d\u2019eau (capable d\u2019accueillir une cr\u00e9ature de taille M). Elle est munie d\u2019une solide corde pour la suspendre \u00e0 une branche d\u2019arbre, un grappin ou m\u00eame un piton plant\u00e9 dans la paroi d\u2019une falaise. Ces tentes servent surtout dans les zones montagneuses, o\u00f9 il est tr\u00e8s difficile de trouver une surface plane pour monter le camp, et dans les marais o\u00f9 le sol sec est si rare. Pour monter dans une tente suspendue ou en descendre, il faut r\u00e9ussir une action complexe qui n\u00e9cessite un test d\u2019Escalade DD 10. En cas d\u2019\u00e9chec, il faut faire une nouvelle tentative, mais, si le personnage rate le test de 5 ou plus, il tombe de la tente.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Tente suspendue\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": 7.5,
+         "price": 20,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Trousse de tueur de vampires",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix: </b>500 po<br/><b>Poids: </b>4 kg<br/><b>Cat\u00e9gorie: </b>\u00c9quipement d'aventurier<br/></p><h3>Description:</h3><p>Cette petite mallette en bois verrouill\u00e9e contient de nombreux outils et appareils utilis\u00e9s par les chasseurs et tueurs de vampires. Elle contient 10 gousses d\u2019ail, 4 pieux de bois de ma\u00eetre, un marteau, un miroir en argent, 4 fioles d\u2019eau b\u00e9nite, une application de lustrargent et un symbole sacr\u00e9 de ma\u00eetre. Elle contient \u00e9galement de nombreux agents r\u00e9actifs et des poudres pour traiter les blessures et cr\u00e9er des enchantements de protection, des baumes et autres concoctions. En plus de son utilit\u00e9 g\u00e9n\u00e9rale, le kit du tueur de vampire d\u00e9ploy\u00e9 accorde un bonus de +2 \u00e0 tous les tests de comp\u00e9tences bas\u00e9es sur le Charisme pour enqu\u00eater sur les vampires ou les traquer.</p><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Trousse de tueur de vampires\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 4.0,
+         "price": 500,
          "identified": true,
          "carried": true,
          "equipped": false,
