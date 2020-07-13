@@ -35,7 +35,7 @@ URLs = [
     ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marchandises.ashx
 ]
 
-FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Source', 'Prix', 'Poids', 'Artisanat', 'Catégorie', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -119,7 +119,7 @@ for data in URLs:
     #
     # cette fonction ajoute les infos additionelles
     #
-    def addInfos(liste, name, descr, source):
+    def addInfos(liste, name, descr, descrHTML, source):
         names = []
         # ugly fix
         name = name.replace('’','\'')
@@ -149,6 +149,7 @@ for data in URLs:
                 if l['Nom'].lower() == n.lower() or l['Nom'].lower().startswith(n.lower() + " "):
                     l['Complete'] = True
                     l['Description'] = descr.strip()
+                    l['DescriptionHTML'] = descrHTML
                     if not source is None:
                         l['Source'] = source
                     found = True
@@ -166,28 +167,31 @@ for data in URLs:
     newObj = True
     name = ""
     descr = ""
+    descrHTML = ""
     source = None
     sourceNext = None
     for e in section:
         if e.name == 'h3':
             if not newObj:
-                addInfos(liste, name, descr, sourceNext)
+                addInfos(liste, name, descr, descrHTML, sourceNext)
 
             sourceNext = source
             if e.name == 'h3':
                 name = cleanSectionName(e.text)
                 descr = ""
+                descrHTML = ""
                 source = None
                 newObj = False
 
         else:
             descr += html2text(e)
+            descrHTML += html2text(e, True, 2)
             if e.name == 'div' or e.name == 'img':
                 src = extractSource(e)
                 if src:
                     source = src
 
-    addInfos(liste, name, descr, sourceNext)
+    addInfos(liste, name, descr, descrHTML, sourceNext)
 
 
 for l in liste:
