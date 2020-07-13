@@ -18,7 +18,7 @@ MOCK_REVELATION_SUB = None
 #MOCK_REVELATION_SUB = "mocks/mysteres-hiver.html"
 
 URL = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Myst%c3%a8re%20des%20anc%c3%aatres.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -52,12 +52,14 @@ for u in URLS:
 
     # extraire informations sur mystère
     description = ""
+    descriptionHTML = ""
     source = "MJ"
     for el in content.find('div', {'id': 'PageContentDiv'}):
         if el.name == "h2":
             break
         else:
             description += html2text(el)
+            descriptionHTML += html2text(el, True, 2)
             if el.name == "a" or el.name == "div":
               src = extractSource(el)
               if src:
@@ -69,6 +71,7 @@ for u in URLS:
     benediction['Niveau'] = 1
     benediction['Auto'] = False
     benediction['Description'] = cleanDescription(description)
+    benediction['DescriptionHTML'] = cleanDescription(descriptionHTML)
     benediction['Source'] = source
     benediction['Référence'] = u
     liste.append(benediction)
@@ -92,6 +95,7 @@ for u in URLS:
             if benedictionName == "Révélation finale":
                 benediction['Niveau'] = 20
             benediction['Description'] = cleanInlineDescription(findProperty(jumpTo(content, 'h2', {'class':'separator'}, 'Révélations'), benedictionName))
+            benediction['DescriptionHTML'] = benediction['Description']
             benediction['Source'] = source
             benediction['Référence'] = u
             
