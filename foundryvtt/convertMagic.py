@@ -83,6 +83,13 @@ for m in data:
         continue
     duplicates.append(m['Nom'])
     
+    if "DescriptionHTML" in m:
+      description = m['DescriptionHTML']
+    elif "Description" in m:
+      description = m['Description'].replace('\n','<br/>')
+    else:
+      description = ""
+    
     el = {
         "name": m['Nom'],
         "type": "equipment",
@@ -96,7 +103,7 @@ for m in data:
                         "<b>Aura: </b>{}<br/>" +
                         "<b>NLS: </b>{}<br/></p>" +
                         "<b>Conditions: </b>{}<br/></p>" +
-                        "<h2>Description:</h2><p>{}</p>" +
+                        "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     m['Type'] if 'Type' in m else '-',
                     m['Prix'] if 'Prix' in m else '-',
@@ -105,7 +112,7 @@ for m in data:
                     m['Aura'] if 'Aura' in m else "0",
                     m['NLS'] if 'NLS' in m else '-',
                     m['Conditions'] if 'Conditions' in m else '-',
-                    m['Description'].replace('\n','<br/>') if 'Description' in m else "",
+                    description,
                     m['Référence'])
             },
             "source": m['Source'],

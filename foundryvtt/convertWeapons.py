@@ -84,7 +84,7 @@ for w in data:
                           "<b>Poids: </b>{}<br/>" +
                           "<b>Type: </b>{}<br/>" +
                           "<b>Spécial: </b>{}<br/></p>" +
-                          "<h2>Description:</h2><p>{}</p>" +
+                          "<h2>Description</h2><p>{}</p>" +
                           "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                       w['Catégorie'] if 'Catégorie' in w else '-',
                       w['Sous-catégorie'] if 'Sous-catégorie' in w else '-',

@@ -19,7 +19,7 @@ MOCK_MAGIC_ITEM = None
 
 TEXTE = 'Si l’armure ou le bouclier bénéficie seulement d’un bonus d’altération, son niveau de lanceur de sorts est égal à trois fois son bonus. Si l’objet possède un bonus d’altération ainsi que des propriétés magiques, le plus haut niveau de lanceur de sorts entre les deux est celui qui doit être considéré.\n\nBoucliers. Le bonus d’altération d’un bouclier magique se cumule avec le bonus d’altération d’une armure magique. Le bonus d’altération du bouclier n’est pas comptabilisé dans le jet d’attaque ou de dégâts dans le cas d’un coup de bouclier. La propriété spéciale d’attaque confère un bonus d’altération de +1 aux jets d’attaque et de dégâts avec un bouclier (voir la description de la capacité spéciale "Attaque").'
 
-FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 liste = []
@@ -91,7 +91,7 @@ for t in tables:
         # référence de base
         reference = REFERENCE
         
-        data = {"nom": cleanName(nom), "prix": prix.strip(), "descr": ""}
+        data = {"nom": cleanName(nom), "prix": prix.strip(), "descr": "", "descrHTML": ""}
         
         if len(TABLEDEF[tableIdx]) == 4:
             data = { **data, **TABLEDEF[tableIdx][3] }
@@ -123,6 +123,7 @@ for t in tables:
             reference = PATHFINDER + href
             data = {**data, **extractBD_Type2(page.find('div',{'class':['BD']}))}
             descr = data['descr']
+            descrHTML = data['descrHTML']
             
             if len(data['descr']) == 0:
                 print("Description invalide pour: %s" % href)
@@ -134,6 +135,7 @@ for t in tables:
         element["Prix"] = data["prix"]
         element["Source"] = "MJ"
         element["Description"] = data["descr"]
+        element["DescriptionHTML"] = data["descrHTML"]
         element["Référence"] = reference
         
         # infos additionnelles

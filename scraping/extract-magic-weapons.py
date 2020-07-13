@@ -9,38 +9,28 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cleanName, mergeYAML
+from libhtml import *
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
 #MOCK_MAGIC = "mocks/magic-weapons.html"                  # décommenter pour tester avec les armes pré-téléchargées
-MOCK_MAGIC_ITEM = None
-#MOCK_MAGIC_ITEM = "mocks/magic-carreau.html"      # décommenter pour tester avec détails pré-téléchargé
+MOCK_MAGIC_DETAILS = None
+#MOCK_MAGIC_DETAILS = "mocks/magic-weapons-details.html"  # décommenter pour tester avec le détails des armes pré-téléchargées
 
-TEXTE = 'Si l’arme bénéficie seulement d’un bonus d’altération, son niveau de lanceur de sorts est égal à trois fois son bonus. Si l’objet possède un bonus d’altération ainsi que des propriétés magiques, le plus haut niveau de lanceur de sorts entre les deux est celui qui doit être considéré. Armes à distance et projectiles. \n\nLe bonus d’altération d’une arme à projectiles ne se cumule pas avec le bonus d’altération de ses munitions. Seule la plus haute valeur est prise en compte.'
-
-FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Résumé', 'Restrictions', 'Prix', 'PrixModif', 'Aura', 'NLS', 'Source', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
+
+# Plus rapide de copier directement ici que d'essayer d'extraire
+TEXTE1 = 'Une arme magique sert à atteindre plus souvent sa cible et à lui infliger plus de dommages. Les armes magiques sont dotées d’un bonus d’altération allant de +1 à +5, bonus qui s’ajoute aux jets d’attaque et de dégâts de leur utilisateur. Elles sont également toutes des armes de maître, mais le bonus que cette qualité leur fournit ne s’ajoute pas à leur bonus d’altération.'
+TEXTE2 = 'On trouve deux catégories d’armes : celles de corps à corps et celles à distance (comprenant les armes de jet et les armes à projectiles). Certaines armes de corps à corps peuvent également être utilisées en tant qu’armes à distance. Dans ce cas, leur bonus d’altération compte, quel qu’en soit l’usage.'
+TEXTE3 = 'Une arme peut, en plus de son bonus d’altération, posséder certaines propriétés. Celles-ci sont considérées comme un bonus supplémentaire pour ce qui est du prix de l’arme, mais elles ne modifient pas son bonus à l’attaque ou aux dégâts (sauf indication contraire). Aucune arme ne peut avoir un bonus total (bonus d’altération plus équivalences dues aux propriétés, y compris celles qui proviennent des aptitudes du personnage et des sorts) supérieur à +10. Toute arme ayant une propriété spéciale doit avoir au moins un bonus d’altération de +1.'
+
 
 liste = []
 
 
-# first = column with name
-# second = column with cost
-PATHFINDER = "http://www.pathfinder-fr.org/Wiki/"
-REFERENCE = PATHFINDER + "Pathfinder-RPG.Armes%20magiques.ashx"
-TYPE = "Arme"
-IGNORE = ["Arme spécifique"]
-TABLEDEF = {
-    1: [4,5,"Arme ", {'descr': TEXTE}],
-    2: [4,5,"Arme càc: "],
-    3: [4,5,"Arme càc: "],
-    4: [4,5,"Arme dist: "],
-    5: [4,5,"Arme dist: "],
-    6: [4,5,""],
-    7: [4,5,""],
-}
-
+REFERENCE = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques.ashx"
+REFERENCE_DETAILS = "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20propri%c3%a9t%c3%a9s%20sp%c3%a9ciales%20des%20armes.ashx"
 
 if MOCK_MAGIC:
     content = BeautifulSoup(open(MOCK_MAGIC),features="lxml").body
@@ -48,116 +38,118 @@ else:
     content = BeautifulSoup(urllib.request.urlopen(REFERENCE).read(),features="lxml").body
 
 
-propList = []
+##
+## BONUS D'ALTERATION
+##
+table = getTableWithCaption( content, "Prix des bonus d'altération des armes" )
+if not table:
+    print("Table des prix de bonus d'altération non-trouvée!!")
+    exit(1)
 
-tables = content.find_all('table',{'class':['tablo col1centre']})
+notes = []
 
-liste = []
-
-print("Extraction des armes magiques...")
-
-tableIdx = 0
-for t in tables:
-    tableIdx += 1
-    caption = t.find('caption').text
-    for tr in t.find_all('tr'):
-        
-        if tr.has_attr('class') and (tr['class'][0] == 'titre' or tr['class'][0] == 'soustitre'):
-            continue
-        
-        columnIdx = 0
-        for td in tr.find_all('td'):
-            columnIdx += 1
-            if columnIdx == TABLEDEF[tableIdx][0]:
-                nom = html2text(td)
-                href = td.find('a')
-                if href:
-                    href = href['href']
-            elif columnIdx == TABLEDEF[tableIdx][1]:
-                prix = html2text(td)
-        
-        # sauter les entrées du type "relancer le dé"
-        if u"le dé" in nom:
-            continue
-        
-        # ignorer certaines entrées (référence à un autre tableau dans la page)
-        if nom in IGNORE:
-            continue
+for tr in table.find_all('tr'):
+    if 'class' in tr.attrs and "titre" in tr.attrs['class']:
+        continue
+    tds = tr.find_all('td')
+    if len(tds) == 2:
+        price = re.search('([\d ]+) po', html2text(tds[1]))
+        if price:
+            price = int(price.group(1).replace(' ', ''))
         else:
-            nom = TABLEDEF[tableIdx][2] + nom
-        
-        # référence de base
-        reference = REFERENCE
-        
-        data = {"nom": cleanName(nom), "prix": prix.strip(), "descr": ""}
-        
-        if len(TABLEDEF[tableIdx]) == 4:
-            data = { **data, **TABLEDEF[tableIdx][3] }
-        
-        # débogage
-        print("Traitement de %s..." % nom.strip())
-        
-        # get description from same page
-        if href and "#" in href and not "NOTE" in href:
-            ref = "#" + href.split('#')[1]
-            jumpTo = content.find('a',{'href':ref})
-            if jumpTo is None:
-                print("Lien invalide: %s" % href)
-                exit(1)
-            data = {**data, **extractBD_Type1(jumpTo.find_next('div',{'class':['BD']}))}
+            print("Prix invalide: %s" % html2text(tds[1]))
             
-            reference = PATHFINDER + href
-            if len(data['descr']) == 0:
-                print("Description invalide pour: %s" % href)
-                exit(1)
-        
-        elif href and not "#" in href:
-            # récupérer le détail d'un objet
-            if MOCK_MAGIC_ITEM:
-                page = BeautifulSoup(open(MOCK_MAGIC_ITEM),features="lxml").body
-            else:
-                page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + href).read(),features="lxml").body
-                
-            reference = PATHFINDER + href
-            data = {**data, **extractBD_Type2(page.find('div',{'class':['BD']}))}
-            descr = data['descr']
-            
-            if len(data['descr']) == 0:
-                print("Description invalide pour: %s" % href)
-                exit(1)
-        
-        element = {}
-        element["Nom"] = data["nom"]
-        element["Type"] = TYPE
-        element["Prix"] = data["prix"]
-        element["Source"] = "MJ"
-        element["Description"] = data["descr"]
-        element["Référence"] = reference
-        
-        # infos additionnelles
-        if "emplacement" in data:
-            element["Emplacement"] = data["emplacement"]
-        if "poids" in data:
-            element["Poids"] = data["poids"]
-        if "aura" in data:
-            element["Aura"] = data["aura"]
-        if "nls" in data:
-            # NLS parfois variable
-            if isinstance(data["nls"], int):
-                element["NLS"] = data["nls"]
-            else:
-                element["Description"] = "NLS: " + data["nls"] + "\n\n" + element["Description"]
-        if "conditions" in data:
-            element["Conditions"] = data["conditions"]
-        if "coût" in data:
-            element["Coût"] = data["coût"]
-        
-        liste.append(element)
+        liste.append({
+          "Nom": "Bonus d'alteration %s" % cleanName(html2text(tds[0])),
+          "Résumé": "Bonus d'altération qui s’ajoute aux jets d’attaque et de dégâts",
+          "Prix": price,
+          "Source": "MJ",
+          "Référence": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques.ashx#PRIXBONUSDALTERATION"
+        })
+    else:
+        notes.append(html2text(tds[0]))
+
+# ajout des descriptions
+description = "%s\n\n%s\n\n%s" % (TEXTE1, TEXTE2, TEXTE3)
+descriptionHTML = "<p>%s</p><p>%s</p><p>%s</p>" % (TEXTE1, TEXTE2, TEXTE3)
+for n in notes:
+    description += "\n\n%s" % n
+    descriptionHTML += "<p><i>%s</i></p>" % n
+for el in liste:
+    el['Description'] = description
+    el['DescriptionHTML'] = descriptionHTML
+
+
+##
+## PROPRIÉTÉS
+##
+TABLE_NAMES = ["Propriétés ajoutant un prix spécifique", "Propriétés ajoutant un bonus de +1", "Propriétés ajoutant un bonus de +2", "Propriétés ajoutant un bonus de +3", "Propriétés ajoutant un bonus de +4", "Propriétés ajoutant un bonus de +5"]
+NOTE = "Appliquées sur des armes à projectiles, les propriétés marquées d’un astérisque (*) sont transmises aux munitions tirées avec."
+existing = {}
+for T in TABLE_NAMES:
+    table = getTableWithCaption( content, T )
+    if not table:
+      print("Table '%s' non-trouvée!!" % T)
+      exit(1)
     
+    for tr in table.find_all('tr'):
+        if 'class' in tr.attrs and "titre" in tr.attrs['class']:
+            continue
+          
+        trs = tr.find_all('td')
+        if len(trs) == 5:
+            nom = cleanName(html2text(trs[0]))
+            link = trs[0].find('a')['href']
+            hasNote = False
+            if nom.endswith("*"):
+                nom = nom[:-1]
+                hasNote = True
+            description = "%s\n\n%s" % (html2text(trs[3]), NOTE) if hasNote else "%s" % html2text(trs[3])
+            element = {
+              "Nom": "Propriété: %s" % nom,
+              "Restrictions": html2text(trs[2]),
+              "PrixModif": html2text(trs[4]),
+              "Source": getValidSource(trs[1].text),
+              "Résumé": description,
+              "Référence": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20propri%c3%a9t%c3%a9s%20sp%c3%a9ciales%20des%20armes.ashx"
+            }
+            liste.append(element)
+            existing[nom.lower()] = element
+
+if MOCK_MAGIC_DETAILS:
+    content = BeautifulSoup(open(MOCK_MAGIC_DETAILS),features="lxml").body
+else:
+    content = BeautifulSoup(urllib.request.urlopen(REFERENCE_DETAILS).read(),features="lxml").body
+
+
+##
+## DETAILS DES ARMES
+##
+for boite in content.find_all('div',{'class':['BD']}):
+            
+    data = {**extractBD_Type2(boite)}
+    if not data['nomAlt'].lower() in existing:
+      print("Propriété sans correspondance sur la page sommaire: %s" % data['nomAlt'])
+      continue
+    
+    element = existing[data['nomAlt'].lower()]
+    element['Description'] = data['descr']
+    element['DescriptionHTML'] = data['descrHTML']
+    element["Aura"] = data["aura"]
+    element["NLS"] = int(data["nls"])
+        
+    del(existing[data['nomAlt'].lower()])
+
+
+if len(existing) > 0:
+    print("Éléments sans détails")
+    print(existing)
+    exit(1)
+
 #exit(1)
 
 print("Fusion avec fichier YAML existant...")
 
 HEADER = ""
 
-mergeYAML("../data/magic.yml", MATCH, FIELDS, HEADER, liste)
+mergeYAML("../data/magic-armes.yml", MATCH, FIELDS, HEADER, liste)

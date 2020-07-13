@@ -23,12 +23,8 @@ for c in data:
       continue
     duplicates.append(c['Nom'])
   
-    description = "<p><b>Caractéristique associée:</b> %s<br/><b>Formation nécessaire:</b> %s<br/></p>" % (c['Caractéristique associée'], c['Formation nécessaire'])
-    if 'DescriptionHTML' in c:
-        description += "<div class=\"pf2frDescr\">%s</div>" % c['DescriptionHTML']
-    else:
-        description += "<p>%s</p>" % c['Description']
-        print("No description found for: %s" % c['Nom'])
+    description = "<p><b>Caractéristique associée:</b> %s<br/><b>Formation nécessaire:</b> %s<br/></p>" % (c['Caractéristique associée'], c['Formation nécessaire'])    
+    description = "<div class=\"pf2frDescr\">%s<h2>Description</h2>%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, c['DescriptionHTML'] if 'DescriptionHTML' in c else c['Description'], c['Référence'])
   
     el = {
       "name": c['Nom'],

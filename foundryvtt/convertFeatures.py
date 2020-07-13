@@ -48,7 +48,7 @@ for d in data:
                 "value": ("<div class=\"pf2frDescr\"><p><b>Classe: </b>{}<br/>" +
                         "<b>Niveau: </b>{}<br/>" +
                         "<b>De base? </b>{}<br/></p>" +
-                        "<h2>Description:</h2><p>{}</p>" +
+                        "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     d['Classe'],
                     d['Niveau'],

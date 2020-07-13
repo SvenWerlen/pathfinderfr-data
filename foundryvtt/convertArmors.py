@@ -90,7 +90,7 @@ for a in data:
                         "<b>Malus: </b>{}<br/>" +
                         "<b>Échec: </b>{}<br/>" +
                         "<b>Poids: </b>{}<br/>" +
-                        "<h2>Description:</h2><p>{}</p>" +
+                        "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                     a['Catégorie'] if 'Catégorie' in a else '-',
                     a['Prix'] if 'Prix' in a else '-',

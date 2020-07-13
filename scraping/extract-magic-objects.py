@@ -20,7 +20,7 @@ MOCK_MAGIC_ITEM = None
 
 TEXTE = ''
 
-FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Type', 'Prix', 'Source', 'Emplacement', 'Poids', 'Aura', 'NLS', 'Conditions', 'Coût', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 liste = []
@@ -91,6 +91,7 @@ for m in multicol:
             
             data = {**extractBD_Type2(boite)}
             descr = data['descr']
+            descrHTML = data['descrHTML']
             
             if len(data['descr']) == 0:
                 print("Description invalide pour: %s" % href)
@@ -102,6 +103,7 @@ for m in multicol:
             element["Prix"] = data["prixAlt"] # prendre le prix de la page détaillée
             element["Source"] = "MJ"
             element["Description"] = data["descr"]
+            element["DescriptionHTML"] = data["descrHTML"]
             element["Référence"] = reference
             
             # infos additionnelles

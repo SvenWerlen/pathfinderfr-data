@@ -307,6 +307,8 @@ def getValidSource(src, exitOnInvalid = True):
         return "AM"
     if src == "FAMF" or src == "":
         return "FF"
+    if src == "A&E":
+        return "AE"
 
     print('Source invalide: ' + src)
     if exitOnInvalid:
@@ -615,3 +617,12 @@ def mergeYAML(origPath, matchOn, order, header, yaml2merge, ignoreFields = []):
     # écrire le résultat dans le fichier d'origine
     outFile = open(origPath, "w")
     outFile.write(COPY + header + result)
+
+
+# Recherche dans le html la tables dont l'en-tête correspond
+def getTableWithCaption( html, text ):
+    for t in html.find_all('table', {'class':['tablo']}):
+        caption = t.find('caption')
+        if caption and caption.text.strip().lower() == text.lower():
+            return t
+    return None

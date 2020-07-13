@@ -66,7 +66,7 @@ for m in data:
                 "value": ("<p><b>Prix: </b>{}<br/>" +
                         "<b>Poids: </b>{}<br/>" +
                         "<b>Catégorie: </b>{}<br/></p>" +
-                        "<h2>Description:</h2><p>{}</p>" +
+                        "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                     m['Prix'] if 'Prix' in m else '-',
                     m['Poids'] if 'Poids' in m else '-',
