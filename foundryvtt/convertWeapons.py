@@ -62,6 +62,13 @@ for w in data:
     if weight:
       weight = round(weight / quantity, 3)
     
+    if "DescriptionHTML" in w:
+      description = w['DescriptionHTML']
+    elif "Description" in w:
+      description = w['Description'].replace('\n','<br/>')
+    else:
+      description = ""
+    
     el = {
       "name": name,
       "type": "weapon",
@@ -89,7 +96,7 @@ for w in data:
                       w['Poids'] if 'Poids' in w else '-',
                       w['Type'] if 'Type' in w else '-',
                       w['Spécial'] if 'Spécial' in w else '-',
-                      w['Description'].replace('\n','<br/>') if 'Description' in w else "",
+                      description,
                       w['Référence'])
           },
           "source": w['Source'],

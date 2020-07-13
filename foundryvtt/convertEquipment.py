@@ -51,6 +51,13 @@ for m in data:
     if not m['Catégorie'] in list:
       list[m['Catégorie']] = []
     
+    if "DescriptionHTML" in m:
+      description = m['DescriptionHTML']
+    elif "Description" in m:
+      description = m['Description'].replace('\n','<br/>')
+    else:
+      description = ""
+    
     el = {
         "name": name,
         "type": "loot",
@@ -64,7 +71,7 @@ for m in data:
                     m['Prix'] if 'Prix' in m else '-',
                     m['Poids'] if 'Poids' in m else '-',
                     m['Catégorie'],
-                    m['Description'].replace('\n','<br/>') if 'Description' in m else "",
+                    description,
                     m['Référence'])
             },
             "source": m['Source'],

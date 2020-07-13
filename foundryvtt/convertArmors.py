@@ -71,6 +71,13 @@ for a in data:
         continue
     duplicates.append(a['Nom'])
     
+    if "DescriptionHTML" in a:
+      description = a['DescriptionHTML']
+    elif "Description" in a:
+      description = a['Description'].replace('\n','<br/>')
+    else:
+      description = ""
+    
     el = {
         "name": a['Nom'],
         "type": "equipment",
@@ -92,7 +99,7 @@ for a in data:
                     a['Malus'] if 'Malus' in a else "0",
                     a['ÉchecProfane'] if 'ÉchecProfane' in a else '-',
                     a['Poids'] if 'Poids' in a else '-',
-                    a['Description'].replace('\n','<br/>') if 'Description' in a else "",
+                    description,
                     a['Référence'])
             },
             "source": a['Source'],
