@@ -16,7 +16,7 @@ MOCK_TALENT = None
 #MOCK_TALENT = "mocks/roublard-talents.html"       # décommenter pour tester avec les talents pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.talents.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -41,15 +41,18 @@ for s in section:
         newObj = False
         brCount = 0
         descr = ""
+        descrHTML = ""
         for e in s.children:
             if e.name == 'h3':
                 if newObj:
                     talent['Classe'] = 'Roublard'
                     talent['Description'] = descr.strip()
+                    talent['DescriptionHTML'] = descrHTML
                     liste.append(talent)
                     talent = {'Source':'MJ','Niveau':level}
                     brCount = 0
                     descr = ""
+                    descrHTML = ""
                 talent['Nom'] = "Talent: " + cleanSectionName(e.text)
                 talent['Référence'] = URL + e.find_next("a")['href']
                 newObj = True
@@ -57,9 +60,11 @@ for s in section:
                 brCount+=1
                 if(brCount==2 and u'Prérequis' in talent):
                     descr = ""
+                    descrHTML = ""
                     
             else:
                 descr += html2text(e, False)
+                descrHTML += html2text(e, False, 2)
                 if e.name == 'div' or e.name == 'a':
                     src = extractSource(e)
                     if not src is None:
@@ -68,6 +73,7 @@ for s in section:
         ## last element
         talent['Classe'] = 'Roublard'
         talent['Description'] = descr.strip()
+        talent['DescriptionHTML'] = descrHTML
         liste.append(talent)
             
 print("Fusion avec fichier YAML existant...")
