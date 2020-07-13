@@ -18,7 +18,7 @@ MOCK_LIGNAGE_PAGE = None
 #MOCK_LIGNAGE_PAGE = "mocks/lignage-aberrant.html"
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.lignages.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 
@@ -84,12 +84,14 @@ for s in section:
         
         # Sauter à la description
         descr = ""
+        descrHTML = ""
         for t in lignageHTML.find_all('i'):
             descr = t.text.strip()
             if descr.startswith('*'): # Ignorer les références à la source (Ex: * Source semi-officielle)
                 continue
             break
         descr = descr.replace('\n','').strip()
+        descrHTML = descr
         
         # additional information
         skill = findProperty(lignageHTML.find(id='PageContentDiv'),'Compétence de classe', False)
@@ -116,7 +118,13 @@ for s in section:
         descr += "\n\nDONS SUPPLÉMENTAIRES: " + feats
         descr += "\n\nARCANES DE LIGNAGE: " + arcans
         
+        descrHTML += "<br/><br/><b>Compétences de classe:</b> " + skill
+        descrHTML += "<br/><br/><b>Sorts supplémentaires:</b> " + spells
+        descrHTML += "<br/><br/><b>Dons supplémentaires:</b> " + feats
+        descrHTML += "<br/><br/><b>Arcanes de lignage:</b> " + arcans
+        
         lignage['Description'] = descr
+        lignage['DescriptionHTML'] = descrHTML
         liste.append(lignage)
         
         ## Pouvoirs de lignage
@@ -129,13 +137,14 @@ for s in section:
             if p.name == 'h2':
                 break
             if p.name == 'b':
-                pouvoirName = p.text[:-1]    
+                pouvoirName = p.text[:-1] # retire le point à la fin du nom
                 pouvoir = {}
                 pouvoir['Nom'] = "Lignage " + link.text + ": " + pouvoirName
                 pouvoir['Classe'] = "Ensorceleur"
                 pouvoir['Source'] = lignage['Source']
                 pouvoir['Niveau'] = 1
                 pouvoir['Description'] = findProperty(jumpTo(lignageHTML, 'h2',{'class':'separator'}, "Pouvoirs de lignage"), pouvoirName, False)
+                pouvoir['DescriptionHTML'] = pouvoir['Description']
                 pouvoir['Référence'] = lignage['Référence']
                 pouvoir['Niveau'] = extractLevel(pouvoir['Description'], 30)
                 
