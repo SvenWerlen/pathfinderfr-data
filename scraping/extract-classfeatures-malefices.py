@@ -16,7 +16,7 @@ MOCK_MALEFICE = None
 #MOCK_MALEFICE = "mocks/malefices.html"       # décommenter pour tester avec les maléfices pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.mal%c3%a9fices.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ LVL = 1
 malefice = {'Niveau':LVL}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'MJRA'
 for s in section:
     if s.name == 'h2' and "Maléfices majeurs" in s.text:
@@ -50,10 +51,12 @@ for s in section:
                     if newObj:
                         malefice['Classe'] = 'Sorcière'
                         malefice['Description'] = descr.strip()
+                        malefice['DescriptionHTML'] = descrHTML
                         liste.append(malefice)
                         malefice = {'Niveau':LVL}
                         
                     descr = ""
+                    descrHTML = ""
                     malefice['Nom'] = "Maléfice: " + nom
                     malefice['Source'] = source
                     malefice['Référence'] = reference
@@ -62,11 +65,13 @@ for s in section:
                 
                 else:
                     descr += html2text(el)
+                    descrHTML += html2text(el, True, 2)
     
 
 # last element        
 malefice['Classe'] = 'Sorcière'
 malefice['Description'] = descr.strip()
+malefice['DescriptionHTML'] = descrHTML
 liste.append(malefice)
 
 
