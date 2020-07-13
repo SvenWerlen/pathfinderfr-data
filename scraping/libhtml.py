@@ -130,6 +130,9 @@ def html2text(htmlEl, skipDiv = True, mode = MODE_TEXT):
     elif htmlEl.name == 'center':
         return table2text(htmlEl.find('table'), mode)
     elif not skipDiv and htmlEl.name == 'div' and htmlEl.find('table'):
+        if 'class' in htmlEl.attrs and "navmenudroite" in htmlEl.attrs['class']:
+            print("Special use case with table (navigation) in HTML. PLEASE CHECK IF ITS OK!!! ===============================")
+            return ""
         return table2text(htmlEl.find('table'), mode)
     elif htmlEl.name == 'ul':
         if mode == MODE_TEXT:
