@@ -16,7 +16,7 @@ MOCK_MALEDICTION = None
 #MOCK_MALEDICTION = "mocks/maledictions.html"       # décommenter pour tester avec les maledictions pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.mal%c3%a9dictions%20doracle.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -33,6 +33,7 @@ section = content.find_all("div",{'class':['article_2col']})
 malediction = {'Niveau':1}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'MJRA'
 for s in section:
     for el in s.children:
@@ -43,9 +44,11 @@ for s in section:
             if newObj:
                 malediction['Classe'] = 'Oracle'
                 malediction['Description'] = descr.strip()
+                malediction['DescriptionHTML'] = descrHTML
                 liste.append(malediction)
                 malediction = {'Niveau':1}
                 descr = ""
+                descrHTML = ""
 
             malediction['Nom'] = "Malédiction: " + nom
             malediction['Source'] = source
@@ -54,11 +57,13 @@ for s in section:
         
         else:
             descr += html2text(el)
+            descrHTML += html2text(el, True, 2)
     
         
 # last element        
 malediction['Classe'] = 'Oracle'
 malediction['Description'] = descr.strip()
+malediction['DescriptionHTML'] = descrHTML
 liste.append(malediction)
 
 
