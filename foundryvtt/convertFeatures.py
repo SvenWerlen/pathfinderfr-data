@@ -58,6 +58,8 @@ for d in data:
                 "chat": "",
                 "unidentified": ""
             },
+            "featType": "classFeat",
+            "associations": { "classes": [ [ d['Classe'] ] ] },
             "source": d['Source'],
         }
     }
