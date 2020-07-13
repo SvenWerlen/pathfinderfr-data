@@ -16,7 +16,7 @@ MOCK_INQUISITION = None
 #MOCK_INQUISITION = "mocks/inquisitions.html"       # décommenter pour tester avec les inquisitions pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.inquisitions.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ section = content.find(id='PageContentDiv').children
 inquisition = {'Niveau':1}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'AM'
 for el in section:
     if el.name == "h2":
@@ -43,9 +44,11 @@ for el in section:
         if newObj:
             inquisition['Classe'] = 'Inquisiteur'
             inquisition['Description'] = descr.strip()
+            inquisition['DescriptionHTML'] = descrHTML.strip()
             liste.append(inquisition)
             inquisition = {'Niveau':1}
             descr = ""
+            descrHTML = ""
 
         inquisition['Nom'] = nom
         inquisition['Source'] = source
@@ -60,12 +63,14 @@ for el in section:
     
     else:
         descr += html2text(el)
+        descrHTML += html2text(el, True, 2)
     
     
         
 # last element        
 inquisition['Classe'] = 'Inquisiteur'
 inquisition['Description'] = descr.strip()
+inquisition['DescriptionHTML'] = descrHTML.strip()
 liste.append(inquisition)
 
 
