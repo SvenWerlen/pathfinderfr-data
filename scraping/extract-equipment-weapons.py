@@ -22,7 +22,7 @@ MOCK_WD = None
 #MOCK_WD = "mocks/weapons-details.html"  # décommenter pour tester avec les armes pré-téléchargées
 
 
-FIELDS = ['Nom', 'Catégorie', 'Sous-catégorie', 'Source', 'Prix', 'DégâtsP', 'DégâtsM', 'Critique', 'Portée', 'Poids', 'Type', 'Spécial', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Catégorie', 'Sous-catégorie', 'Source', 'Prix', 'DégâtsP', 'DégâtsM', 'Critique', 'Portée', 'Poids', 'Type', 'Spécial', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 
@@ -171,6 +171,7 @@ def addInfos(liste, name, source):
         if l['Nom'].lower() in names:
             l['Complete'] = True
             l['Description'] = descr.strip()
+            l['DescriptionHTML'] = descrHTML
             if not source is None:
                 l['Source'] = source
             found = True
@@ -194,6 +195,7 @@ for URLDET in URLDETS:
     newObj = True
     name = ""
     descr = ""
+    descrHTML = ""
     source = None
     sourceNext = None
     for s in section:
@@ -211,6 +213,7 @@ for URLDET in URLDETS:
                         if name.endswith('.'):
                             name = name[:-1].strip()
                         descr = ""
+                        descrHTML = ""
                         source = None
                         newObj = False
                 elif e.name == 'div':
@@ -219,6 +222,7 @@ for URLDET in URLDETS:
                         source = sourceFound
                 else:
                     descr += html2text(e)
+                    descrHTML += html2text(e, True, 2)
 
     addInfos(liste, name, sourceNext)
 
