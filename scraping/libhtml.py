@@ -390,6 +390,7 @@ def extractBD_Type1(html):
     #print("Extracting %s..." % titre)
     
     descr = ""    
+    descrHTML = ""  
     section = TYPE_DESCR
 
     # lire la partie descriptive
@@ -403,6 +404,7 @@ def extractBD_Type1(html):
         
         if section == TYPE_DESCR:
             descr += html2text(el)
+            descrHTML += html2text(el, True, 2)
         elif section == TYPE_PROPS:
             if el.name == 'ul':
                 caracs = extractProps(el.find('li').children)
@@ -414,7 +416,7 @@ def extractBD_Type1(html):
     #print(props)
     
     # merge props
-    return { **{'nomAlt': titre, 'descr': descr.strip()}, **caracs }
+    return { **{'nomAlt': titre, 'descr': descr.strip(), 'descrHTML': descrHTML}, **caracs }
 
 
 def cleanText(text):
@@ -463,6 +465,7 @@ def extractBD_Type2(html):
     
     
     descr = ""    
+    descrHTML = ""   
     section = TYPE_PROPS
 
     # lire la partie descriptive
@@ -481,6 +484,7 @@ def extractBD_Type2(html):
         
         if section == TYPE_DESCR:
             descr += html2text(el)
+            descrHTML += html2text(el, True, 2)
         elif section == TYPE_PROPS:
             props.append(el)
         elif section == TYPE_FABRI:
@@ -508,7 +512,7 @@ def extractBD_Type2(html):
     checkProperties(fabrics,VALID_FABRICS)
     
     # merge props
-    return { **{'nomAlt': cleanName(titre), 'descr': cleanDescription(descr)}, **props, **fabrics }
+    return { **{'nomAlt': cleanName(titre), 'descr': cleanDescription(descr), 'descrHTML': cleanDescription(descrHTML)}, **props, **fabrics }
 
 
 #
