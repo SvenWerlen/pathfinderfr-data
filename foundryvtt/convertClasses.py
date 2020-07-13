@@ -56,6 +56,13 @@ for c in data:
       continue
     duplicates.append(c['Nom'])
     
+    if "DescriptionHTML" in c:
+      description = c['DescriptionHTML']
+    elif "Description" in c:
+      description = c['Description'].replace('\n','<br/>')
+    else:
+      description = ""
+    
     el = {
         'name': c['Nom'],
         'permission': { "default": 0 },
@@ -63,13 +70,14 @@ for c in data:
         'data': {
             'source': c['Source'],
             'description': {
-                "value": ("<p><i>{}</i></p>" +
+                "value": ("<div class=\"pf2frDescr\">"+
+                        "<p><i>{}</i></p>" +
                         "<p><b>Dé de vie: </b>{}<br/>" +
                         "<b>Alignement: </b>{}<br/>" +
                         "<b>Rangs/niveau: </b>{}</p>" +
                         "<p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
-                    c['Description'].replace('\n','<br/>'),
+                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
+                    description,
                     c['DésDeVie'],
                     c['Alignement'],
                     c['RangsParNiveau'],

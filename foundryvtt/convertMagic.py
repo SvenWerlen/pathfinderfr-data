@@ -88,15 +88,16 @@ for m in data:
         "type": "equipment",
         "data": {
             "description": {
-                "value": ("<p><b>Type: </b>{}<br/>" +
+                "value": ("<div class=\"pf2frDescr\">"+
+                        "<p><b>Type: </b>{}<br/>" +
                         "<b>Prix: </b>{}<br/>" +
                         "<b>Emplacement: </b>{}<br/>" +
                         "<b>Poids: </b>{}<br/>" +
                         "<b>Aura: </b>{}<br/>" +
                         "<b>NLS: </b>{}<br/></p>" +
                         "<b>Conditions: </b>{}<br/></p>" +
-                        "<h3>Description:</h3><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
+                        "<h2>Description:</h2><p>{}</p>" +
+                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     m['Type'] if 'Type' in m else '-',
                     m['Prix'] if 'Prix' in m else '-',
                     m['Emplacement'] if 'Emplacement' in m else '-',
