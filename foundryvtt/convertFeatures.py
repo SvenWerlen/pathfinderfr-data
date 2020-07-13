@@ -58,7 +58,7 @@ for d in data:
                 "chat": "",
                 "unidentified": ""
             },
-            "featType": "classFeat",
+            "tags": [[ "De base" if 'Auto' in d and d['Auto'] else "À choisir", ]],
             "associations": { "classes": [ [ d['Classe'] ] ] },
             "source": d['Source'],
         }
