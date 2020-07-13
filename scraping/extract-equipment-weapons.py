@@ -216,13 +216,13 @@ for URLDET in URLDETS:
                         descrHTML = ""
                         source = None
                         newObj = False
-                elif e.name == 'div':
-                    sourceFound = extractSource(e)
-                    if sourceFound:
-                        source = sourceFound
                 else:
                     descr += html2text(e)
                     descrHTML += html2text(e, True, 2)
+                    if e.name == 'div' or e.name == 'a':
+                      sourceFound = extractSource(e)
+                      if sourceFound:
+                          source = sourceFound
 
     addInfos(liste, name, sourceNext)
 
