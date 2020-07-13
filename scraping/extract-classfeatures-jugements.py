@@ -16,7 +16,7 @@ MOCK_JUGEMENT = None
 #MOCK_JUGEMENT = "mocks/jugements.html"       # décommenter pour tester avec les jugements pré-téléchargées
 
 URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.jugements.ashx"
-FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom', 'Classe', 'Archétype']
 
 liste = []
@@ -34,6 +34,7 @@ section = content.find(id='PageContentDiv').children
 jugement = {'Niveau':1, 'Auto': True}
 newObj = False
 descr = ""
+descrHTML = ""
 source = 'MJRA'
 for el in section:
     if el.name == "h3":
@@ -43,10 +44,12 @@ for el in section:
         if newObj:
             jugement['Classe'] = 'Inquisiteur'
             jugement['Description'] = cleanInlineDescription(descr)
+            jugement['DescriptionHTML'] = cleanInlineDescription(descrHTML)
             liste.append(jugement)
             jugement = {'Niveau':1, 'Auto': True}
             
         descr = ""
+        descrHTML = ""
         jugement['Nom'] = "Jugement: " + nom
         jugement['Source'] = source
         jugement['Référence'] = reference
@@ -60,10 +63,12 @@ for el in section:
     
     else:
         descr += html2text(el)
+        descrHTML += html2text(el, True, 2)
 
 # last element        
 jugement['Classe'] = 'Inquisiteur'
 jugement['Description'] = descr.replace('\n','').strip()
+jugement['DescriptionHTML'] = cleanInlineDescription(descrHTML)
 liste.append(jugement)
 
 
