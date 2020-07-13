@@ -146,7 +146,7 @@ for data in URLs:
         found = False
         for l in liste:
             for n in names:
-                if l['Nom'].lower() == n.lower() or l['Nom'].lower().startswith(n.lower()):
+                if l['Nom'].lower() == n.lower() or l['Nom'].lower().startswith(n.lower() + " "):
                     l['Complete'] = True
                     l['Description'] = descr.strip()
                     if not source is None:

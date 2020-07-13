@@ -259,25 +259,9 @@
   Prix: 5 po
   Poids: —
   Catégorie: Équipement d'aventurier
-  Description: "Ce quadrupède de taille G est utilisé comme monture et animal de\
-    \ bât. Les chevaux peuvent être entraînés pour la guerre mais, sinon, les champs\
-    \ de batailles les rendent nerveux. Beaucoup de cultures mènent des programmes\
-    \ d’élevage et considèrent souvent leur cheval comme étant le meilleur pour la\
-    \ tâche pour laquelle il a été dressé.\n\nCheval léger. Ces chevaux peuvent être\
-    \ montés mais servent souvent de chevaux de bât ou d’attelage. \n Cheval léger\
-    \ (entraîné au combat). Ces chevaux de guerre légers sont dressés pour la guerre.\
-    \ ils sont très appréciés dans la cavalerie légère et rapide et chez les éclaireurs\
-    \ et les chevaliers téméraires.\n (Voir le cheval)\n Cheval lourd. Ces chevaux\
-    \ sont souvent utilisés comme animaux de bât, portant des charges importantes\
-    \ sur de grandes distances.\n Cheval lourd (entraîné au combat). Les chevaux de\
-    \ guerre lourds sont élevés et dressés pour le combat. Ils sont souvent équipés\
-    \ d’une barde lourde mais se battent tout aussi férocement sans armure.\n  (Voir\
-    \ le cheval lourd)\n Poney. Ces créatures sont généralement utilisées pour transporter\
-    \ des marchandises sur des chemins de montagne étroits ou comme coursier pour\
-    \ les jeunes cavaliers ou les cavaliers de taille P.\n Poney (entraîné au combat).\
-    \ On peut entraîner les poneys pour la guerre tout aussi efficacement que leurs\
-    \ frères de plus grade taille. Ces coursiers servent souvent aux cavaliers de\
-    \ taille P qui prévoient de se battre.\n (Voir le poney)"
+  Description: Cet anneau présente un motif en relief, généralement des armoiries
+    familiales ou un sigle officiel. Le personnage presse la chevalière sur de la
+    cire fondue pour y imprimer ce symbole.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chevalière
   
 - Nom: Chope
@@ -956,10 +940,11 @@
   Prix: 5 pa
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: Le prix est indiqué pour une journée de vivres. Cette nourriture
+    insipide se compose généralement d’aliments durs, de boeuf séché et de fruits
+    secs mais le contenu varie d’une région à l’autre et en fonction de la race qui
+    la prépare. Tant que la nourriture reste au sec, elle peut se conserver pendant
+    des mois sans se gâter.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie
   
@@ -1500,7 +1485,7 @@
 - Nom: Graisse alchimique
   Source: MJ
   Prix: 5 po
-  Poids: 0.5 kg
+  Poids: 0,5 kg
   Artisanat: 15
   Catégorie: Remèdes alchimiques
   Description: Chaque pot de cette substance noire et visqueuse suffit à recouvrir
@@ -1666,7 +1651,7 @@
 - Nom: Sirop apaisant
   Source: MJ
   Prix: 25 po
-  Poids: 0.25 kg
+  Poids: 0,25 kg
   Artisanat: 15
   Catégorie: Remèdes alchimiques
   Description: Ce liquide bleu, au goût sain et sucré, crée une sensation de chaleur
@@ -1715,13 +1700,6 @@
   Prix: 10 po
   Poids: 1,5 kg
   Catégorie: Trousses d’outils et de compétences
-  Description: 'Cet album de 100 pages contient les portraits d’hommes et de femmes
-    nains, elfes, gnomes, demi-elfes, demi-orques, halfelins et humains. En choisissant
-    le portrait qui convient et en lui rajoutant des cheveux, une barbe ou d’autres
-    caractéristiques comme des grains de beauté ou des cicatrices, même un piètre
-    artiste peut rapidement créer un portrait ressemblant à une personne spécifique
-    : par exemple, un inquisiteur peut faire le portrait d’une sorcière demi-elfe
-    recherchée.'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Album
     de portraits
   
@@ -4777,10 +4755,13 @@
   Prix: 2 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: Les elfes préfèrent le pain mou d’avoine mélangé avec d’autres graines,
+    des baies et des noisettes et adouci de miel. Ils complètent ces rations avec
+    des fruits secs et des fruits à coques. Si un elfe se nourrit uniquement de ces
+    ration pendant au moins 1 semaine, il reçoit un bonus de +2 aux tests et aux jets
+    de sauvegarde bénéficiant du don Endurance. Cet avantage dure jusqu’à ce qu’il
+    fasse un repas contenant en autre chose que ces rations ou qu’il passe une journée
+    complète sans manger.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie elfiques
   
@@ -4789,10 +4770,16 @@
   Prix: 2 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: On trouve presque n’importe quelle nourriture en conserve dans les
+    rations de survie gnomes, qui sont prévues pour qu’un gnome en voyage n’ait pas
+    à manger le même repas deux fois dans la même semaine. Si un gnome se nourrit
+    uniquement de ces rations pendant au moins 1 semaine, on considère qu’il a un
+    dé de vie de plus vis à vis des sorts et des capacités surnaturelles ayant des
+    effets variables basés sur les dés de vie, comme couleurs dansantes et sommeil.
+    Ceci n’augmente pas son niveau de lanceur de sorts, son niveau de personnage ni
+    ses dés de vie de manière concrète. Cet avantage dure jusqu’à ce qu’il fasse un
+    repas comprenant en autre chose que ces rations ou qu’il passe une journée complète
+    sans manger.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie gnomes
   
@@ -4801,10 +4788,14 @@
   Prix: 2 po
   Poids: 0,25 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: Une journée de rations de survie halfelines représente plus que ce
+    que mange normalement un aventurier halfelin en une journée car un ventre plein
+    renforce sa volonté. La nourriture de base inclut des fruits secs sucrés, du saucisson,
+    du fromage sec et fort, du pain d’épice et un mélange de graines grillées, de
+    fruits à coques et de mélasse. Si un halfelin se nourrit uniquement de ces rations
+    pendant au moins une semaine, il fait passer le malus qu’impose l’état secoué
+    de -2 à -1. Cet avantage dure jusqu’à ce qu’il fasse un repas comportant autre
+    chose que ces rations ou qu’il passe une journée entière sans manger.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie halfelines
   
@@ -4813,10 +4804,13 @@
   Prix: 2 po
   Poids: 0,75 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: Les rations de survie naines comprennent des saucisses fumées et
+    de la viande salée que viennent compléter des biscuits secs et des légumes secs.
+    Si un nain se nourrit uniquement de ces rations pendant au moins une semaine,
+    il peut se hâter ou entreprendre une marche forcée pendant 1 heure de plus sans
+    souffrir d’effets secondaires mais il ne peut pas faire les deux dans une même
+    journée. Cet avantage dure jusqu’à ce qu’il fasse un repas comprenant autre chose
+    que ces rations ou qu’il passe une journée complète sans manger.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie naines
   
@@ -4825,10 +4819,13 @@
   Prix: 1 po
   Poids: 0,5 kg
   Catégorie: Nourriture et Boissons
-  Description: "Ces rongeurs de taille TP vivent partout et se nourrissent de presque\
-    \ n’importe quoi. Malgré leur réputation de charognards porteurs de maladies,\
-    \ les rats domestiques sont des créatures propres et loyales qui font d’excellents\
-    \ familiers. \n (Voir le rat)"
+  Description: Une ration de survie orque se compose généralement de pain noir épais,
+    de petites saucisses aussi dures que le cuir qui doivent être mâchées lentement
+    afin d’être attendries, de viande séchée d’origine incertaine et de poivrons piquants.
+    Si un demi-orque se nourrit uniquement de ces rations pendant au moins une semaine,
+    il rajoute +2 au DD pour résister à ses tests d’Intimidation. Cet avantage dure
+    jusqu’à ce qu’il fasse un repas comportant autre chose que ces rations ou qu’il
+    passe une journée entière sans manger.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Nourriture%20et%20Boissons.ashx#Rations
     de survie orques
   
@@ -5410,11 +5407,10 @@
   Prix: 8 po
   Poids: 0,25 kg
   Catégorie: Vêtements
-  Description: Le style complexe de cette écharpe dissimule les nombreuses petites
-    poches situées sur l’une des faces. Elle accorde un bonus de +4 aux tests d’Escamotage
-    pour cacher des objets sur soi. Ce bonus ne se cumule pas avec les bonus qu’accordent
-    les vêtements épais mais il se cumule avec les bonus accordés quand on essaye
-    de dissimuler des petits objets.
+  Description: Les artistes utilisent souvent des costumes séduisants et de ravissants
+    accessoires pour leurs spectacles. Les écharpes en soie transparente ou en tissu
+    coloré, souvent brodées de scènes ou de motifs complexes, font partie de leurs
+    accessoires favoris.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Écharpe
     à poches
   
@@ -7358,10 +7354,8 @@
   Prix: 1 pa
   Poids: 0,5 kg
   Catégorie: Équipement d'aventurier
-  Description: Boisson populaire dans de nombreuses régions, le thé peut être vert
-    ou noir, en fonction de la période à laquelle on cueille les feuilles et de la
-    façon dont elles sont préparées. Il peut être servi nature ou avec du lait, du
-    sucre, du citron ou des épices.
+  Description: Il s’agit d’un petit pot à bec verseur pour préparer le thé. Il inclut
+    un couvercle et une passoire et permet de faire 4 tasses de thé à la fois.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Théière
   
 - Nom: Toile de camouflage
@@ -8766,7 +8760,8 @@
 - Nom: Solution adhésive
   Source: MJ
   Prix: 25 po
-  Poids: 0,5
+  Poids: 0,5 kg
+  Artisanat: 20
   Catégorie: Outils alchimiques
   Description: Cette bouteille en verre est remplie d’une substance visqueuse et
     collante très prisée par les marins pour la force d’adhérence supplémentaire qu’elle
@@ -8781,7 +8776,7 @@
   
 - Nom: Solvant alchimique
   Source: MJ
-  Prix: 20 po
+  Prix: 80 po
   Poids: 0,25 kg
   Artisanat: 20
   Catégorie: Outils alchimiques
@@ -8823,7 +8818,7 @@
     repère
   
 - Nom: Tonique caverneux
-  Source: MJ
+  Source: MR
   Prix: 50 po
   Poids: —
   Artisanat: 25
@@ -9028,7 +9023,7 @@
 - Nom: Gel de protection contre le froid
   Source: MJ
   Prix: 150 po
-  Poids: 0.5 kg
+  Poids: 0,5 kg
   Artisanat: 25
   Catégorie: Remèdes alchimiques
   Description: Lorsque le personnage applique de gel clair sur la peau, sur une
@@ -9049,7 +9044,7 @@
 - Nom: Gel ignifuge
   Source: MJ
   Prix: 150 po
-  Poids: 0.5 kg
+  Poids: 0,5 kg
   Artisanat: 25
   Catégorie: Remèdes alchimiques
   Description: Lorsque le personnage applique ce gel clair sur la peau, sur une
@@ -9069,7 +9064,7 @@
 - Nom: Huile de troll
   Source: MJ
   Prix: 50 po
-  Poids: 0.5 kg
+  Poids: 0,5 kg
   Artisanat: 30
   Catégorie: Remèdes alchimiques
   Description: Ce liquide écarlate est visqueux et infect. Si le personnage en boit,
@@ -9343,4 +9338,1164 @@
     créatures. La trousse de vétérinaire est épuisée après 10 utilisations.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse
     de vétérinaire
+  
+- Nom: Encens (10 bâtonnets)
+  Source: MR
+  Prix: 10 po
+  Poids: 0,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Cette résine aromatique, imprégnée d’huiles parfumées, prend souvent
+    la forme de bâtonnets, de cônes ou de boules et est brûlée lors des cérémonies
+    ou des séances de méditation. Une pièce d’encens brûle pendant 1 heure.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Encens
+  
+- Nom: Fers (standards)
+  Source: MR
+  Prix: 15 po
+  Poids: 1 kg
+  Catégorie: Équipement d'aventurier
+  Description: Les fers sont des menottes pour les chevilles plutôt que pour les
+    poignets et répondent aux mêmes règles quand il s’agit de les casser, de s’en
+    libérer et en ce qui concerne leur coût en fonction de la taille. Une créature
+    mise aux fers est enchevêtrée et ne peut se déplacer qu’à la moitié de sa vitesse.
+    En outre, une créature enchaînée doit réussir un test d’Acrobaties DD 15 pour
+    se déplacer à plus de sa vitesse (réduite) en un round. Si elle rate son test
+    de 5 ou plus, elle tombe à terre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Fers
+  
+- Nom: Fers (de maître)
+  Source: MR
+  Prix: 50 po
+  Poids: 1 kg
+  Catégorie: Équipement d'aventurier
+  Description: Les fers sont des menottes pour les chevilles plutôt que pour les
+    poignets et répondent aux mêmes règles quand il s’agit de les casser, de s’en
+    libérer et en ce qui concerne leur coût en fonction de la taille. Une créature
+    mise aux fers est enchevêtrée et ne peut se déplacer qu’à la moitié de sa vitesse.
+    En outre, une créature enchaînée doit réussir un test d’Acrobaties DD 15 pour
+    se déplacer à plus de sa vitesse (réduite) en un round. Si elle rate son test
+    de 5 ou plus, elle tombe à terre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Fers
+  
+- Nom: Gemme de chair (décorative)
+  Source: MR
+  Prix: 1 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: Une aventurière oréade découvrit ces petites gemmes vertes quand,
+    après avoir été blessée en tombant sur des pierres déchiquetées alors qu’elle
+    explorait une grotte, elle remarqua que de jolis morceaux de cristal verts poussaient
+    sur sa peau. Les bijoutiers oréades ont découvert que ces cristaux, appelés gemmes
+    de chair, semblaient se nourrir de l’énergie élémentaire qui imprègne la chair
+    des oréades. Ils se développent et passent de l’état de tout petits éclats de
+    pierre à celui de grosses gemmes ouvragées. Le fait d’implanter des gemmes de
+    chair, opération tout à fait inoffensive, devint alors une méthode raciale unique,
+    parmi les oréades, d’altérer son corps, comme les autres humanoïdes se font des
+    tatouages et des piercings. Les gemmes de chair décoratives coûtent 1 po et sont
+    simplement ornementales. Les gemmes de chair en pointe, quant à elles, se développent
+    pour former des éclats cristallins compliqués qui fonctionnent comme des pointes
+    d’armure, mais les oréades qui les portent ne peuvent pas mettre d’armure par-dessus
+    les pointes, et même les vêtements normaux doivent être spécialement troués ou
+    cousus pour leur permettre de passer. L’implantation d’un ensemble de gemmes de
+    chair en pointe prend 10 minutes, et il faut environ 1 semaine pour que les éclats
+    qui poussent atteignent leur taille maximale. Il faut 1 minute pour retirer une
+    gemme de chair ; la personne qui la retire doit réussir un test de Premiers secours
+    DD 15 pour éviter d’infliger 1d4 points de dégâts à l’oréade. Les gemmes de chair
+    en pointe peuvent être brisées ou détruites comme les objets que l’on porte (solidité
+    1, 5 pv), mais, à moins de retirer la racine de la gemme de chair, les éclats
+    repoussent en 1 semaine.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Gemme
+    de chair
+  
+- Nom: Gemme de chair (pointes)
+  Source: MR
+  Prix: 50 po
+  Poids: 2,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Une aventurière oréade découvrit ces petites gemmes vertes quand,
+    après avoir été blessée en tombant sur des pierres déchiquetées alors qu’elle
+    explorait une grotte, elle remarqua que de jolis morceaux de cristal verts poussaient
+    sur sa peau. Les bijoutiers oréades ont découvert que ces cristaux, appelés gemmes
+    de chair, semblaient se nourrir de l’énergie élémentaire qui imprègne la chair
+    des oréades. Ils se développent et passent de l’état de tout petits éclats de
+    pierre à celui de grosses gemmes ouvragées. Le fait d’implanter des gemmes de
+    chair, opération tout à fait inoffensive, devint alors une méthode raciale unique,
+    parmi les oréades, d’altérer son corps, comme les autres humanoïdes se font des
+    tatouages et des piercings. Les gemmes de chair décoratives coûtent 1 po et sont
+    simplement ornementales. Les gemmes de chair en pointe, quant à elles, se développent
+    pour former des éclats cristallins compliqués qui fonctionnent comme des pointes
+    d’armure, mais les oréades qui les portent ne peuvent pas mettre d’armure par-dessus
+    les pointes, et même les vêtements normaux doivent être spécialement troués ou
+    cousus pour leur permettre de passer. L’implantation d’un ensemble de gemmes de
+    chair en pointe prend 10 minutes, et il faut environ 1 semaine pour que les éclats
+    qui poussent atteignent leur taille maximale. Il faut 1 minute pour retirer une
+    gemme de chair ; la personne qui la retire doit réussir un test de Premiers secours
+    DD 15 pour éviter d’infliger 1d4 points de dégâts à l’oréade. Les gemmes de chair
+    en pointe peuvent être brisées ou détruites comme les objets que l’on porte (solidité
+    1, 5 pv), mais, à moins de retirer la racine de la gemme de chair, les éclats
+    repoussent en 1 semaine.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Gemme
+    de chair
+  
+- Nom: Griffes métalliques
+  Source: MR
+  Prix: 305 po
+  Poids: 1 kg
+  Catégorie: Équipement d'aventurier
+  Description: 'Ces lames subtiles ne peuvent être utilisées que par les hommes-félins
+    ayant le trait racial griffes du félin. Achetées par lots de cinq, elles s’adaptent
+    aux griffes du porteur sur une main. Les lames accordent un bonus d’altération
+    de +1 aux jets d’attaque de griffe que le porteur effectue de cette main et modifient
+    le type d’arme : d’arme naturelle, elle devient une arme légère tranchante. Les
+    hommes-félins ayant le trait racial griffes du félin sont formés au maniement
+    de cette arme. Il est possible d’améliorer les griffes métalliques comme une arme
+    de maître au prix normal. Le coût indiqué pour l’objet s’applique à un ensemble
+    de cinq lames pour une main.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Griffes
+    métalliques
+  
+- Nom: Manche d'arme ondin
+  Source: MR
+  Prix: +300 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: Les ondins recourent à une conception unique lorsqu’ils fabriquent
+    des armes à manche comme les bâtons, les lances et les tridents. Plutôt que d’intégrer
+    un manche solide, l’arme est construite autour d’un tuyau en bois ou en métal,
+    une de ses extrémités étant scellée et l’autre restant ouverte. Par une action
+    complexe, l’ondin peut effectuer une attaque de corps à corps avec cette arme
+    et utiliser son pouvoir magique de poussée hydraulique contre sa cible. En outre,
+    l’arme fonctionne comme une arme standard de son type et peut se composer de matériaux
+    spéciaux (comme le mithral ou l’adamantium) et être une arme de maître.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Manche
+    d’arme ondin
+  
+- Nom: Menottes à pointes
+  Source: MR
+  Prix: +15 po
+  Poids: 0,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: "Les pointes ajoutées à ces menottes blessent les prisonniers qui\
+    \ bougent autrement que lentement et prudemment. Une créature attachée avec des\
+    \ menottes à pointes reçoit 1 point de dégâts perforants si elle entreprend plus\
+    \ qu’une simple action de mouvement lors d’un round. Les mouvements brutaux en\
+    \ tout genre, comme être touché en combat ou tomber à terre, infligent également\
+    \ 1 point de dégâts. Essayer de se libérer de menottes à pointes avec un test\
+    \ de Force inflige 1d4 points de dégâts perforants au prisonnier, que sa tentative\
+    \ soit une réussite ou un échec.\n Les fers peuvent également être agrémentés\
+    \ de pointes, mais le porteur peut éviter les dégâts en n’effectuant aucune action\
+    \ impliquant de bouger les jambes. Les hobgobelins se servent souvent de ce genre\
+    \ de fers pour attacher les artisans à leurs tables de travail. Le fait d’attacher\
+    \ un prisonnier avec plusieurs paires de menottes et/ou de fers ne provoque pas\
+    \ de dégâts supplémentaires."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Menottes
+    à pointes
+  
+- Nom: Sac anti-ours
+  Source: MR
+  Prix: 2 po
+  Poids: 1,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Ce sac est muni d’une corde de 6 mètres de long qui permet de le
+    suspendre à un arbre ou un point d’attache similaire. Les gens mettent souvent
+    leurs réserves de nourriture ou leurs objets fragiles dedans, une précaution élémentaire
+    quand ils campent dans des étendues sauvages, afin que les ours et les autres
+    prédateurs ne viennent pas piller son contenu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sac
+    anti-ours
+  
+- Nom: Sifflet des grottes
+  Source: MR
+  Prix: 20 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: Créé à partir du pied fongique d’un champignon rare, ce sifflet produit
+    un son que seuls les kobolds et les dragons peuvent entendre. Les kobolds créent
+    souvent des codes compliqués composés de notes qu’ils utilisent pour coordonner
+    leurs embuscades et leurs attaques.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sifflet
+    des grottes
+  
+- Nom: Sifflet du prévôt
+  Source: MR
+  Prix: 1 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: Le sifflet du shérif sert généralement aux rôdeurs et aux prévôts
+    gnomes. Il émet un son aigu que l’on entend facilement à 300 mètres de distance,
+    dans des conditions normales. En revanche, sa fréquence est si haute que les blaireaux,
+    les chiens et les gnomes sont les seuls à l’entendre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Sifflet
+    du prévôt
+  
+- Nom: Tente suspendue
+  Source: MJ
+  Prix: 20 po
+  Poids: 7,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: La tente suspendue est un abri de petite taille en forme de goutte
+    d’eau (capable d’accueillir une créature de taille M). Elle est munie d’une solide
+    corde pour la suspendre à une branche d’arbre, un grappin ou même un piton planté
+    dans la paroi d’une falaise. Ces tentes servent surtout dans les zones montagneuses,
+    où il est très difficile de trouver une surface plane pour monter le camp, et
+    dans les marais où le sol sec est si rare. Pour monter dans une tente suspendue
+    ou en descendre, il faut réussir une action complexe qui nécessite un test d’Escalade
+    DD 10. En cas d’échec, il faut faire une nouvelle tentative, mais, si le personnage
+    rate le test de 5 ou plus, il tombe de la tente.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Tente
+    suspendue
+  
+- Nom: Trousse de tueur de vampires
+  Source: MR
+  Prix: 500 po
+  Poids: 4 kg
+  Catégorie: Équipement d'aventurier
+  Description: Cette petite mallette en bois verrouillée contient de nombreux outils
+    et appareils utilisés par les chasseurs et tueurs de vampires. Elle contient 10
+    gousses d’ail, 4 pieux de bois de maître, un marteau, un miroir en argent, 4 fioles
+    d’eau bénite, une application de lustrargent et un symbole sacré de maître. Elle
+    contient également de nombreux agents réactifs et des poudres pour traiter les
+    blessures et créer des enchantements de protection, des baumes et autres concoctions.
+    En plus de son utilité générale, le kit du tueur de vampire déployé accorde un
+    bonus de +2 à tous les tests de compétences basées sur le Charisme pour enquêter
+    sur les vampires ou les traquer.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Trousse
+    de tueur de vampires
+  
+- Nom: Carnet obsessionnel
+  Source: MR
+  Prix: 25 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Les gnomes utilisent ces petits livres pour noter des informations
+    sur l’objet de leur obsession. Quand un gnome consulte son carnet obsessionnel
+    (ce qui lui prend une minute), il gagne un bonus de circonstances de +2 au prochain
+    test d’Artisanat ou de Profession, à condition qu’il corresponde à celui que le
+    gnome a choisi pour son trait racial obsession.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Carnet
+    obsessionnel
+  
+- Nom: Cartes du ciel
+  Source: MR
+  Prix: 200 po
+  Poids: 0,25 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Beaucoup de demi-elfes vivent dans de grandes villes ou des communautés
+    où ils ont du mal à communier avec l’environnement. Certains partent faire de
+    longues retraites dans la nature, mais d’autres passent leurs soirées sur de hauts
+    toits isolés, à regarder les étoiles. Ces âmes solitaires utilisent des cartes
+    pour suivre le mouvement des étoiles et des autres corps célestes. Une personne
+    qui utilise une de ces cartes par nuit claire peut faire un test de Connaissances
+    (géographie) DD 20 pour déterminer sa position approximative et le mois de l’année.
+    De plus, ces cartes donnent un bonus de circonstances de +2 aux tests de Survie
+    pour éviter de se perdre de nuit par temps clair.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Cartes
+    du ciel
+  
+- Nom: Corde rugissante
+  Source: MR
+  Prix: 15 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: De nombreux morceaux de métal creux, aux formes étranges, sont attachés
+    à cette mince longueur de corde. Par une action simple, une créature peut la faire
+    tournoyer au-dessus de sa tête pour produire toutes sortes de bruits étranges.
+    Pendant le round suivant, toutes les créatures qui se trouvent à moins de 18 mètres
+    de la corde rugissante subissent un malus de -2 aux tests de Perception basés
+    sur le son et un malus de -1 aux jets de sauvegarde contre les effets de terreur.
+    Un barde peut utiliser la corde rugissante comme un instrument (à corde) qui lui
+    donne un bonus de +2 aux tests de Représentation quand il utilise le pouvoir contre-chant.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Corde
+    rugissante
+  
+- Nom: Encensoir céleste
+  Source: MR
+  Prix: 50 po
+  Poids: 1,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cet encensoir béni contient jusqu’à 10 bâtonnets d’encens et brûle
+    à raison de 1 bâtonnet par heure. Si on ajoute un bâton fumigène à l’encens alors
+    qu’il est en train de brûler, les créatures de sous-type Mal sont éblouies tant
+    qu’elles restent dans la zone de fumée produite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Encensoir
+    céleste
+  
+- Nom: Ensemble de pochoirs d'ombre
+  Source: MR
+  Prix: 30 po
+  Poids: 1 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cet ensemble de 10 pochoirs en métal élaborés est utilisé dans le
+    théâtre de marionnettes des ombres pour projeter des ombres de silhouettes et
+    d’objets hautement stylisées. S’ils sont utilisés pour participer à la création
+    de n’importe quel type de sort ou d’effet de l’ombre (y compris les marionnettes
+    d’ombre des représentations bardiques), le wayang rajoute un bonus de compétence
+    de +1 au DD de son jet de sauvegarde. Il faut une main pour utiliser les pochoirs
+    d’ombre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Ensemble
+    de pochoirs d’ombre
+  
+- Nom: Étendard tribal
+  Source: MR
+  Prix: 50 po
+  Poids: 10 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Monté sur un solide bâton de 4,5 mètres de haut, ce drapeau inspire
+    tous les orques appartenant à la tribu qu’il représente. Tant qu’ils sont dans
+    un rayon de 18 mètres et peuvent voir l’étendard, les orques gagnent un bonus
+    de moral de +1 à leurs jets de sauvegarde contre les effets de terreur. L’étendard
+    doit être porté dans une main par un membre de la tribu pour avoir un quelconque
+    effet (il ne fournit aucun bonus s’il est accroché à un mur, drapé sur un trône,
+    etc.) Si l’étendard est renversé (comme, par exemple, si son porteur le fait tomber
+    dans la boue), abîmé, détruit ou volé, les membres de la tribu reçoivent un malus
+    de -1 à leurs jets d’attaque et à leurs jets de sauvegarde contre les effets de
+    terreur pendant l’heure qui suit. Si les orques récupèrent un étendard qui leur
+    a été volé, les malus sont annulés et le bonus est restauré.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Étendard
+    tribal
+  
+- Nom: Grimoire de poche
+  Source: MR
+  Prix: 50 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Les magiciens elfiques ont parfois besoin de voyager avec des dizaines,
+    voire des centaines de grimoires, ce qui les oblige souvent à chercher comment
+    les alléger. Les grimoires de poche ne contiennent que 70 pages de sorts, mais
+    ils pèsent bien moins lourd qu’un grimoire ordinaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Grimoire
+    de poche
+  
+- Nom: Kit de déguisement orque
+  Source: MR
+  Prix: '75'
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce kit de déguisement a été conçu par des demi-orques pour les aider
+    à se faire passer pour des humains. Il comprend une crème pour masquer la teinte
+    gris verdâtre de leur peau et d’autres objets pour dissimuler leurs caractéristiques
+    orques ou attirer l’attention sur une autre partie de leur personne. Un demi-orque
+    qui utilise ce kit gagne un bonus de +3 aux tests de Déguisement pour se faire
+    passer pour un humain. Ce kit donne seulement un bonus de +1 si c’est un orque
+    qui l’utilise.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Kit
+    de déguisement orque
+  
+- Nom: Laboratoire d'artisanat portatif
+  Source: MR
+  Prix: 300 po
+  Poids: 20 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Le laboratoire d’artisanat portatif contient tout le nécessaire pour
+    créer des objets magiques, même si la plupart des ustensiles sont basiques. Il
+    permet à l’artisan de passer chaque jour 4 heures à fabriquer quelque chose pendant
+    ses aventures et d’obtenir les mêmes résultats qu’après 3 heures de travail à
+    la maison (au lieu de 2 heures). En revanche, les outils du laboratoire sont tous
+    conçus pour remplir plusieurs fonctions à la fois et le laboratoire ne fournit
+    ni l’espace ni le calme nécessaire pour créer des objets magiques dans des circonstances
+    idéales, les tests de création d’objets magiques subissent donc un malus de -5
+    quand ils sont effectués avec le laboratoire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Laboratoire
+    d'artisanat portatif
+  
+- Nom: Lampe céleste
+  Source: MR
+  Prix: 300 po
+  Poids: 1 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette lanterne polie abrite une flamme éternelle et diffuse de la
+    lumière comme une lampe normale. Si son réservoir de cristal et de pièces de métal
+    consacré est rempli d’eau bénite, la lumière de la lampe est sanctifiée pendant
+    24 heures, rajoutant un bonus de +1 au DD] du jet de sauvegarde de la canalisation
+    d’énergie positive ou la canalisation d’énergie pour blesser les extérieurs Mauvais
+    situés dans un rayon de 9 mètres.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Lampe
+    céleste
+  
+- Nom: Manuel d'exercices arcaniques familial
+  Source: MR
+  Prix: 300 po
+  Poids: 1,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Comme les elfes sont prédisposés à devenir magiciens et que ces gens
+    bénéficient de nombreux avantages sociaux, beaucoup de familles elfiques étudient
+    la magie sur plusieurs générations. Les magiciens elfiques les plus âgés consignent
+    leurs découvertes magiques et leurs réflexions dans des manuels d’exercice que
+    les générations futures sont appelées à utiliser et compléter. Si un elfe utilise
+    un manuel d’exercices arcaniques familial comme référence lors d’un test d’Art
+    de la magie (ce qui lui demande 1d4 actions complexes à chercher dans le texte),
+    il bénéficie d’un bonus de circonstances de +2 au test. Ce bonus passe à +4 s’il
+    passe 1d4 heures à consulter le livre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Manuel
+    d’exercices arcaniques familial
+  
+- Nom: Roue karmique du samsaran
+  Source: MR
+  Prix: 25 po
+  Poids: 0,25 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Cette petite bobine en bois tourne librement à l’intérieur d’un boîtier.
+    Sur la face extérieure de la bobine sont inscrites des dizaines de prières samsarans,
+    ainsi que des noms ou des symboles associés aux vies passées du samsaran. Les
+    samsarans pensent que faire tourner la bobine pendant leurs méditations renforce
+    les connexions spirituelles entre leurs anciennes vies. Si un samsaran médite
+    avec sa roue pendant au moins 10 minutes en se concentrant sur une question de
+    Connaissances (histoire) relative à sa propre histoire ou à celles de ses vies
+    passées, il reçoit un bonus d’intuition de +1 à son test.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Roue
+    karmique du samsaran
+  
+- Nom: Tarot de voyant
+  Source: MJ
+  Prix: '||'
+  Poids: —
+  Catégorie: Trousses d’outils et de compétences
+  Description: "Les individus en harmonie avec le monde des esprits utilisent ce\
+    \ jeu de cartes illustrées pour prédire l’avenir tandis que les charlatans s’en\
+    \ servent pour soutirer leur argent aux personnes crédules. Un jeu de cartes standard\
+    \ présente des illustrations sobres sur de simples plaques en bois.\n Tarot de\
+    \ voyant de qualité. Un tarot de voyant de qualité se compose généralement de\
+    \ plaques en bois avec des illustrations peintes en couleur, il peut servir de\
+    \ focalisateur pour le sort d’augure et accorde un bonus de circonstances de +1\
+    \ aux tests de Profession (diseuse de bonne aventure), Profession (médium) et\
+    \ autres professions similaires.\n Tarot de maître voyant. Un tarot de maître\
+    \ voyant peut être fait de bois, d’ivoire, voire même de métal, avec des illustrations\
+    \ peintes ou gravées. Il est souvent rehaussé d’incrustations en or ou de toutes\
+    \ petites pierres précieuses, il bénéficie de tous les avantages d’un tarot de\
+    \ voyant de qualité, à la seule différence qu’il accorde un bonus de circonstances\
+    \ de +2 aux tests de compétences indiqués."
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Tarot
+    de voyant
+  
+- Nom: Bottes de velours
+  Source: MR
+  Prix: 25 po
+  Poids: 0,5 kg
+  Catégorie: Vêtements
+  Description: Ces bottes douces et très fines sont faites en soie et en cuir spécialement
+    traité. Elles sont spécifiquement conçues pour les pieds des hommes-félins et
+    s’adaptent à leur morphologie afin d’étouffer les bruits de pas et de réduire
+    les empreintes laissées derrière eux. Lorsqu’il porte ces bottes de velours, l’homme-félin
+    bénéficie d’un bonus de circonstances de +1 à ses tests de Discrétion. En outre,
+    le DD pour repérer ou suivre la piste d’un homme-félin portant ces bottes augmente
+    de +2.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Bottes
+    de velours
+  
+- Nom: Cape-aile
+  Source: MR
+  Prix: 1200 po
+  Poids: 0,5 kg
+  Catégorie: Vêtements
+  Description: Cet étrange équipement ne fonctionne que pour les sylphes et créatures
+    similaires, dont les vents peuvent porter le corps léger et aérien dans les airs.
+    Ressemblant à une cape de voyageur en belle soie, la cape-aile est secrètement
+    renforcée d’un ensemble d’entretoises en bois qui, maintenues en place, tendent
+    le tissu de la cape pour former une aile rudimentaire. Le fait de disposer les
+    entretoises pour former une aile ou d’inverser le changement coûte une action
+    de mouvement. Lorsque la cape forme une aile, le porteur peut faire un test de
+    Vol DD 15 pour tomber sans danger de n’importe quelle hauteur sans recevoir de
+    dégâts de la chute, comme s’il utilisait feuille morte. Lorsqu’il tombe, le porteur
+    peut faire un autre test de Vol DD 15 pour planer, avançant latéralement de 1,5
+    mètre par tranche de 6 mètres de hauteur de chute. Il faut deux mains pour préparer
+    et utiliser la cape-aile et cela provoque une attaque d’opportunité. La cape-aile
+    a une solidité de 0 et 5 points de vie. Si elle est cassée, le DD du test de Vol
+    augmente de +10.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Cape-aile
+  
+- Nom: Cape parachute
+  Source: MR
+  Prix: 100 po
+  Poids: 2 kg
+  Catégorie: Vêtements
+  Description: Cette cape en soie est faite de nombreuses couches superposées cousues
+    par des fils très lâches. Quand elle est exposée à un influx d’air soudain, comme
+    lors d’une chute, elle se déploie comme un parachute rudimentaire. Une créature
+    qui tombe alors qu’elle porte cette cape est traitée comme une créature ayant
+    sauté délibérément. En revanche, dans les zones de vent violent, la cape gêne
+    les mouvements. Dans ce cas, le propriétaire de la cape considère tous les terrains
+    comme des terrains difficiles et subit un malus de -4 aux tests de Vol. La cape
+    parachute est de conception étrange et fragile, c’est pourquoi seuls les modèles
+    de taille P ou moins sont fonctionnels. Les capes de plus grande taille donnent
+    seulement les malus liés au grand vent, sans aucun avantage en cas de chute.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Cape
+    parachute
+  
+- Nom: Ceintures de chaîne
+  Source: MR
+  Prix: 15 po
+  Poids: 0,125 kg
+  Catégorie: Vêtements
+  Description: Si les ondins ne s’habillent que légèrement, ils portent souvent
+    des ceintures de 3 mètres de long se composant d’une fine chaîne nouée autour
+    de la taille. Les ceintures sont pourvues de maillons à charnière auxquels le
+    porteur peut attacher divers objets comme des outils, de petites armes et d’autres
+    objets de valeur, y compris des maillons en argent et en platine, ou de petites
+    plaques en or martelées incrustées de pierres précieuses. Portée correctement,
+    la ceinture peut soutenir jusqu’à 15 kilos de petits objets. Un ondin en train
+    de nager peut défaire la ceinture par une action rapide s’il doit l’enlever pour
+    réduire le poids qu’il porte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Ceintures
+    de chaîne
+  
+- Nom: Col de protection
+  Source: MR
+  Prix: 10 po
+  Poids: 0,125 kg
+  Catégorie: Vêtements
+  Description: Fait de cuir bouilli renforcé d’une bande de métal, ce col protège
+    le porteur contre les morsures de vampire lorsqu’il le porte autour du cou. Il
+    fournit un bonus d’armure de +1 à la CA contre les morsures de vampires ou attaques
+    similaires visant spécifiquement le cou du porteur. Contrairement à la plupart
+    des bonus d’armure, le bonus de +1 du col de protection se cumule avec le bonus
+    d’armure des armures légères ou intermédiaires mais n’offre aucun bonus supplémentaire
+    lorsqu’il est porté avec une armure lourde.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Col
+    de protection
+  
+- Nom: Habits de dilettante
+  Source: MR
+  Prix: 20 po
+  Poids: 4 kg
+  Catégorie: Vêtements
+  Description: Les inventeurs et les voyageurs gnomes apprécient tout particulièrement
+    ces vêtements qui se composent de robustes bottes, d’un pantalon ou d’une jupe
+    de lin robuste, d’une chemise, de gants de cuir, d’un chapeau, d’une cape et de
+    nombreuses ceintures, attaches et autres accessoires (comme des écharpes, une
+    veste, des bouts de corde ou de ficelle et des cartouchières). Ces divers éléments
+    ne sont jamais assortis et viennent tous d’un autre ensemble de vêtements dont
+    ils ont été extraits pour leur qualité « supérieure. » Ils regorgent de poches
+    et de planques. Ces habits donnent un bonus de circonstances de +2 à leur propriétaire
+    quand il fait un test d’Escamotage pour cacher un petit objet sur sa personne.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Habits
+    de dilettante
+  
+- Nom: Masque de guerre
+  Source: MR
+  Prix: 50 po
+  Poids: 1 kg
+  Catégorie: Vêtements
+  Description: Fait en bois, en os ou en matériau similaire, ce masque recouvre
+    l’apparence et l’identité véritables du porteur d’un visage haineux et méprisant.
+    Du fait de l’excellente facture et des détails parfaits du masque de guerre, le
+    porteur gagne un bonus de +1 à ses tests d’Intimidation pour démoraliser un adversaire.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.V%c3%aatements.ashx#Masque
+    de guerre
+  
+- Nom: Accélérateur instable
+  Source: MR
+  Prix: 50 po
+  Poids: 0,25 kg
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: Mélange volatile d’agents réactifs inflammables, l’accélérateur instable
+    peut être lancé au même titre que le feu de l’alchimiste. Entre les mains d’un
+    alchimiste, une fiole d’accélérateur instable peut être utilisée pour créer une
+    bombe, augmentant ses dégâts de feu de +1d6 points. Il n’a aucun effet sur les
+    bombes n’infligeant pas de dégâts de feu. Si la bombe dure plus d’un instant,
+    les dégâts supplémentaires ne s’appliquent qu’à ceux du premier round.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Accélérateur
+    instable
+  
+- Nom: Bâton de lune
+  Source: MR
+  Prix: 10 po
+  Poids: 0,5 kg
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: Ce bâton d’une trentaine de centimètres se termine par des ferrures
+    d’argent et émet une faible lueur quand on le frotte, par une action simple. Il
+    déverse une faible lumière dans un rayon de 9 mètres. Les créatures qui disposent
+    de la vision nocturne remarquent facilement cette lumière et, pour elles, le niveau
+    de luminosité augmente d’un cran (normal au maximum) dans un rayon de 18 mètres.
+    Le bâton brille pendant 6 heures, ensuite, le bout en argent est entièrement brûlé
+    et il n’a plus aucune valeur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Bâton
+    de lune
+  
+- Nom: Breuvage de guerre hobgobelin
+  Source: MR
+  Prix: 10 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Cette boisson est un mélange alchimique nauséabond d’alcool brut,
+    d’asticots écrasés et de champignons médicinaux. Un hobgobelin sous les effets
+    de ce breuvage de guerre ignore tous les malus dus aux états préjudiciables fatigué
+    et secoué pendant 10 minutes, après quoi il doit réussir un jet de Vigueur DD
+    15 ou être fiévreux pendant 1 heure. Quiconque n’est pas de sous-type gobelinoïde
+    et boit du breuvage de guerre doit immédiatement faire un jet de Vigueur DD 15
+    ou être fiévreux pendant 1 heure ; si le buveur réussit son jet, il ignore tous
+    les malus dus aux états préjudiciables fatigué et secoué pendant 1 minute, après
+    quoi il est fiévreux pendant 10 minutes. Le breuvage de guerre hobgobelin n’a
+    aucun effet sur les créatures immunisées aux poisons.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Breuvage
+    de guerre hobgobelin
+  
+- Nom: Encre de feu ifrit
+  Source: MR
+  Prix: 1 po
+  Poids: —
+  Artisanat: 15
+  Catégorie: Outils alchimiques
+  Description: Cette encre jaune vif réagit à la chaleur du corps de la créature
+    pour créer une lueur tremblotante semblable à une flamme. Il faut 10 minutes pour
+    appliquer de l’encre de feu, et 1 dose recouvre à peu près une main. Une fois
+    appliquée, l’encre luit comme une bougie pendant 24 heures. Quatre doses ou plus
+    appliquées sur une même partie du corps font briller comme une torche pendant
+    24 heures. La réaction alchimique de l’encre à la peau et à la chaleur corporelle
+    de la cible est douloureuse et irritante, rendant celle-ci fiévreuse tant que
+    dure la lumière. Un test de Premiers secours DD 15 permet d’apaiser temporairement
+    ces sensations, annulant l’état fiévreux pendant 1 heure. Les créatures immunisées
+    ou résistantes au feu sont immunisées à cet effet de fièvre. Les ifrits sont connus
+    pour adorer cette encre, et les cracheurs de feu ifrits ornent souvent leur peau
+    de motifs enflammés avant leurs spectacles. Une version concentrée de cette encre
+    coûte 10 fois plus cher et peut être utilisée pour créer des tatouages qui brillent
+    en permanence.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Encre
+    de feu ifrit
+  
+- Nom: Encens antiodeur
+  Source: MR
+  Prix: 80 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: L’encens antiodeur est une sorte de bâton fumigène qui bloque la
+    plupart des odeurs. Tant que la fumée persiste, les créatures qui disposent du
+    pouvoir odorat doivent réussir un test de Perception opposé au test de Discrétion
+    des créatures qui se trouvent dans la fumée pour les localiser. Si une créature
+    passe 5 rounds ou plus dans la fumée, elle s’accroche à lui et dissimule son odeur
+    pendant 1 round après qu’elle a quitté le nuage de fumée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Encens
+    antiodeur
+  
+- Nom: Éponge à potion
+  Source: MR
+  Prix: 2 po
+  Poids: —
+  Artisanat: 15
+  Catégorie: Outils alchimiques
+  Description: Cette éponge de la taille d’un œuf est recouverte d’une couche de
+    cire comestible et imperméable prévue pour absorber 1 dose de potion. Il coûte
+    une action complexe de mâcher une éponge à potion et d’avaler le liquide qu’elle
+    contient. Une créature au moins de taille G peut avaler l’éponge entièrement ;
+    les autres créatures doivent recracher l’éponge une fois qu’elle est épuisée (par
+    une action libre). Contrairement aux potions à boire dans une fiole, une éponge
+    à potion peut être utilisée sous l’eau. Il est possible de verser la potion d’une
+    fiole dans une éponge à potion (ou d’essorer la potion d’une éponge dans une fiole)
+    par une action complexe. L’éponge à potion est immunisée aux attaques visant spécifiquement
+    le cristal, le verre, la céramique ou la porcelaine, comme fracassement. En outre,
+    elle fonctionne comme une fiole de potion.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Éponge
+    à potion
+  
+- Nom: Feuilles d'érable doré
+  Source: MR
+  Prix: 50 po
+  Poids: 0,25 kg
+  Catégorie: Outils alchimiques
+  Description: On recueille ces puissants additifs sur une espèce d’érable très
+    rare qui pousse uniquement dans les zones urbaines. Ces petits arbres biscornus
+    grandissent très lentement (leurs feuilles mettent 3 ans pour atteindre la maturité).
+    Ce sont presque toujours des demi-elfes qui en prennent soin. De plus, les demi-elfes
+    ont une conscience aiguë de l’effort que l’arbre fait pour développer ses feuilles
+    et réservent généralement ses produits aux gens de leur espèce uniquement. On
+    peut couper et faire sécher les feuilles de l’érable quand elles prennent la jolie
+    couleur dorée qui lui vaut son nom. On les réduit ensuite en poudre lors d’un
+    processus qui demande un test de Connaissances (nature) ou de Profession (herboriste)
+    DD 15. Quand on utilise cette poudre pour créer une substance ou un objet spécial
+    qui demande un test d’Artisanat (alchimie), comme de la graisse alchimique ou
+    une sacoche immobilisante, elle réduit le DD du test de 5 et ajoute un bonus de
+    +1 au DD de l’objet (s’il en a un). Une dose de poudre de feuille d’érable doré
+    suffit à améliorer la fabrication de trois objets alchimiques.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Feuilles
+    d'érable doré
+  
+- Nom: Huile sainte
+  Source: MR
+  Prix: 25 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Cette huile sacrée, infusée avec des épices aromatiques et de l’eau
+    bénite distillée, peut être appliquée sur une créature tandis qu’elle lance un
+    sort divin inoffensif ayant une portée de contact. Ceci augmente le temps d’incantation
+    à une action complexe, mais accroît également le niveau de lanceur de sorts effectif
+    du lanceur de +1 pour ce sort.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Huile
+    sainte
+  
+- Nom: Lance-bombe
+  Source: MR
+  Prix: 10 po
+  Poids: 0,25 kg
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: Ces vieux engins bizarres en forme d’œuf sont dotés de nageoires
+    stratégiquement placées qui augmentent la précision des bombes. Les alchimistes
+    gobelins utilisent ces conteneurs pour donner plus de précision à leurs bombes
+    lorsqu’ils les lancent sur de longues distances. L’utilisation d’un lance-bombe
+    pour jeter une bombe augmente le facteur de portée de celle-ci de 9 mètres (ou,
+    avec la découverte bombe-fusée, augmente le facteur de portée de la bombe de 21
+    mètres). Les lance-bombes sont détruits après utilisation.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Lance-bombe
+  
+- Nom: Lanterne de lumière noire
+  Source: MR
+  Prix: 20 po
+  Poids: 1,5 kg
+  Catégorie: Outils alchimiques
+  Description: Cette lanterne ne brûle pas de l’huile, mais du nectar d’ombre. Lorsque
+    le nectar d’ombre est utilisé comme combustible, cette lanterne crée des ténèbres
+    étranges et floues qui diminuent la luminosité d’un degré dans un rayon de 9 mètres.
+    Contrairement à ce qui se passe lorsque le nectar d’ombre est lancé sur une seule
+    cible, ce flou ne transforme pas les ténèbres naturelles en ténèbres surnaturelles.
+    Une fiole de nectar d’ombre alimente une lanterne de lumière noire pendant 1 minute.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Lanterne
+    de lumière noire
+  
+- Nom: Lichen de camouflage
+  Source: MR
+  Prix: 100 po
+  Poids: —
+  Catégorie: Outils alchimiques
+  Description: Bien que les oréades aux traits rocailleux soient rares, presque
+    tous ont une peau essentiellement faite de terre, parfaite pour cultiver la vie
+    végétale. Là où les autres races seraient choquées à l’idée que des plantes prennent
+    racine dans leur chair, les oréades considèrent ce phénomène comme naturel et
+    comme une extension saine de leur nature élémentaire. Pour cette raison, les herboristes
+    oréades développent plusieurs souches de mousse et de lichen spécifiquement adaptées
+    pour pousser sur leur corps. Le lichen de camouflage est la variété de plantes
+    oréades la plus commune. Il faut 1 minute pour appliquer de la pâte de spores
+    de lichen de camouflage sur la peau, et 24 heures de plus pour que le champignon
+    germe. Ensuite, l’oréade est couvert d’une fine couche verte de matière végétale
+    vivante lui accordant un bonus de +4 aux tests de Discrétion effectués dans les
+    jungles et les forêts vertes. Il en existe des variétés rouge-orangé et blanches,
+    qui accordent des bonus dans les environnements aux couleurs correspondantes (rouge-orangé
+    au milieu des feuilles d’automne ou dans les déserts rouges, blanc dans la neige,
+    etc.) Le lichen de camouflage a une courte durée de vie ; il flétrit et meurt
+    3 jours après l’application, s’effritant en une poudre inoffensive. L’objet ne
+    fonctionne que sur les oréades et les autres créatures ayant un corps semblable
+    à la pierre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Lichen
+    de camouflage
+  
+- Nom: Lunettes de vision obscure
+  Source: MR
+  Prix: 200 po
+  Poids: —
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: 'Ces lunettes non-magiques sont taillées dans de la pierre semblable
+    à de l’obsidienne, noire et traitée alchimiquement, que l’on trouve dans les régions
+    montagneuses du plan de l’Ombre. Les lunettes de vision obscure s’adaptent aux
+    yeux uniques des fetchelins de telle manière que lorsqu’ils les portent, elles
+    allongent la portée de leur vision dans le noir à 27 mètres. Cependant ils gagnent
+    également la faiblesse sensibilité à la lumière. Les autres races ne peuvent pas
+    voir à travers les lentilles de ces lunettes : elles n’ont aucun effet sur les
+    fetchelins dont les yeux ont été modifiés par le don Vision ténébreuse. Bien qu’elles
+    soient davantage de nature alchimique que magique, ces lunettes occupent l’emplacement
+    yeux des objets magiques.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Lunettes
+    de vision obscure
+  
+- Nom: Onguent de rochéclats
+  Source: MR
+  Prix: 150 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Ce baume gris et granuleux affaiblit les matériaux rocheux. Lorsqu’il
+    est appliqué à un objet en pierre, il réduit sa solidité de 3 pendant 10 minutes.
+    Par une action simple, une créature peut appliquer cette pâte pour affecter une
+    case de 1,5 mètre de côté ou une créature de taille M ou plus petite. La pâte
+    n’affecte que la solidité, elle n’a aucun effet sur la réduction de dégâts ou
+    les défenses similaires.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Onguent
+    de rochéclats
+  
+- Nom: Onguent de sang fiélon
+  Source: MR
+  Prix: 75 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Quand cet onguent (préparé à partir d’agents réactifs alchimiques
+    et de sang de fiélons) est appliqué sur un tieffelin ou un extérieur Mauvais blessé
+    (qui n’est pas au maximum de ses points de vie), il transforme temporairement
+    l’essence de la cible en quelque chose d’encore plus redoutable et démoniaque.
+    Lorsqu’il est sous les effets de l’onguent de sang fiélon, le tieffelin ou l’extérieur
+    Mauvais gagne un bonus de circonstances de +2 à ses tests d’Intimidation et un
+    bonus de circonstances de +1 au DD de tous les sorts du registre terreur qu’il
+    lance. L’application de cet onguent est un processus délicat, nécessitant une
+    action complexe, et ne peut être réalisée correctement que sur une créature consentante
+    ou sans défense. S’il est appliqué à une créature autre qu’un tieffelin ou un
+    extérieur Mauvais, il rend la créature fiévreuse. Les effets de l’onguent (qu’ils
+    soient bénéfiques ou préjudiciables) durent 1 minute.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Onguent
+    de sang fiélon
+  
+- Nom: Poche-araignée
+  Source: MR
+  Prix: 30 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Contrairement à ce qu’indique son nom, la poche-araignée n’a rien
+    à voir avec les araignées, mais correspond plutôt à un outil alchimique doté d’un
+    système de rangement unique. Utilisés pour l’escalade aussi bien que pour le combat,
+    ces petits sacs grisâtres en forme de gourde sont créés à partir d’un champignon
+    spécialement cultivé avec une paroi extérieure résistante, mais caoutchouteuse.
+    Le fongoïde est soigneusement récolté, percé à une extrémité, évidé puis rempli
+    d’un solide adhésif alchimique qui se solidifie pour former un matériau fibreux
+    presque instantanément lorsqu’il est exposé à l’air. Quand on presse la poche-araignée,
+    son adhésif s’élance à une portée maximale de 3 mètres pour se fixer à ce qu’il
+    vient heurter, puis le fil sèche aussitôt pour former une solide corde fibreuse.
+    Quand il s’agit d’escalader, considérez la poche-araignée comme un grappin, à
+    la seule différence que toutes les surfaces ont une CA de 5. La poche-araignée
+    peut également servir de lasso, à la seule différence qu’il a une CA de 10, 4
+    points de vie et nécessite un test de Force DD 24 pour être lancé. La poche-araignée
+    est un objet à usage unique.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Poche-araignée
+  
+- Nom: Purulence noire (fiole)
+  Source: MR
+  Prix: 30 po
+  Poids: —
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: 'Les orques appliquent souvent cette pâte noire sur leurs armes avant
+    de lancer des raids, pour contrer la magie de guérison de leurs ennemis. La purulence
+    noire reste sur l’arme, comme un poison, jusqu’à ce que la lame frappe un ennemi
+    pour la première fois. La substance reste dans le corps de la victime pendant
+    une heure. La victime résiste alors à la magie de guérison : si quelqu’un essaie
+    de la soigner par magie, il doit réussir un test de niveau de lanceur de sorts
+    DD 10 pour rendre des points de vie à la victime.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Purulence
+    noire
+  
+- Nom: Sang de molosse (fiole)
+  Source: MR
+  Prix: 110 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Si un personnage applique cette épaisse pâte rouge, que l’on appelle
+    le sang de molosse, sur son nez ou sa lèvre supérieure, son odorat s’améliore.
+    La pâte donne un bonus de circonstances de +2 aux tests de Perception pendant
+    1 heure à la plupart des créatures, mais, chez les gnomes, il décuple les capacités
+    olfactives et le bénéficiaire dispose pendant 5 minutes du pouvoir odorat avant
+    de n’avoir plus qu’un bonus de circonstances de +2 aux tests de Perception pendant
+    1 heure de plus.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Sang
+    de molosse
+  
+- Nom: Sang d'ifrit
+  Source: MR
+  Prix: 50 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Les alchimistes ifrits prétendent fabriquer cette épaisse huile rouge
+    à partir de leur propre sang (d’où son nom morbide), mais il est presque certain
+    que c’est faux. Le sang d’ifrit s’enflamme au contact de l’air, mais brûle lentement
+    et ne peut pas être utilisé comme arme à aspersion. Une créature peut appliquer
+    une fiole de sang d’ifrit à une arme par une action simple, ce qui l’enveloppe
+    de flammes rouge qui brillent pendant 1 minute. L’huile inflige 1 point de dégâts
+    de feu à chaque attaque réussie portée avec cette arme et inflige 1 point de dégâts
+    de feu à l’arme elle-même, passant sa solidité si l’une des parties qui la composent
+    est en bois. Si l’huile est appliquée aux armes naturelles ou aux coups à mains
+    nues d’une créature, la créature reçoit 1 point de dégâts de feu par round (mais
+    son immunité ou sa résistance au feu s’applique toujours).
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Sang
+    d’ifrit
+  
+- Nom: Souffle élémentaire
+  Source: MR
+  Prix: 20 po
+  Poids: 0,25 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Cette fiole semble vide au premier abord, mais lorsqu’on l’ouvre,
+    une bourrasque de vent en jaillit. Lorsqu’une créature qui respire inhale le souffle
+    élémentaire (comme elle boirait une potion), elle n’a plus besoin de respirer
+    de l’air pendant 10 rounds. Une fiole de souffle élémentaire doit être inhalée
+    pendant le round de son ouverture pour accorder cet effet. Sinon, elle est gâchée.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Souffle
+    élémentaire
+  
+- Nom: Tatouage empoisonné
+  Source: MR
+  Prix: 50 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Cette pâte semblable à du henné crée un tatouage brun foncé sur la
+    main ou le pied, qui s’estompe au cours des 2d6 jours suivants. Le tatouage accroît
+    temporairement la force du poison naturel du vishkanya, augmentant le DD de sa
+    prochaine arme empoisonnée de son sang ou de sa salive de +2 (une fois utilisé,
+    le tatouage n’est plus qu’une simple décoration n’affectant plus le poison de
+    la créature). Un tatouage typique dessine des spirales compliquées et des symboles
+    spirituels sur la main ou le pied.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Tatouage
+    empoisonné
+  
+- Nom: Tonique infectieux
+  Source: MJ
+  Prix: 150 po
+  Poids: 0,5 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Ce liquide génère une agréable sensation de chaleur quand on le consomme.
+    Pendant l’heure qui suit la consommation, le personnage gagne un bonus de moral
+    de +2 aux jets de sauvegarde contre la terreur. L’utilisation de plus d’une dose
+    en l’espace de 24 heures rend le personnage nauséeux pendant 1 heure.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Tonique
+    infectieux
+  
+- Nom: Trousse de marquage olfactif
+  Source: MR
+  Prix: 10 po
+  Poids: 2,5 kg
+  Artisanat: 25
+  Catégorie: Outils alchimiques
+  Description: 'Cette petite boîte de phéromones d’hommes-félins spécialement préparées
+    et de réactifs alchimiques peut être utilisée pour laisser des odeurs subtiles,
+    mais tenaces que seuls les hommes-félins peuvent sentir et déchiffrer. S’il prend
+    une minute, l’homme-félin peut créer une fragrance à appliquer sur un objet solide
+    comme un arbre, un mur ou même un objet plus petit, comme une arme ou une fiole
+    de potion. Lorsqu’il fait cela, l’homme-félin laisse une de ces impressions derrière
+    lui : danger, nourriture, abri ou propriété. L’impression de propriété est toujours
+    liée à l’homme-félin particulier qui utilise la trousse et signifie que le territoire
+    ou l’objet lui appartient. D’autres races peuvent tenter d’utiliser cette trousse
+    pour créer une impression de danger, de nourriture ou d’abri, mais pour cela,
+    elles doivent réussir un test d’Artisanat (alchimie) DD 20. Un homme-félin peut
+    détecter une odeur particulière générée grâce à une trousse de marquage olfactif
+    dans un rayon de 9 mètres. Si l’odeur est charriée par le vent, la portée à laquelle
+    l’homme-félin peut la repérer passe à 18 mètres ; si elle est sous le vent, la
+    portée tombe à 4,5 mètres. Un homme-félin ayant la particularité raciale odorat
+    double ces distances. Une impression odorante dure un an ou jusqu’à ce que l’objet
+    soit nettoyé. Chaque trousse est prévue pour 10 utilisations.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Trousse
+    de marquage olfactif
+  
+- Nom: Ambroisie (fiole)
+  Source: MR
+  Prix: 100 po
+  Poids: 0,5 kg
+  Artisanat: 25
+  Catégorie: Remèdes alchimiques
+  Description: La consommation de cet élixir divin, infusion d’eau et d’herbes bénites,
+    accorde un bonus sacré de +2 à tous les jets de sauvegarde contre l’énergie négative,
+    l’absorption d’énergie et les effets de mort pendant 1 heure, y compris aux jets
+    de sauvegarde pour annuler les niveaux négatifs. L’ambroisie affecte les morts-vivants
+    et les extérieurs Mauvais au même titre que l’eau bénite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Ambroisie
+  
+- Nom: Apaise-tripes (fiole)
+  Source: MR
+  Prix: 50 po
+  Poids: —
+  Artisanat: 25
+  Catégorie: Remèdes alchimiques
+  Description: La consommation de cette fiole de liquide bleuâtre insipide accorde
+    un bonus alchimique de +5 aux jets de sauvegarde pour éviter d’être nauséeux ou
+    fiévreux pendant 1 heure. Si le gobelin est déjà nauséeux, il peut boire de l’apaise-tripes
+    par une action de mouvement. Sa consommation lui donne droit à un second jet de
+    sauvegarde (sans le bonus de +5). Les gobelins utilisent souvent l’apaise-tripes
+    pour pouvoir avaler la viande ou d’autres formes de nourriture avariées ou dans
+    un état de décomposition avancé.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Apaise-tripes
+  
+- Nom: Besace d'esprit guerrier
+  Source: MR
+  Prix: 50 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Remèdes alchimiques
+  Description: Ce tout petit ballot d’herbes et d’ossements sacrés est censé attirer
+    l’attention bienveillante des esprits de la guerre. Lorsqu’un orque (ou une créature
+    issue d’une culture guerrière appropriée) écrase la besace par une action simple,
+    il gagne 1d4+1 points de vie temporaires. Ces points de vie temporaires disparaissent
+    au bout de 10 minutes. Une créature ne peut profiter que d’une seule besace d’esprit
+    à la fois. Une fois utilisée, la besace d’esprit guerrier est détruite.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Besace
+    d’esprit guerrier
+  
+- Nom: Confiture alchimique
+  Source: MR
+  Prix: 50 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Remèdes alchimiques
+  Description: Ces petites boîtes de confiture spécialement traitée contiennent
+    juste assez de marmelade pour fournir une dose revitalisante à un halfelin. N’importe
+    quelle créature peut manger cette confiture par une action simple, mais elle ne
+    bénéficie qu’aux halfelins. Elle dissipe la fatigue chez ces derniers, mais rend
+    les autres créatures fiévreuses pendant 1 round.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Confiture
+    alchimique
+  
+- Nom: Encre nauséabonde (standard)
+  Source: MR
+  Prix: 5 po
+  Poids: 0,5 kg
+  Artisanat: 15
+  Catégorie: Remèdes alchimiques
+  Description: 'L’encre nauséabonde est une encre spéciale et âcre à base de musc
+    qui permet à l’utilisateur d’encoder les informations par l’odeur plutôt que visuellement.
+    L’encre nauséabonde s’éclaircit en séchant, mais son odeur âcre extrêmement localisée
+    peut être perçue par ceux qui ont le nez suffisamment sensible pour lire en utilisant
+    leur odorat. Seules les créatures ayant le trait sens aiguisés ou la capacité
+    odorat peuvent lire l’encre nauséabonde sans s’aider de magie. Lire ou écrire
+    quelque chose à l’encre nauséabonde prend deux fois plus de temps que de lire
+    ou d’écrire la même quantité d’informations à l’encre normale.
+
+
+    Encre nauséabonde magique. Surtout répandue chez les hommes-rats alchimistes,
+    l’encre nauséabonde magique est utilisée pour noter des formules ou des sorts
+    dans des recueils de formules ou des grimoires. Comme l’encre nauséabonde normale,
+    la version magique ne peut être lue que par des créatures ayant la capacité odorat
+    (bien que lecture de la magie fonctionne normalement sur les sorts et les formules
+    magiques écrits à l’encre nauséabonde). L’utilisation d’encre nauséabonde magique
+    pour écrire un sort ou une formule dans un livre coûte +10 % du coût normal.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Encre
+    nauséabonde
+  
+- Nom: Encre nauséabonde (magique)
+  Source: MR
+  Prix: spécial
+  Poids: 0,5 kg
+  Catégorie: Remèdes alchimiques
+  Description: 'L’encre nauséabonde est une encre spéciale et âcre à base de musc
+    qui permet à l’utilisateur d’encoder les informations par l’odeur plutôt que visuellement.
+    L’encre nauséabonde s’éclaircit en séchant, mais son odeur âcre extrêmement localisée
+    peut être perçue par ceux qui ont le nez suffisamment sensible pour lire en utilisant
+    leur odorat. Seules les créatures ayant le trait sens aiguisés ou la capacité
+    odorat peuvent lire l’encre nauséabonde sans s’aider de magie. Lire ou écrire
+    quelque chose à l’encre nauséabonde prend deux fois plus de temps que de lire
+    ou d’écrire la même quantité d’informations à l’encre normale.
+
+
+    Encre nauséabonde magique. Surtout répandue chez les hommes-rats alchimistes,
+    l’encre nauséabonde magique est utilisée pour noter des formules ou des sorts
+    dans des recueils de formules ou des grimoires. Comme l’encre nauséabonde normale,
+    la version magique ne peut être lue que par des créatures ayant la capacité odorat
+    (bien que lecture de la magie fonctionne normalement sur les sorts et les formules
+    magiques écrits à l’encre nauséabonde). L’utilisation d’encre nauséabonde magique
+    pour écrire un sort ou une formule dans un livre coûte +10 % du coût normal.'
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Encre
+    nauséabonde
+  
+- Nom: Huile alaire
+  Source: MR
+  Prix: 1 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Remèdes alchimiques
+  Description: Les tengus mélangent des baumes spéciaux pour protéger leurs plumes
+    des éléments. Cette fiole de 30 grammes d’huile alaire donne un bonus de +1 à
+    une créature à plumes sur tous ses jets de sauvegarde pour résister aux effets
+    des climats froids. Ses effets durent 24 heures.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Huile
+    alaire
+  
+- Nom: Racine veloutée
+  Source: MR
+  Prix: 25 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Remèdes alchimiques
+  Description: Les chefs gobelins les plus sournois donnent cette pâte orange aux
+    guerriers de leur tribu avant de leur proposer de lancer une attaque particulièrement
+    audacieuse. La consommation de racine veloutée induit un sentiment d’euphorie
+    qui donne une impression d’invulnérabilité. Pendant 1 heure après la consommation
+    de la racine veloutée, le gobelin gagne un bonus alchimique de +5 contre les effets
+    de terreur. Néanmoins, alors qu’il est sous les effets de la racine veloutée,
+    il doit réussir un jet de Volonté DD 15 quand il tente de quitter une zone menacée
+    par un adversaire. S’il échoue, il ne peut pas fuir la zone menacée avec cette
+    action, mais ne perd pas son action.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Racine
+    veloutée
+  
+- Nom: Fouet de dressage
+  Source: MR
+  Prix: 5 po
+  Poids: 1 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: Ce petit fouet a une lanière très courte (allonge de 3 mètres seulement),
+    sinon, il est identique aux fouets ordinaires. Son propriétaire gagne un bonus
+    de circonstances de +2 aux tests de Dressage pour faire avancer un animal dressé
+    et aux tests d’Intimidation pour démoraliser tous les animaux tant qu’ils sont
+    à portée du fouet. Quand le personnage utilise le fouet pour intimider un animal
+    dressé, il peut le fasciner au lieu de le secouer (l’effet a la même durée). La
+    fascination se termine si le personnage ou l’animal sort du champ de vision de
+    l’autre.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Fouet
+    de dressage
+  
+- Nom: Harnachement de dressage
+  Source: MR
+  Prix: 10 po
+  Poids: 5 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: Ce matériel spécialisé est adapté en fonction du type d’animal à
+    dresser. Le harnachement donne un bonus de +2 aux tests de Dressage vis-à-vis
+    de l’animal qui le porte.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Harnachement
+    de dressage
+  
+- Nom: Bâton du diable halfelins
+  Source: MJ
+  Prix: 25 po
+  Poids: 0,5 kg
+  Catégorie: Jeux
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx#Bâton du
+    diable halfelins
+  
+- Nom: Cerf-volant de terreur
+  Source: MR
+  Prix: 20 po
+  Poids: —
+  Catégorie: Jeux
+  Description: Ce petit cerf-volant arbore généralement un visage féroce et des
+    couleurs vives, et il est bordé de lames de bois en dents de scie. On renforce
+    sa ficelle en la plongeant dans de la colle et en l’agrémentant parfois de verre
+    pilé pour lui donner un peu de tranchant. Le cerf-volant a une solidité de 5 et
+    3 points de vie. Ceux qui participent à une bataille de cerfs-volants alternent
+    les manœuvres offensives de destruction contre les cerfs-volants des autres ;
+    chaque manœuvre offensive réussie permet au participant de lancer 1d6 points de
+    dégâts contre le cerf-volant de l’adversaire. Lorsqu’un cerf-volant tombe à 0
+    point de vie, il est cassé ou sa ficelle se rompt, et le joueur perd la partie.
+    Dans certaines compétitions, on attribue des points à la ficelle de l’adversaire
+    lorsqu’on touche le sommet du cerf-volant, le vainqueur étant le premier à atteindre
+    le total de points fixé. Ceux qui s’intéressent aux batailles de cerfs-volants
+    peuvent prendre le cerf-volant de terreur comme arme pour des dons comme Arme
+    de prédilection] et Spécialisation martiale, et appliquer ces bonus à leurs jets
+    de dégâts de cerf-volant et à leurs tests de manœuvre offensive de destruction
+    lorsqu’ils utilisent des cerfs-volants de terreur.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx#Cerf-volant
+    de terreur
+  
+- Nom: Trousse de cerfs-volants de communication
+  Source: MR
+  Prix: '5'
+  Poids: —
+  Catégorie: Jeux
+  Description: Bien qu’ils soient dépourvus d’ailes, il y a longtemps que les tengus
+    projettent leurs pensées vers le ciel et la capacité de voler. Constitués de papier
+    fixé à une structure en bambou, leurs cerfs-volants sont peints de différentes
+    couleurs et de divers motifs. En plus d’en faire pour le plaisir, les tengus utilisent
+    des cerfs-volants aux teintes et aux motifs variés pour envoyer des messages codés.
+    Ils ont mis au point un système étendu de signaux codés et peuvent utiliser leurs
+    cerfs-volants pour émettre des messages complexes visibles sur de grandes distances.
+    Une trousse de cerfs-volants de communication comprend six petits cerfs-volants
+    colorés qui peuvent être accrochés ensemble selon différentes formes afin de faciliter
+    les messages complexes. Cette trousse inclut également une bobine et 90 mètres
+    de ficelle. L’envoi ou l’interception du message de cerf-volant de communication
+    fonctionne comme décrit dans la compétence Bluff, mais l’expéditeur et quiconque
+    essaye de comprendre le message doivent également connaître le tengu.
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Jeux.ashx#Trousse
+    de cerfs-volants de communication
   
