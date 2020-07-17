@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 from lxml import html
 
-from libhtml import table2text, extractBD_Type1, extractBD_Type2, html2text, cleanName, mergeYAML
+from libhtml import *
 
 ## Configurations pour le lancement
 MOCK_MAGIC = None
@@ -17,6 +17,8 @@ MOCK_MAGIC = None
 MOCK_MAGIC_ITEM = None
 #MOCK_MAGIC_ITEM = "mocks/magic-ailes-vol.html"      # décommenter pour tester avec détails pré-téléchargé
 #MOCK_MAGIC_ITEM = "mocks/magic-casque-comprehension.html"      # décommenter pour tester avec détails pré-téléchargé
+
+MOCK_MAGIC_SPECIFIC = None
 
 TEXTE = ''
 
@@ -26,58 +28,94 @@ MATCH = ['Nom']
 liste = []
 
 
-# first = column with name
-# second = column with cost
+links = {
+  'Objets merveilleux': { "liste": [] },
+  'Armes magiques spécifiques': { "liste": [], "emplacement": "mains" },
+  'Armures magiques spécifiques': { "liste": [], "emplacement": "armure" },
+  'Boucliers magiques spécifiques': { "liste": [], "emplacement": "bouclier" },
+}
+
+liste = []
+
+
+##
+## OBJETS MERVEILLEUX (LIENS SEULEMENT)
+##
+
+print("Extraction des références (objets merveilleux)...")
 PATHFINDER = "http://www.pathfinder-fr.org/Wiki/"
 REFERENCE = PATHFINDER + "Pathfinder-RPG.Liste%20alphab%c3%a9tique%20des%20objets%20merveilleux.ashx"
-TYPE = "Objet merveilleux"
-
 
 if MOCK_MAGIC:
     content = BeautifulSoup(open(MOCK_MAGIC),features="lxml").body
 else:
     content = BeautifulSoup(urllib.request.urlopen(REFERENCE).read(),features="lxml").body
 
-
-propList = []
-
 multicol = content.find_all('div',{'class':['article_3col']})
-
-liste = []
-
-print("Extraction des objets merveilleux...")
-
-found = False
 for m in multicol:
     for link in m.find_all('a'):
-        
         # extraire adresse URL
         reference = PATHFINDER + link['href']
                 
-        # extraire nom
-        nom = link.text.strip()
-        
-        # jump
-        #if nom == "Bandelettes de Frappes Dévastatrices":
-        #    found = True
-        
-        #if not found:
-        #    continue
-
         # skip unknown links
         if('class' in link.attrs and 'unknownlink' in link['class']):
             continue
-
         
+        links['Objets merveilleux']['liste'].append(reference)
+
+print("- %d objects found" % len(links['Objets merveilleux']['liste']))
+
+##
+## ARMES, ARMURES ET BOUCLIERS SPÉCIFIQUES (LIENS SEULEMENT)
+##
+
+REFERENCES = {
+  "Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
+  "Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
+  "Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx"
+}
+  
+for R in REFERENCES:
+    print("Extraction des références (%s)..." % R)
+    
+    if MOCK_MAGIC_SPECIFIC:
+        content = BeautifulSoup(open(MOCK_MAGIC_SPECIFIC),features="lxml").body
+    else:
+        content = BeautifulSoup(urllib.request.urlopen(REFERENCES[R]).read(),features="lxml").body
+
+    TABLE_NAMES = [R]
+    for T in TABLE_NAMES:
+        table = getTableWithCaption( content, T )
+        if not table:
+          print("Table '%s' non-trouvée!!" % T)
+          exit(1)
+        
+        for tr in table.find_all('tr'):
+            if 'class' in tr.attrs and "titre" in tr.attrs['class']:
+                continue
+              
+            trs = tr.find_all('td')
+            if len(trs) == 4:
+                link = trs[0].find('a')
+                if link:
+                    links[R]['liste'].append(link['href'])
+                    
+    print("- %d objects found" % len(links[R]['liste']))      
+
+
+for TYPE in links:
+    print("Traitement de %s..." % TYPE)
+    for reference in links[TYPE]['liste']:
+
         # débogage
-        print("Traitement de %s..." % nom.strip())
+        print("- %s" % reference)
         
         # récupérer le détail d'un objet
         if MOCK_MAGIC_ITEM:
             page = BeautifulSoup(open(MOCK_MAGIC_ITEM),features="lxml").body
         else:
             try:
-                page = BeautifulSoup(urllib.request.urlopen(reference).read(),features="lxml").body
+                page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + reference).read(),features="lxml").body
                 
                 pageNotFound = page.find('h1',{'class':['pagetitlesystem']})
                 if(pageNotFound and pageNotFound.text() == 'Page Not Found'):
@@ -104,11 +142,13 @@ for m in multicol:
             element["Source"] = "MJ"
             element["Description"] = data["descr"]
             element["DescriptionHTML"] = data["descrHTML"]
-            element["Référence"] = reference
+            element["Référence"] = PATHFINDER + reference
             
             # infos additionnelles
             if "emplacement" in data:
                 element["Emplacement"] = data["emplacement"]
+            elif 'emplacement' in links[TYPE]:
+                element["Emplacement"] = links[TYPE]['emplacement']
             if "poids" in data:
                 element["Poids"] = data["poids"]
             if "aura" in data:
