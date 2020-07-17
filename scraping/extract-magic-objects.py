@@ -61,7 +61,7 @@ for m in multicol:
         if('class' in link.attrs and 'unknownlink' in link['class']):
             continue
         
-        links['Objets merveilleux']['liste'].append(reference)
+        #links['Objets merveilleux']['liste'].append(reference)
 
 print("- %d objects found" % len(links['Objets merveilleux']['liste']))
 
@@ -98,9 +98,9 @@ for R in REFERENCES:
             if len(trs) == 4:
                 link = trs[0].find('a')
                 if link:
-                    links[R]['liste'].append(link['href'])
+                    links[R]['liste'].append(PATHFINDER + link['href'])
                     
-    print("- %d objects found" % len(links[R]['liste']))      
+    print("- %d objects found" % len(links[R]['liste']))   
 
 
 for TYPE in links:
@@ -115,14 +115,15 @@ for TYPE in links:
             page = BeautifulSoup(open(MOCK_MAGIC_ITEM),features="lxml").body
         else:
             try:
-                page = BeautifulSoup(urllib.request.urlopen(PATHFINDER + reference).read(),features="lxml").body
+                page = BeautifulSoup(urllib.request.urlopen(reference).read(),features="lxml").body
                 
                 pageNotFound = page.find('h1',{'class':['pagetitlesystem']})
                 if(pageNotFound and pageNotFound.text() == 'Page Not Found'):
+                    print("Page doesn't exist! Skipping...")
                     continue
                 
             except:
-                #print("Page doesn't exist! Skipping...")
+                print("Page doesn't exist! Skipping...")
                 continue
 
         for boite in page.find_all('div',{'class':['BD']}):
@@ -142,7 +143,7 @@ for TYPE in links:
             element["Source"] = "MJ"
             element["Description"] = data["descr"]
             element["DescriptionHTML"] = data["descrHTML"]
-            element["Référence"] = PATHFINDER + reference
+            element["Référence"] = reference
             
             # infos additionnelles
             if "emplacement" in data:
