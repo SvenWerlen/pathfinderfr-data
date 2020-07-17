@@ -111,7 +111,7 @@ for T in TABLE_NAMES:
               "PrixModif": html2text(trs[4]),
               "Source": getValidSource(trs[1].text),
               "Résumé": description,
-              "Référence": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20propri%c3%a9t%c3%a9s%20sp%c3%a9ciales%20des%20armes.ashx"
+              "Référence": "https://www.pathfinder-fr.org/Wiki/%s" % link if link else REFERENCE_DETAILS
             }
             liste.append(element)
             existing[nom.lower()] = element

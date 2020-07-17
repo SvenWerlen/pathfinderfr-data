@@ -8,7 +8,7 @@ import locale
 from libData import *
 
 data = None
-with open("../data/magic-armes.yml", 'r') as stream:
+with open("../data/magic-armures.yml", 'r') as stream:
     try:
         data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
@@ -47,5 +47,5 @@ for w in data:
 
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("data/magic_weapons.json", "w")
+outFile = open("data/magic_armors.json", "w")
 outFile.write(json.dumps(list, indent=3))
