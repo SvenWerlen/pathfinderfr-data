@@ -32,6 +32,8 @@ URLs = [
     ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipements%20raciaux.ashx
     ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Mat%c3%a9riaux%20sp%c3%a9ciaux.ashx
     ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poisons.ashx
+    
+    ## FAIT MANUELLEMENT
     ##https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Marchandises.ashx
 ]
 
