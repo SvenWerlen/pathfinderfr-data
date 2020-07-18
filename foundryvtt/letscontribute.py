@@ -5,6 +5,8 @@ import requests
 import json
 import os
 
+from jsonmerge import merge
+
 SERVER = "https://boisdechet.org/fvtt"
 #SERVER = "http://127.0.0.1:5000"
 
@@ -50,6 +52,10 @@ lists={}
 
 list = r.json()
 for el in list:
+  # ignore contributions for other compendiums than pf1-fr
+  if not el['compendium'].startswith("pf1-fr"):
+    continue;
+  
   compendium = el['compendium'].split('.')[1]
   if not compendium in lists:
     lists[compendium] = {}
@@ -73,8 +79,12 @@ for el in list:
 
 
 for category in lists:
-  # écrire le résultat dans le fichier d'origine
-  outFile = open("letscontribute/%s.json" % category, "w")
+  # merge new contributions with existing data
+  filepath = "letscontribute/%s.json" % category
+  existing = json.load(open(filepath, 'r'))
+  lists[category] = merge(existing, lists[category])
+  # write result into file
+  outFile = open(filepath, "w")
   outFile.write(json.dumps(lists[category], indent=3, sort_keys=True))
 
   
