@@ -467,7 +467,12 @@ def extractBD_Type2(html):
     
     
     descr = ""    
-    descrHTML = ""   
+    descrHTML = ""
+    
+    # description de fabrication => conditions
+    fDescr = ""
+    fStop = False # arrêter à la 1ière propriété (<b>) trouvée
+    
     section = TYPE_PROPS
 
     # lire la partie descriptive
@@ -491,9 +496,15 @@ def extractBD_Type2(html):
             props.append(el)
         elif section == TYPE_FABRI:
             fabrics.append(el)
+            if el.name == "b":
+              fStop = True
+            if not fStop:
+              fDescr += html2text(el)
 
     props = extractProps(props)
     fabrics = extractProps(fabrics)
+    if len(fDescr) > 5:
+      props['conditions'] = cleanProperty(fDescr)
     
     # hot fix for Aura(s)
     if "auras" in props:

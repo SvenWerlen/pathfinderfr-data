@@ -95,25 +95,29 @@ for m in data:
         "type": "equipment",
         "data": {
             "description": {
-                "value": ("<div class=\"pf2frDescr\">"+
-                        "<p><b>Type: </b>{}<br/>" +
+                "value": ("<div class=\"pf2frDescr\"><p>"+
+                        "<b>Type: </b>{}<br/>" +
                         "<b>Prix: </b>{}<br/>" +
                         "<b>Emplacement: </b>{}<br/>" +
                         "<b>Poids: </b>{}<br/>" +
                         "<b>Aura: </b>{}<br/>" +
                         "<b>NLS: </b>{}<br/></p>" +
-                        "<b>Conditions: </b>{}<br/></p>" +
                         "<h2>Description</h2><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
+                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>" +
+                        "<h3>Fabrication</h3><p>" +
+                        "<b>Conditions: </b>{}<br/>" +
+                        "<b>Coût: </b>{}<br/></p>" +
+                        "</div>").format(
                     m['Type'] if 'Type' in m else '-',
                     m['Prix'] if 'Prix' in m else '-',
                     m['Emplacement'] if 'Emplacement' in m else '-',
                     m['Poids'] if 'Poids' in m else '-',
                     m['Aura'] if 'Aura' in m else "0",
                     m['NLS'] if 'NLS' in m else '-',
-                    m['Conditions'] if 'Conditions' in m else '-',
                     description,
-                    m['Référence'])
+                    m['Référence'],
+                    m['Conditions'] if 'Conditions' in m else '?',
+                    m['Coût'] if 'Coût' in m else '?')
             },
             "source": m['Source'],
             "quantity": 1,

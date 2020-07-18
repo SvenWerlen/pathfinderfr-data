@@ -64,7 +64,7 @@ for m in multicol:
         if('class' in link.attrs and 'unknownlink' in link['class']):
             continue
         
-        #links['Objets merveilleux']['liste'].append(reference)
+        links['Objets merveilleux']['liste'].append(reference)
 
 print("- %d objects found" % len(links['Objets merveilleux']['liste']))
 
@@ -73,11 +73,11 @@ print("- %d objects found" % len(links['Objets merveilleux']['liste']))
 ##
 
 REFERENCES = {
-  #"Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
-  #"Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
-  #"Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx",
-  #"Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx",
-  #"Anneaux magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.anneaux%20magiques.ashx",
+  "Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
+  "Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
+  "Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx",
+  "Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx",
+  "Anneaux magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.anneaux%20magiques.ashx",
   "Bâtons magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.b%c3%a2tons%20magiques.ashx",
 }
   
