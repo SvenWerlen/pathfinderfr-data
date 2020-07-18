@@ -65,9 +65,9 @@
          },
          "contextNotes": [
             {
-               "text": "remonter en selle avec <b>bon du lancier r\u00e9ussi</b>",
+               "subTarget": "skill.acr",
                "target": "skill",
-               "subTarget": "skill.acr"
+               "text": "remonter en selle avec <b>bon du lancier r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -221,9 +221,9 @@
          },
          "contextNotes": [
             {
-               "text": "+rounds de rage si r\u00e9ussite contre <b>sort profane</b> \u00e0 d\u00e9g\u00e2ts",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+rounds de rage si r\u00e9ussite contre <b>sort profane</b> \u00e0 d\u00e9g\u00e2ts"
             }
          ],
          "featType": "feat",
@@ -302,9 +302,9 @@
          },
          "contextNotes": [
             {
-               "text": "sp\u00e9cial pour <b>contondant</b> et attaque sournoise non-l\u00e9tale",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "sp\u00e9cial pour <b>contondant</b> et attaque sournoise non-l\u00e9tale"
             }
          ],
          "featType": "feat",
@@ -608,9 +608,9 @@
          },
          "contextNotes": [
             {
-               "text": "pas chass\u00e9/porte dimensionnelle possible apr\u00e8s <b>attaque \u00e0 outrance</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "pas chass\u00e9/porte dimensionnelle possible apr\u00e8s <b>attaque \u00e0 outrance</b>"
             }
          ],
          "featType": "feat",
@@ -1372,9 +1372,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 contre <b>sorts</b> et <b>pourvoirs magiques</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+4 contre <b>sorts</b> et <b>pourvoirs magiques</b>"
             }
          ],
          "featType": "feat",
@@ -1528,14 +1528,14 @@
          },
          "contextNotes": [
             {
-               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)",
+               "subTarget": "skill.dip",
                "target": "skill",
-               "subTarget": "skill.dip"
+               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)"
             },
             {
-               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)",
+               "subTarget": "skill.int",
                "target": "skill",
-               "subTarget": "skill.int"
+               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)"
             }
          ],
          "featType": "feat",
@@ -1614,14 +1614,14 @@
          },
          "contextNotes": [
             {
-               "text": "Faire 10 pour para\u00eetre <b>innocent</b>",
+               "subTarget": "skill.blf",
                "target": "skill",
-               "subTarget": "skill.blf"
+               "text": "Faire 10 pour para\u00eetre <b>innocent</b>"
             },
             {
-               "text": "+2 pour <b>se faire passer pour un enfant</b>",
+               "subTarget": "skill.dis",
                "target": "skill",
-               "subTarget": "skill.dis"
+               "text": "+2 pour <b>se faire passer pour un enfant</b>"
             }
          ],
          "featType": "feat",
@@ -1842,17 +1842,17 @@
          "changes": [
             {
                "formula": "@skills.spl.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.spl",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.umd.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.umd",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -2015,9 +2015,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 avec l'<b>arme choisie</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+1 avec l'<b>arme choisie</b>"
             }
          ],
          "featType": "feat",
@@ -2246,9 +2246,9 @@
          },
          "contextNotes": [
             {
-               "text": "deux d\u00e9s d'attaque quand <b>arme de pr\u00e9dilection de son dieu</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "deux d\u00e9s d'attaque quand <b>arme de pr\u00e9dilection de son dieu</b>"
             }
          ],
          "featType": "feat",
@@ -2327,9 +2327,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 avec l'<b>arme choisie</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+1 avec l'<b>arme choisie</b>"
             }
          ],
          "featType": "feat",
@@ -2408,9 +2408,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut choisir de faire des d\u00e9g\u00e2ts non l\u00e9taux",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "peut choisir de faire des d\u00e9g\u00e2ts non l\u00e9taux"
             }
          ],
          "featType": "feat",
@@ -2789,9 +2789,9 @@
          },
          "contextNotes": [
             {
-               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -3920,9 +3920,9 @@
          },
          "contextNotes": [
             {
-               "text": "Peut <b>briser son arme</b> pour confirmer coup critique",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "Peut <b>briser son arme</b> pour confirmer coup critique"
             }
          ],
          "featType": "feat",
@@ -4218,10 +4218,10 @@
          "changes": [
             {
                "formula": "1",
+               "modifier": "enh",
                "priority": 0,
-               "target": "ac",
                "subTarget": "nac",
-               "modifier": "enh"
+               "target": "ac"
             }
          ],
          "changeFlags": {
@@ -4309,9 +4309,9 @@
          },
          "contextNotes": [
             {
-               "text": "RD contre 1i\u00e8re attaque lorsque <b>pacte divin/armure sacr\u00e9e</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "RD contre 1i\u00e8re attaque lorsque <b>pacte divin/armure sacr\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -4390,14 +4390,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>",
+               "subTarget": "skill.spl",
                "target": "skill",
-               "subTarget": "skill.spl"
+               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>"
             },
             {
-               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>",
+               "subTarget": "skill.crf",
                "target": "skill",
-               "subTarget": "skill.crf"
+               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>"
             }
          ],
          "featType": "feat",
@@ -4626,14 +4626,14 @@
          },
          "contextNotes": [
             {
-               "text": "deux d\u00e9s pour <b>\u00e9viter de tomber</b>",
+               "subTarget": "skill.clm",
                "target": "skill",
-               "subTarget": "skill.clm"
+               "text": "deux d\u00e9s pour <b>\u00e9viter de tomber</b>"
             },
             {
-               "text": "Deux d\u00e9s pour <b>\u00e9viter de tomber</b>",
+               "subTarget": "fort",
                "target": "savingThrows",
-               "subTarget": "fort"
+               "text": "Deux d\u00e9s pour <b>\u00e9viter de tomber</b>"
             }
          ],
          "featType": "feat",
@@ -4779,17 +4779,17 @@
          "changes": [
             {
                "formula": "@skills.hea.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.hea",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.sur.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.sur",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -4869,17 +4869,17 @@
          "changes": [
             {
                "formula": "@skills.clm.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.clm",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.swm.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.swm",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -5117,9 +5117,9 @@
          },
          "contextNotes": [
             {
-               "text": "-1 pour +2 d\u00e9g\u00e2ts si <b>en puissance</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "-1 pour +2 d\u00e9g\u00e2ts si <b>en puissance</b>"
             }
          ],
          "featType": "feat",
@@ -5198,9 +5198,9 @@
          },
          "contextNotes": [
             {
-               "text": "-5 pour \u00e9tourdir cr\u00e9atures touch\u00e9es pendant 1 round",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "-5 pour \u00e9tourdir cr\u00e9atures touch\u00e9es pendant 1 round"
             }
          ],
          "featType": "feat",
@@ -5279,9 +5279,9 @@
          },
          "contextNotes": [
             {
-               "text": "-5 pour h\u00e9b\u00e9ter cr\u00e9atures touch\u00e9es pendant 1 round",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "-5 pour h\u00e9b\u00e9ter cr\u00e9atures touch\u00e9es pendant 1 round"
             }
          ],
          "featType": "feat",
@@ -5435,9 +5435,9 @@
          },
          "contextNotes": [
             {
-               "text": "-5 pour 1d4 saignement pendant 1 round",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "-5 pour 1d4 saignement pendant 1 round"
             }
          ],
          "featType": "feat",
@@ -5516,9 +5516,9 @@
          },
          "contextNotes": [
             {
-               "text": "+5 pour <b>briser/enfoncer une porte</b>",
+               "subTarget": "strChecks",
                "target": "abilityChecks",
-               "subTarget": "strChecks"
+               "text": "+5 pour <b>briser/enfoncer une porte</b>"
             }
          ],
          "featType": "feat",
@@ -5597,9 +5597,9 @@
          },
          "contextNotes": [
             {
-               "text": "+mod constitution si <b>attaque en puissance + 3 round de rage</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+mod constitution si <b>attaque en puissance + 3 round de rage</b>"
             }
          ],
          "featType": "feat",
@@ -5678,9 +5678,9 @@
          },
          "contextNotes": [
             {
-               "text": "0 malus sur la 1\u00b0 attaque en puissance si <b>arme tenue \u00e0 2 mains</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "0 malus sur la 1\u00b0 attaque en puissance si <b>arme tenue \u00e0 2 mains</b>"
             }
          ],
          "featType": "feat",
@@ -5834,9 +5834,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut faire un croc-en-jambe avec <b>attaque en puissance</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut faire un croc-en-jambe avec <b>attaque en puissance</b>"
             }
          ],
          "featType": "feat",
@@ -6515,9 +6515,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut remplacer 1 attaque par une bousculade",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut remplacer 1 attaque par une bousculade"
             }
          ],
          "featType": "feat",
@@ -6596,14 +6596,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 en bousculade",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "+2 en bousculade"
             },
             {
-               "text": "Les alli\u00e9s ont une atq d'op pour <b>une bousculade r\u00e9ussie</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "Les alli\u00e9s ont une atq d'op pour <b>une bousculade r\u00e9ussie</b>"
             }
          ],
          "featType": "feat",
@@ -6682,9 +6682,9 @@
          },
          "contextNotes": [
             {
-               "text": "ajout de la constitution pour <b>une bousculade + rage</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "ajout de la constitution pour <b>une bousculade + rage</b>"
             }
          ],
          "featType": "feat",
@@ -6763,9 +6763,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut bousculer si <b>critique confirm\u00e9</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut bousculer si <b>critique confirm\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -7144,9 +7144,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9truire l'arme apr\u00e8s un <b>critique confirm\u00e9e</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut d\u00e9truire l'arme apr\u00e8s un <b>critique confirm\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -8350,9 +8350,9 @@
          },
          "contextNotes": [
             {
-               "text": "Si <b>attaque sp\u00e9ciale</b>, +2 au DD pour jets de sauvegarde",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "Si <b>attaque sp\u00e9ciale</b>, +2 au DD pour jets de sauvegarde"
             }
          ],
          "featType": "feat",
@@ -9106,9 +9106,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 pour <b>identifier/contrer les sorts adverses</b>",
+               "subTarget": "skill.spl",
                "target": "skill",
-               "subTarget": "skill.spl"
+               "text": "+2 pour <b>identifier/contrer les sorts adverses</b>"
             }
          ],
          "featType": "feat",
@@ -9412,9 +9412,9 @@
          },
          "contextNotes": [
             {
-               "text": "+x pour <b>un sort lvl x sacrifi\u00e9</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+x pour <b>un sort lvl x sacrifi\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -9493,14 +9493,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre les <b>effets rendant fi\u00e9vreux/naus\u00e9eux & poison ing\u00e9r\u00e9</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre les <b>effets rendant fi\u00e9vreux/naus\u00e9eux & poison ing\u00e9r\u00e9</b>"
             },
             {
-               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>",
+               "subTarget": "skill.sur",
                "target": "skill",
-               "subTarget": "skill.sur"
+               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>"
             }
          ],
          "featType": "feat",
@@ -9654,9 +9654,9 @@
          },
          "contextNotes": [
             {
-               "text": "retire le bonus de tenaille si <b>une attaque touche l'adversaire</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "retire le bonus de tenaille si <b>une attaque touche l'adversaire</b>"
             }
          ],
          "featType": "feat",
@@ -10110,9 +10110,9 @@
          },
          "contextNotes": [
             {
-               "text": "d\u00e9g\u00e2ts suppl\u00e9mentaire si <b>canalisation sacrifi\u00e9e</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "d\u00e9g\u00e2ts suppl\u00e9mentaire si <b>canalisation sacrifi\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -10566,9 +10566,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut \u00e9treindre & projeter si <b>la morsure/griffe touche</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut \u00e9treindre & projeter si <b>la morsure/griffe touche</b>"
             }
          ],
          "featType": "feat",
@@ -11097,9 +11097,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>"
             }
          ],
          "featType": "feat",
@@ -11178,9 +11178,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>"
             }
          ],
          "featType": "feat",
@@ -12384,9 +12384,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 si manie une <b>arme double</b> ou <b>deux armes</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+1 si manie une <b>arme double</b> ou <b>deux armes</b>"
             }
          ],
          "featType": "feat",
@@ -12540,9 +12540,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut relancer le d100 si <b>attaque rat\u00e9e \u00e0 cause du camouflage</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut relancer le d100 si <b>attaque rat\u00e9e \u00e0 cause du camouflage</b>"
             }
          ],
          "featType": "feat",
@@ -12846,9 +12846,9 @@
          },
          "contextNotes": [
             {
-               "text": "aucun test pour DD < 15 si <b>aucune armure ou l\u00e9g\u00e8re</b>",
+               "subTarget": "skill.rid",
                "target": "skill",
-               "subTarget": "skill.rid"
+               "text": "aucun test pour DD < 15 si <b>aucune armure ou l\u00e9g\u00e8re</b>"
             }
          ],
          "featType": "feat",
@@ -13002,9 +13002,9 @@
          },
          "contextNotes": [
             {
-               "text": "+bonus du bouclier pour <b>annuler une attaque contre la monture</b>",
+               "subTarget": "skill.rid",
                "target": "skill",
-               "subTarget": "skill.rid"
+               "text": "+bonus du bouclier pour <b>annuler une attaque contre la monture</b>"
             }
          ],
          "featType": "feat",
@@ -13983,9 +13983,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 pour <b>rep\u00e9re les ouvrages de pierre inhabituel</b>",
+               "subTarget": "skill.per",
                "target": "skill",
-               "subTarget": "skill.per"
+               "text": "+4 pour <b>rep\u00e9re les ouvrages de pierre inhabituel</b>"
             }
          ],
          "featType": "feat",
@@ -14739,9 +14739,9 @@
          },
          "contextNotes": [
             {
-               "text": "d\u00e9g\u00e2ts de pr\u00e9cision applicable sur <b>cible camoufl\u00e9e</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "d\u00e9g\u00e2ts de pr\u00e9cision applicable sur <b>cible camoufl\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -15045,14 +15045,14 @@
          },
          "contextNotes": [
             {
-               "text": "+4 pour <b>sauter avec \u00e9lan</b>",
+               "subTarget": "skill.acr",
                "target": "skill",
-               "subTarget": "skill.acr"
+               "text": "+4 pour <b>sauter avec \u00e9lan</b>"
             },
             {
-               "text": "garde le bonus de dext\u00e9rit\u00e9 quand <b>il court</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "garde le bonus de dext\u00e9rit\u00e9 quand <b>il court</b>"
             },
             {
                "text": "cours 4 \u00e0 5 fois sa vitesse de base"
@@ -15509,9 +15509,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 Si pi\u00e9ge d\u00e9clancher manuellement ",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+2 Si pi\u00e9ge d\u00e9clancher manuellement "
             }
          ],
          "featType": "feat",
@@ -16032,17 +16032,17 @@
          "changes": [
             {
                "formula": "@skills.esc.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.esc",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.ste.rank>=10?4:2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.ste",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -16430,9 +16430,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est sourde si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est sourde si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16511,9 +16511,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est aveugle si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est aveugle si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16592,9 +16592,9 @@
          },
          "contextNotes": [
             {
-               "text": "empale l'ennemi si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "empale l'ennemi si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16748,9 +16748,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est fatigu\u00e9 si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est fatigu\u00e9 si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16829,9 +16829,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est \u00e9puis\u00e9 si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est \u00e9puis\u00e9 si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16910,9 +16910,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est fi\u00e9vreuse pendant 1 minute si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est fi\u00e9vreuse pendant 1 minute si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -16991,9 +16991,9 @@
          },
          "contextNotes": [
             {
-               "text": "divise la VD de la cible par 2 si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "divise la VD de la cible par 2 si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17072,9 +17072,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est chancelante si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est chancelante si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17153,9 +17153,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible est \u00e9tourdi 1d4 round si <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "la cible est \u00e9tourdi 1d4 round si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17234,9 +17234,9 @@
          },
          "contextNotes": [
             {
-               "text": "2d6 de saignement si <b>critique r\u00e9ussi</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "2d6 de saignement si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17315,9 +17315,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut lancer mal\u00e9diction (majeure) si <b>critique r\u00e9ussi</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "peut lancer mal\u00e9diction (majeure) si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17396,9 +17396,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible re\u00e7oit une plaie mineure si <b>critique r\u00e9ussi</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "la cible re\u00e7oit une plaie mineure si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -17477,9 +17477,9 @@
          },
          "contextNotes": [
             {
-               "text": "la cible re\u00e7oit une plaie majeure si <b>critique r\u00e9ussi</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "la cible re\u00e7oit une plaie majeure si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -20483,9 +20483,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 attaque et d\u00e9g\u00e2t pour <b>une utilisation d'inspiration</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+2 attaque et d\u00e9g\u00e2t pour <b>une utilisation d'inspiration</b>"
             }
          ],
          "featType": "feat",
@@ -21164,9 +21164,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 jet d'attaque si r\u00e9ussite <b>traverse zone contr\u00f4le</b>",
+               "subTarget": "skill.acr",
                "target": "skill",
-               "subTarget": "skill.acr"
+               "text": "+2 jet d'attaque si r\u00e9ussite <b>traverse zone contr\u00f4le</b>"
             }
          ],
          "featType": "feat",
@@ -22970,9 +22970,9 @@
          },
          "contextNotes": [
             {
-               "text": "tenaille si <b>au moins deux alli\u00e9s</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "tenaille si <b>au moins deux alli\u00e9s</b>"
             }
          ],
          "featType": "feat",
@@ -23501,9 +23501,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut attaquer avec sa 2\u00b0 arme si <b> d\u00e9sarmement r\u00e9ussi avec la 1\u00b0</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "peut attaquer avec sa 2\u00b0 arme si <b> d\u00e9sarmement r\u00e9ussi avec la 1\u00b0</b>"
             }
          ],
          "featType": "feat",
@@ -23582,9 +23582,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9sarmer apr\u00e8s un <b>critique confirm\u00e9e</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut d\u00e9sarmer apr\u00e8s un <b>critique confirm\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -24338,9 +24338,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9s\u00e9quilibrer apr\u00e8s un <b>critique confirm\u00e9e</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut d\u00e9s\u00e9quilibrer apr\u00e8s un <b>critique confirm\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -24419,9 +24419,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 pour faire un <b>croc-en-jambe</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "+2 pour faire un <b>croc-en-jambe</b>"
             }
          ],
          "featType": "feat",
@@ -24875,9 +24875,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut faire une bousculade <b>si croc-en-jambe r\u00e9ussi</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "peut faire une bousculade <b>si croc-en-jambe r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -25106,9 +25106,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut repositionner sur <b>un coup critique</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut repositionner sur <b>un coup critique</b>"
             }
          ],
          "featType": "feat",
@@ -25787,9 +25787,9 @@
          },
          "contextNotes": [
             {
-               "text": "attaque sur tous \u00e0 port\u00e9e au lieu de <b>attaque \u00e0 outrance</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "attaque sur tous \u00e0 port\u00e9e au lieu de <b>attaque \u00e0 outrance</b>"
             }
          ],
          "featType": "feat",
@@ -27443,9 +27443,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut faire max d\u00e9g\u00e2t sur frappe d\u00e9cisive mais <b>termine la rage</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "peut faire max d\u00e9g\u00e2t sur frappe d\u00e9cisive mais <b>termine la rage</b>"
             }
          ],
          "featType": "feat",
@@ -28199,9 +28199,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut lancer dissipation de la magie sur <b>critique r\u00e9ussi</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut lancer dissipation de la magie sur <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -35030,9 +35030,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut attaque au bouclier pour chaque <b>critique confirm\u00e9</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut attaque au bouclier pour chaque <b>critique confirm\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -35103,10 +35103,10 @@
          "changes": [
             {
                "formula": "1",
+               "modifier": "enh",
                "priority": 0,
-               "target": "ac",
                "subTarget": "sac",
-               "modifier": "enh"
+               "target": "ac"
             }
          ],
          "changeFlags": {
@@ -35186,10 +35186,10 @@
          "changes": [
             {
                "formula": "1",
+               "modifier": "enh",
                "priority": 0,
-               "target": "ac",
                "subTarget": "sac",
-               "modifier": "enh"
+               "target": "ac"
             }
          ],
          "changeFlags": {
@@ -37602,9 +37602,9 @@
          },
          "contextNotes": [
             {
-               "text": "attaque gratuite apr\u00e8s <b>un test de diplomatie r\u00e9ussi</b> ",
+               "subTarget": "skill.dip",
                "target": "skill",
-               "subTarget": "skill.dip"
+               "text": "attaque gratuite apr\u00e8s <b>un test de diplomatie r\u00e9ussi</b> "
             }
          ],
          "featType": "feat",
@@ -43308,9 +43308,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1/d\u00e9 si <b>non-l\u00e9tal \u00e0 mains nues et sournoise</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+1/d\u00e9 si <b>non-l\u00e9tal \u00e0 mains nues et sournoise</b>"
             }
          ],
          "featType": "feat",
@@ -43614,9 +43614,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut endommager la bouche avec un <b>coup \u00e9tourdissant</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "peut endommager la bouche avec un <b>coup \u00e9tourdissant</b>"
             }
          ],
          "featType": "feat",
@@ -43695,9 +43695,9 @@
          },
          "contextNotes": [
             {
-               "text": "d\u00e9g\u00e2ts en force ou dext\u00e9rit\u00e9 si <b>coup \u00e9tourdissant r\u00e9ussi</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "d\u00e9g\u00e2ts en force ou dext\u00e9rit\u00e9 si <b>coup \u00e9tourdissant r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -43776,9 +43776,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut tordre le cou si <b>coup \u00e9tourdissant r\u00e9ussi</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "peut tordre le cou si <b>coup \u00e9tourdissant r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -44007,9 +44007,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut pousser ou faire tomber sur <b>attaque r\u00e9ussie</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut pousser ou faire tomber sur <b>attaque r\u00e9ussie</b>"
             }
          ],
          "featType": "feat",
@@ -49038,9 +49038,9 @@
          },
          "contextNotes": [
             {
-               "text": "+50% si <b>aspersion</b> (remplace)",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+50% si <b>aspersion</b> (remplace)"
             }
          ],
          "featType": "feat",
@@ -50544,14 +50544,14 @@
          },
          "contextNotes": [
             {
-               "text": "croc-en-jambe possible contre <b>g\u00e9ant TG max</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "croc-en-jambe possible contre <b>g\u00e9ant TG max</b>"
             },
             {
-               "text": "+2 contre <b>g\u00e9ant</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+2 contre <b>g\u00e9ant</b>"
             }
          ],
          "featType": "feat",
@@ -52655,9 +52655,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9sarmer <b>\u00e0 distance</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "peut d\u00e9sarmer <b>\u00e0 distance</b>"
             }
          ],
          "featType": "feat",
@@ -54153,17 +54153,17 @@
          "changes": [
             {
                "formula": "-2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.dis",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "-2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.ste",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -54401,9 +54401,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 si <b>a bu du sang frais du type choisi</b>",
+               "subTarget": "conChecks",
                "target": "abilityChecks",
-               "subTarget": "conChecks"
+               "text": "+1 si <b>a bu du sang frais du type choisi</b>"
             },
             {
                "text": "+5 pv temp si <b> a bu du sang frais du type choisi</b>"
@@ -54710,9 +54710,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut faire 20 si <b>humano\u00efde amical</b>",
+               "subTarget": "chaSkills",
                "target": "skills",
-               "subTarget": "chaSkills"
+               "text": "peut faire 20 si <b>humano\u00efde amical</b>"
             }
          ],
          "featType": "feat",
@@ -54791,9 +54791,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 contre <b>toile d'araign\u00e9e et similaire</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+4 contre <b>toile d'araign\u00e9e et similaire</b>"
             }
          ],
          "featType": "feat",
@@ -56297,14 +56297,14 @@
          },
          "contextNotes": [
             {
-               "text": "+4 pour <b>\u00e9viter de prendre feu / \u00e9teindre le feu s'il br\u00fble</b>",
+               "subTarget": "fort",
                "target": "savingThrows",
-               "subTarget": "fort"
+               "text": "+4 pour <b>\u00e9viter de prendre feu / \u00e9teindre le feu s'il br\u00fble</b>"
             },
             {
-               "text": "+1d4 si <b>attaque avec du feu non magique</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+1d4 si <b>attaque avec du feu non magique</b>"
             }
          ],
          "featType": "feat",
@@ -57208,9 +57208,9 @@
          },
          "contextNotes": [
             {
-               "text": "Attaque \u00e0 outrance avec griffes lorsque <b>charge</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "Attaque \u00e0 outrance avec griffes lorsque <b>charge</b>"
             }
          ],
          "featType": "feat",
@@ -57971,9 +57971,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre attaques et sorts de <b>feu</b> et <b>lumi\u00e8re</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre attaques et sorts de <b>feu</b> et <b>lumi\u00e8re</b>"
             }
          ],
          "featType": "feat",
@@ -58944,10 +58944,10 @@
          "changes": [
             {
                "formula": "3",
+               "modifier": "competence",
                "priority": 0,
-               "target": "speed",
                "subTarget": "swimSpeed",
-               "modifier": "competence"
+               "target": "speed"
             }
          ],
          "changeFlags": {
@@ -59485,9 +59485,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9moraliser si <b>une attaque touche avec -2</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut d\u00e9moraliser si <b>une attaque touche avec -2</b>"
             }
          ],
          "featType": "feat",
@@ -60616,9 +60616,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 effets de type <b>air</b> ou <b>\u00e9lectricit\u00e9</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+4 effets de type <b>air</b> ou <b>\u00e9lectricit\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -60922,9 +60922,9 @@
          },
          "contextNotes": [
             {
-               "text": "1d6 et +1 de saignement en cas de <b>coup critique au bec</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "1d6 et +1 de saignement en cas de <b>coup critique au bec</b>"
             }
          ],
          "featType": "feat",
@@ -61003,14 +61003,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre <b>maladie & poison ing\u00e9r\u00e9</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre <b>maladie & poison ing\u00e9r\u00e9</b>"
             },
             {
-               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>",
+               "subTarget": "skill.sur",
                "target": "skill",
-               "subTarget": "skill.sur"
+               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>"
             }
          ],
          "featType": "feat",
@@ -61231,10 +61231,10 @@
          "changes": [
             {
                "formula": "2",
+               "modifier": "enh",
                "priority": 0,
-               "target": "ac",
                "subTarget": "nac",
-               "modifier": "enh"
+               "target": "ac"
             }
          ],
          "changeFlags": {
@@ -62439,10 +62439,10 @@
          "changes": [
             {
                "formula": "2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.blf",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -62455,9 +62455,9 @@
          },
          "contextNotes": [
             {
-               "text": "+10 pour 10 min par 2 niveau (<b>1 point d'audace</b>)",
+               "subTarget": "skill.dis",
                "target": "skill",
-               "subTarget": "skill.dis"
+               "text": "+10 pour 10 min par 2 niveau (<b>1 point d'audace</b>)"
             }
          ],
          "featType": "feat",
@@ -64336,9 +64336,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 au corps-\u00e0-corps lorsque <b>combat sur la d\u00e9fensive</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+4 au corps-\u00e0-corps lorsque <b>combat sur la d\u00e9fensive</b>"
             }
          ],
          "featType": "feat",
@@ -65767,9 +65767,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1d6 de saignement si <b>\u00e9cole du sanglier utilis\u00e9</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "+1d6 de saignement si <b>\u00e9cole du sanglier utilis\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -65923,14 +65923,14 @@
          },
          "contextNotes": [
             {
-               "text": "+4 contre les man\u0153uvres de <b>croc-en-jambe</b>",
+               "subTarget": "cmd",
                "target": "misc",
-               "subTarget": "cmd"
+               "text": "+4 contre les man\u0153uvres de <b>croc-en-jambe</b>"
             },
             {
-               "text": "+4 pour <b>\u00e9viter de tomber</b>",
+               "subTarget": "skill.acr",
                "target": "skill",
-               "subTarget": "skill.acr"
+               "text": "+4 pour <b>\u00e9viter de tomber</b>"
             }
          ],
          "featType": "feat",
@@ -66909,9 +66909,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 CA si <b>\u00c9cole de la tortue alligator</b> utilis\u00e9",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+2 CA si <b>\u00c9cole de la tortue alligator</b> utilis\u00e9"
             }
          ],
          "featType": "feat",
@@ -67290,9 +67290,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut faire 1 pas de placement si <b>\u00e9cole du boxeur utilis\u00e9e</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut faire 1 pas de placement si <b>\u00e9cole du boxeur utilis\u00e9e</b>"
             }
          ],
          "featType": "feat",
@@ -67521,9 +67521,9 @@
          },
          "contextNotes": [
             {
-               "text": "croc-en-jambe/repositionnement possible si <b>utilise \u00e9cole du cogneur</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "croc-en-jambe/repositionnement possible si <b>utilise \u00e9cole du cogneur</b>"
             }
          ],
          "featType": "feat",
@@ -67677,14 +67677,14 @@
          },
          "contextNotes": [
             {
-               "text": "r\u00e9sultat de <b>l'alli\u00e9</b> (puis au sol/chancelant)",
+               "subTarget": "fort",
                "target": "savingThrows",
-               "subTarget": "fort"
+               "text": "r\u00e9sultat de <b>l'alli\u00e9</b> (puis au sol/chancelant)"
             },
             {
-               "text": "+2 CA <b>\u00e0 distance</b> si alli\u00e9 porte bouclier",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+2 CA <b>\u00e0 distance</b> si alli\u00e9 porte bouclier"
             }
          ],
          "featType": "feat",
@@ -73680,17 +73680,17 @@
          "changes": [
             {
                "formula": "@skills.spl.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.spl",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.umd.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.umd",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -73778,9 +73778,9 @@
          },
          "contextNotes": [
             {
-               "text": "double les bonus aux jets d'attaque avec <b>arme de pr\u00e9dilection</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "double les bonus aux jets d'attaque avec <b>arme de pr\u00e9dilection</b>"
             }
          ],
          "featType": "feat",
@@ -73926,10 +73926,10 @@
          "changes": [
             {
                "formula": "1",
+               "modifier": "enh",
                "priority": 0,
-               "target": "ac",
                "subTarget": "sac",
-               "modifier": "enh"
+               "target": "ac"
             }
          ],
          "changeFlags": {
@@ -73942,14 +73942,14 @@
          },
          "contextNotes": [
             {
-               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)",
+               "subTarget": "ref",
                "target": "savingThrows",
-               "subTarget": "ref"
+               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)"
             },
             {
-               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)",
+               "subTarget": "fort",
                "target": "savingThrows",
-               "subTarget": "fort"
+               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)"
             }
          ],
          "featType": "feat",
@@ -74028,14 +74028,14 @@
          },
          "contextNotes": [
             {
-               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>",
+               "subTarget": "skill.spl",
                "target": "skill",
-               "subTarget": "skill.spl"
+               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>"
             },
             {
-               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>",
+               "subTarget": "skill.crf",
                "target": "skill",
-               "subTarget": "skill.crf"
+               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>"
             }
          ],
          "featType": "feat",
@@ -74114,9 +74114,9 @@
          },
          "contextNotes": [
             {
-               "text": "sournois d8 si <b>non-l\u00e9tal \u00e0 mains nues</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "sournois d8 si <b>non-l\u00e9tal \u00e0 mains nues</b>"
             }
          ],
          "featType": "feat",
@@ -74262,17 +74262,17 @@
          "changes": [
             {
                "formula": "@skills.clm.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.clm",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.swm.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.swm",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -74585,9 +74585,9 @@
          },
          "contextNotes": [
             {
-               "text": "-1 pour +3 d\u00e9g\u00e2ts si <b>en puissance</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "-1 pour +3 d\u00e9g\u00e2ts si <b>en puissance</b>"
             }
          ],
          "featType": "feat",
@@ -74666,9 +74666,9 @@
          },
          "contextNotes": [
             {
-               "text": "50% pour <b>croc-en-jambe</b> ou <b>bousculade</b> en plus",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "50% pour <b>croc-en-jambe</b> ou <b>bousculade</b> en plus"
             }
          ],
          "featType": "feat",
@@ -74814,17 +74814,17 @@
          "changes": [
             {
                "formula": "@skills.hea.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.hea",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "@skills.sur.rank>=10?6:4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.sur",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -75062,9 +75062,9 @@
          },
          "contextNotes": [
             {
-               "text": "+ grade mythique pour <b>un sort sacrifi\u00e9</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+ grade mythique pour <b>un sort sacrifi\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -75218,9 +75218,9 @@
          },
          "contextNotes": [
             {
-               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -76049,9 +76049,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 contre <b>effet et sort mythique si mythique soi-m\u00eame</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+1 contre <b>effet et sort mythique si mythique soi-m\u00eame</b>"
             }
          ],
          "featType": "feat",
@@ -76130,9 +76130,9 @@
          },
          "contextNotes": [
             {
-               "text": "0 malus avec attaque en puissance contre <b>1 pouvoir mythique</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "0 malus avec attaque en puissance contre <b>1 pouvoir mythique</b>"
             }
          ],
          "featType": "feat",
@@ -76586,9 +76586,9 @@
          },
          "contextNotes": [
             {
-               "text": "grade mythique +4 pour <b>sauter avec \u00e9lan</b>",
+               "subTarget": "skill.acr",
                "target": "skill",
-               "subTarget": "skill.acr"
+               "text": "grade mythique +4 pour <b>sauter avec \u00e9lan</b>"
             },
             {
                "text": "cours 6 \u00e0 7 fois sa vitesse de base"
@@ -76748,9 +76748,9 @@
          },
          "contextNotes": [
             {
-               "text": "2d6+grade mythique de saignement si <b>critique r\u00e9ussi</b>",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "2d6+grade mythique de saignement si <b>critique r\u00e9ussi</b>"
             }
          ],
          "featType": "feat",
@@ -76829,14 +76829,14 @@
          },
          "contextNotes": [
             {
-               "text": "+1/2 grade mythique sur <b>croc-en-jambe avec un b\u00e2ton</b>",
+               "subTarget": "cmb",
                "target": "misc",
-               "subTarget": "cmb"
+               "text": "+1/2 grade mythique sur <b>croc-en-jambe avec un b\u00e2ton</b>"
             },
             {
-               "text": "+1/2 grade mythique contre <b>croc-en-jambe</b>",
+               "subTarget": "cmd",
                "target": "misc",
-               "subTarget": "cmd"
+               "text": "+1/2 grade mythique contre <b>croc-en-jambe</b>"
             }
          ],
          "featType": "feat",
@@ -76915,9 +76915,9 @@
          },
          "contextNotes": [
             {
-               "text": "+ la plus haute alt\u00e9ration d'arme si <b>arme double / deux armes</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+ la plus haute alt\u00e9ration d'arme si <b>arme double / deux armes</b>"
             }
          ],
          "featType": "feat",
@@ -85696,9 +85696,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre sorts et effets <b>n\u00e9gatifs/absorption/malus</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre sorts et effets <b>n\u00e9gatifs/absorption/malus</b>"
             }
          ],
          "featType": "feat",
@@ -85777,14 +85777,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre les <b>effets \u00e9lectriques</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre les <b>effets \u00e9lectriques</b>"
             },
             {
-               "text": "malus <b>dus au vent</b> r\u00e9duits de moiti\u00e9",
+               "subTarget": "skill.per",
                "target": "skill",
-               "subTarget": "skill.per"
+               "text": "malus <b>dus au vent</b> r\u00e9duits de moiti\u00e9"
             }
          ],
          "featType": "feat",
@@ -85863,9 +85863,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre les <b>effets de mort</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre les <b>effets de mort</b>"
             }
          ],
          "featType": "feat",
@@ -85944,14 +85944,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre <b>d\u00e9mons</b>",
+               "subTarget": "skill.kpl",
                "target": "skill",
-               "subTarget": "skill.kpl"
+               "text": "+2 contre <b>d\u00e9mons</b>"
             },
             {
-               "text": "+2 contre <b>les d\u00e9mons</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+2 contre <b>les d\u00e9mons</b>"
             }
          ],
          "featType": "feat",
@@ -86030,9 +86030,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 attaque et d\u00e9g\u00e2t si <b>alli\u00e9 \u00e0 + de 3m</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+1 attaque et d\u00e9g\u00e2t si <b>alli\u00e9 \u00e0 + de 3m</b>"
             }
          ],
          "featType": "feat",
@@ -88886,9 +88886,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 contre les <b>sorts de sa discipline</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+1 contre les <b>sorts de sa discipline</b>"
             }
          ],
          "featType": "feat",
@@ -88967,14 +88967,14 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre effets <b>mort/absorption/possession</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+2 contre effets <b>mort/absorption/possession</b>"
             },
             {
-               "text": "d\u00e9river l'effet si rate jet contre <b>mort/possession/niveau n\u00e9g.</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "d\u00e9river l'effet si rate jet contre <b>mort/possession/niveau n\u00e9g.</b>"
             }
          ],
          "featType": "feat",
@@ -95653,9 +95653,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 avec les <b>armes gnomes</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+1 avec les <b>armes gnomes</b>"
             }
          ],
          "featType": "feat",
@@ -96026,17 +96026,17 @@
          "changes": [
             {
                "formula": "2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.acr",
-               "modifier": "competence"
+               "target": "skill"
             },
             {
                "formula": "2",
+               "modifier": "competence",
                "priority": 0,
-               "target": "skill",
                "subTarget": "skill.clm",
-               "modifier": "competence"
+               "target": "skill"
             }
          ],
          "changeFlags": {
@@ -96124,9 +96124,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 CA en plus si <b>sur la d\u00e9fensive ou d\u00e9fense totale</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+2 CA en plus si <b>sur la d\u00e9fensive ou d\u00e9fense totale</b>"
             }
          ],
          "featType": "feat",
@@ -96205,14 +96205,14 @@
          },
          "contextNotes": [
             {
-               "text": "+4 confirmation de critique sur <b>la d\u00e9fensive</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+4 confirmation de critique sur <b>la d\u00e9fensive</b>"
             },
             {
-               "text": "+4 pour <b>attaque d'opportunit\u00e9</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+4 pour <b>attaque d'opportunit\u00e9</b>"
             }
          ],
          "featType": "feat",
@@ -96366,14 +96366,14 @@
          },
          "contextNotes": [
             {
-               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>",
+               "subTarget": "fort",
                "target": "savingThrows",
-               "subTarget": "fort"
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>"
             },
             {
-               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>",
+               "subTarget": "cmd",
                "target": "misc",
-               "subTarget": "cmd"
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>"
             }
          ],
          "featType": "feat",
@@ -97577,9 +97577,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 contre <b>sort du registre des \u00e9motions</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+1 contre <b>sort du registre des \u00e9motions</b>"
             }
          ],
          "featType": "feat",
@@ -97658,19 +97658,19 @@
          },
          "contextNotes": [
             {
-               "text": "+1 contre les effets <b>\u00e9motions</b>",
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "subTarget": "allSavingThrows"
+               "text": "+1 contre les effets <b>\u00e9motions</b>"
             },
             {
-               "text": "test d'intimidation si coup critique",
+               "subTarget": "effect",
                "target": "attacks",
-               "subTarget": "effect"
+               "text": "test d'intimidation si coup critique"
             },
             {
-               "text": "+1, +2 (x3) ou +4 (x4) avec <b>don D\u00e9monstration</b>",
+               "subTarget": "skill.int",
                "target": "skill",
-               "subTarget": "skill.int"
+               "text": "+1, +2 (x3) ou +4 (x4) avec <b>don D\u00e9monstration</b>"
             }
          ],
          "featType": "feat",
@@ -98191,10 +98191,10 @@
          "changes": [
             {
                "formula": "4",
+               "modifier": "competence",
                "priority": 0,
-               "target": "savingThrows",
                "subTarget": "allSavingThrows",
-               "modifier": "competence"
+               "target": "savingThrows"
             }
          ],
          "changeFlags": {
@@ -98207,9 +98207,9 @@
          },
          "contextNotes": [
             {
-               "text": "+4 pour se rattraper ou rattraper qqun <b>en cas de chute</b>",
+               "subTarget": "skill.clm",
                "target": "skill",
-               "subTarget": "skill.clm"
+               "text": "+4 pour se rattraper ou rattraper qqun <b>en cas de chute</b>"
             }
          ],
          "featType": "feat",
@@ -98588,9 +98588,9 @@
          },
          "contextNotes": [
             {
-               "text": "+2 contre <b>orques</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "+2 contre <b>orques</b>"
             }
          ],
          "featType": "feat",
@@ -98894,9 +98894,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 CA contre coup critique si <b>porte un casque</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+1 CA contre coup critique si <b>porte un casque</b>"
             }
          ],
          "featType": "feat",
@@ -98975,9 +98975,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 CA contre coup critique si <b>porte un casque</b>",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+1 CA contre coup critique si <b>porte un casque</b>"
             }
          ],
          "featType": "feat",
@@ -99581,9 +99581,9 @@
          },
          "contextNotes": [
             {
-               "text": "peut d\u00e9s\u00e9quilibrer si <b>en train de nager</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "peut d\u00e9s\u00e9quilibrer si <b>en train de nager</b>"
             }
          ],
          "featType": "feat",
@@ -100412,9 +100412,9 @@
          },
          "contextNotes": [
             {
-               "text": "+1 contre <b>attaques d'opportunit\u00e9</b> (voir conditions)",
+               "subTarget": "ac",
                "target": "misc",
-               "subTarget": "ac"
+               "text": "+1 contre <b>attaques d'opportunit\u00e9</b> (voir conditions)"
             }
          ],
          "featType": "feat",
@@ -101543,9 +101543,9 @@
          },
          "contextNotes": [
             {
-               "text": "attaque sournoise si <b>attaque en puissance au round surprise</b>",
+               "subTarget": "attack",
                "target": "attacks",
-               "subTarget": "attack"
+               "text": "attaque sournoise si <b>attaque en puissance au round surprise</b>"
             }
          ],
          "featType": "feat",
