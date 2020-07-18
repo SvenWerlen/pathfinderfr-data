@@ -30,11 +30,12 @@ liste = []
 
 links = {
   'Objets merveilleux': { "liste": [] },
-  'Armes magiques spécifiques': { "liste": [], "emplacement": "mains" },
+  'Armes magiques spécifiques': { "liste": [], "emplacement": "aucun" },
   'Armures magiques spécifiques': { "liste": [], "emplacement": "armure" },
   'Boucliers magiques spécifiques': { "liste": [], "emplacement": "bouclier" },
-  'Sceptres magiques': { "liste": [], "emplacement": "mains" },
+  'Sceptres magiques': { "liste": [], "emplacement": "aucun" },
   'Anneaux magiques': { "liste": [], "emplacement": "anneau" },
+  'Bâtons magiques': { "liste": [], "emplacement": "aucun" },
 }
 
 liste = []
@@ -76,7 +77,8 @@ REFERENCES = {
   #"Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
   #"Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx",
   #"Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx",
-  "Anneaux magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.anneaux%20magiques.ashx"
+  #"Anneaux magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.anneaux%20magiques.ashx",
+  "Bâtons magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.b%c3%a2tons%20magiques.ashx",
 }
   
 for R in REFERENCES:
