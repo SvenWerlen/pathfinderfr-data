@@ -20,50 +20,8 @@ with open("../data/dons.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-buffs = {}
-buffNotes = {}
-countBuffs = 0
-countNotes = 0
-
-with open('data/buffs-feats.csv', 'r') as csvfile:
-    spamreader = csv.reader(csvfile)
-    idx = -1
-    for row in spamreader:
-        idx+=1
-        if idx == 0:
-            continue
-        buffsList = []
-        notesList = []
-        
-        name      = row[0]
-        for c in range(0, NUM):
-          col = 1 + c*COL
-          target    = row[col]
-          subtarget = row[col+1]
-          type      = row[col+2]
-          formula   = row[col+3]
-          notes     = row[col+4]
-          if name and target:
-            if notes:
-              notesList.append(createContextNotes(name, notes, target, subtarget))
-            else:
-              change = createChange(name, formula, target, subtarget, type)
-              if change:
-                buffsList.append(change)
-          
-        
-        if len(buffsList) > 0:
-          buffs[name] = buffsList
-          countBuffs += 1
-        if len(notesList) > 0:
-          buffNotes[name] = notesList
-          countNotes += 1
-          
-print("#buffs/notes = %d/%d" % (countBuffs, countNotes))
-
-
 list = []
-#listBuffs = []
+
 
 duplicates = []
 for d in data:
@@ -74,7 +32,7 @@ for d in data:
 
   avantage = d['AvantageHTML'] if 'AvantageHTML' in d else None
   if not avantage:
-    print("No HTML for: %s" % d['Nom'])
+    #print("No HTML for: %s" % d['Nom'])
     avantage = d['Avantage'] if 'Avantage' in d else '-'
   
   description = "<p><i>%s</i></p><p><b>Prérequis:</b> %s<p/><p><b>Avantage: </b>%s<p/><p><b>Référence:</b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
@@ -135,7 +93,7 @@ for d in data:
       },
       "effectNotes": "",
       "attackNotes": "",
-      "changes": buffs[d['Nom']] if d['Nom'] in buffs else [],
+      "changes": [],
       "changeFlags": {
           "loseDexToAC": False,
           "noStr": False,
@@ -144,7 +102,7 @@ for d in data:
           "oneWis": False,
           "oneCha": False
       },
-      "contextNotes": buffNotes[d['Nom']] if d['Nom'] in buffNotes else [],
+      "contextNotes": [],
       "featType": "feat",
       "requirements": d['Catégorie'] if 'Catégorie' in d else '-',
       "attack": {
@@ -171,24 +129,10 @@ for d in data:
   else:
     el["img"] = "systems/pf1/icons/feats/athletic.jpg"
     
-  # Independent buff
-  #if d['Nom'] in buffsTemp:
-    #elBuff = {
-      #"name":  el['name'],
-      #"type": "buff",
-      #"data": {
-        #"description": {
-          #"value": el['data']['description']['value'],
-        #},
-        #"changes": buffsTemp[el['name']],
-        #"buffType": "temp",
-        #"active": False
-      #},
-      #"img": el["img"],
-    #}
-    #listBuffs.append(elBuff)        
-  
   list.append(el)
+
+
+list = mergeWithLetContribute(list, "letscontribute/featsfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/feats.json", "w")

@@ -1,248 +1,1887 @@
 {
-   "Esquive": {
-      "data": {
-         "changes": [
-            {
-               "formula": "1",
-               "modifier": "dodge",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "ac",
-               "subTargets": {
-                  "aac": "Armure",
-                  "ac": "G\u00e9n\u00e9rique",
-                  "nac": "Armure naturelle",
-                  "sac": "Bouclier"
-               },
-               "target": "ac",
-               "value": 0
-            }
-         ]
-      }
-   },
-   "Fourberie": {
-      "data": {
-         "changes": [
-            {
-               "formula": "@skills.blf.rank>=10?4:2",
-               "modifier": "untyped",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "skill.blf",
-               "target": "skill",
-               "value": 0
-            },
-            {
-               "formula": "@skills.dis.rank>=10?4:2",
-               "modifier": "untyped",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "skill.dis",
-               "target": "skill",
-               "value": 0
-            }
-         ]
-      }
-   },
-   "Frappe magique": {
+   "Absorption rageuse": {
       "data": {
          "contextNotes": [
             {
-               "subTarget": "attack",
-               "target": "attacks",
-               "text": "Peut consid\u00e9rer l'arme comme magique"
-            },
-            {
-               "subTarget": "effect",
-               "target": "attacks",
-               "text": "+1 \u00e0 +5  d\u00e9g\u00e2ts avec une action rapide"
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+rounds de rage si r\u00e9ussite contre <b>sort profane</b> \u00e0 d\u00e9g\u00e2ts"
             }
          ]
       }
    },
-   "Robustesse": {
-      "data": {
-         "changes": [
-            {
-               "formula": "@attributes.hd.total",
-               "modifier": "untyped",
-               "priority": 0,
-               "subTarget": "mhp",
-               "subTargets": {
-                  "cmb": "CMB",
-                  "cmd": "CMD",
-                  "init": "Initiative",
-                  "mhp": "Hit Points",
-                  "vigor": "Vigueur",
-                  "wounds": "Blessure"
-               },
-               "target": "misc",
-               "value": 4
-            }
-         ]
-      }
-   },
-   "Science de l'initiative": {
+   "Acrobate des corniches": {
       "data": {
          "changes": [
             {
                "formula": "4",
-               "modifier": "untyped",
-               "operator": "+",
+               "modifier": "competence",
                "priority": 0,
-               "subTarget": "init",
-               "target": "misc",
-               "value": 0
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows"
             }
-         ]
-      }
-   },
-   "Science de la bousculade": {
-      "data": {
+         ],
          "contextNotes": [
             {
-               "subNotes": {
-                  "ac": "CA",
-                  "cmb": "CMB",
-                  "cmd": "CMD",
-                  "sr": "R\u00e9sistance \u00e0 la Magie"
-               },
-               "subTarget": "cmb",
-               "target": "misc",
-               "text": "+2 pour <b>bousculade</b>"
-            },
-            {
-               "subNotes": {
-                  "ac": "CA",
-                  "cmb": "CMB",
-                  "cmd": "CMD",
-                  "sr": "R\u00e9sistance \u00e0 la Magie"
-               },
-               "subTarget": "cmb",
-               "target": "misc",
-               "text": "bousculer ne provoque pas d'atq d'opportunit\u00e9"
-            },
-            {
-               "subNotes": {
-                  "ac": "CA",
-                  "cmb": "CMB",
-                  "cmd": "CMD",
-                  "sr": "R\u00e9sistance \u00e0 la Magie"
-               },
-               "subTarget": "cmd",
-               "target": "misc",
-               "text": "+2 contre <b>bousculade</b>"
-            }
-         ]
-      }
-   },
-   "Souplesse du serpent": {
-      "data": {
-         "contextNotes": [
-            {
-               "subNotes": {
-                  "ac": "CA",
-                  "cmb": "CMB",
-                  "cmd": "CMD",
-                  "sr": "R\u00e9sistance \u00e0 la Magie"
-               },
-               "target": "misc",
-               "text": "+4 CA contre <b>atq d'op apr\u00e8s un mvt</b>"
-            }
-         ]
-      }
-   },
-   "Tir de pr\u00e9cision": {
-      "data": {
-         "contextNotes": [
-            {
-               "subTarget": "attack",
-               "target": "attacks",
-               "text": "Tir en m\u00e9l\u00e9e sans malus"
-            }
-         ]
-      }
-   },
-   "Tir \u00e0 bout portant": {
-      "data": {
-         "contextNotes": [
-            {
-               "subNotes": {
-                  "attack": "Jets d\u2019attaque",
-                  "effect": "Jets de dommages"
-               },
-               "subTarget": "attack",
-               "target": "attacks",
-               "text": "+1 atq & dgt (distance) si <b>cible - de 9m</b>"
-            }
-         ]
-      }
-   },
-   "Vigilance": {
-      "data": {
-         "changes": [
-            {
-               "formula": "@skills.per.rank>=10?4:2",
-               "modifier": "untyped",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "skill.per",
+               "subTarget": "skill.clm",
                "target": "skill",
-               "value": 0
-            },
-            {
-               "formula": "@skills.sen.rank>=10?4:2",
-               "modifier": "untyped",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "skill.sen",
-               "target": "skill",
-               "value": 0
+               "text": "+4 pour se rattraper ou rattraper qqun <b>en cas de chute</b>"
             }
          ]
       }
    },
-   "Volont\u00e9 de fer": {
+   "Acrobate rus\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "+2 jet d'attaque si r\u00e9ussite <b>traverse zone contr\u00f4le</b>"
+            }
+         ]
+      }
+   },
+   "Adepte de la discipline": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+1 contre les <b>sorts de sa discipline</b>"
+            }
+         ]
+      }
+   },
+   "Adepte de la matraque": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "sp\u00e9cial pour <b>contondant</b> et attaque sournoise non-l\u00e9tale"
+            }
+         ]
+      }
+   },
+   "Adroit et rapide": {
       "data": {
          "changes": [
             {
                "formula": "2",
-               "modifier": "untyped",
-               "operator": "+",
+               "modifier": "competence",
                "priority": 0,
-               "subTarget": "will",
-               "subTargets": {
-                  "allSavingThrows": "Tous",
-                  "fort": "Vigueur",
-                  "ref": "R\u00e9flexes",
-                  "will": "Volont\u00e9"
-               },
-               "target": "savingThrows",
-               "value": 0
+               "subTarget": "skill.acr",
+               "target": "skill"
+            },
+            {
+               "formula": "2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.clm",
+               "target": "skill"
             }
          ]
       }
    },
-   "Voltigeur": {
+   "Affinit\u00e9 n\u00e9cromantique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre sorts et effets <b>n\u00e9gatifs/absorption/malus</b>"
+            }
+         ]
+      }
+   },
+   "Aile de la grue": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+4 au corps-\u00e0-corps lorsque <b>combat sur la d\u00e9fensive</b>"
+            }
+         ]
+      }
+   },
+   "Ailes de vent": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+4 effets de type <b>air</b> ou <b>\u00e9lectricit\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Anonyme": {
       "data": {
          "changes": [
             {
-               "formula": "@skills.acr.rank >= 10 ? 4 : 2",
-               "modifier": "untyped",
-               "operator": "+",
+               "formula": "2",
+               "modifier": "competence",
                "priority": 0,
-               "subTarget": "skill.acr",
+               "subTarget": "skill.blf",
+               "target": "skill"
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skill.dis",
                "target": "skill",
-               "value": 0
+               "text": "+10 pour 10 min par 2 niveau (<b>1 point d'audace</b>)"
+            }
+         ]
+      }
+   },
+   "Antagoniste": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.dip",
+               "target": "skill",
+               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)"
             },
             {
-               "formula": "@skills.fly.rank >= 10 ? 4 : 2",
-               "modifier": "untyped",
-               "operator": "+",
-               "priority": 0,
-               "subTarget": "skill.fly",
+               "subTarget": "skill.int",
                "target": "skill",
-               "value": 0
+               "text": "Pousser les cr\u00e9atures \u00e0 se montrer hostiles (<b>Antagoniste</b>)"
+            }
+         ]
+      }
+   },
+   "Apparence enfantine": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.blf",
+               "target": "skill",
+               "text": "Faire 10 pour para\u00eetre <b>innocent</b>"
+            },
+            {
+               "subTarget": "skill.dis",
+               "target": "skill",
+               "text": "+2 pour <b>se faire passer pour un enfant</b>"
+            }
+         ]
+      }
+   },
+   "Aptitude magique": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.spl.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.spl",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.umd.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.umd",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Aptitude magique (mythique)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.spl.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.spl",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.umd.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.umd",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Arme de l'\u00c9lu sup\u00e9rieure": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "deux d\u00e9s d'attaque quand <b>arme de pr\u00e9dilection de son dieu</b>"
+            }
+         ]
+      }
+   },
+   "Arme de pr\u00e9dilection": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+1 avec l'<b>arme choisie</b>"
+            }
+         ]
+      }
+   },
+   "Arme de pr\u00e9dilection (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "double les bonus aux jets d'attaque avec <b>arme de pr\u00e9dilection</b>"
+            }
+         ]
+      }
+   },
+   "Arme de pr\u00e9dilection gnome": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+1 avec les <b>armes gnomes</b>"
+            }
+         ]
+      }
+   },
+   "Arme de pr\u00e9dilection sup\u00e9rieure": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+1 avec l'<b>arme choisie</b>"
+            }
+         ]
+      }
+   },
+   "Arme jetable": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Peut <b>briser son arme</b> pour confirmer coup critique"
+            }
+         ]
+      }
+   },
+   "Armes ardentes": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre attaques et sorts de <b>feu</b> et <b>lumi\u00e8re</b>"
+            }
+         ]
+      }
+   },
+   "Armure de la Fosse": {
+      "data": {
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "enh",
+               "priority": 0,
+               "subTarget": "nac",
+               "target": "ac"
+            }
+         ]
+      }
+   },
+   "Armure naturelle sup\u00e9rieure": {
+      "data": {
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "enh",
+               "priority": 0,
+               "subTarget": "nac",
+               "target": "ac"
+            }
+         ]
+      }
+   },
+   "Armure r\u00e9siliente": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "RD contre 1i\u00e8re attaque lorsque <b>pacte divin/armure sacr\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Art du bouclier": {
+      "data": {
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "enh",
+               "priority": 0,
+               "subTarget": "sac",
+               "target": "ac"
+            }
+         ]
+      }
+   },
+   "Art du bouclier (mythique)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "enh",
+               "priority": 0,
+               "subTarget": "sac",
+               "target": "ac"
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)"
+            },
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "+ bonus bouclier (<b>pouvoir mystique</b>)"
+            }
+         ]
+      }
+   },
+   "Art du bouclier sup\u00e9rieur": {
+      "data": {
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "enh",
+               "priority": 0,
+               "subTarget": "sac",
+               "target": "ac"
+            }
+         ]
+      }
+   },
+   "Artisan mythique (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.spl",
+               "target": "skill",
+               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>"
+            },
+            {
+               "subTarget": "skill.crf",
+               "target": "skill",
+               "text": "+5 pour <b>cr\u00e9ation d'objets magiques non-mythiques</b>"
+            }
+         ]
+      }
+   },
+   "Artisanat de groupe": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.spl",
+               "target": "skill",
+               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>"
+            },
+            {
+               "subTarget": "skill.crf",
+               "target": "skill",
+               "text": "+2 pour aider \u00e0 <b>cr\u00e9ation d'objets</b>"
+            }
+         ]
+      }
+   },
+   "Artiste du KO": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+1/d\u00e9 si <b>non-l\u00e9tal \u00e0 mains nues et sournoise</b>"
+            }
+         ]
+      }
+   },
+   "Artiste du KO (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "sournois d8 si <b>non-l\u00e9tal \u00e0 mains nues</b>"
+            }
+         ]
+      }
+   },
+   "Ascendance aquatique": {
+      "data": {
+         "changes": [
+            {
+               "formula": "3",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "swimSpeed",
+               "target": "speed"
+            }
+         ]
+      }
+   },
+   "Aspersion contr\u00f4l\u00e9e": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+50% si <b>aspersion</b> (remplace)"
+            }
+         ]
+      }
+   },
+   "Assaut": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "attaque sournoise si <b>attaque en puissance au round surprise</b>"
+            }
+         ]
+      }
+   },
+   "Assaut h\u00e9b\u00e9tant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "-5 pour h\u00e9b\u00e9ter cr\u00e9atures touch\u00e9es pendant 1 round"
+            }
+         ]
+      }
+   },
+   "Assaut sanglant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "-5 pour 1d4 saignement pendant 1 round"
+            }
+         ]
+      }
+   },
+   "Assaut \u00e9tourdissant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "-5 pour \u00e9tourdir cr\u00e9atures touch\u00e9es pendant 1 round"
+            }
+         ]
+      }
+   },
+   "Assurance intimidante": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+1 contre les effets <b>\u00e9motions</b>"
+            },
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "test d'intimidation si coup critique"
+            },
+            {
+               "subTarget": "skill.int",
+               "target": "skill",
+               "text": "+1, +2 (x3) ou +4 (x4) avec <b>don D\u00e9monstration</b>"
+            }
+         ]
+      }
+   },
+   "Assurer sa prise": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.clm",
+               "target": "skill",
+               "text": "deux d\u00e9s pour <b>\u00e9viter de tomber</b>"
+            },
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "Deux d\u00e9s pour <b>\u00e9viter de tomber</b>"
+            }
+         ]
+      }
+   },
+   "Astuce d'\u00e9quitation": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.rid",
+               "target": "skill",
+               "text": "aucun test pour DD < 15 si <b>aucune armure ou l\u00e9g\u00e8re</b>"
+            }
+         ]
+      }
+   },
+   "Athl\u00e9tisme": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.clm.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.clm",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.swm.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.swm",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Athl\u00e9tisme (mythique)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.clm.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.clm",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.swm.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.swm",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Attaque d'encerclement": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+1 contre <b>attaques d'opportunit\u00e9</b> (voir conditions)"
+            }
+         ]
+      }
+   },
+   "Attaque en groupe": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "tenaille si <b>au moins deux alli\u00e9s</b>"
+            }
+         ]
+      }
+   },
+   "Attaque en puissance": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "-1 pour +2 d\u00e9g\u00e2ts si <b>en puissance</b>"
+            }
+         ]
+      }
+   },
+   "Attaque en puissance (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "-1 pour +3 d\u00e9g\u00e2ts si <b>en puissance</b>"
+            }
+         ]
+      }
+   },
+   "Attaque en rotation": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "attaque sur tous \u00e0 port\u00e9e au lieu de <b>attaque \u00e0 outrance</b>"
+            }
+         ]
+      }
+   },
+   "Attaque magique (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "50% pour <b>croc-en-jambe</b> ou <b>bousculade</b> en plus"
+            }
+         ]
+      }
+   },
+   "Attaque sp\u00e9ciale renforc\u00e9e": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Si <b>attaque sp\u00e9ciale</b>, +2 au DD pour jets de sauvegarde"
+            }
+         ]
+      }
+   },
+   "Autonome": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.hea.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.hea",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.sur.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.sur",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Autonome (mythique)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.hea.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.hea",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.sur.rank>=10?6:4",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.sur",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Balancement du serpent": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "+4 contre les man\u0153uvres de <b>croc-en-jambe</b>"
+            },
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "+4 pour <b>\u00e9viter de tomber</b>"
+            }
+         ]
+      }
+   },
+   "Battu par les vents": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre les <b>effets \u00e9lectriques</b>"
+            },
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "malus <b>dus au vent</b> r\u00e9duits de moiti\u00e9"
+            }
+         ]
+      }
+   },
+   "Bec de sang": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "1d6 et +1 de saignement en cas de <b>coup critique au bec</b>"
+            }
+         ]
+      }
+   },
+   "Bluff magique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.spl",
+               "target": "skill",
+               "text": "+2 pour <b>identifier/contrer les sorts adverses</b>"
+            }
+         ]
+      }
+   },
+   "Bond griffu": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Attaque \u00e0 outrance avec griffes lorsque <b>charge</b>"
+            }
+         ]
+      }
+   },
+   "Bouclier magique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+x pour <b>un sort lvl x sacrifi\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Bouclier magique (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+ grade mythique pour <b>un sort sacrifi\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Bouclier pour la monture": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.rid",
+               "target": "skill",
+               "text": "+bonus du bouclier pour <b>annuler une attaque contre la monture</b>"
+            }
+         ]
+      }
+   },
+   "Bousculade rapide": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut remplacer 1 attaque par une bousculade"
+            }
+         ]
+      }
+   },
+   "Bousculade sup\u00e9rieure": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 en bousculade"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Les alli\u00e9s ont une atq d'op pour <b>une bousculade r\u00e9ussie</b>"
+            }
+         ]
+      }
+   },
+   "Bousculade tourbillonnante": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "peut faire une bousculade <b>si croc-en-jambe r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Boyaux d'acier": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre les <b>effets rendant fi\u00e9vreux/naus\u00e9eux & poison ing\u00e9r\u00e9</b>"
+            },
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>"
+            }
+         ]
+      }
+   },
+   "Briser la garde": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "peut attaquer avec sa 2\u00b0 arme si <b> d\u00e9sarmement r\u00e9ussi avec la 1\u00b0</b>"
+            }
+         ]
+      }
+   },
+   "Briser la m\u00e2choire": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "peut endommager la bouche avec un <b>coup \u00e9tourdissant</b>"
+            }
+         ]
+      }
+   },
+   "Briser la tenaille": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "retire le bonus de tenaille si <b>une attaque touche l'adversaire</b>"
+            }
+         ]
+      }
+   },
+   "Briser le cou": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "peut tordre le cou si <b>coup \u00e9tourdissant r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Briser les d\u00e9fenses": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Briser les d\u00e9fenses (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "l'ennemi est pris au d\u00e9pourvu s'il <b>est touch\u00e9 et apeur\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Briser les os": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "d\u00e9g\u00e2ts en force ou dext\u00e9rit\u00e9 si <b>coup \u00e9tourdissant r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Briseur d'objets": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "strChecks",
+               "target": "abilityChecks",
+               "text": "+5 pour <b>briser/enfoncer une porte</b>"
+            }
+         ]
+      }
+   },
+   "Brute enrag\u00e9e": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+mod constitution si <b>attaque en puissance + 3 round de rage</b>"
+            }
+         ]
+      }
+   },
+   "Buveur de sang": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "conChecks",
+               "target": "abilityChecks",
+               "text": "+1 si <b>a bu du sang frais du type choisi</b>"
+            },
+            {
+               "text": "+5 pv temp si <b> a bu du sang frais du type choisi</b>"
+            }
+         ]
+      }
+   },
+   "B\u00e9b\u00e9 f\u00e9erique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre les <b>effets de mort</b>"
+            }
+         ]
+      }
+   },
+   "Canalisation arm\u00e9e": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "d\u00e9g\u00e2ts suppl\u00e9mentaire si <b>canalisation sacrifi\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Capture": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut \u00e9treindre & projeter si <b>la morsure/griffe touche</b>"
+            }
+         ]
+      }
+   },
+   "Carapace de la tortue alligator": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+2 CA si <b>\u00c9cole de la tortue alligator</b> utilis\u00e9"
+            }
+         ]
+      }
+   },
+   "Casque bossel\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+1 CA contre coup critique si <b>porte un casque</b>"
+            }
+         ]
+      }
+   },
+   "Casque fendu": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+1 CA contre coup critique si <b>porte un casque</b>"
+            }
+         ]
+      }
+   },
+   "Chair ang\u00e9lique": {
+      "data": {
+         "changes": [
+            {
+               "formula": "-2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.dis",
+               "target": "skill"
+            },
+            {
+               "formula": "-2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.ste",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "Charmeur-n\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "chaSkills",
+               "target": "skills",
+               "text": "peut faire 20 si <b>humano\u00efde amical</b>"
+            }
+         ]
+      }
+   },
+   "Charognard": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre <b>maladie & poison ing\u00e9r\u00e9</b>"
+            },
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+2 pour <b>trouver de la nourriture pour soi-m\u00eame</b>"
+            }
+         ]
+      }
+   },
+   "Chasseur de d\u00e9mons": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.kpl",
+               "target": "skill",
+               "text": "+2 contre <b>d\u00e9mons</b>"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 contre <b>les d\u00e9mons</b>"
+            }
+         ]
+      }
+   },
+   "Chasseur des mers": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut d\u00e9s\u00e9quilibrer si <b>en train de nager</b>"
+            }
+         ]
+      }
+   },
+   "Choc de l'enrag\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "ajout de la constitution pour <b>une bousculade + rage</b>"
+            }
+         ]
+      }
+   },
+   "Ch\u00e2timent canalis\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>"
+            }
+         ]
+      }
+   },
+   "Ch\u00e2timent canalis\u00e9 sup\u00e9rieur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "peut ajouter les d\u00e9g\u00e2ts d'une canalisation par <b>action rapide</b>"
+            }
+         ]
+      }
+   },
+   "Cogneur tyrannique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "croc-en-jambe/repositionnement possible si <b>utilise \u00e9cole du cogneur</b>"
+            }
+         ]
+      }
+   },
+   "Combat chor\u00e9graphi\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "peut choisir de faire des d\u00e9g\u00e2ts non l\u00e9taux"
+            }
+         ]
+      }
+   },
+   "Combat en aveugle": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut relancer le d100 si <b>attaque rat\u00e9e \u00e0 cause du camouflage</b>"
+            }
+         ]
+      }
+   },
+   "Combattant d\u00e9sesp\u00e9r\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+1 attaque et d\u00e9g\u00e2t si <b>alli\u00e9 \u00e0 + de 3m</b>"
+            }
+         ]
+      }
+   },
+   "Combattant prudent": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+2 CA en plus si <b>sur la d\u00e9fensive ou d\u00e9fense totale</b>"
+            }
+         ]
+      }
+   },
+   "Combattant \u00e9tudi\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 attaque et d\u00e9g\u00e2t pour <b>une utilisation d'inspiration</b>"
+            }
+         ]
+      }
+   },
+   "Compagnon mythique": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+1 contre <b>effet et sort mythique si mythique soi-m\u00eame</b>"
+            }
+         ]
+      }
+   },
+   "Concentration malgr\u00e9 la fureur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "0 malus sur la 1\u00b0 attaque en puissance si <b>arme tenue \u00e0 2 mains</b>"
+            }
+         ]
+      }
+   },
+   "Concentration malgr\u00e9 la fureur (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "0 malus avec attaque en puissance contre <b>1 pouvoir mythique</b>"
+            }
+         ]
+      }
+   },
+   "Connaissance sup\u00e9rieure de la pierre": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "+4 pour <b>rep\u00e9re les ouvrages de pierre inhabituel</b>"
+            }
+         ]
+      }
+   },
+   "Coup bousculant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut bousculer si <b>critique confirm\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Coup dans l'ombre": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "d\u00e9g\u00e2ts de pr\u00e9cision applicable sur <b>cible camoufl\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Coup de bouclier opportuniste": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut attaque au bouclier pour chaque <b>critique confirm\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Coup de brute": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut d\u00e9moraliser si <b>une attaque touche avec -2</b>"
+            }
+         ]
+      }
+   },
+   "Coup destructeur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut d\u00e9truire l'arme apr\u00e8s un <b>critique confirm\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Coup d\u00e9loyal": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.dip",
+               "target": "skill",
+               "text": "attaque gratuite apr\u00e8s <b>un test de diplomatie r\u00e9ussi</b> "
+            }
+         ]
+      }
+   },
+   "Coup d\u00e9sarmant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut d\u00e9sarmer apr\u00e8s un <b>critique confirm\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Coup d\u00e9sesp\u00e9r\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+4 confirmation de critique sur <b>la d\u00e9fensive</b>"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+4 pour <b>attaque d'opportunit\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "Coup d\u00e9stabilisant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut faire un croc-en-jambe avec <b>attaque en puissance</b>"
+            }
+         ]
+      }
+   },
+   "Coup d\u00e9s\u00e9quilibrant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut d\u00e9s\u00e9quilibrer apr\u00e8s un <b>critique confirm\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Coup final violent": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "peut faire max d\u00e9g\u00e2t sur frappe d\u00e9cisive mais <b>termine la rage</b>"
+            }
+         ]
+      }
+   },
+   "Coup m\u00e9morable": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut pousser ou faire tomber sur <b>attaque r\u00e9ussie</b>"
+            }
+         ]
+      }
+   },
+   "Coup repositionnant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut repositionner sur <b>un coup critique</b>"
+            }
+         ]
+      }
+   },
+   "Course": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "+4 pour <b>sauter avec \u00e9lan</b>"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "garde le bonus de dext\u00e9rit\u00e9 quand <b>il court</b>"
+            },
+            {
+               "text": "cours 4 \u00e0 5 fois sa vitesse de base"
+            }
+         ]
+      }
+   },
+   "Course (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "grade mythique +4 pour <b>sauter avec \u00e9lan</b>"
+            },
+            {
+               "text": "cours 6 \u00e0 7 fois sa vitesse de base"
+            },
+            {
+               "text": "peut courir pendant constitution + grade mythique"
+            }
+         ]
+      }
+   },
+   "Crame ! Crame ! Crame !": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "+4 pour <b>\u00e9viter de prendre feu / \u00e9teindre le feu s'il br\u00fble</b>"
+            },
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+1d4 si <b>attaque avec du feu non magique</b>"
+            }
+         ]
+      }
+   },
+   "Critique assourdissant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est sourde si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique aveuglant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est aveugle si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique d'empalement": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "empale l'ennemi si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique de dissipation": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut lancer dissipation de la magie sur <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique de plaie": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "la cible re\u00e7oit une plaie mineure si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique de plaie sup\u00e9rieur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "la cible re\u00e7oit une plaie majeure si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique fatigant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est fatigu\u00e9 si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique f\u00e9brile": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est fi\u00e9vreuse pendant 1 minute si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique handicapant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "divise la VD de la cible par 2 si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique maudit": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "peut lancer mal\u00e9diction (majeure) si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique ralentissant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est chancelante si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique sanglant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "2d6 de saignement si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique sanglant (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "2d6+grade mythique de saignement si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique \u00e9puisant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est \u00e9puis\u00e9 si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Critique \u00e9tourdissant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "la cible est \u00e9tourdi 1d4 round si <b>critique r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "Croc-en-jambe au b\u00e2ton (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+1/2 grade mythique sur <b>croc-en-jambe avec un b\u00e2ton</b>"
+            },
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "+1/2 grade mythique contre <b>croc-en-jambe</b>"
+            }
+         ]
+      }
+   },
+   "Croc-en-jambe sup\u00e9rieur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour faire un <b>croc-en-jambe</b>"
+            }
+         ]
+      }
+   },
+   "Curiosit\u00e9 intr\u00e9pide": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+1 contre <b>sort du registre des \u00e9motions</b>"
+            }
+         ]
+      }
+   },
+   "Danse du boxeur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "peut faire 1 pas de placement si <b>\u00e9cole du boxeur utilis\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "Dents de fouisseur": {
+      "data": {
+         "contextNotes": [
+            {
+               "text": "creuse \u00e0 1/2 sa vitesse de base <b>sans laisser de trace</b>"
+            },
+            {
+               "text": "ne peut pas creuser dans <b>la roche solide</b>"
+            }
+         ]
+      }
+   },
+   "Derviche dimensionnel": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "pas chass\u00e9/porte dimensionnelle possible apr\u00e8s <b>attaque \u00e0 outrance</b>"
+            }
+         ]
+      }
+   },
+   "Discret": {
+      "data": {
+         "changes": [
+            {
+               "formula": "@skills.esc.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.esc",
+               "target": "skill"
+            },
+            {
+               "formula": "@skills.ste.rank>=10?4:2",
+               "modifier": "competence",
+               "priority": 0,
+               "subTarget": "skill.ste",
+               "target": "skill"
+            }
+         ]
+      }
+   },
+   "D\u00e9biter les orques": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 contre <b>orques</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9chiquetage du sanglier": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+1d6 de saignement si <b>\u00e9cole du sanglier utilis\u00e9</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9clenchement manuel": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 Si pi\u00e9ge d\u00e9clancher manuellement "
+            }
+         ]
+      }
+   },
+   "D\u00e9fense instinctive": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>"
+            },
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "+1 si <b>sur la d\u00e9fensive</b>, +2 si <b>d\u00e9fense totale</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9fense \u00e0 deux armes": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+1 si manie une <b>arme double</b> ou <b>deux armes</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9fense \u00e0 deux armes (mythique)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+ la plus haute alt\u00e9ration d'arme si <b>arme double / deux armes</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9luge des tonnerres jumeaux": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "croc-en-jambe possible contre <b>g\u00e9ant TG max</b>"
+            },
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "+2 contre <b>g\u00e9ant</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9marche de l'araign\u00e9e (drow)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+4 contre <b>toile d'araign\u00e9e et similaire</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9placement acrobatique": {
+      "data": {
+         "contextNotes": [
+            {
+               "text": "consid\u00e8re 3 cases de <b>terrain difficile comme ordinaire</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9placement mystique": {
+      "data": {
+         "contextNotes": [
+            {
+               "text": "peut se d\u00e9placer normalement dans <b>la v\u00e9g\u00e9tation enchant\u00e9e</b>"
+            }
+         ]
+      }
+   },
+   "D\u00e9sarmement \u00e0 distance": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "peut d\u00e9sarmer <b>\u00e0 distance</b>"
+            }
+         ]
+      }
+   },
+   "\u00c0 l'abri": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "r\u00e9sultat de <b>l'alli\u00e9</b> (puis au sol/chancelant)"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+2 CA <b>\u00e0 distance</b> si alli\u00e9 porte bouclier"
+            }
+         ]
+      }
+   },
+   "\u00c0 terre \u00e0 cheval": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "remonter en selle avec <b>bon du lancier r\u00e9ussi</b>"
+            }
+         ]
+      }
+   },
+   "\u00c2me commune": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre effets <b>mort/absorption/possession</b>"
+            },
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "d\u00e9river l'effet si rate jet contre <b>mort/possession/niveau n\u00e9g.</b>"
+            }
+         ]
+      }
+   },
+   "\u00c2me d'acier": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+4 contre <b>sorts</b> et <b>pourvoirs magiques</b>"
             }
          ]
       }

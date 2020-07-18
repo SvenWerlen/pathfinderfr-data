@@ -69,7 +69,7 @@ for el in list:
     hasContent = True
   
   if hasContent:
-    lists[compendium][el['name']] = content
+    lists[compendium][el['name']] = { 'data': content }
 
 
 for category in lists:
