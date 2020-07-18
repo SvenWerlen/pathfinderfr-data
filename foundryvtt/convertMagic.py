@@ -90,8 +90,9 @@ for m in data:
     else:
       description = ""
     
+    name = m['Nom'][0].upper() + m['Nom'][1:].lower()
     el = {
-        "name": m['Nom'],
+        "name": name,
         "type": "equipment",
         "data": {
             "description": {
@@ -104,7 +105,7 @@ for m in data:
                         "<b>NLS: </b>{}<br/></p>" +
                         "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>" +
-                        "<h3>Fabrication</h3><p>" +
+                        "<h2>Fabrication</h2><p>" +
                         "<b>Conditions: </b>{}<br/>" +
                         "<b>Coût: </b>{}<br/></p>" +
                         "</div>").format(
