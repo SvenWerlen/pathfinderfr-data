@@ -31,7 +31,6 @@ def getPrice(price):
     return None
 
 
-
 def getEmplacement(emplacement):
     m = re.search('(\w+)', emplacement)
     if not m:
@@ -134,17 +133,19 @@ for m in data:
     }
                         
     type = m['Type'] if 'Type' in m else '-';
-    if type == "Anneau":
+    if type == "Anneaux magiques":
       el["img"] = "systems/pf1/icons/items/jewelry/ring-iron.jpg"
-    elif type == "Arme":
+    elif type == "Armes magiques spécifiques":
       el["img"] = "systems/pf1/icons/items/weapons/estoc.PNG"
-    elif type == "Armure/Bouclier":
+    elif type == "Armures magiques spécifiques":
       el["img"] = "systems/pf1/icons/items/armor/hide-armor.PNG"
-    elif type == "Bâton":
+    elif type == "Boucliers magiques spécifiques":
+      el["img"] = "systems/pf1/icons/items/armor/shield-heavy-metal.png"
+    elif type == "Bâtons magiques":
       el["img"] = "systems/pf1/icons/items/weapons/quarterstaff.png"
-    elif type == "Objet merveilleux":
+    elif type == "Objets merveilleux":
       el["img"] = "systems/pf1/icons/skills/blue_01.jpg"
-    elif type == "Sceptre":
+    elif type == "Sceptres magiques":
       el["img"] = "systems/pf1/icons/items/weapons/sling-staff.png"
     else:
       el["img"] = "systems/pf1/icons/skills/blue_01.jpg"
