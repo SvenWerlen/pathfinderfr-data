@@ -33,6 +33,7 @@ links = {
   'Armes magiques spécifiques': { "liste": [], "emplacement": "mains" },
   'Armures magiques spécifiques': { "liste": [], "emplacement": "armure" },
   'Boucliers magiques spécifiques': { "liste": [], "emplacement": "bouclier" },
+  'Sceptres magiques': { "liste": [], "emplacement": "mains" },
 }
 
 liste = []
@@ -70,9 +71,10 @@ print("- %d objects found" % len(links['Objets merveilleux']['liste']))
 ##
 
 REFERENCES = {
-  "Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
-  "Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
-  "Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx"
+  #"Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
+  #"Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
+  #"Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx",
+  "Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx"
 }
   
 for R in REFERENCES:
