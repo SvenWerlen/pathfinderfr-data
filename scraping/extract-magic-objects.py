@@ -34,6 +34,7 @@ links = {
   'Armures magiques spécifiques': { "liste": [], "emplacement": "armure" },
   'Boucliers magiques spécifiques': { "liste": [], "emplacement": "bouclier" },
   'Sceptres magiques': { "liste": [], "emplacement": "mains" },
+  'Anneaux magiques': { "liste": [], "emplacement": "anneau" },
 }
 
 liste = []
@@ -74,7 +75,8 @@ REFERENCES = {
   #"Armes magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Armes%20magiques%20sp%c3%a9cifiques.ashx",
   #"Armures magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.armures%20magiques%20sp%c3%a9cifiques.ashx",
   #"Boucliers magiques spécifiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.boucliers%20magiques%20sp%c3%a9cifiques.ashx",
-  "Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx"
+  #"Sceptres magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sceptres%20magiques.ashx",
+  "Anneaux magiques": "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.anneaux%20magiques.ashx"
 }
   
 for R in REFERENCES:
@@ -88,6 +90,8 @@ for R in REFERENCES:
     TABLE_NAMES = [R]
     for T in TABLE_NAMES:
         table = getTableWithCaption( content, T )
+        if not table:
+          table = getTableWithCaption( content, "Tableau récapitulatif des %s" % T)
         if not table:
           print("Table '%s' non-trouvée!!" % T)
           exit(1)
