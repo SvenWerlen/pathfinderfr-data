@@ -1,0 +1,159 @@
+{
+   "Bar 1: Savoir bardique": {
+      "changes": [
+         {
+            "formula": "max(1, floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kar",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kdu",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.ken",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kge",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.khi",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.klo",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kna",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kno",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kpl",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "max(1,floor(@classes.barde.level/2))",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.kre",
+            "target": "skill",
+            "value": 0
+         }
+      ]
+   },
+   "Bar 2: \u00c9rudition": {
+      "contextNotes": [
+         {
+            "subTarget": "allSavingThrows",
+            "target": "savingThrows",
+            "text": "+4 contre repr\u00e9sentation bardique, effet de son et langage"
+         }
+      ]
+   },
+   "Gue 2: Courage +1": {
+      "contextNotes": [
+         {
+            "target": "savingThrows",
+            "text": "+1 JdS contre terreur"
+         }
+      ]
+   },
+   "Rou 2: Esquive totale": {
+      "contextNotes": [
+         {
+            "subTarget": "ref",
+            "target": "savingThrows",
+            "text": "0 d\u00e9g\u00e2t au lieu de 1/2 d\u00e9g\u00e2ts"
+         }
+      ]
+   },
+   "Rou 3: Sens des pi\u00e8ges +1": {
+      "contextNotes": [
+         {
+            "subTarget": "ref",
+            "target": "savingThrows",
+            "text": "+[[floor(@classes.roublard.level/3)]] pour \u00e9viter les pi\u00e8ges"
+         },
+         {
+            "subTarget": "ac",
+            "target": "misc",
+            "text": "+[[floor(@classes.roublard.level/3)]] CA contre pi\u00e8ge"
+         }
+      ]
+   },
+   "Rou 4: Esquive instinctive": {
+      "contextNotes": [
+         {
+            "subTarget": "ac",
+            "target": "misc",
+            "text": "Jamais pris au d\u00e9pourvu"
+         },
+         {
+            "subTarget": "ac",
+            "target": "misc",
+            "text": "Garde le bonus de DEX contre adversaire invisible"
+         }
+      ]
+   },
+   "R\u00f4d 1: Pistage": {
+      "contextNotes": [
+         {
+            "subTarget": "skill.sur",
+            "target": "skill",
+            "text": "+[[max(1,floor(@classes.rdeur.level/2))]] pour suivre des traces"
+         }
+      ]
+   }
+}

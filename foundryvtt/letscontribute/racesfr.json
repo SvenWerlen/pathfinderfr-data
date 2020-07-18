@@ -1,0 +1,59 @@
+{
+   "Elfe": {
+      "changes": [
+         {
+            "formula": "2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "dex",
+            "target": "ability",
+            "value": 0
+         },
+         {
+            "formula": "2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "int",
+            "target": "ability",
+            "value": 0
+         },
+         {
+            "formula": "-2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "con",
+            "target": "ability",
+            "value": 0
+         },
+         {
+            "formula": "2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.per",
+            "target": "skill",
+            "value": 0
+         }
+      ],
+      "contextNotes": [
+         {
+            "subTarget": "allSavingThrows",
+            "target": "savingThrows",
+            "text": "+2 de bonus racial contre contre les sorts et les effets de type Enchantement"
+         },
+         {
+            "subTarget": "skill.spl",
+            "target": "skill",
+            "text": "+2 pour identifier les propri\u00e9t\u00e9s des objets magiques"
+         },
+         {
+            "subTarget": "allSavingThrows",
+            "target": "savingThrows",
+            "text": "Immunit\u00e9 aux effets de sommeil magique"
+         }
+      ]
+   }
+}

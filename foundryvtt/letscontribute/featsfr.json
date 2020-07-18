@@ -1,0 +1,226 @@
+{
+   "Esquive": {
+      "changes": [
+         {
+            "formula": "1",
+            "modifier": "dodge",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "ac",
+            "subTargets": {
+               "aac": "Armure",
+               "ac": "G\u00e9n\u00e9rique",
+               "nac": "Armure naturelle",
+               "sac": "Bouclier"
+            },
+            "target": "ac",
+            "value": 0
+         }
+      ]
+   },
+   "Fourberie": {
+      "changes": [
+         {
+            "formula": "@skills.blf.rank>=10?4:2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.blf",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "@skills.dis.rank>=10?4:2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.dis",
+            "target": "skill",
+            "value": 0
+         }
+      ]
+   },
+   "Frappe magique": {
+      "contextNotes": [
+         {
+            "subTarget": "attack",
+            "target": "attacks",
+            "text": "Peut consid\u00e9rer l'arme comme magique"
+         },
+         {
+            "subTarget": "effect",
+            "target": "attacks",
+            "text": "+1 \u00e0 +5  d\u00e9g\u00e2ts avec une action rapide"
+         }
+      ]
+   },
+   "Robustesse": {
+      "changes": [
+         {
+            "formula": "@attributes.hd.total",
+            "modifier": "untyped",
+            "priority": 0,
+            "subTarget": "mhp",
+            "subTargets": {
+               "cmb": "CMB",
+               "cmd": "CMD",
+               "init": "Initiative",
+               "mhp": "Hit Points",
+               "vigor": "Vigueur",
+               "wounds": "Blessure"
+            },
+            "target": "misc",
+            "value": 4
+         }
+      ]
+   },
+   "Science de l'initiative": {
+      "changes": [
+         {
+            "formula": "4",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "init",
+            "target": "misc",
+            "value": 0
+         }
+      ]
+   },
+   "Science de la bousculade": {
+      "contextNotes": [
+         {
+            "subNotes": {
+               "ac": "CA",
+               "cmb": "CMB",
+               "cmd": "CMD",
+               "sr": "R\u00e9sistance \u00e0 la Magie"
+            },
+            "subTarget": "cmb",
+            "target": "misc",
+            "text": "+2 pour <b>bousculade</b>"
+         },
+         {
+            "subNotes": {
+               "ac": "CA",
+               "cmb": "CMB",
+               "cmd": "CMD",
+               "sr": "R\u00e9sistance \u00e0 la Magie"
+            },
+            "subTarget": "cmb",
+            "target": "misc",
+            "text": "bousculer ne provoque pas d'atq d'opportunit\u00e9"
+         },
+         {
+            "subNotes": {
+               "ac": "CA",
+               "cmb": "CMB",
+               "cmd": "CMD",
+               "sr": "R\u00e9sistance \u00e0 la Magie"
+            },
+            "subTarget": "cmd",
+            "target": "misc",
+            "text": "+2 contre <b>bousculade</b>"
+         }
+      ]
+   },
+   "Souplesse du serpent": {
+      "contextNotes": [
+         {
+            "subNotes": {
+               "ac": "CA",
+               "cmb": "CMB",
+               "cmd": "CMD",
+               "sr": "R\u00e9sistance \u00e0 la Magie"
+            },
+            "target": "misc",
+            "text": "+4 CA contre <b>atq d'op apr\u00e8s un mvt</b>"
+         }
+      ]
+   },
+   "Tir de pr\u00e9cision": {
+      "contextNotes": [
+         {
+            "subTarget": "attack",
+            "target": "attacks",
+            "text": "Tir en m\u00e9l\u00e9e sans malus"
+         }
+      ]
+   },
+   "Tir \u00e0 bout portant": {
+      "contextNotes": [
+         {
+            "subNotes": {
+               "attack": "Jets d\u2019attaque",
+               "effect": "Jets de dommages"
+            },
+            "subTarget": "attack",
+            "target": "attacks",
+            "text": "+1 atq & dgt (distance) si <b>cible - de 9m</b>"
+         }
+      ]
+   },
+   "Vigilance": {
+      "changes": [
+         {
+            "formula": "@skills.per.rank>=10?4:2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.per",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "@skills.sen.rank>=10?4:2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.sen",
+            "target": "skill",
+            "value": 0
+         }
+      ]
+   },
+   "Volont\u00e9 de fer": {
+      "changes": [
+         {
+            "formula": "2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "will",
+            "subTargets": {
+               "allSavingThrows": "Tous",
+               "fort": "Vigueur",
+               "ref": "R\u00e9flexes",
+               "will": "Volont\u00e9"
+            },
+            "target": "savingThrows",
+            "value": 0
+         }
+      ]
+   },
+   "Voltigeur": {
+      "changes": [
+         {
+            "formula": "@skills.acr.rank >= 10 ? 4 : 2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.acr",
+            "target": "skill",
+            "value": 0
+         },
+         {
+            "formula": "@skills.fly.rank >= 10 ? 4 : 2",
+            "modifier": "untyped",
+            "operator": "+",
+            "priority": 0,
+            "subTarget": "skill.fly",
+            "target": "skill",
+            "value": 0
+         }
+      ]
+   }
+}
