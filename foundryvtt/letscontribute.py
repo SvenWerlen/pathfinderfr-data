@@ -55,7 +55,11 @@ for el in list:
   # ignore contributions for other compendiums than pf1-fr
   if not el['compendium'].startswith("pf1-fr"):
     continue;
-  
+
+  # ignore contributions with initiative != 1
+  if not 'initiativeId' in el or el['initiativeId'] != 1:
+    continue;
+
   compendium = el['compendium'].split('.')[1]
   if not compendium in lists:
     lists[compendium] = {}

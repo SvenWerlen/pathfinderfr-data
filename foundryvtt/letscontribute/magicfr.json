@@ -74,6 +74,21 @@
          ]
       }
    },
+   "Anneau de bouclier de force": {
+      "data": {
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "sac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
+      }
+   },
    "Anneau: Protection +1": {
       "data": {
          "changes": [
@@ -145,6 +160,46 @@
                "subTarget": "ac",
                "target": "ac",
                "value": 0
+            }
+         ]
+      }
+   },
+   "Armure de contorsionniste": {
+      "data": {
+         "changes": [
+            {
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "skill.esc",
+               "target": "skill",
+               "value": 0
+            },
+            {
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": 0
+            },
+            {
+               "formula": "3",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "[BdS] Reduire les dommages de chute : [[+5]]"
             }
          ]
       }

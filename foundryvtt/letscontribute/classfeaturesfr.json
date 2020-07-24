@@ -110,8 +110,42 @@
       "data": {
          "contextNotes": [
             {
+               "subTarget": "allSavingThrows",
                "target": "savingThrows",
-               "text": "+1 JdS contre terreur"
+               "text": "+[[floor((@classes.guerrier.level+2)/4)]] contre terreur"
+            }
+         ]
+      }
+   },
+   "Rou 10: Talent: Acrobaties rapides (Ext)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.Uw0PcAYrKrPhKvKp]{Acrobaties rapides}"
+            }
+         ]
+      }
+   },
+   "Rou 1: Recherche des pi\u00e8ges": {
+      "data": {
+         "changes": [
+            {
+               "formula": "max(1, floor(@classes.roublard.level / 2))",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "skill.dev",
+               "target": "skill",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "[BdS] Rep\u00e9rer des pi\u00e8ges : [[max(1, floor(@classes.roublard.level / 2))]]"
             }
          ]
       }
@@ -122,7 +156,29 @@
             {
                "subTarget": "ref",
                "target": "savingThrows",
-               "text": "0 d\u00e9g\u00e2t au lieu de 1/2 d\u00e9g\u00e2ts"
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.ACFZpjcSYC6Ypbgf]{Esquive totale}"
+            }
+         ]
+      }
+   },
+   "Rou 2: Talent: Coup bouleversant* (Ext)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.TIfYRTKri9ak6KjJ]{Coup bouleversant}"
+            }
+         ]
+      }
+   },
+   "Rou 2: Talent: Sournois* (Ext)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.slt",
+               "target": "skill",
+               "text": "[BdS] Dissimuler une arme : [[4]]"
             }
          ]
       }
@@ -133,12 +189,12 @@
             {
                "subTarget": "ref",
                "target": "savingThrows",
-               "text": "+[[floor(@classes.roublard.level/3)]] pour \u00e9viter les pi\u00e8ges"
+               "text": "[BdS] \u00c9viter les pi\u00e8ges : [[floor(@classes.roublard.level / 3)]]"
             },
             {
                "subTarget": "ac",
                "target": "misc",
-               "text": "+[[floor(@classes.roublard.level/3)]] CA contre pi\u00e8ge"
+               "text": "[BdS] Contre pi\u00e8ges : [[floor(@classes.roublard.level / 3)]] (Esquive)"
             }
          ]
       }
@@ -149,12 +205,48 @@
             {
                "subTarget": "ac",
                "target": "misc",
-               "text": "Jamais pris au d\u00e9pourvu"
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.putgJ3FJszqWVCuu]{Esquive instinctive}"
+            }
+         ]
+      }
+   },
+   "Rou 6: Sens des pi\u00e8ges +2": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "[BdS] \u00c9viter les pi\u00e8ges : [[floor(@classes.roublard.level / 3)]]"
             },
+            {
+               "target": "misc",
+               "text": "[BdS] Contre pi\u00e8ges : [[floor(@classes.roublard.level / 3)]] (Esquive)"
+            }
+         ]
+      }
+   },
+   "Rou 8: Esquive instinctive sup\u00e9rieure": {
+      "data": {
+         "contextNotes": [
             {
                "subTarget": "ac",
                "target": "misc",
-               "text": "Garde le bonus de DEX contre adversaire invisible"
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.czMTnsAQcykCOTuI]{Esquive instinctive sup\u00e9rieure}"
+            }
+         ]
+      }
+   },
+   "Rou 9: Sens des pi\u00e8ges +3": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "[BdS] \u00c9viter les pi\u00e8ges : [[floor(@classes.roublard.level / 3)]]"
+            },
+            {
+               "target": "misc",
+               "text": "[BdS] \u00c9viter les pi\u00e8ges : [[floor(@classes.roublard.level / 3)]]"
             }
          ]
       }
