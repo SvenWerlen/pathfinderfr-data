@@ -75,7 +75,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "neck"
+         "slot": "neck",
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "ac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -95,7 +106,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "neck"
+         "slot": "neck",
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -115,7 +137,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "neck"
+         "slot": "neck",
+         "changes": [
+            {
+               "formula": "3",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -135,7 +168,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "neck"
+         "slot": "neck",
+         "changes": [
+            {
+               "formula": "4",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -155,7 +199,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "neck"
+         "slot": "neck",
+         "changes": [
+            {
+               "formula": "5",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -2315,7 +2370,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "belt"
+         "slot": "belt",
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -2335,7 +2401,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "belt"
+         "slot": "belt",
+         "changes": [
+            {
+               "formula": "4",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -2355,7 +2432,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "belt"
+         "slot": "belt",
+         "changes": [
+            {
+               "formula": "6",
+               "modifier": "enh",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -7275,7 +7363,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "head"
+         "slot": "head",
+         "changes": [
+            {
+               "formula": "3",
+               "modifier": "competence",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "chaSkills",
+               "target": "skills",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -20175,7 +20274,43 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "body"
+         "slot": "body",
+         "changes": [
+            {
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "skill.esc",
+               "target": "skill",
+               "value": 0
+            },
+            {
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": 0
+            },
+            {
+               "formula": "3",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "aac",
+               "target": "ac",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "[BdS] Reduire les dommages de chute : [[+5]]"
+            }
+         ]
       },
       "img": "systems/pf1/icons/items/armor/hide-armor.PNG"
    },
@@ -24955,7 +25090,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "ring"
+         "slot": "ring",
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "sac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/items/jewelry/ring-iron.jpg"
    },

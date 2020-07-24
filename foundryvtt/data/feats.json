@@ -304,7 +304,7 @@
             {
                "subTarget": "effect",
                "target": "attacks",
-               "text": "sp\u00e9cial pour <b>contondant</b> et attaque sournoise non-l\u00e9tale"
+               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages +[[ceil(@classes.roublard.level / 2)]]d6"
             }
          ],
          "featType": "feat",
@@ -381,7 +381,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "effect",
+               "target": "attacks",
+               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages sournois +[[ceil(@classes.roublard.level / 2)]]d6"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -12577,6 +12583,11 @@
                "subTarget": "attack",
                "target": "attacks",
                "text": "peut relancer le d100 si <b>attaque rat\u00e9e \u00e0 cause du camouflage</b>"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "Ne perds pas son bonus de dex contre ennemi invisible"
             }
          ],
          "featType": "feat",
@@ -25621,7 +25632,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "[BdS] Subtiliser : [[2]], pas d'Ao"
+            },
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "[BdS] Contre subtilisation : [[2]]"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -40838,7 +40860,17 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,

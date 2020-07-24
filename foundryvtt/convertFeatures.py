@@ -6,6 +6,9 @@ import json
 import typing
 import sys
 
+from libBuffs import *
+from libData import *
+
 data = None
 with open("../data/classfeatures.yml", 'r') as stream:
     try:
@@ -75,6 +78,8 @@ for d in data:
       el["img"] = "systems/pf1/icons/skills/shadow_10.jpg"
     
     list.append(el)
+
+list = mergeWithLetContribute(list, "letscontribute/classfeaturesfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/classfeatures.json", "w")

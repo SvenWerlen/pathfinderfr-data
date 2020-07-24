@@ -7,6 +7,9 @@ import typing
 import sys
 import re
 
+from libBuffs import *
+from libData import *
+
 data = None
 with open("../data/magic.yml", 'r') as stream:
     try:
@@ -150,9 +153,9 @@ for m in data:
     else:
       el["img"] = "systems/pf1/icons/skills/blue_01.jpg"
 
-
-    
     list.append(el)
+
+list = mergeWithLetContribute(list, "letscontribute/magicfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/magic.json", "w")
