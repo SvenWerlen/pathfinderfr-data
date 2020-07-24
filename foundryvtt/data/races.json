@@ -31,7 +31,62 @@
             "value": "<div class=\"pf2frDescr\"><h2>Traits</h2><ul><li><b>Caract\u00e9ristiques.</b> +2 Dext\u00e9rit\u00e9, +2 Intelligence, -2 Constitution. Les elfes sont agiles, tant physiquement que mentalement, mais plut\u00f4t fr\u00eales.</li><li><b>Taille moyenne.</b> Les elfes sont des cr\u00e9atures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les elfes poss\u00e8dent une vitesse de d\u00e9placement de base de 9 m\u00e8tres (6 cases).</li><li><b>Vision nocturne.</b> Les elfes peuvent voir deux fois plus loin que les humains dans des conditions de faible \u00e9clairage.</li><li><b>Immunit\u00e9s elfiques.</b> Les elfes sont immunis\u00e9s aux effets de sommeil magique et b\u00e9n\u00e9ficient d\u2019un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets de type enchantement.</li><li><b>Magie elfique.</b> Les elfes re\u00e7oivent un bonus racial de +2 aux tests de niveau de lanceur de sorts pour surmonter la r\u00e9sistance \u00e0 la magie des cibles. Ils re\u00e7oivent \u00e9galement un bonus racial de +2 aux tests d\u2019Art de la magie pour identifier les propri\u00e9t\u00e9s des objets magiques.</li><li><b>Sens aiguis\u00e9s.</b> Les elfes re\u00e7oivent un bonus racial de +2 aux tests de Perception.</li><li><b>Armes famili\u00e8res.</b> Les elfes sont form\u00e9s au maniement des arcs longs (y compris les arcs longs composites), des arcs courts (y compris les arcs courts composites), des \u00e9p\u00e9es longues, des rapi\u00e8res et ils consid\u00e8rent toutes les armes dont le nom comporte le mot \u00ab elfe \u00bb ou \u00ab elfique \u00bb comme des armes de guerre.</li><li><b>Langues suppl\u00e9mentaires.</b> Les elfes connaissent automatiquement le commun et l\u2019elfe. Les elfes poss\u00e9dant une Intelligence \u00e9lev\u00e9e peuvent choisir d\u2019autres langues parmi la liste suivante : c\u00e9leste, draconien, gnoll, gnome, gobelin, orque et sylvestre.</li></ul></div>",
             "chat": "",
             "unidentified": ""
-         }
+         },
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 0
+            },
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "int",
+               "target": "ability",
+               "value": 0
+            },
+            {
+               "formula": "-2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "con",
+               "target": "ability",
+               "value": 0
+            },
+            {
+               "formula": "2",
+               "modifier": "untyped",
+               "operator": "+",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 de bonus racial contre contre les sorts et les effets de type Enchantement"
+            },
+            {
+               "subTarget": "skill.spl",
+               "target": "skill",
+               "text": "+2 pour identifier les propri\u00e9t\u00e9s des objets magiques"
+            },
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "Immunit\u00e9 aux effets de sommeil magique"
+            }
+         ]
       },
       "img": "systems/pf1/icons/races/elf.png"
    },

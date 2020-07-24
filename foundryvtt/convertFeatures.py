@@ -6,7 +6,6 @@ import json
 import typing
 import sys
 
-from libBuffs import *
 from libData import *
 
 data = None

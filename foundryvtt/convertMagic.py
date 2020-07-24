@@ -7,7 +7,6 @@ import typing
 import sys
 import re
 
-from libBuffs import *
 from libData import *
 
 data = None

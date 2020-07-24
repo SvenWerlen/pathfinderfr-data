@@ -57,30 +57,33 @@ for el in list:
     continue;
 
   # ignore contributions with initiative != 1
-  if not 'initiativeId' in el or el['initiativeId'] != 1:
+  if not 'initiativeId' in el or not el['initiativeId'] in [1,2]:
     continue;
 
   compendium = el['compendium'].split('.')[1]
   if not compendium in lists:
     lists[compendium] = {}
+  if not el['name'] in lists[compendium]:
+    lists[compendium][el['name']] = { 'data': {} }
+  
     
   r = requests.get("%s/item/%s" % (SERVER, el['id']), headers=headers)
   checkReturnCode(r, 200, "Details")
-  data = r.json()['data']
+  object = r.json()
+  data = object['data']
   
   # extract contentNotes and changes only
-  content = {}
-  hasContent = False
-  if "contextNotes" in data and len(data["contextNotes"]) > 0:
-    content["contextNotes"] = data["contextNotes"]
-    hasContent = True
-  if "changes" in data and len(data["changes"]) > 0:
-    content["changes"] = data["changes"]
-    hasContent = True
+  if el['initiativeId'] == 1:
+    if "contextNotes" in data and len(data["contextNotes"]) > 0:
+      lists[compendium][el['name']]['data']["contextNotes"] = data["contextNotes"]
+    if "changes" in data and len(data["changes"]) > 0:
+      lists[compendium][el['name']]['data']["changes"] = data["changes"]
+      
+  # extract image only
+  if el['initiativeId'] == 1:
+    if "img" in object:
+      lists[compendium][el['name']]["img"] = object["img"]
   
-  if hasContent:
-    lists[compendium][el['name']] = { 'data': content }
-
 
 for category in lists:
   # merge new contributions with existing data

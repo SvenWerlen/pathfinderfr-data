@@ -61,7 +61,8 @@
                "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages +[[ceil(@classes.roublard.level / 2)]]d6"
             }
          ]
-      }
+      },
+      "img": "systems/pf1/icons/items/weapons/sap.png"
    },
    "Adroit et rapide": {
       "data": {
@@ -594,6 +595,9 @@
          ]
       }
    },
+   "Attaque en finesse": {
+      "data": {}
+   },
    "Attaque en groupe": {
       "data": {
          "contextNotes": [
@@ -742,6 +746,9 @@
             }
          ]
       }
+   },
+   "Bien pr\u00e9par\u00e9": {
+      "data": {}
    },
    "Bluff magique": {
       "data": {
@@ -1174,7 +1181,8 @@
                "text": "Ne perds pas son bonus de dex contre ennemi invisible"
             }
          ]
-      }
+      },
+      "img": "systems/pf1/icons/feats/improved-two-weapon-fighting.jpg"
    },
    "Combattant d\u00e9sesp\u00e9r\u00e9": {
       "data": {
@@ -1898,6 +1906,12 @@
          ]
       }
    },
+   "Inaper\u00e7u": {
+      "data": {}
+   },
+   "Maniement des armes courantes": {
+      "data": {}
+   },
    "Ma\u00eetre de la matraque": {
       "data": {
          "contextNotes": [
@@ -1907,7 +1921,11 @@
                "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages sournois +[[ceil(@classes.roublard.level / 2)]]d6"
             }
          ]
-      }
+      },
+      "img": "systems/pf1/icons/items/weapons/sap.png"
+   },
+   "Port des armures l\u00e9g\u00e8res": {
+      "data": {}
    },
    "Robustesse": {
       "data": {
@@ -1944,7 +1962,8 @@
                "value": 0
             }
          ]
-      }
+      },
+      "img": "systems/pf1/icons/feats/athletic.jpg"
    },
    "Science de l'initiative": {
       "data": {
@@ -2014,7 +2033,8 @@
                "text": "[BdS] Contre subtilisation : [[2]]"
             }
          ]
-      }
+      },
+      "img": "systems/pf1/icons/feats/improved-two-weapon-fighting.jpg"
    },
    "Souplesse du serpent": {
       "data": {

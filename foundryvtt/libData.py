@@ -72,7 +72,7 @@ def mergeWithLetContribute(list, filepath):
     name = el['name']
     if name in lcList:
       retlist.append(merge(el, lcList[name]))
-      print("%s merged!" % name)
+      #print("%s merged!" % name)
     else:
       retlist.append(el)
       

@@ -8,6 +8,8 @@ import sys
 import re
 import math
 
+from libData import *
+
 data = None
 with open("../data/races.yml", 'r') as stream:
     try:
@@ -45,6 +47,7 @@ for c in data:
     }
     list.append(el)
 
+list = mergeWithLetContribute(list, "letscontribute/racesfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/races.json", "w")
