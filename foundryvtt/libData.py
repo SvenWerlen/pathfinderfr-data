@@ -4,6 +4,8 @@
 import yaml
 import re
 import json
+import os
+
 from jsonmerge import merge
 
 
@@ -72,9 +74,22 @@ def cleanTitle(title):
 ## cette fonction fusionne une liste de données (JSON) avec un fichier de contribution
 ##
 def mergeWithLetContribute(list, filepath):
+  # clean list from duplicates
+  exist = {}
+  noDupList = []
+  for el in list:
+    if el['name'] in exist:
+      print("Ignoring duplicate %s" % el['name'])
+      continue
+    exist[el['name']] = True
+    noDupList.append(el)
+  
+  if not os.path.isfile(filepath) :
+    return noDupList
+  
   retlist = []
   lcList = json.load(open(filepath, 'r'))
-  for el in list:
+  for el in noDupList:
     name = el['name']
     if name in lcList:
       retlist.append(merge(el, lcList[name]))

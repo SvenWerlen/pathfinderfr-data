@@ -121,8 +121,9 @@ for w in data:
       "img": img[w['Nom']] if w['Nom'] in img and "pf1-fr" not in img[w['Nom']] else "systems/pf1/icons/items/weapons/quarterstaff.png"
     }
     
-    
     list.append(el)
+
+list = mergeWithLetContribute(list, "letscontribute/weaponsfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/weapons.json", "w")
