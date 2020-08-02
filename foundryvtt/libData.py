@@ -6,6 +6,10 @@ import re
 import json
 from jsonmerge import merge
 
+
+def convertToLb(value):
+  return round((value * 2.2) * 100) / 100;
+
 ##
 ## cette fonction tente de convertir un poids exprimé en texte en valeur (float)
 ##
@@ -17,13 +21,15 @@ def getWeight(weight):
   except : 
     # just ignore
     weight
-      
+  
   m = re.search('([\d\.]+?) kg', weight)
   if m:
-      return float(m.group(1))
+      return convertToLb(float(m.group(1)))
   m = re.search('([\d\.]+?) g', weight)
   if m:
-      return float(m.group(1))/1000
+      return convertToLb(float(m.group(1))/1000)
+  
+  
   return None
 
 
@@ -77,3 +83,17 @@ def mergeWithLetContribute(list, filepath):
       retlist.append(el)
       
   return retlist
+
+##
+## cette fonction trouve la chaîne de charactère commune et se terminant par un espace
+## (utilisée pour extraire le nom d'une aptitude qui se répète)
+## 
+def longestSubstring(str1, str2):
+  idx = 0
+  len1 = len(str1)
+  for i in range(len1):
+    if str1[i] == ' ':
+      idx = i
+    if i >= len(str2) or str1[i] != str2[i]:
+      return str1[0:idx]
+  return str1
