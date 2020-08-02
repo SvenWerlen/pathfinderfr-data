@@ -39,7 +39,7 @@ for d in data:
     
     el = {
         "flags": { 'class': d['Classe'], 'archetype': 'base'},
-        "name": getAbbr(d['Classe']) + " " + str(d['Niveau']) + ": " + d['Nom'],
+        "name": getAbbr(d['Classe']) + " " + str(d['Niveau']) + " : " + d['Nom'].replace(":"," -"),
         "permission": {
             "default": 0
         },
