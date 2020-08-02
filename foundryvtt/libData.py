@@ -17,7 +17,7 @@ def getWeight(weight):
   weight = weight.replace(",",".")
   
   try :  
-    return float(weight) 
+    return convertToLb(float(weight))
   except : 
     # just ignore
     weight
