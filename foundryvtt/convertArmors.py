@@ -7,6 +7,8 @@ import typing
 import sys
 import re
 
+from libData import *
+
 data = None
 with open("../data/armures.yml", 'r') as stream:
     try:
@@ -15,21 +17,6 @@ with open("../data/armures.yml", 'r') as stream:
         print(exc)
 
 img = json.load(open('data/armors-img.json', 'r'))
-
-def getWeight(weight):
-    m = re.search('(.*) kg', weight)
-    if m:
-        return float(m.group(1).replace(",","."))
-    m = re.search('(.*) g', weight)
-    if m:
-        return float(m.group(1).replace(",","."))/1000
-    return None
-
-def getPrice(price):
-    m = re.search('(.*) po', price)
-    if m:
-        return int(m.group(1))
-    return None
 
 def getBonus(bonus):
     m = re.search('\+(\d+)', bonus)
