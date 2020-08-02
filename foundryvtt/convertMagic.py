@@ -16,23 +16,6 @@ with open("../data/magic.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-
-def getWeight(weight):
-    m = re.search('([\d,]+?) kg', weight)
-    if m:
-        return float(m.group(1).replace(",","."))
-    m = re.search('([\d,]+?) g', weight)
-    if m:
-        return float(m.group(1).replace(",","."))/1000
-    return None
-
-def getPrice(price):
-    m = re.search('([\d ]+?) po', price.replace('.',''))
-    if m:
-        return int(m.group(1).replace(' ', ''))
-    return None
-
-
 def getEmplacement(emplacement):
     m = re.search('(\w+)', emplacement)
     if not m:
