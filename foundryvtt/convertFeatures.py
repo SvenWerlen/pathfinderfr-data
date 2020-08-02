@@ -37,9 +37,15 @@ for d in data:
     if "Archétype" in d:
         continue;
     
+    name = "%s %s%d : %s" % (
+      getAbbr(d['Classe']),             # abréviation: Roublard => Rou
+      " " if d['Niveau'] < 10 else "",  # espace supplémentaire: 1 => " 1", 10 => "10"
+      d['Niveau'],                      # niveau
+      d['Nom'].replace(":"," -"))       # nom
+    
     el = {
         "flags": { 'class': d['Classe'], 'archetype': 'base'},
-        "name": getAbbr(d['Classe']) + " " + str(d['Niveau']) + " : " + d['Nom'].replace(":"," -"),
+        "name": name,
         "permission": {
             "default": 0
         },
