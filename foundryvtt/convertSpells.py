@@ -384,6 +384,8 @@ for s in data:
     
     list.append(el)
 
+list = mergeWithLetContribute(list, "letscontribute/spellsfr.json")
+
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/spells.json", "w")
 outFile.write(json.dumps(list, indent=3))

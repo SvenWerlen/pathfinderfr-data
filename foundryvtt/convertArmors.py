@@ -111,6 +111,8 @@ for a in data:
     }
     
     list.append(el)
+    
+list = mergeWithLetContribute(list, "letscontribute/armorsfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/armors.json", "w")

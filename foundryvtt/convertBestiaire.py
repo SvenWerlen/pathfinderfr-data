@@ -253,9 +253,9 @@ for b in data:
   fillAttacks(el["items"],b)
   el["items"].append(buffs)
   
-  
-  
   list.append(el)
+  
+list = mergeWithLetContribute(list, "letscontribute/bestiaryfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/beastiary.json", "w")

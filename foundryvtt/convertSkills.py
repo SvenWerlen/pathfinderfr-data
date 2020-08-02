@@ -34,6 +34,7 @@ for c in data:
     }
     list.append(el)
 
+list = mergeWithLetContribute(list, "letscontribute/skillsfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/skills.json", "w")
