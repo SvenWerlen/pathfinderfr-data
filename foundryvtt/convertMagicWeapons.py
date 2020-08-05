@@ -37,6 +37,7 @@ for w in data:
     description += "</p>"
     
     description = "<div class=\"pf2frDescr\">%s<h2>Description</h2>%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, w['DescriptionHTML'] if 'DescriptionHTML' in w else w['Description'], w['Référence'])
+    description = improveDescription(description, w['Nom'])
   
     el = {
       "name": w['Nom'],
