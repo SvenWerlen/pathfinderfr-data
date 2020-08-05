@@ -64,6 +64,7 @@ for a in data:
       description = a['Description'].replace('\n','<br/>')
     else:
       description = ""
+    description = improveDescription(description, a['Nom'])
     
     el = {
         "name": a['Nom'],
