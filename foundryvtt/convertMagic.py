@@ -67,14 +67,16 @@ for m in data:
         continue
     duplicates.append(m['Nom'])
     
+    name = m['Nom'][0].upper() + m['Nom'][1:].lower()
     if "DescriptionHTML" in m:
       description = m['DescriptionHTML']
     elif "Description" in m:
       description = m['Description'].replace('\n','<br/>')
     else:
       description = ""
+
+    description = improveDescription(description, name)
     
-    name = m['Nom'][0].upper() + m['Nom'][1:].lower()
     el = {
         "name": name,
         "type": "equipment",
