@@ -10,7 +10,7 @@ from jsonmerge import merge
 
 
 def convertToLb(value):
-  return round((value * 2.2) * 100) / 100;
+  return round((value * 2) * 100) / 100;
 
 ##
 ## cette fonction tente de convertir un poids exprimé en texte en valeur (float)
@@ -112,3 +112,10 @@ def longestSubstring(str1, str2):
     if i >= len(str2) or str1[i] != str2[i]:
       return str1[0:idx]
   return str1
+
+##
+## cette fonction insère des macros dans les descriptions
+##
+def improveDescription(descr, name):
+  descr =  re.sub('\d+d\d+( ?\+ ?\d+)?', "[[/r \g<0> #%s]]" % name, descr)
+  return descr

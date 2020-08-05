@@ -237,11 +237,13 @@ for s in data:
     comps = getComponents(s['Composantes']) if 'Composantes' in s else []
     divineFocus = getComponentsFD(comps)
     
+    name = cleanTitle(s['Nom'])
     description = s['DescriptionHTML'] if 'DescriptionHTML' in s else s['Description'].replace("\n", "<br/>")
     description = "<div class=\"pf2frDescr\">%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, s['Référence'])
+    description = improveDescription(description, name)
     
     el = {
-        "name": cleanTitle(s['Nom']),
+        "name": name,
         "permission": {
             "default": 0
         },
