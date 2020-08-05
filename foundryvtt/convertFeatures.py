@@ -87,7 +87,7 @@ for d in data:
     
     list.append(el)
 
-list = mergeWithLetContribute(list, "letscontribute/classfeaturesfr.json")
+list = mergeWithLetContribute(list, "letscontribute/classfeaturesfr.json", False)
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/classfeatures.json", "w")

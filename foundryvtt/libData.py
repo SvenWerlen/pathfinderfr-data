@@ -73,12 +73,12 @@ def cleanTitle(title):
 ##
 ## cette fonction fusionne une liste de données (JSON) avec un fichier de contribution
 ##
-def mergeWithLetContribute(list, filepath):
+def mergeWithLetContribute(list, filepath, ignoreDuplicates = True):
   # clean list from duplicates
   exist = {}
   noDupList = []
   for el in list:
-    if el['name'] in exist:
+    if ignoreDuplicates and el['name'] in exist:
       print("Ignoring duplicate %s" % el['name'])
       continue
     exist[el['name']] = True
