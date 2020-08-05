@@ -32,6 +32,7 @@ for c in data:
     for trait in c['Traits']:
       descriptionHTML += "<li><b>%s.</b> %s</li>" % (trait['Nom'], trait['Description'])
     descriptionHTML += "</ul></div>"
+    descriptionHTML = improveDescription(descriptionHTML, c['Nom'])
     
     el = {
       "name": c['Nom'],
