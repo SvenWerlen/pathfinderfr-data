@@ -17,7 +17,7 @@ URL = "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9jud
 MOCK_CF = None
 #MOCK_CF = "mocks/conditions.html"       # décommenter pour tester avec les conditions pré-téléchargées
 
-FIELDS = ['Nom', 'Source', 'Description', 'Référence' ]
+FIELDS = ['Nom', 'Source', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH = ['Nom']
 
 liste = []
@@ -35,10 +35,12 @@ condition = {'Source':SOURCE}
 newObj = False
 advantage = False
 descr = ""
+descrHTML = ""
 
 for s in section:
     if s.name == 'h2':
         condition['Description'] = descr.strip()
+        condition['DescriptionHTML'] = descrHTML.strip()
         liste.append(condition)
         
         # avantages
@@ -47,13 +49,16 @@ for s in section:
         newObj = False
         advantage = True
         descr = ""
+        descrHTML = ""
         
     elif s.name == 'h3':
         if newObj:
             condition['Description'] = descr.strip()
+            condition['DescriptionHTML'] = descrHTML.strip()
             liste.append(condition)
             condition = {'Source':SOURCE}
         descr = ""
+        descrHTML = ""
         condition['Nom'] = s.text.replace('¶','').strip()
         if advantage:
             condition['Nom'] += " (avantage)"
@@ -63,9 +68,11 @@ for s in section:
                 
     else:
         descr += html2text(s)
+        descrHTML += html2text(s, True, 2)
 
 ## last element
 condition['Description'] = descr.strip()
+condition['DescriptionHTML'] = descrHTML.strip()
 liste.append(condition)
             
 print("Fusion avec fichier YAML existant...")

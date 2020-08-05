@@ -20,6 +20,12 @@
 
     Se relever est considéré comme une action de mouvement provoquant ainsi une attaque
     d’opportunité.'
+  DescriptionHTML: Le personnage se trouve étendu sur le sol. Il reçoit un malus
+    de -4 sur les jets d’attaque au corps à corps et l’arbalète est la seule arme
+    à distance dont il puisse se servir (il le fait sans malus). Il reçoit un malus
+    de -4 à la CA contre les attaques au corps à corps mais bénéficie d’un bonus de
+    +4 contre les attaques à distance.<br/><br/>Se relever est considéré comme une
+    action de mouvement provoquant ainsi une attaque d’opportunité.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#À_terre_0
   
 - Nom: Agrippé
@@ -32,6 +38,14 @@
     deux mains. S’il tente de lancer un sort ou un pouvoir magique, le personnage
     doit réussir un test de Concentration (DD 10 + le BMO de son adversaire + le niveau
     du sort). Il lui est de plus impossible de porter des attaques d’opportunité.
+  DescriptionHTML: Un personnage agrippé est retenu par une créature, un piège ou
+    un effet. Il ne peut plus bouger et subit un malus de -4 à sa Dextérité, ainsi
+    qu’un malus de -2 à ses jets d’attaque et à ses manœuvres de combat, à l’exception
+    des mouvements faits pour agripper ou se libérer d’une prise. D'autre part, une
+    créature agrippée ne peut entreprendre aucune action qui nécessite l'utilisation
+    de ses deux mains. S’il tente de lancer un sort ou un pouvoir magique, le personnage
+    doit réussir un test de Concentration (DD 10 + le BMO de son adversaire + le niveau
+    du sort). Il lui est de plus impossible de porter des attaques d’opportunité.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Agrippé_1
   
 - Nom: Assourdi
@@ -41,6 +55,11 @@
     -4 aux tests de Perception opposés, et encourt 20% de chance de rater l’incantation
     de tout sort à composante verbale. Si l’état de surdité persiste suffisamment
     longtemps, il peut arriver à s’y habituer plus ou moins.
+  DescriptionHTML: Un individu assourdi n’entend rien. Il reçoit un malus de -4
+    à l’initiative, manque automatiquement ses tests de Perception liés à l’ouïe,
+    subit un malus de -4 aux tests de Perception opposés, et encourt 20% de chance
+    de rater l’incantation de tout sort à composante verbale. Si l’état de surdité
+    persiste suffisamment longtemps, il peut arriver à s’y habituer plus ou moins.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Assourdi_2
   
 - Nom: Aveuglé
@@ -56,6 +75,17 @@
     plus vite). Une créature qui rate ce test tombe à terre. Un personnage aveuglé
     pendant suffisamment longtemps peut s’habituer partiellement à sa condition et
     circonvenir certains de ces désavantages.
+  DescriptionHTML: Le personnage ne voit plus rien. Il subit un malus de -2 à la
+    classe d’armure, perd son éventuel bonus de Dextérité à la CA, et subit un malus
+    de -4 sur ses tests de Perception opposés et de la plupart des compétences associées
+    à la Force et à la Dextérité. Il ne peut pas effectuer le moindre test de compétence
+    nécessitant d’y voir (comme lire ou utiliser une compétence de Perception basée
+    sur la vue). Tous ses adversaires bénéficient d’un camouflage total à son égard
+    (50 % de risques de manquer son jet d'attaque). Un personnage aveuglé se déplace
+    à la moitié de sa vitesse habituelle (test d’Acrobaties DD 10 pour se déplacer
+    plus vite). Une créature qui rate ce test tombe à terre. Un personnage aveuglé
+    pendant suffisamment longtemps peut s’habituer partiellement à sa condition et
+    circonvenir certains de ces désavantages.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Aveuglé_3
   
 - Nom: Brisé
@@ -81,6 +111,27 @@
     \ par point de vie à restaurer, et son DD est de 20. La plupart des artisans demandent\
     \ 10 % de la valeur de l’objet pour ce travail, parfois plus s’il est en très\
     \ mauvais état."
+  DescriptionHTML: Lorsqu’un objet subit des dégâts supérieurs à la moitié de ses
+    points de vie, il est brisé et n’est plus aussi efficace dans sa tâche. Appliquez
+    les effets suivants. <ul><li>Si c’est une arme, toute attaque faite par son intermédiaire
+    subira un malus de -2 aux jets d’attaque et de dégâts. Un coup critique n’est
+    possible que sur un 20 naturel, et il n’infligera que le double des dommages s’il
+    est confirmé.</li><li>Si c’est une armure ou un bouclier, le bonus conféré à la
+    CA est divisé par 2, arrondi à l’inférieur. Une armure brisée voit ses malus aux
+    compétences doublés.</li><li>Si c’est un outil utile à une compétence, tout test
+    effectué avec lui subit un malus de -2.</li><li>Si c’est une baguette ou un bâton,
+    il consomme le double de charges.</li><li>S’il n’appartient à aucune des catégories
+    précédentes, cela n’a aucun effet sur son utilisation, mais il perd 25% de sa
+    valeur.</li></ul> Si c’est un objet magique, seuls les sorts réparation ou réparation
+    intégrale pourront lui rendre son intégrité, et ce uniquement si le niveau de
+    lanceur de sorts du personnage qui souhaite le réparer est égal ou supérieur à
+    celui de l’objet. Cet état préjudiciable disparaît lorsque l’objet retrouve grâce
+    au sort au moins la moitié de ses points de vie. <br/><br/>Un objet ordinaire
+    peut être réparé de la même manière par le biais de la compétence d’Artisanat
+    appropriée. Dans ce cas, on effectue ce test au bout d’une heure de travail par
+    point de vie à restaurer, et son DD est de 20. La plupart des artisans demandent
+    10 % de la valeur de l’objet pour ce travail, parfois plus s’il est en très mauvais
+    état.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Brisé_4
   
 - Nom: Chancelant
@@ -90,6 +141,11 @@
     personnage chancelant est restreinte à une action simple ou de mouvement chaque
     round (mais ni les deux, ni une action complexe). Il peut cependant entreprendre
     des actions rapides, libres et immédiates.
+  DescriptionHTML: Se dit d’un personnage ayant encaissé exactement autant de points
+    de dégâts non-létaux qu’il a au même moment de points de vie. L’activité d’un
+    personnage chancelant est restreinte à une action simple ou de mouvement chaque
+    round (mais ni les deux, ni une action complexe). Il peut cependant entreprendre
+    des actions rapides, libres et immédiates.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant_5
   
 - Nom: Confus
@@ -127,6 +183,26 @@
     aucun avantage de l’état de sa victime. Un personnage confus ne porte pas d’attaque
     d’opportunité quand il en a l’occasion, sauf si celle-ci est provoquée par une
     créature qu’il a décidé d’attaquer (par un jet de dé ou pour une riposte).'
+  DescriptionHTML: Une créature confuse a l’esprit totalement embrouillé et ne peut
+    agir normalement. Elle ne fait pas de différence entre un ami et un ennemi, et
+    attaque l’un et l’autre indifféremment. Si l’un de ses alliés souhaite lancer
+    sur elle un sort bénéfique et qu’il a besoin pour ce faire de la toucher, il devra
+    faire un jet d’attaque au corps à corps. Si un personnage confus est agressé,
+    il attaquera en retour celui qui l’a frappé en dernier et ne s’arrêtera que lorsque
+    son assaillant mourra ou ne sera plus dans son champ de vision.<br/><br/>Jetez
+    1d100 et consultez la table suivante au début de chaque round pour déterminer
+    les actions de la créature.<br/><br/><table><tr class="title"><td>d100</td><td>Comportement</td></tr><tr><td>01–25</td><td>Agit
+    normalement.</td></tr><tr><td>26–50</td><td>Ne fait rien et babille de manière
+    incohérente.</td></tr><tr><td>51–75</td><td>S’inflige 1d8 points de dégâts + bonus
+    de Force avec un objet en main.</td></tr><tr><td>76–100</td><td>Attaque la créature
+    la plus proche (dans ce cas, un familier fait partie du sujet).</td></tr></table><br/><br/>Si
+    un personnage confus est dans l’incapacité d’effectuer l’action tirée pour ce
+    round, il se contente de balbutier de façon incompréhensible. Si le personnage
+    confus est attaqué, il riposte automatiquement en frappant son agresseur à son
+    prochain tour de jeu (du moins s’il est encore confus), mais ce dernier ne tirera
+    aucun avantage de l’état de sa victime. Un personnage confus ne porte pas d’attaque
+    d’opportunité quand il en a l’occasion, sauf si celle-ci est provoquée par une
+    créature qu’il a décidé d’attaquer (par un jet de dé ou pour une riposte).<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Confus_6
   
 - Nom: Ébloui
@@ -134,6 +210,9 @@
   Description: Le personnage est dans l’incapacité de voir clairement suite à une
     trop forte stimulation de la rétine. Il reçoit un malus de -1 sur les jets d’attaque
     et les tests de Perception.
+  DescriptionHTML: Le personnage est dans l’incapacité de voir clairement suite
+    à une trop forte stimulation de la rétine. Il reçoit un malus de -1 sur les jets
+    d’attaque et les tests de Perception.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Ébloui_7
   
 - Nom: Effrayé
@@ -147,6 +226,13 @@
 
     Cet état s’apparente au fait d’être secoué, sauf que le personnage fait tout pour
     s’enfuir. Paniqué est un état de terreur encore plus poussé.'
+  DescriptionHTML: Un personnage effrayé fuit la source de sa peur aussi rapidement
+    qu’il le peut. Si aucune issue ne s’ouvre à lui, il peut combattre. Il reçoit
+    un malus de -2 aux jets d’attaque et de sauvegarde, ainsi qu’aux tests de compétence
+    et de caractéristique. Il peut user de ses pouvoirs et ses sorts pour s’enfuir
+    et le fait inévitablement si aucune autre solution ne s’offre à lui.<br/><br/>Cet
+    état s’apparente au fait d’être secoué, sauf que le personnage fait tout pour
+    s’enfuir. Paniqué est un état de terreur encore plus poussé.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Effrayé_8
   
 - Nom: Enchevêtré
@@ -157,6 +243,13 @@
     et il lui est impossible de courir ou de charger. Il reçoit un malus de -2 au
     jet d’attaque et un malus de -4 en Dextérité. S’il se risque à lancer un sort,
     il le perd à moins de réussir un test de Concentration (DD 15 + niveau de sort).
+  DescriptionHTML: Le personnage est comme ficelé. L’enchevêtrement handicape le
+    mouvement mais ne le bloque pas totalement, à moins que les liens soient fixés
+    à un objet immobile ou retenus avec force. Un personnage enchevêtré se déplace
+    à demi-vitesse et il lui est impossible de courir ou de charger. Il reçoit un
+    malus de -2 au jet d’attaque et un malus de -4 en Dextérité. S’il se risque à
+    lancer un sort, il le perd à moins de réussir un test de Concentration (DD 15
+    + niveau de sort).<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Enchevêtré_9
   
 - Nom: Épuisé
@@ -166,6 +259,11 @@
     et en Dextérité. Un personnage épuisé redevient fatigué au terme d’une heure de
     repos total. Un personnage fatigué devient épuisé dès qu’il fait quoi que ce soit
     de fatiguant.
+  DescriptionHTML: Le personnage se déplace deux fois moins vite qu’habituellement,
+    est dans l’incapacité de courir et de charger, et il subit un malus de -6 en Force
+    et en Dextérité. Un personnage épuisé redevient fatigué au terme d’une heure de
+    repos total. Un personnage fatigué devient épuisé dès qu’il fait quoi que ce soit
+    de fatiguant.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Épuisé_10
   
 - Nom: Étourdi
@@ -174,6 +272,10 @@
     intenter aucune action, subit un malus de -2 à la CA et perd son éventuel bonus
     de Dextérité à la CA. Les attaquants reçoivent un bonus à l'attaque de +4 lorsqu'ils
     tentent une manoeuvre de combat contre un ennemi étourdi.
+  DescriptionHTML: Un personnage étourdi laisse tomber ce qu’il avait en main, ne
+    peut intenter aucune action, subit un malus de -2 à la CA et perd son éventuel
+    bonus de Dextérité à la CA. Les attaquants reçoivent un bonus à l'attaque de +4
+    lorsqu'ils tentent une manoeuvre de combat contre un ennemi étourdi.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Étourdi_11
   
 - Nom: Fasciné
@@ -187,6 +289,15 @@
     Toute menace évidente, comme dégainer une arme, lancer un sort ou tirer sur la
     créature, rompt immédiatement l’effet de fascination. Par une action simple, il
     est possible de secouer une créature fascinée pour lui faire reprendre ses esprits.
+  DescriptionHTML: Une créature est fascinée par un sort ou un effet surnaturel.
+    Tant que l’effet reste en place, une créature fascinée reste assise ou debout,
+    dans l’incapacité d’effectuer d’autre action que se concentrer sur l’effet en
+    question. Elle reçoit un malus de -4 sur les tests de compétence joués en réaction,
+    comme les tests de Perception. L’arrivée d’une menace potentielle (comme une créature
+    hostile) donne droit à un nouveau jet de sauvegarde contre l’effet de fascination.
+    Toute menace évidente, comme dégainer une arme, lancer un sort ou tirer sur la
+    créature, rompt immédiatement l’effet de fascination. Par une action simple, il
+    est possible de secouer une créature fascinée pour lui faire reprendre ses esprits.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fasciné_12
   
 - Nom: Fatigué
@@ -195,18 +306,27 @@
     Il subit un malus de -2 en Force ainsi qu’en Dextérité. La fatigue se dissipe
     au bout de huit heures de repos total. Un personnage fatigué devient épuisé dès
     qu’il fait quoi que ce soit qui causerait un nouvel état fatigué.
+  DescriptionHTML: Un personnage fatigué est dans l’incapacité de courir et de charger.
+    Il subit un malus de -2 en Force ainsi qu’en Dextérité. La fatigue se dissipe
+    au bout de huit heures de repos total. Un personnage fatigué devient épuisé dès
+    qu’il fait quoi que ce soit qui causerait un nouvel état fatigué.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fatigué_13
   
 - Nom: Fiévreux
   Source: MJ
   Description: Le personnage reçoit un malus de -2 aux jets d’attaque, de dégâts
     d’armes et de sauvegarde ainsi qu’aux tests de compétence et de caractéristique.
+  DescriptionHTML: Le personnage reçoit un malus de -2 aux jets d’attaque, de dégâts
+    d’armes et de sauvegarde ainsi qu’aux tests de compétence et de caractéristique.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Fiévreux_14
   
 - Nom: Hébété
   Source: MJ
   Description: La créature est incapable d’agir de manière normale. Elle est dans
     l’incapacité d’accomplir la moindre action, mais ne subit aucun malus à la CA.
+  DescriptionHTML: La créature est incapable d’agir de manière normale. Elle est
+    dans l’incapacité d’accomplir la moindre action, mais ne subit aucun malus à la
+    CA.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Hébété_15
   
 - Nom: Hors de combat
@@ -231,6 +351,24 @@
     contraire, il subit 1 point de dégâts mais ne tombe pas inconscient. Dès qu’il
     commence à récupérer des points de vie, il ne risque plus d’en perdre de façon
     naturelle, même si son total est toujours négatif.'
+  DescriptionHTML: Un individu dont le total de points de vie est exactement de
+    0, ou dont le total est inférieur mais qui est stabilisé et conscient, est hors
+    de combat. L’activité d’un personnage hors de combat est réduite à une action
+    simple ou une action de mouvement par round (mais pas une de chaque, ni une action
+    complexe). Sa vitesse de déplacement habituelle est réduite de moitié. Il n’y
+    a pas de risque à ce qu’il fasse des actions de mouvement, mais il subit 1 point
+    de dégâts après chaque action simple (ainsi que d’autres actions fatigantes, comme
+    lancer un sort à incantation rapide par une action libre). À moins que cette action
+    lui ait permis de régénérer des points de vie, il est maintenant à un total de
+    points de vie négatif et mourant.<br/><br/>Un personnage hors de combat dont le
+    total de points de vie est négatif récupère des points de vie normalement si quelqu’un
+    s’occupe de lui. S’il est seul, peut se reposer huit heures puis faire un test
+    de Constitution dont le DD sera de 10. Il subit un malus égal à son nombre de
+    points de vie négatifs pour ce test. S’il le réussit, il commencera à récupérer
+    des points de vie normalement. Dans le cas contraire, il subit 1 point de dégâts
+    mais ne tombe pas inconscient. Dès qu’il commence à récupérer des points de vie,
+    il ne risque plus d’en perdre de façon naturelle, même si son total est toujours
+    négatif.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Hors_de_combat_16
   
 - Nom: Immobilisé (en situation de lutte)
@@ -245,6 +383,16 @@
     un pouvoir magique, il lui faut réussir un test de Concentration (DD 10 + BMO
     de son adversaire + niveau du sort) ou le sort est perdu. Immobilisé est une version
     plus puissante d’agrippé et leurs effets ne se cumulent pas.
+  DescriptionHTML: Une créature immobilisée est fermement retenue et ne peut pas
+    entreprendre la moindre action. Elle ne peut pas se déplacer et elle ne bénéficie
+    pas de son bonus à la Dextérité. Elle subit un malus de -4 à sa CA. Même si elle
+    peut toujours tenter de se libérer en utilisant un test de manœuvre de combat
+    ou la compétence Évasion, ses actions sont également limitées. Elle ne peut lancer
+    aucun sort qui exige une composante somatique ou matérielle, mais elle est capable
+    de parler ou d’entreprendre des actions mentales. Si elle veut lancer un sort
+    ou utiliser un pouvoir magique, il lui faut réussir un test de Concentration (DD
+    10 + BMO de son adversaire + niveau du sort) ou le sort est perdu. Immobilisé
+    est une version plus puissante d’agrippé et leurs effets ne se cumulent pas.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashxPathfinder-RPG.lutte.ashx
   
 - Nom: Inconscient
@@ -253,6 +401,10 @@
     Un personnage sombre dans l’inconscience quand son total de points de vie tombe
     en dessous de 0 (mais pas plus que sa valeur de Constitution), mais aussi quand
     il encaisse plus de points de dégâts non-létaux qu’il lui reste de points de vie.
+  DescriptionHTML: Un personnage inconscient est sans connaissance et sans défense.
+    Un personnage sombre dans l’inconscience quand son total de points de vie tombe
+    en dessous de 0 (mais pas plus que sa valeur de Constitution), mais aussi quand
+    il encaisse plus de points de dégâts non-létaux qu’il lui reste de points de vie.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Inconscient_18
   
 - Nom: Intangible
@@ -262,6 +414,11 @@
     de la part d’armes magiques, de sorts, de pouvoirs magiques et d’effets surnaturels.
     Cependant, les autres créatures intangibles, les effets intangibles et les effets
     de force infligent eux des dommages normaux.
+  DescriptionHTML: Dénuées de corps physique, les créatures intangibles sont immunisées
+    contre les attaques non-magiques. Elles ne subissent que la moitié des dommages
+    de la part d’armes magiques, de sorts, de pouvoirs magiques et d’effets surnaturels.
+    Cependant, les autres créatures intangibles, les effets intangibles et les effets
+    de force infligent eux des dommages normaux.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Intangible_19
   
 - Nom: Invisible
@@ -269,6 +426,9 @@
   Description: Indétectable à l’œil nu. Les créatures invisibles bénéficient d’un
     bonus de +2 aux jets d’attaque et leur cible perd son éventuel bonus de Dextérité
     à la CA. Voir « Invisibilité » dans la section des capacités spéciales.
+  DescriptionHTML: Indétectable à l’œil nu. Les créatures invisibles bénéficient
+    d’un bonus de +2 aux jets d’attaque et leur cible perd son éventuel bonus de Dextérité
+    à la CA. Voir « Invisibilité » dans la section des capacités spéciales.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Invisible_20
   
 - Nom: Mort
@@ -284,6 +444,17 @@
     que soit le sort qui le ramène d’entre les morts, le personnage n’a pas à se soucier
     de la rigidité cadavérique, la décomposition et autres effets secondaires déplaisants
     de la mort.
+  DescriptionHTML: Le personnage est arrivé à un total de points de vie négatifs
+    égal à sa valeur de Constitution ou une valeur de Constitution de 0, ou a directement
+    été achevé par un sort, un effet ou des dégâts excessifs. L’âme du personnage
+    quitte son enveloppe corporelle. On ne peut plus soigner un personnage mort que
+    ce soit par des moyens ordinaires ou magiques, mais il peut être ramené à la vie
+    par magie. Un corps sans vie se décompose normalement si on ne le préserve pas
+    magiquement mais le sort qui le ramène à la vie lui rend sa pleine santé ou l’état
+    dans lequel il se trouvait au moment de la mort (selon le sort utilisé). Quel
+    que soit le sort qui le ramène d’entre les morts, le personnage n’a pas à se soucier
+    de la rigidité cadavérique, la décomposition et autres effets secondaires déplaisants
+    de la mort.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Mort_21
   
 - Nom: Mourant
@@ -298,6 +469,16 @@
     de faire ce test. Un 20 naturel est un succès automatique. S’il le rate, il perd
     1 point de vie. Une créature mourante meurt quand son nombre de points de vie
     négatifs égale sa valeur de Constitution.
+  DescriptionHTML: Le personnage est inconscient et en train de mourir. Une créature
+    qui a un nombre de points de vie négatif et qui n’est pas stabilisée agonise.
+    Une créature agonisante ne peut pas entreprendre la moindre action. À son tour
+    à chaque round (en commençant par celui où il est tombé en dessous de 0 point
+    de vie) et jusqu’à ce que sont état soit stable ou qu’il meure, le personnage
+    doit faire un test de Constitution dont le DD sera de 10. Il subit un malus égal
+    à son nombre de points de vie négatifs. Un personnage stabilisé n’a pas besoin
+    de faire ce test. Un 20 naturel est un succès automatique. S’il le rate, il perd
+    1 point de vie. Une créature mourante meurt quand son nombre de points de vie
+    négatifs égale sa valeur de Constitution.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Mourant_22
   
 - Nom: Nauséeux
@@ -307,6 +488,11 @@
     de ceux qu’il a jetés précédemment, bref de faire quoi que ce soit nécessitant
     un minimum de concentration. Ses capacités d’action sont limitées à une action
     de mouvement par round.
+  DescriptionHTML: Souffrant de violentes douleurs abdominales, un personnage dans
+    cet état est incapable d’attaquer, de lancer le moindre sort ou de maintenir l’effet
+    de ceux qu’il a jetés précédemment, bref de faire quoi que ce soit nécessitant
+    un minimum de concentration. Ses capacités d’action sont limitées à une action
+    de mouvement par round.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Nauséeux_23
   
 - Nom: Paniqué
@@ -323,6 +509,15 @@
 
     Un individu paniqué est dans un état de terreur plus intense que s’il était secoué
     ou effrayé.'
+  DescriptionHTML: Un personnage paniqué lâche ce qu’il tient en main et s’enfuit
+    au hasard en s’éloignant de la source de sa peur et sans s’approcher des autres
+    sources de danger potentielles. Il ne peut effectuer aucune autre action. Il subit
+    un malus de -2 aux jets de sauvegarde, ainsi qu’aux tests de compétence et de
+    caractéristique. S’il se retrouve acculé, il se recroqueville sur lui-même sans
+    pouvoir attaquer (il utilise alors généralement l’action de défense totale). Il
+    peut se servir de ses pouvoirs ou de ses sorts pour s’enfuir (il y est même obligé
+    si ceux-ci constituent la seule façon de s’enfuir).<br/><br/>Un individu paniqué
+    est dans un état de terreur plus intense que s’il était secoué ou effrayé.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Paniqué_24
   
 - Nom: Paralysé
@@ -335,6 +530,12 @@
 
 
     Un personnage paralysé est sans défense.'
+  DescriptionHTML: Incapable de bouger ou d’agir, figé sur place, le personnage
+    a une valeur effective de Force et de Dextérité de 0, mais peut tenter des actions
+    mentales. Une créature en vol à ce moment ne peut plus battre des ailes et tombe.
+    Un personnage qui nage peut se noyer. Il est possible d’entrer dans le même espace
+    qu’une créature paralysée, alliée ou non, mais le traverser compte comme deux
+    cases de déplacement.<br/><br/>Un personnage paralysé est sans défense.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Paralysé_25
   
 - Nom: Pétrifié
@@ -347,6 +548,14 @@
     sera marqué des mêmes blessures quand on le ramènera dans le monde des vivants.
     On doit alors définir les conséquences en termes de perte permanente de points
     de vie ou handicap.
+  DescriptionHTML: Un personnage pétrifié a été changé en pierre. Il est tenu pour
+    inconscient. Si la statue qu’il constitue n’est que légèrement lézardée ou si
+    les morceaux cassés sont accolés à leur place quand on le retransforme en être
+    de chair, son corps se reforme sans qu’il en souffre. Par contre, si la statue
+    a été sérieusement abîmée (bras cassé et réduit en poussière ou oublié par terre,
+    etc.), le personnage sera marqué des mêmes blessures quand on le ramènera dans
+    le monde des vivants. On doit alors définir les conséquences en termes de perte
+    permanente de points de vie ou handicap.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Pétrifié_26
   
 - Nom: Pris au dépourvu
@@ -354,6 +563,9 @@
   Description: Tout personnage n’ayant pas encore entamé d’action au cours d’un
     combat est automatiquement pris au dépourvu. Il perd son éventuel bonus de Dextérité
     à la CA et au DMD et n’a pas la possibilité de lancer une attaque d’opportunité.
+  DescriptionHTML: Tout personnage n’ayant pas encore entamé d’action au cours d’un
+    combat est automatiquement pris au dépourvu. Il perd son éventuel bonus de Dextérité
+    à la CA et au DMD et n’a pas la possibilité de lancer une attaque d’opportunité.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Pris_au_dépourvu_27
   
 - Nom: Recroquevillé sur soi-même
@@ -361,6 +573,9 @@
   Description: Le personnage éprouve une telle terreur qu’il est dans l’incapacité
     de faire la moindre action. Il reçoit un malus de -2 à la CA et perd son éventuel
     bonus de Dextérité à la CA.
+  DescriptionHTML: Le personnage éprouve une telle terreur qu’il est dans l’incapacité
+    de faire la moindre action. Il reçoit un malus de -2 à la CA et perd son éventuel
+    bonus de Dextérité à la CA.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Recroquevillé_sur_soi-même_28
   
 - Nom: Saignement
@@ -377,6 +592,15 @@
     Lorsque deux sources infligent des hémorragies de même nature, appliquez le résultat
     le plus handicapant. Dans l’exemple précédent, la diminution permanente est pire
     que l’affaiblissement temporaire.'
+  DescriptionHTML: La créature se met à saigner et subit des dommages au début de
+    chaque round.<br/><br/>Il est possible d’arrêter l’hémorragie en réussissant un
+    test de Premiers secours (DD 15) ou en utilisant un sort curatif (et ce même si
+    le saignement affecte une caractéristique). Il arrive parfois que le personnage
+    subisse un saignement qui lui inflige des affaiblissements temporaires ou des
+    diminutions permanentes de caractéristique. Ces dégâts ne se cumulent pas, sauf
+    s’ils sont de nature différente. Lorsque deux sources infligent des hémorragies
+    de même nature, appliquez le résultat le plus handicapant. Dans l’exemple précédent,
+    la diminution permanente est pire que l’affaiblissement temporaire.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Saignement_29
   
 - Nom: Sans défense
@@ -403,6 +627,23 @@
 
     Les créatures invulnérables aux coups critiques le sont également contre les tentatives
     de coup de grâce.'
+  DescriptionHTML: Un personnage peut se retrouver paralysé, immobilisé par un sort,
+    ligoté, endormi, inconscient ou à la merci de ses ennemis d’une façon ou d’une
+    autre. Un personnage sans défense possède une valeur effective de Dextérité de
+    0 (soit un modificateur de -5). Toute attaque de corps à corps lancée contre le
+    personnage s’effectue à +4 au jet (ce qui revient à attaquer un adversaire à terre).
+    Les attaques à distance ne profitent d’aucun bonus. Un roublard à la possibilité
+    de tenter une attaque sournoise contre lui.<br/><br/>Au prix d’une action complexe,
+    un ennemi peut essayer d’achever le personnage à l’aide d’une arme de corps à
+    corps. On peut aussi porter un coup de grâce à l’aide d’un arc ou d’une arbalète,
+    à condition de se trouver à moins de 1,50 m de l’individu sans défense (c’est-à-dire
+    d’occuper une position adjacente). L’agresseur touche automatiquement et l’attaque
+    est considérée comme un coup critique. Un roublard ajoute ses dégâts d’attaque
+    sournoise quand il essaye de délivrer un coup de grâce. Même si la cible survit,
+    elle doit effectuer avec succès un jet de Vigueur (DD 10 + nombre de points de
+    dégâts infligés) sous peine de succomber au choc. Tenter d’achever un ennemi sans
+    défense provoque une attaque d’opportunité.<br/><br/>Les créatures invulnérables
+    aux coups critiques le sont également contre les tentatives de coup de grâce.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Sans_défense_30
   
 - Nom: Secoué
@@ -410,6 +651,9 @@
   Description: Le personnage reçoit un malus de -2 aux jets d’attaque et de sauvegarde,
     ainsi qu’aux tests de compétence et de caractéristique. Être secoué représente
     un état de terreur moins avancé qu’être effrayé ou paniqué.
+  DescriptionHTML: Le personnage reçoit un malus de -2 aux jets d’attaque et de
+    sauvegarde, ainsi qu’aux tests de compétence et de caractéristique. Être secoué
+    représente un état de terreur moins avancé qu’être effrayé ou paniqué.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Secoué_31
   
 - Nom: Stable
@@ -428,6 +672,18 @@
     des points de vie. Chaque heure, il doit faire un jet de Constitution afin de
     rester stable (comme s’il recevait l’aide de quelqu’un), mais à chaque fois qu’il
     échoue, il perd 1 point de vie.'
+  DescriptionHTML: Un personnage qui était mourant mais qui a cessé de perdre des
+    points de vie (et dont le total de points de vie est toujours négatif) est stable.
+    Le personnage n’est plus mourant mais reste inconscient. S’il est devenu stable
+    grâce à une assistance extérieure (par exemple, grâce à un sort curatif ou à la
+    compétence Premiers secours), il ne perd plus de points de vie. Chaque heure qui
+    passe, il doit faire un jet de Constitution afin de reprendre ses esprits et de
+    ne plus être que hors de combat (même si son total de points de vie reste négatif),
+    en tenant compte d’un malus égal à son total de points de vie négatifs.<br/><br/>S’il
+    est devenu stable sans aide extérieure, il risque de recommencer à perdre des
+    points de vie. Chaque heure, il doit faire un jet de Constitution afin de rester
+    stable (comme s’il recevait l’aide de quelqu’un), mais à chaque fois qu’il échoue,
+    il perd 1 point de vie.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Stable_32
   
 - Nom: Vidé de son énergie
@@ -435,6 +691,9 @@
   Description: Le personnage a contracté un ou plusieurs niveaux négatifs, qui peuvent
     devenir permanents. S’il a au moins autant de niveaux négatifs que de DV, il meurt
     instantanément.
+  DescriptionHTML: Le personnage a contracté un ou plusieurs niveaux négatifs, qui
+    peuvent devenir permanents. S’il a au moins autant de niveaux négatifs que de
+    DV, il meurt instantanément.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Vidé_de_son_énergie_33
   
 - Nom: Aveuglé (avantage)
@@ -443,6 +702,10 @@
     d’un sort du registre de la lumière pour contrer la cécité. Quand un lanceur de
     sorts lance un sort du registre de la lumière, il peut prendre le risque d’avoir
     20% d’échec. S’il réussit à le lancer, il dissipe la cécité.
+  DescriptionHTML: Un lanceur de sorts aveuglé peut utiliser une partie de l’énergie
+    d’un sort du registre de la lumière pour contrer la cécité. Quand un lanceur de
+    sorts lance un sort du registre de la lumière, il peut prendre le risque d’avoir
+    20% d’échec. S’il réussit à le lancer, il dissipe la cécité.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Aveuglé_34
   
 - Nom: Chancelant (avantage)
@@ -451,6 +714,10 @@
     décider de courir 20% de risques d’échec du sort en lançant un sort avec un temps
     d’incantation d’une action rapide ou simple. S’il réussit, il peut faire une action
     de mouvement directement après avoir lancé le sort.
+  DescriptionHTML: Une fois par jour, quand le lanceur de sorts est secoué, il peut
+    décider de courir 20% de risques d’échec du sort en lançant un sort avec un temps
+    d’incantation d’une action rapide ou simple. S’il réussit, il peut faire une action
+    de mouvement directement après avoir lancé le sort.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Chancelant_35
   
 - Nom: Confus (avantage)
@@ -462,6 +729,13 @@
     de 1. Le lanceur de sorts gagne aussi un bonus de compétence de +2 au test de
     niveau de lanceur de sorts pour vaincre la résistance à la magie vis-à-vis de
     ces sorts.
+  DescriptionHTML: Quand le personnage est confus (temporairement ou de façon permanente,
+    comme avec un sort ou un effet d’aliénation mentale), il peut puiser dans cette
+    confusion pendant ses périodes de lucidité. Quand le lanceur de sorts peut agir
+    normalement, le DD de ses sorts à effet de confusion ou d'aliénation mentale augmente
+    de 1. Le lanceur de sorts gagne aussi un bonus de compétence de +2 au test de
+    niveau de lanceur de sorts pour vaincre la résistance à la magie vis-à-vis de
+    ces sorts.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Confus_36
   
 - Nom: Ébloui (avantage)
@@ -471,6 +745,11 @@
     Quand un lanceur de sorts ébloui lance un sort du registre de l’obscurité, il
     peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer
     quand même, il met un terme à l’éblouissement.
+  DescriptionHTML: Un lanceur de sorts ébloui peut utiliser une partie de l’énergie
+    d’un sort du registre de l’obscurité pour essayer de contrer l’éblouissement.
+    Quand un lanceur de sorts ébloui lance un sort du registre de l’obscurité, il
+    peut décider de courir 20% de risques d’échec du sort. S’il réussit à le lancer
+    quand même, il met un terme à l’éblouissement.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Ébloui_37
   
 - Nom: Empoisonné ou fiévreux (avantage)
@@ -479,6 +758,10 @@
     il peut décider de courir 20% de risques d’échec du sort lorsqu’il lance un sort
     qui inflige un effet de poison ou de fièvre. S’il réussit, le DD des effets de
     poison ou de fièvre de ce sort augmente de 2.
+  DescriptionHTML: Une fois par jour, quand le personnage est empoisonné ou fiévreux,
+    il peut décider de courir 20% de risques d’échec du sort lorsqu’il lance un sort
+    qui inflige un effet de poison ou de fièvre. S’il réussit, le DD des effets de
+    poison ou de fièvre de ce sort augmente de 2.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Empoisonné_ou_fiévreux_38
   
 - Nom: Enchevêtrement (avantage)
@@ -487,6 +770,10 @@
     force peut décider de courir 20% de risques d’échec du sort. S’il réussit à le
     lancer quand même, il met un terme à l’enchevêtrement. S’il était ancré au sol,
     il n’est plus gêné au niveau de ses mouvements mais il est toujours enchevêtré.
+  DescriptionHTML: Un lanceur de sort enchevêtré qui lance un sort du registre de
+    la force peut décider de courir 20% de risques d’échec du sort. S’il réussit à
+    le lancer quand même, il met un terme à l’enchevêtrement. S’il était ancré au
+    sol, il n’est plus gêné au niveau de ses mouvements mais il est toujours enchevêtré.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Enchevêtrement_39
   
 - Nom: En lutte (avantage)
@@ -494,6 +781,9 @@
   Description: Un lanceur de sorts agrippé peut courir 20% de risques d’échec sur
     un sort d’attaque de contact. S’il réussit à le lancer quand même, il gagne un
     bonus de +2 au jet d’attaque contre la créature qui l’agrippe.
+  DescriptionHTML: Un lanceur de sorts agrippé peut courir 20% de risques d’échec
+    sur un sort d’attaque de contact. S’il réussit à le lancer quand même, il gagne
+    un bonus de +2 au jet d’attaque contre la créature qui l’agrippe.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#En_lutte_40
   
 - Nom: Hors de combat (avantage)
@@ -505,6 +795,13 @@
     de lanceur de sorts de plus qu’en réalité. Il doit lancer le sort lui-même, ce
     pouvoir ne permet pas d’augmenter le niveau de lanceur de sorts d’un sort lancé
     à partir d’un objet magique.
+  DescriptionHTML: Un lanceur de sorts hors de combat peut puiser dans sa peur de
+    la mort pour améliorer ses sorts de convocation (guérison). Une fois par jour,
+    quand le personnage est hors de combat suite à des dégâts reçus, il peut lancer
+    un unique sort de convocation (guérison) sur sa personne comme s’il possédait
+    deux niveaux de lanceur de sorts de plus qu’en réalité. Il doit lancer le sort
+    lui-même, ce pouvoir ne permet pas d’augmenter le niveau de lanceur de sorts d’un
+    sort lancé à partir d’un objet magique.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Hors_de_combat_41
   
 - Nom: Nauséeux (avantage)
@@ -514,6 +811,11 @@
     lanceur de sorts nauséeux lance un sort de convocation (guérison), il peut décider
     de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même,
     il met un terme à la nausée.
+  DescriptionHTML: Un lanceur de sorts nauséeux peut utiliser une partie de l’énergie
+    d’un sort de convocation (guérison) pour tenter de contrer la nausée. Quand un
+    lanceur de sorts nauséeux lance un sort de convocation (guérison), il peut décider
+    de courir 20% de risques d’échec du sort. S’il réussit à le lancer quand même,
+    il met un terme à la nausée.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Nauséeux_42
   
 - Nom: Saignement (avantage)
@@ -522,6 +824,10 @@
     sorts de blessure infligent des points de dégâts supplémentaires par dé. Ceci
     s’applique uniquement aux sorts de blessure destinés à blesser, pas à ceux qui
     soignent les morts-vivants.
+  DescriptionHTML: Tant que le lanceur de sorts est affecté par cette condition,
+    ses sorts de blessure infligent des points de dégâts supplémentaires par dé. Ceci
+    s’applique uniquement aux sorts de blessure destinés à blesser, pas à ceux qui
+    soignent les morts-vivants.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Saignement_43
   
 - Nom: Secoué (avantage)
@@ -531,6 +837,11 @@
     de la peur. Dans ce cas, le DD de ce sort est augmenté de 1. Il doit lancer le
     sort lui-même, ce pouvoir ne permet pas d’augmenter le niveau de lanceur de sorts
     d’un sort lancé à partir d’un objet magique.
+  DescriptionHTML: Quand un lanceur de sorts est secoué, il peut, une fois par jour,
+    puiser dans ses peurs pour augmenter la puissance d’un unique sort du registre
+    de la peur. Dans ce cas, le DD de ce sort est augmenté de 1. Il doit lancer le
+    sort lui-même, ce pouvoir ne permet pas d’augmenter le niveau de lanceur de sorts
+    d’un sort lancé à partir d’un objet magique.<br/><br/>
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Secoué_44
   
 - Nom: Sourd (avantage)
@@ -539,6 +850,11 @@
     sort du registre du son pour essayer de contrer la surdité. Quand un lanceur de
     sort sourd lance un sort du registre du son, il peut décider de courir 20% de
     risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme
+    à la surdité.
+  DescriptionHTML: Un lanceur de sorts sourd peut utiliser une partie de l’énergie
+    d’un sort du registre du son pour essayer de contrer la surdité. Quand un lanceur
+    de sort sourd lance un sort du registre du son, il peut décider de courir 20%
+    de risques d’échec du sort. S’il réussit à le lancer quand même, il met un terme
     à la surdité.
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Sourd_45
   
