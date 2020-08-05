@@ -43,6 +43,9 @@ for d in data:
       d['Niveau'],                      # niveau
       d['Nom'].replace(":"," -"))       # nom
     
+    description = d['DescriptionHTML'] if 'DescriptionHTML' in d else d['Description'].replace("\n", "<br/>")
+    description = improveDescription(description, name)
+    
     el = {
         "flags": { 'class': d['Classe'], 'archetype': 'base'},
         "name": name,
@@ -61,7 +64,7 @@ for d in data:
                     d['Classe'],
                     d['Niveau'],
                     "oui" if 'Auto' in d and d['Auto'] else "non",
-                    d['DescriptionHTML'] if 'DescriptionHTML' in d else d['Description'].replace("\n", "<br/>"),
+                    description,
                     d['Référence']),
                 "chat": "",
                 "unidentified": ""
