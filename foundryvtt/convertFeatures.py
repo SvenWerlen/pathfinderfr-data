@@ -74,6 +74,16 @@ for d in data:
             "source": d['Source'],
         }
     }
+                        
+    abilityType = None
+    if "(sur)" in name.lower():
+      abilityType = "su"
+    elif "(mag)" in name.lower():
+      abilityType = "sp"
+    elif "(ext)" in name.lower():
+      abilityType = "ex"
+    if abilityType:
+      el["data"]["abilityType"] = abilityType
     
     level = d['Niveau']
     if level <= 5:
