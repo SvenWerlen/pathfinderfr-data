@@ -83,17 +83,17 @@ for m in data:
         "data": {
             "description": {
                 "value": ("<div class=\"pf2frDescr\"><p>"+
-                        "<b>Type: </b>{}<br/>" +
-                        "<b>Prix: </b>{}<br/>" +
-                        "<b>Emplacement: </b>{}<br/>" +
-                        "<b>Poids: </b>{}<br/>" +
-                        "<b>Aura: </b>{}<br/>" +
-                        "<b>NLS: </b>{}<br/></p>" +
+                        "<b>Type : </b>{}<br/>" +
+                        "<b>Prix : </b>{}<br/>" +
+                        "<b>Emplacement : </b>{}<br/>" +
+                        "<b>Poids : </b>{}<br/>" +
+                        "<b>Aura : </b>{}<br/>" +
+                        "<b>NLS : </b>{}<br/></p>" +
                         "<h2>Description</h2><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>" +
+                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>" +
                         "<h2>Fabrication</h2><p>" +
-                        "<b>Conditions: </b>{}<br/>" +
-                        "<b>Coût: </b>{}<br/></p>" +
+                        "<b>Conditions : </b>{}<br/>" +
+                        "<b>Coût : </b>{}<br/></p>" +
                         "</div>").format(
                     m['Type'] if 'Type' in m else '-',
                     m['Prix'] if 'Prix' in m else '-',

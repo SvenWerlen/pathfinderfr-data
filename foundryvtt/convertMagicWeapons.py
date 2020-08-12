@@ -27,13 +27,13 @@ for w in data:
   
     description = "<p>"
     if 'Résumé' in w:
-        description += "<b>Résumé:</b> %s<br/>" % w['Résumé']
+        description += "<b>Résumé : </b> %s<br/>" % w['Résumé']
     if 'Prix' in w:
-        description += "<b>Prix:</b> %s<br/>" % "{0:n} po".format(w['Prix'])
+        description += "<b>Prix : </b> %s<br/>" % "{0:n} po".format(w['Prix'])
     if 'PrixModif' in w:
-        description += "<b>Modificateur au prix:</b> %s<br/>" % w['PrixModif']
+        description += "<b>Modificateur au prix : </b>%s<br/>" % w['PrixModif']
     if 'Source' in w:
-        description += "<b>Source:</b> %s<br/>" % w['Source']
+        description += "<b>Source : </b>%s<br/>" % w['Source']
     description += "</p>"
     
     description = "<div class=\"pf2frDescr\">%s<h2>Description</h2>%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, w['DescriptionHTML'] if 'DescriptionHTML' in w else w['Description'], w['Référence'])

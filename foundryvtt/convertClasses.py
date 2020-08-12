@@ -75,11 +75,11 @@ for c in data:
             'description': {
                 "value": ("<div class=\"pf2frDescr\">"+
                         "<p><i>{}</i></p>" +
-                        "<p><b>Dé de vie: </b>{}<br/>" +
-                        "<b>Alignement: </b>{}<br/>" +
-                        "<b>Rangs/niveau: </b>{}</p>" +
+                        "<p><b>Dé de vie : </b>{}<br/>" +
+                        "<b>Alignement : </b>{}<br/>" +
+                        "<b>Rangs/niveau : </b>{}</p>" +
                         "<p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
+                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     description,
                     c['DésDeVie'],
                     c['Alignement'],

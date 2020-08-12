@@ -56,11 +56,11 @@ for d in data:
         "data": {
             "featType": "classFeat",
             "description": {
-                "value": ("<div class=\"pf2frDescr\"><p><b>Classe: </b>{}<br/>" +
-                        "<b>Niveau: </b>{}<br/>" +
-                        "<b>De base? </b>{}<br/></p>" +
+                "value": ("<div class=\"pf2frDescr\"><p><b>Classe : </b>{}<br/>" +
+                        "<b>Niveau : </b>{}<br/>" +
+                        "<b>De base : </b>{}<br/></p>" +
                         "<h2>Description</h2><p>{}</p>" +
-                        "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
+                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
                     d['Classe'],
                     d['Niveau'],
                     "oui" if 'Auto' in d and d['Auto'] else "non",

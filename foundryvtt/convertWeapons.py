@@ -75,18 +75,18 @@ for w in data:
       "type": "weapon",
       "data": {
           "description": {
-              "value": ("<p><b>Catégorie: </b>{}<br/>" +
-                          "<b>Sous-catégorie: </b>{}<br/>" +
-                          "<b>Prix: </b>{}<br/>" +
-                          "<b>Dégâts (P): </b>{}<br/>" +
-                          "<b>Dégâts (M): </b>{}<br/>" +
-                          "<b>Critique: </b>{}<br/>" +
-                          "<b>Portée: </b>{}<br/>" +
-                          "<b>Poids: </b>{}<br/>" +
-                          "<b>Type: </b>{}<br/>" +
-                          "<b>Spécial: </b>{}<br/></p>" +
+              "value": ("<p><b>Catégorie : </b>{}<br/>" +
+                          "<b>Sous-catégorie : </b>{}<br/>" +
+                          "<b>Prix : </b>{}<br/>" +
+                          "<b>Dégâts (P) : </b>{}<br/>" +
+                          "<b>Dégâts (M) : </b>{}<br/>" +
+                          "<b>Critique : </b>{}<br/>" +
+                          "<b>Portée : </b>{}<br/>" +
+                          "<b>Poids : </b>{}<br/>" +
+                          "<b>Type : </b>{}<br/>" +
+                          "<b>Spécial : </b>{}<br/></p>" +
                           "<h2>Description</h2><p>{}</p>" +
-                          "<p><b>Référence: </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
+                          "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
                       w['Catégorie'] if 'Catégorie' in w else '-',
                       w['Sous-catégorie'] if 'Sous-catégorie' in w else '-',
                       w['Prix'] if 'Prix' in w else '-',
