@@ -45,6 +45,7 @@ for d in data:
     description = description[1:].strip()
   
   if "Race" in d:
+    name = "%s (%s)" % (name, d['Race'])
     description = "<p><i>%s</i></p><p><b>Race :</b> ##racesfr|%s##<br/><b>Remplace :</b> %s<p/><p><b>Référence :</b> <a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
       % (description, d['Race'], replace if 'Remplace' in d else "-", d['Référence'])
   else:
