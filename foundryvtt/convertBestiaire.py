@@ -8,6 +8,8 @@ import sys
 import re
 import math
 
+from libData import *
+
 data = None
 print("Opening and parsing file...")
 #with open("../data/bestiaire-mini.yml", 'r') as stream:
@@ -24,7 +26,7 @@ KEYS = ['Nom', 'For', 'Dex', 'Con', 'Int', 'Sag', 'Cha', 'PV', 'CA', 'BBA', 'BMO
 def isValid(obj, keys):
   for key in keys:
     if not key in obj:
-      print("Créature '%s' imcomplète (%s)" % (obj['Nom'], key))
+      print("Créature '%s' incomplète (%s)" % (obj['Nom'], key))
       return False
   return True
 
@@ -60,12 +62,7 @@ def getNaturalBonus(calcul):
     return int(num.group(1))
   return 0  
 
-# calcul le nombre de points de vie 
-# DV 5 avec D10 et Con +3 => 5 * (3 + 5.5) = 42
-def computeHP(modConstitution, hp):
-  return math.floor(hp[0]*(modConstitution + (0.5 * (hp[1]+1))))
-
-# calcul le type de BBA
+# calcule le type de BBA
 def getBBAStrength(name, value, level):
   if value == level:
     return "high"
@@ -76,6 +73,18 @@ def getBBAStrength(name, value, level):
   else:
     print("Unable to compute BBA for %s " % name)
     return ""
+
+# génère un JSON pour modification
+def newBuff(formula, target, subTarget, modifier):
+  return {
+    "formula": formula,
+    "operator": "add",
+    "target": target,
+    "subTarget": subTarget,
+    "modifier": modifier,
+    "priority": 0,
+    "value": 0
+  }
 
 # génère les attaques
 def fillAttacks(liste, b):
@@ -140,7 +149,7 @@ for b in data:
   
   # différence d'initiative (à ajouter en tant que modif)
   diffInit   = b['Init'] - getMod(b['Dex']) 
-  diffPV     = b['PV']['valeur'] - computeHP(getMod(b['Con']), hp)
+  diffPV     = b['PV']['valeur'] - hp[0] * getMod(b['Con'])
   diffCASize = b['CA']['contact'] - getMod(b['Dex']) - 10
   diffCA     = b['CA']['valeur'] - getMod(b['Dex']) - naturalAC - diffCASize - 10
   diffFort   = b['Vig'] - getMod(b['Con'])
@@ -183,15 +192,16 @@ for b in data:
           "value": b['PV']['valeur'],
           "max": b['PV']['valeur'] 
         },
+        "hd": { "total": hp[0] },
         "savingThrows": { 
           "fort": { "total": b['Vig'] },
           "ref": { "total": b['Réf'] },
           "will": { "total": b['Vol'] }
         },
-        "speed": { "land": { "base": b['VD']['cases'] if 'VD' in b else 0, "total": b['VD']['cases'] if 'VD' in b else 0 } }
+        "speed": { "land": { "base": b['VD']['cases']*5 if 'VD' in b else 0, "total": b['VD']['cases']*5 if 'VD' in b else 0 } }
       },
       "details": {
-        "cr": b['FP'] if 'FP' in b else 0,
+        "cr": { "base": b['FP'] if 'FP' in b else 0, "total": b['FP'] if 'FP' in b else 0 },
         "xp": { "value": b['PX'] if 'PX' in b else 0 },
         "notes": { "value": '<div class="pf1notes">' + b['Description'] + '</div>' }
       },
@@ -212,43 +222,42 @@ for b in data:
   }
   
   bClass = {
-    "name": "Generic",
+    "name": "Classe générique (bestiaire)",
     "type": "class",
     "data": { 
       "description": { "value": "Classe générique pour configurer PV" },
-      "levels": hp[0],
+      "classType": "racial",
+      "level": hp[0],
       "hd": hp[1],
-      "hp": 0,
+      "hp": diffPV,
       "bab": bbaStrength,
       "savingThrows": { 
         "fort": { "value": "" },
         "ref": { "value": "" },
         "will": { "value": "" }
-      }
+      },
     }
   }
   el["items"].append(bClass)
   
   if diffInit != 0:
-    buffs["data"]["changes"].append([str(diffInit), "misc", "init", "racial"])
-  if diffPV != 0:
-    buffs["data"]["changes"].append([str(diffPV), "misc", "mhp", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffInit), "misc", "init", "racial"))
   if diffCA != 0:
-    buffs["data"]["changes"].append([str(diffCA), "ac", "aac", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffCA), "ac", "aac", "racial"))
   if diffCASize != 0:
-    buffs["data"]["changes"].append([str(diffCASize), "ac", "ac", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffCASize), "ac", "ac", "racial"))
   if len(bbaStrength) == 0:
-    buffs["data"]["changes"].append([str(b['BBA']), "attack", "attack", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(b['BBA']), "attack", "attack", "racial"))
   if diffFort != 0:
-    buffs["data"]["changes"].append([str(diffFort), "savingThrows", "fort", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffFort), "savingThrows", "fort", "racial"))
   if diffRef != 0:
-    buffs["data"]["changes"].append([str(diffRef), "savingThrows", "ref", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffRef), "savingThrows", "ref", "racial"))
   if diffWill != 0:
-    buffs["data"]["changes"].append([str(diffWill), "savingThrows", "will", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffWill), "savingThrows", "will", "racial"))
   if diffBMO != 0:
-    buffs["data"]["changes"].append([str(diffBMO), "misc", "cmb", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffBMO), "misc", "cmb", "racial"))
   if diffDMD != 0:
-    buffs["data"]["changes"].append([str(diffDMD), "misc", "cmd", "racial"])
+    buffs["data"]["changes"].append(newBuff(str(diffDMD), "misc", "cmd", "racial"))
   
   fillAttacks(el["items"],b)
   el["items"].append(buffs)
@@ -258,7 +267,7 @@ for b in data:
 list = mergeWithLetContribute(list, "letscontribute/bestiaryfr.json")
 
 # écrire le résultat dans le fichier d'origine
-outFile = open("data/beastiary.json", "w")
+outFile = open("data/bestiary.json", "w")
 outFile.write(json.dumps(list, indent=3))
 
 print("%s creatures ignored!" % ignored)
