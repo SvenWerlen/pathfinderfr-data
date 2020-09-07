@@ -304,7 +304,7 @@
             {
                "subTarget": "effect",
                "target": "attacks",
-               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages +[[ceil(@classes.roublard.level / 2)]]d6"
+               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages sournois +[[ceil(@classes.roublard.level / 2)]]"
             }
          ],
          "featType": "feat",
@@ -52379,7 +52379,17 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
