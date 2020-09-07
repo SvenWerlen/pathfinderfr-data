@@ -1,0 +1,122 @@
+{
+   "Mains br\u00fblantes": {
+      "data": {
+         "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "(min(5, @cl))D4",
+                  "feu"
+               ]
+            ]
+         },
+         "measureTemplate": {
+            "customColor": "#ba2a2a",
+            "customTexture": "",
+            "overrideColor": true,
+            "overrideTexture": false,
+            "size": "15",
+            "type": "cone"
+         },
+         "range": {
+            "long": null,
+            "units": "ft",
+            "value": "15"
+         },
+         "save": {
+            "dc": "0",
+            "description": "R\u00e9flexes, 1/2 d\u00e9g\u00e2ts",
+            "type": "ref"
+         }
+      }
+   },
+   "Rayon de givre": {
+      "data": {
+         "ability": {
+            "attack": "dex",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "rsak",
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "1d3",
+                  "froid"
+               ]
+            ]
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": ""
+         }
+      }
+   },
+   "Soins l\u00e9gers": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "heal",
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "D8+min(@cl,5)",
+                  "Soins"
+               ]
+            ]
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, 1/2 d\u00e9g\u00e2ts (inoffensif) (voir description)",
+            "type": ""
+         }
+      }
+   }
+}

@@ -57,7 +57,7 @@ for el in list:
     continue;
 
   # ignore contributions with initiative != 1
-  if not 'initiativeId' in el or not el['initiativeId'] in [1,2]:
+  if not 'initiativeId' in el or not el['initiativeId'] in [1,2,4]:
     continue;
 
   compendium = el['compendium'].split('.')[1]
@@ -80,11 +80,24 @@ for el in list:
       lists[compendium][el['name']]['data']["changes"] = data["changes"]
       
   # extract image only
-  if el['initiativeId'] == 2:
+  elif el['initiativeId'] == 2:
     if "img" in object:
       lists[compendium][el['name']]["img"] = object["img"]
   
-  
+  # extract spells elements
+  elif el['initiativeId'] == 4:
+    if "ability" in data:
+      lists[compendium][el['name']]['data']["ability"] = data["ability"]
+    if "actionType" in data:
+      lists[compendium][el['name']]['data']["actionType"] = data["actionType"]
+    if "damage" in data:
+      lists[compendium][el['name']]['data']["damage"] = data["damage"]
+    if "measureTemplate" in data:
+      lists[compendium][el['name']]['data']["measureTemplate"] = data["measureTemplate"]
+    if "range" in data:
+      lists[compendium][el['name']]['data']["range"] = data["range"]
+    if "save" in data:
+      lists[compendium][el['name']]['data']["save"] = data["save"]
   
 
 for category in lists:
