@@ -95,6 +95,7 @@ for cat in list:
   if not cat in CATEGORIES or not CATEGORIES[cat]:
     continue;
   
+  print("letscontribute/equip_%sfr.json" % CATEGORIES[cat])
   list[cat] = mergeWithLetContribute(list[cat], "letscontribute/equip_%sfr.json" % CATEGORIES[cat])
 
   # écrire le résultat dans le fichier d'origine

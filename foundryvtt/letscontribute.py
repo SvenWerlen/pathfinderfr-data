@@ -80,15 +80,26 @@ for el in list:
       lists[compendium][el['name']]['data']["changes"] = data["changes"]
       
   # extract image only
-  if el['initiativeId'] == 1:
+  if el['initiativeId'] == 2:
     if "img" in object:
       lists[compendium][el['name']]["img"] = object["img"]
   
+  
+  
 
 for category in lists:
+  categName = category
+  # special case
+  if category.startswith("equip"):
+    categName = "equip_" + category[5:].lower()
+  
   # merge new contributions with existing data
-  filepath = "letscontribute/%s.json" % category
-  existing = json.load(open(filepath, 'r'))
+  filepath = "letscontribute/%s.json" % categName
+  
+  existing = {}
+  if os.path.isfile(filepath) :
+    existing = json.load(open(filepath, 'r'))
+  
   lists[category] = merge(existing, lists[category])
   # write result into file
   outFile = open(filepath, "w")

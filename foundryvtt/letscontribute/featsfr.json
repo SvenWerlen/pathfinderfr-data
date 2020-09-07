@@ -58,7 +58,7 @@
             {
                "subTarget": "effect",
                "target": "attacks",
-               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages +[[ceil(@classes.roublard.level / 2)]]d6"
+               "text": "[BdS] Arme contondante et Attaque sournoise non l\u00e9tale : Dommages sournois +[[ceil(@classes.roublard.level / 2)]]"
             }
          ]
       },
@@ -2097,6 +2097,21 @@
                "priority": 0,
                "subTarget": "skill.sen",
                "target": "skill",
+               "value": 0
+            }
+         ]
+      }
+   },
+   "Vigueur surhumaine": {
+      "data": {
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "fort",
+               "target": "savingThrows",
                "value": 0
             }
          ]
