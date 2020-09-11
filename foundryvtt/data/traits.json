@@ -4244,6 +4244,17 @@
             [
                "Combat"
             ]
+         ],
+         "changes": [
+            {
+               "formula": "2",
+               "modifier": "trait",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "init",
+               "target": "misc",
+               "value": 0
+            }
          ]
       },
       "flags": {},
@@ -4550,10 +4561,21 @@
             [
                "Magie"
             ]
+         ],
+         "changes": [
+            {
+               "formula": "1",
+               "modifier": "trait",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.umd",
+               "target": "skill",
+               "value": 0
+            }
          ]
       },
       "flags": {},
-      "img": "icons/svg/mystery-man.svg"
+      "img": "systems/pf1/icons/skills/red_25.jpg"
    },
    {
       "name": "Dominant",
