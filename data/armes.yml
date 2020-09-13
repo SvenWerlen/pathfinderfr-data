@@ -848,7 +848,7 @@
   Description: Le personnage peut porter un coup avec un écu plutôt que de l’utiliser
     pour se défendre. Les écus sont décrits parmi les armures.
   DescriptionHTML: ' Le personnage peut porter un coup avec un écu plutôt que de
-    l’utiliser pour se défendre. Les écus sont décrits parmi les armures.<br/><br/> '
+    l’utiliser pour se défendre. Les écus sont décrits parmi les armures.<br/><br/>'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Écu
   
 - Nom: Épée longue
@@ -1306,7 +1306,7 @@
   Description: Version plus légère du marteau de guerre, cette arme est généralement
     pourvue d’une tête de métal poli avec une face pour frapper.
   DescriptionHTML: ' Version plus légère du marteau de guerre, cette arme est généralement
-    pourvue d’une tête de métal poli avec une face pour frapper.<br/><br/><br/><br/>'
+    pourvue d’une tête de métal poli avec une face pour frapper.<br/><br/>'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteauléger
   
 - Nom: Rondache
@@ -2032,7 +2032,7 @@
     Cette arme porte des coups puissants à courte portée et on la manie généralement
     en la faisant tournoyer pour lui donner un mouvement constant. Le porteur d’un
     fléau double doit avoir une grande force, à la fois pour manier l’arme efficacement
-    et pour éviter de se fatiguer.  '
+    et pour éviter de se fatiguer.<br/><br/>'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fléaudouble
   
 - Nom: Happe-vilain
@@ -2310,7 +2310,7 @@
     lasso a 2 points de vie et une CA de 10. Il faut réussir un test de Force de DD
     23 pour le briser. Sur une attaque réussie, le lasso se tend, pour l’utiliser
     à nouveau, il faut dépenser une action simple pour faire glisser le noeud pour
-    agrandir la boucle.<br/><br/> '
+    agrandir la boucle.<br/><br/>'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lasso
   
 - Nom: Kama
@@ -2593,7 +2593,7 @@
     Il faut dépenser une action simple pour charger un carreau. <br/><br/>Le don Rechargement
     rapide réduit ce temps à une action de mouvement. Le don Maîtrise des arbalètes
     permet de recharger les deux carreaux par une action de mouvement. La double arbalète
-    tire des carreaux d’arbalète. '
+    tire des carreaux d’arbalète.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Arbalètedouble
   
 - Nom: Arbalète lourde à répétition
@@ -4253,7 +4253,7 @@
     coupecheval sont taillés pour les créatures de taille P.
   DescriptionHTML: ' Fabriquée par les gobelins, cette arme est pour ainsi dire
     une hallebarde à long manche dont la lame est pourvue d’un crochet plus grand.
-    La plupart des coupecheval sont taillés pour les créatures de taille P.<br/><br/>'
+    La plupart des coupecheval sont taillés pour les créatures de taille P.<br/><br/><br/>'
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Coupecheval
   
 - Nom: Crochet ogre
@@ -4617,7 +4617,7 @@
 - Nom: Bâton de flind (gnoll)
   Catégorie: Arme exotique
   Sous-catégorie: Arme de corps à corps à une main
-  Source: MJ
+  Source: MC
   Prix: '9'
   DégâtsP: 1d6
   DégâtsM: 1d8
@@ -4626,6 +4626,14 @@
   Poids: '3'
   Type: C ou P
   Spécial: Croc-en-jambe, Désarmement
+  Description: Cette arme à une main ressemble à un nunchaku en ce qu’elle se compose
+    de deux barres reliées par une lourde chaîne. En revanche, le bâton de flind est
+    fait en fer et couronné d’un anneau de pointes ou de clous. Ce n’est pas une arme
+    légère car il est beaucoup plus lourd qu’un nunchaku.
+  DescriptionHTML: ' Cette arme à une main ressemble à un nunchaku en ce qu’elle
+    se compose de deux barres reliées par une lourde chaîne. En revanche, le bâton
+    de flind est fait en fer et couronné d’un anneau de pointes ou de clous. Ce n’est
+    pas une arme légère car il est beaucoup plus lourd qu’un nunchaku.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Bâtondeflind
   
 - Nom: Épée rhoka
@@ -5300,4 +5308,200 @@
   Type: T
   Spécial: Allonge
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Marteaunainàlongmanche
+  
+- Nom: Faucille à cran d'arrêt (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à une main
+  Source: MJ
+  Prix: '20'
+  DégâtsP: 1d6
+  DégâtsM: 1d8
+  Critique: ×2
+  Portée: —
+  Poids: '5'
+  Type: C
+  Spécial: Allonge, Croc-en-jambe
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Faucilleàcrandarrêt
+  
+- Nom: Coutille à scie circulaire (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à deux mains
+  Source: MJ
+  Prix: '30'
+  DégâtsP: 1d8
+  DégâtsM: 1d10
+  Critique: ×3
+  Portée: —
+  Poids: '6'
+  Type: T
+  Spécial: Allonge, Voir texte
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Coutilleàsciecirculaire
+  
+- Nom: Dorn-dergar naine (nain)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à deux mains
+  Source: MJ
+  Prix: '50'
+  DégâtsP: 1d8
+  DégâtsM: 1d10
+  Critique: ×2
+  Portée: —
+  Poids: 7,5
+  Type: C
+  Spécial: Allonge
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Dorndergarnaine
+  
+- Nom: Échelle de guerre (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à deux mains
+  Source: MJ
+  Prix: '20'
+  DégâtsP: 1d4/1d4
+  DégâtsM: 1d6/1d6
+  Critique: ×2
+  Portée: —
+  Poids: '4'
+  Type: C
+  Spécial: Croc-en-jambe
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Échelledeguerre
+  
+- Nom: Fléau long (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à deux mains
+  Source: MJ
+  Prix: '15'
+  DégâtsP: 1d6
+  DégâtsM: 1d8
+  Critique: ×2
+  Portée: —
+  Poids: '5'
+  Type: C
+  Spécial: Allonge, Croc-en-jambe, Désarmement
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Fléaulong
+  
+- Nom: Masse à piston (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme de corps à corps à deux mains
+  Source: MJ
+  Prix: '70'
+  DégâtsP: 1d8
+  DégâtsM: 1d10
+  Critique: ×2
+  Portée: —
+  Poids: 7,5
+  Type: C
+  Spécial: Voir texte
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Masseàpiston
+  
+- Nom: Double fronde (halfelin)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme à distance
+  Source: MJ
+  Prix: '10'
+  DégâtsP: 1d3
+  DégâtsM: 1d4
+  Critique: ×2
+  Portée: 15 m (10 c)
+  Poids: 0,5
+  Type: C
+  Spécial: Double, Voir texte
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Doublefronde
+  
+- Nom: Fronde piquée (halfelin)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme à distance
+  Source: MJ
+  Prix: —
+  DégâtsP: 1d4
+  DégâtsM: 1d6
+  Critique: ×2
+  Portée: —
+  Poids: 0,5
+  Type: C
+  Spécial: Désarmement, Croc-en-jambe
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Frondepiquée
+  
+- Nom: Javelot-tonnerre (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme à distance
+  Source: MJ
+  Prix: '35'
+  DégâtsP: 1d4
+  DégâtsM: 1d6
+  Critique: ×2
+  Portée: 9 m (6 c)
+  Poids: 1,5
+  Type: P
+  Spécial: Voir texte
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Javelottonnerre
+  
+- Nom: Lance-flasque (gnome)
+  Catégorie: Arme exotique
+  Sous-catégorie: Arme à distance
+  Source: MJ
+  Prix: '25'
+  DégâtsP: —
+  DégâtsM: —
+  Critique: —
+  Portée: 6 m (4 c)
+  Poids: '2'
+  Type: —
+  Spécial: Voir texte
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Lanceflasque
+  
+- Nom: Petites pierres-étoiles (10) (halfelin)
+  Catégorie: Le munition
+  Sous-catégorie: Fronde
+  Source: MJ
+  Prix: 0,05
+  DégâtsP: '1'
+  DégâtsM: '1'
+  Critique: —
+  Portée: —
+  Poids: '1'
+  Type: C
+  Spécial: Non létal
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Petitespierresétoiles
+  
+- Nom: Pierres-éponges (10) (halfelin)
+  Catégorie: Le munition
+  Sous-catégorie: Fronde
+  Source: MJ
+  Prix: '10'
+  DégâtsP: —
+  DégâtsM: —
+  Critique: —
+  Portée: —
+  Poids: '1'
+  Type: P
+  Spécial: —
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pierreséponges
+  
+- Nom: Pierres-pelotes (10) (halfelin)
+  Catégorie: Le munition
+  Sous-catégorie: Fronde
+  Source: MJ
+  Prix: 0,1
+  DégâtsP: —
+  DégâtsM: —
+  Critique: —
+  Portée: —
+  Poids: '2'
+  Type: C
+  Spécial: Non létal
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pierrespelotes
+  
+- Nom: Pierres à pointes (10) (halfelin)
+  Catégorie: Le munition
+  Sous-catégorie: Fronde
+  Source: MJ
+  Prix: '1'
+  DégâtsP: 1d3
+  DégâtsM: 1d4
+  Critique: —
+  Portée: —
+  Poids: 2,5
+  Type: P ou T
+  Spécial: —
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armes.ashx#Pierresàpointes
   
