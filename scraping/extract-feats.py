@@ -82,7 +82,7 @@ for URL in URLS:
         
         print("Don %s" % title)
         pageURL = "http://www.pathfinder-fr.org/Wiki/" + link
-        FEAT_REFS.append(link)
+        FEAT_REFS.append(link.lower())
         
         don['Nom']=cleanName(title)
         don['Référence']=pageURL
@@ -148,7 +148,7 @@ for URL in URLS:
         
             if key == "Conditions":
                 for r in refs:
-                    if r in FEAT_REFS:
+                    if r.lower() in FEAT_REFS:
                         don['ConditionsRefs'].append("http://www.pathfinder-fr.org/Wiki/" + r)
         
         # ajouter don

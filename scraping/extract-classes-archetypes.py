@@ -23,7 +23,7 @@ MOCK_ARCH = None
 
 FIELDS_ARCHETYPE = ['Nom', 'Classe', 'Source', 'Description', 'Référence' ]
 MATCH_ARCHETYPE  = ['Référence']
-FIELDS_CLASSFEATURES = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'Référence' ]
+FIELDS_CLASSFEATURES = ['Nom', 'Classe', 'Archétype', 'Prérequis', 'Source', 'Niveau', 'Auto', 'Description', 'DescriptionHTML', 'Référence' ]
 MATCH_CLASSFEATURES  = ['Nom','Classe', 'Archétype']
 
 
