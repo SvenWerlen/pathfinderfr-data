@@ -969,8 +969,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sp%c3%a9cialisation%20martiale%20sup%c3%a9rieure.ashx
   
 - Nom: Tireur couché
-  Résumé: En position couchée, le personnage améliore sa visée avec une arbalète
-    ou une arme à feu
+  Résumé: Augmente la CA du personnage contre les attaques au corps à corps lorsqu'il
+    est à terre
   Catégorie: combat
   Conditions: BBA +1
   ConditionsRefs: []
@@ -10628,7 +10628,8 @@
   Catégorie: combat
   Conditions: Maniement des armes (type d’arbalète choisi) ou Maniement des armes
     exotiques (arme à feu)
-  ConditionsRefs: []
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.maniement%20dune%20arme%20exotique.ashx
   Avantage: Le temps de rechargement de l’arme choisie passe à une action libre
     (pour une arbalète de poing ou légère), à une action de mouvement (pour une arbalète
     lourde ou une arme à feu à une main) ou à une action simple (pour une arme à feu
@@ -11058,7 +11059,8 @@
   Résumé: Se déplacer d’au plus 3 mètres (2 cases) par une action immédiate
   Catégorie: combat
   Conditions: Dex 13, S’avancer
-  ConditionsRefs: []
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.savancer.ashx
   Avantage: Lorsque le personnage utilise le don S’avancer pour suivre un ennemi
     adjacent, il peut parcourir une distance allant jusqu’à 3 mètres (2 cases). Cela
     ne l’empêche pas d’effectuer un pas de placement d’1,50 m (1 case) lors de son
@@ -13417,21 +13419,14 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20des%20tonnerres%20jumeaux.ashx
   
 - Nom: Touche d'ombre
-  Résumé: peut se déplacer à sa vitesse maximale
   Conditions: wayang
-  ConditionsRefs: []
   Avantage: Quand le wayang est dans une zone de faible lumière ou de ténèbres,
     il peut se déplacer à sa vitesse maximale en utilisant Discrétion sans subir le
     malus normal de -5. Quand il se déplace à une vitesse allant de la moitié de sa
     vitesse normale à sa vitesse normale, le wayang subit un malus de -5 à ses tests
-    de Discrétion
-  AvantageHTML: ' Quand le wayang est dans une zone de faible lumière ou de ténèbres,
-    il peut se déplacer à sa vitesse maximale en utilisant Discrétion sans subir le
-    malus normal de -5. Quand il se déplace à une vitesse allant de la moitié de sa
-    vitesse normale à sa vitesse normale, le wayang subit un malus de -5 à ses tests
-    de Discrétion. <br/><br/> '
+    de Discrétion.
   Source: MR
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20d%e2%80%99ombre.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Touche%20dombre.ashx
   
 - Nom: Tour de passe-passe
   Résumé: Un test d’Acrobaties réussi permet de faire une feinte
@@ -13902,30 +13897,16 @@
   Conditions: Dex 13, Viser, BBA +3
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Viser.ashx
-  Avantage: 'Lorsque le personnage tient en main une arme à distance dont il connaît
+  Avantage: Lorsque le personnage tient en main une arme à distance dont il connaît
     le maniement et qui possède un facteur de Force, ce facteur de Force augmente
-    de 2. De plus, s''il connaît le maniement d''une arme, le personnage ne subit
-    pas de pénalité sur ses jets d’attaque lorsqu''il possède un modificateur de Force
-    inférieur au facteur de Force de cette arme.
-
-
-    En vo : Exceptional Pull (Combat) You have mastered techniques to get the most
-    out of composite bows.  Prerequisites: Dex 13, Deadly Aim, base attack bonus +3.  Benefit:
-    When you wield a ranged weapon that you are proficient with and that has a strength
-    rating, add 2 to the weapon’s strength rating. You don’t take a penalty on attack
-    rolls for having a Strength modif ier lower than the strength rating of a weapon,
-    provided you’re proficient with that weapon'
+    de 2. De plus, s'il connaît le maniement d'une arme, le personnage ne subit pas
+    de pénalité sur ses jets d’attaque lorsqu'il possède un modificateur de Force
+    inférieur au facteur de Force de cette arme
   AvantageHTML: ' Lorsque le personnage tient en main une arme à distance dont il
     connaît le maniement et qui possède un facteur de Force, ce facteur de Force augmente
     de 2. De plus, s''il connaît le maniement d''une arme, le personnage ne subit
     pas de pénalité sur ses jets d’attaque lorsqu''il possède un modificateur de Force
-    inférieur au facteur de Force de cette arme.<br/><br/>En vo : Exceptional Pull
-    (Combat) You have mastered techniques to get the most out of composite bows.<br/><br/>Prerequisites:
-    Dex 13, Deadly Aim, base attack bonus +3.<br/><br/>Benefit: When you wield a ranged
-    weapon that you are proficient with and that has a strength rating, add 2 to the
-    weapon’s strength rating. You don’t take a penalty on attack rolls for having
-    a Strength modif ier lower than the strength rating of a weapon, provided you’re
-    proficient with that weapon. '
+    inférieur au facteur de Force de cette arme.<br/><br/> '
   Source: RTT
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traction%20exceptionnelle.ashx
   
@@ -14260,7 +14241,7 @@
   Spécial: Le dhampir peut prendre ce don plusieurs fois. Chaque fois qu’il le prend,
     il choisit un nouveau sous-type humanoïde ou le type humanoïde monstrueux.
   Source: MR
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gouts%20vari%c3%a9s.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Go%c3%bbts%20vari%c3%a9s.ashx
   
 - Nom: Récupération de sang
   Conditions: Buveur de sang, dhampir.
@@ -14285,14 +14266,14 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charmeur-n%c3%a9.ashx
   
 - Nom: Démarche de l'araignée (drow)
-  Conditions: 6 rangs en Acrobaties, 6 rangs en Escalade, moine niveau 6.
-  Avantage: Par une action de mouvement, le personnage peut se déplacer de la moitié
-    de la distance de chute ralentie (maximum 15 mètres) sur un mur, au plafond, sur
-    une corde, sur des branches ou même sur l’eau ou n’importe quelle autre surface
-    qui ne pourrait normalement pas supporter son poids. Il doit atteindre une surface
-    solide et horizontale à la fin de son tour, sous peine de tomber.
+  Conditions: Drow, niveau 3
+  Avantage: Le drow peut lancer le pouvoir magique pattes d’araignée une fois par
+    jour et utilise son niveau pour définir son niveau de lanceur de sorts. De plus,
+    il gagne un bonus de +4 à ses jets de sauvegarde contre l’attaque spéciale de
+    toile des araignées et les effets de toile d’araignée et autres sorts similaires
+    (comme nuage de toile).
   Source: MR
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20de%20laraign%c3%a9e.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9marche%20de%20laraign%c3%a9e%20(drow).ashx
   
 - Nom: Frappe du fléau des anges
   Conditions: Châtiment canalisé, lanceur de sorts divins de niveau 5, canalisation
@@ -14828,6 +14809,22 @@
     zone du souffle qui réussissent un jet de Réflexes (DD 10 + niveaux du kobold
     + modificateur de Constitution du kobold) réduisent les dégâts de moitié.
 
+
+    Blanc (Sur). Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6
+    points de dégâts de froid.
+
+    Bleu (Sur). Le kobold crache une ligne d’électricité de 9 m de long infligeant
+    2d6 points de dégâts d’électricité.
+
+    Noir (Sur). Le kobold crache une ligne d’acide de 9 m de long infligeant 2d6 points
+    de dégâts d’acide.
+
+    Rouge (Sur). Le kobold crache un cône de feu de 4,5 m de long infligeant 2d6 points
+    de dégâts de feu.
+
+    Vert (Sur). Le kobold crache un cône d’acide de 4,5 m de long infligeant 2d6 points
+    de dégâts d’acide.
+
     BLANC (SUR) Le kobold crache un cône de froid de 4,5 m de long infligeant 2d6
     points de dégâts de froid.
 
@@ -14849,8 +14846,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Souffle%20draconique.ashx
   
 - Nom: Modèle draconique
-  Conditions: Aspect draconique, Souffle draconique ou Plané draconique, niveau
-    10, kobold.
+  Conditions: Aspect draconique, Souffle draconique, Plané draconique, niveau 10,
+    kobold.
   Avantage: Le kobold gagne un bonus supplémentaire de +2 contre les effets de sommeil
     et de paralysie. Il peut utiliser son souffle deux fois par jour et les dégâts
     de celui-ci montent à 4d6 points de dégâts d’énergie. Les ailes qu’il obtient
@@ -14879,9 +14876,9 @@
     naturelle secondaire
 
     infligeant 1d4 points de dégâts contondants. De plus, le kobold peut améliorer
-    son attaque de queue avec un accessoire caudal de kobold. En ce qui concerne ces
-    dons d’armes, le kobold est considéré comme sachant manier tous les accessoires
-    caudaux des kobolds.'
+    son attaque de queue avec un Accessoire caudal kobold. En ce qui concerne ces
+    dons d’armes, le kobold est considéré comme sachant manier tous les Accessoires
+    caudaux kobolds.'
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Queue%20de%20terreur.ashx
   
@@ -15009,6 +15006,28 @@
   Avantage: 'Lorsqu’il prend ce don, l’orque choisit l’un des avantages ci-dessous.
     Lorsqu’il manie une arme ayant le mot « orque » dans son nom, il bénéficie de
     l’avantage qu’il a choisi tant qu’il maîtrise vraiment cette arme.
+
+
+    Défenseur. L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie
+    une arme à deux mains).
+
+    Filou. L’orque gagne un bonus de +2 sur un seul type de test de manœuvre offensive
+    qu’il peut effectuer avec cette arme.
+
+    Perturbateur. L’orque rajoute +3 au DD des tests de Concentration des adversaires
+    qui lancent un sort dans la zone qu’il menace. Ceci ne s’applique que s’il est
+    conscient de la position de l’ennemi et est en mesure de porter une attaque d’opportunité.
+    S’il a déjà effectué toutes ses attaques d’opportunité pour le round, cette augmentation
+    ne s’applique pas.
+
+    Tueur. L’orque gagne un bonus de compétence de +2 à ses jets d’attaque pour confirmer
+    les coups critiques.
+
+    Tyran. L’orque gagne un bonus de +1 à ses jets de dégâts contre les créatures
+    plus petites que lui d’au moins une taille.
+
+    Voyou. L’orque inflige +1 point de dégâts non létaux avec son arme.Ce don n’a
+    aucun effet si l’orque ne manie pas l’arme qu’il utilise.
 
     DÉFENSEUR L’orque gagne un bonus de bouclier de +1 à la CA (ou de +2 s’il manie
     une arme à deux mains).
@@ -15387,11 +15406,11 @@
     \ dans une section spéciale sur la page où elle est décrite. Le nombre de points\
     \ de vie qu’une créature artificielle nouvellement créée possède correspond à\
     \ la moyenne de ses dés de vie. \r \t"
-  Source: MJ
+  Source: B1
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20de%20cr%c3%a9atures%20artificielles.ashx
   
 - Nom: Création de reliques, armes ou boucliers
-  Résumé: L'arme ou le bouclier devient un symbole sacré
+  Résumé: Les créations magiques du personnage sont imprégnées de puissance divine
   Conditions: Création d’armes et armures magiques, possibilité de lancer sanctification
     ou profanation
   ConditionsRefs:
@@ -15671,8 +15690,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cr%c3%a9ation%20d%c3%a9lixir%20sanguin.ashx
   
 - Nom: Anonyme
-  Résumé: Bonus de +2 aux tests de Bluff et possibilité de dépenser de l'audace
-    pour gagner +10 au tests de Déguisement
+  Résumé: Bonus de +2 aux tests de Bluff et possibilité de dépenser de l’audace
+    pour gagner +10 aux tests de Déguisement
   Catégorie: audace
   Conditions: Audace ou Pistolier amateur, 4 rangs en Bluff
   ConditionsRefs:
@@ -15693,7 +15712,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Anonyme.ashx
   
 - Nom: Audace supplémentaire
-  Résumé: 2 points d'audace de plus par jour et maximum d'audace augmenté de 2
+  Résumé: 2 points d’audace de plus par jour et maximum d’audace augmenté de 2
   Catégorie: audace
   Conditions: Audace ou Pistolier amateur
   ConditionsRefs:
@@ -15713,7 +15732,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Audace%20suppl%c3%a9mentaire.ashx
   
 - Nom: Exploit de la cachette secrète
-  Résumé: Dépense 1 point d'audace pour récupérer de la poudre ou des munitions
+  Résumé: Dépense 1 point d’audace pour récupérer de la poudre ou des munitions
     sur sa personne
   Catégorie: audace
   Conditions: Audace ou Pistolier amateur, 1 rang en Escamotage
@@ -15745,8 +15764,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exploit%20de%20la%20cachette%20secr%c3%a8te.ashx
   
 - Nom: Exploit du tireur habile
-  Résumé: Tant que le personnage a au moins un point d'audace, il ne provoque pas
-    d'attaque d'opportunité quant il tire avec une arme à feu
+  Résumé: Tant que le personnage a au moins 1 point d’audace, il ne provoque pas
+    d’attaque d’opportunité quand il tire ou recharge une arme à feu
   Catégorie: audace
   Conditions: Audace ou Pistolier amateur, Esquive, Souplesse du serpent
   ConditionsRefs:
@@ -15762,17 +15781,17 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exploit%20du%20tireur%20habile.ashx
   
 - Nom: Exploit signé
-  Résumé: 1 exploit coûte 1 point d'audace de moins
+  Résumé: 1 exploit coûte 1 point d’audace de moins
   Catégorie: audace
   Conditions: Audace, pistolier de niveau 11
   ConditionsRefs: []
   Avantage: Le personnage choisit un exploit de sa connaissance qui nécessite une
-    dépense d’audace. Une fois par jour, il peut l’accomplir pour 1 point d’audace
+    dépense d’audace. Une fois par round, il peut l’accomplir pour 1 point d’audace
     de moins (0 au minimum). Il peut réduire le coût de cet exploit de cette façon
     seulement s'il a au moins 1 point d'audace. Les niveaux de pistolier et de bretteur
     se cumulent pour remplir les conditions d'accès à ce don
   AvantageHTML: " Le personnage choisit un exploit de sa connaissance qui nécessite\
-    \ une dépense d’audace. Une fois par jour, il peut l’accomplir pour 1 point d’audace\
+    \ une dépense d’audace. Une fois par round, il peut l’accomplir pour 1 point d’audace\
     \ de moins (0 au minimum). Il peut réduire le coût de cet exploit de cette façon\
     \ seulement s'il a au moins 1 point d'audace. Les niveaux de pistolier et de bretteur\
     \ se cumulent pour remplir les conditions d'accès à ce don. \r \t"
@@ -15959,8 +15978,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Panache%20suppl%c3%a9mentaire.ashx
   
 - Nom: École du djinn
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et bonus
-    aux dégâts électriques
+  Résumé: 1 utilisation quotidienne de Poing élémentaire de plus et bonus aux dégâts
+    électriques
   Catégorie: combat, école
   Conditions: Con 13, Sag 15, Poing élémentaire, Science du combat à mains nues,
     BBA +9 ou moine de niveau 5
@@ -15984,9 +16003,9 @@
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20djinn.ashx
   
-- Nom: Esprit du Djinn
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et résistance
-    aux dégâts électriques
+- Nom: Esprit du djinn
+  Résumé: 1 utilisation quotidienne de Poing élémentaire de plus et résistance aux
+    dégâts électriques
   Catégorie: combat
   Conditions: Con 15, Sag 15, École du djinn, Poing élémentaire, Science du combat
     à mains nues, BBA +11 ou moine de niveau 9
@@ -16012,15 +16031,16 @@
     \ du Tourbillon du djinn sont sourdes même si elles réussissent leur jet de sauvegarde.\
     \ \r \t"
   Source: AG
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20du%20Djinn.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20du%20djinn.ashx
   
 - Nom: Tourbillon du djinn
-  Résumé: Le Poing élémentaire permet au personnage de s'entourer d'un halo électrique
+  Résumé: Le Poing élémentaire permet au personnage de s’entourer d’un halo d’électricité
   Catégorie: combat
   Conditions: Con 15, Sag 17, École du djinn, Esprit du djinn, Poing élémentaire,
     Science du combat à mains nues, BBA +13 ou moine de niveau 11
   ConditionsRefs:
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20djinn.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20du%20djinn.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Poing%20%c3%a9l%c3%a9mentaire.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20combat%20%c3%a0%20mains%20nues.ashx
   Avantage: 'Quand le personnage utilise l’École du djinn, il peut, par une action
@@ -16043,7 +16063,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tourbillon%20du%20djinn.ashx
   
 - Nom: École du dragon
-  Résumé: Bonus de +2 contre le sommeil, la paralysie et l'étourdissement. Peut
+  Résumé: Bonus de +2 contre le sommeil, la paralysie et l’étourdissement. Peut
     ignorer le terrain difficile
   Catégorie: combat, école
   Conditions: For 15, Science du combat à mains nues, 3 rangs en Acrobaties
@@ -16095,7 +16115,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.F%c3%a9rocit%c3%a9%20du%20dragon.ashx
   
 - Nom: Rugissement du dragon
-  Résumé: 1 utilisation quotidienne supplémentaire de Coup étourdissant et rugissement
+  Résumé: 1 utilisation quotidienne de Poing étourdissant de plus et rugissement
     dévastateur
   Catégorie: combat
   Conditions: For 15, Science du combat à mains nues, École du dragon, Coup étourdissant,
@@ -16126,8 +16146,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rugissement%20du%20dragon.ashx
   
 - Nom: École de l'efrit
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et bonus
-    aux dégâts de feu
+  Résumé: Une utilisation quotidienne de Poing élémentaire de plus et un bonus aux
+    dégâts de feu
   Catégorie: combat, école
   Conditions: Con 13, Sag 15, Poing élémentaire, Science du combat à mains nues,
     BBA +9 ou moine de niveau 5
@@ -16150,7 +16170,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20de%20lefrit.ashx
   
 - Nom: Posture de l'efrit
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et résistance
+  Résumé: Une utilisation quotidienne de Poing élémentaire de plus et résistance
     au feu
   Catégorie: combat
   Conditions: Con 15, Sag 15, École de l’efrit, Poing élémentaire, Science du combat
@@ -16202,7 +16222,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Caresse%20de%20lefrit.ashx
   
 - Nom: École de l'enfant de la terre
-  Résumé: La CA de l'entrainement défensif passe à +6 contre les géants
+  Résumé: La CA de l’entraînement défensif passe à +6 contre les géants
   Catégorie: combat, école
   Conditions: Sag 13, nain ou gnome, entraînement défensif (trait racial), Science
     du combat à mains nues, 3 rangs en Acrobaties
@@ -16245,9 +16265,9 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Renversement%20de%20lenfant%20de%20la%20terre.ashx
   
 - Nom: Lien de l'enfant de la terre
-  Résumé: Le personnage peut faire un croc-en-jambe à un géant de n'importe quelle
-    taille. Il peut décider d'appliquer le Coup étourdissant une fois qu'il sait que
-    l'attaque d'opportunité portée contre un géant qui se relève a touché
+  Résumé: Le personnage peut faire un croc-en-jambe à un géant de n’importe quelle
+    taille. Il peut décider d’appliquer le Coup étourdissant une fois qu’il sait que
+    l’attaque d’opportunité portée contre un géant qui se relève a touché
   Catégorie: combat
   Conditions: Sag 13, nain ou gnome, entraînement défensif (trait racial), École
     de l’enfant de la terre, Renversement de l’enfant de la terre, Science du croc-en-jambe,
@@ -16279,8 +16299,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lien%20de%20lenfant%20de%20la%20terre.ashx
   
 - Nom: École de la grue
-  Résumé: Malus de seulement -2, et bonus à la CA quand le personnage se bat sur
-    la défensive
+  Résumé: Malus de -2 quand le personnage se bat sur la défensive
   Catégorie: combat, école
   Conditions: Esquive, Science du combat à mains nues, BBA +2 ou moine de niveau
     1
@@ -16299,8 +16318,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20de%20la%20grue.ashx
   
 - Nom: Aile de la grue
-  Résumé: En cas de combat sur la défensive, bonus supplémentaire à la CA. En cas
-    de défense totale, le personnage dévie une attaque par round
+  Résumé: En cas de combat sur la défensive ou de défense totale, le personnage
+    dévie une attaque par round
   Catégorie: combat
   Conditions: École de la grue, Esquive, Science du combat à mains nues, BBA +5
     ou moine de niveau 5
@@ -16315,7 +16334,7 @@
     \ dévier une attaque au corps à corps qui aurait du le toucher. Une attaque déviée\
     \ de cette façon n'inflige pas de dégâts et n'a pas d'autres effet (considérez\
     \ que l'attaque est ratée). Le personnage ne dépense pas d'action en utilisant\
-    \ ce don, mais doit être conscient de l'attaque et de pas être pris au dépourvu"
+    \ ce don, mais doit être conscient de l'attaque et ne pas être pris au dépourvu"
   AvantageHTML: " Lorsqu'il combat sur la défensive avec au moins une main libre,\
     \ le personnage gagne un bonus d'esquive de +4 à la CA contre les attaques au\
     \ corps à corps. Si une attaque le rate de 4 ou moins, il perd ce bonus d'esquive\
@@ -16323,14 +16342,13 @@
     \ il peut dévier une attaque au corps à corps qui aurait du le toucher. Une attaque\
     \ déviée de cette façon n'inflige pas de dégâts et n'a pas d'autres effet (considérez\
     \ que l'attaque est ratée). Le personnage ne dépense pas d'action en utilisant\
-    \ ce don, mais doit être conscient de l'attaque et de pas être pris au dépourvu.\
+    \ ce don, mais doit être conscient de l'attaque et ne pas être pris au dépourvu.\
     \ \r \t"
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Aile%20de%20la%20grue.ashx
   
 - Nom: Riposte de la grue
-  Résumé: Quand le personnage dévie une attaque grâce à aile de la grue, il peut
-    faire une attaque d'opportunité
+  Résumé: Quand le personnage dévie une attaque, il peut faire une attaque d’opportunité
   Catégorie: combat
   Conditions: École de la grue, Aile de la grue, Esquive, Science du combat à mains
     nues, BBA +8 ou moine de niveau 7
@@ -16359,8 +16377,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Riposte%20de%20la%20grue.ashx
   
 - Nom: École du jann
-  Résumé: -1 à la CA du personnage lorsqu'il charge et bonus de +1 seulement aux
-    jets d'attaque des adversaires quand ils le prennent en tenaille
+  Résumé: -1 à la CA du personnage lorsqu’il charge et bonus de +1 seulement aux
+    jets d’attaque des adversaires quand ils le prennent en tenaille
   Catégorie: combat, école
   Conditions: Science du combat à mains nues, 3 rangs en Acrobaties , 3 rangs en
     Représentation (danse)
@@ -16398,8 +16416,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Temp%c3%aate%20du%20jann.ashx
   
 - Nom: Ruée du jann
-  Résumé: Quand le personnage saute, on considère toujours qu'il a fait une course
-    d'élan, dégâts doublés s'il saute lors d'une charge
+  Résumé: Quand le personnage saute, on considère toujours qu’il a fait une course
+    d’élan, dégâts doublés s’il saute lors d’une charge
   Catégorie: combat
   Conditions: Science du combat à mains nues, École du jann, Tempête du jann, 8
     rangs en Acrobaties, 8 rangs en Représentation (danse)
@@ -16452,7 +16470,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20kirin.ashx
   
 - Nom: Frappe du kirin
-  Résumé: Bonus d'intuition de +2 pour identifier une créature
+  Résumé: Bonus d’intuition de +2 pour identifier une créature
   Catégorie: combat
   Conditions: Int 13, École du kirin, Science du combat à mains nues, 9 rangs en
     Connaissances (mystères), 3 rangs en Connaissances (exploration souterraine, folklore
@@ -16476,7 +16494,7 @@
   
 - Nom: Voie du kirin
   Résumé: Le personnage peut faire 10 à un test de Connaissances (folklore local,
-    nature, plans ou religion) pour identifier une créature
+    nature, plans ou religion) pour identifier
   Catégorie: combat
   Conditions: Int 13, École du kirin, Frappe du kirin, Science du combat à mains
     nues, 12 rangs en Connaissances (mystères), 5 rangs en Connaissances (exploration
@@ -16506,8 +16524,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Voie%20du%20kirin.ashx
   
 - Nom: École de la mante
-  Résumé: 1 utilisation quotidienne supplémentaire du Coup étourdissant, DD du Coup
-    étourdissant augmenté de 2
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus, DD du Coup étourdissant
+    augmenté de 2
   Catégorie: combat, école
   Conditions: Science du combat à mains nues, Coup étourdissant, 3 rangs en Premiers
     secours
@@ -16525,7 +16543,7 @@
   
 - Nom: Sagesse de la mante
   Résumé: Pour les effets du Coup étourdissant, le personnage compte la moitié de
-    ses niveaux d'autres classes comme des niveaux de moine
+    ses niveaux d’autres classes comme des niveaux de moine
   Catégorie: combat
   Conditions: Science du combat à mains nues, École de la mante, Coup étourdissant,
     6 rangs en Premiers secours
@@ -16549,8 +16567,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sagesse%20de%20la%20mante.ashx
   
 - Nom: Tourment de la mante
-  Résumé: 1 utilisation quotidienne supplémentaire de Coup étourdissant, possibilité
-    d'éblouir l'adversaire et de le rendre chancelant avant de le fatiguer
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus, possibilité d’éblouir
+    l’adversaire et de le rendre chancelant avant de le fatiguer
   Catégorie: combat, école
   Conditions: 9 rangs en Premiers secours, Coup étourdissant, École de la mante,
     Sagesse de la mante, Science du combat à mains nues
@@ -16574,8 +16592,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tourment%20de%20la%20mante.ashx
   
 - Nom: École du marid
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et bonus
-    aux dégâts de froid
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus et inflige des
+    dégâts de froid
   Catégorie: combat, école
   Conditions: Con 13, Sag 15, Poing élémentaire, Science du combat à mains nues,
     BBA +9 ou moine de niveau 5
@@ -16596,7 +16614,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20marid.ashx
   
 - Nom: Esprit du marid
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et résistance
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus et une résistance
     au froid
   Catégorie: combat, école
   Conditions: Con 15, Sag 15, Poing élémentaire, École du marid, Science du combat
@@ -16633,7 +16651,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20du%20marid.ashx
   
 - Nom: Froid du marid
-  Résumé: projette un jet d'eau glacée sur une ligne de 9 m (6 c)
+  Résumé: Projette un jet d’eau glacée sur une ligne de 9 m
   Catégorie: combat, école
   Conditions: Con 15, Sag 17, Poing élémentaire, École du marid, Science du combat
     à mains nues, BBA +13 ou moine de niveau 11
@@ -16659,7 +16677,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Froid%20du%20marid.ashx
   
 - Nom: École de la panthère
-  Résumé: Le personnage riposte contre un adversaire qui fait une attaque d'opportunité
+  Résumé: Le personnage riposte contre un adversaire qui fait une attaque d’opportunité
     contre lui
   Catégorie: combat, école
   Conditions: Sag 13, Attaques réflexes, Science du combat à mains nues
@@ -16698,7 +16716,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffe%20de%20la%20panth%c3%a8re.ashx
   
 - Nom: Parade de la panthère
-  Résumé: La riposte se produit avant l'attaque qui l'a provoquée
+  Résumé: La riposte se produit avant l’attaque qui l’a provoquée
   Catégorie: combat, école
   Conditions: Sag 15, Attaques réflexes, Science du combat à mains nues, Griffe
     de la panthère, École de la panthère
@@ -16720,7 +16738,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Parade%20de%20la%20panth%c3%a8re.ashx
   
 - Nom: École du sanglier
-  Résumé: Les attaques à mains nues infligent des dégats contondants ou tranchants
+  Résumé: Les attaques à mains nues infligent des dégâts contondants ou perforants
   Catégorie: combat, école
   Conditions: Science du combat à mains nues, 3 rangs en Intimidation
   ConditionsRefs:
@@ -16806,8 +16824,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20serpent.ashx
   
 - Nom: Balancement du serpent
-  Résumé: Bonus pour ne pas tomber à terre, test de Psychologie pour confirmer un
-    critique
+  Résumé: Bonus pour ne pas tomber à terre, test de psychologie pour confirmer un
+    coup critique
   Catégorie: combat, école
   Conditions: Science du combat à mains nues, École du serpent, 3 rangs en Acrobaties
     , 6 rangs en Psychologie
@@ -16836,7 +16854,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Balancement%20du%20serpent.ashx
   
 - Nom: Croc du serpent
-  Résumé: Si l'adversaire rate le personnage, ce dernier a droit à une attaque d'opportunité
+  Résumé: Si l’adversaire rate le personnage, ce dernier a droit à une attaque d’opportunité
     par une action immédiate
   Catégorie: combat, école
   Conditions: Attaques réflexes, Science du combat à mains nues, Balancement du
@@ -16857,8 +16875,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Croc%20du%20serpent.ashx
   
 - Nom: École du shaitan
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et inflige
-    des dégâts d'acide
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus et inflige des
+    dégâts d’acide
   Catégorie: combat, école
   Conditions: Con 13, Sag 15, Poing élémentaire, Science du combat à mains nues,
     BBA +9 ou moine de niveau 5
@@ -16881,8 +16899,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20shaitan.ashx
   
 - Nom: Peau du shaitan
-  Résumé: 1 utilisation quotidienne supplémentaire de Poing élémentaire et résistance
-    à l'acide
+  Résumé: 1 utilisation quotidienne du Poing élémentaire de plus et une résistance
+    à l’acide
   Catégorie: combat, école
   Conditions: Con 15, Sag 15, Poing élémentaire, Science du combat à mains nues,
     École du shaitan, BBA +11 ou moine de niveau 9
@@ -16909,7 +16927,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Peau%20du%20shaitan.ashx
   
 - Nom: Séisme du shaitan
-  Résumé: Fait jaillir une colonne d'acide de 6 m (4 c)
+  Résumé: Fait jaillir une colonne d’acide de 6 m
   Catégorie: combat, école
   Conditions: Con 15, Sag 17, École du shaitan, Peau du shaitan, Poing élémentaire,
     Science du combat à mains nues, BBA +13 ou moine de niveau 11
@@ -16938,7 +16956,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.S%c3%a9isme%20du%20shaitan.ashx
   
 - Nom: École du singe
-  Résumé: Le personnage ajoute son bonus de Sagesse au test d'Acrobaties et n'a
+  Résumé: Le personnage ajoute son bonus de Sagesse aux tests d’Acrobatie et n’a
     pas de malus quand il attaque couché
   Catégorie: combat, école
   Conditions: Sag 13, Science du combat à mains nues, 5 rangs en Acrobaties, 5 rangs
@@ -16962,7 +16980,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20singe.ashx
   
 - Nom: Mouvements du singe
-  Résumé: Le personnage ajoute son bonus de Sagesse au test d'Escalade. Il grimpe
+  Résumé: Le personnage ajoute son bonus de Sagesse aux tests d’Escalade. Il grimpe
     et rampe à la moitié de sa vitesse
   Catégorie: combat, école
   Conditions: Sag 13, Science du combat à mains nues, École du singe, 8 rangs en
@@ -17075,7 +17093,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Griffes%20du%20tigre.ashx
   
 - Nom: Bond du tigre
-  Résumé: Peut appliquer le malus de l'Attaque en puissance à la CA
+  Résumé: Peut appliquer le malus de l’Attaque en puissance à la CA
   Catégorie: combat, école
   Conditions: Science du combat à mains nues, Attaque en puissance, Griffes du tigre,
     École du tigre, BBA +9 ou moine de niveau 8
@@ -17113,7 +17131,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20de%20la%20tortue%20alligator.ashx
   
 - Nom: Étreinte de la tortue alligator
-  Résumé: Le bonus de bouclier s'applique au DMD et à la CA de contact
+  Résumé: Le bonus de bouclier s’applique au DMD et à la CA au contact
   Catégorie: combat, école
   Conditions: École de la tortue alligator, Science de la lutte, Science du combat
     à mains nues, BBA +3 ou moine de niveau 3
@@ -17152,7 +17170,7 @@
     \ bonus de bouclier que l’école accorde à la CA passe à +2 et ses ennemis subissent\
     \ un malus de -4 aux jets de confirmation de coup critique. \r \t"
   Source: AG
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carapace%20de%20la%20tortue.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carapace%20de%20la%20tortue%20alligator.ashx
   
 - Nom: École de l'empoigneur
   Résumé: Le personnage ne reçoit aucun malus lorsqu’il agrippe un ennemi à une
@@ -17392,7 +17410,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20labri.ashx
   
 - Nom: Attaquer en meute
-  Résumé: Une attaque alliée permet au personnage de faire un pas de 1,50 m (1 c)
+  Résumé: Une attaque alliée permet au personnage de faire un pas de 1,50 m
   Catégorie: combat, équipe
   Conditions: BBA +1
   ConditionsRefs: []
@@ -17408,7 +17426,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaquer%20en%20meute.ashx
   
 - Nom: Cavalerie en formation
-  Résumé: Le personnage partage sa case avec d'autres montures et peut charger à
+  Résumé: Le personnage partage sa case avec d’autres montures et peut charger à
     travers une case occupée par une monture alliée
   Catégorie: combat, équipe
   Conditions: Combat monté
@@ -17460,8 +17478,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20de%20diversion.ashx
   
 - Nom: Cible d'opportunité
-  Résumé: Quand un allié réussit une attaque à distance, le personnage peut faire
-    une attaque par une action immédiate
+  Résumé: Quand un allié réussit une attaque de corps à corps, le personnage peut
+    faire une attaque par une action immédiate
   Catégorie: combat, équipe
   Conditions: Tir à bout portant, BBA +6
   ConditionsRefs:
@@ -17543,7 +17561,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9fenses%20coordonn%c3%a9es.ashx
   
 - Nom: Dos à dos
-  Résumé: + 2 à la CA contre les adversaires qui prennent le personnage en tenaille
+  Résumé: +2 à la CA contre les adversaires qui prennent le personnage en tenaille
   Catégorie: équipe
   Conditions: 3 rangs en Perception
   ConditionsRefs: []
@@ -17557,7 +17575,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Dos%20%c3%a0%20dos.ashx
   
 - Nom: Science du combat dos à dos
-  Résumé: donne un bonus de + 2 à la CA à un allié adjacent contre les adversaires
+  Résumé: Donne un bonus de +2 à la CA à un allié adjacent contre les adversaires
     qui le prennent en tenaille
   Catégorie: équipe
   Conditions: Dos à dos, 5 rangs en Perception
@@ -17646,7 +17664,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20l%c3%a9change%20de%20places.ashx
   
 - Nom: Échappatoire
-  Résumé: Le personnage ne provoque pas d'attaque d'opportunité quand il passe dans
+  Résumé: Le personnage ne provoque pas d’attaque d’opportunité quand il passe dans
     une case adjacente à un allié
   Catégorie: équipe
   ConditionsRefs: []
@@ -17814,7 +17832,7 @@
   
 - Nom: Médecin de guerre
   Résumé: Le personnage peut faire 10 à un test de Premiers secours et ne provoque
-    pas d'attaque d'opportunité
+    pas d’attaque d’opportunité
   Catégorie: équipe
   Conditions: 5 rangs en Premiers secours
   ConditionsRefs: []
@@ -17880,8 +17898,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Partenaire%20de%20feinte.ashx
   
 - Nom: Science du partenaire de feinte
-  Résumé: quand un allié réussit une feinte, le personnage a droit à une attaque
-    d'opportunité contre son adversaire
+  Résumé: Quand un allié réussit une feinte, le personnage a droit à une attaque
+    d’opportunité contre son adversaire
   Catégorie: combat, équipe
   Conditions: 1 rang en Bluff, Attaques réflexes, Partenaire de feinte, BBA +6
   ConditionsRefs:
@@ -17910,7 +17928,7 @@
   
 - Nom: Saisir sa chance
   Résumé: Quand un allié confirme un coup critique, le personnage a droit à une
-    attaque d'opportunité
+    attaque d’opportunité
   Catégorie: combat, équipe
   Conditions: Attaques réflexes, Science du critique
   ConditionsRefs:
@@ -17967,8 +17985,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Synergie%20de%20la%20discr%c3%a9tion.ashx
   
 - Nom: Tactique de l'aile cassée
-  Résumé: Donne un bonus au jet d'attaque de l'adversaire mais ce dernier provoque
-    des attaques d'opportunité
+  Résumé: Donne un bonus au jet d’attaque de l’adversaire mais ce dernier provoque
+    des attaques d’opportunité
   Catégorie: combat, équipe
   Conditions: 5 rangs en Bluff
   ConditionsRefs: []
@@ -17993,8 +18011,7 @@
     peuvent tenter une attaque à distance contre l’assaillant
   Catégorie: combat, équipe
   Conditions: Tactique de l’aile cassée, 5 rangs en Bluff
-  ConditionsRefs:
-  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tactique%20de%20laile%20cass%c3%a9e.ashx
+  ConditionsRefs: []
   Avantage: Chaque fois que le personnage utilise Tactique de l’aile cassée et qu’un
     adversaire l’attaque à cause de cela, chacun de ses alliés possédant ce don et
     se trouvant à 9 mètres ou moins de cet adversaire peut tenter une attaque à distance
@@ -18059,7 +18076,7 @@
   
 - Nom: Tir en enfilade
   Résumé: Quand un allié prend un adversaire en tenaille, le personnage gagne un
-    bonus de +2 aux jets d'attaque à distance contre ce dernier
+    bonus de +2 aux jets d’attaque à distance contre lui
   Catégorie: combat, équipe
   Conditions: Tir à bout portant, Tir de précision, un autre don de travail en équipe
   ConditionsRefs:
@@ -18272,7 +18289,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Incantation%20silencieuse.ashx
   
 - Nom: Incantation statique
-  Résumé: Le sort n’a plus de composante somatique
+  Résumé: Le sort n’a plus de composante gestuelle
   Catégorie: métamagie
   ConditionsRefs: []
   Avantage: Un sort à incantation statique ne nécessite pas de composante gestuelle.
@@ -18902,7 +18919,7 @@
   
 - Nom: Cercle du meurtrier
   Résumé: Quand le personnage fait un test de combat de spectacle après un critique,
-    il peut se déplacer de 1,50 m (1 c)
+    il peut se déplacer de 1,50 m
   Catégorie: combat, spectacle
   Conditions: Esquive, 4 rangs en Acrobaties
   ConditionsRefs:
@@ -18926,8 +18943,8 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cercle%20du%20meurtrier.ashx
   
 - Nom: Danse de la moquerie
-  Résumé: Peut se déplacer de 1,50 m (1 c) sans provoquer d'attaque d'opportunité
-    ou en déplacer à sa vitesse en en provoquant
+  Résumé: en Peut se déplacer de 1,50 m sans provoquer d’attaque d’opportunité ou
+    se déplacer à sa vitesse en en provoquant
   Catégorie: combat, spectacle
   Conditions: 4 rangs en Acrobaties ou en Représentation (danse)
   ConditionsRefs: []
@@ -18947,7 +18964,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Danse%20de%20la%20moquerie.ashx
   
 - Nom: Démonstration féroce
-  Résumé: + 2 aux tests de Représentation et +1d6 aux jets de dégâts
+  Résumé: +2 aux tests de Représentation et +1d6 aux jets de dégâts
   Catégorie: combat, spectacle
   Conditions: Démonstration
   ConditionsRefs:
@@ -18963,7 +18980,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9monstration%20f%c3%a9roce.ashx
   
 - Nom: Démonstration du héros
-  Résumé: + 2 aux tests de combat de spectacle, peut démoraliser les adversaires
+  Résumé: +2 aux tests de combat de spectacle, peut démoraliser les adversaires
   Catégorie: combat, spectacle
   Conditions: Démonstration, Arme de prédilection, maniement de l’arme choisie
   ConditionsRefs:
@@ -19001,7 +19018,7 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.D%c3%a9monstration%20de%20ma%c3%aetre.ashx
   
 - Nom: Représentation théâtrale
-  Résumé: +2 aux tests de Représentation, aux jets d'attaque et aux tests de manoeuvre
+  Résumé: +2 aux tests de Représentation, aux jets d’attaque et aux tests de manoeuvre
     offensive
   Catégorie: combat
   Conditions: Démonstration
@@ -22975,7 +22992,9 @@
     dans la zone d'effet du sort
   Catégorie: métamagie
   Conditions: Sort ténébreux, Sort umbral
-  ConditionsRefs: []
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20t%c3%a9n%c3%a9breux.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20umbral.ashx
   Avantage: "Quand le personnage lance un sort du registre de l’obscurité qui affecte\
     \ une zone, les créatures dans la zone sont enchevêtrées. Si le sort autorise\
     \ un jet de sauvegarde, la réussite de ce jet annule l’effet d’enchevêtrement.\
@@ -23549,7 +23568,7 @@
     \ dans un rayon de 1,50 mètre. L’Explosion d’adieu détruit le corps du personnage,\
     \ ce qui interdit toute magie nécessitant un cadavre intact. \r \t"
   Source: AO
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20d%e2%80%99adieu.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Explosion%20dadieu.ashx
   
 - Nom: Explosion retardée
   Résumé: Retarde l’explosion cinétique
@@ -23763,7 +23782,7 @@
   Spécial: Le personnage peut choisir ce don à plusieurs reprises, ses effets se
     cumulent
   Source: AO
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Induction%20d%e2%80%99hypnotiseur%20suppl%c3%a9mentaire.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Induction%20dhypnotiseur%20suppl%c3%a9mentaire.ashx
   
 - Nom: Initié du chakra
   Résumé: Gain de 3 points de ki de feu-serpent pour les chakras
@@ -24399,20 +24418,21 @@
   ConditionsRefs: []
   Avantage: Un sort furieux qui provoque des points de dégâts ajoute deux fois le
     niveau originel du sort aux dégâts infligés. Les sorts infligeant des dégâts à
-    plusieurs cibles infligent ces dégâts supplémentaires à toutes les cibles, que
-    le sort inflige ses dégâts à toutes en même temps ou à l’une après l’autre (dans
-    ce cas, ajoutez les dégâts supplémentaires infligés à la première cible aux autres).
-    De plus, un sort furieux se lance même si le mage est enragé, donc y compris pendant
-    une rage de berserker ou sous l’effet d’un sort de rage. Même les sorts furieux
-    nécessitant une composante d’émotion peuvent se lancer pendant une période de
-    rage. Le mage reçoit un bonus de circonstances de +2 aux tests de concentration
-    et de NLS s’il lance le sort furieux alors qu’il est enragé. Un sort furieux occupe
-    un emplacement de sort d’un niveau de plus que sa version normale
+    plusieurs cibles infligent ces dégâts supplémentaires une fois à chacune des cibles,
+    que le sort inflige ses dégâts à toutes en même temps ou de manière successive
+    (dans ce cas, ajoutez les dégâts supplémentaires infligés à la première cible
+    aux autres). De plus, un sort furieux se lance même si le mage est enragé, donc
+    y compris pendant une rage de berserker ou sous l’effet d’un sort de rage. Même
+    les sorts furieux nécessitant une composante d’émotion peuvent se lancer pendant
+    une période de rage. Le mage reçoit un bonus de circonstances de +2 aux tests
+    de concentration et de NLS s’il lance le sort furieux alors qu’il est enragé.
+    Un sort furieux occupe un emplacement de sort d’un niveau de plus que sa version
+    normale
   AvantageHTML: " Un sort furieux qui provoque des points de dégâts ajoute deux\
     \ fois le niveau originel du sort aux dégâts infligés. Les sorts infligeant des\
-    \ dégâts à plusieurs cibles infligent ces dégâts supplémentaires à toutes les\
-    \ cibles, que le sort inflige ses dégâts à toutes en même temps ou à l’une après\
-    \ l’autre (dans ce cas, ajoutez les dégâts supplémentaires infligés à la première\
+    \ dégâts à plusieurs cibles infligent ces dégâts supplémentaires une fois à chacune\
+    \ des cibles, que le sort inflige ses dégâts à toutes en même temps ou de manière\
+    \ successive (dans ce cas, ajoutez les dégâts supplémentaires infligés à la première\
     \ cible aux autres). De plus, un sort furieux se lance même si le mage est enragé,\
     \ donc y compris pendant une rage de berserker ou sous l’effet d’un sort de rage.\
     \ Même les sorts furieux nécessitant une composante d’émotion peuvent se lancer\
@@ -24611,14 +24631,15 @@
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ni%20elfe%20ni%20humain.ashx
   
-- Nom: Bénédiction du destructeur
-  Catégorie: Combat
-  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker
+- Nom: Bénédiction du Destructeur
+  Catégorie: combat
+  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker, fidèle
+    du Destructeur
   Avantage: Lorsque le personnage est en rage et qu’il réussit une tentative de
     destruction, il récupère un round de rage. Si la tentative de destruction casse
     effectivement l’objet, le personnage récupère 1 point de vie.
   Source: MR
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20destructeur.ashx
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Destructeur.ashx
   
 - Nom: Brute résiliente
   Conditions: Demi-orque ou orque.
@@ -24644,12 +24665,18 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Cavalier%20des%20b%c3%aates.ashx
   
 - Nom: Charge de la horde
+  Résumé: +2 à l'attaque et aux dégâts lors d'une charge avec un allié
   Catégorie: Équipe
   Conditions: Demi-orque ou orque, BBA+1
+  ConditionsRefs: []
   Avantage: Quand le personnage charge au cours du même round qu’un allié qui possède
     ce don, il gagne un bonus de +2 aux jets d’attaque et de dégâts, en plus des bonus
     habituels de la charge. S’il a droit à plusieurs attaques par charge, ce bonus
-    s’applique uniquement à la première.
+    s’applique uniquement à la première
+  AvantageHTML: " Quand le personnage charge au cours du même round qu’un allié\
+    \ qui possède ce don, il gagne un bonus de +2 aux jets d’attaque et de dégâts,\
+    \ en plus des bonus habituels de la charge. S’il a droit à plusieurs attaques\
+    \ par charge, ce bonus s’applique uniquement à la première. \r \t"
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20de%20la%20horde.ashx
   
@@ -24681,12 +24708,12 @@
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20lencha%c3%aenement%20surprise.ashx
   
 - Nom: Fiélon sanguinaire
-  Conditions: Demi-orque ou orque, pouvoir de classe rage.
-  Avantage: Quand le personnage est enragé et confirme un coup critique avec une
-    arme de corps à corps ou que quelqu’un confirme un coup critique contre lui (avec
-    une arme de corps à corps, un sort ou une arme à distance), il récupère un round
-    de rage (dans la limite de son maximum quotidien). Il profite de cet avantage
-    une fois par round seulement.
+  Catégorie: combat
+  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker
+  Avantage: Lorsqu’il est en rage et qu’il confirme un coup critique avec une arme
+    de corps à corps ou souffre d’un coup critique qui lui est infligé (par une arme
+    de corps à corps, un sort ou une arme à distance), le personnage récupère 1 round
+    de rage.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Fi%c3%a9lon%20sanguinaire.ashx
   
@@ -26518,4 +26545,612 @@
     \ \t"
   Source: RSE
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Inversion%20amicale.ashx
+  
+- Nom: Exploit du tir empoisonné
+  Résumé: Tire un poison ingéré ou inhalé dans un cône de 3m avec une arme à feu
+  Catégorie: audace
+  Conditions: Capacité de classe audace ou Pistolier amateur
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pistolier%20amateur.ashx
+  Avantage: Le personnage peut dépenser un point d'audace pour charger des armes
+    à feu avec un poison d'inhalation ou d'ingestion par une action de mouvement.
+    Cette action n'a aucune chance d'exposer le personnage au poison (comme s'il possédait
+    la capacité utilisation du poison). Tirer avec une arme à feu chargée avec un
+    poison de cette manière est une action simple qui provoque des attaques d'opportunité
+    et qui disperse le poison dans un cône de de 9 m. Chaque créature qui se trouve
+    prise dans le cône de l'explosion ne reçoit aucun dégât mais est exposée au poison
+    et doit effectuer son propre jet de sauvegarde contre le DD du poison comme si
+    le délai d'incubation avait expiré
+  AvantageHTML: ' Le personnage peut dépenser un point d''audace pour charger des
+    armes à feu avec un poison d''inhalation ou d''ingestion par une action de mouvement.
+    Cette action n''a aucune chance d''exposer le personnage au poison (comme s''il
+    possédait la capacité utilisation du poison). Tirer avec une arme à feu chargée
+    avec un poison de cette manière est une action simple qui provoque des attaques
+    d''opportunité et qui disperse le poison dans un cône de de 9 m. Chaque créature
+    qui se trouve prise dans le cône de l''explosion ne reçoit aucun dégât mais est
+    exposée au poison et doit effectuer son propre jet de sauvegarde contre le DD
+    du poison comme si le délai d''incubation avait expiré.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Exploit%20du%20tir%20empoisonn%c3%a9.ashx
+  
+- Nom: Tour ignoble
+  Résumé: Les cibles de sales coups doivent réussir un jet de sauvegarde pour se
+    débarasser de leurs effets
+  Catégorie: combat, panache
+  Conditions: Int 13; capacité de classe panache ou Bretteur amateur; Expertise
+    du combat; Science du sale coup
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bretteur%20amateur.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  Avantage: Lorsque le personnage effectue une manœuvre de sale coup et que'il dépense
+    1 point de panache, si la manœuvre réussit, la cible doit réussir un jet de Volonté
+    (DD = 10 + la moitié du niveau du personnage + son modificateur de Charisme) pour
+    réussir à se débarrasser de l'état imposée par le sale coup
+  AvantageHTML: ' Lorsque le personnage effectue une manœuvre de sale coup et que''il
+    dépense 1 point de panache, si la manœuvre réussit, la cible doit réussir un jet
+    de Volonté (DD = 10 + la moitié du niveau du personnage + son modificateur de
+    Charisme) pour réussir à se débarrasser de l''état imposée par le sale coup.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tour%20ignoble.ashx
+  
+- Nom: École du kitsune
+  Résumé: Effectue un sale coup après une charge
+  Catégorie: combat, école
+  Conditions: Int 13, Expertise du combat, Science du sale coup
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  Avantage: Quand le personnage utilise cette école, il peut tenter une manœuvre
+    de sale coup à la place d'une attaque à la fin d'une charge
+  AvantageHTML: ' Quand le personnage utilise cette école, il peut tenter une manœuvre
+    de sale coup à la place d''une attaque à la fin d''une charge.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20kitsune.ashx
+  
+- Nom: Tours du kitsune
+  Résumé: Applique deux états préjudiciables en utilisant l'école du kitsune
+  Catégorie: combat, école
+  Conditions: Int 13; Expertise du combat; Science du sale coup, École du kitsune;
+    BBA +3 ou moine de niveau 3
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20kitsune.ashx
+  Avantage: Quand le personnage utilise l'École du kitsune, il peut appliquer deux
+    pénalités avec une seule manœuvre de sale coup. Retirer les deux pénalités ne
+    nécessite qu'une action
+  AvantageHTML: ' Quand le personnage utilise l''École du kitsune, il peut appliquer
+    deux pénalités avec une seule manœuvre de sale coup. Retirer les deux pénalités
+    ne nécessite qu''une action.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tours%20du%20kitsune.ashx
+  
+- Nom: Vengeance du kitsune
+  Résumé: Effecue un sale coup à la place d'une attaque d'opportunité
+  Catégorie: combat, école
+  Conditions: Int 13; Expertise du combat; Science du sale coup; École du kitsune;
+    Tours du kitsune; BBA +6 ou moine de niveau 6
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expertise%20du%20combat.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20du%20sale%20coup.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20du%20kitsune.ashx
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tours%20du%20kitsune.ashx
+  Avantage: Quand le personnage utilise l'École du kitsune, il peut remplacer une
+    attaque d'opportunité provoquée par un ennemi par une manœuvre de sale coup
+  AvantageHTML: ' Quand le personnage utilise l''École du kitsune, il peut remplacer
+    une attaque d''opportunité provoquée par un ennemi par une manœuvre de sale coup.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeance%20du%20kitsune.ashx
+  
+- Nom: Science de l'échange de place
+  Résumé: Quand le personnage utilise Échange de place, son allié peut être plus
+    petit ou plus grand que lui et son déplacement ne provoque pas d’attaque d’opportunité
+  Catégorie: combat, équipe
+  Conditions: Échange de place
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89change%20de%20place.ashx
+  Avantage: Quand le personnage et son allié utilisent Échange de place, l’allié
+    peut être d’une catégorie de taille de plus ou de moins que le personnage et le
+    déplacement du personnage sur la case de son allié ne provoque pas d’attaque d’opportunité.
+    Si l’allié ne tient pas dans l’espace précédemment occupé par le personnage et
+    qu’il n’y a pas de case adjacente de libre pour compléter l’espace occupé par
+    l’allié, celui-ci doit se faufiler. Sinon, l’allié peut tenter, lors de son déplacement,
+    une manoeuvre offensive de bousculade contre une créature qui occupe une partie
+    de l’espace qu’il devrait occuper, mais cette bousculade ne permet pas de déplacer
+    la créature de plus de 1,50 mètre
+  AvantageHTML: ' Quand le personnage et son allié utilisent Échange de place, l’allié
+    peut être d’une catégorie de taille de plus ou de moins que le personnage et le
+    déplacement du personnage sur la case de son allié ne provoque pas d’attaque d’opportunité.
+    Si l’allié ne tient pas dans l’espace précédemment occupé par le personnage et
+    qu’il n’y a pas de case adjacente de libre pour compléter l’espace occupé par
+    l’allié, celui-ci doit se faufiler. Sinon, l’allié peut tenter, lors de son déplacement,
+    une manoeuvre offensive de bousculade contre une créature qui occupe une partie
+    de l’espace qu’il devrait occuper, mais cette bousculade ne permet pas de déplacer
+    la créature de plus de 1,50 mètre.<br/><br/>'
+  Normal: Pour utiliser Échange de place, le personnage et son allié doivent être
+    de la même taille et le mouvement du personnage sur la case de son allié provoque
+    des attaques d’opportunité
+  Source: MCA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Science%20de%20l%c3%a9change%20de%20place.ashx
+  
+- Nom: Lutteur brutal
+  Catégorie: combat, équipe
+  Conditions: Orque ou demi-orque
+  Avantage: Lorsque lui et un allié possédant ce don luttent contre la même créature,
+    le personnage peut tenter de lui infliger des dégâts pendant son tour (que ce
+    soit lui qui ait engagé la lutte en premier ou qu’il aide son allié à le faire).
+    On considère que le personnage et l’allié s’entraident pour lutter contre leur
+    adversaire (bonus de +2 sur la manœuvre de combat de lutte) tant que les deux
+    maintiennent la prise.
+  Normal: Lorsque plusieurs créatures luttent contre une cible, la créature qui
+    a, la première, engagé la lutte est la seule à effectuer un jet pour infliger
+    des dégâts à l’adversaire agrippé, avec un bonus de +2 pour chaque créature qui
+    l’aide pendant la lutte en utilisant l’action ider quelqu’un.
+  Source: E
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Lutteur%20brutal.ashx
+  
+- Nom: Manoeuvres coordonnées
+  Résumé: Bonus de +2 aux tests de manoeuvres de combat
+  Catégorie: combat, équipe
+  ConditionsRefs: []
+  Avantage: Chaque fois que le personnage est adjacent à un allié qui possède également
+    ce don, il reçoit un bonus de compétence de +2 à tous ses tests de BMO. Ce bonus
+    passe à +4 lorsqu’il tente de se libérer d’une lutte
+  AvantageHTML: " Chaque fois que le personnage est adjacent à un allié qui possède\
+    \ également ce don, il reçoit un bonus de compétence de +2 à tous ses tests de\
+    \ BMO. Ce bonus passe à +4 lorsqu’il tente de se libérer d’une lutte. \r \t"
+  Source: MJRA
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Manoeuvres%20coordonn%c3%a9es.ashx
+  
+- Nom: Rage amplifiée
+  Catégorie: équipe
+  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker
+  Avantage: Lorsque lui et un allié possédant ce don sont adjacents et enragés,
+    ou prennent une créature en tenaille et sont enragés, les bonus de moral du personnage
+    à la Force et à la Constitution augmentent de +4. Ce don ne se cumule pas avec
+    lui-même (le personnage n'obtient ce bonus que pour un allié qualifié, peu importe
+    le nombre d'alliés adjacents).
+  Source: E
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20amplifi%c3%a9e.ashx
+  
+- Nom: Illusion menaçante
+  Résumé: Fait croire aux adversaires que les illusions du personnage sont de vraies
+    menaces
+  Catégorie: métamagie
+  Conditions: École renforcée (illusion), gnome
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89cole%20renforc%c3%a9e.ashx
+  Avantage: "Le personnage peut utiliser ce don métamagique uniquement sur les sorts\
+    \ d’illusion (chimère).\n Un sort d’illusion menaçante oblige une cible à croire\
+    \ que l’illusion créée par le personnage est une réelle menace. Ce dernier choisit\
+    \ une case de 1,50 mètre de côté à l’intérieur de la zone d’effet de l’illusion\
+    \ ; cette case menace la cible tant que celle-ci reste sur une case adjacente.\
+    \ Ainsi, si le personnage ou un allié se positionne sur le côté opposé, la cible\
+    \ est considérée comme prise en tenaille.\n La zone d’effet doit normalement contenir\
+    \ une créature illusoire de taille M ou P. Ceci dit, le personnage peut également\
+    \ choisir une des cases occupées par une créature illusoire plus grande pour menacer\
+    \ la cible. Par exemple, l’illusion d’un ogre de taille G occupe quatre cases\
+    \ de 1,50 mètre de côté chacune ; le personnage peut choisir l’une de ces quatre\
+    \ cases comme source de menace ; les trois cases restantes ne sont donc pas considérées\
+    \ comme des menaces.\n Si la cible a de bonnes raisons de croire qu’une créature\
+    \ invisible rôde à proximité, une illusion auditive sans éléments visuels (comme\
+    \ un son imaginaire) suffit à la convaincre que la case sélectionnée contient\
+    \ une réelle menace. Tant qu’il se concentre sur l’illusion, le personnage peut\
+    \ changer la localisation de la case menaçante par une action rapide.\n Lorsqu’il\
+    \ menace une cible avec ce sort, l’adversaire peut effectuer un jet de sauvegarde\
+    \ de Volonté (DD 10 + niveau du sort menaçant + modificateur de caractéristique\
+    \ lié au pouvoir magique). Si la cible réussit son jet de sauvegarde, elle n’est\
+    \ plus affectée par l’effet menaçant de ce don.\n Une illusion menaçante nécessite\
+    \ un emplacement de sort d’un niveau de plus que son niveau réel"
+  AvantageHTML: ' Le personnage peut utiliser ce don métamagique uniquement sur
+    les sorts d’illusion (chimère).<br/> Un sort d’illusion menaçante oblige une cible
+    à croire que l’illusion créée par le personnage est une réelle menace. Ce dernier
+    choisit une case de 1,50 mètre de côté à l’intérieur de la zone d’effet de l’illusion
+    ; cette case menace la cible tant que celle-ci reste sur une case adjacente. Ainsi,
+    si le personnage ou un allié se positionne sur le côté opposé, la cible est considérée
+    comme prise en tenaille.<br/> La zone d’effet doit normalement contenir une créature
+    illusoire de taille M ou P. Ceci dit, le personnage peut également choisir une
+    des cases occupées par une créature illusoire plus grande pour menacer la cible.
+    Par exemple, l’illusion d’un ogre de taille G occupe quatre cases de 1,50 mètre
+    de côté chacune ; le personnage peut choisir l’une de ces quatre cases comme source
+    de menace ; les trois cases restantes ne sont donc pas considérées comme des menaces.<br/>
+    Si la cible a de bonnes raisons de croire qu’une créature invisible rôde à proximité,
+    une illusion auditive sans éléments visuels (comme un son imaginaire) suffit à
+    la convaincre que la case sélectionnée contient une réelle menace. Tant qu’il
+    se concentre sur l’illusion, le personnage peut changer la localisation de la
+    case menaçante par une action rapide.<br/> Lorsqu’il menace une cible avec ce
+    sort, l’adversaire peut effectuer un jet de sauvegarde de Volonté (DD 10 + niveau
+    du sort menaçant + modificateur de caractéristique lié au pouvoir magique). Si
+    la cible réussit son jet de sauvegarde, elle n’est plus affectée par l’effet menaçant
+    de ce don.<br/> Une illusion menaçante nécessite un emplacement de sort d’un niveau
+    de plus que son niveau réel.<br/><br/>'
+  Normal: Les sorts d’illusion ne menacent aucune case
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Illusion%20mena%c3%a7ante.ashx
+  
+- Nom: Sale coup magique
+  Résumé: Un sort d'enchantement peut appliquer les effets d'un sale coup
+  Catégorie: métamagie
+  Conditions: Capacité à lancer des sorts de niveau 1, alignement Chaotique Neutre,
+    suivant de la déesse de la vengeance
+  ConditionsRefs: []
+  Avantage: Seuls les sorts d'enchantement qui affectent une cible unique et qui
+    peuvent être annulés avec un jet de Volonté réussit peuvent être des sales coups
+    magiques. Si la cible rate son jet de Volonté contre un sale coup magique, en
+    plus des effets normaux du sort, la cible se handicape elle-même. Le personnage
+    tente immédiatement un jet spécial de manœuvre offensive (1d20 + son niveau de
+    lanceur + son modificateur de Charisme) pour entreprendre un sale coup contre
+    la cible. Tous les dons qui s'appliquent aux manœuvres de sale coup (tel que Sale
+    coup supérieur) s'appliquent également à ce test. Un sale coup magique nécessite
+    un emplacement de sort d'un niveau de plus que le niveau actuel du sort
+  AvantageHTML: ' Seuls les sorts d''enchantement qui affectent une cible unique
+    et qui peuvent être annulés avec un jet de Volonté réussit peuvent être des sales
+    coups magiques. Si la cible rate son jet de Volonté contre un sale coup magique,
+    en plus des effets normaux du sort, la cible se handicape elle-même. Le personnage
+    tente immédiatement un jet spécial de manœuvre offensive (1d20 + son niveau de
+    lanceur + son modificateur de Charisme) pour entreprendre un sale coup contre
+    la cible. Tous les dons qui s''appliquent aux manœuvres de sale coup (tel que
+    Sale coup supérieur) s''appliquent également à ce test. Un sale coup magique nécessite
+    un emplacement de sort d''un niveau de plus que le niveau actuel du sort.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sale%20coup%20magique.ashx
+  
+- Nom: Sort ascendant
+  Résumé: Le personnage a appris à reproduire les effets des sorts mythiques à partir
+    d’énergie non-mythique
+  Catégorie: métamagie
+  ConditionsRefs: []
+  Avantage: Le personnage peut modifier un sort pour produire sa version mythique.
+    Un sort ascendant utilise la version mythique du sort, mais il n’est pas considéré
+    comme un sort mythique dans le cadre des effets qui interagissent avec lui, à
+    moins que le personnage lui-même ne soit une créature mythique. Il ne peut pas
+    se servir de la version amplifiée du sort mythique ni utiliser des effets de sort
+    qui nécessite une dépense de pouvoir mythique (même s’il lui reste des utilisations
+    de pouvoir mythique). Un sort ascendant utilise un emplacement de sort de 5 niveaux
+    de plus que son niveau réel
+  AvantageHTML: " Le personnage peut modifier un sort pour produire sa version mythique.\
+    \ Un sort ascendant utilise la version mythique du sort, mais il n’est pas considéré\
+    \ comme un sort mythique dans le cadre des effets qui interagissent avec lui,\
+    \ à moins que le personnage lui-même ne soit une créature mythique. Il ne peut\
+    \ pas se servir de la version amplifiée du sort mythique ni utiliser des effets\
+    \ de sort qui nécessite une dépense de pouvoir mythique (même s’il lui reste des\
+    \ utilisations de pouvoir mythique). Un sort ascendant utilise un emplacement\
+    \ de sort de 5 niveaux de plus que son niveau réel. \r \t"
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20ascendant.ashx
+  
+- Nom: Sort brusque
+  Résumé: Une vitesse de déplacement conférée par le sort augmente de +3m
+  Catégorie: métamagie
+  Conditions: Dex 13
+  ConditionsRefs: []
+  Avantage: Le personnage peut modifier les sorts qui accordent un type de déplacement
+    qu’elle ne possède pas à une créature pour augmenter la vitesse de ce type de
+    déplacement de 3 m (2 c). Un sort brusque utilise un emplacement de sort du même
+    niveau que le sort normal
+  AvantageHTML: ' Le personnage peut modifier les sorts qui accordent un type de
+    déplacement qu’elle ne possède pas à une créature pour augmenter la vitesse de
+    ce type de déplacement de 3 m (2 c). Un sort brusque utilise un emplacement de
+    sort du même niveau que le sort normal.<br/><br/> '
+  Source: MTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20brusque.ashx
+  
+- Nom: Sort encourageant
+  Résumé: Tout bonus de moral conféré par le sort augmente de 1
+  Catégorie: métamagie
+  Conditions: Cha 13, 6 rangs en Diplomatie
+  ConditionsRefs: []
+  Avantage: Les bonus de moral accordés par un sort encourageant sont augmentés
+    de 1. Un sort encourageant utilise un emplacement d’un niveau supérieur au niveau
+    normal du sort
+  AvantageHTML: ' Les bonus de moral accordés par un sort encourageant sont augmentés
+    de 1. Un sort encourageant utilise un emplacement d’un niveau supérieur au niveau
+    normal du sort.<br/><br/> '
+  Source: MTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20encourageant.ashx
+  
+- Nom: Sort maudit
+  Résumé: Le personnage combine les effets de ses sorts avec ceux de sa malédiction
+  Catégorie: métamagie
+  Conditions: Deux dons de métamagie, trait porte-poisse halfelin
+  ConditionsRefs: []
+  Avantage: Toute créature qui rate son jet de sauvegarde contre un sort maudit
+    souffre également de la malédiction du halfelin. Ce don n’a aucun effet sur les
+    sorts n’autorisant pas de jet de sauvegarde. Si le sort affecte une zone ou plusieurs
+    créatures, le halfelin doit désigner une cible recevant la malédiction à moins
+    d’avoir le don Malédiction de zone ; si le halfelin a le don Malédiction de zone,
+    il définit une zone d’explosion de la malédiction dans la zone du sort ou parmi
+    ses cibles et applique la malédiction à celles qui sont situées dans l’explosion
+    et ont raté leur jet de sauvegarde. Un sort maudit utilise un emplacement de sort
+    supérieur d’un niveau au niveau du sort lancé
+  AvantageHTML: " Toute créature qui rate son jet de sauvegarde contre un sort maudit\
+    \ souffre également de la malédiction du halfelin. Ce don n’a aucun effet sur\
+    \ les sorts n’autorisant pas de jet de sauvegarde. Si le sort affecte une zone\
+    \ ou plusieurs créatures, le halfelin doit désigner une cible recevant la malédiction\
+    \ à moins d’avoir le don Malédiction de zone ; si le halfelin a le don Malédiction\
+    \ de zone, il définit une zone d’explosion de la malédiction dans la zone du sort\
+    \ ou parmi ses cibles et applique la malédiction à celles qui sont situées dans\
+    \ l’explosion et ont raté leur jet de sauvegarde. Un sort maudit utilise un emplacement\
+    \ de sort supérieur d’un niveau au niveau du sort lancé. \r \t"
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20maudit.ashx
+  
+- Nom: Sort toxique
+  Résumé: Utilise un poison comme composante matériel d'un sort pour en appliquer
+    les effets à une des cibles
+  Catégorie: métamagie
+  Conditions: 5 rangs en Artisanat (poison), capacité à lancer des sorts de niveau
+    2, capacité de classe utilisation du poison
+  ConditionsRefs: []
+  Avantage: "Le personnage peut utiliser 1 dose d'un poison de contact, d'ingestion\
+    \ ou d'inhalation comme composante supplémentaire d'un sort qu'il lance. Ce sort\
+    \ obtient le registre poison. Le personnage choisit une unique cible affectée\
+    \ par le sort. Si cette créature rate son jet de sauvegarde contre le sort, elle\
+    \ doit également tenter un jet de sauvegarde contre le poison utilisé comme composante\
+    \ supplémentaire. Si la cible rate son jet de sauvegarde contre le poison, celui-ci\
+    \ prend effet immédiatement, ignorant tout délai d'incubation. Le poison utilise\
+    \ son propre DD (plutôt que celui du sort) mais est modifié par tous les effets\
+    \ qui augmentent le DD du sort (comme École renforcée). \n\nCe don ne fonctionne\
+    \ qu'avec les sorts dont les effets peuvent être annulés avec un jet de Vigueur\
+    \ réussi. \n\nUn sort toxique utilise un emplacement de sort d'un niveau de plus\
+    \ que le niveau réel du sort"
+  AvantageHTML: ' Le personnage peut utiliser 1 dose d''un poison de contact, d''ingestion
+    ou d''inhalation comme composante supplémentaire d''un sort qu''il lance. Ce sort
+    obtient le registre poison. Le personnage choisit une unique cible affectée par
+    le sort. Si cette créature rate son jet de sauvegarde contre le sort, elle doit
+    également tenter un jet de sauvegarde contre le poison utilisé comme composante
+    supplémentaire. Si la cible rate son jet de sauvegarde contre le poison, celui-ci
+    prend effet immédiatement, ignorant tout délai d''incubation. Le poison utilise
+    son propre DD (plutôt que celui du sort) mais est modifié par tous les effets
+    qui augmentent le DD du sort (comme École renforcée). <br/><br/>Ce don ne fonctionne
+    qu''avec les sorts dont les effets peuvent être annulés avec un jet de Vigueur
+    réussi. <br/><br/>Un sort toxique utilise un emplacement de sort d''un niveau
+    de plus que le niveau réel du sort.<br/><br/> '
+  Source: DTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20toxique.ashx
+  
+- Nom: Sort vaste
+  Résumé: Les cibles du sort peuvent être plus éloignées les unes des autres
+  Catégorie: métamagie
+  Conditions: NLS 3
+  ConditionsRefs: []
+  Avantage: Le personnage peut altérer un sort qui affecte des cibles qui ne sont
+    pas distantes de plus de 9 m (6 c tel que rapidité. La distance maximale qui doit
+    les séparer des autres cibles passe à 18 m (12 c). Un sort vaste utilise un emplacement
+    de sort d’un niveau supérieur au niveau normal du sort
+  AvantageHTML: ' Le personnage peut altérer un sort qui affecte des cibles qui
+    ne sont pas distantes de plus de 9 m (6 c tel que rapidité. La distance maximale
+    qui doit les séparer des autres cibles passe à 18 m (12 c). Un sort vaste utilise
+    un emplacement de sort d’un niveau supérieur au niveau normal du sort.<br/><br/> '
+  Source: MTT
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Sort%20vaste.ashx
+  
+- Nom: Bruyant encouragement de la monture
+  Catégorie: combat
+  Conditions: Gobelin, 1 rang en Équitation
+  Avantage: Le personnage peut décider de s’infliger une pénalité de -1 à tous ses
+    jets d’attaque et ses tests de manœuvre offensive pour octroyer un bonus de +1
+    à tous les jets d’attaque et de dégâts effectués par sa monture avec ses armes
+    naturelles. Ces effets affectent le personnage et sa monture pendant 1 round.
+    Lorsque le bonus de base à l’attaque du personnage atteint +4, et pour chaque
+    tranche de 4 points par la suite, la pénalité augmente de -1 et le bonus octroyé
+    à l’attaque et aux dégâts de sa monture de +1 jusqu’à un maximum de +5. Le personnage
+    doit décider d’utiliser ce don avant d’effectuer un jet d’attaque.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bruyant%20encouragement%20de%20la%20monture.ashx
+  
+- Nom: Chantre de guerre
+  Conditions: Gobelin, aptitude de classe de représentation bardique
+  Avantage: Lorsque le personnage utilise son aptitude de représentation bardique
+    pour conférer une inspiration vaillante à ses alliés, il peut choisir de chanter
+    en gobelin ; les alliés qui ne comprennent pas cette langue ne peuvent bénéficier
+    des avantages de cette représentation. Les gobelins alliés qui entendent ses chants
+    de guerre voient leur courage et leur énergie renouvelés et ajoutent ainsi le
+    bonus octroyé par son inspiration vaillante, en tant que bonus de moral, à tous
+    leurs jets de sauvegarde.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chantre%20de%20guerre.ashx
+  
+- Nom: Commandement en base arrière
+  Catégorie: combat
+  Conditions: Gobelin, 1 rang en Équitation
+  Avantage: Lors d’un round pendant lequel il bénéficie d’un abri ou d’un camouflage
+    contre au moins un adversaire et s’il n’est menacé par aucun ennemi, le personnage
+    peut aboyer des ordres et des encouragements à ses alliés par une action simple.
+    Le cas échéant, il octroie à tous ses alliés situés à 9 mètres ou moins un bonus
+    de +1 à tous leurs jets de dégâts effectués avec des armes pendant 1 round.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Commandement%20en%20base%20arri%c3%a8re.ashx
+  
+- Nom: Distraction en combat
+  Conditions: Gobelin, 1 rang en Acrobaties, 1 rang en Évasion
+  Avantage: Par une action complexe, le personnage peut décider de faire quelque
+    chose de complètement incongru. Par exemple, il peut rire du malheur d’une créature,
+    fouiller ses poches à la recherche d’un peu de nourriture, se pencher pour ramasser
+    ce qui ressemble à un insecte bizarre ou essayer de voler en battant des bras
+    comme le ferait une mouette avec ses ailes. Même si le personnage agit comme un
+    fou, ses actions imprévisibles sont dérangeantes. Une créature autre qu’un gobelin
+    à 1,50 mètre ou moins de lui subit une pénalité de -2 à ses tests de Perception
+    et de concentration tant que le personnage continue d’agir de la sorte et reste
+    à portée. Cette pénalité se cumule avec celle d’autres gobelins qui décident d’utiliser
+    ce don et tant que tous, y compris le personnage, sont adjacents à la cible distraite.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Distraction%20en%20combat.ashx
+  
+- Nom: Haine des lettres
+  Conditions: Gobelin, aptitude de classe de rage de berserker
+  Avantage: Si quelqu’un lit ou écrit (ou lance des sorts tels que glyphe de garde
+    ou symbole) en présence du personnage, il peut activer son aptitude de classe
+    de rage du berserker pendant 1 round par une action immédiate. Ce round ne compte
+    pas dans le nombre total de rounds de rage dont il dispose quotidiennement, mais
+    s’il souhaite rester enragé plus longtemps que ce premier round, il doit dépenser
+    les rounds de rage dont il dispose chaque jour comme à l’accoutumée. Une fois
+    ce don utilisé, le personnage doit attendre au moins 1 minute après avoir mis
+    un terme à sa rage pour pouvoir l’utiliser à nouveau.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Haine%20des%20lettres.ashx
+  
+- Nom: Morsure à la cheville
+  Catégorie: combat
+  Conditions: Gobelin, 1 rang en Évasion
+  Avantage: Si le personnage est la cible d’une manœuvre offensive, il peut, par
+    une action immédiate, tenter de mordre son adversaire en plus des attaques d’opportunité
+    ou des diverses conséquences engendrées par la manœuvre. Cette attaque naturelle
+    supplémentaire ne provoque aucune attaque d’opportunité et inflige les dégâts
+    de base appropriés pour une créature de sa taille (normalement, 1d4 pour des créatures
+    de taille P). S’il est agrippé ou immobilisé en lutte, le personnage peut continuer
+    de délivrer son attaque de morsure supplémentaire chaque round par une action
+    rapide quand vient son tour. Il bénéficie d’un bonus égal aux dégâts infligés
+    par sa morsure lors de ce round sur ses tentatives pour briser l’étreinte.
+  Spécial: Le personnage ne peut effectuer son attaque de morsure s’il est l’initiateur
+    de la lutte, s’il a pris le dessus ou s’il réalise toute autre attaque d’opportunité.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Morsure%20%c3%a0%20la%20cheville.ashx
+  
+- Nom: Roulade gobeline
+  Catégorie: combat
+  Conditions: Gobelin, 1 rang en Acrobaties
+  Avantage: 'Si le personnage est touché par une arme de mêlée, il peut tenter de
+    convertir une partie ou la totalité des dégâts en un mouvement qui l’envoie valdinguer
+    en roulant et en rebondissant de manière incontrôlable. Pour ce faire, le personnage
+    doit effectuer un test d’Acrobaties (DD 5 + les dégâts subis par l’attaque) par
+    une action immédiate. S’il réussit son test, le personnage ne subit aucun des
+    dégâts normalement infligés par cette attaque, mais peut à la place les convertir
+    en mouvement de la façon suivante : 1 point de dégâts = 30 centimètres de déplacement.
+    Par exemple, au lieu de subir 6 points de dégâts, le personnage peut les convertir
+    en 1,80 mètre de déplacement. Il peut se déplacer immédiatement en ligne droite
+    dans la direction de son choix et de la distance déterminée (arrondi au carré
+    de 1,50 mètre de côté supérieur), sans toutefois dépasser sa vitesse de déplacement
+    normale. Si un obstacle ou une créature de sa taille ou plus grande se trouve
+    sur la trajectoire de ce déplacement, il doit s’arrêter immédiatement avant, subit
+    1d4 points de dégâts et tombe au sol sur cette case. Ce déplacement involontaire
+    provoque des attaques d’opportunité comme à l’accoutumée si le personnage se déplace
+    au travers de cases contrôlées par des adversaires, mais il n’en provoque aucune
+    de la part de la créature dont l’attaque a déclenché ce don.Le personnage est
+    chancelant durant 1 round après l’utilisation de ce don, qu’il ait réussi ou non.'
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Roulade%20gobeline.ashx
+  
+- Nom: Tueur de chiens, chasseur de chevaux
+  Conditions: Gobelin, 1 rang en Dressage
+  Avantage: Le personnage bénéficie d’un bonus de moral de +2 à tous les jets d’attaque
+    et de dégâts effectués contre les chiens et les chevaux (y compris les créatures
+    similaires aux chevaux et aux chiens, comme les destriers noirs ou les worgs).
+    De plus, le personnage bénéficie d’un bonus de +2 aux jets de confirmation des
+    coups critiques contre ces créatures.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Tueur%20de%20chiens%2c%20chasseur%20de%20chevaux.ashx
+  
+- Nom: Vandale
+  Conditions: Gobelin, aptitude de classe d’attaque sournoise
+  Avantage: Le personnage traite les objets abandonnés comme s’ils étaient vulnérables
+    à ses attaques sournoises, mais il ne peut infliger que la moitié des dégâts qu’il
+    aurait normalement infligés à une véritable créature grâce à cette aptitude. Par
+    exemple, s’il inflige 12 points de dégâts supplémentaires grâce à son attaque
+    sournoise, il n’inflige en réalité que 6 points de dégâts supplémentaires à l’objet
+    frappé. Ce don peut être utilisé uniquement sur des objets abandonnés.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vandale.ashx
+  
+- Nom: Bénédiction du Dieu du feu
+  Conditions: Orque ou demi-orque, fidèle du dieu du feu
+  Avantage: En combat, s’il inflige des dégâts de feu à un adversaire, le personnage
+    récupère 1 point de vie. Il peut bénéficier de ce soin une seule fois par round.
+    Une cible qui prend feu suite aux attaques du personnage permet de le soigner
+    chaque round pendant laquelle la cible subit des dégâts de feu.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.B%c3%a9n%c3%a9diction%20du%20Dieu%20du%20feu.ashx
+  
+- Nom: Canalisation de l'adepte
+  Conditions: Capacité à lancer des sorts divins, aptitude de classe de convocation
+    de familier, niveau de lanceur de sorts de 4, Cha 13
+  Avantage: Le personnage gagne l’aptitude de classe de canalisation d’énergie,
+    comme un prêtre, et peut l’utiliser deux fois par jour. Cette aptitude fonctionne
+    comme l’aptitude de canalisation d’énergie du prêtre, excepté que le niveau de
+    prêtre effectif du personnage est égal à son niveau de classe de lanceur de sorts
+    divins -3. Cependant, à la différence d’un prêtre, le nombre d’utilisations par
+    jour de l’aptitude de canalisation d’énergie n’est pas modifié par le modificateur
+    de Charisme du personnage.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Canalisation%20de%20ladepte.ashx
+  
+- Nom: Férocité tenace
+  Catégorie: combat
+  Conditions: Orque ou demi-orque, trait racial de férocité, aptitude de classe
+    de rage de berserker
+  Avantage: Lorsqu’il est en rage et par une action immédiate, s’il est touché par
+    une attaque qui devrait normalement le tuer (avec un total de points de vie négatifs
+    au moins égal à sa valeur de Constitution), le personnage peut dépenser 1 round
+    ou plus de rage pour annuler une partie de ces dégâts et rester en vie. Chaque
+    round de rage ainsi dépensé réduit les dégâts de l’attaque d’un montant égal à
+    son bonus de Constitution octroyé par la rage, avec un minimum de 1 point de dégât
+    encaissé.Par exemple, le personnage est en rage, il possède une valeur de Constitution
+    modifiée par la rage de 18 et il lui reste pour l’instant 2 points de vie. Une
+    attaque le touche et lui inflige 20 points de dégâts (ce qui est suffisant pour
+    le tuer en l’amenant à -18 points de vie), il peut dépenser 1 round de rage pour
+    réduire de 4 points les dégâts encaissés (il est toujours dangereusement proche
+    de la mort avec un total de -14 points de vie) ; s’il dépense ses 5 rounds de
+    rage d’un coup, il réduit les dégâts à 1 (le minimum) et se retrouve avec 1 point
+    de vie.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.F%c3%a9rocit%c3%a9%20tenace.ashx
+  
+- Nom: Frisson du carnage
+  Conditions: Orque ou demi-orque, aptitude de classe de rage de berserker
+  Avantage: Lorsqu’il est en rage et que son attaque tue un adversaire ou amène
+    son seuil de points de vie en-dessous de 0, le personnage récupère 1 round de
+    rage. Il peut utiliser ce don uniquement si l’ennemi tombé possède au moins autant
+    de dés de vie que lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Frisson%20du%20carnage.ashx
+  
+- Nom: Rage du chef de guerre
+  Conditions: Cha 13, orque ou demi-orque, non-Loyal
+  Avantage: Les dons et les aptitudes qui permettent à un allié d’entrer en rage
+    ou d’augmenter les effets de sa rage s’il est dans une case adjacente à celle
+    du personnage (tels que Rage amplifiée ou Rage sympathisante) durent tant que
+    son allié se situe à 9 mètres ou moins de sa position et peut le voir. Les conditions
+    pour activer l’effet de rage restent les mêmes. Par exemple, un allié avec la
+    Rage sympathisante doit être adjacent au personnage pour activer sa propre rage,
+    mais une fois sa rage activée, il peut rester en rage tant qu’il le voit et est
+    situé à 9 mètres ou moins de lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20du%20chef%20de%20guerre.ashx
+  
+- Nom: Rage sympathisante
+  Catégorie: combat
+  Conditions: Orque ou demi-orque, non-Loyal
+  Avantage: Lorsqu’il est sur une case adjacente à un allié en rage, le personnage
+    peut choisir, par une action libre et pendant son tour, d’entrer dans une rage
+    similaire mais moins intense. Cette rage inférieure lui octroie tous les avantages
+    et les inconvénients d’une rage de berserker, à l’exception du bonus de moral
+    à la Force et à la Constitution qui s’élève à +2 seulement. La durée de la rage
+    du personnage n’est pas limitée tant qu’il reste sur une case adjacente à un allié
+    en rage (par exemple, le personnage peut conserver sa rage s’il fait un pas qui
+    l’éloigne d’un allié en rage et le rapproche d’un autre allié en rage). Tout comme
+    la rage de berserker du barbare, lorsque cette rage inférieure prend fin, le personnage
+    est fatigué.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rage%20sympathisante.ashx
+  
+- Nom: Vengeance sanglante
+  Conditions: Orque ou demi-orque, non-Loyal
+  Avantage: Lorsque l’un des valeureux alliés du personnage est tué ou si son seuil
+    de points de vie passe en dessous de 0, il peut entrer dans un état similaire,
+    mais moins efficace qu’une rage de berserker par une action simple pendant son
+    tour. S’il dispose de l’aptitude de classe de rage de berserker et est déjà enragé,
+    ses bonus de moral à la Force et à la Constitution augmentent de +2 pendant toute
+    la durée de la rage. S’il ne possède pas l’aptitude de classe de rage du berserker
+    ou s’il ne possède plus aucun round de rage, cette rage inférieure octroie tous
+    les avantages et les inconvénients d’une rage du berserker, mais les bonus de
+    moral à la Force et à la Constitution s’élèvent à +2 seulement et cet état dure
+    4 rounds. Comme pour la rage de berserker du barbare, lorsque cette rage inférieure
+    disparaît, le personnage est fatigué ; si un allié tombe avant la fin de cette
+    durée, la rage inférieure perdure pendant 4 rounds supplémentaires après cela.
+    Ce don ne permet pas au personnage d’entrer en rage s’il est fatigué. Le personnage
+    peut utiliser ce don uniquement si l’allié tombé possède au moins autant de dés
+    de vie que lui.
+  Source: MR
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeance%20sanglante.ashx
   
