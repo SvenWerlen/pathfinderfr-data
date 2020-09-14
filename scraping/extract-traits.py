@@ -91,6 +91,10 @@ for s in sections:
         race = "Demi-orque"
     elif "elfiques" in s.text:
         race = "Elfe"
+    elif "gobelins" in s.text:
+        race = "Gobelin"
+    elif "orques" in s.text:
+        race = "Orque"
     elif "gnomes" in s.text:
         race = "Gnome"
     elif "halfelins" in s.text:
