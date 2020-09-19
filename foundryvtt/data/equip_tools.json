@@ -640,6 +640,26 @@
       "img": "systems/pf1/icons/items/inventory/backpack.jpg"
    },
    {
+      "name": "Trousse d'armurier",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix : </b>15 po<br/><b>Poids : </b>1 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Cette petite trousse contient tous les outils n\u00e9cessaires pour fabriquer, r\u00e9parer, et remettre en \u00e9tat les armes \u00e0 feu (\u00e0 l'exception des composants et mat\u00e9riaux de base). Sans une telle trousse, il est impossible de cr\u00e9er, r\u00e9parer, ou entretenir correctement des armes \u00e0 feu.<br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Trousse d'armurier\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": 2.0,
+         "price": 15,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
       "name": "Autel portable",
       "type": "loot",
       "data": {
@@ -1024,12 +1044,12 @@
       "type": "loot",
       "data": {
          "description": {
-            "value": "<p><b>Prix : </b>75<br/><b>Poids : </b>0,5 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Ce kit de d\u00e9guisement a \u00e9t\u00e9 con\u00e7u par des demi-orques pour les aider \u00e0 se faire passer pour des humains. Il comprend une cr\u00e8me pour masquer la teinte gris verd\u00e2tre de leur peau et d\u2019autres objets pour dissimuler leurs caract\u00e9ristiques orques ou attirer l\u2019attention sur une autre partie de leur personne. Un demi-orque qui utilise ce kit gagne un bonus de +3 aux tests de D\u00e9guisement pour se faire passer pour un humain. Ce kit donne seulement un bonus de +1 si c\u2019est un orque qui l\u2019utilise.<br/><br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Kit de d\u00e9guisement orque\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+            "value": "<p><b>Prix : </b>75 po<br/><b>Poids : </b>0,5 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Ce kit de d\u00e9guisement a \u00e9t\u00e9 con\u00e7u par des demi-orques pour les aider \u00e0 se faire passer pour des humains. Il comprend une cr\u00e8me pour masquer la teinte gris verd\u00e2tre de leur peau et d\u2019autres objets pour dissimuler leurs caract\u00e9ristiques orques ou attirer l\u2019attention sur une autre partie de leur personne. Un demi-orque qui utilise ce kit gagne un bonus de +3 aux tests de D\u00e9guisement pour se faire passer pour un humain. Ce kit donne seulement un bonus de +1 si c\u2019est un orque qui l\u2019utilise. Un kit de d\u00e9guisement orque est consomm\u00e9 apr\u00e8s 10 utilisations.<br/><br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Kit de d\u00e9guisement orque\" parent=\"_blank\">pathfinder-fr.org</a></p>"
          },
          "source": "MR",
          "quantity": 1,
          "weight": 1.0,
-         "price": 75.0,
+         "price": 75,
          "identified": true,
          "carried": true,
          "equipped": false,
@@ -1129,6 +1149,86 @@
          "source": "MJ",
          "quantity": 1,
          "weight": null,
+         "price": null,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Cornet \u00e0 feu",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix : </b>1 pa<br/><b>Poids : </b>0,5 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Un cornet \u00e0 feu est un contenant conique fabriqu\u00e9 avec du bois et du cuir \u00e9pais et isolant. Il est con\u00e7u pour conserver une braise ardente sous une couche de cendres. Un cornet \u00e0 feu peut maintenir une braise ardente pendant 24 heures et permettre \u00e0 quiconque d\u2019allumer un feu dans des conditions normales sans avoir recours aux tests de Survie ou aux objets alchimiques ou magiques.<br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Cornet \u00e0 feu\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": null,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "F\u00e9tiche tribal",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix : </b>5 po<br/><b>Poids : </b>\u2013<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Les f\u00e9tiches tribaux varient en fonction des tribus. Ce sont g\u00e9n\u00e9ralement de petits objets en bois ou en pierre grav\u00e9s de symboles religieux, des porte-bonheurs ou de curieux objets naturels sculpt\u00e9s pour ressembler \u00e0 un symbole significatif pour les gobelins (comme un gland dans lequel sont plant\u00e9s des crocs de loup, un champignon s\u00e9ch\u00e9 couvert de taches en forme de cr\u00e2ne ou une pierre sur laquelle est grav\u00e9 un l\u00e9zard). Un gobelin peut utiliser un f\u00e9tiche tribal comme un focalisateur divin pour lancer des sorts divins.<br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#F\u00e9tiche tribal\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": null,
+         "price": 5,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Gant de jet",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix : </b>1 pa<br/><b>Poids : </b>0,5 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Cet objet est un lourd gant en m\u00e9tal et en cuir con\u00e7u pour agripper et pour lancer un insecte, un serpent ou une cr\u00e9ature minuscule qui ne perdra pas une occasion de mordre son porteur. Les gobelins qui ne portent pas de gant de jet provoquent une attaque d\u2019opportunit\u00e9 de la part de la cr\u00e9ature qu\u2019ils tentent de cacher ou de lancer. Le gant de jet dispose de plaques superpos\u00e9es qui couvrent l\u2019avant-bras de son porteur. Il faut une action complexe pour enfiler ou pour retirer un gant de jet. La main ainsi prot\u00e9g\u00e9e ne peut \u00eatre utilis\u00e9e pour accomplir des actions qui demandent de la pr\u00e9cision (tels que des tests de Sabotage ou de tir \u00e0 l\u2019arc). On peut toutefois se servir de la main gant\u00e9e pour brandir une arme.<br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Gant de jet\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
+         "price": null,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "subType": "gear"
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/pf1/icons/items/inventory/backpack.jpg"
+   },
+   {
+      "name": "Graisse de porc",
+      "type": "loot",
+      "data": {
+         "description": {
+            "value": "<p><b>Prix : </b>1 pa<br/><b>Poids : </b>0,5 kg<br/><b>Cat\u00e9gorie : </b>Trousses d\u2019outils et de comp\u00e9tences<br/></p><h2>Description</h2><p><div class=\"pf2frDescr\">Peut-\u00eatre est-ce d\u00fb \u00e0 leur t\u00eate trop large ? Certainement plus \u00e0 cause de leur manque de bon sens\u2026 Toujours est-il que les gobelins se coincent souvent dans les espaces trop exigus. Dans ce cas, une dose de graisse de porc est souvent la solution. Une application de graisse sur le corps offre un bonus de circonstances de +2 \u00e0 tous les tests d\u2019\u00c9vasion effectu\u00e9s pendant 1 heure.<br/><br/> </div></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Graisse de porc\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MR",
+         "quantity": 1,
+         "weight": 1.0,
          "price": null,
          "identified": true,
          "carried": true,

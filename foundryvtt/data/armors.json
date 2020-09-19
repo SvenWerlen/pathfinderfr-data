@@ -1321,5 +1321,59 @@
          "slot": "slotless"
       },
       "img": "systems/pf1/icons/items/weapons/spiked-armor.png"
+   },
+   {
+      "name": "Bouclier d\u00e9sarmant (acier)",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<p><b>Cat\u00e9gorie : </b>Bouclier<br/><b>Prix : </b>50 po<br/><b>Bonus : </b>+2<br/><b>Dex maximale : </b>\u2014<br/><b>Malus : </b>-3<br/><b>\u00c9chec : </b>15%<br/><b>Poids : </b>10 kg<br/><h2>Description</h2><p></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#Bouclierd\u00e9sarmant\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": 20.0,
+         "price": 50,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "equipmentType": "shield",
+         "equipmentSubtype": "lightShield",
+         "armor": {
+            "value": 2,
+            "dex": null,
+            "acp": 3,
+            "enh": 0
+         },
+         "spellFailure": 15,
+         "slot": "slotless"
+      },
+      "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
+   },
+   {
+      "name": "Bouclier d\u00e9sarmant (bois)",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<p><b>Cat\u00e9gorie : </b>Bouclier<br/><b>Prix : </b>37 po<br/><b>Bonus : </b>+2<br/><b>Dex maximale : </b>\u2014<br/><b>Malus : </b>-3<br/><b>\u00c9chec : </b>15%<br/><b>Poids : </b>7,5 kg<br/><h2>Description</h2><p></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#Bouclierd\u00e9sarmant\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": 15.0,
+         "price": 37,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "equipmentType": "shield",
+         "equipmentSubtype": "lightShield",
+         "armor": {
+            "value": 2,
+            "dex": null,
+            "acp": 3,
+            "enh": 0
+         },
+         "spellFailure": 15,
+         "slot": "slotless"
+      },
+      "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
    }
 ]
