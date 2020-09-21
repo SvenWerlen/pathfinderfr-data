@@ -52,12 +52,14 @@ lists={}
 
 list = r.json()
 for el in list:
+  
   # ignore contributions for other compendiums than pf1-fr
   if not el['compendium'].startswith("pf1-fr"):
     continue;
 
   # ignore contributions with initiative != 1
-  if not 'initiativeId' in el or not el['initiativeId'] in [1,2,4]:
+  if not 'initiativeId' in el or not el['initiativeId'] in [1,2,4,5]:
+    print("Ignoring initiative %d" % el['initiativeId'])
     continue;
 
   compendium = el['compendium'].split('.')[1]
@@ -85,7 +87,7 @@ for el in list:
       lists[compendium][el['name']]["img"] = object["img"]
   
   # extract spells elements
-  elif el['initiativeId'] == 4:
+  elif el['initiativeId'] == 4 or el['initiativeId'] == 5:
     if "ability" in data:
       lists[compendium][el['name']]['data']["ability"] = data["ability"]
     if "actionType" in data:
@@ -98,6 +100,10 @@ for el in list:
       lists[compendium][el['name']]['data']["range"] = data["range"]
     if "save" in data:
       lists[compendium][el['name']]['data']["save"] = data["save"]
+    if "duration" in data:
+      lists[compendium][el['name']]['data']["duration"] = data["duration"]
+    if "uses" in data:
+      lists[compendium][el['name']]['data']["uses"] = data["uses"]
   
 
 for category in lists:

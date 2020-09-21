@@ -118,6 +118,58 @@
       },
       "img": "systems/pf1/icons/skills/nature_07.jpg"
    },
+   "Pr\u00ea  1 : Canalisation d'\u00e9nergie 1d6": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "(round(@classes.prtre.level/2))D6",
+                  "\u00e9nergie"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "inst",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "30",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "units": "ft",
+            "value": "30"
+         },
+         "save": {
+            "dc": "10+floor(@classes.prtre.level/2)+@abilities.cha.mod",
+            "description": "1/2 d\u00e9g\u00e2ts",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 6,
+            "maxFormula": "3+@abilities.cha.mod",
+            "per": "day",
+            "value": 1
+         }
+      }
+   },
    "Rou  1 : Recherche des pi\u00e8ges": {
       "data": {
          "changes": [
@@ -140,18 +192,6 @@
          ]
       },
       "img": "systems/pf1/icons/skills/nature_07.jpg"
-   },
-   "Rou 10 : Talent - Acrobaties rapides (Ext)": {
-      "data": {
-         "contextNotes": [
-            {
-               "subTarget": "skill.acr",
-               "target": "skill",
-               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.Uw0PcAYrKrPhKvKp]{Acrobaties rapides}"
-            }
-         ]
-      },
-      "img": "systems/pf1/icons/skills/ice_13.jpg"
    },
    "Rou  2 : Esquive totale": {
       "data": {
@@ -257,6 +297,18 @@
             {
                "target": "misc",
                "text": "[BdS] \u00c9viter les pi\u00e8ges : [[floor(@classes.roublard.level / 3)]]"
+            }
+         ]
+      },
+      "img": "systems/pf1/icons/skills/ice_13.jpg"
+   },
+   "Rou 10 : Talent - Acrobaties rapides (Ext)": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.acr",
+               "target": "skill",
+               "text": "[BdS] Voir @Compendium[pf1-fr.classfeaturesfr.Uw0PcAYrKrPhKvKp]{Acrobaties rapides}"
             }
          ]
       },
