@@ -33,9 +33,9 @@ def getAbbr(name):
 
 
 list = []
+listArch = []
+
 for d in data:
-    if "Archétype" in d:
-        continue;
     
     name = "%s %s%d : %s" % (
       getAbbr(d['Classe']),             # abréviation: Roublard => Rou
@@ -45,6 +45,8 @@ for d in data:
     
     description = d['DescriptionHTML'] if 'DescriptionHTML' in d else d['Description'].replace("\n", "<br/>")
     description = improveDescription(description, name)
+    
+    className = "%s (%s)" % (d['Classe'], d["Archétype"]) if "Archétype" in d else d['Classe']
     
     el = {
         "flags": { 'class': d['Classe'], 'archetype': 'base'},
@@ -61,7 +63,7 @@ for d in data:
                         "<b>De base : </b>{}<br/></p>" +
                         "<h2>Description</h2><p>{}</p>" +
                         "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
-                    d['Classe'],
+                    className,
                     d['Niveau'],
                     "oui" if 'Auto' in d and d['Auto'] else "non",
                     description,
@@ -70,7 +72,7 @@ for d in data:
                 "unidentified": ""
             },
             "tags": [[ "De base" if 'Auto' in d and d['Auto'] else "À choisir", ]],
-            "associations": { "classes": [ [ d['Classe'] ] ] },
+            "associations": { "classes": [ [ className ] ] },
             "source": d['Source'],
         }
     }
@@ -95,10 +97,17 @@ for d in data:
     else:
       el["img"] = "systems/pf1/icons/skills/shadow_10.jpg"
     
-    list.append(el)
+    if "Archétype" in d:
+        el["data"]["tags"].append([ "Archétype" ])
+        listArch.append(el)
+    else:
+        list.append(el)
 
 list = mergeWithLetContribute(list, "letscontribute/classfeaturesfr.json", False)
+listArch = mergeWithLetContribute(listArch, "letscontribute/classfeaturesfr.json", False)
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/classfeatures.json", "w")
 outFile.write(json.dumps(list, indent=3))
+outFile = open("data/classfeaturesarch.json", "w")
+outFile.write(json.dumps(listArch, indent=3))

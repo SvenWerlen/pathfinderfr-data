@@ -1,12 +1,16 @@
 #!/bin/bash
 
 
+echo "Convert archWeapons..."
+./convertAlchWeapons.py
 echo "Convert armors..."
 ./convertArmors.py
 #echo "Convert bestiaire..."
 #./convertBestiaire.py
 echo "Convert classes..."
 ./convertClasses.py
+echo "Convert conditions..."
+./convertConditions.py
 echo "Convert equipment..."
 ./convertEquipment.py
 echo "Convert feats..."
@@ -25,6 +29,8 @@ echo "Convert skills..."
 ./convertSkills.py
 echo "Convert spells..."
 ./convertSpells.py
+echo "Convert traits..."
+./convertTraits.py
 echo "Convert weapons..."
 ./convertWeapons.py
 echo "Done."
