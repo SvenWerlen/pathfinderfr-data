@@ -13,8 +13,6 @@ with open("../data/competences.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-img = json.load(open('data/skills-img.json', 'r'))
-
 list = []
 duplicates = []
 for c in data:
@@ -31,7 +29,6 @@ for c in data:
     el = {
       "name": c['Nom'],
       "content": description,
-      "img": img[c['Nom']] if c['Nom'] in img and "pf1-fr" not in img[c['Nom']] else "icons/svg/mystery-man.svg"
     }
     list.append(el)
 
