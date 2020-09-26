@@ -86,7 +86,7 @@ for el in list:
     if "img" in object:
       lists[compendium][el['name']]["img"] = object["img"]
   
-  # extract spells elements
+  # extract spells elements or others
   elif el['initiativeId'] == 4 or el['initiativeId'] == 5:
     if "ability" in data:
       lists[compendium][el['name']]['data']["ability"] = data["ability"]
@@ -104,6 +104,8 @@ for el in list:
       lists[compendium][el['name']]['data']["duration"] = data["duration"]
     if "uses" in data:
       lists[compendium][el['name']]['data']["uses"] = data["uses"]
+    if "activation" in data:
+      lists[compendium][el['name']]['data']["activation"] = data["activation"]
   
 
 for category in lists:
