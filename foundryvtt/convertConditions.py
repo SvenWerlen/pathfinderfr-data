@@ -27,8 +27,16 @@ for c in data:
   
     el = {
       "name": c['Nom'],
-      "content": description
+      "type": "buff",
+      "data": {
+        "description": {
+          "value": description
+        },
+        "buffType": "temp",
+        "active": True
+      }
     }
+    
     list.append(el)
 
 list = mergeWithLetContribute(list, "letscontribute/conditionsfr.json")
