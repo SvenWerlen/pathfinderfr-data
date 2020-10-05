@@ -2677,8 +2677,9 @@
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%a9lan%20vital%20(propri%c3%a9t%c3%a9).ashx
   
 - Nom: 'Propriété: Enflammée'
-  Résumé: 'Fonctionne comme une arme de feu. Enflamme la cible sur un coup critique
-    confirmé (si la propriété feu est active).
+  Résumé: 'Peut enflammer les objets abandonnées, brûlant les créatures qui occupent
+    la même case que les objets affectés. Trois fois par jour, peut infliger des dégâts
+    de feu aux créatures à 1.5 m d''objets que l''arme a enflammée.
 
 
     Appliquées sur des armes à projectiles, les propriétés marquées d’un astérisque
@@ -2687,21 +2688,35 @@
   PrixModif: bonus de +2
   Aura: Évocation puissante
   NLS: 12
-  Source: AE
-  Description: "Une arme enflammée fonctionne comme une arme de feu. De plus, les\
-    \ créatures frappées par un coup critique réussi à l'aide de cette arme prennent\
-    \ feu. Ces créatures ne peuvent pas effectuer de jet de sauvegarde pour éviter\
-    \ de prendre feu mais elles peuvent tenter un jet de sauvegarde chaque round,\
-    \ à leur tour, pour éteindre les flammes. La propriété de feu doit être activée\
-    \ pour que l'arme enflammée puisse mettre le feu à ses ennemis.\n NOTE : Cette\
-    \ propriété est apparue dans le Manuel des races sous le nom \"Inflammable\"."
-  DescriptionHTML: Une arme enflammée fonctionne comme une arme de feu. De plus,
-    les créatures frappées par un coup critique réussi à l'aide de cette arme prennent
-    feu. Ces créatures ne peuvent pas effectuer de jet de sauvegarde pour éviter de
-    prendre feu mais elles peuvent tenter un jet de sauvegarde chaque round, à leur
-    tour, pour éteindre les flammes. La propriété de feu doit être activée pour que
-    l'arme enflammée puisse mettre le feu à ses ennemis.<br/> <b>Note :</b> Cette
-    propriété est apparue dans le Manuel des races sous le nom "Inflammable".
+  Source: CM
+  Description: "Quand une arme enflammée touche un objet inflammable laissé à l'abandon,\
+    \ ce dernier prend feu (les objets magiques ont droit à un jet de Vigueur DD 13\
+    \ pour annuler). Une fois enflammé, il reçoit 1d6 points de dégâts de feu par\
+    \ round. Un objet entièrement ou majoritairement constitué de bois est encore\
+    \ plus sensible à cet effet et reçoit à la place 2d6+2 points de dégâts de feu.\
+    \ Cet effet dure 1d4 rounds. Une créature qui termine son tour dans la même case\
+    \ qu'un objet enflammé subit 1d6+1 points de dégâts de feu.\n Trois fois par jour,\
+    \ le propriétaire d'une arme enflammée peut, sur commande, attiser les flammes\
+    \ d'un objet que son arme a embrasé. L'objet brûle pendant 1d4+1 rounds de plus\
+    \ et ses flammes occupent un rayonnement de 1,50 mètre autour de lui. Le rayonnement\
+    \ inflige 1d6+1 points de dégâts de feu à toutes les créatures de la zone affectée\
+    \ et embrase les objets inflammables laissés à l'abandon comme si l'arme les avait\
+    \ touchés.\n Les géants du feu utilisent souvent leurs armes enflammées lors de\
+    \ leurs ferventes croisades contre les autres races."
+  DescriptionHTML: Quand une arme enflammée touche un objet inflammable laissé à
+    l'abandon, ce dernier prend feu (les objets magiques ont droit à un jet de Vigueur
+    DD 13 pour annuler). Une fois enflammé, il reçoit 1d6 points de dégâts de feu
+    par round. Un objet entièrement ou majoritairement constitué de bois est encore
+    plus sensible à cet effet et reçoit à la place 2d6+2 points de dégâts de feu.
+    Cet effet dure 1d4 rounds. Une créature qui termine son tour dans la même case
+    qu'un objet enflammé subit 1d6+1 points de dégâts de feu.<br/> Trois fois par
+    jour, le propriétaire d'une arme enflammée peut, sur commande, attiser les flammes
+    d'un objet que son arme a embrasé. L'objet brûle pendant 1d4+1 rounds de plus
+    et ses flammes occupent un rayonnement de 1,50 mètre autour de lui. Le rayonnement
+    inflige 1d6+1 points de dégâts de feu à toutes les créatures de la zone affectée
+    et embrase les objets inflammables laissés à l'abandon comme si l'arme les avait
+    touchés.<br/> Les géants du feu utilisent souvent leurs armes enflammées lors
+    de leurs ferventes croisades contre les autres races.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.enflamm%c3%a9e%20(propri%c3%a9t%c3%a9).ashx
   
 - Nom: 'Propriété: Entêtée'
@@ -3752,4 +3767,36 @@
     ou un coup critique, les autres flèches tirées lors de ce tir infligent la moitié
     des dégâts normalement infligés par l'attaque sournoise ou par le coup critique.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.rafale%20(propri%c3%a9t%c3%a9).ashx
+  
+- Nom: 'Propriété: Inflammable'
+  Résumé: 'Fonctionne comme une arme de feu. Enflamme la cible sur un coup critique
+    confirmé (si la propriété feu est active).
+
+
+    Appliquées sur des armes à projectiles, les propriétés marquées d’un astérisque
+    (*) sont transmises aux munitions tirées avec.'
+  Restrictions: —
+  PrixModif: bonus de +2
+  Aura: Évocation puissante
+  NLS: 12
+  Source: AE
+  Description: "Une arme inflammable fonctionne comme une arme de feu. De plus,\
+    \ les créatures frappées par un coup critique réussi à l'aide de cette arme prennent\
+    \ feu. Ces créatures ne peuvent pas effectuer de jet de sauvegarde pour éviter\
+    \ de prendre feu mais elles peuvent tenter un jet de sauvegarde chaque round,\
+    \ à leur tour, pour éteindre les flammes. La propriété de feu doit être activée\
+    \ pour que l'arme inflammable puisse mettre le feu à ses ennemis.\n NOTE : Cette\
+    \ propriété est apparue dans le Manuel des races sous le nom \"Inflammable\",\
+    \ ce nom a été conservé malgré la version d'Armes et équipement (\"Enflammée\"\
+    ) parce qu'elle faisait doublon avec une propriété du Codex monstrueux."
+  DescriptionHTML: Une arme inflammable fonctionne comme une arme de feu. De plus,
+    les créatures frappées par un coup critique réussi à l'aide de cette arme prennent
+    feu. Ces créatures ne peuvent pas effectuer de jet de sauvegarde pour éviter de
+    prendre feu mais elles peuvent tenter un jet de sauvegarde chaque round, à leur
+    tour, pour éteindre les flammes. La propriété de feu doit être activée pour que
+    l'arme inflammable puisse mettre le feu à ses ennemis.<br/> <b>Note :</b> Cette
+    propriété est apparue dans le Manuel des races sous le nom "Inflammable", ce nom
+    a été conservé malgré la version d'Armes et équipement ("Enflammée") parce qu'elle
+    faisait doublon avec une propriété du Codex monstrueux.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.inflammable%20(propri%c3%a9t%c3%a9).ashx
   
