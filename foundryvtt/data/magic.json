@@ -78,9 +78,10 @@
          "slot": "neck",
          "changes": [
             {
+               "_id": "874f599f",
                "formula": "1",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -109,9 +110,10 @@
          "slot": "neck",
          "changes": [
             {
+               "_id": "e465324c",
                "formula": "2",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "aac",
                "target": "ac",
@@ -140,9 +142,10 @@
          "slot": "neck",
          "changes": [
             {
+               "_id": "eeed9182",
                "formula": "3",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "aac",
                "target": "ac",
@@ -171,9 +174,10 @@
          "slot": "neck",
          "changes": [
             {
+               "_id": "b830400d",
                "formula": "4",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "aac",
                "target": "ac",
@@ -202,9 +206,10 @@
          "slot": "neck",
          "changes": [
             {
+               "_id": "6fe63482",
                "formula": "5",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "aac",
                "target": "ac",
@@ -759,12 +764,12 @@
       "type": "equipment",
       "data": {
          "description": {
-            "value": "<div class=\"pf2frDescr\"><p><b>Type : </b>Objets merveilleux<br/><b>Prix : </b>1\u00a0000\u00a0po<br/><b>Emplacement : </b>front<br/><b>Poids : </b>0,5\u00a0kg<br/><b>Aura : </b>Transmutation faible<br/><b>NLS : </b>5<br/></p><h2>Description</h2><p>Le porteur de ce bandeau de cuir noir peut passer 10 minutes \u00e0 l'harmoniser avec une vermine de taille M ou plus en contact avec lui. Une fois le bandeau harmonis\u00e9, toute cr\u00e9ature qui le porte peut tenter un test de Dressage ou d'\u00c9quitation pour influencer ou contr\u00f4ler la vermine comme si elle \u00e9tait un animal et disposait d'une intelligence animale. Les duergars qui fabriquent ces objets les prot\u00e8gent g\u00e9n\u00e9ralement avec un sort de sceau de poussi\u00e8re*.</p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bandeau%20de%20contr%c3%b4le%20de%20la%20vermine.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p><h2>Fabrication</h2><p><b>Conditions : </b>Cr\u00e9ation d'objets merveilleux, contr\u00f4le de la vermine<br/><b>Co\u00fbt : </b>500\u00a0po<br/></p></div>"
+            "value": "<div class=\"pf2frDescr\"><p><b>Type : </b>Objets merveilleux<br/><b>Prix : </b>1 000 po<br/><b>Emplacement : </b>front<br/><b>Poids : </b>0,5 kg<br/><b>Aura : </b>Transmutation faible<br/><b>NLS : </b>5<br/></p><h2>Description</h2><p>Le porteur de ce bandeau de cuir noir peut passer 10 minutes \u00e0 l'harmoniser avec une vermine de taille M ou plus en contact avec lui. Une fois le bandeau harmonis\u00e9, toute cr\u00e9ature qui le porte peut tenter un test de Dressage ou d'\u00c9quitation pour influencer ou contr\u00f4ler la vermine comme si elle \u00e9tait un animal et disposait d'une intelligence animale. Les duergars qui fabriquent ces objets les prot\u00e8gent g\u00e9n\u00e9ralement avec un sort de sceau de poussi\u00e8re.</p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Bandeau%20de%20contr%c3%b4le%20de%20la%20vermine.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p><h2>Fabrication</h2><p><b>Conditions : </b>Cr\u00e9ation d'objets merveilleux, contr\u00f4le de la vermine<br/><b>Co\u00fbt : </b>500 po<br/></p></div>"
          },
          "source": "MJ",
          "quantity": 1,
-         "weight": null,
-         "price": null,
+         "weight": 1.0,
+         "price": 1000,
          "identified": true,
          "carried": true,
          "equipped": true,
@@ -2119,7 +2124,7 @@
       "type": "equipment",
       "data": {
          "description": {
-            "value": "<div class=\"pf2frDescr\"><p><b>Type : </b>Objets merveilleux<br/><b>Prix : </b>6 000 po<br/><b>Emplacement : </b>aucun<br/><b>Poids : </b>0,25 kg<br/><b>Aura : </b>\u00c9vocation mod\u00e9r\u00e9e<br/><b>NLS : </b>5<br/></p><h2>Description</h2><p>Les roturiers sont incapables de l\u00e9viter comme les nobles et recourent parfois \u00e0 ces carreaux magiques pour \u00e9viter de se faire distancer lors d'une ascension vers la surface ou lorsqu'ils s'enfoncent dans des cavernes profondes.<br/><br/>Le carreau du sp\u00e9l\u00e9ologue ressemble \u00e0 un lourd carreau cercl\u00e9 de fer \u00e0 pointe d'acier couronn\u00e9 de crochets et de dents. Il s'adapte \u00e0 n'importe quelle arbal\u00e8te de taille M ou P et peut servir de fl\u00e8chegrappin A&E non magique. Le personnage charge le carreau dans son arbal\u00e8te, vise une surface solide \u00e0 port\u00e9e et prononce le mot de commande pour envoyer le carreau qui va se ficher dans la surface cibl\u00e9e. Le carreau entra\u00eene derri\u00e8re lui une cha\u00eene de force fantomatique violette reli\u00e9e \u00e0 l'arbal\u00e8te. Le personnage tenant cette arbal\u00e8te n'a alors plus qu'\u00e0 prononcer le mot de commande permettant de r\u00e9tracter la cha\u00eene \u00e0 une vitesse de 9 m\u00e8tres par round pour se faire remorquer jusqu'au point d'ancrage du carreau.<br/><br/>La cha\u00eene de force supporte 250 kilos (solidit\u00e9 10, 10 pv, briser DD 28). Une fois la cha\u00eene r\u00e9tract\u00e9e, le personnage peut de nouveau utiliser le carreau. Si la cha\u00eene est bris\u00e9e ou tranch\u00e9e, le carreau ne fonctionne plus pendant 24 heures.</p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carreau%20du%20sp%c3%a9l%c3%a9ologue.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p><h2>Fabrication</h2><p><b>Conditions : </b>Cr\u00e9ation d'objets merveilleux, crochet de force AM<br/><b>Co\u00fbt : </b>3 000 po<br/></p></div>"
+            "value": "<div class=\"pf2frDescr\"><p><b>Type : </b>Objets merveilleux<br/><b>Prix : </b>6 000 po<br/><b>Emplacement : </b>aucun<br/><b>Poids : </b>0,25 kg<br/><b>Aura : </b>\u00c9vocation mod\u00e9r\u00e9e<br/><b>NLS : </b>5<br/></p><h2>Description</h2><p>Les roturiers sont incapables de l\u00e9viter comme les nobles et recourent parfois \u00e0 ces carreaux magiques pour \u00e9viter de se faire distancer lors d'une ascension vers la surface ou lorsqu'ils s'enfoncent dans des cavernes profondes.<br/><br/>Le carreau du sp\u00e9l\u00e9ologue ressemble \u00e0 un lourd carreau cercl\u00e9 de fer \u00e0 pointe d'acier couronn\u00e9 de crochets et de dents. Il s'adapte \u00e0 n'importe quelle arbal\u00e8te de taille M ou P et peut servir de fl\u00e8che-grappin non magique. Le personnage charge le carreau dans son arbal\u00e8te, vise une surface solide \u00e0 port\u00e9e et prononce le mot de commande pour envoyer le carreau qui va se ficher dans la surface cibl\u00e9e. Le carreau entra\u00eene derri\u00e8re lui une cha\u00eene de force fantomatique violette reli\u00e9e \u00e0 l'arbal\u00e8te. Le personnage tenant cette arbal\u00e8te n'a alors plus qu'\u00e0 prononcer le mot de commande permettant de r\u00e9tracter la cha\u00eene \u00e0 une vitesse de 9 m\u00e8tres par round pour se faire remorquer jusqu'au point d'ancrage du carreau.<br/><br/>La cha\u00eene de force supporte 250 kilos (solidit\u00e9 10, 10 pv, briser DD 28). Une fois la cha\u00eene r\u00e9tract\u00e9e, le personnage peut de nouveau utiliser le carreau. Si la cha\u00eene est bris\u00e9e ou tranch\u00e9e, le carreau ne fonctionne plus pendant 24 heures.</p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Carreau%20du%20sp%c3%a9l%c3%a9ologue.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p><h2>Fabrication</h2><p><b>Conditions : </b>Cr\u00e9ation d'objets merveilleux, crochet de force<br/><b>Co\u00fbt : </b>3 000 po<br/></p></div>"
          },
          "source": "MJ",
          "quantity": 1,
@@ -2373,9 +2378,10 @@
          "slot": "belt",
          "changes": [
             {
+               "_id": "93a9c60f",
                "formula": "2",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "dex",
                "target": "ability",
@@ -2404,9 +2410,10 @@
          "slot": "belt",
          "changes": [
             {
+               "_id": "959f5264",
                "formula": "4",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "dex",
                "target": "ability",
@@ -2435,9 +2442,10 @@
          "slot": "belt",
          "changes": [
             {
+               "_id": "b64a575a",
                "formula": "6",
                "modifier": "enh",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "dex",
                "target": "ability",
@@ -7366,9 +7374,10 @@
          "slot": "head",
          "changes": [
             {
+               "_id": "80eaa58d",
                "formula": "3",
                "modifier": "competence",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "chaSkills",
                "target": "skills",
@@ -20277,27 +20286,30 @@
          "slot": "body",
          "changes": [
             {
+               "_id": "19467d79",
                "formula": "5",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.esc",
                "target": "skill",
                "value": 0
             },
             {
+               "_id": "ffd75d38",
                "formula": "5",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "cmd",
                "target": "misc",
                "value": 0
             },
             {
+               "_id": "2cdab2f7",
                "formula": "3",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "aac",
                "target": "ac",
@@ -24093,9 +24105,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "068eff83",
                "formula": "1",
                "modifier": "deflection",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -24124,9 +24137,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "071b6d3f",
                "formula": "2",
                "modifier": "deflection",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -24155,9 +24169,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "7459bcd9",
                "formula": "3",
                "modifier": "deflection",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -24186,9 +24201,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "e6791c66",
                "formula": "4",
                "modifier": "deflection",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -24217,9 +24233,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "ac23cb7c",
                "formula": "5",
                "modifier": "deflection",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "target": "ac",
@@ -25148,9 +25165,10 @@
          "slot": "ring",
          "changes": [
             {
+               "_id": "7c0e0b9c",
                "formula": "2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "sac",
                "target": "ac",
@@ -27939,5 +27957,25 @@
          "slot": "slotless"
       },
       "img": "systems/pf1/icons/items/weapons/quarterstaff.png"
+   },
+   {
+      "name": "Gants d'extraction",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<div class=\"pf2frDescr\"><p><b>Type : </b>Objets merveilleux<br/><b>Prix : </b>5 000 po<br/><b>Emplacement : </b>mains<br/><b>Poids : </b>\u2014<br/><b>Aura : </b>Transmutation mod\u00e9r\u00e9e<br/><b>NLS : </b>5<br/></p><h2>Description</h2><p>Ces mitaines de cuir noir sont cousues de fils de toile d'araign\u00e9e g\u00e9ante et permettent \u00e0 leur porteur de voler les propri\u00e9t\u00e9s sp\u00e9ciales de l'arme de son adversaire et d'en doter ses attaques \u00e0 mains nues.<br/><br/>Une fois par jour, le porteur peut activer les gants en r\u00e9ussissant une man\u0153uvre de d\u00e9sarmement \u00e0 mains nues contre l'arme magique d'un adversaire. Au lieu de d\u00e9sarmer l'ennemi, le porteur annule les propri\u00e9t\u00e9s magiques de son arme (de feu, tueuse, etc.) pendant [[/r 1d4 #Gants d'extraction]] rounds et les applique \u00e0 ses propres attaques \u00e0 mains nues (cela ne change pas le bonus d'alt\u00e9ration de l'arme). Les propri\u00e9t\u00e9s sp\u00e9ciales qui ne s'adaptent pas aux attaques \u00e0 mains nues (comme boomerang ou vorpale) sont annul\u00e9es pendant la dur\u00e9e de l'effet, mais ne s'appliquent pas aux attaques \u00e0 mains nues du porteur.<br/><br/>Si les attaques \u00e0 mains nues du porteur b\u00e9n\u00e9ficient d\u00e9j\u00e0 de propri\u00e9t\u00e9s sp\u00e9ciales (via une amulette des poings invincibles par exemple), la somme des bonus d'alt\u00e9ration et de leur \u00e9quivalent en propri\u00e9t\u00e9s sp\u00e9ciales ne peut pas d\u00e9passer 10. Les propri\u00e9t\u00e9s sp\u00e9ciales vol\u00e9es sont \u00e9limin\u00e9es au hasard jusqu'\u00e0 atteindre un bonus total de +10 ou moins (les propri\u00e9t\u00e9s \u00e9limin\u00e9es sont tout de m\u00eame supprim\u00e9es sur l'arme de l'adversaire pour la dur\u00e9e normale).</p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Gants%20dextraction.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p><h2>Fabrication</h2><p><b>Conditions : </b>Cr\u00e9ation d'objets merveilleux, arme magique, baiser du vampire<br/><b>Co\u00fbt : </b>2 500 po<br/></p></div>"
+         },
+         "source": "MJ",
+         "quantity": 1,
+         "weight": null,
+         "price": 5000,
+         "identified": true,
+         "carried": true,
+         "equipped": true,
+         "equipmentType": "misc",
+         "equipmentSubtype": "wondrous",
+         "slot": "hands"
+      },
+      "img": "systems/pf1/icons/skills/blue_01.jpg"
    }
 ]

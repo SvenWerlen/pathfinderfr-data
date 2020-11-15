@@ -114,7 +114,7 @@ def longestSubstring(str1, str2):
   return str1
 
 ##
-## cette fonction insère des macros dans les descriptions
+## cette fonction insère des macros dans les descriptions pour les dés
 ##
 def improveDescription(descr, name):
   descr =  re.sub('\d+d\d+( ?\+ ?\d+)?', "[[/r \g<0> #%s]]" % name, descr)

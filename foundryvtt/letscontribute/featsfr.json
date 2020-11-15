@@ -14,6 +14,7 @@
       "data": {
          "changes": [
             {
+               "_id": "74f83ee0",
                "formula": "4",
                "modifier": "competence",
                "priority": 0,
@@ -68,6 +69,7 @@
       "data": {
          "changes": [
             {
+               "_id": "8d48ec30",
                "formula": "2",
                "modifier": "competence",
                "priority": 0,
@@ -75,6 +77,7 @@
                "target": "skill"
             },
             {
+               "_id": "3948b4e8",
                "formula": "2",
                "modifier": "competence",
                "priority": 0,
@@ -121,6 +124,7 @@
       "data": {
          "changes": [
             {
+               "_id": "e191fd5c",
                "formula": "2",
                "modifier": "competence",
                "priority": 0,
@@ -173,6 +177,7 @@
       "data": {
          "changes": [
             {
+               "_id": "f77fd576",
                "formula": "@skills.spl.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -180,6 +185,7 @@
                "target": "skill"
             },
             {
+               "_id": "56d6def9",
                "formula": "@skills.umd.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -193,6 +199,7 @@
       "data": {
          "changes": [
             {
+               "_id": "8093eb80",
                "formula": "@skills.spl.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -200,6 +207,7 @@
                "target": "skill"
             },
             {
+               "_id": "8b4f1eab",
                "formula": "@skills.umd.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -290,6 +298,7 @@
       "data": {
          "changes": [
             {
+               "_id": "bfcb781b",
                "formula": "2",
                "modifier": "enh",
                "priority": 0,
@@ -303,6 +312,7 @@
       "data": {
          "changes": [
             {
+               "_id": "fd436d93",
                "formula": "1",
                "modifier": "enh",
                "priority": 0,
@@ -327,6 +337,7 @@
       "data": {
          "changes": [
             {
+               "_id": "984170d0",
                "formula": "1",
                "modifier": "enh",
                "priority": 0,
@@ -340,6 +351,7 @@
       "data": {
          "changes": [
             {
+               "_id": "2a3bf5ee",
                "formula": "1",
                "modifier": "enh",
                "priority": 0,
@@ -365,6 +377,7 @@
       "data": {
          "changes": [
             {
+               "_id": "61908f0b",
                "formula": "1",
                "modifier": "enh",
                "priority": 0,
@@ -432,6 +445,7 @@
       "data": {
          "changes": [
             {
+               "_id": "0dc850e4",
                "formula": "3",
                "modifier": "competence",
                "priority": 0,
@@ -548,6 +562,7 @@
       "data": {
          "changes": [
             {
+               "_id": "e65efeb9",
                "formula": "@skills.clm.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -555,6 +570,7 @@
                "target": "skill"
             },
             {
+               "_id": "222ee4f0",
                "formula": "@skills.swm.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -568,6 +584,7 @@
       "data": {
          "changes": [
             {
+               "_id": "6774d28c",
                "formula": "@skills.clm.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -575,6 +592,7 @@
                "target": "skill"
             },
             {
+               "_id": "bdd0b31f",
                "formula": "@skills.swm.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -668,6 +686,7 @@
       "data": {
          "changes": [
             {
+               "_id": "eb9a617d",
                "formula": "@skills.hea.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -675,6 +694,7 @@
                "target": "skill"
             },
             {
+               "_id": "4705e355",
                "formula": "@skills.sur.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -688,6 +708,7 @@
       "data": {
          "changes": [
             {
+               "_id": "75bc7d18",
                "formula": "@skills.hea.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -695,6 +716,7 @@
                "target": "skill"
             },
             {
+               "_id": "fc86fd44",
                "formula": "@skills.sur.rank>=10?6:4",
                "modifier": "competence",
                "priority": 0,
@@ -1042,6 +1064,7 @@
       "data": {
          "changes": [
             {
+               "_id": "9c34e91f",
                "formula": "-2",
                "modifier": "competence",
                "priority": 0,
@@ -1049,6 +1072,7 @@
                "target": "skill"
             },
             {
+               "_id": "e8729e8f",
                "formula": "-2",
                "modifier": "competence",
                "priority": 0,
@@ -1702,6 +1726,7 @@
       "data": {
          "changes": [
             {
+               "_id": "df307e80",
                "formula": "@skills.esc.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -1709,6 +1734,7 @@
                "target": "skill"
             },
             {
+               "_id": "76f625d9",
                "formula": "@skills.ste.rank>=10?4:2",
                "modifier": "competence",
                "priority": 0,
@@ -1849,9 +1875,10 @@
       "data": {
          "changes": [
             {
+               "_id": "57dfc8db",
                "formula": "1",
                "modifier": "dodge",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ac",
                "subTargets": {
@@ -1870,18 +1897,20 @@
       "data": {
          "changes": [
             {
+               "_id": "c88fabe9",
                "formula": "@skills.blf.rank>=10?4:2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.blf",
                "target": "skill",
                "value": 0
             },
             {
+               "_id": "4e7db284",
                "formula": "@skills.dis.rank>=10?4:2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.dis",
                "target": "skill",
@@ -1945,6 +1974,7 @@
       "data": {
          "changes": [
             {
+               "_id": "849a891d",
                "formula": "@attributes.hd.total",
                "modifier": "untyped",
                "priority": 0,
@@ -1967,9 +1997,10 @@
       "data": {
          "changes": [
             {
+               "_id": "d59ba9b5",
                "formula": "2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "ref",
                "target": "savingThrows",
@@ -1983,9 +2014,10 @@
       "data": {
          "changes": [
             {
+               "_id": "904e4065",
                "formula": "4",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "init",
                "target": "misc",
@@ -2096,18 +2128,20 @@
       "data": {
          "changes": [
             {
+               "_id": "02b7d29c",
                "formula": "@skills.per.rank>=10?4:2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.per",
                "target": "skill",
                "value": 0
             },
             {
+               "_id": "e0965ab2",
                "formula": "@skills.sen.rank>=10?4:2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.sen",
                "target": "skill",
@@ -2120,6 +2154,7 @@
       "data": {
          "changes": [
             {
+               "_id": "df523cfa",
                "formula": "2",
                "modifier": "untypedPerm",
                "operator": "add",
@@ -2135,9 +2170,10 @@
       "data": {
          "changes": [
             {
+               "_id": "4c3d766c",
                "formula": "2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "will",
                "subTargets": {
@@ -2156,18 +2192,20 @@
       "data": {
          "changes": [
             {
+               "_id": "e972e4a2",
                "formula": "@skills.acr.rank >= 10 ? 4 : 2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.acr",
                "target": "skill",
                "value": 0
             },
             {
+               "_id": "cbc88a8b",
                "formula": "@skills.fly.rank >= 10 ? 4 : 2",
                "modifier": "untyped",
-               "operator": "+",
+               "operator": "add",
                "priority": 0,
                "subTarget": "skill.fly",
                "target": "skill",
