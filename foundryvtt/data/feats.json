@@ -26775,7 +26775,18 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "_id": "gkqalf37",
+               "formula": "@abilities.str.mod",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "skill.int",
+               "target": "skill",
+               "value": 0
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,

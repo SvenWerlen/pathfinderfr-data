@@ -220,6 +220,36 @@
       },
       "img": "systems/pf1/icons/items/armor/hide-armor.PNG"
    },
+   "Bandeau d'inspiration (+2)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "+2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "wis",
+               "target": "ability",
+               "value": 0
+            }
+         ]
+      }
+   },
+   "Cape de r\u00e9sistance (+2)": {
+      "data": {
+         "changes": [
+            {
+               "formula": "+2",
+               "modifier": "resist",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ]
+      }
+   },
    "Ceinturon de dext\u00e9rit\u00e9 du chat (+2)": {
       "data": {
          "changes": [

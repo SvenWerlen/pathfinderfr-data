@@ -116,6 +116,85 @@
          ]
       }
    },
+   "Brb  2 : Esquive instinctive": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "Jamais pris au d\u00e9pourvu"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "Conserve sa dex contre un ennemi invisible"
+            }
+         ]
+      }
+   },
+   "Brb  3 : Sens des pi\u00e8ges +1": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "+[[floor((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "+[[floor((@classes.barbare.level)/3))]] en CA d'esquive contre les pi\u00e8ges"
+            }
+         ]
+      }
+   },
+   "Brb  5 : Esquive instinctive sup\u00e9rieure": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "N'est jamais pris en tenaille"
+            }
+         ]
+      }
+   },
+   "Dru  1 : Instinct naturel": {
+      "data": {
+         "changes": [
+            {
+               "formula": "",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "value": 0
+            },
+            {
+               "formula": "",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.kna",
+               "target": "skill",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.4BdSu08URfxaxmvY]{Instinct naturel}"
+            },
+            {
+               "subTarget": "skill.kna",
+               "target": "skill",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.4BdSu08URfxaxmvY]{Instinct naturel}"
+            }
+         ]
+      }
+   },
    "Gue  2 : Courage +1": {
       "data": {
          "contextNotes": [

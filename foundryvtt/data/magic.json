@@ -595,7 +595,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "headband"
+         "slot": "headband",
+         "changes": [
+            {
+               "formula": "+2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "wis",
+               "target": "ability",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -1875,7 +1886,18 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "shoulders"
+         "slot": "shoulders",
+         "changes": [
+            {
+               "formula": "+2",
+               "modifier": "resist",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
