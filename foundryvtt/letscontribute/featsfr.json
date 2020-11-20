@@ -2026,6 +2026,57 @@
       },
       "img": "systems/pf1/icons/feats/athletic.jpg"
    },
+   "Sang manifeste": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "round",
+            "value": "@abilities.cha.mod"
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 1,
+            "maxFormula": "1",
+            "per": "day",
+            "value": 1
+         }
+      }
+   },
    "Science de l'initiative": {
       "data": {
          "changes": [

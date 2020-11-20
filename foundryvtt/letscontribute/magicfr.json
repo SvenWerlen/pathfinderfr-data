@@ -114,6 +114,11 @@
    },
    "Anneau de protection (+2)": {
       "data": {
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
          "changes": [
             {
                "_id": "071b6d3f",
@@ -125,7 +130,19 @@
                "target": "ac",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
       }
    },
    "Anneau de protection (+3)": {
@@ -235,6 +252,55 @@
          ]
       }
    },
+   "Bottes elfiques": {
+      "data": {
+         "changes": [
+            {
+               "_id": "rk9o9oyw",
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "",
+               "target": "skill",
+               "value": 0
+            }
+         ]
+      }
+   },
+   "Cape de r\u00e9sistance (+1)": {
+      "data": {
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
+         "changes": [
+            {
+               "_id": "kia6mmpm",
+               "formula": "1",
+               "modifier": "resist",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
+      }
+   },
    "Cape de r\u00e9sistance (+2)": {
       "data": {
          "changes": [
@@ -300,18 +366,35 @@
    },
    "Serre-t\u00eate de persuasion": {
       "data": {
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
          "changes": [
             {
-               "_id": "80eaa58d",
+               "_id": "4gs5amv9",
                "formula": "3",
-               "modifier": "competence",
+               "modifier": "untyped",
                "operator": "add",
-               "priority": 0,
+               "priority": "0",
                "subTarget": "chaSkills",
                "target": "skills",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
       }
    }
 }

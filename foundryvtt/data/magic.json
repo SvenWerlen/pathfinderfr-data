@@ -1226,7 +1226,19 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "feet"
+         "slot": "feet",
+         "changes": [
+            {
+               "_id": "rk9o9oyw",
+               "formula": "5",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "",
+               "target": "skill",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -1866,7 +1878,36 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "shoulders"
+         "slot": "shoulders",
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
+         "changes": [
+            {
+               "_id": "kia6mmpm",
+               "formula": "1",
+               "modifier": "resist",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "value": 0
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -7394,18 +7435,35 @@
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
          "slot": "head",
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
          "changes": [
             {
-               "_id": "80eaa58d",
+               "_id": "4gs5amv9",
                "formula": "3",
-               "modifier": "competence",
+               "modifier": "untyped",
                "operator": "add",
-               "priority": 0,
+               "priority": "0",
                "subTarget": "chaSkills",
                "target": "skills",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -24157,6 +24215,11 @@
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
          "slot": "ring",
+         "actionType": "",
+         "activation": {
+            "cost": null,
+            "type": ""
+         },
          "changes": [
             {
                "_id": "071b6d3f",
@@ -24168,7 +24231,19 @@
                "target": "ac",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "measureTemplate": {
+            "type": ""
+         },
+         "uses": {
+            "max": 0,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/items/jewelry/ring-iron.jpg"
    },

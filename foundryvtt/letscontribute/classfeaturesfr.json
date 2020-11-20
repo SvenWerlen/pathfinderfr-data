@@ -159,6 +159,22 @@
          ]
       }
    },
+   "Bre  3 : Agilit\u00e9 +1": {
+      "data": {
+         "changes": [
+            {
+               "_id": "q29njc3x",
+               "formula": "max(1, floor((((@classes.bretteur.level)-3)/4)+1))",
+               "modifier": "dodge",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "ac",
+               "target": "ac",
+               "value": 0
+            }
+         ]
+      }
+   },
    "Dru  1 : Instinct naturel": {
       "data": {
          "changes": [
@@ -206,6 +222,32 @@
          ]
       },
       "img": "systems/pf1/icons/skills/nature_07.jpg"
+   },
+   "Gue  3 : Entra\u00eenement aux armures 1": {
+      "data": {
+         "changes": [
+            {
+               "_id": "sp9mf0dq",
+               "formula": "-floor(((@classes.guerrier.level)+3)/4)",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "acpA",
+               "target": "misc",
+               "value": 0
+            },
+            {
+               "_id": "75opamxt",
+               "formula": "floor(((@classes.guerrier.level)+3)/4)",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": "0",
+               "subTarget": "mDexA",
+               "target": "misc",
+               "value": 0
+            }
+         ]
+      }
    },
    "Pr\u00ea  1 : Canalisation d'\u00e9nergie 1d6": {
       "data": {

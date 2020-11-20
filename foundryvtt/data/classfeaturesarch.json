@@ -30767,7 +30767,14 @@
             ]
          },
          "source": "MJRA",
-         "abilityType": "ex"
+         "abilityType": "ex",
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+[[(floor((@classes.roublard.level)/3))*3]]m pour placer l'attaque sournoise"
+            }
+         ]
       },
       "img": "systems/pf1/icons/skills/nature_07.jpg"
    },
