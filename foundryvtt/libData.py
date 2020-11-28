@@ -98,7 +98,7 @@ def mergeWithLetContribute(clist, filepath, ignoreDuplicates = True):
           if isinstance(effect,list):
             effectLvl = " au " + str(effect[1])
             effect = effect[0]
-          el['data']['description']['value'] += "@Macro[effet]{Appliquer \"" + el['name'] + "\"" + effectLvl + " }"    
+          el['data']['description']['value'] += "@Macro[effet]{Appliquer \"" + effect + "\"" + effectLvl + " }"    
   
   if not os.path.isfile(filepath) :
     return noDupList
