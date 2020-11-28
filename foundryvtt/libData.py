@@ -95,10 +95,9 @@ def mergeWithLetContribute(clist, filepath, ignoreDuplicates = True):
         if el['name'] in effects:
           effect = effects[el['name']]
           effectLvl = ""
-          print(effect)
           if isinstance(effect,list):
+            effectLvl = " au " + str(effect[1])
             effect = effect[0]
-            effectLvl = " au " + effect[1]
           el['data']['description']['value'] += "@Macro[effet]{Appliquer \"" + el['name'] + "\"" + effectLvl + " }"    
   
   if not os.path.isfile(filepath) :
