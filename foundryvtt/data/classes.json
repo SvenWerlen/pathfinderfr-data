@@ -5145,111 +5145,6 @@
       "img": "systems/pf1/icons/skills/blue_27.jpg"
    },
    {
-      "name": "Ma\u00eetre chimiste",
-      "permission": {
-         "default": 0
-      },
-      "type": "class",
-      "data": {
-         "source": "MJRA",
-         "description": {
-            "value": "<div class=\"pf2frDescr\"><p><i>Quand les alchimistes utilisent all\u00e8grement des mutag\u00e8nes pour se transformer en immenses cr\u00e9atures de muscles et de r\u00e9fexes, les gens plus civilis\u00e9s d\u00e9tournent souvent le regard et parlent \u00e0 voix basse du prix que ces transformations doivent exiger. Pour quelques alchimistes, le prix \u00e0 payer consiste \u00e0 devenir un ma\u00eetre chimiste, une cr\u00e9ature capable de rev\u00eatir une forme monstrueuse par sa seule volont\u00e9.   Les ma\u00eetres chimistes d\u00e9veloppent deux personnalit\u00e9s qui se partagent un m\u00eame corps. L\u2019immense \u00ab  forme mut\u00e9e  \u00bb issue des prouesses alchimiques et l\u2019alchimiste originel qui l\u2019a cr\u00e9\u00e9e se consid\u00e8rent tous deux comme la v\u00e9ritable forme de leur \u00eatre et ils doivent apprendre \u00e0 travailler de concert pour atteindre leurs objectifs communs. Bien souvent les ma\u00eetres chimistes finissent par se laisser supplanter par leur forme mut\u00e9e et le corps comme l\u2019esprit de l\u2019alchimiste originel refait surface uniquement si les coutumes sociales l\u2019exigent ou si la discr\u00e9tion est de rigueur. Malheureusement, la forme mut\u00e9e du ma\u00eetre chimiste est souvent violente et impitoyable (ce qui risque de cr\u00e9er des conflits entre les deux versions du m\u00eame personnage).</i></p><p><b>D\u00e9 de vie : </b>d10<br/><b>Alignement : </b>Le ma\u00eetre chimiste a deux alignements (voir le pouvoir de forme mut\u00e9e) Ils ne peuvent pas \u00eatre tous deux les m\u00eames<br/><b>Rangs/niveau : </b>2</p><p><table><tr><th style=\"text-align:left\">Niveau</th><th style=\"text-align:left\">BBA</th><th style=\"text-align:left\">Ref</th><th style=\"text-align:left\">Vig</th><th style=\"text-align:left\">Vol</th></tr><tr><td>1</td><td>+1</td><td>+1</td><td>+1</td><td>+0</td></tr><tr><td>2</td><td>+2</td><td>+1</td><td>+1</td><td>+1</td></tr><tr><td>3</td><td>+3</td><td>+2</td><td>+2</td><td>+1</td></tr><tr><td>4</td><td>+4</td><td>+2</td><td>+2</td><td>+1</td></tr><tr><td>5</td><td>+5</td><td>+3</td><td>+3</td><td>+2</td></tr><tr><td>6</td><td>+6</td><td>+3</td><td>+3</td><td>+2</td></tr><tr><td>7</td><td>+7</td><td>+4</td><td>+4</td><td>+2</td></tr><tr><td>8</td><td>+8</td><td>+4</td><td>+4</td><td>+3</td></tr><tr><td>9</td><td>+9</td><td>+5</td><td>+5</td><td>+3</td></tr><tr><td>10</td><td>+10</td><td>+5</td><td>+5</td><td>+3</td></tr></table></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20chYmiste.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p></div>",
-            "chat": "",
-            "unidentified": ""
-         },
-         "changes": [],
-         "changeFlags": {
-            "loseDexToAC": false,
-            "noStr": false,
-            "noDex": false,
-            "oneInt": false,
-            "oneWis": false,
-            "oneCha": false,
-            "noEncumbrance": false,
-            "mediumArmorFullSpeed": false,
-            "heavyArmorFullSpeed": false
-         },
-         "classType": "prestige",
-         "levels": 1,
-         "hd": 10,
-         "hp": 10,
-         "bab": "high",
-         "skillsPerLevel": 2,
-         "savingThrows": {
-            "fort": {
-               "value": "high"
-            },
-            "ref": {
-               "value": "high"
-            },
-            "will": {
-               "value": "low"
-            }
-         },
-         "fc": {
-            "hp": {
-               "value": 0
-            },
-            "skill": {
-               "value": 0
-            },
-            "alt": {
-               "value": 0
-            }
-         },
-         "classSkills": {
-            "acr": true,
-            "apr": false,
-            "blf": false,
-            "clm": true,
-            "crf": false,
-            "dip": false,
-            "dev": false,
-            "dis": false,
-            "esc": true,
-            "fly": false,
-            "han": false,
-            "hea": false,
-            "int": true,
-            "kar": false,
-            "kdu": true,
-            "ken": false,
-            "kge": false,
-            "khi": false,
-            "klo": false,
-            "kna": false,
-            "kno": false,
-            "kpl": false,
-            "kre": false,
-            "lin": false,
-            "per": false,
-            "prf": false,
-            "pro": false,
-            "rid": false,
-            "sen": true,
-            "slt": false,
-            "spl": false,
-            "ste": true,
-            "sur": false,
-            "swm": true,
-            "umd": false
-         },
-         "damage": {
-            "parts": []
-         },
-         "preparation": {
-            "maxAmount": 0
-         },
-         "weaponData": {
-            "critRange": 20,
-            "critMult": 2
-         }
-      },
-      "sort": 100001,
-      "flags": {},
-      "img": "systems/pf1/icons/items/potions/magic-blue.jpg"
-   },
-   {
       "name": "Ma\u00eetre des ombres",
       "permission": {
          "default": 0
@@ -6193,5 +6088,110 @@
       "sort": 100001,
       "flags": {},
       "img": "systems/pf1/icons/items/inventory/stake.jpg"
+   },
+   {
+      "name": "Ma\u00eetre chymiste",
+      "permission": {
+         "default": 0
+      },
+      "type": "class",
+      "data": {
+         "source": "MJRA",
+         "description": {
+            "value": "<div class=\"pf2frDescr\"><p><i>Quand les alchimistes utilisent all\u00e8grement des mutag\u00e8nes pour se transformer en immenses cr\u00e9atures de muscles et de r\u00e9fexes, les gens plus civilis\u00e9s d\u00e9tournent souvent le regard et parlent \u00e0 voix basse du prix que ces transformations doivent exiger. Pour quelques alchimistes, le prix \u00e0 payer consiste \u00e0 devenir un ma\u00eetre chymiste, une cr\u00e9ature capable de rev\u00eatir une forme monstrueuse par sa seule volont\u00e9.  Les ma\u00eetres chymistes d\u00e9veloppent deux personnalit\u00e9s qui se partagent un m\u00eame corps. L\u2019immense \u00ab  forme mut\u00e9e  \u00bb issue des prouesses alchimiques et l\u2019alchimiste originel qui l\u2019a cr\u00e9\u00e9e se consid\u00e8rent tous deux comme la v\u00e9ritable forme de leur \u00eatre et ils doivent apprendre \u00e0 travailler de concert pour atteindre leurs objectifs communs. Bien souvent les ma\u00eetres chymistes finissent par se laisser supplanter par leur forme mut\u00e9e et le corps comme l\u2019esprit de l\u2019alchimiste originel refait surface uniquement si les coutumes sociales l\u2019exigent ou si la discr\u00e9tion est de rigueur. Malheureusement, la forme mut\u00e9e du ma\u00eetre chymiste est souvent violente et impitoyable (ce qui risque de cr\u00e9er des conflits entre les deux versions du m\u00eame personnage).</i></p><p><b>D\u00e9 de vie : </b>d10<br/><b>Alignement : </b>Le ma\u00eetre chymiste a deux alignements (voir le pouvoir de forme mut\u00e9e) Ils ne peuvent pas \u00eatre tous deux les m\u00eames<br/><b>Rangs/niveau : </b>2</p><p><table><tr><th style=\"text-align:left\">Niveau</th><th style=\"text-align:left\">BBA</th><th style=\"text-align:left\">Ref</th><th style=\"text-align:left\">Vig</th><th style=\"text-align:left\">Vol</th></tr><tr><td>1</td><td>+1</td><td>+1</td><td>+1</td><td>+0</td></tr><tr><td>2</td><td>+2</td><td>+1</td><td>+1</td><td>+1</td></tr><tr><td>3</td><td>+3</td><td>+2</td><td>+2</td><td>+1</td></tr><tr><td>4</td><td>+4</td><td>+2</td><td>+2</td><td>+1</td></tr><tr><td>5</td><td>+5</td><td>+3</td><td>+3</td><td>+2</td></tr><tr><td>6</td><td>+6</td><td>+3</td><td>+3</td><td>+2</td></tr><tr><td>7</td><td>+7</td><td>+4</td><td>+4</td><td>+2</td></tr><tr><td>8</td><td>+8</td><td>+4</td><td>+4</td><td>+3</td></tr><tr><td>9</td><td>+9</td><td>+5</td><td>+5</td><td>+3</td></tr><tr><td>10</td><td>+10</td><td>+5</td><td>+5</td><td>+3</td></tr></table></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Ma%c3%aetre%20chYmiste.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p></div>",
+            "chat": "",
+            "unidentified": ""
+         },
+         "changes": [],
+         "changeFlags": {
+            "loseDexToAC": false,
+            "noStr": false,
+            "noDex": false,
+            "oneInt": false,
+            "oneWis": false,
+            "oneCha": false,
+            "noEncumbrance": false,
+            "mediumArmorFullSpeed": false,
+            "heavyArmorFullSpeed": false
+         },
+         "classType": "prestige",
+         "levels": 1,
+         "hd": 10,
+         "hp": 10,
+         "bab": "high",
+         "skillsPerLevel": 2,
+         "savingThrows": {
+            "fort": {
+               "value": "high"
+            },
+            "ref": {
+               "value": "high"
+            },
+            "will": {
+               "value": "low"
+            }
+         },
+         "fc": {
+            "hp": {
+               "value": 0
+            },
+            "skill": {
+               "value": 0
+            },
+            "alt": {
+               "value": 0
+            }
+         },
+         "classSkills": {
+            "acr": true,
+            "apr": false,
+            "blf": false,
+            "clm": true,
+            "crf": false,
+            "dip": false,
+            "dev": false,
+            "dis": false,
+            "esc": true,
+            "fly": false,
+            "han": false,
+            "hea": false,
+            "int": true,
+            "kar": false,
+            "kdu": true,
+            "ken": false,
+            "kge": false,
+            "khi": false,
+            "klo": false,
+            "kna": false,
+            "kno": false,
+            "kpl": false,
+            "kre": false,
+            "lin": false,
+            "per": false,
+            "prf": false,
+            "pro": false,
+            "rid": false,
+            "sen": true,
+            "slt": false,
+            "spl": false,
+            "ste": true,
+            "sur": false,
+            "swm": true,
+            "umd": false
+         },
+         "damage": {
+            "parts": []
+         },
+         "preparation": {
+            "maxAmount": 0
+         },
+         "weaponData": {
+            "critRange": 20,
+            "critMult": 2
+         }
+      },
+      "sort": 100001,
+      "flags": {},
+      "img": "icons/svg/mystery-man.svg"
    }
 ]

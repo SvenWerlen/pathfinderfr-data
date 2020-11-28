@@ -88,7 +88,7 @@ def mergeWithLetContribute(clist, filepath, ignoreDuplicates = True):
   EFFECTS = "letscontribute/effets.json"
   if os.path.isfile(EFFECTS) :
     data = json.load(open(EFFECTS, 'r'))
-    type = clist[0]['type']
+    type = clist[0]['type'] if 'type' in clist[0] else 'journal'
     if type in data:
       effects = data[type]
       for el in noDupList:

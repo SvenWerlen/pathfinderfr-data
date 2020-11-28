@@ -1375,5 +1375,86 @@
          "slot": "slotless"
       },
       "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
+   },
+   {
+      "name": "Armure de feuilles",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<p><b>Cat\u00e9gorie : </b>Armure l\u00e9g\u00e8re<br/><b>Prix : </b>500 po<br/><b>Bonus : </b>+3<br/><b>Dex maximale : </b>+5<br/><b>Malus : </b>0<br/><b>\u00c9chec : </b>15%<br/><b>Poids : </b>10 kg<br/><h2>Description</h2><p>Les druides elfiques utilisent des composants alchimiques secrets pour traiter des feuilles particuli\u00e8res et en faire des armures pour leurs guerriers. Ce sont toujours des objets de ma\u00eetre.<br/><br/></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#Armuredefeuilles\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "ISWG",
+         "quantity": 1,
+         "weight": 20.0,
+         "price": 500,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "equipmentType": "armor",
+         "equipmentSubtype": "lightArmor",
+         "armor": {
+            "value": 3,
+            "dex": 5,
+            "acp": 0,
+            "enh": 0
+         },
+         "spellFailure": 15,
+         "slot": "slotless"
+      },
+      "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
+   },
+   {
+      "name": "Armure de L\u00e9gionnaire infernal",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<p><b>Cat\u00e9gorie : </b>Armure lourde<br/><b>Prix : </b>1 200 po<br/><b>Bonus : </b>+9<br/><b>Dex maximale : </b>+1<br/><b>Malus : </b>-5<br/><b>\u00c9chec : </b>35%<br/><b>Poids : </b>25 kg<br/><h2>Description</h2><p>Ces armures reconnaissables sont semblables \u00e0 des harnois de ma\u00eetre qui offrent des avantages suppl\u00e9mentaires \u00e0 leur propri\u00e9taire s\u2019il fait partie des L\u00e9gionnaires infernaux.<br/><br/></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#ArmuredeL\u00e9gionnaireinfernal\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "ISWG",
+         "quantity": 1,
+         "weight": 50.0,
+         "price": 1200,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "equipmentType": "armor",
+         "equipmentSubtype": "heavyArmor",
+         "armor": {
+            "value": 9,
+            "dex": 1,
+            "acp": 5,
+            "enh": 0
+         },
+         "spellFailure": 35,
+         "slot": "slotless"
+      },
+      "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
+   },
+   {
+      "name": "Plate flexible",
+      "type": "equipment",
+      "data": {
+         "description": {
+            "value": "<p><b>Cat\u00e9gorie : </b>Armure lourde<br/><b>Prix : </b>1200 po<br/><b>Bonus : </b>+7<br/><b>Dex maximale : </b>+1<br/><b>Malus : </b>-5<br/><b>\u00c9chec : </b>35%<br/><b>Poids : </b>25 kg<br/><h2>Description</h2><p>Cette armure lourde est similaire \u00e0 un harnois mais elle est un peu plus l\u00e9g\u00e8re et sacrifie une part de protection pour b\u00e9n\u00e9ficier d\u2019une meilleure flexibilit\u00e9 et d\u2019une plus grande mobilit\u00e9.<br/><br/></p><p><b>R\u00e9f\u00e9rence : </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Descriptions%20individuelles%20des%20armures.ashx#Plateflexible\" parent=\"_blank\">pathfinder-fr.org</a></p>"
+         },
+         "source": "ISWG",
+         "quantity": 1,
+         "weight": 50.0,
+         "price": 1200,
+         "identified": true,
+         "carried": true,
+         "equipped": false,
+         "equipmentType": "armor",
+         "equipmentSubtype": "heavyArmor",
+         "armor": {
+            "value": 7,
+            "dex": 1,
+            "acp": 5,
+            "enh": 0
+         },
+         "spellFailure": 35,
+         "slot": "slotless"
+      },
+      "img": "systems/pf1/icons/items/armor/banded-mail.PNG"
    }
 ]
