@@ -4303,14 +4303,14 @@
     un esprit de chaman (Même si le chaman aurait besoin d’une heure de préparation,
     cela ne demande pas de temps au personnage). Pendant les prochaines 24 heures,
     il peut par une action simple, conférer la capacité d'esprit animal de cet esprit
-    de chaman à son compagnon animal ou à son sorcière pendant 1 minute par niveau
-    dans la classe qui lui confère ce compagnon animal ou ce sorcière
+    de chaman à son compagnon animal ou à son familier pendant 1 minute par niveau
+    dans la classe qui lui confère ce compagnon animal ou ce familier
   AvantageHTML: " Au début de la journée, le personnage peut décider de communier\
     \ avec un esprit de chaman (Même si le chaman aurait besoin d’une heure de préparation,\
     \ cela ne demande pas de temps au personnage). Pendant les prochaines 24 heures,\
     \ il peut par une action simple, conférer la capacité d'esprit animal de cet esprit\
-    \ de chaman à son compagnon animal ou à son sorcière pendant 1 minute par niveau\
-    \ dans la classe qui lui confère ce compagnon animal ou ce sorcière. \r \t"
+    \ de chaman à son compagnon animal ou à son familier pendant 1 minute par niveau\
+    \ dans la classe qui lui confère ce compagnon animal ou ce familier. \r \t"
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don%20de%20lesprit.ashx
   
@@ -4329,8 +4329,9 @@
 - Nom: Critique assourdissant
   Résumé: Quand le personnage porte un coup critique, la cible est assourdie
   Catégorie: combat, critique
-  Conditions: Don pour les critiques, BBA +15
-  ConditionsRefs: []
+  Conditions: Don pour les critiques, BBA +13
+  ConditionsRefs:
+  - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Don%20pour%20les%20critiques.ashx
   Avantage: Quand le personnage réussit un coup critique, sa victime devient définitivement
     sourde. Un jet de Vigueur réussi permet d’être assourdi pendant seulement un round.
     Le DD du jet de Vigueur est égal à 10 + bonus de base à l’attaque du personnage.
@@ -16361,18 +16362,20 @@
     il se bat sur la défensive. Lorsqu'il se bat sur la défensive et qu'il utilise
     Aile de la grue pour obtenir un bonus d'esquive contre une attaque, cette attaque
     provoque une attaque d’opportunité de sa part si elle échoue. D'autre part, lorsque
-    le personnage dévie une attaque grâce à l'utilisation d'Aile de la grue parce
-    qu'une attaque l'a raté de 4 ou moins, il peut effectuer une attaque d’opportunité
-    contre cet adversaire (même s'il ne devrait normalement pas pouvoir faire d'attaque
-    d'opportunité en défense totale)
+    le personnage dévie une attaque grâce à l'utilisation d'Aile de la grue ou qu'il
+    perd le bonus d'esquive conféré par Aile de la grue parce qu'une attaque l'a raté
+    de 4 ou moins, il peut effectuer une attaque d’opportunité contre cet adversaire
+    (même s'il ne devrait normalement pas pouvoir faire d'attaque d'opportunité en
+    défense totale)
   AvantageHTML: " Le personnage subit un malus de -1 seulement aux jets d’attaque\
     \ quand il se bat sur la défensive. Lorsqu'il se bat sur la défensive et qu'il\
     \ utilise Aile de la grue pour obtenir un bonus d'esquive contre une attaque,\
     \ cette attaque provoque une attaque d’opportunité de sa part si elle échoue.\
     \ D'autre part, lorsque le personnage dévie une attaque grâce à l'utilisation\
-    \ d'Aile de la grue parce qu'une attaque l'a raté de 4 ou moins, il peut effectuer\
-    \ une attaque d’opportunité contre cet adversaire (même s'il ne devrait normalement\
-    \ pas pouvoir faire d'attaque d'opportunité en défense totale). \r \t"
+    \ d'Aile de la grue ou qu'il perd le bonus d'esquive conféré par Aile de la grue\
+    \ parce qu'une attaque l'a raté de 4 ou moins, il peut effectuer une attaque d’opportunité\
+    \ contre cet adversaire (même s'il ne devrait normalement pas pouvoir faire d'attaque\
+    \ d'opportunité en défense totale). \r \t"
   Source: AG
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Riposte%20de%20la%20grue.ashx
   
@@ -25887,23 +25890,23 @@
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Arme%20de%20pr%c3%a9dilection.ashx
   - http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Attaque%20en%20finesse.ashx
   Avantage: 'Quand il manie une rapière d’une seule main, le personnage peut ajouter
-    son modificateur de Dextérité aux dégâts de cette arme. La taille de la rapière
-    doit correspondre à celle du personnage. Il n''obtient pas ce bénéfice lorsqu''il
-    combat à deux armes, lorsqu''il utilise déluge de coups ou chaque fois que son
-    autre main est occupée autrement.
+    son modificateur de Dextérité à la place de son modificateur de Force aux dégâts
+    de cette arme. La taille de la rapière doit correspondre à celle du personnage.
+    Il n''obtient pas ce bénéfice lorsqu''il combat à deux armes, lorsqu''il utilise
+    déluge de coups ou chaque fois que son autre main est occupée autrement.
 
 
     De plus, s’il possède l’aptitude de classe de panache et s’il lui reste au moins
     1 point de panache, il gagne un bonus de +2 au DMD quand un adversaire tente de
     le désarmer en le privant de sa rapière'
   AvantageHTML: " Quand il manie une rapière d’une seule main, le personnage peut\
-    \ ajouter son modificateur de Dextérité aux dégâts de cette arme. La taille de\
-    \ la rapière doit correspondre à celle du personnage. Il n'obtient pas ce bénéfice\
-    \ lorsqu'il combat à deux armes, lorsqu'il utilise déluge de coups ou chaque fois\
-    \ que son autre main est occupée autrement.<br/><br/>De plus, s’il possède l’aptitude\
-    \ de classe de panache et s’il lui reste au moins 1 point de panache, il gagne\
-    \ un bonus de +2 au DMD quand un adversaire tente de le désarmer en le privant\
-    \ de sa rapière. \r \t"
+    \ ajouter son modificateur de Dextérité à la place de son modificateur de Force\
+    \ aux dégâts de cette arme. La taille de la rapière doit correspondre à celle\
+    \ du personnage. Il n'obtient pas ce bénéfice lorsqu'il combat à deux armes, lorsqu'il\
+    \ utilise déluge de coups ou chaque fois que son autre main est occupée autrement.<br/><br/>De\
+    \ plus, s’il possède l’aptitude de classe de panache et s’il lui reste au moins\
+    \ 1 point de panache, il gagne un bonus de +2 au DMD quand un adversaire tente\
+    \ de le désarmer en le privant de sa rapière. \r \t"
   Source: MCA
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Escrime%20gracieuse.ashx
   
@@ -27153,4 +27156,155 @@
     de vie que lui.
   Source: MR
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeance%20sanglante.ashx
+  
+- Nom: Belliciste
+  Conditions: Cha 13, hobgobelin
+  Avantage: Le personnage obtient Bluff et Diplomatie comme compétences de classe.
+    De plus, il reçoit un bonus de compétence de +4 aux tests de Bluff et de Diplomatie
+    quand il utilise l’une ou l’autre de ces compétences pour convaincre autrui de
+    partir en guerre ou bien d’attaquer une autre créature ou un autre groupe.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Belliciste.ashx
+  
+- Nom: Commandant des gobelinoïdes
+  Conditions: Cha 13, hobgobelin
+  Avantage: Le personnage reçoit un bonus de compétence de +5 aux tests de Connaissances
+    (folklore local) et aux tests de compétence basés sur le Charisme vis-à-vis des
+    autres gobelinoïdes. Si le personnage dispose du don Prestige, il considère qu’il
+    a 2 points de prestige de plus qu’en réalité quand il s’agit de prendre des suivants
+    ou des compagnons d’armes de sous-type gobelinoïde.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Commandant%20des%20gobelino%c3%afdes.ashx
+  
+- Nom: Esprit d'équipe
+  Catégorie: combat, équipe
+  Avantage: Quand le personnage se trouve à 3 mètres ou moins d’un allié bénéficiant
+    d’un sort ou d’un effet apportant un bonus de moral sur un jet de dé particulier,
+    il peut appliquer ce bonus sur un de ses jets du type approprié, une fois pendant
+    la période d’effet de ce bonus. Par exemple, si un allié possédant ce don bénéficie
+    du sort héroïsme, une fois pendant la durée du sort, le personnage peut bénéficier
+    d’un bonus de moral de +2 à un jet de sauvegarde ou d’attaque ou à un test de
+    compétence. Il ne peut utiliser ce don qu’une fois par round et une fois seulement
+    par sort ou effet.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Esprit%20d%c3%a9quipe.ashx
+  
+- Nom: Motivation pour la marche
+  Avantage: Quand le personnage voyage par voie de terre, il réduit les dégâts non
+    létaux associés à une marche forcée de moitié pour lui et un nombre d’alliés égal
+    à dix fois son niveau de personnage. Les créatures qui bénéficient des effets
+    de ce don retardent les effets de fatigue d’un nombre d’heures égal au modificateur
+    de Charisme du personnage (1 au minimum). Une créature qui retarde ainsi l’effet
+    est épuisée au lieu d’être fatiguée dès que l’état préjudiciable s’applique.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Motivation%20pour%20la%20marche.ashx
+  
+- Nom: Pedigree de commandant
+  Conditions: Hobgobelin
+  Avantage: 'Lorsque le personnage occupe le poste de commandant dans les règles
+    du combat de masse du chapitre 4 du Guide de campagne, il ajoute ses niveaux de
+    classe aux tests de moral de son armée au lieu de son modificateur de Charisme.
+
+    NOTE Les règles du combat de masse ne sont pas encore intégrées au wiki.'
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Pedigree%20de%20commandant.ashx
+  
+- Nom: Succession de défis
+  Conditions: Pouvoir de classe défi, personnage de niveau 7
+  Avantage: Quand la cible du défi du personnage meurt ou tombe inconsciente, il
+    peut lancer un nouveau défi à une cible située dans un rayon de 9 mètres par une
+    action immédiate. Il doit le faire immédiatement après la défaite de la cible
+    du premier défi et, s’il n’est pas en mesure d’agir à ce moment-là, il ne peut
+    plus le faire ensuite. S’il lance un nouveau défi en utilisant ce don, le défi
+    n’est pas décompté de son nombre d’utilisations quotidiennes. Après le premier
+    défi, il peut en enchaîner un nombre ne dépassant pas son bonus de Charisme (1
+    au minimum).
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Succession%20de%20d%c3%a9fis.ashx
+  
+- Nom: Magie draconique
+  Conditions: Aspect draconique, kobold
+  Avantage: 'Le personnage gagne un ensemble de pouvoirs magiques basé sur la couleur
+    de son aspect draconique. Il peut utiliser chacun de ces pouvoirs une fois par
+    jour. Leur DD est égal à 10 + 1/2 DV du personnage + son modificateur de Charisme.
+
+
+    Blanc. mains brûlantes† (mais inflige des dégâts de froid et non de feu), nappe
+    de brouillard.
+
+    Bleu. image imparfaite, décharge électrique†.
+
+    Noir. contact corrosif†, ténèbres.
+
+    Rouge. mains brûlantes†, pyrotechnie.
+
+    Vert. bourrasque, enchevêtrement†.
+
+    BLANC mains brûlantes† (mais inflige des dégâts de froid et non de feu), nappe
+    de brouillard.
+
+    BLEU image imparfaite, décharge électrique†.
+
+    NOIR contact corrosif†, ténèbres.
+
+    ROUGE mains brûlantes†, pyrotechnie.
+
+    VERT bourrasque, enchevêtrement†.'
+  Spécial: Le personnage peut utiliser ce don à la place de Souffle draconique ou
+    Plané draconique pour remplir les conditions requises par le don Modèle draconique.
+    S’il possède ce don et le Modèle draconique, il peut utiliser les pouvoirs marqués
+    d’un obèle (†) deux fois par jour.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Magie%20draconique.ashx
+  
+- Nom: Monte de slurk
+  Catégorie: combat
+  Conditions: Kobold
+  Avantage: Le personnage sait contrôler, guider et communiquer avec les slurks
+    comme si ces derniers comprenaient le draconique. Il peut aussi dépenser une action
+    simple pour manipuler leurs nodules dorsaux et activer leur pouvoir de mucus.
+    Le personnage et le slurk peuvent activer ce pouvoir au cours du même round.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Monte%20de%20slurk.ashx
+  
+- Nom: Chevaucheur de cornes
+  Catégorie: combat
+  Conditions: BBA +1
+  Avantage: L’orque gagne un bonus de bouclier de +1 à la CA quand il est fixé à
+    un harnais à corne.
+  Spécial: Une créature qui possède ce don peut prendre le don Tir monté même si
+    elle ne possède pas de rang dans la compétence Équitation ou le don Combat monté.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Chevaucheur%20de%20cornes.ashx
+  
+- Nom: Charge du chevaucheur de cornes
+  Catégorie: combat
+  Conditions: Chevaucheur de cornes, BBA +1
+  Avantage: Quand il est fixé à un harnais à corne et qu’il a préparé une action
+    pour porter une attaque au corps à corps contre la cible que la créature chevauchée
+    est en train de charger, l’orque gagne le bonus d’attaque de la charge et son
+    attaque inflige le double des dégâts (ou le triple, s’il manie une lance d’arçon).
+    Cet avantage ne se cumule pas avec celui de la Charge dévastatrice.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Charge%20du%20chevaucheur%20de%20cornes.ashx
+  
+- Nom: Haine réciproque
+  Catégorie: combat
+  Avantage: L’orque gagne un bonus de +1 aux jets d’attaque et de dégâts contre
+    les créatures dont le trait racial de haine ou le pouvoir de classe ennemi juré
+    s’applique à lui. Par exemple, l’orque gagnerait ce bonus contre tous les nains
+    ainsi que contre les rôdeurs ayant choisi la catégorie humanoïde (orque) comme
+    ennemi juré.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Haine%20r%c3%a9ciproque.ashx
+  
+- Nom: Légion balafrée
+  Catégorie: équipe
+  Avantage: L’orque gagne un bonus de +2 aux tests d’Intimidation. Il gagne également
+    un bonus de moral de +2 aux jets de Volonté lorsqu’il est à côté d’un allié possédant
+    ce don. Quand il charge, l’orque conserve son bonus de Volonté jusqu’au début
+    de son prochain tour s’il a initié sa charge alors qu’il était adjacent à un allié
+    possédant ce don.
+  Source: CM
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.L%c3%a9gion%20balafr%c3%a9e.ashx
   

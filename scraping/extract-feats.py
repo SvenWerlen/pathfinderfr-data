@@ -44,10 +44,15 @@ for URL in URLS:
     list = []
     if MOCK_LIST:
         parsed_html = BeautifulSoup(open(MOCK_LIST),features="lxml")
-        list = parsed_html.body.find(id='PageContentDiv').find_all('tr')
+        list = parsed_html.body.find(id='PageContentDiv').find_all('table')
     else:
         parsed_html = BeautifulSoup(urllib.request.urlopen(URL).read(),features="lxml")
-        list = parsed_html.body.find(id='PageContentDiv').find_all('tr')
+        list = parsed_html.body.find(id='PageContentDiv').find_all('table')
+    
+    for table in list:
+        if 'class' in table.attrs and 'tablo' in table.attrs['class']:
+            list = table.find_all('tr')
+            break
     
     # itération sur chaque page
     idxAvantages = -1

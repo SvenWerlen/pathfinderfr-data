@@ -340,6 +340,8 @@ def extractSource(div):
                 return 'PMI'
             elif('logoAE' in c['src']):
                 return 'AE'
+            elif('logoISWG' in c['src']):
+                return 'ISWG'
             elif('logoref' in c['src']): # ignore
                 continue
             else:

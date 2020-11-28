@@ -1799,6 +1799,25 @@
   Poids: 0,25 kg
   Artisanat: 20
   Catégorie: Outils alchimiques
+  Description: Ce bâtonnet en bois traité alchimiquement crée instantanément une
+    épaisse fumée opaque lorsqu’on le brûle. La fumée remplit un cube de 3 mètres
+    de côté (traitez l’effet comme un sort de nappe de brouillard, à la seule différence
+    qu’un vent moyen ou plus fort la dissipe en 1 round). Le bâton se consume au bout
+    d’un round et la fumée se dissipe naturellement au bout d’une minute.
+  DescriptionHTML: 'Ce bâtonnet en bois traité alchimiquement crée instantanément
+    une épaisse fumée opaque lorsqu’on le brûle. La fumée remplit un cube de 3 mètres
+    de côté (traitez l’effet comme un sort de nappe de brouillard, à la seule différence
+    qu’un vent moyen ou plus fort la dissipe en 1 round). Le bâton se consume au bout
+    d’un round et la fumée se dissipe naturellement au bout d’une minute.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Bâton
+    fumigène
+  
+- Nom: Bille fumigène
+  Source: AE
+  Prix: 25 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Outils alchimiques
   Description: Ces petites billes d’argile renferment des substances alchimiques
     séparées par de fines parois. Lorsque le personnage brise la bille, les différentes
     substances se mélangent et remplissent une zone de 1,50 mètre de côté d’un nuage
@@ -1813,15 +1832,6 @@
     comme les bâtons fumigènes à la seule différence que la fumée ne dure qu’un round
     avant de se dissiper. Le personnage peut lancer une bille fumigène lors d’une
     attaque de contact à distance avec un facteur de portée de 3 mètres.<br/><br/> '
-  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Bâton
-    fumigène
-  
-- Nom: Bille fumigène
-  Source: MJ
-  Prix: 25 po
-  Poids: —
-  Artisanat: 20
-  Catégorie: Outils alchimiques
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Bille
     fumigène
   
@@ -4372,7 +4382,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Selle (de bât)
@@ -4405,7 +4415,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Selle (de guerre)
@@ -4438,7 +4448,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Selle spéciale (d'équitation)
@@ -4471,7 +4481,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Selle spéciale (de bât)
@@ -4504,7 +4514,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Selle spéciale (de guerre)
@@ -4537,7 +4547,7 @@
     pour différents types de montures extraordinaires, chacune étant taillée pour
     un type de créature spécifique. Les selles spéciales existent en selles de guerre,
     en selles de bât et en selles d’équitation, comme les selles normales, et elles
-    ont les mêmes caractéristiques.<br/><br/><br/> '
+    ont les mêmes caractéristiques.<br/><br/><br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
   
 - Nom: Traîneau
@@ -8065,14 +8075,14 @@
     avec de 2 à 4 couleurs dominantes et un insigne complexe comme un lion ou un dragon
     coûte 5 po. Une bannière détaillée avec 4 couleurs dominantes ou plus et un insigne
     très complexe comme une armoirie à 8 sections ou plus coûte 20 po.
-  DescriptionHTML: Il s’agit d’une bannière, d’un drapeau ou d’un fanion. Le personnage
+  DescriptionHTML: 'Il s’agit d’une bannière, d’un drapeau ou d’un fanion. Le personnage
     le fixe à une perche, à une lance ou à une arme d’hast. La plupart des bannières
     sont tissées, colorées ou peintes avec un motif ou un symbole, comme les armoiries
     d’un chevalier ou le drapeau d’un pays. Une bannière simple avec une seule couleur
     dominante et un insigne simple comme une arme ou un bouclier coûte 1 po. Une bannière
     avec de 2 à 4 couleurs dominantes et un insigne complexe comme un lion ou un dragon
     coûte 5 po. Une bannière détaillée avec 4 couleurs dominantes ou plus et un insigne
-    très complexe comme une armoirie à 8 sections ou plus coûte 20 po.<br/><br/><br/>
+    très complexe comme une armoirie à 8 sections ou plus coûte 20 po.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Bannière
   
 - Nom: Boîte à parchemins
@@ -9734,19 +9744,31 @@
   Prix: 5 po
   Poids: —
   Catégorie: Équipement d'aventurier
-  Description: La plupart des parfums et eaux de Cologne sont fabriqués à partir
-    d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le MJ
-    donne son accord) accorder un bonus de circonstances de +1 à différents tests
-    de compétences basées sur le Charisme.
+  Description: "La plupart des parfums et eaux de Cologne sont fabriqués à partir\
+    \ d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le\
+    \ MJ donne son accord) accorder un bonus de circonstances de +1 à différents tests\
+    \ de compétences basées sur le Charisme.\n\nOrdinaire. Le parfum et l’eau de Cologne\
+    \ sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer les\
+    \ autres par leur odeur.\n Exotique. Les parfums et l’eau de Cologne exotiques\
+    \ sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre\
+    \ heures au cours desquelles le personnage gagne un bonus de circonstance de +2\
+    \ aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme\
+    \ indifférentes au parfum)."
   DescriptionHTML: 'La plupart des parfums et eaux de Cologne sont fabriqués à partir
     d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le MJ
     donne son accord) accorder un bonus de circonstances de +1 à différents tests
-    de compétences basées sur le Charisme.<br/><br/> '
+    de compétences basées sur le Charisme.<br/><br/>Ordinaire. Le parfum et l’eau
+    de Cologne sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer
+    les autres par leur odeur.<br/> Exotique. Les parfums et l’eau de Cologne exotiques
+    sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre
+    heures au cours desquelles le personnage gagne un bonus de circonstance de +2
+    aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme indifférentes
+    au parfum).<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Parfum/Eau
     de Cologne
   
 - Nom: Passe-partout
-  Source: MJ
+  Source: ISWG
   Prix: 85 po
   Poids: —
   Catégorie: Équipement d'aventurier
@@ -12416,22 +12438,20 @@
     temporairement des objets en métal. Elle est vendue dans un flacon hermétique
     et réagit à l’air en se solidifiant en 1d6+4 minutes. Le personnage doit faire
     le test d’Artisanat approprié DD20 pour réparer un objet en métal brisé. S’il
-    réussit, l’objet n’est plus brisé mais passe à l’état fragile (voir p. 22). Augmentez
-    le DD de +5 si l’objet brisé est un objet magique ou s’il s’agit d’une arme à
-    feu (ajoutez les deux modificateurs s’il s’agit d’une arme à feu magique). Si
-    le personnage rate son test, la pâte de réparation est gâchée mais il peut faire
-    une nouvelle tentative avec un autre flacon ou en utilisant les méthodes de réparation
-    conventionnelles.
+    réussit, l’objet n’est plus brisé mais passe à l’état fragile. Augmentez le DD
+    de +5 si l’objet brisé est un objet magique ou s’il s’agit d’une arme à feu (ajoutez
+    les deux modificateurs s’il s’agit d’une arme à feu magique). Si le personnage
+    rate son test, la pâte de réparation est gâchée mais il peut faire une nouvelle
+    tentative avec un autre flacon ou en utilisant les méthodes de réparation conventionnelles.
   DescriptionHTML: 'On peut utiliser cette pâte argentée et malodorante pour réparer
     temporairement des objets en métal. Elle est vendue dans un flacon hermétique
     et réagit à l’air en se solidifiant en 1d6+4 minutes. Le personnage doit faire
     le test d’Artisanat approprié DD20 pour réparer un objet en métal brisé. S’il
-    réussit, l’objet n’est plus brisé mais passe à l’état fragile (voir p. 22). Augmentez
-    le DD de +5 si l’objet brisé est un objet magique ou s’il s’agit d’une arme à
-    feu (ajoutez les deux modificateurs s’il s’agit d’une arme à feu magique). Si
-    le personnage rate son test, la pâte de réparation est gâchée mais il peut faire
-    une nouvelle tentative avec un autre flacon ou en utilisant les méthodes de réparation
-    conventionnelles.<br/><br/> '
+    réussit, l’objet n’est plus brisé mais passe à l’état fragile. Augmentez le DD
+    de +5 si l’objet brisé est un objet magique ou s’il s’agit d’une arme à feu (ajoutez
+    les deux modificateurs s’il s’agit d’une arme à feu magique). Si le personnage
+    rate son test, la pâte de réparation est gâchée mais il peut faire une nouvelle
+    tentative avec un autre flacon ou en utilisant les méthodes de réparation conventionnelles.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Pâte
     de réparation
   
@@ -15538,4 +15558,454 @@
     de casser si la monture rate son test de Vol.<br/><br/> '
   Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Harnais
     de vol
+  
+- Nom: Chronique des Explorateurs
+  Source: ISWG
+  Prix: 25 po
+  Poids: 0,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Il existe de nombreux volumes et éditions des Chroniques des Explorateurs.
+    Quand le personnage en utilise un comme référence (ce qui lui prend en général
+    1d4 actions complexes de recherche dans les textes), l’ouvrage lui donne un bonus
+    de circonstance de +2 à test de Connaissances donné. Chaque ouvrage donne un bonus
+    à un type de Connaissances différent, mais quel que soit le sujet de la chronique,
+    le prix reste le même.
+  DescriptionHTML: 'Il existe de nombreux volumes et éditions des Chroniques des
+    Explorateurs. Quand le personnage en utilise un comme référence (ce qui lui prend
+    en général 1d4 actions complexes de recherche dans les textes), l’ouvrage lui
+    donne un bonus de circonstance de +2 à test de Connaissances donné. Chaque ouvrage
+    donne un bonus à un type de Connaissances différent, mais quel que soit le sujet
+    de la chronique, le prix reste le même.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Chronique
+    des Explorateurs
+  
+- Nom: Étendard
+  Source: ISWG
+  Prix: 10 po
+  Poids: 1,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: L’étendard est une bannière colorée qui porte le symbole ou le blason
+    d’une nation ou d’une organisation. Un personnage qui porte un étendard et possède
+    le don Porte-étendard accorde des bonus de combat supplémentaires à ses alliés.
+    Il faut avoir une main libre pour porter un étendard au combat.
+  DescriptionHTML: 'L’étendard est une bannière colorée qui porte le symbole ou
+    le blason d’une nation ou d’une organisation. Un personnage qui porte un étendard
+    et possède le don Porte-étendard accorde des bonus de combat supplémentaires à
+    ses alliés. Il faut avoir une main libre pour porter un étendard au combat.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Étendard
+  
+- Nom: Larmes du Dieu vivant
+  Source: ISWG
+  Prix: 25 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: Les fidèles du Dieu vivant disposent d’un certain nombre d’outils
+    pour contrôler la population locale, mais aucun n’est plus insidieux que les larmes
+    du Dieu vivant. Cette décoction contient bon nombre de narcotiques doux et de
+    substances hallucinogènes qui augmentent l’énergie du buveur et renforce sa résistance
+    à la douleur. Elle provoque une forte dépendance. Bien que le clergé offre des
+    larmes du Dieu vivant aux personnes qui ne sont pas encore dépendantes, il finit
+    toujours par exiger un paiement et demande jusqu’à 10 po la dose aux drogués les
+    plus riches.
+  DescriptionHTML: 'Les fidèles du Dieu vivant disposent d’un certain nombre d’outils
+    pour contrôler la population locale, mais aucun n’est plus insidieux que les larmes
+    du Dieu vivant. Cette décoction contient bon nombre de narcotiques doux et de
+    substances hallucinogènes qui augmentent l’énergie du buveur et renforce sa résistance
+    à la douleur. Elle provoque une forte dépendance. Bien que le clergé offre des
+    larmes du Dieu vivant aux personnes qui ne sont pas encore dépendantes, il finit
+    toujours par exiger un paiement et demande jusqu’à 10 po la dose aux drogués les
+    plus riches.<br/><br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Larmes
+    du Dieu vivant
+  
+- Nom: Parfum/Eau de Cologne (ordinaire)
+  Source: MJ
+  Prix: 1 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: "La plupart des parfums et eaux de Cologne sont fabriqués à partir\
+    \ d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le\
+    \ MJ donne son accord) accorder un bonus de circonstances de +1 à différents tests\
+    \ de compétences basées sur le Charisme.\n\nOrdinaire. Le parfum et l’eau de Cologne\
+    \ sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer les\
+    \ autres par leur odeur.\n Exotique. Les parfums et l’eau de Cologne exotiques\
+    \ sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre\
+    \ heures au cours desquelles le personnage gagne un bonus de circonstance de +2\
+    \ aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme\
+    \ indifférentes au parfum)."
+  DescriptionHTML: 'La plupart des parfums et eaux de Cologne sont fabriqués à partir
+    d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le MJ
+    donne son accord) accorder un bonus de circonstances de +1 à différents tests
+    de compétences basées sur le Charisme.<br/><br/>Ordinaire. Le parfum et l’eau
+    de Cologne sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer
+    les autres par leur odeur.<br/> Exotique. Les parfums et l’eau de Cologne exotiques
+    sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre
+    heures au cours desquelles le personnage gagne un bonus de circonstance de +2
+    aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme indifférentes
+    au parfum).<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Parfum/Eau
+    de Cologne
+  
+- Nom: Parfum/Eau de Cologne (exotique)
+  Source: MJ
+  Prix: 100 po
+  Poids: —
+  Catégorie: Équipement d'aventurier
+  Description: "La plupart des parfums et eaux de Cologne sont fabriqués à partir\
+    \ d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le\
+    \ MJ donne son accord) accorder un bonus de circonstances de +1 à différents tests\
+    \ de compétences basées sur le Charisme.\n\nOrdinaire. Le parfum et l’eau de Cologne\
+    \ sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer les\
+    \ autres par leur odeur.\n Exotique. Les parfums et l’eau de Cologne exotiques\
+    \ sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre\
+    \ heures au cours desquelles le personnage gagne un bonus de circonstance de +2\
+    \ aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme\
+    \ indifférentes au parfum)."
+  DescriptionHTML: 'La plupart des parfums et eaux de Cologne sont fabriqués à partir
+    d’huiles essentielles de fleurs. Un parfum ou une eau de Cologne peut (si le MJ
+    donne son accord) accorder un bonus de circonstances de +1 à différents tests
+    de compétences basées sur le Charisme.<br/><br/>Ordinaire. Le parfum et l’eau
+    de Cologne sont des accessoires ordinaires pour ceux qui veulent éviter d’indisposer
+    les autres par leur odeur.<br/> Exotique. Les parfums et l’eau de Cologne exotiques
+    sont vendus dans des fioles contentant dix doses, chacune durant vingt-quatre
+    heures au cours desquelles le personnage gagne un bonus de circonstance de +2
+    aux tests de Diplomatie (sauf contre les créatures que le MJ considère comme indifférentes
+    au parfum).<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Parfum/Eau
+    de Cologne
+  
+- Nom: Pierre chauffante
+  Source: ISWG
+  Prix: 20 po
+  Poids: 0,5 kg
+  Catégorie: Équipement d'aventurier
+  Description: Ces grosses pierres rondes ou ovoïdes, traitées selon un procédé
+    alchimique pour améliorer leurs propriétés naturelles de productrices de chaleur,
+    peuvent réchauffer une pièce entière, même au plus froid de l’hiver. Une pierre
+    chauffante suffit pour donner une température agréable à une pièce de six mètres
+    de côté, même par un froid extrême (‑30°C) ou une pièce de douze mètres de côté
+    par un froid prononcé (en dessous de -10°C). On active la pierre chauffante en
+    la frottant contre une surface solide, elle produit ensuite de la chaleur pendant
+    vingt-quatre heures. En revanche, elle ne fournit pas assez de chaleur pour cuisiner
+    ou blesser quelqu’un.
+  DescriptionHTML: 'Ces grosses pierres rondes ou ovoïdes, traitées selon un procédé
+    alchimique pour améliorer leurs propriétés naturelles de productrices de chaleur,
+    peuvent réchauffer une pièce entière, même au plus froid de l’hiver. Une pierre
+    chauffante suffit pour donner une température agréable à une pièce de six mètres
+    de côté, même par un froid extrême (‑30°C) ou une pièce de douze mètres de côté
+    par un froid prononcé (en dessous de -10°C). On active la pierre chauffante en
+    la frottant contre une surface solide, elle produit ensuite de la chaleur pendant
+    vingt-quatre heures. En revanche, elle ne fournit pas assez de chaleur pour cuisiner
+    ou blesser quelqu’un.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89quipement%20daventurier.ashx#Pierre
+    chauffante
+  
+- Nom: Bille de fronde alchimique
+  Source: MC
+  Prix: 5 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: 'Les alchimistes hobgobelins équipent leurs camarades avec ces fioles
+    de verre sphériques que l’on peut remplir d’une dose d’une arme alchimique à aspersion,
+    cette dernière servant alors comme munition pour la fronde. Si la bille touche,
+    elle se brise et affecte la cible avec la solution alchimique qu’elle contient.
+    La bille inflige uniquement des dégâts d’aspersion (le cas échéant), pas les dégâts
+    qu’une bille de fronde ordinaire devrait infliger. On résout l’attaque en fonction
+    de la CA normale de la cible (et non de sa CA au contact), comme avec une bille
+    de fronde normale, en utilisant le facteur de portée de la fronde. La bille de
+    fronde alchimique n’inflige pas de dégâts d’aspersion dans les cases adjacentes
+    à celle de sa cible. Si le jet d’attaque de la bille alchimique échoue, elle est
+    détruite, tout comme son contenu qui ne risque pas d’exploser dans une autre case.
+
+
+    Pour remplir une bille de fronde alchimique, il faut effectuer une action simple
+    qui provoque des attaques d’opportunité. De plus, le personnage doit réussir un
+    test d’Artisanat (alchimie) ou Escamotage DD 15, sinon, il renverse la substance
+    alchimique sur lui. En cas d’échec, l’arme alchimique explose dans sa case, comme
+    s’il était sa cible (et affecte éventuellement les cases adjacentes avec un effet
+    d’aspersion).'
+  DescriptionHTML: 'Les alchimistes hobgobelins équipent leurs camarades avec ces
+    fioles de verre sphériques que l’on peut remplir d’une dose d’une arme alchimique
+    à aspersion, cette dernière servant alors comme munition pour la fronde. Si la
+    bille touche, elle se brise et affecte la cible avec la solution alchimique qu’elle
+    contient. La bille inflige uniquement des dégâts d’aspersion (le cas échéant),
+    pas les dégâts qu’une bille de fronde ordinaire devrait infliger. On résout l’attaque
+    en fonction de la CA normale de la cible (et non de sa CA au contact), comme avec
+    une bille de fronde normale, en utilisant le facteur de portée de la fronde. La
+    bille de fronde alchimique n’inflige pas de dégâts d’aspersion dans les cases
+    adjacentes à celle de sa cible. Si le jet d’attaque de la bille alchimique échoue,
+    elle est détruite, tout comme son contenu qui ne risque pas d’exploser dans une
+    autre case.<br/><br/>Pour remplir une bille de fronde alchimique, il faut effectuer
+    une action simple qui provoque des attaques d’opportunité. De plus, le personnage
+    doit réussir un test d’Artisanat (alchimie) ou Escamotage DD 15, sinon, il renverse
+    la substance alchimique sur lui. En cas d’échec, l’arme alchimique explose dans
+    sa case, comme s’il était sa cible (et affecte éventuellement les cases adjacentes
+    avec un effet d’aspersion).<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Bille
+    de fronde alchimique
+  
+- Nom: Chistera
+  Source: MC
+  Prix: 12 po
+  Poids: 0,5 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: Ce panier en osier incurvé se porte sur la main, comme un gant. Il
+    mesure une soixantaine de centimètres et dessine une courbe régulière qui lui
+    permet de lancer une arme de jet à aspersion à une vitesse incroyable et sur de
+    longues distances. Le chistera augmente le facteur de portée de n’importe quelle
+    arme de jet à aspersion de 3 mètres. Il faut une main libre pour charger le chistera
+    et la main qui le porte ne peut pas servir à autre chose. Le chistera n’empêche
+    pas de préparer et lancer une bombe créée via le pouvoir de classe bombes.
+  DescriptionHTML: 'Ce panier en osier incurvé se porte sur la main, comme un gant.
+    Il mesure une soixantaine de centimètres et dessine une courbe régulière qui lui
+    permet de lancer une arme de jet à aspersion à une vitesse incroyable et sur de
+    longues distances. Le chistera augmente le facteur de portée de n’importe quelle
+    arme de jet à aspersion de 3 mètres. Il faut une main libre pour charger le chistera
+    et la main qui le porte ne peut pas servir à autre chose. Le chistera n’empêche
+    pas de préparer et lancer une bombe créée via le pouvoir de classe bombes.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Chistera
+  
+- Nom: Griffes de troll barbelées
+  Source: MC
+  Prix: 20 po
+  Poids: 2 kg
+  Catégorie: Trousses d’outils et de compétences
+  Description: "CETTE OPTION EST PLUS COURANTE CHEZ LES TROLLS.\n Ces gaines en\
+    \ métal se glissent sur les griffes des trolls. Quand un troll touche une créature\
+    \ avec une attaque de griffe alors qu’il porte ces gaines, il peut décider de\
+    \ garder les gaines sur ses pattes (auquel cas ses griffes infligent 1 point de\
+    \ dégâts supplémentaire) ou de les laisser glisser toutes les quatre pour qu’elles\
+    \ s’incrustent dans la blessure de la cible (auquel cas son attaque de griffe\
+    \ inflige 1 point de dégâts de saignement). Le prix est indiqué pour huit gaines\
+    \ (une pour chaque griffe des deux pattes du troll)."
+  DescriptionHTML: '<b>Cette option est plus courante chez les trolls.</b><br/>
+    Ces gaines en métal se glissent sur les griffes des trolls. Quand un troll touche
+    une créature avec une attaque de griffe alors qu’il porte ces gaines, il peut
+    décider de garder les gaines sur ses pattes (auquel cas ses griffes infligent
+    1 point de dégâts supplémentaire) ou de les laisser glisser toutes les quatre
+    pour qu’elles s’incrustent dans la blessure de la cible (auquel cas son attaque
+    de griffe inflige 1 point de dégâts de saignement). Le prix est indiqué pour huit
+    gaines (une pour chaque griffe des deux pattes du troll).<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Trousses%20doutils%20et%20de%20comp%c3%a9tences.ashx#Griffes
+    de troll barbelées
+  
+- Nom: Fusée de signalisation
+  Source: MC
+  Prix: 100 po
+  Poids: 1,5 kg
+  Artisanat: 15
+  Catégorie: Outils alchimiques
+  Description: Le personnage peut utiliser cette fusée pour envoyer des signaux
+    visuels et auditifs simples à destination d’une armée située plus loin. Lors d’un
+    combat de masse, la fusée permet au commandant de changer d’échelle de stratégie
+    (Guide de campagne p. 253) en améliorant ses chances de succès. Un commandant
+    qui lance une fusée de signalisation pour changer l’échelle de stratégie de son
+    armée de plus d’un cran gagne un bonus de circonstance de +5 au test de Moral
+    pour faire appliquer son ordre. Il faut réussir un test d’Artisanat (alchimie)
+    DD 15 pour créer cet objet.
+  DescriptionHTML: 'Le personnage peut utiliser cette fusée pour envoyer des signaux
+    visuels et auditifs simples à destination d’une armée située plus loin. Lors d’un
+    combat de masse, la fusée permet au commandant de changer d’échelle de stratégie
+    (Guide de campagne p. 253) en améliorant ses chances de succès. Un commandant
+    qui lance une fusée de signalisation pour changer l’échelle de stratégie de son
+    armée de plus d’un cran gagne un bonus de circonstance de +5 au test de Moral
+    pour faire appliquer son ordre. Il faut réussir un test d’Artisanat (alchimie)
+    DD 15 pour créer cet objet.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Fusée
+    de signalisation
+  
+- Nom: Jus de ferveur
+  Source: MC
+  Prix: 50 po
+  Poids: —
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Cette décoction alchimique au goût infecte accorde, pendant une courte
+    période, une incroyable férocité à celui qui la boit. Cela fonctionne comme le
+    pouvoir de monstre férocité et dure une heure après absorption. Il faut réussir
+    un test d’Artisanat (alchimie) DD 20 pour créer cet objet.
+  DescriptionHTML: 'Cette décoction alchimique au goût infecte accorde, pendant
+    une courte période, une incroyable férocité à celui qui la boit. Cela fonctionne
+    comme le pouvoir de monstre férocité et dure une heure après absorption. Il faut
+    réussir un test d’Artisanat (alchimie) DD 20 pour créer cet objet.<br/><br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Jus
+    de ferveur
+  
+- Nom: Pâte de rhinarium
+  Source: MC
+  Prix: 75 po
+  Poids: 0,25 kg
+  Artisanat: 20
+  Catégorie: Outils alchimiques
+  Description: Quand on l’applique sur le nez par une action simple, cette pâte
+    alchimique piège les particules en suspension dans l’air et affûte les récepteurs
+    olfactifs de l’homme-rat, aiguisant son odorat. L’homme-rat gagne le pouvoir d’odorat,
+    à la seule différence qu’il ne peut détecter les créatures et les odeurs qu’à
+    la moitié de la distance normale. S’il possède déjà le pouvoir d’odorat, la pâte
+    de rhinarium augmente alors de 50% la portée à laquelle l’homme-rat peut détecter
+    les créatures. Les effets de la pâte de rhinarium durent une heure. Il faut réussir
+    un test d’Artisanat (alchimie) DD 20 pour fabriquer cette pâte.
+  DescriptionHTML: 'Quand on l’applique sur le nez par une action simple, cette
+    pâte alchimique piège les particules en suspension dans l’air et affûte les récepteurs
+    olfactifs de l’homme-rat, aiguisant son odorat. L’homme-rat gagne le pouvoir d’odorat,
+    à la seule différence qu’il ne peut détecter les créatures et les odeurs qu’à
+    la moitié de la distance normale. S’il possède déjà le pouvoir d’odorat, la pâte
+    de rhinarium augmente alors de 50% la portée à laquelle l’homme-rat peut détecter
+    les créatures. Les effets de la pâte de rhinarium durent une heure. Il faut réussir
+    un test d’Artisanat (alchimie) DD 20 pour fabriquer cette pâte.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Outils%20alchimiques.ashx#Pâte
+    de rhinarium
+  
+- Nom: Sang alchimique
+  Source: MC
+  Prix: 40 po
+  Poids: 0,5 kg
+  Artisanat: 40
+  Catégorie: Remèdes alchimiques
+  Description: "CETTE OPTION EST PLUS COURANTE CHEZ LES VAMPIRES.\n Cette fiole\
+    \ de liquide rouge suffit à satisfaire la soif de sang d’un vampire pendant une\
+    \ journée. Peu de vampires apprécient ce sang, la plupart lui trouvant un goût\
+    \ éventé et artificiel. Certains, notamment les plus faibles ou les nouveaux,\
+    \ ont l’impression qu’il interfère avec la magie impie qui maintient leur corps\
+    \ animé. Cela dit, ce sang reste une option très utilisée par les vampires en\
+    \ fuite qui cherchent à survivre et tentent de rester cachés des chasseurs de\
+    \ vampires. La création de cet objet nécessite de réussir un test d’Artisanat\
+    \ (alchimie) DD 40."
+  DescriptionHTML: '<b>Cette option est plus courante chez les vampires.</b><br/>
+    Cette fiole de liquide rouge suffit à satisfaire la soif de sang d’un vampire
+    pendant une journée. Peu de vampires apprécient ce sang, la plupart lui trouvant
+    un goût éventé et artificiel. Certains, notamment les plus faibles ou les nouveaux,
+    ont l’impression qu’il interfère avec la magie impie qui maintient leur corps
+    animé. Cela dit, ce sang reste une option très utilisée par les vampires en fuite
+    qui cherchent à survivre et tentent de rester cachés des chasseurs de vampires.
+    La création de cet objet nécessite de réussir un test d’Artisanat (alchimie) DD
+    40.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Rem%c3%a8des%20alchimiques.ashx#Sang
+    alchimique
+  
+- Nom: Rat de selle (normale)
+  Source: MC
+  Prix: 50 po
+  Poids: 25 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: "Les chevaux, les poneys et autres bêtes de trait ne sont pas adaptés\
+    \ à la vie sous terre et c’est pour cette raison que les hommes-rats élèvent un\
+    \ type de rats sanguinaires particulièrement résistants pour les aider à tirer\
+    \ leurs chariots et les atteler aux caravanes d’éclaireurs. En tant que rongeurs,\
+    \ les rats sanguinaires sont réceptifs aux ordres des hommes-rats, sans compter\
+    \ que leur robustesse et leur régime omnivore en font des animaux dont il est\
+    \ très facile de s’occuper, même pendant les longs voyages en territoire inhospitalier.\
+    \ Utilisez les statistiques du rat sanguinaire avec l’archétype simple de géant.\
+    \ Un homme-rat qui possède le pouvoir de classe compagnon animal, monture ou autre\
+    \ peut choisir un rat de selle pour monture. \n• Compagnons rats de selleStatistiques\
+    \ de départ. Taille M ; Vitesse 12 m, escalade 6 m, nage 6 m ; CA armure naturelle\
+    \ +1 ; Attaque morsure (1d6) ; Caractéristiques For 14, Dex 15, Con 17, Int 2,\
+    \ Sag 13, Cha 4 ; Particularités odorat, vision nocturne.Évolution de niveau 4.\
+    \ CA armure naturelle +2 ; Caractéristiques For +2, Dex +2 ; Don supplémentaire\
+    \ Endurance."
+  DescriptionHTML: 'Les chevaux, les poneys et autres bêtes de trait ne sont pas
+    adaptés à la vie sous terre et c’est pour cette raison que les hommes-rats élèvent
+    un type de rats sanguinaires particulièrement résistants pour les aider à tirer
+    leurs chariots et les atteler aux caravanes d’éclaireurs. En tant que rongeurs,
+    les rats sanguinaires sont réceptifs aux ordres des hommes-rats, sans compter
+    que leur robustesse et leur régime omnivore en font des animaux dont il est très
+    facile de s’occuper, même pendant les longs voyages en territoire inhospitalier.
+    Utilisez les statistiques du rat sanguinaire avec l’archétype simple de géant.
+    Un homme-rat qui possède le pouvoir de classe compagnon animal, monture ou autre
+    peut choisir un rat de selle pour monture. <ul><li>Compagnons rats de selleStatistiques
+    de départ. Taille M ; Vitesse 12 m, escalade 6 m, nage 6 m ; CA armure naturelle
+    +1 ; Attaque morsure (1d6) ; Caractéristiques For 14, Dex 15, Con 17, Int 2, Sag
+    13, Cha 4 ; Particularités odorat, vision nocturne.Évolution de niveau 4. CA armure
+    naturelle +2 ; Caractéristiques For +2, Dex +2 ; Don supplémentaire Endurance.</li></ul>  '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Rat
+    de selle
+  
+- Nom: Rat de selle (entraîné au combat)
+  Source: MC
+  Prix: 75 po
+  Poids: 25 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: "Les chevaux, les poneys et autres bêtes de trait ne sont pas adaptés\
+    \ à la vie sous terre et c’est pour cette raison que les hommes-rats élèvent un\
+    \ type de rats sanguinaires particulièrement résistants pour les aider à tirer\
+    \ leurs chariots et les atteler aux caravanes d’éclaireurs. En tant que rongeurs,\
+    \ les rats sanguinaires sont réceptifs aux ordres des hommes-rats, sans compter\
+    \ que leur robustesse et leur régime omnivore en font des animaux dont il est\
+    \ très facile de s’occuper, même pendant les longs voyages en territoire inhospitalier.\
+    \ Utilisez les statistiques du rat sanguinaire avec l’archétype simple de géant.\
+    \ Un homme-rat qui possède le pouvoir de classe compagnon animal, monture ou autre\
+    \ peut choisir un rat de selle pour monture. \n• Compagnons rats de selleStatistiques\
+    \ de départ. Taille M ; Vitesse 12 m, escalade 6 m, nage 6 m ; CA armure naturelle\
+    \ +1 ; Attaque morsure (1d6) ; Caractéristiques For 14, Dex 15, Con 17, Int 2,\
+    \ Sag 13, Cha 4 ; Particularités odorat, vision nocturne.Évolution de niveau 4.\
+    \ CA armure naturelle +2 ; Caractéristiques For +2, Dex +2 ; Don supplémentaire\
+    \ Endurance."
+  DescriptionHTML: 'Les chevaux, les poneys et autres bêtes de trait ne sont pas
+    adaptés à la vie sous terre et c’est pour cette raison que les hommes-rats élèvent
+    un type de rats sanguinaires particulièrement résistants pour les aider à tirer
+    leurs chariots et les atteler aux caravanes d’éclaireurs. En tant que rongeurs,
+    les rats sanguinaires sont réceptifs aux ordres des hommes-rats, sans compter
+    que leur robustesse et leur régime omnivore en font des animaux dont il est très
+    facile de s’occuper, même pendant les longs voyages en territoire inhospitalier.
+    Utilisez les statistiques du rat sanguinaire avec l’archétype simple de géant.
+    Un homme-rat qui possède le pouvoir de classe compagnon animal, monture ou autre
+    peut choisir un rat de selle pour monture. <ul><li>Compagnons rats de selleStatistiques
+    de départ. Taille M ; Vitesse 12 m, escalade 6 m, nage 6 m ; CA armure naturelle
+    +1 ; Attaque morsure (1d6) ; Caractéristiques For 14, Dex 15, Con 17, Int 2, Sag
+    13, Cha 4 ; Particularités odorat, vision nocturne.Évolution de niveau 4. CA armure
+    naturelle +2 ; Caractéristiques For +2, Dex +2 ; Don supplémentaire Endurance.</li></ul>  '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Rat
+    de selle
+  
+- Nom: Harnais à corne
+  Source: MC
+  Prix: 30 po
+  Poids: 10 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: Ce harnais tout simple, qui se compose d’une unique lanière de cuir,
+    permet de fixer l’un des bras du combattant à la défense ou à la corne d’un animal
+    de taille G ou plus grand, comme un gorthek. Il faut une action simple provoquant
+    des attaques d’opportunité pour fixer ou détacher un harnais à corne. Cet équipement
+    inclut un carquois pouvant contenir un maximum de 12 javelines. Une créature fixée
+    à un harnais à corne bénéficie de tous les bonus, mais reçoit aussi tous les malus,
+    qu’implique le fait de se battre ou de lancer des sorts à dos de monture. Cela
+    dit, elle ne peut entreprendre aucune action nécessitant l’utilisation de sa main
+    fixée à la monture. Si la monture tombe pendant le combat, la créature fixée au
+    harnais à corne reste attachée mais peut tenter un test d’Équitation DD 25 pour
+    amortir sa chute. Si la créature fixée au harnais à corne tombe inconsciente,
+    elle reste attachée mais reçoit un nombre de dégâts égal aux dégâts de piétinement
+    de la monture (le cas échéant) tous les rounds où la monture se déplace.
+  DescriptionHTML: 'Ce harnais tout simple, qui se compose d’une unique lanière
+    de cuir, permet de fixer l’un des bras du combattant à la défense ou à la corne
+    d’un animal de taille G ou plus grand, comme un gorthek. Il faut une action simple
+    provoquant des attaques d’opportunité pour fixer ou détacher un harnais à corne.
+    Cet équipement inclut un carquois pouvant contenir un maximum de 12 javelines.
+    Une créature fixée à un harnais à corne bénéficie de tous les bonus, mais reçoit
+    aussi tous les malus, qu’implique le fait de se battre ou de lancer des sorts
+    à dos de monture. Cela dit, elle ne peut entreprendre aucune action nécessitant
+    l’utilisation de sa main fixée à la monture. Si la monture tombe pendant le combat,
+    la créature fixée au harnais à corne reste attachée mais peut tenter un test d’Équitation
+    DD 25 pour amortir sa chute. Si la créature fixée au harnais à corne tombe inconsciente,
+    elle reste attachée mais reçoit un nombre de dégâts égal aux dégâts de piétinement
+    de la monture (le cas échéant) tous les rounds où la monture se déplace.<br/><br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Harnais
+    à corne
+  
+- Nom: Selle de gorthek
+  Source: MC
+  Prix: 50 po
+  Poids: 37,5 kg
+  Catégorie: Animaux, montures et leur équipement
+  Description: Cette selle curieuse est prévue pour les orques qui souhaitent chevaucher
+    un gorthek. On enroule de larges sangles en cuir autour de la poitrine et du cou
+    de la bête afin de maintenir la selle en place. Cette selle est également dotée
+    de lanières qui s’enroulent autour des épaules de l’orque afin qu’il reste sur
+    le dos de la créature en cas de violente collision.
+  DescriptionHTML: 'Cette selle curieuse est prévue pour les orques qui souhaitent
+    chevaucher un gorthek. On enroule de larges sangles en cuir autour de la poitrine
+    et du cou de la bête afin de maintenir la selle en place. Cette selle est également
+    dotée de lanières qui s’enroulent autour des épaules de l’orque afin qu’il reste
+    sur le dos de la créature en cas de violente collision.<br/><br/> '
+  Référence: http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Animaux%2c%20montures%20et%20leur%20%c3%a9quipement.ashx#Selle
+    de gorthek
   

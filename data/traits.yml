@@ -3014,7 +3014,7 @@
   Description: Le personnage, qui a grandi dans un quartier pauvre ou sur une terre
     sauvage et inhospitalière, a souvent été contraint de consommer de la nourriture
     et de l’eau d’origine douteuse pour survivre. C’est ainsi qu’il a développé une
-    certaine résistance physique. Il gagne un bonus de trait de +1 aux tests de Vigueur.
+    certaine résistance physique. Il gagne un bonus de trait de +1 aux jets de Vigueur.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
   
 - Nom: 'Trait de combat: Tueur'
@@ -3213,12 +3213,6 @@
     lorsque celle-ci est pleine. Choisissez Discrétion, Escalade ou Natation. Le personnage
     gagne un bonus de trait de +1 à une de ces compétences. Ce bonus passe à +2 entre
     le premier et le troisième quartier de la lune, et à +4 lors d'une pleine lune.
-    Érudit autodidacte. Comme vous vous êtes formé en autodidacte, vous avez étudié
-    soigneusement tous les documents que vous pouviez vous procurer. Vous gagnez un
-    bonus de trait de +1 aux tests de Linguistique pour déchiffrer des langages qui
-    ne vous sont pas familiers. Vous considérez toujours la Linguistique comme une
-    compétence de classe. De plus, vous gagnez un bonus de trait de +1 aux tests d’Art
-    de la magie pour déchiffrer un parchemin.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
   
 - Nom: 'Trait de magie: Exil de l''équilibre'
@@ -3699,7 +3693,7 @@
     depuis son plus jeune âge, considère les morts-vivants comme des abominations
     qui doivent être détruites afin de permettre à leurs âmes d’aller dans l’au-delà
     et d’y être jugées. Il gagne un bonus de trait de +1 aux dégâts des armes contre
-    les mortsvivants.
+    les morts-vivants.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
   
 - Nom: 'Trait religieux: Enfant de la nature (Gozreh)'
@@ -3781,7 +3775,7 @@
     compétences (au choix du joueur) est toujours une compétence de classe pour lui.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
   
-- Nom: 'Trait religieux: Protecteur de la Forge (Torag)'
+- Nom: 'Trait religieux: Protecteur de la forge (Torag)'
   Source: MJRA
   Description: Les devoirs sacrés de Torag consistent à protéger les fidèles, à
     apprendre des grands artisans et stratèges d’antan et à se préparer en vue de
@@ -5346,7 +5340,7 @@
   Description: Vous avez grandi dans un quartier sordide ou dans une nature impitoyable
     et vous avez souvent dû vous contenter d’une maigre pitance et d’une eau de qualité
     douteuse. Votre constitution s’est renforcée et vous gagnez un bonus de trait
-    de +1 aux jets de sauvegarde.
+    de +1 aux jets de Vigueur.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
   
 - Nom: 'Trait de combat: Résolution du rejeté'
@@ -5729,7 +5723,7 @@
 - Nom: 'Trait de magie: Mutagène instable'
   Source: MJRA
   Description: Vous avez découvert ou hérité d’un secret qui rend vos mutagènes
-    moins stables... mais plus puissants. Vous pouvez créer un mutagène instable une
+    moins stables… mais plus puissants. Vous pouvez créer un mutagène instable une
     fois par jour. Il se comporte globalement comme un mutagène normal mais, à cause
     de son instabilité, il gagne aussi un avantage ou un inconvénient. Lancez un d6
     pour savoir lequel.
@@ -6145,4 +6139,186 @@
     des heures pour un maître ou pour votre commerce, mais cela a renforcé votre corps
     et votre esprit. Vous gagnez un bonus de trait de +1 aux jets de Vigueur.
   Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait de magie: Érudit autodidacte'
+  Source: MJRA
+  Description: Comme vous vous êtes formé en autodidacte, vous avez étudié soigneusement
+    tous les documents que vous pouviez vous procurer. Vous gagnez un bonus de trait
+    de +1 aux tests de Linguistique pour déchiffrer des langages qui ne vous sont
+    pas familiers. Vous considérez toujours la Linguistique comme une compétence de
+    classe. De plus, vous gagnez un bonus de trait de +1 aux tests d’Art de la magie
+    pour déchiffrer un parchemin.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait de magie: Magie affûtée'
+  Source: MJRA
+  Description: Le personnage dispose d'un talent inné pour imprégner les armes de
+    magie, ou au contraire exprimer la magie en elles. Il gagne un bonus de trait
+    de +1 aux tests d'Artisanat (Armes) pour forger des armes de maîtres ou des armes
+    magiques. De plus, lorsqu'il utilise sa réserve magique pour conférer un bonus
+    d'altération à son arme, ce bonus dure deux minutes au lieu d'une.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait de magie: Touché par le vent'
+  Source: MJRA
+  Description: Le personnage possède une forte affinité avec l'élément de l'air.
+    Il bénéficie d'une RD 1/- contre les attaques et créatures de type Air.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait social: Baratineur/Beau-parleur'
+  Source: MJRA
+  Description: Le personnage s’est souvent retrouvé dans des situations problématiques
+    pendant sa jeunesse, ce qui l’a poussé à devenir un beau parleur dès son plus
+    jeune âge. Il gagne un bonus de trait de +1 aux tests de Bluff et Bluff est toujours
+    une compétence de classe pour lui.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait social: Dirigeant né/Leader-né'
+  Source: MJRA
+  Description: Le personnage a souvent été considéré comme un chef par les autres.
+    Il peut même se rappeler parfaitement un événement de son enfance où il a mené
+    un groupe d’enfants et leur a permis d’accomplir un but qu’ils n’auraient jamais
+    pu atteindre séparément. Tous les compagnons d’armes, tous les suivants et toutes
+    les créatures invoquées sous le contrôle du personnage gagnent un bonus de moral
+    de +1 aux jets de Volonté pour résister aux effets mentaux. Si le personnage prend
+    le don Prestige, il gagne un bonus de trait de +1 à sa valeur de prestige.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait social: Parents riches/Parents fortunés'
+  Source: MJRA
+  Description: Le personnage est né dans une famille riche, peut-être même une famille
+    noble. Même s’il a choisi une vie d’aventure, il bénéficie d’un bonus à son pactole
+    de départ. Il entre en jeu avec 900 po de plus que la valeur normale.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20base.ashx
+  
+- Nom: 'Trait de race: Presque humain'
+  Race: Demi-orque
+  Source: MJRA
+  Description: Vous avez suffisamment de caractéristiques physiques humaines pour
+    faire croire que vous êtes un humain de sang pur. Vous gagnez un bonus de trait
+    de +4 aux tests de Déguisement pour vous faire passer pour un humain et vous considérez
+    toujours cette compétence comme une compétence de classe.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
+  
+- Nom: 'Trait de race: Querelleur'
+  Race: Demi-orque
+  Source: MJRA
+  Description: À force de passer votre enfance à vous battre pour la moindre babiole
+    ou miette de nourriture, vous êtes devenu féroce et méfiant. Vous recevez un bonus
+    de trait de +1 aux tests d’Intimidation effectués pour démoraliser un adversaire
+    et un bonus de trait de +1 aux tests de Perception effectués pour éviter d’être
+    pris par surprise.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
+  
+- Nom: 'Trait de race: Rejeté/Paria'
+  Race: Demi-orque
+  Source: MJRA
+  Description: Ville après ville, le personnage a été rejeté à cause de son héritage.
+    Il a appris à vivre à l’écart des autres. Il gagne un bonus de trait de +1 aux
+    tests de Survie et Survie est toujours une compétence de classe pour lui.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
+  
+- Nom: 'Trait de race: Délaissé'
+  Race: Elfe
+  Source: MJRA
+  Description: Vous avez vécu la majeure partie de votre vie en dehors de la société
+    elfique traditionnelle. Vous savez que le monde peut être un endroit cruel et
+    dangereux, sans pitié pour les faibles. Vous gagnez un bonus de trait de +1 aux
+    jets de Vigueur.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
+  
+- Nom: 'Trait de race: Maître brasseur'
+  Race: Nain
+  Source: MJRA
+  Description: Votre famille a apporté le secret du brassage de la bière naine en
+    terre étrangère. Grâce à cela, vous êtes devenu un brasseur de talent mais les
+    puristes nains se méfient de vous. Vous gagnez un bonus de trait de +1 aux tests
+    de Profession (brasseur) et d’Artisanat (alchimie) mais vous recevez un malus
+    de –1 aux tests de Diplomatie quand vous tentez de modifier l’attitude de nains
+    qui savent que votre famille a partagé le secret de la bière naine avec des individus
+    d’une autre race.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20de%20race.ashx
+  
+- Nom: 'Trait régional: Enfant de la toundra (toundra ou région froide)'
+  Source: MJRA
+  Description: Vous êtes né et vous avez grandi dans les étendues glacées du nord
+    ou du sud et vous avez l’habitude du froid. Vous gagnez un bonus de trait de +4
+    aux jets de sauvegarde pour résister aux effets des basses températures et un
+    bonus de trait de +1 aux jets de sauvegarde contre les effets de froid.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
+  
+- Nom: 'Trait régional: Enfant de pionnier (n’importe quelle région frontalière)'
+  Source: MJRA
+  Description: La dure vie que vous avez menée en lisière de la civilisation a fait
+    de vous un être plein de ressources mais vous a aussi doté d’un instinct de conservation
+    qui frise la paranoïa. Vous recevez un bonus de trait de +1 aux tests de Perception
+    et un bonus de trait de +1 aux tests de Survie pour survivre dans la nature.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
+  
+- Nom: 'Trait régional: Étranger à la surface (souterrain)'
+  Source: MJRA
+  Description: Vous êtes né et vous avez grandi dans une région souterraine où il
+    n’y avait presque pas de lumière vive. Face à un adversaire camouflé ou totalement
+    camouflé grâce à une obscurité magique ou naturelle, vos chances de rater diminuent
+    de 10%. Quand vous êtes soudain exposé à une lumière vive, vous êtes ébloui pendant
+    1 round.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
+  
+- Nom: 'Trait régional: Frère de la mer (île ou région côtière)'
+  Source: MJRA
+  Description: En mer, vous vous sentez comme chez vous. Vous gagnez un bonus de
+    trait de +1 aux tests de Natation et vous pouvez toujours faire 10 aux tests de
+    ce type.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20r%c3%a9gionaux.ashx
+  
+- Nom: 'Trait religieux: Colère dévastatrice (Rovagug)'
+  Source: MJRA
+  Description: Votre férocité a des effets dévastateurs, parfois même à l’encontre
+    de vos propres armes. Une fois par jour, quand vous réussissez à toucher un adversaire
+    avec une arme de corps à corps, vous pouvez ajouter une deuxième fois votre modificateur
+    de Force au jet de dégâts (le modificateur n’est pas doublé si vous utilisez une
+    arme à deux mains). En revanche, vous avez 25% de chance de briser votre arme.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
+  
+- Nom: 'Trait religieux: Dévoreur de cadavres (Urgathoa)'
+  Source: MJRA
+  Description: Votre religion vous encourage à satisfaire toutes sortes de faims
+    perverses et à rejeter vos pires tabous. Vous gagnez un bonus de trait de +2 aux
+    jets de Vigueur contre les maladies et vous pouvez vous nourrir de chair putréfiée
+    sans risque.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
+  
+- Nom: 'Trait religieux: La douleur est plaisir (Zon-Kuthon)'
+  Source: MJRA
+  Description: Vous avez découvert une bribe des sinistres vérités qui se cachent
+    dans la chair et le sang. Vous gagnez un bonus de trait de +1 aux jets de Vigueur
+    et de Volonté quand vous avez moins de la moitié de vos points de vie.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
+  
+- Nom: 'Trait religieux: Murmures des ombres (Norgorber)'
+  Source: MJRA
+  Description: Vous aimez connaître les secrets d’autrui. Vous gagnez un bonus de
+    trait de +1 aux tests de Connaissances (folklore local) et un bonus de trait de
+    +2 aux tests d’Intimidation pour démoraliser vos adversaires.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
+  
+- Nom: 'Trait religieux: Sagesse incarnée/Sagesse de la chair (Irori)'
+  Source: MJRA
+  Description: Les nombreuses heures que le personnage a passées à méditer sur la
+    perfection intérieure et la nature de la force et de la vitesse lui ont permis
+    de concentrer ses pensées pour accomplir des choses que son corps ne pourrait
+    pas faire normalement. Choisissez une compétence dépendant de la Force, de la
+    Dextérité ou de la Constitution. Lorsque le personnage utilise cette compétence,
+    il remplace le modificateur de la caractéristique associée par son modificateur
+    de Sagesse. De plus, cette compétence est toujours une compétence de classe pour
+    lui.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
+  
+- Nom: 'Trait religieux: Voix des monstres (Lamashtu)'
+  Source: MJRA
+  Description: Votre religion vous aide à percevoir la puissance et le merveilleux
+    dans les pires abominations. Une fois par jour, vous pouvez lancer . Le sort affecte
+    les animaux (comme prévu) mais aussi les aberrations et les créatures magiques
+    dotées d’une Intelligence de 2 ou moins.
+  Référence: https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Traits%20religieux.ashx
   
