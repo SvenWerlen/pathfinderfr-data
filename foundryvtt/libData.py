@@ -8,7 +8,6 @@ import os
 
 from jsonmerge import merge
 
-
 def convertToLb(value):
   return round((value * 2) * 100) / 100;
 
@@ -72,17 +71,35 @@ def cleanTitle(title):
 
 ##
 ## cette fonction fusionne une liste de données (JSON) avec un fichier de contribution
+## elle examine également si un raccourci pour appliquer les effets doit être ajouté à la description
 ##
-def mergeWithLetContribute(list, filepath, ignoreDuplicates = True):
+def mergeWithLetContribute(clist, filepath, ignoreDuplicates = True):
   # clean list from duplicates
   exist = {}
   noDupList = []
-  for el in list:
+  for el in clist:
     if ignoreDuplicates and el['name'] in exist:
       print("Ignoring duplicate %s" % el['name'])
       continue
     exist[el['name']] = True
     noDupList.append(el)
+  
+  # adapt description
+  EFFECTS = "letscontribute/effets.json"
+  if os.path.isfile(EFFECTS) :
+    data = json.load(open(EFFECTS, 'r'))
+    type = clist[0]['type']
+    if type in data:
+      effects = data[type]
+      for el in noDupList:
+        if el['name'] in effects:
+          effect = effects[el['name']]
+          effectLvl = ""
+          print(effect)
+          if isinstance(effect,list):
+            effect = effect[0]
+            effectLvl = " au " + effect[1]
+          el['data']['description']['value'] += "@Macro[effet]{Appliquer \"" + el['name'] + "\"" + effectLvl + " }"    
   
   if not os.path.isfile(filepath) :
     return noDupList
