@@ -22,12 +22,14 @@ for c in data:
       continue
     duplicates.append(c['Nom'])
   
-    description = "<p><b>Caractéristique associée : </b>%s<br/><b>Formation nécessaire : </b>%s<br/></p>" % (c['Caractéristique associée'], c['Formation nécessaire'])    
-    description = "<div class=\"pf2frDescr\">%s<h2>Description</h2>%s<p><b>Référence : </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, c['DescriptionHTML'] if 'DescriptionHTML' in c else c['Description'], c['Référence'])
-    description = improveDescription(description, c['Nom'])
-  
+    name = c['Nom']
+    
+    infos = "<p><b>Caractéristique associée : </b>%s<br/><b>Formation nécessaire : </b>%s<br/></p>" % (c['Caractéristique associée'], c['Formation nécessaire'])  
+    description = generateDescriptionHTML(name, c['DescriptionHTML'] if 'DescriptionHTML' in c else c['Description'], c['Référence'])
+    description = "<div class=\"skill-description\">%s<h2>Description</h2>%s</div>" % (infos, description)
+    
     el = {
-      "name": c['Nom'],
+      "name": name,
       "content": description,
     }
     list.append(el)
