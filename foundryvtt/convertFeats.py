@@ -35,9 +35,12 @@ for d in data:
     avantage = d['Avantage'] if 'Avantage' in d else '-'
   
   name = cleanTitle(d['Nom'])
-  description = "<p><i>%s</i></p><p><b>Prérequis : </b>%s<p/><p><b>Avantage : </b>%s<p/><p><b>Référence : </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
-    % (d['Résumé'] if 'Résumé' in d else "", d['Conditions'] if 'Conditions' in d else '-', avantage, d['Référence'])
-  description = improveDescription(description, name)
+  
+  description = generateDescriptionHTML(name, avantage, d['Référence'])
+  description = "<p><i>%s</i></p><p><b>Prérequis : </b>%s<p/><h2>Avantage</h2>%s" % (
+    d['Résumé'] if 'Résumé' in d else "", 
+    d['Conditions'] if 'Conditions' in d else '-', 
+    description)
 
   el = {
     "name": name,
@@ -47,7 +50,7 @@ for d in data:
     "type": "feat",
     "data": {
       "description": {
-          "value": "<div class=\"pf2frDescr\">%s</div>" % description,
+          "value": "<div class=\"feat-description\">%s</div>" % description,
           "chat": "",
           "unidentified": ""
       },
