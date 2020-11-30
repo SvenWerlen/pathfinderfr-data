@@ -33,7 +33,7 @@ def isClassSkill(cl, name):
 # retourne le tableau des niveaux
 #
 def generateTable(data):
-    buf = "<table><tr><th style=\"text-align:left\">Niveau</th><th style=\"text-align:left\">BBA</th><th style=\"text-align:left\">Ref</th><th style=\"text-align:left\">Vig</th><th style=\"text-align:left\">Vol</th></tr>"
+    buf = "<table><tr><th>Niveau</th><th>BBA</th><th>Ref</th><th>Vig</th><th>Vol</th></tr>"
     for lvl in data:
         buf = buf + "<tr><td>" + str(lvl['Niveau']) + "</td><td>" + lvl['BBA'] + "</td><td>" + lvl['Réflexes'] + "</td><td>" + lvl['Vigueur'] + "</td><td>" + lvl['Volonté'] + "</td></tr>"
     buf = buf + "</table>"
@@ -64,28 +64,29 @@ for c in data:
       description = c['Description'].replace('\n','<br/>')
     else:
       description = ""
-    description = improveDescription(description, c['Nom'])
+    
+    name = c['Nom']
+    
+    description += generateTable(c['Progression'])
+    description = generateDescriptionHTML(name, description, c['Référence'])
     
     el = {
-        'name': c['Nom'],
+        'name': name,
         'permission': { "default": 0 },
         'type': "class",
         'data': {
             'source': c['Source'],
             'description': {
-                "value": ("<div class=\"pf2frDescr\">"+
-                        "<p><i>{}</i></p>" +
+                "value": ("<div class=\"class-description\">"+
                         "<p><b>Dé de vie : </b>{}<br/>" +
                         "<b>Alignement : </b>{}<br/>" +
                         "<b>Rangs/niveau : </b>{}</p>" +
-                        "<p>{}</p>" +
-                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p></div>").format(
-                    description,
+                        "<h2>Description</h2>{}"
+                        "</div>").format(
                     c['DésDeVie'],
                     c['Alignement'],
                     c['RangsParNiveau'],
-                    generateTable(c['Progression']),
-                    c['Référence']),       
+                    description),       
                 "chat":"",
                 "unidentified":""
             },
@@ -165,7 +166,7 @@ for c in data:
         },
         'sort': 100001,
         'flags':  {},
-        "img": img[c['Nom']] if c['Nom'] in img and "pf1-fr" not in img[c['Nom']] else "icons/svg/mystery-man.svg"
+        "img": img[name] if name in img and "pf1-fr" not in img[name] else "icons/svg/mystery-man.svg"
     }
     list.append(el)
 
