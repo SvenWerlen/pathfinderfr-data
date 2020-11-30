@@ -25,22 +25,24 @@ for w in data:
       continue
     duplicates.append(w['Nom'])
   
-    description = "<p>"
-    if 'Résumé' in w:
-        description += "<b>Résumé : </b>%s<br/>" % w['Résumé']
-    if 'Prix' in w:
-        description += "<b>Prix : </b>%s<br/>" % "{0:n} po".format(w['Prix'])
-    if 'PrixModif' in w:
-        description += "<b>Modificateur au prix : </b>%s<br/>" % w['PrixModif']
-    if 'Source' in w:
-        description += "<b>Source : </b>%s<br/>" % w['Source']
-    description += "</p>"
-    
-    description = "<div class=\"pf2frDescr\">%s<h2>Description</h2>%s<p><b>Référence : </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, w['DescriptionHTML'] if 'DescriptionHTML' in w else w['Description'], w['Référence'])
-    description = improveDescription(description, w['Nom'])
+    name = w['Nom']
   
+    infos = "<p>"
+    if 'Résumé' in w:
+        infos += "<b>Résumé : </b>%s<br/>" % w['Résumé']
+    if 'Prix' in w:
+        infos += "<b>Prix : </b>%s<br/>" % "{0:n} po".format(w['Prix'])
+    if 'PrixModif' in w:
+        infos += "<b>Modificateur au prix : </b>%s<br/>" % w['PrixModif']
+    if 'Source' in w:
+        infos += "<b>Source : </b>%s<br/>" % w['Source']
+    infos += "</p>"
+    
+    description = generateDescriptionHTML(name, w['DescriptionHTML'] if 'DescriptionHTML' in w else w['Description'], w['Référence'])
+    description = "<div class=\"magic-description\">%s<h2>Description</h2>%s</div>" % (infos, description)
+    
     el = {
-      "name": w['Nom'],
+      "name": name,
       "content": description,
       #"img": "systems/pf1/icons/skills/affliction_01.jpg"
     }
