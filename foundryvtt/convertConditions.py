@@ -22,11 +22,13 @@ for c in data:
       continue
     duplicates.append(c['Nom'])
   
-    description = "<div class=\"pf2frDescr\">%s<p><b>Référence : </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (c['DescriptionHTML'] if 'DescriptionHTML' in c else c['Description'], c['Référence'])
-    description = improveDescription(description, c['Nom'])
+    name = c['Nom']
   
+    description = generateDescriptionHTML(name, c['DescriptionHTML'] if 'DescriptionHTML' in c else c['Description'], c['Référence'])
+    description = "<div class=\"condition-description\">%s</div>" % (description)  
+    
     el = {
-      "name": c['Nom'],
+      "name": name,
       "type": "buff",
       "data": {
         "description": {
