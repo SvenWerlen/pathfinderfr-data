@@ -58,7 +58,7 @@ for d in data:
         "data": {
             "featType": "classFeat",
             "description": {
-                "value": ("<div class=\"pf2frDescr\"><p><b>Classe : </b>{}<br/>" +
+                "value": ("<div class=\"feature-description\"><p><b>Classe : </b>{}<br/>" +
                         "<b>Niveau : </b>{}<br/>" +
                         "<b>De base : </b>{}<br/></p>" +
                         "<h2>Description</h2>{}" +
