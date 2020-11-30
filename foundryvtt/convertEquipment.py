@@ -57,23 +57,21 @@ for m in data:
       description = m['Description'].replace('\n','<br/>')
     else:
       description = ""
-    description = improveDescription(description, name)
+    description = generateDescriptionHTML(name, description, m['Référence'])
     
     el = {
         "name": name,
         "type": "loot",
         "data": {
             "description": {
-                "value": ("<p><b>Prix : </b>{}<br/>" +
-                        "<b>Poids : </b>{}<br/>" +
-                        "<b>Catégorie : </b>{}<br/></p>" +
-                        "<h2>Description</h2><p>{}</p>" +
-                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
+                "value": ("<div class=\"equip-description\"><p>" +
+                        "<b>Prix : </b>{}, <b>Poids : </b>{}<br/>" +
+                        generateProp("Catégorie", m, 'Catégorie', "-") + 
+                        "</p><h2>Description</h2>{}" +
+                        "</div>").format(
                     m['Prix'] if 'Prix' in m else '-',
                     m['Poids'] if 'Poids' in m else '-',
-                    m['Catégorie'],
-                    "<div class=\"pf2frDescr\">%s</div>" % description,
-                    m['Référence'])
+                    description)
             },
             "source": m['Source'],
             "quantity": quantity,
