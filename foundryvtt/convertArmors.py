@@ -58,37 +58,33 @@ for a in data:
         continue
     duplicates.append(a['Nom'])
     
+    name = a['Nom']
+    
     if "DescriptionHTML" in a:
       description = a['DescriptionHTML']
     elif "Description" in a:
       description = a['Description'].replace('\n','<br/>')
     else:
       description = ""
-    description = improveDescription(description, a['Nom'])
+    description = generateDescriptionHTML(name, description, a['Référence'])
     
     el = {
-        "name": a['Nom'],
+        "name": name,
         "type": "equipment",
         "data": {
             "description": {
-                "value": ("<p><b>Catégorie : </b>{}<br/>" +
-                        "<b>Prix : </b>{}<br/>" +
-                        "<b>Bonus : </b>{}<br/>" +
-                        "<b>Dex maximale : </b>{}<br/>" +
-                        "<b>Malus : </b>{}<br/>" +
-                        "<b>Échec : </b>{}<br/>" +
-                        "<b>Poids : </b>{}<br/>" +
-                        "<h2>Description</h2><p>{}</p>" +
-                        "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
-                    a['Catégorie'] if 'Catégorie' in a else '-',
+                "value": ("<div class=\"armor-description\"><p>" +
+                        generateProp("Catégorie", a, 'Catégorie', "-") + 
+                        "<b>Prix : </b>{}, <b>Poids : </b>{}<br/>" +
+                        generateProp("Bonus", a, 'Bonus') + 
+                        generateProp("Dex maximale", a, 'BonusDexMax') + 
+                        generateProp("Malus", a, 'Malus') + 
+                        generateProp("Échec", a, 'ÉchecProfane') + 
+                        "</p><h2>Description</h2>{}" +
+                        "</div>").format(
                     a['Prix'] if 'Prix' in a else '-',
-                    a['Bonus'] if 'Bonus' in a else '-',
-                    a['BonusDexMax'] if 'BonusDexMax' in a else '-',
-                    a['Malus'] if 'Malus' in a else "0",
-                    a['ÉchecProfane'] if 'ÉchecProfane' in a else '-',
                     a['Poids'] if 'Poids' in a else '-',
-                    description,
-                    a['Référence'])
+                    description)
             },
             "source": a['Source'],
             "quantity": 1,
@@ -108,7 +104,7 @@ for a in data:
             "spellFailure": getSpellFailure(a['ÉchecProfane']),
             "slot": "slotless"
         },
-        "img": img[a['Nom']] if a['Nom'] in img and "pf1-fr" not in img[a['Nom']] else "systems/pf1/icons/items/armor/banded-mail.PNG"
+        "img": img[name] if name in img and "pf1-fr" not in img[name] else "systems/pf1/icons/items/armor/banded-mail.PNG"
     }
     
     list.append(el)

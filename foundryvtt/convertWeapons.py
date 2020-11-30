@@ -70,14 +70,12 @@ for w in data:
       description = ""
     description = generateDescriptionHTML(name, description, w['Référence'])
     
-    
-    
     el = {
       "name": name,
       "type": "weapon",
       "data": {
           "description": {
-              "value": ("<div class=\"weapon-description\">" +
+              "value": ("<div class=\"weapon-description\"><p>" +
                           generateProp("Catégorie", w, 'Catégorie', "-") + 
                           generateProp("Sous-catégorie", w, 'Sous-catégorie', "-") + 
                           "<b>Prix : </b>{} po, <b>Poids : </b>{} kg<br/>" +
@@ -86,7 +84,7 @@ for w in data:
                           generateProp("Portée", w, 'Portée') + 
                           generateProp("Type", w, 'Type') + 
                           generateProp("Spécial", w, 'Spécial') + 
-                          "<h2>Description</h2>{}" +
+                          "</p><h2>Description</h2>{}" +
                           "</div>").format(
                       w['Prix'] if 'Prix' in w else '-',
                       w['Poids'] if 'Poids' in w else '-',

@@ -88,7 +88,7 @@ for m in data:
                         generateProp("Emplacement", m, 'Emplacement') + 
                         generateProp("Aura", m, 'Aura') + 
                         generateProp("NLS", m, 'NLS') + 
-                        "<h2>Description</h2>{}" +
+                        "</p><h2>Description</h2>{}" +
                         "<h2>Fabrication</h2><p>" +
                         "<b>Conditions : </b>{}<br/>" +
                         "<b>Coût : </b>{}<br/></p>" +
