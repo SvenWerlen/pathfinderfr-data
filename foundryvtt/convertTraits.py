@@ -44,21 +44,21 @@ for d in data:
   if description.startswith("."):
     description = description[1:].strip()
   
+  props = ""
   if "Race" in d:
     name = "%s (%s)" % (name, d['Race'])
-    description = "<p><i>%s</i></p><p><b>Race :</b> ##racesfr|%s##<br/><b>Remplace :</b> %s<p/><p><b>Référence :</b> <a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
-      % (description, d['Race'], replace if 'Remplace' in d else "-", d['Référence'])
-  else:
-    description = "<p><i>%s</i></p><p><b>Référence :</b> <a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p>" \
-      % (description, d['Référence'])
-  description = improveDescription(description, name)
+    props = "<b>Race :</b> ##racesfr|%s##<br/><b>Remplace :</b> %s<p/>" \
+      % (d['Race'], replace if 'Remplace' in d else "-")
+  description = generateDescriptionHTML(name, description, d['Référence'])
 
   el = {
     "name": name,
     "type": "feat",
     "data": {
       "description": {
-        "value": description,
+        "value": ("<div class=\"trait-description\"><p>{}</p> {}</div>").format(
+                      props,
+                      description),
       },
       "featType": "racial" if "Race" in d or subtype == "Race" else "trait",
       "tags": [[d['Race']]] if "Race" in d else [],
