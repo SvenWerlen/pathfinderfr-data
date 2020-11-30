@@ -27,24 +27,25 @@ for c in data:
       continue
     duplicates.append(c['Nom'])
     
-    descriptionHTML = "<div class=\"pf2frDescr\">"
-    descriptionHTML += "<h2>Traits</h2><ul>"
+    name = c['Nom']
+    
+    traits = "<ul>"
     for trait in c['Traits']:
-      descriptionHTML += "<li><b>%s.</b> %s</li>" % (trait['Nom'], trait['Description'])
-    descriptionHTML += "</ul></div>"
-    descriptionHTML = improveDescription(descriptionHTML, c['Nom'])
+      traits += "<li><b>%s.</b> %s</li>" % (trait['Nom'], trait['Description'])
+    traits += "</ul>"
     
     el = {
-      "name": c['Nom'],
+      "name": name,
       "type": "race",
       "data": {
         "description": {
-          "value": descriptionHTML,     
+          "value": "<div class=\"race-description\"><h2>Traits</h2>%s</div>" % 
+              generateDescriptionHTML(name, traits, c['Référence']),     
           "chat": "",
           "unidentified": ""
         },
       },
-      "img": img[c['Nom']] if c['Nom'] in img and "pf1-fr" not in img[c['Nom']] else "icons/svg/mystery-man.svg"
+      "img": img[name] if name in img and "pf1-fr" not in img[name] else "icons/svg/mystery-man.svg"
     }
     list.append(el)
 
