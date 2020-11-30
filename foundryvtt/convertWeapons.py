@@ -68,37 +68,31 @@ for w in data:
       description = w['Description'].replace('\n','<br/>')
     else:
       description = ""
-    description = improveDescription(description, name)
+    description = generateDescriptionHTML(name, description, w['Référence'])
+    
+    
     
     el = {
       "name": name,
       "type": "weapon",
       "data": {
           "description": {
-              "value": ("<p><b>Catégorie : </b>{}<br/>" +
-                          "<b>Sous-catégorie : </b>{}<br/>" +
-                          "<b>Prix : </b>{}<br/>" +
-                          "<b>Dégâts (P) : </b>{}<br/>" +
-                          "<b>Dégâts (M) : </b>{}<br/>" +
-                          "<b>Critique : </b>{}<br/>" +
-                          "<b>Portée : </b>{}<br/>" +
-                          "<b>Poids : </b>{}<br/>" +
-                          "<b>Type : </b>{}<br/>" +
-                          "<b>Spécial : </b>{}<br/></p>" +
-                          "<h2>Description</h2><p>{}</p>" +
-                          "<p><b>Référence : </b><a href=\"{}\" parent=\"_blank\">pathfinder-fr.org</a></p>").format(
-                      w['Catégorie'] if 'Catégorie' in w else '-',
-                      w['Sous-catégorie'] if 'Sous-catégorie' in w else '-',
+              "value": ("<div class=\"weapon-description\">" +
+                          generateProp("Catégorie", w, 'Catégorie', "-") + 
+                          generateProp("Sous-catégorie", w, 'Sous-catégorie', "-") + 
+                          "<b>Prix : </b>{} po, <b>Poids : </b>{} kg<br/>" +
+                          "<b>Dégâts : </b>{} (P), {} (M)<br/>" +
+                          generateProp("Critique", w, 'Critique') + 
+                          generateProp("Portée", w, 'Portée') + 
+                          generateProp("Type", w, 'Type') + 
+                          generateProp("Spécial", w, 'Spécial') + 
+                          "<h2>Description</h2>{}" +
+                          "</div>").format(
                       w['Prix'] if 'Prix' in w else '-',
+                      w['Poids'] if 'Poids' in w else '-',
                       w['DégâtsP'] if 'DégâtsP' in w else '-',
                       w['DégâtsM'] if 'DégâtsM' in w else '-',
-                      w['Critique'] if 'Critique' in w else '-',
-                      w['Portée'] if 'Portée' in w else '-',
-                      w['Poids'] if 'Poids' in w else '-',
-                      w['Type'] if 'Type' in w else '-',
-                      w['Spécial'] if 'Spécial' in w else '-',
-                      description,
-                      w['Référence'])
+                      description)
           },
           "source": w['Source'],
           "quantity": quantity,

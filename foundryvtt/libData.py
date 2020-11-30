@@ -140,3 +140,13 @@ def generateDescriptionHTML(name, descr, reference):
   # génère le bloc HTML de façon consistante et harmonisé
   return "<div class=\"pf1frDescr\"><div class=\"content\">%s</div><p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (descr, reference);
 
+##
+## cette fonction génère une propriété si existe
+##
+def generateProp(name, obj, key, default = None):
+  prop = ""
+  if key in obj and obj[key] != '-' and obj[key] != '—':
+    prop = "<b>%s : </b>%s<br/>" % (name, obj[key])
+  elif default:
+    prop = "<b>%s : </b>%s<br/>" % (name, default)
+  return prop
