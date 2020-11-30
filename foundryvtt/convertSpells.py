@@ -239,8 +239,7 @@ for s in data:
     
     name = cleanTitle(s['Nom'])
     description = s['DescriptionHTML'] if 'DescriptionHTML' in s else s['Description'].replace("\n", "<br/>")
-    description = "<div class=\"pf2frDescr\">%s<p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (description, s['Référence'])
-    description = improveDescription(description, name)
+    description = generateDescriptionHTML(name, description, s['Référence'])
     
     el = {
         "name": name,

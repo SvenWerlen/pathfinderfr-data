@@ -98,7 +98,9 @@ def mergeWithLetContribute(clist, filepath, ignoreDuplicates = True):
           if isinstance(effect,list):
             effectLvl = " au " + str(effect[1])
             effect = effect[0]
-          el['data']['description']['value'] += "@Macro[effet]{Appliquer \"" + effect + "\"" + effectLvl + " }"    
+          el['data']['description']['value'] += "<p>@Macro[effet]{Appliquer \"" + effect + "\"" + effectLvl + " }</p>"
+          if( type == "spell" ):
+            el['data']["shortDescription"] += "<p>@Macro[effet]{Appliquer \"" + effect + "\"" + effectLvl + " }</p>"
   
   if not os.path.isfile(filepath) :
     return noDupList
@@ -130,8 +132,11 @@ def longestSubstring(str1, str2):
   return str1
 
 ##
-## cette fonction insère des macros dans les descriptions pour les dés
+## cette fonction génère le bloc descripton
 ##
-def improveDescription(descr, name):
+def generateDescriptionHTML(name, descr, reference):
+  # insère des macros dans les descriptions pour les dés
   descr =  re.sub('\d+d\d+( ?\+ ?\d+)?', "[[/r \g<0> #%s]]" % name, descr)
-  return descr
+  # génère le bloc HTML de façon consistante et harmonisé
+  return "<div class=\"pf1frDescr\"><div class=\"content\">%s</div><p><b>Référence: </b><a href=\"%s\" parent=\"_blank\">pathfinder-fr.org</a></p></div>" % (descr, reference);
+
