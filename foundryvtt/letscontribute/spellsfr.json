@@ -1,4 +1,412 @@
 {
+   "Assistance divine": {
+      "data": {
+         "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "touch",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule (inoffensif)",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Charme-personne": {
+      "data": {
+         "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Communication avec les animaux": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "-",
+            "type": null
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Communication avec les plantes": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "-",
+            "type": null
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Contr\u00f4le du climat": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 10,
+            "type": "minute"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": null
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Enchev\u00eatrement": {
+      "data": {
+         "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "systems/pf1/icons/spells/vines-eerie-1.jpg",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "40",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "long",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "R\u00e9flexes, partiel (voir description)",
+            "type": "ref"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Injonction": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Lueur d'arc-en-ciel": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "medium",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Mains br\u00fblantes": {
       "data": {
          "ability": {
@@ -36,6 +444,57 @@
             "dc": "0",
             "description": "R\u00e9flexes, 1/2 d\u00e9g\u00e2ts",
             "type": "ref"
+         }
+      }
+   },
+   "Protection contre le Mal": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "touch",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule (inoffensif)",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
          }
       }
    },
@@ -116,6 +575,159 @@
             "dc": "0",
             "description": "Volont\u00e9, 1/2 d\u00e9g\u00e2ts (inoffensif) (voir description)",
             "type": ""
+         }
+      }
+   },
+   "Sommeil profond": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "round"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "10",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Stabilisation": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule (inoffensif)",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Suggestion": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
          }
       }
    }

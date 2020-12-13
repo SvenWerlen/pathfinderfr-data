@@ -7,7 +7,19 @@
             "value": "<div class=\"race-description\"><h2>Traits</h2><div class=\"pf1frDescr\"><div class=\"content\"><ul><li><b>Caract\u00e9ristiques.</b> +2 \u00e0 une caract\u00e9ristique. Les demi-elfes obtiennent un bonus de +2 \u00e0 une caract\u00e9ristique choisie lors de la cr\u00e9ation (ce bonus repr\u00e9sente la diversit\u00e9 de leur race).</li><li><b>Taille moyenne.</b> Les demi-elfes sont des cr\u00e9atures de taille M, ce qui ne leur apporte aucun bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les demi-elfes poss\u00e8dent une vitesse de d\u00e9placement de base de 9 m\u00e8tres (6 cases).</li><li><b>Vision nocturne.</b> Les demi-elfes peuvent voir deux fois plus loin que les humains dans des conditions de faible \u00e9clairage.</li><li><b>Adaptabilit\u00e9.</b> Les demi-elfes re\u00e7oivent le don Talent comme don suppl\u00e9mentaire au niveau 1.</li><li><b>Immunit\u00e9s elfiques.</b> Les demi-elfes sont immunis\u00e9s aux effets de sommeil magique et b\u00e9n\u00e9ficient d\u2019un bonus racial de +2 aux jets de sauvegarde contre les sorts et les effets de type enchantement.</li><li><b>Sang elfique.</b> Les demi-elfes comptent \u00e0 la fois comme humains et comme elfes pour les effets li\u00e9s \u00e0 la race.</li><li><b>Sens aiguis\u00e9s.</b> Les demi-elfes re\u00e7oivent un bonus racial de +2 aux tests de Perception.</li><li><b>Talents multiples.</b> Les demi-elfes choisissent deux classes de pr\u00e9dilection au niveau 1 et gagnent +1 point de vie ou +1 point de comp\u00e9tence chaque fois qu\u2019ils gagnent un niveau dans l\u2019une de ces deux classes.</li><li><b>Langues suppl\u00e9mentaires.</b> Les demi-elfes connaissent automatiquement le commun et l\u2019elfe. Les demi-elfes qui poss\u00e8dent une Intelligence \u00e9lev\u00e9e peuvent choisir n\u2019importe quelle autre langue (\u00e0 l\u2019exception des langages secrets tels que la langue des druides).</li></ul></div><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Demi-elfe.ashx\" parent=\"_blank\">pathfinder-fr.org</a></p></div></div>",
             "chat": "",
             "unidentified": ""
-         }
+         },
+         "changes": [
+            {
+               "_id": "fufaip1z",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": 0
+            }
+         ]
       },
       "img": "systems/pf1/icons/races/half-elf.png"
    },
