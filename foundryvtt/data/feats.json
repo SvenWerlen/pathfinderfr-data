@@ -24343,7 +24343,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour les croc-en-jambes"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Les croc-en-jambes ne provoquent pas d'attaque d'opportunit\u00e9"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -33214,7 +33225,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "concentration",
+               "target": "spell",
+               "text": "+4 pour incanter sur la d\u00e9fensive"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {

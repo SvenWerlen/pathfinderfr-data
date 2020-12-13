@@ -72,10 +72,11 @@ for el in list:
   r = requests.get("%s/item/%s" % (SERVER, el['id']), headers=headers)
   checkReturnCode(r, 200, "Details")
   object = r.json()
-  data = object['data']
+  data = object['data']['data']
   
   # extract contentNotes and changes only
   if el['initiativeId'] == 1:
+    print(el['name'])
     if "contextNotes" in data and len(data["contextNotes"]) > 0:
       lists[compendium][el['name']]['data']["contextNotes"] = data["contextNotes"]
     if "changes" in data and len(data["changes"]) > 0:
