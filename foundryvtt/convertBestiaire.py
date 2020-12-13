@@ -7,6 +7,7 @@ import typing
 import sys
 import re
 import math
+import uuid
 
 from libData import *
 
@@ -77,6 +78,7 @@ def getBBAStrength(name, value, level):
 # génère un JSON pour modification
 def newBuff(formula, target, subTarget, modifier):
   return {
+    "_id": uuid.uuid4().hex[:8],
     "formula": formula,
     "operator": "add",
     "target": target,
@@ -217,6 +219,7 @@ for b in data:
       "description": { "value": "Ajustements pour que les valeurs d'Initiative, CA, etc. correspondent aux valeurs de la créature" },
       "changes": [],
       "buffType": "perm",
+      "hideFromToken": True,
       "active": True
     },
   }
