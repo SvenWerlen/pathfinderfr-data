@@ -1985,6 +1985,32 @@
       "data": {},
       "img": "systems/pf1/icons/feats/shield-proficiency.jpg"
    },
+   "Persuasion": {
+      "data": {
+         "changes": [
+            {
+               "_id": "0a9zxtdl",
+               "formula": "@skills.dip.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.dip",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "sfpjgiyd",
+               "formula": "@skills.int.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.int",
+               "target": "skill",
+               "value": 0
+            }
+         ]
+      }
+   },
    "Port des armures interm\u00e9diaires": {
       "data": {},
       "img": "systems/pf1/icons/feats/armor-proficiency-medium.png"

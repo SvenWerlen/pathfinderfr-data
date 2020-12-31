@@ -91,6 +91,8 @@ for el in list:
   elif el['initiativeId'] == 4 or el['initiativeId'] == 5:
     if "ability" in data:
       lists[compendium][el['name']]['data']["ability"] = data["ability"]
+    if "abilityType" in data:
+      lists[compendium][el['name']]['data']["abilityType"] = data["abilityType"]
     if "actionType" in data:
       lists[compendium][el['name']]['data']["actionType"] = data["actionType"]
     if "damage" in data:

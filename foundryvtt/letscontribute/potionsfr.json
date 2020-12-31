@@ -1,0 +1,59 @@
+{
+   "Potion de soins l\u00e9gers (1d8+1)": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "heal",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "1d8+1",
+                  "Soin"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "inst",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "touch",
+            "value": null
+         },
+         "save": {
+            "dc": "11",
+            "description": "Volont\u00e9, 1/2 d\u00e9g\u00e2ts (inoffensif) (voir description)",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "maxFormula": "",
+            "per": "single",
+            "value": 0
+         }
+      }
+   }
+}

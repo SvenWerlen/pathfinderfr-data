@@ -116,36 +116,400 @@
          ]
       }
    },
+   "Brb  1 : Armes et armures": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "none",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  1 : D\u00e9placement acc\u00e9l\u00e9r\u00e9": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "changes": [
+            {
+               "_id": "hc9y66hk",
+               "formula": "+10",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "landSpeed",
+               "target": "speed",
+               "value": 10
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
+      }
+   },
+   "Brb  1 : Rage de berserker": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "free"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "none",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 26,
+            "maxFormula": "4 + @abilities.con.mod + 2 * (@classes.barbare.level -1)",
+            "per": "day",
+            "value": 0
+         }
+      }
+   },
    "Brb  2 : Esquive instinctive": {
       "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
          "contextNotes": [
             {
                "subTarget": "ac",
                "target": "misc",
-               "text": "Jamais pris au d\u00e9pourvu"
-            },
-            {
-               "subTarget": "ac",
-               "target": "misc",
-               "text": "Conserve sa dex contre un ennemi invisible"
+               "text": "@Compendium[pf1-fr.classfeaturesfr.UdzQ2ODOIcNISbSR]{Esquive instinctive} Jamais pris au d\u00e9pourvu et conserve son bonus de dext\u00e9rit\u00e9 contre les ennemis invisibles"
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  2 : Pouvoir de rage": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
       }
    },
    "Brb  3 : Sens des pi\u00e8ges +1": {
       "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
          "contextNotes": [
             {
                "subTarget": "ref",
                "target": "savingThrows",
-               "text": "+[[floor((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
             },
             {
                "subTarget": "ac",
                "target": "misc",
-               "text": "+[[floor((@classes.barbare.level)/3))]] en CA d'esquive contre les pi\u00e8ges"
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  4 : Pouvoir de rage #2": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       }
    },
    "Brb  5 : Esquive instinctive sup\u00e9rieure": {
@@ -157,6 +521,1055 @@
                "text": "N'est jamais pris en tenaille"
             }
          ]
+      }
+   },
+   "Brb  6 : Pouvoir de rage #3": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
+      }
+   },
+   "Brb  6 : Sens des pi\u00e8ges +2": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  7 : R\u00e9duction de d\u00e9g\u00e2ts 1/-": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  8 : Pouvoir de rage #4": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb  9 : Sens des pi\u00e8ges +3": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
+      }
+   },
+   "Brb 10 : Pouvoir de rage #5": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 10 : R\u00e9duction de d\u00e9g\u00e2ts 2/-": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
+      }
+   },
+   "Brb 11 : Rage de grand berserker": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 26,
+            "maxFormula": "4 + @abilities.con.mod + 2 * (@classes.barbare.level -1)",
+            "per": "day",
+            "value": 0
+         }
+      }
+   },
+   "Brb 12 : Pouvoir de rage #6": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 12 : Sens des pi\u00e8ges +4": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 13 : R\u00e9duction de d\u00e9g\u00e2ts 3/-": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 14 : Pouvoir de rage #7": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 15 : Sens des pi\u00e8ges +5": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 16 : Pouvoir de rage #8": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 16 : R\u00e9duction de d\u00e9g\u00e2ts 4/-": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": "",
+            "value": 0
+         }
+      }
+   },
+   "Brb 18 : Pouvoir de rage #9": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 18 : Sens des pi\u00e8ges +6": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "@Compendium[pf1-fr.classfeaturesfr.06I2Ph4RUr0m3y0K]{Sens des pi\u00e8ges} Ajouter [[floor(((@classes.barbare.level)/3))]] contre les pi\u00e8ges"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 19 : R\u00e9duction de d\u00e9g\u00e2ts 5/-": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "passive"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brb 20 : Pouvoir de rage #10": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       }
    },
    "Bre  3 : Agilit\u00e9 +1": {
