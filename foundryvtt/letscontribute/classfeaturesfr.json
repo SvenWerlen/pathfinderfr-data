@@ -1592,6 +1592,7 @@
       "data": {
          "changes": [
             {
+               "_id": "146b267c",
                "formula": "",
                "modifier": "untyped",
                "operator": "add",
@@ -1601,6 +1602,7 @@
                "value": 0
             },
             {
+               "_id": "605ba65e",
                "formula": "",
                "modifier": "untyped",
                "operator": "add",
@@ -1662,6 +1664,177 @@
          ]
       }
    },
+   "Moi  1 : Bonus \u00e0 la CA (Ext)": {
+      "data": {
+         "changes": [
+            {
+               "_id": "kodptp6z",
+               "formula": "@abilities.wis.mod",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "ac",
+               "target": "ac",
+               "value": 3
+            },
+            {
+               "_id": "7lvhd7rh",
+               "formula": "@abilities.wis.mod",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": 3
+            },
+            {
+               "_id": "ugprloz4",
+               "formula": "floor((@classes.moine.level)/4)",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "ac",
+               "target": "ac",
+               "value": 1
+            },
+            {
+               "_id": "sd9d1r4i",
+               "formula": "floor((@classes.moine.level)/4)",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": 1
+            }
+         ]
+      }
+   },
+   "Moi  2 : Esquive totale": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "ref",
+               "target": "savingThrows",
+               "text": "Esquive totale (pas de d\u00e9g\u00e2t en cas de test r\u00e9ussi)"
+            }
+         ]
+      }
+   },
+   "Moi  3 : Entra\u00eenement aux man\u0153uvres offensives": {
+      "data": {
+         "changes": [
+            {
+               "_id": "7tqzeb8t",
+               "formula": "@classes.moine.level",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmb",
+               "target": "misc",
+               "value": 4
+            },
+            {
+               "_id": "i5zc3c3p",
+               "formula": "-@attributes.bab.total",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmb",
+               "target": "misc",
+               "value": 0
+            }
+         ]
+      }
+   },
+   "Moi  3 : S\u00e9r\u00e9nit\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+2 contre les sorts et effets de type enchantement"
+            }
+         ]
+      }
+   },
+   "Moi  4 : R\u00e9serve de ki (magique)": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "none",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "swift"
+         },
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Peut faire une frappe Ki tant qu'il reste au moins 1 point de Ki"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Les frappes Ki sont consid\u00e9r\u00e9e comme des armes magiques"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "1 point de Ki pour 1 attaque suppl\u00e9mentaire (d\u00e9luge de coup, bonus max \u00e0 l'attaque)"
+            },
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "1 point de Ki pour +4 CA d'esquive pendant 1 round"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 5,
+            "maxFormula": "floor((@classes.moine.level)/2)+(@abilities.wis.mod)",
+            "per": "day",
+            "value": 5
+         }
+      }
+   },
    "Nin  2 : Astuce - Discret et rapide (Ext)": {
       "data": {
          "contextNotes": [
@@ -1675,6 +1848,19 @@
    },
    "Nin  2 : R\u00e9serve de ki (Sur)": {
       "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "su",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
          "contextNotes": [
             {
                "subTarget": "attack",
@@ -1691,7 +1877,45 @@
                "target": "skill",
                "text": "S'il reste 1 point de ki, on consid\u00e8re toujours que le personnage a pris de l'\u00e9lan pour sauter"
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 3,
+            "maxFormula": "floor((@classes.ninja.level)/2)+(@abilities.cha.mod)",
+            "per": "day",
+            "value": 3
+         }
       }
    },
    "Pr\u00ea  1 : Canalisation d'\u00e9nergie 1d6": {

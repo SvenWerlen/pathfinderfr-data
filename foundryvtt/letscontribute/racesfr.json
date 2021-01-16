@@ -77,5 +77,71 @@
             }
          ]
       }
+   },
+   "Tengu": {
+      "data": {
+         "changes": [
+            {
+               "_id": "3cg4ema6",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 2
+            },
+            {
+               "_id": "or7fqprr",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "wis",
+               "target": "ability",
+               "value": 2
+            },
+            {
+               "_id": "zfuvvm9s",
+               "formula": "-2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "con",
+               "target": "ability",
+               "value": -2
+            },
+            {
+               "_id": "u7rsynmz",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "7xc2pb8v",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.ste",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "n8ueghiu",
+               "formula": "4",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.lin",
+               "target": "skill",
+               "value": 4
+            }
+         ]
+      }
    }
 }

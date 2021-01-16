@@ -19860,7 +19860,23 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "skill.swm",
+               "target": "skill",
+               "text": "+4 pour \u00e9viter les d\u00e9g\u00e2ts non l\u00e9taux"
+            },
+            {
+               "subTarget": "conChecks",
+               "target": "abilityChecks",
+               "text": "+4 pour \u00e9viter les d\u00e9g\u00e2ts non l\u00e9taux"
+            },
+            {
+               "subTarget": "fort",
+               "target": "savingThrows",
+               "text": "+4 pour \u00e9viter les d\u00e9g\u00e2ts non l\u00e9taux"
+            }
+         ],
          "featType": "feat",
          "requirements": "-",
          "attack": {
@@ -43718,7 +43734,7 @@
          "source": "MJ",
          "activation": {
             "cost": 1,
-            "type": ""
+            "type": "attack"
          },
          "duration": {
             "value": null,
@@ -43730,18 +43746,26 @@
          "range": {
             "value": null,
             "units": "",
-            "long": null
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null
          },
          "uses": {
-            "value": 0,
-            "max": 0,
-            "per": null
+            "value": 1,
+            "max": 1,
+            "per": "day",
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "maxFormula": "floor((@attributes.hd.total)/4)"
          },
          "actionType": "",
          "attackBonus": "",
          "critConfirmBonus": "",
          "damage": {
-            "parts": []
+            "parts": [],
+            "critParts": [],
+            "nonCritParts": []
          },
          "attackParts": [],
          "formula": "",
@@ -43754,7 +43778,8 @@
          },
          "save": {
             "dc": 0,
-            "type": ""
+            "type": "",
+            "description": ""
          },
          "effectNotes": "",
          "attackNotes": "",
@@ -43767,11 +43792,26 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Coup \u00e9tourdissant (restant : [[@resources.coupTourdissant.value]]"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
             "parts": []
+         },
+         "abilityType": "none",
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
          }
       },
       "sort": 1300000,
@@ -45441,7 +45481,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "ac",
+               "target": "misc",
+               "text": "peut \u00e9viter 1 projectile/round"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {

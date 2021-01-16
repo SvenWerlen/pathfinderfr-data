@@ -59,7 +59,7 @@ for el in list:
 
   # ignore contributions with initiative != 1
   if not 'initiativeId' in el or not el['initiativeId'] in [1,2,4,5]:
-    print("Ignoring initiative %d" % el['initiativeId'])
+    print("Ignoring initiative %d" % (el['initiativeId'] if 'initiativeId' in el else 0))
     continue;
 
   compendium = el['compendium'].split('.')[1]

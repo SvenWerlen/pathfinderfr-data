@@ -330,7 +330,69 @@
             "value": "<div class=\"race-description\"><h2>Traits</h2><div class=\"pf1frDescr\"><div class=\"content\"><ul><li><b>Caract\u00e9ristiques.</b> +2 Dext\u00e9rit\u00e9, +2 Sagesse, -2 Constitution. Les tengus sont rapides et observateurs, mais relativement fragiles et d\u00e9licats.</li><li><b>Tengu.</b> Les tengus sont des humano\u00efdes de sous-type tengu.</li><li><b>Taille M.</b> Les tengus sont des cr\u00e9atures de taille M qui ne re\u00e7oivent ni bonus ni malus de taille.</li><li><b>Vitesse normale.</b> Les tengus ont une vitesse de base de 9 m\u00e8tres.</li><li><b>Sens.</b> Les tengus ont vision nocturne.</li><li><b>Furtif.</b> Les tengus gagnent un bonus racial de +2 \u00e0 leurs tests de Perception et de Discr\u00e9tion.</li><li><b>Linguiste dou\u00e9.</b> Les tengus gagnent un bonus racial de +4 \u00e0 leurs tests de Linguistique, et apprennent 2 langues au lieu de 1 \u00e0 chaque fois qu\u2019ils gagnent un rang en Linguistique.</li><li><b>Entra\u00eenement aux \u00e9p\u00e9es.</b> Les tengus sont entra\u00een\u00e9s d\u00e8s la naissance au maniement de l\u2019\u00e9p\u00e9e et, de ce fait, sont automatiquement dou\u00e9s avec les lames (y compris les \u00e9p\u00e9es b\u00e2tardes, les dagues, les lames elfiques incurv\u00e9es, les cimeterres \u00e0 deux mains, les \u00e9p\u00e9es \u00e0 deux mains, les kukris, les \u00e9p\u00e9es longues, les dagues coup-de-poing, les rapi\u00e8res, les cimeterres, les \u00e9p\u00e9es courtes et les doubles lames).</li><li><b>Arme naturelle.</b> Le tengu a une attaque de morsure qui inflige [[/r 1d3 #Tengu]] points de d\u00e9g\u00e2ts.</li><li><b>Langues.</b> Les tengus commencent le jeu en parlant le commun et le tengu. Ceux qui ont un score d\u2019Intelligence \u00e9lev\u00e9 peuvent apprendre n\u2019importe quelle autre langue de leur choix (\u00e0 l\u2019exception des langues secr\u00e8tes telles que la langue des druides).</li></ul></div><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.tengu%20(race).ashx\" parent=\"_blank\">pathfinder-fr.org</a></p></div></div>",
             "chat": "",
             "unidentified": ""
-         }
+         },
+         "changes": [
+            {
+               "_id": "3cg4ema6",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "dex",
+               "target": "ability",
+               "value": 2
+            },
+            {
+               "_id": "or7fqprr",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "wis",
+               "target": "ability",
+               "value": 2
+            },
+            {
+               "_id": "zfuvvm9s",
+               "formula": "-2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "con",
+               "target": "ability",
+               "value": -2
+            },
+            {
+               "_id": "u7rsynmz",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "7xc2pb8v",
+               "formula": "2",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.ste",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "n8ueghiu",
+               "formula": "4",
+               "modifier": "racial",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.lin",
+               "target": "skill",
+               "value": 4
+            }
+         ]
       },
       "img": "systems/pf1/icons/races/tengu.png"
    },
