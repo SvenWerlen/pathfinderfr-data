@@ -7,8 +7,40 @@
       "data": {},
       "img": "systems/pf1/icons/items/inventory/rope.jpg"
    },
+   "Lunettes fum\u00e9es": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+8 contre les attaques bas\u00e9es sur la vue"
+            },
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "-4 si le personnage porte les lunettes fum\u00e9es"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Les ennemis sont consid\u00e9r\u00e9 comme camoufl\u00e9 (20% de chance d'\u00e9chouer) si le personnage porte les lunettes fum\u00e9es"
+            }
+         ]
+      }
+   },
    "Savon": {
       "data": {},
       "img": "systems/pf1/icons/items/inventory/soap.jpg"
+   },
+   "Sextant": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+4 de circonstance pour ne pas se perdre"
+            }
+         ]
+      }
    }
 }

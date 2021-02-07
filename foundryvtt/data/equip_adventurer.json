@@ -1113,7 +1113,24 @@
          "identified": true,
          "carried": true,
          "equipped": false,
-         "subType": "gear"
+         "subType": "gear",
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+8 contre les attaques bas\u00e9es sur la vue"
+            },
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "-4 si le personnage porte les lunettes fum\u00e9es"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "Les ennemis sont consid\u00e9r\u00e9 comme camoufl\u00e9 (20% de chance d'\u00e9chouer) si le personnage porte les lunettes fum\u00e9es"
+            }
+         ]
       },
       "sort": 100001,
       "flags": {},
@@ -2073,7 +2090,14 @@
          "identified": true,
          "carried": true,
          "equipped": false,
-         "subType": "gear"
+         "subType": "gear",
+         "contextNotes": [
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+4 de circonstance pour ne pas se perdre"
+            }
+         ]
       },
       "sort": 100001,
       "flags": {},

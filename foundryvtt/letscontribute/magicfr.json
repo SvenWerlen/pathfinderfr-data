@@ -1,6 +1,18 @@
 {
    "Amulette d'armure naturelle (+1)": {
       "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
          "changes": [
             {
                "_id": "874f599f",
@@ -8,11 +20,48 @@
                "modifier": "enh",
                "operator": "add",
                "priority": 0,
-               "subTarget": "ac",
+               "subTarget": "nac",
                "target": "ac",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       }
    },
    "Amulette d'armure naturelle (+2)": {
@@ -24,7 +73,7 @@
                "modifier": "enh",
                "operator": "add",
                "priority": 0,
-               "subTarget": "aac",
+               "subTarget": "nac",
                "target": "ac",
                "value": 0
             }
@@ -40,7 +89,7 @@
                "modifier": "enh",
                "operator": "add",
                "priority": 0,
-               "subTarget": "aac",
+               "subTarget": "nac",
                "target": "ac",
                "value": 0
             }
@@ -56,7 +105,7 @@
                "modifier": "enh",
                "operator": "add",
                "priority": 0,
-               "subTarget": "aac",
+               "subTarget": "nac",
                "target": "ac",
                "value": 0
             }
@@ -72,7 +121,7 @@
                "modifier": "enh",
                "operator": "add",
                "priority": 0,
-               "subTarget": "aac",
+               "subTarget": "nac",
                "target": "ac",
                "value": 0
             }
@@ -95,6 +144,59 @@
          ]
       },
       "img": "systems/pf1/icons/items/jewelry/ring-iron.jpg"
+   },
+   "Anneau de contresort": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
    },
    "Anneau de protection (+1)": {
       "data": {
@@ -251,6 +353,59 @@
                "value": 0
             }
          ]
+      }
+   },
+   "Bottes des terres gel\u00e9es": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       }
    },
    "Bottes elfiques": {

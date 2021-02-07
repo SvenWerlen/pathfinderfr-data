@@ -1626,6 +1626,66 @@
          ]
       }
    },
+   "Ens  1 : Lignage \u00c9l\u00e9mentaire - Rayon \u00e9l\u00e9mentaire (Mag)": {
+      "data": {
+         "ability": {
+            "attack": "dex",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "abilityType": "sp",
+         "actionType": "rsak",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "1d6 + floor(@classes.ensorceleur.level/2)",
+                  "\u00e9nergie choisie"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "inst",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": "1",
+            "minUnits": "",
+            "minValue": null,
+            "units": "ft",
+            "value": "30"
+         },
+         "save": {
+            "dc": "0",
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 5,
+            "maxFormula": "3 + @abilities.cha.mod",
+            "per": "day",
+            "value": 5
+         }
+      }
+   },
    "Gue  2 : Courage +1": {
       "data": {
          "contextNotes": [
@@ -1735,14 +1795,14 @@
                "value": 4
             },
             {
-               "_id": "i5zc3c3p",
-               "formula": "-@attributes.bab.total",
+               "_id": "dse9mqlm",
+               "formula": "-floor(@classes.moine.level * 3 / 4)",
                "modifier": "untyped",
                "operator": "add",
                "priority": 0,
                "subTarget": "cmb",
                "target": "misc",
-               "value": 0
+               "value": -3
             }
          ]
       }

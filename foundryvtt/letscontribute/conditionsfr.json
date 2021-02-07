@@ -8,7 +8,57 @@
       "img": "systems/pf1/icons/conditions/deaf.png"
    },
    "Aveugl\u00e9": {
-      "data": {},
+      "data": {
+         "changes": [
+            {
+               "_id": "vgjw2mlu",
+               "formula": "-2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "ac",
+               "target": "ac",
+               "value": -2
+            },
+            {
+               "_id": "eprxaza6",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": -4
+            },
+            {
+               "_id": "645fntic",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "strSkills",
+               "target": "skills",
+               "value": 0
+            },
+            {
+               "_id": "9ro8dkq0",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "dexSkills",
+               "target": "skills",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skills",
+               "target": "skills",
+               "text": "Ne peut pas faire quoi que ce soit n\u00e9cessitant la vision"
+            }
+         ]
+      },
       "img": "systems/pf1/icons/conditions/blind.png"
    },
    "Aveugl\u00e9 (avantage)": {
@@ -131,6 +181,10 @@
       "data": {},
       "img": "systems/pf1/icons/conditions/fear.png"
    },
+   "Saignement": {
+      "data": {},
+      "img": "systems/pf1/icons/conditions/bleed.png"
+   },
    "Saignement (avantage)": {
       "data": {},
       "img": "systems/pf1/icons/conditions/bleed.png"
@@ -178,9 +232,5 @@
    "\u00c9tourdi": {
       "data": {},
       "img": "systems/pf1/icons/conditions/stunned.png"
-   },
-   "Saignement": {
-      "data": {},
-      "img": "systems/pf1/icons/conditions/bleed.png"
    }
 }

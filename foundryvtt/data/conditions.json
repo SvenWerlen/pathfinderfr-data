@@ -43,7 +43,56 @@
             "value": "<div class=\"condition-description\"><div class=\"pf1frDescr\"><div class=\"content\">Le personnage ne voit plus rien. Il subit un malus de -2 \u00e0 la classe d\u2019armure, perd son \u00e9ventuel bonus de Dext\u00e9rit\u00e9 \u00e0 la CA, et subit un malus de -4 sur ses tests de Perception oppos\u00e9s et de la plupart des comp\u00e9tences associ\u00e9es \u00e0 la Force et \u00e0 la Dext\u00e9rit\u00e9. Il ne peut pas effectuer le moindre test de comp\u00e9tence n\u00e9cessitant d\u2019y voir (comme lire ou utiliser une comp\u00e9tence de Perception bas\u00e9e sur la vue). Tous ses adversaires b\u00e9n\u00e9ficient d\u2019un camouflage total \u00e0 son \u00e9gard (50 % de risques de manquer son jet d'attaque). Un personnage aveugl\u00e9 se d\u00e9place \u00e0 la moiti\u00e9 de sa vitesse habituelle (test d\u2019Acrobaties DD 10 pour se d\u00e9placer plus vite). Une cr\u00e9ature qui rate ce test tombe \u00e0 terre. Un personnage aveugl\u00e9 pendant suffisamment longtemps peut s\u2019habituer partiellement \u00e0 sa condition et circonvenir certains de ces d\u00e9savantages.<br/><br/></div><p><b>R\u00e9f\u00e9rence: </b><a href=\"http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.%c3%89tats%20pr%c3%a9judiciables.ashx#Aveugl\u00e9_3\" parent=\"_blank\">pathfinder-fr.org</a></p></div></div>"
          },
          "buffType": "temp",
-         "active": true
+         "active": true,
+         "changes": [
+            {
+               "_id": "vgjw2mlu",
+               "formula": "-2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "ac",
+               "target": "ac",
+               "value": -2
+            },
+            {
+               "_id": "eprxaza6",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.per",
+               "target": "skill",
+               "value": -4
+            },
+            {
+               "_id": "645fntic",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "strSkills",
+               "target": "skills",
+               "value": 0
+            },
+            {
+               "_id": "9ro8dkq0",
+               "formula": "-4",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "dexSkills",
+               "target": "skills",
+               "value": 0
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "skills",
+               "target": "skills",
+               "text": "Ne peut pas faire quoi que ce soit n\u00e9cessitant la vision"
+            }
+         ]
       },
       "img": "systems/pf1/icons/conditions/blind.png"
    },

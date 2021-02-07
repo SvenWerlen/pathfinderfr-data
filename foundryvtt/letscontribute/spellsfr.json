@@ -1,4 +1,62 @@
 {
+   "Aspersion acide": {
+      "data": {
+         "ability": {
+            "attack": "dex",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "rsak",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "1d3",
+                  "acide"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Assistance divine": {
       "data": {
          "ability": {
@@ -40,6 +98,112 @@
             "dc": "0",
             "description": "Volont\u00e9, annule (inoffensif)",
             "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Brume de dissimulation": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "20",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": null
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "B\u00e9n\u00e9diction": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "25",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": null
          },
          "uses": {
             "autoDeductCharges": true,
@@ -254,6 +418,117 @@
          }
       }
    },
+   "Cr\u00e9ation de fosse": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "10+(floor(@cl/2)*10)",
+            "type": "rect"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "R\u00e9flexes pour annuler",
+            "type": "ref"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "C\u00f4ne de froid": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "(min(15, @cl))d6",
+                  "froid"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "60",
+            "type": "cone"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": "1",
+            "minUnits": "",
+            "minValue": null,
+            "units": "ft",
+            "value": "60"
+         },
+         "save": {
+            "dc": "0",
+            "description": "R\u00e9flexes, 1/2 d\u00e9g\u00e2ts",
+            "type": "ref"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Enchev\u00eatrement": {
       "data": {
          "ability": {
@@ -305,6 +580,117 @@
          }
       }
    },
+   "Fl\u00e8che acide": {
+      "data": {
+         "ability": {
+            "attack": "dex",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "rsak",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "2d4",
+                  "acide"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "long",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "H\u00e9b\u00e9tement": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "spellsave",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Injonction": {
       "data": {
          "ability": {
@@ -346,6 +732,59 @@
             "dc": "0",
             "description": "Volont\u00e9, annule",
             "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Instant de gloire": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": "circle"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": null
          },
          "uses": {
             "autoDeductCharges": true,
@@ -447,6 +886,117 @@
          }
       }
    },
+   "Pri\u00e8re": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "20",
+            "type": "ray"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": null
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Projectile magique": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "1d4+1",
+                  "magique"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "medium",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Protection contre le Mal": {
       "data": {
          "ability": {
@@ -498,6 +1048,64 @@
          }
       }
    },
+   "Rayon ardent": {
+      "data": {
+         "ability": {
+            "attack": "dex",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "rsak",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "4d6",
+                  "feu"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "aucun",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Rayon de givre": {
       "data": {
          "ability": {
@@ -535,6 +1143,59 @@
             "dc": "0",
             "description": "aucun",
             "type": ""
+         }
+      }
+   },
+   "Sanctuaire": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "touch",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
          }
       }
    },
@@ -714,6 +1375,59 @@
          "range": {
             "long": null,
             "maxIncrements": 1,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Zone de v\u00e9rit\u00e9": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "20",
+            "type": "ray"
+         },
+         "range": {
+            "long": null,
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
             "units": "close",
             "value": null
          },
