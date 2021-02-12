@@ -11,11 +11,16 @@ import math
 from libData import *
 
 data = None
+features = None
+
 with open("../data/classes.yml", 'r') as stream:
     try:
         data = yaml.safe_load(stream)
     except yaml.YAMLError as exc:
         print(exc)
+
+features = json.load(open('data/classfeatures.json', 'r'))
+
 
 img = json.load(open('data/classes-img.json', 'r'))
 
@@ -168,6 +173,31 @@ for c in data:
         'flags':  {},
         "img": img[name] if name in img and "pf1-fr" not in img[name] else "icons/svg/mystery-man.svg"
     }
+            
+    # ajouter les associations de la classe
+    idx = 0
+    associations = []
+    for f in features:
+      if f['flags']['class'] == name and f['flags']['archetype'] == "base" and "De base" in f['data']['tags'][0]:
+        
+        m = re.search('\w{3} +(\d+) :', f['name'])
+        if not m:
+          print("Invalid name (level): %s" % f['name'])
+          exit(1)
+        
+        assoc = {
+          "_index": idx,
+          "dataType": "compendium",
+          "hiddenLinks": {},
+          "id": "pf1-fr.classfeaturesfr.XXXX",
+          "img": f['img'],
+          "level": int(m.group(1)),
+          "name": f['name']
+        }
+        idx += 1
+        associations.append(assoc)
+    
+    el["data"]["links"] = { "classAssociations" : associations }
     list.append(el)
 
 list = mergeWithLetContribute(list, "letscontribute/classesfr.json")
