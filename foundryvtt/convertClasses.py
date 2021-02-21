@@ -7,10 +7,12 @@ import typing
 import sys
 import re
 import math
+import copy
 
 from libData import *
 
 data = None
+archtypes = None
 features = None
 
 with open("../data/classes.yml", 'r') as stream:
@@ -19,7 +21,15 @@ with open("../data/classes.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
+with open("../data/class-archetypes.yml", 'r') as stream:
+    try:
+        archtypes = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+
+
 features = json.load(open('data/classfeatures.json', 'r'))
+featuresArch = json.load(open('data/classfeaturesarch.json', 'r'))
 
 
 img = json.load(open('data/classes-img.json', 'r'))
@@ -56,6 +66,8 @@ def getBAB(data):
         return "high"
 
 list = []
+listArch = []
+
 duplicates = []
 for c in data:
     if c['Nom'] in duplicates:
@@ -72,8 +84,8 @@ for c in data:
     
     name = c['Nom']
     
-    description += generateTable(c['Progression'])
-    description = generateDescriptionHTML(name, description, c['Référence'])
+    descriptionTable = generateTable(c['Progression'])
+    descriptionFull = generateDescriptionHTML(name, description + descriptionTable, c['Référence'])
     
     el = {
         'name': name,
@@ -91,7 +103,7 @@ for c in data:
                     c['DésDeVie'],
                     c['Alignement'],
                     c['RangsParNiveau'],
-                    description),       
+                    descriptionFull),       
                 "chat":"",
                 "unidentified":""
             },
@@ -184,7 +196,7 @@ for c in data:
         if not m:
           print("Invalid name (level): %s" % f['name'])
           exit(1)
-        
+                
         assoc = {
           "_index": idx,
           "dataType": "compendium",
@@ -199,9 +211,53 @@ for c in data:
     
     el["data"]["links"] = { "classAssociations" : associations }
     list.append(el)
+    
+    # ajouter tous les archétypes
+    for a in archtypes:
+      if(a['Classe'] == el['name']):
+        elA = copy.deepcopy(el)
+        descriptionFull = generateDescriptionHTML(name, description + "<br/><br/><h3>Archétype</h3><p>" + a["Description"] + "</p>" + descriptionTable, a['Référence'])
+        elA['name'] = a['Nom']
+        elA['data']['description']['value'] = ("<div class=\"class-description\">" +
+                        "<p><b>Dé de vie : </b>{}<br/>" +
+                        "<b>Alignement : </b>{}<br/>" +
+                        "<b>Rangs/niveau : </b>{}</p>" +
+                        "<h2>Description</h2>{}"
+                        "</div>").format(
+                    c['DésDeVie'],
+                    c['Alignement'],
+                    c['RangsParNiveau'],
+                    descriptionFull)
+        
+        # ajouter les associations d'archétype
+        idxA = idx
+        for f in featuresArch:
+          if f['flags']['class'] == name and f['flags']['archetype'] == a['Nom'] and "De base" in f['data']['tags'][0]:
+            
+            m = re.search('\w{3} +(\d+) :', f['name'])
+            if not m:
+              print("Invalid name (level): %s" % f['name'])
+              exit(1)
+                        
+            assoc = {
+              "_index": idxA,
+              "dataType": "compendium",
+              "hiddenLinks": {},
+              "id": "pf1-fr.classfeaturesarchfr.XXXX",
+              "img": f['img'],
+              "level": int(m.group(1)),
+              "name": f['name']
+            }
+            idxA += 1
+            elA["data"]["links"]["classAssociations"].append(assoc)
+
+        listArch.append(elA)
 
 list = mergeWithLetContribute(list, "letscontribute/classesfr.json")
 
 # écrire le résultat dans le fichier d'origine
 outFile = open("data/classes.json", "w")
 outFile.write(json.dumps(list, indent=3))
+
+outFile = open("data/classesarch.json", "w")
+outFile.write(json.dumps(listArch, indent=3))

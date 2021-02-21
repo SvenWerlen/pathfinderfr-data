@@ -49,7 +49,7 @@ for d in data:
     className = "%s (%s)" % (d['Classe'], d["Archétype"]) if "Archétype" in d else d['Classe']
     
     el = {
-        "flags": { 'class': d['Classe'], 'archetype': 'base'},
+        "flags": { 'class': d['Classe'], 'archetype': d["Archétype"] if "Archétype" in d else 'base'},
         "name": name,
         "permission": {
             "default": 0
