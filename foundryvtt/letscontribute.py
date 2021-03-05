@@ -58,8 +58,9 @@ for el in list:
     continue;
 
   # ignore contributions with initiative != 1
-  if not 'initiativeId' in el or not el['initiativeId'] in [1,2,4,5]:
-    print("Ignoring initiative %d" % (el['initiativeId'] if 'initiativeId' in el else 0))
+  initiative = el['initiativeId'] if 'initiativeId' in el else 0
+  if not initiative in [0,1,2,4,5]:
+    print("Ignoring initiative %d" % initiative)
     continue;
 
   compendium = el['compendium'].split('.')[1]
@@ -75,7 +76,7 @@ for el in list:
   data = object['data']['data']
   
   # extract contentNotes and changes only
-  if el['initiativeId'] == 1:
+  if initiative == 1:
     print(el['name'])
     if "contextNotes" in data and len(data["contextNotes"]) > 0:
       lists[compendium][el['name']]['data']["contextNotes"] = data["contextNotes"]
@@ -83,12 +84,12 @@ for el in list:
       lists[compendium][el['name']]['data']["changes"] = data["changes"]
       
   # extract image only
-  elif el['initiativeId'] == 2:
-    if "img" in object:
-      lists[compendium][el['name']]["img"] = object["img"]
+  elif initiative == 2:
+    if "img" in object['data']:
+      lists[compendium][el['name']]["img"] = object['data']["img"]
   
   # extract spells elements or others
-  elif el['initiativeId'] == 4 or el['initiativeId'] == 5:
+  elif initiative == 4 or initiative == 5:
     if "ability" in data:
       lists[compendium][el['name']]['data']["ability"] = data["ability"]
     if "abilityType" in data:
@@ -110,6 +111,8 @@ for el in list:
     if "activation" in data:
       lists[compendium][el['name']]['data']["activation"] = data["activation"]
   
+  elif initiative == 0:
+    lists[compendium][el['name']]['data'] = data
 
 for category in lists:
   categName = category
