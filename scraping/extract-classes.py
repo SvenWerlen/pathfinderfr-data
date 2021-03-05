@@ -87,6 +87,12 @@ URLs = [
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Th%c3%a9urge%20mystique.ashx", 'source': 'MJ', 'prestige': True},
     {'link': "http://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Vengeur%20sacr%c3%a9.ashx", 'source': 'MJRA', 'prestige': True},
     
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Adepte.ashx", 'source': 'MJRA', 'prestige': False},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Expert.ashx", 'source': 'MJRA', 'prestige': False},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme%20darme.ashx", 'source': 'MJRA', 'prestige': False},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Homme%20du%20peuple.ashx", 'source': 'MJRA', 'prestige': False},
+    {'link': "https://www.pathfinder-fr.org/Wiki/Pathfinder-RPG.Noble.ashx", 'source': 'MJRA', 'prestige': False},
+    
 ]
 
 CONN = ('Connaissances (exploration souterraine)','Connaissances (folklore local)','Connaissances (géographie)','Connaissances (histoire)',
@@ -137,6 +143,8 @@ for data in URLs:
 
     # description
     descr = findAfter(content, "div", {"class": "presentation"},'i');
+    if not descr:
+      descr = "Toutes les personnes que les joueurs rencontrent dans le monde du jeu sont des personnages non-joueurs (PNJ). Ces personnages sont créés et contrôlés par le MJ pour remplir tous les rôles, depuis le noble roi jusqu'à l'humble boulanger. Si certains d'entre eux ont des classes de joueurs, la plupart sont bâtis à l'aide des classes de PNJ de base, ce qui permet au MJ de les créer rapidement."
     cl['Description'] = descr
 
     # alignement
