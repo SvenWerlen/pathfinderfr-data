@@ -2034,6 +2034,32 @@
          ]
       }
    },
+   "Fraternit\u00e9 animale": {
+      "data": {
+         "changes": [
+            {
+               "_id": "q5nhrhzp",
+               "formula": "@skills.per.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.han",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "6nxbcp0k",
+               "formula": "@skills.per.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.rid",
+               "target": "skill",
+               "value": 2
+            }
+         ]
+      }
+   },
    "Inaper\u00e7u": {
       "data": {}
    },
@@ -2116,6 +2142,22 @@
    "Port des armures l\u00e9g\u00e8res": {
       "data": {},
       "img": "systems/pf1/icons/feats/armor-proficiency-light.png"
+   },
+   "Renversement sup\u00e9rieur": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour renverser un adversaire"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Si un ennemi renvers\u00e9 tombe \u00e0 terre il provoque une attaque d'opportunit\u00e9"
+            }
+         ]
+      }
    },
    "Robustesse": {
       "data": {
@@ -2297,6 +2339,27 @@
          ]
       }
    },
+   "Science du renversement": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour renverser un adversaire"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Renverser un adversaire ne provoque pas d'attaque d'opportunit\u00e9"
+            },
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "+2 contre les tentatives de renversement"
+            }
+         ]
+      }
+   },
    "Souplesse du serpent": {
       "data": {
          "contextNotes": [
@@ -2309,6 +2372,17 @@
                },
                "target": "misc",
                "text": "+4 CA contre <b>atq d'op apr\u00e8s un mvt</b>"
+            }
+         ]
+      }
+   },
+   "Tir de loin": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "rangedWeapon",
+               "target": "attacks",
+               "text": "-1 par facteur de port\u00e9e."
             }
          ]
       }

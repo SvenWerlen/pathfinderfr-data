@@ -1,0 +1,35 @@
+{
+   "Inspiration vaillante": {
+      "data": {
+         "changes": [
+            {
+               "_id": "quvv7i12",
+               "formula": "@item.level",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "attack",
+               "target": "attack",
+               "value": 1
+            },
+            {
+               "_id": "cfb3r9ij",
+               "formula": "@item.level",
+               "modifier": "untypedPerm",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "wdamage",
+               "target": "damage",
+               "value": 1
+            }
+         ],
+         "contextNotes": [
+            {
+               "subTarget": "allSavingThrows",
+               "target": "savingThrows",
+               "text": "+[[@item.level]] contre effets de terreur et de charme"
+            }
+         ]
+      }
+   }
+}

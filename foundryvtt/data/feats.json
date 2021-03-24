@@ -7570,7 +7570,23 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour renverser un adversaire"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Renverser un adversaire ne provoque pas d'attaque d'opportunit\u00e9"
+            },
+            {
+               "subTarget": "cmd",
+               "target": "misc",
+               "text": "+2 contre les tentatives de renversement"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -7720,7 +7736,18 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "+2 pour renverser un adversaire"
+            },
+            {
+               "subTarget": "cmb",
+               "target": "misc",
+               "text": "Si un ennemi renvers\u00e9 tombe \u00e0 terre il provoque une attaque d'opportunit\u00e9"
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {
@@ -28657,7 +28684,28 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "_id": "q5nhrhzp",
+               "formula": "@skills.per.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.han",
+               "target": "skill",
+               "value": 2
+            },
+            {
+               "_id": "6nxbcp0k",
+               "formula": "@skills.per.rank>=10?4:2",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.rid",
+               "target": "skill",
+               "value": 2
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,
@@ -49098,7 +49146,13 @@
             "oneWis": false,
             "oneCha": false
          },
-         "contextNotes": [],
+         "contextNotes": [
+            {
+               "subTarget": "rangedWeapon",
+               "target": "attacks",
+               "text": "-1 par facteur de port\u00e9e."
+            }
+         ],
          "featType": "feat",
          "requirements": "combat",
          "attack": {

@@ -367,6 +367,58 @@
          }
       }
    },
+   "Confusion": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "spellsave",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "medium",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Contr\u00f4le du climat": {
       "data": {
          "ability": {
@@ -470,6 +522,9 @@
             "value": 0
          }
       }
+   },
+   "C\u00e9cit\u00e9/surdit\u00e9": {
+      "data": {}
    },
    "C\u00f4ne de froid": {
       "data": {
@@ -638,6 +693,61 @@
          }
       }
    },
+   "Fou rire": {
+      "data": {}
+   },
+   "Frayeur": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "spellsave",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "close",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, partiel",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "H\u00e9b\u00e9tement": {
       "data": {
          "ability": {
@@ -680,6 +790,58 @@
          "save": {
             "dc": "0",
             "description": "Volont\u00e9, annule",
+            "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "Image accomplie": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "spellsave",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "long",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Volont\u00e9, d\u00e9voile (en cas d\u2019interaction)",
             "type": "will"
          },
          "uses": {
@@ -883,6 +1045,58 @@
             "dc": "0",
             "description": "R\u00e9flexes, 1/2 d\u00e9g\u00e2ts",
             "type": "ref"
+         }
+      }
+   },
+   "Nuage naus\u00e9abond": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "spellsave",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "medium",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "Vigueur, annule (voir description)",
+            "type": "fort"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
          }
       }
    },
@@ -1435,6 +1649,63 @@
             "dc": "0",
             "description": "Volont\u00e9, annule",
             "type": "will"
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
+   "\u00c9clair": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1
+         },
+         "actionType": "other",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": [
+               [
+                  "(@cl)d6",
+                  "Foudre"
+               ]
+            ]
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "seeText",
+            "value": null
+         },
+         "save": {
+            "dc": "0",
+            "description": "R\u00e9flexes, 1/2 d\u00e9g\u00e2ts",
+            "type": "ref"
          },
          "uses": {
             "autoDeductCharges": true,

@@ -116,6 +116,60 @@
          ]
       }
    },
+   "Bar  5 : Ma\u00eetre du savoir 1/jour": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "ex",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "special"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 1,
+            "maxFormula": "max(1, floor((@classes.barde.level-1)/6))",
+            "per": "day",
+            "value": 1
+         }
+      }
+   },
    "Brb  1 : Armes et armures": {
       "data": {
          "ability": {
@@ -1624,6 +1678,60 @@
                "text": "@Compendium[pf1-fr.classfeaturesfr.4BdSu08URfxaxmvY]{Instinct naturel}"
             }
          ]
+      }
+   },
+   "Ens  1 : Lignage Bor\u00e9al - Acier froid (Mag)": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "abilityType": "sp",
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": "standard"
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "round",
+            "value": "(max(1, floor((@classes.ensorceleur.level)/2)))"
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 7,
+            "maxFormula": "3+@abilities.cha.mod",
+            "per": "day",
+            "value": 7
+         }
       }
    },
    "Ens  1 : Lignage \u00c9l\u00e9mentaire - Rayon \u00e9l\u00e9mentaire (Mag)": {
