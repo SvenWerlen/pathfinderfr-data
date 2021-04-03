@@ -34036,7 +34036,28 @@
          },
          "effectNotes": "",
          "attackNotes": "",
-         "changes": [],
+         "changes": [
+            {
+               "_id": "a91l8ug0",
+               "formula": "-(@attributes.bab.total)",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": -6
+            },
+            {
+               "_id": "ez2lp6py",
+               "formula": "(@attributes.hd.total)",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "cmd",
+               "target": "misc",
+               "value": 9
+            }
+         ],
          "changeFlags": {
             "loseDexToAC": false,
             "noStr": false,

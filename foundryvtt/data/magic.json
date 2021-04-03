@@ -2027,6 +2027,18 @@
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
          "slot": "shoulders",
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
          "changes": [
             {
                "_id": "kia6mmp2",
@@ -2038,7 +2050,43 @@
                "target": "savingThrows",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -6662,7 +6710,55 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "slotless"
+         "slot": "slotless",
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/skills/blue_01.jpg"
    },
@@ -25396,7 +25492,62 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "ring"
+         "slot": "ring",
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "contextNotes": [
+            {
+               "subTarget": "sr",
+               "target": "misc",
+               "text": "Immunis\u00e9 contre les sorts d\u00e9tection de pens\u00e9es, d\u00e9tection du mensonge, d\u00e9termination de l'alignement par magie"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/items/jewelry/ring-iron.jpg"
    },
@@ -27068,7 +27219,55 @@
          "equipped": true,
          "equipmentType": "misc",
          "equipmentSubtype": "wondrous",
-         "slot": "slotless"
+         "slot": "slotless",
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       },
       "img": "systems/pf1/icons/items/weapons/quarterstaff.png"
    },

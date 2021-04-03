@@ -2287,6 +2287,103 @@
       },
       "img": "systems/pf1/icons/skills/ice_13.jpg"
    },
+   "R\u00f4d  1 : 1er ennemi jur\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.sen",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.blf",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kdu",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.klo",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kge",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.khi",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.ken",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kar",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kna",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kno",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kpl",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kre",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 atq et dgts contre tyoe d'ennemi choisii"
+            }
+         ]
+      }
+   },
+   "R\u00f4d  1 : Empathie sauvage": {
+      "data": {
+         "changes": [
+            {
+               "_id": "roknqpli",
+               "formula": "@classes.rdeur.level",
+               "modifier": "untyped",
+               "operator": "add",
+               "priority": 0,
+               "subTarget": "skill.skill",
+               "target": "skill",
+               "value": 7
+            }
+         ]
+      }
+   },
    "R\u00f4d  1 : Pistage": {
       "data": {
          "contextNotes": [
@@ -2294,6 +2391,118 @@
                "subTarget": "skill.sur",
                "target": "skill",
                "text": "+[[max(1,floor(@classes.rdeur.level/2))]] pour suivre des traces"
+            }
+         ]
+      }
+   },
+   "R\u00f4d  3 : 1er environnement de pr\u00e9dilection": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.kge",
+               "target": "skill",
+               "text": "+2 dans l'environnement choisi"
+            },
+            {
+               "subTarget": "skill.ste",
+               "target": "skill",
+               "text": "+2 dans l'environnement choisi"
+            },
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "+2 dans l'environnement choisi"
+            },
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+2 dans l'environnement choisi"
+            },
+            {
+               "subTarget": "init",
+               "target": "misc",
+               "text": "+2 dans l'environnement choisi"
+            }
+         ]
+      }
+   },
+   "R\u00f4d  5 : 2e ennemi jur\u00e9": {
+      "data": {
+         "contextNotes": [
+            {
+               "subTarget": "skill.per",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.sen",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.sur",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.blf",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kdu",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.klo",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kge",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.khi",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.ken",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kar",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kna",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kno",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kpl",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "skill.kre",
+               "target": "skill",
+               "text": "+2 contre type d'ennemi choisi"
+            },
+            {
+               "subTarget": "attack",
+               "target": "attacks",
+               "text": "+2 atq et dgts contre tyoe d'ennemi choisii"
             }
          ]
       }

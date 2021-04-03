@@ -128,6 +128,65 @@
          ]
       }
    },
+   "Anneau de barri\u00e8re mentale": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "contextNotes": [
+            {
+               "subTarget": "sr",
+               "target": "misc",
+               "text": "Immunis\u00e9 contre les sorts d\u00e9tection de pens\u00e9es, d\u00e9tection du mensonge, d\u00e9termination de l'alignement par magie"
+            }
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Anneau de bouclier de force": {
       "data": {
          "changes": [
@@ -424,6 +483,58 @@
          ]
       }
    },
+   "B\u00e2ton des voyages": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
+   },
    "Cape de r\u00e9sistance (+1)": {
       "data": {
          "actionType": "",
@@ -459,6 +570,18 @@
    },
    "Cape de r\u00e9sistance (+2)": {
       "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
          "changes": [
             {
                "_id": "kia6mmp2",
@@ -470,7 +593,43 @@
                "target": "savingThrows",
                "value": 0
             }
-         ]
+         ],
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
       }
    },
    "Ceinturon de dext\u00e9rit\u00e9 du chat (+2)": {
@@ -524,6 +683,58 @@
    "Fl\u00e8che endormante": {
       "data": {},
       "img": "systems/pf1/icons/items/weapons/bolt-special.PNG"
+   },
+   "Perle de feu de camp": {
+      "data": {
+         "ability": {
+            "attack": null,
+            "critMult": 2,
+            "critRange": 20,
+            "damage": null,
+            "damageMult": 1
+         },
+         "actionType": "",
+         "activation": {
+            "cost": 1,
+            "type": ""
+         },
+         "damage": {
+            "critParts": [],
+            "nonCritParts": [],
+            "parts": []
+         },
+         "duration": {
+            "units": "",
+            "value": null
+         },
+         "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "",
+            "type": ""
+         },
+         "range": {
+            "maxIncrements": 1,
+            "minUnits": "",
+            "minValue": null,
+            "units": "",
+            "value": null
+         },
+         "save": {
+            "dc": 0,
+            "description": "",
+            "type": ""
+         },
+         "uses": {
+            "autoDeductCharges": true,
+            "autoDeductChargesCost": "1",
+            "max": 0,
+            "per": null,
+            "value": 0
+         }
+      }
    },
    "Serre-t\u00eate de persuasion": {
       "data": {
